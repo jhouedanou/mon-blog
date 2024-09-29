@@ -23,6 +23,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
         </div>
       </div>
     </section>
+    <RSSFeedCards />
   </div>
 </template>
 
