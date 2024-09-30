@@ -8,7 +8,7 @@ const selectedArticle = ref(null);
 const articlesPerPage = 12;
 
 onMounted(() => {
-  fetchRSS("https://jeanluchouedanou.blogspot.com/feeds/posts/default");
+  fetchRSS("https://feeds.feedburner.com/houedanou/mezt");
 });
 
 const currentArticles = computed(() => {
