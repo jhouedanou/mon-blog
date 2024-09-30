@@ -6,8 +6,8 @@ export function useFetchRSS() {
 
   const fetchRSS = async (url) => {
     try {
-     // const response = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(url)}`)
-const response = await fetch(`https://feeds.feedburner.com/houedanou/mezt`)
+     const response = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(url)}`)
+//const response = await fetch(`https://feeds.feedburner.com/houedanou/mezt`)
       if (!response.ok) throw new Error('Erreur réseau lors de la récupération du flux RSS')
       const data = await response.json()
       const parser = new DOMParser()
