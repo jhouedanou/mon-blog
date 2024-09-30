@@ -8,7 +8,9 @@ const selectedArticle = ref(null);
 const articlesPerPage = 12;
 
 onMounted(() => {
-  fetchRSS("https://feeds.feedburner.com/houedanou/mezt");
+  console.log("Début du chargement du flux RSS");
+  fetchRSS("https://jeanluchouedanou.blogspot.com/feeds/posts/default");
+  console.log("Fin du chargement du flux RSS");
 });
 
 const currentArticles = computed(() => {
@@ -42,11 +44,7 @@ const closePopup = () => {
     <div v-if="error">{{ error }}</div>
     <div v-else>
       <div class="columns is-multiline">
-        <div
-          v-for="(article, index) in currentArticles"
-          :key="index"
-          class="column is-3"
-        >
+        <div v-for="(article, index) in currentArticles" :key="index" class="column is-3">
           <div class="card h-100">
             <div class="card-content">
               <p class="title is-5">{{ article.title }}</p>
@@ -55,29 +53,18 @@ const closePopup = () => {
               </p>
             </div>
             <footer class="card-footer">
-              <button
-                class="card-footer-item button is-primary"
-                @click="openPopup(article)"
-              >
+              <button class="card-footer-item button is-primary" @click="openPopup(article)">
                 Lire plus
               </button>
             </footer>
           </div>
         </div>
       </div>
-      <nav
-        class="pagination is-centered"
-        role="navigation"
-        aria-label="pagination"
-      >
+      <nav class="pagination is-centered" role="navigation" aria-label="pagination">
         <ul class="pagination-list">
           <li v-for="page in totalPages" :key="page">
-            <button
-              class="pagination-link"
-              :class="{ 'is-current': currentPage === page }"
-              :aria-label="`Page ${page}`"
-              @click="paginate(page)"
-            >
+            <button class="pagination-link" :class="{ 'is-current': currentPage === page }" :aria-label="`Page ${page}`"
+              @click="paginate(page)">
               {{ page }}
             </button>
           </li>
@@ -88,16 +75,9 @@ const closePopup = () => {
         <div class="modal-card">
           <header class="modal-card-head">
             <p class="modal-card-title">{{ selectedArticle.title }}</p>
-            <button
-              class="delete"
-              aria-label="close"
-              @click="closePopup"
-            ></button>
+            <button class="delete" aria-label="close" @click="closePopup"></button>
           </header>
-          <section
-            class="modal-card-body"
-            v-html="selectedArticle.description"
-          ></section>
+          <section class="modal-card-body" v-html="selectedArticle.description"></section>
         </div>
       </div>
     </div>
