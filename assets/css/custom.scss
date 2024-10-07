@@ -1,0 +1,39 @@
+.modal-content {
+    
+        font-size: 16px; // Taille de base pour le texte
+    
+        h1 { font-size: 2.5em; }
+        h2 { font-size: 2em; }
+        h3 { font-size: 1.75em; }
+        h4 { font-size: 1.5em; }
+        h5 { font-size: 1.25em; }
+        h6 { font-size: 1em; }
+    
+        p { font-size: 1em; }
+    
+        .small-text { font-size: 0.875em; }
+        .large-text { font-size: 1.125em; }
+    
+        h1, h2, h3, h4, h5, h6 {
+            margin-bottom: 15px;
+            font-weight: bold;
+            color: #333;
+        }
+    
+        p {
+            margin-bottom: 10px;
+            line-height: 1.5;
+            font-size:1.125em;
+        }
+    
+        ul, ol {
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+    
+        li {
+            margin-bottom: 5px;
+        }
+    
+    strong {
+    color:black;}}
