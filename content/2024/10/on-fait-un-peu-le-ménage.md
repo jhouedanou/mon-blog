@@ -1,4 +1,4 @@
-### On fait un peu le ménage.
+# On fait un peu le ménage.
 
 Cela faisait longtemps que je cherchais une bonne excuse pour me débarrasser de WordPress, au moins en tant que moteur de blog.
 
