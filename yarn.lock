@@ -783,7 +783,7 @@
 
 "@nuxt/content@^2.13.2":
   version "2.13.2"
-  resolved "https://registry.npmjs.org/@nuxt/content/-/content-2.13.2.tgz"
+  resolved "https://registry.yarnpkg.com/@nuxt/content/-/content-2.13.2.tgz#baf8f58a170c91afcf0e32400878862eb9a3212c"
   integrity sha512-9AmX7iG8+1MaWia8XLe1TyzoLrTaIhchas19w6VxqZI0dEoQCGslEcdOxy8xLrdGVFuy6MObBwU8SZgpQB9pyA==
   dependencies:
     "@nuxt/kit" "^3.12.4"
