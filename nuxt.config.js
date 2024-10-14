@@ -7,6 +7,13 @@ export default defineNuxtConfig({
     '@/assets/custom.scss',
     'font-awesome/css/font-awesome.css'
   ],
+  modules: [
+    // ... autres modules
+    'vue-disqus'
+  ],
+  disqus: {
+    shortname: 'houedanou'
+  },
   app: {
     pageTransition: { name: 'page', mode: 'out-in' }
   },
