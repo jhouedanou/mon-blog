@@ -21,7 +21,11 @@
 </template>
 
 <script setup>
-// L'import d'ArticleList n'est plus nécessaire ici
+
+useHead({
+  title: 'Le blog de Jean Luc Houédanou'
+})
+
 </script>
 <style lang="scss">
 html {
