@@ -13,7 +13,11 @@ Qui plus est, après un an d'utilisation de VueJS et Nuxt, ces technologies m'on
 3.  \- le tout hébergé sur Vercel.
 
 Je me suis ensuite rendu compte du caractère expérimental et hétéroclite de ce projet, et je me suis dit que je pourrais faire mieux.
-La nouvelle configuration est donc la suivante : Tout sur Nuxt (et NuxContent). Le contenu de ce blog sera généré à partir de fichiers Markdown, et le tout tournera sur hébergé sur Vercel.
+La nouvelle configuration est donc la suivante :
+
+Tout sur Nuxt (et NuxContent).
+
+Le contenu de ce blog sera généré à partir de fichiers Markdown, et le tout tournera sur hébergé sur Vercel.
 
 Je ferais la migration de certains articles dans le futur.
 
