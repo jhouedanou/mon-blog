@@ -60,11 +60,12 @@ function getNetworkIcon(network) {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Sans+Pro:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@400;600;700&display=swap');
+
 
 .article-card {
-    font-family: 'Source Sans Pro', sans-serif;
-    max-width: 680px;
+    font-family: 'Inter', sans-serif;
+
     margin: 2rem auto;
     padding: 2rem;
     background-color: #fff;
@@ -78,7 +79,8 @@ function getNetworkIcon(network) {
 }
 
 .article-title {
-    font-family: 'Merriweather', serif;
+    font-family: 'Montserrat', sans-serif;
+
     font-size: 1.8rem;
     font-weight: 700;
     margin-bottom: 0.5rem;

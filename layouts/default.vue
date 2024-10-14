@@ -20,10 +20,17 @@
         <footer class="footer">
             <div class="footer-content">
                 <p>&copy; {{ new Date().getFullYear() }}Jean Luc Houedanou. Tous droits réservés.</p>
-                <div class="social-links">
-                    <a href="#" class="social-link">Twitter</a>
-                    <a href="#" class="social-link">LinkedIn</a>
-                    <a href="#" class="social-link">GitHub</a>
+                <div class="social-icons">
+                    <a href="https://linkedin.com/in/votre-profil" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://facebook.com/votre-page" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-facebook"></i></a>
+                    <a href="https://github.com/votre-profil" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://instagram.com/votre-profil" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/votre-profil" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-twitter"></i></a>
                 </div>
             </div>
         </footer>
@@ -33,21 +40,21 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 
-const isDarkMode = ref(false)
+// const isDarkMode = ref(false)
 
-const toggleDarkMode = () => {
-    isDarkMode.value = !isDarkMode.value
-    document.body.classList.toggle('dark-mode', isDarkMode.value)
-    localStorage.setItem('darkMode', isDarkMode.value)
-}
+// const toggleDarkMode = () => {
+//     isDarkMode.value = !isDarkMode.value
+//     document.body.classList.toggle('dark-mode', isDarkMode.value)
+//     localStorage.setItem('darkMode', isDarkMode.value)
+// }
 
-onMounted(() => {
-    const savedDarkMode = localStorage.getItem('darkMode')
-    if (savedDarkMode !== null) {
-        isDarkMode.value = JSON.parse(savedDarkMode)
-        document.body.classList.toggle('dark-mode', isDarkMode.value)
-    }
-})
+// onMounted(() => {
+//     const savedDarkMode = localStorage.getItem('darkMode')
+//     if (savedDarkMode !== null) {
+//         isDarkMode.value = JSON.parse(savedDarkMode)
+//         document.body.classList.toggle('dark-mode', isDarkMode.value)
+//     }
+// })
 </script>
 
 <style scoped>
@@ -144,5 +151,21 @@ body.dark-mode {
     --bg-color: #1a1a1a;
     --border-color: #4a4a4a;
     --accent-color: #03a87c;
+}
+
+.social-icons {
+    margin-top: 2rem;
+}
+
+.social-icons a {
+    color: #333;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #0077b5;
+    /* Couleur LinkedIn comme exemple */
 }
 </style>
