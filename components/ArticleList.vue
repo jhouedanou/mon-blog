@@ -1,69 +1,91 @@
 <template>
-    <div class="article-list is-flex flex-column align-items-center justify-center is-justify-content-center">
+    <div v-if="loading" class="spinner">
+        <div class="spinner-circle"></div>
+    </div>
+    <div v-else class="article-list">
         <div class="article-list-container container">
-            <div v-if="articles && articles.length" class="columns is-multiline">
-                <div v-for="article in articles" :key="article._path"
-                    class="article-item is-4-desktop column is-6-tablet is-12-mobile p-4 m-3">
+            <div v-if="displayedArticles.length" class="articles-grid">
+                <div v-for="(article, index) in displayedArticles" :key="article._path" class="article-item"
+                    :style="{ backgroundColor: getBackgroundColor(index) }">
                     <h2 class="article-title">
                         <NuxtLink :to="article._path" class="article-link">{{ article.title }}</NuxtLink>
                     </h2>
                     <p class="article-date">{{ formatDate(article) }}</p>
-                    <p class="article-excerpt" v-html="getExcerpt(article)"></p>
+                    <div class="article-content" v-html="article.body?.html || article.description"></div>
                     <NuxtLink :to="article._path" class="read-more">Lire plus</NuxtLink>
                 </div>
             </div>
             <p v-else class="no-articles">Aucun article trouvé.</p>
         </div>
+        <div class="pagination">
+            <button @click="prevPage" :disabled="currentPage === 1">Précédent</button>
+            <span>Page {{ currentPage }} sur {{ totalPages }}</span>
+            <button @click="nextPage" :disabled="currentPage === totalPages">Suivant</button>
+        </div>
     </div>
 </template>
+
 <script setup>
 import { ref, onMounted, computed } from 'vue'
 import { useAsyncData } from '#app'
-import axios from 'axios'
-import Parser from 'rss-parser'
+import { useFetchRSS } from "@/composables/useFetchRSS"
 
-const parser = new Parser()
+const { feedItems, error, fetchRSS } = useFetchRSS()
+
+const loading = ref(true)
+const pageSize = 9
+const currentPage = ref(1)
 const allArticles = ref([])
 
-const fetchRssArticles = async () => {
+const colors = [
+    '#D90B31', '#F21B7F', '#8C7811', '#F2D43D', '#A60A0A'
+]
+
+function getBackgroundColor(index) {
+    return colors[index % colors.length]
+}
+
+const fetchArticles = async () => {
     try {
-        const response = await axios.get('https://feeds.feedburner.com/houedanou/mezt/')
-        console.log('Réponse brute RSS:', response.data)
-        const feed = await parser.parseString(response.data)
-        return feed.items.map(item => ({
-            title: item.title,
-            _path: item.link,
-            description: item.content,
-            pubDate: item.pubDate,
-            source: 'rss'
-        }))
+        loading.value = true
+        const { data: contentArticles } = await useAsyncData('contentArticles', () =>
+            queryContent().sort({ _path: -1 }).find()
+        )
+        await fetchRSS('https://feeds.feedburner.com/houedanou/mezt')
+
+        allArticles.value = [...(contentArticles.value ?? []), ...feedItems.value].sort((a, b) => {
+            const dateA = new Date(a.pubDate || a._path)
+            const dateB = new Date(b.pubDate || b._path)
+            return dateB - dateA
+        })
     } catch (error) {
-        console.error('Erreur lors de la récupération du flux RSS:', error)
-        return []
+        console.error('Erreur lors de la récupération des articles:', error)
+    } finally {
+        loading.value = false
     }
 }
 
-const { data: contentArticles } = await useAsyncData('contentArticles', () =>
-    queryContent().sort({ _path: -1 }).find()
-)
+onMounted(fetchArticles)
 
-const rssArticles = ref([])
-
-onMounted(async () => {
-    rssArticles.value = await fetchRssArticles()
-    console.log('Articles RSS:', rssArticles.value)
-
-    allArticles.value = [...contentArticles.value, ...rssArticles.value]
-    console.log('Tous les articles combinés:', allArticles.value)
+const displayedArticles = computed(() => {
+    const start = (currentPage.value - 1) * pageSize
+    const end = start + pageSize
+    return allArticles.value.slice(start, end)
 })
 
-const articles = computed(() => {
-    return allArticles.value.sort((a, b) => {
-        const dateA = new Date(a.pubDate || a._path)
-        const dateB = new Date(b.pubDate || b._path)
-        return dateB - dateA
-    })
-})
+const totalPages = computed(() => Math.ceil(allArticles.value.length / pageSize))
+
+function prevPage() {
+    if (currentPage.value > 1) {
+        currentPage.value--
+    }
+}
+
+function nextPage() {
+    if (currentPage.value < totalPages.value) {
+        currentPage.value++
+    }
+}
 
 function formatDate(article) {
     if (article.pubDate) {
@@ -77,21 +99,12 @@ function formatDate(article) {
     }
     return 'Date inconnue'
 }
-
-function getExcerpt(article) {
-    const content = article.description || article._raw || ''
-    return content.length > 150 ? content.slice(0, 150) + '...' : content
-}
 </script>
+
 <style lang="scss" scoped>
 .article-list {
     font-family: 'Inter', sans-serif;
     padding: 2rem 0;
-
-    .container {
-        margin: 0;
-        padding: 0;
-    }
 }
 
 .article-list-container {
@@ -99,14 +112,23 @@ function getExcerpt(article) {
     padding: 0 1rem;
 }
 
-.article-item {
-    background-color: #ffffff;
-    border-bottom: 1px solid #e6e6e6;
-    padding: 2rem 0;
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
 }
 
-.article-item:last-child {
-    border-bottom: none;
+.article-item {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    padding: 1.5rem;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
 }
 
 .article-title {
@@ -123,21 +145,24 @@ function getExcerpt(article) {
     margin-bottom: 1rem;
 }
 
+.article-content {
+    margin-bottom: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
 .read-more {
     display: inline-block;
     color: #03a87c;
     font-weight: 600;
     text-decoration: none;
     transition: color 0.3s ease;
-}
 
-.read-more:hover {
-    color: #018f69;
-}
-
-h2 {
-    a {
-        color: black;
+    &:hover {
+        color: #018f69;
     }
 }
 
@@ -148,15 +173,55 @@ h2 {
     padding: 2rem 0;
 }
 
-.article-excerpt {
-    font-family: "Source Sans Pro", sans-serif;
-    box-sizing: inherit;
-    margin: 0;
-    padding: 0;
-    -webkit-font-smoothing: antialiased;
-    font-size: 1.2rem;
-    color: #555;
-    line-height: 1.4;
-    margin-bottom: 1.5rem;
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+
+    button {
+        padding: 0.5rem 1rem;
+        margin: 0 0.5rem;
+        background-color: #03a87c;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+    }
+
+    span {
+        margin: 0 1rem;
+    }
+}
+
+.spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.spinner-circle {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 </style>
