@@ -24,7 +24,7 @@
 
 useHead({
   title: 'Le blog de Jean Luc Houédanou'
-})
+});
 
 </script>
 <style lang="scss">

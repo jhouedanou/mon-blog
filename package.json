@@ -10,6 +10,7 @@
   "dependencies": {
     "@nuxt/content": "^2.13.2",
     "@nuxt/image": "^1.8.1",
+    "axios": "^1.7.7",
     "bulma": "^1.0.2",
     "bulma-start": "^0.0.5",
     "font-awesome": "4",

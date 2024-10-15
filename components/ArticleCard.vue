@@ -15,7 +15,6 @@
                 </button>
             </div>
         </div>
-        <Disqus :identifier="article._path" />
 
     </article>
 </template>
@@ -30,8 +29,6 @@ const props = defineProps({
         required: true
     }
 })
-const Disqus = defineAsyncComponent(() => import('vue-disqus').then(m => m.Disqus))
-const { data: article } = await useAsyncData('article', () => queryContent(route.path).findOne())
 
 const route = useRoute()
 const articleUrl = computed(() => `${window.location.origin}${route.path}`)
