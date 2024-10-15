@@ -5,14 +5,20 @@
     <div v-else class="article-list">
         <div class="article-list-container container">
             <div v-if="displayedArticles.length" class="articles-grid">
-                <div v-for="(article, index) in displayedArticles" :key="article._path" class="article-item"
-                    :style="{ backgroundColor: getBackgroundColor(index) }">
+                <div v-for="(article, index) in displayedArticles" :key="article._path" class="article-item" :style="{
+                    borderTopColor: getBackgroundColor(index),
+                    color: getTextColor(getBackgroundColor(index))
+                }">
                     <h2 class="article-title">
-                        <NuxtLink :to="article._path" class="article-link">{{ article.title }}</NuxtLink>
+                        <NuxtLink :to="article._path" class="article-link"
+                            :style="{ color: getTextColor(getBackgroundColor(index)) }">
+                            {{ article.title }}
+                        </NuxtLink>
                     </h2>
                     <p class="article-date">{{ formatDate(article) }}</p>
                     <div class="article-content" v-html="article.body?.html || article.description"></div>
-                    <NuxtLink :to="article._path" class="read-more">Lire plus</NuxtLink>
+                    <NuxtLink :to="article._path" class="read-more"
+                        :style="{ color: getTextColor(getBackgroundColor(index)) }">Lire plus</NuxtLink>
                 </div>
             </div>
             <p v-else class="no-articles">Aucun article trouvé.</p>
@@ -38,11 +44,20 @@ const currentPage = ref(1)
 const allArticles = ref([])
 
 const colors = [
-    '#D90B31', '#F21B7F', '#8C7811', '#F2D43D', '#A60A0A'
+    '#2D2E2E', // jet
+    '#B2B2B2', // silver
+    '#1B1B1B', // eerie-black
+    '#0C0C0C', // night
+    '#EFEFEF'  // antiflash-white
 ]
 
 function getBackgroundColor(index) {
     return colors[index % colors.length]
+}
+
+function getTextColor(backgroundColor) {
+    const colorIndex = colors.indexOf(backgroundColor)
+    return colors[(colorIndex + 2) % colors.length]
 }
 
 const fetchArticles = async () => {
@@ -114,7 +129,7 @@ function formatDate(article) {
 
 .articles-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 20px;
 }
 
