@@ -21,7 +21,7 @@ export function useFetchRSS() {
       feedItems.value = Array.from(entries).slice(0, 25).map(entry => ({
         title: entry.querySelector('title').textContent,
         link: entry.querySelector('link[rel="alternate"]').getAttribute('href'),
-        description: entry.querySelector('content').textContent,
+        description: entry.querySelector('content').textContent.replace(/src="https:\/\/i0\.wp\.com\/www\.houedanou\.com/g, 'src="'),
         pubDate: entry.querySelector('published').textContent
       }))
       console.log("Éléments du flux traités:", feedItems.value)

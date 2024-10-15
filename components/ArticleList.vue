@@ -2,32 +2,24 @@
     <div v-if="loading" class="spinner">
         <div class="spinner-circle"></div>
     </div>
-    <div v-else class="article-list">
+    <div v-else class="article-list is-flex flex-column align-items-center justify-center is-justify-content-center">
         <div class="article-list-container container">
-            <div v-if="displayedArticles.length" class="articles-grid">
-                <div v-for="(article, index) in displayedArticles" :key="article._path" class="article-item" :style="{
-                    borderTopColor: getBackgroundColor(index),
-                    color: getTextColor(getBackgroundColor(index))
-                }">
-                    <h2 class="article-title">
-                        <NuxtLink :to="article._path" class="article-link"
-                            :style="{ color: getTextColor(getBackgroundColor(index)) }">
-                            {{ article.title }}
-                        </NuxtLink>
-                    </h2>
-                    <p class="article-date">{{ formatDate(article) }}</p>
-                    <div class="article-content" v-html="article.body?.html || article.description"></div>
-                    <NuxtLink :to="article._path" class="read-more"
-                        :style="{ color: getTextColor(getBackgroundColor(index)) }">Lire plus</NuxtLink>
+            <div v-if="displayedArticles.length" class="columns is-multiline">
+                <div v-for="article in displayedArticles" :key="article._path"
+                    class="is-4-desktop column is-6-tablet is-12-mobile">
+                    <div class="article-item p-4 m-3">
+                        <h2 class="article-title">
+                            <NuxtLink :to="article._path" class="article-link">{{ article.title }}</NuxtLink>
+                        </h2>
+                        <p class="article-date">{{ formatDate(article) }}</p>
+                        <p class="article-excerpt" v-html="getExcerpt(article)"></p>
+                        <NuxtLink :to="article._path" class="read-more">Lire plus</NuxtLink>
+                    </div>
                 </div>
             </div>
             <p v-else class="no-articles">Aucun article trouvé.</p>
         </div>
-        <div class="pagination">
-            <button @click="prevPage" :disabled="currentPage === 1">Précédent</button>
-            <span>Page {{ currentPage }} sur {{ totalPages }}</span>
-            <button @click="nextPage" :disabled="currentPage === totalPages">Suivant</button>
-        </div>
+        <div v-if="hasMoreArticles" ref="loadMoreTrigger" class="load-more">Chargement...</div>
     </div>
 </template>
 
@@ -35,40 +27,25 @@
 import { ref, onMounted, computed } from 'vue'
 import { useAsyncData } from '#app'
 import { useFetchRSS } from "@/composables/useFetchRSS"
+import { useIntersectionObserver } from '@vueuse/core'
 
 const { feedItems, error, fetchRSS } = useFetchRSS()
 
 const loading = ref(true)
-const pageSize = 9
+const pageSize = 10
 const currentPage = ref(1)
 const allArticles = ref([])
-
-const colors = [
-    '#2D2E2E', // jet
-    '#B2B2B2', // silver
-    '#1B1B1B', // eerie-black
-    '#0C0C0C', // night
-    '#EFEFEF'  // antiflash-white
-]
-
-function getBackgroundColor(index) {
-    return colors[index % colors.length]
-}
-
-function getTextColor(backgroundColor) {
-    const colorIndex = colors.indexOf(backgroundColor)
-    return colors[(colorIndex + 2) % colors.length]
-}
+const loadMoreTrigger = ref(null)
 
 const fetchArticles = async () => {
     try {
         loading.value = true
         const { data: contentArticles } = await useAsyncData('contentArticles', () =>
-            queryContent().sort({ _path: -1 }).find()
+            queryContent().sort({ _path: -1 }).limit(25).find()
         )
         await fetchRSS('https://feeds.feedburner.com/houedanou/mezt')
 
-        allArticles.value = [...(contentArticles.value ?? []), ...feedItems.value].sort((a, b) => {
+        allArticles.value = [...(contentArticles || []), ...feedItems.value].sort((a, b) => {
             const dateA = new Date(a.pubDate || a._path)
             const dateB = new Date(b.pubDate || b._path)
             return dateB - dateA
@@ -83,24 +60,18 @@ const fetchArticles = async () => {
 onMounted(fetchArticles)
 
 const displayedArticles = computed(() => {
-    const start = (currentPage.value - 1) * pageSize
-    const end = start + pageSize
+    const start = 0
+    const end = currentPage.value * pageSize
     return allArticles.value.slice(start, end)
 })
 
-const totalPages = computed(() => Math.ceil(allArticles.value.length / pageSize))
+const hasMoreArticles = computed(() => displayedArticles.value.length < allArticles.value.length)
 
-function prevPage() {
-    if (currentPage.value > 1) {
-        currentPage.value--
-    }
-}
-
-function nextPage() {
-    if (currentPage.value < totalPages.value) {
+useIntersectionObserver(loadMoreTrigger, ([{ isIntersecting }]) => {
+    if (isIntersecting && hasMoreArticles.value) {
         currentPage.value++
     }
-}
+})
 
 function formatDate(article) {
     if (article.pubDate) {
@@ -114,12 +85,22 @@ function formatDate(article) {
     }
     return 'Date inconnue'
 }
+
+function getExcerpt(article) {
+    const content = article.description || article._raw || ''
+    return content.length > 150 ? content.slice(0, 150) + '...' : content
+}
 </script>
 
 <style lang="scss" scoped>
 .article-list {
     font-family: 'Inter', sans-serif;
     padding: 2rem 0;
+
+    .container {
+        margin: 0;
+        padding: 0;
+    }
 }
 
 .article-list-container {
@@ -127,23 +108,14 @@ function formatDate(article) {
     padding: 0 1rem;
 }
 
-.articles-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    gap: 20px;
-}
-
 .article-item {
     background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    padding: 1.5rem;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 2rem 0;
+}
 
-    &:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    }
+.article-item:last-child {
+    border-bottom: none;
 }
 
 .article-title {
@@ -160,24 +132,21 @@ function formatDate(article) {
     margin-bottom: 1rem;
 }
 
-.article-content {
-    margin-bottom: 1rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-}
-
 .read-more {
     display: inline-block;
     color: #03a87c;
     font-weight: 600;
     text-decoration: none;
     transition: color 0.3s ease;
+}
 
-    &:hover {
-        color: #018f69;
+.read-more:hover {
+    color: #018f69;
+}
+
+h2 {
+    a {
+        color: black;
     }
 }
 
@@ -188,30 +157,16 @@ function formatDate(article) {
     padding: 2rem 0;
 }
 
-.pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-
-    button {
-        padding: 0.5rem 1rem;
-        margin: 0 0.5rem;
-        background-color: #03a87c;
-        color: white;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-
-        &:disabled {
-            background-color: #ccc;
-            cursor: not-allowed;
-        }
-    }
-
-    span {
-        margin: 0 1rem;
-    }
+.article-excerpt {
+    font-family: "Source Sans Pro", sans-serif;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
 }
 
 .spinner {
@@ -238,5 +193,12 @@ function formatDate(article) {
     100% {
         transform: rotate(360deg);
     }
+}
+
+.load-more {
+    text-align: center;
+    padding: 1rem;
+    font-style: italic;
+    color: #757575;
 }
 </style>
