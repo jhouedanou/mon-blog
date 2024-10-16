@@ -8,17 +8,18 @@
     "preview": "nuxt preview"
   },
   "dependencies": {
-    "@nuxt/content": "^2.13.2",
+    "@nuxt/content": "^2.13.4",
     "@nuxt/image": "^1.8.1",
+    "axios": "^1.7.7",
     "bulma": "^1.0.2",
     "bulma-start": "^0.0.5",
-    "font-awesome": "4",
-    "nuxt": "^3.13.0",
-    "rss-parser": "^3.13.0",
+    "nuxt": "^3.13.2",
+    "vue": "^3.5.12",
     "vue-social-sharing": "^3.0.9"
   },
   "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e",
   "devDependencies": {
-    "sass-embedded": "^1.79.4"
+    "nuxt-disqus": "^1.1.1",
+    "sass-embedded": "^1.79.5"
   }
 }

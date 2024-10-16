@@ -6,9 +6,7 @@
           <h1 class="title">
 
             <NuxtLink to="/">
-              <NuxtImg alt="le Blog de Jean Luc Houédanou" src="/images/1837389.jpeg" format="webp" quality="80"
-                height="320" placeholder loading="lazy" fallback>
-              </NuxtImg>
+              <img alt="le Blog de Jean Luc Houédanou" src="/images/1837389.jpeg" height="320">
             </NuxtLink>
           </h1>
         </div>
@@ -24,7 +22,7 @@
 
 useHead({
   title: 'Le blog de Jean Luc Houédanou'
-})
+});
 
 </script>
 <style lang="scss">

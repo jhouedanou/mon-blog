@@ -77,6 +77,7 @@ h1, h2, h3, h4, h5, h6 {
             margin-bottom: 1.5rem;
             font-size: 1.5rem;
             color: #071c26!important;
+            
           }
         }
       }
@@ -176,4 +177,83 @@ header{
       }
     }
   
+}
+
+.home{
+
+.article-list {
+  font-family: 'Inter', sans-serif;
+  padding: 2rem 0;
+
+  .container {
+      margin: 0;
+      padding: 0;
+  }
+}
+
+.article-list-container {
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.article-item {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 2rem 0;
+}
+
+.article-item:last-child {
+  border-bottom: none;
+}
+
+.article-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #292929;
+  margin-bottom: 0.5rem;
+}
+
+.article-date {
+  font-size: 0.9rem;
+  color: #757575;
+  margin-bottom: 1rem;
+}
+
+.read-more {
+  display: inline-block;
+  color: #03a87c;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.read-more:hover {
+  color: #018f69;
+}
+
+h2 {
+  a {
+      color: black;
+  }
+}
+
+.no-articles {
+  text-align: center;
+  color: #757575;
+  font-style: italic;
+  padding: 2rem 0;
+}
+
+.article-excerpt {
+  font-family: "Source Sans Pro", sans-serif;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.4;
+  margin-bottom: 1.5rem;
+}
 }

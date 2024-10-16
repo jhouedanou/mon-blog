@@ -1,12 +1,23 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+
   devtools: { enabled: false },
-  modules: ['@nuxt/content', '@nuxt/image'],
+  modules: ['@nuxt/content', '@nuxt/image', 'nuxt-disqus'],  
+  ssr: true,    
+  content: {
+    // Ajoutez cette ligne pour voir les logs de Nuxt Content
+    documentDriven: true
+  },
   css: [
     'bulma/css/bulma.min.css',
     '@/assets/custom.scss',
-    'font-awesome/css/font-awesome.css'
   ],
+  modules: [    "@nuxt/image",
+"nuxt-disqus"],
+
+  disqus: {
+    shortname: 'houedanou'
+  },
   app: {
     pageTransition: { name: 'page', mode: 'out-in' }
   },
@@ -42,3 +53,4 @@ export default defineNuxtConfig({
   },
   compatibilityDate: '2024-10-10'
 })
+

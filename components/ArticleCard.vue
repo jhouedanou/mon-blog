@@ -1,11 +1,11 @@
 <template>
     <article class="article-card">
-        <h2 class="article-title">{{ article.title }}</h2>
+        <h2 class="article-title">{{ formatTitle(article.title) }}</h2>
         <div class="article-meta">
             <span class="article-date">{{ formatDate(article._path) }}</span>
             <span class="article-read-time">{{ estimateReadTime(article.content) }} min read</span>
         </div>
-        <p v-if="article.description" class="article-description">{{ article.description }}</p>
+        <div class="article-content" v-html="article.body?.html || article.description"></div>
         <div class="article-actions">
             <NuxtLink :to="article._path" class="read-more">Lire plus</NuxtLink>
             <div class="share-buttons">
@@ -33,6 +33,23 @@ const route = useRoute()
 const articleUrl = computed(() => `${window.location.origin}${route.path}`)
 const networks = ['facebook', 'twitter', 'linkedin']
 
+function formatTitle(title) {
+    return cleanHtmlEntities(decodeHtmlEntities(title))
+}
+
+function decodeHtmlEntities(text) {
+    const textArea = document.createElement('textarea')
+    textArea.innerHTML = text
+    return textArea.value.replace(/'/g, "'")
+}
+
+function cleanHtmlEntities(text) {
+    return text
+        .replace(/–/g, '–')
+        .replace(/’/g, "'")
+        .replace(/ /g, ' ')
+}
+
 function formatDate(path) {
     const match = path.match(/\/(\d{4})\/(\d{2})\//)
     return match ? `${match[2]}/${match[1]}` : 'Date inconnue'
@@ -45,7 +62,6 @@ function estimateReadTime(content) {
 }
 
 function shareArticle(network) {
-    // Implémentez ici la logique de partage pour chaque réseau
     console.log(`Partage sur ${network}`)
 }
 
@@ -105,11 +121,10 @@ function getNetworkIcon(network) {
     margin-right: 0.5rem;
 }
 
-.article-description {
-    font-size: 1rem;
-    color: #292929;
+.article-content {
     margin-bottom: 1.5rem;
     line-height: 1.6;
+    color: inherit;
 }
 
 .article-actions {
