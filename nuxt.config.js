@@ -1,7 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  target: 'static',
+
   devtools: { enabled: false },
   modules: ['@nuxt/content', '@nuxt/image'],  
+  image: {
+    quality: 80,
+    format: ['webp', 'jpg']
+  },
   ssr: true,
   nitro: {
     preset: 'vercel',
