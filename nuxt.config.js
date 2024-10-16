@@ -13,8 +13,8 @@ export default defineNuxtConfig({
     preset: 'vercel',
     baseURL: "http://localhost:8000",
     prerender: {
-      crawlLinks: true,
-      failOnError: false, 
+      // crawlLinks: true,
+      failOnError: false
     },
   },  
   content: {
