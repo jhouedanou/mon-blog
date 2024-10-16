@@ -3,7 +3,7 @@ export default defineNuxtConfig({
 
   devtools: { enabled: false },
   modules: ['@nuxt/content', '@nuxt/image'],  
-  ssr: true,    
+  //ssr: true,    
   content: {
     // Ajoutez cette ligne pour voir les logs de Nuxt Content
     documentDriven: true
