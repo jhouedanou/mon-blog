@@ -150,8 +150,6 @@ h2 {
     margin-top: 2rem;
 }
 
-.pagination-link.is-current {}
-
 .pagination-link.is-disabled,
 .pagination-link[disabled],
 .pagination-next.is-disabled,
