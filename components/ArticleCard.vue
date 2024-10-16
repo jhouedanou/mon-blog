@@ -136,7 +136,7 @@ function getNetworkIcon(network) {
 .read-more {
     display: inline-block;
     text-decoration: none;
-    color: #03a87c;
+    color: #666;
     font-weight: 600;
     transition: color 0.3s ease;
 }
