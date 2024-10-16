@@ -1,6 +1,6 @@
 ---
 title: "On fait un peu le ménage."
-image: "/images/articles/menage-image.webp"
+image: "/images/articles/menage-image.jpeg"
 ---
 
 # On fait un peu le ménage.

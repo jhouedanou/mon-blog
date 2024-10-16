@@ -1,6 +1,6 @@
 ---
 title: "meta-business-suite.uncody.site : un scam facebook pour voler votre mot de passe"
-image: "/images/articles/scam.webp"
+image: "/images/articles/scam.jpeg"
 ---
 
 # meta-business-suite.uncody.site : un scam facebook pour voler votre mot de passe
