@@ -1,3 +1,8 @@
+---
+title: "meta-business-suite.uncody.site : un scam facebook pour voler votre mot de passe"
+image: "/images/articles/scam.webp"
+---
+
 # meta-business-suite.uncody.site : un scam facebook pour voler votre mot de passe
 
 Il vous est sûrement déjà arrivé de recevoir un message étrange sur WhatsApp, contenant des liens et un appel à l’action immédiate, menaçant de fermer votre compte Facebook si vous ne réagissez pas rapidement.

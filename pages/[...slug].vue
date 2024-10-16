@@ -1,20 +1,24 @@
 <template>
-  <article class="article-container">
-    <header class="article-header">
+  <div class="article-wrapper">
+    <div v-if="article.image" class="cover-image" :style="{ backgroundImage: `url(${article.image})` }">
       <h1 class="article-title">{{ article.title }}</h1>
-      <div class="article-meta">
-        <span class="article-author">{{ article.author || 'Auteur inconnu' }}</span>
-        <span class="article-date">{{ formatDate(article._path) }}</span>
-        <span class="article-read-time">{{ estimateReadTime(article.body) }} min de lecture</span>
-      </div>
-    </header>
-    <div class="article-content">
-      <ContentDoc />
     </div>
-    <footer class="article-footer">
-      <NuxtLink to="/" class="back-to-articles">Retour à la liste des articles</NuxtLink>
-    </footer>
-  </article>
+    <article class="article-container">
+      <header class="article-header">
+        <div class="article-meta">
+          <span class="article-author">{{ article.author || 'Auteur inconnu' }}</span>
+          <span class="article-date">{{ formatDate(article._path) }}</span>
+          <span class="article-read-time">{{ estimateReadTime(article.body) }} min de lecture</span>
+        </div>
+      </header>
+      <div class="article-content">
+        <ContentDoc />
+      </div>
+      <footer class="article-footer">
+        <NuxtLink to="/" class="back-to-articles">Retour à la liste des articles</NuxtLink>
+      </footer>
+    </article>
+  </div>
 </template>
 
 <script setup>
@@ -30,6 +34,7 @@ useHead({
     { property: 'og:title', content: article.value.title },
     { property: 'og:description', content: article.value.description || 'Description par défaut' },
     { property: 'og:url', content: `https://votresite.com${route.path}` },
+    { property: 'og:image', content: article.value.image },
   ],
 })
 
@@ -53,18 +58,20 @@ function estimateReadTime(content) {
 <style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Sans+Pro:wght@400;600&display=swap');
 
-.article-container {
+.article-wrapper {
   background: white;
   font-family: 'Source Sans Pro', sans-serif;
-  max-width: 680px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
   color: #292929;
   line-height: 1.6;
 }
 
-.article-header {
-  margin-bottom: 2rem;
+.cover-image {
+  height: 20vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 2rem;
 }
 
 .article-title {
@@ -72,8 +79,18 @@ function estimateReadTime(content) {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.3;
-  margin-bottom: 1rem;
-  color: #292929;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.article-container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.article-header {
+  margin-bottom: 2rem;
 }
 
 .article-meta {

@@ -1,6 +1,6 @@
 ---
 title: "Adieu frais de rejet, bonjour transferts faciles et solde discret ! "
-image: "/images/articles/scam.webp"
+image: "/images/articles/djamo.webp"
 ---
 
 # Djamo : Adieu frais de rejet, bonjour transferts faciles et solde discret ! 🎉💃🏾

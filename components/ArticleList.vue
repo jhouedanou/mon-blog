@@ -4,7 +4,12 @@
             <div v-if="paginatedArticles.length" class="columns is-multiline">
                 <div v-for="article in paginatedArticles" :key="article._path"
                     class="is-4-desktop column is-4-desktop is-6-tablet is-12-mobile">
+
                     <div class="article-item p-4 m-3">
+                        <div v-if="article.image" class="cover-image"
+                            :style="{ backgroundImage: `url(${article.image})` }">
+                        </div>
+                        <br>
                         <h2 class="article-title">
                             <NuxtLink :to="article._path" class="article-link">{{ article.title }}</NuxtLink>
                         </h2>
@@ -70,6 +75,15 @@ function getExcerpt(article) {
 </script>
 
 <style lang="scss" scoped>
+.cover-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding: 2rem;
+}
+
 .article-list {
     font-family: 'Inter', sans-serif;
     padding: 2rem 0;
