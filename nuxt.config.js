@@ -11,7 +11,7 @@ export default defineNuxtConfig({
   ssr: true,
   nitro: {
     preset: 'vercel',
-    baseURL: "http://localhost:8000",
+    baseURL: "http://houedanou.com",
     prerender: {
       // crawlLinks: true,
       failOnError: false
