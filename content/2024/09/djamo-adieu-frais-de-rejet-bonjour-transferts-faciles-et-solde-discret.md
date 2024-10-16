@@ -1,3 +1,8 @@
+---
+title: "Adieu frais de rejet, bonjour transferts faciles et solde discret ! "
+image: "/images/articles/scam.webp"
+---
+
 # Djamo : Adieu frais de rejet, bonjour transferts faciles et solde discret ! 🎉💃🏾
 
 Djamo est une FinTech ivoirienne qui révolutionne les services bancaires en Afrique de l'Ouest (_oui, c'est possible, il n'y a pas que des brouteurs ou des adeptes du scam ici_). Cette société vient de dévoiler une mise à jour majeure de son application, apportant des améliorations significatives qui viennent, à mon avis, transformer l'expérience utilisateur.

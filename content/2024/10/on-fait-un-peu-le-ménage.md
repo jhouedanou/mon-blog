@@ -1,3 +1,8 @@
+---
+title: "On fait un peu le ménage."
+image: "/images/articles/menage-image.webp"
+---
+
 # On fait un peu le ménage.
 
 Cela faisait longtemps que je cherchais une bonne excuse pour me débarrasser de WordPress, au moins en tant que moteur de blog. J'ai, pendant longtemps, été un fervent défenseur de ce CMS, mais je dois reconnaître que je me sens de plus en plus mal à l'aise avec lui. Sa simplicité et la facilité à le modifier m'ont offert des possibilités infinies, mais certains points sont désespérants
@@ -25,3 +30,5 @@ Les prochaines étapes sont les suivantes :
 - m'attaquer à la question du **design** : car, oui, houedanou.com ne s'est jamais chargé aussi rapidement, mais il est franchement moche.
 
 À très bientôt.
+
+![Description de l'image](chemin/vers/image.jpg)
