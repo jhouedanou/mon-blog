@@ -1,9 +1,15 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-
-  devtools: { enabled: false },
+  devtools: { enabled: true },
   modules: ['@nuxt/content', '@nuxt/image'],  
-  ssr: true,    
+  ssr: true,
+  nitro: {
+    baseURL: "http://localhost:8000",
+    prerender: {
+      crawlLinks: true,
+      failOnError: false, 
+    },
+  },  
   content: {
     // Ajoutez cette ligne pour voir les logs de Nuxt Content
     documentDriven: true,
