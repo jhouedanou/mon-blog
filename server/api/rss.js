@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 export default defineEventHandler(async (event) => {
-  const feedUrl = 'https://feeds.feedburner.com/houedanou/mezt'
+  const feedUrl = 'https://jeanluchouedanou.blogspot.com/feeds/posts/default'
   try {
     const response = await axios.get(feedUrl)
     return response.data
