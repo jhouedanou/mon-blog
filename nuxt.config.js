@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
 
   devtools: { enabled: false },
-  modules: ['@nuxt/content', '@nuxt/image', 'nuxt-disqus'],  
+  modules: ['@nuxt/content', '@nuxt/image'],  
   ssr: true,    
   content: {
     // Ajoutez cette ligne pour voir les logs de Nuxt Content
@@ -12,12 +12,6 @@ export default defineNuxtConfig({
     'bulma/css/bulma.min.css',
     '@/assets/custom.scss',
   ],
-  modules: [    "@nuxt/image",
-"nuxt-disqus"],
-
-  disqus: {
-    shortname: 'houedanou'
-  },
   app: {
     pageTransition: { name: 'page', mode: 'out-in' }
   },
