@@ -1,17 +1,5 @@
 <template>
     <div class="layout">
-        <!-- <header class="header">
-            <div class="header-content">
-                <NuxtLink to="/" class="logo">VotreBlog</NuxtLink>
-                <nav class="nav">
-                    <NuxtLink to="/" class="nav-link">Accueil</NuxtLink>
-                    <NuxtLink to="/about" class="nav-link">À propos</NuxtLink>
-                    <a href="#" class="nav-link" @click.prevent="toggleDarkMode">
-                        {{ isDarkMode ? '☀️' : '🌙' }}
-                    </a>
-                </nav>
-            </div>
-        </header> -->
 
         <main class="main">
             <slot />

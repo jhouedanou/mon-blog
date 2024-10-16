@@ -1,20 +1,18 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  modules: [
-    '@nuxt/content' 
-  ],
+  modules: ['@nuxt/content', '@nuxt/image', 'nuxt-disqus'],
   css: [
     'bulma/css/bulma.min.css',
     '@/assets/custom.scss',
     'font-awesome/css/font-awesome.css'
   ],
-  modules: [
-    //'vue-disqus'
-  ],
-  // disqus: {
-  //   shortname: 'houedanou'
-  // },
+  modules: [    "@nuxt/image",
+"nuxt-disqus"],
+
+  disqus: {
+    shortname: 'houedanou'
+  },
   app: {
     pageTransition: { name: 'page', mode: 'out-in' }
   },

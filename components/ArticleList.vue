@@ -1,34 +1,84 @@
 <template>
-    <div class="article-list is-flex flex-column align-items-center justify-center is-justify-content-center">
+    <div v-if="loading" class="spinner">
+        <div class="spinner-circle"></div>
+    </div>
+    <div v-else class="article-list is-flex flex-column align-items-center justify-center is-justify-content-center">
         <div class="article-list-container container">
-            <div v-if="articles && articles.length" class="columns is-multiline">
-                <div v-for="article in articles" :key="article._path"
-                    class="article-item is-4-desktop column is-6-tablet is-12-mobile p-4 m-3">
-                    <h2 class="article-title">
-                        <NuxtLink :to="article._path" class="article-link">{{ article.title }}</NuxtLink>
-                    </h2>
-                    <p class="article-date">{{ formatDate(article._path) }}</p>
-                    <p class="article-excerpt" v-html="getExcerpt(article)"></p>
-
-                    <NuxtLink :to="article._path" class="read-more">Lire plus</NuxtLink>
+            <div v-if="displayedArticles.length" class="columns is-multiline">
+                <div v-for="article in displayedArticles" :key="article._path"
+                    class="is-4-desktop column is-6-tablet is-12-mobile">
+                    <div class="article-item p-4 m-3">
+                        <h2 class="article-title">
+                            <NuxtLink :to="article._path" class="article-link">{{ article.title }}</NuxtLink>
+                        </h2>
+                        <p class="article-date">{{ formatDate(article) }}</p>
+                        <p class="article-excerpt" v-html="getExcerpt(article)"></p>
+                        <NuxtLink :to="article._path" class="read-more">Lire plus</NuxtLink>
+                    </div>
                 </div>
             </div>
             <p v-else class="no-articles">Aucun article trouvé.</p>
         </div>
+        <div v-if="hasMoreArticles" ref="loadMoreTrigger" class="load-more">Chargement...</div>
     </div>
 </template>
 
 <script setup>
+import { ref, onMounted, computed } from 'vue'
 import { useAsyncData } from '#app'
+import { useFetchRSS } from "@/composables/useFetchRSS"
+import { useIntersectionObserver } from '@vueuse/core'
 
+const { feedItems, error, fetchRSS } = useFetchRSS()
 
-const { data: articles } = await useAsyncData('articles', async () => {
-    const fetchedArticles = await queryContent().sort({ _path: -1 }).find()
-    return fetchedArticles || []
+const loading = ref(true)
+const pageSize = 10
+const currentPage = ref(1)
+const allArticles = ref([])
+const loadMoreTrigger = ref(null)
+
+const fetchArticles = async () => {
+    try {
+        loading.value = true
+        const { data: contentArticles } = await useAsyncData('contentArticles', () =>
+            queryContent().sort({ _path: -1 }).limit(25).find()
+        )
+        await fetchRSS('https://feeds.feedburner.com/houedanou/mezt')
+
+        allArticles.value = [...(contentArticles || []), ...feedItems.value].sort((a, b) => {
+            const dateA = new Date(a.pubDate || a._path)
+            const dateB = new Date(b.pubDate || b._path)
+            return dateB - dateA
+        })
+    } catch (error) {
+        console.error('Erreur lors de la récupération des articles:', error)
+    } finally {
+        loading.value = false
+    }
+}
+
+onMounted(fetchArticles)
+
+const displayedArticles = computed(() => {
+    const start = 0
+    const end = currentPage.value * pageSize
+    return allArticles.value.slice(start, end)
 })
-console.log(articles.value)
-function formatDate(path) {
-    const match = path.match(/\/(\d{4})\/(\d{2})\//)
+
+const hasMoreArticles = computed(() => displayedArticles.value.length < allArticles.value.length)
+
+useIntersectionObserver(loadMoreTrigger, ([{ isIntersecting }]) => {
+    if (isIntersecting && hasMoreArticles.value) {
+        currentPage.value++
+    }
+})
+
+function formatDate(article) {
+    if (article.pubDate) {
+        const date = new Date(article.pubDate)
+        return `${date.getMonth() + 1}/${date.getFullYear()}`
+    }
+    const match = article._path.match(/\/(\d{4})\/(\d{2})\//)
     if (match) {
         const [, year, month] = match
         return `${month}/${year}`
@@ -117,5 +167,38 @@ h2 {
     color: #555;
     line-height: 1.4;
     margin-bottom: 1.5rem;
+}
+
+.spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.spinner-circle {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.load-more {
+    text-align: center;
+    padding: 1rem;
+    font-style: italic;
+    color: #757575;
 }
 </style>
