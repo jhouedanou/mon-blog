@@ -6,7 +6,7 @@
           <h1 class="title">
 
             <NuxtLink to="/">
-              <img alt="le Blog de Jean Luc Houédanou" src="/images/1837389.jpeg" height="320">
+              <img alt="le Blog de Jean Luc Houédanou" src="/images/1837389.webp" height="320">
             </NuxtLink>
           </h1>
         </div>
