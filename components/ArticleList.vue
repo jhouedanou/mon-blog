@@ -1,7 +1,7 @@
 <template>
     <div class="article-list is-flex flex-column align-items-center justify-center is-justify-content-center">
         <div class="article-list-container container">
-            <div v-if="articles.length" class="columns is-multiline">
+            <div v-if="articles && articles.length" class="columns is-multiline">
                 <div v-for="article in articles" :key="article._path"
                     class="article-item is-4-desktop column is-6-tablet is-12-mobile p-4 m-3">
                     <h2 class="article-title">
@@ -22,9 +22,10 @@
 import { useAsyncData } from '#app'
 
 
-const { data: articles } = await useAsyncData('articles', () =>
-    queryContent().sort({ _path: -1 }).find()
-)
+const { data: articles } = await useAsyncData('articles', async () => {
+    const fetchedArticles = await queryContent().sort({ _path: -1 }).find()
+    return fetchedArticles || []
+})
 console.log(articles.value)
 function formatDate(path) {
     const match = path.match(/\/(\d{4})\/(\d{2})\//)
