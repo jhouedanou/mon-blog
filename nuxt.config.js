@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   modules: ['@nuxt/content', '@nuxt/image'],  
   ssr: true,
   nitro: {
+    preset: 'vercel',
     baseURL: "http://localhost:8000",
     prerender: {
       crawlLinks: true,
