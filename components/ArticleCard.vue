@@ -1,5 +1,6 @@
 <template>
     <article class="article-card">
+        <img v-if="article.image" :src="article.image" :alt="article.title" class="article-image">
         <h2 class="article-title">{{ formatTitle(article.title) }}</h2>
         <div class="article-meta">
             <span class="article-date">{{ formatDate(article._path) }}</span>
@@ -75,9 +76,16 @@ function getNetworkIcon(network) {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@400;600;700&display=swap');
 
+.article-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
 
 .article-card {
     font-family: 'Inter', sans-serif;

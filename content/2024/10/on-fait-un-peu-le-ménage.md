@@ -30,5 +30,3 @@ Les prochaines étapes sont les suivantes :
 - m'attaquer à la question du **design** : car, oui, houedanou.com ne s'est jamais chargé aussi rapidement, mais il est franchement moche.
 
 À très bientôt.
-
-![Description de l'image](chemin/vers/image.jpg)
