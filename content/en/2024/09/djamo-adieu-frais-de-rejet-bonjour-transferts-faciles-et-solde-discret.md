@@ -1,39 +1,39 @@
 ---
-title: "Adieu frais de rejet, bonjour transferts faciles et solde discret ! "
+title: "Djamo: Goodbye Rejection Fees, Hello Easy Transfers and Discreet Balance! "
 image: "/images/articles/djamo.jpeg"
 createdAt: "2024-05-09"
 ---
 
-# Djamo : Adieu frais de rejet, bonjour transferts faciles et solde discret ! 🎉💃🏾
+# Djamo: Goodbye Rejection Fees, Hello Easy Transfers and Discreet Balance! 🎉💃🏾
 
-Djamo est une FinTech ivoirienne qui révolutionne les services bancaires en Afrique de l'Ouest (_oui, c'est possible, il n'y a pas que des brouteurs ou des adeptes du scam ici_). Cette société vient de dévoiler une mise à jour majeure de son application, apportant des améliorations significatives qui viennent, à mon avis, transformer l'expérience utilisateur.
+Djamo is an Ivorian FinTech revolutionizing banking services in West Africa (yes, it's possible, there aren't just scammers here). This company has just unveiled a major update to its application, bringing significant improvements that, in my opinion, transform the user experience.
 
-Voici celles qui ont retenu mon attention.
+Here are the ones that caught my attention.
 
-## **Adieu aux frais de rejet !**
+## **Goodbye to rejection fees!**
 
-La première grande nouveauté, et non des moindres, est la **suppression des frais de rejet**. Jusqu'à présent, lorsqu'une transaction était refusée en raison d'un solde insuffisant, les utilisateurs devaient s'acquitter de 200 FCFA de frais supplémentaires. Cela peut sembler anodin, mais certains fournisseurs essaient de facturer plusieurs fois en cas de tentative infructueuse de paiement, ce qui peut amenuiser de façon significative le solde de votre carte lors du chargement.
+The first big news, and not the least, is the **elimination of rejection fees**. Until now, when a transaction was refused due to insufficient funds, users had to pay an additional 200 FCFA fee. This may seem trivial, but some providers try to charge multiple times in case of an unsuccessful payment attempt, which can significantly reduce your card balance when loading.
 
-Avec cette mise à jour, ces frais appartiennent désormais au passé. C'est une bonne nouvelle.
+With this update, these fees are now a thing of the past. This is good news.
 
-**Il est important de noter que cette suppression des frais de rejet ne doit pas être considérée comme un blanc-seing pour une utilisation irresponsable de la carte**. Je vous encourage à utiliser votre compte de manière prudente et réfléchie et surtout à pla-ni-fier vos dépenses : l'idée ici est, à mon avis, de simplifier la vie aux utilisateurs.
+**It's important to note that this elimination of rejection fees should not be seen as a free pass for irresponsible card use**. I encourage you to use your account carefully and thoughtfully and especially to plan your expenses: the idea here is, in my opinion, to simplify life for users.
 
-## **Transferts Orange Money simplifiés**
+## **Simplified Orange Money transfers**
 
-La deuxième amélioration concerne les transferts d'argent via Orange Money. Là où il fallait auparavant passer par une procédure fastidieuse (soit en générant des codes de paiement, par l'app ou par le biais de codes USSD), le processus est considérablement simplifié.
+The second improvement concerns money transfers via Orange Money. Where previously you had to go through a tedious procedure (either by generating payment codes, through the app or via USSD codes), the process is considerably simplified.
 
-Les utilisateurs peuvent dorénavant effectuer des transferts directement d'une application à l'autre, sans avoir à jongler entre différentes syntaxes : le transfert se fait en deux écrans, celui de Djamo où vous précisez le montant à transférer, et celui de l'app mobile Orange Money où vous validez la transaction.
+Users can now make transfers directly from one application to another, without having to juggle between different syntaxes: the transfer is done in two screens, the Djamo one where you specify the amount to transfer, and the Orange Money mobile app one where you validate the transaction.
 
-Cette intégration plus poussée promet de rendre les transferts d'argent plus rapides, plus simples et moins sujets aux erreurs.
+This deeper integration promises to make money transfers faster, simpler, and less prone to errors.
 
-## **Cacher son solde**
+## **Hide your balance**
 
-L'un des secrets pour atteindre le bonheur et la longévité en Afrique m'a été donné il y a une dizaine d'années par un mentor, dans ces termes :
+One of the secrets to achieving happiness and longevity in Africa was given to me about ten years ago by a mentor, in these terms:
 
-_« Petit frère… **On ne joue pas avec les secrets de l'argent.** Ne laisse jamais personne en dehors de tes parents proches — excluant donc tes collaborateurs, tes amis et le reste du monde – savoir combien tu gagnes ou quels sont tes moyens. »_
+_"Little brother... **We don't play with money secrets.** Never let anyone outside your close parents — thus excluding your collaborators, your friends, and the rest of the world – know how much you earn or what your means are."_
 
-Cette sagesse souligne l'importance de la discrétion financière, un aspect que Djamo semble avoir bien compris en introduisant l'option de cacher son solde.
+This wisdom underlines the importance of financial discretion, an aspect that Djamo seems to have well understood by introducing the option to hide one's balance.
 
-Plus sérieusement, ces innovations montrent que Djamo comprend vraiment les besoins de ses utilisateurs, des petits tracas quotidiens aux grands défis financiers. J'espère sincèrement que les autres acteurs du secteur s'inspireront de cette dynamique pour nous simplifier la vie.
+More seriously, these innovations show that Djamo really understands the needs of its users, from small daily hassles to big financial challenges. I sincerely hope that other players in the sector will be inspired by this dynamic to simplify our lives.
 
 [Jean Luc Houedanou](https://houedanou.com)

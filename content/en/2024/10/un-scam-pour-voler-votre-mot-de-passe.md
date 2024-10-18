@@ -1,35 +1,35 @@
 ---
-title: "Une arnaque imitant facebook afin de vous voler votre mot de passe"
+title: "A scam imitating Facebook to steal your password"
 image: "/images/articles/scam.jpeg"
 createdAt: "2024-04-10"
 ---
 
-# Une arnaque imitant facebook afin de vous voler votre mot de passe
+# A scam imitating Facebook to steal your password
 
-Il vous est sûrement déjà arrivé de recevoir un message étrange sur WhatsApp, contenant des liens et un appel à l’action immédiate, menaçant de fermer votre compte Facebook si vous ne réagissez pas rapidement.
+You've probably already received a strange message on WhatsApp, containing links and a call for immediate action, threatening to close your Facebook account if you don't react quickly.
 
-Ces messages ne viennent pas de Facebook : si vous cliquez sur les liens et entrez vos identifiants de connexion, vous risquez de vous faire voler votre compte.
+These messages don't come from Facebook: if you click on the links and enter your login credentials, you risk having your account stolen.
 
-Dans cet article, je vous explique comment reconnaître l’arnaque.
+In this article, I'll explain how to recognize the scam.
 
-## Qu’est-ce que le phishing ?
+## What is phishing?
 
-Le phishing est une méthode utilisée par des arnaqueurs qui vous envoient des messages ressemblant à des notifications officielles, comme celles de Facebook, pour vous tromper.
+Phishing is a method used by scammers who send you messages that look like official notifications, such as those from Facebook, to trick you.
 
-Par exemple, le lien n’est pas un site officiel de Facebook. Ce lien vous conduit à partager des informations sensibles, comme votre mot de passe ou un code, qui, une fois entre les mains des arnaqueurs, leur permettent de voler votre compte.
+For example, the link is not an official Facebook site. This link leads you to share sensitive information, such as your password or a code, which, once in the hands of scammers, allows them to steal your account.
 
-Voici comment fonctionne l’arnaque :
+Here's how the scam works:
 
-1.  Vous recevez un message WhatsApp vous informant que votre compte Facebook va être bloqué pour non-respect des normes de la communauté.
-2.  On vous fournit un lien pour vérifier vos informations. Ne sachant pas qu’il s’agit d’une arnaque, vous cliquez et entrez vos identifiants.
-3.  Ensuite, vous recevez un code par SMS à entrer sur le site frauduleux.
-4.  Heureusement, Facebook peut vous envoyer une alerte vous avertissant qu’une tentative de connexion suspecte a eu lieu. Vous parvenez à changer votre mot de passe juste à temps.
+1. You receive a WhatsApp message informing you that your Facebook account will be blocked for violating community standards.
+2. You're provided with a link to verify your information. Not knowing it's a scam, you click and enter your credentials.
+3. Then, you receive a code by SMS to enter on the fraudulent site.
+4. Fortunately, Facebook can send you an alert warning you that a suspicious login attempt has occurred. You manage to change your password just in time.
 
-_Je dois reconnaître que même si Facebook n’est peut-être pas mon site préféré, leur système de sécurité est assez performant._
+_I must admit that even if Facebook may not be my favorite site, their security system is quite effective._
 
-## Que faire si vous recevez ce genre de message ?
+## What to do if you receive this kind of message?
 
-1.  **Ne cliquez pas sur le lien !** Même si cela semble urgent ou officiel, il s’agit d’une arnaque.
-2.  **Ne donnez jamais votre mot de passe ou un code de connexion.** Facebook ne vous demandera jamais ces informations via WhatsApp.
-3.  **Changez immédiatement votre mot de passe** si vous avez cliqué ou partagé vos informations.
-4.  **Bloquez et signalez le numéro** qui vous a envoyé le message. Sur WhatsApp, vous pouvez signaler ces messages pour éviter que d’autres personnes ne tombent dans le piège.
+1. **Don't click on the link!** Even if it seems urgent or official, it's a scam.
+2. **Never give your password or a login code.** Facebook will never ask for this information via WhatsApp.
+3. **Immediately change your password** if you have clicked or shared your information.
+4. **Block and report the number** that sent you the message. On WhatsApp, you can report these messages to prevent other people from falling into the trap.

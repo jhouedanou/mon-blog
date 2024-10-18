@@ -1,39 +1,39 @@
 ---
-title: "Ghostwriter, l'iA Writer de Linux"
+title: "Ghostwriter, the iA Writer of Linux"
 image: "/images/articles/mockup.png"
 createdAt: "2024-18-10"
 ---
 
-# Ghostwriter, l'iA Writer de Linux
+# Ghostwriter, the iA Writer of Linux
 
-Changer de moteur de blog m'a permis de :
+Changing my blog engine allowed me to:
 
-1. (Re)découvrir le langage Markdown
-2. Dépoussiérer mes environnements d'écriture sans distractions, comme OmmWriter ou iA Writer
+1. (Re)discover the Markdown language
+2. Dust off my distraction-free writing environments, like OmmWriter or iA Writer
 
-## iA Writer : le meilleur éditeur Markdown ?
+## iA Writer: the best Markdown editor?
 
-À mon avis, iA Writer est le meilleur éditeur Markdown au monde. Voici pourquoi :
+In my opinion, iA Writer is the best Markdown editor in the world. Here's why:
 
-- Son interface utilisateur est exempte de distractions inutiles, avec un point d'insertion bleu distinctif.
-- Il propose un mode 'focus' qui met en exergue la ligne, la phrase ou le paragraphe en cours d'écriture, assombrissant le reste du texte.
-- iA Writer est conçu pour que l'attention de l'utilisateur soit centrée sur le texte, et non sur l'interface utilisateur ou la mise en forme.
+- Its user interface is free from unnecessary distractions, with a distinctive blue insertion point.
+- It offers a 'focus' mode that highlights the current line, sentence, or paragraph being written, dimming the rest of the text.
+- iA Writer is designed to keep the user's attention centered on the text, not on the user interface or formatting.
 
-Cependant, iA Writer n'est compatible qu'avec les systèmes d'exploitation Windows et macOS au moment où j'écris ces lignes.
+However, iA Writer is only compatible with Windows and macOS operating systems at the time of writing.
 
-## À la recherche d'une alternative pour Linux
+## Searching for an alternative for Linux
 
-Mon ordinateur principal est une tablette hybride HP Pro x2 fonctionnant sous Linux (plus précisément la dernière version de Zorin OS Pro). En cherchant une alternative à iA Writer, j'ai découvert [Ghostwriter](https://ghostwriter.kde.org/ "Ghostwriter").
+My main computer is an HP Pro x2 hybrid tablet running Linux (specifically the latest version of Zorin OS Pro). While looking for an alternative to iA Writer, I discovered [Ghostwriter](https://ghostwriter.kde.org/ "Ghostwriter").
 
-## Ghostwriter : un concurrent sérieux
+## Ghostwriter: a serious competitor
 
-Cette application gratuite reprend mes fonctionnalités préférées d'iA Writer :
+This free application incorporates my favorite features from iA Writer:
 
-- Le fameux point d'insertion bleu
-- Un mode focus similaire à celui d'iA Writer
-- Une vérification orthographique intégrée
+- The famous blue insertion point
+- A focus mode similar to iA Writer's
+- Integrated spell checking
 
-Pour faire fonctionner la vérification orthographique en français, il faut installer hunspell-fr avec la commande suivante :
+To make spell checking work in French, you need to install hunspell-fr with the following command:
 
 ```bash
 sudo apt-get install hunspell-fr
@@ -41,4 +41,4 @@ sudo apt-get install hunspell-fr
 
 ## Conclusion
 
-Bien qu'iA Writer reste une référence dans le domaine des éditeurs Markdown, Ghostwriter s'avère être une excellente alternative pour les utilisateurs Linux. Il offre une expérience d'écriture sans distraction similaire à iA Writer, tout en étant gratuit et open-source. Pour les écrivains, blogueurs ou tout utilisateur à la recherche d'un environnement d'écriture épuré et efficace sous Linux, Ghostwriter mérite certainement d'être essayé.
+Although iA Writer remains a reference in the field of Markdown editors, Ghostwriter proves to be an excellent alternative for Linux users. It offers a distraction-free writing experience similar to iA Writer, while being free and open-source. For writers, bloggers, or any user looking for a clean and efficient writing environment on Linux, Ghostwriter is certainly worth trying.

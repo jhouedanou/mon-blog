@@ -6,28 +6,28 @@ createdAt: "2024-05-10"
 
 # Doing some cleanup
 
-Cela faisait longtemps que je cherchais une bonne excuse pour me débarrasser de WordPress, au moins en tant que moteur de blog. J'ai, pendant longtemps, été un fervent défenseur de ce CMS, mais je dois reconnaître que je me sens de plus en plus mal à l'aise avec lui. Sa simplicité et la facilité à le modifier m'ont offert des possibilités infinies, mais certains points sont désespérants
+I had been looking for a good excuse to get rid of WordPress, at least as a blog engine, for a long time. For a long time, I was a fervent defender of this CMS, but I must admit that I feel increasingly uncomfortable with it. Its simplicity and ease of modification offered me infinite possibilities, but some points are disheartening:
 
-- Il ya beaucoup de trop de vulnérabilités,
-- l'avenir du CMS qui dépend de plus en plus du bon vouloir de ses créateurs qui retirent des autorisations de mises à jour de plugins essentiels en fonction de leur bonne relation avec leur créateur,
-- Je reviens encore, sur les des failles de sécurité non patchées, et ce près d'une année après leur découverte .
+There are far too many vulnerabilities,
+The future of the CMS depends more and more on the goodwill of its creators who withdraw update permissions for essential plugins based on their good relationship with their creator,
+I come back again to the unpatched security flaws, nearly a year after their discovery.
 
-Qui plus est, après un an d'utilisation de VueJS et Nuxt, ces technologies m'ont convaincu de franchir le pas. J'ai donc décidé, en début de semaine passée, de tout recommencer avec une configuration un peu exotique :
+Moreover, after a year of using VueJS and Nuxt, these technologies convinced me to take the plunge. So I decided, at the beginning of last week, to start all over again with a somewhat exotic configuration:
 
-1.  \- un flux RSS sur Feedburner, provenant de mon blog backup jhouedanou.blogspot.com;
-2.  \- un frontend en Nuxt 3;
-3.  \- le tout hébergé sur Vercel.
+an RSS feed on Feedburner, coming from my backup blog jhouedanou.blogspot.com;
 
-Je me suis ensuite rendu compte du caractère expérimental et hétéroclite de ce projet, et je me suis dit que je pourrais faire mieux.
-La nouvelle configuration est donc la suivante : Tout sur Nuxt (et NuxContent). Le contenu de ce blog sera généré à partir de fichiers Markdown, et le tout tournera sur hébergé sur Vercel.
+a frontend in Nuxt 3;
 
-Je ferais la migration de certains articles dans le futur.
+all hosted on Vercel.
 
-Les prochaines étapes sont les suivantes :
+I then realized the experimental and heterogeneous nature of this project, and I thought I could do better.
+The new configuration is therefore as follows: Everything on Nuxt (and NuxContent). The content of this blog will be generated from Markdown files, and everything will run hosted on Vercel.
+I will migrate some articles in the future.
+The next steps are as follows:
 
-- intégrer Open Graph ainsi qu'un moyen de partage, tel ShareIt ;
-- trouver une API pour générer les images d'articles : *DALL-E* demande une carte bancaire introuvable en Côte d'Ivoire, et pour une raison inconnue, l'API de Pexels me propose des images qui n'ont rien avoir avec le contenu - par exemple, femmes à moitié nues afin d'illustrer l'article sur Djamo.  
-   *Le salut viendra probablement de Unsplash*;
-- m'attaquer à la question du **design** : car, oui, houedanou.com ne s'est jamais chargé aussi rapidement, mais il est franchement moche.
+integrate Open Graph as well as a means of sharing, such as ShareIt;
+find an API to generate article images: DALL-E requires a credit card unavailable in Ivory Coast, and for an unknown reason, the Pexels API offers me images that have nothing to do with the content - for example, half-naked women to illustrate the article on Djamo.
+Salvation will probably come from Unsplash;
+tackle the question of design: because, yes, houedanou.com has never loaded so quickly, but it's frankly ugly.
 
-À très bientôt.
+See you soon.
