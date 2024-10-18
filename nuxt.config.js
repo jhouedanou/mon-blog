@@ -3,7 +3,21 @@ export default defineNuxtConfig({
   target: 'static',
 
   devtools: { enabled: false },
-  modules: ['@nuxt/content', '@nuxt/image'],  
+  modules: ['@nuxt/content', '@nuxt/image',
+    '@nuxtjs/sitemap'
+],  
+  
+  sitemap: {
+  hostname: 'https://houedanou.com',
+  gzip: true,
+  routes: async () => {
+    const { $content } = require('@nuxt/content')
+    const articles = await $content().fetch()
+    return articles.map(article => article.path)
+  }
+},
+
+  
   image: {
     quality: 80,
     format: ['webp', 'jpg']
