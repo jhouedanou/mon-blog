@@ -1,20 +1,22 @@
 <template>
     <div class="article-list is-flex flex-column align-items-center justify-center is-justify-content-center">
-        <div class="container">
-            <div class="columns">
-                <div class="column is-12">
-                    <div class="language-switch">
-                        <NuxtLink v-for="locale in $i18n.locales" :key="locale.code" :to="localePath('/', locale.code)">
-                            {{ locale.code.toUpperCase() }}
-                        </NuxtLink>
+
+        <div class="article-list-container container">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-12">
+                        <div class="language-switch">
+                            <NuxtLink v-for="locale in $i18n.locales" :key="locale.code"
+                                :to="localePath('/', locale.code)">
+                                {{ locale.code.toUpperCase() }}
+                            </NuxtLink>
 
 
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="article-list-container container">
             <div v-if="paginatedArticles.length" class="columns is-multiline">
                 <div v-for="article in paginatedArticles" :key="article._path"
                     class="is-4-desktop column is-4-desktop is-6-tablet is-12-mobile">
