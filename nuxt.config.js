@@ -3,21 +3,26 @@ export default defineNuxtConfig({
   target: 'static',
 
   devtools: { enabled: false },
-  modules: ['@nuxt/content', '@nuxt/image',
-    '@nuxtjs/sitemap'
+  modules: [
+    '@nuxt/content', 
+    '@nuxt/image',
+    '@nuxtjs/sitemap',
+    //'@nuxtjs/google-analytics'
 ],  
-  
+// googleAnalytics: {
+//     id: 'G-S9CE9WX6K5' // Remplacez par votre propre ID de suivi
+//   }  ,
   sitemap: {
-  hostname: 'https://houedanou.com',
-  gzip: true,
-  routes: async () => {
-    const { $content } = require('@nuxt/content')
-    const articles = await $content().fetch()
-    return articles.map(article => article.path)
-  }
-},
+    hostname: 'https://houedanou.com',
+    gzip: true,
+    routes: async () => {
+      const articles = await queryContent()
+        .sort({ createdAt: -1 }) // Tri par date de création décroissante
+        .find()
 
-  
+      return articles.map(article => article._path)
+    }
+  },  
   image: {
     quality: 80,
     format: ['webp', 'jpg']
