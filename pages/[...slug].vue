@@ -6,10 +6,10 @@
     <article class="article-container">
       <header class="article-header">
         <div class="article-meta">
-          <div class="language-switch">
+          <!-- <div class="language-switch">
             <NuxtLink :to="switchLocalePath('fr')" class="lang-link">FR</NuxtLink>
             <NuxtLink :to="switchLocalePath('en')" class="lang-link">EN</NuxtLink>
-          </div>
+          </div> -->
           <!-- <span class="article-author">{{ article.author || 'Auteur inconnu' }}</span> -->
           <span class="article-date">{{ formatDate(article._path) }}</span>
           <span class="article-read-time">{{ estimateReadTime(article.body) }} min de lecture</span>

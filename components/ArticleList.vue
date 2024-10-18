@@ -1,13 +1,15 @@
 <template>
     <div class="article-list is-flex flex-column align-items-center justify-center is-justify-content-center">
-        <div class="columns">
-            <div class="column is-12">
-                <div class="language-switch">
-                    <NuxtLink v-for="locale in $i18n.locales" :key="locale.code" :to="localePath('/', locale.code)">
-                        {{ locale.code.toUpperCase() }}
-                    </NuxtLink>
+        <div class="container">
+            <div class="columns">
+                <div class="column is-12">
+                    <div class="language-switch">
+                        <NuxtLink v-for="locale in $i18n.locales" :key="locale.code" :to="localePath('/', locale.code)">
+                            {{ locale.code.toUpperCase() }}
+                        </NuxtLink>
 
 
+                    </div>
                 </div>
             </div>
         </div>
