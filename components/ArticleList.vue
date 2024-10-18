@@ -1,5 +1,17 @@
 <template>
     <div class="article-list is-flex flex-column align-items-center justify-center is-justify-content-center">
+        <div class="columns">
+            <div class="column is-12">
+                <div class="language-switch">
+                    <NuxtLink v-for="locale in $i18n.locales" :key="locale.code" :to="localePath('/', locale.code)">
+                        {{ locale.code.toUpperCase() }}
+                    </NuxtLink>
+
+
+                </div>
+            </div>
+        </div>
+
         <div class="article-list-container container">
             <div v-if="paginatedArticles.length" class="columns is-multiline">
                 <div v-for="article in paginatedArticles" :key="article._path"
@@ -11,21 +23,22 @@
                         </div>
                         <br>
                         <h2 class="article-title">
-                            <NuxtLink :to="article._path" class="article-link">{{ article.title }}</NuxtLink>
+                            <NuxtLink :to="localePath(article._path)" class="article-link">{{ article.title }}
+                            </NuxtLink>
                         </h2>
                         <p class="article-date">{{ formatDate(article._path) }}</p>
                         <p class="article-excerpt" v-html="getExcerpt(article)"></p>
-                        <NuxtLink :to="article._path" class="read-more">Lire plus</NuxtLink>
+                        <NuxtLink :to="localePath(article._path)" class="read-more">{{ $t('readMore') }}</NuxtLink>
                     </div>
                 </div>
             </div>
-            <p v-else class="no-articles">Aucun article trouvé.</p>
+            <p v-else class="no-articles">{{ $t('noArticles') }}</p>
             <!-- pagination -->
             <nav class="pagination is-centered" role="navigation" aria-label="pagination">
-                <a class="pagination-previous" @click="changePage(currentPage - 1)"
-                    :disabled="currentPage === 1">Précédent</a>
+                <a class="pagination-previous" @click="changePage(currentPage - 1)" :disabled="currentPage === 1">{{
+                    $t('previous') }}</a>
                 <a class="pagination-next" @click="changePage(currentPage + 1)"
-                    :disabled="currentPage === totalPages">Suivant</a>
+                    :disabled="currentPage === totalPages">{{ $t('next') }}</a>
                 <ul class="pagination-list">
                     <li v-for="page in totalPages" :key="page">
                         <a class="pagination-link" :class="{ 'is-current': page === currentPage }"
@@ -40,11 +53,16 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { useAsyncData } from '#app'
+import { useI18n } from 'vue-i18n'
+import { useLocalePath } from '#i18n'
+
+const localePath = useLocalePath()
+const { locale, t } = useI18n()
 const currentPage = ref(1)
 const articlesPerPage = 9
 const { data: articles } = await useAsyncData('articles', () =>
-    queryContent()
-        .sort({ createdAt: -1 }) // Tri par date de création décroissante
+    queryContent(locale.value)
+        .sort({ createdAt: -1 })
         .find()
 )
 const paginatedArticles = computed(() => {
@@ -53,10 +71,6 @@ const paginatedArticles = computed(() => {
     return articles.value.slice(start, end)
 })
 const totalPages = computed(() => Math.ceil(articles.value.length / articlesPerPage))
-
-// console.log(articles.value.length);
-// console.log(articlesPerPage);
-// console.log(totalPages.value);
 
 function changePage(page) {
     currentPage.value = page
@@ -67,7 +81,7 @@ function formatDate(path) {
         const [, year, month] = match
         return `${month}/${year}`
     }
-    return 'Date inconnue'
+    return t('unknownDate')
 }
 
 function getExcerpt(article) {
@@ -187,5 +201,26 @@ h2 {
     background-color: #03a87c;
     border-color: #03a87c;
     border: none !important
+}
+
+.language-switch {
+    margin-bottom: 2rem;
+    text-align: center;
+
+    a {
+        margin: 0 0.5rem;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        color: #666;
+        font-weight: 600;
+        transition: color 0.3s ease, background-color 0.3s ease;
+        border-radius: 4px;
+
+        &:hover,
+        &.nuxt-link-active {
+            color: #fff;
+            background-color: #018f69;
+        }
+    }
 }
 </style>

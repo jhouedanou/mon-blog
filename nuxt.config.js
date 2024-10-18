@@ -7,11 +7,20 @@ export default defineNuxtConfig({
     '@nuxt/content', 
     '@nuxt/image',
     '@nuxtjs/sitemap',
+    '@nuxtjs/i18n'
     //'@nuxtjs/google-analytics'
 ],  
-// googleAnalytics: {
-//     id: 'G-S9CE9WX6K5' // Remplacez par votre propre ID de suivi
-//   }  ,
+i18n: {
+  baseUrl: 'https://houedanou.com',
+  defaultLocale: 'fr',
+  detectBrowserLanguage: false,
+  strategy: 'prefix_except_default',
+  locales: [
+    { code: 'en', iso: 'en-US', file: 'en-US.js' },
+    { code: 'fr', iso: 'fr-FR', file: 'fr-FR.js' }
+  ],
+}
+,
   sitemap: {
     hostname: 'https://houedanou.com',
     gzip: true,

@@ -6,6 +6,10 @@
     <article class="article-container">
       <header class="article-header">
         <div class="article-meta">
+          <div class="language-switch">
+            <NuxtLink :to="switchLocalePath('fr')" class="lang-link">FR</NuxtLink>
+            <NuxtLink :to="switchLocalePath('en')" class="lang-link">EN</NuxtLink>
+          </div>
           <!-- <span class="article-author">{{ article.author || 'Auteur inconnu' }}</span> -->
           <span class="article-date">{{ formatDate(article._path) }}</span>
           <span class="article-read-time">{{ estimateReadTime(article.body) }} min de lecture</span>
@@ -24,8 +28,15 @@
 <script setup>
 import { useHead } from '@unhead/vue'
 import { useRoute } from 'vue-router'
+import { useI18n } from 'vue-i18n'
+import { useLocalePath, useSwitchLocalePath } from '#i18n'
 
 const route = useRoute()
+const { locale } = useI18n()
+const localePath = useLocalePath()
+
+const switchLocalePath = useSwitchLocalePath()
+
 const { data: article } = await useAsyncData('article', () => queryContent(route.path).findOne())
 
 useHead({
@@ -66,7 +77,6 @@ function estimateReadTime(content) {
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
-
 }
 
 .article-wrapper {
@@ -129,7 +139,21 @@ function estimateReadTime(content) {
   font-weight: 600;
 }
 
+.language-switch {
+  display: flex;
+  gap: 0.5rem;
+}
 
+.lang-link {
+  color: #03a87c;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #018f69;
+  }
+}
 
 .article-content :deep(h2) {
   font-family: 'Merriweather', serif;

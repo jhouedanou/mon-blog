@@ -1,5 +1,7 @@
 <template>
   <NuxtLayout>
+    <NuxtLoadingIndicator />
+
     <header class="hero is-primary is-bold">
       <div class="hero-body">
         <div class="container">

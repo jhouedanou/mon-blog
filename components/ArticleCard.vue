@@ -1,28 +1,24 @@
 <template>
     <article class="article-card">
-
+        <!-- <div class="language-switch">
+            <nuxt-link v-for="locale in $i18n.locales" :key="locale.code"
+                :to="localePath(switchLocalePath(locale.code))">
+                {{ locale.name }}
+            </nuxt-link>
+        </div> -->
         <h2 class="article-title">{{ formatTitle(article.title) }}</h2>
         <div class="article-meta">
             <span class="article-date">{{ formatDate(article._path) }}</span>
-            <span class="article-read-time">{{ estimateReadTime(article.content) }} min read</span>
         </div>
         <div class="article-content" v-html="article.body?.html || article.description"></div>
 
-        <div class="article-actions">
-            <NuxtLink :to="article._path" class="read-more">Lire plus</NuxtLink>
-            <div class="share-buttons">
-                <button v-for="network in networks" :key="network" class="share-network-button"
-                    @click="shareArticle(network)">
-                    <span class="icon">{{ getNetworkIcon(network) }}</span>
-                </button>
-            </div>
-        </div>
     </article>
 </template>
 
 <script setup>
 import { computed } from 'vue'
-import { useRoute } from 'vue-router'
+import { useI18n } from 'vue-i18n'
+import { useRoute, useRouter } from 'vue-router'
 
 const props = defineProps({
     article: {
@@ -31,9 +27,18 @@ const props = defineProps({
     }
 })
 
+const { locale, t } = useI18n()
 const route = useRoute()
+const router = useRouter()
+
 const articleUrl = computed(() => `${window.location.origin}${route.path}`)
 const networks = ['facebook', 'twitter', 'linkedin']
+
+function switchLocalePath(localeCode) {
+    const { pathname, search, hash } = window.location
+    const baseUrl = pathname.replace(/^\/[a-z]{2}/, '')
+    return `/${localeCode}${baseUrl}${search}${hash}`
+}
 
 function formatTitle(title) {
     return cleanHtmlEntities(decodeHtmlEntities(title))
@@ -48,8 +53,8 @@ function decodeHtmlEntities(text) {
 function cleanHtmlEntities(text) {
     return text
         .replace(/–/g, '–')
-        .replace(/’/g, "'")
-        .replace(/ /g, ' ')
+        .replace(/'/g, "'")
+        .replace(/ /g, ' ')
 }
 
 function formatDate(path) {
@@ -77,6 +82,7 @@ function getNetworkIcon(network) {
 }
 </script>
 
+
 <style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@400;600;700&display=swap');
 
@@ -90,7 +96,6 @@ function getNetworkIcon(network) {
 
 .article-card {
     font-family: 'Inter', sans-serif;
-
     margin: 2rem auto;
     padding: 2rem;
     background-color: #fff;
@@ -105,7 +110,6 @@ function getNetworkIcon(network) {
 
 .article-title {
     font-family: 'Montserrat', sans-serif;
-
     font-size: 1.8rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
@@ -181,5 +185,21 @@ function getNetworkIcon(network) {
 
 .icon {
     font-size: 1rem;
+}
+
+.language-switch {
+    margin-bottom: 1rem;
+
+    a {
+        margin-right: 1rem;
+        text-decoration: none;
+        color: #666;
+        font-weight: 600;
+        transition: color 0.3s ease;
+    }
+
+    a:hover {
+        color: #018f69;
+    }
 }
 </style>
