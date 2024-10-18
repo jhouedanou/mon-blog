@@ -43,7 +43,9 @@ import { useAsyncData } from '#app'
 const currentPage = ref(1)
 const articlesPerPage = 9
 const { data: articles } = await useAsyncData('articles', () =>
-    queryContent().sort({ _path: -1 }).find()
+    queryContent()
+        .sort({ createdAt: -1 }) // Tri par date de création décroissante
+        .find()
 )
 const paginatedArticles = computed(() => {
     const start = (currentPage.value - 1) * articlesPerPage

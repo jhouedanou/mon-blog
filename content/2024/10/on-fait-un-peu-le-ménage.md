@@ -1,6 +1,7 @@
 ---
 title: "On fait un peu le ménage."
 image: "/images/articles/menage-image.jpeg"
+createdAt: "2024-05-10"
 ---
 
 # On fait un peu le ménage.

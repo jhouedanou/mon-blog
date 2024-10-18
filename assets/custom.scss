@@ -46,6 +46,8 @@ h1, h2, h3, h4, h5, h6 {
     main{
       background:#f5f6f9 !important;
       .article-item{
+position: relative;
+        height:100%;
         margin: 0;
         vertical-align: baseline;
         background: #fff!important;
@@ -62,6 +64,10 @@ h1, h2, h3, h4, h5, h6 {
         padding:1em 0;
         margin-bottom: 1.5rem;
         border-bottom: 1px solid #e6e6e6;
+        .read-more{
+          position:absolute;
+          bottom:1em0;
+        }
         h2{
           line-height: 1.1 !important;
           a{
@@ -256,4 +262,16 @@ h2 {
   line-height: 1.4;
   margin-bottom: 1.5rem;
 }
+}
+
+.article-content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+
+  h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
+    font-weight: bold !important;
+  }
 }

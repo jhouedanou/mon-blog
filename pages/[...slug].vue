@@ -6,7 +6,7 @@
     <article class="article-container">
       <header class="article-header">
         <div class="article-meta">
-          <span class="article-author">{{ article.author || 'Auteur inconnu' }}</span>
+          <!-- <span class="article-author">{{ article.author || 'Auteur inconnu' }}</span> -->
           <span class="article-date">{{ formatDate(article._path) }}</span>
           <span class="article-read-time">{{ estimateReadTime(article.body) }} min de lecture</span>
         </div>
@@ -57,6 +57,17 @@ function estimateReadTime(content) {
 
 <style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Sans+Pro:wght@400;600&display=swap');
+@media screen and (max-width:1024px) {
+  .article-title {
+    font-family: 'Merriweather', serif;
+    font-size: 0.5rem !important;
+    font-weight: 700;
+    line-height: 1.3;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+}
 
 .article-wrapper {
   background: white;
@@ -72,9 +83,22 @@ function estimateReadTime(content) {
   display: flex;
   align-items: flex-end;
   padding: 2rem;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
 }
 
 .article-title {
+  z-index: 15;
   font-family: 'Merriweather', serif;
   font-size: 2.5rem;
   font-weight: 700;
@@ -105,11 +129,7 @@ function estimateReadTime(content) {
   font-weight: 600;
 }
 
-.article-content {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  margin-bottom: 3rem;
-}
+
 
 .article-content :deep(h2) {
   font-family: 'Merriweather', serif;
