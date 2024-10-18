@@ -2,7 +2,7 @@
     <div class="article-list is-flex flex-column align-items-center justify-center is-justify-content-center">
 
         <div class="article-list-container container">
-            <div class="container">
+            <!-- <div class="container">
                 <div class="columns">
                     <div class="column is-12">
                         <div class="language-switch">
@@ -15,7 +15,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <div v-if="paginatedArticles.length" class="columns is-multiline">
                 <div v-for="article in paginatedArticles" :key="article._path"

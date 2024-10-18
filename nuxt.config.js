@@ -11,16 +11,15 @@ export default defineNuxtConfig({
     //'@nuxtjs/google-analytics'
 ],  
 i18n: {
-  baseUrl: 'https://houedanou.com',
-  defaultLocale: 'fr',
-  detectBrowserLanguage: false,
-  strategy: 'prefix_except_default',
   locales: [
-    { code: 'en', iso: 'en-US', file: 'en-US.js' },
-    { code: 'fr', iso: 'fr-FR', file: 'fr-FR.js' }
+    { code: 'fr', name: 'Français', iso: 'fr-FR', file: 'fr-FR.js' },
+    { code: 'en', name: 'English', iso: 'en-US', file: 'en-US.js' },
   ],
-}
-,
+  defaultLocale: 'fr',
+  lazy: true,
+  langDir: 'lang/',
+  strategy: 'prefix_except_default',
+},
   sitemap: {
     hostname: 'https://houedanou.com',
     gzip: true,
