@@ -1,11 +1,11 @@
 <template>
     <article class="article-card">
-        <!-- <div class="language-switch">
+        <div class="language-switch">
             <nuxt-link v-for="locale in $i18n.locales" :key="locale.code"
                 :to="localePath(switchLocalePath(locale.code))">
                 {{ locale.name }}
             </nuxt-link>
-        </div> -->
+        </div>
         <h2 class="article-title">{{ formatTitle(article.title) }}</h2>
         <div class="article-meta">
             <span class="article-date">{{ formatDate(article._path) }}</span>
