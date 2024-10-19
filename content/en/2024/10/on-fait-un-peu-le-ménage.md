@@ -14,20 +14,18 @@ I come back again to the unpatched security flaws, nearly a year after their dis
 
 Moreover, after a year of using VueJS and Nuxt, these technologies convinced me to take the plunge. So I decided, at the beginning of last week, to start all over again with a somewhat exotic configuration:
 
-an RSS feed on Feedburner, coming from my backup blog jhouedanou.blogspot.com;
-
-a frontend in Nuxt 3;
-
-all hosted on Vercel.
+- an RSS feed on Feedburner, coming from my backup blog jhouedanou.blogspot.com;
+- a frontend in Nuxt 3;
+- all hosted on Vercel.
 
 I then realized the experimental and heterogeneous nature of this project, and I thought I could do better.
-The new configuration is therefore as follows: Everything on Nuxt (and NuxContent). The content of this blog will be generated from Markdown files, and everything will run hosted on Vercel.
+The new configuration is therefore as follows: Everything on Nuxt (and Nuxt Content). The content of this blog will be generated from Markdown files, and everything will run hosted on Vercel.
 I will migrate some articles in the future.
 The next steps are as follows:
 
-integrate Open Graph as well as a means of sharing, such as ShareIt;
-find an API to generate article images: DALL-E requires a credit card unavailable in Ivory Coast, and for an unknown reason, the Pexels API offers me images that have nothing to do with the content - for example, half-naked women to illustrate the article on Djamo.
-Salvation will probably come from Unsplash;
-tackle the question of design: because, yes, houedanou.com has never loaded so quickly, but it's frankly ugly.
+1. integrate Open Graph as well as a means of sharing, such as ShareIt;
+2. find an API to generate article images: DALL-E requires a credit card unavailable in Ivory Coast, and for an unknown reason, the Pexels API offers me images that have nothing to do with the content - for example, half-naked women to illustrate the article on Djamo.
+3. Salvation will probably come from Unsplash;
+4. tackle the question of design: because, yes, houedanou.com has never loaded so quickly, but it's frankly ugly.
 
 See you soon.
