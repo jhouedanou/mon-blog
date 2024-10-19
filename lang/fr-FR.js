@@ -4,5 +4,6 @@ export default {
   noArticles: "Aucun article trouvé",
   previous: "Précédent",
   next: "Suivant",
-  unknownDate: "Date inconnue"
+  unknownDate: "Date inconnue",
+  backToArticles: "Retour à la liste des articles"
 }
