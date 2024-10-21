@@ -17,6 +17,7 @@
       </header>
       <div class="article-content">
         <ContentDoc />
+        <a href="https://houedanou.com" rel="dofollow">Jean-Luc Houédanou</a>
       </div>
       <footer class="article-footer">
         <NuxtLink to="/" class="back-to-articles">{{ $t('backToArticles') }}</NuxtLink>

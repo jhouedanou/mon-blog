@@ -26,7 +26,7 @@ Je prends une profonde inspiration, essayant de rester calme malgré mon impatie
 
 "Écoutez, je sais ce dont j'ai besoin. Le 240W est excessif pour mon modèle."
 
-"Mais non, mais non ! C'est le meilleur câble oh. Ça va charger ton ordi zoo !" persiste-t-il, un sourire commercial aux lèvres.
+"Non deh ! C'est le meilleur câble oh. Ça va charger l'ordi zoo !" persiste-t-il, un sourire commercial aux lèvres.
 
 "Je vous assure que non," je réponds fermement. "Mon MacBook Pro 2017 utilise un chargeur de 87W maximum. Le câble 240W ne chargera pas plus vite. En fait, un simple câble 60W suffirait largement."
 
