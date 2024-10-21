@@ -17,6 +17,14 @@
       </header>
       <div class="article-content">
         <ContentDoc />
+        <!-- Section de partage social -->
+        <div class="social-share">
+          <div class="sharethis-inline-share-buttons"></div>
+
+        </div>
+        <!-- Section de commentaires -->
+        <DisqusComments :pageUrl="currentUrl" :pageIdentifier="article._path" />
+
         <a href="https://houedanou.com" rel="dofollow">Jean-Luc Houédanou</a>
       </div>
       <footer class="article-footer">
@@ -31,6 +39,7 @@ import { useHead } from '@unhead/vue'
 import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { useLocalePath, useSwitchLocalePath } from '#i18n'
+import DisqusComments from '~/components/DisqusComments.vue'
 
 const route = useRoute()
 const { locale } = useI18n()
@@ -45,10 +54,11 @@ useHead({
   meta: [
     { property: 'og:title', content: article.value.title },
     { property: 'og:description', content: article.value.description || 'Description par défaut' },
-    { property: 'og:url', content: `https://votresite.com${route.path}` },
+    { property: 'og:url', content: `https://houedanou.com${route.path}` },
     { property: 'og:image', content: article.value.image },
   ],
 })
+const currentUrl = `https://houedanou.com${route.path}`
 
 function formatDate(createdAt) {
   if (createdAt) {
@@ -193,5 +203,24 @@ function estimateReadTime(content) {
 
 .back-to-articles:hover {
   color: #018f69;
+}
+
+
+.social-share {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.network {
+  cursor: pointer;
+  color: #03a87c;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #018f69;
+  }
 }
 </style>
