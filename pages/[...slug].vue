@@ -56,6 +56,7 @@ useHead({
     { property: 'og:description', content: article.value.description || 'Description par défaut' },
     { property: 'og:url', content: `https://houedanou.com${route.path}` },
     { property: 'og:image', content: article.value.image },
+    { property: 'og:site_name', content: 'Jean-Luc Houédanou' },
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:image', content: article.value.image },
     { name: 'twitter:title', content: article.value.title },
