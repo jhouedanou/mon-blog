@@ -111,33 +111,6 @@ i18n: {
   routeRules: {
     '/': { prerender: true }
   },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   compatibilityDate: '2024-10-10'
 })
 
