@@ -49,11 +49,9 @@ useHead({
   ],
 })
 
-function formatDate(path) {
-  const match = path.match(/\/(\d{4})\/(\d{2})\//)
-  if (match) {
-    const [, year, month] = match
-    const date = new Date(year, month - 1)
+function formatDate(createdAt) {
+  if (createdAt) {
+    const date = new Date(createdAt)
     return date.toLocaleDateString('fr-FR', { year: 'numeric', month: 'long', day: 'numeric' })
   }
   return 'Date inconnue'

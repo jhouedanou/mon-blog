@@ -96,7 +96,7 @@ function getExcerpt(article) {
 
 <style lang="scss" scoped>
 .cover-image {
-    height: 200px;
+    height: 320px;
     background-size: cover;
     background-position: center;
     display: flex;
