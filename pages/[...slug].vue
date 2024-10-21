@@ -24,9 +24,9 @@
         </div>
         <!-- Section de commentaires -->
         <DisqusComments :pageUrl="currentUrl" :pageIdentifier="article._path" />
-
         <a href="https://houedanou.com" rel="dofollow">Jean-Luc Houédanou</a>
-        <a href="https://jeanluchouedanou.blogspot.com/">Mes anciens article</a>
+        <br>
+        <a href="https://jeanluchouedanou.blogspot.com/">Mes anciens articles</a>
       </div>
       <footer class="article-footer">
         <NuxtLink to="/" class="back-to-articles">{{ $t('backToArticles') }}</NuxtLink>
