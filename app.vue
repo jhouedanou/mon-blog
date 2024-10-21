@@ -14,7 +14,7 @@
               </h1>
             </div>
             <div class="level-right">
-              <LanguageSwitcher />
+              <!-- <LanguageSwitcher /> -->
             </div>
           </div>
         </div>
