@@ -26,11 +26,13 @@ Je prends une profonde inspiration, essayant de rester calme malgré mon impatie
 
 "Écoutez, je sais ce dont j'ai besoin. Le 240W est excessif pour mon modèle."
 
-"Mais non, mais non ! C'est le meilleur câble oh. Ça va charger ton ordi vitesse zoo !" persiste-t-il, un sourire commercial aux lèvres.
+"Mais non, mais non ! C'est le meilleur câble oh. Ça va charger ton ordi zoo !" persiste-t-il, un sourire commercial aux lèvres.
 
 "Je vous assure que non," je réponds fermement. "Mon MacBook Pro 2017 utilise un chargeur de 87W maximum. Le câble 240W ne chargera pas plus vite. En fait, un simple câble 60W suffirait largement."
 
-Le vendeur fronce les sourcils, visiblement contrarié de voir sa vente lui échapper. Je secoue la tête, déballant mes connaissances pour mettre fin à cette conversation qui s'éternise : "Mon MacBook n'est pas conçu pour supporter une charge de 240W. Il utilise un standard de charge moins puissant. La vitesse de charge est limitée par le contrôleur interne de l'ordinateur, pas par le câble. De plus, le MacBook négocie automatiquement la puissance optimale avec le chargeur."
+Le vendeur fronce les sourcils, visiblement contrarié de voir sa vente lui échapper. Je secoue la tête, déballant mes connaissances pour mettre fin à cette conversation qui s'éternise :
+
+"Mon MacBook n'est pas conçu pour supporter une charge de 240W. Il utilise un standard de charge moins puissant. La vitesse de charge est limitée par le contrôleur interne de l'ordinateur, pas par le câble. De plus, le MacBook négocie automatiquement la puissance optimale avec le chargeur."
 
 Le vendeur me regarde, bouche bée.
 
