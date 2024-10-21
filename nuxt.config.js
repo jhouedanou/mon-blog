@@ -11,30 +11,33 @@ export default defineNuxtConfig({
     'nuxt-feedme'
 ], 
 feedme: {
-  path: '/feed.xml', // Chemin du flux RSS
-  async create(feed) {
-    feed.options = {
-      title: 'Le Blog de Jean-Luc Houédanou',
-      link: 'https://houedanou.com/feed.xml',
-      description: 'Le Blog de Jean-Luc Houédanou',
+  feeds: [
+    {
+      path: '/feed.xml',
+      create: async (feed) => {
+        feed.options = {
+          title: 'Le Blog de Jean-Luc Houédanou',
+          link: 'https://houedanou.com/feed.xml',
+          description: 'Le Blog de Jean-Luc Houédanou',
+        }
+
+        const articles = await queryContent().find()
+
+        articles.forEach(article => {
+          feed.addItem({
+            title: article.title,
+            id: article._path,
+            link: `https://houedanou.com${article._path}`,
+            description: article.description,
+            content: article.body,
+            date: new Date(article.createdAt)
+          })
+        })
+      },
+      type: 'rss2'
     }
-
-    const articles = await queryContent().find()
-
-    articles.forEach(article => {
-      feed.addItem({
-        title: article.title,
-        id: article._path,
-        link: `https://houedanou.com${article._path}`,
-        description: article.description,
-        content: article.body,
-        date: new Date(article.createdAt)
-      })
-    })
-  },
-  type: 'rss2' // Type de flux
-  }
-,
+  ]
+},
 i18n: {
   locales: [
     { code: 'fr', name: 'Français', language: 'fr-FR', file: 'fr-FR.js' },
