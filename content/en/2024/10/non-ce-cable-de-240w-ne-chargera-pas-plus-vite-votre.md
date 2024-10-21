@@ -1,11 +1,7 @@
-Here's the translation of your article into English:
-
 ---
-
 title: "No, This 240W Cable Won’t Charge Your Old MacBook Faster"
 image: "/images/articles/really.webp"
-createdAt: "2024-21-10"
-
+createdAt: "21-10-2024"
 ---
 
 # No, This 240W Cable Won’t Charge Your Old MacBook Faster

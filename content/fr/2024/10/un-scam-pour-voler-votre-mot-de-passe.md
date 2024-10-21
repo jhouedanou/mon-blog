@@ -1,7 +1,7 @@
 ---
 title: "Une arnaque imitant facebook afin de vous voler votre mot de passe"
 image: "/images/articles/scam.jpeg"
-createdAt: "2024-04-10"
+createdAt: "02-10-2024"
 ---
 
 # Une arnaque imitant facebook afin de vous voler votre mot de passe

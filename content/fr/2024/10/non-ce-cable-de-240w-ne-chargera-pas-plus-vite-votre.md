@@ -1,7 +1,7 @@
 ---
 title: "Non, ce câble de 240W ne chargera pas plus vite votre vieux macbook"
 image: "/images/articles/really.webp"
-createdAt: "2024-21-10"
+createdAt: "21-10-2024"
 ---
 
 # Non, ce câble de 240W ne chargera pas plus vite votre vieux macbook

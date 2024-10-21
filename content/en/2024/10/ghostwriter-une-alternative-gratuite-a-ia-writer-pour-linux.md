@@ -1,7 +1,7 @@
 ---
 title: "Ghostwriter, the iA Writer of Linux"
 image: "/images/articles/mockup.png"
-createdAt: "2024-18-10"
+createdAt: "20-10-2024"
 ---
 
 # Ghostwriter, the iA Writer of Linux

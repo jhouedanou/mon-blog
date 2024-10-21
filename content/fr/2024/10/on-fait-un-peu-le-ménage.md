@@ -1,12 +1,12 @@
 ---
 title: "On fait un peu le ménage."
 image: "/images/articles/menage-image.jpeg"
-createdAt: "2024-05-10"
+createdAt: "05-10-2024"
 ---
 
 # On fait un peu le ménage.
 
-Cela faisait longtemps que je cherchais une bonne excuse pour me débarrasser de WordPress, au moins en tant que moteur de blog. J'ai, pendant longtemps, été un fervent défenseur de ce CMS, mais je dois reconnaître que je me sens de plus en plus mal à l'aise avec lui. Sa simplicité et la facilité à le modifier m'ont offert des possibilités infinies, mais certains points sont désespérants: 
+Cela faisait longtemps que je cherchais une bonne excuse pour me débarrasser de WordPress, au moins en tant que moteur de blog. J'ai, pendant longtemps, été un fervent défenseur de ce CMS, mais je dois reconnaître que je me sens de plus en plus mal à l'aise avec lui. Sa simplicité et la facilité à le modifier m'ont offert des possibilités infinies, mais certains points sont désespérants:
 
 - Il ya beaucoup de trop de vulnérabilités,
 - l'avenir du CMS qui dépend de plus en plus du bon vouloir de ses créateurs qui retirent des autorisations de mises à jour de plugins essentiels en fonction de leur bonne relation avec leur créateur,

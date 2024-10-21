@@ -30,7 +30,8 @@
                             <NuxtLink :to="localePath(article._path)" class="article-link">{{ article.title }}
                             </NuxtLink>
                         </h2>
-                        <p class="article-date">{{ formatDate(article._path) }}</p>
+                        <span class="article-date">{{ formatDate(article.createdAt) }}</span>
+
                         <p class="article-excerpt" v-html="getExcerpt(article)"></p>
                         <NuxtLink :to="localePath(article._path)" class="read-more">{{ $t('readMore') }}</NuxtLink>
                     </div>
@@ -79,13 +80,13 @@ const totalPages = computed(() => Math.ceil(articles.value.length / articlesPerP
 function changePage(page) {
     currentPage.value = page
 }
-function formatDate(path) {
-    const match = path.match(/\/(\d{4})\/(\d{2})\//)
-    if (match) {
-        const [, year, month] = match
-        return `${month}/${year}`
+function formatDate(createdAt) {
+    if (createdAt) {
+        const [day, month, year] = createdAt.split('-')
+        const date = new Date(year, month - 1, day)
+        return date.toLocaleDateString('fr-FR', { year: 'numeric', month: 'long', day: 'numeric' })
     }
-    return t('unknownDate')
+    return 'Date inconnue'
 }
 
 function getExcerpt(article) {
@@ -96,7 +97,7 @@ function getExcerpt(article) {
 
 <style lang="scss" scoped>
 .cover-image {
-    height: 320px;
+    height: 320 px;
     background-size: cover;
     background-position: center;
     display: flex;
