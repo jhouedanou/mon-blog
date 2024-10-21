@@ -63,6 +63,9 @@ i18n: {
         {
           src: 'https://platform-api.sharethis.com/js/sharethis.js#property=671678124be62400139baad2&product=inline-share-buttons',
           async: true
+        },
+        {
+          src:'https://platform-api.sharethis.com/js/sharethis.js#property=671678124be62400139baad2&product=sop'
         }
       ],
       link: [
