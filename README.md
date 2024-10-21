@@ -1,42 +1,52 @@
-# Content v2 Minimal Starter
+# Le Blog de Jean-Luc Houédanou
 
-Look at the [Content documentation](https://content.nuxt.com/) to learn more.
+Ce projet est un blog personnel construit avec Nuxt 3, utilisant le système de gestion de contenu Nuxt Content pour les articles.
 
-## Setup
+## Technologies utilisées
 
-Make sure to install the dependencies:
+- Nuxt 3
+- Nuxt Content
+- Vue.js 3
+- SCSS pour le styling
+- i18n pour l'internationalisation
+- nuxt-feedme pour la génération du flux RSS
 
-```bash
-# yarn
-yarn install
+## Structure du projet
 
-# npm
-npm install
+- `content/`: Contient les articles du blog en format Markdown
+- `pages/`: Les pages du site, y compris la page d'accueil et le template d'article
+- `components/`: Composants Vue réutilisables
+- `layouts/`: Layouts pour les différentes pages
+- `assets/`: Fichiers statiques comme les images et les styles globaux
+- `lang/`: Fichiers de traduction pour l'internationalisation
 
-# pnpm
-pnpm install
-```
+## Fonctionnalités
 
-## Development Server
+- Articles de blog écrits en Markdown
+- Support multilingue (Français et Anglais)
+- Génération automatique du flux RSS
+- Optimisation SEO
+- Intégration de Google Analytics
+- Boutons de partage social
 
-Start the development server on http://localhost:3000
+## Comment démarrer
 
-```bash
-npm run dev
-```
+1. Cloner le repository
+2. Installer les dépendances : `yarn install`
+3. Lancer le serveur de développement : `yarn dev`
 
-## Production
+## Ajouter un nouvel article
 
-Build the application for production:
+1. Créer un nouveau fichier Markdown dans le dossier `content/[langue]/[année]/[mois]/`
+2. Ajouter le frontmatter avec le titre, la date, et l'image de couverture
+3. Écrire le contenu de l'article en Markdown
 
-```bash
-npm run build
-```
+## Déploiement
 
-Locally preview production build:
+Le site est configuré pour être déployé sur Vercel. Chaque push sur la branche principale déclenche un nouveau déploiement.
 
-```bash
-npm run preview
-```
+## Maintenance
 
-Checkout the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- Mettre à jour les dépendances régulièrement avec `yarn upgrade`
+- Vérifier les performances et l'accessibilité du site
+- Maintenir les traductions à jour dans les fichiers de langue
