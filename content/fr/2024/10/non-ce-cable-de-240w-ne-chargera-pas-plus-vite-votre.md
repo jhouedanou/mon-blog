@@ -4,7 +4,7 @@ image: "/images/articles/really.webp"
 createdAt: "2024-21-10"
 ---
 
-# Non, ce câble de 240W ne chargera pas plus vite votre vieux macbook"
+# Non, ce câble de 240W ne chargera pas plus vite votre vieux macbook
 
 Il y a 3 corps de métiers dont bon nombre de représentants n'iront pas au paradis : les mécaniciens, les menuisiers et les vendeurs d'appareils électroniques (avec, par extension, leurs déclinaisons sur TikTok).
 
@@ -30,7 +30,9 @@ Je prends une profonde inspiration, essayant de rester calme malgré mon impatie
 
 "Je vous assure que non," je réponds fermement. "Mon MacBook Pro 2017 utilise un chargeur de 87W maximum. Le câble 240W ne chargera pas plus vite. En fait, un simple câble 60W suffirait largement."
 
-Le vendeur fronce les sourcils, visiblement contrarié de voir sa vente lui échapper. Je secoue la tête, déballant mes connaissances pour mettre fin à cette conversation qui s'éternise :
+Le vendeur fronce les sourcils, visiblement contrarié de voir sa vente lui échapper.
+
+Je secoue la tête, déballant mes connaissances pour mettre fin à cette conversation qui s'éternise :
 
 "Mon MacBook n'est pas conçu pour supporter une charge de 240W. Il utilise un standard de charge moins puissant. La vitesse de charge est limitée par le contrôleur interne de l'ordinateur, pas par le câble. De plus, le MacBook négocie automatiquement la puissance optimale avec le chargeur."
 
