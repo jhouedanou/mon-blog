@@ -7,13 +7,38 @@ export default defineNuxtConfig({
     '@nuxt/content', 
     '@nuxt/image',
     '@nuxtjs/sitemap',
-    '@nuxtjs/i18n'
-    //'@nuxtjs/google-analytics'
-],  
+    '@nuxtjs/i18n',
+    'nuxt-feedme'
+], 
+feedme: {
+  path: '/feed.xml', // Chemin du flux RSS
+  async create(feed) {
+    feed.options = {
+      title: 'Le Blog de Jean-Luc Houédanou',
+      link: 'https://houedanou.com/feed.xml',
+      description: 'Le Blog de Jean-Luc Houédanou',
+    }
+
+    const articles = await queryContent().find()
+
+    articles.forEach(article => {
+      feed.addItem({
+        title: article.title,
+        id: article._path,
+        link: `https://houedanou.com${article._path}`,
+        description: article.description,
+        content: article.body,
+        date: new Date(article.createdAt)
+      })
+    })
+  },
+  type: 'rss2' // Type de flux
+  }
+,
 i18n: {
   locales: [
-    { code: 'fr', name: 'Français', iso: 'fr-FR', file: 'fr-FR.js' },
-    { code: 'en', name: 'English', iso: 'en-US', file: 'en-US.js' },
+    { code: 'fr', name: 'Français', language: 'fr-FR', file: 'fr-FR.js' },
+    { code: 'en', name: 'English', language: 'en-US', file: 'en-US.js' },
   ],
   defaultLocale: 'fr',
   lazy: true,
@@ -65,7 +90,20 @@ i18n: {
           async: true
         },
         {
-          src:'https://platform-api.sharethis.com/js/sharethis.js#property=671678124be62400139baad2&product=sop'
+          src:'https://platform-api.sharethis.com/js/sharethis.js#property=671678124be62400139baad2&product=sop',
+          async: true
+        },
+        {
+          src: `https://www.googletagmanager.com/gtag/js?id=G-5DSHDPMFNP`,
+          async: true
+        },
+        {
+          children: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-5DSHDPMFNP');
+          `
         }
       ],
       link: [
