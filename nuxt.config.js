@@ -19,8 +19,9 @@ i18n: {
   lazy: true,
   langDir: 'lang/',
   strategy: 'prefix_except_default',
-},
-  sitemap: {
+  detectBrowserLanguage: false,
+}, 
+ sitemap: {
     hostname: 'https://houedanou.com',
     gzip: true,
     routes: async () => {

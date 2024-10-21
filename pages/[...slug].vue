@@ -19,7 +19,7 @@
         <ContentDoc />
       </div>
       <footer class="article-footer">
-        <NuxtLink to="/" class="back-to-articles">Retour à la liste des articles</NuxtLink>
+        <NuxtLink to="/" class="back-to-articles">{{ $t('backToArticles') }}</NuxtLink>
       </footer>
     </article>
   </div>

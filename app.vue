@@ -5,12 +5,18 @@
     <header class="hero is-primary is-bold">
       <div class="hero-body">
         <div class="container">
-          <h1 class="title">
-
-            <NuxtLink to="/">
-              <img alt="le Blog de Jean Luc Houédanou" src="/images/1837389.jpeg" height="320">
-            </NuxtLink>
-          </h1>
+          <div class="level">
+            <div class="level-left">
+              <h1 class="title">
+                <NuxtLink to="/">
+                  <img alt="le Blog de Jean Luc Houédanou" src="/images/1837389.jpeg" height="320">
+                </NuxtLink>
+              </h1>
+            </div>
+            <div class="level-right">
+              <LanguageSwitcher />
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -21,15 +27,15 @@
 </template>
 
 <script setup>
+import LanguageSwitcher from '~/components/LanguageSwitcher.vue'
 
 useHead({
   title: 'Le blog de Jean Luc Houédanou'
 });
-
 </script>
+
 <style lang="scss">
 html {
-
   background: #EEE;
 }
 
