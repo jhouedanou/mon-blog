@@ -7,7 +7,8 @@ createdAt: "22-10-2024"
 # La théorie du micro et celle du verre d'eau : guide de survie à l'ère des donneurs d'avis
 
 Permettez-moi de vous présenter Sandrine.
-Vous savez, celle qui interprète "Never Leave You" de Lumidee au karaoké avec une passion inversement proportionnelle à son talent.
+Sandrine, c'est celle qui aime chanter au karaoké.
+Elle qui interprète "Never Leave You" de Lumidee au karaoké avec une passion inversement proportionnelle à son talent.
 
 Imaginez maintenant qu'on lui confie un micro Shure professionnel, le même modèle qu'utilise Beyoncé en studio.
 **Cela ne fera pas d'elle une meilleure chanteuse, n'est-ce pas ?**
@@ -91,6 +92,8 @@ Rappel essentiel : un microphone ne confère pas automatiquement la pertinence d
 
 L'exemple de Sandrine en est la preuve manifeste.
 
-P.S. : Mes excuses, Sandrine, pour cette illustration. Ton enthousiasme reste admirable, même si "Never Leave You" ne s'en est jamais vraiment remis et que, depuis sa retraite dorée, _Lumidee se dit que, finalement, elle ne chantait pas si mal que cela._
+P.S. : Mes excuses, Sandrine, pour cette illustration.
+
+Ton enthousiasme reste admirable, même si "Never Leave You" ne s'en est jamais vraiment remis et que, depuis sa retraite dorée, _Lumidee se dit que, finalement, elle ne chantait pas si mal que cela._
 
 N.B. : Dans certaines circonstances, le verre d'eau peut être agrémenté de menthe fraîche. Mais ceci relève d'une autre théorie.
