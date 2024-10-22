@@ -1,77 +1,77 @@
 ---
-title: "Comment gérer le harcèlement en ligne : la théorie du micro et du verre d'eau"
-image: "/images/articles/theorieduMicro.jpeg"
+title: "How to Handle Online Harassment: The Microphone and Water Glass Theory"
+image: "/images/articles/microTheory.jpeg"
 createdAt: "21-10-2024"
 ---
 
-# La théorie du micro et celle du verre d'eau : guide de survie à l'ère des donneurs d'avis
+# The Microphone and Water Glass Theory: A Survival Guide for the Age of Unsolicited Opinions
 
-Permettez-moi de vous présenter Sandrine.
-Vous savez, celle qui interprète "Never Leave You" de Lumidee au karaoké avec une passion inversement proportionnelle à son talent.
-Imaginez maintenant qu'on lui confie un micro Shure professionnel, le même modèle qu'utilise Beyoncé en tournée.
-**Cela ne fera pas d'elle une meilleure chanteuse, n'est-ce pas ?**
+Let me introduce you to Sandra.
+You know, the one who performs Lumidee's "Never Leave You" at karaoke with passion inversely proportional to her talent.
+Now imagine giving her a professional Shure microphone, the same model Beyoncé uses on tour.
+**That won't make her a better singer, will it?**
 
-Internet, c'est exactement cela : on a offert des microphones professionnels à des personnes qui auraient dû rester dans le public. Mais contrairement au karaoké, impossible de s'éclipser discrètement. D'où l'importance d'avoir une stratégie. C'est là qu'intervient la théorie du verre d'eau.
+That's exactly what happened with the internet: we've given professional microphones to people who should have remained in the audience. But unlike karaoke, you can't quietly slip away. Hence the importance of having a strategy. This is where the water glass theory comes in.
 
-## Le principe du verre d'eau
+## The Water Glass Principle
 
-Le concept est d'une simplicité déconcertante : pendant que certains s'époumonent dans leur microphone dernier cri, vous savourez paisiblement votre verre d'eau. Pourquoi de l'eau ? Car elle est :
+The concept is disarmingly simple: while others shout themselves hoarse into their latest-model microphones, you quietly sip your glass of water. Why water? Because it's:
 
-- Transparente (comme votre indifférence à leurs provocations)
-- Rafraîchissante (comme votre attitude sereine)
-- Essentielle (comme la préservation de votre santé mentale en ligne)
+- Transparent (like your indifference to their provocations)
+- Refreshing (like your serene attitude)
+- Essential (like preserving your mental health online)
 
-## Les virtuoses du micro non sollicité (et comment les apaiser avec votre verre)
+## The Virtuosos of Unsolicited Microphones (and How to Soothe Them with Your Glass)
 
-### L'Ex 2.0
+### The Digital Ex
 
-**Au micro** : Sur TikTok ou sur Facebook, votre ancien partenaire "partage son parcours de guérison" (comprenez : publie des vidéos teintées de ressentiment sur votre relation, avec beaucoup de piques à votre égard) depuis votre séparation.
+**At the mic**: On TikTok or Facebook, your former partner "shares their healing journey" (understand: posts resentment-filled videos about your relationship, with plenty of jabs at you) since your separation.
 
-**Votre verre d'eau** : Pendant qu'il/elle produit du contenu dans sa chambre (avec son animal de compagnie en bruit de fond), vous poursuivez votre épanouissement personnel.
-Et c'est précisément ce qui le contrarie.
-Une gorgée d'eau et rappelez-vous : "Le silence est la plus élégante des réponses, et le bonheur, la meilleure des vengeances".
+**Your water glass**: While they produce content in their bedroom (with their pet making noise in the background), you continue living your best life.
+And that's precisely what irritates them.
+Take a sip of water and remember: "Silence is the most elegant response, and happiness is the best revenge."
 
-### L'Expert Auto-proclamé
+### The Self-Proclaimed Expert
 
-Vous postez innocemment : "Ma connexion xxxxx me donne entièrement et pleinement satisfaction. "
-**Au micro** : "MA CONNEXION INTERNET EST SUPÉRIEURE ! J'AI DEUX DÉCENNIES D'EXPÉRIENCE DANS LES RÉSEAUX !"
+You innocently post: "My xxxxx connection gives me complete satisfaction."
+**At the mic**: "MY INTERNET CONNECTION IS SUPERIOR! I HAVE TWO DECADES OF EXPERIENCE IN NETWORKING!"
 
-**Votre verre d'eau** : Une réponse succincte : "Je vous remercie de votre contribution, bien qu'elle soit non sollicitée".
-Puis dégustez votre eau pendant qu'ils s'évertuent à démontrer leur expertise. Allez chercher un pichet, car ils peuvent parler pendant longtemps, et chaque mention de leurs "années d'expérience" mérite une gorgée sereine.
+**Your water glass**: A concise response: "Thank you for your contribution, though it wasn't solicited."
+Then savor your water while they strive to demonstrate their expertise. Get a pitcher ready, as they can talk for a while, and each mention of their "years of experience" deserves a serene sip.
 
-Ensuite, rajoutez une couche.
+Then, add the finishing touch.
 
-"Madame/Monsieur. Je ne vous ai rien demandé."
-Puis, vous pouvez ensuite siroter tranquillement votre verre pendant qu'ils s'étouffent avec leur expertise non sollicitée
+"Sir/Madam. I didn't ask for your opinion."
+Then you can quietly sip your water while they choke on their unsolicited expertise.
 
-### Le Prophète Numérique
+### The Digital Prophet
 
-**Au micro** : "Une reconversion dans le développement ? Le marché est saturé ! Mon neveu crée des sites à prix modique et peine à trouver sa clientèle !"
+**At the mic**: "Switching to web development? The market is saturated! My nephew makes budget websites and still struggles to find clients!"
 
-**Votre verre d'eau** : Savourez tranquillement votre boisson tout en consultant vos opportunités professionnelles. Lorsqu'ils ajoutent "L'intelligence artificielle va tout bouleverser", servez-vous un second verre. Ces mêmes oracles prédisaient la fin d'Internet en 2000... avant de créer leur profil Facebook.
+**Your water glass**: Calmly enjoy your drink while checking your professional opportunities. When they add "Artificial Intelligence will change everything," pour yourself a second glass. These same oracles predicted the end of the Internet in 2000... right before creating their Facebook profiles.
 
-## L'efficacité de cette approche
+## Why This Approach Works
 
-Pendant qu'ils s'évertuent à faire porter leur voix, vous :
+While they strain to make their voices heard, you:
 
-- Conservez une sérénité digne d'un maître zen
-- Préservez votre énergie pour des activités constructives
-- Évitez ce que l'on nomme à Abidjan "la vie" (entendez : les controverses stériles)
+- Maintain zen master-level serenity
+- Preserve your energy for constructive activities
+- Avoid what they call in Abidjan "the life" (meaning: pointless drama)
 
-Plus leur volume sonore augmente, plus votre sérénité s'hydrate. C'est scientifiquement prouvé.
+The louder they get, the more your serenity gets hydrated. It's scientifically proven.
 
-## La sagesse du verre d'eau
+## The Wisdom of the Water Glass
 
-La véritable puissance du verre d'eau réside dans son occupation manuelle. Lorsque la tentation de répondre à un commentaire peu constructif se fait sentir, une gorgée d'eau s'impose. Au minimum, vous serez parfaitement hydraté.
+The true power of the water glass lies in keeping your hands occupied. When tempted to respond to an unconstructive comment, take a sip of water instead. At worst, you'll be perfectly hydrated.
 
-Au mieux, vous aurez évité nombre de débats improductifs.
+At best, you'll have avoided countless unproductive debates.
 
-## En conclusion
+## In Conclusion
 
-Internet a démocratisé la prise de parole, mais nul n'est tenu d'assister à chaque représentation. Parfois, la réponse la plus appropriée consiste à se retirer élégamment, verre d'eau à la main, laissant les autres se produire en solitaire.
+The internet has democratized speaking out, but no one is obligated to attend every performance. Sometimes, the most appropriate response is to elegantly withdraw, water glass in hand, leaving others to perform their solo acts.
 
-Rappel essentiel : un microphone ne confère pas automatiquement la pertinence du propos. L'exemple de Sandrine en est la preuve manifeste.
+Essential reminder: having a microphone doesn't automatically make what you say relevant. Sandra's example proves this perfectly.
 
-P.S. : Mes excuses, Sandrine, pour cette illustration. Ton enthousiasme reste admirable, même si "Never Leave You" ne s'en est jamais vraiment remis et que, depuis sa retraite dorée, Lumidee se dit que, finalement, elle ne chantait pas si mal que cela.
+P.S.: My apologies, Sandra, for using this illustration. Your enthusiasm remains admirable, even though "Never Leave You" never really recovered, and from her golden retirement, Lumidee now thinks that perhaps she wasn't such a bad singer after all.
 
-N.B. : Dans certaines circonstances, le verre d'eau peut être agrémenté de menthe fraîche. Mais ceci relève d'une autre théorie.
+N.B.: In certain circumstances, the water glass can be enhanced with fresh mint. But that's another theory entirely.
