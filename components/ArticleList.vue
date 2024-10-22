@@ -67,6 +67,7 @@ const currentPage = ref(1)
 const articlesPerPage = 9
 const { data: articles } = await useAsyncData('articles', () =>
     queryContent(locale.value)
+        .where({ draft: { $ne: true } })
         .sort({ createdAt: -1 })
         .find()
 )
