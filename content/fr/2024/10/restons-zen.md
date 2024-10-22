@@ -55,15 +55,17 @@ Ensuite, rajoutez une couche.
 
 **"Madame/Monsieur. Je ne vous ai rien demandé."**
 
-Puis, vous pouvez ensuite siroter tranquillement votre verre pendant qu'ils s'étouffent avec leur expertise non sollicitée
+Puis, vous pouvez ensuite siroter tranquillement votre verre pendant qu'ils s'étouffent avec leur expertise non sollicitée :).
 
 ### Le Prophète Numérique
 
-**Au micro** : "Une reconversion dans le développement ? Le marché est saturé ! Mon neveu crée des sites à prix modique et peine à trouver sa clientèle !"
+**Au micro** : "Une reconversion dans le développement ? Le marché est saturé ! Mon neveu crée des sites à prix modique et peine à trouver sa clientèle ! PHP est mort !!! "
 
 **Votre verre d'eau** : Savourez tranquillement votre boisson tout en consultant vos opportunités professionnelles.
 
-Lorsqu'ils ajoutent "L'intelligence artificielle va tout bouleverser", servez-vous un second verre. Ces mêmes oracles prédisaient la fin d'Internet en 2000... avant de créer leur profil Facebook.
+Lorsqu'ils ajoutent "L'intelligence artificielle va tout bouleverser", servez-vous un second verre.
+
+Ces mêmes oracles prédisaient la fin d'Internet en 2000... avant de créer leur profil Facebook.
 
 ## L'efficacité de cette approche
 
