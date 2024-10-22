@@ -1,5 +1,5 @@
 ---
-title: "Comment gérer le harcèlement en ligne : la théorie du micro et du verre d'eau"
+title: "La théorie du micro et celle du verre d'eau : guide de survie à l'ère des donneurs d'avis"
 image: "/images/articles/theorieduMicro.jpeg"
 createdAt: "22-10-2024"
 ---
