@@ -43,6 +43,15 @@ function switchLocalePath(localeCode) {
 function formatTitle(title) {
     return cleanHtmlEntities(decodeHtmlEntities(title))
 }
+function formatDate(createdAt) {
+    if (createdAt) {
+        const [day, month, year] = createdAt.split('-')
+        const date = new Date(year, month - 1, day)
+        return date.toLocaleDateString('fr-FR', { year: 'numeric', month: 'long', day: 'numeric' })
+    }
+    return 'Date inconnue'
+}
+
 
 function decodeHtmlEntities(text) {
     const textArea = document.createElement('textarea')

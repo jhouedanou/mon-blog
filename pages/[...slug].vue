@@ -11,8 +11,8 @@
             <NuxtLink :to="switchLocalePath('en')" class="lang-link">EN</NuxtLink>
           </div> -->
           <!-- <span class="article-author">{{ article.author || 'Auteur inconnu' }}</span> -->
-          <span class="article-date">{{ formatDate(article._path) }}</span>
-          <span class="article-read-time">{{ estimateReadTime(article.body) }} min de lecture</span>
+          <span class="article-date">{{ formatDate(article.createdAt) }}</span>
+          <!-- <span class="article-read-time">{{ estimateReadTime(article.body) }} min de lecture</span> -->
         </div>
       </header>
       <div class="article-content">
@@ -65,10 +65,10 @@ useHead({
   ],
 })
 const currentUrl = `https://houedanou.com${route.path}`
-
 function formatDate(createdAt) {
   if (createdAt) {
-    const date = new Date(createdAt)
+    const [day, month, year] = createdAt.split('-')
+    const date = new Date(year, month - 1, day)
     return date.toLocaleDateString('fr-FR', { year: 'numeric', month: 'long', day: 'numeric' })
   }
   return 'Date inconnue'
