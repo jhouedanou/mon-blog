@@ -8,7 +8,7 @@
         </div>
         <h2 class="article-title">{{ formatTitle(article.title) }}</h2>
         <div class="article-meta">
-            <span class="article-date">{{ formatDate(article._path) }}</span>
+            <span class="article-date">{{ formatDate(article.createdAt) }}</span></span>
         </div>
         <div class="article-content" v-html="article.body?.html || article.description"></div>
 
