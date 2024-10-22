@@ -8,7 +8,8 @@ createdAt: "22-10-2024"
 
 Permettez-moi de vous présenter Sandrine.
 Sandrine, c'est celle qui aime chanter au karaoké.
-Elle qui interprète "Never Leave You" de Lumidee au karaoké avec une passion inversement proportionnelle à son talent.
+
+Elle interprète "Never Leave You" de Lumidee au karaoké avec une passion inversement proportionnelle à son talent.
 
 Imaginez maintenant qu'on lui confie un micro Shure professionnel, le même modèle qu'utilise Beyoncé en studio.
 **Cela ne fera pas d'elle une meilleure chanteuse, n'est-ce pas ?**
