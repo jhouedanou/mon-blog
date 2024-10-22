@@ -6,9 +6,9 @@ createdAt: "21-10-2024"
 
 # Non, ce câble de 240W ne chargera pas plus vite votre vieux macbook
 
-Il y a 3 corps de métiers dont bon nombre de représentants n'iront pas au paradis : les mécaniciens, les menuisiers et les vendeurs d'appareils électroniques (avec, par extension, leurs déclinaisons sur TikTok).
+Il y a 3 corps de métiers dont nombre de représentants n'iront pas au paradis : les mécaniciens, les menuisiers et les vendeurs d'appareils électroniques (avec, par extension, leurs déclinaisons sur TikTok).
 
-Les premiers à cause de leur tendance à surfacturer des réparations, les seconds à cause de leur incapacité notoire à respecter les délais et les rendez-vous, et les derniers parce que bon nombre d'entre eux n'y connaissent pas grand-chose, mais bouchent leur vide intellectuel avec de l'arrogance ou de la malhonneteté.
+Les premiers à cause de leur tendance à sur-facturer des réparations, les seconds à cause de leur incapacité notoire à respecter les délais et les rendez-vous, et les derniers parce que bon nombre d'entre eux n'y connaissent pas grand-chose, mais bouchent leur vide intellectuel avec de l'arrogance ou de la malhonnêteté.
 
 Prenez par exemple ce vendeur, rencontré aujourd'hui - dans un grand magasin de la place - , tandis que je cherchais un câble pour charger mon (pas si vieux que ça en fait) MacBook Pro 2017.
 
@@ -46,8 +46,8 @@ Désarçonné, le vendeur tente une dernière approche : "Mais... mais enfin, ha
 
 Je saisis le câble 60W, laissant le vendeur perplexe, et me dirige vers la caisse, satisfait d'avoir évité une vente abusive et pressé de pouvoir enfin partir avec le bon produit.
 
-Plus sérieusement.. cotre MacBook Pro 2017 n'est pas un bolide conçu pour absorber 240W comme s'il s'agissait d'un petit-déjeuner léger. Il préfère un régime plus modeste, avec un standard de charge moins puissant. Oui, le câble 240W est rétrocompatible, comme un adulte qui sait parler aux enfants. Mais il ne va pas forcer votre MacBook à manger plus qu'il ne peut.
+Plus sérieusement.. cotre MacBook Pro 2017 n'est pas un bolide conçu pour absorber 240W comme s'il s'agissait d'un petit-déjeuner léger. Il préfère un régime plus modeste, avec un standard de charge moins puissant. Oui, le câble 240W est rétro-compatible, comme un adulte qui sait parler aux enfants. Mais il ne va pas forcer votre MacBook à manger plus qu'il ne peut.
 
-**En fin de compte, rappelez-vous que dans le monde de la technologie, comme dans la vie, ce n'est pas toujours le plus gros ou le plus puissant qui gagne. C'est celui qui est le mieux adapté à vos besoins.**
+**, rappelez-vous que dans le monde de la technologie, comme dans la vie, ce n'est pas toujours le plus gros ou le plus puissant qui gagne. C'est celui qui est le mieux adapté à vos besoins.**
 
 Et ça, aucun vendeur arrogant ne pourra vous le vendre - c'est à vous de le savoir.
