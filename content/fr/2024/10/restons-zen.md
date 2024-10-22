@@ -12,7 +12,10 @@ Vous savez, celle qui interprète "Never Leave You" de Lumidee au karaoké avec 
 Imaginez maintenant qu'on lui confie un micro Shure professionnel, le même modèle qu'utilise Beyoncé en studio.
 **Cela ne fera pas d'elle une meilleure chanteuse, n'est-ce pas ?**
 
-Internet, c'est exactement cela : on a offert des microphones professionnels à des personnes qui auraient dû rester dans le public. Mais contrairement au karaoké, impossible de s'éclipser discrètement. D'où l'importance d'avoir une stratégie. C'est là qu'intervient la théorie du verre d'eau.
+Internet, c'est exactement cela : on a offert des microphones professionnels à des personnes qui auraient dû rester dans le public. Mais contrairement au karaoké où sévit Sandrine, impossible de s'éclipser discrètement.
+D'où l'importance d'avoir une stratégie.
+
+C'est là qu'intervient la théorie du verre d'eau.
 
 ## Le principe du verre d'eau
 
