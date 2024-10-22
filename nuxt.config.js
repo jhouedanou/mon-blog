@@ -93,10 +93,6 @@ i18n: {
           async: true
         },
         {
-          src:'https://platform-api.sharethis.com/js/sharethis.js#property=671678124be62400139baad2&product=sop',
-          async: true
-        },
-        {
           src: `https://www.googletagmanager.com/gtag/js?id=G-5DSHDPMFNP`,
           async: true
         },
