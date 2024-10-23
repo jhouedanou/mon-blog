@@ -102,13 +102,14 @@ function estimateReadTime(content) {
 }
 
 .cover-image {
-  height: 20vh;
+  min-height: 20vh;
   background-size: cover;
   background-position: center;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   padding: 2rem;
   position: relative;
+  text-align: center;
 
   &::after {
     content: '';
@@ -128,6 +129,7 @@ function estimateReadTime(content) {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.3;
+  margin: 0 auto;
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
