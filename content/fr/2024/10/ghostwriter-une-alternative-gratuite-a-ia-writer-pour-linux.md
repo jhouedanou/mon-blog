@@ -13,7 +13,7 @@ Changer de moteur de blog m'a permis de :
 
 ## iA Writer : le meilleur éditeur Markdown ?
 
-À mon avis, iA Writer est le meilleur éditeur Markdown au monde. Voici pourquoi :
+iA Writer est le meilleur éditeur Markdown au monde. Voici pourquoi :
 
 - Son interface utilisateur est exempte de distractions inutiles, avec un point d'insertion bleu distinctif.
 - Il propose un mode 'focus' qui met en exergue la ligne, la phrase ou le paragraphe en cours d'écriture, assombrissant le reste du texte.
@@ -41,4 +41,4 @@ sudo apt-get install hunspell-fr
 
 ## Conclusion
 
-Bien qu'iA Writer reste une référence dans le domaine des éditeurs Markdown, Ghostwriter s'avère être une excellente alternative pour les utilisateurs Linux. Il offre une expérience d'écriture sans distraction similaire à iA Writer, tout en étant gratuit et open-source. Pour les écrivains, blogueurs ou tout utilisateur à la recherche d'un environnement d'écriture épuré et efficace sous Linux, Ghostwriter mérite certainement d'être essayé.
+iA Writer reste une référence dans le domaine des éditeurs Markdown, Ghostwriter s'avère être une excellente alternative pour les utilisateurs Linux. Il offre une expérience d'écriture sans distraction similaire à iA Writer, tout en étant gratuit et open-source. Pour les écrivains, blogueurs ou tout utilisateur à la recherche d'un environnement d'écriture épuré et efficace sous Linux, Ghostwriter mérite certainement d'être essayé.
