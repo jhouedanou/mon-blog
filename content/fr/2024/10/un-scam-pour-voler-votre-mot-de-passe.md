@@ -1,6 +1,6 @@
 ---
 title: "Une arnaque imitant facebook afin de vous voler votre mot de passe"
-image: "/images/articles/scam.jpeg"
+image: "/images/articles/scam.webp"
 createdAt: "02-10-2024"
 ---
 
@@ -33,4 +33,4 @@ _Je dois reconnaître que même si Facebook n’est peut-être pas mon site pré
 2.  **Ne donnez jamais votre mot de passe ou un code de connexion.** Facebook ne vous demandera jamais ces informations via WhatsApp.
 3.  **Changez immédiatement votre mot de passe** si vous avez cliqué ou partagé vos informations.
 4.  **Bloquez et signalez le numéro** qui vous a envoyé le message. Sur WhatsApp, vous pouvez signaler ces messages pour éviter que d’autres personnes ne tombent dans le piège.
-A
+    A

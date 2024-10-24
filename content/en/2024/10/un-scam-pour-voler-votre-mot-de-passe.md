@@ -1,6 +1,6 @@
 ---
 title: "A scam imitating Facebook to steal your password"
-image: "/images/articles/scam.jpeg"
+image: "/images/articles/scam.webp"
 createdAt: "02-10-2024"
 ---
 

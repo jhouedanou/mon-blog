@@ -1,6 +1,6 @@
 ---
 title: "On fait un peu le ménage."
-image: "/images/articles/menage-image.jpeg"
+image: "/images/articles/menage-image.webp"
 createdAt: "05-10-2024"
 ---
 
