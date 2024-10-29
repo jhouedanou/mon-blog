@@ -1,3 +1,8 @@
+---
+title: "Comment cloner Ubuntu sans perdre ses données et son âme"
+image: "/images/articles/pingui.jpg"
+createdAt: "29-10-2024"
+---
 
 # 🚀 Comment cloner Ubuntu sans perdre ses données et son âme
 
@@ -16,10 +21,9 @@ Quand votre SSD de votre ordinateur sous Ubuntu commence à tousser et que les m
 
 Première étape cruciale, identifier qui est qui dans notre joyeux système :
 
-*sudo fdisk -l*
+_sudo fdisk -l_
 
 Dans mon cas avec le HP Pro X2, le disque source est /dev/sda et le nouveau SSD est /dev/sdb.
-
 
 #### 2. Le Script de Clonage
 
@@ -29,7 +33,7 @@ Créez un fichier [clone-ubuntu.sh](https://clone-ubuntu.sh) :
 #!/bin/bash
 
 # Vérification des privilèges root
-if [ "$EUID" -ne 0 ]; then 
+if [ "$EUID" -ne 0 ]; then
   echo "Ce script doit être exécuté en tant que root (utilisez sudo)"
   exit 1
 fi
@@ -76,13 +80,11 @@ resize2fs "${DISQUE_DESTINATION}2"
 echo "Clonage terminé ! 🎉"
 ```
 
-
 #### 3. Exécution
 
 sudo bash [clone-ubuntu.sh](https://clone-ubuntu.sh)
 
 #### 4. Vérification
-
 
 Une fois le clonage terminé :
 
@@ -92,8 +94,8 @@ Vérifiez que la nouvelle partition utilise bien tout l'espace disponible.
 
 ### 🎯 Points Importants
 
-* Vérifiez les lettres correspondants à chaque disque dur;
-* Sauvegarde : Même si je fais confiance à mon script, j'ai toutefois fait une sauvegarde avant. On n'est jamais trop prudent !
-* Vérification des noms de disques : Je répète .\
-C’est LA partie où il ne faut pas se tromper
-* Patience : Le clonage peut prendre un certain temps, selon la taille de vos données
+- Vérifiez les lettres correspondants à chaque disque dur;
+- Sauvegarde : Même si je fais confiance à mon script, j'ai toutefois fait une sauvegarde avant. On n'est jamais trop prudent !
+- Vérification des noms de disques : Je répète .\
+  C’est LA partie où il ne faut pas se tromper
+- Patience : Le clonage peut prendre un certain temps, selon la taille de vos données
