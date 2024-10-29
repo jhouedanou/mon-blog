@@ -1,6 +1,6 @@
 ---
 title: "How to Handle Online Harassment: The Microphone and Water Glass Theory"
-image: "/images/articles/microTheory.webp"
+image: "/images/articles/theorieduMicro.webp"
 createdAt: "22-10-2024"
 ---
 
