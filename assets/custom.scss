@@ -134,10 +134,24 @@ header{
   }
   li, p{
 
-    font-size: 1.2rem;
-    color: #555;
-    margin-bottom: 1rem;
-    line-height: 1.4;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    overflow-wrap: break-word;
+    color: #363636;
+    font-family: "Merriweather",sans-serif;
+    margin-top: 0;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+  p{
+    text-align:justify;
   }
   blockquote {
       background-color: #f9f9f9;

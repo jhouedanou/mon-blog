@@ -26,7 +26,7 @@
         <DisqusComments :pageUrl="currentUrl" :pageIdentifier="article._path" />
         <a href="https://houedanou.com" rel="dofollow">Jean-Luc Houédanou</a>
         <br>
-        <a href="https://jeanluchouedanou.blogspot.com/">Mes anciens articles</a>
+        <a target="_blank" href="https://jeanluchouedanou.blogspot.com/">Mes anciens articles</a>
       </div>
       <footer class="article-footer">
         <NuxtLink to="/" class="back-to-articles">{{ $t('backToArticles') }}</NuxtLink>
@@ -102,13 +102,14 @@ function estimateReadTime(content) {
 }
 
 .cover-image {
-  height: 20vh;
+  min-height: 20vh;
   background-size: cover;
   background-position: center;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   padding: 2rem;
   position: relative;
+  text-align: center;
 
   &::after {
     content: '';
@@ -128,6 +129,7 @@ function estimateReadTime(content) {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.3;
+  margin: 0 auto;
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }

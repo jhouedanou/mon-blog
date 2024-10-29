@@ -1,6 +1,6 @@
 ---
 title: "Doing some cleanup"
-image: "/images/articles/menage-image.jpeg"
+image: "/images/articles/menage-image.webp"
 createdAt: "2024-05-10"
 ---
 

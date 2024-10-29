@@ -1,6 +1,6 @@
 ---
 title: "Djamo: Goodbye Rejection Fees, Hello Easy Transfers and Discreet Balance! "
-image: "/images/articles/djamo.jpeg"
+image: "/images/articles/djamo.webp"
 createdAt: "2024-05-09"
 ---
 

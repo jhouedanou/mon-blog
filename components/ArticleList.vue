@@ -170,15 +170,21 @@ h2 {
 }
 
 .article-excerpt {
-    font-family: "Source Sans Pro", sans-serif;
-    box-sizing: inherit;
-    margin: 0;
     padding: 0;
-    -webkit-font-smoothing: antialiased;
-    font-size: 1.2rem;
-    color: #555;
-    line-height: 1.4;
-    margin-bottom: 1.5rem;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    overflow-wrap: break-word;
+    color: #363636;
+    font-family: "Merriweather", sans-serif;
+    margin-top: 0;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 0;
 }
 
 .pagination {
