@@ -8,22 +8,22 @@ createdAt: "29-10-2024"
 
 When your computer's SSD running Ubuntu starts coughing and "insufficient disk space" messages become your most frequent notification, it's time to take action. In my case, upgrading to a 256 GB SSD will give me (and my HP Pro X2) some breathing room.
 
-### 🎯 What You'll Need
+## 🎯 What You'll Need
 
 - A new SSD (in my case, 256 GB)
 - Your current working Ubuntu installation
 - A bootable USB drive (just in case)
 - 30 minutes of your time (plus coffee time)
 
-### 🛠 Step-by-Step Procedure
+## 🛠 Step-by-Step Procedure
 
-#### 1. Disk Identification
+### 1. Disk Identification
 
 First crucial step, identifying who's who in our happy system:
 _sudo fdisk -l_
 In my case with the HP Pro X2, the source disk is /dev/sda and the new SSD is /dev/sdb.
 
-#### 2. The Cloning Script
+### 2. The Cloning Script
 
 Create a clone-ubuntu.sh file:
 
@@ -65,17 +65,17 @@ resize2fs "${DESTINATION_DISK}2"
 echo "Cloning complete! 🎉"
 ```
 
-#### 3. Execution
+### 3. Execution
 
 sudo bash clone-ubuntu.sh
 
-#### 4. Verification
+### 4. Verification
 
 Once cloning is complete:
 sudo fdisk -l
 Verify that the new partition is using all available space.
 
-### 🎯 Important Points
+## 🎯 Important Points
 
 - Check the letters corresponding to each hard drive;
 - Backup: Even though I trust my script, I still made a backup beforehand. Better safe than sorry!

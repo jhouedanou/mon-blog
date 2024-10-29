@@ -8,16 +8,16 @@ createdAt: "29-10-2024"
 
 Quand votre SSD de votre ordinateur sous Ubuntu commence à tousser et que les messages "espace disque insuffisant" deviennent la notification la plus fréquente, il est temps d'agir. Dans mon cas, passer à un SSD de 256 Go va me permettre de respirer un peu (et à mon HP Pro X2 aussi).
 
-### 🎯 Ce Dont Vous Aurez Besoin
+## 🎯 Ce Dont Vous Aurez Besoin
 
 - Un nouveau SSD (dans mon cas, 256 Go)
 - Votre Ubuntu actuel fonctionnel
 - Une clé USB bootable (au cas où)
 - 30 minutes de votre temps (plus le temps du café)
 
-### 🛠 La Procédure Étape par Étape
+## 🛠 La Procédure Étape par Étape
 
-#### 1. Identification des Disques
+### 1. Identification des Disques
 
 Première étape cruciale, identifier qui est qui dans notre joyeux système :
 
@@ -25,7 +25,7 @@ _sudo fdisk -l_
 
 Dans mon cas avec le HP Pro X2, le disque source est /dev/sda et le nouveau SSD est /dev/sdb.
 
-#### 2. Le Script de Clonage
+### 2. Le Script de Clonage
 
 Créez un fichier [clone-ubuntu.sh](https://clone-ubuntu.sh) :
 
@@ -80,11 +80,11 @@ resize2fs "${DISQUE_DESTINATION}2"
 echo "Clonage terminé ! 🎉"
 ```
 
-#### 3. Exécution
+### 3. Exécution
 
 sudo bash [clone-ubuntu.sh](https://clone-ubuntu.sh)
 
-#### 4. Vérification
+### 4. Vérification
 
 Une fois le clonage terminé :
 
@@ -92,7 +92,7 @@ sudo fdisk -l
 
 Vérifiez que la nouvelle partition utilise bien tout l'espace disponible.
 
-### 🎯 Points Importants
+## 🎯 Points Importants
 
 - Vérifiez les lettres correspondants à chaque disque dur;
 - Sauvegarde : Même si je fais confiance à mon script, j'ai toutefois fait une sauvegarde avant. On n'est jamais trop prudent !
