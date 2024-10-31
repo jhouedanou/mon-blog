@@ -64,7 +64,7 @@ import { useLocalePath } from '#i18n'
 const localePath = useLocalePath()
 const { locale, t } = useI18n()
 const currentPage = ref(1)
-const articlesPerPage = 9
+const articlesPerPage = 6
 const { data: articles } = await useAsyncData('articles', () =>
     queryContent(locale.value)
         .sort({ createdAt: -1 })
