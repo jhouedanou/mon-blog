@@ -1,41 +1,46 @@
 ---
-title: "L'art de l'indifférence et les beignets"
+title: "stoïcisme et beignets : maîtriser l'art de l'indifférence"
 image: "/images/articles/fuu.jpeg"
 createdAt: "14-11-2024"
 ---
 
-# L'art de l'indifférence et les beignets
+# Stoïcisme et beignets : maîtriser l'art de l'indifférence
 
-Avec des années de navigation sur Internet, j’ai vécu bien des expériences, tant positives que négatives. Parmi mes souvenirs les moins glorieux, je me souviens d'un dossier spécial intitulé “forum weaponry”, un véritable arsenal virtuel rempli de vidéos du Nostalgia Critic ([les eSults](https://www.youtube.com/watch?v=Qmeou8BM7vU&list=PL0AQIMR-tpokOX4kIXDp4oyq-oqJhjjES&index=12)), de répliques cinglantes et de mèmes acérés, tous destinés à remettre à leur place les âmes téméraires qui osaient me provoquer.
+Avec des années d’expériences en ligne, j’en ai vu de toutes les couleurs, des bons moments comme des mauvais. L’un de mes souvenirs les plus marquants est un dossier que je gardais précieusement, appelé “forum weaponry” – mon arsenal personnel de mèmes acérés et de vidéos de répliques du Nostalgia Critic ([comme les eSults](https://www.youtube.com/watch?v=Qmeou8BM7vU&list=PL0AQIMR-tpokOX4kIXDp4oyq-oqJhjjES&index=12)). Tout cela servait à tenir tête aux trolls qui osaient me défier. J’étais méthodique, prenant un malin plaisir à les pousser à bout jusqu’à ce que leurs réponses se transforment en insultes personnelles.
 
-J’étais méthodique et redoutable, prenant un plaisir malsain à les pousser à bout jusqu'à ce qu'ils explosent en insultes personnelles, souvent dirigées vers ma famille. Puis un matin, en relisant mes interventions dans une discussion sur la bande-annonce de _Black Panther_, je me suis rendu compte que je m’étais transformé en ce que je détestais.
+Puis, un jour, en relisant mes commentaires dans un débat enflammé sur _Black Panther_, j’ai eu une révélation : j’étais devenu ce que je détestais. Moi aussi, je contribuais désormais au bruit que je critiquais autrefois.
 
-J'étais devenu un troll moi-même.
+Cette prise de conscience m’a poussé à reconsidérer l’utilisation de mon temps. J’ai décidé de changer d’approche, d’apprendre à répondre aux provocations avec humour et de m’entraîner à décrocher. Car en vieillissant, les responsabilités augmentent, le temps diminue et j’ai réalisé qu’il y a mieux à faire que de gaspiller mon énergie sur des trolls.
 
-Cette prise de conscience m'a amené à réfléchir sur le temps que je perdais dans ces échanges stériles. J'ai donc décidé de changer d'approche et d'apprendre à répondre aux provocations avec humour. Car plus on vieillit, plus on a de responsabilités et moins on a de temps pour les trolls.
+## Le Dilemme du Beignet
 
-Pour illustrer cette évolution, imaginez la scène suivante :
+Pour illustrer cette philosophie, imaginez la scène suivante :
 
-Après une longue journée de travail au bord de la Lagune Ébrié, vous vous dirigez vers votre restaurant préféré à Biétry. Vous commandez quatre beignets bien dorés, farcis de viande hachée et d’oignons – une véritable ode à la gourmandise après une journée bien remplie. Alors que vous vous apprêtez à déguster ces délices, trois personnes surgissent :
+Après une longue journée au bord de la Lagune Ébrié, vous vous rendez dans votre restaurant préféré à Biétry. Vous commandez quatre beignets dorés, farcis de viande hachée et d’oignons – un plaisir simple après une journée bien remplie. Alors que vous êtes sur le point de les déguster, trois « critiques du beignet » apparaissent soudainement :
 
-- Un homme pointe du doigt votre assiette : “Mais vous y pensez ? Il y a des familles qui n’ont pas de quoi se nourrir, et vous, vous dévorez ces beignets !”
-- Une féministe s’indigne : “En plus, c’est patriarcal de se gaver comme ça ! #menarevil”
-- Une végane s'insurge : “Comment osez-vous consommer de la viande ?!”
+- **Premier Critique** : “Comment pouvez-vous manger ça alors que des familles n’ont pas de quoi se nourrir ?”
+- **Deuxième Critique** : “En plus, c’est patriarcal de se goinfrer de la sorte ! #leshommesencore #toujourseux #jepreferelours ”
+- **Troisième Critique** : “Et de la viande, vraiment ? Comment osez-vous !”
 
-Face à cette troupe de justiciers moralisateurs, trois options s’offrent à vous :
+Vous avez alors trois options :
 
-1. **Prendre vos beignets et filer ailleurs**, en les laissant faire leur petit monologue moral.
-2. **Les fixer calmement** en lançant un sec “Mêlez-vous de vos oignons.” tout en essayant d'ignorer leurs provocations.
-3. **Vous embarquer dans une discussion passionnée** sur les bienfaits nutritifs du beignet, débattant joyeusement des enjeux liés à la viande et même du patriarcat.
+1. **Prendre vos beignets, monter dans votre voiture et partir**, en les laissant là.
+2. **Les regarder calmement dans les yeux** et dire avec un sourire : “Occupez-vous de vos oignons. Les miens sont frits, accompagnés d'une viande juteuse et n'attendent que d'être dégustés ” tout en ignorant leurs provocations.
+3. **Entrer dans une discussion enflammée** sur les bienfaits nutritifs des beignets, débattant joyeusement de la viande, de l’éthique et même du patriarcat.
 
-Si vous choisissez l'option trois, vous êtes probablement trop habitué aux discussions en ligne et aux joutes verbales interminables. Pendant que vos beignets refroidissent, vous vous retrouverez au cœur d’une mêlée absurde d’arguments inutiles et d’insultes insensées – qui se termineront sans aucun doute par un "Biamali", une variante locale du verbe _biama_, signifiant “foire d'insultes”.
+Choisir la troisième option revient à plonger dans ce que l’on appelle un “Biamali” (un terme local signifiant “foire aux insultes”). Vos beignets refroidiront pendant que vous serez plongés dans une d’arguments inutiles, qui se terminera inévitablement par des noms d'oiseaux . La deuxième option, bien que tentante, risque aussi de vous tirer vers l’escalade. Alors, que reste-t-il ?
 
-L’option deux peut sembler raisonnable mais risque aussi de vous entraîner dans une dispute inutile.
+La réponse est simple : **l’Option Un** – prenez vos beignets, souriez et laissez-les parler dans le vide. Ignorer les provocations peut être incroyablement libérateur. Avec un peu d’humour, cela devient même amusant.
 
-Il reste donc l’option un : la plus sage. Prenez vos beignets avec un sourire et laissez-les parler dans le vent. Ignorer les provocations peut être un véritable soulagement et, avec un peu d’entraînement, cela peut même devenir un jeu amusant.
+Imaginez leur dire avec un sourire : “Vous avez tous absolument raison ! D’ailleurs, je devrais peut-être partager. Qui veut le premier morceau ?” et les regarder s’emmêler dans leurs propres discours pendant que vous savourez votre repas.
 
-Imaginez la scène si, au lieu de répondre à leurs critiques avec colère, vous souriez et lancez : “Vous avez tous raison ! D’ailleurs, je devrais peut-être partager ces beignets. Qui en veut un ?” Puis laissez-les discuter entre eux. En un clin d’œil, la conversation se transforme en compétition pour voir qui a le meilleur argument pendant que vous savourez votre beignet en paix.
+C'est le même chemin stoïcien qu'il faut suivre face aux provocations en ligne. Cette approche n’est pas de l’apathie ; c’est un choix réfléchi. Le stoïcisme nous enseigne q**ue chaque remarque ou opinion ne mérite pas notre attention**.
+Pensez à vos priorités comme « vos beignets ». Vous ne laisseriez pas quelqu’un s’emparer de vos beignets sans rien dire ; alors pourquoi leur laisser voler votre paix ou votre joie ?
 
-### Conclusion
+Quand vous ressentez l’envie de réagir à une critique en ligne ou à un avis non sollicité, demandez-vous : est-ce une bataille qui mérite d’être menée, ou mon énergie serait-elle mieux investie ailleurs ? Poser une limite polie mais ferme, en disant “occupez-vous de vos affaires,” protège votre paix sans attiser les tensions.
 
-La prochaine fois que vous croiserez des trolls en ligne ou dans la vie réelle, rappelez-vous cette scène. Préservez votre tranquillité intérieure, épargnez-vous une dispute inutile et surtout gardez toujours le sourire… tout en savourant votre moment.
+La prochaine fois que vous croisez des trolls – en ligne ou dans la vraie vie – pensez à cette histoire. Adoptez l’art de l’indifférence. Protégez vos beignets, protégez votre paix, et souvenez-vous que chaque critique ne mérite pas une réaction. Laissez-les s’effacer pendant que vous savourez ce qui compte le plus.
+
+```
+
+```
