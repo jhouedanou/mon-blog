@@ -1,45 +1,43 @@
 ```markdown
 ---
-title: "The Art of Indifference and Donuts"
+title: "stoicism and donuts: mastering the art of indifference"
 image: "/images/articles/fuu.jpeg"
 createdAt: "11-14-2024"
 ---
 
-# The Art of Indifference and Donuts
+# stoicism and donuts: mastering the art of indifference
 
-After years of navigating the internet, I’ve had plenty of experiences, both positive and negative. Among my less glorious memories is a special folder I once had called "forum weaponry," a virtual arsenal filled with Nostalgia Critic videos ([the eSults](https://www.youtube.com/watch?v=Qmeou8BM7vU&list=PL0AQIMR-tpokOX4kIXDp4oyq-oqJhjjES&index=12)), sharp comebacks, and biting memes, all designed to put daring souls who provoked me in their place.
+With years of online experience, I’ve seen it all—the good moments and the bad. One of my most vivid memories is a folder I once kept called “forum weaponry”—my personal arsenal of sharp memes and Nostalgia Critic comeback videos ([like the eSults](https://www.youtube.com/watch?v=Qmeou8BM7vU&list=PL0AQIMR-tpokOX4kIXDp4oyq-oqJhjjES&index=12)). All this was for standing up to trolls who dared to challenge me. I was methodical, taking pleasure in pushing them to the brink until their responses turned to personal insults.
 
-I was methodical and ruthless, taking a somewhat wicked pleasure in pushing them to their breaking point until they lashed out with personal insults, often aimed at my family. Then one morning, while rereading my comments in a heated discussion about the _Black Panther_ trailer, I realized I had become what I despised.
+Then one day, while rereading my comments in a heated debate over _Black Panther_, I had a revelation: I had become what I despised. I was now part of the noise I once criticized.
 
-I had turned into a troll myself.
+This realization made me reconsider how I was spending my time. I decided to change my approach, to respond to provocations with humor, and to practice disengaging. As we grow older, our responsibilities increase, our time decreases, and I realized I had better things to do than waste my energy on trolls.
 
-This revelation made me rethink the time I wasted in these sterile exchanges. I decided it was time for a new approach—to respond to provocations with humor. Because as you grow older, with more responsibilities, you have less time for trolls.
+## The Donut Dilemma
 
-To illustrate this change, imagine the following scene:
+To illustrate this philosophy, imagine the following scene:
 
-After a long day of work by the Ébrié Lagoon, you head to your favorite restaurant in Biétry. You order four golden donuts, stuffed with minced meat and onions—a true ode to indulgence after a long day. As you’re about to enjoy these delights, three people suddenly appear:
+After a long day by the Ébrié Lagoon, you head to your favorite restaurant in Biétry. You order four golden donuts stuffed with minced meat and onions—a simple pleasure after a full day. Just as you’re about to enjoy them, three “donut critics” suddenly appear:
 
-- A man points at your plate: “Have you thought about it? There are families who can’t afford food, and here you are devouring those donuts!”
-- A feminist scolds you: “And on top of that, it’s patriarchal to stuff yourself like this! #menareevil”
-- A vegan protests: “How dare you consume meat?!”
+- **First Critic**: “How can you eat that when some families can’t even afford food?”
+- **Second Critic**: “On top of that, it’s patriarchal to indulge like this! #menaretheproblem”
+- **Third Critic**: “And meat, really? How could you!”
 
-Faced with this group of moral crusaders, you have three options:
+Now you have three options:
 
-1. **Take your donuts and leave**, letting them carry on with their moral monologue.
-2. **Look them calmly in the eyes** and throw out a sharp “Mind your own onions,” trying to ignore their provocations.
-3. **Engage in a passionate discussion** about the nutritional benefits of donuts, joyfully debating meat consumption and even patriarchy.
+1. **Take your donuts, hop in your car, and leave**, letting them ramble on.
+2. **Look them calmly in the eyes** and, with a smile, say, “Mind your own onions. Mine are fried, paired with juicy meat, and ready to be enjoyed,” ignoring their provocations.
+3. **Dive into a heated discussion** on the nutritional benefits of donuts, joyfully debating meat, ethics, and even patriarchy.
 
-If you choose option three, you’re probably too used to online debates and endless verbal sparring. While your donuts grow cold, you’ll find yourself in the heart of a pointless melee of arguments and nonsensical insults—which will no doubt end in what I call “Biamali,” a local variant of the verb _biama_, meaning “insult fest.”
+Choosing the third option is like diving into what’s called a “Biamali” (a local term meaning “insult fest”). Your donuts will go cold while you’re trapped in a spiral of pointless arguments that inevitably ends with name-calling. The second option, while tempting, could still escalate things. So, what’s left?
 
-Option two might seem reasonable but also risks pulling you into a needless dispute.
+The answer is simple: **Option One**—grab your donuts, smile, and let them talk into the void. Ignoring provocations can be incredibly liberating. And with a bit of humor, it even becomes fun.
 
-So that leaves option one: the wisest. Take your donuts with a smile and let them talk into the wind. Ignoring provocations can be truly liberating, and with a bit of practice, it can even become a fun game.
+Imagine smiling and saying, “You’re all absolutely right! In fact, I should probably share. Who wants the first piece?” and watching them get tangled in their own debates while you enjoy your meal.
 
-Imagine if, instead of responding to their criticisms with anger, you smiled and said, “You’re all right! I should probably share these donuts. Who wants one first?” Then let them argue among themselves. In the blink of an eye, the conversation shifts into a contest to see who has the best argument, while you peacefully enjoy your donut.
+It’s the same stoic path to follow in the face of online provocations. This approach isn’t apathy; it’s a thoughtful choice. Stoicism teaches us that not every remark or opinion deserves our attention. Think of your priorities as “your donuts.” You wouldn’t let someone grab your donuts without saying anything; so why let them steal your peace or joy?
 
-### Conclusion
+When you feel the urge to respond to an online critique or unsolicited opinion, ask yourself: is this a battle worth fighting, or would my energy be better spent elsewhere? Setting a polite but firm boundary by saying “mind your own business” protects your peace without fanning the flames.
 
-The next time you come across trolls online or in real life, remember this scene. Preserve your inner peace, avoid unnecessary arguments, and above all, keep smiling… while savoring your moment.
-
-To add a bit of humor and nostalgia to this reflection, check out the Nostalgia Critic’s eSults playlist [here](https://www.youtube.com/watch?v=Qmeou8BM7vU&list=PL0AQIMR-tpokOX4kIXDp4oyq-oqJhjjES&index=12).
+Next time you encounter trolls—online or in real life—think of this story. Embrace the art of indifference. Protect your donuts, protect your peace, and remember that not every critic deserves a reaction. Let them fade as you savor what matters most.
 ```
