@@ -2,6 +2,7 @@
 title: "Pourquoi tant de haine envers Adobe ? (Parce qu’elle est méritée.)"
 image: "/images/articles/adobe.webp"
 createdAt: "12-12-2024"
+id: 9
 ---
 
 # Pourquoi tant de haine envers Adobe ? Parce qu'elle est méritée.

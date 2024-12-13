@@ -52,7 +52,7 @@ const currentPage = ref(1)
 const articlesPerPage = 6
 const { data: articles } = await useAsyncData('articles', () =>
     queryContent(locale.value)
-        .sort({ createdAt: -1 })
+        .sort({ id: -1 }) // 1 pour ordre croissant des IDs
         .find()
 )
 const paginatedArticles = computed(() => {

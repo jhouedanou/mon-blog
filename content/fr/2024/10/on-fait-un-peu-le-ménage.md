@@ -2,6 +2,7 @@
 title: "On fait un peu le ménage."
 image: "/images/articles/menage-image.webp"
 createdAt: "05-10-2024"
+id: 1
 ---
 
 # On fait un peu le ménage.

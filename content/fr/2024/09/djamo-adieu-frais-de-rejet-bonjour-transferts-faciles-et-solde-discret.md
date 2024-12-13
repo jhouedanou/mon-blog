@@ -2,6 +2,7 @@
 title: "Adieu frais de rejet, bonjour transferts faciles et solde discret ! "
 image: "/images/articles/djamo.webp"
 createdAt: "05-09-2024"
+id: 1
 ---
 
 # Djamo : Adieu frais de rejet, bonjour transferts faciles et solde discret ! 🎉💃🏾
