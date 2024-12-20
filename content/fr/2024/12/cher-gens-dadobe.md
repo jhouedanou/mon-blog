@@ -7,6 +7,7 @@ id: 9
 
 # Pourquoi tant de haine envers Adobe ? Parce qu'elle est méritée.
 
+<iframe style="border-radius:12px" src="https://open.spotify.com/episode/5DSxikfYgync2jCyzKP2bw?si=R7BqDh_xTrioCXEuVAT_UA" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 Bien qu'Affinity Designer soit une belle alternative, dans un cadre professionnel, je n'ai pas d'autre choix que d'utiliser Adobe. En effet, la plupart des designs que je dois transformer en code et en site web sont réalisés sur Adobe, et je ne maîtrise pas encore suffisamment Affinity Photo 2 pour éditer avec confiance les fichiers RAW issus de ma caméra Theta Z1.
 
 Je dois donc utiliser Adobe... mais parfois au détriment de ma santé mentale, sans parler du prix. Je conviens que mon jugement est peut-être un peu exagéré, mais je suis profondément déçu de ne pas avoir d'alternative à Adobe.

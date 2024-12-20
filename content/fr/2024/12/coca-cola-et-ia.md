@@ -8,6 +8,7 @@ id: 10
 
 # Coca-Cola, IA et Noël : le mélange qui fait parler (mais également vendre)
 
+<iframe style="border-radius:12px" src="https://open.spotify.com/episode/5fSjeXlcNIyon8UsenEsHk?si=T-vkLQTWSWGujySXvcG3NQ" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 Tout comme le KFC du 24 décembre au Japon ou la sauce pistache du jour de l'An sur les bords de la Lagune Ébrié, les publicités féériques de Coca-Cola pendant la période des fêtes sont une tradition incontournable.
 Cette année, la marque a décidé d'ajouter une touche technologique à sa magie de Noël.
 [![Coca-Cola Holidays Are Coming](https://img.youtube.com/vi/8m0Y-GisSeM/0.jpg)](https://www.youtube.com/watch?v=8m0Y-GisSeM)
