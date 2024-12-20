@@ -2,7 +2,7 @@
 title: "Ghostwriter, l'iA Writer de Linux"
 image: "/images/articles/mockup.png"
 createdAt: "20-10-2024"
-id: 5
+id: 4
 ---
 
 # Ghostwriter, l'iA Writer de Linux

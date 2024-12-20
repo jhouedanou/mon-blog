@@ -2,6 +2,7 @@
 title: "Doing some cleanup"
 image: "/images/articles/menage-image.webp"
 createdAt: "2024-05-10"
+id: 01
 ---
 
 # Doing some cleanup

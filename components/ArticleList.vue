@@ -52,9 +52,21 @@ const currentPage = ref(1)
 const articlesPerPage = 6
 const { data: articles } = await useAsyncData('articles', () =>
     queryContent(locale.value)
-        .sort({ id: -1 }) // 1 pour ordre croissant des IDs
         .find()
+        .then(articles => {
+            return articles
+                .map(article => {
+                    if (article.createdAt) {
+                        const [jour, mois, annee] = article.createdAt.split('-');
+                        // Création d'un timestamp pour faciliter le tri
+                        article.timestamp = new Date(annee, mois - 1, jour).getTime();
+                    }
+                    return article;
+                })
+                .sort((a, b) => b.timestamp - a.timestamp); // Tri décroissant par timestamp
+        })
 )
+
 const paginatedArticles = computed(() => {
     const start = (currentPage.value - 1) * articlesPerPage
     const end = start + articlesPerPage
@@ -67,12 +79,17 @@ function changePage(page) {
 }
 function formatDate(createdAt) {
     if (createdAt) {
-        const [day, month, year] = createdAt.split('-')
-        const date = new Date(year, month - 1, day)
-        return date.toLocaleDateString('fr-FR', { year: 'numeric', month: 'long', day: 'numeric' })
+        const [jour, mois, annee] = createdAt.split('-')
+        const date = new Date(annee, mois - 1, jour)
+        return new Intl.DateTimeFormat('fr-FR', {
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric'
+        }).format(date)
     }
-    return 'Date inconnue'
+    return 'Date non disponible'
 }
+
 
 function getExcerpt(article) {
     const content = article.description || article._raw || ''

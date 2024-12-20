@@ -1,14 +1,12 @@
 ---
-title: "Coca-Cola, IA et Noël : un mélange qui fait parler ( mais également vendre)
-"
-image: "/images/articles/coca-cola.web^"
+title: "Coca-Cola, IA et Noël : un mélange qui fait parler ( mais également vendre)"
+image: "/images/articles/cocacola.webp"
 createdAt: "20-12-2024"
 id: 10
 ---
 
 # Coca-Cola, IA et Noël : le mélange qui fait parler (mais également vendre)
 
-<iframe style="border-radius:12px" src="https://open.spotify.com/episode/5fSjeXlcNIyon8UsenEsHk?si=T-vkLQTWSWGujySXvcG3NQ" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 Tout comme le KFC du 24 décembre au Japon ou la sauce pistache du jour de l'An sur les bords de la Lagune Ébrié, les publicités féériques de Coca-Cola pendant la période des fêtes sont une tradition incontournable.
 Cette année, la marque a décidé d'ajouter une touche technologique à sa magie de Noël.
 [![Coca-Cola Holidays Are Coming](https://img.youtube.com/vi/8m0Y-GisSeM/0.jpg)](https://www.youtube.com/watch?v=8m0Y-GisSeM)
@@ -26,3 +24,5 @@ Non, l'enjeu est ailleurs : marquer les esprits et ancrer encore plus profondém
 La marque a réussi à occuper le terrain et à renforcer son association avec Noël. C'est ce qui compte, non ?
 
 ## \*(1)D'un point de vue technique, cette publicité est générée par un modèle basé sur DALL-E, donc obsolète à l'heure où <a href="https://www.instagram.com/generativeai_official/reel/DDwb4ZmSl7C/" target="_blank">Google Video 2</a> nous a tous impressionnés par son photoréalisme et sa capacité à conserver la cohérence d'une scène à l'autre, ainsi qu'à respecter la physique.
+
+<iframe style="border-radius:12px" src="https://open.spotify.com/episode/5fSjeXlcNIyon8UsenEsHk?si=T-vkLQTWSWGujySXvcG3NQ" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>

@@ -2,7 +2,7 @@
 title: "Comment cloner Ubuntu sans perdre ses données et son âme"
 image: "/images/articles/pingui.jpg"
 createdAt: "29-10-2024"
-id: 7
+id: 6
 ---
 
 # 🚀 Comment cloner Ubuntu sans perdre ses données et son âme

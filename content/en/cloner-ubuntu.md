@@ -1,7 +1,8 @@
 ---
 title: "How to Clone Ubuntu Without Losing Your Data and Soul"
 image: "/images/articles/pingui.jpg"
-createdAt: "28-10-2024"
+createdAt: "29-10-2024"
+id: 05
 ---
 
 # 🚀 How to Clone Ubuntu Without Losing Your Data and Soul

@@ -2,6 +2,7 @@
 title: "We Finished Cleaning Up"
 image: "/images/articles/mouff.jpg"
 createdAt: "21-10-2024"
+id: 02
 ---
 
 # We Finished Cleaning Up

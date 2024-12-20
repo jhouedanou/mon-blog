@@ -2,11 +2,11 @@
 title: "Why So Much Hatred Towards Adobe? (Because It's Deserved.)"
 image: "/images/articles/adobe.webp"
 createdAt: "12-12-2024"
+id: 9
 ---
 
 # Why So Much Hatred Towards Adobe? Because It's Deserved.
 
-<iframe style="border-radius:12px" src="https://open.spotify.com/episode/5DSxikfYgync2jCyzKP2bw?si=R7BqDh_xTrioCXEuVAT_UA" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 Although Affinity Designer is an excellent alternative, in a professional context, I have no choice but to use Adobe. Indeed, most of the designs I need to transform into code and websites are created in Adobe, and I have not yet mastered Affinity Photo 2 sufficiently to confidently edit RAW files from my Theta Z1 camera.
 
 I must therefore use Adobe... but sometimes at the expense of my mental health, not to mention the cost. I concede that my judgment might be slightly exaggerated, but I am profoundly disappointed by the lack of alternatives to Adobe.
@@ -42,3 +42,5 @@ These stories reveal a well-established strategy to deliberately frustrate the u
 ## Conclusion: How to Confront Adobe?
 
 Stop using their services, if possible. Or opt for a monthly subscription, without commitment.
+
+<iframe style="border-radius:12px" src="https://open.spotify.com/episode/5DSxikfYgync2jCyzKP2bw?si=R7BqDh_xTrioCXEuVAT_UA" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
