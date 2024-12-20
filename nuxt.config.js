@@ -114,6 +114,10 @@ i18n: {
           rel: 'stylesheet',
           href: 'https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Montserrat:wght@400;600;700&family=Inter:wght@400;600;700&family=Ubuntu:wght@400;500;700&family=Source+Sans+Pro:wght@400;600;700&display=swap'
         },
+        {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/icon?family=Material+Icons'
+        },
         { rel: 'apple-touch-icon', sizes: '57x57', href: '/apple-icon-57x57.png' },
         { rel: 'apple-touch-icon', sizes: '60x60', href: '/apple-icon-60x60.png' },
         { rel: 'apple-touch-icon', sizes: '72x72', href: '/apple-icon-72x72.png' },

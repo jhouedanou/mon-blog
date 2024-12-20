@@ -2,7 +2,9 @@
     <div class="video-container">
         <div class="video-wrapper" @click="showVideo = true">
             <img :src="`https://img.youtube.com/vi/${video}/sddefault.jpg`" :alt="title">
-            <div class="play-overlay">▶️</div>
+            <div class="play-overlay">
+                <span class="material-icons">play_circle</span>
+            </div>
         </div>
 
         <Teleport to="body" v-if="showVideo">
@@ -23,7 +25,7 @@ const props = defineProps({
     title: String
 })
 
-const showVideo = ref(false)
+const showVideo = ref(false);
 </script>
 
 <style scoped>
@@ -48,7 +50,12 @@ const showVideo = ref(false)
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 4em;
+}
+
+.play-overlay .material-icons {
+    font-size: 64px;
+    color: white;
+    opacity: 0.9;
 }
 
 .modal {
