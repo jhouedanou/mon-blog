@@ -1,43 +1,26 @@
 ---
-title: "Why So Much Hatred Towards Adobe? (Because It's Deserved.)"
-image: "/images/articles/adobe.webp"
-createdAt: "12-12-2024"
+title: "Coca-Cola, AI and Christmas: a mix that gets people talking (and selling too)"
+image: "/images/articles/coca-cola.web^"
+createdAt: "20-12-2024"
+id: 10
 ---
 
-# Why So Much Hatred Towards Adobe? Because It's Deserved.
+# Coca-Cola, AI and Christmas: a mix that gets people talking (and selling too)
 
-Although Affinity Designer is an excellent alternative, in a professional context, I have no choice but to use Adobe. Indeed, most of the designs I need to transform into code and websites are created in Adobe, and I have not yet mastered Affinity Photo 2 sufficiently to confidently edit RAW files from my Theta Z1 camera.
+Just like KFC on December 24th in Japan or pistachio sauce on New Year's Day on the shores of the Ébrié Lagoon, Coca-Cola's magical advertisements during the holiday season are an unmissable tradition.
+This year, the brand decided to add a technological touch to its Christmas magic.
+[![Coca-Cola Holidays Are Coming](https://img.youtube.com/vi/8m0Y-GisSeM/0.jpg)](https://www.youtube.com/watch?v=8m0Y-GisSeM)
 
-I must therefore use Adobe... but sometimes at the expense of my mental health, not to mention the cost. I concede that my judgment might be slightly exaggerated, but I am profoundly disappointed by the lack of alternatives to Adobe.
+For its "Holidays Are Coming" campaign, Coca-Cola offered the public its first major experience with an artificial intelligence-generated video advertisement(1).
+The public didn't embrace it, finding the overall aesthetic of the video
+disconcerting, even imperfect for a company of Coca-Cola's stature. Social networks ignited, debates heated up, and dialogue was created... probably all around cans and bottles of Coca-Cola.
 
-However, this morning, my frustration reached a breaking point. I HATE Adobe, and I have sworn to fully immerse myself in the Affinity suite, far from Adobe's troubles. Allow me to explain.
+In clearer terms, this (well-orchestrated) marketing strategy worked. Thanks to this video, Coca-Cola managed to occupy the field and embed itself in minds: whether you like it or not, you're talking about Coca-Cola.
+This is more than enough to strengthen its association with Christmas, pitting those who prefer the old commercials (I'm one of them) against those who appreciate novelty and are passionate about technology.
 
-Everything began on a Friday the 13th, when I wanted to update my payment methods on an Adobe account. The first surprise of a series that would make this morning particularly challenging:
+The goal wasn't to convince or please everyone.
+No, the stakes are elsewhere: to make an impression and anchor the brand even more deeply in the collective holiday imagination.
 
-- It is impossible to do this independently, as the menu command typically found elsewhere does not exist. One must mandatorily go through their customer service, which is anything but quick and simple.
-- After clicking the "help" button, you will be confronted with an artificial intelligence that seems designed either to test your patience or to make you abandon your quest.
+The brand has succeeded in occupying the field and strengthening its association with Christmas. That's what matters, isn't it?
 
-Unfortunately for them, I am the patient and determined type when dealing with certain companies (including, but not limited to, my bank, Apple, and Adobe).
-
-## Survival Guide: How to Escape Adobe's AI
-
-1. **Demand a Human**: Insist, repeat "I want to speak to a human" until the AI yields (while remaining polite).
-2. **Choose an Option, Any Option**: No need to be precise; the important thing is to progress.
-3. **Persist**: Continue until a human agent finally intervenes.
-
-After considerable effort, I managed to speak with a consultant. Reluctantly, he acceded to my request. Everything seemed finally settled until, 30 minutes later, I discovered an Adobe Express subscription added to my account.
-
-I do not even use this service and do not wish to pay more than necessary. Moreover, Canva is far superior in the realm of all-in-one, user-friendly editors.
-
-A new battle with customer service ensued: "I do not want Adobe Express, I do not use it, and I do not want to pay for it." After dealing with two customer service representatives, I canceled this unsolicited subscription. However, this experience left a bitter taste: Adobe, through its abusive practices, provokes largely merited criticism and the hatred of the world. On the internet, in life, and in public forums.
-
-Indeed, Adobe is facing several lawsuits for questionable commercial practices:
-
-- **Hidden Cancellation Fees**: The U.S. Department of Justice is pursuing Adobe for concealing cancellation fees that can reach several hundred dollars. These fees concern annual subscriptions paid monthly.
-- **Misleading Interfaces**: The Federal Trade Commission (FTC) accuses Adobe of designing interfaces that push users to subscribe without clearly disclosing conditions. Cancellation then becomes an obstacle-laden journey.
-
-These stories reveal a well-established strategy to deliberately frustrate the user experience.
-
-## Conclusion: How to Confront Adobe?
-
-Stop using their services, if possible. Or opt for a monthly subscription, without commitment.
+## \*(1)From a technical standpoint, this advertisement is generated by a DALL-E-based model, thus obsolete at a time when [Google Video 2](https://www.instagram.com/generativeai_official/reel/DDwb4ZmSl7C/) has impressed us all with its photorealism and ability to maintain consistency from scene to scene, as well as respect physics.
