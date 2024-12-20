@@ -9,7 +9,7 @@ id: 10
 
 Tout comme le KFC du 24 décembre au Japon ou la sauce pistache du jour de l'An sur les bords de la Lagune Ébrié, les publicités féériques de Coca-Cola pendant la période des fêtes sont une tradition incontournable.
 Cette année, la marque a décidé d'ajouter une touche technologique à sa magie de Noël.
-[![Coca-Cola Holidays Are Coming](https://img.youtube.com/vi/8m0Y-GisSeM/0.jpg)](https://www.youtube.com/watch?v=8m0Y-GisSeM)
+[![Coca-Cola Holidays Are Coming](https://img.youtube.com/vi/8m0Y-GisSeM/maxresdefault.jpg)](https://www.youtube.com/watch?v=8m0Y-GisSeM)
 
 Pour sa campagne "Holidays Are Coming", Coca-Cola a offert au public sa première grande expérience avec une publicité vidéo générée par intelligence artificielle(1).
 Le public n'a pas adhéré, trouvant l'esthétique globale de la vidéo
