@@ -24,5 +24,3 @@ Non, l'enjeu est ailleurs : marquer les esprits et ancrer encore plus profondém
 La marque a réussi à occuper le terrain et à renforcer son association avec Noël. C'est ce qui compte, non ?
 
 ## \*(1)D'un point de vue technique, cette publicité est générée par un modèle basé sur DALL-E, donc obsolète à l'heure où <a href="https://www.instagram.com/generativeai_official/reel/DDwb4ZmSl7C/" target="_blank">Google Video 2</a> nous a tous impressionnés par son photoréalisme et sa capacité à conserver la cohérence d'une scène à l'autre, ainsi qu'à respecter la physique.
-
-<iframe style="border-radius:12px" src="https://open.spotify.com/episode/5fSjeXlcNIyon8UsenEsHk?si=T-vkLQTWSWGujySXvcG3NQ" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>

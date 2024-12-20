@@ -42,5 +42,3 @@ These stories reveal a well-established strategy to deliberately frustrate the u
 ## Conclusion: How to Confront Adobe?
 
 Stop using their services, if possible. Or opt for a monthly subscription, without commitment.
-
-<iframe style="border-radius:12px" src="https://open.spotify.com/episode/5DSxikfYgync2jCyzKP2bw?si=R7BqDh_xTrioCXEuVAT_UA" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>

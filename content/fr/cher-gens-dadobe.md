@@ -38,5 +38,3 @@ Car oui, Adobe fait face à plusieurs procès pour des pratiques commerciales do
 Ces histoires révèlent une stratégie bien rodée pour rendre l'expérience utilisateur délibérément frustrante.
 
 En conclusion : Arrêtez d'utiliser leurs services, si possible. Ou optez pour un abonnement mensuel, sans engagement (i.e Affinity).
-
-<iframe style="border-radius:12px" src="https://open.spotify.com/episode/5DSxikfYgync2jCyzKP2bw?si=R7BqDh_xTrioCXEuVAT_UA" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
