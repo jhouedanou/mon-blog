@@ -9,7 +9,8 @@ id: 10
 
 Just like KFC on December 24th in Japan or pistachio sauce on New Year's Day on the shores of the Ébrié Lagoon, Coca-Cola's magical advertisements during the holiday season are an unmissable tradition.
 This year, the brand decided to add a technological touch to its Christmas magic.
-[![Coca-Cola Holidays Are Coming](https://img.youtube.com/vi/8m0Y-GisSeM/maxresdefault.jpg)](https://www.youtube.com/watch?v=8m0Y-GisSeM)
+:youtube{id="8m0Y-GisSeM"}
+:youtube{video="8m0Y-GisSeM" title="Coca-Cola Holidays Are Coming"}
 
 For its "Holidays Are Coming" campaign, Coca-Cola offered the public its first major experience with an artificial intelligence-generated video advertisement(1).
 The public didn't embrace it, finding the overall aesthetic of the video
