@@ -1,6 +1,10 @@
 <template>
   <div class="article-wrapper">
-    <div v-if="article.image" class="cover-image" :style="{ backgroundImage: `url(${article.image})` }">
+    <div
+      v-if="article.image"
+      class="cover-image"
+      :style="{ backgroundImage: `url(${article.image})` }"
+    >
       <h1 class="article-title">{{ article.title }}</h1>
     </div>
     <article class="article-container">
@@ -20,72 +24,88 @@
         <!-- Section de partage social -->
         <div class="social-share">
           <div class="sharethis-inline-share-buttons"></div>
-
         </div>
         <!-- Section de commentaires -->
         <DisqusComments :pageUrl="currentUrl" :pageIdentifier="article._path" />
         <a href="https://houedanou.com" rel="dofollow">Jean-Luc Houédanou</a>
-        <br>
-        <a target="_blank" href="https://jeanluchouedanou.blogspot.com/">Mes anciens articles</a>
+        <br />
+        <a target="_blank" href="https://jeanluchouedanou.blogspot.com/"
+          >Mes anciens articles</a
+        >
       </div>
       <footer class="article-footer">
-        <NuxtLink to="/" class="back-to-articles">{{ $t('backToArticles') }}</NuxtLink>
+        <NuxtLink to="/" class="back-to-articles">{{
+          $t("backToArticles")
+        }}</NuxtLink>
       </footer>
     </article>
   </div>
 </template>
 
 <script setup>
-import { useHead } from '@unhead/vue'
-import { useRoute } from 'vue-router'
-import { useI18n } from 'vue-i18n'
-import { useLocalePath, useSwitchLocalePath } from '#i18n'
-import DisqusComments from '~/components/DisqusComments.vue'
+import { useHead } from "@unhead/vue";
+import { useRoute } from "vue-router";
+import { useI18n } from "vue-i18n";
+import { useLocalePath, useSwitchLocalePath } from "#i18n";
+import DisqusComments from "~/components/DisqusComments.vue";
 
-const route = useRoute()
-const { locale } = useI18n()
-const localePath = useLocalePath()
+const route = useRoute();
+const { locale } = useI18n();
+const localePath = useLocalePath();
 
-const switchLocalePath = useSwitchLocalePath()
+const switchLocalePath = useSwitchLocalePath();
 
-const { data: article } = await useAsyncData('article', () => queryContent(route.path).findOne())
+const { data: article } = await useAsyncData("article", () =>
+  queryContent(route.path).findOne()
+);
 
 useHead({
   title: article.value.title,
   meta: [
-    { property: 'og:title', content: article.value.title },
-    { property: 'og:description', content: article.value.description || 'Description par défaut' },
-    { property: 'og:url', content: `https://houedanou.com${route.path}` },
-    { property: 'og:image', content: article.value.image },
-    { property: 'og:site_name', content: 'Jean-Luc Houédanou' },
-    { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:image', content: article.value.image },
-    { name: 'twitter:title', content: article.value.title },
-    { name: 'twitter:description', content: article.value.description || 'Description par défaut' },
+    { property: "og:title", content: article.value.title },
+    {
+      property: "og:description",
+      content: article.value.description || "Description par défaut",
+    },
+    { property: "og:url", content: `https://houedanou.com${route.path}` },
+    { property: "og:image", content: article.value.image },
+    { property: "og:site_name", content: "Jean-Luc Houédanou" },
+    { name: "twitter:card", content: "summary_large_image" },
+    { name: "twitter:image", content: article.value.image },
+    { name: "twitter:title", content: article.value.title },
+    {
+      name: "twitter:description",
+      content: article.value.description || "Description par défaut",
+    },
   ],
-})
-const currentUrl = `https://houedanou.com${route.path}`
+});
+const currentUrl = `https://houedanou.com${route.path}`;
 function formatDate(createdAt) {
   if (createdAt) {
-    const [day, month, year] = createdAt.split('-')
-    const date = new Date(year, month - 1, day)
-    return date.toLocaleDateString('fr-FR', { year: 'numeric', month: 'long', day: 'numeric' })
+    const [day, month, year] = createdAt.split("-");
+    const date = new Date(year, month - 1, day);
+    return date.toLocaleDateString("fr-FR", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    });
   }
-  return 'Date inconnue'
+  return "Date inconnue";
 }
 
 function estimateReadTime(content) {
-  const wordsPerMinute = 200
-  const wordCount = typeof content === 'string' ? content.split(/\s+/).length : 0
-  return Math.ceil(wordCount / wordsPerMinute)
+  const wordsPerMinute = 200;
+  const wordCount =
+    typeof content === "string" ? content.split(/\s+/).length : 0;
+  return Math.ceil(wordCount / wordsPerMinute);
 }
 </script>
 
 <style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Sans+Pro:wght@400;600&display=swap');
-@media screen and (max-width:1024px) {
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Sans+Pro:wght@400;600&display=swap");
+@media screen and (max-width: 1024px) {
   .article-title {
-    font-family: 'Merriweather', serif;
+    font-family: "Merriweather", serif;
     font-size: 0.5rem !important;
     font-weight: 700;
     line-height: 1.3;
@@ -96,7 +116,7 @@ function estimateReadTime(content) {
 
 .article-wrapper {
   background: white;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   color: #292929;
   line-height: 1.6;
 }
@@ -112,7 +132,7 @@ function estimateReadTime(content) {
   text-align: center;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -125,7 +145,7 @@ function estimateReadTime(content) {
 
 .article-title {
   z-index: 15;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.3;
@@ -135,7 +155,7 @@ function estimateReadTime(content) {
 }
 
 .article-container {
-  max-width: 680px;
+  max-width: 1024px;
   margin: 0 auto;
   padding: 2rem 1rem;
 }
@@ -173,7 +193,7 @@ function estimateReadTime(content) {
 }
 
 .article-content :deep(h2) {
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-size: 1.8rem;
   font-weight: 700;
   margin-top: 2rem;
@@ -212,7 +232,6 @@ function estimateReadTime(content) {
 .back-to-articles:hover {
   color: #018f69;
 }
-
 
 .social-share {
   margin-top: 2rem;
