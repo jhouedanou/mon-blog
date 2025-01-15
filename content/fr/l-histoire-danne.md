@@ -11,7 +11,9 @@ _Préambule : cette sombre histoire trouve ses racines dans mon pays d'origine, 
 
 _En d'autres termes, on peut en parler avec la paix du coeur, sans exploiter le désarroi et le désespoir des victimes._
 
-Mon usage des réseaux sociaux est limité. Je me concentre principalement sur YouTube, que j’écoute en arrière-plan pendant mes activités, et sur quelques comptes destinés à relayer le contenu de mes blogs. Pourtant, le réseau social X (anciennement Twitter) continue de m’intriguer. Ce monde numérique semble fonctionner selon ses propres règles, où tout est permis, où tout peut arriver.
+Mon usage des réseaux sociaux est limité. Je me concentre principalement sur YouTube, que j’écoute en arrière-plan pendant mes activités, et sur quelques comptes destinés à relayer le contenu de mes blogs.
+
+Pourtant, le réseau social X (anciennement Twitter) continue de m’intriguer. Ce monde numérique semble fonctionner selon ses propres règles, où tout est permis, où tout peut arriver.
 
 Un exemple récent en illustre parfaitement les excès : l’affaire Anne. Une femme, victime d’un "brouteur" se faisant passer pour Brad Pitt, qui lui a extorqué en un an une somme colossale de 800 000 euros. Suite à un reportage racontant cette histoire, Twitter s’est rapidement transformé en un espace de dérision collective. En l’espace de quelques heures, ce qui aurait dû rester une affaire privée est devenu un spectacle public.
 
@@ -30,4 +32,6 @@ Cette affaire a laissé Anne sans ressources. Aujourd’hui, elle vit dans un bo
 L’affaire Anne est un rappel brutal des dangers du monde numérique, où les arnaques sont de plus en plus sophistiquées et où la viralité des contenus peut transformer des drames personnels en spectacles publics. Elle pose aussi des questions importantes : jusqu’où peut-on aller pour divertir ? Quels sont les impacts réels de nos commentaires sur les individus concernés ?
 
 Ce n’est pas seulement l’histoire d’une femme vulnérable. C’est aussi un exemple des dérives possibles d’un monde numérique où les limites de l’éthique sont souvent floues.
-Essayons de le rendre meilleur, en étant plus humains
+Essayons de le rendre meilleur, en étant plus humains.
+
+Par [Jean Luc Houédanou](https://houedanou.com)

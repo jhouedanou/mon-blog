@@ -44,6 +44,4 @@ This is not just the story of a vulnerable woman. It is also a cautionary tale a
 
 Let us strive to make it better by being more humane.
 
-```
-
-```
+Par [Jean Luc Houédanou](https://houedanou.com)
