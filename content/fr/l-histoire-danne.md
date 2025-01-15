@@ -1,14 +1,15 @@
 ---
-title: " Anne, Brad Pitt et les 800 000 euros : une arnaque spectaculaire et un lynchage numérique"
+title: "Anne, le faux Brad Pitt et un véritable lynchage numérique"
 image: "/images/articles/anne.webp"
 createdAt: "15-01-2025"
 id: 10
 ---
 
-# Anne, Brad Pitt et les 800 000 euros : une arnaque spectaculaire et un lynchage numérique
+# Anne, le faux Brad Pitt et un véritable lynchage numérique
 
 _Préambule : cette sombre histoire trouve ses racines dans mon pays d'origine, le Bénin. Aux dernières nouvelles, les autorités compétentes ont été informées de cette affaire, les escrocs responsables ayant été identifiées par Find My Scammer. Ils iront donc probablement faire un long séjour en prison, et la justice sera rendue, car ces individus ne représentent en rien les valeurs traditionnelles de respect,de dignité humaine et d'hospitalité propres au Bénin._
-_En d'autres termes, on peut en parler avec la paix du coeur, sans exploiter le désarroi e le désespoir des victimes._
+
+_En d'autres termes, on peut en parler avec la paix du coeur, sans exploiter le désarroi et le désespoir des victimes._
 
 Mon usage des réseaux sociaux est limité. Je me concentre principalement sur YouTube, que j’écoute en arrière-plan pendant mes activités, et sur quelques comptes destinés à relayer le contenu de mes blogs. Pourtant, le réseau social X (anciennement Twitter) continue de m’intriguer. Ce monde numérique semble fonctionner selon ses propres règles, où tout est permis, où tout peut arriver.
 

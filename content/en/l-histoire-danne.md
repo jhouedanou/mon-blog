@@ -1,11 +1,11 @@
 ---
-title: "Anne, Brad Pitt and the €800,000: A Spectacular Scam and a Digital Lynching"
+title: "Anne, the fake Brad Pitt and a digital lynching"
 image: "/images/articles/adobe.webp"
 createdAt: "15-01-2025"
 id: 10
 ---
 
-# Anne, Brad Pitt and the €800,000: A Spectacular Scam and a Digital Lynching
+# Anne, the fake Brad Pitt and a digital lynching
 
 _Preamble: This grim story has its roots in my home country, Benin. According to recent updates, the competent authorities have been informed of this case, and the scammers responsible have been identified by Find My Scammer. They will likely face a long prison sentence, ensuring that justice is served. These individuals in no way represent the traditional values of respect, human dignity, and hospitality that Benin is known for._  
 _In other words, we can discuss this with peace of mind, without exploiting the despair and distress of the victims._
@@ -43,4 +43,7 @@ It also raises important questions: How far are we willing to go for entertainme
 This is not just the story of a vulnerable woman. It is also a cautionary tale about the potential excesses of a digital age where ethical boundaries are often blurred.
 
 Let us strive to make it better by being more humane.
+
+```
+
 ```
