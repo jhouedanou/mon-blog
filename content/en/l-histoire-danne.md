@@ -1,4 +1,3 @@
-```markdown
 ---
 title: "Anne, Brad Pitt and the €800,000: A Spectacular Scam and a Digital Lynching"
 image: "/images/articles/adobe.webp"
