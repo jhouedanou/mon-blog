@@ -1,5 +1,7 @@
 {
-    "i18n-ally.localesPaths": [
-        "lang"
-    ]
+  "i18n-ally.localesPaths": ["lang"],
+  "editor.fontSize": 15,
+  "editor.rulers": [],
+  "editor.renderLineHighlight": "line",
+  "workbench.colorCustomizations": {}
 }
