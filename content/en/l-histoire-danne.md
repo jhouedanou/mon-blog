@@ -1,6 +1,6 @@
 ---
 title: "Anne, the fake Brad Pitt and a digital lynching"
-image: "/images/articles/adobe.webp"
+image: "/images/articles/anne.jpg"
 createdAt: "15-01-2025"
 id: 10
 ---

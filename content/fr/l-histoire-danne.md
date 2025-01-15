@@ -1,6 +1,6 @@
 ---
 title: "Anne, le faux Brad Pitt et un véritable lynchage numérique"
-image: "/images/articles/anne.webp"
+image: "/images/articles/anne.jpg"
 createdAt: "15-01-2025"
 id: 10
 ---
