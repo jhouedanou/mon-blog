@@ -27,11 +27,10 @@ Tout commence par un message anodin d’une femme prétendant être la mère de 
 
 Le piège se referme lorsque le faux Brad Pitt annonce souffrir d’un cancer du rein. Anne, touchée par cette annonce, commence à répondre aux demandes financières qui lui sont adressées. En un an et demi, elle transfère au total 830 000 euros, persuadée d’aider une célébrité en détresse.
 
-Cette affaire a laissé Anne sans ressources. Aujourd’hui, elle vit dans un box de 6m², entourée de quelques cartons. Elle a tenté de se suicider à plusieurs reprises et suit désormais un traitement psychiatrique. Ce qui est encore plus marquant, c’est l’impact du lynchage numérique qu’elle subit. Les réseaux sociaux, au lieu de condamner l’arnaque, se concentrent sur elle, multipliant les moqueries et les détournements.
+Cette affaire a laissé Anne sans ressources. Aujourd’hui, elle vit dans un box de 6 m², entourée de quelques cartons. Elle a tenté de se suicider à plusieurs reprises et suit désormais un traitement psychiatrique. Ce qui est encore plus marquant, c’est l’impact du lynchage numérique qu’elle subit. Les réseaux sociaux, au lieu de condamner l’arnaque, se concentrent sur elle, multipliant les moqueries et les détournements.
 
-L’affaire Anne est un rappel brutal des dangers du monde numérique, où les arnaques sont de plus en plus sophistiquées et où la viralité des contenus peut transformer des drames personnels en spectacles publics. Elle pose aussi des questions importantes : jusqu’où peut-on aller pour divertir ? Quels sont les impacts réels de nos commentaires sur les individus concernés ?
+En termes plus clairs : Anne est devenue la nouvelle "punchline" ou le "punching ball" de X. Cette situation a été amplifiée par le fait que la plupart des gens ne connaissent pas Anne. Ils ne savent pas ce qu’elle a vécu, ni ce qu’elle a fait pour survivre, ou encore le fait qu'elle est atteinte du VIH ou en soit à sa troisième tentative de suicide.
 
-Ce n’est pas seulement l’histoire d’une femme vulnérable. C’est aussi un exemple des dérives possibles d’un monde numérique où les limites de l’éthique sont souvent floues.
-Essayons de le rendre meilleur, en étant plus humains.
+On fait tous des erreurs, mais on a tous droit à un minimum de respect. Mais surtout, **il y a des moments où le silence est d’or : si vous n’êtes pas sûrs que ce que vous allez poster fera du bien, continuez à scroller.**
 
 Par [Jean Luc Houédanou](https://houedanou.com)
