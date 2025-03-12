@@ -7,9 +7,12 @@ id: 11
 
 # La corruption vous mettra en retard : un (petit) exemple concret  
 
-Voici une situation qui pourrait sembler banale, mais elle reflète une réalité bien ancrée en Afrique, souvent ignorée ou simplement acceptée.  
 
-Il y a des endroits où je déteste aller. Deux, en particulier :  
+Voici une situation qui pourrait sembler banale, mais elle reflète une réalité bien ancrée en Afrique, souvent ignorée ou simplement acceptée. 
+
+Il y a des endroits où je déteste aller. 
+
+Deux, en particulier :  
 - 🏥 **Les hôpitaux**  
 - 🏦 **Les banques**  
 
@@ -17,11 +20,13 @@ Pourquoi ? C'est simple : les files d'attente interminables et ces petites manig
 
 Mais parfois, on n’a pas le choix.  
 
-En novembre dernier, me voilà contraint de me rendre au centre d’Ecobank à Aghien pour renouveler ma carte de guichet. À mon arrivée à 7h, le décor est planté : **une longue file d’attente**.  
+En novembre dernier, me voilà contraint de me rendre au centre d’Ecobank à Aghien pour renouveler ma carte de guichet. 
+
+À mon arrivée à 7h, le décor est planté : **une longue file d’attente**.  
 
 Pas le choix, je prends mon mal en patience.  
 
-### Un "service" bien rodé  
+## Un "service" bien rodé  
 
 Après 30 minutes d’attente, je suis interpellé par **👮🏿‍♂️ "le chef du service sécurité"**, qui s’approche et me lance d’un ton complice :  
 
@@ -36,7 +41,7 @@ Après 30 minutes d’attente, je suis interpellé par **👮🏿‍♂️ "le c
 
 Surpris par ma réponse, il tourne les talons, l’air méprisant.  
 
-### Les "boss" d'abord  
+## Les "boss" d'abord  
 
 Encore 30 minutes passent.  
 
