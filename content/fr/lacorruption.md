@@ -69,4 +69,4 @@ Et, surprise :
 
 ## Morale de l’histoire ?  
 La corruption ne nous fait pas gagner du temps.  
-Au contraire, **elle nous met tous en retard.**
+Au contraire, **elle vous met tous en retard.**
