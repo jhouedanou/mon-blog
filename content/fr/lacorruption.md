@@ -53,7 +53,7 @@ Mais pas sans sentir le regard pesant du chef de la sécurité.
 
 Qu’importe... Je monte gaillardement au premier étage, **guidé par un personnel d'une grande courtoisie** (il faut le souligner).  
 
-### Un joli coup du karma  
+## Un joli coup du karma  
 
 Arrivé à l’étage, je tombe pile poil sur une conversation savoureuse entre deux employés chargés des changements de cartes :  
 
@@ -67,6 +67,6 @@ Et, surprise :
 
 **En 15 minutes, ma carte est changée.**  
 
-### Morale de l’histoire ?  
+## Morale de l’histoire ?  
 La corruption ne nous fait pas gagner du temps.  
 Au contraire, **elle nous met tous en retard.**
