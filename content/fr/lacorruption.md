@@ -64,9 +64,11 @@ Arrivé à l’étage, je tombe pile poil sur une conversation savoureuse entre 
 Et, surprise :  
 
 👩🏿‍💼 **"Venez, monsieur."**  
-
-**En 15 minutes, ma carte est changée.**  
+🧑🏿‍💼 😊
+**En 15 minutes, ma carte fut changée.**  
+Sous les regards furieux des "boss".
 
 ## Morale de l’histoire ?  
-La corruption ne nous fait pas gagner du temps.  
+
+La corruption ne vous fait pas gagner du temps.  
 Au contraire, **elle vous met tous en retard.**
