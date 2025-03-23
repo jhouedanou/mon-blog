@@ -33,16 +33,6 @@ Pourquoi de l'eau ? Car elle est :
 
 ## Les virtuoses du micro non sollicité (et comment les apaiser avec votre verre)
 
-### L'Ex 2.0
-
-**Au micro** : Sur TikTok ou sur Facebook, votre ancien partenaire "partage son parcours de guérison" (comprenez : publie des vidéos teintées de ressentiment sur votre relation, avec beaucoup de piques à votre égard) depuis votre séparation.
-
-**Votre verre d'eau** : Pendant qu'il/elle produit du contenu dans sa chambre (avec son animal de compagnie en bruit de fond), vous poursuivez votre épanouissement personnel.
-
-Et c'est précisément ce qui le contrarie.
-
-Une gorgée d'eau et rappelez-vous : "Le silence est la plus élégante des réponses, et le bonheur, la meilleure des vengeances".
-
 ### L'Expert Auto-proclamé
 
 Vous postez innocemment : "Ma connexion xxxxx me donne entièrement et pleinement satisfaction. "

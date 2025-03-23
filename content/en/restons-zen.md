@@ -23,14 +23,6 @@ The concept is disarmingly simple: while others shout themselves hoarse into the
 
 ## The Virtuosos of Unsolicited Microphones (and How to Soothe Them with Your Glass)
 
-### The Digital Ex
-
-**At the mic**: On TikTok or Facebook, your former partner "shares their healing journey" (understand: posts resentment-filled videos about your relationship, with plenty of jabs at you) since your separation.
-
-**Your water glass**: While they produce content in their bedroom (with their pet making noise in the background), you continue living your best life.
-And that's precisely what irritates them.
-Take a sip of water and remember: "Silence is the most elegant response, and happiness is the best revenge."
-
 ### The Self-Proclaimed Expert
 
 You innocently post: "My xxxxx connection gives me complete satisfaction."
