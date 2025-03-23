@@ -18,6 +18,10 @@
           <span class="article-date">{{ formatDate(article.createdAt) }}</span>
           <!-- <span class="article-read-time">{{ estimateReadTime(article.body) }} min de lecture</span> -->
         </div>
+        <!-- Affichage du résumé de l'article -->
+        <div v-if="article.summary" class="article-summary">
+          <p>{{ article.summary }}</p>
+        </div>
       </header>
       <div class="article-content">
         <ContentDoc />
@@ -62,6 +66,11 @@ const { data: article } = await useAsyncData("article", () =>
 useHead({
   title: article.value.title,
   meta: [
+    // Meta tags standards pour SEO
+    { name: "description", content: article.value.description || "Description par défaut" },
+    { name: "keywords", content: article.value.keywords || "" },
+    
+    // Open Graph tags (pour les partages sociaux)
     { property: "og:title", content: article.value.title },
     {
       property: "og:description",
@@ -70,9 +79,12 @@ useHead({
     { property: "og:url", content: `https://houedanou.com${route.path}` },
     { property: "og:image", content: `https://houedanou.com${article.value.image}` },
     { property: "og:site_name", content: "Jean-Luc Houédanou" },
+    
+    // Twitter Card tags
     { name: "twitter:card", content: "summary_large_image" },
     { name: "twitter:image", content: `https://houedanou.com${article.value.image}` },
-    { name: "twitter:title", content: article.value.title },    {
+    { name: "twitter:title", content: article.value.title },
+    {
       name: "twitter:description",
       content: article.value.description || "Description par défaut",
     },
@@ -102,16 +114,6 @@ function estimateReadTime(content) {
 
 <style lang="scss" scoped>
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Sans+Pro:wght@400;600&display=swap");
-@media screen and (max-width: 1024px) {
-  .article-title {
-    font-family: "Merriweather", serif;
-    font-size: 0.5rem !important;
-    font-weight: 700;
-    line-height: 1.3;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
-}
 
 .article-wrapper {
   background: white;
@@ -247,6 +249,34 @@ function estimateReadTime(content) {
 
   &:hover {
     color: #018f69;
+  }
+}
+
+.article-summary {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-left: 4px solid #03a87c;
+  border-radius: 0 4px 4px 0;
+  
+  p {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.1rem;
+    font-style: italic;
+    line-height: 1.6;
+    color: #4a4a4a;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .article-title {
+    font-family: "Merriweather", serif;
+    font-size: 0.5rem !important;
+    font-weight: 700;
+    line-height: 1.3;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
 }
 </style>

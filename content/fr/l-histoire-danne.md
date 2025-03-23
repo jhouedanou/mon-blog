@@ -3,6 +3,9 @@ title: "Anne, le faux Brad Pitt et un véritable lynchage numérique"
 image: "/images/articles/anne.jpg"
 createdAt: "15-01-2025"
 id: 10
+description: "L'histoire tragique d'Anne, victime d'une arnaque en ligne par un faux Brad Pitt qui lui a extorqué 800 000 euros, suivie d'un lynchage médiatique sur les réseaux sociaux. Une réflexion sur la cruauté numérique et le respect de la dignité humaine."
+keywords: "arnaque en ligne, faux Brad Pitt, escroquerie amoureuse, lynchage numérique, cyberharcèlement, arnaque romance, brouteur, extorsion de fonds, réseaux sociaux, Twitter, X"
+summary: "Anne, une femme fragilisée par un cancer du cerveau, le VIH et un divorce, est tombée dans le piège d'escrocs se faisant passer pour Brad Pitt et son entourage. Après avoir perdu 830 000 euros et tenté de se suicider, elle subit désormais un lynchage médiatique sur les réseaux sociaux. Cet article appelle au respect de la dignité humaine face à la cruauté numérique."
 ---
 
 # Anne, le faux Brad Pitt et un véritable lynchage numérique

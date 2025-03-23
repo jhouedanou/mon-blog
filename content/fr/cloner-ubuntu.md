@@ -3,6 +3,9 @@ title: "Comment cloner Ubuntu sans perdre ses données et son âme"
 image: "/images/articles/pingui.jpg"
 createdAt: "29-10-2024"
 id: 6
+description: "Guide pratique pour cloner votre système Ubuntu vers un nouveau SSD sans perdre vos données. Apprenez à migrer facilement votre installation Linux avec un script simple et efficace."
+keywords: "cloner Ubuntu, migration SSD Ubuntu, dd Linux, clone système Linux, augmenter espace disque Ubuntu, script clonage Linux, sauvegarde Ubuntu, resize partition Linux, fdisk, parted"
+summary: "Un tutoriel étape par étape pour cloner votre système Ubuntu vers un nouveau SSD plus spacieux. Ce guide inclut l'identification des disques, un script de clonage complet avec dd, l'extension des partitions et les vérifications nécessaires pour assurer une migration réussie."
 ---
 
 # 🚀 Comment cloner Ubuntu sans perdre ses données et son âme
@@ -22,15 +25,17 @@ Quand votre SSD de votre ordinateur sous Ubuntu commence à tousser et que les m
 
 Première étape cruciale, identifier qui est qui dans notre joyeux système :
 
-_sudo fdisk -l_
+```bash
+sudo fdisk -l
+```
 
 Dans mon cas avec le HP Pro X2, le disque source est /dev/sda et le nouveau SSD est /dev/sdb.
 
 ### 2. Le Script de Clonage
 
-Créez un fichier [clone-ubuntu.sh](https://clone-ubuntu.sh) :
+Créez un fichier `clone-ubuntu.sh` :
 
-```
+```bash
 #!/bin/bash
 
 # Vérification des privilèges root
@@ -68,28 +73,21 @@ parted $DISQUE_DESTINATION resizepart 2 100%
 resize2fs "${DISQUE_DESTINATION}2"
 
 echo "Clonage terminé ! 🎉"
-
-# Clonage
-echo "Clonage en cours... Parfait moment pour un café ☕"
-dd if=$DISQUE_SOURCE of=$DISQUE_DESTINATION bs=64K conv=noerror,sync status=progress
-
-# Extension de la partition
-echo "Extension de la partition..."
-parted $DISQUE_DESTINATION resizepart 2 100%
-resize2fs "${DISQUE_DESTINATION}2"
-
-echo "Clonage terminé ! 🎉"
 ```
 
 ### 3. Exécution
 
-sudo bash [clone-ubuntu.sh](https://clone-ubuntu.sh)
+```bash
+sudo bash clone-ubuntu.sh
+```
 
 ### 4. Vérification
 
 Une fois le clonage terminé :
 
+```bash
 sudo fdisk -l
+```
 
 Vérifiez que la nouvelle partition utilise bien tout l'espace disponible.
 
@@ -97,6 +95,6 @@ Vérifiez que la nouvelle partition utilise bien tout l'espace disponible.
 
 - Vérifiez les lettres correspondants à chaque disque dur;
 - Sauvegarde : Même si je fais confiance à mon script, j'ai toutefois fait une sauvegarde avant. On n'est jamais trop prudent !
-- Vérification des noms de disques : Je répète .\
-  C’est LA partie où il ne faut pas se tromper
+- Vérification des noms de disques : Je répète . 
+  C'est LA partie où il ne faut pas se tromper
 - Patience : Le clonage peut prendre un certain temps, selon la taille de vos données

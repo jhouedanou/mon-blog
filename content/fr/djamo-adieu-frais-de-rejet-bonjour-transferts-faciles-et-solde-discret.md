@@ -3,6 +3,9 @@ title: "Adieu frais de rejet, bonjour transferts faciles et solde discret ! "
 image: "/images/articles/djamo.webp"
 createdAt: "05-09-2024"
 id: 3
+description: "Découvrez les nouvelles fonctionnalités de Djamo, la FinTech ivoirienne qui révolutionne les services bancaires en Afrique de l'Ouest : suppression des frais de rejet, transferts Orange Money simplifiés et option pour cacher son solde."
+keywords: "Djamo, FinTech Afrique, services bancaires Côte d'Ivoire, frais de rejet, transferts Orange Money, confidentialité financière, application bancaire africaine, innovation financière, mobile money Afrique"
+summary: "Djamo, la FinTech ivoirienne, déploie une mise à jour majeure avec trois améliorations significatives : la suppression des frais de rejet pour les transactions refusées, une simplification des transferts Orange Money permettant des opérations directes entre applications, et une nouvelle option pour masquer son solde, répondant ainsi aux besoins de discrétion financière des utilisateurs africains."
 ---
 
 # Djamo : Adieu frais de rejet, bonjour transferts faciles et solde discret ! 🎉💃🏾
