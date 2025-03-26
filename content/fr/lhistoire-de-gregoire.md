@@ -12,11 +12,13 @@ summary: "Un développeur freelance perfectionniste doit faire face à une deman
 
 *Les noms des lieux et des personnes ont été modifiés. Quelques détails également.*
 
-Mon ami, appelons-le **"Grégoire"**, est du genre à s'énerver quand tu dis *"malgré que"*. Il a déjà failli bloquer sa propre copine pour un *"autant pour moi"* mal placé. Grégoire est **développeur freelance** : il est aussi talentueux que pointilleux sur le langage, du genre à pester contre le code mal indenté ou non commenté en *"français correct"*.
+Mon ami, appelons-le **"Grégoire"**, est du genre à s'énerver quand tu dis *"malgré que"*. Il a déjà failli bloquer sa propre copine pour un *"autant pour moi"* mal placé. 
 
 En d'autres termes, Grégoire est un casse-pieds, bien français, et un peu trop perfectionniste.
 
-Mais on l'aime, notre Grégoire.
+Grégoire est également **développeur freelance** : il est aussi talentueux que pointilleux sur le langage, du genre à pester contre le code mal indenté ou non commenté en *"français correct"*.
+
+
 
 ## Quand la grammaire rencontre le business
 
