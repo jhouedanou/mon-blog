@@ -58,4 +58,4 @@ Heureusement, j'ai pu lui montrer comment utiliser **Claude 3.7 Sonnet**, un ass
 
 ## Moralité
 **Grégoire est soulagé, et surtout, il est payé.** Plus sérieusement, il a appris une leçon importante :
-L'argent a une grammaire universelle, et surtout, il ne faut jamais prendre ses travaux personnels trop à cœur. **Savoir s'adapter (et garder son calme face aux stagiaires étourdies), c'est aussi une forme d'intelligence.**
+L'argent a une grammaire universelle, et surtout, il ne faut jamais prendre ses travaux personnels trop à cœur. **Savoir s'adapter (et garder son calme face aux stagiaires étourdies ou peu motivées), c'est aussi une forme d'intelligence.**
