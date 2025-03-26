@@ -52,7 +52,7 @@ Moi : *"Respire, Greg. C'est pas la fin du monde."*
 
 Lui : *"DEUX SEMAINES ! Deux semaines à jongler avec des points médians, à vérifier chaque terme, à me battre avec la syntaxe... ET TOUT ÇA POUR RIEN ?! "*
 
-Heureusement, j'ai pu lui montrer comment utiliser Claude 3.7, un assistant IA qui l'a aidé à convertir rapidement tous ses textes entre les versions inclusive et classique. En quelques minutes, il a pu générer les deux versions et les garder synchronisées, ce qui lui a évité des heures de travail manuel fastidieux.
+Heureusement, j'ai pu lui montrer comment utiliser **Claude 3.7 Sonnet**, un assistant IA qui l'a aidé à convertir rapidement tous ses textes entre les versions inclusive et classique. En quelques minutes, il a pu générer les deux versions et les garder synchronisées, ce qui lui a évité des heures de travail manuel fastidieux.
 
 *"C'est quand même plus simple avec l'IA"*, a-t-il admis en soupirant.
 
