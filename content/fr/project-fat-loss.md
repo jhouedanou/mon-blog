@@ -3,7 +3,7 @@ title: "J’ai développé une app… de fitness"
 image: "/images/articles/fitness-afro-abdos.png"
 createdAt: "08-05-2025"
 id: 13
-description: "Après des années à négliger sa santé au profit du code, Jean Luc décide de reprendre le contrôle… à sa manière : en développant sa propre application de suivi fitness."
+description: "Après des années à négliger sa santé au profit du code, l'auteur de ce blog décide de reprendre le contrôle… à sa manière : en développant sa propre application de suivi fitness."
 keywords: "application fitness, PWA, perte de poids, suivi de santé, développeur, sport, afro, auto-discipline"
 summary: "Entre le code et les deadlines clients, il y a le corps. Ce billet raconte pourquoi et comment j’ai développé ma propre app de fitness, en bêta aujourd’hui, avec un design en chantier mais une vraie volonté derrière."
 ---
@@ -21,15 +21,15 @@ Résultat : fatigue chronique, forme en berne, et une sensation désagréable de
 Alors j’ai fait ce que je sais faire de mieux : **coder une solution.**  
 Bienvenue dans *Project Fat Loss*.
 
----
+
 
 ## 💻 Une app pour se reprendre en main
 
-👉 [Découvrir la démo ici](https://jhouedanou.github.io/projectfatloss/)
+👉 [Découvrir la démo ici](https://jhouedanou.github.io/projectfatloss/){target="_blank" rel="noopener"}
 
 J’ai pensé cette application comme un outil personnel, simple, mais fonctionnel. Voici ce qu’elle propose aujourd’hui :
 
-### ✅ Fonctionnalités actuelles
+## ✅ Fonctionnalités actuelles
 
 - **📲 Progressive Web App (PWA)** : tu peux l’installer sur ton téléphone comme une vraie app mobile, sans passer par un store.
 - **📉 Suivi du poids** : enregistre ton poids jour après jour, visualise l’évolution avec un graphique motivant.
@@ -41,14 +41,12 @@ Le programme de base est conçu pour te faire perdre environ 0,5 kg par semaine,
 
  
 
----
 
 ## ⚠️ Encore en bêta (et ça se voit)
 
 L’app fonctionne, mais elle a encore ses petits défauts.  
 Le plus gênant : **il est possible de cliquer plusieurs fois sur le bouton “Terminer”, ce qui fausse le nombre de séries enregistrées**. C’est connu, c’est noté, et ça arrive dans une future correction.
 
----
 
 ## 🎨 Et le design, on en parle ?
 
@@ -57,15 +55,3 @@ Pour l’instant, c’est un design fonctionnel, minimaliste, parfois un peu bru
 
 
 
----
-
-## 💬 Pourquoi je partage ça ?
-
-Parce qu’on parle souvent d’objectifs pros, rarement de santé perso.  
-Cette app est un petit pas vers l’équilibre que j’essaie de retrouver. Et si elle peut te motiver, t’inspirer ou même te servir, tant mieux.
-
-👟 À suivre… et à tester !
-
----
-
-![Un homme afro-américain en surpoids faisant des abdos](/images/articles/fitness-afro-abdos.jpg)
