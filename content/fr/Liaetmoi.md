@@ -9,6 +9,8 @@ summary: "Ce billet raconte comment l'IA a influencé ma vie quotidienne, y comp
 ---
 
 # Un an et plus avec l'intelligence artificielle : entre gains de productivité, devoirs de mathématiques et risque de paresse mentale
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-NsSPJ8dTfI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 
 Après plus d'un an d'utilisation quasi quotidienne de l'intelligence artificielle, j'avais envie de partager mon retour d'expérience. 
 
