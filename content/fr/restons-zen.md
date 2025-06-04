@@ -6,6 +6,7 @@ id: 5
 ---
 
 # La théorie du micro et celle du verre d'eau : guide de survie à l'ère des donneurs d'avis
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/ru6yG_WxWVU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Permettez-moi de vous présenter Sandrine.
 Sandrine, c'est celle qui aime chanter au karaoké.
