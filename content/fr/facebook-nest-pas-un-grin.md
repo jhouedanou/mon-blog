@@ -60,7 +60,7 @@ On assiste ici à un glissement regrettable : le rôle du community manager, cen
 
 Quelques exemples de ses "perles" :
 
-![Commentaire sexiste du community manager](/images/articles/bescherelle/02.jpg)  
+![Commentaire sexiste du community manager](/images/articles/bescherelle/03.jpg)  
 ![Autre exemple de commentaire problématique](/images/articles/bescherelle/04.jpg)
 
 On tient là une façon de penser empruntée aux codes de la manosphère. 
