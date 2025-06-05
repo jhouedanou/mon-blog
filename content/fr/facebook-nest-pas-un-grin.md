@@ -38,7 +38,7 @@ Cette tournure, en plus d'être condescendante, repose sur une utilisation hasar
 
 On ne "sert" pas une erreur de grammaire comme on sert un café.
 
-Cette formulation maladroite, pourtant employée pour critiquer la langue des autres, révèle une maîtrise imparfaite du français — un comble, pour quelqu'un qui distribue des Bescherelle.
+Cette formulation maladroite, pourtant employée pour critiquer la langue des autres, révèle une maîtrise imparfaite du français — un comble, pour quelqu'un qui a la prétention de distribuer des Bescherelle.
 
 ## L'ironie de la posture critique
 
