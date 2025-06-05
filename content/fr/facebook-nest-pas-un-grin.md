@@ -79,7 +79,10 @@ Ou mieux, rayons séparés : les romans à l'eau de rose à droite pour "les fil
 
 Ce n'est pas un procès, mais un appel au professionnalisme et au respect.
 
-Il faut le souligner : ce n'est pas la librairie dans son ensemble qui s'est exprimée. C'est juste un(e) CM — mal formé(e) ou mal encadré(e) — qui, en quelques clics, a transformé une vitrine culturelle en scène de stand-up misogyne.
+Il faut le souligner : ce n'est pas la librairie dans son ensemble qui s'est exprimée. D'ailleurs, cette dernière afait une mise au point ferme , que je salue.
+![Mise au point de la librairie](/images/articles/bescherelle/00.jpg)
+
+C'est juste un(e) CM — mal formé(e) ou mal encadré(e) — qui, en quelques clics, a transformé une vitrine culturelle en scène de stand-up misogyne.
 
 En conclusion, mesdames, soyez vous-mêmes.
 
