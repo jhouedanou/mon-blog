@@ -8,7 +8,7 @@ keywords: "community manager, réseaux sociaux, sexisme, Abidjan,  féminisme, c
 summary: "Certains professionnels utilisent les réseaux sociaux comme une tribune personnelle sans professionnalisme, au même niveau qu'un débat improvisé entre potes sur un banc de quartier. C'est le cas d'un community manager ivoirien qui a récemment fait le buzz pour ses commentaires sexistes et dégradants sur les femmes."
 ---
 
-# Quand un Community Manager confond réseaux sociaux et le Grin
+# Quand un Community Manager confond réseaux sociaux et "Grin"
 
 **Bonjour.**
 
