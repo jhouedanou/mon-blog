@@ -12,7 +12,7 @@ summary: "Certains professionnels utilisent les réseaux sociaux comme une tribu
 
 **Bonjour.**
 
-Je suis Jean-Luc Houédanou, développeur web, citoyen concerné, et défenseur assumé du bon sens.
+Je suis Jean-Luc Houédanou, développeur web et défenseur assumé du bon sens.
 
 Penser avec rigueur, respecter autrui, peser ses mots : autant de qualités qu’on attend d’un professionnel — surtout dans un secteur aussi symbolique que le livre et la communication. Je ne suis pas ici pour faire la morale, mais pour rappeler que les réseaux sociaux ne sont pas un *grin* — ce groupe informel de discussion entre amis où l'on débat de tout et de rien, souvent sans fond ni filtre.
 
