@@ -81,7 +81,7 @@ Ce n'est pas un procès, mais un appel au professionnalisme et au respect.
 
 Il faut le souligner : ce n'est pas la librairie dans son ensemble qui s'est exprimée. C'est juste un(e) CM — mal formé(e) ou mal encadré(e) — qui, en quelques clics, a transformé une vitrine culturelle en scène de stand-up misogyne.
 
-En conclusion, mesdames, continuez à lire, à apprendre, à penser par vous-mêmes.
+En conclusion, mesdames, soyez vous-mêmes.
 
 C'est précisément ce qui dérange certains — et c'est une bonne chose.
 
