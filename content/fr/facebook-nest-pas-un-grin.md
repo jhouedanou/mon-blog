@@ -1,7 +1,7 @@
 ---
 title: "Quand un Community Manager confond réseaux sociaux et le Grin"
 image: "/images/articles/bescherelle/01.jpg"
-createdAt: "08-06-2025"
+createdAt: "05-06-2025"
 id: 14
 description: "Certains professionnels utilisent les réseaux sociaux comme une tribune personnelle sans professionnalisme, au même niveau qu'un débat improvisé entre potes sur un banc de quartier. C'est le cas d'un community manager ivoirien qui a récemment fait le buzz pour ses commentaires sexistes et dégradants sur les femmes."
 keywords: "community manager, réseaux sociaux, sexisme, Abidjan,  féminisme, critique sociale"
@@ -36,9 +36,23 @@ Exemple concret : « Ce qu'elles nous servent là est affreux ».
 
 Cette tournure, en plus d'être condescendante, repose sur une utilisation hasardeuse du verbe "servir".
 
-On ne "sert" pas une erreur de grammaire comme on sert un café.
+On ne "sert" pas une erreur de grammaire comme on sert un café. Cette formulation maladroite, pourtant employée pour critiquer la langue des autres, révèle une maîtrise imparfaite du français — un comble, pour quelqu'un qui a la prétention de distribuer des Bescherelle.
 
-Cette formulation maladroite, pourtant employée pour critiquer la langue des autres, révèle une maîtrise imparfaite du français — un comble, pour quelqu'un qui a la prétention de distribuer des Bescherelle.
+Ensuite, il y a ceci.
+
+> « Allure de princesses, démarche de déesses, tête d'illettrés. Dehors ! Partagez au max, elles doivent voir. »
+
+À première vue, on sent la volonté de "faire une formule choc". Mais en regardant de plus près, on constate que le style et la grammaire ne suivent pas toujours l’intention. 
+Quelques observations :
+
+
+- "Tête d’illettrés" : ici, le mot illettrés est au masculin pluriel, alors que le sujet de la phrase est féminin ("elles"). La bonne tournure serait donc tête d’illettrées.
+
+- Il y a aussi un souci de cohérence stylistique : on aligne "allure", "démarche" et "tête" dans une même structure, mais avec des images de registres différents, ce qui crée un effet bancal.
+
+
+Ce qui devait être une critique sur la maîtrise du français se retourne donc contre son auteur : on ne peut pas corriger les autres en oubliant les accords de base. Et surtout, il n’est jamais pertinent de porter un jugement aussi général, encore moins sur un ton méprisant, quand on s’adresse à un public large – et potentiellement jeune – depuis une page institutionnelle.
+
 
 ## L'ironie de la posture critique
 
