@@ -3,9 +3,9 @@ title: "Quand un Community Manager confond réseaux sociaux et le Grin"
 image: "/images/articles/bescherelle/01.jpg"
 createdAt: "05-06-2025"
 id: 14
-description: "Certains professionnels utilisent les réseaux sociaux comme une tribune personnelle sans professionnalisme, au même niveau qu'un débat improvisé entre potes sur un banc de quartier. C'est le cas d'un community manager ivoirien qui a récemment fait le buzz pour ses commentaires sexistes et dégradants sur les femmes."
+description: "Penser avec rigueur, respecter autrui, peser ses mots : autant de qualités qu’on attend d’un professionnel — surtout dans un secteur aussi symbolique que le livre et la communication. Je ne suis pas ici pour faire la morale, mais pour rappeler que les réseaux sociaux ne sont pas un grin — ce groupe informel de discussion entre amis où l'on débat de tout et de rien, souvent sans fond ni filtre. Mais parfois, on a l'impression que certains professionnels ont oublié ces notions de base."
 keywords: "community manager, réseaux sociaux, sexisme, Abidjan,  féminisme, critique sociale"
-summary: "Certains professionnels utilisent les réseaux sociaux comme une tribune personnelle sans professionnalisme, au même niveau qu'un débat improvisé entre potes sur un banc de quartier. C'est le cas d'un community manager ivoirien qui a récemment fait le buzz pour ses commentaires sexistes et dégradants sur les femmes."
+summary: "Penser avec rigueur, respecter autrui, peser ses mots : autant de qualités qu’on attend d’un professionnel — surtout dans un secteur aussi symbolique que le livre et la communication. Je ne suis pas ici pour faire la morale, mais pour rappeler que les réseaux sociaux ne sont pas un grin — ce groupe informel de discussion entre amis où l'on débat de tout et de rien, souvent sans fond ni filtre. Mais parfois, on a l'impression que certains professionnels ont oublié ces notions de base."
 ---
 
 # Quand un Community Manager confond réseaux sociaux et "Grin"
