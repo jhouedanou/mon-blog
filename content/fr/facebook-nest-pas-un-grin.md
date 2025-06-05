@@ -79,9 +79,7 @@ Ou mieux, rayons séparés : les romans à l'eau de rose à droite pour "les fil
 
 Ce n'est pas un procès, mais un appel au professionnalisme et au respect.
 
-Il faut le souligner : ce n'est pas la librairie dans son ensemble qui s'est exprimée. C'est un(e) CM — mal formé(e) ou mal encadré(e) — qui, en quelques clics, a transformé une vitrine culturelle en scène de stand-up misogyne.
-
-Personne n'est à l'abri d'un mot mal choisi. Mais quand cela devient systémique, quand cela prend la forme de moqueries ciblées et méprisantes, on ne parle plus d'erreur isolée : on parle d'un climat.
+Il faut le souligner : ce n'est pas la librairie dans son ensemble qui s'est exprimée. C'est juste un(e) CM — mal formé(e) ou mal encadré(e) — qui, en quelques clics, a transformé une vitrine culturelle en scène de stand-up misogyne.
 
 En conclusion, mesdames, continuez à lire, à apprendre, à penser par vous-mêmes.
 
