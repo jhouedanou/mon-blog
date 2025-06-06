@@ -11,6 +11,7 @@ summary: "Penser avec rigueur, respecter autrui, peser ses mots : autant de qual
 # Quand un Community Manager confond réseaux sociaux et "Grin"
 
 **Bonjour.**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XBmb1g9j3Ac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Je suis Jean-Luc Houédanou, développeur web et défenseur assumé du bon sens.
 
