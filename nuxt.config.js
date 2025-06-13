@@ -1,6 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   target: 'static',
+  
+  site: {
+    url: 'https://houedanou.com',
+    name: 'Blog de Jean-Luc Houédanou',
+    description: 'Blog personnel de Jean-Luc Houédanou - Développeur web et défenseur du bon sens',
+    defaultLocale: 'fr'
+  },
 
   devtools: { enabled: false },
   modules: [
@@ -52,12 +59,26 @@ i18n: {
  sitemap: {
     hostname: 'https://houedanou.com',
     gzip: true,
+    exclude: [
+      '/admin/**',
+      '/private/**'
+    ],
     routes: async () => {
       const articles = await queryContent()
-        .sort({ createdAt: -1 }) // Tri par date de création décroissante
+        .sort({ createdAt: -1 })
         .find()
 
-      return articles.map(article => article._path)
+      return articles.map(article => ({
+        url: article._path,
+        changefreq: 'weekly',
+        priority: 0.8,
+        lastmod: article.createdAt ? new Date(article.createdAt).toISOString() : new Date().toISOString()
+      }))
+    },
+    defaults: {
+      changefreq: 'daily',
+      priority: 1,
+      lastmod: new Date().toISOString()
     }
   },  
   image: {
@@ -154,7 +175,9 @@ i18n: {
     }
   },
   routeRules: {
-    '/': { prerender: true }
+    '/': { prerender: true },
+    '/sitemap.xml': { prerender: true },
+    '/robots.txt': { prerender: true }
   },
   compatibilityDate: '2024-10-10'
 })
