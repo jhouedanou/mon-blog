@@ -63,33 +63,50 @@ const { data: article } = await useAsyncData("article", () =>
   queryContent(route.path).findOne()
 );
 
+// Vérifier que l'article existe
+if (!article.value) {
+  throw createError({
+    statusCode: 404,
+    statusMessage: 'Article non trouvé'
+  })
+}
+
+// Configuration SEO avec protection contre les valeurs null
 useHead({
-  title: article.value.title,
+  title: article.value?.title || 'Article - Blog de Jean-Luc Houédanou',
   meta: [
-    // Meta tags standards pour SEO
-    { name: "description", content: article.value.description || "Description par défaut" },
-    { name: "keywords", content: article.value.keywords || "" },
-    
-    // Open Graph tags (pour les partages sociaux)
-    { property: "og:title", content: article.value.title },
-    {
-      property: "og:description",
-      content: article.value.description || "Description par défaut",
+    { 
+      name: 'description', 
+      content: article.value?.description || 'Article du blog de Jean-Luc Houédanou' 
     },
-    { property: "og:url", content: `https://houedanou.com${route.path}` },
-    { property: "og:image", content: `https://houedanou.com${article.value.image}` },
-    { property: "og:site_name", content: "Jean-Luc Houédanou" },
-    
-    // Twitter Card tags
-    { name: "twitter:card", content: "summary_large_image" },
-    { name: "twitter:image", content: `https://houedanou.com${article.value.image}` },
-    { name: "twitter:title", content: article.value.title },
-    {
-      name: "twitter:description",
-      content: article.value.description || "Description par défaut",
+    { 
+      name: 'keywords', 
+      content: article.value?.keywords || 'Jean-Luc Houédanou, blog, article' 
     },
+    { property: 'og:title', content: article.value?.title || 'Article - Blog de Jean-Luc Houédanou' },
+    { property: 'og:description', content: article.value?.description || 'Article du blog de Jean-Luc Houédanou' },
+    { 
+      property: 'og:image', 
+      content: article.value?.image 
+        ? `https://houedanou.com${article.value.image}` 
+        : 'https://houedanou.com/images/default-og.webp'
+    },
+    { property: 'og:url', content: `https://houedanou.com${route.path}` },
+    { property: 'og:type', content: 'article' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: article.value?.title || 'Article - Blog de Jean-Luc Houédanou' },
+    { name: 'twitter:description', content: article.value?.description || 'Article du blog de Jean-Luc Houédanou' },
+    { 
+      name: 'twitter:image', 
+      content: article.value?.image 
+        ? `https://houedanou.com${article.value.image}` 
+        : 'https://houedanou.com/images/default-og.webp'
+    }
   ],
-});
+  link: [
+    { rel: 'canonical', href: `https://houedanou.com${route.path}` }
+  ]
+})
 const currentUrl = `https://houedanou.com${route.path}`;
 function formatDate(createdAt) {
   if (createdAt) {

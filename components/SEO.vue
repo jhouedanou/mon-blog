@@ -5,36 +5,55 @@
 </template>
 
 <script setup>
-// Ce composable gère les métadonnées SEO pour chaque page
-const { data: page } = await useAsyncData('page', () => queryContent().findOne())
+// Props pour recevoir les données de la page
+const props = defineProps({
+  title: {
+    type: String,
+    default: 'Blog de Jean-Luc Houédanou'
+  },
+  description: {
+    type: String,
+    default: 'Blog personnel de Jean-Luc Houédanou - Développeur web et défenseur du bon sens'
+  },
+  image: {
+    type: String,
+    default: '/images/default-og.webp'
+  },
+  keywords: {
+    type: String,
+    default: 'Jean-Luc Houédanou, développeur web, blog, technologie'
+  }
+})
+
+const route = useRoute()
 
 // Configuration des métadonnées
 useHead({
-  title: computed(() => page.value?.title || 'Blog de Jean-Luc Houédanou'),
+  title: computed(() => props.title),
   meta: [
     {
       name: 'description',
-      content: computed(() => page.value?.description || 'Blog personnel de Jean-Luc Houédanou - Développeur web et défenseur du bon sens')
+      content: computed(() => props.description)
     },
     {
       name: 'keywords',
-      content: computed(() => page.value?.keywords || 'Jean-Luc Houédanou, développeur web, blog, technologie')
+      content: computed(() => props.keywords)
     },
     {
       property: 'og:title',
-      content: computed(() => page.value?.title || 'Blog de Jean-Luc Houédanou')
+      content: computed(() => props.title)
     },
     {
       property: 'og:description',
-      content: computed(() => page.value?.description || 'Blog personnel de Jean-Luc Houédanou')
+      content: computed(() => props.description)
     },
     {
       property: 'og:image',
-      content: computed(() => page.value?.image ? `https://houedanou.com${page.value.image}` : 'https://houedanou.com/images/default-og.jpg')
+      content: computed(() => props.image.startsWith('http') ? props.image : `https://houedanou.com${props.image}`)
     },
     {
       property: 'og:url',
-      content: computed(() => `https://houedanou.com${useRoute().path}`)
+      content: computed(() => `https://houedanou.com${route.path}`)
     },
     {
       property: 'og:type',
@@ -46,21 +65,21 @@ useHead({
     },
     {
       name: 'twitter:title',
-      content: computed(() => page.value?.title || 'Blog de Jean-Luc Houédanou')
+      content: computed(() => props.title)
     },
     {
       name: 'twitter:description',
-      content: computed(() => page.value?.description || 'Blog personnel de Jean-Luc Houédanou')
+      content: computed(() => props.description)
     },
     {
       name: 'twitter:image',
-      content: computed(() => page.value?.image ? `https://houedanou.com${page.value.image}` : 'https://houedanou.com/images/default-og.jpg')
+      content: computed(() => props.image.startsWith('http') ? props.image : `https://houedanou.com${props.image}`)
     }
   ],
   link: [
     {
       rel: 'canonical',
-      href: computed(() => `https://houedanou.com${useRoute().path}`)
+      href: computed(() => `https://houedanou.com${route.path}`)
     }
   ]
 })
