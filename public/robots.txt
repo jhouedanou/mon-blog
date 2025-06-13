@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://houedanou.com/sitemap.xml
+Sitemap: https://houedanou.com/sitemap_index.xml
 
 # Interdire l'indexation de certains répertoires si nécessaire
 # Disallow: /admin/
