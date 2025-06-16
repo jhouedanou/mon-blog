@@ -6,6 +6,43 @@ id: 10
 description: "Découvrez comment Coca-Cola a utilisé l'intelligence artificielle pour sa campagne de Noël et pourquoi cette stratégie marketing controversée a parfaitement fonctionné malgré les critiques."
 keywords: "Coca-Cola, IA, intelligence artificielle, publicité Noël, marketing, DALL-E, campagne publicitaire, Holidays Are Coming"
 summary: "Coca-Cola a créé la controverse avec sa première publicité de Noël générée par IA. Malgré les critiques sur l'esthétique imparfaite, cette stratégie marketing a brillamment réussi à renforcer l'association de la marque avec les fêtes de fin d'année en générant des discussions et en occupant l'espace médiatique."
+
+# Open Graph Meta Tags
+og:
+  title: "Coca-Cola, IA et Noël : un mélange qui fait parler ( mais également vendre)"
+  description: "Coca-Cola a utilisé l'IA pour sa campagne de Noël, suscitant débats et visibilité. Découvrez pourquoi cette stratégie marketing a fonctionné malgré les critiques."
+  image: "/images/articles/cocacola.webp"
+  url: "/fr/coca-cola-et-ia"
+  type: "article"
+  site_name: "Jean-Luc Houédanou"
+  locale: "fr_FR"
+
+# Twitter Card Meta Tags
+twitter:
+  card: "summary_large_image"
+  title: "Coca-Cola, IA et Noël : un mélange qui fait parler ( mais également vendre)"
+  description: "Coca-Cola a créé la controverse avec une publicité de Noël générée par IA. Une stratégie marketing qui fait parler et vendre."
+  image: "/images/articles/cocacola.webp"
+  creator: "@jeanluchouedanou"
+
+# Article Meta Tags
+article:
+  published_time: "2024-12-20T00:00:00Z"
+  modified_time: "2024-12-20T00:00:00Z"
+  author: "Jean-Luc Houédanou"
+  section: "Marketing"
+  tag: ["Coca-Cola", "IA", "intelligence artificielle", "publicité Noël", "marketing", "DALL-E", "campagne publicitaire", "Holidays Are Coming"]
+
+# Schema.org structured data
+schema:
+  type: "Article"
+  headline: "Coca-Cola, IA et Noël : un mélange qui fait parler ( mais également vendre)"
+  description: "Découvrez comment Coca-Cola a utilisé l'intelligence artificielle pour sa campagne de Noël et pourquoi cette stratégie marketing controversée a parfaitement fonctionné malgré les critiques."
+  image: "/images/articles/cocacola.webp"
+  datePublished: "2024-12-20"
+  dateModified: "2024-12-20"
+  author: "Jean-Luc Houédanou"
+  publisher: "Jean-Luc Houédanou"
 ---
 # Coca-Cola, IA et Noël : le mélange qui fait parler (mais également vendre)
 
