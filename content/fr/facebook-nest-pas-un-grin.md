@@ -3,9 +3,46 @@ title: "Quand un Community Manager confond réseaux sociaux et le Grin"
 image: "/images/articles/bescherelle/01.jpg"
 createdAt: "05-06-2025"
 id: 14
-description: "Penser avec rigueur, respecter autrui, peser ses mots : autant de qualités qu’on attend d’un professionnel — surtout dans un secteur aussi symbolique que le livre et la communication. Je ne suis pas ici pour faire la morale, mais pour rappeler que les réseaux sociaux ne sont pas un grin — ce groupe informel de discussion entre amis où l'on débat de tout et de rien, souvent sans fond ni filtre. Mais parfois, on a l'impression que certains professionnels ont oublié ces notions de base."
+description: "Penser avec rigueur, respecter autrui, peser ses mots : autant de qualités qu'on attend d'un professionnel — surtout dans un secteur aussi symbolique que le livre et la communication. Je ne suis pas ici pour faire la morale, mais pour rappeler que les réseaux sociaux ne sont pas un grin — ce groupe informel de discussion entre amis où l'on débat de tout et de rien, souvent sans fond ni filtre. Mais parfois, on a l'impression que certains professionnels ont oublié ces notions de base."
 keywords: "community manager, réseaux sociaux, sexisme, Abidjan,  féminisme, critique sociale"
-summary: "Penser avec rigueur, respecter autrui, peser ses mots : autant de qualités qu’on attend d’un professionnel — surtout dans un secteur aussi symbolique que le livre et la communication. Je ne suis pas ici pour faire la morale, mais pour rappeler que les réseaux sociaux ne sont pas un grin — ce groupe informel de discussion entre amis où l'on débat de tout et de rien, souvent sans fond ni filtre. Mais parfois, on a l'impression que certains professionnels ont oublié ces notions de base."
+summary: "Penser avec rigueur, respecter autrui, peser ses mots : autant de qualités qu'on attend d'un professionnel — surtout dans un secteur aussi symbolique que le livre et la communication. Je ne suis pas ici pour faire la morale, mais pour rappeler que les réseaux sociaux ne sont pas un grin — ce groupe informel de discussion entre amis où l'on débat de tout et de rien, souvent sans fond ni filtre. Mais parfois, on a l'impression que certains professionnels ont oublié ces notions de base."
+
+# Open Graph Meta Tags
+og:
+  title: "Quand un Community Manager confond réseaux sociaux et le Grin"
+  description: "Un community manager d'une librairie ivoirienne fait preuve de sexisme et de mépris sur les réseaux sociaux. Analyse d'un comportement professionnel inapproprié et de ses conséquences."
+  image: "/images/articles/bescherelle/01.jpg"
+  url: "/fr/facebook-nest-pas-un-grin"
+  type: "article"
+  site_name: "Jean-Luc Houédanou"
+  locale: "fr_FR"
+
+# Twitter Card Meta Tags
+twitter:
+  card: "summary_large_image"
+  title: "Quand un Community Manager confond réseaux sociaux et le Grin"
+  description: "Sexisme, mépris et incompétence : comment un community manager transforme une vitrine culturelle en scène de stand-up misogyne. Une analyse critique."
+  image: "/images/articles/bescherelle/01.jpg"
+  creator: "@jeanluchouedanou"
+
+# Article Meta Tags
+article:
+  published_time: "2025-06-05T00:00:00Z"
+  modified_time: "2025-06-05T00:00:00Z"
+  author: "Jean-Luc Houédanou"
+  section: "Société"
+  tag: ["community manager", "réseaux sociaux", "sexisme", "Abidjan", "féminisme", "critique sociale"]
+
+# Schema.org structured data
+schema:
+  type: "Article"
+  headline: "Quand un Community Manager confond réseaux sociaux et le Grin"
+  description: "Penser avec rigueur, respecter autrui, peser ses mots : autant de qualités qu'on attend d'un professionnel — surtout dans un secteur aussi symbolique que le livre et la communication."
+  image: "/images/articles/bescherelle/01.jpg"
+  datePublished: "2025-06-05"
+  dateModified: "2025-06-05"
+  author: "Jean-Luc Houédanou"
+  publisher: "Jean-Luc Houédanou"
 ---
 
 # Quand un Community Manager confond réseaux sociaux et "Grin"
@@ -15,7 +52,7 @@ summary: "Penser avec rigueur, respecter autrui, peser ses mots : autant de qual
 
 Je suis Jean-Luc Houédanou, développeur web et défenseur assumé du bon sens.
 
-Penser avec rigueur, respecter autrui, peser ses mots : autant de qualités qu’on attend d’un professionnel — surtout dans un secteur aussi symbolique que le livre et la communication. Je ne suis pas ici pour faire la morale, mais pour rappeler que les réseaux sociaux ne sont pas un *grin* — ce groupe informel de discussion entre amis où l'on débat de tout et de rien, souvent sans fond ni filtre.
+Penser avec rigueur, respecter autrui, peser ses mots : autant de qualités qu'on attend d'un professionnel — surtout dans un secteur aussi symbolique que le livre et la communication. Je ne suis pas ici pour faire la morale, mais pour rappeler que les réseaux sociaux ne sont pas un *grin* — ce groupe informel de discussion entre amis où l'on débat de tout et de rien, souvent sans fond ni filtre.
 
 Mais parfois, on a l'impression que certains professionnels ont oublié ces notions de base.
 
@@ -43,16 +80,16 @@ Ensuite, il y a ceci.
 
 > « Allure de princesses, démarche de déesses, tête d'illettrés. Dehors ! Partagez au max, elles doivent voir. »
 
-À première vue, on sent la volonté de "faire une formule choc". Mais en regardant de plus près, on constate que le style et la grammaire ne suivent pas toujours l’intention. 
+À première vue, on sent la volonté de "faire une formule choc". Mais en regardant de plus près, on constate que le style et la grammaire ne suivent pas toujours l'intention. 
 Quelques observations :
 
 
-- "Tête d’illettrés" : ici, le mot illettrés est au masculin pluriel, alors que le sujet de la phrase est féminin ("elles"). La bonne tournure serait donc tête d’illettrées.
+- "Tête d'illettrés" : ici, le mot illettrés est au masculin pluriel, alors que le sujet de la phrase est féminin ("elles"). La bonne tournure serait donc tête d'illettrées.
 
 - Il y a aussi un souci de cohérence stylistique : on aligne "allure", "démarche" et "tête" dans une même structure, mais avec des images de registres différents, ce qui crée un effet bancal.
 
 
-Ce qui devait être une critique sur la maîtrise du français se retourne donc contre son auteur : on ne peut pas corriger les autres en oubliant les accords de base. Et surtout, il n’est jamais pertinent de porter un jugement aussi général, encore moins sur un ton méprisant, quand on s’adresse à un public large – et potentiellement jeune – depuis une page institutionnelle.
+Ce qui devait être une critique sur la maîtrise du français se retourne donc contre son auteur : on ne peut pas corriger les autres en oubliant les accords de base. Et surtout, il n'est jamais pertinent de porter un jugement aussi général, encore moins sur un ton méprisant, quand on s'adresse à un public large – et potentiellement jeune – depuis une page institutionnelle.
 
 
 ## L'ironie de la posture critique

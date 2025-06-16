@@ -6,6 +6,43 @@ id: 14
 description: "Après plus d'un an d'utilisation, Jean Luc Houédanou revient sur les avantages et les inconvénients dans l'IA, dans sa vie quotidienne, incluant les devoirs de Mathématiques de sa nièce."
 keywords: "IA, vie quotidienne, devoirs, Mathématiques, technologie, développement personnel, productivité, assistante IA, Claude 4 Sonnet"
 summary: "Ce billet raconte comment l'IA a influencé ma vie quotidienne, y compris les devoirs de Mathématiques de ma nièce."
+
+# Open Graph Meta Tags
+og:
+  title: "Un an et plus avec l'intelligence artificielle : entre gains de productivité, devoirs de mathématiques et risque de paresse mentale"
+  description: "Retour d'expérience après un an d'utilisation quotidienne de l'IA : devoirs de maths, développement web, rédaction d'emails et vigilance face à la paresse mentale."
+  image: "/images/articles/niece.png"
+  url: "/fr/liaetmoi"
+  type: "article"
+  site_name: "Jean-Luc Houédanou"
+  locale: "fr_FR"
+
+# Twitter Card Meta Tags
+twitter:
+  card: "summary_large_image"
+  title: "Un an et plus avec l'intelligence artificielle : entre gains de productivité, devoirs de mathématiques et risque de paresse mentale"
+  description: "Comment l'IA transforme le quotidien : de l'aide aux devoirs de maths à l'optimisation du code, en passant par la rédaction d'emails. Un témoignage honnête sur les avantages et les pièges."
+  image: "/images/articles/niece.png"
+  creator: "@jeanluchouedanou"
+
+# Article Meta Tags
+article:
+  published_time: "2025-06-04T00:00:00Z"
+  modified_time: "2025-06-04T00:00:00Z"
+  author: "Jean-Luc Houédanou"
+  section: "Technologie"
+  tag: ["IA", "vie quotidienne", "devoirs", "Mathématiques", "technologie", "développement personnel", "productivité", "assistante IA", "Claude 4 Sonnet"]
+
+# Schema.org structured data
+schema:
+  type: "Article"
+  headline: "Un an et plus avec l'intelligence artificielle : entre gains de productivité, devoirs de mathématiques et risque de paresse mentale"
+  description: "Après plus d'un an d'utilisation, Jean Luc Houédanou revient sur les avantages et les inconvénients dans l'IA, dans sa vie quotidienne, incluant les devoirs de Mathématiques de sa nièce."
+  image: "/images/articles/niece.png"
+  datePublished: "2025-06-04"
+  dateModified: "2025-06-04"
+  author: "Jean-Luc Houédanou"
+  publisher: "Jean-Luc Houédanou"
 ---
 
 # Un an et plus avec l'intelligence artificielle : entre gains de productivité, devoirs de mathématiques et risque de paresse mentale
