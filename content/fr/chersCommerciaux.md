@@ -79,5 +79,3 @@ Il n'y a pas de solution miracle, mais une approche basée sur la prudence et la
 Un AirTag dans votre voiture, un iPhone dans votre poche, un MacBook dans votre sac... Ce ne sont pas que des outils. Ce sont aussi des narrateurs. Et le récit qu'ils construisent doit être en accord avec votre fiche de poste.
 
 La technologie ne juge pas, elle se contente de documenter. C'est à vous de décider si cette documentation sera votre alibi ou votre piège.
-
-***
