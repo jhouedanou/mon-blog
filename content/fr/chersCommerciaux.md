@@ -8,7 +8,7 @@ keywords: "Apple, iOS, AirTag, Find My, géolocalisation, commercial, matériel 
 summary: "La technologie ne juge pas, elle documente. À vous de faire en sorte que cette documentation raconte la bonne histoire."
 ---
 ## **iPhone, MacBook, voiture de fonction… vos outils de travail vous observent**
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Is335kg_bjs?si=p8y19nzm0SQzkjRi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 Bonjour à tous. Ça faisait un moment que je n'avais pas mis à jour le blog. Pas par paresse, mais parce que la vie professionnelle a pris des allures de marathon ces dernières semaines. Plus de responsabilités, plus de projets, et moins d'heures de sommeil. Mais je tiens le coup, comme un coureur qui aperçoit enfin la ligne d'arrivée au loin.
 
 Aujourd'hui, je veux aborder un sujet qui concerne beaucoup de professionnels à Abidjan : l'équipement fourni par l'entreprise. Ces outils ne sont pas seulement un kit de productivité, ils sont aussi des témoins silencieux de votre vie.
