@@ -16,7 +16,7 @@ Mais depuis peu, Affinity est devenue gratuite. Oui, gratuite.
 
 Et franchement, c’est une excellente nouvelle.
 
-## Pourquoi c’est une bonne chose
+## Pourquoi c’est une bonne chose
 
 Je fais partie de ceux qui ont acheté la version 1, puis la version 2. Et pourtant, je me réjouis de cette évolution.
 Parce qu’un monde où Adobe ne règne pas seul sur la création graphique est, selon moi, un monde meilleur.
@@ -45,9 +45,9 @@ Tout est désormais réuni dans une seule application.
 
 Trois espaces de travail :
 
-- Vector pour le dessin vectoriel,
-- Layout pour la mise en page,
-- Photo pour la retouche d’image.
+- "Vecteur" pour le dessin vectoriel,
+- "Mise en page" pour la mise en page,
+- "Pixel" pour la retouche d’image.
 
 C’est une expérience unifiée, fluide et très agréable — même sur mes anciens MacBook Pro.
 Les raccourcis restent identiques, les exports sont plus simples et plus rapides, et l’interface a gagné en cohérence.
