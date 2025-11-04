@@ -1,6 +1,6 @@
 ---
 title: "Josh Cahill Meets Air Côte d'Ivoire (And Drama Ensues)"
-image: "/images/articles/air-cote-ivoire-josh-cahill.jpg"
+image: "/images/articles/joshcahill.jpg"
 createdAt: "04-11-2025"
 id: 170
 description: "Analysis of the controversy between aviation vlogger Josh Cahill and Air Côte d'Ivoire: between a Booking.com ticket, high-altitude recovery, and improvised crisis management."
@@ -55,4 +55,7 @@ For influencers: transparency is the flight instrument of credibility. Omitting 
 I'm convinced that with a bit more experience and better after-sales service structure, Air Côte d'Ivoire will navigate more serenely in the competitive long-haul skies. African airlines have every right to their place on the international stage, and this incident is just one flight lesson among others on the path to maturity.
 Both parties have room to grow: one in operational excellence and customer care, the other in journalistic completeness. That's not criticism - that's an opportunity for everyone to fly higher next time.
 
-Pilot's note: when booking via third-party platforms at reduced prices, direct verification with the airline can avoid plenty of turbulence.RéessayerClaude peut faire des erreurs. Assurez-vous de vérifier ses réponses.
+# A closing note
+As a final word, Josh, you'd better get used to seeing terms like "maudit" (cursed), "ton b####" (and other colorful expressions) flourishing in your comments section. West African internet culture has its own unique flavor when it comes to expressing displeasure, and you've just gotten a taste of it.
+And if you speak a wee bit of French, I'd recommend reading this piece on crisis management: https://jeanluchouedanou.blogspot.com/2024/03/la-regle-des-72-heures-ou-comment-gerer.html - it might offer some perspective on how things could have been handled differently on both sides.
+Safe travels, and here's hoping your next African adventure goes more smoothly. ✈️
