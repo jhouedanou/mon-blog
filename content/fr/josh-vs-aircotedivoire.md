@@ -77,7 +77,7 @@ I'm convinced that with a bit more experience and better after-sales service str
 Both parties have room to grow: one in operational excellence and customer care, the other in journalistic completeness. That's not criticism - that's an opportunity for everyone to fly higher next time.
 
 ## A closing note
-As a final word, Josh, you'd better get used to seeing terms like "maudit" (cursed), "ton b####" (and other colorful expressions) flourishing in your comments section. West African internet culture has its own unique flavor when it comes to expressing displeasure, and you are about to get a good taste of it.
+As a final word, Josh, you'd better get used to seeing terms like "maudia" (cursed), "ton b####" (and other colorful expressions) flourishing in your comments section. West African internet culture has its own unique flavor when it comes to expressing displeasure, and you are about to get a good taste of it.
 
 And if you speak a wee bit of French, I'd recommend reading this piece on crisis management: https://jeanluchouedanou.blogspot.com/2024/03/la-regle-des-72-heures-ou-comment-gerer.html - it might offer some perspective on how things could have been handled differently on both sides.
 
