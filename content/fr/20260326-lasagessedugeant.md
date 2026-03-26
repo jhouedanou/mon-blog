@@ -6,8 +6,6 @@ description: "MacBook Neo, Apple Intelligence, iPhone pliable : pourquoi Apple n
 keywords: "Apple, MacBook Neo, Apple Intelligence, iPhone pliable, A18 Pro, Apple Silicon, IA, ChatGPT, écosystème Apple, tech"
 ---
 # Apple : la sagesse du géant
-*La pomme est mûre.*
----
 
 ## Le MacBook Neo : le luxe du bas de gamme
 
@@ -23,7 +21,6 @@ L'écosystème commence là, avant même le premier abonnement iCloud.
 
 Personnellement, je ne suis pas le public cible — comme on dit sur les bords de la lagune ébrié. Mon quotidien, c'est Docker, VS Code, Chrome, et tout l'écosystème du développement web qui tourne comme une horloge sur les puces M1 ou avec un ventilateur à fond sur un "PC Gamer". Mais la A18 Pro fait tourner MacOS sur architecture Apple Silicon, ce qui ouvre une porte inattendue : les applications iPad. LumaFusion, Koala Sampler, Lightroom — des outils que j'utilise régulièrement, et les retrouver sur un écran plus grand qu'un iPad Mini, c'est un avantage que je trouve non négligeable.
 
----
 
 ## Apple Intelligence : l'IA qui ne mérite pas son nom
 
@@ -38,7 +35,6 @@ Apple Intelligence est la moins bonne IA du marché — réponses à côté, gé
 Ma prédiction est qu'Apple Intelligence dans sa forme actuelle ira rejoindre Bixby et Cortana. Mais contrairement à Samsung ou Microsoft, Apple ne ratera pas sa sortie. Elle intégrera proprement une IA tierce — de grâce, par pitié... Claude ou Gemini à la rigueur — avec juste ce qu'il faut d'iOS par-dessus pour que ça ressemble à du natif.
 Apple ne construira pas de l'IA, mais vous vendra son expérience de l'IA.
 
----
 
 ## L'iPhone pliable : l'objet de désir qu'on n'a pas encore vu
 
@@ -48,7 +44,6 @@ Le pliable, lui, est une autre histoire. Je ne sais pas exactement quand il arri
 
 Pour revenir à l'iPhone pliable, ce sera un pur objet de statut. Un écran de vanité, au sens le plus littéral. Puissant symboliquement, élégant visuellement — et ruineux à réparer. La pomme sait vendre des rêves.
 
----
 
 ## Apple ne fait plus rêver. Apple délivre.
 
@@ -62,6 +57,5 @@ Et franchement ? C'est rassurant. Dans un secteur où tout le monde lève des mi
 
 Apple ne fait plus rêver. Apple délivre. La marge brute atteint **47,2 %**, au sommet des prévisions — et pour beaucoup d'utilisateurs, c'est exactement ce dont ils ont besoin.
 
----
 
 *En bref : moins de magie, plus de métier. Et un compte en banque à faire pâlir un État.*
