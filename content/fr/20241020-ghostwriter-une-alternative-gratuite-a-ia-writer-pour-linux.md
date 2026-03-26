@@ -1,4 +1,4 @@
-````mdc
+---
 title: "Ghostwriter, l'iA Writer de Linux"
 image: "/images/articles/mockup.png"
 createdAt: "2024-10-20"
