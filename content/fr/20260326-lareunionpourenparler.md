@@ -1,48 +1,9 @@
-```mdc
+---
 title: "La réunion « pour en parler »"
 image: "/images/articles/reunion.jpg"
-createdAt: "26-03-2026"
-id: 2026-03-26
+createdAt: "2026-03-26"
 description: "Une réflexion sur la fameuse réunion 'pour en parler' : pourquoi elle naît, comment l'éviter, et comment obtenir des décisions claires sans perdre de temps."
 keywords: "réunion, productivité, tech, marketing digital, réunion inutile, ego, développement"
-summary: "Comment repérer et neutraliser les réunions 'pour en parler' : demander des objections écrites, fixer un ordre du jour et une décision claire."
-
-# Open Graph Meta Tags
-og:
-  title: "La réunion « pour en parler »"
-  description: "Comment reconnaître et gérer la réunion 'pour en parler' pour éviter les pertes de temps en entreprise."
-  image: "/images/articles/reunion.jpg"
-  url: "/fr/la-reunion-pour-en-parler"
-  type: "article"
-  site_name: "Jean-Luc Houédanou"
-  locale: "fr_FR"
-
-# Twitter Card Meta Tags
-twitter:
-  card: "summary_large_image"
-  title: "La réunion « pour en parler »"
-  description: "Demander plutôt qu'organiser : astuces pour transformer une réunion floue en une décision actionnable."
-  image: "/images/articles/reunion.jpg"
-  creator: "@jeanluchouedanou"
-
-# Article Meta Tags
-article:
-  published_time: "2026-03-26T00:00:00Z"
-  modified_time: "2026-03-26T00:00:00Z"
-  author: "Jean-Luc Houédanou"
-  section: "Professionnel"
-  tag: ["réunion", "productivité", "tech", "marketing digital", "réunion inutile"]
-
-# Schema.org structured data
-schema:
-  type: "Article"
-  headline: "La réunion « pour en parler »"
-  description: "Une réflexion sur la réunion 'pour en parler' et des conseils pour la rendre productive ou l'éviter."
-  image: "/images/articles/reunion.jpg"
-  datePublished: "2026-03-26"
-  dateModified: "2026-03-26"
-  author: "Jean-Luc Houédanou"
-  publisher: "Jean-Luc Houédanou"
 ---
 
 # La réunion « pour en parler »
@@ -103,7 +64,4 @@ Dans ces cas, insistez, pas pour humilier — mais pour aider la personne à for
 
 PS : Si malgré tout vous décidez de tenir cette réunion, prévoyez un ordre du jour, un temps limité — 10 minutes max, sans retard toléré — et une question unique à trancher.
 
-Avec des arguments.\
-\
-
-```
+Avec des arguments.

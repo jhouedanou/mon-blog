@@ -1,7 +1,7 @@
-```mdc
+---
 title: "Quand un Community Manager confond réseaux sociaux et le Grin"
 image: "/images/articles/bescherelle/01.jpg"
-createdAt: "05-06-2025"
+createdAt: "2025-06-05"
 id: 2025-06-05
 description: "Penser avec rigueur, respecter autrui, peser ses mots : autant de qualités qu'on attend d'un professionnel — surtout dans un secteur aussi symbolique que le livre et la communication. Je ne suis pas ici pour faire la morale, mais pour rappeler que les réseaux sociaux ne sont pas un grin — ce groupe informel de discussion entre amis où l'on débat de tout et de rien, souvent sans fond ni filtre. Mais parfois, on a l'impression que certains professionnels ont oublié ces notions de base."
 keywords: "community manager, réseaux sociaux, sexisme, Abidjan,  féminisme, critique sociale"
@@ -43,7 +43,7 @@ Ensuite, il y a ceci.
 
 > « Allure de princesses, démarche de déesses, tête d'illettrés. Dehors ! Partagez au max, elles doivent voir. »
 
-À première vue, on sent la volonté de "faire une formule choc". Mais en regardant de plus près, on constate que le style et la grammaire ne suivent pas toujours l'intention. 
+À première vue, on sent la volonté de "faire une formule choc". Mais en regardant de plus près, on constate que le style et la grammaire ne suivent pas toujours l'intention.
 Quelques observations :
 
 
@@ -60,12 +60,12 @@ On assiste ici à un glissement regrettable : le rôle du community manager, cen
 
 Quelques exemples de ses "perles" :
 
-![Commentaire sexiste du community manager](/images/articles/bescherelle/03.jpg)  
+![Commentaire sexiste du community manager](/images/articles/bescherelle/03.jpg)
 ![Autre exemple de commentaire problématique](/images/articles/bescherelle/04.jpg)
 
-On tient là une façon de penser empruntée aux codes de la manosphère. 
+On tient là une façon de penser empruntée aux codes de la manosphère.
 
-Pour ceux qui ne connaissent pas encore cet univers particulier, j'avais déjà exploré les eaux troubles de la manosphère dans [un précédent article](https://jeanluchouedanou.blogspot.com/2023/04/ma-plongee-dans-les-eaux-troubles-de-la.html). 
+Pour ceux qui ne connaissent pas encore cet univers particulier, j'avais déjà exploré les eaux troubles de la manosphère dans [un précédent article](https://jeanluchouedanou.blogspot.com/2023/04/ma-plongee-dans-les-eaux-troubles-de-la.html).
 
 (*Spoiler : 2 ans plus tard, ça n'a pas vieilli.*)
 
@@ -83,6 +83,3 @@ C'est juste un(e) CM — mal formé(e) ou mal encadré(e) — qui, en quelques c
 En conclusion, mesdames, soyez vous-mêmes.
 
 C'est précisément ce qui dérange certains — et c'est une bonne chose.
-
-
-```

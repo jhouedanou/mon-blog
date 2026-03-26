@@ -1,0 +1,4 @@
+const Youtube_vue_vue_type_style_index_0_scoped_93f026d1_lang = ".video-container[data-v-93f026d1]{margin:2em 0;position:relative;width:100%}.video-wrapper[data-v-93f026d1]{cursor:pointer;position:relative}.video-wrapper img[data-v-93f026d1]{height:auto;width:100%}.play-overlay[data-v-93f026d1]{left:50%;position:absolute;top:50%;transform:translate(-50%,-50%)}.play-overlay .material-icons[data-v-93f026d1]{color:#fff;font-size:64px;opacity:.9}.modal[data-v-93f026d1]{align-items:center;background:rgba(0,0,0,.8);display:flex;height:100%;justify-content:center;left:0;position:fixed;top:0;width:100%;z-index:1000}.modal-content[data-v-93f026d1]{height:80%;width:80%}.modal-content iframe[data-v-93f026d1]{height:100%;width:100%}";
+
+export { Youtube_vue_vue_type_style_index_0_scoped_93f026d1_lang as Y };
+//# sourceMappingURL=Youtube-styles-1.mjs-DNVlUccR.mjs.map

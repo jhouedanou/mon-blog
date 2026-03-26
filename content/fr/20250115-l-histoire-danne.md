@@ -1,7 +1,7 @@
-```mdc
+---
 title: "Anne, le faux Brad Pitt et un véritable lynchage numérique"
 image: "/images/articles/anne.jpg"
-createdAt: "15-01-2025"
+createdAt: "2025-01-15"
 id: 2025-01-15
 description: "L'histoire tragique d'Anne, victime d'une arnaque en ligne par un faux Brad Pitt qui lui a extorqué 800 000 euros, suivie d'un lynchage médiatique sur les réseaux sociaux. Une réflexion sur la cruauté numérique et le respect de la dignité humaine."
 keywords: "arnaque en ligne, faux Brad Pitt, escroquerie amoureuse, lynchage numérique, cyberharcèlement, arnaque romance, brouteur, extorsion de fonds, réseaux sociaux, Twitter, X"
@@ -17,5 +17,3 @@ _En d'autres termes, on peut en parler avec la paix du coeur, sans exploiter le 
 Mon usage des réseaux sociaux est limité. Je me concentre principalement sur YouTube, que j'écoute en arrière-plan pendant mes activités, et sur quelques comptes destinés à relayer le contenu de mes blogs.
 
 ... (contenu abrégé)
-
-```

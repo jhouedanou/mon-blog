@@ -1,7 +1,7 @@
-```mdc
+---
 title: "J'ai développé une app… de fitness"
 image: "/images/articles/fitness-afro-abdos.png"
-createdAt: "08-05-2025"
+createdAt: "2025-05-08"
 id: 2025-05-08
 description: "Après des années à négliger sa santé au profit du code, l'auteur de ce blog décide de reprendre le contrôle… à sa manière : en développant sa propre application de suivi fitness."
 keywords: "application fitness, PWA, perte de poids, suivi de santé, développeur, sport, afro, auto-discipline"
@@ -14,5 +14,3 @@ summary: "Entre le code et les deadlines clients, il y a le corps. Ce billet rac
 **Ok, tu peux rigoler...mais après des années à négliger ma santé au profit de ce "métier"**, j'ai décidé de prendre les choses en main.
 
 ... (contenu abrégé)
-
-```

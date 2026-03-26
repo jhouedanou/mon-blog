@@ -1,7 +1,7 @@
-```mdc
+---
 title: "Apple, iOS (et les AirTags) racontent tout à votre patron"
 image: "/images/articles/yeah.jpg"
-createdAt: "05-07-2025"
+createdAt: "2025-07-05"
 id: 2025-07-05
 description: "iPhone dernier cri, MacBook ultra-réactif, voiture de fonction... tous connectés dans un écosystème Apple avec le compte iCloud de l'entreprise. Et cette petite pastille discrète sur le tableau de bord qui suit religieusement tous vos déplacements. Guide pratique pour éviter les surprises technologiques."
 keywords: "Apple, iOS, AirTag, Find My, géolocalisation, commercial, matériel professionnel, protection données, ARTCI, surveillance"
@@ -40,7 +40,7 @@ C'est là que la technologie ne ment pas.
 
 C'est là que le drame peut se produire. Votre supérieur vous demandera des explications, et cela peut entraîner des suspicions ou des sanctions. Et vous, vous pensiez simplement profiter d'un week-end prolongé.
 
-## **Le cadre légal en Côte d’Ivoire : droits et devoirs**
+## **Le cadre légal en Côte d'Ivoire : droits et devoirs**
 
 La **Loi n°2013-450** sur la protection des données et l'**ARTCI** (Autorité de Régulation des Télécommunications/TIC de Côte d'Ivoire) encadrent la surveillance des biens de l'entreprise.
 
@@ -72,4 +72,3 @@ Il n'y a pas de solution miracle, mais une approche basée sur la prudence et la
 Un AirTag dans votre voiture, un iPhone dans votre poche, un MacBook dans votre sac... Ce ne sont pas que des outils. Ce sont aussi des narrateurs. Et le récit qu'ils construisent doit être en accord avec votre fiche de poste.
 
 La technologie ne juge pas, elle se contente de documenter. C'est à vous de décider si cette documentation sera votre alibi ou votre piège.
-```

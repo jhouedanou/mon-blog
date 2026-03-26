@@ -1,7 +1,7 @@
-```mdc
+---
 title: "Non, ce câble de 240W ne chargera pas plus vite votre vieux macbook"
 image: "/images/articles/really.jpg"
-createdAt: "21-10-2024"
+createdAt: "2024-10-21"
 id: 2024-10-21-2
 description: "Pourquoi acheter un câble USB-C de 240W n'accélérera pas la charge de votre MacBook Pro 2017. Découvrez comment fonctionne réellement la charge des ordinateurs portables et évitez les conseils trompeurs des vendeurs."
 keywords: "câble USB-C, MacBook Pro 2017, charge rapide, câble 240W, puissance de charge MacBook, USB Power Delivery, vendeurs électroniques, conseils tech, charge optimale MacBook, câble surdimensionné"
@@ -15,5 +15,3 @@ Il y a 3 corps de métiers dont nombre de représentants n'iront pas au paradis 
 Les premiers à cause de leur tendance à sur-facturer des réparations, les seconds à cause de leur incapacité notoire à respecter les délais et les rendez-vous, et les derniers parce que bon nombre d'entre eux n'y connaissent pas grand-chose, mais bouchent leur vide intellectuel avec de l'arrogance ou de la malhonnêteté.
 
 ... (contenu abrégé)
-
-```

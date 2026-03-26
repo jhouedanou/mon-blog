@@ -1,7 +1,7 @@
-```mdc
+---
 title: "On fait un peu le ménage."
 image: "/images/articles/menage-image.webp"
-createdAt: "05-10-2024"
+createdAt: "2024-10-05"
 id: 2024-10-05
 description: "Comment et pourquoi j'ai migré mon blog de WordPress vers Nuxt et Nuxt Content. Découvrez les raisons de ce changement et les avantages d'une architecture basée sur des fichiers Markdown et Vercel."
 keywords: "migration WordPress, Nuxt 3, Nuxt Content, blog Markdown, Vercel, sécurité WordPress, alternative WordPress, JAMstack, site statique, développement web moderne"
@@ -17,5 +17,3 @@ Cela faisait longtemps que je cherchais une bonne excuse pour me débarrasser de
 - Je reviens encore, sur les des failles de sécurité non patchées, et ce près d'une année après leur découverte .
 
 ... (contenu abrégé)
-
-```

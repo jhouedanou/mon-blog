@@ -1,7 +1,7 @@
-```mdc
+---
 title: "Pourquoi tant de haine envers Adobe ? (Parce qu'elle est méritée.)"
 image: "/images/articles/adobe.webp"
-createdAt: "12-12-2024"
+createdAt: "2024-12-12"
 id: 2024-12-12
 description: "Découvrez pourquoi Adobe suscite tant de critiques : pratiques commerciales douteuses, service client défaillant et frais cachés. Un témoignage personnel sur les frustrations liées à cette entreprise incontournable du design."
 keywords: "Adobe, critique Adobe, Affinity Designer, abonnement Adobe, frais cachés Adobe, service client Adobe, alternatives Adobe, pratiques commerciales Adobe, procès Adobe, FTC Adobe"
@@ -41,5 +41,3 @@ Car oui, Adobe fait face à plusieurs procès pour des pratiques commerciales do
 Ces histoires révèlent une stratégie bien rodée pour rendre l'expérience utilisateur délibérément frustrante.
 
 En conclusion : Arrêtez d'utiliser leurs services, si possible. Ou optez pour un abonnement mensuel, sans engagement (i.e Affinity).
-
-``` 
