@@ -3,7 +3,9 @@
     "allow": [
       "Bash(npm view:*)",
       "Bash(findstr:*)",
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "Bash(npm run build:*)",
+      "Bash(git rm:*)"
     ]
   }
 }
