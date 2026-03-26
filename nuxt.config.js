@@ -49,21 +49,8 @@ i18n: {
   strategy: 'prefix_except_default',
   detectBrowserLanguage: false,
 }, 
-    sitemap: {
-    hostname: 'https://houedanou.com',
-    gzip: true,
-    routes: async () => {
-      const articles = await queryContent()
-        .sort({ createdAt: -1 }) // Tri par date de création décroissante
-        .find()
-
-      // Défense : s'assurer qu'on ne renvoie que des chemins valides (string non vide)
-      // Cela évite de passer des valeurs falsy (0, null, undefined) au prerenderer
-      return articles
-        .map(article => (article && article._path) ? article._path : null)
-        .filter(p => typeof p === 'string' && p.length > 0)
-        .map(p => String(p))
-    }
+  site: {
+    url: 'https://houedanou.com',
   },  
   image: {
     quality: 80,
@@ -150,7 +137,7 @@ i18n: {
       rollupOptions: {
         output: {
           manualChunks(id) {
-            if (id.includes('node_modules')) {
+            if (id.includes('node_modules') && !id.includes('nitropack') && !id.includes('sitemap')) {
               return 'vendor';
             }
           }
