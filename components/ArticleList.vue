@@ -7,8 +7,8 @@
                     class="is-4-desktop column is-4-desktop is-6-tablet is-12-mobile">
 
                     <div class="article-item p-4 m-3">
-                        <div v-if="article.image" class="cover-image"
-                            :style="{ backgroundImage: `url(${article.image})` }">
+                        <div v-if="article.image" class="cover-image">
+                            <img :src="article.image" :alt="article.title" />
                         </div>
                         <br>
                         <h2 class="article-title">
@@ -100,12 +100,19 @@ function getExcerpt(article) {
 
 <style lang="scss" scoped>
 .cover-image {
-    height: 320px;
-    background-size: cover;
-    background-position: center;
+    width: 100%;
+    max-height: 320px;
+    overflow: hidden;
     display: flex;
-    align-items: flex-end;
-    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: contain;
+    }
 }
 
 .article-list {
