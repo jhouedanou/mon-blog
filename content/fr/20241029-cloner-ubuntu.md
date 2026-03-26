@@ -1,7 +1,7 @@
 ````mdc
 title: "Comment cloner Ubuntu sans perdre ses données et son âme"
 image: "/images/articles/pingui.jpg"
-createdAt: "29-10-2024"
+createdAt: "2024-10-29"
 id: 2024-10-29
 description: "Guide pratique pour cloner votre système Ubuntu vers un nouveau SSD sans perdre vos données. Apprenez à migrer facilement votre installation Linux avec un script simple et efficace."
 keywords: "cloner Ubuntu, migration SSD Ubuntu, dd Linux, clone système Linux, augmenter espace disque Ubuntu, script clonage Linux, sauvegarde Ubuntu, resize partition Linux, fdisk, parted"
