@@ -108,7 +108,7 @@ function formatDate(createdAt) {
 
 // Hero section
 .article-hero {
-  min-height: 50vh;
+  min-height: 30vh;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -116,7 +116,7 @@ function formatDate(createdAt) {
   align-items: flex-end;
 
   &--no-image {
-    min-height: 35vh;
+    min-height: 22vh;
     background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
   }
 }
@@ -138,7 +138,7 @@ function formatDate(createdAt) {
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
-  padding: 3rem 2rem;
+  padding: 2rem;
 }
 
 .article-hero__title {
@@ -329,7 +329,7 @@ function formatDate(createdAt) {
 // Responsive
 @media screen and (max-width: 768px) {
   .article-hero {
-    min-height: 40vh;
+    min-height: 25vh;
   }
 
   .article-hero__title {
@@ -362,7 +362,7 @@ function formatDate(createdAt) {
 
 @media screen and (max-width: 480px) {
   .article-hero {
-    min-height: 35vh;
+    min-height: 22vh;
   }
 
   .article-hero__title {
