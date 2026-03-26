@@ -52,12 +52,16 @@ const currentPage = ref(1)
 const articlesPerPage = 6
 const { data: articles } = await useAsyncData('articles', () =>
     queryContent(locale.value)
+        .sort({ createdAt: -1 })
         .find()
         .then(articles => {
             return articles
                 .map(article => {
                     if (article.createdAt) {
-                        article.timestamp = new Date(article.createdAt).getTime();
+                        const ts = new Date(article.createdAt).getTime();
+                        article.timestamp = isNaN(ts) ? 0 : ts;
+                    } else {
+                        article.timestamp = 0;
                     }
                     return article;
                 })

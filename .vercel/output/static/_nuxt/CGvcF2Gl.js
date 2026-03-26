@@ -1,0 +1,1 @@
+import{_ as r,a as o,b as l,A as t,o as s}from"./D_CKxU6G.js";const a={};function u(n,e){return s(),o("div",null,[e[0]||(e[0]=l("header",null,null,-1)),l("main",null,[t(n.$slots,"default")]),e[1]||(e[1]=l("footer",null,null,-1))])}const f=r(a,[["render",u]]);export{f as default};
