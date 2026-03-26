@@ -57,13 +57,11 @@ const { data: articles } = await useAsyncData('articles', () =>
             return articles
                 .map(article => {
                     if (article.createdAt) {
-                        const [jour, mois, annee] = article.createdAt.split('-');
-                        // Création d'un timestamp pour faciliter le tri
-                        article.timestamp = new Date(annee, mois - 1, jour).getTime();
+                        article.timestamp = new Date(article.createdAt).getTime();
                     }
                     return article;
                 })
-                .sort((a, b) => b.timestamp - a.timestamp); // Tri décroissant par timestamp
+                .sort((a, b) => b.timestamp - a.timestamp);
         })
 )
 
@@ -79,8 +77,7 @@ function changePage(page) {
 }
 function formatDate(createdAt) {
     if (createdAt) {
-        const [jour, mois, annee] = createdAt.split('-')
-        const date = new Date(annee, mois - 1, jour)
+        const date = new Date(createdAt)
         return new Intl.DateTimeFormat('fr-FR', {
             day: 'numeric',
             month: 'long',

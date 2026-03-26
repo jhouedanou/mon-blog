@@ -45,8 +45,7 @@ function formatTitle(title) {
 }
 function formatDate(createdAt) {
     if (createdAt) {
-        const [day, month, year] = createdAt.split('-')
-        const date = new Date(year, month - 1, day)
+        const date = new Date(createdAt)
         return date.toLocaleDateString('fr-FR', { year: 'numeric', month: 'long', day: 'numeric' })
     }
     return 'Date inconnue'

@@ -14,7 +14,7 @@ Non, pas la « réunion de crise », ni le « kickoff ».
 
 Celle-là n'apparaît que lorsque les vagues de l'ego et du manque d'arguments — soigneusement cultivés par une système éducatif qui récompense la restitution — viennent se briser sur le mur de la réalité technique.
 
-### La réunion « pour en parler ».
+## La réunion « pour en parler ».
 
 Ça commence toujours de la même façon. Une demande. Formulée avec la désinvolture de quelqu'un qui n'aura pas à la réaliser. 
 Formulée entre deux messages, comme si l’effort en temps et ressources qu’elle représente n’existait pas. Une demande dont la taille est inversement proportionnelle à l’aplomb avec laquelle elle est posée.
@@ -47,12 +47,12 @@ La réunion inutile est une conséquence de ce manque de formation.
 On convoque donc une réunion — parce que la réunion, elle, donne l'illusion du sérieux .\
 Sans en exiger la substance.
 
-### Que faut-il faire ?
+## Que faut-il faire ?
 
 À cet instant, il faut éviter de tomber dans le piège d’une énième réunion fantôme, car vous avez proposé une solution argumentée et documentée. Rien de productif ne sortira de cette réunion — je vous le garantis.
 Soyez pragmatiques, et demandez à votre interlocuteur de formuler par écrit ses appréhensions. C’est une base saine pour continuer l'échange.
 
-### Et ça a marché dans ton cas ?
+## Et ça a marché dans ton cas ?
 
 Oui, mais en insistant... dans beaucoup (trop) de cas, j’ai eu droit à l'une de ces réponses :
 
