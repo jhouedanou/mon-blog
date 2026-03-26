@@ -1,55 +1,46 @@
 <template>
-    <div class="article-list is-flex flex-column align-items-center justify-center is-justify-content-center">
-
+    <div class="article-list">
         <div class="article-list-container container">
-            <div v-if="paginatedArticles.length" class="columns is-multiline">
-                <div v-for="article in paginatedArticles" :key="article._path"
-                    class="is-4-desktop column is-4-desktop is-6-tablet is-12-mobile">
-
-                    <div class="article-item p-4 m-3">
-                        <div v-if="article.image" class="cover-image">
-                            <img :src="article.image" :alt="article.title" />
+            <div v-if="articles && articles.length" class="mosaic-grid">
+                <NuxtLink
+                    v-for="(article, index) in visibleArticles"
+                    :key="article._path"
+                    :to="localePath(article._path)"
+                    class="mosaic-tile"
+                    :class="{ 'mosaic-tile--large': getTileSize(index) === 'large' }"
+                    :style="getTileBackground(article, index)"
+                >
+                    <div class="mosaic-overlay">
+                        <div class="mosaic-text-block" :style="getTextBlockStyle(index)">
+                            <h2 class="mosaic-title">
+                                {{ article.title }}
+                            </h2>
+                            <p v-if="getExcerptText(article)" class="mosaic-excerpt">{{ getExcerptText(article) }}</p>
                         </div>
-                        <br>
-                        <h2 class="article-title">
-                            <NuxtLink :to="localePath(article._path)" class="article-link">{{ article.title }}
-                            </NuxtLink>
-                        </h2>
-                        <span class="article-date">{{ formatDate(article.createdAt) }}</span>
-
-                        <p class="article-excerpt" v-html="getExcerpt(article)"></p>
-                        <NuxtLink :to="localePath(article._path)" class="read-more">{{ $t('readMore') }}</NuxtLink>
+                        <span class="mosaic-date">{{ formatDate(article.createdAt) }}</span>
                     </div>
-                </div>
+                </NuxtLink>
             </div>
             <p v-else class="no-articles">{{ $t('noArticles') }}</p>
-            <!-- pagination -->
-            <nav class="pagination is-centered" role="navigation" aria-label="pagination">
-                <a class="pagination-previous" @click="changePage(currentPage - 1)" :disabled="currentPage === 1">{{
-                    $t('previous') }}</a>
-                <a class="pagination-next" @click="changePage(currentPage + 1)"
-                    :disabled="currentPage === totalPages">{{ $t('next') }}</a>
-                <ul class="pagination-list">
-                    <li v-for="page in totalPages" :key="page">
-                        <a class="pagination-link" :class="{ 'is-current': page === currentPage }"
-                            @click="changePage(page)">{{ page }}</a>
-                    </li>
-                </ul>
-            </nav>
+            <div ref="sentinel" class="mosaic-sentinel"></div>
         </div>
     </div>
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useAsyncData } from '#app'
 import { useI18n } from 'vue-i18n'
 import { useLocalePath } from '#i18n'
 
 const localePath = useLocalePath()
-const { locale, t } = useI18n()
-const currentPage = ref(1)
-const articlesPerPage = 6
+const { locale } = useI18n()
+
+const ITEMS_PER_LOAD = 6
+const visibleCount = ref(ITEMS_PER_LOAD)
+const sentinel = ref(null)
+let observer = null
+
 const { data: articles } = await useAsyncData('articles', () =>
     queryContent(locale.value)
         .sort({ createdAt: -1 })
@@ -58,27 +49,76 @@ const { data: articles } = await useAsyncData('articles', () =>
             return articles
                 .map(article => {
                     if (article.createdAt) {
-                        const ts = new Date(article.createdAt).getTime();
-                        article.timestamp = isNaN(ts) ? 0 : ts;
+                        const ts = new Date(article.createdAt).getTime()
+                        article.timestamp = isNaN(ts) ? 0 : ts
                     } else {
-                        article.timestamp = 0;
+                        article.timestamp = 0
                     }
-                    return article;
+                    return article
                 })
-                .sort((a, b) => b.timestamp - a.timestamp);
+                .sort((a, b) => b.timestamp - a.timestamp)
         })
 )
 
-const paginatedArticles = computed(() => {
-    const start = (currentPage.value - 1) * articlesPerPage
-    const end = start + articlesPerPage
-    return articles.value.slice(start, end)
+const visibleArticles = computed(() => {
+    if (!articles.value) return []
+    return articles.value.slice(0, visibleCount.value)
 })
-const totalPages = computed(() => Math.ceil(articles.value.length / articlesPerPage))
 
-function changePage(page) {
-    currentPage.value = page
+const titleColors = [
+    '#FF6F61', // coral
+    '#2EC4B6', // teal
+    '#F5B700', // gold
+    '#55D6BE', // mint
+    '#9B5DE5', // plum
+    '#00BBF9', // sky blue
+]
+
+const fallbackGradients = [
+    'linear-gradient(135deg, #1a1a2e, #16213e)',
+    'linear-gradient(135deg, #0f3460, #533483)',
+    'linear-gradient(135deg, #2d4059, #ea5455)',
+    'linear-gradient(135deg, #222831, #393e46)',
+    'linear-gradient(135deg, #1b262c, #0f4c75)',
+    'linear-gradient(135deg, #2c3e50, #3498db)',
+]
+
+function getTitleColor(index) {
+    return titleColors[index % titleColors.length]
 }
+
+function getTextBlockStyle(index) {
+    const color = getTitleColor(index)
+    return {
+        borderLeft: `3px solid ${color}`,
+        paddingLeft: '0.75rem',
+    }
+}
+
+function getTileSize(index) {
+    const posInGroup = index % 6
+    return (posInGroup === 0 || posInGroup === 3) ? 'large' : 'normal'
+}
+
+function getTileBackground(article, index) {
+    if (article.image) {
+        return {
+            backgroundImage: `url(${article.image})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+        }
+    }
+    return {
+        backgroundImage: fallbackGradients[index % fallbackGradients.length],
+    }
+}
+
+function getExcerptText(article) {
+    const content = article.description || ''
+    const text = content.replace(/<[^>]*>/g, '')
+    return text.length > 100 ? text.slice(0, 100) + '...' : text
+}
+
 function formatDate(createdAt) {
     if (createdAt) {
         const date = new Date(createdAt)
@@ -91,85 +131,126 @@ function formatDate(createdAt) {
     return 'Date non disponible'
 }
 
-
-function getExcerpt(article) {
-    const content = article.description || article._raw || ''
-    return content.length > 150 ? content.slice(0, 150) + '...' : content
+function loadMore() {
+    if (articles.value && visibleCount.value < articles.value.length) {
+        visibleCount.value = Math.min(
+            visibleCount.value + ITEMS_PER_LOAD,
+            articles.value.length
+        )
+    }
 }
+
+onMounted(() => {
+    if (!sentinel.value) return
+    observer = new IntersectionObserver(
+        (entries) => {
+            if (entries[0].isIntersecting) {
+                loadMore()
+            }
+        },
+        { rootMargin: '200px' }
+    )
+    observer.observe(sentinel.value)
+})
+
+onUnmounted(() => {
+    if (observer) {
+        observer.disconnect()
+    }
+})
 </script>
 
 <style lang="scss" scoped>
-.cover-image {
-    width: 100%;
-    max-height: 320px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    img {
-        width: 100%;
-        height: auto;
-        display: block;
-        object-fit: contain;
-    }
-}
-
 .article-list {
-    font-family: 'Inter', sans-serif;
-    padding: 2rem 0;
-
-    .container {
-        margin: 0;
-        padding: 0;
-    }
+    padding: 1.5rem 0;
 }
 
 .article-list-container {
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
 }
 
-.article-item {
-    background-color: #ffffff;
-    border-bottom: 1px solid #e6e6e6;
-    padding: 2rem 0;
+.mosaic-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 280px;
+    gap: 12px;
 }
 
-.article-item:last-child {
-    border-bottom: none;
-}
-
-.article-title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #292929;
-    margin-bottom: 0.5rem;
-}
-
-.article-date {
-    font-size: 0.9rem;
-    color: #757575;
-    margin-bottom: 1rem;
-}
-
-.read-more {
-    display: inline-block;
-    color: #666;
-    font-weight: 600;
+.mosaic-tile {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
     text-decoration: none;
-    transition: color 0.3s ease;
-}
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
-.read-more:hover {
-    color: #018f69;
-}
-
-h2 {
-    a {
-        color: black;
+    &:hover {
+        transform: scale(1.02);
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
     }
+
+    &--large {
+        grid-row: span 2;
+    }
+}
+
+.mosaic-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.85) 0%,
+        rgba(0, 0, 0, 0.4) 50%,
+        rgba(0, 0, 0, 0.1) 100%
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.2rem;
+}
+
+.mosaic-text-block {
+    margin-bottom: 0.4rem;
+}
+
+.mosaic-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 1.3;
+    color: #ffffff;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+    margin: 0 0 0.3rem 0;
+
+    .mosaic-tile--large & {
+        font-size: 1.5rem;
+    }
+}
+
+.mosaic-excerpt {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.4;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.mosaic-date {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.mosaic-sentinel {
+    height: 1px;
+    width: 100%;
 }
 
 .no-articles {
@@ -179,68 +260,30 @@ h2 {
     padding: 2rem 0;
 }
 
-.article-excerpt {
-    padding: 0;
-    border: 0;
-    font: inherit;
-    vertical-align: baseline;
-    overflow-wrap: break-word;
-    color: #363636;
-    font-family: "Merriweather", sans-serif;
-    margin-top: 0;
-    font-size: 1.25rem;
-    line-height: 1.875rem;
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-    max-width: 100%;
-    margin-bottom: 0;
+// Tablet: 2 columns
+@media screen and (max-width: 1023px) {
+    .mosaic-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 250px;
+    }
 }
 
-.pagination {
-    margin-top: 2rem;
-}
+// Mobile: 1 column
+@media screen and (max-width: 640px) {
+    .mosaic-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 220px;
+    }
 
-.pagination-link.is-disabled,
-.pagination-link[disabled],
-.pagination-next.is-disabled,
-.pagination-next[disabled],
-.pagination-previous.is-disabled,
-.pagination-previous[disabled] {
-    background: none !important
-}
+    .mosaic-tile--large {
+        grid-row: span 2;
+    }
 
-.pagination-link,
-.pagination-next,
-.pagination-previous {
-    color: #292929 !important
-}
+    .mosaic-title {
+        font-size: 1rem;
 
-.pagination-link.is-current,
-.pagination-link.is-selected {
-
-    background-color: #03a87c;
-    border-color: #03a87c;
-    border: none !important
-}
-
-.language-switch {
-    margin-bottom: 2rem;
-    text-align: center;
-
-    a {
-        margin: 0 0.5rem;
-        padding: 0.5rem 1rem;
-        text-decoration: none;
-        color: #666;
-        font-weight: 600;
-        transition: color 0.3s ease, background-color 0.3s ease;
-        border-radius: 4px;
-
-        &:hover,
-        &.nuxt-link-active {
-            color: #fff;
-            background-color: #018f69;
+        .mosaic-tile--large & {
+            font-size: 1.2rem;
         }
     }
 }

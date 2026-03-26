@@ -31,10 +31,10 @@ useHead({
 
 <style lang="scss">
 html {
-  background: #EEE;
+  background: #f5f6f9;
 }
 
 main {
-  background: #EEE;
+  background: #f5f6f9;
 }
 </style>

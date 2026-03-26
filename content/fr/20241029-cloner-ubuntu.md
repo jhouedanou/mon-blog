@@ -1,4 +1,4 @@
-````mdc
+---
 title: "Comment cloner Ubuntu sans perdre ses données et son âme"
 image: "/images/articles/pingui.jpg"
 createdAt: "2024-10-29"
