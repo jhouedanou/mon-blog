@@ -9,14 +9,16 @@ keywords: "réunion, productivité, tech, marketing digital, réunion inutile, e
 # La réunion « pour en parler »
 
 Dans mon domaine de travail, il existe un mal.
+
 Une endémie. 
+
 Non, pas la « réunion de crise », ni le « kickoff ». 
 
 Celle-là n'apparaît que lorsque les vagues de l'ego et du manque d'arguments — soigneusement cultivés par une système éducatif qui récompense la restitution — viennent se briser sur le mur de la réalité technique.
 
 ## La réunion « pour en parler ».
 
-Ça commence toujours de la même façon. Une demande. Formulée avec la désinvolture de quelqu'un qui n'aura pas à la réaliser. 
+Ça commence toujours de la même façon :  Une demande formulée avec la désinvolture de quelqu'un qui n'aura pas à la réaliser. 
 Formulée entre deux messages, comme si l’effort en temps et ressources qu’elle représente n’existait pas. Une demande dont la taille est inversement proportionnelle à l’aplomb avec laquelle elle est posée.
 
 En réponse, on envoie une analyse technique : options comparées, risques anticipés, recommandation d'outils qui font déjà le travail, plan de développement détaillé. En d'autres termes, on réfléchit à la place de celui qui n'a pas pris le temps de le faire.
