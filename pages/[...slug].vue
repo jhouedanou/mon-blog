@@ -8,9 +8,6 @@
       <header class="article-header">
         <span class="article-header__date">{{ formatDate(article.createdAt) }}</span>
         <h1 class="article-header__title">{{ article.title }}</h1>
-        <div v-if="article.image" class="article-header__image">
-          <img :src="article.image" :alt="article.title" />
-        </div>
       </header>
 
       <div v-if="article.summary" class="article-summary">
@@ -190,20 +187,6 @@ function formatDate(createdAt) {
   color: #1a1a2e;
   margin: 0 0 1.5rem 0;
   letter-spacing: -0.02em;
-}
-
-.article-header__image {
-  margin: 0 -1.5rem;
-  border-radius: 12px;
-  overflow: hidden;
-
-  img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    max-height: 420px;
-  }
 }
 
 // Article body
@@ -387,11 +370,6 @@ function formatDate(createdAt) {
     font-size: 1.85rem;
   }
 
-  .article-header__image {
-    margin: 0 -1.25rem;
-    border-radius: 8px;
-  }
-
   .article-container {
     padding: 2rem 1.25rem;
   }
@@ -415,10 +393,6 @@ function formatDate(createdAt) {
 @media screen and (max-width: 480px) {
   .article-header__title {
     font-size: 1.5rem;
-  }
-
-  .article-header__image img {
-    max-height: 260px;
   }
 }
 </style>

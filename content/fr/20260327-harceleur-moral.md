@@ -44,7 +44,9 @@ Le dimanche, je me fais alpaguer par le client furieux. Je gère l'incendie avec
 
 Le lundi, je demande des comptes, toujours avec diplomatie, à l’intéressé.
 
-Face à ce vide sidéral, j’ai l’outrecuidance de faire mon métier. Je demande des explications. Sans hurler, sans retourner de bureaux. Juste des faits, des chiffres, et une question très simple : « Pourquoi ? »
+Face à ce vide sidéral, j’ai l’outrecuidance de faire mon métier. Je demande des explications. Sans hurler, sans retourner de bureaux. Juste des faits, des chiffres, et une question très simple : « Pourquoi ? ».
+
+Ou, pour faire plus une demande d'explications.
 
 La réponse tombe, aussi tranchante qu'inattendue : __« C’est du dénigrement. Une campagne de harcèlement moral. »__ . Il faut dire que la veille, on m'avait servi un discours plus ou moins similaire via message whatsapp après que j'ai exprimé mon mécontentement envers une autre bourde monumentale de la même personne (qui, je le rappelle, avait déjà fait perdre un client important à l'entreprise quelques mois plus tôt).
 
