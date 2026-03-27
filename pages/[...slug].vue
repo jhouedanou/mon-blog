@@ -1,6 +1,8 @@
 <template>
   <div class="article-wrapper">
-    <ReadingBar :key="article._path" :title="article.title" />
+    <ClientOnly>
+      <ReadingBar :key="article._path" :title="article.title" />
+    </ClientOnly>
     <div
       class="article-hero"
       :style="article.image ? { backgroundImage: `url(${article.image})` } : {}"
