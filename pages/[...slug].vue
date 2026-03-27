@@ -66,8 +66,10 @@ const { locale } = useI18n();
 const localePath = useLocalePath();
 const switchLocalePath = useSwitchLocalePath();
 
-const { data: article } = await useAsyncData("article", () =>
-  queryContent(route.path).findOne()
+const { data: article } = await useAsyncData(
+  `article-${route.path}`,
+  () => queryContent(route.path).findOne(),
+  { watch: [() => route.path] }
 );
 
 const { data: allArticles } = await useAsyncData("all-articles", () =>
@@ -108,30 +110,30 @@ const suggestedArticles = computed(() => {
     .slice(0, 3);
 });
 
-useHead({
-  title: article.value.title,
+useHead(() => ({
+  title: article.value?.title,
   meta: [
-    { name: "description", content: article.value.description || "Description par défaut" },
-    { name: "keywords", content: article.value.keywords || "" },
-    { property: "og:title", content: article.value.title },
+    { name: "description", content: article.value?.description || "Description par défaut" },
+    { name: "keywords", content: article.value?.keywords || "" },
+    { property: "og:title", content: article.value?.title },
     {
       property: "og:description",
-      content: article.value.description || "Description par défaut",
+      content: article.value?.description || "Description par défaut",
     },
     { property: "og:url", content: `https://houedanou.com${route.path}` },
-    { property: "og:image", content: `https://houedanou.com${article.value.image}` },
+    { property: "og:image", content: `https://houedanou.com${article.value?.image}` },
     { property: "og:site_name", content: "Jean-Luc Houédanou" },
     { name: "twitter:card", content: "summary_large_image" },
-    { name: "twitter:image", content: `https://houedanou.com${article.value.image}` },
-    { name: "twitter:title", content: article.value.title },
+    { name: "twitter:image", content: `https://houedanou.com${article.value?.image}` },
+    { name: "twitter:title", content: article.value?.title },
     {
       name: "twitter:description",
-      content: article.value.description || "Description par défaut",
+      content: article.value?.description || "Description par défaut",
     },
   ],
-});
+}));
 
-const currentUrl = `https://houedanou.com${route.path}`;
+const currentUrl = computed(() => `https://houedanou.com${route.path}`);
 
 function initShareThis() {
   if (window.__sharethis__?.initialize) {
