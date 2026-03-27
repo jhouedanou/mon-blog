@@ -3,22 +3,16 @@
     <ClientOnly>
       <ReadingBar :key="article._path" :title="article.title" />
     </ClientOnly>
-    <div
-      class="article-hero"
-      :style="article.image ? { backgroundImage: `url(${article.image})` } : {}"
-      :class="{ 'article-hero--no-image': !article.image }"
-    >
-      <div class="article-hero__overlay">
-        <div class="article-hero__content">
-          <h1 class="article-hero__title">{{ article.title }}</h1>
-          <div class="article-hero__meta">
-            <span class="article-hero__date">{{ formatDate(article.createdAt) }}</span>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <article class="article-container">
+      <header class="article-header">
+        <span class="article-header__date">{{ formatDate(article.createdAt) }}</span>
+        <h1 class="article-header__title">{{ article.title }}</h1>
+        <div v-if="article.image" class="article-header__image">
+          <img :src="article.image" :alt="article.title" />
+        </div>
+      </header>
+
       <div v-if="article.summary" class="article-summary">
         <p>{{ article.summary }}</p>
       </div>
@@ -172,61 +166,44 @@ function formatDate(createdAt) {
   line-height: 1.7;
 }
 
-// Hero section
-.article-hero {
-  min-height: 30vh;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-
-  &--no-image {
-    min-height: 22vh;
-    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
-  }
+// Article header
+.article-header {
+  margin-bottom: 2.5rem;
 }
 
-.article-hero__overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.85) 0%,
-    rgba(0, 0, 0, 0.4) 50%,
-    rgba(0, 0, 0, 0.15) 100%
-  );
-  display: flex;
-  align-items: flex-end;
+.article-header__date {
+  display: inline-block;
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #2EC4B6;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.75rem;
 }
 
-.article-hero__content {
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-.article-hero__title {
+.article-header__title {
   font-family: "Montserrat", sans-serif;
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   font-weight: 800;
-  line-height: 1.2;
-  color: #ffffff;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
-  margin: 0 0 0.75rem 0;
+  line-height: 1.15;
+  color: #1a1a2e;
+  margin: 0 0 1.5rem 0;
+  letter-spacing: -0.02em;
 }
 
-.article-hero__meta {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
+.article-header__image {
+  margin: 0 -1.5rem;
+  border-radius: 12px;
+  overflow: hidden;
 
-.article-hero__date {
-  font-size: 1rem;
-  color: rgba(255, 255, 255, 0.8);
-  font-weight: 500;
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    max-height: 420px;
+  }
 }
 
 // Article body
@@ -255,6 +232,10 @@ function formatDate(createdAt) {
 
 // Article content
 .article-content {
+  :deep(h1:first-child) {
+    display: none;
+  }
+
   :deep(h2) {
     font-family: "Montserrat", sans-serif;
     font-size: 1.75rem;
@@ -402,16 +383,13 @@ function formatDate(createdAt) {
 
 // Responsive
 @media screen and (max-width: 768px) {
-  .article-hero {
-    min-height: 25vh;
+  .article-header__title {
+    font-size: 1.85rem;
   }
 
-  .article-hero__title {
-    font-size: 1.75rem;
-  }
-
-  .article-hero__content {
-    padding: 2rem 1.25rem;
+  .article-header__image {
+    margin: 0 -1.25rem;
+    border-radius: 8px;
   }
 
   .article-container {
@@ -435,12 +413,12 @@ function formatDate(createdAt) {
 }
 
 @media screen and (max-width: 480px) {
-  .article-hero {
-    min-height: 22vh;
+  .article-header__title {
+    font-size: 1.5rem;
   }
 
-  .article-hero__title {
-    font-size: 1.5rem;
+  .article-header__image img {
+    max-height: 260px;
   }
 }
 </style>

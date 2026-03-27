@@ -13,9 +13,12 @@ Et cette expérience m’a ouvert les yeux sur une réalité troublante : dans l
 
 ## Le décor     
 
-Suite au départ d'une manager admirable, je me retrouve à assurer l'intérim à la tête d’une équipe de quatre personnes sur des projets variés.
+Suite au départ d'une manager admirable, je me retrouve à assurer l'intérim à la tête d’une équipe de trois personnes sur des projets variés. Accompagné d'un "chef de projet digital", qui .. . disons-le franchement, n'a jamais été à la hauteur de son titre, ni de ses responsabilités, ni de son salaire, ni de son poste, ni de sa prétendue expérience.
+
+Donc quatre personnes.
  
-Résultat ? Un véritable désastre industriel. Imaginez des deadlines traitées comme de simples suggestions, des livrables bâclés — entre fautes d’orthographe et visuels d’IA à six doigts non corrigés — et des récriminations constantes parce que, je cite : « le manager est censé nous protéger ».
+Résultat ? Un véritable désastre industriel. Imaginez des deadlines traitées comme de simples suggestions, des livrables bâclés — entre fautes d’orthographe et visuels d’IA à six doigts non corrigés — et des récriminations constantes parce que, je cite : « le manager est censé nous protéger ». 
+
 
 Au diable ("Project Fat Loss")[https://www.youtube.com/watch?v=YsrERv9PeGg]... j’ai pris dix kilos dans l'aventure, perdu le peu de cheveux qui me reste ainsi que ma considération pour ces gens, eu égard à leur facilité déconcertante à saboter les projets avec une régularité presque artistique. 
 
