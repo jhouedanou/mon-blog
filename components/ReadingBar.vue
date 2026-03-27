@@ -5,13 +5,16 @@
         <img src="/images/1837389.webp" alt="Accueil" />
       </NuxtLink>
       <span class="reading-bar__title">{{ title }}</span>
+      <div class="reading-bar__share">
+        <div class="sharethis-inline-share-buttons" data-description="" data-title=""></div>
+      </div>
     </div>
     <div class="reading-bar__progress" :style="{ width: progress + '%' }"></div>
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from "vue";
+import { ref, watch, onMounted, onUnmounted, nextTick } from "vue";
 
 const props = defineProps({
   title: {
@@ -22,6 +25,18 @@ const props = defineProps({
 
 const isVisible = ref(false);
 const progress = ref(0);
+let shareInitialized = false;
+
+watch(isVisible, (val) => {
+  if (val && !shareInitialized) {
+    nextTick(() => {
+      if (window.__sharethis__?.initialize) {
+        window.__sharethis__.initialize();
+      }
+      shareInitialized = true;
+    });
+  }
+});
 
 function onScroll() {
   isVisible.value = window.scrollY > 300;
@@ -88,6 +103,47 @@ onUnmounted(() => {
   overflow: hidden;
   text-overflow: ellipsis;
   min-width: 0;
+  flex: 1;
+}
+
+.reading-bar__share {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+
+  :deep(.sharethis-inline-share-buttons) {
+    display: flex !important;
+    align-items: center;
+    gap: 4px;
+  }
+
+  :deep(.st-btn) {
+    width: 28px !important;
+    height: 28px !important;
+    min-width: 28px !important;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50% !important;
+    padding: 0 !important;
+
+    img, svg {
+      width: 16px !important;
+      height: 16px !important;
+    }
+  }
+
+  :deep(.st-label) {
+    display: none !important;
+  }
+
+  :deep(.st-total) {
+    display: none !important;
+  }
+
+  :deep(.st-count) {
+    display: none !important;
+  }
 }
 
 .reading-bar__progress {
@@ -109,6 +165,10 @@ onUnmounted(() => {
 
   .reading-bar__title {
     font-size: 0.8rem;
+  }
+
+  .reading-bar__share {
+    display: none;
   }
 }
 </style>
