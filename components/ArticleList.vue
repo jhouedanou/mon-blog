@@ -1,70 +1,87 @@
 <template>
     <div class="article-list">
         <div class="article-list-container container">
-            <div v-if="articles && articles.length" class="mosaic-grid">
+            <!-- Barre sticky : recherche + tags -->
+            <div class="sticky-filters">
+                <SearchBar v-model="searchQuery" />
+                <TagFilter
+                    v-if="availableTags.length"
+                    :tags="availableTags"
+                    :selectedTags="selectedTags"
+                    @update:selectedTags="selectedTags = $event"
+                />
+            </div>
+
+            <div v-if="filteredArticles && filteredArticles.length" class="mosaic-grid">
                 <NuxtLink
-                    v-for="(article, index) in paginatedArticles"
+                    v-for="(article, index) in displayedArticles"
                     :key="article._path"
                     :to="localePath(article._path)"
                     class="mosaic-tile"
                     :class="{ 'mosaic-tile--large': getTileSize(index) === 'large' }"
-                    :style="getTileBackground(article, index)"
+                    :style="[getTileBackground(article, index), getAnimationDelay(index)]"
                 >
+                    <span v-if="isNew(article)" class="mosaic-badge">{{ $t('newBadge') }}</span>
+
                     <div class="mosaic-overlay">
+                        <div v-if="getArticleTags(article).length" class="mosaic-tags">
+                            <span
+                                v-for="tag in getArticleTags(article)"
+                                :key="tag"
+                                class="mosaic-tag"
+                            >{{ tag }}</span>
+                        </div>
                         <div class="mosaic-text-block" :style="getTextBlockStyle(index)">
                             <h2 class="mosaic-title">
                                 {{ article.title }}
                             </h2>
                             <p v-if="getExcerptText(article)" class="mosaic-excerpt">{{ getExcerptText(article) }}</p>
                         </div>
-                        <span class="mosaic-date">{{ formatDate(article.createdAt) }}</span>
+                        <div class="mosaic-meta">
+                            <span class="mosaic-date">{{ formatDate(article.createdAt) }}</span>
+                            <span v-if="getReadingTime(article)" class="mosaic-reading-time">
+                                <i class="material-icons">schedule</i>
+                                {{ getReadingTime(article) }} {{ $t('readingTime') }}
+                            </span>
+                        </div>
                     </div>
                 </NuxtLink>
             </div>
             <p v-else class="no-articles">{{ $t('noArticles') }}</p>
 
-            <nav v-if="totalPages > 1" class="pagination">
-                <button
-                    class="pagination__btn"
-                    :disabled="currentPage <= 1"
-                    @click="goToPage(currentPage - 1)"
-                >
-                    ← Précédent
-                </button>
-                <div class="pagination__pages">
-                    <button
-                        v-for="page in totalPages"
-                        :key="page"
-                        class="pagination__page"
-                        :class="{ 'pagination__page--active': page === currentPage }"
-                        @click="goToPage(page)"
-                    >
-                        {{ page }}
-                    </button>
+            <!-- Sentinel pour le défilement infini -->
+            <div ref="scrollSentinel" class="scroll-sentinel">
+                <div v-if="isLoadingMore" class="loading-more">
+                    <span class="loading-dot"></span>
+                    <span class="loading-dot"></span>
+                    <span class="loading-dot"></span>
                 </div>
-                <button
-                    class="pagination__btn"
-                    :disabled="currentPage >= totalPages"
-                    @click="goToPage(currentPage + 1)"
-                >
-                    Suivant →
-                </button>
-            </nav>
+                <p v-if="allLoaded && displayedArticles.length > 0" class="all-loaded-msg">
+                    — Tous les articles ont été chargés —
+                </p>
+            </div>
         </div>
     </div>
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, watch, onMounted, onUnmounted } from 'vue'
 import { useAsyncData } from '#app'
 import { useI18n } from 'vue-i18n'
 import { useLocalePath } from '#i18n'
+import SearchBar from '~/components/SearchBar.vue'
+import TagFilter from '~/components/TagFilter.vue'
 
 const localePath = useLocalePath()
 const { locale } = useI18n()
 
 const ITEMS_PER_PAGE = 6
-const currentPage = ref(1)
+const displayCount = ref(ITEMS_PER_PAGE)
+const isLoadingMore = ref(false)
+const scrollSentinel = ref(null)
+let infiniteObserver = null
+const searchQuery = ref('')
+const selectedTags = ref([])
 
 const { data: articles } = await useAsyncData('articles', () =>
     queryContent(locale.value)
@@ -85,30 +102,126 @@ const { data: articles } = await useAsyncData('articles', () =>
         })
 )
 
-const totalPages = computed(() => {
-    if (!articles.value) return 0
-    return Math.ceil(articles.value.length / ITEMS_PER_PAGE)
-})
+const predefinedTags = ['tech', 'opinion', 'tutoriel', 'productivité', 'apple', 'afrique']
 
-const paginatedArticles = computed(() => {
+const availableTags = computed(() => {
     if (!articles.value) return []
-    const start = (currentPage.value - 1) * ITEMS_PER_PAGE
-    return articles.value.slice(start, start + ITEMS_PER_PAGE)
+    const usedTags = new Set()
+    articles.value.forEach(article => {
+        const tags = getArticleTags(article)
+        tags.forEach(t => usedTags.add(t))
+    })
+    return predefinedTags.filter(t => usedTags.has(t))
 })
 
-function goToPage(page) {
-    if (page < 1 || page > totalPages.value) return
-    currentPage.value = page
-    window.scrollTo({ top: 0, behavior: 'smooth' })
+function getArticleTags(article) {
+    if (article.tags && Array.isArray(article.tags)) {
+        return article.tags
+    }
+    if (article.keywords) {
+        const kw = typeof article.keywords === 'string'
+            ? article.keywords.toLowerCase().split(',').map(k => k.trim())
+            : []
+        return predefinedTags.filter(tag => kw.some(k => k.includes(tag)))
+    }
+    return []
+}
+
+const filteredArticles = computed(() => {
+    if (!articles.value) return []
+    let result = articles.value
+
+    if (searchQuery.value.trim()) {
+        const q = searchQuery.value.toLowerCase().trim()
+        result = result.filter(a =>
+            (a.title && a.title.toLowerCase().includes(q)) ||
+            (a.description && a.description.toLowerCase().includes(q))
+        )
+    }
+
+    if (selectedTags.value.length) {
+        result = result.filter(a => {
+            const tags = getArticleTags(a)
+            return selectedTags.value.some(t => tags.includes(t))
+        })
+    }
+
+    return result
+})
+
+// Reset displayed count when search or tags change
+watch([searchQuery, selectedTags], () => {
+    displayCount.value = ITEMS_PER_PAGE
+}, { deep: true })
+
+const displayedArticles = computed(() => {
+    if (!filteredArticles.value) return []
+    return filteredArticles.value.slice(0, displayCount.value)
+})
+
+const allLoaded = computed(() => {
+    if (!filteredArticles.value) return true
+    return displayCount.value >= filteredArticles.value.length
+})
+
+function loadMore() {
+    if (allLoaded.value || isLoadingMore.value) return
+    isLoadingMore.value = true
+    setTimeout(() => {
+        displayCount.value += ITEMS_PER_PAGE
+        isLoadingMore.value = false
+    }, 300)
+}
+
+onMounted(() => {
+    infiniteObserver = new IntersectionObserver(
+        (entries) => {
+            if (entries[0].isIntersecting) {
+                loadMore()
+            }
+        },
+        { rootMargin: '300px' }
+    )
+    if (scrollSentinel.value) {
+        infiniteObserver.observe(scrollSentinel.value)
+    }
+})
+
+onUnmounted(() => {
+    infiniteObserver?.disconnect()
+})
+
+function getReadingTime(article) {
+    if (!article.body) return null
+    const text = extractText(article.body)
+    const words = text.split(/\s+/).filter(w => w.length > 0).length
+    return Math.ceil(words / 200) || 1
+}
+
+function extractText(node) {
+    if (!node) return ''
+    if (typeof node === 'string') return node
+    if (node.value) return node.value
+    if (node.children && Array.isArray(node.children)) {
+        return node.children.map(extractText).join(' ')
+    }
+    return ''
+}
+
+function isNew(article) {
+    if (!article.createdAt) return false
+    const created = new Date(article.createdAt).getTime()
+    const sevenDays = 7 * 24 * 60 * 60 * 1000
+    return (Date.now() - created) < sevenDays
 }
 
 const titleColors = [
-    '#FF6F61', // coral
-    '#2EC4B6', // teal
-    '#F5B700', // gold
-    '#55D6BE', // mint
-    '#9B5DE5', // plum
-    '#00BBF9', // sky blue
+    '#FF6F61',
+    '#2EC4B6',
+    '#F5B700',
+    '#55D6BE',
+    '#9B5DE5',
+    '#00BBF9',
 ]
 
 const fallbackGradients = [
@@ -141,12 +254,16 @@ function getTileBackground(article, index) {
     if (article.image) {
         return {
             backgroundImage: `url(${article.image})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
         }
     }
     return {
         backgroundImage: fallbackGradients[index % fallbackGradients.length],
+    }
+}
+
+function getAnimationDelay(index) {
+    return {
+        animationDelay: `${index * 0.08}s`,
     }
 }
 
@@ -181,6 +298,18 @@ function formatDate(createdAt) {
     padding: 0 1rem;
 }
 
+/* Staggered animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .mosaic-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -194,13 +323,32 @@ function formatDate(createdAt) {
     overflow: hidden;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat !important;
+    background-color: #1a1a2e;
     cursor: pointer;
     text-decoration: none;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease;
+    animation: fadeInUp 0.5s ease both;
+
+    // Prevent image repetition in pseudo-element
+    &::before {
+        content: '';
+        position: absolute;
+        inset: -8px;
+        background: inherit;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat !important;
+        transition: transform 0.4s ease;
+        z-index: 0;
+    }
 
     &:hover {
-        transform: scale(1.02);
         box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+
+        &::before {
+            transform: scale(1.06);
+        }
     }
 
     &--large {
@@ -208,9 +356,26 @@ function formatDate(createdAt) {
     }
 }
 
+.mosaic-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #FF6F61;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    z-index: 2;
+    letter-spacing: 0.03em;
+}
+
 .mosaic-overlay {
     position: absolute;
     inset: 0;
+    z-index: 1;
     background: linear-gradient(
         to top,
         rgba(0, 0, 0, 0.85) 0%,
@@ -221,6 +386,25 @@ function formatDate(createdAt) {
     flex-direction: column;
     justify-content: flex-end;
     padding: 1.2rem;
+}
+
+.mosaic-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.mosaic-tag {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.15);
+    padding: 0.15rem 0.5rem;
+    border-radius: 10px;
 }
 
 .mosaic-text-block {
@@ -253,79 +437,94 @@ function formatDate(createdAt) {
     overflow: hidden;
 }
 
+.mosaic-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 .mosaic-date {
     font-size: 0.8rem;
     color: rgba(255, 255, 255, 0.6);
 }
 
-.pagination {
-    display: flex;
+.mosaic-reading-time {
+    display: inline-flex;
     align-items: center;
+    gap: 0.25rem;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+
+    .material-icons {
+        font-size: 0.9rem;
+    }
+}
+
+/* Sticky filters bar */
+.sticky-filters {
+    position: sticky;
+    top: 60px; // height of site-header
+    z-index: 50;
+    background: var(--bg-primary);
+    padding: 1rem 0 0.5rem;
+    margin: 0 -1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-color);
+    transition: background-color 0.3s ease;
+}
+
+/* Infinite scroll sentinel */
+.scroll-sentinel {
+    padding: 2rem 0;
+    display: flex;
     justify-content: center;
-    gap: 1rem;
-    margin-top: 2rem;
-    padding: 1.5rem 0;
+    align-items: center;
+    min-height: 60px;
 }
 
-.pagination__btn {
-    background: none;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 0.6rem 1.2rem;
-    font-family: 'Inter', sans-serif;
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #1a1a2e;
-    cursor: pointer;
-    transition: all 0.2s ease;
-
-    &:hover:not(:disabled) {
-        background: #1a1a2e;
-        color: #fff;
-        border-color: #1a1a2e;
-    }
-
-    &:disabled {
-        opacity: 0.35;
-        cursor: not-allowed;
-    }
-}
-
-.pagination__pages {
+.loading-more {
     display: flex;
     gap: 0.4rem;
+    align-items: center;
 }
 
-.pagination__page {
-    width: 38px;
-    height: 38px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background: none;
-    font-family: 'Inter', sans-serif;
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #1a1a2e;
-    cursor: pointer;
-    transition: all 0.2s ease;
+.loading-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent, #2EC4B6);
+    animation: loadingBounce 1.2s infinite ease-in-out;
 
-    &:hover {
-        background: #f0f0f0;
+    &:nth-child(2) {
+        animation-delay: 0.15s;
     }
+    &:nth-child(3) {
+        animation-delay: 0.3s;
+    }
+}
 
-    &--active {
-        background: #1a1a2e;
-        color: #fff;
-        border-color: #1a1a2e;
+@keyframes loadingBounce {
+    0%, 80%, 100% {
+        transform: scale(0.6);
+        opacity: 0.4;
     }
+    40% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.all-loaded-msg {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    font-style: italic;
 }
 
 .no-articles {
     text-align: center;
-    color: #757575;
+    color: var(--text-muted);
     font-style: italic;
     padding: 2rem 0;
 }

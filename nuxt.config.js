@@ -11,32 +11,30 @@ export default defineNuxtConfig({
     'nuxt-feedme'
 ], 
 feedme: {
-  feeds: [
-    {
-      path: '/feed.xml',
-      create: async (feed) => {
-        feed.options = {
-          title: 'Le Blog de Jean-Luc Houédanou',
-          link: 'https://houedanou.com/feed.xml',
-          description: 'Le Blog de Jean-Luc Houédanou',
-        }
-
-        const articles = await queryContent().find()
-
-        articles.forEach(article => {
-          feed.addItem({
-            title: article.title,
-            id: article._path,
-            link: `https://houedanou.com${article._path}`,
-            description: article.description,
-            content: article.body,
-            date: new Date(article.createdAt)
-          })
-        })
+  defaults: {
+    routes: false,
+  },
+  feeds: {
+    common: {
+      revisit: '6h',
+      fixDateFields: true,
+      feed: {
+        title: 'Le Blog de Jean-Luc Houédanou',
+        link: 'https://houedanou.com',
+        description: 'Chroniques sur l\'innovation numérique, la transformation digitale en Afrique et pérégrinations technologiques.',
+        language: 'fr',
       },
-      type: 'rss2'
-    }
-  ]
+      collections: ['content'],
+      mapping: [
+        ['link', 'path'],
+        ['date', 'createdAt'],
+      ],
+      replace: [[/^(?=\/)/.toString(), 'https://houedanou.com']],
+    },
+    routes: {
+      '/feed.xml': { type: 'rss2' },
+    },
+  },
 },
 i18n: {
   locales: [
@@ -65,7 +63,7 @@ i18n: {
     prerender: {
       crawlLinks: true,
       failOnError: false,
-      routes: ['/sitemap.xml', '/'],
+      routes: ['/sitemap.xml', '/feed.xml', '/'],
     },
   },  
   content: {
@@ -84,14 +82,6 @@ i18n: {
     head: {
       script: [
         {
-          src: 'https://platform-api.sharethis.com/js/sharethis.js#property=671678124be62400139baad2&product=inline-share-buttons',
-          async: true
-        },
-        {
-          src:'https://platform-api.sharethis.com/js/sharethis.js#property=671678124be62400139baad2&product=sop',
-          async: true
-        },
-        {
           src: `https://www.googletagmanager.com/gtag/js?id=G-5DSHDPMFNP`,
           async: true
         },
@@ -107,7 +97,7 @@ i18n: {
       link: [
         {
           rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Montserrat:wght@400;600;700&family=Inter:wght@400;600;700&family=Ubuntu:wght@400;500;700&family=Source+Sans+Pro:wght@400;600;700&display=swap'
+          href: 'https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Montserrat:wght@400;600;700&family=Inter:wght@400;600;700&display=swap'
         },
         {
           rel: 'stylesheet',

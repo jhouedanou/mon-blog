@@ -63,7 +63,7 @@ onUnmounted(() => {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: #1a1a2e;
+  background: var(--bg-card, #1a1a2e);
   transform: translateY(-100%);
   transition: transform 0.3s ease;
 

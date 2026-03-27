@@ -44,14 +44,14 @@ function formatDate(createdAt) {
 .suggested {
   margin-top: 2.5rem;
   padding-top: 2rem;
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--border-color, #eee);
 }
 
 .suggested__heading {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.35rem;
   font-weight: 700;
-  color: #1a1a2e;
+  color: var(--text-primary, #1a1a2e);
   margin: 0 0 1.25rem 0;
 }
 
@@ -65,7 +65,7 @@ function formatDate(createdAt) {
   text-decoration: none;
   border-radius: 10px;
   overflow: hidden;
-  background: #f8f9fa;
+  background: var(--bg-secondary, #f8f9fa);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 
   &:hover {
@@ -96,7 +96,7 @@ function formatDate(createdAt) {
   font-family: 'Montserrat', sans-serif;
   font-size: 0.9rem;
   font-weight: 600;
-  color: #1a1a2e;
+  color: var(--text-primary, #1a1a2e);
   line-height: 1.3;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -107,7 +107,7 @@ function formatDate(createdAt) {
 .suggested__date {
   font-family: 'Inter', sans-serif;
   font-size: 0.8rem;
-  color: #757575;
+  color: var(--text-muted, #757575);
 }
 
 @media screen and (max-width: 768px) {

@@ -6,5 +6,20 @@ export default {
   next: "Suivant",
   unknownDate: "Date inconnue",
   backToArticles: "Retour à la liste des articles",
-  suggestedArticles: "Ces articles pourraient vous intéresser"
+  suggestedArticles: "Ces articles pourraient vous intéresser",
+  searchPlaceholder: "Rechercher un article...",
+  readingTime: "min de lecture",
+  newBadge: "Nouveau",
+  showComments: "Afficher les commentaires",
+  scrollToTop: "Retour en haut",
+  tableOfContents: "Table des matières",
+  home: "Accueil",
+  about: "À propos",
+  darkMode: "Mode sombre",
+  lightMode: "Mode clair",
+  skipToContent: "Aller au contenu",
+  errorTitle: "Page introuvable",
+  errorMessage: "Oups ! La page que vous cherchez n'existe pas ou a été déplacée.",
+  backToHome: "Retour à l'accueil",
+  recentArticles: "Articles récents"
 }

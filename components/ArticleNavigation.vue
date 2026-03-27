@@ -39,7 +39,7 @@ defineProps({
   gap: 1rem;
   margin-top: 2.5rem;
   padding-top: 2rem;
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--border-color, #eee);
 }
 
 .article-nav__link {
@@ -49,7 +49,7 @@ defineProps({
   text-decoration: none;
   border-radius: 10px;
   overflow: hidden;
-  background: #f8f9fa;
+  background: var(--bg-secondary, #f8f9fa);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 
   &:hover {
@@ -97,7 +97,7 @@ defineProps({
   font-family: 'Montserrat', sans-serif;
   font-size: 0.95rem;
   font-weight: 600;
-  color: #1a1a2e;
+  color: var(--text-primary, #1a1a2e);
   padding: 0.75rem;
   line-height: 1.3;
   display: -webkit-box;
