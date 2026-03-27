@@ -48,3 +48,6 @@ sudo apt-get install hunspell-fr
 iA Writer reste une référence dans le domaine des éditeurs Markdown, Ghostwriter s'avère être une excellente alternative pour les utilisateurs Linux. Il offre une expérience d'écriture sans distraction similaire à iA Writer, tout en étant gratuit et open-source. Pour les écrivains, blogueurs ou tout utilisateur à la recherche d'un environnement d'écriture épuré et efficace sous Linux, Ghostwriter mérite certainement d'être essayé.
 
 ````
+
+---
+*[Jean Luc Houédanou](https://houedanou.com) — écrivain sans distraction*

@@ -24,3 +24,6 @@ L'objectif n'était pas de convaincre ou de plaire à tout le monde.
 Non, l'enjeu est ailleurs : marquer les esprits et ancrer encore plus profondément la marque dans l'imaginaire collectif des fêtes.
 
 _(1)D'un point de vue technique, cette publicité est générée par un modèle basé sur DALL-E, donc obsolète à l'heure où <a href="https://www.instagram.com/generativeai_official/reel/DDwb4ZmSl7C/" target="_blank">Google Video 2</a> nous a tous impressionnés par son photoréalisme et sa capacité à conserver la cohérence d'une scène à l'autre, ainsi qu'à respecter la physique._
+
+---
+*[Jean Luc Houédanou](https://houedanou.com) — buveur de pixels*

@@ -40,4 +40,5 @@ Cette sagesse souligne l'importance de la discrétion financière, un aspect que
 
 Plus sérieusement, ces innovations montrent que Djamo comprend vraiment les besoins de ses utilisateurs, des petits tracas quotidiens aux grands défis financiers. J'espère sincèrement que les autres acteurs du secteur s'inspireront de cette dynamique pour nous simplifier la vie.
 
-[Jean Luc Houedanou](https://houedanou.com)
+---
+*[Jean Luc Houédanou](https://houedanou.com) — économiste de poche*

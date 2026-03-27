@@ -67,3 +67,6 @@ Dans ces cas, insistez, pas pour humilier — mais pour aider la personne à for
 PS : Si malgré tout vous décidez de tenir cette réunion, prévoyez un ordre du jour, un temps limité — 10 minutes max, sans retard toléré — et une question unique à trancher.
 
 Avec des arguments.
+
+---
+*[Jean Luc Houédanou](https://houedanou.com) — ennemi juré des réunions*

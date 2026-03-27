@@ -5,5 +5,6 @@ export default {
   previous: "Précédent",
   next: "Suivant",
   unknownDate: "Date inconnue",
-  backToArticles: "Retour à la liste des articles"
+  backToArticles: "Retour à la liste des articles",
+  suggestedArticles: "Ces articles pourraient vous intéresser"
 }

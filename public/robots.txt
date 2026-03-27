@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Disallow: /api/
+Disallow: /_content/
+Disallow: /_nuxt/
+Disallow: /en/
+
+Sitemap: https://houedanou.com/sitemap.xml

@@ -1,5 +1,6 @@
 <template>
   <div class="article-wrapper">
+    <ReadingBar :title="article.title" />
     <div
       class="article-hero"
       :style="article.image ? { backgroundImage: `url(${article.image})` } : {}"
@@ -27,6 +28,10 @@
           <div class="sharethis-inline-share-buttons"></div>
         </div>
 
+        <ArticleNavigation :prev="prevArticle" :next="nextArticle" />
+
+        <SuggestedArticles :articles="suggestedArticles" />
+
         <DisqusComments :pageUrl="currentUrl" :pageIdentifier="article._path" />
 
         <div class="article-links">
@@ -46,10 +51,13 @@
 
 <script setup>
 import { useHead } from "@unhead/vue";
-import { useRoute } from "vue-router";
+import { useRoute, useRouter } from "vue-router";
 import { useI18n } from "vue-i18n";
 import { useLocalePath, useSwitchLocalePath } from "#i18n";
+import { onMounted, watch, computed, nextTick } from "vue";
 import DisqusComments from "~/components/DisqusComments.vue";
+import ArticleNavigation from "~/components/ArticleNavigation.vue";
+import SuggestedArticles from "~/components/SuggestedArticles.vue";
 
 const route = useRoute();
 const { locale } = useI18n();
@@ -59,6 +67,44 @@ const switchLocalePath = useSwitchLocalePath();
 const { data: article } = await useAsyncData("article", () =>
   queryContent(route.path).findOne()
 );
+
+const { data: allArticles } = await useAsyncData("all-articles", () =>
+  queryContent("fr").sort({ createdAt: -1 }).find()
+);
+
+const currentIndex = computed(() => {
+  if (!allArticles.value || !article.value) return -1;
+  return allArticles.value.findIndex((a) => a._path === article.value._path);
+});
+
+const prevArticle = computed(() => {
+  if (!allArticles.value || currentIndex.value <= 0) return null;
+  return allArticles.value[currentIndex.value - 1];
+});
+
+const nextArticle = computed(() => {
+  if (!allArticles.value || currentIndex.value < 0) return null;
+  if (currentIndex.value >= allArticles.value.length - 1) return null;
+  return allArticles.value[currentIndex.value + 1];
+});
+
+const suggestedArticles = computed(() => {
+  if (!allArticles.value || !article.value) return [];
+  const excludePaths = new Set([
+    article.value._path,
+    prevArticle.value?._path,
+    nextArticle.value?._path,
+  ]);
+  const currentDate = new Date(article.value.createdAt).getTime();
+  return allArticles.value
+    .filter((a) => !excludePaths.has(a._path))
+    .sort((a, b) => {
+      const diffA = Math.abs(new Date(a.createdAt).getTime() - currentDate);
+      const diffB = Math.abs(new Date(b.createdAt).getTime() - currentDate);
+      return diffA - diffB;
+    })
+    .slice(0, 3);
+});
 
 useHead({
   title: article.value.title,
@@ -84,6 +130,22 @@ useHead({
 });
 
 const currentUrl = `https://houedanou.com${route.path}`;
+
+function initShareThis() {
+  if (window.__sharethis__?.initialize) {
+    window.__sharethis__.initialize();
+  }
+}
+
+onMounted(() => {
+  initShareThis();
+});
+
+watch(() => route.path, () => {
+  nextTick(() => {
+    initShareThis();
+  });
+});
 
 function formatDate(createdAt) {
   if (createdAt) {
@@ -324,6 +386,14 @@ function formatDate(createdAt) {
 // Social share
 .social-share {
   margin-top: 2.5rem;
+
+  :deep(.st-total) {
+    display: none !important;
+  }
+
+  :deep(.st-count) {
+    display: none !important;
+  }
 }
 
 // Responsive

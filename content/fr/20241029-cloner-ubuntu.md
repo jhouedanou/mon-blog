@@ -137,3 +137,6 @@ Vérifiez que la nouvelle partition utilise bien tout l'espace disponible.
 - Patience : Le clonage peut prendre un certain temps, selon la taille de vos données
 
 ````
+
+---
+*[Jean Luc Houédanou](https://houedanou.com) — clonneur de manchots*

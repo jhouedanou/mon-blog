@@ -59,3 +59,6 @@ Parmi ses autres applications pour Wear OS, on trouve notamment :
 - **Wear Installer** – facilite l'installation d'applications Android sur les montres Wear OS
 
 Ces applications sont généralement légères, gratuites et conçues pour résoudre des problèmes très spécifiques rencontrés par les utilisateurs de montres connectées.
+
+---
+*[Jean Luc Houédanou](https://houedanou.com) — réveilleur de montres*

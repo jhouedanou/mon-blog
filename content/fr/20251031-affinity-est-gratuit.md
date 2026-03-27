@@ -72,4 +72,5 @@ Pour en savoir plus ou télécharger la suite, rendez-vous sur le site officiel 
 [Affinity](https://affinity.serif.com/fr/).
 
 
-Jean Luc Houédanou
+---
+*[Jean Luc Houédanou](https://houedanou.com) — designer libéré d'Adobe*

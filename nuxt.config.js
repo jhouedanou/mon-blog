@@ -41,14 +41,17 @@ feedme: {
 i18n: {
   locales: [
     { code: 'fr', name: 'Français', language: 'fr-FR', file: 'fr-FR.js' },
-    { code: 'en', name: 'English', language: 'en-US', file: 'en-US.js' },
   ],
   defaultLocale: 'fr',
   lazy: true,
   langDir: 'lang/',
-  strategy: 'prefix_except_default',
+  strategy: 'no_prefix',
   detectBrowserLanguage: false,
 }, 
+  sitemap: {
+    sources: ['/api/_sitemap-urls'],
+    exclude: ['/api/**', '/_content/**'],
+  },
   site: {
     url: 'https://houedanou.com',
   },  
@@ -59,10 +62,10 @@ i18n: {
   ssr: true,
   nitro: {
     preset: 'vercel',
-//    baseURL: "http://houedanou.com",
     prerender: {
-      // crawlLinks: true,
-      failOnError: false
+      crawlLinks: true,
+      failOnError: false,
+      routes: ['/sitemap.xml', '/'],
     },
   },  
   content: {
@@ -146,7 +149,9 @@ i18n: {
     }
   },
   routeRules: {
-    '/': { prerender: true }
+    '/': { prerender: true },
+    '/fr/**': { prerender: true },
+    '/api/_content/**': { robots: false },
   },
   compatibilityDate: '2024-10-10'
 })
