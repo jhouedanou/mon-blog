@@ -1,5 +1,5 @@
 <template>
-  <div class="article-wrapper">
+  <div class="article-wrapper" v-if="article">
     <ClientOnly>
       <ReadingBar :key="article._path" :title="article.title" />
     </ClientOnly>
@@ -39,6 +39,10 @@
         </NuxtLink>
       </footer>
     </article>
+  </div>
+  <div v-else class="article-not-found">
+    <p>Article introuvable.</p>
+    <NuxtLink to="/">← Retour à l'accueil</NuxtLink>
   </div>
 </template>
 
@@ -393,6 +397,30 @@ function formatDate(createdAt) {
 @media screen and (max-width: 480px) {
   .article-header__title {
     font-size: 1.5rem;
+  }
+}
+
+.article-not-found {
+  max-width: 780px;
+  margin: 4rem auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+
+  p {
+    font-size: 1.25rem;
+    color: #4a4a4a;
+    margin-bottom: 1.5rem;
+  }
+
+  a {
+    color: #2EC4B6;
+    text-decoration: none;
+    font-weight: 600;
+
+    &:hover {
+      color: #1a9e92;
+    }
   }
 }
 </style>
