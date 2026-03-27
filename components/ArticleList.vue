@@ -3,7 +3,7 @@
         <div class="article-list-container container">
             <div v-if="articles && articles.length" class="mosaic-grid">
                 <NuxtLink
-                    v-for="(article, index) in visibleArticles"
+                    v-for="(article, index) in paginatedArticles"
                     :key="article._path"
                     :to="localePath(article._path)"
                     class="mosaic-tile"
@@ -22,13 +22,40 @@
                 </NuxtLink>
             </div>
             <p v-else class="no-articles">{{ $t('noArticles') }}</p>
-            <div ref="sentinel" class="mosaic-sentinel"></div>
+
+            <nav v-if="totalPages > 1" class="pagination">
+                <button
+                    class="pagination__btn"
+                    :disabled="currentPage <= 1"
+                    @click="goToPage(currentPage - 1)"
+                >
+                    ← Précédent
+                </button>
+                <div class="pagination__pages">
+                    <button
+                        v-for="page in totalPages"
+                        :key="page"
+                        class="pagination__page"
+                        :class="{ 'pagination__page--active': page === currentPage }"
+                        @click="goToPage(page)"
+                    >
+                        {{ page }}
+                    </button>
+                </div>
+                <button
+                    class="pagination__btn"
+                    :disabled="currentPage >= totalPages"
+                    @click="goToPage(currentPage + 1)"
+                >
+                    Suivant →
+                </button>
+            </nav>
         </div>
     </div>
 </template>
 
 <script setup>
-import { ref, computed, onMounted, onUnmounted } from 'vue'
+import { ref, computed } from 'vue'
 import { useAsyncData } from '#app'
 import { useI18n } from 'vue-i18n'
 import { useLocalePath } from '#i18n'
@@ -36,10 +63,8 @@ import { useLocalePath } from '#i18n'
 const localePath = useLocalePath()
 const { locale } = useI18n()
 
-const ITEMS_PER_LOAD = 6
-const visibleCount = ref(ITEMS_PER_LOAD)
-const sentinel = ref(null)
-let observer = null
+const ITEMS_PER_PAGE = 6
+const currentPage = ref(1)
 
 const { data: articles } = await useAsyncData('articles', () =>
     queryContent(locale.value)
@@ -60,10 +85,22 @@ const { data: articles } = await useAsyncData('articles', () =>
         })
 )
 
-const visibleArticles = computed(() => {
-    if (!articles.value) return []
-    return articles.value.slice(0, visibleCount.value)
+const totalPages = computed(() => {
+    if (!articles.value) return 0
+    return Math.ceil(articles.value.length / ITEMS_PER_PAGE)
 })
+
+const paginatedArticles = computed(() => {
+    if (!articles.value) return []
+    const start = (currentPage.value - 1) * ITEMS_PER_PAGE
+    return articles.value.slice(start, start + ITEMS_PER_PAGE)
+})
+
+function goToPage(page) {
+    if (page < 1 || page > totalPages.value) return
+    currentPage.value = page
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+}
 
 const titleColors = [
     '#FF6F61', // coral
@@ -131,34 +168,6 @@ function formatDate(createdAt) {
     }
     return 'Date non disponible'
 }
-
-function loadMore() {
-    if (articles.value && visibleCount.value < articles.value.length) {
-        visibleCount.value = Math.min(
-            visibleCount.value + ITEMS_PER_LOAD,
-            articles.value.length
-        )
-    }
-}
-
-onMounted(() => {
-    if (!sentinel.value) return
-    observer = new IntersectionObserver(
-        (entries) => {
-            if (entries[0].isIntersecting) {
-                loadMore()
-            }
-        },
-        { rootMargin: '200px' }
-    )
-    observer.observe(sentinel.value)
-})
-
-onUnmounted(() => {
-    if (observer) {
-        observer.disconnect()
-    }
-})
 </script>
 
 <style lang="scss" scoped>
@@ -249,9 +258,69 @@ onUnmounted(() => {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.mosaic-sentinel {
-    height: 1px;
-    width: 100%;
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 1.5rem 0;
+}
+
+.pagination__btn {
+    background: none;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0.6rem 1.2rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1a1a2e;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover:not(:disabled) {
+        background: #1a1a2e;
+        color: #fff;
+        border-color: #1a1a2e;
+    }
+
+    &:disabled {
+        opacity: 0.35;
+        cursor: not-allowed;
+    }
+}
+
+.pagination__pages {
+    display: flex;
+    gap: 0.4rem;
+}
+
+.pagination__page {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1a1a2e;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+        background: #f0f0f0;
+    }
+
+    &--active {
+        background: #1a1a2e;
+        color: #fff;
+        border-color: #1a1a2e;
+    }
 }
 
 .no-articles {
