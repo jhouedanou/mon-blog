@@ -122,6 +122,7 @@ function getExcerptText(article) {
 function formatDate(createdAt) {
     if (createdAt) {
         const date = new Date(createdAt)
+        if (isNaN(date.getTime())) return 'Date non disponible'
         return new Intl.DateTimeFormat('fr-FR', {
             day: 'numeric',
             month: 'long',
