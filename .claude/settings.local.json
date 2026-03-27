@@ -8,7 +8,8 @@
       "Bash(git rm:*)",
       "Bash(dir:*)",
       "Bash(npx nuxi typecheck:*)",
-      "Bash(npx nuxi prepare:*)"
+      "Bash(npx nuxi prepare:*)",
+      "Bash(curl:*)"
     ]
   }
 }

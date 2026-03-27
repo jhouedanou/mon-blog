@@ -19,7 +19,9 @@ Résultat ? Un véritable désastre industriel. Imaginez des deadlines traitées
 
 Au diable ("Project Fat Loss")[https://www.youtube.com/watch?v=YsrERv9PeGg]... j’ai pris dix kilos dans l'aventure, perdu le peu de cheveux qui me reste ainsi que ma considération pour ces gens, eu égard à leur facilité déconcertante à saboter les projets avec une régularité presque artistique. 
 
-Un client envoie une charte graphique ? Elle est ignorée, et on me fait comprendre, à mots voilés, que je dois retourner à mon "développement web". Ironie du sort, le client envoie un email salé avec la même remarque . Peut être qu'on a communiqué par télépathie .
+Un client envoie une charte graphique ? Elle est ignorée, et on me fait comprendre, à mots voilés, que je dois retourner à mon "développement web". Ironie du sort, le client envoie un email salé à l'équipe avec la même remarque . 
+Peut être qu'on a communiqué par télépathie, lui et moi. Ou qu'on a tous les deux un problème de compréhension écrite.
+
 Je demande un justificatif d'absence à une habituée de l’absentéisme ? je le reçois mais 2 semaines plsu tard, pendant une formation, je me fais invectiver.
 
 ## Le score final ? 
