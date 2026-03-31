@@ -36,7 +36,7 @@ i18n: {
     prerender: {
       crawlLinks: true,
       failOnError: false,
-      routes: ['/sitemap.xml', '/feed.xml', '/'],
+      routes: ['/sitemap.xml', '/feed.xml', '/robots.txt', '/'],
     },
   },  
   content: {
@@ -65,6 +65,21 @@ i18n: {
             gtag('js', new Date());
             gtag('config', 'G-5DSHDPMFNP');
           `
+        },
+        {
+          type: 'application/ld+json',
+          children: JSON.stringify({
+            "@context": "https://schema.org/",
+            "@type": "Person",
+            "name": "Jean-Luc Houédanou",
+            "url": "https://houedanou.com/",
+            "jobTitle": "Consultant SEO et Développeur Web",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Abidjan",
+              "addressCountry": "CI"
+            }
+          })
         }
       ],
       link: [
