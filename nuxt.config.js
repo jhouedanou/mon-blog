@@ -8,34 +8,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxtjs/sitemap',
     '@nuxtjs/i18n',
-    'nuxt-feedme'
 ], 
-feedme: {
-  defaults: {
-    routes: false,
-  },
-  feeds: {
-    common: {
-      revisit: '6h',
-      fixDateFields: true,
-      feed: {
-        title: 'Le Blog de Jean-Luc Houédanou',
-        link: 'https://houedanou.com',
-        description: 'Chroniques sur l\'innovation numérique, la transformation digitale en Afrique et pérégrinations technologiques.',
-        language: 'fr',
-      },
-      collections: ['content'],
-      mapping: [
-        ['link', 'path'],
-        ['date', 'createdAt'],
-      ],
-      replace: [[/^(?=\/)/.toString(), 'https://houedanou.com']],
-    },
-    routes: {
-      '/feed.xml': { type: 'rss2' },
-    },
-  },
-},
 i18n: {
   locales: [
     { code: 'fr', name: 'Français', language: 'fr-FR', file: 'fr-FR.js' },
@@ -116,7 +89,8 @@ i18n: {
         { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
         { rel: 'icon', type: 'image/png', sizes: '96x96', href: '/favicon-96x96.png' },
         { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
-        { rel: 'manifest', href: '/manifest.json' }
+        { rel: 'manifest', href: '/manifest.json' },
+        { rel: 'alternate', type: 'application/rss+xml', title: 'Le Blog de Jean-Luc Houédanou - Flux RSS', href: 'https://houedanou.com/feed.xml' }
       ],
       meta: [
         { name: 'msapplication-TileColor', content: '#ffffff' },
