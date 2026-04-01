@@ -1,5 +1,6 @@
-title: "Au‑delà du "Refresh" : rendre le CSS persistant avec Chrome DevTools"
+---title: "Au‑delà du "Refresh" : rendre le CSS persistant avec Chrome DevTools"
 createdAt: "2026-04-01"
+image: "/images/articles/dev/01.jpg"
 description: "Guide pratique : Local Overrides et Workspaces dans Chrome DevTools — configuration pas à pas pour rendre vos modifications CSS persistantes, même avec Nuxt/Vite et Source Maps."
 keywords: "Chrome DevTools, Local Overrides, Workspaces, Source Maps, HMR, Nuxt, Vite, CSS, développement front-end"
 ---
@@ -13,12 +14,15 @@ Cette méthode est la plus simple pour conserver vos modifications "live", même
 Nous allons configurer DevTools pour qu'il dispose d'un espace de stockage local pour vos futurs fichiers modifiés.
 
 Action : Ouvrez l'inspecteur (F12), allez dans l'onglet **Sources**, puis localisez le sous‑onglet **Overrides**. Pour l'instant, cet onglet est vide. Préparez un dossier vide sur votre bureau (ici nommé `devtools_overrides`).
+![Préparation de l'environnement](/images/articles/dev/01.jpg)
 
 ### Étape 2 : activer les Overrides et valider la sécurité
 
 C'est l'étape la plus cruciale et la plus souvent oubliée. Chrome a besoin de votre permission explicite pour écrire sur votre disque dur.
 
 Action : Cliquez sur le bouton **+ Select folder for overrides** (Sélectionner un dossier pour les overrides). Choisissez le dossier `devtools_overrides` créé à l'étape 1. Une barre jaune apparaît en haut de Chrome : cliquez sur **Autoriser (Allow)**. Le "pont" est maintenant établi.
+![Préparation de l'environnement](/images/articles/dev/02.jpg)
+![Préparation de l'environnement](/images/articles/dev/03.jpg)
 
 ### Étape 3 : vérifier la persistance après un refresh
 
@@ -27,10 +31,12 @@ Une fois l'autorisation donnée, vos modifications CSS sont automatiquement sauv
 Action : Modifiez, par exemple, la règle `body { background-color: lightblue; }` dans l'onglet **Elements**. La page devient bleu clair. Observez le petit point violet dans la barre de navigation DevTools : il confirme que Chrome utilise une copie locale active.
 
 Pour preuve : rafraîchissez la page (F5). Le fond reste bleu clair, car Chrome a injecté votre fichier local au lieu du fichier distant. Vous avez la persistance.
+![Préparation de l'environnement](/images/articles/dev/04.jpg)
 
 # Phase 2 : Workspaces — intégrer DevTools et VS Code (avancé)
 
 Les Workspaces vous permettent de modifier directement votre projet local, en direct dans Chrome. C'est l'étape ultime de la productivité, mais elle nécessite un workflow plus avancé (Vite, Webpack) pour les frameworks modernes (Vue, Nuxt).
+![Préparation de l'environnement](/images/articles/dev/05.jpg)
 
 ### Étape 1 : activer le Filesystem mapping
 
