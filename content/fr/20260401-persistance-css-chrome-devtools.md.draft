@@ -1,0 +1,64 @@
+title: "Au‑delà du "Refresh" : rendre le CSS persistant avec Chrome DevTools"
+createdAt: "2026-04-01"
+description: "Guide pratique : Local Overrides et Workspaces dans Chrome DevTools — configuration pas à pas pour rendre vos modifications CSS persistantes, même avec Nuxt/Vite et Source Maps."
+keywords: "Chrome DevTools, Local Overrides, Workspaces, Source Maps, HMR, Nuxt, Vite, CSS, développement front-end"
+---
+
+# Phase 1 : Rendre le CSS persistant avec les "Local Overrides"
+
+Cette méthode est la plus simple pour conserver vos modifications "live", même si vous rafraîchissez la page.
+
+### Étape 1 : préparation de l'environnement
+
+Nous allons configurer DevTools pour qu'il dispose d'un espace de stockage local pour vos futurs fichiers modifiés.
+
+Action : Ouvrez l'inspecteur (F12), allez dans l'onglet **Sources**, puis localisez le sous‑onglet **Overrides**. Pour l'instant, cet onglet est vide. Préparez un dossier vide sur votre bureau (ici nommé `devtools_overrides`).
+
+### Étape 2 : activer les Overrides et valider la sécurité
+
+C'est l'étape la plus cruciale et la plus souvent oubliée. Chrome a besoin de votre permission explicite pour écrire sur votre disque dur.
+
+Action : Cliquez sur le bouton **+ Select folder for overrides** (Sélectionner un dossier pour les overrides). Choisissez le dossier `devtools_overrides` créé à l'étape 1. Une barre jaune apparaît en haut de Chrome : cliquez sur **Autoriser (Allow)**. Le "pont" est maintenant établi.
+
+### Étape 3 : vérifier la persistance après un refresh
+
+Une fois l'autorisation donnée, vos modifications CSS sont automatiquement sauvegardées en local.
+
+Action : Modifiez, par exemple, la règle `body { background-color: lightblue; }` dans l'onglet **Elements**. La page devient bleu clair. Observez le petit point violet dans la barre de navigation DevTools : il confirme que Chrome utilise une copie locale active.
+
+Pour preuve : rafraîchissez la page (F5). Le fond reste bleu clair, car Chrome a injecté votre fichier local au lieu du fichier distant. Vous avez la persistance.
+
+# Phase 2 : Workspaces — intégrer DevTools et VS Code (avancé)
+
+Les Workspaces vous permettent de modifier directement votre projet local, en direct dans Chrome. C'est l'étape ultime de la productivité, mais elle nécessite un workflow plus avancé (Vite, Webpack) pour les frameworks modernes (Vue, Nuxt).
+
+### Étape 1 : activer le Filesystem mapping
+
+Contrairement aux Local Overrides qui remplacent un fichier, les Workspaces fusionnent un dossier de fichiers réseaux (localhost:3000) avec votre dossier de fichiers locaux (`my-project`).
+
+Action : Ouvrez Chrome sur votre projet local (ex : `http://localhost:3000`). Dans DevTools → **Sources**, allez sur l'onglet **Filesystem**. Ajoutez votre dossier de projet `my-project`. Chrome va automatiquement mapper (associer) vos fichiers réseaux aux fichiers locaux. Le petit point vert sur le fichier `style.css` confirme la réussite du mapping.
+
+### Étape 2 : le workflow non-destructif — Chrome ↔ VS Code
+
+Voici le workflow final. Vous pouvez maintenant travailler en "live-editing", sans quitter le navigateur pour sauvegarder, tout en ayant la certitude que votre IDE est à jour.
+
+Action : Le projet tourne sur Chrome (gauche) et est ouvert dans VS Code (droite). Modifiez la couleur du `h1` dans Chrome. Observez l'astérisque de modification dans Chrome DevTools et dans VS Code.
+
+Confirmation technique : Les deux sont synchronisés. Tant que vous ne faites pas `CTRL+S` (sauvegarder) dans Chrome DevTools, VS Code n'écrit pas les modifications. Vos itérations restent locales, visuelles et surtout non-destructives.
+
+---
+
+## Notes techniques et limites
+
+- **Source Maps** : dans un workflow moderne (Nuxt, Vite), la persistance repose souvent sur la présence de Source Maps. Assurez‑vous que votre bundler génère les `.map` pour garder le mapping entre code source et code exécuté.
+- **HMR / CSS-in-JS** : certaines transformations (CSS-in-JS, styles calculés dynamiquement) peuvent ne pas se mapper proprement. Pour une fiabilité maximale, privilégiez du CSS/SCSS classique lors des tests de persistance.
+
+## Conclusion
+
+Local Overrides pour du debug rapide, Workspaces pour le développement actif : combinés, ils transforment DevTools en un vrai compagnon de productivité.
+
+Des questions ? Vous voulez que j'ajoute un rappel pas à pas avec captures d'écran ou un exemple `vite.config.ts` pour activer les Source Maps ?
+
+---
+
+*[Jean Luc Houédanou](https://houedanou.com) — distributeur officiel de Ctrl+S · #CtrlSLeRetour*
