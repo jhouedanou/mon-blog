@@ -2,10 +2,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "rm -rf .nuxt .output .vercel/output && nuxt build",
+    "build": "nuxt build",
     "dev": "nuxt dev",
-    "generate": "rm -rf .nuxt .output .vercel/output && nuxt generate",
-    "preview": "nuxt preview"
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "clean": "rm -rf .nuxt .output dist"
   },
   "dependencies": {
     "@nuxt/content": "^2.13.4",

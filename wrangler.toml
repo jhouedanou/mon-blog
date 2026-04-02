@@ -1,0 +1,9 @@
+name = "mon-blog"
+compatibility_date = "2026-04-01"
+
+[site]
+bucket = "./dist"
+
+# Variables d'environnement (optionnel)
+# [vars]
+# NUXT_PUBLIC_SITE_URL = "https://houedanou.com"

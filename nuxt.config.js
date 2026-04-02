@@ -32,7 +32,7 @@ i18n: {
   },
   ssr: true,
   nitro: {
-    preset: 'vercel',
+    preset: 'cloudflare-pages',
     prerender: {
       crawlLinks: true,
       failOnError: false,
