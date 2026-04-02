@@ -105,9 +105,10 @@ const { data: articles } = await useAsyncData('articles', () =>
 const predefinedTags = ['tech', 'opinion', 'tutoriel', 'productivité', 'apple', 'afrique']
 
 const availableTags = computed(() => {
-    if (!articles.value) return []
+    const source = searchQuery.value.trim() ? filteredArticles.value : articles.value
+    if (!source) return []
     const usedTags = new Set()
-    articles.value.forEach(article => {
+    source.forEach(article => {
         const tags = getArticleTags(article)
         tags.forEach(t => usedTags.add(t))
     })

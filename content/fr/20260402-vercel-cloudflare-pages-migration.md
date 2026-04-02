@@ -12,7 +12,7 @@ Vous connaissez ce sentiment ? Vous lancez votre petit projet perso sur Vercel, 
 
 Moi aussi, j'ai connu ça.
 
-Sauf qu'après les péripéties avec cPanel et l'impossible paiement des licences (merci Tonton Donald 🫡), je me suis dit : **si je dois choisir mes outils, autant que ce soit gratuit, et autant que ce soit bon.**
+Sauf qu'après les péripéties avec cPanel et l'impossible paiement des licences (merci Tonton Donald 🫡 ... ), je me suis dit : **si je dois choisir mes outils, autant que ce soit gratuit, et autant que ce soit bon.**
 
 C'est comme ça que j'ai découvert qu'on n'avait pas vraiment besoin de payer pour avoir du hosting qui déménage les montagnes.
 
@@ -66,7 +66,13 @@ En Afrique de l'Ouest ? Il y a des data centers à Abidjan, Dakar, Lagos. Vous v
 
 **Latence zéro pour nos utilisateurs locaux**.
 
-### 4. **Configuration ridicule**
+### 4. **100 000 requêtes par jour (gratuites)**
+
+Mon blog vient d'être migré. Premier jour sur Cloudflare Pages : **339 requêtes sur les 100 000 autorisées par jour**. On est large.
+
+Pour mettre ça en perspective : Vercel limite la bande passante, Cloudflare limite les requêtes — mais à 100 000/jour, il faut vraiment que votre site devienne viral pour atteindre cette limite.
+
+### 5. **Configuration ridicule**
 
 - 500 builds/mois (gratuit)
 - Connexion directe à GitHub
@@ -75,7 +81,7 @@ En Afrique de l'Ouest ? Il y a des data centers à Abidjan, Dakar, Lagos. Vous v
 
 C'est presque trop simple.
 
-### 5. **Le prix du domaine personnalisé**
+### 6. **Le prix du domaine personnalisé**
 
 Cloudflare ne facture rien pour pointer un domaine personnalisé. Vous gardez votre registrar (Namecheap, GoDaddy, peu importe), et Cloudflare vous fournit les DNS.
 
@@ -175,6 +181,7 @@ Assurez-vous que Cloudflare a les bonnes permissions sur votre repo. Si votre bu
 | SSR | ✅ | ✅ |
 | Vitesse | ⚡⚡⚡ | ⚡⚡⚡⚡ |
 | Bande passante | 100 Go/mois | Illimitée |
+| Requêtes/jour | Non communiqué | 100 000 |
 | Edge functions | Quelques gratuites | Illimitées |
 | Facilité de setup | ⭐⭐⭐ | ⭐⭐ |
 | Support | Bon | Excellent |
