@@ -1,6 +1,6 @@
 ---
 title: "De Vercel à Cloudflare Pages : comment j'ai dit au revoir aux frais d'hébergement (et pourquoi tu dois aussi)"
-image: "/images/articles/dev/01a.png"
+image: "/images/articles/dev/cloudflarevercel.jpg"
 createdAt: "2026-04-02"
 description: "Retour d'expérience sur la migration de Vercel vers Cloudflare Pages : bande passante illimitée, SSR gratuit, CDN ultra-rapide — et zéro facture. Guide complet pour développeurs africains."
 keywords: "Vercel, Cloudflare Pages, migration, hébergement gratuit, Nuxt 3, SSR, CDN, edge functions, bande passante illimitée, développement web, Afrique"
@@ -11,6 +11,8 @@ keywords: "Vercel, Cloudflare Pages, migration, hébergement gratuit, Nuxt 3, SS
 Vous connaissez ce sentiment ? Vous lancez votre petit projet perso sur Vercel, tout va bien… jusqu'au moment où vous recevez votre première facture.
 
 Moi aussi, j'ai connu ça.
+
+> **Avertissement** : cet article contient des quantités déraisonnables de messages d'erreur, de frustration, et au moins un formulaire web qui refuse de fonctionner. Âmes sensibles, s'abstenir.
 
 Sauf qu'après les péripéties avec cPanel et l'impossible paiement des licences (merci Tonton Donald 🫡 ... ), je me suis dit : **si je dois choisir mes outils, autant que ce soit gratuit, et autant que ce soit bon.**
 
@@ -62,8 +64,6 @@ Mon Nuxt 3 avec SSR ? Ça marche parfaitement.
 
 Cloudflare gère le plus grand réseau de data centers du monde. Votre site est servi depuis le serveur Cloudflare le plus proche de l'utilisateur.
 
-En Afrique de l'Ouest ? Il y a des data centers à Abidjan, Dakar, Lagos. Vous vous rendez compte ?
-
 **Latence zéro pour nos utilisateurs locaux**.
 
 ### 4. **100 000 requêtes par jour (gratuites)**
@@ -79,7 +79,11 @@ Pour mettre ça en perspective : Vercel limite la bande passante, Cloudflare lim
 - Auto-déploiement à chaque push
 - Certificats SSL auto-renouvelés
 
-C'est presque trop simple.
+C'est presque trop simple. 
+
+Enfin, en théorie. 
+
+En pratique, lisez la section "Les pièges" plus bas avant de vous réjouir. 😬
 
 ### 6. **Le prix du domaine personnalisé**
 
@@ -107,32 +111,43 @@ C'est littéralement tout ce que vous devez changer dans votre config Nuxt.
 
 ### Step 2 : Créer le fichier `wrangler.toml`
 
-À la racine de votre projet :
+À la racine de votre projet. **Attention** : la config dépend de comment votre projet a été créé chez Cloudflare.
+
+**Si votre projet est de type Pages** (créé via Cloudflare Pages) :
 
 ```toml
-name = "mon-blog-perso"
-type = "javascript"
-account_id = "YOUR_ACCOUNT_ID"
-workers_dev = true
-route = "*"
-zone_id = "YOUR_ZONE_ID"
+name = "mon-blog"
+compatibility_date = "2026-04-01"
+pages_build_output_dir = "./dist"
 ```
 
-(Cloudflare vous donne ces IDs automatiquement une fois connecté)
+**Si votre projet est de type Workers** (ou si le dashboard vous force à utiliser `npx wrangler deploy`) :
+
+```toml
+name = "mon-blog"
+compatibility_date = "2026-04-01"
+main = "dist/_worker.js/index.js"
+
+[assets]
+directory = "./dist"
+```
+
+Comment savoir ? Essayez de modifier la commande de déploiement dans le dashboard. Si vous ne pouvez pas la changer, c'est un projet Workers — utilisez la deuxième config.
 
 ### Step 3 : Connecter votre repo GitHub
 
 1. Allez sur [Cloudflare Pages](https://pages.cloudflare.com)
 2. "Create a project" → "Connect to Git"
 3. Sélectionnez votre repo GitHub
-4. Build command : `npm run build`
-5. Build output directory : `.output/public`
+4. Build command : `yarn run build` (ou `npm run build`)
+5. Deploy command : `npx wrangler deploy` (imposé par Cloudflare si projet Workers)
+6. Build output directory : vérifié automatiquement via `wrangler.toml`
 
-C'est tout.
+**Attention** : le formulaire "Build configuration" dans le dashboard Cloudflare peut être capricieux. J'ai personnellement eu des erreurs `An internal error prevented the form from submitting` en essayant de changer la commande de déploiement. Si ça vous arrive, ne forcez pas — adaptez votre `wrangler.toml` à la place.
 
 ### Step 4 : Pointer votre domaine
 
-Chez votre registrar DNS (Namecheap dans mon cas) :
+Chez votre registrar DNS (GoDaddy dans mon cas) :
 
 **Option A** (recommandée) — Utiliser les nameservers Cloudflare :
 - Remplacer les nameservers par ceux de Cloudflare
@@ -142,7 +157,7 @@ Chez votre registrar DNS (Namecheap dans mon cas) :
 - Ajouter un CNAME : `www` → `subredomain.pages.dev`
 - Cloudflare vous donne l'URL exacte
 
-Vous pouvez garder vos DNS chez Namecheap et juste ajouter un CNAME. Ou vous pouvez tout basculer chez Cloudflare (c'est gratuit aussi).
+Vous pouvez garder vos DNS chez GoDaddy et juste ajouter un CNAME. Ou vous pouvez tout basculer chez Cloudflare (c'est gratuit aussi).
 
 ---
 
@@ -163,27 +178,68 @@ Exemple `_redirects` :
 /api/* https://api.example.com/:splat 200
 ```
 
-### 3. **Le `pages_build_output_dir` dans `wrangler.toml`**
+### 3. **Le `wrangler.toml` : un vrai champ de mines**
 
-Celui-là m'a coûté du temps. Si vous utilisez `npx wrangler deploy` comme commande de déploiement, Wrangler a besoin de savoir où se trouve le résultat du build.
+Celui-là m'a coûté des **heures**. Et je ne parle pas d'heures productives — je parle d'heures à tourner en rond entre des messages d'erreur cryptiques et un dashboard Cloudflare buggé.
 
-Avec le preset `cloudflare-pages` de Nitro (Nuxt 3), la sortie du build va dans `.output/public` — **pas dans `./dist`**.
-
-Si vous mettez `./dist` dans votre `wrangler.toml`, le déploiement échoue avec un message cryptique qui vous demande un `main = "src/index.ts"` comme si c'était un projet Workers classique :
+**Première erreur** : j'avais dans mon `wrangler.toml` une config `[site]` avec `bucket = "./dist"` — un vestige de l'ancienne méthode Workers Sites. Résultat ? Wrangler cherchait un fichier `workers-site/index.js` qui n'existait pas :
 
 ```
-If are uploading a directory of assets, you can either:
-- Specify the path to the directory of assets via the command line
-- Or add the following to your "wrangler.toml" file:
-  [assets]
-  directory = "./dist"
+✘ [ERROR] The entry-point file at "workers-site/index.js" was not found.
 ```
 
-La solution ? Vérifier que votre `wrangler.toml` pointe bien vers le bon répertoire :
+**Deuxième erreur** : j'ai remplacé par `pages_build_output_dir = "./dist"` — c'est la bonne config pour Cloudflare **Pages**. Sauf que ma commande de déploiement dans le dashboard était `npx wrangler deploy` — qui est une commande pour **Workers**, pas pour Pages. Résultat :
+
+```
+▲ [WARNING] It seems that you have run `wrangler deploy` on a Pages project,
+  `wrangler pages deploy` should be used instead.
+
+✘ [ERROR] Missing entry-point to Worker script or to assets directory
+```
+
+**Troisième erreur** : j'ai voulu changer la commande de déploiement dans le dashboard Cloudflare pour `npx wrangler pages deploy dist/`. Mais le formulaire me renvoyait systématiquement :
+
+```
+An internal error prevented the form from submitting. Please try again.
+Invalid request body
+```
+
+Même `npx wrangler pages deploy` sans argument : pareil. Le formulaire refusait tout sauf `npx wrangler deploy`. Frustrant.
+
+**La solution finale** : puisque le dashboard m'imposait `npx wrangler deploy`, j'ai adapté le `wrangler.toml` pour que **cette commande** fonctionne. C'est-à-dire le configurer comme un projet Workers qui sert des assets :
 
 ```toml
-pages_build_output_dir = ".output/public"
+name = "mon-blog"
+compatibility_date = "2026-04-01"
+main = "dist/_worker.js/index.js"
+
+[assets]
+directory = "./dist"
 ```
+
+- `main` pointe vers le worker SSR que Nuxt génère automatiquement dans `dist/_worker.js/index.js`
+- `[assets]` indique à Wrangler de servir les fichiers statiques depuis `./dist`
+
+Vous pensez que c'est fini ? Moi aussi je pensais.
+
+**Quatrième erreur** : le build passe, Wrangler lit la config, commence à scanner les 515 fichiers du dossier `dist/`… et panique parce qu'il trouve le dossier `_worker.js/` dedans. Il refuse de l'uploader comme un asset public (logique : c'est du code serveur privé) :
+
+```
+✘ [ERROR] Uploading a Pages _worker.js directory as an asset.
+  This could expose your private server-side code to the public Internet.
+```
+
+La solution ? Créer un fichier `.assetsignore` dans `dist/` qui contient `_worker.js`. Sauf que `dist/` est régénéré à chaque build, donc il faut le créer automatiquement. J'ai modifié mon script de build dans `package.json` :
+
+```json
+"build": "nuxt build && echo _worker.js > dist/.assetsignore"
+```
+
+Un `echo`. Quatre erreurs de déploiement pour en arriver à un `echo`.
+
+Je vous laisse méditer.
+
+**Morale** : il y a un vrai flou entre les projets "Pages" et "Workers" chez Cloudflare. Si votre projet a été créé côté Workers, le dashboard vous force à utiliser `wrangler deploy`. Adaptez votre `wrangler.toml` en conséquence, n'oubliez pas le `.assetsignore`, et surtout : **ne vous battez pas avec le formulaire du dashboard**. Il va gagner.
 
 ### 4. **Les erreurs 404 pendant le prerendering**
 
@@ -224,7 +280,7 @@ Assurez-vous que Cloudflare a les bonnes permissions sur votre repo. Si votre bu
 | Bande passante | 100 Go/mois | Illimitée |
 | Requêtes/jour | Non communiqué | 100 000 |
 | Edge functions | Quelques gratuites | Illimitées |
-| Facilité de setup | ⭐⭐⭐ | ⭐⭐ |
+| Facilité de setup | ⭐⭐⭐ | ⭐ (4 erreurs et un `echo` plus tard) |
 | Support | Bon | Excellent |
 
 Le vrai gain ? **Zéro stress financier** + **performance identique ou meilleure**.
@@ -247,17 +303,29 @@ Mais entre ces trois ? **Cloudflare Pages gagne à chaque fois**.
 
 ## Le moment où j'ai réalisé que c'était bon
 
-C'était 3 jours après la migration. Mon build échouait, j'ai fouillé les logs, j'ai trouvé l'erreur en 10 minutes.
+Récapitulons mon après-midi du 2 avril 2026 :
 
-Ensuite, tout a roulé.
+1. ❌ `workers-site/index.js` introuvable (config Workers Sites obsolète)
+2. ❌ `Missing entry-point` (conflit Pages vs Workers)
+3. ❌ Dashboard Cloudflare qui refuse de sauvegarder (`An internal error prevented the form from submitting`)
+4. ❌ `_worker.js` uploadé comme asset public (code serveur exposé sur Internet)
+5. ✅ Un `echo _worker.js > dist/.assetsignore` et tout marche
+
+Cinq erreurs. Un après-midi. Et la solution finale tient en une ligne de shell.
+
+Si quelqu'un de Cloudflare lit ceci : **votre formulaire de configuration de build est cassé**. Et la distinction entre Pages et Workers est aussi claire qu'un rond-point à Abidjan à 18h.
+
+Mais une fois que c'est configuré ? Franchement ?
 
 TTFB : ~120ms
 Pages rendues : instantanées
-Erreurs : zéro
+Facture : 0 FCFA
 
-Depuis cPanel vers CyberPanel, j'ai compris quelque chose : **les outils gratuits et open-source ne sont pas des compromis. C'est juste qu'on n'avait pas l'habitude de penser qu'ils pouvaient être aussi bons.**
+Depuis cPanel vers CyberPanel, j'ai compris quelque chose : **les outils gratuits et open-source ne sont pas des compromis. C'est juste que le chemin pour les configurer ressemble parfois à un parcours du combattant.**
 
-Cloudflare Pages c'est la même chose.
+Cloudflare Pages, c'est le restaurant où la cuisine est incroyable mais où il faut traverser un labyrinthe pour trouver la porte d'entrée. Une fois dedans, vous ne regrettez rien.
+
+Et pour un développeur africain qui doit jongler avec les conversions de devises, les frais bancaires, et les ruptures de paiement aléatoires : **un outil gratuit qui marche vraiment, ça n'a pas de prix** — même si la mise en route vous coûte quelques cheveux (pas grave en ce qui me concerne, vu le peu qu'il me reste).
 
 ---
 
