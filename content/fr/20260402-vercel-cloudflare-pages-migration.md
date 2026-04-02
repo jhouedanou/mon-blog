@@ -1,6 +1,6 @@
 ---
 title: "De Vercel à Cloudflare Pages : comment j'ai dit au revoir aux frais d'hébergement (et pourquoi tu dois aussi)"
-image: "/images/articles/dev/01.jpg"
+image: "/images/articles/dev/01a.png"
 createdAt: "2026-04-02"
 description: "Retour d'expérience sur la migration de Vercel vers Cloudflare Pages : bande passante illimitée, SSR gratuit, CDN ultra-rapide — et zéro facture. Guide complet pour développeurs africains."
 keywords: "Vercel, Cloudflare Pages, migration, hébergement gratuit, Nuxt 3, SSR, CDN, edge functions, bande passante illimitée, développement web, Afrique"
