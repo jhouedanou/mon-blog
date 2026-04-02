@@ -69,16 +69,17 @@ Cloudflare gère le plus grand réseau de data centers du monde. Votre site est 
 
 ### 4. **100 000 requêtes par jour (gratuites)**
 
-Mon blog vient d'être migré. Premier jour sur Cloudflare Pages : **339 requêtes sur les 100 000 autorisées par jour**. On est large.
+Mon blog vient d'être migré. Premier jour sur Cloudflare Pages : **492 requêtes sur les 100 000 autorisées par jour**. On est large.
 
 Pour mettre ça en perspective : Vercel limite la bande passante, Cloudflare limite les requêtes — mais à 100 000/jour, il faut vraiment que votre site devienne viral pour atteindre cette limite.
 
 ### 5. **Configuration ridicule**
 
-- 500 builds/mois (gratuit . Et surtout, 1 build = 1 article en ce qui ME concerne. )
+- 3 000 minutes de build/mois (gratuit — et avec seulement 27 minutes utilisées après plusieurs déploiements, on est très large)
 - Connexion directe à GitHub
 - Auto-déploiement à chaque push
 - Certificats SSL auto-renouvelés
+- 200 000 événements d'observabilité/jour (logs, traces)
 
 C'est presque trop simple. 
 
@@ -279,7 +280,8 @@ Assurez-vous que Cloudflare a les bonnes permissions sur votre repo. Si votre bu
 | SSR | ✅ | ✅ |
 | Vitesse | ⚡⚡⚡ | ⚡⚡⚡⚡ |
 | Bande passante | 100 Go/mois | Illimitée |
-| Requêtes/jour | Non communiqué | 100 000 |
+| Requêtes/jour | Non communiqué | 100 000 (492 utilisées le 1er jour) |
+| Build minutes/mois | 6 000 | 3 000 (27 utilisées en 2 jours) |
 | Edge functions | Quelques gratuites | Illimitées |
 | Facilité de setup | ⭐⭐⭐ | ⭐ (4 erreurs et un `echo` plus tard) |
 | Support | Bon | Excellent |
