@@ -67,6 +67,13 @@ i18n: {
           `
         },
         {
+          children: `var infolinks_pid = 3444616; var infolinks_wsid = 0;`
+        },
+        {
+          src: '//resources.infolinks.com/js/infolinks_main.js',
+          async: true
+        },
+        {
           type: 'application/ld+json',
           children: JSON.stringify({
             "@context": "https://schema.org/",
