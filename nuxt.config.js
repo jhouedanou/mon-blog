@@ -21,7 +21,9 @@ i18n: {
 }, 
   sitemap: {
     sources: ['/api/_sitemap-urls'],
-    exclude: ['/api/**', '/_content/**'],
+    exclude: ['/api/**', '/_content/**', '/manifest.json'],
+    xsl: false,
+    credits: false,
   },
   site: {
     url: 'https://houedanou.com',
