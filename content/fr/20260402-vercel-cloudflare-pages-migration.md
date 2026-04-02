@@ -163,11 +163,52 @@ Exemple `_redirects` :
 /api/* https://api.example.com/:splat 200
 ```
 
-### 3. **Les builds qui échouent silencieusement**
+### 3. **Le `pages_build_output_dir` dans `wrangler.toml`**
 
-Parfois, Cloudflare construit votre site sans erreur… mais le résultat est cassé. Lisez les logs de build.
+Celui-là m'a coûté du temps. Si vous utilisez `npx wrangler deploy` comme commande de déploiement, Wrangler a besoin de savoir où se trouve le résultat du build.
 
-### 4. **L'authentification GitHub**
+Avec le preset `cloudflare-pages` de Nitro (Nuxt 3), la sortie du build va dans `.output/public` — **pas dans `./dist`**.
+
+Si vous mettez `./dist` dans votre `wrangler.toml`, le déploiement échoue avec un message cryptique qui vous demande un `main = "src/index.ts"` comme si c'était un projet Workers classique :
+
+```
+If are uploading a directory of assets, you can either:
+- Specify the path to the directory of assets via the command line
+- Or add the following to your "wrangler.toml" file:
+  [assets]
+  directory = "./dist"
+```
+
+La solution ? Vérifier que votre `wrangler.toml` pointe bien vers le bon répertoire :
+
+```toml
+pages_build_output_dir = ".output/public"
+```
+
+### 4. **Les erreurs 404 pendant le prerendering**
+
+Pendant le build, vous allez voir des `[404] Document not found!` dans les logs. Ne paniquez pas.
+
+C'est normal si vous utilisez `documentDriven: true` dans Nuxt Content. Le crawler essaie de trouver un document markdown pour chaque route — y compris `/manifest.json` ou `/robots.txt`, qui ne sont évidemment pas des articles.
+
+Ajoutez `failOnError: false` dans votre config Nitro pour que ces erreurs ne bloquent pas le build :
+
+```js
+nitro: {
+  preset: 'cloudflare-pages',
+  prerender: {
+    crawlLinks: true,
+    failOnError: false,
+    routes: ['/sitemap.xml', '/feed.xml', '/robots.txt', '/'],
+  },
+},
+```
+
+### 5. **Les builds qui échouent silencieusement**
+
+Parfois, Cloudflare construit votre site sans erreur… mais le résultat est cassé. Lisez les logs de build. Toujours.
+
+### 6. **L'authentification GitHub**
 
 Assurez-vous que Cloudflare a les bonnes permissions sur votre repo. Si votre build rate-limite, c'est souvent là le problème.
 
