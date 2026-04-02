@@ -4,6 +4,7 @@ createdAt: "2026-04-01"
 image: "/images/articles/dev/01.jpg"
 description: "Guide pratique : Local Overrides et Workspaces dans Chrome DevTools — configuration pas à pas pour rendre vos modifications CSS persistantes, même avec Nuxt/Vite et Source Maps."
 keywords: "Chrome DevTools, Local Overrides, Workspaces, Source Maps, HMR, Nuxt, Vite, CSS, développement front-end"
+tags: ["tutoriel", "dev"]
 ---
 
 # Phase 1 : Rendre le CSS persistant avec les "Local Overrides"

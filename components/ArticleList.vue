@@ -102,31 +102,36 @@ const { data: articles } = await useAsyncData('articles', () =>
         })
 )
 
-const predefinedTags = ['tech', 'opinion', 'tutoriel', 'productivité', 'apple', 'afrique']
+function getArticleTags(article) {
+    if (article.tags && Array.isArray(article.tags)) {
+        return article.tags.map(t => t.toLowerCase().trim())
+    }
+    return []
+}
+
+// Extraire tous les tags uniques depuis les articles
+const allTags = computed(() => {
+    if (!articles.value) return []
+    const tagCount = {}
+    articles.value.forEach(article => {
+        getArticleTags(article).forEach(t => {
+            tagCount[t] = (tagCount[t] || 0) + 1
+        })
+    })
+    // Trier par fréquence décroissante
+    return Object.keys(tagCount).sort((a, b) => tagCount[b] - tagCount[a])
+})
 
 const availableTags = computed(() => {
     const source = searchQuery.value.trim() ? filteredArticles.value : articles.value
     if (!source) return []
     const usedTags = new Set()
     source.forEach(article => {
-        const tags = getArticleTags(article)
-        tags.forEach(t => usedTags.add(t))
+        getArticleTags(article).forEach(t => usedTags.add(t))
     })
-    return predefinedTags.filter(t => usedTags.has(t))
+    // Garder l'ordre de fréquence globale
+    return allTags.value.filter(t => usedTags.has(t))
 })
-
-function getArticleTags(article) {
-    if (article.tags && Array.isArray(article.tags)) {
-        return article.tags
-    }
-    if (article.keywords) {
-        const kw = typeof article.keywords === 'string'
-            ? article.keywords.toLowerCase().split(',').map(k => k.trim())
-            : []
-        return predefinedTags.filter(tag => kw.some(k => k.includes(tag)))
-    }
-    return []
-}
 
 const filteredArticles = computed(() => {
     if (!articles.value) return []

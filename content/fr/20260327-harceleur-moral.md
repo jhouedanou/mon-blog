@@ -4,6 +4,7 @@ image: "/images/articles/harceleur-moral.jpg"
 createdAt: "2026-03-27"
 description: "LE décalage entre l'exigence de résultats et la sensibilité (parfois utilisée comme bouclier) des collaborateurs : Quand demander des comptes devient du harcèlement moral : chronique d'un manager pris entre l'exigence professionnelle et la fragilité ambiante."
 keywords: "management, harcèlement moral, leadership, responsabilité, équipe, manager, entreprise, Afrique, travail"
+tags: ["opinion", "société"]
 ---
 
 # Manager en 2026 : Souriez, vous coulez (et dites merci).

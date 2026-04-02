@@ -4,6 +4,7 @@ image: "/images/articles/cpanel-cyberpanel-migration.jpg"
 createdAt: "2026-03-27"
 description: "Migrer toute une infrastructure serveur de cPanel vers CyberPanel : retour d'expérience d'un administrateur système en Afrique de l'Ouest, entre hausse des prix, blocage des paiements en zone UEMOA et quête de souveraineté numérique."
 keywords: "cPanel, CyberPanel, OpenLiteSpeed, migration serveur, hébergement web, Afrique de l'Ouest, UEMOA, open source, WordPress, performance, souveraineté numérique, VPS, Hostinger, WHM, LiteSpeed Cache, Redis, AlmaLinux"
+tags: ["tutoriel", "dev", "afrique"]
 ---
 
 # Comment Donald Trump m'a poussé à abandonner cPanel pour CyberPanel — et pourquoi je ne regrette rien

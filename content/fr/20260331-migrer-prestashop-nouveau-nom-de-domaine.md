@@ -4,6 +4,7 @@ image: "/images/articles/prestashop-migration-domaine.jpg"
 createdAt: "2026-03-31"
 description: "Changer de nom de domaine sur PrestaShop sans tout casser : base de données, fichiers de config, SSL, cache, redirections 301 et services tiers. Un guide étape par étape, testé en production."
 keywords: "PrestaShop, migration domaine, changement nom de domaine, PrestaShop 8, PrestaShop 1.7, redirections 301, SEO, SSL, base de données, phpMyAdmin, e-commerce, htaccess, multistore, CyberPanel, Let's Encrypt"
+tags: ["tutoriel", "dev"]
 ---
 
 # Migrer un site PrestaShop vers un nouveau nom de domaine : le guide complet

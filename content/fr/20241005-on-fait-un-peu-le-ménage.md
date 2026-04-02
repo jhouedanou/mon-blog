@@ -5,6 +5,7 @@ createdAt: "2024-10-05"
 id: 1
 description: "Comment et pourquoi j'ai migré mon blog de WordPress vers Nuxt et Nuxt Content. Découvrez les raisons de ce changement et les avantages d'une architecture basée sur des fichiers Markdown et Vercel."
 keywords: "migration WordPress, Nuxt 3, Nuxt Content, blog Markdown, Vercel, sécurité WordPress, alternative WordPress, JAMstack, site statique, développement web moderne"
+tags: ["dev", "tech"]
 summary: "Cet article explique ma décision d'abandonner WordPress comme moteur de blog en raison de ses vulnérabilités et limitations, au profit d'une solution plus moderne basée sur Nuxt 3 et Nuxt Content. J'y détaille le processus de migration, la nouvelle architecture technique et les prochaines étapes d'amélioration, notamment pour le design et l'intégration d'Open Graph."
 
 # Open Graph Meta Tags

@@ -30,17 +30,37 @@ const props = defineProps({
 
 const emit = defineEmits(['update:selectedTags'])
 
-const tagColors = {
-    tech: '#00BBF9',
-    opinion: '#FF6F61',
-    tutoriel: '#2EC4B6',
-    productivité: '#F5B700',
-    apple: '#9B5DE5',
-    afrique: '#55D6BE',
+// Palette de couleurs vives pour les tags
+const tagPalette = [
+    '#00BBF9', // bleu
+    '#FF6F61', // corail
+    '#2EC4B6', // turquoise
+    '#F5B700', // or
+    '#9B5DE5', // violet
+    '#55D6BE', // vert menthe
+    '#FF85A1', // rose
+    '#FFA62B', // orange
+    '#48BF84', // vert
+    '#6C63FF', // indigo
+    '#E84855', // rouge
+    '#00CFC1', // cyan
+]
+
+// Couleur stable par tag (basée sur un hash simple)
+const tagColorCache = {}
+function getTagColor(tag) {
+    if (tagColorCache[tag]) return tagColorCache[tag]
+    let hash = 0
+    for (let i = 0; i < tag.length; i++) {
+        hash = tag.charCodeAt(i) + ((hash << 5) - hash)
+    }
+    const index = Math.abs(hash) % tagPalette.length
+    tagColorCache[tag] = tagPalette[index]
+    return tagPalette[index]
 }
 
 function getTagStyle(tag) {
-    const color = tagColors[tag] || '#2EC4B6'
+    const color = getTagColor(tag)
     const isActive = props.selectedTags.includes(tag)
     return {
         '--tag-color': color,

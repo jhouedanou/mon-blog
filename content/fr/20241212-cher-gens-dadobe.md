@@ -5,6 +5,7 @@ createdAt: "2024-12-12"
 id: 2024-12-12
 description: "Découvrez pourquoi Adobe suscite tant de critiques : pratiques commerciales douteuses, service client défaillant et frais cachés. Un témoignage personnel sur les frustrations liées à cette entreprise incontournable du design."
 keywords: "Adobe, critique Adobe, Affinity Designer, abonnement Adobe, frais cachés Adobe, service client Adobe, alternatives Adobe, pratiques commerciales Adobe, procès Adobe, FTC Adobe"
+tags: ["tech", "opinion"]
 summary: "Un témoignage personnel sur les frustrations liées à Adobe : service client défaillant, abonnements forcés et interfaces trompeuses. L'article explique pourquoi les critiques envers Adobe sont justifiées, mentionne les poursuites judiciaires en cours et suggère des alternatives comme Affinity."
 ---
 

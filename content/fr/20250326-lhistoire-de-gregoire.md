@@ -5,6 +5,7 @@ createdAt: "2025-03-26"
 id: 12
 description: "L'histoire de Grégoire, un développeur freelance perfectionniste confronté à l'écriture inclusive pour un client important. Une anecdote sur les compromis entre principes linguistiques et réalités professionnelles."
 keywords: "développeur freelance, écriture inclusive, grammaire, client CAC 40, points médians, perfectionnisme, compromis professionnel, rédaction web"
+tags: ["opinion", "dev"]
 summary: "Un développeur freelance perfectionniste doit faire face à une demande d'écriture inclusive pour un client important du CAC 40. Malgré sa réticence initiale et un travail minutieux, il découvre que ses efforts sont finalement inutiles quand les textes sont convertis en français classique. Une histoire qui illustre le conflit entre principes personnels et exigences professionnelles."
 
 # Open Graph Meta Tags

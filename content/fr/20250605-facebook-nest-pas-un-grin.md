@@ -5,6 +5,7 @@ createdAt: "2025-06-05"
 id: 2025-06-05
 description: "Penser avec rigueur, respecter autrui, peser ses mots : autant de qualités qu'on attend d'un professionnel — surtout dans un secteur aussi symbolique que le livre et la communication. Je ne suis pas ici pour faire la morale, mais pour rappeler que les réseaux sociaux ne sont pas un grin — ce groupe informel de discussion entre amis où l'on débat de tout et de rien, souvent sans fond ni filtre. Mais parfois, on a l'impression que certains professionnels ont oublié ces notions de base."
 keywords: "community manager, réseaux sociaux, sexisme, Abidjan,  féminisme, critique sociale"
+tags: ["société", "afrique", "opinion"]
 summary: "Penser avec rigueur, respecter autrui, peser ses mots : autant de qualités qu'on attend d'un professionnel — surtout dans un secteur aussi symbolique que le livre et la communication. Je ne suis pas ici pour faire la morale, mais pour rappeler que les réseaux sociaux ne sont pas un grin — ce groupe informel de discussion entre amis où l'on débat de tout et de rien, souvent sans fond ni filtre. Mais parfois, on a l'impression que certains professionnels ont oublié ces notions de base."
 ---
 

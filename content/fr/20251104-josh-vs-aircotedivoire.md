@@ -5,6 +5,7 @@ createdAt: "2025-11-04"
 id: 170
 description: "Analysis of the controversy between aviation vlogger Josh Cahill and Air Côte d'Ivoire: between a Booking.com ticket, high-altitude recovery, and improvised crisis management."
 keywords: "Josh Cahill, Air Côte d'Ivoire, aviation controversy, Booking.com, business class, inaugural flight, aviation influencer, OTA, airline customer service"
+tags: ["afrique", "opinion"]
 summary: "Vlogger Josh Cahill accuses Air Côte d'Ivoire of fraud after a downgrade. But one detail changes everything: his half-price ticket via Booking.com. Analysis of a controversy where responsibility is shared between omissions and improvised crisis management."
 ---
 A word from the author: Before diving in, let me be clear:  

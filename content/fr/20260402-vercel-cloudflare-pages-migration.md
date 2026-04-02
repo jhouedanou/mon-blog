@@ -1,9 +1,10 @@
 ---
 title: "De Vercel à Cloudflare Pages : comment j'ai dit au revoir aux frais d'hébergement (et pourquoi tu dois aussi)"
-image: "/images/articles/dev/cloudflarevercel.jpg"
+image: "/images/articles/cloudflarevercel.jpg"
 createdAt: "2026-04-02"
 description: "Retour d'expérience sur la migration de Vercel vers Cloudflare Pages : bande passante illimitée, SSR gratuit, CDN ultra-rapide — et zéro facture. Guide complet pour développeurs africains."
 keywords: "Vercel, Cloudflare Pages, migration, hébergement gratuit, Nuxt 3, SSR, CDN, edge functions, bande passante illimitée, développement web, Afrique"
+tags: ["tutoriel", "dev", "afrique"]
 ---
 
 # De Vercel à Cloudflare Pages : comment j'ai dit au revoir aux frais d'hébergement (et pourquoi tu dois aussi)
@@ -74,7 +75,7 @@ Pour mettre ça en perspective : Vercel limite la bande passante, Cloudflare lim
 
 ### 5. **Configuration ridicule**
 
-- 500 builds/mois (gratuit)
+- 500 builds/mois (gratuit . Et surtout, 1 build = 1 article en ce qui ME concerne. )
 - Connexion directe à GitHub
 - Auto-déploiement à chaque push
 - Certificats SSL auto-renouvelés

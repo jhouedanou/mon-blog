@@ -4,6 +4,7 @@ image: "/images/articles/apple.jpg"
 createdAt: "2026-03-26"
 description: "MacBook Neo, Apple Intelligence, iPhone pliable : pourquoi Apple ne cherche plus à révolutionner mais à consolider, intégrer et monétiser avec une précision chirurgicale."
 keywords: "Apple, MacBook Neo, Apple Intelligence, iPhone pliable, A18 Pro, Apple Silicon, IA, ChatGPT, écosystème Apple, tech"
+tags: ["tech", "apple", "opinion"]
 ---
 # Apple : la sagesse du géant
 

@@ -3,6 +3,7 @@ title: "On a fini de faire le ménage"
 image: "/images/articles/mouff.jpg"
 createdAt: "2024-10-21"
 id: 2
+tags: ["dev"]
 ---
 
 # On a fini de faire le ménage
