@@ -22,7 +22,7 @@ Depuis les derniers patches Windows 11, Microsoft a décidé que les comptes loc
 Vous essayez les anciennes astuces ?
 
 - Email factice comme `no@thankyou.com` (Voir ce clip explicatif : https://www.youtube.com/clip/Ugkxbe-HidbA7gWD_7QvNu3tKLagXSGvShm4 ) ? Rejet.
-- Sauter l'étape en fermant le navigateur (Voir ce clip explicatif : https://www.youtube.com/clip/Ugkxbe-HidbA7gWD_7QvNu3tKLagXSGvShm4 ) ? Ne marche plus.
+- Sauter l'étape en fermant le navigateur  ? Ne marche plus.
 - Laisser le formulaire vide ? Microsoft re-force la saisie.
 
 C'est pas de la malveillance, c'est juste du business : un utilisateur connecté à un compte Microsoft, c'est un utilisateur tracé, synchro, et dans l'écosystème cloud.
