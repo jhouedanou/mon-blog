@@ -1,16 +1,16 @@
 ---
-title: "Comment des chercheurs ont volé 10 000 € via un iPhone verrouillé — la faille Apple Pay / Visa expliquée"
+title: "Comment des chercheurs ont volé 10 000 $ via un iPhone verrouillé — la faille Apple Pay / Visa expliquée"
 image: "/images/articles/apple-pay-visa-hack.jpg"
 createdAt: "2026-04-17"
 description: "Des chercheurs ont démontré qu'il est possible de débiter une somme importante depuis un iPhone verrouillé en exploitant le mode Express Transit d'Apple Pay combiné aux protocoles Visa. Voici comment, et comment se protéger."
 keywords: "Apple Pay, Visa, sécurité, NFC, Express Transit, faille, iPhone, Tap to Pay, paiement sans contact, man-in-the-middle"
 tags: ["sécurité", "Apple Pay", "Visa", "NFC", "iPhone", "faille de sécurité"]
 ---
-# Comment des chercheurs ont volé 10 000 € via un iPhone verrouillé — la faille Apple Pay / Visa expliquéeS
+# Comment des chercheurs ont volé 10 000 $ via un iPhone verrouillé — la faille Apple Pay / Visa expliquéeS
 
 Il y a des histoires de sécurité qui ressemblent à de la science-fiction. Celle-ci s'est passée dans un laboratoire universitaire, documentée, publiée — et elle concerne très probablement le téléphone qui est dans votre poche en ce moment.
 
-Des chercheurs de l'université de Birmingham et de Surrey ont démontré qu'il est possible de **débiter plusieurs milliers d'euros depuis un iPhone verrouillé**, sans aucune interaction de sa part, en exploitant une combinaison de failles dans Apple Pay et les protocoles de transaction Visa.
+Des chercheurs de l'université de Birmingham et de Surrey ont démontré qu'il est possible de **débiter plusieurs milliers d'dollars depuis un iPhone verrouillé**, sans aucune interaction de sa part, en exploitant une combinaison de failles dans Apple Pay et les protocoles de transaction Visa.
 
 Regarder la démonstration complète (anglais)
 :youtube{video="PPJ6NJkmDAo" title="VISA"}
@@ -39,11 +39,11 @@ Les deux appareils sont reliés via une connexion WiFi ou filaire. Résultat : l
 
 En envoyant un signal qui imite celui d'un terminal de transport en commun, le téléphone bascule automatiquement en **mode Express Transit**. Le verrou disparaît. Apple Pay est prêt à payer.
 
-L'iPhone croit qu'il valide un trajet à 2 €.
+L'iPhone croit qu'il valide un trajet à 2 $.
 
 ### Acte 3 — Tromper le terminal
 
-C'est là que ça devient technique. Les chercheurs **manipulent quelques bits** dans les données de la transaction : ils modifient le marqueur qui indique au terminal si la transaction est "petite valeur" (transit) ou "grande valeur" (retail). Le terminal lit donc un achat de détail — disons 10 000 € — et l'approuve comme s'il avait reçu toutes les vérifications nécessaires.
+C'est là que ça devient technique. Les chercheurs **manipulent quelques bits** dans les données de la transaction : ils modifient le marqueur qui indique au terminal si la transaction est "petite valeur" (transit) ou "grande valeur" (retail). Le terminal lit donc un achat de détail — disons 10 000 $ — et l'approuve comme s'il avait reçu toutes les vérifications nécessaires.
 
 Le téléphone a dit oui parce qu'il croyait payer un bus.  
 Le terminal a dit oui parce qu'il croyait que l'utilisateur avait validé.
@@ -68,7 +68,7 @@ Ce n'est pas un bug dans le code de Visa. C'est un **choix architectural** qui s
 
 La faille côté iPhone vient d'un comportement spécifique : l'iPhone fait confiance à l'étiquette "petite valeur transit" que lui envoie le terminal, **sans vérifier le montant numérique réel**.
 
-Les téléphones Samsung (et Android en général), eux, **vérifient le montant de la transaction** indépendamment. Si un terminal dit "transit" mais que le montant est 10 000 €, le téléphone rejette la transaction.
+Les téléphones Samsung (et Android en général), eux, **vérifient le montant de la transaction** indépendamment. Si un terminal dit "transit" mais que le montant est 10 000 $, le téléphone rejette la transaction.
 
 Apple a fait un choix différent, probablement pour des raisons de compatibilité avec des systèmes de transport hétérogènes. Ce choix s'est révélé être le maillon faible.
 
