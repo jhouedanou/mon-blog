@@ -12,9 +12,8 @@ Il y a des histoires de sécurité qui ressemblent à de la science-fiction. Cel
 
 Des chercheurs de l'université de Birmingham et de Surrey ont démontré qu'il est possible de **débiter plusieurs milliers d'euros depuis un iPhone verrouillé**, sans aucune interaction de sa part, en exploitant une combinaison de failles dans Apple Pay et les protocoles de transaction Visa.
 
-::YoutubeLink{url="https://www.youtube.com/watch?v=PPJ6NJkmDAo"}
 Regarder la démonstration complète (anglais)
-::
+:youtube{video="PPJ6NJkmDAo" title="VISA"}
 
 ---
 
@@ -111,4 +110,4 @@ Maintenant vsus savez.
 *[Jean Luc Houédanou](https://houedanou.com) — content d'avoir un téléphone android.*
 
 
-*Sources : [Tap-and-Ghost : une attaque pratique sur Apple Pay et Visa sans contact](https://www.computer.org/csdl/proceedings-article/sp/2022/131600b601/1A4Q5j29Vdm), IEEE Symposium on Security and Privacy 2022. Vidéo de démonstration ci-dessus.*
+*Sources : [Tap-and-Ghost : une attaque pratique sur Apple Pay et Visa sans contact](https://www.computer.org/csdl/proceedings-article/sp/2022/131600b601/1A4Q5j29Vdm)*
