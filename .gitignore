@@ -1,3 +1,6 @@
+# Vercel
+.vercel
+
 # Nuxt dev/build outputs
 .output
 .vercel
@@ -24,3 +27,4 @@ logs
 .env.*
 !.env.example
 content/£.txt
+nul

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://houedanou.com/sitemap.xml

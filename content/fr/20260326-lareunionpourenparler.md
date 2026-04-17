@@ -1,22 +1,25 @@
 ---
 title: "La réunion « pour en parler »"
 image: "/images/articles/reunion.jpg"
-createdAt: "2026-03-26"
+createdAt: "2026-03-25"
 description: "Une réflexion sur la fameuse réunion 'pour en parler' : pourquoi elle naît, comment l'éviter, et comment obtenir des décisions claires sans perdre de temps."
 keywords: "réunion, productivité, tech, marketing digital, réunion inutile, ego, développement"
+tags: ["opinion", "société"]
 ---
 
 # La réunion « pour en parler »
 
 Dans mon domaine de travail, il existe un mal.
+
 Une endémie. 
+
 Non, pas la « réunion de crise », ni le « kickoff ». 
 
 Celle-là n'apparaît que lorsque les vagues de l'ego et du manque d'arguments — soigneusement cultivés par une système éducatif qui récompense la restitution — viennent se briser sur le mur de la réalité technique.
 
 ## La réunion « pour en parler ».
 
-Ça commence toujours de la même façon. Une demande. Formulée avec la désinvolture de quelqu'un qui n'aura pas à la réaliser. 
+Ça commence toujours de la même façon :  Une demande formulée avec la désinvolture de quelqu'un qui n'aura pas à la réaliser. 
 Formulée entre deux messages, comme si l’effort en temps et ressources qu’elle représente n’existait pas. Une demande dont la taille est inversement proportionnelle à l’aplomb avec laquelle elle est posée.
 
 En réponse, on envoie une analyse technique : options comparées, risques anticipés, recommandation d'outils qui font déjà le travail, plan de développement détaillé. En d'autres termes, on réfléchit à la place de celui qui n'a pas pris le temps de le faire.
@@ -65,3 +68,6 @@ Dans ces cas, insistez, pas pour humilier — mais pour aider la personne à for
 PS : Si malgré tout vous décidez de tenir cette réunion, prévoyez un ordre du jour, un temps limité — 10 minutes max, sans retard toléré — et une question unique à trancher.
 
 Avec des arguments.
+
+---
+*[Jean Luc Houédanou](https://houedanou.com) — ennemi juré des réunions*

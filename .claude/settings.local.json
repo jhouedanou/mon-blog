@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm view:*)",
+      "Bash(findstr:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run build:*)",
+      "Bash(git rm:*)",
+      "Bash(dir:*)",
+      "Bash(npx nuxi typecheck:*)",
+      "Bash(npx nuxi prepare:*)",
+      "Bash(curl:*)",
+      "Bash(npm run dev:*)",
+      "Bash(timeout:*)"
+    ]
+  }
+}

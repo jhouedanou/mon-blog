@@ -5,6 +5,7 @@ createdAt: "2025-10-31"
 id: 2025-10-31
 description: "Affinity devient gratuit et bouleverse le marché de la création graphique. Découvrez pourquoi cette évolution est une excellente nouvelle pour concurrencer Adobe, avec une suite unifiée performante et sans abonnement."
 keywords: "Affinity, critique Adobe, Affinity Designer, abonnement Adobe, frais cachés Adobe, service client Adobe, alternatives Adobe, pratiques commerciales Adobe, procès Adobe, FTC Adobe"
+tags: ["tech", "opinion"]
 summary: "Affinity passe au modèle gratuit avec une suite unifiée réunissant Vector, Layout et Photo dans une seule application. Une alternative performante à Adobe sans abonnement obligatoire, accessible à tous les créatifs."
 ---
 
@@ -72,4 +73,5 @@ Pour en savoir plus ou télécharger la suite, rendez-vous sur le site officiel 
 [Affinity](https://affinity.serif.com/fr/).
 
 
-Jean Luc Houédanou
+---
+*[Jean Luc Houédanou](https://houedanou.com) — designer libéré d'Adobe*

@@ -1,6 +1,6 @@
 <template>
     <div class="language-switcher">
-        <select v-model="$i18n.locale" @change="changeLanguage">
+        <select v-model="$i18n.locale" @change="changeLanguage" aria-label="Choisir la langue">
             <option v-for="locale in $i18n.locales" :key="locale.code" :value="locale.code">
                 {{ locale.name }}
             </option>

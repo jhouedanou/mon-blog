@@ -8,47 +8,23 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxtjs/sitemap',
     '@nuxtjs/i18n',
-    'nuxt-feedme'
 ], 
-feedme: {
-  feeds: [
-    {
-      path: '/feed.xml',
-      create: async (feed) => {
-        feed.options = {
-          title: 'Le Blog de Jean-Luc Houédanou',
-          link: 'https://houedanou.com/feed.xml',
-          description: 'Le Blog de Jean-Luc Houédanou',
-        }
-
-        const articles = await queryContent().find()
-
-        articles.forEach(article => {
-          feed.addItem({
-            title: article.title,
-            id: article._path,
-            link: `https://houedanou.com${article._path}`,
-            description: article.description,
-            content: article.body,
-            date: new Date(article.createdAt)
-          })
-        })
-      },
-      type: 'rss2'
-    }
-  ]
-},
 i18n: {
   locales: [
     { code: 'fr', name: 'Français', language: 'fr-FR', file: 'fr-FR.js' },
-    { code: 'en', name: 'English', language: 'en-US', file: 'en-US.js' },
   ],
   defaultLocale: 'fr',
   lazy: true,
   langDir: 'lang/',
-  strategy: 'prefix_except_default',
+  strategy: 'no_prefix',
   detectBrowserLanguage: false,
 }, 
+  sitemap: {
+    sources: ['/api/_sitemap-urls'],
+    exclude: ['/api/**', '/_content/**', '/manifest.json'],
+    xsl: false,
+    credits: false,
+  },
   site: {
     url: 'https://houedanou.com',
   },  
@@ -58,11 +34,11 @@ i18n: {
   },
   ssr: true,
   nitro: {
-    preset: 'vercel',
-//    baseURL: "http://houedanou.com",
+    preset: 'cloudflare-pages',
     prerender: {
-      // crawlLinks: true,
-      failOnError: false
+      crawlLinks: true,
+      failOnError: false,
+      routes: ['/sitemap.xml', '/feed.xml', '/robots.txt', '/'],
     },
   },  
   content: {
@@ -81,14 +57,6 @@ i18n: {
     head: {
       script: [
         {
-          src: 'https://platform-api.sharethis.com/js/sharethis.js#property=671678124be62400139baad2&product=inline-share-buttons',
-          async: true
-        },
-        {
-          src:'https://platform-api.sharethis.com/js/sharethis.js#property=671678124be62400139baad2&product=sop',
-          async: true
-        },
-        {
           src: `https://www.googletagmanager.com/gtag/js?id=G-5DSHDPMFNP`,
           async: true
         },
@@ -99,12 +67,34 @@ i18n: {
             gtag('js', new Date());
             gtag('config', 'G-5DSHDPMFNP');
           `
+        },
+        {
+          children: `var infolinks_pid = 3444616; var infolinks_wsid = 0;`
+        },
+        {
+          src: '//resources.infolinks.com/js/infolinks_main.js',
+          async: true
+        },
+        {
+          type: 'application/ld+json',
+          children: JSON.stringify({
+            "@context": "https://schema.org/",
+            "@type": "Person",
+            "name": "Jean-Luc Houédanou",
+            "url": "https://houedanou.com/",
+            "jobTitle": "Consultant SEO et Développeur Web",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Abidjan",
+              "addressCountry": "CI"
+            }
+          })
         }
       ],
       link: [
         {
           rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Montserrat:wght@400;600;700&family=Inter:wght@400;600;700&family=Ubuntu:wght@400;500;700&family=Source+Sans+Pro:wght@400;600;700&display=swap'
+          href: 'https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Montserrat:wght@400;600;700&family=Inter:wght@400;600;700&display=swap'
         },
         {
           rel: 'stylesheet',
@@ -123,7 +113,8 @@ i18n: {
         { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
         { rel: 'icon', type: 'image/png', sizes: '96x96', href: '/favicon-96x96.png' },
         { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
-        { rel: 'manifest', href: '/manifest.json' }
+        { rel: 'manifest', href: '/manifest.json' },
+        { rel: 'alternate', type: 'application/rss+xml', title: 'Le Blog de Jean-Luc Houédanou - Flux RSS', href: 'https://houedanou.com/feed.xml' }
       ],
       meta: [
         { name: 'msapplication-TileColor', content: '#ffffff' },
@@ -146,7 +137,9 @@ i18n: {
     }
   },
   routeRules: {
-    '/': { prerender: true }
+    '/': { prerender: true },
+    '/fr/**': { prerender: true },
+    '/api/_content/**': { robots: false },
   },
   compatibilityDate: '2024-10-10'
 })

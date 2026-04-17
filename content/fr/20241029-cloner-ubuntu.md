@@ -1,10 +1,11 @@
-````mdc
+---
 title: "Comment cloner Ubuntu sans perdre ses données et son âme"
 image: "/images/articles/pingui.jpg"
-createdAt: "29-10-2024"
+createdAt: "2024-10-29"
 id: 2024-10-29
 description: "Guide pratique pour cloner votre système Ubuntu vers un nouveau SSD sans perdre vos données. Apprenez à migrer facilement votre installation Linux avec un script simple et efficace."
 keywords: "cloner Ubuntu, migration SSD Ubuntu, dd Linux, clone système Linux, augmenter espace disque Ubuntu, script clonage Linux, sauvegarde Ubuntu, resize partition Linux, fdisk, parted"
+tags: ["tutoriel", "dev", "tech"]
 summary: "Un tutoriel étape par étape pour cloner votre système Ubuntu vers un nouveau SSD plus spacieux. Ce guide inclut l'identification des disques, un script de clonage complet avec dd, l'extension des partitions et les vérifications nécessaires pour assurer une migration réussie."
 
 # Open Graph Meta Tags
@@ -137,3 +138,6 @@ Vérifiez que la nouvelle partition utilise bien tout l'espace disponible.
 - Patience : Le clonage peut prendre un certain temps, selon la taille de vos données
 
 ````
+
+---
+*[Jean Luc Houédanou](https://houedanou.com) — clonneur de manchots*

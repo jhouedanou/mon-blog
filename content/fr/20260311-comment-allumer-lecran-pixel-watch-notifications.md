@@ -5,6 +5,7 @@ createdAt: "2026-03-11"
 id: 2026-03-11
 description: "Guide simple pour afficher automatiquement les notifications sur l'écran de la Pixel Watch sans lever le poignet grâce à l'application Wear Notification Helper."
 keywords: "Pixel Watch notifications, afficher notifications Pixel Watch, Wear OS notifications, Pixel Watch écran notification, Always On Display Pixel Watch, Tilt to Wake Pixel Watch, Wear Notification Helper"
+tags: ["tech", "tutoriel"]
 summary: "Comment afficher automatiquement les notifications sur l'écran de votre Pixel Watch sans lever le poignet."
 ---
 
@@ -59,3 +60,6 @@ Parmi ses autres applications pour Wear OS, on trouve notamment :
 - **Wear Installer** – facilite l'installation d'applications Android sur les montres Wear OS
 
 Ces applications sont généralement légères, gratuites et conçues pour résoudre des problèmes très spécifiques rencontrés par les utilisateurs de montres connectées.
+
+---
+*[Jean Luc Houédanou](https://houedanou.com) — réveilleur de montres*
