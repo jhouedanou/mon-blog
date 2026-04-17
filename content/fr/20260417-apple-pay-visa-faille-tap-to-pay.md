@@ -108,6 +108,3 @@ Maintenant vsus savez.
 ---
 
 *[Jean Luc Houédanou](https://houedanou.com) — content d'avoir un téléphone android.*
-
-
-*Sources : [Tap-and-Ghost : une attaque pratique sur Apple Pay et Visa sans contact](https://www.computer.org/csdl/proceedings-article/sp/2022/131600b601/1A4Q5j29Vdm)*
