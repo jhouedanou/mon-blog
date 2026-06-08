@@ -1,12 +1,31 @@
 <template>
     <div class="article-list">
-        <div class="article-list-container container">
-            <!-- Barre sticky : recherche + tags -->
+        <div class="article-list-container">
+            <!-- Hero intro -->
+            <section class="hero-intro">
+                <div class="hero-intro__line">
+                    <span class="hero-intro__eyebrow">— Journal {{ currentYear }} ·
+                        <span v-if="articles && articles.length">{{ articles.length }} articles</span>
+                    </span>
+                </div>
+                <h1 class="hero-intro__title">
+                    <span class="hero-intro__word">Pensées,</span>
+                    <span class="hero-intro__word hero-intro__word--accent">obsessions</span>
+                    <span class="hero-intro__word">&amp; éclats</span>
+                    <span class="hero-intro__dot">.</span>
+                </h1>
+                <p class="hero-intro__lede">
+                    Le journal de Jean-Luc Houédanou — tech, opinions, et tout ce qui passe par la tête.
+                </p>
+            </section>
+
+            <!-- Sticky search + tag filters -->
             <div class="sticky-filters">
                 <SearchBar v-model="searchQuery" />
                 <TagFilter
                     v-if="availableTags.length"
                     :tags="availableTags"
+                    :counts="tagCounts"
                     :selectedTags="selectedTags"
                     @update:selectedTags="selectedTags = $event"
                 />
@@ -18,10 +37,16 @@
                     :key="article._path"
                     :to="localePath(article._path)"
                     class="mosaic-tile"
-                    :class="{ 'mosaic-tile--large': getTileSize(index) === 'large' }"
+                    :class="[
+                        `mosaic-tile--${getTileSize(index)}`,
+                        `mosaic-tile--accent-${getAccentVariant(index)}`
+                    ]"
                     :style="[getTileBackground(article, index), getAnimationDelay(index)]"
                 >
-                    <span v-if="isNew(article)" class="mosaic-badge">{{ $t('newBadge') }}</span>
+                    <span v-if="isNew(article)" class="mosaic-badge">
+                        <span class="mosaic-badge__dot"></span>
+                        {{ $t('newBadge') }}
+                    </span>
 
                     <div class="mosaic-overlay">
                         <div v-if="getArticleTags(article).length" class="mosaic-tags">
@@ -31,7 +56,7 @@
                                 class="mosaic-tag"
                             >{{ tag }}</span>
                         </div>
-                        <div class="mosaic-text-block" :style="getTextBlockStyle(index)">
+                        <div class="mosaic-text-block">
                             <h2 class="mosaic-title">
                                 {{ article.title }}
                             </h2>
@@ -44,12 +69,13 @@
                                 {{ getReadingTime(article) }} {{ $t('readingTime') }}
                             </span>
                         </div>
+                        <span class="mosaic-arrow" aria-hidden="true">→</span>
                     </div>
                 </NuxtLink>
             </div>
             <p v-else class="no-articles">{{ $t('noArticles') }}</p>
 
-            <!-- Sentinel pour le défilement infini -->
+            <!-- Infinite scroll sentinel -->
             <div ref="scrollSentinel" class="scroll-sentinel">
                 <div v-if="isLoadingMore" class="loading-more">
                     <span class="loading-dot"></span>
@@ -57,7 +83,7 @@
                     <span class="loading-dot"></span>
                 </div>
                 <p v-if="allLoaded && displayedArticles.length > 0" class="all-loaded-msg">
-                    — Tous les articles ont été chargés —
+                    — Fin du journal —
                 </p>
             </div>
         </div>
@@ -71,6 +97,7 @@ import { useI18n } from 'vue-i18n'
 import { useLocalePath } from '#i18n'
 import SearchBar from '~/components/SearchBar.vue'
 import TagFilter from '~/components/TagFilter.vue'
+import { getArticleTags as extractTags } from '~/utils/tags.js'
 
 const localePath = useLocalePath()
 const { locale } = useI18n()
@@ -82,6 +109,7 @@ const scrollSentinel = ref(null)
 let infiniteObserver = null
 const searchQuery = ref('')
 const selectedTags = ref([])
+const currentYear = new Date().getFullYear()
 
 const { data: articles } = await useAsyncData('articles', () =>
     queryContent(locale.value)
@@ -103,23 +131,21 @@ const { data: articles } = await useAsyncData('articles', () =>
 )
 
 function getArticleTags(article) {
-    if (article.tags && Array.isArray(article.tags)) {
-        return article.tags.map(t => t.toLowerCase().trim())
-    }
-    return []
+    return extractTags(article)
 }
 
-// Extraire tous les tags uniques depuis les articles
+const tagCounts = computed(() => {
+    const counts = {}
+    for (const article of articles.value || []) {
+        for (const tag of getArticleTags(article)) {
+            counts[tag] = (counts[tag] || 0) + 1
+        }
+    }
+    return counts
+})
+
 const allTags = computed(() => {
-    if (!articles.value) return []
-    const tagCount = {}
-    articles.value.forEach(article => {
-        getArticleTags(article).forEach(t => {
-            tagCount[t] = (tagCount[t] || 0) + 1
-        })
-    })
-    // Trier par fréquence décroissante
-    return Object.keys(tagCount).sort((a, b) => tagCount[b] - tagCount[a])
+    return Object.keys(tagCounts.value).sort((a, b) => tagCounts.value[b] - tagCounts.value[a])
 })
 
 const availableTags = computed(() => {
@@ -129,7 +155,6 @@ const availableTags = computed(() => {
     source.forEach(article => {
         getArticleTags(article).forEach(t => usedTags.add(t))
     })
-    // Garder l'ordre de fréquence globale
     return allTags.value.filter(t => usedTags.has(t))
 })
 
@@ -155,7 +180,6 @@ const filteredArticles = computed(() => {
     return result
 })
 
-// Reset displayed count when search or tags change
 watch([searchQuery, selectedTags], () => {
     displayCount.value = ITEMS_PER_PAGE
 }, { deep: true })
@@ -221,39 +245,27 @@ function isNew(article) {
     return (Date.now() - created) < sevenDays
 }
 
-const titleColors = [
-    '#FF6F61',
-    '#2EC4B6',
-    '#F5B700',
-    '#55D6BE',
-    '#9B5DE5',
-    '#00BBF9',
-]
-
 const fallbackGradients = [
-    'linear-gradient(135deg, #1a1a2e, #16213e)',
-    'linear-gradient(135deg, #0f3460, #533483)',
-    'linear-gradient(135deg, #2d4059, #ea5455)',
-    'linear-gradient(135deg, #222831, #393e46)',
-    'linear-gradient(135deg, #1b262c, #0f4c75)',
-    'linear-gradient(135deg, #2c3e50, #3498db)',
+    'linear-gradient(135deg, #0a0a0f 0%, #1a1a3a 50%, #00ffd1 200%)',
+    'linear-gradient(135deg, #0a0a0f 0%, #2a0a3a 50%, #b026ff 200%)',
+    'linear-gradient(135deg, #0a0a0f 0%, #3a0a2a 50%, #ff2e93 200%)',
+    'linear-gradient(135deg, #0a0a0f 0%, #1a2a3a 50%, #00bbff 200%)',
+    'linear-gradient(135deg, #0a0a0f 0%, #3a1a0a 50%, #ffb627 200%)',
+    'linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 50%, #55d6be 200%)',
 ]
 
-function getTitleColor(index) {
-    return titleColors[index % titleColors.length]
-}
+const accentVariants = ['teal', 'magenta', 'violet', 'teal', 'amber', 'magenta']
 
-function getTextBlockStyle(index) {
-    const color = getTitleColor(index)
-    return {
-        borderLeft: `3px solid ${color}`,
-        paddingLeft: '0.75rem',
-    }
+function getAccentVariant(index) {
+    return accentVariants[index % accentVariants.length]
 }
 
 function getTileSize(index) {
+    // Pattern: large, normal, normal, normal, large, normal → magazine grid
     const posInGroup = index % 6
-    return (posInGroup === 0 || posInGroup === 3) ? 'large' : 'normal'
+    if (posInGroup === 0) return 'hero'
+    if (posInGroup === 3) return 'wide'
+    return 'normal'
 }
 
 function getTileBackground(article, index) {
@@ -269,46 +281,146 @@ function getTileBackground(article, index) {
 
 function getAnimationDelay(index) {
     return {
-        animationDelay: `${index * 0.08}s`,
+        animationDelay: `${Math.min(index * 0.06, 0.6)}s`,
     }
 }
 
 function getExcerptText(article) {
     const content = article.description || ''
     const text = content.replace(/<[^>]*>/g, '')
-    return text.length > 100 ? text.slice(0, 100) + '...' : text
+    return text.length > 120 ? text.slice(0, 120) + '…' : text
 }
 
 function formatDate(createdAt) {
     if (createdAt) {
         const date = new Date(createdAt)
-        if (isNaN(date.getTime())) return 'Date non disponible'
+        if (isNaN(date.getTime())) return ''
         return new Intl.DateTimeFormat('fr-FR', {
-            day: 'numeric',
-            month: 'long',
+            day: '2-digit',
+            month: 'short',
             year: 'numeric'
-        }).format(date)
+        }).format(date).replace('.', '')
     }
-    return 'Date non disponible'
+    return ''
 }
 </script>
 
 <style lang="scss" scoped>
 .article-list {
-    padding: 1.5rem 0;
+    padding: 0 0 4rem;
 }
 
 .article-list-container {
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
 }
 
-/* Staggered animation */
+/* ==========================================
+   Hero intro
+   ========================================== */
+.hero-intro {
+    padding: 4.5rem 0 3rem;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 2rem;
+}
+
+.hero-intro__line {
+    margin-bottom: 1.5rem;
+}
+
+.hero-intro__eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--accent);
+}
+
+.hero-intro__title {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: clamp(2.75rem, 8vw, 6.5rem);
+    line-height: 0.95;
+    letter-spacing: -0.04em;
+    color: var(--text-primary);
+    margin: 0 0 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2em 0.35em;
+    align-items: baseline;
+}
+
+.hero-intro__word {
+    display: inline-block;
+
+    &--accent {
+        font-style: italic;
+        font-weight: 300;
+        color: var(--accent);
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0.08em;
+            height: 0.06em;
+            background: var(--accent);
+            opacity: 0.35;
+            transform-origin: left;
+            animation: underlineSlide 1.4s cubic-bezier(0.65, 0, 0.35, 1) 0.4s both;
+        }
+    }
+}
+
+.hero-intro__dot {
+    color: var(--accent-magenta);
+    font-style: italic;
+    font-weight: 300;
+}
+
+@keyframes underlineSlide {
+    from { transform: scaleX(0); }
+    to   { transform: scaleX(1); }
+}
+
+.hero-intro__lede {
+    font-family: var(--font-sans);
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    max-width: 580px;
+    line-height: 1.55;
+    margin: 0;
+}
+
+/* ==========================================
+   Sticky filters bar
+   ========================================== */
+.sticky-filters {
+    position: sticky;
+    top: 72px;
+    z-index: 50;
+    background: var(--bg-glass);
+    backdrop-filter: blur(18px) saturate(140%);
+    -webkit-backdrop-filter: blur(18px) saturate(140%);
+    padding: 1rem 0;
+    margin: 0 -1.5rem 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    transition: background-color 0.3s ease;
+}
+
+/* ==========================================
+   Magazine grid
+   ========================================== */
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(24px);
     }
     to {
         opacity: 1;
@@ -318,64 +430,148 @@ function formatDate(createdAt) {
 
 .mosaic-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 280px;
-    gap: 12px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 200px;
+    gap: 1rem;
 }
 
 .mosaic-tile {
     position: relative;
-    border-radius: 10px;
+    border-radius: 6px;
     overflow: hidden;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat !important;
-    background-color: #1a1a2e;
+    background-repeat: no-repeat;
+    background-color: var(--bg-card);
     cursor: pointer;
     text-decoration: none;
-    transition: box-shadow 0.3s ease;
-    animation: fadeInUp 0.5s ease both;
+    transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+                box-shadow 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+    animation: fadeInUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+    border: 1px solid var(--border-color);
+    grid-column: span 2;
+    grid-row: span 2;
 
-    // Prevent image repetition in pseudo-element
     &::before {
         content: '';
         position: absolute;
-        inset: -8px;
+        inset: 0;
         background: inherit;
         background-size: cover;
         background-position: center;
-        background-repeat: no-repeat !important;
-        transition: transform 0.4s ease;
+        background-repeat: no-repeat;
+        transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+                    filter 0.7s ease;
         z-index: 0;
+        filter: saturate(0.9);
     }
 
     &:hover {
-        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        transform: translateY(-3px);
+        box-shadow: var(--card-shadow-hover);
 
         &::before {
-            transform: scale(1.06);
+            transform: scale(1.05);
+            filter: saturate(1.1);
+        }
+
+        .mosaic-title {
+            color: var(--accent);
+        }
+
+        .mosaic-arrow {
+            transform: translate(4px, -4px);
+            color: var(--accent);
         }
     }
 
-    &--large {
+    /* Magazine sizes — hero = wide+tall, wide = wide, normal = standard */
+    &--hero {
+        grid-column: span 4;
+        grid-row: span 3;
+
+        .mosaic-title {
+            font-size: clamp(1.5rem, 3.5vw, 2.6rem);
+            line-height: 1.05;
+        }
+
+        .mosaic-excerpt {
+            font-size: 0.95rem;
+            -webkit-line-clamp: 3;
+        }
+    }
+
+    &--wide {
+        grid-column: span 4;
         grid-row: span 2;
+
+        .mosaic-title {
+            font-size: clamp(1.25rem, 2.2vw, 1.7rem);
+        }
+    }
+
+    &--normal {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    /* Accent variants — left border + hover glow */
+    &--accent-teal {
+        --tile-accent: var(--accent);
+        --tile-glow: var(--neon-glow-teal);
+    }
+    &--accent-magenta {
+        --tile-accent: var(--accent-magenta);
+        --tile-glow: var(--neon-glow-magenta);
+    }
+    &--accent-violet {
+        --tile-accent: var(--accent-violet);
+        --tile-glow: var(--neon-glow-violet);
+    }
+    &--accent-amber {
+        --tile-accent: var(--accent-amber);
+        --tile-glow: 0 0 32px rgba(255, 182, 39, 0.3);
+    }
+
+    &:hover {
+        border-color: var(--tile-accent, var(--accent));
+        box-shadow: var(--tile-glow, var(--neon-glow-teal));
     }
 }
 
 .mosaic-badge {
     position: absolute;
-    top: 12px;
-    right: 12px;
-    background: #FF6F61;
+    top: 14px;
+    left: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: rgba(10, 10, 15, 0.85);
+    backdrop-filter: blur(8px);
     color: #fff;
-    font-family: 'Inter', sans-serif;
-    font-size: 0.7rem;
-    font-weight: 700;
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    font-weight: 600;
     text-transform: uppercase;
-    padding: 0.2rem 0.6rem;
-    border-radius: 12px;
-    z-index: 2;
-    letter-spacing: 0.03em;
+    padding: 0.3rem 0.65rem;
+    border-radius: 2px;
+    z-index: 3;
+    letter-spacing: 0.12em;
+    border: 1px solid var(--accent-magenta);
+}
+
+.mosaic-badge__dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent-magenta);
+    box-shadow: 0 0 8px var(--accent-magenta);
+    animation: pulseDot 1.6s ease-in-out infinite;
+}
+
+@keyframes pulseDot {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50%      { opacity: 0.5; transform: scale(1.25); }
 }
 
 .mosaic-overlay {
@@ -384,58 +580,69 @@ function formatDate(createdAt) {
     z-index: 1;
     background: linear-gradient(
         to top,
-        rgba(0, 0, 0, 0.85) 0%,
-        rgba(0, 0, 0, 0.4) 50%,
-        rgba(0, 0, 0, 0.1) 100%
+        rgba(0, 0, 0, 0.9) 0%,
+        rgba(0, 0, 0, 0.55) 45%,
+        rgba(0, 0, 0, 0.05) 100%
     );
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 1.2rem;
+    padding: 1.5rem;
+    transition: background 0.3s ease;
+}
+
+.mosaic-tile:hover .mosaic-overlay {
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.95) 0%,
+        rgba(0, 0, 0, 0.65) 50%,
+        rgba(0, 0, 0, 0.1) 100%
+    );
 }
 
 .mosaic-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 0.3rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.65rem;
 }
 
 .mosaic-tag {
-    font-family: 'Inter', sans-serif;
-    font-size: 0.65rem;
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.04em;
-    color: rgba(255, 255, 255, 0.9);
-    background: rgba(255, 255, 255, 0.15);
-    padding: 0.15rem 0.5rem;
-    border-radius: 10px;
+    letter-spacing: 0.14em;
+    color: var(--tile-accent, var(--accent));
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid var(--tile-accent, var(--accent));
+    padding: 0.2rem 0.55rem;
+    border-radius: 2px;
+    backdrop-filter: blur(4px);
 }
 
 .mosaic-text-block {
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.65rem;
 }
 
 .mosaic-title {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 1.1rem;
-    line-height: 1.3;
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(1.05rem, 1.4vw, 1.35rem);
+    line-height: 1.15;
     color: #ffffff;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
-    margin: 0 0 0.3rem 0;
-
-    .mosaic-tile--large & {
-        font-size: 1.5rem;
-    }
+    letter-spacing: -0.015em;
+    margin: 0 0 0.4rem 0;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+    transition: color 0.25s ease;
 }
 
 .mosaic-excerpt {
-    font-family: 'Inter', sans-serif;
-    font-size: 0.85rem;
-    color: rgba(255, 255, 255, 0.9);
-    line-height: 1.4;
+    font-family: var(--font-sans);
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.78);
+    line-height: 1.5;
     margin: 0;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -447,43 +654,49 @@ function formatDate(createdAt) {
     display: flex;
     align-items: center;
     gap: 1rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .mosaic-date {
-    font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0.6);
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.55);
 }
 
 .mosaic-reading-time {
     display: inline-flex;
     align-items: center;
-    gap: 0.25rem;
-    font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0.6);
+    gap: 0.3rem;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.06em;
+    color: rgba(255, 255, 255, 0.55);
 
     .material-icons {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
 }
 
-/* Sticky filters bar */
-.sticky-filters {
-    position: sticky;
-    top: 60px; // height of site-header
-    z-index: 50;
-    background: var(--bg-primary);
-    padding: 1rem 0 0.5rem;
-    margin: 0 -1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--border-color);
-    transition: background-color 0.3s ease;
+.mosaic-arrow {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+    font-family: var(--font-mono);
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 0.7);
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), color 0.25s ease;
+    z-index: 2;
 }
 
-/* Infinite scroll sentinel */
+/* ==========================================
+   Infinite scroll sentinel
+   ========================================== */
 .scroll-sentinel {
-    padding: 2rem 0;
+    padding: 3rem 0 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -497,69 +710,104 @@ function formatDate(createdAt) {
 }
 
 .loading-dot {
-    width: 8px;
-    height: 8px;
+    width: 6px;
+    height: 6px;
     border-radius: 50%;
-    background: var(--accent, #2EC4B6);
+    background: var(--accent);
+    box-shadow: 0 0 12px var(--accent);
     animation: loadingBounce 1.2s infinite ease-in-out;
 
-    &:nth-child(2) {
-        animation-delay: 0.15s;
-    }
-    &:nth-child(3) {
-        animation-delay: 0.3s;
-    }
+    &:nth-child(2) { animation-delay: 0.15s; }
+    &:nth-child(3) { animation-delay: 0.3s; }
 }
 
 @keyframes loadingBounce {
-    0%, 80%, 100% {
-        transform: scale(0.6);
-        opacity: 0.4;
-    }
-    40% {
-        transform: scale(1);
-        opacity: 1;
-    }
+    0%, 80%, 100% { transform: scale(0.6); opacity: 0.4; }
+    40%           { transform: scale(1);   opacity: 1; }
 }
 
 .all-loaded-msg {
     color: var(--text-muted);
-    font-size: 0.85rem;
-    font-style: italic;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
 }
 
 .no-articles {
     text-align: center;
     color: var(--text-muted);
     font-style: italic;
-    padding: 2rem 0;
+    padding: 3rem 0;
 }
 
-// Tablet: 2 columns
+/* ==========================================
+   Responsive
+   ========================================== */
 @media screen and (max-width: 1023px) {
     .mosaic-grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 250px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .mosaic-tile {
+        grid-column: span 2;
+        grid-row: span 2;
+
+        &--hero {
+            grid-column: span 4;
+            grid-row: span 3;
+        }
+
+        &--wide {
+            grid-column: span 4;
+            grid-row: span 2;
+        }
     }
 }
 
-// Mobile: 1 column
 @media screen and (max-width: 640px) {
+    .article-list-container {
+        padding: 0 1rem;
+    }
+
+    .sticky-filters {
+        margin: 0 -1rem 1.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        top: 72px;
+    }
+
+    .hero-intro {
+        padding: 2.5rem 0 2rem;
+    }
+
+    .hero-intro__title {
+        font-size: clamp(2.25rem, 12vw, 3.5rem);
+    }
+
     .mosaic-grid {
         grid-template-columns: 1fr;
-        grid-auto-rows: 220px;
+        grid-auto-rows: 240px;
     }
 
-    .mosaic-tile--large {
-        grid-row: span 2;
+    .mosaic-tile,
+    .mosaic-tile--hero,
+    .mosaic-tile--wide,
+    .mosaic-tile--normal {
+        grid-column: span 1;
+        grid-row: span 1;
     }
 
-    .mosaic-title {
-        font-size: 1rem;
+    .mosaic-tile--hero {
+        grid-row: span 1;
 
-        .mosaic-tile--large & {
-            font-size: 1.2rem;
+        .mosaic-title {
+            font-size: 1.5rem;
         }
+    }
+
+    .mosaic-overlay {
+        padding: 1.2rem;
     }
 }
 </style>

@@ -40,25 +40,28 @@ onUnmounted(() => {
     right: 2rem;
     width: 48px;
     height: 48px;
-    border-radius: 50%;
-    border: none;
-    background: #2EC4B6;
-    color: #fff;
+    border-radius: 4px;
+    border: 1px solid var(--accent);
+    background: var(--bg-card);
+    color: var(--accent);
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 16px rgba(46, 196, 182, 0.35);
-    transition: all 0.2s ease;
+    box-shadow: var(--neon-glow-teal), var(--card-shadow);
+    transition: all 0.25s ease;
     z-index: 90;
+    backdrop-filter: blur(8px);
 
     .material-icons {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 
     &:hover {
+        background: var(--accent);
+        color: #0a0a0f;
         transform: translateY(-3px);
-        box-shadow: 0 6px 24px rgba(46, 196, 182, 0.45);
+        box-shadow: 0 0 40px var(--accent), var(--card-shadow);
     }
 }
 

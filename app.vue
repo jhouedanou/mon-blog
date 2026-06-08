@@ -27,6 +27,12 @@
           <NuxtLink to="/" class="site-header__nav-link" @click="mobileMenuOpen = false">
             <span>{{ $t('home') }}</span>
           </NuxtLink>
+          <NuxtLink to="/tags" class="site-header__nav-link" @click="mobileMenuOpen = false">
+            <span>{{ $t('tags') }}</span>
+          </NuxtLink>
+          <NuxtLink to="/cv" class="site-header__nav-link" @click="mobileMenuOpen = false">
+            <span>{{ $t('cv') }}</span>
+          </NuxtLink>
           <NuxtLink to="/a-propos" class="site-header__nav-link" @click="mobileMenuOpen = false">
             <span>{{ $t('about') }}</span>
           </NuxtLink>
@@ -231,8 +237,12 @@ main {
 .site-header__nav {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1.75rem;
   margin-left: auto;
+
+  @media (max-width: 980px) {
+    gap: 1.25rem;
+  }
 }
 
 .site-header__nav-link {

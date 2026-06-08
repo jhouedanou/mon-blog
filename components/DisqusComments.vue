@@ -56,35 +56,28 @@ function loadDisqus() {
 .disqus-load-btn {
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
-    background: none;
-    border: 2px solid #2EC4B6;
-    border-radius: 8px;
-    padding: 0.75rem 1.5rem;
-    font-family: 'Inter', sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
-    color: #2EC4B6;
+    gap: 0.6rem;
+    background: transparent;
+    border: 1px solid var(--accent);
+    border-radius: 2px;
+    padding: 0.85rem 1.75rem;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--accent);
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: all 0.25s ease;
 
     .material-icons {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     &:hover {
-        background: #2EC4B6;
-        color: #fff;
-    }
-}
-
-[data-theme="dark"] .disqus-load-btn {
-    border-color: #2EC4B6;
-    color: #2EC4B6;
-
-    &:hover {
-        background: #2EC4B6;
-        color: #1a1a2e;
+        background: var(--accent);
+        color: #0a0a0f;
+        box-shadow: var(--neon-glow-teal);
     }
 }
 </style>
