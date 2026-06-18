@@ -113,13 +113,13 @@ onUnmounted(() => {
 }
 
 .toc__heading {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.85rem;
-    font-weight: 700;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: var(--text-muted);
-    margin: 0 0 0.75rem 0;
+    letter-spacing: 0.18em;
+    color: var(--accent);
+    margin: 0 0 1rem 0;
     padding-left: 1rem;
 }
 
@@ -140,26 +140,26 @@ onUnmounted(() => {
     }
 
     &--active > .toc__link {
-        color: #2EC4B6;
-        border-left-color: #2EC4B6;
-        background: rgba(46, 196, 182, 0.06);
+        color: var(--accent);
+        border-left-color: var(--accent);
+        background: var(--accent-soft);
     }
 }
 
 .toc__link {
     display: block;
-    padding: 0.4rem 1rem;
-    font-family: 'Inter', sans-serif;
-    font-size: 0.88rem;
+    padding: 0.45rem 1rem;
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
     color: var(--text-secondary);
     text-decoration: none;
-    border-left: 3px solid transparent;
-    transition: all 0.2s ease;
-    line-height: 1.4;
+    border-left: 2px solid transparent;
+    transition: all 0.25s ease;
+    line-height: 1.45;
 
     &:hover {
-        color: #2EC4B6;
-        border-left-color: var(--border-color);
+        color: var(--accent);
+        border-left-color: var(--border-strong);
     }
 }
 

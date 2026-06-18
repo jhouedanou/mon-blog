@@ -55,23 +55,28 @@ watch(() => props.modelValue, (val) => {
 
 .search-bar__input {
     width: 100%;
-    padding: 0.65rem 1rem 0.65rem 2.5rem;
-    border: 2px solid var(--border-color);
-    border-radius: 24px;
+    padding: 0.85rem 1rem 0.85rem 2.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
     background: var(--bg-card);
     color: var(--text-primary);
-    font-family: 'Inter', sans-serif;
-    font-size: 0.95rem;
+    font-family: var(--font-mono, 'JetBrains Mono', monospace);
+    font-size: 0.85rem;
+    letter-spacing: 0.02em;
     transition: all 0.2s ease;
     outline: none;
 
     &::placeholder {
         color: var(--text-muted);
+        font-family: var(--font-mono, 'JetBrains Mono', monospace);
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-size: 0.75rem;
     }
 
     &:focus {
-        border-color: #2EC4B6;
-        box-shadow: 0 0 0 3px rgba(46, 196, 182, 0.15);
+        border-color: var(--accent);
+        box-shadow: 0 0 0 3px var(--accent-soft);
     }
 }
 </style>

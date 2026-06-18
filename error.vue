@@ -63,12 +63,12 @@ useHead({
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem 1rem;
-  background: var(--bg-primary);
+  padding: 3rem 1.5rem;
+  background: transparent;
 }
 
 .error-page__content {
-  max-width: 600px;
+  max-width: 640px;
   text-align: center;
 }
 
@@ -76,16 +76,19 @@ useHead({
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .error-page__code {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 5rem;
-  font-weight: 800;
-  color: #2EC4B6;
-  line-height: 1;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(5rem, 14vw, 9rem);
+  color: var(--accent);
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  text-shadow: var(--neon-glow-teal);
 }
 
 .error-page__emoji {
@@ -94,77 +97,88 @@ useHead({
 }
 
 .error-page__title {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.8rem;
-  font-weight: 700;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(1.65rem, 4vw, 2.4rem);
+  font-weight: 400;
+  letter-spacing: -0.025em;
   color: var(--text-primary);
   margin: 0 0 0.75rem 0;
 }
 
 .error-page__message {
-  font-family: 'Inter', sans-serif;
-  font-size: 1.1rem;
+  font-family: var(--font-body);
+  font-size: 1.05rem;
   color: var(--text-secondary);
-  margin: 0 0 2rem 0;
+  margin: 0 0 2.25rem 0;
   line-height: 1.6;
 }
 
 .error-page__btn {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  background: #2EC4B6;
-  color: #fff;
-  font-family: 'Inter', sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
+  gap: 0.6rem;
+  background: transparent;
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  padding: 0.95rem 1.75rem;
+  border: 1px solid var(--accent);
+  border-radius: 2px;
   text-decoration: none;
-  transition: all 0.2s ease;
+  transition: all 0.25s ease;
 
   .material-icons {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   &:hover {
-    background: #1a9e92;
+    background: var(--accent);
+    color: #0a0a0f;
+    box-shadow: var(--neon-glow-teal);
     transform: translateY(-2px);
-    box-shadow: 0 4px 16px rgba(46, 196, 182, 0.3);
   }
 }
 
 .error-page__recent {
-  margin-top: 3rem;
+  margin-top: 4rem;
   text-align: left;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--border-color);
 }
 
 .error-page__recent-heading {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  margin: 0 0 1rem 0;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  margin: 0 0 1.25rem 0;
   text-align: center;
 }
 
 .error-page__recent-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0.75rem;
+  gap: 0.85rem;
 }
 
 .error-page__article-card {
   text-decoration: none;
-  border-radius: 10px;
+  border-radius: 4px;
   overflow: hidden;
   background: var(--bg-card);
-  box-shadow: var(--card-shadow);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    transform: translateY(-3px);
+    border-color: var(--accent);
+    box-shadow: var(--neon-glow-teal);
   }
 }
 
@@ -173,22 +187,25 @@ useHead({
   height: 100px;
   background-size: cover;
   background-position: center;
+  filter: saturate(0.9);
 
   &--no-image {
-    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    background: linear-gradient(135deg, #0a0a0f 0%, #1a1a3a 50%, #00ffd1 200%);
   }
 }
 
 .error-page__article-info {
-  padding: 0.6rem;
+  padding: 0.75rem;
 }
 
 .error-page__article-title {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.8rem;
-  font-weight: 600;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
   color: var(--text-primary);
-  line-height: 1.3;
+  line-height: 1.25;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;

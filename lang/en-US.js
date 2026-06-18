@@ -1,6 +1,7 @@
 export default {
   welcome: "Welcome",
   readMore: "Read more",
+  cv: "Resume",
   noArticles: "No articles found",
   previous: "Previous",
   next: "Next",

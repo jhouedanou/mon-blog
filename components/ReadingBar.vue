@@ -63,9 +63,12 @@ onUnmounted(() => {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: var(--bg-card, #1a1a2e);
+  background: var(--bg-glass, var(--bg-card));
+  backdrop-filter: blur(18px) saturate(140%);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  border-bottom: 1px solid var(--border-color);
   transform: translateY(-100%);
-  transition: transform 0.3s ease;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
 
   &--visible {
     transform: translateY(0);
@@ -95,10 +98,12 @@ onUnmounted(() => {
 }
 
 .reading-bar__title {
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: #ffffff;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -147,8 +152,9 @@ onUnmounted(() => {
 }
 
 .reading-bar__progress {
-  height: 3px;
-  background: #2ec4b6;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-magenta));
+  box-shadow: 0 0 12px var(--accent);
   transition: width 0.1s linear;
 }
 

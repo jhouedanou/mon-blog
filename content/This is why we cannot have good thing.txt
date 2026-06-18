@@ -1,0 +1,14 @@
+
+
+
+
+
+
+# Affinity 3.0 : This is why we cannot have nice things
+
+Affinity vient, une fois de plus, de changer la donne...auparavant disponible sous la forme d’un logiciel payant, la suite créative est passée, à l’heure où j’écris ces lignes, en logiciel gratuit ( mais nécessitant un abonnement à Canva afin de profiter des fonctionnalités liés l’IA , telles la génération d’images).
+C’est, en ce qui me concerne, une excellente nouvelle : certes je suis un utilisateur ayant payé pour la v1 ainsi que la v2 de cette suite, mais je pense qu’un monde où Adobe ne règne pas en maître absolu est un monde idéal. Entendons nous, Adobe est un ensemble de logiciels puissants et polyvalents : je n’ai pas encore trouvé d’équivalent à Lightroom ( incluant Darktable et Affinity Photo) quand il s’agit, par exemple, d’éditer mes photos prise avec ma caméra Ricoh Theta. Mais pour le reste, je préfère Affinity (Designer, Publisher & Photo), pour sa facilité d’utilisation, son approche sans abonnement et surtout son unicité en termes d’expérience utilisateur sur toutes les plateformes ( à l’exception de linux, où , certes, il existe des solutions pour le faire fonctionner mais pas de versions natives ) . Savoir que plusieurs personnes qui étaient freinées par le coût de la suite Affinity passeront de façon sure à celles ci me réjouit .
+Cependant, tout le monde n’est pas du même avis . Certains estiment qu’ayant payé pour une licence , ils devraient avoir l’accès exclusif au logiciel . D’autres estiment que l’intégration (payante) des fonctionnalités d’IA de Canva est une pente glissante vers un modèle d’affaires basé sur une souscription . Pour rassurer les deuxièmes, je viens de tester la nouvelle version d’Affinity ( appelons la Affinity 3.0) et en dehors de cet aspect, il y a des fonctionnalités fort appréciables :  il n’y a plus besoin de passer d’un logiciel à l’autre via le « Studio » , tout est intégré au sein d’une application afin de travailler sur des aspects spécifiques d’un fichier - Vector - pour les graphiques vectoriels , Layout - pour les publications , Photo -  pour les photos. C’est une expérience de travail unifiée , que les plus vieux de mes MacBook Pro apprécient particulièrement . Ensuite, les commandes et raccourcis sont restées pareilles , voire ont été améliorées , surtout au niveau de l’export du travail .  Je me suis senti chez moi.
+Quant aux premiers, je n’ai pas d’arguments . 
+Sérieusement, c’est un niveau de débat auquel je suis étranger depuis la fin de mon adolescence, et auquel j’ai renoncé de participer . C’est le même niveau que ceux et celles qui disent qu’ils sont les vrais fans de Maitre Gims car ils ont acheté tous ses albums à l’époque où il rappait avec Sexion d’Assaut et qu’il ne supportent pas son développement artistique ( Gims est un très bon chanteur lyrique)
+.Bref, soyez heureux, Affiity est une bonne proposition gratuite , profitez en 

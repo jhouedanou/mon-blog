@@ -6,7 +6,7 @@
         :style="prev.image ? { backgroundImage: `url(${prev.image})` } : {}"
         :class="{ 'article-nav__thumb--no-image': !prev.image }"
       >
-        <span class="article-nav__direction">{{ $t('previous') }}</span>
+        <span class="article-nav__direction"><span class="article-nav__arrow">←</span> {{ $t('previous') }}</span>
       </div>
       <span class="article-nav__title">{{ prev.title }}</span>
     </NuxtLink>
@@ -18,7 +18,7 @@
         :style="next.image ? { backgroundImage: `url(${next.image})` } : {}"
         :class="{ 'article-nav__thumb--no-image': !next.image }"
       >
-        <span class="article-nav__direction">{{ $t('next') }}</span>
+        <span class="article-nav__direction">{{ $t('next') }} <span class="article-nav__arrow">→</span></span>
       </div>
       <span class="article-nav__title">{{ next.title }}</span>
     </NuxtLink>
@@ -37,9 +37,9 @@ defineProps({
 .article-nav {
   display: flex;
   gap: 1rem;
-  margin-top: 2.5rem;
+  margin-top: 3rem;
   padding-top: 2rem;
-  border-top: 1px solid var(--border-color, #eee);
+  border-top: 1px solid var(--border-color);
 }
 
 .article-nav__link {
@@ -47,14 +47,30 @@ defineProps({
   display: flex;
   flex-direction: column;
   text-decoration: none;
-  border-radius: 10px;
+  border-radius: 4px;
   overflow: hidden;
-  background: var(--bg-secondary, #f8f9fa);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 0.3s ease,
+              border-color 0.3s ease;
 
   &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    transform: translateY(-3px);
+    border-color: var(--accent);
+    box-shadow: var(--neon-glow-teal);
+
+    .article-nav__title {
+      color: var(--accent);
+    }
+
+    .article-nav__arrow {
+      transform: translateX(3px);
+    }
+
+    &.article-nav__link--prev .article-nav__arrow {
+      transform: translateX(-3px);
+    }
   }
 }
 
@@ -68,42 +84,57 @@ defineProps({
 
 .article-nav__thumb {
   width: 100%;
-  height: 120px;
+  height: 130px;
   background-size: cover;
   background-position: center;
   position: relative;
   display: flex;
   align-items: flex-end;
+  filter: saturate(0.9);
 
   &--no-image {
-    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    background: linear-gradient(135deg, #0a0a0f 0%, #2a0a3a 50%, #b026ff 200%);
   }
 }
 
 .article-nav__direction {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.75rem;
-  font-weight: 600;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.14em;
   color: #fff;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 0.25rem 0.6rem;
-  border-radius: 4px;
-  margin: 0.5rem;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  padding: 0.3rem 0.7rem;
+  border-radius: 2px;
+  margin: 0.65rem;
+  border: 1px solid var(--accent);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.article-nav__arrow {
+  display: inline-block;
+  transition: transform 0.25s ease;
+  color: var(--accent);
 }
 
 .article-nav__title {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: var(--text-primary, #1a1a2e);
-  padding: 0.75rem;
-  line-height: 1.3;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  color: var(--text-primary);
+  padding: 1rem 1.1rem;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  transition: color 0.25s ease;
 }
 
 @media screen and (max-width: 768px) {
@@ -120,7 +151,7 @@ defineProps({
   }
 
   .article-nav__thumb {
-    height: 100px;
+    height: 110px;
   }
 }
 </style>
