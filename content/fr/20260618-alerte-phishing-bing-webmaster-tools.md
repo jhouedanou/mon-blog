@@ -67,6 +67,4 @@ Nous passons nos journées à durcir des serveurs, corriger des vulnérabilités
 
 Vérifiez vos onglets, alertez vos collègues, et prenez l'habitude de contrôler l'URL avant de cliquer.
 
-Prudence.
-
 — Jean Houédanou · [houedanou.com](https://houedanou.com)
