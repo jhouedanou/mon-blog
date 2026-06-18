@@ -1,0 +1,9 @@
+Il faut avoir une vue mobile pour space inventory \
+\
+(/inventory ) L’inventaire doit être lié aux events 
+Il faut que les elements composant le plat viennent des ingrédient composant le menu item ( réglages; menu items )\
+\
+Lier menu item a un space \
+\
+\
+Les produits disponibles par shop sont rattachés à space menu

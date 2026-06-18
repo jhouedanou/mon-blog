@@ -1,0 +1,146 @@
+# Portfolio de Projets Numériques 🚀
+### Solutions Digitales pour l'Afrique de l'Ouest
+
+---
+
+## 1. Plateforme de Gestion des Stages
+### Bracongo.cd - Numéro de Suivi Intégré
+
+**Objectif**: Centraliser et tracer l'intégralité du parcours des stagiaires
+
+**Fonctionnalités**:
+- Génération automatique de numéros de suivi uniques
+- Dashboard administrateur complet
+- Notifications en temps réel
+- Export reports PDF/Excel
+- Intégration SMS pour alertes
+
+**Modèle de Licence**:
+- **Licence Starter**: 250,000 FCFA/mois (50 stagiaires max)
+- **Licence Professional**: 750,000 FCFA/mois (500 stagiaires)
+- **Licence Enterprise**: 2,500,000 FCFA/mois (illimité)
+- **Setup initial**: 500,000 FCFA (one-time)
+
+---
+
+## 2. Synchronisation Mailchimp × Office 365
+
+**Objectif**: Intégration automatisée des données marketing et CRM
+
+**Fonctionnalités**:
+- Sync bidirectionnelle temps réel
+- Segmentation intelligente des contacts
+- Campagnes email automatisées
+- Reporting analytique avancé
+- Gestion des bounces et unsubscribes
+
+**Modèle de Licence**:
+- **Licence Starter**: 150,000 FCFA/mois (jusqu'à 10k contacts)
+- **Licence Professional**: 450,000 FCFA/mois (jusqu'à 50k contacts)
+- **Licence Enterprise**: 1,200,000 FCFA/mois (contacts illimités)
+- **Frais d'intégration**: 300,000 FCFA (one-time)
+
+---
+
+## 3. Plateforme Web de Suivi des Notes
+
+**Objectif**: Gestion académique et suivi pédagogique en ligne
+
+**Fonctionnalités**:
+- Portal étudiant avec consultation notes 24/7
+- Dashboard professeur multi-classes
+- Historique académique complet
+- Génération automatique de relevés
+- SMS/Email notifications
+- Statistiques et prévisions de réussite
+
+**Modèle de Licence**:
+- **Licence Établissement**: 500,000 FCFA/mois (jusqu'à 500 étudiants)
+- **Licence Standard**: 1,500,000 FCFA/mois (jusqu'à 2000 étudiants)
+- **Licence Premium**: 3,500,000 FCFA/mois (5000+ étudiants)
+- **Deployment & Formation**: 750,000 FCFA (one-time)
+
+---
+
+## 4. Logiciel de Suivi des Cours avec Quiz
+
+**Objectif**: Apprentissage interactif mesurable et gamifié
+
+**Fonctionnalités**:
+- LMS complet (Learning Management System)
+- Création de quiz et évaluations
+- Système de progression et badges
+- Forum et chat intégrés
+- Analytics détaillées par apprenant
+- Certificats digitaux automatisés
+
+**Modèle de Licence**:
+- **Licence Starter**: 300,000 FCFA/mois (1 formateur, 100 apprenants)
+- **Licence Professional**: 900,000 FCFA/mois (5 formateurs, 500 apprenants)
+- **Licence Enterprise**: 2,200,000 FCFA/mois (illimité)
+- **Paramétrage custom**: 400,000 FCFA (one-time)
+
+---
+
+## 5. Système de Gestion RH & Paie Cloud
+
+**Objectif**: Automatiser RH, paie et gestion administrative
+
+**Fonctionnalités**:
+- Calcul de paie automatisé (CTS, IR, CNPS)
+- Gestion des congés et absences
+- Bulletin de paie digitalisé
+- Gestion des documents RH
+- Portal collaborateur
+- Compliance fiscale locale
+
+**Modèle de Licence**:
+- **Licence PME**: 400,000 FCFA/mois (jusqu'à 50 salariés)
+- **Licence Standard**: 1,000,000 FCFA/mois (jusqu'à 200 salariés)
+- **Licence Enterprise**: 2,800,000 FCFA/mois (500+ salariés)
+- **Installation & formation**: 600,000 FCFA (one-time)
+
+---
+
+## 6. Plateforme d'Agrégation d'APIs Métier
+
+**Objectif**: Connecter toutes les solutions business dans un écosystème unique
+
+**Fonctionnalités**:
+- Dashboard unifié multi-applications
+- Synchronisation temps réel entre systèmes
+- Alertes intelligentes et workflows
+- Rapports consolidés
+- Intégration custom d'APIs
+- Backup et disaster recovery
+
+**Modèle de Licence**:
+- **Licence Starter**: 350,000 FCFA/mois (5 intégrations)
+- **Licence Professional**: 1,100,000 FCFA/mois (15 intégrations)
+- **Licence Enterprise**: 3,000,000 FCFA/mois (intégrations illimités)
+- **Développement custom**: Sur devis
+
+---
+
+## 📊 Résumé Tarification
+
+| Projet | Starter | Professional | Enterprise |
+|--------|---------|--------------|-----------|
+| Gestion Stages | 250k | 750k | 2.5M |
+| Mailchimp/O365 | 150k | 450k | 1.2M |
+| Suivi Notes | 500k | 1.5M | 3.5M |
+| LMS + Quiz | 300k | 900k | 2.2M |
+| RH & Paie | 400k | 1M | 2.8M |
+| API Agregation | 350k | 1.1M | 3M |
+
+---
+
+## 🎯 Services Additionnels
+
+- **Support technique**: 100,000 FCFA/mois par projet
+- **Maintenance & Updates**: Inclus dans la licence
+- **Formation utilisateurs**: 150,000 FCFA/jour
+- **Développement custom**: 50,000-75,000 FCFA/jour
+- **Hébergement cloud**: 200,000-500,000 FCFA/mois (selon scale)
+
+---
