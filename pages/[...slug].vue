@@ -16,15 +16,6 @@
             </span>
           </div>
           <h1 class="article-header__title">{{ article.title }}</h1>
-          <ul v-if="articleTags.length" class="article-header__tags" :aria-label="$t('tagsLabel')">
-            <li v-for="tag in articleTags" :key="tag">
-              <NuxtLink
-                :to="`/tags/${slugifyTag(tag)}`"
-                class="article-header__tag"
-                rel="tag"
-              ><span class="article-header__tag-hash" aria-hidden="true">#</span>{{ tag }}</NuxtLink>
-            </li>
-          </ul>
         </header>
 
         <div v-if="article.summary" class="article-summary">
@@ -81,7 +72,6 @@ import DisqusComments from "~/components/DisqusComments.vue";
 import ArticleNavigation from "~/components/ArticleNavigation.vue";
 import SuggestedArticles from "~/components/SuggestedArticles.vue";
 import TableOfContents from "~/components/TableOfContents.vue";
-import { getArticleTags as extractTags, slugifyTag } from "~/utils/tags.js";
 
 const route = useRoute();
 const { locale } = useI18n();
@@ -97,8 +87,6 @@ const { data: article } = await useAsyncData(
 const { data: allArticles } = await useAsyncData("all-articles", () =>
   queryContent("fr").sort({ createdAt: -1 }).find()
 );
-
-const articleTags = computed(() => extractTags(article.value));
 
 const readingTime = computed(() => {
   if (!article.value?.body) return null;
@@ -286,52 +274,13 @@ function formatDate(createdAt) {
 
 .article-header__title {
   font-family: var(--font-display);
-  font-size: clamp(2.25rem, 5.5vw, 4.5rem);
+  font-size: clamp(1.85rem, 4vw, 3rem);
   font-weight: 400;
   font-style: italic;
-  line-height: 1.02;
+  line-height: 1.08;
   color: var(--text-primary);
   margin: 0 0 1.5rem 0;
-  letter-spacing: -0.035em;
-}
-
-.article-header__tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  margin: 1.25rem 0 0;
-  padding: 0;
-  list-style: none;
-}
-
-.article-header__tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.15rem;
-  font-family: var(--font-mono);
-  font-size: 0.68rem;
-  font-weight: 600;
-  text-transform: lowercase;
-  letter-spacing: 0.08em;
-  color: var(--accent);
-  background: var(--accent-soft);
-  border: 1px solid var(--accent);
-  padding: 0.25rem 0.7rem;
-  border-radius: 2px;
-  text-decoration: none;
-  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
-
-  &:hover,
-  &:focus-visible {
-    background: var(--accent);
-    color: #0a0a0f;
-    transform: translateY(-1px);
-    box-shadow: var(--neon-glow-teal);
-  }
-}
-
-.article-header__tag-hash {
-  opacity: 0.6;
+  letter-spacing: -0.03em;
 }
 
 /* ==========================================

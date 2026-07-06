@@ -19,16 +19,9 @@
                 </p>
             </section>
 
-            <!-- Sticky search + tag filters -->
+            <!-- Sticky search -->
             <div class="sticky-filters">
                 <SearchBar v-model="searchQuery" />
-                <TagFilter
-                    v-if="availableTags.length"
-                    :tags="availableTags"
-                    :counts="tagCounts"
-                    :selectedTags="selectedTags"
-                    @update:selectedTags="selectedTags = $event"
-                />
             </div>
 
             <div v-if="filteredArticles && filteredArticles.length" class="mosaic-grid">
@@ -49,13 +42,6 @@
                     </span>
 
                     <div class="mosaic-overlay">
-                        <div v-if="getArticleTags(article).length" class="mosaic-tags">
-                            <span
-                                v-for="tag in getArticleTags(article)"
-                                :key="tag"
-                                class="mosaic-tag"
-                            >{{ tag }}</span>
-                        </div>
                         <div class="mosaic-text-block">
                             <h2 class="mosaic-title">
                                 {{ article.title }}
@@ -96,8 +82,6 @@ import { useAsyncData } from '#app'
 import { useI18n } from 'vue-i18n'
 import { useLocalePath } from '#i18n'
 import SearchBar from '~/components/SearchBar.vue'
-import TagFilter from '~/components/TagFilter.vue'
-import { getArticleTags as extractTags } from '~/utils/tags.js'
 
 const localePath = useLocalePath()
 const { locale } = useI18n()
@@ -108,7 +92,6 @@ const isLoadingMore = ref(false)
 const scrollSentinel = ref(null)
 let infiniteObserver = null
 const searchQuery = ref('')
-const selectedTags = ref([])
 const currentYear = new Date().getFullYear()
 
 const { data: articles } = await useAsyncData('articles', () =>
@@ -130,34 +113,6 @@ const { data: articles } = await useAsyncData('articles', () =>
         })
 )
 
-function getArticleTags(article) {
-    return extractTags(article)
-}
-
-const tagCounts = computed(() => {
-    const counts = {}
-    for (const article of articles.value || []) {
-        for (const tag of getArticleTags(article)) {
-            counts[tag] = (counts[tag] || 0) + 1
-        }
-    }
-    return counts
-})
-
-const allTags = computed(() => {
-    return Object.keys(tagCounts.value).sort((a, b) => tagCounts.value[b] - tagCounts.value[a])
-})
-
-const availableTags = computed(() => {
-    const source = searchQuery.value.trim() ? filteredArticles.value : articles.value
-    if (!source) return []
-    const usedTags = new Set()
-    source.forEach(article => {
-        getArticleTags(article).forEach(t => usedTags.add(t))
-    })
-    return allTags.value.filter(t => usedTags.has(t))
-})
-
 const filteredArticles = computed(() => {
     if (!articles.value) return []
     let result = articles.value
@@ -170,19 +125,12 @@ const filteredArticles = computed(() => {
         )
     }
 
-    if (selectedTags.value.length) {
-        result = result.filter(a => {
-            const tags = getArticleTags(a)
-            return selectedTags.value.some(t => tags.includes(t))
-        })
-    }
-
     return result
 })
 
-watch([searchQuery, selectedTags], () => {
+watch(searchQuery, () => {
     displayCount.value = ITEMS_PER_PAGE
-}, { deep: true })
+})
 
 const displayedArticles = computed(() => {
     if (!filteredArticles.value) return []
@@ -341,7 +289,7 @@ function formatDate(createdAt) {
 .hero-intro__title {
     font-family: var(--font-display);
     font-weight: 400;
-    font-size: clamp(2.75rem, 8vw, 6.5rem);
+    font-size: clamp(2rem, 5vw, 3.75rem);
     line-height: 0.95;
     letter-spacing: -0.04em;
     color: var(--text-primary);
@@ -491,8 +439,8 @@ function formatDate(createdAt) {
         grid-row: span 3;
 
         .mosaic-title {
-            font-size: clamp(1.5rem, 3.5vw, 2.6rem);
-            line-height: 1.05;
+            font-size: clamp(1.3rem, 2.4vw, 1.9rem);
+            line-height: 1.1;
         }
 
         .mosaic-excerpt {
@@ -506,7 +454,7 @@ function formatDate(createdAt) {
         grid-row: span 2;
 
         .mosaic-title {
-            font-size: clamp(1.25rem, 2.2vw, 1.7rem);
+            font-size: clamp(1.1rem, 1.8vw, 1.5rem);
         }
     }
 
@@ -600,27 +548,6 @@ function formatDate(createdAt) {
     );
 }
 
-.mosaic-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.3rem;
-    margin-bottom: 0.65rem;
-}
-
-.mosaic-tag {
-    font-family: var(--font-mono);
-    font-size: 0.62rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.14em;
-    color: var(--tile-accent, var(--accent));
-    background: rgba(0, 0, 0, 0.4);
-    border: 1px solid var(--tile-accent, var(--accent));
-    padding: 0.2rem 0.55rem;
-    border-radius: 2px;
-    backdrop-filter: blur(4px);
-}
-
 .mosaic-text-block {
     margin-bottom: 0.65rem;
 }
@@ -629,7 +556,7 @@ function formatDate(createdAt) {
     font-family: var(--font-display);
     font-style: italic;
     font-weight: 400;
-    font-size: clamp(1.05rem, 1.4vw, 1.35rem);
+    font-size: clamp(0.95rem, 1.2vw, 1.15rem);
     line-height: 1.15;
     color: #ffffff;
     letter-spacing: -0.015em;
