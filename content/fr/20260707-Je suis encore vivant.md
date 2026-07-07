@@ -82,4 +82,6 @@ Eh bien non. Pas vraiment.
 Je sais pertinemment que demain, à peine levé, il y aura peut-être une panne serveur ou un bug critique à résoudre en urgence. 
 C'est un métier que j'ai choisi, ce n'est pas le pire du monde, mais surtout des gens comptent sur moi.
 
+Sur ce, je dois aller dormir. Demain, il y aura encore des murs à se prendre, et je compte bien les affronter.
+
 **Jean-Luc Houédanou**
