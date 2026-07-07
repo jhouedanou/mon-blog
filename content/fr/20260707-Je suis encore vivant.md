@@ -1,6 +1,6 @@
 ---
 title: "Se prendre des murs (et pourquoi c’est ça, le vrai métier de dev)"
-image: "articles/cenz.png"
+image: "articles/nuit.jpg"
 date: "2026-07-06"
 description: "Une soirée où tout semblait vouloir casser... jusqu'à ce que tout finisse par rentrer dans l'ordre."
 keywords: "développement, bugs, Vercel, Cloudflare, programmation, anecdote"
