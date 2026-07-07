@@ -6,6 +6,7 @@ description: "Je viens de tomber sur une arnaque qui cible directement les webma
 keywords: [phishing, bing webmaster tools, sécurité, seo, google ads, malvertising, arnaque, microsoft, sécurité web]
 tags: [sécurité, seo, phishing, alerte]
 ---
+# Alerte : le premier résultat Google pour « Bing Webmaster Tools » est un site de phishing
 
 D'habitude, sur ce blog, je plaisante. Là, non.
 
