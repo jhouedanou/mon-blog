@@ -9,10 +9,8 @@
                     </span>
                 </div>
                 <h1 class="hero-intro__title">
-                    <span class="hero-intro__word">Pensées,</span>
-                    <span class="hero-intro__word hero-intro__word--accent">obsessions</span>
-                    <span class="hero-intro__word">&amp; éclats</span>
-                    <span class="hero-intro__dot">.</span>
+                    <span class="hero-intro__word">Jean<span class="hero-intro__dot">-</span>Luc</span>
+                    <span class="hero-intro__word hero-intro__word--accent">Houédanou</span>
                 </h1>
                 <p class="hero-intro__lede">
                     Le journal de Jean-Luc Houédanou — tech, opinions, et tout ce qui passe par la tête.
