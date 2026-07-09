@@ -134,7 +134,6 @@ useHead(() => ({
 
 .tag-archive__title {
   font-family: var(--font-display);
-  font-style: italic;
   font-size: clamp(2.5rem, 7vw, 5rem);
   font-weight: 400;
   letter-spacing: -0.03em;
@@ -184,7 +183,7 @@ useHead(() => ({
   &:hover {
     transform: translateY(-3px);
     border-color: var(--accent);
-    box-shadow: var(--neon-glow-teal);
+    box-shadow: var(--card-shadow-hover);
 
     .tag-card__title {
       color: var(--accent);
@@ -205,7 +204,7 @@ useHead(() => ({
   filter: saturate(0.9);
 
   &--no-image {
-    background: linear-gradient(135deg, #0a0a0f 0%, #1a1a3a 50%, #00ffd1 200%);
+    background: linear-gradient(135deg, var(--bg-card), var(--bg-secondary), color-mix(in srgb, var(--accent) 28%, var(--bg-secondary)));
   }
 }
 
@@ -227,7 +226,6 @@ useHead(() => ({
 
 .tag-card__title {
   font-family: var(--font-display);
-  font-style: italic;
   font-size: 1.2rem;
   font-weight: 500;
   letter-spacing: -0.015em;
@@ -265,7 +263,6 @@ useHead(() => ({
 .tag-archive__empty {
   text-align: center;
   color: var(--text-muted);
-  font-style: italic;
   padding: 3rem 0;
 }
 
@@ -295,7 +292,7 @@ useHead(() => ({
     color: var(--accent);
     border-color: var(--accent);
     background: var(--accent-soft);
-    box-shadow: var(--neon-glow-teal);
+    box-shadow: var(--card-shadow-hover);
 
     .tag-archive__back-arrow {
       transform: translateX(-4px);

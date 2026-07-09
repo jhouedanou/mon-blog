@@ -58,7 +58,7 @@ defineProps({
   &:hover {
     transform: translateY(-3px);
     border-color: var(--accent);
-    box-shadow: var(--neon-glow-teal);
+    box-shadow: var(--card-shadow-hover);
 
     .article-nav__title {
       color: var(--accent);
@@ -93,7 +93,7 @@ defineProps({
   filter: saturate(0.9);
 
   &--no-image {
-    background: linear-gradient(135deg, #0a0a0f 0%, #2a0a3a 50%, #b026ff 200%);
+    background: linear-gradient(135deg, var(--bg-card), var(--bg-secondary), color-mix(in srgb, var(--accent) 28%, var(--bg-secondary)));
   }
 }
 
@@ -123,8 +123,7 @@ defineProps({
 
 .article-nav__title {
   font-family: var(--font-display);
-  font-style: italic;
-  font-weight: 400;
+  font-weight: 650;
   font-size: 1.1rem;
   line-height: 1.25;
   letter-spacing: -0.015em;

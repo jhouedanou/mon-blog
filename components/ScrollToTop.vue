@@ -48,7 +48,7 @@ onUnmounted(() => {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: var(--neon-glow-teal), var(--card-shadow);
+    box-shadow: var(--card-shadow);
     transition: all 0.25s ease;
     z-index: 90;
     backdrop-filter: blur(8px);
@@ -59,9 +59,9 @@ onUnmounted(() => {
 
     &:hover {
         background: var(--accent);
-        color: #0a0a0f;
+        color: var(--accent-contrast);
         transform: translateY(-3px);
-        box-shadow: 0 0 40px var(--accent), var(--card-shadow);
+        box-shadow: var(--card-shadow-hover);
     }
 }
 

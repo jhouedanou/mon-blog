@@ -13,7 +13,7 @@
                     <span class="hero-intro__word hero-intro__word--accent">Houédanou</span>
                 </h1>
                 <p class="hero-intro__lede">
-                    Le journal de Jean-Luc Houédanou — tech, opinions, et tout ce qui passe par la tête.
+                    Retours d'expérience, outils web, administration système et culture numérique depuis Abidjan.
                 </p>
             </section>
 
@@ -192,12 +192,10 @@ function isNew(article) {
 }
 
 const fallbackGradients = [
-    'linear-gradient(135deg, #0a0a0f 0%, #1a1a3a 50%, #00ffd1 200%)',
-    'linear-gradient(135deg, #0a0a0f 0%, #2a0a3a 50%, #b026ff 200%)',
-    'linear-gradient(135deg, #0a0a0f 0%, #3a0a2a 50%, #ff2e93 200%)',
-    'linear-gradient(135deg, #0a0a0f 0%, #1a2a3a 50%, #00bbff 200%)',
-    'linear-gradient(135deg, #0a0a0f 0%, #3a1a0a 50%, #ffb627 200%)',
-    'linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 50%, #55d6be 200%)',
+    'linear-gradient(135deg, var(--bg-card) 0%, var(--bg-secondary) 58%, color-mix(in srgb, var(--accent) 34%, var(--bg-secondary)) 100%)',
+    'linear-gradient(135deg, var(--bg-card) 0%, var(--bg-secondary) 62%, color-mix(in srgb, var(--accent-violet) 30%, var(--bg-secondary)) 100%)',
+    'linear-gradient(135deg, var(--bg-card) 0%, var(--bg-secondary) 60%, color-mix(in srgb, var(--accent-magenta) 28%, var(--bg-secondary)) 100%)',
+    'linear-gradient(135deg, var(--bg-card) 0%, var(--bg-secondary) 64%, color-mix(in srgb, var(--accent-amber) 28%, var(--bg-secondary)) 100%)',
 ]
 
 const accentVariants = ['teal', 'magenta', 'violet', 'teal', 'amber', 'magenta']
@@ -266,7 +264,7 @@ function formatDate(createdAt) {
    Hero intro
    ========================================== */
 .hero-intro {
-    padding: 4.5rem 0 3rem;
+    padding: 4.25rem 0 3rem;
     border-bottom: 1px solid var(--border-color);
     margin-bottom: 2rem;
 }
@@ -280,16 +278,16 @@ function formatDate(createdAt) {
     font-size: 0.78rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.18em;
+    letter-spacing: 0.12em;
     color: var(--accent);
 }
 
 .hero-intro__title {
     font-family: var(--font-display);
-    font-weight: 400;
-    font-size: clamp(2rem, 5vw, 3.75rem);
-    line-height: 0.95;
-    letter-spacing: -0.04em;
+    font-weight: 650;
+    font-size: clamp(2.35rem, 5vw, 4.25rem);
+    line-height: 1;
+    letter-spacing: -0.03em;
     color: var(--text-primary);
     margin: 0 0 1.5rem;
     display: flex;
@@ -302,8 +300,7 @@ function formatDate(createdAt) {
     display: inline-block;
 
     &--accent {
-        font-style: italic;
-        font-weight: 300;
+        font-weight: 650;
         color: var(--accent);
         position: relative;
 
@@ -313,9 +310,9 @@ function formatDate(createdAt) {
             left: 0;
             right: 0;
             bottom: 0.08em;
-            height: 0.06em;
+            height: 0.04em;
             background: var(--accent);
-            opacity: 0.35;
+            opacity: 0.22;
             transform-origin: left;
             animation: underlineSlide 1.4s cubic-bezier(0.65, 0, 0.35, 1) 0.4s both;
         }
@@ -323,9 +320,8 @@ function formatDate(createdAt) {
 }
 
 .hero-intro__dot {
-    color: var(--accent-magenta);
-    font-style: italic;
-    font-weight: 300;
+    color: var(--accent);
+    font-weight: 650;
 }
 
 @keyframes underlineSlide {
@@ -335,7 +331,7 @@ function formatDate(createdAt) {
 
 .hero-intro__lede {
     font-family: var(--font-sans);
-    font-size: 1.05rem;
+    font-size: 1.08rem;
     color: var(--text-secondary);
     max-width: 580px;
     line-height: 1.55;
@@ -392,7 +388,8 @@ function formatDate(createdAt) {
     cursor: pointer;
     text-decoration: none;
     transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
-                box-shadow 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+                box-shadow 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+                border-color 0.3s ease;
     animation: fadeInUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
     border: 1px solid var(--border-color);
     grid-column: span 2;
@@ -422,12 +419,12 @@ function formatDate(createdAt) {
         }
 
         .mosaic-title {
-            color: var(--accent);
+            color: #ffffff;
         }
 
         .mosaic-arrow {
             transform: translate(4px, -4px);
-            color: var(--accent);
+            color: #ffffff;
         }
     }
 
@@ -461,27 +458,22 @@ function formatDate(createdAt) {
         grid-row: span 2;
     }
 
-    /* Accent variants — left border + hover glow */
+    /* Accent variants — calm border treatment */
     &--accent-teal {
         --tile-accent: var(--accent);
-        --tile-glow: var(--neon-glow-teal);
     }
     &--accent-magenta {
         --tile-accent: var(--accent-magenta);
-        --tile-glow: var(--neon-glow-magenta);
     }
     &--accent-violet {
         --tile-accent: var(--accent-violet);
-        --tile-glow: var(--neon-glow-violet);
     }
     &--accent-amber {
         --tile-accent: var(--accent-amber);
-        --tile-glow: 0 0 32px rgba(255, 182, 39, 0.3);
     }
 
     &:hover {
         border-color: var(--tile-accent, var(--accent));
-        box-shadow: var(--tile-glow, var(--neon-glow-teal));
     }
 }
 
@@ -503,16 +495,14 @@ function formatDate(createdAt) {
     border-radius: 2px;
     z-index: 3;
     letter-spacing: 0.12em;
-    border: 1px solid var(--accent-magenta);
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .mosaic-badge__dot {
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background: var(--accent-magenta);
-    box-shadow: 0 0 8px var(--accent-magenta);
-    animation: pulseDot 1.6s ease-in-out infinite;
+    background: var(--accent);
 }
 
 @keyframes pulseDot {
@@ -552,10 +542,9 @@ function formatDate(createdAt) {
 
 .mosaic-title {
     font-family: var(--font-display);
-    font-style: italic;
-    font-weight: 400;
-    font-size: clamp(0.95rem, 1.2vw, 1.15rem);
-    line-height: 1.15;
+    font-weight: 650;
+    font-size: clamp(1rem, 1.2vw, 1.2rem);
+    line-height: 1.18;
     color: #ffffff;
     letter-spacing: -0.015em;
     margin: 0 0 0.4rem 0;
@@ -565,9 +554,9 @@ function formatDate(createdAt) {
 
 .mosaic-excerpt {
     font-family: var(--font-sans);
-    font-size: 0.82rem;
-    color: rgba(255, 255, 255, 0.78);
-    line-height: 1.5;
+    font-size: 0.86rem;
+    color: rgba(255, 255, 255, 0.82);
+    line-height: 1.52;
     margin: 0;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -639,7 +628,6 @@ function formatDate(createdAt) {
     height: 6px;
     border-radius: 50%;
     background: var(--accent);
-    box-shadow: 0 0 12px var(--accent);
     animation: loadingBounce 1.2s infinite ease-in-out;
 
     &:nth-child(2) { animation-delay: 0.15s; }

@@ -209,26 +209,30 @@ function formatDate(createdAt) {
   color: var(--text-primary);
   line-height: 1.7;
   background: transparent;
+  overflow-x: clip;
 }
 
 .article-layout {
-  display: flex;
-  max-width: 1280px;
+  display: grid;
+  grid-template-columns: minmax(0, 720px) minmax(220px, 280px);
+  justify-content: center;
+  align-items: start;
+  max-width: 1180px;
+  width: 100%;
   margin: 0 auto;
-  gap: 4rem;
+  gap: clamp(2rem, 5vw, 4rem);
   padding: 0 1.5rem;
 }
 
 .article-layout > :deep(.toc) {
-  width: 260px;
-  flex-shrink: 0;
+  width: 100%;
 }
 
 /* ==========================================
    Article header
    ========================================== */
 .article-header {
-  margin-bottom: 3rem;
+  margin-bottom: 2.75rem;
   position: relative;
 }
 
@@ -237,19 +241,19 @@ function formatDate(createdAt) {
   align-items: center;
   gap: 0.6rem;
   margin-bottom: 1.5rem;
-  padding: 0.4rem 0.8rem;
+  padding: 0.45rem 0.75rem;
   border: 1px solid var(--border-color);
-  border-radius: 2px;
+  border-radius: 6px;
   background: var(--bg-card);
 }
 
 .article-header__date {
   font-family: var(--font-mono);
   font-size: 0.72rem;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--accent);
   text-transform: uppercase;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.1em;
 }
 
 .article-header__divider {
@@ -275,20 +279,20 @@ function formatDate(createdAt) {
 .article-header__title {
   font-family: var(--font-display);
   font-size: clamp(1.85rem, 4vw, 3rem);
-  font-weight: 400;
-  font-style: italic;
-  line-height: 1.08;
+  font-weight: 650;
+  line-height: 1.06;
   color: var(--text-primary);
   margin: 0 0 1.5rem 0;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
 }
 
 /* ==========================================
    Article body
    ========================================== */
 .article-container {
-  max-width: 760px;
-  flex: 1;
+  max-width: 720px;
+  width: 100%;
   min-width: 0;
   padding: 4rem 0 4rem;
 }
@@ -299,21 +303,9 @@ function formatDate(createdAt) {
   padding: 1.75rem 2rem;
   background: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-left: 3px solid var(--accent-magenta);
-  border-radius: 2px;
-
-  &::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      135deg,
-      rgba(255, 46, 147, 0.04),
-      transparent 60%
-    );
-    pointer-events: none;
-    border-radius: 2px;
-  }
+  border-left: 3px solid var(--accent);
+  border-radius: 8px;
+  box-shadow: var(--card-shadow);
 }
 
 .article-summary__label {
@@ -321,19 +313,18 @@ function formatDate(createdAt) {
   font-size: 0.7rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.18em;
-  color: var(--accent-magenta);
+  letter-spacing: 0.12em;
+  color: var(--accent);
   display: block;
   margin-bottom: 0.65rem;
   position: relative;
 }
 
 .article-summary p {
-  font-family: var(--font-display);
-  font-size: 1.15rem;
-  font-style: italic;
-  font-weight: 400;
-  line-height: 1.55;
+  font-family: var(--font-body);
+  font-size: 1.12rem;
+  font-weight: 500;
+  line-height: 1.62;
   color: var(--text-primary);
   margin: 0;
   position: relative;
@@ -341,25 +332,28 @@ function formatDate(createdAt) {
 }
 
 /* ==========================================
-   Article content — magazine editorial typography
+   Article content — editorial typography
    ========================================== */
 .article-content {
+  width: 100%;
+  min-width: 0;
+
   :deep(h1:first-child) {
     display: none;
   }
 
   :deep(h2) {
     font-family: var(--font-display);
-    font-size: clamp(1.75rem, 3vw, 2.4rem);
-    font-weight: 400;
-    font-style: italic;
+    font-size: clamp(1.65rem, 3vw, 2.25rem);
+    font-weight: 650;
     color: var(--text-primary);
-    margin-top: 3.5rem;
+    margin-top: 3.25rem;
     margin-bottom: 1.25rem;
-    line-height: 1.15;
-    letter-spacing: -0.025em;
+    line-height: 1.18;
+    letter-spacing: -0.018em;
     position: relative;
-    padding-left: 1.25rem;
+    padding-left: 1rem;
+    text-wrap: balance;
 
     &::before {
       content: '';
@@ -367,7 +361,7 @@ function formatDate(createdAt) {
       left: 0;
       top: 0.5em;
       bottom: 0.3em;
-      width: 3px;
+      width: 2px;
       background: var(--accent);
       border-radius: 2px;
     }
@@ -375,8 +369,8 @@ function formatDate(createdAt) {
 
   :deep(h3) {
     font-family: var(--font-display);
-    font-size: 1.45rem;
-    font-weight: 500;
+    font-size: 1.38rem;
+    font-weight: 650;
     color: var(--text-primary);
     margin-top: 2.5rem;
     margin-bottom: 0.85rem;
@@ -386,22 +380,18 @@ function formatDate(createdAt) {
   :deep(p) {
     font-family: var(--font-body);
     font-size: 1.08rem;
-    line-height: 1.78;
+    line-height: 1.8;
     color: var(--text-secondary);
     margin-bottom: 1.5rem;
+    text-wrap: pretty;
   }
 
-  /* Drop cap on first paragraph */
   :deep(p:first-of-type::first-letter) {
-    font-family: var(--font-display);
-    font-style: italic;
-    font-weight: 400;
-    font-size: 4.5em;
-    float: left;
-    line-height: 0.85;
-    margin: 0.05em 0.12em 0 0;
-    color: var(--accent);
-    padding-top: 0.05em;
+    font: inherit;
+    float: none;
+    margin: 0;
+    color: inherit;
+    padding: 0;
   }
 
   :deep(a) {
@@ -413,41 +403,42 @@ function formatDate(createdAt) {
 
     &:hover {
       background: var(--accent);
-      color: #0a0a0f;
+      color: var(--accent-contrast);
+    }
+  }
+
+  :deep(h2 a),
+  :deep(h3 a) {
+    color: inherit;
+    border-bottom: 0;
+    padding: 0;
+
+    &:hover {
+      background: transparent;
+      color: inherit;
     }
   }
 
   :deep(blockquote) {
     background: var(--bg-card);
     border: 1px solid var(--border-color);
-    border-left: 3px solid var(--accent-violet);
+    border-left: 3px solid var(--accent);
     margin: 2.5rem 0;
-    padding: 2rem 2rem 2rem 3.5rem;
-    border-radius: 2px;
+    padding: 1.5rem 1.75rem;
+    border-radius: 8px;
     position: relative;
     box-shadow: var(--card-shadow);
 
     &::before {
-      content: '\201C';
-      font-family: var(--font-display);
-      font-style: italic;
-      font-size: 5rem;
-      color: var(--accent-violet);
-      opacity: 0.5;
-      position: absolute;
-      top: -0.1em;
-      left: 0.5rem;
-      line-height: 1;
-      text-shadow: var(--neon-glow-violet);
+      content: none;
     }
 
     p {
       margin-bottom: 0.75rem;
       font-family: var(--font-display);
-      font-style: italic;
-      font-weight: 400;
-      font-size: 1.2rem;
-      line-height: 1.55;
+      font-weight: 550;
+      font-size: 1.14rem;
+      line-height: 1.6;
       color: var(--text-primary);
       letter-spacing: -0.005em;
 
@@ -475,9 +466,10 @@ function formatDate(createdAt) {
         content: '';
         position: absolute;
         left: 0;
-        top: 0.7em;
-        width: 12px;
-        height: 1px;
+        top: 0.76em;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
         background: var(--accent);
       }
 
@@ -486,8 +478,9 @@ function formatDate(createdAt) {
         margin-bottom: 0.5rem;
 
         li::before {
-          width: 8px;
-          background: var(--accent-magenta);
+          width: 5px;
+          height: 5px;
+          background: var(--accent);
         }
       }
     }
@@ -577,7 +570,7 @@ function formatDate(createdAt) {
   :deep(img) {
     max-width: 100%;
     height: auto;
-    border-radius: 4px;
+    border-radius: 8px;
     margin: 2.5rem 0;
     box-shadow: var(--card-shadow);
     border: 1px solid var(--border-color);
@@ -595,7 +588,7 @@ function formatDate(createdAt) {
   }
 
   :deep(pre) {
-    border-radius: 4px;
+    border-radius: 8px;
     margin: 2rem 0;
     background: var(--code-bg);
     border: 1px solid var(--border-color);
@@ -611,7 +604,7 @@ function formatDate(createdAt) {
     border-radius: 3px;
     font-family: var(--font-mono);
     font-size: 0.88em;
-    color: var(--accent);
+    color: var(--text-primary);
     border: 1px solid var(--border-color);
   }
 
@@ -638,19 +631,6 @@ function formatDate(createdAt) {
     height: 1px;
     background: var(--border-color);
     max-width: 60%;
-    position: relative;
-
-    &::before {
-      content: '✦';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background: var(--bg-primary);
-      padding: 0 1rem;
-      color: var(--accent);
-      font-size: 0.85rem;
-    }
   }
 }
 
@@ -725,7 +705,7 @@ function formatDate(createdAt) {
     color: var(--accent);
     border-color: var(--accent);
     background: var(--accent-soft);
-    box-shadow: var(--neon-glow-teal);
+    box-shadow: var(--card-shadow-hover);
 
     .back-arrow {
       transform: translateX(-4px);
@@ -795,7 +775,7 @@ function formatDate(createdAt) {
    ========================================== */
 @media screen and (max-width: 1100px) {
   .article-layout {
-    flex-direction: column;
+    display: block;
     gap: 2rem;
   }
 
@@ -807,9 +787,12 @@ function formatDate(createdAt) {
 @media screen and (max-width: 768px) {
   .article-layout {
     padding: 0 1rem;
+    max-width: 100%;
   }
 
   .article-container {
+    max-width: 100%;
+    width: 100%;
     padding: 2.5rem 0 3rem;
   }
 
@@ -817,13 +800,27 @@ function formatDate(createdAt) {
     margin-bottom: 2rem;
   }
 
+  .article-header__meta {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .article-header__title {
+    font-size: clamp(1.75rem, 8.5vw, 2.25rem);
+    overflow-wrap: anywhere;
+  }
+
   .article-content {
+    max-width: 100%;
+
     :deep(p), :deep(li) {
       font-size: 1rem;
+      overflow-wrap: break-word;
     }
 
-    :deep(p:first-of-type::first-letter) {
-      font-size: 3.5em;
+    :deep(h2),
+    :deep(h3) {
+      overflow-wrap: anywhere;
     }
   }
 
@@ -850,7 +847,6 @@ function formatDate(createdAt) {
 
   p {
     font-family: var(--font-display);
-    font-style: italic;
     font-size: 1.85rem;
     color: var(--text-primary);
     margin-bottom: 1.5rem;
@@ -871,8 +867,8 @@ function formatDate(createdAt) {
 
     &:hover {
       background: var(--accent);
-      color: #0a0a0f;
-      box-shadow: var(--neon-glow-teal);
+      color: var(--accent-contrast);
+      box-shadow: var(--card-shadow-hover);
     }
   }
 }

@@ -98,7 +98,6 @@ useHead(() => ({
 
 .tags-index__title {
   font-family: var(--font-display);
-  font-style: italic;
   font-size: clamp(2.5rem, 7vw, 5rem);
   font-weight: 400;
   letter-spacing: -0.03em;
@@ -145,7 +144,7 @@ useHead(() => ({
     transform: translateY(-2px);
     border-color: var(--tag-color, var(--accent));
     color: var(--tag-color, var(--accent));
-    box-shadow: 0 0 24px color-mix(in srgb, var(--tag-color, var(--accent)) 30%, transparent);
+    background: var(--accent-soft);
   }
 }
 
@@ -164,7 +163,6 @@ useHead(() => ({
 }
 
 .tags-index__empty {
-  font-style: italic;
   color: var(--text-muted);
   text-align: center;
   padding: 2rem 0;
@@ -196,7 +194,7 @@ useHead(() => ({
     color: var(--accent);
     border-color: var(--accent);
     background: var(--accent-soft);
-    box-shadow: var(--neon-glow-teal);
+    box-shadow: var(--card-shadow-hover);
 
     .tags-index__back-arrow {
       transform: translateX(-4px);

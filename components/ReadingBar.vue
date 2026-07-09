@@ -94,13 +94,13 @@ onUnmounted(() => {
     width: 32px;
     border-radius: 50%;
     object-fit: cover;
+    border: 1px solid var(--border-color);
   }
 }
 
 .reading-bar__title {
   font-family: var(--font-display);
-  font-style: italic;
-  font-weight: 500;
+  font-weight: 650;
   font-size: 0.95rem;
   letter-spacing: -0.01em;
   color: var(--text-primary);
@@ -153,8 +153,7 @@ onUnmounted(() => {
 
 .reading-bar__progress {
   height: 2px;
-  background: linear-gradient(90deg, var(--accent), var(--accent-magenta));
-  box-shadow: 0 0 12px var(--accent);
+  background: var(--accent);
   transition: width 0.1s linear;
 }
 

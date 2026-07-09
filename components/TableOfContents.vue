@@ -79,7 +79,10 @@ onUnmounted(() => {
 
 <style lang="scss" scoped>
 .toc {
-    position: relative;
+    position: sticky;
+    top: calc(72px + 1.5rem);
+    align-self: flex-start;
+    max-height: calc(100dvh - 104px);
 }
 
 .toc__mobile-toggle {
@@ -89,15 +92,22 @@ onUnmounted(() => {
     right: 2rem;
     width: 48px;
     height: 48px;
-    border-radius: 50%;
-    border: none;
-    background: var(--text-primary, #1a1a2e);
-    color: var(--bg-card, #fff);
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background: var(--bg-card);
+    color: var(--text-primary);
     cursor: pointer;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--card-shadow);
     z-index: 89;
+    transition: background 0.25s ease, border-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
+
+    &:hover {
+        border-color: var(--accent);
+        color: var(--accent);
+        transform: translateY(-2px);
+    }
 
     .material-icons {
         font-size: 1.4rem;
@@ -105,11 +115,16 @@ onUnmounted(() => {
 }
 
 .toc__nav {
-    position: sticky;
-    top: 80px;
-    max-height: calc(100vh - 100px);
+    position: static;
+    max-height: calc(100dvh - 104px);
     overflow-y: auto;
     padding: 1rem 0;
+    background: color-mix(in srgb, var(--bg-card) 78%, transparent);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: var(--card-shadow);
+    scrollbar-width: thin;
+    scrollbar-color: var(--border-strong) transparent;
 }
 
 .toc__heading {
@@ -117,7 +132,7 @@ onUnmounted(() => {
     font-size: 0.72rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.18em;
+    letter-spacing: 0.14em;
     color: var(--accent);
     margin: 0 0 1rem 0;
     padding-left: 1rem;
@@ -143,19 +158,22 @@ onUnmounted(() => {
         color: var(--accent);
         border-left-color: var(--accent);
         background: var(--accent-soft);
+        font-weight: 600;
     }
 }
 
 .toc__link {
     display: block;
-    padding: 0.45rem 1rem;
+    padding: 0.5rem 1rem;
     font-family: var(--font-sans);
-    font-size: 0.85rem;
+    font-size: 0.9rem;
+    font-weight: 500;
     color: var(--text-secondary);
     text-decoration: none;
     border-left: 2px solid transparent;
-    transition: all 0.25s ease;
+    transition: background 0.25s ease, border-color 0.25s ease, color 0.25s ease;
     line-height: 1.45;
+    text-wrap: pretty;
 
     &:hover {
         color: var(--accent);
@@ -164,6 +182,12 @@ onUnmounted(() => {
 }
 
 @media screen and (max-width: 1100px) {
+    .toc {
+        position: relative;
+        top: auto;
+        max-height: none;
+    }
+
     .toc__mobile-toggle {
         display: flex;
     }
@@ -176,8 +200,9 @@ onUnmounted(() => {
         width: 280px;
         max-height: 50vh;
         background: var(--bg-card);
-        border-radius: 12px;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        box-shadow: var(--card-shadow-hover);
         padding: 1rem 0;
         z-index: 88;
 

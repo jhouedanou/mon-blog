@@ -21,7 +21,7 @@ export default {
   lightMode: "Mode clair",
   skipToContent: "Aller au contenu",
   errorTitle: "Page introuvable",
-  errorMessage: "Oups ! La page que vous cherchez n'existe pas ou a été déplacée.",
+  errorMessage: "La page que vous cherchez n'existe pas ou a été déplacée.",
   backToHome: "Retour à l'accueil",
   recentArticles: "Articles récents",
 

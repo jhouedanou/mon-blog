@@ -49,14 +49,14 @@ export function getArticleTags(article) {
 
 // Stable hash → pick a color from a palette (used by TagFilter).
 const TAG_PALETTE = [
-  '#00ffd1', // accent teal
-  '#ff2e93', // accent magenta
-  '#b026ff', // accent violet
-  '#ffb627', // accent amber
-  '#00bbf9', // bleu
-  '#55d6be', // mint
-  '#ff85a1', // rose
-  '#9b5de5', // soft purple
+  '#2f6b5f',
+  '#5f6d76',
+  '#6b655d',
+  '#716b55',
+  '#4f7268',
+  '#667466',
+  '#7a6f66',
+  '#586d77',
 ]
 
 const tagColorCache = {}

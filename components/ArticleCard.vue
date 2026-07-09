@@ -92,8 +92,6 @@ function getNetworkIcon(network) {
 
 
 <style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@400;600;700&display=swap');
-
 .article-image {
     width: 100%;
     height: auto;
@@ -103,7 +101,7 @@ function getNetworkIcon(network) {
 }
 
 .article-card {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-body);
     margin: 2rem auto;
     padding: 2rem;
     background-color: #fff;
@@ -117,7 +115,7 @@ function getNetworkIcon(network) {
 }
 
 .article-title {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-display);
     font-size: 1.8rem;
     font-weight: 700;
     margin-bottom: 0.5rem;

@@ -82,13 +82,11 @@ useHead({
 
 .error-page__code {
   font-family: var(--font-display);
-  font-style: italic;
-  font-weight: 400;
+  font-weight: 650;
   font-size: clamp(5rem, 14vw, 9rem);
   color: var(--accent);
   line-height: 0.9;
   letter-spacing: -0.04em;
-  text-shadow: var(--neon-glow-teal);
 }
 
 .error-page__emoji {
@@ -98,7 +96,6 @@ useHead({
 
 .error-page__title {
   font-family: var(--font-display);
-  font-style: italic;
   font-size: clamp(1.65rem, 4vw, 2.4rem);
   font-weight: 400;
   letter-spacing: -0.025em;
@@ -137,8 +134,8 @@ useHead({
 
   &:hover {
     background: var(--accent);
-    color: #0a0a0f;
-    box-shadow: var(--neon-glow-teal);
+    color: var(--accent-contrast);
+    box-shadow: var(--card-shadow-hover);
     transform: translateY(-2px);
   }
 }
@@ -178,7 +175,7 @@ useHead({
   &:hover {
     transform: translateY(-3px);
     border-color: var(--accent);
-    box-shadow: var(--neon-glow-teal);
+    box-shadow: var(--card-shadow-hover);
   }
 }
 
@@ -190,7 +187,7 @@ useHead({
   filter: saturate(0.9);
 
   &--no-image {
-    background: linear-gradient(135deg, #0a0a0f 0%, #1a1a3a 50%, #00ffd1 200%);
+    background: linear-gradient(135deg, var(--bg-card), var(--bg-secondary), color-mix(in srgb, var(--accent) 28%, var(--bg-secondary)));
   }
 }
 
@@ -200,9 +197,8 @@ useHead({
 
 .error-page__article-title {
   font-family: var(--font-display);
-  font-style: italic;
   font-size: 0.9rem;
-  font-weight: 400;
+  font-weight: 650;
   letter-spacing: -0.01em;
   color: var(--text-primary);
   line-height: 1.25;

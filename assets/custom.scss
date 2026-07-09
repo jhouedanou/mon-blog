@@ -1,99 +1,98 @@
 /* ==========================================
-   Magazine Luxe / Dark Neon — Design System
+   Editorial developer blog — Design System
    ========================================== */
 
-/* Dark by default — strong opinion */
 :root,
 html:not([data-theme]),
-html[data-theme="dark"] {
-  --bg-primary: #0a0a0f;
-  --bg-secondary: #11111a;
-  --bg-card: #14141f;
-  --bg-elevated: #1c1c2a;
-  --bg-glass: rgba(20, 20, 31, 0.7);
-
-  --text-primary: #f4f1ea;
-  --text-secondary: #b8b5bd;
-  --text-muted: #6b6878;
-  --text-faded: #4a4756;
-
-  --border-color: #26263a;
-  --border-strong: #3a3a52;
-
-  --accent: #00ffd1;
-  --accent-hover: #6affe2;
-  --accent-soft: rgba(0, 255, 209, 0.12);
-  --accent-violet: #b026ff;
-  --accent-magenta: #ff2e93;
-  --accent-amber: #ffb627;
-
-  --code-bg: #16162a;
-  --blockquote-bg: #11111a;
-
-  --card-shadow: 0 24px 60px -28px rgba(0, 0, 0, 0.7);
-  --card-shadow-hover: 0 32px 80px -20px rgba(0, 255, 209, 0.22), 0 0 0 1px rgba(0, 255, 209, 0.25);
-
-  --neon-glow-teal: 0 0 32px rgba(0, 255, 209, 0.35);
-  --neon-glow-magenta: 0 0 32px rgba(255, 46, 147, 0.35);
-  --neon-glow-violet: 0 0 32px rgba(176, 38, 255, 0.35);
-
-  --grid-line: rgba(255, 255, 255, 0.04);
-  --overlay-bg: rgba(0, 0, 0, 0.92);
-
-  color-scheme: dark;
-}
-
 html[data-theme="light"] {
-  --bg-primary: #f4ede0;
-  --bg-secondary: #ebe2cf;
-  --bg-card: #fdfaf3;
+  --bg-primary: #f6f5f0;
+  --bg-secondary: #ebece5;
+  --bg-card: #fffefa;
   --bg-elevated: #ffffff;
-  --bg-glass: rgba(253, 250, 243, 0.75);
+  --bg-glass: rgba(246, 245, 240, 0.88);
 
-  --text-primary: #0d0d12;
-  --text-secondary: #3a3a45;
-  --text-muted: #6b6878;
-  --text-faded: #9a9784;
+  --text-primary: #171a17;
+  --text-secondary: #4b504a;
+  --text-muted: #73796f;
+  --text-faded: #9ba195;
 
-  --border-color: #d8cdb4;
-  --border-strong: #b8ad94;
+  --border-color: #dadfd3;
+  --border-strong: #b9c2b2;
 
-  --accent: #086b62;
-  --accent-hover: #0a8076;
-  --accent-soft: rgba(8, 107, 98, 0.12);
-  --accent-violet: #6b1eb8;
-  --accent-magenta: #c01970;
-  --accent-amber: #c47a00;
+  --accent: #2f6b5f;
+  --accent-hover: #214d44;
+  --accent-contrast: #f8faf6;
+  --accent-soft: rgba(47, 107, 95, 0.11);
+  --accent-violet: #5f6d76;
+  --accent-magenta: #6b655d;
+  --accent-amber: #716b55;
 
-  --code-bg: #f1e9d8;
-  --blockquote-bg: #ebe2cf;
+  --code-bg: #ecefe8;
+  --blockquote-bg: #f0f2ec;
 
-  --card-shadow: 0 24px 60px -28px rgba(0, 0, 0, 0.18);
-  --card-shadow-hover: 0 32px 80px -20px rgba(8, 107, 98, 0.22), 0 0 0 1px rgba(8, 107, 98, 0.3);
+  --card-shadow: 0 24px 54px -38px rgba(35, 43, 35, 0.36);
+  --card-shadow-hover: 0 28px 64px -40px rgba(35, 43, 35, 0.44), 0 0 0 1px rgba(47, 107, 95, 0.16);
 
-  --neon-glow-teal: 0 0 24px rgba(8, 107, 98, 0.18);
-  --neon-glow-magenta: 0 0 24px rgba(192, 25, 112, 0.2);
-  --neon-glow-violet: 0 0 24px rgba(107, 30, 184, 0.2);
-
-  --grid-line: rgba(0, 0, 0, 0.05);
-  --overlay-bg: rgba(244, 237, 224, 0.9);
+  --grid-line: rgba(24, 30, 24, 0.055);
+  --overlay-bg: rgba(246, 245, 240, 0.92);
 
   color-scheme: light;
+}
+
+html[data-theme="dark"] {
+  --bg-primary: #111411;
+  --bg-secondary: #171b17;
+  --bg-card: #1c211d;
+  --bg-elevated: #232923;
+  --bg-glass: rgba(17, 20, 17, 0.84);
+
+  --text-primary: #f0f2ed;
+  --text-secondary: #c4cbc0;
+  --text-muted: #899185;
+  --text-faded: #5f695d;
+
+  --border-color: #313a31;
+  --border-strong: #465146;
+
+  --accent: #91b9aa;
+  --accent-hover: #b3d0c5;
+  --accent-contrast: #111411;
+  --accent-soft: rgba(145, 185, 170, 0.14);
+  --accent-violet: #a2aab4;
+  --accent-magenta: #b1a99d;
+  --accent-amber: #bbb28d;
+
+  --code-bg: #151a17;
+  --blockquote-bg: #171b17;
+
+  --card-shadow: 0 24px 60px -34px rgba(0, 0, 0, 0.58);
+  --card-shadow-hover: 0 30px 72px -42px rgba(0, 0, 0, 0.72), 0 0 0 1px rgba(145, 185, 170, 0.18);
+
+  --grid-line: rgba(255, 255, 255, 0.045);
+  --overlay-bg: rgba(17, 20, 17, 0.92);
+
+  color-scheme: dark;
 }
 
 /* ==========================================
    Typography
    ========================================== */
 :root {
-  --font-display: 'Fraunces', 'Times New Roman', serif;
-  --font-sans: 'Space Grotesk', 'Inter', system-ui, sans-serif;
-  --font-body: 'Inter', system-ui, sans-serif;
+  --font-display: 'Source Serif 4', Georgia, serif;
+  --font-sans: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-mono: 'JetBrains Mono', 'Courier New', monospace;
 }
 
 * {
+  box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 html {
@@ -104,23 +103,26 @@ html {
 
 body {
   font-family: var(--font-body);
+  font-size: 17px;
   background-color: var(--bg-primary);
   color: var(--text-primary);
-  line-height: 1.65;
+  line-height: 1.7;
   transition: background-color 0.4s ease, color 0.4s ease;
   position: relative;
   overflow-x: hidden;
+  font-variant-numeric: oldstyle-nums;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
   color: var(--text-primary);
-  font-weight: 500;
-  letter-spacing: -0.02em;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
 }
 
 /* ==========================================
-   Aurora background — subtle radial blobs
+   Background texture
    ========================================== */
 body::before {
   content: '';
@@ -129,18 +131,20 @@ body::before {
   pointer-events: none;
   z-index: 0;
   background:
-    radial-gradient(60vw 60vw at 12% 8%, rgba(0, 255, 209, 0.08), transparent 60%),
-    radial-gradient(45vw 45vw at 88% 18%, rgba(176, 38, 255, 0.07), transparent 65%),
-    radial-gradient(50vw 50vw at 70% 95%, rgba(255, 46, 147, 0.06), transparent 70%);
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(180deg, var(--grid-line) 1px, transparent 1px),
+    radial-gradient(70vw 45vw at 12% 0%, var(--accent-soft), transparent 60%);
+  background-size: 44px 44px, 44px 44px, auto;
   opacity: 1;
   transition: opacity 0.5s ease;
 }
 
 html[data-theme="light"] body::before {
   background:
-    radial-gradient(60vw 60vw at 12% 8%, rgba(8, 107, 98, 0.07), transparent 60%),
-    radial-gradient(45vw 45vw at 88% 18%, rgba(107, 30, 184, 0.05), transparent 65%),
-    radial-gradient(50vw 50vw at 70% 95%, rgba(192, 25, 112, 0.05), transparent 70%);
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(180deg, var(--grid-line) 1px, transparent 1px),
+    radial-gradient(70vw 45vw at 12% 0%, var(--accent-soft), transparent 60%);
+  background-size: 44px 44px, 44px 44px, auto;
 }
 
 /* Grain noise overlay */
@@ -226,7 +230,7 @@ header h1 a {
    ========================================== */
 ::selection {
   background: var(--accent);
-  color: #0a0a0f;
+  color: var(--accent-contrast);
 }
 
 /* ==========================================

@@ -103,7 +103,7 @@ i18n: {
         },
         {
           rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap'
+          href: 'https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400..700&family=Source+Sans+3:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap'
         },
         {
           rel: 'stylesheet',
@@ -128,7 +128,7 @@ i18n: {
       meta: [
         { name: 'msapplication-TileColor', content: '#ffffff' },
         { name: 'msapplication-TileImage', content: '/ms-icon-144x144.png' },
-        { name: 'theme-color', content: '#ffffff' }
+        { name: 'theme-color', content: '#f6f5f0' }
       ]
     }
   },
@@ -152,4 +152,3 @@ i18n: {
   },
   compatibilityDate: '2024-10-10'
 })
-

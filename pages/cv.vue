@@ -343,7 +343,7 @@ useHead(() => ({
 
   &.is-active {
     background: var(--accent);
-    color: #0a0a0f;
+    color: var(--accent-contrast);
     box-shadow: inset 0 0 0 1px var(--accent);
   }
 }
@@ -380,7 +380,7 @@ useHead(() => ({
   &:hover {
     border-color: var(--accent);
     color: var(--accent);
-    box-shadow: var(--neon-glow-teal);
+    box-shadow: var(--card-shadow-hover);
     transform: translateY(-1px);
   }
 }
@@ -407,7 +407,7 @@ useHead(() => ({
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid var(--accent);
-    box-shadow: var(--neon-glow-teal);
+    box-shadow: var(--card-shadow);
   }
 }
 
@@ -542,7 +542,7 @@ useHead(() => ({
 
   &:hover {
     border-color: var(--accent);
-    box-shadow: var(--neon-glow-teal);
+    box-shadow: var(--card-shadow-hover);
   }
 }
 
@@ -823,7 +823,7 @@ useHead(() => ({
 
   &:hover {
     border-color: var(--accent);
-    box-shadow: var(--neon-glow-teal);
+    box-shadow: var(--card-shadow-hover);
     transform: translateY(-2px);
   }
 }
@@ -1011,7 +1011,7 @@ useHead(() => ({
     color: var(--accent);
     border-color: var(--accent);
     background: var(--accent-soft);
-    box-shadow: var(--neon-glow-teal);
+    box-shadow: var(--card-shadow-hover);
 
     .cv-back__arrow {
       transform: translateX(-4px);
@@ -1056,7 +1056,7 @@ useHead(() => ({
 }
 
 /* ==========================================
-   Print styles — drop neon, keep readable
+   Print styles
    ========================================== */
 @media print {
   :deep(body)::before,

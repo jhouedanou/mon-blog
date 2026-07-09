@@ -12,23 +12,13 @@
                 </div>
                 <div class="footer-meta">
                     <p class="footer-copy">&copy; {{ new Date().getFullYear() }} Jean-Luc Houédanou. Tous droits réservés.</p>
-                    <div class="social-icons">
-                        <a href="https://linkedin.com/in/votre-profil" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://facebook.com/votre-page" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                        <a href="https://github.com/votre-profil" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://instagram.com/votre-profil" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://twitter.com/votre-profil" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </div>
+                    <nav class="footer-links" aria-label="Liens secondaires">
+                        <NuxtLink to="/tags">Tags</NuxtLink>
+                        <NuxtLink to="/cv">CV</NuxtLink>
+                        <NuxtLink to="/a-propos">À propos</NuxtLink>
+                        <a href="/feed.xml">RSS</a>
+                        <a href="https://github.com/jhouedanou" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </nav>
                 </div>
             </div>
         </footer>
@@ -74,7 +64,6 @@
     width: 80px;
     height: 1px;
     background: var(--accent);
-    box-shadow: var(--neon-glow-teal);
 }
 
 .footer-content {
@@ -110,8 +99,7 @@
 
 .footer-brand__wordmark {
     font-family: var(--font-display);
-    font-style: italic;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1.4rem;
     letter-spacing: -0.02em;
     line-height: 1;
@@ -141,32 +129,35 @@
     text-transform: uppercase;
 }
 
-.social-icons {
+.footer-links {
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
+    flex-wrap: wrap;
     margin: 0;
 }
 
-.social-icons a {
+.footer-links a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 36px;
-    height: 36px;
+    min-height: 36px;
+    padding: 0 0.72rem;
     color: var(--text-secondary);
-    font-size: 1rem;
+    font-family: var(--font-sans);
+    font-size: 0.86rem;
+    font-weight: 600;
     border: 1px solid var(--border-color);
     border-radius: 4px;
     text-decoration: none;
     transition: color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
 }
 
-.social-icons a:hover {
+.footer-links a:hover {
     color: var(--accent);
     border-color: var(--accent);
-    box-shadow: var(--neon-glow-teal);
-    transform: translateY(-2px);
+    background: var(--accent-soft);
+    transform: translateY(-1px);
 }
 
 @media screen and (max-width: 768px) {

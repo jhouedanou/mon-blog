@@ -60,18 +60,18 @@ watch(() => props.modelValue, (val) => {
     border-radius: 4px;
     background: var(--bg-card);
     color: var(--text-primary);
-    font-family: var(--font-mono, 'JetBrains Mono', monospace);
-    font-size: 0.85rem;
-    letter-spacing: 0.02em;
+    font-family: var(--font-sans);
+    font-size: 0.98rem;
+    letter-spacing: 0;
     transition: all 0.2s ease;
     outline: none;
 
     &::placeholder {
         color: var(--text-muted);
-        font-family: var(--font-mono, 'JetBrains Mono', monospace);
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
-        font-size: 0.75rem;
+        font-family: var(--font-sans);
+        text-transform: none;
+        letter-spacing: 0;
+        font-size: 0.95rem;
     }
 
     &:focus {

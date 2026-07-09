@@ -1,6 +1,6 @@
 <template>
   <NuxtLayout>
-    <NuxtLoadingIndicator color="#00ffd1" :height="2" />
+    <NuxtLoadingIndicator color="#2f6b5f" :height="2" />
 
     <a href="#main-content" class="skip-link">{{ $t('skipToContent') }}</a>
 
@@ -73,7 +73,7 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 import ScrollToTop from '~/components/ScrollToTop.vue'
 
-const isDark = ref(true)
+const isDark = ref(false)
 const mobileMenuOpen = ref(false)
 const scrolled = ref(false)
 
@@ -92,8 +92,7 @@ onMounted(() => {
   if (saved) {
     isDark.value = saved === 'dark'
   } else {
-    const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches
-    isDark.value = !prefersLight
+    isDark.value = window.matchMedia('(prefers-color-scheme: dark)').matches
   }
   document.documentElement.setAttribute('data-theme', isDark.value ? 'dark' : 'light')
   window.addEventListener('scroll', onScroll, { passive: true })
@@ -107,10 +106,10 @@ onUnmounted(() => {
 useHead({
   title: 'Le blog de Jean-Luc Houédanou',
   htmlAttrs: {
-    'data-theme': 'dark',
+    'data-theme': 'light',
   },
   meta: [
-    { name: 'theme-color', content: '#0a0a0f' },
+    { name: 'theme-color', content: '#f6f5f0' },
   ],
   link: [
     {
@@ -143,7 +142,7 @@ main {
   left: 1rem;
   z-index: 9999;
   background: var(--accent);
-  color: #0a0a0f;
+  color: var(--accent-contrast);
   padding: 0.75rem 1.5rem;
   border-radius: 0 0 8px 8px;
   font-family: var(--font-sans);
@@ -196,12 +195,12 @@ main {
 
   &:hover .site-header__mark {
     background: var(--accent);
-    color: #0a0a0f;
-    box-shadow: var(--neon-glow-teal);
+    color: var(--accent-contrast);
+    border-color: var(--accent);
   }
 
   &:hover .site-header__wordmark em {
-    color: var(--accent-magenta);
+    color: var(--accent-hover);
   }
 }
 
@@ -220,10 +219,9 @@ main {
 
 .site-header__wordmark {
   font-family: var(--font-display);
-  font-style: italic;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.55rem;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.015em;
   line-height: 1;
   color: var(--text-primary);
 
@@ -313,7 +311,7 @@ main {
     background: var(--accent-soft);
     color: var(--accent);
     border-color: var(--accent);
-    box-shadow: var(--neon-glow-teal);
+    box-shadow: var(--card-shadow-hover);
     transform: translateY(-1px);
   }
 }

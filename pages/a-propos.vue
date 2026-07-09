@@ -131,7 +131,7 @@ useHead({
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid var(--accent);
-    box-shadow: var(--neon-glow-teal);
+    box-shadow: var(--card-shadow);
   }
 }
 
@@ -142,7 +142,6 @@ useHead({
 
 .about-header__title {
   font-family: var(--font-display);
-  font-style: italic;
   font-size: clamp(2.25rem, 5vw, 3.4rem);
   font-weight: 400;
   letter-spacing: -0.03em;
@@ -173,7 +172,7 @@ useHead({
 
   .material-icons {
     font-size: 1rem;
-    color: var(--accent-magenta);
+    color: var(--accent);
   }
 }
 
@@ -182,7 +181,6 @@ useHead({
 
   h2 {
     font-family: var(--font-display);
-    font-style: italic;
     font-size: clamp(1.7rem, 3vw, 2.2rem);
     font-weight: 400;
     letter-spacing: -0.025em;
@@ -229,7 +227,7 @@ useHead({
   &:hover {
     transform: translateY(-3px);
     border-color: var(--accent);
-    box-shadow: var(--neon-glow-teal);
+    box-shadow: var(--card-shadow-hover);
 
     .material-icons {
       color: var(--accent);
@@ -238,16 +236,15 @@ useHead({
 
   .material-icons {
     font-size: 1.85rem;
-    color: var(--accent-magenta);
+    color: var(--accent);
     margin-bottom: 0.85rem;
     transition: color 0.3s ease;
   }
 
   h3 {
     font-family: var(--font-display);
-    font-style: italic;
     font-size: 1.15rem;
-    font-weight: 400;
+    font-weight: 650;
     letter-spacing: -0.015em;
     color: var(--text-primary);
     margin: 0 0 0.5rem 0;
@@ -294,7 +291,7 @@ useHead({
   &:hover {
     border-color: var(--accent);
     background: var(--accent-soft);
-    box-shadow: var(--neon-glow-teal);
+    box-shadow: var(--card-shadow-hover);
     transform: translateY(-2px);
   }
 }
@@ -325,7 +322,7 @@ useHead({
     color: var(--accent);
     border-color: var(--accent);
     background: var(--accent-soft);
-    box-shadow: var(--neon-glow-teal);
+    box-shadow: var(--card-shadow-hover);
 
     .back-arrow {
       transform: translateX(-4px);
