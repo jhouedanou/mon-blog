@@ -3,6 +3,8 @@ title: "On a fini de faire le ménage"
 image: "/images/articles/mouff.jpg"
 createdAt: "2024-10-21"
 id: 2
+description: "Pourquoi j’ai quitté WordPress pour un blog Nuxt 3 et Markdown plus simple à maintenir."
+searchIntent: "Pourquoi migrer un blog WordPress vers Nuxt 3 et Nuxt Content pour publier plus simplement."
 tags: ["dev"]
 ---
 

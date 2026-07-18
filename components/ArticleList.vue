@@ -80,6 +80,7 @@ import { useAsyncData } from '#app'
 import { useI18n } from 'vue-i18n'
 import { useLocalePath } from '#i18n'
 import SearchBar from '~/components/SearchBar.vue'
+import { getArticleSearchIntent, getArticleSearchText } from '~/data/editorial.js'
 
 const localePath = useLocalePath()
 const { locale } = useI18n()
@@ -117,10 +118,7 @@ const filteredArticles = computed(() => {
 
     if (searchQuery.value.trim()) {
         const q = searchQuery.value.toLowerCase().trim()
-        result = result.filter(a =>
-            (a.title && a.title.toLowerCase().includes(q)) ||
-            (a.description && a.description.toLowerCase().includes(q))
-        )
+        result = result.filter(a => getArticleSearchText(a).includes(q))
     }
 
     return result
@@ -230,7 +228,7 @@ function getAnimationDelay(index) {
 }
 
 function getExcerptText(article) {
-    const content = article.description || ''
+    const content = getArticleSearchIntent(article)
     const text = content.replace(/<[^>]*>/g, '')
     return text.length > 120 ? text.slice(0, 120) + '…' : text
 }

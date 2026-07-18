@@ -1,6 +1,6 @@
 <template>
   <section v-if="articles && articles.length" class="suggested">
-    <span class="suggested__label">— À lire ensuite</span>
+    <span class="suggested__label">— {{ label }}</span>
     <h3 class="suggested__heading">{{ $t('suggestedArticles') }}</h3>
     <div class="suggested__grid">
       <NuxtLink
@@ -27,6 +27,7 @@
 <script setup>
 defineProps({
   articles: { type: Array, default: () => [] },
+  label: { type: String, default: 'À lire ensuite' },
 })
 
 function formatDate(createdAt) {

@@ -4,7 +4,7 @@ image: "/images/articles/pingui.jpg"
 createdAt: "2024-10-29"
 id: 2024-10-29
 description: "Guide pratique pour cloner votre système Ubuntu vers un nouveau SSD sans perdre vos données. Apprenez à migrer facilement votre installation Linux avec un script simple et efficace."
-keywords: "cloner Ubuntu, migration SSD Ubuntu, dd Linux, clone système Linux, augmenter espace disque Ubuntu, script clonage Linux, sauvegarde Ubuntu, resize partition Linux, fdisk, parted"
+searchIntent: "Comment cloner Ubuntu vers un SSD plus grand sans perdre ses données ni casser son installation."
 tags: ["tutoriel", "dev", "tech"]
 summary: "Un tutoriel étape par étape pour cloner votre système Ubuntu vers un nouveau SSD plus spacieux. Ce guide inclut l'identification des disques, un script de clonage complet avec dd, l'extension des partitions et les vérifications nécessaires pour assurer une migration réussie."
 

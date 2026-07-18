@@ -4,7 +4,7 @@ image: "/images/articles/cocacola.webp"
 createdAt: "2024-12-20"
 id: 2024-12-20
 description: "Découvrez comment Coca-Cola a utilisé l'intelligence artificielle pour sa campagne de Noël et pourquoi cette stratégie marketing controversée a parfaitement fonctionné malgré les critiques."
-keywords: "Coca-Cola, IA, intelligence artificielle, publicité Noël, marketing, DALL-E, campagne publicitaire, Holidays Are Coming"
+searchIntent: "Pourquoi la publicité de Noël générée par IA de Coca-Cola a-t-elle fonctionné malgré les critiques ?"
 tags: ["tech", "opinion"]
 summary: "Coca-Cola a créé la controverse avec sa première publicité de Noël générée par IA. Malgré les critiques sur l'esthétique imparfaite, cette stratégie marketing a brillamment réussi à renforcer l'association de la marque avec les fêtes de fin d'année en générant des discussions et en occupant l'espace médiatique."
 ---

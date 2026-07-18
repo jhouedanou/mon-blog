@@ -38,7 +38,22 @@ i18n: {
     prerender: {
       crawlLinks: true,
       failOnError: false,
-      routes: ['/sitemap.xml', '/feed.xml', '/robots.txt', '/'],
+      routes: [
+        '/',
+        '/tags',
+        '/themes',
+        '/themes/tutoriels',
+        '/themes/apple',
+        '/themes/developpement',
+        '/themes/afrique-numerique',
+        '/themes/opinions',
+        '/a-propos',
+        '/cv',
+        '/confidentialite',
+        '/sitemap.xml',
+        '/feed.xml',
+        '/robots.txt',
+      ],
     },
   },  
   content: {
@@ -148,6 +163,11 @@ i18n: {
   routeRules: {
     '/': { prerender: true },
     '/fr/**': { prerender: true },
+    '/tags/**': { prerender: true },
+    '/themes/**': { prerender: true },
+    '/a-propos': { prerender: true },
+    '/cv': { prerender: true },
+    '/confidentialite': { prerender: true },
     '/api/_content/**': { robots: false },
   },
   compatibilityDate: '2024-10-10'

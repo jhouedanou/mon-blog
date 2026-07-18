@@ -30,6 +30,9 @@
           <NuxtLink to="/tags" class="site-header__nav-link" @click="mobileMenuOpen = false">
             <span>{{ $t('tags') }}</span>
           </NuxtLink>
+          <NuxtLink to="/themes" class="site-header__nav-link" @click="mobileMenuOpen = false">
+            <span>Thématiques</span>
+          </NuxtLink>
           <NuxtLink to="/cv" class="site-header__nav-link" @click="mobileMenuOpen = false">
             <span>{{ $t('cv') }}</span>
           </NuxtLink>

@@ -4,7 +4,7 @@ image: "/images/articles/infinixoraimo.jpg"
 createdAt: "2025-12-25"
 id: 2025-12-25
 description: "Comparatif complet entre l'Infinix Watch 3 et l'Oraimo Nova AM : design, écran, notifications, autonomie et application compagnon pour vous aider à choisir."
-keywords: "Infinix Watch 3, Oraimo Nova AM, comparatif montre connectée, écran AMOLED, autonomie montre, notifications, My Health, Oraimo Health"
+searchIntent: "Quelle montre connectée choisir entre l’Infinix Watch 3 et l’Oraimo Nova AM ?"
 tags: ["tech"]
 summary: "Comparatif détaillé entre l'Infinix Watch 3 et l'Oraimo Nova AM pour déterminer la meilleure montre selon vos priorités : design, fonctionnalités connectées ou autonomie."
 ---

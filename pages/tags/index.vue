@@ -4,6 +4,9 @@
       <header class="tags-index__header">
         <span class="tags-index__eyebrow">— {{ $t('exploreByTag') }}</span>
         <h1 class="tags-index__title">{{ $t('tagsTitle') }}</h1>
+        <p class="tags-index__intro">
+          Les étiquettes regroupent les articles par sujet. Utilisez-les pour passer d’un retour d’expérience à un autre, même lorsqu’ils ont été publiés à des dates différentes.
+        </p>
         <p class="tags-index__lede" v-if="tagEntries.length">
           {{ tagEntries.length }} {{ $t('tagsCountLabel') }}
         </p>
@@ -113,6 +116,14 @@ useHead(() => ({
   color: var(--text-muted);
   text-transform: uppercase;
   margin: 0;
+}
+
+.tags-index__intro {
+  max-width: 62ch;
+  margin: 0 0 1.25rem;
+  font-size: 1.08rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
 }
 
 .tag-cloud {

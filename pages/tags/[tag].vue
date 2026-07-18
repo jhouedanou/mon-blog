@@ -9,6 +9,7 @@
         <p class="tag-archive__meta" v-if="filtered.length">
           {{ filtered.length }} {{ filtered.length > 1 ? $t('articles') : $t('article') }}
         </p>
+        <p class="tag-archive__intro">{{ tagIntroduction }}</p>
       </header>
 
       <div v-if="filtered.length" class="tag-archive__grid">
@@ -50,6 +51,7 @@ import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { useAsyncData } from '#app'
 import { getArticleTags, slugifyTag } from '~/utils/tags.js'
+import { getTagIntroduction } from '~/data/editorial.js'
 
 const route = useRoute()
 const { locale } = useI18n()
@@ -75,6 +77,8 @@ const displayTag = computed(() => {
   }
   return tagSlug.value.replace(/-/g, ' ')
 })
+
+const tagIntroduction = computed(() => getTagIntroduction(displayTag.value))
 
 function formatDate(d) {
   if (!d) return ''
@@ -157,6 +161,14 @@ useHead(() => ({
   text-transform: uppercase;
   color: var(--text-muted);
   margin: 0;
+}
+
+.tag-archive__intro {
+  max-width: 64ch;
+  margin: 1.25rem 0 0;
+  font-size: 1.08rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
 }
 
 .tag-archive__grid {

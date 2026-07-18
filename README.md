@@ -38,8 +38,20 @@ Ce projet est un blog personnel construit avec Nuxt 3, utilisant le système de 
 ## Ajouter un nouvel article
 
 1. Créer un nouveau fichier Markdown dans le dossier `content/[langue]/[année]/[mois]/`
-2. Ajouter le frontmatter avec le titre, la date, et l'image de couverture
+2. Ajouter le frontmatter avec le titre, la date, l'image de couverture, une description naturelle et une intention de recherche formulée comme une question ou un besoin réel
 3. Écrire le contenu de l'article en Markdown
+
+### Métadonnées éditoriales
+
+Les articles utilisent désormais `searchIntent` au lieu de l'ancien champ `keywords`. Ce champ doit décrire la recherche à laquelle l'article répond, par exemple :
+
+```yaml
+description: "Guide pratique pour migrer une boutique PrestaShop vers un nouveau domaine."
+searchIntent: "Comment changer le nom de domaine d'une boutique PrestaShop sans perdre son référencement ?"
+tags: ["tutoriel", "dev"]
+```
+
+Les tags servent à relier les articles entre eux. Les pages thématiques disponibles sont `/themes/tutoriels`, `/themes/apple`, `/themes/developpement`, `/themes/afrique-numerique` et `/themes/opinions`.
 
 ## Déploiement
 

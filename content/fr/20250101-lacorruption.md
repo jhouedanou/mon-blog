@@ -4,7 +4,7 @@ image: "/images/articles/corruption.jpg"
 createdAt: "2025-03-12"
 id: 11
 description: "Une expérience personnelle dans une banque africaine qui illustre comment la corruption et les passe-droits peuvent paradoxalement faire perdre du temps à ceux qui y participent. Un témoignage sur les pratiques quotidiennes de corruption."
-keywords: "corruption Afrique, passe-droits, banque Afrique, Ecobank, pot-de-vin, file d'attente, corruption quotidienne, pratiques bancaires Afrique, corruption petite échelle, témoignage corruption"
+searchIntent: "Comment la corruption ordinaire dans une banque africaine fait perdre du temps à tout le monde."
 tags: ["société", "afrique", "opinion"]
 summary: "Un récit personnel dans une agence bancaire en Afrique où l'auteur refuse de participer au système de corruption proposé par un agent de sécurité. L'histoire démontre comment ceux qui ont payé pour passer devant tout le monde se retrouvent finalement servis en dernier, illustrant que la corruption, loin de faire gagner du temps, met tout le monde en retard."
 

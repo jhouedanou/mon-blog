@@ -4,7 +4,7 @@ image: "/images/articles/theorieduMicro.webp"
 createdAt: "2024-10-22"
 id: 5
 description: "Un guide pratique pour rester zen face aux commentaires non sollicités sur Internet. Découvrez comment la théorie du verre d'eau peut vous aider à préserver votre sérénité en ligne."
-keywords: "zen attitude, commentaires non sollicités, réseaux sociaux, santé mentale, gestion des conflits, communication en ligne"
+searchIntent: "Comment rester serein face aux commentaires non sollicités et aux conflits sur les réseaux sociaux ?"
 tags: ["opinion", "société"]
 summary: "Face aux experts auto-proclamés et prophètes numériques qui s'expriment sans retenue sur Internet, découvrez comment la théorie du verre d'eau peut vous aider à rester serein. Un guide pratique pour préserver votre santé mentale en ligne."
 

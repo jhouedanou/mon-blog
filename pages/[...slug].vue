@@ -16,6 +16,20 @@
             </span>
           </div>
           <h1 class="article-header__title">{{ article.title }}</h1>
+          <div v-if="articleTags.length" class="article-header__tags" aria-label="Étiquettes de l’article">
+            <NuxtLink
+              v-for="tag in articleTags"
+              :key="tag"
+              :to="`/tags/${slugifyTag(tag)}`"
+              class="article-header__tag"
+            >#{{ tag }}</NuxtLink>
+          </div>
+          <div v-if="articleThemes.length" class="article-header__themes">
+            <span>À explorer :</span>
+            <NuxtLink v-for="themeItem in articleThemes" :key="themeItem.slug" :to="`/themes/${themeItem.slug}`">
+              {{ themeItem.label }}
+            </NuxtLink>
+          </div>
         </header>
 
         <div v-if="article.summary" class="article-summary">
@@ -33,7 +47,10 @@
 
           <ArticleNavigation :prev="prevArticle" :next="nextArticle" />
 
-          <SuggestedArticles :articles="suggestedArticles" />
+          <SuggestedArticles
+            :articles="suggestedArticles"
+            label="À lire ensuite dans les mêmes thèmes"
+          />
 
           <DisqusComments :pageUrl="currentUrl" :pageIdentifier="article._path" />
 
@@ -64,19 +81,22 @@
 
 <script setup>
 import { useHead } from "@unhead/vue";
-import { useRoute, useRouter } from "vue-router";
+import { useRoute } from "vue-router";
 import { useI18n } from "vue-i18n";
-import { useLocalePath, useSwitchLocalePath } from "#i18n";
 import { onMounted, watch, computed, nextTick } from "vue";
 import DisqusComments from "~/components/DisqusComments.vue";
 import ArticleNavigation from "~/components/ArticleNavigation.vue";
 import SuggestedArticles from "~/components/SuggestedArticles.vue";
 import TableOfContents from "~/components/TableOfContents.vue";
+import { getArticleTags, slugifyTag } from "~/utils/tags.js";
+import {
+  THEME_DEFINITIONS,
+  articleMatchesTheme,
+  getArticleSearchIntent,
+} from "~/data/editorial.js";
 
 const route = useRoute();
 const { locale } = useI18n();
-const localePath = useLocalePath();
-const switchLocalePath = useSwitchLocalePath();
 
 const { data: article } = await useAsyncData(
   `article-${route.path}`,
@@ -126,6 +146,13 @@ const nextArticle = computed(() => {
   return allArticles.value[currentIndex.value + 1];
 });
 
+const articleTags = computed(() => getArticleTags(article.value));
+
+const articleThemes = computed(() => {
+  if (!article.value) return [];
+  return THEME_DEFINITIONS.filter((theme) => articleMatchesTheme(article.value, theme));
+});
+
 const suggestedArticles = computed(() => {
   if (!allArticles.value || !article.value) return [];
   const excludePaths = new Set([
@@ -134,40 +161,85 @@ const suggestedArticles = computed(() => {
     nextArticle.value?._path,
   ]);
   const currentDate = new Date(article.value.createdAt).getTime();
+  const currentTagSlugs = new Set(articleTags.value.map(slugifyTag));
+  const currentThemeSlugs = new Set(articleThemes.value.map((theme) => theme.slug));
+
   return allArticles.value
     .filter((a) => !excludePaths.has(a._path))
-    .sort((a, b) => {
-      const diffA = Math.abs(new Date(a.createdAt).getTime() - currentDate);
-      const diffB = Math.abs(new Date(b.createdAt).getTime() - currentDate);
-      return diffA - diffB;
+    .map((candidate) => {
+      const sharedTags = getArticleTags(candidate)
+        .map(slugifyTag)
+        .filter((tag) => currentTagSlugs.has(tag)).length;
+      const sharedThemes = THEME_DEFINITIONS
+        .filter((theme) => currentThemeSlugs.has(theme.slug) && articleMatchesTheme(candidate, theme))
+        .length;
+      const distanceInDays = Math.abs(new Date(candidate.createdAt).getTime() - currentDate) / 86400000;
+
+      return {
+        article: candidate,
+        score: (sharedTags * 100) + (sharedThemes * 35) - Math.min(distanceInDays / 365, 2),
+      };
     })
-    .slice(0, 3);
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 3)
+    .map(({ article: relatedArticle }) => relatedArticle);
 });
+
+const siteUrl = "https://houedanou.com";
+const currentUrl = computed(() => `${siteUrl}${route.path}`);
+const canonicalImage = computed(() => {
+  if (!article.value?.image) return `${siteUrl}/images/1837389.webp`;
+  return new URL(article.value.image, siteUrl).href;
+});
+const metaDescription = computed(() =>
+  getArticleSearchIntent(article.value) ||
+  "Article du blog de Jean-Luc Houédanou sur la technologie, le développement et la culture numérique."
+);
 
 useHead(() => ({
   title: article.value?.title,
+  link: [{ rel: "canonical", href: currentUrl.value }],
   meta: [
-    { name: "description", content: article.value?.description || "Description par défaut" },
-    { name: "keywords", content: article.value?.keywords || "" },
+    { name: "description", content: metaDescription.value },
     { property: "og:title", content: article.value?.title },
-    {
-      property: "og:description",
-      content: article.value?.description || "Description par défaut",
-    },
-    { property: "og:url", content: `https://houedanou.com${route.path}` },
-    { property: "og:image", content: `https://houedanou.com${article.value?.image}` },
+    { property: "og:description", content: metaDescription.value },
+    { property: "og:url", content: currentUrl.value },
+    { property: "og:type", content: "article" },
+    { property: "og:image", content: canonicalImage.value },
+    { property: "og:image:alt", content: article.value?.title },
     { property: "og:site_name", content: "Jean-Luc Houédanou" },
+    { property: "article:published_time", content: article.value?.createdAt },
+    { property: "article:modified_time", content: article.value?.updatedAt || article.value?.createdAt },
+    { property: "article:author", content: "Jean-Luc Houédanou" },
     { name: "twitter:card", content: "summary_large_image" },
-    { name: "twitter:image", content: `https://houedanou.com${article.value?.image}` },
+    { name: "twitter:image", content: canonicalImage.value },
     { name: "twitter:title", content: article.value?.title },
+    { name: "twitter:description", content: metaDescription.value },
+  ],
+  script: [
     {
-      name: "twitter:description",
-      content: article.value?.description || "Description par défaut",
+      type: "application/ld+json",
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        headline: article.value?.title,
+        description: metaDescription.value,
+        image: [canonicalImage.value],
+        datePublished: article.value?.createdAt,
+        dateModified: article.value?.updatedAt || article.value?.createdAt,
+        author: {
+          "@type": "Person",
+          name: "Jean-Luc Houédanou",
+          url: `${siteUrl}/a-propos`,
+        },
+        mainEntityOfPage: {
+          "@type": "WebPage",
+          "@id": currentUrl.value,
+        },
+      }),
     },
   ],
 }));
-
-const currentUrl = computed(() => `https://houedanou.com${route.path}`);
 
 function loadShareThis() {
   if (window.__sharethis__) {
@@ -285,6 +357,51 @@ function formatDate(createdAt) {
   margin: 0 0 1.5rem 0;
   letter-spacing: -0.025em;
   text-wrap: balance;
+}
+
+.article-header__tags,
+.article-header__themes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.article-header__tags {
+  margin-top: -0.5rem;
+  margin-bottom: 0.85rem;
+}
+
+.article-header__tag {
+  padding: 0.3rem 0.55rem;
+  border: 1px solid var(--border-color);
+  border-radius: 3px;
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+
+  &:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+    background: var(--accent-soft);
+  }
+}
+
+.article-header__themes {
+  gap: 0.35rem;
+  color: var(--text-muted);
+  font-size: 0.86rem;
+
+  a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
+
+    &:hover { color: var(--accent-hover); }
+  }
 }
 
 /* ==========================================

@@ -3,7 +3,7 @@ title: "Avec Claude Dispatch, votre smartphone devient une télécommande pour C
 image: "/images/articles/clauderemote.jpg"
 createdAt: "2026-05-31"
 description: "Claude Dispatch vous permet de contrôler Claude Code à distance depuis votre téléphone. 3 étapes, et votre terminal vous suit partout."
-keywords: "Claude Code, Claude Dispatch, Remote Control, terminal mobile, développement, Anthropic, productivité"
+searchIntent: "Comment contrôler une session Claude Code depuis un smartphone avec Claude Dispatch."
 tags: ["claude-code", "outils", "productivité", "développement"]
 ---
 

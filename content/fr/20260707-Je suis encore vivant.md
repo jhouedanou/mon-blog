@@ -3,7 +3,7 @@ title: "Se prendre des murs (et pourquoi c’est ça, le vrai métier de dev)"
 image: "/images/Gemini_Generated_Image_oudr54oudr54oudr.jpeg"
 createdAt: "2026-07-06"
 description: "Une soirée où tout semblait vouloir casser... jusqu'à ce que tout finisse par rentrer dans l'ordre."
-keywords: "développement, bugs, Vercel, Cloudflare, programmation, anecdote"
+searchIntent: "Que révèle une série de bugs, de lenteurs et de problèmes de déploiement sur le vrai métier de développeur."
 tags: ["développement", "coulisses", "programmation"]
 ---
 

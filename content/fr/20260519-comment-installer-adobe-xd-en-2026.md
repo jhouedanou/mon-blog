@@ -3,7 +3,7 @@ title: "Comment installer Adobe XD en 2026 (sans perdre foi en l'humanité)"
 image: "/images/articles/adobe-xd-2026.jpg"
 createdAt: "2026-05-19"
 description: "Vous devez récupérer un design sur Adobe XD en 2026 ? Voici la méthode qui marche encore, pourquoi Figma reste le meilleur choix, et comment survivre à Creative Cloud sans lancer une crise diplomatique."
-keywords: "Adobe XD, installer Adobe XD 2026, Creative Cloud, Figma, Figpea, migration design, UI, UX"
+searchIntent: "Comment installer Adobe XD en 2026 et récupérer un fichier quand Figma ne suffit pas."
 tags: ["tutoriel", "design", "adobe", "figma"]
 ---
 

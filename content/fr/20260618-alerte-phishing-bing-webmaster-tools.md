@@ -3,7 +3,7 @@ title: "Alerte : le premier résultat Google pour « Bing Webmaster Tools » est
 image: "/images/hazars.jpg"
 createdAt: "2026-06-18"
 description: "Je viens de tomber sur une arnaque qui cible directement les webmasters et les SEO : une fausse page Bing Webmaster Tools, en première position sponsorisée sur Google, qui aspire vos identifiants Microsoft ET Google. Voici comment la repérer."
-keywords: [phishing, bing webmaster tools, sécurité, seo, google ads, malvertising, arnaque, microsoft, sécurité web]
+searchIntent: "Comment reconnaître une fausse page Bing Webmaster Tools avant de communiquer ses identifiants Google ou Microsoft."
 tags: [sécurité, seo, phishing, alerte]
 ---
 # Alerte : le premier résultat Google pour « Bing Webmaster Tools » est un site de phishing

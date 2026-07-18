@@ -4,7 +4,7 @@ image: "/images/articles/yeah.jpg"
 createdAt: "2025-07-05"
 id: 2025-07-05
 description: "iPhone dernier cri, MacBook ultra-réactif, voiture de fonction... tous connectés dans un écosystème Apple avec le compte iCloud de l'entreprise. Et cette petite pastille discrète sur le tableau de bord qui suit religieusement tous vos déplacements. Guide pratique pour éviter les surprises technologiques."
-keywords: "Apple, iOS, AirTag, Find My, géolocalisation, commercial, matériel professionnel, protection données, ARTCI, surveillance"
+searchIntent: "Comment les outils Apple et les équipements professionnels peuvent suivre les déplacements d’un commercial."
 tags: ["tech", "apple", "opinion"]
 summary: "La technologie ne juge pas, elle documente. À vous de faire en sorte que cette documentation raconte la bonne histoire."
 ---

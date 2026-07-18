@@ -3,7 +3,7 @@ title: "Migrer un site PrestaShop vers un nouveau nom de domaine : le guide comp
 image: "/images/articles/prestashop-migration-domaine.jpg"
 createdAt: "2026-03-31"
 description: "Changer de nom de domaine sur PrestaShop sans tout casser : base de données, fichiers de config, SSL, cache, redirections 301 et services tiers. Un guide étape par étape, testé en production."
-keywords: "PrestaShop, migration domaine, changement nom de domaine, PrestaShop 8, PrestaShop 1.7, redirections 301, SEO, SSL, base de données, phpMyAdmin, e-commerce, htaccess, multistore, CyberPanel, Let's Encrypt"
+searchIntent: "Comment changer le nom de domaine d’une boutique PrestaShop avec SSL, redirections 301 et cache."
 tags: ["tutoriel", "dev"]
 ---
 
@@ -181,5 +181,4 @@ PrestaShop n'est pas mort. Il est juste discret . Et parfois, c'est exactement c
 
 ---
 *[Jean Luc Houédanou](https://houedanou.com) — fier d'appartenir à la vieille garde du E-commerce*
-
 

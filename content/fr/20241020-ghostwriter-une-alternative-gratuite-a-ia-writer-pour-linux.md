@@ -4,7 +4,7 @@ image: "/images/articles/mockup.png"
 createdAt: "2024-10-20"
 id: 2024-10-20
 description: "Découvrez Ghostwriter, une alternative gratuite et open-source à iA Writer pour Linux. Un éditeur Markdown minimaliste avec mode focus, point d'insertion bleu et vérification orthographique."
-keywords: "Ghostwriter, iA Writer Linux, éditeur Markdown, alternative iA Writer, logiciel écriture Linux, éditeur texte sans distraction, Zorin OS, hunspell-fr, écriture minimaliste"
+searchIntent: "Quelle alternative gratuite à iA Writer choisir sur Linux pour écrire en Markdown sans distraction ?"
 tags: ["tech", "tutoriel"]
 summary: "Ghostwriter est une excellente alternative gratuite et open-source à iA Writer pour les utilisateurs Linux. Cet éditeur Markdown reprend les fonctionnalités essentielles d'iA Writer comme le point d'insertion bleu et le mode focus, tout en ajoutant une vérification orthographique multilingue. Idéal pour les écrivains et blogueurs cherchant un environnement d'écriture épuré sous Linux."
 ---

@@ -3,7 +3,7 @@ title: "La réunion « pour en parler »"
 image: "/images/articles/reunion.jpg"
 createdAt: "2026-03-25"
 description: "Une réflexion sur la fameuse réunion 'pour en parler' : pourquoi elle naît, comment l'éviter, et comment obtenir des décisions claires sans perdre de temps."
-keywords: "réunion, productivité, tech, marketing digital, réunion inutile, ego, développement"
+searchIntent: "Comment éviter les réunions inutiles et transformer une réunion « pour en parler » en décisions concrètes."
 tags: ["opinion", "société"]
 ---
 

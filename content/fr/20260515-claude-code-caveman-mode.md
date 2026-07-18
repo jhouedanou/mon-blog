@@ -3,7 +3,7 @@ title: "Claude Code en mode Caveman : -75% de tokens, agent parle comme homme de
 image: "/images/articles/claude-caveman.jpg"
 createdAt: "2026-05-15"
 description: "Le plugin Caveman fait parler Claude Code (et 30+ autres agents) comme un homme des cavernes : 65 à 75 % de tokens en moins, précision technique intacte. Installation sur Windows, macOS et Linux."
-keywords: "Claude Code, caveman, plugin, économiser tokens, Anthropic, Codex, Gemini, Cursor, Windsurf, Cline, Copilot, Windows, macOS, Linux"
+searchIntent: "Comment réduire la consommation de tokens de Claude Code avec le plugin Caveman."
 tags: ["tutoriel", "dev", "ia"]
 ---
 

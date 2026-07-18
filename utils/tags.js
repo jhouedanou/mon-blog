@@ -26,7 +26,8 @@ export function unslugifyTag(slug) {
 }
 
 // Extract canonical tag list from a Nuxt Content article.
-// Priority: explicit `tags` frontmatter (array). Fallback: parse `keywords` string.
+// Tags are the editorial taxonomy. The old `keywords` field is intentionally
+// ignored so search intent can be written as natural language instead.
 export function getArticleTags(article) {
   if (!article) return []
 
@@ -34,14 +35,6 @@ export function getArticleTags(article) {
     return article.tags
       .map((t) => String(t).toLowerCase().trim())
       .filter((t) => t.length > 0 && !STOPWORDS.has(t))
-  }
-
-  if (typeof article.keywords === 'string' && article.keywords.length) {
-    return article.keywords
-      .toLowerCase()
-      .split(',')
-      .map((t) => t.trim())
-      .filter((t) => t.length > 1 && !STOPWORDS.has(t))
   }
 
   return []

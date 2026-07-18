@@ -1,8 +1,8 @@
 <template>
     <div class="layout">
-        <main class="main">
+        <div class="main">
             <slot />
-        </main>
+        </div>
 
         <footer class="footer">
             <div class="footer-content">
@@ -14,8 +14,10 @@
                     <p class="footer-copy">&copy; {{ new Date().getFullYear() }} Jean-Luc Houédanou. Tous droits réservés.</p>
                     <nav class="footer-links" aria-label="Liens secondaires">
                         <NuxtLink to="/tags">Tags</NuxtLink>
+                        <NuxtLink to="/themes">Thématiques</NuxtLink>
                         <NuxtLink to="/cv">CV</NuxtLink>
                         <NuxtLink to="/a-propos">À propos</NuxtLink>
+                        <NuxtLink to="/confidentialite">Confidentialité</NuxtLink>
                         <a href="/feed.xml">RSS</a>
                         <a href="https://github.com/jhouedanou" target="_blank" rel="noopener noreferrer">GitHub</a>
                     </nav>

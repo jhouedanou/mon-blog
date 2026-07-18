@@ -3,7 +3,7 @@ title: "Windows 11 : Installez le sans compte Microsoft (et sans perdre vos chev
 image: "/images/articles/windows11-bypass.jpg"
 createdAt: "2026-04-14"
 description: "Vous venez de formater Windows 11 et Microsoft refuse un compte local ? Guide complet avec 4 solutions qui marchent vraiment — et explications des pièges. Pour ceux qui aiment leur liberté informatique."
-keywords: "Windows 11, compte local, Microsoft, OOBE BYPASSNRO, configuration système, installation Windows, compte utilisateur"
+searchIntent: "Comment installer Windows 11 avec un compte local sans créer de compte Microsoft."
 tags: ["tutoriel", "windows", "sysadmin"]
 ---
 
