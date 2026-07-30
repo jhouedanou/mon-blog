@@ -1,0 +1,58 @@
+Documenté. 4 fichiers.
+
+- [2026-07-30_audit_agg_perimes.sql](backend/prisma/sql/2026-07-30_audit_agg_perimes.sql) — requête 5 ajoutée (résolution `spaceElementId`, avant/après le fix).
+- [02_ANALYSE.md:635](frontend/docs/modules/02_ANALYSE.md:635) — bug #1 reformulé comme #2, + leçon transverse dans la note datée.
+- [247_01](frontend/docs/bugs/247_01_analyse_kpi_header_ca_shop_level_puis_item_level.md) — section bug #1 mesurée, et un « Journal — session du 2026-07-30 » : Livré · recalcul non fait · communication utilisateurs · anomalie de commit.
+- [00_INDEX.md:289](frontend/docs/bugs/00_INDEX.md:289) — inchangé depuis tout à l'heure.
+
+---
+
+## Message pour l'équipe backend
+
+Objet : **Agrégats `SpaceRevenueMinuteAgg` périmés — ≈ 1,26 M€ affichés en TTC sous un libellé HT, sur 8 espaces**
+
+Bonjour,
+
+Un point remonté depuis le front, mais la cause et le correctif sont chez vous. Aucun code à écrire : c'est un recalcul.
+
+**Le constat.** L'écran Analyse d'Auxerre affiche 243 428,69 € en vue « par point de vente » et 215 310,63 € en vue « par article ». Écart 28 118,06 €, soit 13,06 %. C'est intégralement de la TVA.
+
+**La cause n'est pas la formule.** Le commit `a71045b` du 21 juillet (BUG-015) a ajouté la division par `(1 + vat/100)` dans `aggregation.service.ts:297`. La formule est correcte depuis. Le problème est que **les lignes agrégées avant cette date n'ont jamais été recalculées** : elles contiennent du TTC dans une colonne nommée `revenueHt`.
+
+La coupure tombe exactement sur la date du fix, sans exception :
+
+| Event (Auxerre) | Agrégat calculé le | Stocké | TTC recalculé | HT recalculé | ratio |
+|---|---|---|---|---|---|
+| AJA 13 Sept 2025 | 2026-07-07 | 53 089,00 | **53 089,00** | 47 085,69 | 1,1275 |
+| Match 10 Mai | 2026-07-07 | 47 579,50 | **47 579,50** | 41 618,53 | 1,1432 |
+| AJA vs Angers | 2026-07-07 | 32 180,00 | **32 180,00** | 28 036,33 | 1,1478 |
+| AJ Auxerre vs Ipswitch | **2026-07-27** | 3 903,41 | 4 394,50 | **3 903,33** | **1,0000** |
+| [Simulé] BUVETTE | **2026-07-30** | 11,85 | 12,50 | **11,85** | **1,0000** |
+
+Avant le fix → stocké = TTC au centime. Après → stocké = HT au centime. Le ratio varie de 1,10 à 1,15 selon le mix des taux : sur le 10/05, 51 % du CA à 10 %, 46 % à 20 %, 2 % à 5,5 % — moyenne pondérée 14,32 %.
+
+**Deux hypothèses écartées, mesurées**, pour vous éviter de les réexplorer : `reduction` (soustraite par l'agrégat, ignorée par l'item-level) vaut `0,00 €` sur les 899 308 lignes de `WeezeventTransactionItem` ; le filtre `status = 'V'`, absent de l'agrégat, ne change rien sur la journée de contrôle.
+
+**Le même lot de lignes porte aussi BUG-014**, avec le même mécanisme — code corrigé, données jamais rejouées. Sur les lignes périmées d'Auxerre : 249 `spaceElementId` distincts, **249 sur 249 sont des `MenuItem.id`**, zéro `SpaceElement.id`, et `weezeventLocationId = weezeventMerchantId` partout. Sur les lignes récentes : 17 sur 17 de vrais `SpaceElement.id`. Le « Par shop » de ces events groupe donc par article vendu, pas par point de vente. **Un seul recalcul répare les deux.**
+
+**Portée : 8 espaces.** Stade Français Paris 522 501,63 € · Auxerre 239 400,00 € · Stade Abbé Deschamps 164 033,00 € · Habita 150 777,22 € · St Etienne 101 620,95 € · Aix Arena 50 772,00 € · Paris Football Club 34 438,50 €. Cartes de la home page, KPI shop-level, `Event.revenue` et tous les per-capita qui en dérivent.
+
+**Le correctif.** Rejouer `POST /aggregation/process-events` (`aggregation.controller.ts:83`), espace par espace. Le job est idempotent, delete-then-insert par event.
+
+```bash
+curl -X POST "$API/aggregation/process-events" -H "Authorization: Bearer $TOKEN" -H 'Content-Type: application/json' -d '{"spaceId":"cmovsjbiz01lzvwyn30wweqpf","integrationId":"cmpzfm46d00017sis0cv5qzou"}'
+```
+
+**Une précaution, sérieuse : `integrationId` est obligatoire.** Sans lui, `integrationClause` est vide (`aggregation.service.ts:260-262`) et la requête devient tenant-wide. Or sur Auxerre, deux `integrationId` portent les mêmes 3 424 transactions du 10/05 — un recalcul non scopé **doublerait** le CA. Passez la requête 4 du script d'audit avant chaque espace.
+
+Trois points à ne pas manquer :
+
+1. **Prévenir les utilisateurs avant.** Tous les montants baissent de 10 à 15 %. C'est le HT qui remplace un TTC mal étiqueté, pas une perte — sans ce message, ce sera lu comme une panne.
+2. **Ne touchez pas à la RPC dans le même lot.** La colonne `weezeventEventId` contient un `Event.id` DataFriday malgré son nom, et la chaîne de jointure de la RPC ne résout rien sur ce jeu : le shop-level ne s'affiche que parce que le `COALESCE` recrache l'id brut, qui est exactement celui qu'attend le front. Réparer un seul des deux côtés met le CA à zéro. Le recalcul, lui, réécrit `event.id` à l'identique — aucun risque de ce côté.
+3. **Bug #3 reste ouvert** (périmètres divergents entre `SpaceProductRevenueDailyAgg` et `SpaceRevenueMinuteAgg`) : le recalcul ne le couvre pas.
+
+Script d'audit rejouable, lecture seule, 5 requêtes : `backend/prisma/sql/2026-07-30_audit_agg_perimes.sql`. Détail complet dans `frontend/docs/bugs/247_01_analyse_kpi_header_ca_shop_level_puis_item_level.md`.
+
+Enfin, une leçon qui dépasse ce ticket : **corriger une formule d'agrégation ne corrige pas l'historique agrégé.** BUG-014 et BUG-015 ont tous deux été classés « corrigé » sur la foi du code, et l'écran affiche encore l'erreur neuf jours plus tard. À l'avenir, tout correctif d'écriture dans ces tables devrait embarquer son recalcul.
+
+JLH
