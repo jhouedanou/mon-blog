@@ -6,6 +6,7 @@
         :style="prev.image ? { backgroundImage: `url(${prev.image})` } : {}"
         :class="{ 'article-nav__thumb--no-image': !prev.image }"
       >
+        <ArticleThumbFallback v-if="!prev.image" class="article-nav__fallback" :seed="prev._path" />
         <span class="article-nav__direction"><span class="article-nav__arrow">←</span> {{ $t('previous') }}</span>
       </div>
       <span class="article-nav__title">{{ prev.title }}</span>
@@ -18,6 +19,7 @@
         :style="next.image ? { backgroundImage: `url(${next.image})` } : {}"
         :class="{ 'article-nav__thumb--no-image': !next.image }"
       >
+        <ArticleThumbFallback v-if="!next.image" class="article-nav__fallback" :seed="next._path" />
         <span class="article-nav__direction">{{ $t('next') }} <span class="article-nav__arrow">→</span></span>
       </div>
       <span class="article-nav__title">{{ next.title }}</span>
@@ -97,7 +99,15 @@ defineProps({
   }
 }
 
+.article-nav__fallback {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
 .article-nav__direction {
+  position: relative;
+  z-index: 1;
   font-family: var(--font-mono);
   font-size: 0.7rem;
   font-weight: 500;

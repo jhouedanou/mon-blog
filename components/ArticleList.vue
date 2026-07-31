@@ -30,10 +30,17 @@
                     class="mosaic-tile"
                     :class="[
                         `mosaic-tile--${getTileSize(index)}`,
-                        `mosaic-tile--accent-${getAccentVariant(index)}`
+                        `mosaic-tile--accent-${getAccentVariant(index)}`,
+                        { 'mosaic-tile--no-image': !article.image }
                     ]"
-                    :style="[getTileBackground(article, index), getAnimationDelay(index)]"
+                    :style="[getTileBackground(article), getAnimationDelay(index)]"
                 >
+                    <ArticleThumbFallback
+                        v-if="!article.image"
+                        class="mosaic-fallback"
+                        :seed="article._path"
+                    />
+
                     <span v-if="isNew(article)" class="mosaic-badge">
                         <span class="mosaic-badge__dot"></span>
                         {{ $t('newBadge') }}
@@ -189,13 +196,6 @@ function isNew(article) {
     return (Date.now() - created) < sevenDays
 }
 
-const fallbackGradients = [
-    'linear-gradient(135deg, var(--bg-card) 0%, var(--bg-secondary) 58%, color-mix(in srgb, var(--accent) 34%, var(--bg-secondary)) 100%)',
-    'linear-gradient(135deg, var(--bg-card) 0%, var(--bg-secondary) 62%, color-mix(in srgb, var(--accent-violet) 30%, var(--bg-secondary)) 100%)',
-    'linear-gradient(135deg, var(--bg-card) 0%, var(--bg-secondary) 60%, color-mix(in srgb, var(--accent-magenta) 28%, var(--bg-secondary)) 100%)',
-    'linear-gradient(135deg, var(--bg-card) 0%, var(--bg-secondary) 64%, color-mix(in srgb, var(--accent-amber) 28%, var(--bg-secondary)) 100%)',
-]
-
 const accentVariants = ['teal', 'magenta', 'violet', 'teal', 'amber', 'magenta']
 
 function getAccentVariant(index) {
@@ -210,14 +210,11 @@ function getTileSize(index) {
     return 'normal'
 }
 
-function getTileBackground(article, index) {
-    if (article.image) {
-        return {
-            backgroundImage: `url(${article.image})`,
-        }
-    }
+function getTileBackground(article) {
+    // Sans image, la tuile est peinte par <ArticleThumbFallback> (SVG).
+    if (!article.image) return {}
     return {
-        backgroundImage: fallbackGradients[index % fallbackGradients.length],
+        backgroundImage: `url(${article.image})`,
     }
 }
 
@@ -375,6 +372,12 @@ function formatDate(createdAt) {
     gap: 1rem;
 }
 
+.mosaic-fallback {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
 .mosaic-tile {
     position: relative;
     border-radius: 6px;
@@ -405,6 +408,43 @@ function formatDate(createdAt) {
                     filter 0.7s ease;
         z-index: 0;
         filter: saturate(0.9);
+    }
+
+    // Sans image, c'est le SVG qui peint la tuile : le ::before hériterait
+    // d'un background vide et se contenterait de le recouvrir.
+    &--no-image::before {
+        display: none;
+    }
+
+    // L'overlay est calibré pour du texte blanc sur photo. Sur le SVG
+    // (clair en thème clair), il faut un voile beaucoup plus léger.
+    &--no-image .mosaic-overlay {
+        background: linear-gradient(
+            to top,
+            color-mix(in srgb, var(--bg-primary) 92%, transparent) 0%,
+            color-mix(in srgb, var(--bg-primary) 62%, transparent) 48%,
+            transparent 100%
+        );
+    }
+
+    &--no-image .mosaic-title,
+    &--no-image .mosaic-excerpt,
+    &--no-image .mosaic-meta,
+    &--no-image .mosaic-arrow {
+        color: var(--text-primary);
+        text-shadow: none;
+    }
+
+    &--no-image .mosaic-excerpt,
+    &--no-image .mosaic-meta {
+        color: var(--text-secondary);
+    }
+
+    &--no-image:hover {
+        .mosaic-title,
+        .mosaic-arrow {
+            color: var(--accent);
+        }
     }
 
     &:hover {
