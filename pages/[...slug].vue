@@ -281,7 +281,12 @@ function formatDate(createdAt) {
   color: var(--text-primary);
   line-height: 1.7;
   background: transparent;
+  /* `overflow-x: clip` seul suffit à empêcher le débordement horizontal ;
+     `hidden` forcerait un contexte de défilement qui casserait le
+     `position: sticky` de la table des matières. `overflow-y: visible`
+     doit rester explicite pour la même raison. */
   overflow-x: clip;
+  overflow-y: visible;
 }
 
 .article-layout {

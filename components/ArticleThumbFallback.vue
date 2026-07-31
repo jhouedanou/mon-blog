@@ -3,8 +3,8 @@
     class="thumb-fallback"
     :viewBox="`0 0 ${width} ${height}`"
     preserveAspectRatio="xMidYMid slice"
-    role="img"
-    :aria-label="alt"
+    role="presentation"
+    aria-hidden="true"
     focusable="false"
   >
     <defs>
@@ -53,7 +53,6 @@ const props = defineProps({
   seed: { type: [Number, String], default: 0 },
   width: { type: Number, default: 640 },
   height: { type: Number, default: 360 },
-  alt: { type: String, default: '' },
 })
 
 // Les IDs SVG sont globaux au document : sans unicité, plusieurs vignettes

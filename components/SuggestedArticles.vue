@@ -14,11 +14,7 @@
           :style="article.image ? { backgroundImage: `url(${article.image})` } : {}"
           :class="{ 'suggested__thumb--no-image': !article.image }"
         >
-          <ArticleThumbFallback
-            v-if="!article.image"
-            :seed="article._path"
-            :alt="article.title"
-          />
+          <ArticleThumbFallback v-if="!article.image" :seed="article._path" />
         </div>
         <div class="suggested__info">
           <span class="suggested__date">{{ formatDate(article.createdAt) }}</span>
