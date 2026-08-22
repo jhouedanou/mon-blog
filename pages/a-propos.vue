@@ -63,9 +63,39 @@
               <i class="material-icons">rss_feed</i>
               Flux RSS
             </a>
+            <!-- Liens sortants volontairement suivables (pas de nofollow) : ils
+                 confirment en HTML les profils déclarés dans sameAs. -->
             <a href="https://github.com/jhouedanou" target="_blank" rel="noopener noreferrer" class="about-contact__link">
               <i class="material-icons">code</i>
               GitHub
+            </a>
+            <a href="https://ci.linkedin.com/in/jlhouedanou" target="_blank" rel="noopener noreferrer" class="about-contact__link">
+              <i class="material-icons">work</i>
+              LinkedIn
+            </a>
+            <a href="https://www.youtube.com/@JeanLucHouedanou" target="_blank" rel="noopener noreferrer" class="about-contact__link">
+              <i class="material-icons">smart_display</i>
+              YouTube
+            </a>
+            <a href="https://www.facebook.com/bloghouedanou/" target="_blank" rel="noopener noreferrer" class="about-contact__link">
+              <i class="material-icons">groups</i>
+              Facebook
+            </a>
+            <a href="https://twitter.com/afrowebdesigner" target="_blank" rel="noopener noreferrer" class="about-contact__link">
+              <i class="material-icons">alternate_email</i>
+              X / Twitter
+            </a>
+            <a href="https://www.instagram.com/jlhouedanou/" target="_blank" rel="noopener noreferrer" class="about-contact__link">
+              <i class="material-icons">photo_camera</i>
+              Instagram
+            </a>
+            <a href="https://www.slideshare.net/jhouedanou" target="_blank" rel="noopener noreferrer" class="about-contact__link">
+              <i class="material-icons">slideshow</i>
+              SlideShare
+            </a>
+            <a href="https://www.quora.com/profile/Jean-Luc-Houedanou" target="_blank" rel="noopener noreferrer" class="about-contact__link">
+              <i class="material-icons">forum</i>
+              Quora
             </a>
           </div>
         </section>
@@ -81,11 +111,42 @@
 </template>
 
 <script setup>
+const aboutDescription =
+  "Jean-Luc Houédanou - Développeur web full-stack et administrateur systèmes basé à Abidjan, Côte d'Ivoire."
+
 useHead({
   title: 'À propos - Jean-Luc Houédanou',
+  link: [
+    { rel: 'canonical', href: 'https://houedanou.com/a-propos' },
+  ],
   meta: [
-    { name: 'description', content: 'Jean-Luc Houédanou - Développeur web full-stack et administrateur systèmes basé à Abidjan, Côte d\'Ivoire.' },
-  ]
+    { name: 'description', content: aboutDescription },
+    { property: 'og:title', content: 'À propos - Jean-Luc Houédanou' },
+    { property: 'og:description', content: aboutDescription },
+    { property: 'og:url', content: 'https://houedanou.com/a-propos' },
+    { property: 'og:type', content: 'profile' },
+    { property: 'og:image', content: 'https://houedanou.com/images/1837389.webp' },
+    { property: 'og:site_name', content: 'Jean-Luc Houédanou' },
+  ],
+  script: [
+    {
+      // La page canonique de l'entité : elle pointe vers le nœud Person défini
+      // dans le @graph global (app.vue).
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'ProfilePage',
+        '@id': 'https://houedanou.com/a-propos#webpage',
+        url: 'https://houedanou.com/a-propos',
+        name: 'À propos - Jean-Luc Houédanou',
+        description: aboutDescription,
+        inLanguage: 'fr',
+        isPartOf: { '@id': 'https://houedanou.com/#website' },
+        mainEntity: { '@id': 'https://houedanou.com/#person' },
+        about: { '@id': 'https://houedanou.com/#person' },
+      }),
+    },
+  ],
 })
 </script>
 

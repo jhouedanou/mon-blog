@@ -9,9 +9,11 @@
                             <span v-if="articles && articles.length">{{ articles.length }} articles</span>
                         </span>
                     </div>
+                    <!-- L'espace explicite est indispensable : le compilateur Vue supprime
+                         les nœuds de texte blancs contenant un saut de ligne, ce qui donnait
+                         « Jean-LucHouédanou » dans le HTML servi à Google. -->
                     <h1 class="hero-intro__title">
-                        <span class="hero-intro__word">Jean<span class="hero-intro__dot">-</span>Luc</span>
-                        <span class="hero-intro__word hero-intro__word--accent">Houédanou</span>
+                        <span class="hero-intro__word">Jean<span class="hero-intro__dot">-</span>Luc </span><span class="hero-intro__word hero-intro__word--accent">Houédanou</span>
                     </h1>
                     <p class="hero-intro__lede">
                         Retours d'expérience, outils web, administration système et culture numérique depuis Abidjan.

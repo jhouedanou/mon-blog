@@ -239,11 +239,12 @@ useHead(() => ({
         image: [canonicalImage.value],
         datePublished: article.value?.createdAt,
         dateModified: article.value?.updatedAt || article.value?.createdAt,
-        author: {
-          "@type": "Person",
-          name: "Jean-Luc Houédanou",
-          url: `${siteUrl}/a-propos`,
-        },
+        // Référence au nœud Person du @graph global (app.vue) : chaque billet
+        // devient une preuve d'auteur rattachée à la même entité.
+        author: { "@id": `${siteUrl}/#person` },
+        publisher: { "@id": `${siteUrl}/#person` },
+        isPartOf: { "@id": `${siteUrl}/#website` },
+        inLanguage: "fr",
         mainEntityOfPage: {
           "@type": "WebPage",
           "@id": currentUrl.value,

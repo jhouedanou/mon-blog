@@ -7,6 +7,9 @@
 <script setup>
 useHead({
     title: 'Le Blog de Jean-Luc Houédanou - Tech, Culture & Réflexions',
+    link: [
+        { rel: 'canonical', href: 'https://houedanou.com/' },
+    ],
     meta: [
         { name: 'description', content: 'Blog personnel de Jean-Luc Houédanou. Articles sur la technologie, la culture numérique, les outils créatifs et des réflexions sur le quotidien.' },
         { property: 'og:title', content: 'Le Blog de Jean-Luc Houédanou' },

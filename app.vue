@@ -113,8 +113,82 @@ onUnmounted(() => {
   window.removeEventListener('scroll', onScroll)
 })
 
+// Graphe d'entité servi sur toutes les pages : c'est lui qui permet aux
+// références `{ '@id': '…#person' }` des articles et de /a-propos de se
+// résoudre sur la page où elles apparaissent.
+const siteGraph = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Person',
+      '@id': 'https://houedanou.com/#person',
+      name: 'Jean-Luc Houédanou',
+      alternateName: ['Jean Luc Houedanou', 'Don Dada', 'JLH'],
+      url: 'https://houedanou.com',
+      image: {
+        '@type': 'ImageObject',
+        '@id': 'https://houedanou.com/#personimage',
+        url: 'https://houedanou.com/images/1837389.webp',
+        contentUrl: 'https://houedanou.com/images/1837389.webp',
+      },
+      jobTitle: 'Développeur web full-stack & Administrateur systèmes',
+      description:
+        "Développeur web full-stack et administrateur systèmes basé à Abidjan, Côte d'Ivoire. Blogueur tech sur houedanou.com.",
+      worksFor: {
+        '@type': 'Organization',
+        name: 'Big Five Solutions',
+        url: 'https://bigfive.solutions/',
+      },
+      alumniOf: {
+        '@type': 'CollegeOrUniversity',
+        name: 'Université de Sherbrooke',
+      },
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Abidjan',
+        addressCountry: 'CI',
+      },
+      knowsAbout: [
+        'Développement web',
+        'Vue.js',
+        'Nuxt',
+        'Administration système Linux',
+        'Culture numérique en Afrique',
+      ],
+      sameAs: [
+        'https://github.com/jhouedanou',
+        'https://ci.linkedin.com/in/jlhouedanou',
+        'https://www.youtube.com/@JeanLucHouedanou',
+        'https://www.facebook.com/bloghouedanou/',
+        'https://www.slideshare.net/jhouedanou',
+        'https://www.quora.com/profile/Jean-Luc-Houedanou',
+        'https://twitter.com/afrowebdesigner',
+        'https://www.instagram.com/jlhouedanou/',
+        'https://jhouedanou.github.io/Curriculum-vitae/',
+      ],
+    },
+    {
+      '@type': 'WebSite',
+      '@id': 'https://houedanou.com/#website',
+      url: 'https://houedanou.com',
+      name: 'Journal — Le Blog de Jean-Luc Houédanou',
+      alternateName: 'Le Blog de Jean-Luc Houédanou',
+      inLanguage: 'fr',
+      author: { '@id': 'https://houedanou.com/#person' },
+      publisher: { '@id': 'https://houedanou.com/#person' },
+      copyrightHolder: { '@id': 'https://houedanou.com/#person' },
+    },
+  ],
+}
+
 useHead({
   title: 'Le blog de Jean-Luc Houédanou',
+  script: [
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify(siteGraph),
+    },
+  ],
   htmlAttrs: {
     'data-theme': 'light',
     // Requis pour que `hyphens: auto` charge le dictionnaire de césure français.

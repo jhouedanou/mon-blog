@@ -89,22 +89,8 @@ i18n: {
         {
           src: '//resources.infolinks.com/js/infolinks_main.js',
           async: true
-        },
-        {
-          type: 'application/ld+json',
-          children: JSON.stringify({
-            "@context": "https://schema.org/",
-            "@type": "Person",
-            "name": "Jean-Luc Houédanou",
-            "url": "https://houedanou.com/",
-            "jobTitle": "Consultant SEO et Développeur Web",
-            "address": {
-              "@type": "PostalAddress",
-              "addressLocality": "Abidjan",
-              "addressCountry": "CI"
-            }
-          })
         }
+        // Le balisage Person/WebSite vit désormais dans app.vue (@graph unique).
       ],
       link: [
         {
