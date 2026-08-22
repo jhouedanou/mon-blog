@@ -1,81 +1,93 @@
 <template>
     <div class="article-list">
         <div class="article-list-container">
-            <!-- Hero intro -->
-            <section class="hero-intro">
-                <div class="hero-intro__line">
-                    <span class="hero-intro__eyebrow">— Journal {{ currentYear }} ·
-                        <span v-if="articles && articles.length">{{ articles.length }} articles</span>
-                    </span>
-                </div>
-                <h1 class="hero-intro__title">
-                    <span class="hero-intro__word">Jean<span class="hero-intro__dot">-</span>Luc</span>
-                    <span class="hero-intro__word hero-intro__word--accent">Houédanou</span>
-                </h1>
-                <p class="hero-intro__lede">
-                    Retours d'expérience, outils web, administration système et culture numérique depuis Abidjan.
-                </p>
-            </section>
-
-            <!-- Sticky search -->
-            <div class="sticky-filters">
-                <SearchBar v-model="searchQuery" />
-            </div>
-
-            <div v-if="filteredArticles && filteredArticles.length" class="mosaic-grid">
-                <NuxtLink
-                    v-for="(article, index) in displayedArticles"
-                    :key="article._path"
-                    :to="localePath(article._path)"
-                    class="mosaic-tile"
-                    :class="[
-                        `mosaic-tile--${getTileSize(index)}`,
-                        `mosaic-tile--accent-${getAccentVariant(index)}`,
-                        { 'mosaic-tile--no-image': !article.image }
-                    ]"
-                    :style="[getTileBackground(article), getAnimationDelay(index)]"
-                >
-                    <ArticleThumbFallback
-                        v-if="!article.image"
-                        class="mosaic-fallback"
-                        :seed="article._path"
-                    />
-
-                    <span v-if="isNew(article)" class="mosaic-badge">
-                        <span class="mosaic-badge__dot"></span>
-                        {{ $t('newBadge') }}
-                    </span>
-
-                    <div class="mosaic-overlay">
-                        <div class="mosaic-text-block">
-                            <h2 class="mosaic-title">
-                                {{ article.title }}
-                            </h2>
-                            <p v-if="getExcerptText(article)" class="mosaic-excerpt">{{ getExcerptText(article) }}</p>
-                        </div>
-                        <div class="mosaic-meta">
-                            <span class="mosaic-date">{{ formatDate(article.createdAt) }}</span>
-                            <span v-if="getReadingTime(article)" class="mosaic-reading-time">
-                                <i class="material-icons">schedule</i>
-                                {{ getReadingTime(article) }} {{ $t('readingTime') }}
-                            </span>
-                        </div>
-                        <span class="mosaic-arrow" aria-hidden="true">→</span>
+            <!-- Sidebar : identité + recherche -->
+            <aside class="home-sidebar">
+                <section class="hero-intro">
+                    <div class="hero-intro__line">
+                        <span class="hero-intro__eyebrow">— Journal {{ currentYear }} ·
+                            <span v-if="articles && articles.length">{{ articles.length }} articles</span>
+                        </span>
                     </div>
-                </NuxtLink>
-            </div>
-            <p v-else class="no-articles">{{ $t('noArticles') }}</p>
+                    <h1 class="hero-intro__title">
+                        <span class="hero-intro__word">Jean<span class="hero-intro__dot">-</span>Luc</span>
+                        <span class="hero-intro__word hero-intro__word--accent">Houédanou</span>
+                    </h1>
+                    <p class="hero-intro__lede">
+                        Retours d'expérience, outils web, administration système et culture numérique depuis Abidjan.
+                    </p>
+                </section>
 
-            <!-- Infinite scroll sentinel -->
-            <div ref="scrollSentinel" class="scroll-sentinel">
-                <div v-if="isLoadingMore" class="loading-more">
-                    <span class="loading-dot"></span>
-                    <span class="loading-dot"></span>
-                    <span class="loading-dot"></span>
+                <div class="home-sidebar__search">
+                    <SearchBar v-model="searchQuery" />
                 </div>
-                <p v-if="allLoaded && displayedArticles.length > 0" class="all-loaded-msg">
-                    — Fin du journal —
-                </p>
+
+                <nav class="home-sidebar__nav" aria-label="Navigation principale">
+                    <NuxtLink to="/" class="home-sidebar__nav-link">{{ $t('home') }}</NuxtLink>
+                    <NuxtLink to="/tags" class="home-sidebar__nav-link">{{ $t('tags') }}</NuxtLink>
+                    <NuxtLink to="/themes" class="home-sidebar__nav-link">Thématiques</NuxtLink>
+                    <NuxtLink to="/cv" class="home-sidebar__nav-link">{{ $t('cv') }}</NuxtLink>
+                    <NuxtLink to="/a-propos" class="home-sidebar__nav-link">{{ $t('about') }}</NuxtLink>
+                </nav>
+            </aside>
+
+            <!-- Galerie -->
+            <div class="home-main">
+                <div v-if="filteredArticles && filteredArticles.length" class="mosaic-grid">
+                    <NuxtLink
+                        v-for="(article, index) in displayedArticles"
+                        :key="article._path"
+                        :to="localePath(article._path)"
+                        class="mosaic-tile"
+                        :class="[
+                            `mosaic-tile--${getTileSize(index)}`,
+                            `mosaic-tile--accent-${getAccentVariant(index)}`,
+                            { 'mosaic-tile--no-image': !article.image }
+                        ]"
+                        :style="[getTileBackground(article), getAnimationDelay(index)]"
+                    >
+                        <ArticleThumbFallback
+                            v-if="!article.image"
+                            class="mosaic-fallback"
+                            :seed="article._path"
+                        />
+    
+                        <span v-if="isNew(article)" class="mosaic-badge">
+                            <span class="mosaic-badge__dot"></span>
+                            {{ $t('newBadge') }}
+                        </span>
+    
+                        <div class="mosaic-overlay">
+                            <div class="mosaic-text-block">
+                                <h2 class="mosaic-title">
+                                    {{ article.title }}
+                                </h2>
+                                <p v-if="getExcerptText(article)" class="mosaic-excerpt">{{ getExcerptText(article) }}</p>
+                            </div>
+                            <div class="mosaic-meta">
+                                <span class="mosaic-date">{{ formatDate(article.createdAt) }}</span>
+                                <span v-if="getReadingTime(article)" class="mosaic-reading-time">
+                                    <i class="material-icons">schedule</i>
+                                    {{ getReadingTime(article) }} {{ $t('readingTime') }}
+                                </span>
+                            </div>
+                            <span class="mosaic-arrow" aria-hidden="true">→</span>
+                        </div>
+                    </NuxtLink>
+                </div>
+                <p v-else class="no-articles">{{ $t('noArticles') }}</p>
+    
+                <!-- Infinite scroll sentinel -->
+                <div ref="scrollSentinel" class="scroll-sentinel">
+                    <div v-if="isLoadingMore" class="loading-more">
+                        <span class="loading-dot"></span>
+                        <span class="loading-dot"></span>
+                        <span class="loading-dot"></span>
+                    </div>
+                    <p v-if="allLoaded && displayedArticles.length > 0" class="all-loaded-msg">
+                        — Fin du journal —
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -250,18 +262,81 @@ function formatDate(createdAt) {
 }
 
 .article-list-container {
-    max-width: 1280px;
+    max-width: 1360px;
     margin: 0 auto;
     padding: 0 1.5rem;
+    display: grid;
+    grid-template-columns: 320px minmax(0, 1fr);
+    gap: 3.5rem;
+    align-items: start;
+}
+
+/* ==========================================
+   Sidebar
+   ========================================== */
+.home-sidebar {
+    position: sticky;
+    top: 96px;
+    padding: 3rem 0 2rem;
+}
+
+.home-sidebar__search {
+    margin-top: 2rem;
+}
+
+.home-sidebar__nav {
+    margin-top: 2.25rem;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--border-color);
+}
+
+.home-sidebar__nav-link {
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: var(--text-secondary);
+    text-decoration: none;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: color 0.2s ease, padding-left 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+
+    &::after {
+        content: '→';
+        font-family: var(--font-mono);
+        font-size: 0.9rem;
+        opacity: 0;
+        transform: translateX(-4px);
+        transition: opacity 0.2s ease, transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    &:hover,
+    &.router-link-exact-active {
+        color: var(--accent);
+        padding-left: 0.35rem;
+
+        &::after {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+}
+
+.home-main {
+    padding-top: 3rem;
+    min-width: 0;
 }
 
 /* ==========================================
    Hero intro
    ========================================== */
 .hero-intro {
-    padding: 4.25rem 0 3rem;
+    padding: 0 0 2rem;
     border-bottom: 1px solid var(--border-color);
-    margin-bottom: 2rem;
 }
 
 .hero-intro__line {
@@ -280,15 +355,15 @@ function formatDate(createdAt) {
 .hero-intro__title {
     font-family: var(--font-display);
     font-weight: 650;
-    font-size: clamp(2.35rem, 5vw, 4.25rem);
-    line-height: 1;
+    font-size: clamp(2.1rem, 2.6vw, 2.9rem);
+    line-height: 1.04;
     letter-spacing: -0.03em;
     color: var(--text-primary);
-    margin: 0 0 1.5rem;
+    margin: 0 0 1.25rem;
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.2em 0.35em;
-    align-items: baseline;
+    flex-direction: column;
+    gap: 0.08em;
+    align-items: flex-start;
 }
 
 .hero-intro__word {
@@ -334,24 +409,6 @@ function formatDate(createdAt) {
 }
 
 /* ==========================================
-   Sticky filters bar
-   ========================================== */
-.sticky-filters {
-    position: sticky;
-    top: 72px;
-    z-index: 50;
-    background: var(--bg-glass);
-    backdrop-filter: blur(18px) saturate(140%);
-    -webkit-backdrop-filter: blur(18px) saturate(140%);
-    padding: 1rem 0;
-    margin: 0 -1.5rem 2rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    border-bottom: 1px solid var(--border-color);
-    transition: background-color 0.3s ease;
-}
-
-/* ==========================================
    Magazine grid
    ========================================== */
 @keyframes fadeInUp {
@@ -367,7 +424,7 @@ function formatDate(createdAt) {
 
 .mosaic-grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 200px;
     gap: 1rem;
 }
@@ -696,6 +753,32 @@ function formatDate(createdAt) {
    Responsive
    ========================================== */
 @media screen and (max-width: 1023px) {
+    .article-list-container {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .home-sidebar {
+        position: static;
+        padding: 2.5rem 0 0;
+    }
+
+    .home-sidebar__search {
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .home-main {
+        padding-top: 0;
+    }
+
+    .hero-intro__title {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.2em 0.35em;
+        align-items: baseline;
+    }
+
     .mosaic-grid {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -721,19 +804,12 @@ function formatDate(createdAt) {
         padding: 0 1rem;
     }
 
-    .sticky-filters {
-        margin: 0 -1rem 1.5rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        top: 72px;
-    }
-
     .hero-intro {
-        padding: 2.5rem 0 2rem;
+        padding: 0 0 1.5rem;
     }
 
     .hero-intro__title {
-        font-size: clamp(2.25rem, 12vw, 3.5rem);
+        font-size: clamp(2rem, 9vw, 2.75rem);
     }
 
     .mosaic-grid {

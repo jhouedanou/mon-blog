@@ -7,7 +7,7 @@
         <footer class="footer">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <span class="footer-brand__mark">JLH</span>
+                    <img class="footer-brand__mark" src="/favicon-96x96.png" alt="" aria-hidden="true" width="28" height="28" />
                     <span class="footer-brand__wordmark">Journal<em>.</em></span>
                 </div>
                 <div class="footer-meta">
@@ -82,21 +82,16 @@
 /* Brand */
 .footer-brand {
     display: inline-flex;
-    align-items: baseline;
+    align-items: center;
     gap: 0.65rem;
     flex-shrink: 0;
 }
 
 .footer-brand__mark {
-    font-family: var(--font-mono);
-    font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: 0.06em;
-    padding: 0.32rem 0.5rem;
-    border: 1px solid var(--border-strong);
-    border-radius: 4px;
-    color: var(--text-primary);
-    line-height: 1;
+    width: 28px;
+    height: 28px;
+    border-radius: 5px;
+    display: block;
 }
 
 .footer-brand__wordmark {

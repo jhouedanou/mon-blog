@@ -78,11 +78,13 @@ onUnmounted(() => {
 </script>
 
 <style lang="scss" scoped>
+/* Colonne gauche : la TOC suit le défilement (sticky sous le header).
+   Sous 1150px, plus la place : bascule en bouton + panneau flottant. */
 .toc {
     position: sticky;
-    top: calc(72px + 1.5rem);
-    align-self: flex-start;
-    max-height: calc(100dvh - 104px);
+    top: calc(72px + 2rem);
+    align-self: start;
+    max-height: calc(100dvh - 130px);
 }
 
 .toc__mobile-toggle {
@@ -181,7 +183,7 @@ onUnmounted(() => {
     }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1150px) {
     .toc {
         position: relative;
         top: auto;

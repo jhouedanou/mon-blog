@@ -4,37 +4,43 @@
       <ReadingBar :key="article._path" :title="article.title" />
     </ClientOnly>
 
+    <!-- Hero façon remarkable : visuel à gauche, titre à droite -->
+    <section class="article-hero" :class="{ 'article-hero--full': !article.image }">
+      <div v-if="article.image" class="article-hero__media">
+        <img :src="article.image" :alt="article.title" />
+      </div>
+      <header class="article-header">
+        <div class="article-header__meta">
+          <span class="article-header__date">{{ formatDate(article.createdAt) }}</span>
+          <span class="article-header__divider" aria-hidden="true">·</span>
+          <span v-if="readingTime" class="article-header__reading-time">
+            <i class="material-icons">schedule</i>
+            {{ readingTime }} {{ $t('readingTime') }}
+          </span>
+        </div>
+        <h1 class="article-header__title">{{ article.title }}</h1>
+        <div v-if="articleTags.length" class="article-header__tags" aria-label="Étiquettes de l’article">
+          <NuxtLink
+            v-for="tag in articleTags"
+            :key="tag"
+            :to="`/tags/${slugifyTag(tag)}`"
+            class="article-header__tag"
+          >#{{ tag }}</NuxtLink>
+        </div>
+        <div v-if="articleThemes.length" class="article-header__themes">
+          <span>À explorer :</span>
+          <NuxtLink v-for="themeItem in articleThemes" :key="themeItem.slug" :to="`/themes/${themeItem.slug}`">
+            {{ themeItem.label }}
+          </NuxtLink>
+        </div>
+      </header>
+    </section>
+
     <div class="article-layout">
       <article class="article-container">
-        <header class="article-header">
-          <div class="article-header__meta">
-            <span class="article-header__date">{{ formatDate(article.createdAt) }}</span>
-            <span class="article-header__divider" aria-hidden="true">·</span>
-            <span v-if="readingTime" class="article-header__reading-time">
-              <i class="material-icons">schedule</i>
-              {{ readingTime }} {{ $t('readingTime') }}
-            </span>
-          </div>
-          <h1 class="article-header__title">{{ article.title }}</h1>
-          <div v-if="articleTags.length" class="article-header__tags" aria-label="Étiquettes de l’article">
-            <NuxtLink
-              v-for="tag in articleTags"
-              :key="tag"
-              :to="`/tags/${slugifyTag(tag)}`"
-              class="article-header__tag"
-            >#{{ tag }}</NuxtLink>
-          </div>
-          <div v-if="articleThemes.length" class="article-header__themes">
-            <span>À explorer :</span>
-            <NuxtLink v-for="themeItem in articleThemes" :key="themeItem.slug" :to="`/themes/${themeItem.slug}`">
-              {{ themeItem.label }}
-            </NuxtLink>
-          </div>
-        </header>
-
-        <div v-if="article.summary" class="article-summary">
-          <span class="article-summary__label">— Résumé</span>
-          <p>{{ article.summary }}</p>
+        <div v-if="articleSummary" class="article-summary">
+          <span class="article-summary__label">Résumé</span>
+          <p>{{ articleSummary }}</p>
         </div>
 
         <div class="article-content">
@@ -124,6 +130,12 @@ function extractText(node) {
   }
   return '';
 }
+
+// Les billets déclarent `description` dans leur front matter ; `summary` reste
+// accepté pour ceux qui en fournissent un explicitement.
+const articleSummary = computed(
+  () => article.value?.summary || article.value?.description || ""
+);
 
 const tocLinks = computed(() => {
   if (!article.value?.body?.toc?.links) return [];
@@ -289,28 +301,79 @@ function formatDate(createdAt) {
   overflow-y: visible;
 }
 
+/* Table des matières en colonne gauche (sticky), lecture à droite. */
 .article-layout {
   display: grid;
-  grid-template-columns: minmax(0, 720px) minmax(220px, 280px);
+  grid-template-columns: minmax(200px, 250px) minmax(0, 780px);
   justify-content: center;
   align-items: start;
-  max-width: 1180px;
+  gap: clamp(2rem, 4vw, 4rem);
+  max-width: 1280px;
   width: 100%;
   margin: 0 auto;
-  gap: clamp(2rem, 5vw, 4rem);
   padding: 0 1.5rem;
 }
 
+/* La TOC est après l'article dans le DOM (elle peut être absente) :
+   on la force dans la première colonne. */
+.article-layout > .article-container {
+  grid-column: 2;
+  grid-row: 1;
+}
+
 .article-layout > :deep(.toc) {
+  grid-column: 1;
+  grid-row: 1;
   width: 100%;
+}
+
+/* Sans TOC (article court), la colonne de lecture reste centrée. */
+.article-layout:not(:has(> .toc)) {
+  grid-template-columns: minmax(0, 780px);
+
+  > .article-container {
+    grid-column: 1;
+  }
+}
+
+/* ==========================================
+   Hero — visuel à gauche, titre à droite
+   ========================================== */
+.article-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: clamp(2rem, 5vh, 4rem) 1.5rem clamp(2.5rem, 6vh, 4.5rem);
+
+  /* Sans image : header centré pleine largeur, colonne de lecture */
+  &--full {
+    grid-template-columns: minmax(0, 780px);
+    justify-content: center;
+    text-align: left;
+  }
+}
+
+.article-hero__media {
+  min-width: 0;
+
+  img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 8px;
+  }
 }
 
 /* ==========================================
    Article header
    ========================================== */
 .article-header {
-  margin-bottom: 2.75rem;
   position: relative;
+  min-width: 0;
 }
 
 .article-header__meta {
@@ -355,7 +418,7 @@ function formatDate(createdAt) {
 
 .article-header__title {
   font-family: var(--font-display);
-  font-size: clamp(1.85rem, 4vw, 3rem);
+  font-size: clamp(2rem, 3.4vw, 3.4rem);
   font-weight: 650;
   line-height: 1.06;
   color: var(--text-primary);
@@ -413,44 +476,39 @@ function formatDate(createdAt) {
    Article body
    ========================================== */
 .article-container {
-  max-width: 720px;
+  max-width: 100%;
   width: 100%;
   min-width: 0;
-  padding: 4rem 0 4rem;
+  padding: 0 0 4rem;
 }
 
+/* Encart « Résumé » façon remarkable : rectangle teinté plat, sans ombre ni
+   filet d'accent — c'est le fond qui le détache, pas une bordure. */
 .article-summary {
   position: relative;
   margin-bottom: 3rem;
-  padding: 1.75rem 2rem;
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-left: 3px solid var(--accent);
-  border-radius: 8px;
-  box-shadow: var(--card-shadow);
+  padding: 1.6rem 1.85rem;
+  background: var(--bg-secondary);
+  border-radius: 6px;
 }
 
 .article-summary__label {
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
   font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: var(--accent);
+  letter-spacing: 0;
+  color: var(--text-primary);
   display: block;
-  margin-bottom: 0.65rem;
-  position: relative;
+  margin-bottom: 0.55rem;
 }
 
 .article-summary p {
   font-family: var(--font-body);
-  font-size: 1.12rem;
-  font-weight: 500;
-  line-height: 1.62;
-  color: var(--text-primary);
+  font-size: 1.04rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--text-secondary);
   margin: 0;
-  position: relative;
-  letter-spacing: -0.005em;
 }
 
 /* ==========================================
@@ -460,21 +518,36 @@ function formatDate(createdAt) {
   width: 100%;
   min-width: 0;
 
+  /* Échelle modulaire (tierce majeure, ratio 1.25) ancrée sur le corps de
+     texte : chaque niveau est un cran de l'échelle, pas une valeur au hasard. */
+  --t-body: 1.17rem;
+  --t-h3: 1.46rem;
+  --t-h2: 1.83rem;
+  --leading-body: 2.1;
+
+  /* Kerning et ligatures, appliqués à tout le corps de l'article. */
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures contextual;
+  text-rendering: optimizeLegibility;
+
   :deep(h1:first-child) {
     display: none;
   }
 
   :deep(h2) {
     font-family: var(--font-display);
-    font-size: clamp(1.65rem, 3vw, 2.25rem);
+    font-size: var(--t-h2);
     font-weight: 650;
     color: var(--text-primary);
+    /* Rythme vertical : l'espace au-dessus d'un titre est nettement plus grand
+       que celui en dessous, pour rattacher le titre au texte qu'il annonce. */
     margin-top: 3.25rem;
-    margin-bottom: 1.25rem;
-    line-height: 1.18;
+    margin-bottom: 1.1rem;
+    line-height: 1.22;
     letter-spacing: -0.018em;
     position: relative;
     padding-left: 1rem;
+    text-align: left;
     text-wrap: balance;
 
     &::before {
@@ -491,20 +564,38 @@ function formatDate(createdAt) {
 
   :deep(h3) {
     font-family: var(--font-display);
-    font-size: 1.38rem;
+    font-size: var(--t-h3);
     font-weight: 650;
     color: var(--text-primary);
     margin-top: 2.5rem;
-    margin-bottom: 0.85rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
     letter-spacing: -0.015em;
+    text-align: left;
+    text-wrap: balance;
+  }
+
+  /* Justification : sur une colonne de cette largeur, elle n'est lisible
+     qu'avec la césure automatique, sinon les blancs inter-mots explosent.
+     `hyphenate-limit-chars` interdit les coupes sur des fragments trop courts. */
+  :deep(p:not(blockquote p)),
+  :deep(ul li),
+  :deep(ol li) {
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphenate-limit-chars: 7 4 3;
+    overflow-wrap: break-word;
+    orphans: 2;
+    widows: 2;
   }
 
   :deep(p) {
     font-family: var(--font-body);
-    font-size: 1.08rem;
-    line-height: 1.8;
+    font-size: var(--t-body);
+    line-height: var(--leading-body);
     color: var(--text-secondary);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.35em;
     text-wrap: pretty;
   }
 
@@ -577,8 +668,8 @@ function formatDate(createdAt) {
 
     li {
       font-family: var(--font-body);
-      font-size: 1.08rem;
-      line-height: 1.78;
+      font-size: var(--t-body);
+      line-height: var(--leading-body);
       color: var(--text-secondary);
       margin-bottom: 0.75rem;
       padding-left: 1.75rem;
@@ -616,8 +707,8 @@ function formatDate(createdAt) {
 
     li {
       font-family: var(--font-body);
-      font-size: 1.08rem;
-      line-height: 1.78;
+      font-size: var(--t-body);
+      line-height: var(--leading-body);
       color: var(--text-secondary);
       margin-bottom: 0.85rem;
       padding-left: 2.5rem;
@@ -895,18 +986,25 @@ function formatDate(createdAt) {
 /* ==========================================
    Responsive
    ========================================== */
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1150px) {
   .article-layout {
     display: block;
-    gap: 2rem;
-  }
-
-  .article-layout > :deep(.toc) {
-    width: 100%;
+    max-width: 820px;
   }
 }
 
+
 @media screen and (max-width: 768px) {
+  .article-hero {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem 1rem 2rem;
+  }
+
+  .article-hero__media img {
+    aspect-ratio: 16 / 10;
+  }
+
   .article-layout {
     padding: 0 1rem;
     max-width: 100%;
@@ -915,11 +1013,7 @@ function formatDate(createdAt) {
   .article-container {
     max-width: 100%;
     width: 100%;
-    padding: 2.5rem 0 3rem;
-  }
-
-  .article-header {
-    margin-bottom: 2rem;
+    padding: 0 0 3rem;
   }
 
   .article-header__meta {
@@ -935,8 +1029,19 @@ function formatDate(createdAt) {
   .article-content {
     max-width: 100%;
 
-    :deep(p), :deep(li) {
-      font-size: 1rem;
+    /* L'échelle entière descend d'un cran : les rapports entre niveaux
+       restent identiques. */
+    --t-body: 1.04rem;
+    --t-h3: 1.3rem;
+    --t-h2: 1.62rem;
+    --leading-body: 1.85;
+
+    /* Colonne trop étroite pour justifier : les blancs inter-mots
+       deviennent des rivières. Retour au fer à gauche. */
+    :deep(p),
+    :deep(ul li),
+    :deep(ol li) {
+      text-align: left;
       overflow-wrap: break-word;
     }
 

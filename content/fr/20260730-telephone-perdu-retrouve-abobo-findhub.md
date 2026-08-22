@@ -1,6 +1,7 @@
 ---
 title: "Comment j'ai retrouvé mon téléphone à Abobo — grâce à FindHub de Google (et surtout à une dame honnête)"
 createdAt: "2026-07-30"
+image: "/images/articles/PXL_20260724_120434299.jpeg"
 description: "J'oublie un de mes téléphones dans un Yango. FindHub me le localise à Abobo, derrière le CHU. Récit d'une nuit blanche, d'un coup de fil paternel et de 12 000 FCFA de taxi — avec la morale au bout."
 searchIntent: "Comment retrouver un téléphone perdu à Abidjan avec FindHub, le service « Localiser » de Google, et quelles sont ses limites de précision."
 tags: ["afrique", "société", "opinion", "sécurité", "tech"]
@@ -76,4 +77,4 @@ Trois leçons, gratuites, apprises à 12 000 FCFA :
 2. **Ne fais pas le boss, ne monte pas à l'arrière du Yango.** Même si c'est une Alto qui vient te chercher. Devant, tu vois tes affaires, tu vois ta poche, tu descends en une seule fois. Derrière, tu sèmes.
 3. **Les chauffeurs Yango ne sont pas toujours des pros.** Certains ne vérifient même pas la banquette après la course. Le réflexe « bien descendre », c'est toi qui dois l'avoir.
 
-*[Jean Houédanou](https://houedanou.com) — FindHub t'emmène à Abobo, mais c'est l'honnêteté d'une inconnue qui te ramène le téléphone.*
+_[Jean Houédanou](https://houedanou.com) — FindHub t'emmène à Abobo, mais c'est l'honnêteté d'une inconnue qui te ramène le téléphone._

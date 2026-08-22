@@ -1,17 +1,18 @@
 <template>
   <NuxtLayout>
-    <NuxtLoadingIndicator color="#2f6b5f" :height="2" />
+    <NuxtLoadingIndicator color="#b0541f" :height="2" />
 
     <a href="#main-content" class="skip-link">{{ $t('skipToContent') }}</a>
 
     <header class="site-header" :class="{ 'site-header--scrolled': scrolled }">
       <div class="site-header__inner">
         <NuxtLink to="/" class="site-header__brand" aria-label="Accueil - Le Blog de Jean-Luc Houédanou">
-          <span class="site-header__mark" aria-hidden="true">JLH</span>
+          <img class="site-header__mark" src="/favicon-96x96.png" alt="" aria-hidden="true" width="32" height="32" />
           <span class="site-header__wordmark">Journal<em>.</em></span>
         </NuxtLink>
 
         <button
+          v-if="!isHome"
           class="site-header__burger"
           :class="{ 'is-active': mobileMenuOpen }"
           @click="mobileMenuOpen = !mobileMenuOpen"
@@ -23,7 +24,7 @@
           <span></span>
         </button>
 
-        <nav id="nav-menu" class="site-header__nav" :class="{ 'is-open': mobileMenuOpen }">
+        <nav v-if="!isHome" id="nav-menu" class="site-header__nav" :class="{ 'is-open': mobileMenuOpen }">
           <NuxtLink to="/" class="site-header__nav-link" @click="mobileMenuOpen = false">
             <span>{{ $t('home') }}</span>
           </NuxtLink>
@@ -73,8 +74,14 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, computed, onMounted, onUnmounted } from 'vue'
+import { useRoute } from 'vue-router'
 import ScrollToTop from '~/components/ScrollToTop.vue'
+
+const route = useRoute()
+// Sur la home, le menu vit dans la sidebar (ArticleList) — le header n'affiche
+// que la marque et les actions.
+const isHome = computed(() => /^\/(en\/?)?$/.test(route.path))
 
 const isDark = ref(false)
 const mobileMenuOpen = ref(false)
@@ -110,9 +117,11 @@ useHead({
   title: 'Le blog de Jean-Luc Houédanou',
   htmlAttrs: {
     'data-theme': 'light',
+    // Requis pour que `hyphens: auto` charge le dictionnaire de césure français.
+    lang: 'fr',
   },
   meta: [
-    { name: 'theme-color', content: '#f6f5f0' },
+    { name: 'theme-color', content: '#e9e5da' },
   ],
   link: [
     {
@@ -190,16 +199,15 @@ main {
 
 .site-header__brand {
   display: inline-flex;
-  align-items: baseline;
+  align-items: center;
   gap: 0.65rem;
   text-decoration: none;
   color: var(--text-primary);
   flex-shrink: 0;
 
   &:hover .site-header__mark {
-    background: var(--accent);
-    color: var(--accent-contrast);
-    border-color: var(--accent);
+    box-shadow: 0 0 0 2px var(--accent);
+    transform: translateY(-1px);
   }
 
   &:hover .site-header__wordmark em {
@@ -208,16 +216,12 @@ main {
 }
 
 .site-header__mark {
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  padding: 0.32rem 0.5rem;
-  border: 1px solid var(--border-strong);
-  border-radius: 4px;
-  color: var(--text-primary);
-  transition: background 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
-  line-height: 1;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  display: block;
+  align-self: center;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
 }
 
 .site-header__wordmark {

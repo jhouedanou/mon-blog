@@ -6,6 +6,7 @@ description: "Des chercheurs ont démontré qu'il est possible de débiter une s
 searchIntent: "Comment une faille Apple Pay et Visa peut-elle débiter un iPhone verrouillé et comment s’en protéger ?"
 tags: ["sécurité", "Apple Pay", "Visa", "NFC", "iPhone", "faille de sécurité"]
 ---
+
 # Comment des chercheurs ont volé 10 000 $ via un iPhone verrouillé — la faille Apple Pay / Visa expliquéeS
 
 Il y a des histoires de sécurité qui ressemblent à de la science-fiction. Celle-ci s'est passée dans un laboratoire universitaire, documentée, publiée — et elle concerne très probablement le téléphone qui est dans votre poche en ce moment.
@@ -23,7 +24,7 @@ Pour comprendre l'attaque, il faut d'abord comprendre le mode **Express Transit*
 
 Ce mode a été conçu pour les transports en commun : vous passez votre iPhone verrouillé devant un tourniquet de métro, le paiement se fait instantanément, sans Face ID ni code PIN. L'idée est bonne — on ne va pas demander à quelqu'un de déverrouiller son téléphone à chaque passage de porte.
 
-Le problème ? Ce mode désactive volontairement les protections habituelles. Et n'importe quel terminal NFC peut, en émettant le bon signal, *faire croire à l'iPhone qu'il est en face d'un tourniquet de métro*.
+Le problème ? Ce mode désactive volontairement les protections habituelles. Et n'importe quel terminal NFC peut, en émettant le bon signal, _faire croire à l'iPhone qu'il est en face d'un tourniquet de métro_.
 
 ---
 
@@ -99,7 +100,7 @@ Si vous vivez dans une ville où vous utilisez vraiment les transports en commun
 
 Ce qui me frappe dans cette histoire, ce n'est pas la sophistication de l'attaque. C'est la **tension permanente entre commodité et sécurité** que les constructeurs et les réseaux de paiement naviguent constamment.
 
-Express Transit *est* pratique. Le fait que Visa soit accepté partout *est* une qualité. Ce sont ces mêmes avantages qui créent les conditions de la vulnérabilité.
+Express Transit _est_ pratique. Le fait que Visa soit accepté partout _est_ une qualité. Ce sont ces mêmes avantages qui créent les conditions de la vulnérabilité.
 
 La bonne nouvelle, c'est que la solution est à portée de main dans vos réglages. La mauvaise, c'est que la plupart des utilisateurs ne savent pas que cette surface d'attaque existe.
 
@@ -107,4 +108,4 @@ Maintenant vsus savez.
 
 ---
 
-*[Jean Luc Houédanou](https://houedanou.com) — content d'avoir un téléphone android.*
+_[Jean Luc Houédanou](https://houedanou.com) — content d'avoir un téléphone android._

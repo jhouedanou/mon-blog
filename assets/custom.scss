@@ -5,71 +5,73 @@
 :root,
 html:not([data-theme]),
 html[data-theme="light"] {
-  --bg-primary: #f6f5f0;
-  --bg-secondary: #ebece5;
-  --bg-card: #fffefa;
-  --bg-elevated: #ffffff;
-  --bg-glass: rgba(246, 245, 240, 0.88);
+  /* Palette inspirée de remarkable.com : papier chaud, encre charbon,
+     accent terracotta emprunté à leur imagerie. */
+  --bg-primary: #e9e5da;
+  --bg-secondary: #dfdacc;
+  --bg-card: #f4f1e9;
+  --bg-elevated: #fbf9f3;
+  --bg-glass: rgba(233, 229, 218, 0.88);
 
-  --text-primary: #171a17;
-  --text-secondary: #4b504a;
-  --text-muted: #73796f;
-  --text-faded: #9ba195;
+  --text-primary: #1c1b17;
+  --text-secondary: #4f4c43;
+  --text-muted: #777263;
+  --text-faded: #a29c8b;
 
-  --border-color: #dadfd3;
-  --border-strong: #b9c2b2;
+  --border-color: #d3ccbc;
+  --border-strong: #b3ab97;
 
-  --accent: #2f6b5f;
-  --accent-hover: #214d44;
-  --accent-contrast: #f8faf6;
-  --accent-soft: rgba(47, 107, 95, 0.11);
-  --accent-violet: #5f6d76;
-  --accent-magenta: #6b655d;
-  --accent-amber: #716b55;
+  --accent: #b0541f;
+  --accent-hover: #8e3f13;
+  --accent-contrast: #faf7f0;
+  --accent-soft: rgba(176, 84, 31, 0.11);
+  --accent-violet: #6c6759;
+  --accent-magenta: #6b5f52;
+  --accent-amber: #7a6c4c;
 
-  --code-bg: #ecefe8;
-  --blockquote-bg: #f0f2ec;
+  --code-bg: #e2ddce;
+  --blockquote-bg: #efebe0;
 
-  --card-shadow: 0 24px 54px -38px rgba(35, 43, 35, 0.36);
-  --card-shadow-hover: 0 28px 64px -40px rgba(35, 43, 35, 0.44), 0 0 0 1px rgba(47, 107, 95, 0.16);
+  --card-shadow: 0 24px 54px -38px rgba(43, 39, 30, 0.36);
+  --card-shadow-hover: 0 28px 64px -40px rgba(43, 39, 30, 0.44), 0 0 0 1px rgba(176, 84, 31, 0.16);
 
-  --grid-line: rgba(24, 30, 24, 0.055);
-  --overlay-bg: rgba(246, 245, 240, 0.92);
+  --grid-line: rgba(30, 27, 20, 0.055);
+  --overlay-bg: rgba(233, 229, 218, 0.92);
 
   color-scheme: light;
 }
 
 html[data-theme="dark"] {
-  --bg-primary: #111411;
-  --bg-secondary: #171b17;
-  --bg-card: #1c211d;
-  --bg-elevated: #232923;
-  --bg-glass: rgba(17, 20, 17, 0.84);
+  --bg-primary: #171512;
+  --bg-secondary: #1d1a16;
+  --bg-card: #221f1a;
+  --bg-elevated: #2a2620;
+  --bg-glass: rgba(23, 21, 18, 0.84);
 
-  --text-primary: #f0f2ed;
-  --text-secondary: #c4cbc0;
-  --text-muted: #899185;
-  --text-faded: #5f695d;
+  --text-primary: #f0ede4;
+  --text-secondary: #c9c3b4;
+  --text-muted: #918a79;
+  --text-faded: #615c4f;
 
-  --border-color: #313a31;
-  --border-strong: #465146;
+  --border-color: #383327;
+  --border-strong: #514a3a;
 
-  --accent: #91b9aa;
-  --accent-hover: #b3d0c5;
-  --accent-contrast: #111411;
-  --accent-soft: rgba(145, 185, 170, 0.14);
-  --accent-violet: #a2aab4;
-  --accent-magenta: #b1a99d;
-  --accent-amber: #bbb28d;
+  --accent: #d98e5c;
+  --accent-hover: #e8aa7f;
+  --accent-contrast: #171512;
+  --accent-soft: rgba(217, 142, 92, 0.14);
+  --accent-violet: #aca698;
+  --accent-magenta: #b1a690;
+  --accent-amber: #bcae86;
 
-  --code-bg: #151a17;
-  --blockquote-bg: #171b17;
+  --code-bg: #1b1814;
+  --blockquote-bg: #1d1a16;
 
   --card-shadow: 0 24px 60px -34px rgba(0, 0, 0, 0.58);
-  --card-shadow-hover: 0 30px 72px -42px rgba(0, 0, 0, 0.72), 0 0 0 1px rgba(145, 185, 170, 0.18);
+  --card-shadow-hover: 0 30px 72px -42px rgba(0, 0, 0, 0.72), 0 0 0 1px rgba(217, 142, 92, 0.18);
 
   --grid-line: rgba(255, 255, 255, 0.045);
-  --overlay-bg: rgba(17, 20, 17, 0.92);
+  --overlay-bg: rgba(23, 21, 18, 0.92);
 
   color-scheme: dark;
 }
@@ -78,9 +80,13 @@ html[data-theme="dark"] {
    Typography
    ========================================== */
 :root {
-  --font-display: 'Source Serif 4', Georgia, serif;
-  --font-sans: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-body: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  /* Newsreader : serif de labeur à contraste modéré et empattements nets,
+     l'équivalent Google Fonts le plus proche du serif de titrage remarkable.
+     Instrument Sans : grotesque humaniste, grande hauteur d'x, chaleureux
+     sans être rond — le pendant du sans de leur corps de texte. */
+  --font-display: 'Newsreader', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Instrument Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body: 'Instrument Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-mono: 'JetBrains Mono', 'Courier New', monospace;
 }
 
