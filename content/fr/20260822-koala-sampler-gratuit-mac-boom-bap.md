@@ -55,6 +55,19 @@ Pour les curieux, voici un projet source, au format natif de Koala. Écoutez d'a
 
 [Télécharger le projet 16.koala](https://drive.google.com/uc?export=download&id=13wf_8mQS9XXGZW37_j-AfeZ5jYAmFlah)
 
+## Koala en action
+
+Pour ceux qui veulent voir à quoi ressemble le logiciel avant de l'installer, voici trois captures de sessions réelles : découpe de samples, séquençage, et un aperçu de l'interface sur Mac. Rien de scénarisé, c'est l'usage quotidien.
+
+::media-embed{src="https://livid.com/embed/iS0NnuO8dgEp" title="Découpe d'un sample dans Koala" ratio="100 / 152.222" maxWidth="420"}
+::
+
+::media-embed{src="https://livid.com/embed/cLfJIXi8Pi6g" title="Séquençage d'un pattern boom bap" ratio="100 / 65.608"}
+::
+
+::media-embed{src="https://livid.com/embed/ZcxMPENqMzvE" title="Prise en main de l'interface" ratio="100 / 152.285" maxWidth="420"}
+::
+
 ## Pour commencer
 
 Koala Sampler est sur le [Mac App Store](https://apps.apple.com/fr/app/koala-sampler/id1479881366?mt=12), gratuitement. La documentation est sur [koalasampler.com](https://www.koalasampler.com).

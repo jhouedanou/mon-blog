@@ -1,5 +1,5 @@
 <template>
-    <figure class="embed">
+    <figure class="embed" :style="figureStyle">
         <div class="embed__frame" :style="frameStyle">
             <button
                 v-if="!isActive"
@@ -38,6 +38,10 @@ const props = defineProps({
     title: { type: String, default: '' },
     /** Hauteur fixe en pixels (lecteurs audio). Sinon, ratio 16/9. */
     height: { type: [String, Number], default: null },
+    /** Ratio personnalisé, ex. « 9 / 16 » pour une capture verticale. */
+    ratio: { type: String, default: '' },
+    /** Largeur maximale, utile pour ne pas étirer une vidéo verticale. */
+    maxWidth: { type: [String, Number], default: null },
     /** Image d'affiche affichée avant le chargement du lecteur. */
     poster: { type: String, default: '' },
 })
@@ -56,10 +60,15 @@ const frameSrc = computed(() =>
     props.src + (props.src.includes('?') ? '&' : '?') + 'autoplay=1'
 )
 
-const frameStyle = computed(() =>
-    props.height
-        ? { height: `${parseInt(props.height, 10)}px` }
-        : { aspectRatio: '16 / 9' }
+const frameStyle = computed(() => {
+    if (props.height) return { height: `${parseInt(props.height, 10)}px` }
+    return { aspectRatio: props.ratio || '16 / 9' }
+})
+
+const figureStyle = computed(() =>
+    props.maxWidth
+        ? { maxWidth: `${parseInt(props.maxWidth, 10)}px`, marginInline: 'auto' }
+        : {}
 )
 
 const posterStyle = computed(() =>
