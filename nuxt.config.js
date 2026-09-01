@@ -1,4 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { SITE_URL, SITE_NAME } from './utils/site.js'
+import { buildRedirectRouteRules } from './redirects.js'
+
 export default defineNuxtConfig({
   target: 'static',
 
@@ -21,12 +24,16 @@ i18n: {
 }, 
   sitemap: {
     sources: ['/api/_sitemap-urls'],
+    // Les articles viennent déjà de /api/_sitemap-urls avec leur lastmod ;
+    // la source document-driven les ajouterait une seconde fois sans date.
+    excludeAppSources: ['@nuxt/content:document-driven'],
     exclude: ['/api/**', '/_content/**', '/manifest.json'],
     xsl: false,
     credits: false,
   },
   site: {
-    url: 'https://houedanou.com',
+    url: SITE_URL,
+    name: SITE_NAME,
   },  
   image: {
     quality: 80,
@@ -124,7 +131,7 @@ i18n: {
         { rel: 'icon', type: 'image/png', sizes: '96x96', href: '/favicon-96x96.png' },
         { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
         { rel: 'manifest', href: '/manifest.json' },
-        { rel: 'alternate', type: 'application/rss+xml', title: 'Le Blog de Jean-Luc Houédanou - Flux RSS', href: 'https://houedanou.com/feed.xml' }
+        // Le <link rel="alternate" rss> est émis une seule fois, dans app.vue.
       ],
       meta: [
         { name: 'msapplication-TileColor', content: '#ffffff' },
@@ -155,6 +162,10 @@ i18n: {
     '/cv': { prerender: true },
     '/confidentialite': { prerender: true },
     '/api/_content/**': { robots: false },
+    // Asset statique de public/ : le crawler de prerender le prenait pour une route.
+    '/manifest.json': { prerender: false },
+    // En dernier : garantit qu'aucune règle de prerender n'écrase une redirection.
+    ...buildRedirectRouteRules(301),
   },
   compatibilityDate: '2024-10-10'
 })

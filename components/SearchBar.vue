@@ -8,14 +8,13 @@
                 :placeholder="$t('searchPlaceholder')"
                 class="search-bar__input"
                 aria-label="Rechercher un article"
-                @input="$emit('update:modelValue', query)"
             />
         </div>
     </div>
 </template>
 
 <script setup>
-import { ref, watch } from 'vue'
+import { computed } from 'vue'
 
 const props = defineProps({
     modelValue: {
@@ -26,10 +25,11 @@ const props = defineProps({
 
 const emit = defineEmits(['update:modelValue'])
 
-const query = ref(props.modelValue)
-
-watch(() => props.modelValue, (val) => {
-    query.value = val
+// Pas de copie locale : un ref + watch perdait la valeur écrite par le parent
+// (ex. `?q=` appliqué dans onMounted). Le computed reflète toujours le parent.
+const query = computed({
+    get: () => props.modelValue,
+    set: (val) => emit('update:modelValue', val),
 })
 </script>
 

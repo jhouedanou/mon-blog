@@ -98,13 +98,17 @@
 <script setup>
 import { ref, computed, watch, onMounted, onUnmounted } from 'vue'
 import { useAsyncData } from '#app'
+import { useRoute, useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { useLocalePath } from '#i18n'
 import SearchBar from '~/components/SearchBar.vue'
 import { getArticleSearchIntent, getArticleSearchText } from '~/data/editorial.js'
+import { getReadingStats } from '~/utils/reading.js'
 
 const localePath = useLocalePath()
 const { locale } = useI18n()
+const route = useRoute()
+const router = useRouter()
 
 const ITEMS_PER_PAGE = 6
 const displayCount = ref(ITEMS_PER_PAGE)
@@ -149,6 +153,38 @@ watch(searchQuery, () => {
     displayCount.value = ITEMS_PER_PAGE
 })
 
+// Recherche partageable via `?q=` (cible du SearchAction déclaré dans app.vue).
+// `/` est prérendu sans query et Cloudflare sert ce même HTML pour `/?q=nuxt` :
+// lire `route.query.q` dans setup() provoquerait une erreur d'hydratation sur la
+// page la plus importante du site. On l'applique donc APRÈS le montage.
+const SEARCH_URL_DEBOUNCE = 300
+let searchUrlTimer = null
+
+function queryFromRoute() {
+    const q = route.query.q
+    return typeof q === 'string' ? q : ''
+}
+
+// Saisie → URL, debouncée et en `replace` : 8 caractères tapés = zéro entrée
+// d'historique. Chaque watcher compare à la source de l'autre avant d'écrire.
+watch(searchQuery, (value) => {
+    clearTimeout(searchUrlTimer)
+    searchUrlTimer = setTimeout(() => {
+        const trimmed = value.trim()
+        if (trimmed === queryFromRoute()) return
+        const query = { ...route.query }
+        if (trimmed) query.q = trimmed
+        else delete query.q
+        router.replace({ query })
+    }, SEARCH_URL_DEBOUNCE)
+})
+
+// URL → saisie : retour arrière du navigateur, lien collé.
+watch(() => route.query.q, () => {
+    const fromRoute = queryFromRoute()
+    if (fromRoute !== searchQuery.value.trim()) searchQuery.value = fromRoute
+})
+
 const displayedArticles = computed(() => {
     if (!filteredArticles.value) return []
     return filteredArticles.value.slice(0, displayCount.value)
@@ -169,6 +205,9 @@ function loadMore() {
 }
 
 onMounted(() => {
+    const initialQuery = queryFromRoute()
+    if (initialQuery) searchQuery.value = initialQuery
+
     infiniteObserver = new IntersectionObserver(
         (entries) => {
             if (entries[0].isIntersecting) {
@@ -184,23 +223,11 @@ onMounted(() => {
 
 onUnmounted(() => {
     infiniteObserver?.disconnect()
+    clearTimeout(searchUrlTimer)
 })
 
 function getReadingTime(article) {
-    if (!article.body) return null
-    const text = extractText(article.body)
-    const words = text.split(/\s+/).filter(w => w.length > 0).length
-    return Math.ceil(words / 200) || 1
-}
-
-function extractText(node) {
-    if (!node) return ''
-    if (typeof node === 'string') return node
-    if (node.value) return node.value
-    if (node.children && Array.isArray(node.children)) {
-        return node.children.map(extractText).join(' ')
-    }
-    return ''
+    return getReadingStats(article.body).minutes || null
 }
 
 function isNew(article) {

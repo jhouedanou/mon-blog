@@ -111,41 +111,31 @@
 </template>
 
 <script setup>
+import { useSeo } from '~/composables/useSeo.js'
+import { webPageLd, breadcrumbLd } from '~/utils/schema.js'
+import { canonicalUrl, PERSON_ID } from '~/utils/site.js'
+
+const pageUrl = canonicalUrl('/a-propos')
+const aboutTitle = 'À propos de Jean-Luc Houédanou'
 const aboutDescription =
   "Jean-Luc Houédanou - Développeur web full-stack et administrateur systèmes basé à Abidjan, Côte d'Ivoire."
 
-useHead({
-  title: 'À propos - Jean-Luc Houédanou',
-  link: [
-    { rel: 'canonical', href: 'https://houedanou.com/a-propos' },
-  ],
-  meta: [
-    { name: 'description', content: aboutDescription },
-    { property: 'og:title', content: 'À propos - Jean-Luc Houédanou' },
-    { property: 'og:description', content: aboutDescription },
-    { property: 'og:url', content: 'https://houedanou.com/a-propos' },
-    { property: 'og:type', content: 'profile' },
-    { property: 'og:image', content: 'https://houedanou.com/images/1837389.webp' },
-    { property: 'og:site_name', content: 'Jean-Luc Houédanou' },
-  ],
-  script: [
+useSeo({
+  title: aboutTitle,
+  description: aboutDescription,
+  canonical: pageUrl,
+  type: 'profile',
+  image: '/images/1837389.jpeg',
+  imageAlt: 'Portrait de Jean-Luc Houédanou',
+  jsonLd: [
     {
       // La page canonique de l'entité : elle pointe vers le nœud Person défini
       // dans le @graph global (app.vue).
-      type: 'application/ld+json',
-      children: JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'ProfilePage',
-        '@id': 'https://houedanou.com/a-propos#webpage',
-        url: 'https://houedanou.com/a-propos',
-        name: 'À propos - Jean-Luc Houédanou',
-        description: aboutDescription,
-        inLanguage: 'fr',
-        isPartOf: { '@id': 'https://houedanou.com/#website' },
-        mainEntity: { '@id': 'https://houedanou.com/#person' },
-        about: { '@id': 'https://houedanou.com/#person' },
-      }),
+      ...webPageLd({ url: pageUrl, name: aboutTitle, description: aboutDescription, image: '/images/1837389.jpeg', type: 'ProfilePage' }),
+      mainEntity: { '@id': PERSON_ID },
+      about: { '@id': PERSON_ID },
     },
+    breadcrumbLd([{ name: 'Accueil', path: '/' }, { name: 'À propos', path: '/a-propos' }], pageUrl),
   ],
 })
 </script>

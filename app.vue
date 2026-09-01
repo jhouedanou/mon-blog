@@ -113,6 +113,11 @@ onUnmounted(() => {
   window.removeEventListener('scroll', onScroll)
 })
 
+import { SITE_URL, SITE_NAME, PERSON_ID, WEBSITE_ID, BLOG_ID } from '~/utils/site.js'
+import { safeJsonLd } from '~/composables/useSeo.js'
+
+const HOME_TITLE = 'Le Blog de Jean-Luc Houédanou — Tech, culture numérique et réflexions depuis Abidjan'
+
 // Graphe d'entité servi sur toutes les pages : c'est lui qui permet aux
 // références `{ '@id': '…#person' }` des articles et de /a-propos de se
 // résoudre sur la page où elles apparaissent.
@@ -121,15 +126,15 @@ const siteGraph = {
   '@graph': [
     {
       '@type': 'Person',
-      '@id': 'https://houedanou.com/#person',
+      '@id': PERSON_ID,
       name: 'Jean-Luc Houédanou',
       alternateName: ['Jean Luc Houedanou', 'Don Dada', 'JLH'],
-      url: 'https://houedanou.com',
+      url: SITE_URL,
       image: {
         '@type': 'ImageObject',
-        '@id': 'https://houedanou.com/#personimage',
-        url: 'https://houedanou.com/images/1837389.webp',
-        contentUrl: 'https://houedanou.com/images/1837389.webp',
+        '@id': `${SITE_URL}/#personimage`,
+        url: `${SITE_URL}/images/1837389.jpeg`,
+        contentUrl: `${SITE_URL}/images/1837389.jpeg`,
       },
       jobTitle: 'Développeur web full-stack & Administrateur systèmes',
       description:
@@ -169,24 +174,52 @@ const siteGraph = {
     },
     {
       '@type': 'WebSite',
-      '@id': 'https://houedanou.com/#website',
-      url: 'https://houedanou.com',
+      '@id': WEBSITE_ID,
+      url: SITE_URL,
       name: 'Journal — Le Blog de Jean-Luc Houédanou',
       alternateName: 'Le Blog de Jean-Luc Houédanou',
       inLanguage: 'fr',
-      author: { '@id': 'https://houedanou.com/#person' },
-      publisher: { '@id': 'https://houedanou.com/#person' },
-      copyrightHolder: { '@id': 'https://houedanou.com/#person' },
+      author: { '@id': PERSON_ID },
+      publisher: { '@id': PERSON_ID },
+      copyrightHolder: { '@id': PERSON_ID },
+      // La recherche de l'accueil écrit `?q=` dans l'URL (cf. ArticleList) :
+      // cette action pointe donc vers une URL qui fonctionne réellement.
+      potentialAction: {
+        '@type': 'SearchAction',
+        target: {
+          '@type': 'EntryPoint',
+          urlTemplate: `${SITE_URL}/?q={search_term_string}`,
+        },
+        'query-input': 'required name=search_term_string',
+      },
+    },
+    {
+      // Chaînon manquant : un BlogPosting appartient au Blog, le Blog au WebSite.
+      // C'est cette chaîne qui rend le graphe d'entité lisible pour Google.
+      '@type': 'Blog',
+      '@id': BLOG_ID,
+      url: `${SITE_URL}/`,
+      name: SITE_NAME,
+      description:
+        "Retours d'expérience, outils web, administration système et culture numérique depuis Abidjan.",
+      inLanguage: 'fr',
+      isPartOf: { '@id': WEBSITE_ID },
+      author: { '@id': PERSON_ID },
+      publisher: { '@id': PERSON_ID },
     },
   ],
 }
 
 useHead({
-  title: 'Le blog de Jean-Luc Houédanou',
+  // Suffixe court à dessein : plusieurs titres d'articles font déjà 55-70
+  // caractères, un suffixe de 31 garantirait la troncature SERP sur la partie
+  // utile. Le domaine est la marque.
+  titleTemplate: (title) => (title ? `${title} — houedanou.com` : HOME_TITLE),
   script: [
     {
+      id: 'ld-site',
       type: 'application/ld+json',
-      children: JSON.stringify(siteGraph),
+      innerHTML: safeJsonLd(siteGraph),
     },
   ],
   htmlAttrs: {
@@ -201,8 +234,8 @@ useHead({
     {
       rel: 'alternate',
       type: 'application/rss+xml',
-      title: 'Le Blog de Jean-Luc Houédanou — Flux RSS',
-      href: '/feed.xml',
+      title: `${SITE_NAME} — Flux RSS`,
+      href: `${SITE_URL}/feed.xml`,
     },
   ],
 });

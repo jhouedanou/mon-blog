@@ -91,14 +91,23 @@
 </template>
 
 <script setup>
-useHead({
-  title: 'Politique de confidentialité — Le Blog de Jean-Luc Houédanou',
-  meta: [
-    {
-      name: 'description',
-      content: 'Politique de confidentialité du blog de Jean-Luc Houédanou : données collectées, cookies, services tiers et droits des visiteurs.',
-    },
-    { name: 'robots', content: 'index, follow' },
+import { useSeo } from '~/composables/useSeo.js'
+import { webPageLd, breadcrumbLd } from '~/utils/schema.js'
+import { canonicalUrl } from '~/utils/site.js'
+
+const pageUrl = canonicalUrl('/confidentialite')
+const pageTitle = 'Politique de confidentialité'
+const pageDescription =
+  'Politique de confidentialité du blog de Jean-Luc Houédanou : données collectées, cookies, services tiers et droits des visiteurs.'
+
+useSeo({
+  title: pageTitle,
+  description: pageDescription,
+  canonical: pageUrl,
+  imageIsCard: true,
+  jsonLd: [
+    webPageLd({ url: pageUrl, name: pageTitle, description: pageDescription }),
+    breadcrumbLd([{ name: 'Accueil', path: '/' }, { name: pageTitle, path: '/confidentialite' }], pageUrl),
   ],
 })
 </script>

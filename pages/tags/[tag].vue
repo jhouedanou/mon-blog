@@ -52,6 +52,9 @@ import { useI18n } from 'vue-i18n'
 import { useAsyncData } from '#app'
 import { getArticleTags, slugifyTag } from '~/utils/tags.js'
 import { getTagIntroduction } from '~/data/editorial.js'
+import { useSeo } from '~/composables/useSeo.js'
+import { collectionPageLd } from '~/utils/schema.js'
+import { canonicalUrl } from '~/utils/site.js'
 
 const route = useRoute()
 const { locale } = useI18n()
@@ -94,12 +97,30 @@ function truncate(text, n) {
   return clean.length > n ? clean.slice(0, n) + '…' : clean
 }
 
-useHead(() => ({
-  title: `#${displayTag.value} — Le Blog`,
-  meta: [
-    { name: 'description', content: `Articles tagués #${displayTag.value} sur le blog de Jean-Luc Houédanou.` },
-    { name: 'robots', content: filtered.value.length ? 'index, follow' : 'noindex, follow' },
-  ],
+const pageUrl = computed(() => canonicalUrl(route.path))
+const pageTitle = computed(() => `#${displayTag.value}`)
+const pageDescription = computed(() => `Articles tagués #${displayTag.value} sur le blog de Jean-Luc Houédanou.`)
+
+useSeo(() => ({
+  title: pageTitle.value,
+  description: pageDescription.value,
+  canonical: pageUrl.value,
+  imageIsCard: true,
+  // Archive vide : on la laisse crawlable mais hors index, et sans JSON-LD.
+  robots: filtered.value.length ? 'index, follow' : 'noindex, follow',
+  jsonLd: filtered.value.length
+    ? collectionPageLd({
+        url: pageUrl.value,
+        name: pageTitle.value,
+        description: pageDescription.value,
+        items: filtered.value.map((a) => ({ path: a._path, name: a.title })),
+        trail: [
+          { name: 'Accueil', path: '/' },
+          { name: 'Tags', path: '/tags' },
+          { name: pageTitle.value, path: route.path },
+        ],
+      })
+    : null,
 }))
 </script>
 

@@ -42,6 +42,9 @@ import { computed } from 'vue'
 import { useAsyncData } from '#app'
 import { useI18n } from 'vue-i18n'
 import { getArticleTags, slugifyTag, getTagColor } from '~/utils/tags.js'
+import { useSeo } from '~/composables/useSeo.js'
+import { collectionPageLd } from '~/utils/schema.js'
+import { canonicalUrl } from '~/utils/site.js'
 
 const { locale } = useI18n()
 
@@ -49,24 +52,39 @@ const { data: articles } = await useAsyncData('all-tags', () =>
   queryContent(locale.value).find()
 )
 
+// Dédupliqué par slug : « Claude Code » et « claude-code » mènent à la même
+// URL, on n'affiche qu'une pastille (première graphie rencontrée).
 const tagEntries = computed(() => {
-  const counts = {}
+  const bySlug = new Map()
   for (const article of articles.value || []) {
     for (const tag of getArticleTags(article)) {
-      counts[tag] = (counts[tag] || 0) + 1
+      const slug = slugifyTag(tag)
+      const entry = bySlug.get(slug) || { tag, count: 0, slug }
+      entry.count += 1
+      bySlug.set(slug, entry)
     }
   }
-  return Object.entries(counts)
-    .map(([tag, count]) => ({ tag, count, slug: slugifyTag(tag) }))
+  return [...bySlug.values()]
     .sort((a, b) => b.count - a.count || a.tag.localeCompare(b.tag))
 })
 
-useHead(() => ({
-  title: 'Tags — Le Blog de Jean-Luc Houédanou',
-  meta: [
-    { name: 'description', content: 'Tous les sujets abordés sur le blog : tech, design, opinions, productivité, et plus.' },
-    { name: 'robots', content: 'index, follow' },
-  ],
+const pageUrl = canonicalUrl('/tags')
+const pageDescription = 'Tous les sujets abordés sur le blog : tech, design, opinions, productivité, et plus.'
+
+useSeo(() => ({
+  title: 'Tags',
+  description: pageDescription,
+  canonical: pageUrl,
+  imageIsCard: true,
+  jsonLd: tagEntries.value.length
+    ? collectionPageLd({
+        url: pageUrl,
+        name: 'Tags',
+        description: pageDescription,
+        items: tagEntries.value.map((e) => ({ path: `/tags/${e.slug}`, name: `#${e.tag}` })),
+        trail: [{ name: 'Accueil', path: '/' }, { name: 'Tags', path: '/tags' }],
+      })
+    : null,
 }))
 </script>
 

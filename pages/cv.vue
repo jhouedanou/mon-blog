@@ -206,6 +206,9 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
+import { useSeo } from '~/composables/useSeo.js'
+import { webPageLd, breadcrumbLd } from '~/utils/schema.js'
+import { canonicalUrl, PERSON_ID } from '~/utils/site.js'
 import {
   identity, profile, experience, previousRoles, education,
   skills, projects, languages, levelLabels, labels, sourceFiles,
@@ -246,40 +249,46 @@ function print() {
   window.print()
 }
 
+const cvUrl = canonicalUrl('/cv')
+const cvTitle = computed(() => (lang.value === 'fr' ? 'CV de Jean-Luc Houédanou' : 'Résumé of Jean-Luc Houédanou'))
+const cvDescription = computed(() => lang.value === 'fr'
+  ? 'Curriculum vitæ de Jean-Luc Houédanou — développeur web full-stack et directeur solutions digitales basé à Abidjan.'
+  : 'Résumé of Jean-Luc Houédanou — full-stack web developer and digital solutions director based in Abidjan.')
+
+useSeo(() => ({
+  title: cvTitle.value,
+  description: cvDescription.value,
+  canonical: cvUrl,
+  type: 'profile',
+  image: '/images/1837389.jpeg',
+  imageAlt: 'Portrait de Jean-Luc Houédanou',
+  jsonLd: [
+    {
+      // Même @id que le Person du @graph global (app.vue) : les deux nœuds
+      // fusionnent au lieu de décrire deux personnes distinctes. Pas de
+      // `telephone` : un mobile en markup lisible machine n'apporte rien en
+      // recherche et attire les scrapers.
+      '@type': 'Person',
+      '@id': PERSON_ID,
+      name: identity.name,
+      email: `mailto:${identity.email}`,
+      url: identity.portfolio,
+      address: { '@type': 'PostalAddress', addressLocality: 'Abidjan', addressCountry: 'CI' },
+      sameAs: [identity.github, identity.blog],
+      jobTitle: lang.value === 'fr' ? 'Directeur solutions digitales' : 'Digital Solutions Director',
+    },
+    {
+      ...webPageLd({ url: cvUrl, name: cvTitle.value, description: cvDescription.value, image: '/images/1837389.jpeg', type: 'ProfilePage' }),
+      mainEntity: { '@id': PERSON_ID },
+      about: { '@id': PERSON_ID },
+    },
+    breadcrumbLd([{ name: 'Accueil', path: '/' }, { name: 'CV', path: '/cv' }], cvUrl),
+  ],
+}))
+
+// Seul cas où `htmlAttrs.lang` suit l'état de la page : le CV bascule fr/en côté client.
 useHead(() => ({
-  title: lang.value === 'fr'
-    ? 'CV — Jean-Luc Houédanou'
-    : 'Résumé — Jean-Luc Houédanou',
-  meta: [
-    {
-      name: 'description',
-      content: lang.value === 'fr'
-        ? 'Curriculum vitæ de Jean-Luc Houédanou — développeur web full-stack et directeur solutions digitales basé à Abidjan.'
-        : 'Résumé of Jean-Luc Houédanou — full-stack web developer and digital solutions director based in Abidjan.',
-    },
-    { name: 'robots', content: 'index, follow' },
-    { property: 'og:title', content: lang.value === 'fr' ? 'CV — Jean-Luc Houédanou' : 'Résumé — Jean-Luc Houédanou' },
-    { property: 'og:type', content: 'profile' },
-  ],
-  htmlAttrs: {
-    lang: lang.value,
-  },
-  script: [
-    {
-      type: 'application/ld+json',
-      children: JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'Person',
-        name: identity.name,
-        email: `mailto:${identity.email}`,
-        telephone: identity.phone,
-        url: identity.portfolio,
-        address: { '@type': 'PostalAddress', addressLocality: 'Abidjan', addressCountry: 'CI' },
-        sameAs: [identity.github, identity.blog],
-        jobTitle: lang.value === 'fr' ? 'Directeur solutions digitales' : 'Digital Solutions Director',
-      }),
-    },
-  ],
+  htmlAttrs: { lang: lang.value },
 }))
 </script>
 

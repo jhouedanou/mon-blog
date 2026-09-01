@@ -1,5 +1,24 @@
 import { serverQueryContent } from '#content/server'
 import { defineEventHandler, setResponseHeader } from 'h3'
+// @ts-expect-error — module JS sans types, partagé avec nuxt.config.js
+import { SITE_URL, SITE_NAME } from '~/utils/site.js'
+
+// Type MIME de l'enclosure dérivé de l'extension : 40 images sur 42 sont en
+// WebP, l'ancien `image/jpeg` codé en dur mentait aux lecteurs RSS.
+const MIME_BY_EXT: Record<string, string> = {
+  jpg: 'image/jpeg',
+  jpeg: 'image/jpeg',
+  png: 'image/png',
+  gif: 'image/gif',
+  webp: 'image/webp',
+  avif: 'image/avif',
+  svg: 'image/svg+xml',
+}
+
+function mimeTypeFor(path: string): string | null {
+  const ext = path.split('?')[0].split('.').pop()?.toLowerCase() || ''
+  return MIME_BY_EXT[ext] || null
+}
 
 function escapeXml(str: string): string {
   if (!str) return ''
@@ -12,8 +31,8 @@ function escapeXml(str: string): string {
 }
 
 export default defineEventHandler(async (event) => {
-  const siteUrl = 'https://houedanou.com'
-  const feedTitle = 'Le Blog de Jean-Luc Houédanou'
+  const siteUrl = SITE_URL
+  const feedTitle = SITE_NAME
   const feedDescription = 'Chroniques sur l\'innovation numérique, la transformation digitale en Afrique et pérégrinations technologiques.'
 
   // Récupérer tous les articles, triés par date décroissante
@@ -34,8 +53,9 @@ export default defineEventHandler(async (event) => {
       ? new Date(article.createdAt).toUTCString()
       : new Date().toUTCString()
 
-    const imageTag = article.image
-      ? `<enclosure url="${siteUrl}${escapeXml(article.image)}" type="image/jpeg" length="0" />`
+    const mimeType = article.image ? mimeTypeFor(article.image) : null
+    const imageTag = article.image && mimeType
+      ? `<enclosure url="${siteUrl}${escapeXml(article.image)}" type="${mimeType}" length="0" />`
       : ''
 
     return `    <item>

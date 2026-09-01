@@ -35,17 +35,28 @@
 
 <script setup>
 import { THEME_DEFINITIONS } from '~/data/editorial.js'
+import { useSeo } from '~/composables/useSeo.js'
+import { collectionPageLd } from '~/utils/schema.js'
+import { canonicalUrl } from '~/utils/site.js'
 
 const themes = THEME_DEFINITIONS
 
-useHead({
-  title: 'Thématiques — Le Blog de Jean-Luc Houédanou',
-  meta: [
-    {
-      name: 'description',
-      content: 'Explorez les articles du blog par thématique : tutoriels, Apple, développement, Afrique numérique et opinions.',
-    },
-  ],
+const pageUrl = canonicalUrl('/themes')
+const pageDescription =
+  'Explorez les articles du blog par thématique : tutoriels, Apple, développement, Afrique numérique et opinions.'
+
+useSeo({
+  title: 'Thématiques',
+  description: pageDescription,
+  canonical: pageUrl,
+  imageIsCard: true,
+  jsonLd: collectionPageLd({
+    url: pageUrl,
+    name: 'Thématiques',
+    description: pageDescription,
+    items: themes.map((t) => ({ path: `/themes/${t.slug}`, name: t.title })),
+    trail: [{ name: 'Accueil', path: '/' }, { name: 'Thématiques', path: '/themes' }],
+  }),
 })
 </script>
 

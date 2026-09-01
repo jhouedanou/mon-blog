@@ -44,7 +44,8 @@
         </div>
 
         <div class="article-content">
-          <ContentDoc />
+          <!-- :head="false" : sinon useContentHead écrase og:image/description avec le front matter brut (WebP). -->
+          <ContentDoc :head="false" />
 
           <div class="social-share">
             <span class="social-share__label">— Partager</span>
@@ -79,14 +80,9 @@
       </ClientOnly>
     </div>
   </div>
-  <div v-else class="article-not-found">
-    <p>Article introuvable.</p>
-    <NuxtLink to="/">← Retour à l'accueil</NuxtLink>
-  </div>
 </template>
 
 <script setup>
-import { useHead } from "@unhead/vue";
 import { useRoute } from "vue-router";
 import { useI18n } from "vue-i18n";
 import { onMounted, watch, computed, nextTick } from "vue";
@@ -95,41 +91,51 @@ import ArticleNavigation from "~/components/ArticleNavigation.vue";
 import SuggestedArticles from "~/components/SuggestedArticles.vue";
 import TableOfContents from "~/components/TableOfContents.vue";
 import { getArticleTags, slugifyTag } from "~/utils/tags.js";
+import { getReadingStats } from "~/utils/reading.js";
+import { canonicalUrl, absoluteUrl } from "~/utils/site.js";
+import { ogImageFor } from "~/utils/og.js";
+import { articleGraph } from "~/utils/schema.js";
+import { useSeo } from "~/composables/useSeo.js";
 import {
   THEME_DEFINITIONS,
   articleMatchesTheme,
   getArticleSearchIntent,
 } from "~/data/editorial.js";
 
+definePageMeta({ key: (route) => route.path });
+
 const route = useRoute();
 const { locale } = useI18n();
 
+// La transition de page est en `out-in` : en quittant un article, `route.path`
+// vaut déjà la nouvelle route alors que ce composant est encore monté le temps
+// de l'animation de sortie. Un `watch` sur `route.path` relançait donc la requête
+// sur `/` ou `/tags`, qui n'ont pas de document : l'article basculait sur
+// « Article introuvable » sous les yeux du lecteur. La clé de page recrée le
+// composant à chaque chemin, ce qui rend le watcher inutile.
 const { data: article } = await useAsyncData(
   `article-${route.path}`,
-  () => queryContent(route.path).findOne(),
-  { watch: [() => route.path] }
+  () => queryContent(route.path).findOne()
 );
+
+// Un chemin sans document est un vrai 404, pas une page en 200 affichant un
+// message : les anciennes URLs WordPress restaient sinon des soft-404 pour Google.
+if (!article.value) {
+  throw createError({
+    statusCode: 404,
+    statusMessage: "Article introuvable",
+    fatal: true,
+  });
+}
 
 const { data: allArticles } = await useAsyncData("all-articles", () =>
   queryContent("fr").sort({ createdAt: -1 }).find()
 );
 
-const readingTime = computed(() => {
-  if (!article.value?.body) return null;
-  const text = extractText(article.value.body);
-  const words = text.split(/\s+/).filter(w => w.length > 0).length;
-  return Math.ceil(words / 200) || 1;
-});
-
-function extractText(node) {
-  if (!node) return '';
-  if (typeof node === 'string') return node;
-  if (node.value) return node.value;
-  if (node.children && Array.isArray(node.children)) {
-    return node.children.map(extractText).join(' ');
-  }
-  return '';
-}
+// Implémentation partagée avec ArticleList (voir utils/reading.js) ; `words`
+// alimente aussi `wordCount` et `timeRequired` du BlogPosting.
+const readingStats = computed(() => getReadingStats(article.value?.body));
+const readingTime = computed(() => readingStats.value.minutes || null);
 
 // Les billets déclarent `description` dans leur front matter ; `summary` reste
 // accepté pour ceux qui en fournissent un explicitement.
@@ -197,61 +203,34 @@ const suggestedArticles = computed(() => {
     .map(({ article: relatedArticle }) => relatedArticle);
 });
 
-const siteUrl = "https://houedanou.com";
-const currentUrl = computed(() => `${siteUrl}${route.path}`);
-const canonicalImage = computed(() => {
-  if (!article.value?.image) return `${siteUrl}/images/1837389.webp`;
-  return new URL(article.value.image, siteUrl).href;
-});
+const currentUrl = computed(() => canonicalUrl(route.path));
 const metaDescription = computed(() =>
   getArticleSearchIntent(article.value) ||
   "Article du blog de Jean-Luc Houédanou sur la technologie, le développement et la culture numérique."
 );
+// Carte JPEG 1200x630 générée hors ligne : X et LinkedIn ne rendent pas le WebP.
+const ogImage = computed(() => absoluteUrl(ogImageFor(article.value?.image)));
 
-useHead(() => ({
+useSeo(() => ({
   title: article.value?.title,
-  link: [{ rel: "canonical", href: currentUrl.value }],
-  meta: [
-    { name: "description", content: metaDescription.value },
-    { property: "og:title", content: article.value?.title },
-    { property: "og:description", content: metaDescription.value },
-    { property: "og:url", content: currentUrl.value },
-    { property: "og:type", content: "article" },
-    { property: "og:image", content: canonicalImage.value },
-    { property: "og:image:alt", content: article.value?.title },
-    { property: "og:site_name", content: "Jean-Luc Houédanou" },
-    { property: "article:published_time", content: article.value?.createdAt },
-    { property: "article:modified_time", content: article.value?.updatedAt || article.value?.createdAt },
-    { property: "article:author", content: "Jean-Luc Houédanou" },
-    { name: "twitter:card", content: "summary_large_image" },
-    { name: "twitter:image", content: canonicalImage.value },
-    { name: "twitter:title", content: article.value?.title },
-    { name: "twitter:description", content: metaDescription.value },
-  ],
-  script: [
-    {
-      type: "application/ld+json",
-      children: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "BlogPosting",
-        headline: article.value?.title,
-        description: metaDescription.value,
-        image: [canonicalImage.value],
-        datePublished: article.value?.createdAt,
-        dateModified: article.value?.updatedAt || article.value?.createdAt,
-        // Référence au nœud Person du @graph global (app.vue) : chaque billet
-        // devient une preuve d'auteur rattachée à la même entité.
-        author: { "@id": `${siteUrl}/#person` },
-        publisher: { "@id": `${siteUrl}/#person` },
-        isPartOf: { "@id": `${siteUrl}/#website` },
-        inLanguage: "fr",
-        mainEntityOfPage: {
-          "@type": "WebPage",
-          "@id": currentUrl.value,
-        },
-      }),
-    },
-  ],
+  description: metaDescription.value,
+  canonical: currentUrl.value,
+  image: ogImage.value,
+  imageAlt: article.value?.title,
+  imageIsCard: true,
+  type: "article",
+  publishedTime: article.value?.createdAt,
+  modifiedTime: article.value?.updatedAt,
+  tags: articleTags.value,
+  jsonLd: articleGraph({
+    article: article.value,
+    url: currentUrl.value,
+    image: ogImage.value,
+    description: metaDescription.value,
+    tags: articleTags.value,
+    themes: articleThemes.value,
+    stats: readingStats.value,
+  }),
 }));
 
 function loadShareThis() {
@@ -1063,41 +1042,6 @@ function formatDate(createdAt) {
   .article-links {
     flex-direction: column;
     gap: 0.85rem;
-  }
-}
-
-.article-not-found {
-  max-width: 780px;
-  margin: 6rem auto;
-  padding: 2rem;
-  text-align: center;
-  font-family: var(--font-body);
-
-  p {
-    font-family: var(--font-display);
-    font-size: 1.85rem;
-    color: var(--text-primary);
-    margin-bottom: 1.5rem;
-  }
-
-  a {
-    font-family: var(--font-mono);
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 0.14em;
-    color: var(--accent);
-    text-decoration: none;
-    font-weight: 500;
-    padding: 0.85rem 1.5rem;
-    border: 1px solid var(--accent);
-    border-radius: 2px;
-    transition: all 0.25s ease;
-
-    &:hover {
-      background: var(--accent);
-      color: var(--accent-contrast);
-      box-shadow: var(--card-shadow-hover);
-    }
   }
 }
 </style>

@@ -1,4 +1,4 @@
-import { getArticleTags, slugifyTag } from '~/utils/tags.js'
+import { getArticleTags, slugifyTag } from '../utils/tags.js'
 
 export const THEME_DEFINITIONS = [
   {

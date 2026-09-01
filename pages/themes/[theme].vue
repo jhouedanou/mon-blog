@@ -59,6 +59,9 @@ import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { getArticleTags } from '~/utils/tags.js'
 import { getArticleSearchIntent, getThemeDefinition, articleMatchesTheme } from '~/data/editorial.js'
+import { useSeo } from '~/composables/useSeo.js'
+import { collectionPageLd } from '~/utils/schema.js'
+import { canonicalUrl } from '~/utils/site.js'
 
 const route = useRoute()
 const theme = getThemeDefinition(route.params.theme)
@@ -86,12 +89,28 @@ function formatDate(value) {
   }).format(date).replace('.', '')
 }
 
-useHead(() => ({
-  title: `${theme.title} — Le Blog de Jean-Luc Houédanou`,
-  meta: [
-    { name: 'description', content: theme.description },
-    { name: 'robots', content: filteredArticles.value.length ? 'index, follow' : 'noindex, follow' },
-  ],
+const pageUrl = canonicalUrl(`/themes/${theme.slug}`)
+
+useSeo(() => ({
+  title: theme.title,
+  description: theme.description,
+  canonical: pageUrl,
+  imageIsCard: true,
+  // Thématique vide : crawlable mais hors index, et sans JSON-LD.
+  robots: filteredArticles.value.length ? 'index, follow' : 'noindex, follow',
+  jsonLd: filteredArticles.value.length
+    ? collectionPageLd({
+        url: pageUrl,
+        name: theme.title,
+        description: theme.description,
+        items: filteredArticles.value.map((a) => ({ path: a._path, name: a.title })),
+        trail: [
+          { name: 'Accueil', path: '/' },
+          { name: 'Thématiques', path: '/themes' },
+          { name: theme.title, path: `/themes/${theme.slug}` },
+        ],
+      })
+    : null,
 }))
 </script>
 

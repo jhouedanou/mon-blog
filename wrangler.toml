@@ -4,6 +4,10 @@ main = "dist/_worker.js/index.js"
 
 [assets]
 directory = "./dist"
+# Les canonicals, le sitemap et les liens internes sont SANS slash final.
+# Par défaut ("auto-trailing-slash"), Cloudflare répondait 307 /a-propos -> /a-propos/
+# sur chaque URL canonique du site. Ici /a-propos sert a-propos/index.html en 200.
+html_handling = "drop-trailing-slash"
 
 # Variables d'environnement (optionnel)
 # [vars]

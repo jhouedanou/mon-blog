@@ -42,6 +42,7 @@
 
 <script setup>
 import { useError } from '#app'
+import { useSeo } from '~/composables/useSeo.js'
 
 const error = useError()
 
@@ -52,9 +53,15 @@ const { data: recentArticles } = await useAsyncData('recent-articles-error', () 
     .find()
 )
 
-useHead({
-  title: 'Page introuvable'
-})
+// `follow` et non `nofollow` : la page liste 3 articles récents, autant que
+// le jus circule. Pas de canonical : une page d'erreur n'a pas d'URL de référence.
+useSeo(() => ({
+  title: error.value?.statusCode === 410 ? 'Page supprimée' : 'Page introuvable',
+  description: 'Cette page n’existe pas ou plus sur le blog de Jean-Luc Houédanou.',
+  robots: 'noindex, follow',
+  canonical: false,
+  imageIsCard: true,
+}))
 </script>
 
 <style lang="scss" scoped>
