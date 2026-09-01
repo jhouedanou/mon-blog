@@ -1,6 +1,6 @@
 ---
 title: "On a fini de faire le ménage"
-image: "/images/articles/mouff.jpg"
+image: "/images/articles/mouff.webp"
 createdAt: "2024-10-21"
 id: 2
 description: "Pourquoi j’ai quitté WordPress pour un blog Nuxt 3 et Markdown plus simple à maintenir."

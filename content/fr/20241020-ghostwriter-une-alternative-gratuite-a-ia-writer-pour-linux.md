@@ -1,6 +1,6 @@
 ---
 title: "Ghostwriter, l'iA Writer de Linux"
-image: "/images/articles/mockup.png"
+image: "/images/articles/mockup.webp"
 createdAt: "2024-10-20"
 id: 2024-10-20
 description: "Découvrez Ghostwriter, une alternative gratuite et open-source à iA Writer pour Linux. Un éditeur Markdown minimaliste avec mode focus, point d'insertion bleu et vérification orthographique."

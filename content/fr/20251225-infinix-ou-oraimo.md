@@ -1,6 +1,6 @@
 ---
 title: "Infinix Watch 3 vs Oraimo Nova AM : Esthétique ou Productivité"
-image: "/images/articles/infinixoraimo.jpg"
+image: "/images/articles/infinixoraimo.webp"
 createdAt: "2025-12-25"
 id: 2025-12-25
 description: "Comparatif complet entre l'Infinix Watch 3 et l'Oraimo Nova AM : design, écran, notifications, autonomie et application compagnon pour vous aider à choisir."

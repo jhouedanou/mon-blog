@@ -1,6 +1,6 @@
 ---
 title: "Non, ce câble de 240W ne chargera pas plus vite votre vieux macbook"
-image: "/images/articles/really.jpg"
+image: "/images/articles/really.webp"
 createdAt: "2024-10-21"
 id: 8
 description: "Pourquoi acheter un câble USB-C de 240W n'accélérera pas la charge de votre MacBook Pro 2017. Découvrez comment fonctionne réellement la charge des ordinateurs portables et évitez les conseils trompeurs des vendeurs."
@@ -12,7 +12,7 @@ summary: "Un récit personnel confrontant un vendeur qui tente de vendre un câb
 og:
   title: "Non, ce câble de 240W ne chargera pas plus vite votre vieux macbook"
   description: "Pourquoi un câble USB-C de 240W n'accélère pas la charge d'un MacBook Pro 2017 ? Comprenez la réalité technique derrière la charge et évitez les pièges des vendeurs."
-  image: "/images/articles/really.jpg"
+  image: "/images/articles/really.webp"
   url: "/fr/non-ce-cable-de-240w-ne-chargera-pas-plus-vite-votre"
   type: "article"
   site_name: "Jean-Luc Houédanou"
@@ -23,7 +23,7 @@ twitter:
   card: "summary_large_image"
   title: "Non, ce câble de 240W ne chargera pas plus vite votre vieux macbook"
   description: "Un câble plus puissant ne rendra pas votre MacBook plus rapide à charger. Explications techniques et conseils pour éviter les achats inutiles."
-  image: "/images/articles/really.jpg"
+  image: "/images/articles/really.webp"
   creator: "@jeanluchouedanou"
 
 # Article Meta Tags
@@ -39,7 +39,7 @@ schema:
   type: "Article"
   headline: "Non, ce câble de 240W ne chargera pas plus vite votre vieux macbook"
   description: "Pourquoi acheter un câble USB-C de 240W n'accélérera pas la charge de votre MacBook Pro 2017. Découvrez comment fonctionne réellement la charge des ordinateurs portables et évitez les conseils trompeurs des vendeurs."
-  image: "/images/articles/really.jpg"
+  image: "/images/articles/really.webp"
   datePublished: "2024-10-21"
   dateModified: "2024-10-21"
   author: "Jean-Luc Houédanou"

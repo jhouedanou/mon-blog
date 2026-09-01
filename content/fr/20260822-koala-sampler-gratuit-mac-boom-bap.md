@@ -1,7 +1,7 @@
 ---
 title: "Koala Sampler : gratuit sur Mac, et largement suffisant pour faire du boom bap"
 createdAt: "2026-08-22"
-image: "/images/articles/koala.png"
+image: "/images/articles/koala.webp"
 description: "Koala Sampler, relancé pendant un déploiement qui traînait, est devenu mon outil principal pour le boom bap. Il est gratuit sur Mac, légal, et voici les morceaux qui en sortent, projet source inclus."
 searchIntent: "Koala Sampler est-il gratuit sur Mac, que vaut-il pour faire des beats boom bap, et où écouter des morceaux faits avec ?"
 tags: ["musique", "outils", "mac"]
@@ -30,19 +30,19 @@ Du boom bap, évidemment : batteries poussiéreuses, samples découpés à la ma
 items:
   - src: https://livid.com/embed/515Jsy0a7F27
     title: Morceau 01
-    poster: /images/articles/morceau-01.png
+    poster: /images/articles/morceau-01.webp
   - src: https://livid.com/embed/vmd0zG1y_eUN
     title: Morceau 02
-    poster: /images/articles/morceau-02.png
+    poster: /images/articles/morceau-02.webp
   - src: https://livid.com/embed/mgwjcQYDUGo3
     title: Morceau 03
-    poster: /images/articles/morceau-03.png
+    poster: /images/articles/morceau-03.webp
   - src: https://livid.com/embed/pRsd627m5xA8
     title: Morceau 04
-    poster: /images/articles/morceau-04.png
+    poster: /images/articles/morceau-04.webp
   - src: https://livid.com/embed/CzolxNcHlCiw
     title: Morceau 05
-    poster: /images/articles/morceau-05.png
+    poster: /images/articles/morceau-05.webp
 ---
 ::
 
@@ -50,7 +50,7 @@ items:
 
 Pour les curieux, voici un projet source, au format natif de Koala. Écoutez d'abord ce qu'il donne, puis téléchargez-le, ouvrez-le dans l'app, et le beat complet est sous vos doigts : samples, patterns, effets.
 
-::media-embed{src="https://drive.google.com/file/d/1PVN-2Zy4o6hn-hZBHi2Er4aMFTaqvD0y/preview" title="Le beat du projet source" poster="/images/articles/demo.png" height="240"}
+::media-embed{src="https://drive.google.com/file/d/1PVN-2Zy4o6hn-hZBHi2Er4aMFTaqvD0y/preview" title="Le beat du projet source" poster="/images/articles/demo.webp" height="240"}
 ::
 
 [Télécharger le projet 16.koala](https://drive.google.com/uc?export=download&id=13wf_8mQS9XXGZW37_j-AfeZ5jYAmFlah)

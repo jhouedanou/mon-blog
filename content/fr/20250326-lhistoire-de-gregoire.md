@@ -1,6 +1,6 @@
 ---
 title: "L'histoire de Grégoire : quand la grammaire rencontre le business"
-image: "/images/articles/gregoire.jpg"
+image: "/images/articles/gregoire.webp"
 createdAt: "2025-03-26"
 id: 12
 description: "L'histoire de Grégoire, un développeur freelance perfectionniste confronté à l'écriture inclusive pour un client important. Une anecdote sur les compromis entre principes linguistiques et réalités professionnelles."
@@ -12,7 +12,7 @@ summary: "Un développeur freelance perfectionniste doit faire face à une deman
 og:
   title: "L'histoire de Grégoire : quand la grammaire rencontre le business"
   description: "Un développeur perfectionniste face à l'écriture inclusive : l'histoire de Grégoire et ses compromis professionnels avec un client du CAC 40. Une leçon sur l'adaptation."
-  image: "/images/articles/gregoire.jpg"
+  image: "/images/articles/gregoire.webp"
   url: "/fr/lhistoire-de-gregoire"
   type: "article"
   site_name: "Jean-Luc Houédanou"
@@ -23,7 +23,7 @@ twitter:
   card: "summary_large_image"
   title: "L'histoire de Grégoire : quand la grammaire rencontre le business"
   description: "Deux semaines à jongler avec des points médians pour rien ? L'histoire d'un développeur perfectionniste face à l'écriture inclusive et aux réalités du business."
-  image: "/images/articles/gregoire.jpg"
+  image: "/images/articles/gregoire.webp"
   creator: "@jeanluchouedanou"
 
 # Article Meta Tags
@@ -39,7 +39,7 @@ schema:
   type: "Article"
   headline: "L'histoire de Grégoire : quand la grammaire rencontre le business"
   description: "L'histoire de Grégoire, un développeur freelance perfectionniste confronté à l'écriture inclusive pour un client important. Une anecdote sur les compromis entre principes linguistiques et réalités professionnelles."
-  image: "/images/articles/gregoire.jpg"
+  image: "/images/articles/gregoire.webp"
   datePublished: "2025-03-26"
   dateModified: "2025-03-26"
   author: "Jean-Luc Houédanou"

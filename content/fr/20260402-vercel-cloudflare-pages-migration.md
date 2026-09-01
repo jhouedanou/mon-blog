@@ -1,6 +1,6 @@
 ---
 title: "De Vercel à Cloudflare Pages : comment j'ai dit au revoir aux frais d'hébergement (et pourquoi tu dois aussi)"
-image: "/images/articles/cloudflarevercel.jpg"
+image: "/images/articles/cloudflarevercel.webp"
 createdAt: "2026-04-02"
 description: "Retour d'expérience sur la migration de Vercel vers Cloudflare Pages : bande passante illimitée, SSR gratuit, CDN ultra-rapide — et zéro facture. Guide complet pour développeurs africains."
 searchIntent: "Comment migrer un projet Nuxt de Vercel vers Cloudflare Pages pour réduire ses coûts d’hébergement."

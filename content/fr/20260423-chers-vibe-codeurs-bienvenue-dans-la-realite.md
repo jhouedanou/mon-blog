@@ -1,6 +1,6 @@
 ---
 title: "Chers Vibe Codeurs (sous Claude Code) : bienvenue dans la réalité"
-image: "/images/articles/welcomeToTheNBA.png"
+image: "/images/articles/welcomeToTheNBA.webp"
 createdAt: "2026-04-23"
 description: "Le vibe coding est le Bronny James du développement : un accès privilégié au game grâce à Claude Code, sans avoir payé le prix du métier. Analyse sans filtre, avec en bonus le feuilleton Anthropic d'avril 2026."
 searchIntent: "Le vibe coding permet-il vraiment de développer sans maîtriser les bases du métier de développeur ?"

@@ -1,6 +1,6 @@
 ---
 title: "Apple, iOS (et les AirTags) racontent tout à votre patron"
-image: "/images/articles/yeah.jpg"
+image: "/images/articles/yeah.webp"
 createdAt: "2025-07-05"
 id: 2025-07-05
 description: "iPhone dernier cri, MacBook ultra-réactif, voiture de fonction... tous connectés dans un écosystème Apple avec le compte iCloud de l'entreprise. Et cette petite pastille discrète sur le tableau de bord qui suit religieusement tous vos déplacements. Guide pratique pour éviter les surprises technologiques."

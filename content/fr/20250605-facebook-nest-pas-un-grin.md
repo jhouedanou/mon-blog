@@ -1,6 +1,6 @@
 ---
 title: "Quand un Community Manager confond réseaux sociaux et le Grin"
-image: "/images/articles/bescherelle/01.jpg"
+image: "/images/articles/bescherelle/01.webp"
 createdAt: "2025-06-05"
 id: 2025-06-05
 description: "Penser avec rigueur, respecter autrui, peser ses mots : autant de qualités qu'on attend d'un professionnel — surtout dans un secteur aussi symbolique que le livre et la communication. Je ne suis pas ici pour faire la morale, mais pour rappeler que les réseaux sociaux ne sont pas un grin — ce groupe informel de discussion entre amis où l'on débat de tout et de rien, souvent sans fond ni filtre. Mais parfois, on a l'impression que certains professionnels ont oublié ces notions de base."
@@ -26,7 +26,7 @@ Récemment, un community manager d'une structure bien connue du secteur littéra
 
 Sa "solution" : offrir un Bescherelle, non sans une pointe de sarcasme.
 
-![Commentaire sexiste du community manager sur les femmes et les iPhone](/images/articles/bescherelle/01.jpg)
+![Commentaire sexiste du community manager sur les femmes et les iPhone](/images/articles/bescherelle/01.webp)
 
 Une réaction qui, au-delà du mépris affiché, illustre un mélange regrettable d'arrogance et de méconnaissance grammaticale.
 
@@ -61,8 +61,8 @@ On assiste ici à un glissement regrettable : le rôle du community manager, cen
 
 Quelques exemples de ses "perles" :
 
-![Commentaire sexiste du community manager](/images/articles/bescherelle/03.jpg)
-![Autre exemple de commentaire problématique](/images/articles/bescherelle/04.jpg)
+![Commentaire sexiste du community manager](/images/articles/bescherelle/03.webp)
+![Autre exemple de commentaire problématique](/images/articles/bescherelle/04.webp)
 
 On tient là une façon de penser empruntée aux codes de la manosphère.
 
@@ -77,7 +77,7 @@ Prochaine étape logique : interdire aux femmes l'accès aux bibliothèques le v
 Ce n'est pas un procès, mais un appel au professionnalisme et au respect.
 
 Il faut le souligner : ce n'est pas la librairie dans son ensemble qui s'est exprimée. D'ailleurs, cette dernière afait une mise au point ferme , que je salue.
-![Mise au point de la librairie](/images/articles/bescherelle/00.jpg)
+![Mise au point de la librairie](/images/articles/bescherelle/00.webp)
 
 C'est juste un(e) CM — mal formé(e) ou mal encadré(e) — qui, en quelques clics, a transformé une vitrine culturelle en scène de stand-up misogyne.
 

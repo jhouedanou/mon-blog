@@ -1,6 +1,6 @@
 ---
 title: "La corruption vous mettra en retard : un (petit) exemple concret"
-image: "/images/articles/corruption.jpg"
+image: "/images/articles/corruption.webp"
 createdAt: "2025-03-12"
 id: 11
 description: "Une expérience personnelle dans une banque africaine qui illustre comment la corruption et les passe-droits peuvent paradoxalement faire perdre du temps à ceux qui y participent. Un témoignage sur les pratiques quotidiennes de corruption."
@@ -12,7 +12,7 @@ summary: "Un récit personnel dans une agence bancaire en Afrique où l'auteur r
 og:
   title: "La corruption vous mettra en retard : un (petit) exemple concret"
   description: "Une expérience vécue dans une banque africaine montre que la corruption ne fait pas gagner de temps, mais en fait perdre à tous. Un témoignage édifiant."
-  image: "/images/articles/corruption.jpg"
+  image: "/images/articles/corruption.webp"
   url: "/fr/lacorruption"
   type: "article"
   site_name: "Jean-Luc Houédanou"
@@ -23,7 +23,7 @@ twitter:
   card: "summary_large_image"
   title: "La corruption vous mettra en retard : un (petit) exemple concret"
   description: "La corruption quotidienne dans les banques africaines : pourquoi elle fait perdre du temps à tout le monde. Un récit personnel et une leçon à retenir."
-  image: "/images/articles/corruption.jpg"
+  image: "/images/articles/corruption.webp"
   creator: "@jeanluchouedanou"
 
 # Article Meta Tags
@@ -39,7 +39,7 @@ schema:
   type: "Article"
   headline: "La corruption vous mettra en retard : un (petit) exemple concret"
   description: "Une expérience personnelle dans une banque africaine qui illustre comment la corruption et les passe-droits peuvent paradoxalement faire perdre du temps à ceux qui y participent. Un témoignage sur les pratiques quotidiennes de corruption."
-  image: "/images/articles/corruption.jpg"
+  image: "/images/articles/corruption.webp"
   datePublished: "2025-03-12"
   dateModified: "2025-03-12"
   author: "Jean-Luc Houédanou"

@@ -1,6 +1,6 @@
 ---
 title: "Apple : la sagesse du géant"
-image: "/images/articles/apple.jpg"
+image: "/images/articles/apple.webp"
 createdAt: "2026-03-26"
 description: "MacBook Neo, Apple Intelligence, iPhone pliable : pourquoi Apple ne cherche plus à révolutionner mais à consolider, intégrer et monétiser avec une précision chirurgicale."
 searchIntent: "Pourquoi Apple consolide-t-elle son écosystème au lieu de chercher une nouvelle révolution avec l’iPhone pliable et Apple Intelligence ?"

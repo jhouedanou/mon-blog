@@ -1,6 +1,6 @@
 ---
 title: "Affinity passe au gratuit, et Internet s'énerve déjà"
-image: "/images/articles/affinity.jpg"
+image: "/images/articles/affinity.webp"
 createdAt: "2025-10-31"
 id: 2025-10-31
 description: "Affinity devient gratuit et bouleverse le marché de la création graphique. Découvrez pourquoi cette évolution est une excellente nouvelle pour concurrencer Adobe, avec une suite unifiée performante et sans abonnement."

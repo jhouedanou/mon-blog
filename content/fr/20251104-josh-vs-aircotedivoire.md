@@ -1,6 +1,6 @@
 ---
 title: "Josh Cahill Meets Air Côte d'Ivoire (And Drama Ensues)"
-image: "/images/articles/joshcahill.jpg"
+image: "/images/articles/joshcahill.webp"
 createdAt: "2025-11-04"
 id: 170
 description: "Analysis of the controversy between aviation vlogger Josh Cahill and Air Côte d'Ivoire: between a Booking.com ticket, high-altitude recovery, and improvised crisis management."

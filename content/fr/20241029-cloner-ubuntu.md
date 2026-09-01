@@ -1,6 +1,6 @@
 ---
 title: "Comment cloner Ubuntu sans perdre ses données et son âme"
-image: "/images/articles/pingui.jpg"
+image: "/images/articles/pingui.webp"
 createdAt: "2024-10-29"
 id: 2024-10-29
 description: "Guide pratique pour cloner votre système Ubuntu vers un nouveau SSD sans perdre vos données. Apprenez à migrer facilement votre installation Linux avec un script simple et efficace."
@@ -12,7 +12,7 @@ summary: "Un tutoriel étape par étape pour cloner votre système Ubuntu vers u
 og:
   title: "Comment cloner Ubuntu sans perdre ses données et son âme"
   description: "Guide pratique pour cloner votre système Ubuntu vers un nouveau SSD sans perdre vos données. Un tutoriel complet avec script de clonage."
-  image: "/images/articles/pingui.jpg"
+  image: "/images/articles/pingui.webp"
   url: "/fr/cloner-ubuntu"
   type: "article"
   site_name: "Jean-Luc Houédanou"
@@ -23,7 +23,7 @@ twitter:
   card: "summary_large_image"
   title: "Comment cloner Ubuntu sans perdre ses données et son âme"
   description: "Tutoriel complet pour migrer Ubuntu vers un nouveau SSD : identification des disques, script de clonage et extension des partitions."
-  image: "/images/articles/pingui.jpg"
+  image: "/images/articles/pingui.webp"
   creator: "@jeanluchouedanou"
 
 # Article Meta Tags
@@ -39,7 +39,7 @@ schema:
   type: "Article"
   headline: "Comment cloner Ubuntu sans perdre ses données et son âme"
   description: "Guide pratique pour cloner votre système Ubuntu vers un nouveau SSD sans perdre vos données. Apprenez à migrer facilement votre installation Linux avec un script simple et efficace."
-  image: "/images/articles/pingui.jpg"
+  image: "/images/articles/pingui.webp"
   datePublished: "2024-10-29"
   dateModified: "2024-10-29"
   author: "Jean-Luc Houédanou"

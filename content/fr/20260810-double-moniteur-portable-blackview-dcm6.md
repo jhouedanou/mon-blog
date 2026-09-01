@@ -1,7 +1,7 @@
 ---
 title: "Double moniteur portable : gain de productivité ou gadget ?"
 createdAt: "2026-08-10"
-image: "/images/articles/image_b81a07e7.png"
+image: "/images/articles/image_b81a07e7.webp"
 description: "Mon retour sur le fait de travailler un double écran qui se fixe sur l'écran du laptop."
 searchIntent: "Faut-il acheter un double moniteur portable pour travailler en déplacement, avantages et inconvénients face à un iPad Sidecar ou un moniteur USB-C classique."
 tags: ["tech", "productivité", "matériel", "avis"]

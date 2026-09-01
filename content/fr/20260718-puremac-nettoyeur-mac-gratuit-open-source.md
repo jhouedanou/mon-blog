@@ -1,6 +1,6 @@
 ---
 title: "PureMac : l'outil gratuit qui nettoie ton Mac sans te voler tes données"
-image: "/images/articles/puremac.png"
+image: "/images/articles/puremac.webp"
 createdAt: "2026-07-18"
 description: "PureMac est un désinstalleur et nettoyeur macOS gratuit, open-source et sans télémétrie. Alternative crédible à CleanMyMac, avec un code public que tu peux vérifier avant de supprimer quoi que ce soit."
 searchIntent: "PureMac est-il une alternative gratuite, open source et sans télémétrie à CleanMyMac pour nettoyer un Mac ?"

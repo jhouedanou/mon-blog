@@ -1,6 +1,6 @@
 ---
 title: "Pixel Watch : comment afficher automatiquement les notifications à l'écran"
-image: "/images/articles/pixel-watch-notifications-ecran.jpg"
+image: "/images/articles/pixel-watch-notifications-ecran.webp"
 createdAt: "2026-03-11"
 id: 2026-03-11
 description: "Guide simple pour afficher automatiquement les notifications sur l'écran de la Pixel Watch sans lever le poignet grâce à l'application Wear Notification Helper."

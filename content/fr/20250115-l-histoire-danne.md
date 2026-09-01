@@ -1,6 +1,6 @@
 ---
 title: "Anne, le faux Brad Pitt et un véritable lynchage numérique"
-image: "/images/articles/anne.jpg"
+image: "/images/articles/anne.webp"
 createdAt: "2025-01-15"
 id: 10
 description: "L'histoire tragique d'Anne, victime d'une arnaque en ligne par un faux Brad Pitt qui lui a extorqué 800 000 euros, suivie d'un lynchage médiatique sur les réseaux sociaux. Une réflexion sur la cruauté numérique et le respect de la dignité humaine."
@@ -12,7 +12,7 @@ summary: "Anne, une femme fragilisée par un cancer du cerveau, le VIH et un div
 og:
   title: "Anne, le faux Brad Pitt et un véritable lynchage numérique"
   description: "L'histoire tragique d'Anne, victime d'une arnaque en ligne et d'un lynchage médiatique. Une réflexion sur la cruauté numérique et le respect de la dignité humaine."
-  image: "/images/articles/anne.jpg"
+  image: "/images/articles/anne.webp"
   url: "/fr/l-histoire-danne"
   type: "article"
   site_name: "Jean-Luc Houédanou"
@@ -23,7 +23,7 @@ twitter:
   card: "summary_large_image"
   title: "Anne, le faux Brad Pitt et un véritable lynchage numérique"
   description: "Une femme victime d'arnaque et de cyberharcèlement : l'histoire d'Anne et les leçons à tirer sur la dignité humaine en ligne."
-  image: "/images/articles/anne.jpg"
+  image: "/images/articles/anne.webp"
   creator: "@jeanluchouedanou"
 
 # Article Meta Tags
@@ -39,7 +39,7 @@ schema:
   type: "Article"
   headline: "Anne, le faux Brad Pitt et un véritable lynchage numérique"
   description: "L'histoire tragique d'Anne, victime d'une arnaque en ligne par un faux Brad Pitt qui lui a extorqué 800 000 euros, suivie d'un lynchage médiatique sur les réseaux sociaux. Une réflexion sur la cruauté numérique et le respect de la dignité humaine."
-  image: "/images/articles/anne.jpg"
+  image: "/images/articles/anne.webp"
   datePublished: "2025-01-15"
   dateModified: "2025-01-15"
   author: "Jean-Luc Houédanou"

@@ -1,6 +1,6 @@
 ---
 title: "Migrer un site PrestaShop vers un nouveau nom de domaine : le guide complet"
-image: "/images/articles/prestashop-migration-domaine.jpg"
+image: "/images/articles/prestashop-migration-domaine.webp"
 createdAt: "2026-03-31"
 description: "Changer de nom de domaine sur PrestaShop sans tout casser : base de données, fichiers de config, SSL, cache, redirections 301 et services tiers. Un guide étape par étape, testé en production."
 searchIntent: "Comment changer le nom de domaine d’une boutique PrestaShop avec SSL, redirections 301 et cache."

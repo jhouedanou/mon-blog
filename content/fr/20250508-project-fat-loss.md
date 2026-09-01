@@ -1,6 +1,6 @@
 ---
 title: "J'ai développé une app… de fitness"
-image: "/images/articles/fitness-afro-abdos.png"
+image: "/images/articles/fitness-afro-abdos.webp"
 createdAt: "2025-05-08"
 id: 13
 description: "Après des années à négliger sa santé au profit du code, l'auteur de ce blog décide de reprendre le contrôle… à sa manière : en développant sa propre application de suivi fitness."
@@ -12,7 +12,7 @@ summary: "Entre le code et les deadlines clients, il y a le corps. Ce billet rac
 og:
   title: "J'ai développé une app… de fitness"
   description: "Un développeur web crée sa propre application de suivi fitness pour reprendre sa santé en main. Découvrez Project Fat Loss, une PWA pour suivre votre poids et vos entraînements."
-  image: "/images/articles/fitness-afro-abdos.png"
+  image: "/images/articles/fitness-afro-abdos.webp"
   url: "/fr/project-fat-loss"
   type: "article"
   site_name: "Jean-Luc Houédanou"
@@ -23,7 +23,7 @@ twitter:
   card: "summary_large_image"
   title: "J'ai développé une app… de fitness"
   description: "Après des années à négliger sa santé, un développeur crée sa propre app de fitness. Project Fat Loss : suivi de poids, entraînements personnalisables et synchronisation multi-appareils."
-  image: "/images/articles/fitness-afro-abdos.png"
+  image: "/images/articles/fitness-afro-abdos.webp"
   creator: "@jeanluchouedanou"
 
 # Article Meta Tags
@@ -39,7 +39,7 @@ schema:
   type: "Article"
   headline: "J'ai développé une app… de fitness"
   description: "Après des années à négliger sa santé au profit du code, l'auteur de ce blog décide de reprendre le contrôle… à sa manière : en développant sa propre application de suivi fitness."
-  image: "/images/articles/fitness-afro-abdos.png"
+  image: "/images/articles/fitness-afro-abdos.webp"
   datePublished: "2025-05-08"
   dateModified: "2025-05-08"
   author: "Jean-Luc Houédanou"

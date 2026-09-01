@@ -1,6 +1,6 @@
 ---
 title: "Comment des chercheurs ont volé 10 000 $ via un iPhone verrouillé — la faille Apple Pay / Visa expliquée"
-image: "/images/articles/apple-pay-visa-hack.jpg"
+image: "/images/articles/apple-pay-visa-hack.webp"
 createdAt: "2026-04-17"
 description: "Des chercheurs ont démontré qu'il est possible de débiter une somme importante depuis un iPhone verrouillé en exploitant le mode Express Transit d'Apple Pay combiné aux protocoles Visa. Voici comment, et comment se protéger."
 searchIntent: "Comment une faille Apple Pay et Visa peut-elle débiter un iPhone verrouillé et comment s’en protéger ?"

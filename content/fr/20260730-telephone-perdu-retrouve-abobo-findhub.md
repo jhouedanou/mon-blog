@@ -1,7 +1,7 @@
 ---
 title: "Comment j'ai retrouvé mon téléphone à Abobo — grâce à FindHub de Google (et surtout à une dame honnête)"
 createdAt: "2026-07-30"
-image: "/images/articles/PXL_20260724_120434299.jpeg"
+image: "/images/articles/PXL_20260724_120434299.webp"
 description: "J'oublie un de mes téléphones dans un Yango. FindHub me le localise à Abobo, derrière le CHU. Récit d'une nuit blanche, d'un coup de fil paternel et de 12 000 FCFA de taxi — avec la morale au bout."
 searchIntent: "Comment retrouver un téléphone perdu à Abidjan avec FindHub, le service « Localiser » de Google, et quelles sont ses limites de précision."
 tags: ["afrique", "société", "opinion", "sécurité", "tech"]
