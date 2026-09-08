@@ -10,7 +10,7 @@ tags: ["opinion", "société", "finances personnelles", "Afrique"]
 # Philippe Simo est un vendeur de rêves. Achetez.
 
 Depuis début août, la webosphère franco-africaine lui tombe dessus. Le motif : il a dit qu'à 30 ans, si tu n'es pas propriétaire de ta résidence principale, « la pauvreté te guette ».
-Blériot Nyemeck a répondu. Des dizaines de chaînes, incluant celles qui ont fait du "philippe simo bashing" leur fond de commenrce, ont fait leur audience de la semaine avec ça.
+Des dizaines de chaînes, incluant celles qui ont fait du "philippe simo bashing" leur fond de commenrce, ont fait leur audience de la semaine avec ça.
 
 Je ne vais pas participer à ce sport-là. Pas d'attaque sur l'homme, pas de « feymân », pas de procès en escroquerie.
 
