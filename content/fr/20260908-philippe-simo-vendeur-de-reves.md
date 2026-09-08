@@ -34,11 +34,13 @@ Un vendeur de rêves, c'est quelqu'un qui montre une vie que tu ne t'autorisais 
 
 Et son rêve à lui est atteignable. Ce n'est pas de la loterie, ce n'est pas du trading miracle, ce n'est pas « deviens millionnaire en trois mois ». C'est : épargne une partie de ce que tu gagnes, investis chez toi, construis un patrimoine sur dix ans, arrête de mettre ton argent dans des choses qui perdent de la valeur. C'est lent, c'est ennuyeux, ça demande de la discipline financière. Mais c'est faisable avec un salaire normal.
 
-C'est d'ailleurs pour ça que sa phrase a fait si mal. Beaucoup de gens qui l'insultent n'ont pas un problème de revenus. Ils gagnent correctement depuis dix ans et n'ont rien mis de côté. Le message les a touchés là où ça pique.
+C'est d'ailleurs pour ça que sa phrase a fait si mal. Beaucoup de gens qui l'insultent n'ont pas un problème de revenus. Ils gagnent correctement depuis dix ans et n'ont rien mis de côté.
+
+Le message les a touchés là "où ça pique". C'est un bon electro choc.
 
 ## On a besoin de plus de gars comme lui
 
-Nos modèles publics sont des footballeurs, des artistes, et des gens dont personne ne sait d'où vient l'argent. Un type qui parle d'épargne, d'investissement au pays et de patrimoine sur des chaînes suivies par des centaines de milliers de personnes, ça nous tire vers le haut.
+Nos modèles publics sont des footballeurs, des artistes, et ainsi qu'une bonne partie de gens dont personne ne sait d'où vient l'argent (je ne donne pas de nom...vous les connaissez) . Un type qui parle d'épargne, d'investissement au pays et de patrimoine sur des chaînes suivies par des centaines de milliers de personnes, ça nous tire vers le haut.
 
 Même quand il rate une phrase.
 
