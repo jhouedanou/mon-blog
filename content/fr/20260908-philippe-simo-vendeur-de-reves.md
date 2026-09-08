@@ -43,8 +43,8 @@ Même quand il rate une phrase.
 
 Le vrai problème n'est pas qu'il parle trop fort. C'est qu'il soit presque seul à parler de ça. S'il y avait vingt Philippe Simo avec des approches différentes, une sortie ratée sur les 30 ans serait une opinion parmi d'autres, pas une chasse à l'homme.
 
-Discutez l'idée. Corrigez ce qui est faux. Mais ne cassez pas l'un des seuls débats utiles qu'on ait eu cette année.
+Donc, pour ceux qui ont envie d'avancer, discutez l'idée. Corrigez ce qui est faux. Mais ne cassez pas l'un des seuls débats utiles qu'on ait eu cette année.
 
-## Sinon, vous pouvez retourner à vos histoires de repos .
+Pour les autres, vous pouvez retourner à vos histoires de "repos" .
 
 _Photo : [Theo Decker](https://www.pexels.com/photo/5447327/), Pexels._
