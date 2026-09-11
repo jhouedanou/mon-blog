@@ -154,6 +154,14 @@ i18n: {
     }
   },
   routeRules: {
+    // Anti-clickjacking : seul houedanou.com peut embarquer houedanou.com.
+    // Nitro (preset cloudflare-pages) transforme cette règle en `dist/_headers`,
+    // et l'applique aussi aux réponses rendues par le worker.
+    '/**': {
+      headers: {
+        'Content-Security-Policy': "frame-ancestors 'self';",
+      },
+    },
     '/': { prerender: true },
     '/fr/**': { prerender: true },
     '/tags/**': { prerender: true },
