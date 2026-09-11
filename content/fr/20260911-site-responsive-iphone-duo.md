@@ -1,6 +1,6 @@
 ---
 title: "Vérifiez si votre site est responsive sur l'iPhone Duo"
-createdAt: "2026-09-11"
+createdAt: "2026-09-11T20:01:00Z"
 image: "/images/articles/pexels-imadclicks-19022728.webp"
 description: "Apple a sorti son premier iPhone pliable, et un développeur a publié un outil gratuit pour voir à quoi ressemble votre site dessus. Je l'ai essayé sur ce blog, et le résultat m'a appris quelque chose que je ne savais pas sur mon propre site."
 searchIntent: "Comment tester si un site web est responsive sur l'iPhone Duo, quelles sont les tailles d'écran plié et déplié, et pourquoi un outil de prévisualisation peut refuser d'afficher un site qui accepte pourtant d'être embarqué."

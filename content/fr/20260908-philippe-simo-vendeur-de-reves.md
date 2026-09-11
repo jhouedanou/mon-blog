@@ -1,6 +1,6 @@
 ---
 title: "Philippe Simo est un vendeur de rêves. Achetez."
-createdAt: "2026-09-08"
+createdAt: "2026-09-08T20:47:00Z"
 image: "/images/articles/philippe-simo-vendeur-de-reves.webp"
 description: "Depuis août, la webosphère franco-africaine tombe sur Philippe Simo pour sa phrase sur les 30 ans et la propriété. La phrase est mauvaise, et je l'explique. Mais un vendeur de rêves atteignables, en Afrique francophone, c'est un métier utile, et on en manque."
 searchIntent: "Pourquoi la polémique Philippe Simo sur la propriété à 30 ans est mal posée, en quoi sa phrase est fausse dans le contexte ivoirien et camerounais, et pourquoi son discours sur l'épargne et l'investissement au pays reste utile."

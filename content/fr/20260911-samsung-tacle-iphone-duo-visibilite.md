@@ -1,6 +1,6 @@
 ---
 title: "Samsung se moque de l'iPhone Duo, et c'est très bien pour Samsung"
-createdAt: "2026-09-11"
+createdAt: "2026-09-11T22:40:00Z"
 image: "/images/articles/tim-cook-temu.png"
 description: "Pendant toute la conférence Apple, le compte Samsung Mobile US a enchaîné les moqueries sur l'iPhone Duo. J'ai souri, et puis je me suis demandé à qui profitait vraiment la blague."
 searchIntent: "Pourquoi Samsung s'est moqué de l'iPhone Duo sur X pendant la keynote Apple, ce que ces tweets rapportent à Samsung, et le paradoxe de Samsung Display qui fournit les écrans pliables d'Apple."

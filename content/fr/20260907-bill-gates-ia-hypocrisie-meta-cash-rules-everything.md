@@ -1,6 +1,6 @@
 ---
 title: "Bill Gates veut freiner l'IA : l'hypocrisie ne coûte rien quand on a déjà encaissé"
-createdAt: "2026-09-07"
+createdAt: "2026-09-07T02:18:00Z"
 image: "/images/articles/bill-gates-ia-cash.jpeg"
 description: "Bill Gates publie un mémo alarmiste sur l'IA et réclame des taxes et des limites. Venant de l'homme qui a passé trente ans à combattre le logiciel libre, la posture fait sourire. Je fais le parallèle avec la « conversion » de Meta, condamné cette année pour avoir ignoré les dérives de ses réseaux. Conclusion signée Method Man."
 searchIntent: "Que propose Bill Gates dans son mémo sur l'IA d'août 2026, pourquoi sa position est jugée hypocrite au regard de son passé contre l'open source, et quel lien avec les condamnations de Meta en 2026 sur la protection des mineurs."

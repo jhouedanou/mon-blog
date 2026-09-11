@@ -1,6 +1,6 @@
 ---
 title: "Free speech, oui. Mais pas ça."
-createdAt: "2026-09-07"
+createdAt: "2026-09-07T15:29:00Z"
 image: "/images/articles/pexels-katrin-bolovtsova-6077189.webp"
 description: "Le 25 août 2026, une cour d'appel fédérale américaine a jugé que le Premier Amendement protège la simple possession privée d'images pédocriminelles générées par IA. Ce que la décision dit vraiment, ce qu'elle ne dit pas, et pourquoi une jurisprudence de 1969 est dépassée face aux modèles de diffusion."
 searchIntent: "Que dit vraiment la décision United States v. Anderegg du 7e circuit sur les images pédocriminelles générées par IA, et est-ce que les États-Unis ont légalisé ce contenu."

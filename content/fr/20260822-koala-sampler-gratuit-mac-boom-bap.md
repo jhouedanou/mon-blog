@@ -1,6 +1,6 @@
 ---
 title: "Koala Sampler : gratuit sur Mac, et largement suffisant pour faire du boom bap"
-createdAt: "2026-08-22"
+createdAt: "2026-08-22T15:15:00Z"
 image: "/images/articles/koala.webp"
 description: "Koala Sampler, relancé pendant un déploiement qui traînait, est devenu mon outil principal pour faire du boom bap. Il est gratuit sur Mac et parfaitement légal. Voici les morceaux qui en sortent, avec un projet source à télécharger."
 searchIntent: "Koala Sampler est-il gratuit sur Mac, que vaut-il pour faire des beats boom bap, et où écouter des morceaux faits avec ?"

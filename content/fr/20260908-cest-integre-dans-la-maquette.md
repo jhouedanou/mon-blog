@@ -1,6 +1,6 @@
 ---
 title: "« C'est intégré dans la maquette. » (Non.)"
-createdAt: "2026-09-08"
+createdAt: "2026-09-08T20:17:00Z"
 image: "/images/articles/maquette-integree-non.webp"
 description: "Une semaine à vérifier, fichier par fichier, ce qu'on m'annonçait comme fait dans un dossier de handoff. Deux écrans sur quatre étaient réellement là. J'en profite pour lister cinq pièges classiques des projets web, et la façon dont je les gère maintenant."
 searchIntent: "Comment vérifier un livrable de handoff annoncé comme terminé, et comment éviter les pièges classiques d'un projet web : lots de retours, contenus non finalisés, validation sans délai, accès DNS refusé, secrets partagés dans un Drive."

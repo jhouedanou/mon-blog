@@ -15,11 +15,15 @@ export default defineNuxtConfig({
 i18n: {
   locales: [
     { code: 'fr', name: 'Français', language: 'fr-FR', file: 'fr-FR.js' },
+    { code: 'en', name: 'English', language: 'en-US', file: 'en-US.js' },
   ],
   defaultLocale: 'fr',
   lazy: true,
   langDir: 'lang/',
-  strategy: 'no_prefix',
+  // Le français reste à la racine (/, /fr/<slug>) ; l'anglais vit sous /en.
+  // Les articles anglais sont dans content/en et leur _path (/en/<slug>)
+  // correspond directement à l'URL, sans passer par localePath.
+  strategy: 'prefix_except_default',
   detectBrowserLanguage: false,
 }, 
   sitemap: {
@@ -57,6 +61,14 @@ i18n: {
         '/a-propos',
         '/cv',
         '/confidentialite',
+        '/en',
+        '/en/tags',
+        '/en/themes',
+        '/en/themes/tutoriels',
+        '/en/themes/apple',
+        '/en/themes/developpement',
+        '/en/themes/afrique-numerique',
+        '/en/themes/opinions',
         '/sitemap.xml',
         '/feed.xml',
         '/robots.txt',

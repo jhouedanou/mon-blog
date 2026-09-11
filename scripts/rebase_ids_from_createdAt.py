@@ -8,7 +8,7 @@ parse la clé createdAt depuis le frontmatter et :
  - renomme le fichier pour préfixer par le nouvel ID
 
 Règles et hypothèses :
- - createdAt est au format DD-MM-YYYY ou YYYY-MM-DD (ou variant avec / ou -)
+ - createdAt est au format DD-MM-YYYY, YYYY-MM-DD ou ISO avec heure (YYYY-MM-DDTHH:MM:SSZ)
  - si createdAt est introuvable, le fichier est ignoré
  - nouvel id utilisé dans le frontmatter sera une chaîne de la forme 'YYYY-MM-DD' ou 'YYYY-MM-DD-n' en cas de collision
  - le préfixe de fichier sera YYYYMMDD ou YYYYMMDD-n
@@ -37,7 +37,7 @@ frontmatter_delim = re.compile(r'^---\s*$')
 def parse_date(createdAt_raw):
     s = createdAt_raw.strip()
     # Try common formats
-    for fmt in ('%d-%m-%Y', '%Y-%m-%d', '%d/%m/%Y', '%Y/%m/%d', '%d.%m.%Y'):
+    for fmt in ('%Y-%m-%dT%H:%M:%SZ', '%Y-%m-%dT%H:%M:%S%z', '%d-%m-%Y', '%Y-%m-%d', '%d/%m/%Y', '%Y/%m/%d', '%d.%m.%Y'):
         try:
             dt = datetime.strptime(s, fmt)
             return dt
