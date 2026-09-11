@@ -2,28 +2,28 @@
 title: "Koala Sampler : gratuit sur Mac, et largement suffisant pour faire du boom bap"
 createdAt: "2026-08-22"
 image: "/images/articles/koala.webp"
-description: "Koala Sampler, relancé pendant un déploiement qui traînait, est devenu mon outil principal pour le boom bap. Il est gratuit sur Mac, légal, et voici les morceaux qui en sortent, projet source inclus."
+description: "Koala Sampler, relancé pendant un déploiement qui traînait, est devenu mon outil principal pour faire du boom bap. Il est gratuit sur Mac et parfaitement légal. Voici les morceaux qui en sortent, avec un projet source à télécharger."
 searchIntent: "Koala Sampler est-il gratuit sur Mac, que vaut-il pour faire des beats boom bap, et où écouter des morceaux faits avec ?"
 tags: ["musique", "outils", "mac"]
 ---
 
 # Koala Sampler : gratuit sur Mac, et largement suffisant pour faire du boom bap
 
-Ceux qui suivent ce blog se souviennent peut-être de [l'interlude de juillet](/fr/20260707-je-suis-encore-vivant#interlude-sampler-pendant-que-les-conteneurs-chauffent) : un déploiement qui traîne, une barre de progression hypnotique, et Koala Sampler relancé pour occuper le temps mort. Deux instrumentaux étaient nés pendant que les serveurs transpiraient.
+Ceux qui suivent ce blog se souviennent peut-être de [l'interlude de juillet](/fr/20260707-je-suis-encore-vivant#interlude-sampler-pendant-que-les-conteneurs-chauffent) : un déploiement qui traînait, une barre de progression que je regardais avancer, et Koala Sampler relancé pour occuper le temps mort. Deux instrumentaux étaient nés pendant que les serveurs faisaient leur travail.
 
-Depuis, le temps mort est devenu une habitude. Et Koala est passé du bouche-trou à l'outil principal. Cet article, c'est le suivi de l'histoire.
+Depuis, le temps mort est devenu une habitude, et Koala est passé du bouche-trou à l'outil principal. Je vous raconte la suite.
 
-## Pourquoi Koala
+## Pourquoi Koala ?
 
-D'abord parce qu'il est **gratuit sur Mac**. Pas en essai, pas avec un crack : gratuit sur le Mac App Store, signé par son développeur Marek Bereza (elf audio). La version mobile coûte environ 5 euros si vous voulez sampler en déplacement.
+D'abord parce qu'il est gratuit sur Mac. Pas en version d'essai, pas avec un crack : gratuit sur le Mac App Store, signé par son développeur Marek Bereza (elf audio). La version mobile coûte environ 5 euros si vous voulez sampler en déplacement.
 
-Ensuite parce qu'il fait exactement ce qu'il faut, dans l'esprit d'un sampleur mobile : jusqu'à 64 samples par projet, un séquenceur avec swing, la séparation de stems par IA, et même le support des plugins VST3 et AUv3 sur Mac. L'interface est minimaliste et c'est voulu. Pas de pages de réglages, pas de micro-édition. On reste dans le flow.
+Ensuite parce qu'il fait exactement ce qu'il faut, dans l'esprit d'un sampleur mobile : jusqu'à 64 samples par projet, un séquenceur avec swing, la séparation de stems par IA, et même le support des plugins VST3 et AUv3 sur Mac. L'interface est minimaliste, et c'est voulu. Pas de pages de réglages, pas de micro-édition, on reste concentré sur le beat.
 
-Enfin, parce que c'est une alternative pour ceux qui achètent des « licences » FL Studio ou Cubase à 5 000 francs dans les groupes Facebook : vous payez pour un crack, souvent farci de logiciels espions, qui aspirera vos mots de passe et votre mobile money avant votre premier beat. Un vrai sampler, légal et propre, coûte zéro franc juste ici. Faites le calcul.
+Enfin, parce que c'est une alternative pour ceux qui achètent des « licences » FL Studio ou Cubase à 5 000 francs dans les groupes Facebook. Vous payez pour un crack, souvent farci de logiciels espions, qui aspirera vos mots de passe et votre mobile money avant même votre premier beat. Un vrai sampleur, légal et propre, coûte zéro franc, juste ici.
 
 ## La preuve en musique
 
-Du boom bap, évidemment : batteries poussiéreuses, samples découpés à la main, ambiance très 90s. Exactement ce pour quoi ce sampler est taillé.
+Du boom bap, évidemment : batteries poussiéreuses, samples découpés à la main, ambiance très années 90. C'est exactement ce pour quoi ce sampleur est fait.
 
 ::media-carousel
 ---
@@ -46,9 +46,9 @@ items:
 ---
 ::
 
-## Le projet source, à décortiquer
+## Le projet source, pour les curieux
 
-Pour les curieux, voici un projet source, au format natif de Koala. Écoutez d'abord ce qu'il donne, puis téléchargez-le, ouvrez-le dans l'app, et le beat complet est sous vos doigts : samples, patterns, effets.
+Voici un projet source, au format natif de Koala. Écoutez d'abord ce qu'il donne, puis téléchargez-le et ouvrez-le dans l'application : vous aurez le beat complet sous les doigts, avec les samples, les patterns et les effets.
 
 ::media-embed{src="https://drive.google.com/file/d/1PVN-2Zy4o6hn-hZBHi2Er4aMFTaqvD0y/preview" title="Le beat du projet source" poster="/images/articles/demo.webp" height="240"}
 ::
@@ -57,7 +57,7 @@ Pour les curieux, voici un projet source, au format natif de Koala. Écoutez d'a
 
 ## Koala en action
 
-Pour ceux qui veulent voir à quoi ressemble le logiciel avant de l'installer, voici trois captures de sessions réelles : découpe de samples, séquençage, et un aperçu de l'interface sur Mac. Rien de scénarisé, c'est l'usage quotidien.
+Pour ceux qui veulent voir à quoi ressemble le logiciel avant de l'installer, voici trois captures de sessions réelles : découpe de samples, séquençage, et un aperçu de l'interface sur Mac. Rien de scénarisé, c'est mon usage quotidien.
 
 ::media-embed{src="https://livid.com/embed/iS0NnuO8dgEp" title="Découpe d'un sample dans Koala" ratio="100 / 152.222" maxWidth="420"}
 ::
@@ -70,4 +70,4 @@ Pour ceux qui veulent voir à quoi ressemble le logiciel avant de l'installer, v
 
 ## Pour commencer
 
-Koala Sampler est sur le [Mac App Store](https://apps.apple.com/fr/app/koala-sampler/id1479881366?mt=12), gratuitement. La documentation est sur [koalasampler.com](https://www.koalasampler.com).
+Koala Sampler est disponible gratuitement sur le [Mac App Store](https://apps.apple.com/fr/app/koala-sampler/id1479881366?mt=12), et la documentation se trouve sur [koalasampler.com](https://www.koalasampler.com). Si vous en sortez quelque chose, envoyez-le moi 🙂
