@@ -5,8 +5,8 @@
             <aside class="home-sidebar">
                 <section class="hero-intro">
                     <div class="hero-intro__line">
-                        <span class="hero-intro__eyebrow">— Journal {{ currentYear }} ·
-                            <span v-if="articles && articles.length">{{ articles.length }} articles</span>
+                        <span class="hero-intro__eyebrow">— {{ $t('journal') }} {{ currentYear }} ·
+                            <span v-if="articles && articles.length">{{ articles.length }} {{ $t('articles') }}</span>
                         </span>
                     </div>
                     <!-- L'espace explicite est indispensable : le compilateur Vue supprime
@@ -16,7 +16,7 @@
                         <span class="hero-intro__word">Jean<span class="hero-intro__dot">-</span>Luc </span><span class="hero-intro__word hero-intro__word--accent">Houédanou</span>
                     </h1>
                     <p class="hero-intro__lede">
-                        Retours d'expérience, outils web, administration système et culture numérique depuis Abidjan.
+                        {{ $t('heroLede') }}
                     </p>
                 </section>
 
@@ -24,10 +24,10 @@
                     <SearchBar v-model="searchQuery" />
                 </div>
 
-                <nav class="home-sidebar__nav" aria-label="Navigation principale">
-                    <NuxtLink to="/" class="home-sidebar__nav-link">{{ $t('home') }}</NuxtLink>
-                    <NuxtLink to="/tags" class="home-sidebar__nav-link">{{ $t('tags') }}</NuxtLink>
-                    <NuxtLink to="/themes" class="home-sidebar__nav-link">Thématiques</NuxtLink>
+                <nav class="home-sidebar__nav" :aria-label="$t('mainNav')">
+                    <NuxtLink :to="localePath('/')" class="home-sidebar__nav-link">{{ $t('home') }}</NuxtLink>
+                    <NuxtLink :to="localePath('/tags')" class="home-sidebar__nav-link">{{ $t('tags') }}</NuxtLink>
+                    <NuxtLink :to="localePath('/themes')" class="home-sidebar__nav-link">{{ $t('themes') }}</NuxtLink>
                     <NuxtLink to="/cv" class="home-sidebar__nav-link">{{ $t('cv') }}</NuxtLink>
                     <NuxtLink to="/a-propos" class="home-sidebar__nav-link">{{ $t('about') }}</NuxtLink>
                 </nav>
@@ -39,7 +39,7 @@
                     <NuxtLink
                         v-for="(article, index) in displayedArticles"
                         :key="article._path"
-                        :to="localePath(article._path)"
+                        :to="article._path"
                         class="mosaic-tile"
                         :class="[
                             `mosaic-tile--${getTileSize(index)}`,
@@ -87,7 +87,7 @@
                         <span class="loading-dot"></span>
                     </div>
                     <p v-if="allLoaded && displayedArticles.length > 0" class="all-loaded-msg">
-                        — Fin du journal —
+                        — {{ $t('endOfJournal') }} —
                     </p>
                 </div>
             </div>
@@ -104,6 +104,7 @@ import { useLocalePath } from '#i18n'
 import SearchBar from '~/components/SearchBar.vue'
 import { getArticleSearchIntent, getArticleSearchText } from '~/data/editorial.js'
 import { getReadingStats } from '~/utils/reading.js'
+import { dateLocale } from '~/utils/i18n.js'
 
 const localePath = useLocalePath()
 const { locale } = useI18n()
@@ -118,7 +119,7 @@ let infiniteObserver = null
 const searchQuery = ref('')
 const currentYear = new Date().getFullYear()
 
-const { data: articles } = await useAsyncData('articles', () =>
+const { data: articles } = await useAsyncData(`articles-${locale.value}`, () =>
     queryContent(locale.value)
         .sort({ createdAt: -1 })
         .find()
@@ -275,7 +276,7 @@ function formatDate(createdAt) {
     if (createdAt) {
         const date = new Date(createdAt)
         if (isNaN(date.getTime())) return ''
-        return new Intl.DateTimeFormat('fr-FR', {
+        return new Intl.DateTimeFormat(dateLocale(locale.value), {
             day: '2-digit',
             month: 'short',
             year: 'numeric'

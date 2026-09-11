@@ -19,18 +19,18 @@
           </span>
         </div>
         <h1 class="article-header__title">{{ article.title }}</h1>
-        <div v-if="articleTags.length" class="article-header__tags" aria-label="Étiquettes de l’article">
+        <div v-if="articleTags.length" class="article-header__tags" :aria-label="$t('articleTagsLabel')">
           <NuxtLink
             v-for="tag in articleTags"
             :key="tag"
-            :to="`/tags/${slugifyTag(tag)}`"
+            :to="localePath(`/tags/${slugifyTag(tag)}`)"
             class="article-header__tag"
           >#{{ tag }}</NuxtLink>
         </div>
         <div v-if="articleThemes.length" class="article-header__themes">
-          <span>À explorer :</span>
-          <NuxtLink v-for="themeItem in articleThemes" :key="themeItem.slug" :to="`/themes/${themeItem.slug}`">
-            {{ themeItem.label }}
+          <span>{{ $t('explore') }}</span>
+          <NuxtLink v-for="themeItem in articleThemes" :key="themeItem.slug" :to="localePath(`/themes/${themeItem.slug}`)">
+            {{ localizeTheme(themeItem, locale).label }}
           </NuxtLink>
         </div>
       </header>
@@ -39,7 +39,7 @@
     <div class="article-layout">
       <article class="article-container">
         <div v-if="articleSummary" class="article-summary">
-          <span class="article-summary__label">Résumé</span>
+          <span class="article-summary__label">{{ $t('summary') }}</span>
           <p>{{ articleSummary }}</p>
         </div>
 
@@ -48,7 +48,7 @@
           <ContentDoc :head="false" />
 
           <div class="social-share">
-            <span class="social-share__label">— Partager</span>
+            <span class="social-share__label">— {{ $t('share') }}</span>
             <div class="sharethis-inline-share-buttons"></div>
           </div>
 
@@ -56,19 +56,19 @@
 
           <SuggestedArticles
             :articles="suggestedArticles"
-            label="À lire ensuite dans les mêmes thèmes"
+            :label="$t('readNextSameThemes')"
           />
 
           <DisqusComments :pageUrl="currentUrl" :pageIdentifier="article._path" />
 
           <div class="article-links">
             <a href="https://houedanou.com" rel="dofollow">Jean-Luc Houédanou</a>
-            <a target="_blank" href="https://jeanluchouedanou.blogspot.com/">Mes anciens articles</a>
+            <a target="_blank" href="https://jeanluchouedanou.blogspot.com/">{{ $t('oldArticles') }}</a>
           </div>
         </div>
 
         <footer class="article-footer">
-          <NuxtLink to="/" class="back-to-articles">
+          <NuxtLink :to="localePath('/')" class="back-to-articles">
             <span class="back-arrow">←</span>
             <span>{{ $t("backToArticles") }}</span>
           </NuxtLink>
@@ -85,7 +85,9 @@
 <script setup>
 import { useRoute } from "vue-router";
 import { useI18n } from "vue-i18n";
+import { useLocalePath } from "#i18n";
 import { onMounted, watch, computed, nextTick } from "vue";
+import { dateLocale, translatedArticlePath, LOCALE_CODES } from "~/utils/i18n.js";
 import DisqusComments from "~/components/DisqusComments.vue";
 import ArticleNavigation from "~/components/ArticleNavigation.vue";
 import SuggestedArticles from "~/components/SuggestedArticles.vue";
@@ -100,12 +102,14 @@ import {
   THEME_DEFINITIONS,
   articleMatchesTheme,
   getArticleSearchIntent,
+  localizeTheme,
 } from "~/data/editorial.js";
 
 definePageMeta({ key: (route) => route.path });
 
 const route = useRoute();
-const { locale } = useI18n();
+const { locale, t } = useI18n();
+const localePath = useLocalePath();
 
 // La transition de page est en `out-in` : en quittant un article, `route.path`
 // vaut déjà la nouvelle route alors que ce composant est encore monté le temps
@@ -128,8 +132,8 @@ if (!article.value) {
   });
 }
 
-const { data: allArticles } = await useAsyncData("all-articles", () =>
-  queryContent("fr").sort({ createdAt: -1 }).find()
+const { data: allArticles } = await useAsyncData(`all-articles-${locale.value}`, () =>
+  queryContent(locale.value).sort({ createdAt: -1 }).find()
 );
 
 // Implémentation partagée avec ArticleList (voir utils/reading.js) ; `words`
@@ -206,8 +210,27 @@ const suggestedArticles = computed(() => {
 const currentUrl = computed(() => canonicalUrl(route.path));
 const metaDescription = computed(() =>
   getArticleSearchIntent(article.value) ||
-  "Article du blog de Jean-Luc Houédanou sur la technologie, le développement et la culture numérique."
+  (locale.value === "en"
+    ? "An article from Jean-Luc Houédanou's blog on technology, development and digital culture."
+    : "Article du blog de Jean-Luc Houédanou sur la technologie, le développement et la culture numérique.")
 );
+
+// Le même billet existe dans chaque langue sous le même slug : on l'annonce
+// à Google avec des <link rel="alternate" hreflang>, en plus de la canonique.
+useHead(() => ({
+  link: [
+    ...LOCALE_CODES.map((code) => ({
+      rel: "alternate",
+      hreflang: code,
+      href: canonicalUrl(translatedArticlePath(route.path, code) || route.path),
+    })),
+    {
+      rel: "alternate",
+      hreflang: "x-default",
+      href: canonicalUrl(translatedArticlePath(route.path, "fr") || route.path),
+    },
+  ],
+}));
 // Carte JPEG 1200x630 générée hors ligne : X et LinkedIn ne rendent pas le WebP.
 const ogImage = computed(() => absoluteUrl(ogImageFor(article.value?.image)));
 
@@ -257,13 +280,13 @@ watch(() => route.path, () => {
 function formatDate(createdAt) {
   if (createdAt) {
     const date = new Date(createdAt);
-    return date.toLocaleDateString("fr-FR", {
+    return date.toLocaleDateString(dateLocale(locale.value), {
       year: "numeric",
       month: "long",
       day: "numeric",
     });
   }
-  return "Date inconnue";
+  return t("unknownDate");
 }
 </script>
 

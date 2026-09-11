@@ -3,7 +3,7 @@
         <div v-if="!loaded" class="disqus-placeholder">
             <button class="disqus-load-btn" @click="loadDisqus" aria-label="Afficher les commentaires Disqus">
                 <i class="material-icons">comment</i>
-                Afficher les commentaires
+                {{ $t('showComments') }}
             </button>
         </div>
         <div id="disqus_thread"></div>

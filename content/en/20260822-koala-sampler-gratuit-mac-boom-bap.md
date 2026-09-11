@@ -9,7 +9,7 @@ tags: ["music", "tools", "mac"]
 
 # Koala Sampler: free on Mac, and more than enough to make boom bap
 
-Those who follow this blog may remember [July's interlude](/en/20260707-je-suis-encore-vivant#interlude-sampler-pendant-que-les-conteneurs-chauffent): a deployment that was dragging on, a progress bar I watched creep forward, and Koala Sampler fired up again to fill the dead time. Two instrumentals were born while the servers did their work.
+Those who follow this blog may remember [July's interlude](/en/20260707-je-suis-encore-vivant#interlude-sampling-while-the-containers-warm-up): a deployment that was dragging on, a progress bar I watched creep forward, and Koala Sampler fired up again to fill the dead time. Two instrumentals were born while the servers did their work.
 
 Since then, the dead time has become a habit, and Koala has gone from stopgap to main tool. Here's what happened next.
 

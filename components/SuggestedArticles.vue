@@ -1,6 +1,6 @@
 <template>
   <section v-if="articles && articles.length" class="suggested">
-    <span class="suggested__label">— {{ label }}</span>
+    <span class="suggested__label">— {{ label || $t('readNext') }}</span>
     <h3 class="suggested__heading">{{ $t('suggestedArticles') }}</h3>
     <div class="suggested__grid">
       <NuxtLink
@@ -19,7 +19,7 @@
         <div class="suggested__info">
           <span class="suggested__date">{{ formatDate(article.createdAt) }}</span>
           <span class="suggested__title">{{ article.title }}</span>
-          <span class="suggested__arrow">Lire →</span>
+          <span class="suggested__arrow">{{ $t('read') }} →</span>
         </div>
       </NuxtLink>
     </div>
@@ -27,15 +27,20 @@
 </template>
 
 <script setup>
+import { useI18n } from 'vue-i18n'
+import { dateLocale } from '~/utils/i18n.js'
+
 defineProps({
   articles: { type: Array, default: () => [] },
-  label: { type: String, default: 'À lire ensuite' },
+  label: { type: String, default: '' },
 })
+
+const { locale } = useI18n()
 
 function formatDate(createdAt) {
   if (createdAt) {
     const date = new Date(createdAt)
-    return new Intl.DateTimeFormat('fr-FR', {
+    return new Intl.DateTimeFormat(dateLocale(locale.value), {
       year: 'numeric',
       month: 'short',
       day: '2-digit',

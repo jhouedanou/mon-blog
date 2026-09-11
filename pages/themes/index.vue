@@ -2,18 +2,16 @@
   <div class="themes-index">
     <div class="themes-index__container">
       <header class="themes-index__header">
-        <span class="themes-index__eyebrow">— Explorer le journal</span>
-        <h1 class="themes-index__title">Les thématiques</h1>
-        <p class="themes-index__lede">
-          Des chemins éditoriaux pour retrouver les articles par sujet, plutôt que par date de publication.
-        </p>
+        <span class="themes-index__eyebrow">— {{ $t('exploreJournal') }}</span>
+        <h1 class="themes-index__title">{{ $t('themesTitle') }}</h1>
+        <p class="themes-index__lede">{{ $t('themesLede') }}</p>
       </header>
 
-      <nav class="themes-index__grid" aria-label="Thématiques du blog">
+      <nav class="themes-index__grid" :aria-label="$t('themesNavLabel')">
         <NuxtLink
           v-for="(theme, index) in themes"
           :key="theme.slug"
-          :to="`/themes/${theme.slug}`"
+          :to="localePath(`/themes/${theme.slug}`)"
           class="theme-index-card"
           :class="{ 'theme-index-card--featured': index === 0 }"
         >
@@ -21,41 +19,47 @@
           <span class="theme-index-card__label">{{ theme.label }}</span>
           <h2>{{ theme.title }}</h2>
           <p>{{ theme.description }}</p>
-          <span class="theme-index-card__link">Explorer <span aria-hidden="true">→</span></span>
+          <span class="theme-index-card__link">{{ $t('exploreAction') }} <span aria-hidden="true">→</span></span>
         </NuxtLink>
       </nav>
 
       <footer class="themes-index__footer">
-        <NuxtLink to="/" class="themes-index__back">← Retour aux articles</NuxtLink>
-        <NuxtLink to="/tags" class="themes-index__back">Voir toutes les étiquettes →</NuxtLink>
+        <NuxtLink :to="localePath('/')" class="themes-index__back">← {{ $t('backToArticlesShort') }}</NuxtLink>
+        <NuxtLink :to="localePath('/tags')" class="themes-index__back">{{ $t('seeAllTags') }} →</NuxtLink>
       </footer>
     </div>
   </div>
 </template>
 
 <script setup>
-import { THEME_DEFINITIONS } from '~/data/editorial.js'
+import { useI18n } from 'vue-i18n'
+import { useLocalePath } from '#i18n'
+import { THEME_DEFINITIONS, localizeTheme } from '~/data/editorial.js'
 import { useSeo } from '~/composables/useSeo.js'
 import { collectionPageLd } from '~/utils/schema.js'
 import { canonicalUrl } from '~/utils/site.js'
 
-const themes = THEME_DEFINITIONS
+const { locale, t } = useI18n()
+const localePath = useLocalePath()
 
-const pageUrl = canonicalUrl('/themes')
-const pageDescription =
-  'Explorez les articles du blog par thématique : tutoriels, Apple, développement, Afrique numérique et opinions.'
+const themes = THEME_DEFINITIONS.map((theme) => localizeTheme(theme, locale.value))
+
+const pageUrl = canonicalUrl(localePath('/themes'))
+const pageDescription = locale.value === 'en'
+  ? 'Browse the blog by theme: tutorials, Apple, development, digital Africa and opinions.'
+  : 'Explorez les articles du blog par thématique : tutoriels, Apple, développement, Afrique numérique et opinions.'
 
 useSeo({
-  title: 'Thématiques',
+  title: t('themes'),
   description: pageDescription,
   canonical: pageUrl,
   imageIsCard: true,
   jsonLd: collectionPageLd({
     url: pageUrl,
-    name: 'Thématiques',
+    name: t('themes'),
     description: pageDescription,
-    items: themes.map((t) => ({ path: `/themes/${t.slug}`, name: t.title })),
-    trail: [{ name: 'Accueil', path: '/' }, { name: 'Thématiques', path: '/themes' }],
+    items: themes.map((theme) => ({ path: localePath(`/themes/${theme.slug}`), name: theme.title })),
+    trail: [{ name: t('home'), path: localePath('/') }, { name: t('themes'), path: localePath('/themes') }],
   }),
 })
 </script>

@@ -36,7 +36,9 @@ export default defineEventHandler(async (event) => {
   const feedDescription = 'Chroniques sur l\'innovation numérique, la transformation digitale en Afrique et pérégrinations technologiques.'
 
   // Récupérer tous les articles, triés par date décroissante
-  const articles = await serverQueryContent(event)
+  // Flux français uniquement : les traductions de content/en ont les mêmes
+  // slugs et doubleraient chaque billet.
+  const articles = await serverQueryContent(event, 'fr')
     .where({ _partial: false, _draft: false })
     .sort({ createdAt: -1 })
     .find()

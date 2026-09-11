@@ -11,13 +11,13 @@
                     <span class="footer-brand__wordmark">Journal<em>.</em></span>
                 </div>
                 <div class="footer-meta">
-                    <p class="footer-copy">&copy; {{ new Date().getFullYear() }} Jean-Luc Houédanou. Tous droits réservés.</p>
-                    <nav class="footer-links" aria-label="Liens secondaires">
-                        <NuxtLink to="/tags">Tags</NuxtLink>
-                        <NuxtLink to="/themes">Thématiques</NuxtLink>
-                        <NuxtLink to="/cv">CV</NuxtLink>
-                        <NuxtLink to="/a-propos">À propos</NuxtLink>
-                        <NuxtLink to="/confidentialite">Confidentialité</NuxtLink>
+                    <p class="footer-copy">&copy; {{ new Date().getFullYear() }} Jean-Luc Houédanou. {{ $t('allRightsReserved') }}</p>
+                    <nav class="footer-links" :aria-label="$t('secondaryLinks')">
+                        <NuxtLink :to="localePath('/tags')">{{ $t('tags') }}</NuxtLink>
+                        <NuxtLink :to="localePath('/themes')">{{ $t('themes') }}</NuxtLink>
+                        <NuxtLink to="/cv">{{ $t('cv') }}</NuxtLink>
+                        <NuxtLink to="/a-propos">{{ $t('about') }}</NuxtLink>
+                        <NuxtLink to="/confidentialite">{{ $t('privacy') }}</NuxtLink>
                         <a href="/feed.xml">RSS</a>
                         <a href="https://github.com/jhouedanou" target="_blank" rel="noopener noreferrer">GitHub</a>
                     </nav>
@@ -26,6 +26,12 @@
         </footer>
     </div>
 </template>
+
+<script setup>
+import { useLocalePath } from '#i18n'
+
+const localePath = useLocalePath()
+</script>
 
 <style scoped>
 .layout {

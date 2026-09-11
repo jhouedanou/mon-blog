@@ -2,19 +2,19 @@
   <div v-if="theme" class="theme-archive">
     <div class="theme-archive__container">
       <header class="theme-archive__header">
-        <NuxtLink to="/themes" class="theme-archive__crumb">Thématiques</NuxtLink>
+        <NuxtLink :to="localePath('/themes')" class="theme-archive__crumb">{{ $t('themes') }}</NuxtLink>
         <span class="theme-archive__eyebrow">— {{ theme.label }}</span>
         <h1 class="theme-archive__title">{{ theme.title }}</h1>
         <p class="theme-archive__intro">{{ theme.intro }}</p>
         <p class="theme-archive__meta">
-          {{ filteredArticles.length }} {{ filteredArticles.length > 1 ? 'articles' : 'article' }} dans cette sélection
+          {{ filteredArticles.length }} {{ filteredArticles.length > 1 ? $t('articles') : $t('article') }} {{ $t('inThisSelection') }}
         </p>
       </header>
 
       <section aria-labelledby="theme-articles-title">
         <div class="theme-archive__section-head">
-          <h2 id="theme-articles-title">Les articles du thème</h2>
-          <NuxtLink to="/tags" class="theme-archive__tags-link">Explorer les étiquettes →</NuxtLink>
+          <h2 id="theme-articles-title">{{ $t('themeArticlesHeading') }}</h2>
+          <NuxtLink :to="localePath('/tags')" class="theme-archive__tags-link">{{ $t('exploreTags') }} →</NuxtLink>
         </div>
 
         <div v-if="filteredArticles.length" class="theme-archive__grid">
@@ -38,17 +38,17 @@
               </div>
               <h3>{{ article.title }}</h3>
               <p v-if="getArticleSearchIntent(article)">{{ getArticleSearchIntent(article) }}</p>
-              <span class="theme-card__more">Lire l’article <span aria-hidden="true">→</span></span>
+              <span class="theme-card__more">{{ $t('readArticle') }} <span aria-hidden="true">→</span></span>
             </div>
           </NuxtLink>
         </div>
 
-        <p v-else class="theme-archive__empty">Aucun article n’est encore rattaché à cette thématique.</p>
+        <p v-else class="theme-archive__empty">{{ $t('noArticlesForTheme') }}</p>
       </section>
 
       <footer class="theme-archive__footer">
-        <NuxtLink to="/themes" class="theme-archive__back">← Toutes les thématiques</NuxtLink>
-        <NuxtLink to="/" class="theme-archive__back">Retour aux articles →</NuxtLink>
+        <NuxtLink :to="localePath('/themes')" class="theme-archive__back">← {{ $t('allThemes') }}</NuxtLink>
+        <NuxtLink :to="localePath('/')" class="theme-archive__back">{{ $t('backToArticlesShort') }} →</NuxtLink>
       </footer>
     </div>
   </div>
@@ -57,21 +57,28 @@
 <script setup>
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
+import { useI18n } from 'vue-i18n'
+import { useLocalePath } from '#i18n'
 import { getArticleTags } from '~/utils/tags.js'
-import { getArticleSearchIntent, getThemeDefinition, articleMatchesTheme } from '~/data/editorial.js'
+import { dateLocale } from '~/utils/i18n.js'
+import { getArticleSearchIntent, getThemeDefinition, articleMatchesTheme, localizeTheme } from '~/data/editorial.js'
 import { useSeo } from '~/composables/useSeo.js'
 import { collectionPageLd } from '~/utils/schema.js'
 import { canonicalUrl } from '~/utils/site.js'
 
 const route = useRoute()
-const theme = getThemeDefinition(route.params.theme)
+const { locale, t } = useI18n()
+const localePath = useLocalePath()
+const themeDefinition = getThemeDefinition(route.params.theme)
 
-if (!theme) {
-  throw createError({ statusCode: 404, statusMessage: 'Thématique introuvable' })
+if (!themeDefinition) {
+  throw createError({ statusCode: 404, statusMessage: t('themeNotFound') })
 }
 
-const { data: articles } = await useAsyncData(`theme-${theme.slug}`, () =>
-  queryContent('fr').sort({ createdAt: -1 }).find(),
+const theme = localizeTheme(themeDefinition, locale.value)
+
+const { data: articles } = await useAsyncData(`theme-${theme.slug}-${locale.value}`, () =>
+  queryContent(locale.value).sort({ createdAt: -1 }).find(),
 )
 
 const filteredArticles = computed(() =>
@@ -82,14 +89,14 @@ function formatDate(value) {
   if (!value) return ''
   const date = new Date(value)
   if (Number.isNaN(date.getTime())) return ''
-  return new Intl.DateTimeFormat('fr-FR', {
+  return new Intl.DateTimeFormat(dateLocale(locale.value), {
     day: '2-digit',
     month: 'short',
     year: 'numeric',
   }).format(date).replace('.', '')
 }
 
-const pageUrl = canonicalUrl(`/themes/${theme.slug}`)
+const pageUrl = canonicalUrl(localePath(`/themes/${theme.slug}`))
 
 useSeo(() => ({
   title: theme.title,
@@ -105,9 +112,9 @@ useSeo(() => ({
         description: theme.description,
         items: filteredArticles.value.map((a) => ({ path: a._path, name: a.title })),
         trail: [
-          { name: 'Accueil', path: '/' },
-          { name: 'Thématiques', path: '/themes' },
-          { name: theme.title, path: `/themes/${theme.slug}` },
+          { name: t('home'), path: localePath('/') },
+          { name: t('themes'), path: localePath('/themes') },
+          { name: theme.title, path: localePath(`/themes/${theme.slug}`) },
         ],
       })
     : null,

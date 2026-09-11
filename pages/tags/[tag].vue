@@ -2,7 +2,7 @@
   <div class="tag-archive">
     <div class="tag-archive__container">
       <header class="tag-archive__header">
-        <NuxtLink to="/tags" class="tag-archive__crumb">{{ $t('tagsTitle') }}</NuxtLink>
+        <NuxtLink :to="localePath('/tags')" class="tag-archive__crumb">{{ $t('tagsTitle') }}</NuxtLink>
         <h1 class="tag-archive__title">
           <span class="tag-archive__hash" aria-hidden="true">#</span>{{ displayTag }}
         </h1>
@@ -36,7 +36,7 @@
       <p v-else class="tag-archive__empty">{{ $t('noArticlesForTag') }}</p>
 
       <footer class="tag-archive__footer">
-        <NuxtLink to="/tags" class="tag-archive__back">
+        <NuxtLink :to="localePath('/tags')" class="tag-archive__back">
           <span class="tag-archive__back-arrow">←</span>
           <span>{{ $t('backToTags') }}</span>
         </NuxtLink>
@@ -49,7 +49,9 @@
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
+import { useLocalePath } from '#i18n'
 import { useAsyncData } from '#app'
+import { dateLocale } from '~/utils/i18n.js'
 import { getArticleTags, slugifyTag } from '~/utils/tags.js'
 import { getTagIntroduction } from '~/data/editorial.js'
 import { useSeo } from '~/composables/useSeo.js'
@@ -57,7 +59,8 @@ import { collectionPageLd } from '~/utils/schema.js'
 import { canonicalUrl } from '~/utils/site.js'
 
 const route = useRoute()
-const { locale } = useI18n()
+const { locale, t } = useI18n()
+const localePath = useLocalePath()
 
 const tagSlug = computed(() => String(route.params.tag || '').toLowerCase())
 
@@ -81,13 +84,13 @@ const displayTag = computed(() => {
   return tagSlug.value.replace(/-/g, ' ')
 })
 
-const tagIntroduction = computed(() => getTagIntroduction(displayTag.value))
+const tagIntroduction = computed(() => getTagIntroduction(displayTag.value, locale.value))
 
 function formatDate(d) {
   if (!d) return ''
   const date = new Date(d)
   if (isNaN(date.getTime())) return ''
-  return new Intl.DateTimeFormat('fr-FR', { day: '2-digit', month: 'short', year: 'numeric' })
+  return new Intl.DateTimeFormat(dateLocale(locale.value), { day: '2-digit', month: 'short', year: 'numeric' })
     .format(date)
     .replace('.', '')
 }
@@ -99,7 +102,11 @@ function truncate(text, n) {
 
 const pageUrl = computed(() => canonicalUrl(route.path))
 const pageTitle = computed(() => `#${displayTag.value}`)
-const pageDescription = computed(() => `Articles tagués #${displayTag.value} sur le blog de Jean-Luc Houédanou.`)
+const pageDescription = computed(() =>
+  locale.value === 'en'
+    ? `Articles tagged #${displayTag.value} on Jean-Luc Houédanou's blog.`
+    : `Articles tagués #${displayTag.value} sur le blog de Jean-Luc Houédanou.`,
+)
 
 useSeo(() => ({
   title: pageTitle.value,
@@ -115,8 +122,8 @@ useSeo(() => ({
         description: pageDescription.value,
         items: filtered.value.map((a) => ({ path: a._path, name: a.title })),
         trail: [
-          { name: 'Accueil', path: '/' },
-          { name: 'Tags', path: '/tags' },
+          { name: t('home'), path: localePath('/') },
+          { name: t('tagsTitle'), path: localePath('/tags') },
           { name: pageTitle.value, path: route.path },
         ],
       })

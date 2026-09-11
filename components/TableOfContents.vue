@@ -1,6 +1,6 @@
 <template>
     <aside v-if="links && links.length >= 2" class="toc">
-        <button class="toc__mobile-toggle" @click="isOpen = !isOpen" :aria-expanded="isOpen" aria-label="Table des matières">
+        <button class="toc__mobile-toggle" @click="isOpen = !isOpen" :aria-expanded="isOpen" :aria-label="$t('tableOfContents')">
             <i class="material-icons">toc</i>
         </button>
         <nav class="toc__nav" :class="{ 'toc__nav--open': isOpen }" :aria-label="$t('tableOfContents')">

@@ -4,9 +4,7 @@
       <header class="tags-index__header">
         <span class="tags-index__eyebrow">— {{ $t('exploreByTag') }}</span>
         <h1 class="tags-index__title">{{ $t('tagsTitle') }}</h1>
-        <p class="tags-index__intro">
-          Les étiquettes regroupent les articles par sujet. Utilisez-les pour passer d’un retour d’expérience à un autre, même lorsqu’ils ont été publiés à des dates différentes.
-        </p>
+        <p class="tags-index__intro">{{ $t('tagsIntro') }}</p>
         <p class="tags-index__lede" v-if="tagEntries.length">
           {{ tagEntries.length }} {{ $t('tagsCountLabel') }}
         </p>
@@ -15,7 +13,7 @@
       <ul v-if="tagEntries.length" class="tag-cloud" role="list">
         <li v-for="entry in tagEntries" :key="entry.slug">
           <NuxtLink
-            :to="`/tags/${entry.slug}`"
+            :to="localePath(`/tags/${entry.slug}`)"
             class="tag-cloud__pill"
             :style="{ '--tag-color': getTagColor(entry.tag) }"
             :aria-label="`${entry.tag} — ${entry.count} ${entry.count > 1 ? $t('articles') : $t('article')}`"
@@ -28,7 +26,7 @@
       <p v-else class="tags-index__empty">{{ $t('noTags') }}</p>
 
       <footer class="tags-index__footer">
-        <NuxtLink to="/" class="tags-index__back">
+        <NuxtLink :to="localePath('/')" class="tags-index__back">
           <span class="tags-index__back-arrow">←</span>
           <span>{{ $t('backToArticles') }}</span>
         </NuxtLink>
@@ -41,14 +39,16 @@
 import { computed } from 'vue'
 import { useAsyncData } from '#app'
 import { useI18n } from 'vue-i18n'
+import { useLocalePath } from '#i18n'
 import { getArticleTags, slugifyTag, getTagColor } from '~/utils/tags.js'
 import { useSeo } from '~/composables/useSeo.js'
 import { collectionPageLd } from '~/utils/schema.js'
 import { canonicalUrl } from '~/utils/site.js'
 
-const { locale } = useI18n()
+const { locale, t } = useI18n()
+const localePath = useLocalePath()
 
-const { data: articles } = await useAsyncData('all-tags', () =>
+const { data: articles } = await useAsyncData(`all-tags-${locale.value}`, () =>
   queryContent(locale.value).find()
 )
 
@@ -68,21 +68,23 @@ const tagEntries = computed(() => {
     .sort((a, b) => b.count - a.count || a.tag.localeCompare(b.tag))
 })
 
-const pageUrl = canonicalUrl('/tags')
-const pageDescription = 'Tous les sujets abordés sur le blog : tech, design, opinions, productivité, et plus.'
+const pageUrl = canonicalUrl(localePath('/tags'))
+const pageDescription = locale.value === 'en'
+  ? 'Every subject covered on the blog: tech, design, opinions, productivity and more.'
+  : 'Tous les sujets abordés sur le blog : tech, design, opinions, productivité, et plus.'
 
 useSeo(() => ({
-  title: 'Tags',
+  title: t('tagsTitle'),
   description: pageDescription,
   canonical: pageUrl,
   imageIsCard: true,
   jsonLd: tagEntries.value.length
     ? collectionPageLd({
         url: pageUrl,
-        name: 'Tags',
+        name: t('tagsTitle'),
         description: pageDescription,
-        items: tagEntries.value.map((e) => ({ path: `/tags/${e.slug}`, name: `#${e.tag}` })),
-        trail: [{ name: 'Accueil', path: '/' }, { name: 'Tags', path: '/tags' }],
+        items: tagEntries.value.map((e) => ({ path: localePath(`/tags/${e.slug}`), name: `#${e.tag}` })),
+        trail: [{ name: t('home'), path: localePath('/') }, { name: t('tagsTitle'), path: localePath('/tags') }],
       })
     : null,
 }))

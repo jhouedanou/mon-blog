@@ -1,8 +1,8 @@
 <template>
   <div class="reading-bar" :class="{ 'reading-bar--visible': isVisible }">
     <div class="reading-bar__content">
-      <NuxtLink to="/" class="reading-bar__logo">
-        <img src="/images/1837389.webp" alt="Accueil" />
+      <NuxtLink :to="localePath('/')" class="reading-bar__logo">
+        <img src="/images/1837389.webp" :alt="$t('home')" />
       </NuxtLink>
       <span class="reading-bar__title">{{ title }}</span>
       <div class="reading-bar__share">
@@ -14,6 +14,9 @@
 </template>
 
 <script setup>
+import { useLocalePath } from '#i18n'
+
+const localePath = useLocalePath()
 import { ref, watch, onMounted, onUnmounted, nextTick } from "vue";
 
 const props = defineProps({

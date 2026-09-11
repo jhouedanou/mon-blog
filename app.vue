@@ -6,7 +6,7 @@
 
     <header class="site-header" :class="{ 'site-header--scrolled': scrolled }">
       <div class="site-header__inner">
-        <NuxtLink to="/" class="site-header__brand" aria-label="Accueil - Le Blog de Jean-Luc Houédanou">
+        <NuxtLink :to="localePath('/')" class="site-header__brand" :aria-label="`${$t('home')} - Le Blog de Jean-Luc Houédanou`">
           <img class="site-header__mark" src="/favicon-96x96.png" alt="" aria-hidden="true" width="32" height="32" />
           <span class="site-header__wordmark">Journal<em>.</em></span>
         </NuxtLink>
@@ -17,7 +17,7 @@
           :class="{ 'is-active': mobileMenuOpen }"
           @click="mobileMenuOpen = !mobileMenuOpen"
           :aria-expanded="mobileMenuOpen"
-          aria-label="Menu de navigation"
+          :aria-label="$t('menuLabel')"
           aria-controls="nav-menu"
         >
           <span></span>
@@ -25,14 +25,14 @@
         </button>
 
         <nav v-if="!isHome" id="nav-menu" class="site-header__nav" :class="{ 'is-open': mobileMenuOpen }">
-          <NuxtLink to="/" class="site-header__nav-link" @click="mobileMenuOpen = false">
+          <NuxtLink :to="localePath('/')" class="site-header__nav-link" @click="mobileMenuOpen = false">
             <span>{{ $t('home') }}</span>
           </NuxtLink>
-          <NuxtLink to="/tags" class="site-header__nav-link" @click="mobileMenuOpen = false">
+          <NuxtLink :to="localePath('/tags')" class="site-header__nav-link" @click="mobileMenuOpen = false">
             <span>{{ $t('tags') }}</span>
           </NuxtLink>
-          <NuxtLink to="/themes" class="site-header__nav-link" @click="mobileMenuOpen = false">
-            <span>Thématiques</span>
+          <NuxtLink :to="localePath('/themes')" class="site-header__nav-link" @click="mobileMenuOpen = false">
+            <span>{{ $t('themes') }}</span>
           </NuxtLink>
           <NuxtLink to="/cv" class="site-header__nav-link" @click="mobileMenuOpen = false">
             <span>{{ $t('cv') }}</span>
@@ -43,6 +43,7 @@
         </nav>
 
         <div class="site-header__actions">
+          <LanguageSwitcher />
           <button
             class="site-header__action-btn"
             @click="toggleDarkMode"
@@ -54,7 +55,7 @@
           <a
             href="/feed.xml"
             class="site-header__action-btn"
-            aria-label="Flux RSS"
+            :aria-label="$t('rssFeed')"
             target="_blank"
           >
             <i class="material-icons">rss_feed</i>
@@ -76,7 +77,13 @@
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useRoute } from 'vue-router'
+import { useI18n } from 'vue-i18n'
+import { useLocalePath } from '#i18n'
 import ScrollToTop from '~/components/ScrollToTop.vue'
+import LanguageSwitcher from '~/components/LanguageSwitcher.vue'
+
+const localePath = useLocalePath()
+const { locale } = useI18n()
 
 const route = useRoute()
 // Sur la home, le menu vit dans la sidebar (ArticleList) — le header n'affiche
@@ -87,10 +94,40 @@ const isDark = ref(false)
 const mobileMenuOpen = ref(false)
 const scrolled = ref(false)
 
+// Le thème suit le réglage système (prefers-color-scheme), y compris quand il
+// change en cours de visite. Le bouton du header ne fait qu'un écart temporaire
+// pour la visite en cours (sessionStorage) : au prochain onglet ou à la prochaine
+// visite, on repart du réglage système. Un ancien choix stocké dans localStorage
+// par la version précédente est ignoré et nettoyé.
+const THEME_OVERRIDE_KEY = 'theme-override'
+let systemDark = null
+
+function applyTheme(dark) {
+  isDark.value = dark
+  document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light')
+}
+
+function readOverride() {
+  try {
+    return sessionStorage.getItem(THEME_OVERRIDE_KEY)
+  } catch {
+    return null
+  }
+}
+
 function toggleDarkMode() {
-  isDark.value = !isDark.value
-  document.documentElement.setAttribute('data-theme', isDark.value ? 'dark' : 'light')
-  localStorage.setItem('theme', isDark.value ? 'dark' : 'light')
+  const next = !isDark.value
+  applyTheme(next)
+  try {
+    // Si on revient sur le réglage système, on efface simplement l'écart.
+    if (next === systemDark?.matches) sessionStorage.removeItem(THEME_OVERRIDE_KEY)
+    else sessionStorage.setItem(THEME_OVERRIDE_KEY, next ? 'dark' : 'light')
+  } catch {}
+}
+
+function onSystemThemeChange(event) {
+  if (readOverride()) return
+  applyTheme(event.matches)
 }
 
 function onScroll() {
@@ -98,18 +135,17 @@ function onScroll() {
 }
 
 onMounted(() => {
-  const saved = localStorage.getItem('theme')
-  if (saved) {
-    isDark.value = saved === 'dark'
-  } else {
-    isDark.value = window.matchMedia('(prefers-color-scheme: dark)').matches
-  }
-  document.documentElement.setAttribute('data-theme', isDark.value ? 'dark' : 'light')
+  try { localStorage.removeItem('theme') } catch {}
+  systemDark = window.matchMedia('(prefers-color-scheme: dark)')
+  const override = readOverride()
+  applyTheme(override ? override === 'dark' : systemDark.matches)
+  systemDark.addEventListener('change', onSystemThemeChange)
   window.addEventListener('scroll', onScroll, { passive: true })
   onScroll()
 })
 
 onUnmounted(() => {
+  systemDark?.removeEventListener('change', onSystemThemeChange)
   window.removeEventListener('scroll', onScroll)
 })
 
@@ -210,7 +246,7 @@ const siteGraph = {
   ],
 }
 
-useHead({
+useHead(() => ({
   // Suffixe court à dessein : plusieurs titres d'articles font déjà 55-70
   // caractères, un suffixe de 31 garantirait la troncature SERP sur la partie
   // utile. Le domaine est la marque.
@@ -221,11 +257,20 @@ useHead({
       type: 'application/ld+json',
       innerHTML: safeJsonLd(siteGraph),
     },
+    {
+      // Exécuté avant le premier rendu : pose le thème système (ou l'écart de
+      // session) sur <html> pour éviter le flash clair au chargement en sombre.
+      id: 'theme-init',
+      tagPosition: 'head',
+      innerHTML: `(function(){try{var o=sessionStorage.getItem('${THEME_OVERRIDE_KEY}');var d=o?o==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;document.documentElement.setAttribute('data-theme',d?'dark':'light')}catch(e){}})();`,
+    },
   ],
+  // Pas de `data-theme` ici : unhead ré-appliquerait « light » à chaque mise à
+  // jour réactive et écraserait le thème posé par le script ci-dessus. Le CSS
+  // traite `html:not([data-theme])` comme clair, c'est le repli côté serveur.
   htmlAttrs: {
-    'data-theme': 'light',
-    // Requis pour que `hyphens: auto` charge le dictionnaire de césure français.
-    lang: 'fr',
+    // Requis pour que `hyphens: auto` charge le bon dictionnaire de césure.
+    lang: locale.value,
   },
   meta: [
     { name: 'theme-color', content: '#e9e5da' },
@@ -238,7 +283,7 @@ useHead({
       href: `${SITE_URL}/feed.xml`,
     },
   ],
-});
+}));
 </script>
 
 <style lang="scss">

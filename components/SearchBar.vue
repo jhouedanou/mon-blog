@@ -7,7 +7,7 @@
                 v-model="query"
                 :placeholder="$t('searchPlaceholder')"
                 class="search-bar__input"
-                aria-label="Rechercher un article"
+                :aria-label="$t('searchLabel')"
             />
         </div>
     </div>

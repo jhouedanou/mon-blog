@@ -42,12 +42,14 @@
 
 <script setup>
 import { useError } from '#app'
+import { useI18n } from 'vue-i18n'
 import { useSeo } from '~/composables/useSeo.js'
 
 const error = useError()
+const { locale } = useI18n()
 
 const { data: recentArticles } = await useAsyncData('recent-articles-error', () =>
-  queryContent('fr')
+  queryContent(locale.value)
     .sort({ createdAt: -1 })
     .limit(3)
     .find()
