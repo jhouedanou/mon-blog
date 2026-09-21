@@ -82,8 +82,11 @@ i18n: {
       fields: ['title', 'description', '_path']
     }
   },
+  // Bulma a été retiré : 678 Ko de CSS, réinjectés dans chaque page par le
+  // rendu SSR, pour 0 classe utilisée (376 classes dans les templates, aucune
+  // qui ne soit définie par le site lui-même). Seul son reset servait encore,
+  // il est repris en tête de custom.scss.
   css: [
-    'bulma/css/bulma.min.css',
     '@/assets/custom.scss',
   ],
   app: {

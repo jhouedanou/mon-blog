@@ -1,4 +1,67 @@
 /* ==========================================
+   Reset
+   ==========================================
+   Repris de minireset.sass, la seule partie de Bulma dont le site dépendait :
+   aucune de ses classes n'était utilisée, mais ses marges à zéro et ses titres
+   à 100% tenaient la mise en page. Sans ce bloc, retirer Bulma ferait revenir
+   les marges et les tailles de titre par défaut du navigateur.
+   Il reste au-dessus du reste : les règles qui suivent doivent gagner. */
+html,
+body,
+p, ol, ul, li,
+dl, dt, dd,
+blockquote, figure, fieldset, legend,
+textarea, pre, iframe, hr,
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select, textarea {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+img, video, embed, iframe, object {
+  height: auto;
+  max-width: 100%;
+}
+
+audio {
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+td:not([align]),
+th:not([align]) {
+  text-align: inherit;
+}
+
+/* ==========================================
    Editorial developer blog — Design System
    ========================================== */
 
