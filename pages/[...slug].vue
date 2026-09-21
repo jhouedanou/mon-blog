@@ -98,6 +98,7 @@ import { canonicalUrl, absoluteUrl } from "~/utils/site.js";
 import { ogImageFor } from "~/utils/og.js";
 import { articleGraph } from "~/utils/schema.js";
 import { useSeo } from "~/composables/useSeo.js";
+import { ARTICLE_LIST_FIELDS } from "~/utils/content-fields.js";
 import {
   THEME_DEFINITIONS,
   articleMatchesTheme,
@@ -132,8 +133,11 @@ if (!article.value) {
   });
 }
 
+// `only()` est obligatoire ici : cette liste ne sert qu'à l'article précédent,
+// au suivant et aux trois suggestions, mais sans elle chaque page d'article
+// désérialisait le corps entier des 48 billets.
 const { data: allArticles } = await useAsyncData(`all-articles-${locale.value}`, () =>
-  queryContent(locale.value).sort({ createdAt: -1 }).find()
+  queryContent(locale.value).only(ARTICLE_LIST_FIELDS).sort({ createdAt: -1 }).find()
 );
 
 // Implémentation partagée avec ArticleList (voir utils/reading.js) ; `words`

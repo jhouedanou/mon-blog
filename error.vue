@@ -44,12 +44,14 @@
 import { useError } from '#app'
 import { useI18n } from 'vue-i18n'
 import { useSeo } from '~/composables/useSeo.js'
+import { ARTICLE_LIST_FIELDS } from '~/utils/content-fields.js'
 
 const error = useError()
 const { locale } = useI18n()
 
 const { data: recentArticles } = await useAsyncData('recent-articles-error', () =>
   queryContent(locale.value)
+    .only(ARTICLE_LIST_FIELDS)
     .sort({ createdAt: -1 })
     .limit(3)
     .find()

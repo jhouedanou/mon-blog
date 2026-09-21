@@ -55,6 +55,7 @@ import { dateLocale } from '~/utils/i18n.js'
 import { getArticleTags, slugifyTag } from '~/utils/tags.js'
 import { getTagIntroduction } from '~/data/editorial.js'
 import { useSeo } from '~/composables/useSeo.js'
+import { ARTICLE_LIST_FIELDS } from '~/utils/content-fields.js'
 import { collectionPageLd } from '~/utils/schema.js'
 import { canonicalUrl } from '~/utils/site.js'
 
@@ -66,7 +67,7 @@ const tagSlug = computed(() => String(route.params.tag || '').toLowerCase())
 
 const { data: articles } = await useAsyncData(
   `tag-archive-${locale.value}`,
-  () => queryContent(locale.value).sort({ createdAt: -1 }).find(),
+  () => queryContent(locale.value).only(ARTICLE_LIST_FIELDS).sort({ createdAt: -1 }).find(),
 )
 
 const filtered = computed(() => {

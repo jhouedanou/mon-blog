@@ -176,6 +176,10 @@ i18n: {
     },
     '/': { prerender: true },
     '/fr/**': { prerender: true },
+    // Symétrique de /fr/**. Les articles anglais sont déjà tous figés par le
+    // crawler (comparaison de builds : 276 pages dans les deux cas) ; la règle
+    // est là pour qu'ils le restent si les liens entre articles changent.
+    '/en/**': { prerender: true },
     '/tags/**': { prerender: true },
     '/themes/**': { prerender: true },
     '/a-propos': { prerender: true },

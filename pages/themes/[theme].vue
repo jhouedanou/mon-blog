@@ -63,6 +63,7 @@ import { getArticleTags } from '~/utils/tags.js'
 import { dateLocale } from '~/utils/i18n.js'
 import { getArticleSearchIntent, getThemeDefinition, articleMatchesTheme, localizeTheme } from '~/data/editorial.js'
 import { useSeo } from '~/composables/useSeo.js'
+import { ARTICLE_LIST_FIELDS } from '~/utils/content-fields.js'
 import { collectionPageLd } from '~/utils/schema.js'
 import { canonicalUrl } from '~/utils/site.js'
 
@@ -78,7 +79,7 @@ if (!themeDefinition) {
 const theme = localizeTheme(themeDefinition, locale.value)
 
 const { data: articles } = await useAsyncData(`theme-${theme.slug}-${locale.value}`, () =>
-  queryContent(locale.value).sort({ createdAt: -1 }).find(),
+  queryContent(locale.value).only(ARTICLE_LIST_FIELDS).sort({ createdAt: -1 }).find(),
 )
 
 const filteredArticles = computed(() =>

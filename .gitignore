@@ -10,6 +10,9 @@
 .cache
 dist
 
+# Cache local de `wrangler dev`
+.wrangler
+
 # Node dependencies
 node_modules
 
