@@ -20,6 +20,7 @@ Disallow: /wp-content/
 Disallow: /wp-includes/
 Disallow: /wp-json/
 Disallow: /xmlrpc.php
+Disallow: /wp-login.php
 
 Sitemap: ${SITE_URL}/sitemap_index.xml
 `
