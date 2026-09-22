@@ -42,6 +42,7 @@ import { useI18n } from 'vue-i18n'
 import { useLocalePath } from '#i18n'
 import { getArticleTags, slugifyTag, getTagColor } from '~/utils/tags.js'
 import { useSeo } from '~/composables/useSeo.js'
+import { ARTICLE_LIST_FIELDS } from '~/utils/content-fields.js'
 import { collectionPageLd } from '~/utils/schema.js'
 import { canonicalUrl } from '~/utils/site.js'
 
@@ -49,7 +50,7 @@ const { locale, t } = useI18n()
 const localePath = useLocalePath()
 
 const { data: articles } = await useAsyncData(`all-tags-${locale.value}`, () =>
-  queryContent(locale.value).find()
+  queryContent(locale.value).only(ARTICLE_LIST_FIELDS).find()
 )
 
 // Dédupliqué par slug : « Claude Code » et « claude-code » mènent à la même

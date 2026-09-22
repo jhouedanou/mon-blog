@@ -55,7 +55,16 @@ Les tags servent à relier les articles entre eux. Les pages thématiques dispon
 
 ## Déploiement
 
-Le site est configuré pour être déployé sur Vercel. Chaque push sur la branche principale déclenche un nouveau déploiement.
+Le site est déployé sur Cloudflare Workers (`wrangler.toml`), avec les fichiers
+statiques servis depuis `dist/`. Le build (`yarn build`) prérend les pages ;
+seules celles qui ne le sont pas atteignent le Worker.
+
+Le plan gratuit accorde **10 ms de CPU par requête**. Deux règles en découlent :
+
+- une liste d'articles se charge toujours avec `only(ARTICLE_LIST_FIELDS)`
+  (`utils/content-fields.js`), jamais avec le `body` complet des documents ;
+- tout ce qui se calcule au build (temps de lecture, cartes OG) s'y calcule,
+  pas au rendu.
 
 ## Maintenance
 

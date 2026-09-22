@@ -103,7 +103,7 @@ import { useI18n } from 'vue-i18n'
 import { useLocalePath } from '#i18n'
 import SearchBar from '~/components/SearchBar.vue'
 import { getArticleSearchIntent, getArticleSearchText } from '~/data/editorial.js'
-import { getReadingStats } from '~/utils/reading.js'
+import { ARTICLE_LIST_FIELDS } from '~/utils/content-fields.js'
 import { dateLocale } from '~/utils/i18n.js'
 
 const localePath = useLocalePath()
@@ -121,6 +121,7 @@ const currentYear = new Date().getFullYear()
 
 const { data: articles } = await useAsyncData(`articles-${locale.value}`, () =>
     queryContent(locale.value)
+        .only(ARTICLE_LIST_FIELDS)
         .sort({ createdAt: -1 })
         .find()
         .then(articles => {
@@ -227,8 +228,10 @@ onUnmounted(() => {
     clearTimeout(searchUrlTimer)
 })
 
+// Figé au build (hook `content:file:afterParse`) : le calculer ici obligeait à
+// charger le `body` des 48 articles sur chaque rendu de l'accueil.
 function getReadingTime(article) {
-    return getReadingStats(article.body).minutes || null
+    return article.readingTime || null
 }
 
 function isNew(article) {
