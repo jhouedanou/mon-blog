@@ -64,7 +64,10 @@ Le plan gratuit accorde **10 ms de CPU par requête**. Deux règles en découlen
 - une liste d'articles se charge toujours avec `only(ARTICLE_LIST_FIELDS)`
   (`utils/content-fields.js`), jamais avec le `body` complet des documents ;
 - tout ce qui se calcule au build (temps de lecture, cartes OG) s'y calcule,
-  pas au rendu.
+  pas au rendu ;
+- les sondes de scanners (`.env`, `.php`, `.git`…) reçoivent un 404 en texte
+  brut, sans rendu Vue (`PROBE_PATTERNS` dans `redirects.js`), et sont
+  bloquées au bord par les règles WAF décrites dans `docs/cloudflare-waf.md`.
 
 ## Maintenance
 

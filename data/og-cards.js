@@ -34,6 +34,7 @@ export const OG_CARDS = {
   "/images/articles/mouff.webp": "/og/mouff.jpg",
   "/images/articles/niece.webp": "/og/niece.jpg",
   "/images/articles/pexels-cottonbro-4631077.webp": "/og/pexels-cottonbro-4631077.jpg",
+  "/images/articles/pexels-imadclicks-19022728.webp": "/og/pexels-imadclicks-19022728.jpg",
   "/images/articles/pexels-katrin-bolovtsova-6077189.webp": "/og/pexels-katrin-bolovtsova-6077189.jpg",
   "/images/articles/philippe-simo-vendeur-de-reves.webp": "/og/philippe-simo-vendeur-de-reves.jpg",
   "/images/articles/pingui.webp": "/og/pingui.jpg",
@@ -43,8 +44,10 @@ export const OG_CARDS = {
   "/images/articles/really.webp": "/og/really.jpg",
   "/images/articles/reunion.webp": "/og/reunion.jpg",
   "/images/articles/theorieduMicro.webp": "/og/theoriedumicro.jpg",
+  "/images/articles/tim-cook-temu.png": "/og/tim-cook-temu.jpg",
   "/images/articles/welcomeToTheNBA.webp": "/og/welcometothenba.jpg",
   "/images/articles/windows11-bypass.webp": "/og/windows11-bypass.jpg",
+  "/images/articles/worker-cpu-depassements-septembre-2026.webp": "/og/worker-cpu-depassements-septembre-2026.jpg",
   "/images/articles/yeah.webp": "/og/yeah.jpg",
   "/images/articles/zoho.webp": "/og/zoho.jpg",
   "/images/hazars.jpg": "/og/hazars.jpg"
