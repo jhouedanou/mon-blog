@@ -71,6 +71,40 @@ export const GONE_PATTERNS = [
   /\/embed\/?$/i,
 ]
 
+/**
+ * Sondes de scanners : 404 sans rendu, jamais 410.
+ *
+ * Ces chemins n'ont jamais existé sur ce site (ni WordPress, ni autre) : ce sont
+ * les fichiers que les scanners de vulnérabilités testent sur tout domaine
+ * (`.env`, `.git/HEAD`, `phpinfo.php`, `.aws/credentials`, `/api/v1/keys`…).
+ * Sur 24 h d'analytics Cloudflare, ils formaient l'essentiel des 2 300 réponses
+ * 503/522 du Worker : chaque sonde déclenchait le rendu SSR de `error.vue` et
+ * dépassait les 10 ms de CPU du plan gratuit.
+ *
+ * Un asset qui existe dans `dist/` est servi avant l'invocation du Worker : un
+ * chemin de fichier qui arrive jusqu'ici est donc forcément introuvable.
+ * Les routes dynamiques légitimes sont préservées : `/api/_content/**`,
+ * `/api/_sitemap-urls`, `*_payload.json`, `/feed.xml`, `/sitemap*.xml`,
+ * `/robots.txt`, `/.well-known/`.
+ */
+export const PROBE_PATTERNS = [
+  // Segment caché : /.env, /.git/HEAD, /.aws/credentials, /dashboard/.env…
+  /(^|\/)\.(?!well-known(\/|$))[^/]+/i,
+  // Variantes de .env sans point initial : secrets.env, env.example, env.bak.
+  /(\.env(\.|$)|^\/env\.[^/]+$)/i,
+  // Scripts et fichiers de configuration/sauvegarde d'un autre monde.
+  /\.(php\d?|phtml|asp|aspx|jsp|cgi|pl|sh|bak|old|orig|swp|sql|key|pem|crt|p12|ini|conf|config|yml|yaml|log|zip|rar|tar|gz|7z)$/i,
+  // Fichiers statiques introuvables (s'ils existaient, dist/ les aurait servis).
+  // Exceptions : les routes Nitro qui produisent un fichier à la volée, et les
+  // routes internes `/__*` (`/__sitemap__/`, `/__nuxt_error`) que Nuxt appelle
+  // lui-même à travers ce middleware.
+  /^(?!\/api\/)(?!\/__)(?!\/(feed\.xml|sitemap[^/]*\.xml|robots\.txt)$)(?!\/\.well-known\/)(?!.*_payload\.json$).*\.(js|mjs|css|map|json|txt|xml|html?|png|jpe?g|webp|gif|svg|ico|woff2?|ttf|otf|mp4|webm|pdf)$/i,
+  // Arborescences d'autres CMS et frameworks, et routes internes d'outillage.
+  /^\/(wordpress|wp|blog\/wp-|joomla|drupal|magento|laravel|vendor|phpmyadmin|pma|mysql|cgi-bin|_debugbar|__vite[^/]*|telescope|actuator|console|solr|jenkins)(\/|$)/i,
+  // Espace /api : seuls Nuxt Content et le sitemap y vivent.
+  /^\/api\/(?!_content\/|_sitemap-urls$)/i,
+]
+
 // Cloudflare plafonne `_redirects` à 2000 lignes statiques et 100 lignes avec
 // joker. Mieux vaut casser le build que la production le jour où l'export
 // WordPress fera déborder la carte.

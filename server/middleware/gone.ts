@@ -1,10 +1,10 @@
 import { defineEventHandler, send, setResponseHeader, setResponseStatus } from 'h3'
 // @ts-expect-error — module JS sans types, résolu par l'alias srcDir de Nitro.
-import { GONE_PATTERNS } from '~/redirects.js'
+import { GONE_PATTERNS, PROBE_PATTERNS } from '~/redirects.js'
 
 /**
  * Le seul middleware du parcours de redirection : `dist/_redirects` gère les
- * 301 au bord, mais ne sait pas exprimer un 410 Gone.
+ * 301 au bord, mais ne sait pas exprimer un 410 Gone, ni un 404 sans rendu.
  *
  * Aucune de ces URLs n'étant un asset statique, le Worker est bien atteint
  * (sur cette cible, les assets sont servis avant l'invocation du Worker).
@@ -28,6 +28,14 @@ const GONE_BODY = `<!doctype html>
 <p><a href="/">Retour à l'accueil</a></p>
 `
 
+/**
+ * Les sondes de scanners (`.env`, `.git/HEAD`, `phpinfo.php`…) n'ont droit qu'à
+ * un 404 en texte brut : personne ne lit cette page, et le rendu de `error.vue`
+ * coûtait à lui seul le budget CPU du Worker. Les 404 « humains » (une URL
+ * d'article mal tapée) gardent la vraie page d'erreur, rendue par Vue.
+ */
+const PROBE_BODY = '404 Not Found\n'
+
 export default defineEventHandler((event) => {
   const path = event.path.split('?')[0]
   let decoded = path
@@ -44,5 +52,12 @@ export default defineEventHandler((event) => {
     // répondre à leur place évite de réveiller le Worker au scan suivant.
     setResponseHeader(event, 'Cache-Control', 'public, max-age=86400')
     return send(event, GONE_BODY)
+  }
+  if (PROBE_PATTERNS.some((re: RegExp) => re.test(decoded))) {
+    setResponseStatus(event, 404)
+    setResponseHeader(event, 'Content-Type', 'text/plain; charset=utf-8')
+    setResponseHeader(event, 'X-Robots-Tag', 'noindex')
+    setResponseHeader(event, 'Cache-Control', 'public, max-age=3600')
+    return send(event, PROBE_BODY)
   }
 })
