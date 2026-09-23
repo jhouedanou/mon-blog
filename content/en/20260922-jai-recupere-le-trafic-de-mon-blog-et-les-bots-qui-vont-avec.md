@@ -134,6 +134,14 @@ The Worker is the last line of defence, not the first. Anything that can be refu
 
 I'll check the counters again in a few days. If the orange in the chart hasn't dropped to zero, you'll hear about it.
 
+## Update, 23 September: no more Worker at all
+
+The next day, Cloudflare sent me the same email again. Granted, it covers the last 24 hours, so some of the overruns predated the changes. But while running a few more tests, I found two holes I hadn't plugged. An address like `/api/_content/query/abc.json`, with anything in place of `abc`, still woke up the Worker, which answered by sending the entire content of the blog: 1.2 MB of JSON, far more than 10 milliseconds of work. And a simple typo in an article URL still triggered a full render of the error page.
+
+Rather than adding yet another exception, I asked myself a simpler question: what is this Worker for, if every page is already generated in advance? Not much, as it turns out. The site is now published as a set of static files, with no program behind it. Cloudflare serves the pages, applies the redirects for the old addresses and returns the 404 page on its own, and that work has no CPU limit on the free plan.
+
+There is one trade-off: the old WordPress addresses now return 404 instead of 410. For Google the difference is slim, it will forget them anyway, just a little more slowly. The firewall rules stay in place, they still save serving pages to bots that will do nothing with them.
+
 ---
 
 *Chart: invocations of the mon-blog Worker from 15 to 22 September 2026, from Cloudflare's analytics API.*

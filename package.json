@@ -2,7 +2,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt build && echo _worker.js > dist/.assetsignore",
+    "build": "nuxt generate && node scripts/clean-redirects.mjs",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",

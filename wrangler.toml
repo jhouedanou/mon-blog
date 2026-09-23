@@ -1,6 +1,8 @@
 name = "mon-blog"
 compatibility_date = "2026-04-01"
-main = "dist/_worker.js/index.js"
+# Pas de `main` : le site est entièrement pré-généré (nuxt generate) et servi
+# comme assets statiques. Aucun Worker n'est invoqué, donc plus de limite CPU
+# du plan gratuit (les 404 et les requêtes /api/_content/* la dépassaient).
 
 [assets]
 directory = "./dist"
@@ -8,6 +10,8 @@ directory = "./dist"
 # Par défaut ("auto-trailing-slash"), Cloudflare répondait 307 /a-propos -> /a-propos/
 # sur chaque URL canonique du site. Ici /a-propos sert a-propos/index.html en 200.
 html_handling = "drop-trailing-slash"
+# URL inconnue : dist/404.html avec un vrai statut 404.
+not_found_handling = "404-page"
 
 # Variables d'environnement (optionnel)
 # [vars]

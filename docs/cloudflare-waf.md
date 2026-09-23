@@ -1,16 +1,11 @@
 # Règles WAF Cloudflare pour houedanou.com
 
-Le site est un Worker Cloudflare (plan gratuit : 10 ms de CPU par requête).
-Tout chemin qui n'est pas un fichier de `dist/` réveille le Worker. Les
-scanners de vulnérabilités testent en continu des fichiers qui n'ont jamais
-existé ici (`.env`, `.git/HEAD`, `phpinfo.php`…) : sur 24 h, le 22 septembre
-2026, ils représentaient 1 201 invocations coupées pour dépassement de CPU et
-2 300 réponses 503/522/504.
-
-Le Worker répond désormais à ces sondes en texte brut (voir `PROBE_PATTERNS`
-dans `redirects.js`), mais la vraie parade est de ne pas l'invoquer du tout :
-les règles ci-dessous bloquent au bord, avant le Worker, et ne comptent pas
-dans son quota.
+Depuis le 23 septembre 2026, le site est servi en statique pur, sans Worker :
+les dépassements de CPU du plan gratuit (1 201 invocations coupées sur 24 h le
+22 septembre, presque toutes des sondes de scanners : `.env`, `.git/HEAD`,
+`phpinfo.php`…) ne peuvent plus se produire. Ces règles restent utiles pour
+ne pas servir de pages aux scanners et aux aspirateurs, et garder les
+statistiques lisibles.
 
 À coller dans **Security → WAF → Custom rules → Create rule**, mode
 *Edit expression*, action **Block**. Le plan gratuit autorise 5 règles ; il en
@@ -18,8 +13,8 @@ faut 3. Le langage de règles du plan gratuit n'a pas d'expressions régulières
 (`matches`), d'où les listes de `contains` / `ends_with`.
 
 `cf.client.bot` est vrai pour les robots vérifiés (Googlebot, Bingbot,
-Applebot…) : la règle 1 les laisse passer pour qu'ils reçoivent toujours le
-410 des anciennes URLs.
+Applebot…) : la règle 1 les laisse passer pour qu'ils reçoivent toujours la
+404 des anciennes URLs WordPress et finissent par les oublier.
 
 ## Règle 1 — Sondes de scanners (chemins)
 
@@ -145,8 +140,7 @@ crawlers absents de cette liste. Les deux peuvent coexister.
 
 ## Après mise en place
 
-Vérifier depuis un terminal (un 403 signé Cloudflare, sans passer par le
-Worker) :
+Vérifier depuis un terminal (un 403 signé Cloudflare) :
 
 ```bash
 curl -sI https://houedanou.com/.env | head -1
@@ -155,7 +149,4 @@ curl -sI -A "AhrefsBot/7.0" https://houedanou.com/ | head -1
 curl -sI https://houedanou.com/fr/20250508-project-fat-loss | head -1   # doit rester 200
 ```
 
-Puis, 24 h plus tard, dans **Workers & Pages → mon-blog → Metrics** : la
-courbe « Errors » (exceeded resources) doit être retombée à zéro et le nombre
-d'invocations divisé par deux ou trois. Les blocages apparaissent dans
-**Security → Events**.
+Les blocages apparaissent dans **Security → Events**.

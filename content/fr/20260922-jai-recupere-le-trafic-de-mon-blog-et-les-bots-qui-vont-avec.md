@@ -134,6 +134,14 @@ Le Worker est la dernière ligne de défense, pas la première. Tout ce qui peut
 
 Je referai le point sur les compteurs dans quelques jours. Si l'orange du graphique n'est pas retombé à zéro, vous en entendrez parler.
 
+## Mise à jour du 23 septembre : plus de Worker du tout
+
+Le lendemain, Cloudflare m'a renvoyé le même courriel. Certes, il porte sur les dernières 24 heures, donc une partie des dépassements datait d'avant les changements. Mais en refaisant quelques tests, j'ai trouvé deux trous que je n'avais pas bouchés. Une adresse de la forme `/api/_content/query/abc.json`, avec n'importe quoi à la place de `abc`, réveillait encore le Worker, qui répondait en envoyant tout le contenu du blog : 1,2 Mo de JSON, bien au-delà de 10 millisecondes de travail. Et une simple faute de frappe dans une URL d'article déclenchait toujours le rendu complet de la page d'erreur.
+
+Plutôt que d'ajouter une exception de plus, je me suis posé une question plus simple : à quoi sert ce Worker, si toutes les pages sont déjà générées à l'avance ? Pas à grand-chose, en fait. Le site est donc maintenant publié comme un ensemble de fichiers statiques, sans programme derrière. Cloudflare sert les pages, applique les redirections des anciennes adresses et renvoie la page 404 tout seul, et ce travail-là n'a pas de limite de CPU sur le plan gratuit.
+
+Il y a une contrepartie : les anciennes adresses WordPress répondent désormais 404 au lieu de 410. Pour Google, la différence est mince, il les oubliera quand même, juste un peu moins vite. Les règles de pare-feu restent en place, elles évitent toujours de servir des pages à des robots qui n'en feront rien.
+
 ---
 
 *Graphique : invocations du Worker mon-blog du 15 au 22 septembre 2026, d'après l'API d'analyse de Cloudflare.*

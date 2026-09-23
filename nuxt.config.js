@@ -45,7 +45,7 @@ i18n: {
   },
   ssr: true,
   nitro: {
-    preset: 'cloudflare-pages',
+    preset: 'cloudflare-pages-static',
     prerender: {
       crawlLinks: true,
       failOnError: false,
@@ -170,8 +170,7 @@ i18n: {
   },
   routeRules: {
     // Anti-clickjacking : seul houedanou.com peut embarquer houedanou.com.
-    // Nitro (preset cloudflare-pages) transforme cette règle en `dist/_headers`,
-    // et l'applique aussi aux réponses rendues par le worker.
+    // Nitro (preset cloudflare-pages-static) transforme cette règle en `dist/_headers`.
     '/**': {
       headers: {
         'Content-Security-Policy': "frame-ancestors 'self';",

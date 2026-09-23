@@ -55,19 +55,16 @@ Les tags servent à relier les articles entre eux. Les pages thématiques dispon
 
 ## Déploiement
 
-Le site est déployé sur Cloudflare Workers (`wrangler.toml`), avec les fichiers
-statiques servis depuis `dist/`. Le build (`yarn build`) prérend les pages ;
-seules celles qui ne le sont pas atteignent le Worker.
+Le site est entièrement pré-généré (`yarn build`, soit `nuxt generate`) et
+servi comme assets statiques Cloudflare depuis `dist/` (`wrangler.toml`, sans
+`main`) : aucun Worker n'est invoqué, donc pas de limite de CPU. Les
+redirections (`redirects.js` → `dist/_redirects`), les en-têtes
+(`dist/_headers`) et la page 404 (`not_found_handling`) sont gérés au bord.
 
-Le plan gratuit accorde **10 ms de CPU par requête**. Deux règles en découlent :
-
-- une liste d'articles se charge toujours avec `only(ARTICLE_LIST_FIELDS)`
-  (`utils/content-fields.js`), jamais avec le `body` complet des documents ;
-- tout ce qui se calcule au build (temps de lecture, cartes OG) s'y calcule,
-  pas au rendu ;
-- les sondes de scanners (`.env`, `.php`, `.git`…) reçoivent un 404 en texte
-  brut, sans rendu Vue (`PROBE_PATTERNS` dans `redirects.js`), et sont
-  bloquées au bord par les règles WAF décrites dans `docs/cloudflare-waf.md`.
+Conséquence : pas de code serveur au runtime. Tout ce qui se calcule (temps de
+lecture, cartes OG, flux RSS, sitemap, robots.txt) se calcule au build. Les
+règles WAF de `docs/cloudflare-waf.md` restent utiles pour filtrer les
+scanners et les aspirateurs.
 
 ## Maintenance
 
