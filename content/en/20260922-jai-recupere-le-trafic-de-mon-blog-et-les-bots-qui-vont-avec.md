@@ -9,7 +9,9 @@ tags: ["development", "tutorial", "security", "cloudflare", "nuxt"]
 
 # I got my blog's traffic back (and the bots that come with it. Thanks, WordPress)
 
-This blog ran on WordPress for a long time. It has since moved to Nuxt, then to Cloudflare, and all that time hundreds of old addresses stayed in Google's index, in links from other sites and in the bookmarks of a few loyal readers. Over the past few weeks I finally cleaned up: every old URL redirects to the right article, and everything that belonged to WordPress's machinery answers 410, the response that tells Google "this page is gone, stop asking for it".
+> **Update, 23 September.** Since this post went out, I simply removed the Worker: the site is now served as plain files, and the CPU problem went away with it. What follows tells the story of the first fix, as I set it up on 22 September. The rest is at the end of the article.
+
+This blog ran on WordPress for a long time. It has since moved to Nuxt, then to Cloudflare, and all that time hundreds of old addresses stayed in Google's index, in links from other sites and in the bookmarks of a few loyal readers. Over the past few weeks I finally cleaned up: every old URL redirects to the right article, and everything that belonged to WordPress's machinery answered 410, the response that tells Google "this page is gone, stop asking for it" (it has since become a plain 404, more on that at the end).
 
 The traffic came back. And with it, something I hadn't ordered.
 
@@ -22,9 +24,9 @@ Your Workers hit the free tier CPU time limit at least 100+ times in the past 24
 Upgrade to increase limit
 ```
 
-Some context. This site is served by a Cloudflare Worker, a small program that runs in their data centres. The free plan gives it 10 milliseconds of processor time per request. Beyond that, Cloudflare kills the running execution and sends the visitor an error. A hundred times a day, then, someone was landing on a broken page.
+Some context. This site was then served by a Cloudflare Worker, a small program that runs in their data centres. The free plan gives it 10 milliseconds of processor time per request. Beyond that, Cloudflare kills the running execution and sends the visitor an error. A hundred times a day, then, someone was landing on a broken page.
 
-Almost all of my pages are generated ahead of time at deployment and served as plain files, without ever waking the Worker. So it should only run for a few rare cases: the RSS feed, the sitemap, and addresses that match no file at all.
+Almost all of my pages are generated ahead of time at deployment and served as plain files, without ever waking the Worker. So it should only have run for a few rare cases: the RSS feed, the sitemap, and addresses that match no file at all.
 
 That last point is what put me on the trail.
 
@@ -88,9 +90,9 @@ Rendering that page weighed 741 KB, and on its own it blew past the 10-milliseco
 
 ## What I changed
 
-### In the Worker: answer dumb and fast
+### First reflex: answer fast inside the Worker
 
-The first thing is to stop rendering a page for someone who won't look at it. The old WordPress addresses now get a hand-written 410, 445 bytes, without going through Nuxt. Scanner probes get an even drier 404:
+The first thing was to stop rendering a page for someone who won't look at it. The old WordPress addresses first got a hand-written 410, 445 bytes, without going through Nuxt. Scanner probes got an even drier 404. Here is what it looked like on 22 September (today, the site's own 404 page shows up instead):
 
 ```
 $ curl -si https://houedanou.com/.env | head -4
@@ -102,19 +104,19 @@ x-robots-tag: noindex
 404 Not Found
 ```
 
-Fourteen bytes, and a cache header so that Cloudflare answers the next identical probe itself. The recognised patterns fit in a few regular expressions: a segment starting with a dot (`.env`, `.git`, `.aws`), a script or backup extension (`.php`, `.bak`, `.key`, `.sql`), a static file that doesn't exist (if it did, it would have been served without waking the Worker), another CMS's directory tree.
+Fourteen bytes, and a cache header so that Cloudflare answers the next identical probe itself. The recognised patterns fitted in a few regular expressions: a segment starting with a dot (`.env`, `.git`, `.aws`), a script or backup extension (`.php`, `.bak`, `.key`, `.sql`), a static file that doesn't exist (if it did, it would have been served without waking the Worker), another CMS's directory tree.
 
-Nuxt's error page, with its suggestions, stays in place for humans who mistype an article URL. I just removed the loading of the articles' full bodies, which was useless for displaying three titles.
+Nuxt's error page, with its suggestions, stayed in place for humans who mistype an article URL. I had just removed the loading of the articles' full bodies, which was useless for displaying three titles.
 
 Along the way, the same investigation brought down another waste: the article lists were loading the full text of all 48 posts just to display titles and dates. The reading time, meanwhile, was recomputed on every display by walking through all that text. It's now computed once at deployment and stored with the article.
 
-### At the edge: don't wake the Worker at all
+### At the edge: block before reaching the site
 
-Answering fast is good, not answering is better. Cloudflare lets you, even on the free plan, create five firewall rules that apply before the request reaches the Worker. A request blocked there doesn't count towards its quota, and costs nothing.
+Answering fast is good. Still, the most effective option is not to let these requests reach the site at all. Cloudflare lets you, even on the free plan, create five firewall rules that apply upstream. A request blocked there didn't wake the Worker, and so cost nothing. These rules are still in place, by the way.
 
 I created three:
 
-1. **Scanner paths**: any segment starting with a dot (except `/.well-known/`), the `.php`, `.env`, `.bak`, `.key`, `.sql` extensions and friends, anything containing `wp-`, `xmlrpc`, `phpinfo`, `phpmyadmin`. With an exception for bots verified by Cloudflare, Googlebot first among them, so they keep receiving the 410 for the old addresses and eventually forget them.
+1. **Scanner paths**: any segment starting with a dot (except `/.well-known/`), the `.php`, `.env`, `.bak`, `.key`, `.sql` extensions and friends, anything containing `wp-`, `xmlrpc`, `phpinfo`, `phpmyadmin`. With an exception for bots verified by Cloudflare, Googlebot first among them, so they keep receiving an error response on the old addresses and eventually forget them.
 2. **Fake browsers**: empty identifier, "nginx-ssl early hints", "MSIE", and our friend "More Firefox 1.0 user agents strings".
 3. **The vacuum cleaners**: the bots of SEO tools (Ahrefs, DotBot, Semrush), which crawl the site to sell reports to others, and the collectors of AI companies (CCBot, GPTBot, ClaudeBot, Bytespider, Amazonbot). Cloudflare also offers a simple "Block AI bots" switch that covers the latter, and is kept up to date on my behalf.
 
@@ -124,15 +126,13 @@ The rules language has no regular expressions on the free plan, so you have to s
 
 Finally, `robots.txt` now explicitly disallows `/wp-admin/`, `/wp-login.php` and the others. It changes nothing for scanners, which don't read it, but it saves well-behaved bots from coming back every month to check whether WordPress has reappeared.
 
-## What I take away
+## What now?
 
-On a free plan, the budget isn't in euros, it's in milliseconds. And the first thing to check when you exceed it isn't your code's performance, it's who is consuming the budget. In my case, it wasn't the readers.
+On a free plan, the budget is counted in milliseconds rather than euros, and before blaming your own code, it's better to look at who is using up that budget. In my case, it wasn't the readers.
 
-The redirects I set up brought back the visitors arriving through the old addresses. They also showed the scanners that the domain was answering, and that it was worth insisting. The internet has a memory, and that memory is mostly consulted by machines.
+The redirects did bring back the visitors arriving through the old addresses. They also showed the scanners that the domain was answering, which encouraged them to keep trying. Looking back, the real fix was simpler than everything above: a blog whose pages are all generated in advance doesn't need a program to serve them. That's what the update below is about.
 
-The Worker is the last line of defence, not the first. Anything that can be refused at the edge should be refused at the edge.
-
-I'll check the counters again in a few days. If the orange in the chart hasn't dropped to zero, you'll hear about it.
+I'll check the counters again in a few days. If the orange in the chart hasn't dropped to zero, you'll hear about it 🙂
 
 ## Update, 23 September: no more Worker at all
 

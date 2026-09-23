@@ -9,7 +9,9 @@ tags: ["dev", "tutoriel", "sécurité", "cloudflare", "nuxt"]
 
 # J'ai récupéré le trafic de mon blog (et les bots qui vont avec. Merci WordPress)
 
-Ce blog a longtemps tourné sous WordPress. Depuis, il est passé à Nuxt, puis chez Cloudflare, et pendant tout ce temps des centaines d'anciennes adresses sont restées dans l'index de Google, dans des liens d'autres sites et dans les favoris de quelques lecteurs fidèles. Ces dernières semaines, j'ai fini par faire le ménage : chaque ancienne URL redirige vers le bon article, et tout ce qui appartenait à la mécanique WordPress répond 410, la réponse qui dit à Google « cette page n'existe plus, arrête de la demander ».
+> **Mise à jour du 23 septembre.** Depuis la publication de ce billet, j'ai carrément supprimé le Worker : le site est maintenant servi comme de simples fichiers, et le problème de CPU est parti avec lui. Ce qui suit raconte la première parade, telle que je l'avais mise en place le 22 septembre. La suite est en fin d'article.
+
+Ce blog a longtemps tourné sous WordPress. Depuis, il est passé à Nuxt, puis chez Cloudflare, et pendant tout ce temps des centaines d'anciennes adresses sont restées dans l'index de Google, dans des liens d'autres sites et dans les favoris de quelques lecteurs fidèles. Ces dernières semaines, j'ai fini par faire le ménage : chaque ancienne URL redirige vers le bon article, et tout ce qui appartenait à la mécanique WordPress répondait 410, la réponse qui dit à Google « cette page n'existe plus, arrête de la demander » (c'est devenu une simple 404 depuis, j'y reviens à la fin).
 
 Le trafic est revenu. Et avec lui, quelque chose que je n'avais pas commandé.
 
@@ -22,9 +24,9 @@ Your Workers hit the free tier CPU time limit at least 100+ times in the past 24
 Upgrade to increase limit
 ```
 
-Un peu de contexte. Ce site est servi par un Worker Cloudflare, un petit programme qui tourne dans leurs centres de données. Le plan gratuit lui accorde 10 millisecondes de temps processeur par requête. Au-delà, Cloudflare coupe l'exécution en cours et renvoie une erreur au visiteur. Cent fois par jour, donc, quelqu'un tombait sur une page cassée.
+Un peu de contexte. Ce site était alors servi par un Worker Cloudflare, un petit programme qui tourne dans leurs centres de données. Le plan gratuit lui accorde 10 millisecondes de temps processeur par requête. Au-delà, Cloudflare coupe l'exécution en cours et renvoie une erreur au visiteur. Cent fois par jour, donc, quelqu'un tombait sur une page cassée.
 
-La quasi-totalité de mes pages est générée à l'avance au moment du déploiement, et servie comme de simples fichiers, sans jamais réveiller le Worker. Il ne devrait donc tourner que pour quelques cas rares : le flux RSS, le plan du site, et les adresses qui ne correspondent à aucun fichier.
+La quasi-totalité de mes pages est générée à l'avance au moment du déploiement, et servie comme de simples fichiers, sans jamais réveiller le Worker. Il n'aurait donc dû tourner que pour quelques cas rares : le flux RSS, le plan du site, et les adresses qui ne correspondent à aucun fichier.
 
 C'est ce dernier point qui m'a mis sur la piste.
 
@@ -88,9 +90,9 @@ Le rendu de cette page pesait 741 Ko, et il dépassait à lui seul le budget de 
 
 ## Ce que j'ai changé
 
-### Dans le Worker : répondre bête et vite
+### Premier réflexe : répondre vite dans le Worker
 
-La première chose, c'est de ne plus rendre une page pour quelqu'un qui ne la regardera pas. Les adresses de l'ancien WordPress reçoivent maintenant un 410 écrit à la main, 445 octets, sans passer par Nuxt. Les sondes de scanners, elles, reçoivent un 404 encore plus sec :
+La première chose était de ne plus rendre une page pour quelqu'un qui ne la regardera pas. Les adresses de l'ancien WordPress ont d'abord reçu un 410 écrit à la main, 445 octets, sans passer par Nuxt. Les sondes de scanners, elles, recevaient un 404 encore plus sec. Voici ce que ça donnait le 22 septembre (aujourd'hui, c'est la page 404 du site qui s'affiche) :
 
 ```
 $ curl -si https://houedanou.com/.env | head -4
@@ -102,19 +104,19 @@ x-robots-tag: noindex
 404 Not Found
 ```
 
-Quatorze octets, et un en-tête de cache pour que Cloudflare réponde lui-même à la prochaine sonde identique. Les motifs reconnus tiennent en quelques expressions régulières : un segment qui commence par un point (`.env`, `.git`, `.aws`), une extension de script ou de sauvegarde (`.php`, `.bak`, `.key`, `.sql`), un fichier statique qui n'existe pas (s'il existait, il aurait été servi sans réveiller le Worker), l'arborescence d'un autre CMS.
+Quatorze octets, et un en-tête de cache pour que Cloudflare réponde lui-même à la prochaine sonde identique. Les motifs reconnus tenaient en quelques expressions régulières : un segment qui commence par un point (`.env`, `.git`, `.aws`), une extension de script ou de sauvegarde (`.php`, `.bak`, `.key`, `.sql`), un fichier statique qui n'existe pas (s'il existait, il aurait été servi sans réveiller le Worker), l'arborescence d'un autre CMS.
 
-La page d'erreur de Nuxt, avec ses suggestions, reste en place pour les humains qui se trompent dans une URL d'article. J'y ai juste retiré le chargement du corps complet des articles, qui ne servait à rien pour afficher trois titres.
+La page d'erreur de Nuxt, avec ses suggestions, restait en place pour les humains qui se trompent dans une URL d'article. J'y avais juste retiré le chargement du corps complet des articles, qui ne servait à rien pour afficher trois titres.
 
 Au passage, la même enquête a fait tomber un autre gaspillage : les listes d'articles chargeaient le texte intégral des 48 billets pour n'afficher que des titres et des dates. Le temps de lecture, lui, était recalculé à chaque affichage en parcourant tout ce texte. Il est maintenant calculé une fois au déploiement, et rangé avec l'article.
 
-### Au bord : ne pas réveiller le Worker du tout
+### Au bord : bloquer avant même d'arriver au site
 
-C'est bien de répondre vite, c'est mieux de ne pas répondre. Cloudflare permet, même sur le plan gratuit, de créer cinq règles de pare-feu qui s'appliquent avant que la requête n'arrive au Worker. Une requête bloquée là ne compte pas dans son quota, et ne coûte rien.
+Répondre vite, c'est bien. Toutefois, le plus efficace reste de ne pas laisser ces requêtes arriver jusqu'au site. Cloudflare permet, même sur le plan gratuit, de créer cinq règles de pare-feu qui s'appliquent en amont. Une requête bloquée là ne réveillait pas le Worker, et ne coûtait donc rien. Ces règles sont d'ailleurs toujours en place.
 
 J'en ai créé trois :
 
-1. **Les chemins de scanners** : tout segment commençant par un point (sauf `/.well-known/`), les extensions `.php`, `.env`, `.bak`, `.key`, `.sql` et compagnie, tout ce qui contient `wp-`, `xmlrpc`, `phpinfo`, `phpmyadmin`. Avec une exception pour les robots vérifiés par Cloudflare, Googlebot en tête, pour qu'ils continuent de recevoir le 410 des anciennes adresses et finissent par les oublier.
+1. **Les chemins de scanners** : tout segment commençant par un point (sauf `/.well-known/`), les extensions `.php`, `.env`, `.bak`, `.key`, `.sql` et compagnie, tout ce qui contient `wp-`, `xmlrpc`, `phpinfo`, `phpmyadmin`. Avec une exception pour les robots vérifiés par Cloudflare, Googlebot en tête, pour qu'ils continuent de recevoir une réponse d'erreur sur les anciennes adresses et finissent par les oublier.
 2. **Les faux navigateurs** : identifiant vide, « nginx-ssl early hints », « MSIE », et notre ami « More Firefox 1.0 user agents strings ».
 3. **Les aspirateurs** : les robots des outils SEO (Ahrefs, DotBot, Semrush), qui explorent le site pour vendre des rapports à d'autres, et les collecteurs des entreprises d'IA (CCBot, GPTBot, ClaudeBot, Bytespider, Amazonbot). Cloudflare propose d'ailleurs un simple interrupteur « Bloquer les bots IA » qui couvre ces derniers, et qui est tenu à jour à ma place.
 
@@ -124,15 +126,13 @@ Le langage de ces règles n'a pas d'expressions régulières sur le plan gratuit
 
 Enfin, `robots.txt` interdit désormais explicitement `/wp-admin/`, `/wp-login.php` et les autres. Ça ne change rien pour les scanners, qui ne le lisent pas, mais ça évite aux robots respectueux de revenir vérifier tous les mois si WordPress est réapparu.
 
-## Ce que j'en retiens
+## Et maintenant ?
 
-Sur un plan gratuit, le budget n'est pas en euros, il est en millisecondes. Et la première chose à vérifier quand on le dépasse, ce n'est pas la performance de son code, c'est qui consomme le budget. Chez moi, ce n'était pas les lecteurs.
+Sur un plan gratuit, le budget se compte en millisecondes plutôt qu'en euros, et avant d'accuser son propre code, mieux vaut regarder qui consomme ce budget. Chez moi, ce n'étaient pas les lecteurs.
 
-Les redirections que j'ai mises en place ont ramené les visiteurs qui arrivaient par les anciennes adresses. Elles ont aussi montré aux scanners que le domaine répondait, et qu'il valait la peine d'insister. Internet a de la mémoire, et cette mémoire est surtout consultée par des machines.
+Les redirections ont bien ramené les visiteurs qui arrivaient par les anciennes adresses. Elles ont aussi montré aux scanners que le domaine répondait, ce qui les a encouragés à insister. Avec le recul, la vraie solution était plus simple que tout ce qui précède : un blog dont toutes les pages sont générées à l'avance n'a pas besoin d'un programme pour les servir. C'est l'objet de la mise à jour ci-dessous.
 
-Le Worker est la dernière ligne de défense, pas la première. Tout ce qui peut être refusé au bord doit l'être au bord.
-
-Je referai le point sur les compteurs dans quelques jours. Si l'orange du graphique n'est pas retombé à zéro, vous en entendrez parler.
+Je referai le point sur les compteurs dans quelques jours. Si l'orange du graphique n'est pas retombé à zéro, vous en entendrez parler 🙂
 
 ## Mise à jour du 23 septembre : plus de Worker du tout
 
