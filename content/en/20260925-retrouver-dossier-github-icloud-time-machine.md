@@ -39,7 +39,7 @@ Your code already has an online copy: the one you push to GitHub. It does not ne
 
 - **A Time Machine backup made before you turned on "Desktop & Documents Folders".** It holds your GitHub folder as it was before iCloud.
 - **The backup disk, connected to the Mac.**
-- **An idea of what was never pushed.** Whatever you pushed to GitHub after the backup date comes back with `git pull` (step 5). Work that was never pushed only exists in the copy left in iCloud (step 6).
+- **An idea of what was never pushed.** Whatever you pushed to GitHub after the backup date comes back with `git pull` (step 5). Commits and changes that were never pushed only exist in the copy left in iCloud: you recover them with Git in step 6.
 
 No Time Machine backup? Everything you pushed to GitHub is still there. Turn off "Desktop & Documents Folders" (step 1), then clone your repositories again into a folder outside iCloud (see "So it does not happen again", below).
 
@@ -74,16 +74,37 @@ The backup predates the incident, so it is missing the commits pushed to GitHub 
 ```bash
 cd ~/Documents/GitHub/project-name
 git status
-git pull
 ```
 
-`git status` checks that the repository can be read and shows the modified files. `git pull` fetches from GitHub everything that was pushed after the backup date. In GitHub Desktop, the **Fetch origin** then **Pull origin** buttons do the same thing. For a full check of the history, `git fsck` verifies the repository's integrity.
+`git status` checks that the repository can be read and shows the modified files. If there are none, a plain `git pull` fetches from GitHub everything that was pushed after the backup date. In GitHub Desktop, the **Fetch origin** then **Pull origin** buttons do the same thing.
+
+If there are modified files, set them aside first: otherwise, Git refuses the `git pull` as soon as one of those files has also changed on GitHub.
+
+```bash
+git stash push --include-untracked
+git pull
+git stash pop
+```
+
+`git stash pop` puts your changes back, and reports a conflict if the same part of a file changed on both sides. For a full check of the history, `git fsck` verifies the repository's integrity.
 
 ### 6. Recover unpushed work, then delete the iCloud copy
 
-The old copy of your repositories is still in iCloud Drive, under **Documents > GitHub**. If you had work that was never pushed to GitHub, that is where it is: copy the files you need into the restored repository, without the `.git` folder.
+The old copy of your repositories is still in iCloud Drive, under **Documents > GitHub**. If you had work that was never pushed to GitHub, that is where it is. Do not copy its files over the restored repository: you would overwrite the newer versions that `git pull` just brought back, and lose the history of your commits.
 
-Once everything works, delete that copy. It is no longer useful and it takes up part of your 50 GB. If you make a mistake, iCloud keeps it for another 30 days in **Recently Deleted**, on iCloud.com.
+**For commits that were never pushed**, let Git recover them. From the restored repository, replace `main` with the name of your branch and run:
+
+```bash
+git fetch ~/Library/Mobile\ Documents/com~apple~CloudDocs/Documents/GitHub/project-name main:recup-icloud
+git merge recup-icloud
+git push
+```
+
+The first line copies the commits from the iCloud copy into a new branch, `recup-icloud`. The second merges them into your branch, and Git reports any conflicts. The third finally sends them to GitHub. To type the path without mistakes, type `git fetch ` then drag the project folder from iCloud Drive into the Terminal window.
+
+**For changes that were never committed**, copy the files concerned into a separate folder, outside the repository, and compare them with the ones in the restored repository before carrying your changes over. Do the same if Git cannot read the iCloud copy.
+
+Once everything works, delete the iCloud copy. It is no longer useful and it takes up part of your 50 GB. If you make a mistake, iCloud keeps it for another 30 days in **Recently Deleted**, on iCloud.com.
 
 ## So it does not happen again
 
