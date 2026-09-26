@@ -94,13 +94,12 @@ const isDark = ref(false)
 const mobileMenuOpen = ref(false)
 const scrolled = ref(false)
 
-// Le thème suit le réglage système (prefers-color-scheme), y compris quand il
-// change en cours de visite. Le bouton du header ne fait qu'un écart temporaire
-// pour la visite en cours (sessionStorage) : au prochain onglet ou à la prochaine
-// visite, on repart du réglage système. Un ancien choix stocké dans localStorage
-// par la version précédente est ignoré et nettoyé.
+// Le site s'affiche en clair par défaut, quel que soit le réglage système. Le
+// bouton du header ne fait qu'un écart temporaire vers le sombre pour la visite
+// en cours (sessionStorage) : au prochain onglet ou à la prochaine visite, on
+// repart du clair. Un ancien choix stocké dans localStorage par une version
+// précédente est ignoré et nettoyé.
 const THEME_OVERRIDE_KEY = 'theme-override'
-let systemDark = null
 
 function applyTheme(dark) {
   isDark.value = dark
@@ -119,15 +118,10 @@ function toggleDarkMode() {
   const next = !isDark.value
   applyTheme(next)
   try {
-    // Si on revient sur le réglage système, on efface simplement l'écart.
-    if (next === systemDark?.matches) sessionStorage.removeItem(THEME_OVERRIDE_KEY)
-    else sessionStorage.setItem(THEME_OVERRIDE_KEY, next ? 'dark' : 'light')
+    // Revenir au clair, c'est revenir au défaut : on efface simplement l'écart.
+    if (next) sessionStorage.setItem(THEME_OVERRIDE_KEY, 'dark')
+    else sessionStorage.removeItem(THEME_OVERRIDE_KEY)
   } catch {}
-}
-
-function onSystemThemeChange(event) {
-  if (readOverride()) return
-  applyTheme(event.matches)
 }
 
 function onScroll() {
@@ -136,16 +130,12 @@ function onScroll() {
 
 onMounted(() => {
   try { localStorage.removeItem('theme') } catch {}
-  systemDark = window.matchMedia('(prefers-color-scheme: dark)')
-  const override = readOverride()
-  applyTheme(override ? override === 'dark' : systemDark.matches)
-  systemDark.addEventListener('change', onSystemThemeChange)
+  applyTheme(readOverride() === 'dark')
   window.addEventListener('scroll', onScroll, { passive: true })
   onScroll()
 })
 
 onUnmounted(() => {
-  systemDark?.removeEventListener('change', onSystemThemeChange)
   window.removeEventListener('scroll', onScroll)
 })
 
@@ -258,11 +248,11 @@ useHead(() => ({
       innerHTML: safeJsonLd(siteGraph),
     },
     {
-      // Exécuté avant le premier rendu : pose le thème système (ou l'écart de
+      // Exécuté avant le premier rendu : pose le thème (clair, ou l'écart de
       // session) sur <html> pour éviter le flash clair au chargement en sombre.
       id: 'theme-init',
       tagPosition: 'head',
-      innerHTML: `(function(){try{var o=sessionStorage.getItem('${THEME_OVERRIDE_KEY}');var d=o?o==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;document.documentElement.setAttribute('data-theme',d?'dark':'light')}catch(e){}})();`,
+      innerHTML: `(function(){try{var d=sessionStorage.getItem('${THEME_OVERRIDE_KEY}')==='dark';document.documentElement.setAttribute('data-theme',d?'dark':'light')}catch(e){}})();`,
     },
   ],
   // Pas de `data-theme` ici : unhead ré-appliquerait « light » à chaque mise à

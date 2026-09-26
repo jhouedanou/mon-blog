@@ -39,7 +39,7 @@ Votre code a déjà une copie en ligne : celle que vous poussez sur GitHub. Il n
 
 - **Une sauvegarde Time Machine faite avant l'activation de « Dossiers Bureau et Documents ».** C'est elle qui contient votre dossier GitHub dans son état d'avant iCloud.
 - **Le disque de sauvegarde, branché au Mac.**
-- **Une idée de ce qui n'a pas été poussé.** Ce que vous avez poussé sur GitHub après la date de la sauvegarde se récupère avec `git pull` (étape 5). Le travail jamais poussé n'existe que dans la copie restée sur iCloud (étape 6).
+- **Une idée de ce qui n'a pas été poussé.** Ce que vous avez poussé sur GitHub après la date de la sauvegarde se récupère avec `git pull` (étape 5). Les commits et les modifications jamais poussés n'existent que dans la copie restée sur iCloud : on les récupère avec Git à l'étape 6.
 
 Pas de sauvegarde Time Machine ? Tout ce que vous avez poussé sur GitHub y est toujours. Désactivez « Dossiers Bureau et Documents » (étape 1), puis clonez à nouveau vos dépôts dans un dossier hors d'iCloud (voir « Pour ne pas recommencer », plus bas).
 
@@ -74,16 +74,37 @@ La sauvegarde date d'avant l'incident : il manque donc les commits poussés sur 
 ```bash
 cd ~/Documents/GitHub/nom-du-projet
 git status
-git pull
 ```
 
-`git status` vérifie que le dépôt est lisible et montre les fichiers modifiés. `git pull` récupère depuis GitHub tout ce qui a été poussé après la date de la sauvegarde. Dans GitHub Desktop, les boutons **Fetch origin** puis **Pull origin** font la même chose. Pour un contrôle complet de l'historique, `git fsck` vérifie l'intégrité du dépôt.
+`git status` vérifie que le dépôt est lisible et montre les fichiers modifiés. S'il n'y en a pas, un simple `git pull` récupère depuis GitHub tout ce qui a été poussé après la date de la sauvegarde. Dans GitHub Desktop, les boutons **Fetch origin** puis **Pull origin** font la même chose.
+
+S'il y a des fichiers modifiés, mettez-les d'abord de côté : sinon, Git refuse le `git pull` dès qu'un de ces fichiers a aussi changé sur GitHub.
+
+```bash
+git stash push --include-untracked
+git pull
+git stash pop
+```
+
+`git stash pop` remet vos modifications en place, et signale un conflit si la même partie d'un fichier a changé des deux côtés. Pour un contrôle complet de l'historique, `git fsck` vérifie l'intégrité du dépôt.
 
 ### 6. Récupérer le travail non poussé, puis supprimer la copie iCloud
 
-L'ancienne copie de vos dépôts est toujours dans iCloud Drive, dans **Documents > GitHub**. Si vous aviez du travail jamais poussé sur GitHub, c'est là qu'il se trouve : copiez les fichiers concernés dans le dépôt restauré, sans le dossier `.git`.
+L'ancienne copie de vos dépôts est toujours dans iCloud Drive, dans **Documents > GitHub**. Si vous aviez du travail jamais poussé sur GitHub, c'est là qu'il se trouve. Ne recopiez pas ses fichiers par-dessus le dépôt restauré : vous écraseriez les versions plus récentes ramenées par `git pull`, et vous perdriez l'historique de vos commits.
 
-Une fois que tout fonctionne, supprimez cette copie. Elle ne sert plus à rien et elle occupe une partie de vos 50 Go. En cas d'erreur, iCloud la garde encore 30 jours dans **Supprimés récemment**, sur iCloud.com.
+**Pour les commits jamais poussés**, laissez Git les récupérer. Depuis le dépôt restauré, remplacez `main` par le nom de votre branche et lancez :
+
+```bash
+git fetch ~/Library/Mobile\ Documents/com~apple~CloudDocs/Documents/GitHub/nom-du-projet main:recup-icloud
+git merge recup-icloud
+git push
+```
+
+La première ligne copie les commits de la copie iCloud dans une nouvelle branche, `recup-icloud`. La deuxième les fusionne avec votre branche, et Git signale les conflits éventuels. La troisième les envoie enfin sur GitHub. Pour écrire le chemin sans erreur, tapez `git fetch ` puis glissez le dossier du projet depuis iCloud Drive dans la fenêtre du Terminal.
+
+**Pour les modifications jamais commitées**, copiez les fichiers concernés dans un dossier à part, hors du dépôt, et comparez-les avec ceux du dépôt restauré avant de reporter vos changements. Faites de même si Git n'arrive pas à lire la copie iCloud.
+
+Une fois que tout fonctionne, supprimez la copie iCloud. Elle ne sert plus à rien et elle occupe une partie de vos 50 Go. En cas d'erreur, iCloud la garde encore 30 jours dans **Supprimés récemment**, sur iCloud.com.
 
 ## Pour ne pas recommencer
 
