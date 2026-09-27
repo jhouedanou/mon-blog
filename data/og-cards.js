@@ -14,6 +14,7 @@ export const OG_CARDS = {
   "/images/articles/bill-gates-ia-cash.jpeg": "/og/bill-gates-ia-cash.jpg",
   "/images/articles/claude-caveman.webp": "/og/claude-caveman.jpg",
   "/images/articles/clauderemote.webp": "/og/clauderemote.jpg",
+  "/images/articles/cloudflare-warp-fast-com-canalbox.webp": "/og/cloudflare-warp-fast-com-canalbox.jpg",
   "/images/articles/cloudflarevercel.webp": "/og/cloudflarevercel.jpg",
   "/images/articles/cocacola.webp": "/og/cocacola.jpg",
   "/images/articles/corruption.webp": "/og/corruption.jpg",
