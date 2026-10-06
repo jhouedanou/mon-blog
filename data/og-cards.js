@@ -35,6 +35,7 @@ export const OG_CARDS = {
   "/images/articles/niece.webp": "/og/niece.jpg",
   "/images/articles/pexels-cottonbro-4631077.webp": "/og/pexels-cottonbro-4631077.jpg",
   "/images/articles/pexels-imadclicks-19022728.webp": "/og/pexels-imadclicks-19022728.jpg",
+  "/images/articles/pexels-jakubzerdzicki-28973296.webp": "/og/pexels-jakubzerdzicki-28973296.jpg",
   "/images/articles/pexels-jibarofoto-2148222.webp": "/og/pexels-jibarofoto-2148222.jpg",
   "/images/articles/pexels-katrin-bolovtsova-6077189.webp": "/og/pexels-katrin-bolovtsova-6077189.jpg",
   "/images/articles/pexels-pixabay-55830.webp": "/og/pexels-pixabay-55830.jpg",
