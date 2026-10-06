@@ -62,7 +62,6 @@
           <DisqusComments :pageUrl="currentUrl" :pageIdentifier="article._path" />
 
           <div class="article-links">
-            <a href="https://houedanou.com" rel="dofollow">Jean-Luc Houédanou</a>
             <a target="_blank" href="https://jeanluchouedanou.blogspot.com/">{{ $t('oldArticles') }}</a>
           </div>
         </div>
