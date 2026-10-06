@@ -115,4 +115,4 @@ Corruption doesn't save you time.
 On the contrary, **it makes all of you late.**
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com) — amateur whistleblower*
+*[Jean-Luc Houédanou](https://houedanou.com) — amateur whistleblower*

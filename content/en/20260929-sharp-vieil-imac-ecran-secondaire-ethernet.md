@@ -150,3 +150,6 @@ To work on the go, an iMac won't follow you. In that case, read my review of [th
 - [Sharp announcement article](https://aminerostane.com/articles/sharp/), by Amine Rostane
 - [Sharp source code on GitHub](https://github.com/amineross/sharp)
 - [Discussion on Reddit (r/iMac)](https://www.reddit.com/r/iMac/comments/1wsm7f8/use_your_imac_as_a_highresolution_display_over/)
+
+---
+*[Jean-Luc Houédanou](https://houedanou.com)*

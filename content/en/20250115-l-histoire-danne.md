@@ -75,4 +75,4 @@ To put it more plainly: Anne has become X's new "punchline" or "punching bag". T
 We all make mistakes, but we all deserve a minimum of respect. Above all, **there are times when silence is golden: if you're not sure that what you're about to post will do any good, keep scrolling.**
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com) — scam hunter*
+*[Jean-Luc Houédanou](https://houedanou.com) — scam hunter*

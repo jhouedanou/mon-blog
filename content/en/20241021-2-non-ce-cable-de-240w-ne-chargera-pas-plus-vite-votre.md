@@ -95,4 +95,4 @@ More seriously... your 2017 MacBook Pro is not a race car built to swallow 240W 
 And that, no arrogant salesman can sell you. It is up to you to know it.
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com) — debunker of watts*
+*[Jean-Luc Houédanou](https://houedanou.com) — debunker of watts*

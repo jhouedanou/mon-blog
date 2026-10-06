@@ -94,4 +94,5 @@ Si vous êtes à Abidjan, vous pourrez en trouver dans les magasins locaux, comm
 Alternativement, il existe des plateformes en ligne où vous pouvez acheter des produits de qualité à des prix compétitifs depuis Amazon et vous faire livrer à Abidjan, comme Cart'in.
 
 
-Jean Luc Houédanou.
+---
+*[Jean-Luc Houédanou](https://houedanou.com)*

@@ -108,4 +108,4 @@ Now you know.
 
 ---
 
-_[Jean Luc Houédanou](https://houedanou.com), happy to own an Android phone._
+_[Jean-Luc Houédanou](https://houedanou.com), happy to own an Android phone._

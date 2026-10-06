@@ -141,4 +141,4 @@ Mais aujourd'hui, avec un **TTFB divisé par cinq**, **zéro frais de licence**,
 Si « Tonton Donald » m'a appris quelque chose, c'est que **la souveraineté numérique, en Afrique, ça commence par le choix de ses outils.**
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com) — de nouveau converti à l'open source*
+*[Jean-Luc Houédanou](https://houedanou.com) — de nouveau converti à l'open source*

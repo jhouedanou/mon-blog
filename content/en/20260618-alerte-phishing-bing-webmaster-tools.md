@@ -68,4 +68,4 @@ We spend our days hardening servers, patching vulnerabilities and securing confi
 
 Check your tabs, warn your colleagues, and get into the habit of checking the URL before you click.
 
-— Jean Houédanou · [houedanou.com](https://houedanou.com)
+*[Jean-Luc Houédanou](https://houedanou.com)*

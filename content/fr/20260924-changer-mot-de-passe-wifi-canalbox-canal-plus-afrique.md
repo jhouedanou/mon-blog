@@ -60,3 +60,5 @@ Si vous voulez aller plus loin, le même menu **Wi-Fi** permet aussi de changer 
 ---
 
 _Photos : [Pascal](https://www.pexels.com/@userpascal/) et [Christina Morillo](https://www.pexels.com/@divinetechygirl/), sur Pexels._
+
+*[Jean-Luc Houédanou](https://houedanou.com)*

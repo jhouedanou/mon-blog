@@ -88,3 +88,5 @@ Ce ne sont pas des gestes de survivaliste. Ce sont les mêmes gestes qui servent
 ---
 
 _Photos : [Pixabay](https://www.pexels.com/@pixabay/), [Eduardo Soares](https://www.pexels.com/@eduschadesoares/) et [Brett Sayles](https://www.pexels.com/@brett-sayles/), sur Pexels._
+
+*[Jean-Luc Houédanou](https://houedanou.com)*

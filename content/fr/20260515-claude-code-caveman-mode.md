@@ -149,4 +149,4 @@ License MIT. *Free like mass mammoth on open plain.*
 Lien : [github.com/JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman)
 
 ---
-*Jean Luc Houédanou — moins de bla-bla, plus de code. Ooga booga, facture mini.*
+*[Jean-Luc Houédanou](https://houedanou.com) — moins de bla-bla, plus de code. Ooga booga, facture mini.*

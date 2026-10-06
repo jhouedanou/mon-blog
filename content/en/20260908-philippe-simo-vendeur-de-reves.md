@@ -44,3 +44,6 @@ So, for those who want to move forward: debate the idea, correct what's wrong, b
 For the others, you can go back to your stories about « resting » 🙂
 
 _Photo: [Theo Decker](https://www.pexels.com/photo/5447327/), Pexels._
+
+---
+*[Jean-Luc Houédanou](https://houedanou.com)*

@@ -62,4 +62,4 @@ Parmi ses autres applications pour Wear OS, on trouve notamment :
 Ces applications sont généralement légères, gratuites et conçues pour résoudre des problèmes très spécifiques rencontrés par les utilisateurs de montres connectées.
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com) — réveilleur de montres*
+*[Jean-Luc Houédanou](https://houedanou.com) — réveilleur de montres*

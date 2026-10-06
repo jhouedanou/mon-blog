@@ -70,4 +70,4 @@ PS: If you decide to hold that meeting anyway, plan an agenda, a time limit (10 
 With arguments.
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com), sworn enemy of meetings*
+*[Jean-Luc Houédanou](https://houedanou.com), sworn enemy of meetings*

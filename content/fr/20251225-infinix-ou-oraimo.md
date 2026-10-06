@@ -47,4 +47,4 @@ Les deux montres offrent les fonctions classiques : suivi du rythme cardiaque, S
 En résumé, l'Infinix Watch 3 séduit par son design haut de gamme, tandis que l'Oraimo Nova AM brille par ses fonctionnalités connectées et son application robuste. Votre choix dépendra de vos priorités : esthétique ou productivité.
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com) — horloger connecté*
+*[Jean-Luc Houédanou](https://houedanou.com) — horloger connecté*

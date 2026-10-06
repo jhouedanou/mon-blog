@@ -55,4 +55,4 @@ Simple. Efficient. Three steps.
 
 ---
 
-*[Jean Houédanou](https://houedanou.com). This is the kind of feature that gives meaning to the rising price of RAM.*
+*[Jean-Luc Houédanou](https://houedanou.com). This is the kind of feature that gives meaning to the rising price of RAM.*

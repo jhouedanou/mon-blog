@@ -77,4 +77,4 @@ Trois leçons, gratuites, apprises à 12 000 FCFA :
 2. **Ne fais pas le boss, ne monte pas à l'arrière du Yango.** Même si c'est une Alto qui vient te chercher. Devant, tu vois tes affaires, tu vois ta poche, tu descends en une seule fois. Derrière, tu sèmes.
 3. **Les chauffeurs Yango ne sont pas toujours des pros.** Certains ne vérifient même pas la banquette après la course. Le réflexe « bien descendre », c'est toi qui dois l'avoir.
 
-_[Jean Houédanou](https://houedanou.com) — FindHub t'emmène à Abobo, mais c'est l'honnêteté d'une inconnue qui te ramène le téléphone._
+_[Jean-Luc Houédanou](https://houedanou.com) — FindHub t'emmène à Abobo, mais c'est l'honnêteté d'une inconnue qui te ramène le téléphone._

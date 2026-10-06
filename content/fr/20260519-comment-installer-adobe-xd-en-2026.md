@@ -61,4 +61,4 @@ Le but n'est pas de gagner un débat d'outils. Le but, c'est de finir le projet 
 
 ---
 
-*[Jean Houédanou](https://houedanou.com) — Adobe XD, c'est un peu comme un fax en 4K : techniquement impressionnant, stratégiquement discutable.*
+*[Jean-Luc Houédanou](https://houedanou.com) — Adobe XD, c'est un peu comme un fax en 4K : techniquement impressionnant, stratégiquement discutable.*

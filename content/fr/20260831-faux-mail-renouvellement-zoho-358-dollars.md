@@ -84,4 +84,4 @@ On blinde des serveurs, on impose le MFA partout, on fait des audits. Et l'attaq
 
 La règle à retenir, pour vous comme pour vos collègues : un mail ne prouve jamais un débit, seule votre banque le prouve. Le mail dit ce que l'expéditeur veut vous faire croire, le relevé dit ce qui s'est réellement passé.
 
-— [Jean Luc Houédanou](https://houedanou.com) · le « service client » de Zoho Backstage ne m'a toujours pas rappelé 🙂
+— [Jean-Luc Houédanou](https://houedanou.com) · le « service client » de Zoho Backstage ne m'a toujours pas rappelé 🙂

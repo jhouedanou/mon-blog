@@ -62,4 +62,4 @@ Apple no longer makes us dream. Apple delivers. Gross margin reaches **47.2%**, 
 *In short: less magic, more craft. And a bank account that would make a State blush.*
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com), apple muncher*
+*[Jean-Luc Houédanou](https://houedanou.com), apple muncher*

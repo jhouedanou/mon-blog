@@ -234,4 +234,4 @@ And for someone who has just received a refurbished Surface, an old test machine
 
 ---
 
-*[Jean Houédanou](https://houedanou.com), Microsoft does not like this article*
+*[Jean-Luc Houédanou](https://houedanou.com), Microsoft does not like this article*

@@ -62,4 +62,4 @@ Apple ne fait plus rêver. Apple délivre. La marge brute atteint **47,2 %**, au
 *En bref : moins de magie, plus de métier. Et un compte en banque à faire pâlir un État.*
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com) — croqueur de pommes*
+*[Jean-Luc Houédanou](https://houedanou.com) — croqueur de pommes*

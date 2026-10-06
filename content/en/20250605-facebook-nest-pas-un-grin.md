@@ -86,4 +86,4 @@ In conclusion, ladies, be yourselves.
 That's precisely what bothers some people, and that's a good thing.
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com) — committed grammarian*
+*[Jean-Luc Houédanou](https://houedanou.com) — committed grammarian*

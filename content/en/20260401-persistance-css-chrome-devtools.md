@@ -69,4 +69,4 @@ Questions? Would you like me to add a step-by-step recap with screenshots or a `
 
 ---
 
-*[Jean Luc Houédanou](https://houedanou.com), official distributor of Ctrl+S · #CtrlSLeRetour*
+*[Jean-Luc Houédanou](https://houedanou.com), official distributor of Ctrl+S · #CtrlSLeRetour*

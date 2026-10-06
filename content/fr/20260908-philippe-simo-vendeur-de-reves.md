@@ -44,3 +44,6 @@ Donc, pour ceux qui ont envie d'avancer : discutez l'idée, corrigez ce qui est 
 Pour les autres, vous pouvez retourner à vos histoires de « repos » 🙂
 
 _Photo : [Theo Decker](https://www.pexels.com/photo/5447327/), Pexels._
+
+---
+*[Jean-Luc Houédanou](https://houedanou.com)*

@@ -150,3 +150,6 @@ Pour travailler en déplacement, un iMac ne vous suivra pas. Dans ce cas, lisez 
 - [Article de présentation de Sharp](https://aminerostane.com/articles/sharp/), par Amine Rostane
 - [Code source de Sharp sur GitHub](https://github.com/amineross/sharp)
 - [Discussion sur Reddit (r/iMac)](https://www.reddit.com/r/iMac/comments/1wsm7f8/use_your_imac_as_a_highresolution_display_over/)
+
+---
+*[Jean-Luc Houédanou](https://houedanou.com)*

@@ -89,3 +89,6 @@ PureMac a besoin de l'accès complet au disque (Full Disk Access) pour lire les 
 Pour quelqu'un qui gère des serveurs et plusieurs machines au quotidien, ce genre d'outil qui ne demande ni abonnement ni confiance aveugle, c'est exactement ce qu'il faut. Rien à cacher, rien à payer, et le code est là pour ceux qui veulent vérifier.
 
 Si tu veux tester : `brew install --cask puremac`.
+
+---
+*[Jean-Luc Houédanou](https://houedanou.com)*

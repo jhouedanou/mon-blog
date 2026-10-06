@@ -62,4 +62,4 @@ Among his other Wear OS apps, you'll find in particular:
 These apps are generally lightweight, free, and designed to solve very specific problems encountered by smartwatch users.
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com) — waker of watches*
+*[Jean-Luc Houédanou](https://houedanou.com) — waker of watches*

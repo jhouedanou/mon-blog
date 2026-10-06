@@ -234,4 +234,4 @@ Et pour quelqu'un qui vient de recevoir une Surface refurbisée, une vieille mac
 
 ---
 
-*[Jean Houédanou](https://houedanou.com) —  Microsoft n'aime pas cet article*
+*[Jean-Luc Houédanou](https://houedanou.com) —  Microsoft n'aime pas cet article*

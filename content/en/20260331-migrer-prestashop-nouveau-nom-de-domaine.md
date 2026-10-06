@@ -180,5 +180,5 @@ But in 2026, in a world where digital sovereignty is no longer an abstract conce
 PrestaShop is not dead. It is just quiet. And sometimes, that is exactly what you need.
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com), proud member of the e-commerce old guard*
+*[Jean-Luc Houédanou](https://houedanou.com), proud member of the e-commerce old guard*
 

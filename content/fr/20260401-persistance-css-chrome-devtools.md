@@ -69,4 +69,4 @@ Des questions ? Vous voulez que j'ajoute un rappel pas à pas avec captures d'é
 
 ---
 
-*[Jean Luc Houédanou](https://houedanou.com) — distributeur officiel de Ctrl+S · #CtrlSLeRetour*
+*[Jean-Luc Houédanou](https://houedanou.com) — distributeur officiel de Ctrl+S · #CtrlSLeRetour*

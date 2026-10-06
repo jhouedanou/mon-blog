@@ -141,4 +141,4 @@ But today, with a **TTFB divided by five**, **zero licence fees**, and **regaine
 If "Uncle Donald" taught me anything, it is that **digital sovereignty, in Africa, starts with the choice of your tools.**
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com), converted to open source once again*
+*[Jean-Luc Houédanou](https://houedanou.com), converted to open source once again*

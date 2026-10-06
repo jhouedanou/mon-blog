@@ -82,3 +82,5 @@ That's it for the iPhone Duo. If you test your site with Rapto's tool and it tel
 ---
 
 *Photo credits: [Imad Clicks](https://www.pexels.com/@imadclicks/) and [picjumbo.com](https://www.pexels.com/@picjumbo-com-55570/) on Pexels. Screenshot: [Iphone Duo Preview](https://duo-responsive.vercel.app/).*
+
+*[Jean-Luc Houédanou](https://houedanou.com)*
