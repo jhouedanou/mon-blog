@@ -60,3 +60,5 @@ If you want to go further, the same **Wi-Fi** menu also lets you change the netw
 ---
 
 _Photos: [Pascal](https://www.pexels.com/@userpascal/) and [Christina Morillo](https://www.pexels.com/@divinetechygirl/), on Pexels._
+
+*[Jean-Luc Houédanou](https://houedanou.com)*

@@ -93,6 +93,6 @@ Je vais pas mentir : **on est loin de ce que j'ai pu faire ici (shameless self p
 Pour l'instant, c'est un design fonctionnel, minimaliste, parfois un peu brut. Mais j'y travaille. Les jours à venir verront arriver une vraie interface plus soignée, plus fluide, avec des animations et une meilleure lisibilité.
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com) — développeur en sueur*
+*[Jean-Luc Houédanou](https://houedanou.com) — développeur en sueur*
 
 

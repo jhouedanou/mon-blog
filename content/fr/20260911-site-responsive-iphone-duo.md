@@ -82,3 +82,5 @@ Voilà pour l'iPhone Duo. Si vous testez votre site avec l'outil de Rapto et qu'
 ---
 
 *Crédits photos : [Imad Clicks](https://www.pexels.com/@imadclicks/) et [picjumbo.com](https://www.pexels.com/@picjumbo-com-55570/) sur Pexels. Capture d'écran : [Iphone Duo Preview](https://duo-responsive.vercel.app/).*
+
+*[Jean-Luc Houédanou](https://houedanou.com)*

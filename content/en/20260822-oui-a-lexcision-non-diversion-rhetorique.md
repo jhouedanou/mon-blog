@@ -95,8 +95,7 @@ Let's recap. A mutilation, encouraged online, for a single real benefit: followe
 
 There's no side to spare here. No nuance to find. There are children, a blade, and adults deciding on their behalf in front of an audience.
 
-Enough. 
+Enough.
 
-
-
-
+---
+*[Jean-Luc Houédanou](https://houedanou.com)*

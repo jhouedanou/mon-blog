@@ -99,4 +99,4 @@ Heureusement, j'ai pu lui montrer comment utiliser **Claude 3.7 Sonnet**, un ass
 L'argent a une grammaire universelle, et surtout, il ne faut jamais prendre ses travaux personnels trop à cœur. **Savoir s'adapter (et garder son calme face aux stagiaires étourdies ou peu motivées), c'est aussi une forme d'intelligence.**
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com) — conteur de bugs*
+*[Jean-Luc Houédanou](https://houedanou.com) — conteur de bugs*

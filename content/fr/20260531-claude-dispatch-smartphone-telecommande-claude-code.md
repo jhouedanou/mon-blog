@@ -55,4 +55,4 @@ Simple. Efficace. Trois étapes.
 
 ---
 
-*[Jean Houédanou](https://houedanou.com) — C'est le genre de fonctionnalités qui donne un sens à l'augmentation des prix des mémoires RAM.*
+*[Jean-Luc Houédanou](https://houedanou.com) — C'est le genre de fonctionnalités qui donne un sens à l'augmentation des prix des mémoires RAM.*

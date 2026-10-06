@@ -72,3 +72,6 @@ C.R.E.A.M.
 Gates is right about AI. Meta was found liable for its networks. And in both cases, the conclusion is the same: in the end, money fixes everything. It pays for the damage, it pays for the memos, it even pays for the wisdom.
 
 Get the money. Dollar dollar bill, y'all.
+
+---
+*[Jean-Luc Houédanou](https://houedanou.com)*

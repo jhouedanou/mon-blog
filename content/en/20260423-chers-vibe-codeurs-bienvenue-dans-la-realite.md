@@ -116,4 +116,4 @@ Not to quietly edit your pricing pages at 5pm on a Tuesday.
 
 ---
 
-*Jean Houédanou. Otherwise... who would win in a one-on-one between Smush Parker and J Cole?*
+*[Jean-Luc Houédanou](https://houedanou.com). Otherwise... who would win in a one-on-one between Smush Parker and J Cole?*

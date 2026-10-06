@@ -115,4 +115,4 @@ La corruption ne vous fait pas gagner du temps.
 Au contraire, **elle vous met tous en retard.**
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com) — lanceur d'alertes amateur*
+*[Jean-Luc Houédanou](https://houedanou.com) — lanceur d'alertes amateur*

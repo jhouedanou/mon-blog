@@ -89,3 +89,6 @@ PureMac needs Full Disk Access to read the folders macOS protects (Mail, Safari,
 For someone who manages servers and several machines every day, this kind of tool that asks for neither a subscription nor blind trust is exactly what's needed. Nothing to hide, nothing to pay, and the code is right there for anyone who wants to check.
 
 If you want to try it: `brew install --cask puremac`.
+
+---
+*[Jean-Luc Houédanou](https://houedanou.com)*

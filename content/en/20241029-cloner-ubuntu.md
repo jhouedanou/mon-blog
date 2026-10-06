@@ -137,7 +137,6 @@ Check that the new partition really uses all the available space.
   This is THE part where you must not get it wrong
 - Patience: cloning can take a while, depending on how much data you have
 
-````
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com) — cloner of penguins*
+*[Jean-Luc Houédanou](https://houedanou.com) — cloner of penguins*

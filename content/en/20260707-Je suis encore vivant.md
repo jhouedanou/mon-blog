@@ -84,4 +84,4 @@ It is a job I chose, it is not the worst in the world, but above all people are 
 
 On that note, I need to go to sleep. Tomorrow there will be more walls to hit, and I fully intend to face them.
 
-**Jean-Luc Houédanou**
+**[Jean-Luc Houédanou](https://houedanou.com)**

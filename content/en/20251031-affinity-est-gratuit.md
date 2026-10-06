@@ -74,4 +74,4 @@ To find out more or download the suite, head to the official website:
 
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com) — designer freed from Adobe*
+*[Jean-Luc Houédanou](https://houedanou.com) — designer freed from Adobe*

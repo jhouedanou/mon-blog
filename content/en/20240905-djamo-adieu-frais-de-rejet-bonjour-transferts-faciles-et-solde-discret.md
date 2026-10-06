@@ -42,4 +42,4 @@ This wisdom highlights the importance of financial discretion, something Djamo s
 More seriously, these innovations show that Djamo really understands its users' needs, from small daily annoyances to big financial challenges. I sincerely hope the other players in the sector will take inspiration from this momentum to make our lives easier.
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com) — pocket economist*
+*[Jean-Luc Houédanou](https://houedanou.com) — pocket economist*

@@ -84,4 +84,4 @@ We harden servers, we enforce MFA everywhere, we run audits. And the attack most
 
 The rule to remember, for you and for your colleagues: an email never proves a charge, only your bank does. The email says what the sender wants you to believe, the statement says what actually happened.
 
-— [Jean Luc Houédanou](https://houedanou.com) · Zoho Backstage's "customer service" still hasn't called me back 🙂
+— [Jean-Luc Houédanou](https://houedanou.com) · Zoho Backstage's "customer service" still hasn't called me back 🙂

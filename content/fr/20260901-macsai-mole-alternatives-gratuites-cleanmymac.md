@@ -56,4 +56,4 @@ Si vous voulez une interface et l'équivalent complet de CleanMyMac, prenez MacS
 
 Dans les trois cas, le code est lisible par n'importe qui, rien ne quitte votre machine, et vous ne payez rien. Difficile de faire mieux comme comparatif avec CleanMyMac.
 
-[Jean Luc Houédanou](https://houedanou.com)
+[Jean-Luc Houédanou](https://houedanou.com)

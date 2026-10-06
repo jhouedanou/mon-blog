@@ -44,4 +44,4 @@ Ces histoires révèlent une stratégie bien rodée pour rendre l'expérience ut
 En conclusion : Arrêtez d'utiliser leurs services, si possible. Ou optez pour un abonnement mensuel, sans engagement (i.e Affinity).
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com) — rescapé d'Adobe*
+*[Jean-Luc Houédanou](https://houedanou.com) — rescapé d'Adobe*

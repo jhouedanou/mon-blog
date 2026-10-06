@@ -99,4 +99,4 @@ Luckily, I was able to show him how to use **Claude 3.7 Sonnet**, an AI assistan
 Money has a universal grammar, and above all, you should never take your work too personally. **Knowing how to adapt (and keeping your cool when faced with scatterbrained or unmotivated interns) is also a form of intelligence.**
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com) — bug storyteller*
+*[Jean-Luc Houédanou](https://houedanou.com) — bug storyteller*

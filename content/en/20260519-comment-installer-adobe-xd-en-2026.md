@@ -61,4 +61,4 @@ The goal is not to win a tooling debate. The goal is to finish the project befor
 
 ---
 
-*[Jean Houédanou](https://houedanou.com). Adobe XD is a bit like a fax machine in 4K: technically impressive, strategically questionable.*
+*[Jean-Luc Houédanou](https://houedanou.com). Adobe XD is a bit like a fax machine in 4K: technically impressive, strategically questionable.*

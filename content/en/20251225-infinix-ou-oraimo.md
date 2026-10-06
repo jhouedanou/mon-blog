@@ -47,4 +47,4 @@ Both watches offer the classic features: heart rate tracking, SpO2, sleep tracki
 In short, the Infinix Watch 3 wins you over with its high-end design, while the Oraimo Nova AM shines with its connected features and solid app. Your choice will depend on your priorities: looks or productivity.
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com) — connected watchmaker*
+*[Jean-Luc Houédanou](https://houedanou.com) — connected watchmaker*

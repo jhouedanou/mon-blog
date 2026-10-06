@@ -108,4 +108,4 @@ Maintenant vsus savez.
 
 ---
 
-_[Jean Luc Houédanou](https://houedanou.com) — content d'avoir un téléphone android._
+_[Jean-Luc Houédanou](https://houedanou.com) — content d'avoir un téléphone android._

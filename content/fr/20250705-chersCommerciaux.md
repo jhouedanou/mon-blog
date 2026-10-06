@@ -75,4 +75,4 @@ Un AirTag dans votre voiture, un iPhone dans votre poche, un MacBook dans votre 
 La technologie ne juge pas, elle se contente de documenter. C'est à vous de décider si cette documentation sera votre alibi ou votre piège.
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com) — espion technologique malgré lui*
+*[Jean-Luc Houédanou](https://houedanou.com) — espion technologique malgré lui*

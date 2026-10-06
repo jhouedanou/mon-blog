@@ -134,4 +134,4 @@ Ton enthousiasme reste admirable, même si "Never Leave You" ne s'en est jamais 
 N.B. : Dans certaines circonstances, le verre d'eau peut être agrémenté de menthe fraîche. Mais ceci relève d'une autre théorie.
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com) — maître zen des internets*
+*[Jean-Luc Houédanou](https://houedanou.com) — maître zen des internets*

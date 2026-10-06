@@ -72,3 +72,6 @@ C.R.E.A.M.
 Gates a raison sur l'IA. Meta a été condamné pour ses réseaux. Et dans les deux cas, la conclusion est la même : finalement, l'argent arrange tout. Il paie les dégâts, il paie les mémos, il paie même la sagesse.
 
 Get the money. Dollar dollar bill, y'all.
+
+---
+*[Jean-Luc Houédanou](https://houedanou.com)*

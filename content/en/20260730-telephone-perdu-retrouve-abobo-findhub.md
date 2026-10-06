@@ -77,4 +77,4 @@ Three lessons, free of charge, learned for 12,000 FCFA:
 2. **Don't act like the boss, don't sit in the back of the Yango.** Even if it's an Alto that comes to pick you up. In the front, you see your things, you see your pocket, you get out in one go. In the back, you scatter stuff.
 3. **Yango drivers aren't always pros.** Some don't even check the back seat after the ride. The "get out properly" reflex has to be yours.
 
-_[Jean Houédanou](https://houedanou.com) — FindHub takes you to Abobo, but it's a stranger's honesty that brings the phone back._
+_[Jean-Luc Houédanou](https://houedanou.com) — FindHub takes you to Abobo, but it's a stranger's honesty that brings the phone back._

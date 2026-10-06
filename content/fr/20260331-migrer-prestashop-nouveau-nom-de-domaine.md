@@ -180,5 +180,5 @@ Mais en 2026, dans un monde où la souveraineté numérique n'est plus un concep
 PrestaShop n'est pas mort. Il est juste discret . Et parfois, c'est exactement ce dont on a besoin.
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com) — fier d'appartenir à la vieille garde du E-commerce*
+*[Jean-Luc Houédanou](https://houedanou.com) — fier d'appartenir à la vieille garde du E-commerce*
 
