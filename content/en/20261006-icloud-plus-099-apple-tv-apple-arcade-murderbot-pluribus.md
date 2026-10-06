@@ -1,7 +1,6 @@
 ---
 title: "iCloud+ for $0.99: Apple TV and Apple Arcade included (and Apple TV is really good)"
 createdAt: "2026-10-06T01:00:00Z"
-draft: true
 image: "/images/articles/pexels-jakubzerdzicki-28973296.webp"
 description: "Since September 2026, in Côte d'Ivoire, the $0.99-a-month 50GB iCloud+ plan includes Apple TV and Apple Arcade. I came for the storage, I'm staying for Murderbot and Pluribus."
 searchIntent: "What does the $0.99-a-month iCloud+ plan include in Côte d'Ivoire now that it comes with Apple TV and Apple Arcade, and is Apple TV worth it (Murderbot, Pluribus)?"
