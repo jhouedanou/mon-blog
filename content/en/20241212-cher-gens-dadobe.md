@@ -42,4 +42,4 @@ These stories reveal a well-oiled strategy for making the user experience delibe
 In conclusion: stop using their services, if you can. Or go for a monthly subscription with no commitment (i.e. [Affinity](/en/20251031-affinity-est-gratuit)).
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com) — Adobe survivor*
+*[Jean-Luc Houédanou](https://houedanou.com) — Adobe survivor*

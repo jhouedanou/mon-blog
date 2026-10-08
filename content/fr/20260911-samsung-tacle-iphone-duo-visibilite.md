@@ -52,3 +52,6 @@ Si ça se produit avec les pliables, Samsung aura fait la publicité de la caté
 ---
 
 *Crédits : captures d'écran des publications de [Samsung Mobile US](https://x.com/SamsungMobileUS) sur X, image tirée de la vidéo Samsung partagée par [@WorkaholicDavid](https://x.com/WorkaholicDavid). Sources : [TV5 Monde](https://information.tv5monde.com/international/ils-nous-ont-copies-samsung-tacle-le-nouvel-iphone-pliable-dapple-sur-les-reseaux-sociaux-2836914), [Phonandroid](https://www.phonandroid.com/pourquoi-chaque-iphone-duo-vendu-par-apple-fait-la-fortune-de-samsung.html).*
+
+---
+*[Jean-Luc Houédanou](https://houedanou.com)*

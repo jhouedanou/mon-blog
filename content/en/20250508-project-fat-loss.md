@@ -48,4 +48,4 @@ I won't lie: **it's a long way from what I managed to do here (shameless self pl
 For now, it's a functional, minimalist, sometimes slightly rough design. But I'm working on it. The coming days will bring a real, more polished, smoother interface, with animations and better readability.
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com) — sweaty developer*
+*[Jean-Luc Houédanou](https://houedanou.com) — sweaty developer*

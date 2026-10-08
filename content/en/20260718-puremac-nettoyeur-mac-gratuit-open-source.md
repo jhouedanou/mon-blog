@@ -91,3 +91,6 @@ For someone who manages servers and several machines every day, this kind of too
 If you want to try it: `brew install --cask puremac`.
 
 *Updated October 8, 2026: download link now points to the latest version (3.1.0), and a correction on deletion: only uninstalls, orphans and duplicates go through the Trash, the rest of the cleanup can be permanent, according to the [PureMac README](https://github.com/momenbasel/PureMac#our-promise).*
+
+---
+*[Jean-Luc Houédanou](https://houedanou.com)*

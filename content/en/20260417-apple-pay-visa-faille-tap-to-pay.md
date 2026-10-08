@@ -105,5 +105,4 @@ The good news is that the fix is right there in your settings. The bad news is t
 Now you know.
 
 ---
-
-_[Jean Luc Houédanou](https://houedanou.com), happy to own an Android phone._
+_[Jean-Luc Houédanou](https://houedanou.com), happy to own an Android phone._

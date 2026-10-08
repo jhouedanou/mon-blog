@@ -78,4 +78,4 @@ An AirTag in your car, an iPhone in your pocket, a MacBook in your bag... These 
 Technology doesn't judge, it simply documents. It's up to you to decide whether that documentation will be your alibi or your trap.
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com) — reluctant tech spy*
+*[Jean-Luc Houédanou](https://houedanou.com) — reluctant tech spy*

@@ -235,8 +235,7 @@ Et pour quelqu'un qui vient de recevoir une Surface refurbisée, une vieille mac
 - **Création de compte local après coup** : Paramètres → Comptes → Autres utilisateurs
 - **Supprimer un compte Microsoft** : Paramètres → Comptes → Vos infos → Gérer votre compte Microsoft
 
----
-
-*[Jean Houédanou](https://houedanou.com) — Microsoft n'aime pas cet article*
-
 *Mise à jour du 8 octobre 2026 : Microsoft a retiré `bypassnro.cmd` des builds récentes de Windows 11 ([Windows Latest](https://windowslatest.com/2025/03/29/windows-11-is-not-killing-off-hack-that-lets-you-bypass-microsoft-account-but-it-takes-more-efforts-now/)) puis `start ms-cxh:localonly` des builds Insider ([PCWorld](https://www.pcworld.com/article/2932975/microsoft-kills-two-more-ways-to-install-windows-11-with-local-accounts.html)) : ajout de la clé de registre de secours, correction de la procédure RUFUS d'après sa [FAQ](https://github.com/pbatard/rufus/wiki/FAQ), et du piège n° 5 (on peut repasser en compte local après coup).*
+
+---
+*[Jean-Luc Houédanou](https://houedanou.com) — Microsoft n'aime pas cet article*

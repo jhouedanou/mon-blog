@@ -106,4 +106,4 @@ Vérifiez que la nouvelle partition utilise bien tout l'espace disponible.
 *Mise à jour du 8 octobre 2026 : ajout de précautions sourcées (clonage depuis une session live, disque source avec erreurs de lecture, UUID identiques après le clonage).*
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com) — cloneur de manchots*
+*[Jean-Luc Houédanou](https://houedanou.com) — clonneur de manchots*

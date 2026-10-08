@@ -91,3 +91,6 @@ Pour quelqu'un qui gère des serveurs et plusieurs machines au quotidien, ce gen
 Si tu veux tester : `brew install --cask puremac`.
 
 *Mise à jour du 8 octobre 2026 : lien de téléchargement pointé vers la dernière version (3.1.0), et correction sur la suppression : seules la désinstallation, les orphelins et les doublons passent par la corbeille, le reste du nettoyage peut être définitif, d'après le [README de PureMac](https://github.com/momenbasel/PureMac#our-promise).*
+
+---
+*[Jean-Luc Houédanou](https://houedanou.com)*

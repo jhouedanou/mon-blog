@@ -107,3 +107,6 @@ None of this is distrust. It's simply what's left once you've understood that an
 
 ---
 *Photo: [Ketut Subiyanto](https://www.pexels.com/photo/4584385/), Pexels.*
+
+---
+*[Jean-Luc Houédanou](https://houedanou.com)*

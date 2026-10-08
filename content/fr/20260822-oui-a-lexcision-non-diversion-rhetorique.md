@@ -94,3 +94,6 @@ Récapitulons. Une mutilation, encouragée en ligne, pour un seul bénéfice ré
 Il n'y a pas de camp à ménager ici. Pas de nuance à trouver. Il y a des enfants, une lame, et des adultes qui décident à leur place devant un public.
 
 Ça suffit. 
+
+---
+*[Jean-Luc Houédanou](https://houedanou.com)*

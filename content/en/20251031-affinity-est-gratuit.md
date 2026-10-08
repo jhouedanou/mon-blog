@@ -74,4 +74,4 @@ To find out more or download the suite, head to the official website:
 *Updated October 8, 2026: clarified the terms of use. A free Canva account is enough for Affinity, but the AI tools require a [Canva premium plan](https://www.affinity.studio/). Link to the official website updated (affinity.studio).*
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com) — designer freed from Adobe*
+*[Jean-Luc Houédanou](https://houedanou.com) — designer freed from Adobe*

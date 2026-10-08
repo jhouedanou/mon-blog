@@ -143,3 +143,6 @@ There is one trade-off: the old WordPress addresses now return 404 instead of 41
 ---
 
 *Chart: invocations of the mon-blog Worker from 15 to 22 September 2026, from Cloudflare's analytics API.*
+
+---
+*[Jean-Luc Houédanou](https://houedanou.com)*

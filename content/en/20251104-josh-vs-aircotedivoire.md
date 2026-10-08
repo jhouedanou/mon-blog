@@ -85,4 +85,4 @@ And if you speak a wee bit of French, I'd recommend reading [this piece on crisi
 Safe travels, and here's hoping your next African adventure goes more smoothly. ✈️
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com) — steward of the debate*
+*[Jean-Luc Houédanou](https://houedanou.com) — steward of the debate*

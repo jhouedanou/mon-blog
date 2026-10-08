@@ -36,4 +36,4 @@ Les prochaines étapes sont les suivantes :
 À très bientôt.
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com) — déménageur numérique*
+*[Jean-Luc Houédanou](https://houedanou.com) — déménageur numérique*

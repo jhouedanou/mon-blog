@@ -143,4 +143,4 @@ Si « Tonton Donald » m'a appris quelque chose, c'est que **la souveraineté nu
 *Mise à jour du 8 octobre 2026 : ionCube publie aujourd'hui des loaders pour PHP 8.4 et 8.5 ([page officielle des loaders](https://www.ioncube.com/loaders.php)). Avant de rétrograder vers `lsphp82`, vérifiez donc que la version du loader installé correspond à votre version de PHP. Autre raison de ne pas s'éterniser sur PHP 8.2 : il ne reçoit plus de correctifs de sécurité après le 31 décembre 2026 ([calendrier officiel de PHP](https://www.php.net/supported-versions.php)).*
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com) — de nouveau converti à l'open source*
+*[Jean-Luc Houédanou](https://houedanou.com) — de nouveau converti à l'open source*

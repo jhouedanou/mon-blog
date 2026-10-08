@@ -158,3 +158,6 @@ Pour travailler en déplacement, un iMac ne vous suivra pas. Dans ce cas, lisez 
 - [Notes de version de Sharp sur GitHub](https://github.com/amineross/sharp/releases)
 
 *Mise à jour du 8 octobre 2026 : Sharp est toujours en bêta (1.0 Beta 2.2). Depuis la bêta 2, il accepte aussi un câble Thunderbolt et propose un récepteur pour les Mac Intel sous macOS 10.13.6 ; il demande en plus l'accès au réseau local. Sources : [notes de version](https://github.com/amineross/sharp/releases) et [README](https://github.com/amineross/sharp).*
+
+---
+*[Jean-Luc Houédanou](https://houedanou.com)*

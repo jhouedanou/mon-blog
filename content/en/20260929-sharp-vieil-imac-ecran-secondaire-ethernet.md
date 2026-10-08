@@ -158,3 +158,6 @@ To work on the go, an iMac won't follow you. In that case, read my review of [th
 - [Sharp release notes on GitHub](https://github.com/amineross/sharp/releases)
 
 *Updated October 8, 2026: Sharp is still in beta (1.0 Beta 2.2). Since beta 2, it also works over a Thunderbolt cable and offers a receiver for Intel Macs on macOS 10.13.6; it now also asks for Local Network access. Sources: [release notes](https://github.com/amineross/sharp/releases) and [README](https://github.com/amineross/sharp).*
+
+---
+*[Jean-Luc Houédanou](https://houedanou.com)*

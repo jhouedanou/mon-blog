@@ -48,4 +48,4 @@ En résumé, l'Infinix Watch 3 séduit par son design haut de gamme, tandis que 
 Pour la suite de l'histoire : j'ai finalement troqué l'Oraimo contre une Pixel Watch, et j'explique [comment lui faire allumer l'écran à chaque notification](/fr/20260311-comment-allumer-lecran-pixel-watch-notifications).
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com) — horloger connecté*
+*[Jean-Luc Houédanou](https://houedanou.com) — horloger connecté*

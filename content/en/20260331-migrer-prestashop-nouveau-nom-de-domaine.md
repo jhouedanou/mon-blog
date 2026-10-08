@@ -174,5 +174,4 @@ PrestaShop is not dead. It is just quiet. And sometimes, that is exactly what yo
 *Updated October 8, 2026: step 2 has been corrected. The domain name is not stored in `parameters.php` or `settings.inc.php`, contrary to what the first version said, and the `PS_COOKIE_DOMAIN` key mentioned in step 1 does not exist in PrestaShop ([source code](https://github.com/PrestaShop/PrestaShop)).*
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com), proud member of the e-commerce old guard*
-
+*[Jean-Luc Houédanou](https://houedanou.com), proud member of the e-commerce old guard*

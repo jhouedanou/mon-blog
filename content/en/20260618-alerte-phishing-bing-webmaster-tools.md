@@ -68,6 +68,7 @@ We spend our days hardening servers, patching vulnerabilities and securing confi
 
 Check your tabs, warn your colleagues, and get into the habit of checking the URL before you click.
 
-— Jean Houédanou · [houedanou.com](https://houedanou.com)
-
 *Updated October 8, 2026: correcting a mistake on my part. The real Bing Webmaster Tools does accept sign-in with a Google account ([Search Engine Journal](https://www.searchenginejournal.com/bing-webmaster-tools-now-social-login-option/236569/)), so that button is not a sign of phishing in itself. The domain remains the only reliable clue.*
+
+---
+*[Jean-Luc Houédanou](https://houedanou.com)*

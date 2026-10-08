@@ -56,4 +56,4 @@ Plus sérieusement… votre MacBook Pro 2017 n'est pas un bolide conçu pour abs
 Et ça, aucun vendeur arrogant ne pourra vous le vendre : c'est à vous de le savoir.
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com) — débunkeur de watts*
+*[Jean-Luc Houédanou](https://houedanou.com) — débunkeur de watts*

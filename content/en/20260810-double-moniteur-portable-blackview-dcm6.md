@@ -93,5 +93,5 @@ If you're in Abidjan, you can find them in local shops, like the Samsung market 
 
 Alternatively, there are online platforms where you can buy quality products at competitive prices from Amazon and have them delivered to Abidjan, like Cart'in.
 
-
-Jean Luc Houédanou.
+---
+*[Jean-Luc Houédanou](https://houedanou.com)*

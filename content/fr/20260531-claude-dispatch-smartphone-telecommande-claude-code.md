@@ -52,8 +52,7 @@ Pour ma part, l'usage reste simple : je n'ai jamais délégué l'écriture de mo
 
 Simple. Efficace. Trois étapes.
 
----
-
-*[Jean Houédanou](https://houedanou.com) — C'est le genre de fonctionnalités qui donnent un sens à l'augmentation des prix des mémoires RAM.*
-
 *Mise à jour du 8 octobre 2026 : précisions d'après la [documentation officielle de Remote Control](https://code.claude.com/docs/en/remote-control) — la fonction s'appelle Remote Control (Dispatch est l'équivalent pour Cowork), elle est ouverte aux plans Pro, Max, Team et Enterprise, la session se retrouve dans l'onglet Code de l'app, et elle se reconnecte après une mise en veille.*
+
+---
+*[Jean-Luc Houédanou](https://houedanou.com) — C'est le genre de fonctionnalités qui donnent un sens à l'augmentation des prix des mémoires RAM.*

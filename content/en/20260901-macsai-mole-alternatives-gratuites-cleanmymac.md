@@ -54,4 +54,5 @@ If you want an interface and the complete equivalent of CleanMyMac, go for MacSa
 
 In all three cases, the code can be read by anyone, nothing leaves your machine, and you pay nothing. Hard to do better as a comparison with CleanMyMac.
 
-[Jean Luc Houédanou](https://houedanou.com)
+---
+[Jean-Luc Houédanou](https://houedanou.com)

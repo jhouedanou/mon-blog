@@ -143,4 +143,4 @@ If "Uncle Donald" taught me anything, it is that **digital sovereignty, in Afric
 *Updated October 8, 2026: ionCube now publishes loaders for PHP 8.4 and 8.5 ([official loaders page](https://www.ioncube.com/loaders.php)). Before downgrading to `lsphp82`, check that the installed loader version matches your PHP version. Another reason not to linger on PHP 8.2: it stops receiving security fixes after December 31, 2026 ([official PHP schedule](https://www.php.net/supported-versions.php)).*
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com), converted to open source once again*
+*[Jean-Luc Houédanou](https://houedanou.com), converted to open source once again*
