@@ -4,7 +4,7 @@ createdAt: "2026-09-08T20:47:00Z"
 image: "/images/articles/philippe-simo-vendeur-de-reves.webp"
 description: "Since August, people have piled onto Philippe Simo for his line about owning a home at 30. It's wrong here. But selling achievable dreams is a useful job."
 searchIntent: "Why the Philippe Simo controversy about owning property at 30 is badly framed, how his statement is wrong in the Ivorian and Cameroonian context, and why his message on saving and investing back home remains useful."
-tags: ["opinion", "society", "personal finance", "Africa"]
+tags: ["opinion", "society", "personal finance", "africa"]
 ---
 
 Since early August, the Franco-African web has been piling onto Philippe Simo. The reason: he said that at 30, if you don't own your main residence, "poverty is lying in wait for you". Dozens of channels, including those that have made "Philippe Simo bashing" their bread and butter, got their audience for the week out of it.

@@ -3,13 +3,13 @@ title: "Why so much hatred for Adobe? (Because it's deserved.)"
 image: "/images/articles/adobe.webp"
 createdAt: "2024-12-12"
 id: 2024-12-12
-description: "Find out why Adobe draws so much criticism: questionable business practices, broken customer service and hidden fees. A personal account of the frustrations that come with this unavoidable design company."
+description: "A payment method you cannot change, a support AI that blocks the way, an Adobe Express plan slipped in behind my back: why the hatred for Adobe is deserved."
 searchIntent: "Why is Adobe so heavily criticised and what alternatives can replace its creative subscriptions?"
 tags: ["tech", "opinion"]
 summary: "A personal account of the frustrations that come with Adobe: broken customer service, forced subscriptions and misleading interfaces. The article explains why the criticism aimed at Adobe is justified, mentions the ongoing lawsuits and suggests alternatives such as Affinity."
 ---
 
-Although Affinity Designer is a fine alternative, in a professional setting I have no other choice but to use Adobe. Most of the designs I have to turn into code and websites are made with Adobe, and I don't yet know Affinity Photo 2 well enough to confidently edit the RAW files coming out of my Theta Z1 camera.
+Although Affinity Designer is a fine alternative, in a professional setting I have no other choice but to use Adobe. Most of the designs I have to turn into code and websites are [made with Adobe](/en/20260519-comment-installer-adobe-xd-en-2026), and I don't yet know Affinity Photo 2 well enough to confidently edit the RAW files coming out of my Theta Z1 camera.
 
 So I have to use Adobe... but sometimes at the expense of my mental health, not to mention the price. I'll admit my judgement may be a little exaggerated, but I am deeply disappointed to have no alternative to Adobe.
 
@@ -34,12 +34,12 @@ A new battle with customer service followed: "I don't want Adobe Express, I don'
 
 Because yes, Adobe is facing several lawsuits over questionable business practices:
 
-- **Hidden cancellation fees**: the US Department of Justice is suing Adobe for concealing cancellation fees that can reach several hundred dollars. These fees apply to annual subscriptions paid monthly.
+- **Hidden cancellation fees**: the [US Department of Justice is suing Adobe](https://www.ftc.gov/news-events/news/press-releases/2024/06/ftc-takes-action-against-adobe-executives-hiding-fees-preventing-consumers-easily-cancelling) for concealing cancellation fees that can reach several hundred dollars. These fees apply to annual subscriptions paid monthly.
 - **Misleading interfaces**: the Federal Trade Commission (FTC) accuses Adobe of designing interfaces that push users to subscribe without clearly disclosing the terms. Cancelling then becomes an obstacle course.
 
 These stories reveal a well-oiled strategy for making the user experience deliberately frustrating.
 
-In conclusion: stop using their services, if you can. Or go for a monthly subscription with no commitment (i.e. Affinity).
+In conclusion: stop using their services, if you can. Or go for a monthly subscription with no commitment (i.e. [Affinity](/en/20251031-affinity-est-gratuit)).
 
 ---
 *[Jean Luc Houédanou](https://houedanou.com) — Adobe survivor*

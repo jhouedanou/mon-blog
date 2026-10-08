@@ -2,7 +2,7 @@
 title: "Comment retrouver l'accès au dossier GitHub après être passé sur iCloud+ (grâce à Time Machine)"
 createdAt: "2026-09-25T19:30:00Z"
 image: "/images/articles/pexels-jibarofoto-2148222.webp"
-description: "Après avoir activé la synchronisation du Bureau et des Documents avec iCloud+, mes dépôts GitHub ne répondaient plus. Voici pourquoi iCloud Drive bloque Git, et comment récupérer ses dossiers de code avec une sauvegarde Time Machine."
+description: "La synchro iCloud du Bureau et des Documents a bloqué mes dépôts GitHub. Pourquoi Git ne la supporte pas, et comment tout récupérer avec Time Machine."
 searchIntent: "Comment récupérer sur Mac un dossier GitHub bloqué par la synchronisation iCloud Drive des dossiers Bureau et Documents, en le restaurant avec Time Machine ?"
 tags: ["tutoriel", "apple", "macos", "icloud", "git", "dev"]
 ---
@@ -11,7 +11,7 @@ tags: ["tutoriel", "apple", "macos", "icloud", "git", "dev"]
 
 Bon, je doute qu'un développeur compétent tombe sur ce problème, mais c'est une erreur qui peut arriver même aux plus expérimenté(e)s.
 
-J'ai récemment pris l'offre payante d'iCloud, en grande partie pour son prix : 700 FCFA par mois pour 50 Go de stockage cloud, un accès à Apple TV (l'ex-Apple TV+) ainsi qu'à Apple Arcade, [inclus dans iCloud+ en Côte d'Ivoire depuis septembre](https://www.apple.com/ci/newsroom/2026/09/icloud-plus-expands-to-include-apple-tv-and-apple-arcade/).
+J'ai récemment pris [l'offre payante d'iCloud](/fr/20261006-icloud-plus-099-apple-tv-apple-arcade-murderbot-pluribus), en grande partie pour son prix : 700 FCFA par mois pour 50 Go de stockage cloud, un accès à Apple TV (l'ex-Apple TV+) ainsi qu'à Apple Arcade, [inclus dans iCloud+ en Côte d'Ivoire depuis septembre](https://www.apple.com/ci/newsroom/2026/09/icloud-plus-expands-to-include-apple-tv-and-apple-arcade/).
 
 Ensuite, j'ai activé l'option « Dossiers Bureau et Documents » d'iCloud Drive, soit la fonctionnalité d'iCloud qui vous permet de synchroniser les fichiers et les dossiers de votre Bureau et de votre dossier Documents avec vos ordinateurs Mac. Tout allait bien jusqu'à ce que j'essaie de rapatrier du code depuis un repo GitHub. La roue tourne, indéfiniment, sans mise à jour.
 

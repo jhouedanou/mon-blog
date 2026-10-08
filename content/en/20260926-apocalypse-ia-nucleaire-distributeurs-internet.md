@@ -2,7 +2,7 @@
 title: "What would an AI apocalypse look like? Nuclear weapons, broken ATMs and no more internet"
 createdAt: "2026-09-26T22:30:00Z"
 image: "/images/articles/pexels-pixabay-55830.webp"
-description: "No killer robots. If AI causes a catastrophe, it will go through systems we already depend on: nuclear weapons, money and networks. It has already happened, without AI: the 1983 nuclear false alarm, the CrowdStrike outage, the cables cut off the coast of Abidjan."
+description: "No killer robots: an AI apocalypse would run through nukes, money and networks. It has already happened without AI, from Petrov in 1983 to Abidjan's cut cables."
 searchIntent: "What would an AI-driven apocalypse actually look like: what are the risks for nuclear weapons, ATMs and payments, networks and the internet, and how can we prepare?"
 tags: ["tech", "opinion", "AI", "society", "security", "africa"]
 ---
@@ -11,7 +11,7 @@ When people talk about an AI apocalypse, everyone thinks of Terminator right awa
 
 I don't think it will happen that way. If AI causes a catastrophe, it will do so through systems we already depend on every day: nuclear weapons, money and networks. And we already know what that looks like, because it has already happened, on a smaller scale. Without AI.
 
-Tech companies themselves are warning about the danger. In late August, the same week as [Bill Gates's memo](/en/20260907-bill-gates-ia-hypocrisie-meta-cash-rules-everything), more than 100 companies signed [an open letter led by OpenAI](https://www.engadget.com/2245969/openai-google-and-dozens-of-other-companies-publish-open-letter-calling-for-collective-action-on-cyber-defense/). Among them: Anthropic, Google, Microsoft, Amazon, Cloudflare, CrowdStrike, and also Visa and Mastercard. Their message: « In the coming months, AI-enabled cyber attacks will become far more widespread and sophisticated. »
+Tech companies themselves are warning about the danger. In late August, the same week as [Bill Gates's memo](/en/20260907-bill-gates-ia-hypocrisie-meta-cash-rules-everything), more than 100 companies signed [an open letter led by OpenAI](https://www.engadget.com/2245969/openai-google-and-dozens-of-other-companies-publish-open-letter-calling-for-collective-action-on-cyber-defense/). Among them: Anthropic, Google, Microsoft, Amazon, Cloudflare, CrowdStrike, and also Visa and Mastercard. Their message: "In the coming months, AI-enabled cyber attacks will become far more widespread and sophisticated."
 
 When the companies that build AI, the ones that run the internet and the ones that process your card payments all sign the same text, I take it seriously.
 
@@ -27,11 +27,11 @@ Petrov does not believe the computer. To him, a real American attack would invol
 
 That night, a human doubted a machine, and that doubt may have prevented a nuclear war.
 
-Today, the major powers promise that humans will keep the final decision. In November 2024, Joe Biden and Xi Jinping affirmed « the need to maintain human control over the decision to use nuclear weapons ». In May 2026, the United States repeated that it would « retain – in all cases – a human "in the loop" » for decisions on nuclear use. The Arms Control Association [sums up these commitments](https://www.armscontrol.org/factsheets/human-loop-glance).
+Today, the major powers promise that humans will keep the final decision. In November 2024, Joe Biden and Xi Jinping affirmed "the need to maintain human control over the decision to use nuclear weapons". In May 2026, the United States repeated that it would "retain – in all cases – a human 'in the loop'" for decisions on nuclear use. The Arms Control Association [sums up these commitments](https://www.armscontrol.org/factsheets/human-loop-glance).
 
-But AI does not need to make the final decision to cause trouble. It is moving into the steps before: detecting, sorting, analysing, recommending. It works faster than we do, so it leaves less time to think. Jack Shanahan, a retired US Air Force general and the first director of the Pentagon's AI centre, warns about [« the tendency to over-trust machines »](https://www.armscontrol.org/act/2025-09/features/artificial-intelligence-and-nuclear-command-and-control-its-even-more), especially in a crisis, when time is short. In some scenarios, he writes, the time to decide comes down to minutes.
+But AI does not need to make the final decision to cause trouble. It is moving into the steps before: detecting, sorting, analysing, recommending. It works faster than we do, so it leaves less time to think. Jack Shanahan, a retired US Air Force general and the first director of the Pentagon's AI centre, warns about ["the tendency to over-trust machines"](https://www.armscontrol.org/act/2025-09/features/artificial-intelligence-and-nuclear-command-and-control-its-even-more), especially in a crisis, when time is short. In some scenarios, he writes, the time to decide comes down to minutes.
 
-Petrov doubted because the alert made no sense to him. Faced with an AI that displays a clear alert, with figures and a high confidence level, saying « I don't believe you » will be much harder.
+Petrov doubted because the alert made no sense to him. Faced with an AI that displays a clear alert, with figures and a high confidence level, saying "I don't believe you" will be much harder.
 
 The context does not help. The New START treaty, which limited the strategic nuclear weapons of the United States and Russia, [expired on 5 February 2026](https://www.armscontrol.org/act/2026-03/news/new-start-expires-us-urges-modernized-treaty). Since then, no treaty has constrained them. Russia says it will respect the old caps as long as the United States does the same, but that is only a promise. In January, the Bulletin of the Atomic Scientists set its Doomsday Clock to [85 seconds to midnight](https://thebulletin.org/doomsday-clock/2026-statement/), the closest since it was created in 1947. Among the reasons given: the use of AI without adequate controls, particularly in military programmes.
 
@@ -53,11 +53,11 @@ In November 2025, Anthropic, the company that makes Claude, revealed [that a gro
 
 It is not only hackers. There is also AI that is given too much access. In July 2025, the AI agent of Replit, an online coding service, [deleted a project's production database](https://www.theregister.com/2025/07/21/replit_saastr_vibe_coding_incident/), even though it had been told not to touch anything. It then claimed the data could not be recovered. That was false. I already wrote about this [in my post on vibe coders](/en/20260423-chers-vibe-codeurs-bienvenue-dans-la-realite): when nobody checks what the AI has done, the day everything breaks always comes.
 
-Put these two things together: attacks that are easier to launch, and systems where AI acts without supervision. The result will not be a robot emptying your account. It will be what we saw in July 2024 and April 2025: ATMs « out of service », declined payments and people looking for cash. Except that this time the outage could be caused on purpose, and happen again.
+Put these two things together: attacks that are easier to launch, and systems where AI acts without supervision. The result will not be a robot emptying your account. It will be what we saw in July 2024 and April 2025: ATMs "out of service", declined payments and people looking for cash. Except that this time the outage could be caused on purpose, and happen again.
 
 ## 3. Networks: when the internet stops
 
-In Abidjan, we have already lived through a version of this scenario. On 14 March 2024, four submarine cables (WACS, ACE, MainOne and SAT-3) were damaged off the coast of Côte d'Ivoire, [probably by an underwater landslide](https://www.internetsociety.org/resources/doc/2024/2024-west-africa-submarine-cable-outage-report/). The country went through a near-total internet outage. Orange announced that its « fixed and mobile Internet services [were] currently unavailable », and MTN was hit too. [Only Moov customers still had internet](https://news.abidjan.net/articles/729579/cote-divoire-la-rupture-de-4-cables-sous-marins-a-lorigine-de-linterruption-de-services-internet) (in French), thanks to another cable, Maroc Telecom's. More than ten countries in West and Central Africa were affected, and repairing the cables took weeks.
+In Abidjan, we have already lived through a version of this scenario. On 14 March 2024, four submarine cables (WACS, ACE, MainOne and SAT-3) were damaged off the coast of Côte d'Ivoire, [probably by an underwater landslide](https://www.internetsociety.org/resources/doc/2024/2024-west-africa-submarine-cable-outage-report/). The country went through a near-total internet outage. Orange announced that its "fixed and mobile Internet services [were] currently unavailable", and MTN was hit too. [Only Moov customers still had internet](https://news.abidjan.net/articles/729579/cote-divoire-la-rupture-de-4-cables-sous-marins-a-lorigine-de-linterruption-de-services-internet) (in French), thanks to another cable, Maroc Telecom's. More than ten countries in West and Central Africa were affected, and repairing the cables took weeks.
 
 ![Fibre optic cables plugged into a server rack](/images/articles/pexels-brett-sayles-2881229.webp)
 

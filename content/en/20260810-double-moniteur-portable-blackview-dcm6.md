@@ -2,7 +2,7 @@
 title: "Portable dual monitor: productivity boost or gadget?"
 createdAt: "2026-08-10"
 image: "/images/articles/image_b81a07e7.webp"
-description: "My feedback on working with a dual screen that clips onto the laptop's display."
+description: "Two 14-inch screens that unfold on either side of the laptop: my take on this portable dual monitor, its real strengths, its limits and who it is actually for."
 searchIntent: "Should you buy a portable dual monitor for working on the go, and what are the pros and cons compared with an iPad in Sidecar or a regular USB-C monitor."
 tags: ["tech", "productivity", "hardware", "review"]
 ---
@@ -11,7 +11,7 @@ I can't remember the last time I worked on a single screen. Not at home, not on 
 
 ## Why a dual screen?
 
-The thing is, when I code (and I code often...everywhere...all the time), I need immediate visual feedback, so I can check how my lines of code render in the web browser. 
+The thing is, when I code (and I code often… everywhere… all the time), I need immediate visual feedback, so I can check how my lines of code render in the web browser. 
 
 At the same time, I also need to look at documentation or the fixes Claude suggests: juggling between macOS "spaces" or Windows "virtual desktops" is no substitute for being able to **see everything at once**, and with every desktop switch there are tiny breaks in attention.
 
@@ -21,7 +21,7 @@ I had 3 solutions until now, each with its share of compromises.
 
 **The iPad mini in Sidecar.** It works, it's elegant, but the screen is small. You can put a chat window on it, not technical docs and even less a web application, because of the resolution.
 
-**A portable USB-C monitor (Arzopa).** More surface area, but fragile, and wobbly without its stand. From moving it around so much, I now have two small blue spots on the screen. 
+**A portable USB-C monitor (Arzopa).** More surface area, but fragile, and wobbly without its stand. From moving it around so much, I now have two small blue spots on the screen.
 *So using it on the go is out of the question (I plugged a Chromecast into it, hung it on a wall and it serves as a TV facing my workspace).* 
 
 **A (large) external monitor**: in my case a 34-inch at home and a 29-inch at the office, both ultrawide with high resolutions. Probably the best choice of the three, but impossible to use anywhere other than the office or home.
@@ -34,7 +34,7 @@ My curiosity was piqued by a device that offers to solve the problem differently
 
 It looks like a dual-screen desktop setup, but in a portable version.
 
-I bought one, and here's my experience. 
+I bought one (a Blackview DCM6), and here's my experience.
 
 ## Advantages
 
@@ -48,9 +48,11 @@ My 13" MacBook Pro only has **two Thunderbolt 3 ports**. With both screens takin
 
 
 Next, on the road, my layout is always the same:
+
 - **Left screen**: Claude, Slack or Teams. Conversations stay visible, but in the periphery.
 - **Centre screen** (the laptop): terminal and code editor. That's where my eyes are 90% of the time.
 - **Right screen**: browser, docs, app preview.
+
 That's exactly the configuration I have on my fixed desk. The difference is that I can now reproduce it elsewhere. **That's the real gain: continuity of the working environment**, not raw display area.
 
 Finally, as for the hinge, little to no worry, the supplied kickstand takes the weight of the whole thing and transfers it to the table.
@@ -73,7 +75,7 @@ But for code, it's fine.
 
 The answer depends on a single question: **do you often work away from your fixed desks?**
 
-**If you're always at the same desk**: don't buy this. A big monitor will do better, with a better image and zero fiddling.
+**If you're always at the same desk**: don't buy this. A big monitor will do better, with a better image and zero fiddling. And if you have an old iMac lying around, it can even [become a second display](/en/20260929-sharp-vieil-imac-ecran-secondaire-ethernet).
 
 **If you move around regularly**, client sites, coworking, hotel, airport, the maths changes. This device isn't better than a desktop monitor: it's better than *nothing*. And "nothing" is what you usually have on the road.
 

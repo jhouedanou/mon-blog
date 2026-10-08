@@ -1,8 +1,9 @@
 ---
 title: "Sharp : transformer un vieil iMac en écran secondaire, sans câble coûteux ni prise de tête"
 createdAt: "2026-09-29T20:30:00Z"
+updatedAt: "2026-10-08T12:00:00Z"
 image: "/images/articles/sharp-imac-ecran-secondaire.webp"
-description: "Sharp est une application gratuite et open source qui transforme un ancien iMac en deuxième écran pour un Mac récent, même Apple Silicon. Il suffit d'un câble Ethernet. Ce qu'il faut, comment l'installer en cinq étapes, et ses limites."
+description: "Sharp, appli gratuite et open source, fait d'un vieil iMac l'écran secondaire d'un Mac récent, même Apple Silicon, via Ethernet. Installation et limites."
 searchIntent: "Comment utiliser un vieil iMac comme écran secondaire d'un MacBook ou d'un Mac Apple Silicon, sans Target Display Mode et sans acheter de câble ou d'adaptateur cher ?"
 tags: ["tutoriel", "apple", "macos", "mac", "open-source", "matériel", "productivité"]
 ---
@@ -27,9 +28,10 @@ Il restait donc des solutions avec du matériel dédié (comme le boîtier Luna 
 
 ## Ce que fait Sharp
 
-Sharp a été créé par le développeur **Amine Rostane**. La version 1.0 est sortie fin septembre 2026. Voici ce qu'elle propose :
+Sharp a été créé par le développeur **Amine Rostane**. La première version, Sharp 1.0 Beta 1, est sortie le 24 septembre 2026, et l'application est toujours en bêta. Voici ce qu'elle propose :
 
-- **deux Mac reliés par un câble Ethernet**, en direct, sans box ni routeur ;
+- **deux Mac reliés par un câble Ethernet**, en direct (sans box ni routeur) ou branchés tous les deux sur le même switch ;
+- depuis la bêta 2, un **câble Thunderbolt** marche aussi (via le pont Thunderbolt de macOS), et Sharp le préfère à l'Ethernet ;
 - deux modes : **Mirror** (le même bureau sur les deux écrans) et **Extend** (l'iMac devient un écran en plus) ;
 - le **son** peut sortir par les haut-parleurs de l'iMac ;
 - **gratuit et open source** (licence GPLv3), avec le [code sur GitHub](https://github.com/amineross/sharp) ;
@@ -59,7 +61,8 @@ Chaque carré porte un numéro de version. Sharp le compare à l'image affichée
 | Mac qui envoie l'image | macOS 12.3 (Monterey) ou plus récent |
 | Son vers l'iMac | macOS 14.2 (Sonoma) ou plus récent sur le Mac qui envoie |
 | iMac qui affiche | macOS 10.15 (Catalina) ou plus récent, soit un iMac de fin 2012 ou plus récent |
-| Câble | un câble Ethernet ordinaire (RJ45) |
+| iMac Intel plus ancien | macOS 10.13.6 (High Sierra), avec le récepteur dédié (depuis la bêta 2) |
+| Câble | un câble Ethernet ordinaire (RJ45), ou un câble Thunderbolt si les deux Mac en ont |
 | Adaptateur | un adaptateur USB-C vers Ethernet **gigabit**, si votre Mac n'a pas de prise Ethernet |
 
 Deux remarques :
@@ -74,6 +77,8 @@ L'application est en anglais. Les noms des boutons sont donc donnés tels qu'ils
 ### 1. Télécharger Sharp sur les deux Mac
 
 Ouvrez [aminerostane.com/sharp](https://aminerostane.com/sharp) sur **chaque Mac** et téléchargez l'installateur. Il est aussi disponible dans les [versions publiées sur GitHub](https://github.com/amineross/sharp/releases).
+
+Si votre iMac est resté sous macOS 10.13.6 (High Sierra), installez-y plutôt **Sharp-Receiver-High-Sierra**, un récepteur qui sert uniquement d'écran, proposé dans les versions GitHub.
 
 ### 2. Le mettre dans Applications
 
@@ -98,9 +103,11 @@ Si macOS le demande, rouvrez Sharp. Cliquez ensuite sur **Done**.
 
 **Sur l'iMac**, choisissez **Use as a display** (utiliser comme écran).
 
+Sur les deux Mac, acceptez l'accès au **réseau local** quand Sharp le demande. Si le pare-feu de macOS est activé, autorisez aussi les connexions entrantes pour Sharp.
+
 ### 5. Brancher le câble
 
-Reliez les deux Mac avec le câble Ethernet. Sharp trouve l'autre Mac tout seul et choisit la bonne connexion.
+Reliez les deux Mac avec le câble Ethernet (ou Thunderbolt). Sharp trouve l'autre Mac tout seul et choisit la bonne connexion.
 
 Ouvrez Sharp dans la barre des menus. Si vous voyez **Connected** au-dessus du nom de l'autre Mac, c'est bon : l'image passe.
 
@@ -129,13 +136,13 @@ Dans la fenêtre des réglages (l'icône d'engrenage) :
 
 Sharp est prometteur, mais il faut savoir ceci :
 
-- **Pas de Wi-Fi.** Le câble Ethernet est obligatoire.
+- **Pas de Wi-Fi.** Un câble Ethernet ou Thunderbolt est obligatoire.
 - **Mac vers Mac uniquement.** Pas de PC Windows, pas d'iPad.
-- **Pas d'iMac d'avant fin 2012.** Ils ne peuvent pas installer macOS Catalina.
+- **Les iMac d'avant fin 2012 sont limités.** Ils ne peuvent pas installer macOS Catalina. Seuls ceux qui tournent sous macOS 10.13.6 (High Sierra) peuvent servir d'écran, avec le récepteur dédié.
 - **Le mode Extend est fragile.** Il utilise une fonction d'Apple qui n'est pas documentée. Une mise à jour de macOS peut le casser. Si ce mode échoue, Sharp repasse de lui-même en Mirror.
 - **La 5K n'est pas garantie.** L'auteur n'a pas encore validé les performances à cette définition.
 - **L'iMac reste un ordinateur allumé.** Il consomme plus qu'un simple écran. Si l'un des deux Mac se met en veille, le flux s'arrête. Il reprend au réveil.
-- **C'est une version 1.0**, d'un seul développeur. Attendez-vous à quelques bugs.
+- **C'est encore une bêta** (1.0 Beta 2.2 au 8 octobre 2026), d'un seul développeur. Attendez-vous à quelques bugs.
 
 ## En résumé
 
@@ -148,3 +155,6 @@ Pour travailler en déplacement, un iMac ne vous suivra pas. Dans ce cas, lisez 
 - [Article de présentation de Sharp](https://aminerostane.com/articles/sharp/), par Amine Rostane
 - [Code source de Sharp sur GitHub](https://github.com/amineross/sharp)
 - [Discussion sur Reddit (r/iMac)](https://www.reddit.com/r/iMac/comments/1wsm7f8/use_your_imac_as_a_highresolution_display_over/)
+- [Notes de version de Sharp sur GitHub](https://github.com/amineross/sharp/releases)
+
+*Mise à jour du 8 octobre 2026 : Sharp est toujours en bêta (1.0 Beta 2.2). Depuis la bêta 2, il accepte aussi un câble Thunderbolt et propose un récepteur pour les Mac Intel sous macOS 10.13.6 ; il demande en plus l'accès au réseau local. Sources : [notes de version](https://github.com/amineross/sharp/releases) et [README](https://github.com/amineross/sharp).*

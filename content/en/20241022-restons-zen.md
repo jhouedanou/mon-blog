@@ -3,10 +3,10 @@ title: "The microphone theory and the glass of water theory: a survival guide fo
 image: "/images/articles/theorieduMicro.webp"
 createdAt: "2024-10-22"
 id: 5
-description: "A practical guide to staying zen in the face of unsolicited comments on the Internet. Discover how the glass of water theory can help you preserve your peace of mind online."
+description: "A pro microphone does not make a good singer, or a good commenter. The glass of water theory for staying zen in front of the Internet's self-proclaimed experts."
 searchIntent: "How to stay calm in the face of unsolicited comments and conflicts on social media?"
 tags: ["opinion", "society"]
-summary: "Face aux experts auto-proclamés et prophètes numériques qui s'expriment sans retenue sur Internet, découvrez comment la théorie du verre d'eau peut vous aider à rester serein. Un guide pratique pour préserver votre santé mentale en ligne."
+summary: "Faced with the self-proclaimed experts and digital prophets who speak out without restraint on the Internet, find out how the glass of water theory can help you stay calm. A practical guide to preserving your mental health online."
 ---
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/ru6yG_WxWVU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -39,11 +39,11 @@ Why water? Because it is:
 
 ### The Self-Proclaimed Expert
 
-You innocently post: "My xxxxx connection gives me full and complete satisfaction. "
+You innocently post: "My xxxxx connection gives me full and complete satisfaction."
 
 **At the microphone**: "MY INTERNET CONNECTION IS SUPERIOR! I HAVE TWO DECADES OF EXPERIENCE IN NETWORKING!"
 
-**Your glass of water**: A brief answer: "Thank you for your contribution, although it was not requested".
+**Your glass of water**: A brief answer: "Thank you for your contribution, although it was not requested."
 
 Then sip your water while they strive to demonstrate their expertise.
 
@@ -53,11 +53,11 @@ Then add another layer.
 
 **"Madam/Sir. I did not ask you anything."**
 
-Then you can quietly sip your glass while they choke on their unsolicited expertise :).
+You can then quietly sip your glass while they choke on their unsolicited expertise :).
 
 ### The Digital Prophet
 
-**At the microphone**: "Retraining as a developer? The market is saturated! My nephew builds cheap websites and struggles to find clients! PHP is dead!!! "
+**At the microphone**: "Retraining as a developer? The market is saturated! My nephew builds cheap websites and struggles to find clients! PHP is dead!!!"
 
 **Your glass of water**: Quietly enjoy your drink while browsing your job opportunities.
 

@@ -2,17 +2,17 @@
 title: "« Oui à l'excision » : ce que les algorithmes font d'une lame de rasoir"
 createdAt: "2026-08-22T12:40:00Z"
 image: "/images/articles/pexels-cottonbro-4631077.webp"
-description: "« Oui à l'excision » : cette campagne venue du Mali prospère sur Facebook et Twitter. Pourquoi les algorithmes la récompensent, quels sont les vrais motifs de ceux qui la relaient, et ce que les lois ivoirienne et malienne disent de la responsabilité en ligne."
+description: "« Oui à l'excision » : partie du Mali, cette campagne prospère sur Facebook et Twitter. Pourquoi les algorithmes la récompensent et pourquoi la réponse est non."
 searchIntent: "Qu'est-ce que la campagne « oui à l'excision » partie du Mali, pourquoi elle prospère sur les réseaux sociaux, quels sont les motifs de ceux qui la relaient, et ce que disent les lois ivoirienne et malienne sur la responsabilité des contenus publiés en ligne."
 tags: ["société", "afrique", "opinion", "numérique"]
 ---
 
 Ce blog parle de technologie et de culture numérique. Le titre peut donc surprendre. Restez quand même : cette campagne est un pur produit des plateformes. On est en plein dans le sujet.
 
-Une campagne « oui à l'excision » circule sur Facebook et Twitter depuis le Mali. JE reprends :  **Une campagne « oui à l'excision » circule sur Facebook et Twitter depuis le Mali.**
+Une campagne « oui à l'excision » circule sur Facebook et Twitter depuis le Mali. Je reprends : **Une campagne « oui à l'excision » circule sur Facebook et Twitter depuis le Mali.**
 
 
-Car voilà où certains d’entres nous, africains en ligne, en sommes en 2026. On ne discute plus de ce qui est fait. On discute des mots, du contexte, des sensibilités, des traditions. Et pendant qu'on débat, la pratique continue tranquillement. Et cela ne se limite pas qu’à l’excision, oh non.. il y a plein d’exemples .
+Car voilà où certains d'entre nous, Africains en ligne, en sommes en 2026. On ne discute plus de ce qui est fait. On discute des mots, du contexte, des sensibilités, des traditions. Et pendant qu'on débat, la pratique continue tranquillement. Et cela ne se limite pas à l'excision, oh non… il y a plein d'exemples.
 
 ## Trois exemples de banalisation
 
@@ -24,11 +24,11 @@ On change le mot, et le problème disparaît. Dans le pays où je vis, la prosti
 
 On transforme une question en guerre de camps. Impossible ensuite de poser un fait sans être rangé d'un côté. Sur les bords de la lagune Ébrié, la communauté « red pill » et son miroir pseudo-féministe alimentent le clash permanent entre les sexes plutôt que l'égalité qu'ils prétendent défendre. Ces gens prétendent détenir les clés de l'amour, et passent leur temps à le déconstruire.
 
-Comment se faire des ennemis à vie ? En posant la vérité : comme nos parents nous l’ont montré, les relations demandent des sacrifices de part et d’autre . Mais surtout, il faut, dans une relation, être amis avant d’être amants. Donc,« jeunes rois », « jeunes reines », vos sorties et vos conclusions n'intéressent que vous. Et ça se voit que vous êtes tous plus malheureux les uns que les autres.
+Comment se faire des ennemis à vie ? En posant la vérité : comme nos parents nous l'ont montré, les relations demandent des sacrifices de part et d'autre. Mais surtout, il faut, dans une relation, être amis avant d'être amants. Donc, « jeunes rois », « jeunes reines », vos sorties et vos conclusions n'intéressent que vous. Et ça se voit que vous êtes tous plus malheureux les uns que les autres.
 
 ### Troisième procédé : la mise en spectacle.
 
-En Afrique francophone, sur le « Meta », la calomnie et le harcèlement passent sous le cri de ralliement « gbarai », « buzz », « soko », « kongossa ». Le tout servi par des « blogueurs » à leurs fans, tout le temps, sans un regard pour les personnes visées. Même la prison n'arrête personne : il suffit de « demander pardon ».
+En Afrique francophone, sur le « Meta », la calomnie et le harcèlement passent sous le cri de ralliement « gbarai », « buzz », « soko », « kongossa ». Le tout servi par des « blogueurs » à leurs fans, tout le temps, sans un regard pour les personnes visées. Comme si les réseaux sociaux étaient [un grin](/fr/20250605-facebook-nest-pas-un-grin). Même la prison n'arrête personne : il suffit de « demander pardon ».
 
 Euphémisme, polarisation, mise en spectacle. Trois variantes du même geste : déplacer le débat de la victime vers les mots. Tant que ça reste du bizi et du gbarai, on peut hausser les épaules.
 
@@ -44,7 +44,7 @@ Excusez-moi : ceux qui sont contre, comme on devrait tous l'être.
 
 Excusez aussi mon parti pris. Les sujets graves transformés en sujets idéologiques, très peu pour moi. Et cette fois, ce n'est plus un clash entre adultes qui s'ennuient. C'est une diversion rhétorique sur un sujet qui n'a rien d'anodin.
 
-## Le Casus Belli depuis le Mali
+## Le casus belli depuis le Mali
 
 Revenons au sujet. La polémique, [documentée par la BBC Afrique](https://www.bbc.com/afrique/articles/c4g3nr40drwo), est partie du Mali en réponse à une mobilisation contre les mutilations génitales féminines. Sur Facebook et Twitter, des hommes, et plus étonnant encore des femmes, expliquent tranquillement qu'il faudrait continuer à exciser les jeunes filles.
 
@@ -94,7 +94,3 @@ Récapitulons. Une mutilation, encouragée en ligne, pour un seul bénéfice ré
 Il n'y a pas de camp à ménager ici. Pas de nuance à trouver. Il y a des enfants, une lame, et des adultes qui décident à leur place devant un public.
 
 Ça suffit. 
-
-
-
-

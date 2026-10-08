@@ -2,7 +2,7 @@
 title: "iCloud+ à 0,99 dollar : Apple TV et Apple Arcade inclus, et pourquoi mes séries préférées sont sur Apple TV"
 createdAt: "2026-10-06T01:00:00Z"
 image: "/images/articles/pexels-jakubzerdzicki-28973296.webp"
-description: "Depuis septembre 2026, en Côte d'Ivoire, le forfait iCloud+ de 50 Go à 0,99 dollar par mois inclut Apple TV et Apple Arcade. Ce que contient l'offre, et pourquoi mes séries préférées, Murderbot et Pluribus, sont sur Apple TV."
+description: "En Côte d'Ivoire, iCloud+ 50 Go à 0,99 dollar par mois inclut désormais Apple TV et Apple Arcade. Ce que contient l'offre, et mes séries : Murderbot, Pluribus."
 searchIntent: "Que contient l'abonnement iCloud+ à 0,99 dollar par mois en Côte d'Ivoire depuis qu'il inclut Apple TV et Apple Arcade, et quelles séries regarder sur Apple TV (Murderbot, Pluribus, Severance) ?"
 tags: ["apple", "icloud", "afrique", "tech", "séries"]
 ---
@@ -21,7 +21,7 @@ Voici ce que contient l'offre, puis pourquoi Apple TV a ce genre de séries.
 | Apple TV           | les séries, films et documentaires produits par Apple                    |
 | Apple Arcade       | plus de 200 jeux, sans publicité ni achats intégrés, jouables hors ligne |
 | Apple Music Select | des stations de radio sans publicité, programmées par Apple Music        |
-| Partage familial   | l'abonnement se partage avec cinq membres de la famille                  |
+| Partage familial   | l'abonnement se partage avec jusqu'à cinq membres de la famille          |
 
 Apple TV, c'est l'ancien Apple TV+ : Apple a [retiré le « + » en octobre 2025](https://www.macrumors.com/2025/10/13/apple-tv-plus-rebrand/).
 
@@ -31,9 +31,9 @@ Quelques précisions, d'après [l'annonce d'Apple](https://www.apple.com/ci/news
 - **Les anciens abonnements disparaissent.** Si vous aviez un abonnement séparé à Apple TV ou à Apple Arcade, Apple l'annule. Vous gardez l'accès, sans coupure, grâce à iCloud+.
 - **Apple Music complet reste en option.** Les abonnés iCloud+ le paient 2,79 dollars par mois (4,49 dollars pour une famille).
 - **Apple TV se regarde aussi ailleurs que sur un appareil Apple.** L'application existe sur iPhone, iPad, Mac et Apple TV 4K, mais aussi sur des téléviseurs connectés et des consoles de jeu. Les jeux Apple Arcade, eux, tournent seulement sur iPhone, iPad, Mac et Apple TV 4K.
-- **L'offre arrive dans plus de 100 pays**, dont le Sénégal, le Mali, le Maroc et le Nigeria. Avec elle, Apple TV devient disponible dans 170 pays.
+- **L'offre arrive dans plus de 100 pays.** Avec elle, Apple TV devient disponible dans 170 pays. La [liste publiée par Appleosophy](https://appleosophy.com/2026/09/15/icloud-plans-will-soon-include-apple-tv-and-apple-arcade-in-several-countries/) compte notamment le Sénégal, le Mali, le Maroc et le Nigeria.
 
-Les États-Unis et l'Europe [ne font pas partie de ces pays](https://appleosophy.com/2026/09/15/icloud-plans-will-soon-include-apple-tv-and-apple-arcade-in-several-countries/). Aux États-Unis, Apple TV seul coûtait [12,99 dollars par mois](https://www.macrumors.com/2025/10/13/apple-tv-plus-rebrand/) fin 2025. Ici, on a Apple TV, Apple Arcade et 50 Go de stockage pour 0,99 dollar.
+Les États-Unis et les pays de l'Union européenne [ne font pas partie de cette liste](https://appleosophy.com/2026/09/15/icloud-plans-will-soon-include-apple-tv-and-apple-arcade-in-several-countries/). Aux États-Unis, Apple TV seul coûtait [12,99 dollars par mois](https://www.macrumors.com/2025/10/13/apple-tv-plus-rebrand/) fin 2025. Ici, on a Apple TV, Apple Arcade et 50 Go de stockage pour 0,99 dollar.
 
 ## Mes deux séries préférées
 
@@ -75,7 +75,7 @@ Quatre raisons, d'après ce que l'on sait du service :
 
 ## En résumé
 
-- **0,99 dollar par mois** (700 FCFA chez moi) : 50 Go de stockage, Apple TV, Apple Arcade et Apple Music Select, à partager avec cinq membres de la famille.
+- **0,99 dollar par mois** (700 FCFA chez moi) : 50 Go de stockage, Apple TV, Apple Arcade et Apple Music Select, à partager avec jusqu'à cinq membres de la famille.
 - **Mes deux séries préférées** : _Murderbot_ (dix épisodes de moins de 35 minutes) et _Pluribus_ (neuf épisodes, signés Vince Gilligan).
 - **Prochaine sur ma liste** : _Severance_.
 

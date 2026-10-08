@@ -3,7 +3,7 @@ title: "You can't separate the man from his dotfiles"
 createdAt: "2026-10-08T13:00:00Z"
 draft: true
 image: "/images/articles/pingui.webp"
-description: "Korben says he will no longer promote Omarchy, DHH's Linux distribution, because of what its creator writes about immigration and the Roma. I rarely pick up other bloggers' posts. This time I agree with him, and I have one more reason than he does: the « regions » DHH talks about are where I live."
+description: "Korben will no longer promote Omarchy, DHH's Linux distro, over his posts on immigration. I agree with him: the « regions » DHH targets are where I live."
 searchIntent: "Why Korben and other free software advocates are boycotting Omarchy, DHH's Linux distribution, and what DHH has written about immigration in Europe."
 tags: ["opinion", "linux", "open-source", "society"]
 ---
@@ -12,15 +12,15 @@ I rarely pick up another blogger's post. It's not my thing, I'd rather write my 
 
 Yes, Korben. The French blogger I've been accused of copying for fifteen years.
 
-Quick aside, since we're here. When I was rapping, people said I was copying Method Man. When I was making beats, they said I was copying RZA. And since I started writing about tech, they say I'm copying Korben. So let's settle this once and for all: it's my writing style, it's my voice. I write short sentences, I slip Wu-Tang in everywhere, and I talk about tech from Abidjan. That's called having a personality.
+Quick aside, since we're here. When I was rapping, people said I was copying [Method Man](/en/20260907-bill-gates-ia-hypocrisie-meta-cash-rules-everything). When I was making beats, they said I was copying RZA. And since I started writing about tech, they say I'm copying Korben. So let's settle this once and for all: it's my writing style, it's my voice. I write short sentences, I slip Wu-Tang in everywhere, and I talk about tech from Abidjan. That's called having a personality.
 
-I do, however, plead guilty to imitating RZA. Wu-Tang Clan was my favourite rap group, and when you're starting out with a sampler, you're not trying to be original, you're trying to make your snare sound like *Enter the Wu-Tang*. Your Honour, I don't dispute the facts.
+I do, however, plead guilty to imitating RZA. Wu-Tang Clan was my favourite rap group, and when you're starting out with [a sampler](/en/20260822-koala-sampler-gratuit-mac-boom-bap), you're not trying to be original, you're trying to make your snare sound like *Enter the Wu-Tang*. Your Honour, I don't dispute the facts.
 
 But back to the topic.
 
 ## What Korben says
 
-This morning, Korben published [« Omarchy, non merci »](https://korben.info/omarchy-dhh-boycott.html) (« Omarchy, no thanks »). He announces that he will no longer use or promote Omarchy, and explains why.
+This morning, Korben published [« Omarchy, non merci »](https://korben.info/omarchy-dhh-boycott.html){target="_blank" rel="noopener"} (« Omarchy, no thanks »). He announces that he will no longer use or promote Omarchy, and explains why.
 
 Let me be clear right away: I agree with him. Not because it's Korben, but because on this one, he's right. And since I'm not here to polish anyone's shoes, I'll add what he can't say for me: seen from Abidjan, this debate has a slightly different flavour.
 
@@ -30,14 +30,14 @@ And DHH has a blog.
 
 ## What DHH writes
 
-For over a year now, on [his blog](https://world.hey.com/dhh), DHH no longer talks only about code. He talks about immigration. Korben quoted four posts, here's the short version:
+For over a year now, on [his blog](https://world.hey.com/dhh){target="_blank" rel="noopener"}, DHH no longer talks only about code. He talks about immigration. Korben quoted four posts, here's the short version:
 
-- **« As I remember London »** (September 2025): he refuses to let a country go through a « demographic replacement » like the one he says London went through.
-- **« Europe is weak and delusional (but not doomed) »** (December 9, 2025): he contrasts selective, American-style immigration with mass immigration from regions he describes as having low average IQ and « net negative contributors ».
-- **« Three sacred cows that must die so Europe can live »** (July 16, 2026): immigration would fix neither the birth rate, nor pensions, nor the economy, and millions of people already living in Europe should leave.
-- **« Wolves, sheep, and gypsies »** (July 21, 2026): he compares the Roma to wolves that should be driven out of public space.
+- **[« As I remember London »](https://world.hey.com/dhh/as-i-remember-london-e7d38e64){target="_blank" rel="noopener"}** (September 2025): he refuses to let a country go through a « demographic replacement » like the one he says London went through.
+- **[« Europe is weak and delusional (but not doomed) »](https://world.hey.com/dhh/europe-is-weak-and-delusional-but-not-doomed-8b10e7cb){target="_blank" rel="noopener"}** (December 9, 2025): he contrasts selective, American-style immigration with mass immigration from regions he describes as having low average IQ and « net negative contributors ».
+- **[« Three sacred cows that must die so Europe can live »](https://world.hey.com/dhh/three-sacred-cows-that-must-die-so-europe-can-live-1afb203d){target="_blank" rel="noopener"}** (July 16, 2026): immigration would fix neither the birth rate, nor pensions, nor the economy, and millions of people already living in Europe should leave.
+- **[« Wolves, sheep, and gypsies »](https://world.hey.com/dhh/wolves-sheep-and-gypsies-ba44af6a){target="_blank" rel="noopener"}** (July 21, 2026): he compares the Roma to wolves that should be driven out of public space.
 
-I checked, the last three posts are still online. In the same list, there's also a June 2026 post titled « The Rape of Britain ». I'll let you imagine the level of nuance.
+I checked, all four posts are still online. In the same list, there's also a June 2026 post titled [« The Rape of Britain »](https://world.hey.com/dhh/the-rape-of-britain-610412f8){target="_blank" rel="noopener"}. I'll let you imagine the level of nuance.
 
 ## Those « regions » are where I live
 
@@ -50,6 +50,8 @@ He's talking about me.
 And you know what's funny? A whole generation of developers, me included, read DHH for years: on Rails, on remote work, on leaving the cloud. The guy taught us things. And all that time, in his head, part of his readership was low-IQ people from problem regions.
 
 This isn't « politics ». I have no problem with someone who thinks immigration should be regulated, that it's up for discussion, that rules are needed. That's a debate, and I can have that debate. But ranking entire peoples by supposed IQ and comparing a minority to wolves is not a debate. It's sorting people. And we know exactly how Europe ended up the last time it started sorting people.
+
+Yes, I know: Godwin's law. It's actually the first one in this blog's history. I own it. When someone ranks entire peoples by supposed IQ, the comparison isn't hyperbole, it's a reminder.
 
 ## « You have to separate the man from the work »
 
@@ -101,8 +103,8 @@ Protect ya neck.
 
 ## Sources
 
-- Korben, [« Omarchy, non merci »](https://korben.info/omarchy-dhh-boycott.html), October 8, 2026 (in French)
-- DHH's blog: [world.hey.com/dhh](https://world.hey.com/dhh)
+- Korben, [« Omarchy, non merci »](https://korben.info/omarchy-dhh-boycott.html){target="_blank" rel="noopener"}, October 8, 2026 (in French)
+- DHH's blog: [world.hey.com/dhh](https://world.hey.com/dhh){target="_blank" rel="noopener"}
 - CBS New York, [« R. Kelly's convictions and 30-year prison term upheld by federal appeals court »](https://www.cbsnews.com/newyork/news/federal-appeals-court-upholds-r-kelly-convictions/)
 - CBS Chicago, [« R. Kelly asks President Trump to commute his prison sentence »](https://www.cbsnews.com/chicago/news/r-kelly-president-trump-commute-prison-sentence-sex-abuse/)
 - Rolling Stone, [« Sean 'Diddy' Combs Files Appeal Requesting Release From Prison or Resentencing »](https://www.rollingstone.com/music/music-news/sean-diddy-combs-appeal-requesting-release-or-resentencing-1235490320/)

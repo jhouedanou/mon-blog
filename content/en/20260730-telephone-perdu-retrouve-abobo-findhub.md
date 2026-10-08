@@ -2,7 +2,7 @@
 title: "How I got my phone back in Abobo, thanks to Google's FindHub (and above all an honest lady)"
 createdAt: "2026-07-30"
 image: "/images/articles/PXL_20260724_120434299.webp"
-description: "I leave one of my phones in a Yango. FindHub locates it in Abobo, behind the CHU. The story of a sleepless night, a call from my father and 12,000 FCFA in taxi fares, with the moral at the end."
+description: "I leave a phone in a Yango and FindHub locates it in Abobo. The story of a sleepless night, a call from my father, an honest lady and 12,000 FCFA in taxi fares."
 searchIntent: "How to find a lost phone in Abidjan with FindHub, Google's Find My Device service, and what its limits are when it comes to accuracy."
 tags: ["africa", "society", "opinion", "security", "tech"]
 ---
@@ -13,7 +13,7 @@ I had left the car at the office to sort out that little problem of a window tha
 
 With no vehicle of my own, I was getting around by Yango. And there came the first mistake, a silly one, but the foundation of this whole story: I got in the back. That's not how we do things around here. Normally, I sit in the front. Not that evening. I felt like some comfort. Which I regretted afterwards.
 
-The day then goes on as usual (walls to climb over, bugs fixed and emergencies handled). Tired, I pick up my car around 4 pm and set off for home around 9 pm (I live in Riviéra Triangle, and that's the only time that lets me leave the office and get home in under 30 minutes with no traffic jams).
+The day then goes on as usual (walls to climb over, bugs fixed and emergencies handled). Tired, I pick up my car around 4 pm and set off for home around 9 pm (I live in Riviera Triangle, and that's the only time that lets me leave the office and get home in under 30 minutes with no traffic jams).
 
 Once I get near the Lycée Français, I realise that one of my phones, a CMF Phone 1 I use for mobile development, is still in the Yango.
 
@@ -64,7 +64,9 @@ FindHub put the dot "within two streets". Except that two streets, in Abobo, mat
 ## The golden lady
 
 And here's the ending I promised you. A very kind lady hands me back the phone. No fuss, no haggling, no "so what about my cut". Simply.
+
 She did insist that I unlock the phone to check it really was mine. I did, and she gave me my phone back. I returned the courtesy properly, of course. But honesty, that's something you can't repay.
+
 **So much for Abobo and your two-bit clichés.**
 
 ## What I take away (the moral)

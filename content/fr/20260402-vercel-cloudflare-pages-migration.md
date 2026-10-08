@@ -2,7 +2,8 @@
 title: "De Vercel à Cloudflare Pages : comment j'ai dit au revoir aux frais d'hébergement (et pourquoi tu dois aussi)"
 image: "/images/articles/cloudflarevercel.webp"
 createdAt: "2026-04-02"
-description: "Retour d'expérience sur la migration de Vercel vers Cloudflare Pages : bande passante illimitée, SSR gratuit, CDN ultra-rapide — et zéro facture. Guide complet pour développeurs africains."
+description: "Migrer un projet Nuxt de Vercel vers Cloudflare : bande passante illimitée, zéro facture, et les quatre erreurs de déploiement que j'ai dû franchir."
+updatedAt: "2026-10-08T12:00:00Z"
 searchIntent: "Comment migrer un projet Nuxt de Vercel vers Cloudflare Pages pour réduire ses coûts d’hébergement."
 tags: ["tutoriel", "dev", "afrique"]
 ---
@@ -13,7 +14,7 @@ Moi aussi, j'ai connu ça.
 
 > **Avertissement** : cet article contient des quantités déraisonnables de messages d'erreur, de frustration, et au moins un formulaire web qui refuse de fonctionner. Âmes sensibles, s'abstenir.
 
-Sauf qu'après les péripéties avec cPanel et l'impossible paiement des licences (merci Tonton Donald 🫡 ... ), je me suis dit : **si je dois choisir mes outils, autant que ce soit gratuit, et autant que ce soit bon.**
+Sauf qu'après [les péripéties avec cPanel](/fr/20260327-cpanel-cyberpanel-migration) et l'impossible paiement des licences (merci Tonton Donald 🫡…), je me suis dit : **si je dois choisir mes outils, autant que ce soit gratuit, et autant que ce soit bon.**
 
 C'est comme ça que j'ai découvert qu'on n'avait pas vraiment besoin de payer pour avoir du hosting qui déménage les montagnes.
 
@@ -23,7 +24,7 @@ C'est comme ça que j'ai découvert qu'on n'avait pas vraiment besoin de payer p
 
 Vercel, c'est confortable. Très confortable.
 
-- Déploiement depuis GitHub en trois clicks
+- Déploiement depuis GitHub en trois clics
 - HTTPS gratuit
 - CDN monde
 - Edge Functions gratuites
@@ -79,11 +80,11 @@ Pour mettre ça en perspective : Vercel limite la bande passante, Cloudflare lim
 - Certificats SSL auto-renouvelés
 - 200 000 événements d'observabilité/jour (logs, traces)
 
-C'est presque trop simple. 
+C'est presque trop simple.
 
-Enfin, en théorie. 
+Enfin, en théorie.
 
-En pratique, lisez la section "Les pièges" plus bas avant de vous réjouir. 😬
+En pratique, lisez la section « Les pièges » plus bas avant de vous réjouir. 😬
 
 ### 6. **Le prix du domaine personnalisé**
 
@@ -102,7 +103,7 @@ Dans `nuxt.config.js` (ou `nuxt.config.ts`) :
 ```js
 export default defineNuxtConfig({
   nitro: {
-    presets: ['cloudflare-pages']
+    preset: 'cloudflare-pages'
   }
 })
 ```
@@ -137,13 +138,13 @@ Comment savoir ? Essayez de modifier la commande de déploiement dans le dashboa
 ### Step 3 : Connecter votre repo GitHub
 
 1. Allez sur [Cloudflare Pages](https://pages.cloudflare.com)
-2. "Create a project" → "Connect to Git"
+2. « Create a project » → « Connect to Git »
 3. Sélectionnez votre repo GitHub
 4. Build command : `yarn run build` (ou `npm run build`)
 5. Deploy command : `npx wrangler deploy` (imposé par Cloudflare si projet Workers)
 6. Build output directory : vérifié automatiquement via `wrangler.toml`
 
-**Attention** : le formulaire "Build configuration" dans le dashboard Cloudflare peut être capricieux. J'ai personnellement eu des erreurs `An internal error prevented the form from submitting` en essayant de changer la commande de déploiement. Si ça vous arrive, ne forcez pas — adaptez votre `wrangler.toml` à la place.
+**Attention** : le formulaire « Build configuration » dans le dashboard Cloudflare peut être capricieux. J'ai personnellement eu des erreurs `An internal error prevented the form from submitting` en essayant de changer la commande de déploiement. Si ça vous arrive, ne forcez pas — adaptez votre `wrangler.toml` à la place.
 
 ### Step 4 : Pointer votre domaine
 
@@ -154,7 +155,7 @@ Chez votre registrar DNS (GoDaddy dans mon cas) :
 - Cloudflare gère le reste
 
 **Option B** — CNAME seul :
-- Ajouter un CNAME : `www` → `subredomain.pages.dev`
+- Ajouter un CNAME : `www` → `votre-projet.pages.dev`
 - Cloudflare vous donne l'URL exacte
 
 Vous pouvez garder vos DNS chez GoDaddy et juste ajouter un CNAME. Ou vous pouvez tout basculer chez Cloudflare (c'est gratuit aussi).
@@ -163,9 +164,9 @@ Vous pouvez garder vos DNS chez GoDaddy et juste ajouter un CNAME. Ou vous pouve
 
 ## Les pièges (parce qu'il y en a toujours)
 
-### 1. **Les environnements variables**
+### 1. **Les variables d'environnement**
 
-Assurez-vous que toutes vos envvars sont configurées dans le dashboard Cloudflare Pages. J'ai faillit laisser mon API key en clair… 😅
+Assurez-vous que toutes vos envvars sont configurées dans le dashboard Cloudflare Pages. J'ai failli laisser mon API key en clair… 😅
 
 ### 2. **Les redirects et rewrites**
 
@@ -239,7 +240,7 @@ Un `echo`. Quatre erreurs de déploiement pour en arriver à un `echo`.
 
 Je vous laisse méditer.
 
-**Morale** : il y a un vrai flou entre les projets "Pages" et "Workers" chez Cloudflare. Si votre projet a été créé côté Workers, le dashboard vous force à utiliser `wrangler deploy`. Adaptez votre `wrangler.toml` en conséquence, n'oubliez pas le `.assetsignore`, et surtout : **ne vous battez pas avec le formulaire du dashboard**. Il va gagner.
+**Morale** : il y a un vrai flou entre les projets « Pages » et « Workers » chez Cloudflare. Si votre projet a été créé côté Workers, le dashboard vous force à utiliser `wrangler deploy`. Adaptez votre `wrangler.toml` en conséquence, n'oubliez pas le `.assetsignore`, et surtout : **ne vous battez pas avec le formulaire du dashboard**. Il va gagner.
 
 ### 4. **Les erreurs 404 pendant le prerendering**
 
@@ -280,13 +281,11 @@ Assurez-vous que Cloudflare a les bonnes permissions sur votre repo. Si votre bu
 | Bande passante | 100 Go/mois | Illimitée |
 | Requêtes/jour | Non communiqué | 100 000 (492 utilisées le 1er jour) |
 | Build minutes/mois | 6 000 | 3 000 (27 utilisées en 2 jours) |
-| Edge functions | Quelques gratuites | Illimitées |
+| Edge functions | Quelques gratuites | Incluses (100 000 requêtes/jour) |
 | Facilité de setup | ⭐⭐⭐ | ⭐ (4 erreurs et un `echo` plus tard) |
 | Support | Bon | Excellent |
 
 Le vrai gain ? **Zéro stress financier** + **performance identique ou meilleure**.
-
-Et pour un développeur africain qui doit chaque mois jongler avec les conversions de devises, les frais bancaires, et les ruptures de paiement aléatoires : c'est **inestimable**.
 
 ---
 
@@ -295,7 +294,7 @@ Et pour un développeur africain qui doit chaque mois jongler avec les conversio
 Juste pour être exhaustif :
 
 - **GitHub Pages** : Gratuit, mais statique uniquement (pas de SSR). Bon pour un portfolio ou un blog simple.
-- **Netlify** : Solide, SSR complet, gratuit jusqu'à 100 Go bande passante/mois. Bonne alternative à Cloudflare.
+- **Netlify** : Solide, SSR complet, offre gratuite à 300 crédits (la bande passante est décomptée en crédits). Bonne alternative à Cloudflare.
 - **Render** : Gratuit mais le service « dort » après inactivité. Pas idéal pour un blog.
 
 Mais entre ces trois ? **Cloudflare Pages gagne à chaque fois**.
@@ -312,14 +311,14 @@ Récapitulons mon après-midi du 2 avril 2026 :
 4. ❌ `_worker.js` uploadé comme asset public (code serveur exposé sur Internet)
 5. ✅ Un `echo _worker.js > dist/.assetsignore` et tout marche
 
-Cinq erreurs. Un après-midi. Et la solution finale tient en une ligne de shell.
+Quatre erreurs. Un après-midi. Et la solution finale tient en une ligne de shell.
 
 Si quelqu'un de Cloudflare lit ceci : **votre formulaire de configuration de build est cassé**. Et la distinction entre Pages et Workers est aussi claire qu'un rond-point à Abidjan à 18h.
 
 Mais une fois que c'est configuré ? Franchement ?
 
-TTFB : ~120ms
-Pages rendues : instantanées
+TTFB : ~120 ms\
+Pages rendues : instantanées\
 Facture : 0 FCFA
 
 Depuis cPanel vers CyberPanel, j'ai compris quelque chose : **les outils gratuits et open-source ne sont pas des compromis. C'est juste que le chemin pour les configurer ressemble parfois à un parcours du combattant.**
@@ -327,6 +326,8 @@ Depuis cPanel vers CyberPanel, j'ai compris quelque chose : **les outils gratuit
 Cloudflare Pages, c'est le restaurant où la cuisine est incroyable mais où il faut traverser un labyrinthe pour trouver la porte d'entrée. Une fois dedans, vous ne regrettez rien.
 
 Et pour un développeur africain qui doit jongler avec les conversions de devises, les frais bancaires, et les ruptures de paiement aléatoires : **un outil gratuit qui marche vraiment, ça n'a pas de prix** — même si la mise en route vous coûte quelques cheveux (pas grave en ce qui me concerne, vu le peu qu'il me reste).
+
+*Mise à jour du 8 octobre 2026 : l'exemple de l'étape 1 a été corrigé, la clé de configuration Nitro est `preset` (au singulier, une simple chaîne), comme dans l'exemple du piège n° 4 ([documentation Nitro](https://nitro.build/deploy/providers/cloudflare)). La ligne « Edge functions » du tableau indique maintenant la limite du plan gratuit, 100 000 requêtes par jour ([tarifs Cloudflare Workers](https://developers.cloudflare.com/workers/platform/pricing/)). Netlify est passé à une tarification par crédits : l'offre gratuite donne 300 crédits, et la bande passante en consomme 20 par Go ([tarifs Netlify](https://www.netlify.com/pricing/)). Enfin, la documentation de Nitro recommande désormais Cloudflare Workers plutôt que Pages pour les nouveaux déploiements, et ce blog n'utilise plus de Worker du tout : il est servi en fichiers statiques ([je raconte pourquoi ici](/fr/20260922-jai-recupere-le-trafic-de-mon-blog-et-les-bots-qui-vont-avec)).*
 
 ---
 

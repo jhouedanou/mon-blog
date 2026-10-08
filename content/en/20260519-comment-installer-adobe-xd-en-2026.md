@@ -2,7 +2,7 @@
 title: "How to install Adobe XD in 2026 (without losing faith in humanity)"
 image: "/images/articles/adobe-xd-2026.webp"
 createdAt: "2026-05-19"
-description: "Need to recover a design from Adobe XD in 2026? Here is the method that still works, why Figma remains the best choice, and how to survive Creative Cloud without triggering a diplomatic crisis."
+description: "Opening an Adobe XD mockup in 2026: the method that still works through Creative Cloud, and why Figma remains the best choice for the rest of the project."
 searchIntent: "How to install Adobe XD in 2026 and recover a file when Figma is not enough."
 tags: ["tutorial", "design", "adobe", "figma"]
 ---
@@ -29,7 +29,8 @@ If you only have a single-app subscription (Photoshop or Illustrator, say) or a 
 
 * **The official plan B:** Activate the trial period for the "All Apps" plan. Be careful to set a reminder to cancel before the charge goes through if you only need it for a single project.
 * **The brute-force method:** Force the install from the desktop app if the button remains clickable in trial mode, then close the billing window.
-It lives here: [Adobe XD](https://www.adobe.com/download/xd)
+
+The download page lives here: [Adobe XD](https://www.adobe.com/download/xd).
 
 ### 3. Open, export... and run
 Once XD is installed and running:
@@ -43,7 +44,7 @@ If you still come across a designer who insists on XD today, no need to attack t
 
 ## Figma, Figpea, XD: the undiplomatic verdict
 
-Let's be frank: the Adobe ecosystem remains closed and sometimes painful when your only goal is to build out an interface quickly. 
+Let's be frank: the Adobe ecosystem remains closed and sometimes painful when your only goal is to build out an interface quickly (I have already [said everything I think of it](/en/20241212-cher-gens-dadobe)). 
 
 Figma remains the rational choice for collaborating, iterating and handing over a project without friction. 
 

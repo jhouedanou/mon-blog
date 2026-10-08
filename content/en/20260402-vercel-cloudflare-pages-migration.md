@@ -2,7 +2,8 @@
 title: "From Vercel to Cloudflare Pages: how I said goodbye to hosting fees (and why you should too)"
 image: "/images/articles/cloudflarevercel.webp"
 createdAt: "2026-04-02"
-description: "Field report on migrating from Vercel to Cloudflare Pages: unlimited bandwidth, free SSR, ultra-fast CDN, and zero bill. A complete guide for African developers."
+description: "Moving a Nuxt project from Vercel to Cloudflare: unlimited bandwidth, zero bill, and the four deployment errors I had to get through along the way."
+updatedAt: "2026-10-08T12:00:00Z"
 searchIntent: "How to migrate a Nuxt project from Vercel to Cloudflare Pages to cut hosting costs."
 tags: ["tutorial", "dev", "africa"]
 ---
@@ -13,7 +14,7 @@ I have been there too.
 
 > **Warning**: this article contains unreasonable quantities of error messages, frustration, and at least one web form that refuses to work. Not for the faint of heart.
 
-Except that after the cPanel saga and the impossible licence payments (thanks, Uncle Donald 🫡 ... ), I told myself: **if I have to choose my tools, they might as well be free, and they might as well be good.**
+Except that after [the cPanel saga](/en/20260327-cpanel-cyberpanel-migration) and the impossible licence payments (thanks, Uncle Donald 🫡…), I told myself: **if I have to choose my tools, they might as well be free, and they might as well be good.**
 
 That is how I discovered you do not really need to pay to get hosting that moves mountains.
 
@@ -102,7 +103,7 @@ In `nuxt.config.js` (or `nuxt.config.ts`):
 ```js
 export default defineNuxtConfig({
   nitro: {
-    presets: ['cloudflare-pages']
+    preset: 'cloudflare-pages'
   }
 })
 ```
@@ -154,7 +155,7 @@ At your DNS registrar (GoDaddy in my case):
 - Cloudflare handles the rest
 
 **Option B**: CNAME only:
-- Add a CNAME: `www` → `subredomain.pages.dev`
+- Add a CNAME: `www` → `your-project.pages.dev`
 - Cloudflare gives you the exact URL
 
 You can keep your DNS at GoDaddy and just add a CNAME. Or you can move everything to Cloudflare (that is free too).
@@ -280,13 +281,11 @@ Make sure Cloudflare has the right permissions on your repo. If your build gets 
 | Bandwidth | 100 GB/month | Unlimited |
 | Requests/day | Not disclosed | 100,000 (492 used on day 1) |
 | Build minutes/month | 6,000 | 3,000 (27 used in 2 days) |
-| Edge functions | A few free ones | Unlimited |
+| Edge functions | A few free ones | Included (100,000 requests/day) |
 | Ease of setup | ⭐⭐⭐ | ⭐ (4 errors and one `echo` later) |
 | Support | Good | Excellent |
 
 The real gain? **Zero financial stress** + **identical or better performance**.
-
-And for an African developer who has to juggle currency conversions, bank fees and random payment failures every month: that is **priceless**.
 
 ---
 
@@ -295,7 +294,7 @@ And for an African developer who has to juggle currency conversions, bank fees a
 Just to be thorough:
 
 - **GitHub Pages**: Free, but static only (no SSR). Good for a portfolio or a simple blog.
-- **Netlify**: Solid, full SSR, free up to 100 GB bandwidth/month. A good alternative to Cloudflare.
+- **Netlify**: Solid, full SSR, free plan with 300 credits (bandwidth is counted in credits). A good alternative to Cloudflare.
 - **Render**: Free but the service "sleeps" after inactivity. Not ideal for a blog.
 
 But between those three? **Cloudflare Pages wins every time**.
@@ -312,14 +311,14 @@ Let's recap my afternoon of 2 April 2026:
 4. ❌ `_worker.js` uploaded as a public asset (server code exposed on the Internet)
 5. ✅ One `echo _worker.js > dist/.assetsignore` and everything works
 
-Five errors. One afternoon. And the final solution fits in one line of shell.
+Four errors. One afternoon. And the final solution fits in one line of shell.
 
 If someone from Cloudflare is reading this: **your build configuration form is broken**. And the distinction between Pages and Workers is about as clear as a roundabout in Abidjan at 6 pm.
 
 But once it is configured? Honestly?
 
-TTFB: ~120ms
-Rendered pages: instant
+TTFB: ~120 ms\
+Rendered pages: instant\
 Bill: 0 FCFA
 
 From cPanel to CyberPanel, I understood something: **free and open-source tools are not compromises. It is just that the path to configuring them sometimes looks like an obstacle course.**
@@ -327,6 +326,8 @@ From cPanel to CyberPanel, I understood something: **free and open-source tools 
 Cloudflare Pages is the restaurant where the food is incredible but you have to cross a maze to find the front door. Once inside, you regret nothing.
 
 And for an African developer who has to juggle currency conversions, bank fees and random payment failures: **a free tool that actually works is priceless**, even if getting it running costs you a few hairs (no big deal in my case, given how few I have left).
+
+*Updated October 8, 2026: the step 1 example has been corrected; the Nitro config key is `preset` (singular, a plain string), as in the example in trap no. 4 ([Nitro documentation](https://nitro.build/deploy/providers/cloudflare)). The "Edge functions" row of the table now shows the free plan limit, 100,000 requests per day ([Cloudflare Workers pricing](https://developers.cloudflare.com/workers/platform/pricing/)). Netlify has moved to credit-based pricing: the free plan gives 300 credits, and bandwidth uses 20 of them per GB ([Netlify pricing](https://www.netlify.com/pricing/)). Finally, the Nitro documentation now recommends Cloudflare Workers over Pages for new deployments, and this blog no longer uses a Worker at all: it is served as static files ([here is why](/en/20260922-jai-recupere-le-trafic-de-mon-blog-et-les-bots-qui-vont-avec)).*
 
 ---
 

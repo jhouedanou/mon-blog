@@ -3,7 +3,7 @@ title: "On ne sépare pas l'homme de ses dotfiles"
 createdAt: "2026-10-08T13:00:00Z"
 draft: true
 image: "/images/articles/pingui.webp"
-description: "Korben annonce qu'il ne fera plus la promotion d'Omarchy, la distribution Linux de DHH, à cause des billets de son créateur sur l'immigration et les Roms. Je reprends rarement les billets des autres. Là, je suis de son avis, avec une raison de plus que lui : les « régions » dont parle DHH, c'est chez moi."
+description: "Korben ne fera plus la promo d'Omarchy, la distro de DHH, à cause de ses billets sur l'immigration. Je suis d'accord : les « régions » visées, c'est chez moi."
 searchIntent: "Pourquoi Korben et d'autres libristes boycottent Omarchy, la distribution Linux de DHH, et qu'est-ce que DHH a écrit sur l'immigration en Europe."
 tags: ["opinion", "linux", "open-source", "société"]
 ---
@@ -12,15 +12,15 @@ C'est rare que je reprenne le billet d'un autre blogueur. Ce n'est pas mon truc,
 
 Oui, Korben. Le blogueur qu'on m'accuse de copier depuis quinze ans.
 
-Petite parenthèse, puisqu'on y est. Quand je rappais, on disait que je copiais Method Man. Quand je faisais du son, on disait que je copiais RZA. Et depuis que j'écris sur la tech, on dit que je copie Korben. Alors mettons fin à tout ça une bonne fois : c'est mon style d'écriture, c'est ma voix. Je fais des phrases courtes, je glisse du Wu-Tang partout, et je parle de la tech depuis Abidjan. Ça s'appelle avoir une personnalité.
+Petite parenthèse, puisqu'on y est. Quand je rappais, on disait que je copiais [Method Man](/fr/20260907-bill-gates-ia-hypocrisie-meta-cash-rules-everything). Quand je faisais du son, on disait que je copiais RZA. Et depuis que j'écris sur la tech, on dit que je copie Korben. Alors mettons fin à tout ça une bonne fois : c'est mon style d'écriture, c'est ma voix. Je fais des phrases courtes, je glisse du Wu-Tang partout, et je parle de la tech depuis Abidjan. Ça s'appelle avoir une personnalité.
 
-Par contre, je plaide coupable pour l'imitation de RZA. Le Wu-Tang Clan était mon groupe de rap préféré, et quand tu débutes avec un sampler, tu ne cherches pas à être original, tu cherches à faire sonner ta caisse claire comme dans *Enter the Wu-Tang*. Votre honneur, je ne conteste pas les faits.
+Par contre, je plaide coupable pour l'imitation de RZA. Le Wu-Tang Clan était mon groupe de rap préféré, et quand tu débutes avec [un sampler](/fr/20260822-koala-sampler-gratuit-mac-boom-bap), tu ne cherches pas à être original, tu cherches à faire sonner ta caisse claire comme dans *Enter the Wu-Tang*. Votre honneur, je ne conteste pas les faits.
 
 Mais revenons au sujet.
 
 ## Ce que dit Korben
 
-Ce matin, Korben a publié [« Omarchy, non merci »](https://korben.info/omarchy-dhh-boycott.html). Il y annonce qu'il ne veut plus utiliser ni promouvoir Omarchy, et il explique pourquoi.
+Ce matin, Korben a publié [« Omarchy, non merci »](https://korben.info/omarchy-dhh-boycott.html){target="_blank" rel="noopener"}. Il y annonce qu'il ne veut plus utiliser ni promouvoir Omarchy, et il explique pourquoi.
 
 Je vais être clair tout de suite : je suis d'accord avec lui. Pas parce que c'est Korben, mais parce que sur ce coup-là, il a raison. Et comme je ne suis pas là pour cirer des pompes, j'ajoute ce que lui ne peut pas dire à ma place : vu d'Abidjan, ce débat n'a pas tout à fait la même saveur.
 
@@ -30,14 +30,14 @@ Et DHH a un blog.
 
 ## Ce qu'écrit DHH
 
-Depuis plus d'un an, sur [son blog](https://world.hey.com/dhh), DHH ne parle plus seulement de code. Il parle d'immigration. Korben a traduit et cité quatre billets, et je vous les résume :
+Depuis plus d'un an, sur [son blog](https://world.hey.com/dhh){target="_blank" rel="noopener"}, DHH ne parle plus seulement de code. Il parle d'immigration. Korben a traduit et cité quatre billets, et je vous les résume :
 
-- **« As I remember London »** (septembre 2025) : il refuse qu'un pays connaisse un « remplacement démographique » comme celui qu'aurait connu Londres.
-- **« Europe is weak and delusional (but not doomed) »** (9 décembre 2025) : il oppose une immigration choisie, à l'américaine, à l'immigration de masse venue de régions qu'il décrit comme ayant un QI moyen bas et des habitants « contributeurs nets négatifs ».
-- **« Three sacred cows that must die so Europe can live »** (16 juillet 2026) : l'immigration ne réglerait ni la natalité, ni les retraites, ni l'économie, et des millions de personnes déjà installées en Europe devraient repartir.
-- **« Wolves, sheep, and gypsies »** (21 juillet 2026) : il compare les Roms à des loups qu'il faudrait chasser de l'espace public.
+- **[« As I remember London »](https://world.hey.com/dhh/as-i-remember-london-e7d38e64){target="_blank" rel="noopener"}** (septembre 2025) : il refuse qu'un pays connaisse un « remplacement démographique » comme celui qu'aurait connu Londres.
+- **[« Europe is weak and delusional (but not doomed) »](https://world.hey.com/dhh/europe-is-weak-and-delusional-but-not-doomed-8b10e7cb){target="_blank" rel="noopener"}** (9 décembre 2025) : il oppose une immigration choisie, à l'américaine, à l'immigration de masse venue de régions qu'il décrit comme ayant un QI moyen bas et des habitants « contributeurs nets négatifs ».
+- **[« Three sacred cows that must die so Europe can live »](https://world.hey.com/dhh/three-sacred-cows-that-must-die-so-europe-can-live-1afb203d){target="_blank" rel="noopener"}** (16 juillet 2026) : l'immigration ne réglerait ni la natalité, ni les retraites, ni l'économie, et des millions de personnes déjà installées en Europe devraient repartir.
+- **[« Wolves, sheep, and gypsies »](https://world.hey.com/dhh/wolves-sheep-and-gypsies-ba44af6a){target="_blank" rel="noopener"}** (21 juillet 2026) : il compare les Roms à des loups qu'il faudrait chasser de l'espace public.
 
-J'ai vérifié, les trois derniers billets sont toujours en ligne. Dans la même liste, on trouve aussi un billet de juin 2026 intitulé « The Rape of Britain ». Je vous laisse imaginer le niveau de nuance.
+J'ai vérifié, les quatre billets sont toujours en ligne. Dans la même liste, on trouve aussi un billet de juin 2026 intitulé [« The Rape of Britain »](https://world.hey.com/dhh/the-rape-of-britain-610412f8){target="_blank" rel="noopener"}. Je vous laisse imaginer le niveau de nuance.
 
 ## Les « régions », c'est chez moi
 
@@ -50,6 +50,8 @@ Il parle de moi.
 Et vous savez ce qui est drôle ? Toute une génération de développeurs, moi compris, a lu DHH pendant des années : sur Rails, sur le télétravail, sur la sortie du cloud. Le gars nous a appris des choses. Et pendant tout ce temps, dans sa tête, une partie de ses lecteurs étaient des QI moyens bas venus de régions à problèmes.
 
 Ce n'est pas de la « politique ». Je n'ai aucun problème avec quelqu'un qui pense que l'immigration doit être régulée, qu'on peut en discuter, qu'il faut des règles. C'est un débat, et je peux avoir ce débat. Mais classer des peuples entiers par QI supposé et comparer une minorité à des loups, ce n'est pas un débat. C'est un tri. Et on sait très bien comment l'Europe a fini la dernière fois qu'elle s'est mise à trier.
+
+Oui, je sais : point Godwin. C'est même le premier de l'histoire de ce blog. Je l'assume. Quand quelqu'un classe des peuples entiers selon leur QI supposé, la comparaison n'est pas une exagération, c'est un rappel.
 
 ## « Il faut séparer l'homme de l'œuvre »
 
@@ -101,8 +103,8 @@ Protect ya neck.
 
 ## Sources
 
-- Korben, [« Omarchy, non merci »](https://korben.info/omarchy-dhh-boycott.html), 8 octobre 2026
-- Le blog de DHH : [world.hey.com/dhh](https://world.hey.com/dhh)
+- Korben, [« Omarchy, non merci »](https://korben.info/omarchy-dhh-boycott.html){target="_blank" rel="noopener"}, 8 octobre 2026
+- Le blog de DHH : [world.hey.com/dhh](https://world.hey.com/dhh){target="_blank" rel="noopener"}
 - CBS New York, [« R. Kelly's convictions and 30-year prison term upheld by federal appeals court »](https://www.cbsnews.com/newyork/news/federal-appeals-court-upholds-r-kelly-convictions/)
 - CBS Chicago, [« R. Kelly asks President Trump to commute his prison sentence »](https://www.cbsnews.com/chicago/news/r-kelly-president-trump-commute-prison-sentence-sex-abuse/)
 - Rolling Stone, [« Sean 'Diddy' Combs Files Appeal Requesting Release From Prison or Resentencing »](https://www.rollingstone.com/music/music-news/sean-diddy-combs-appeal-requesting-release-or-resentencing-1235490320/)
