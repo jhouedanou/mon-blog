@@ -2,7 +2,7 @@
 title: "How researchers stole $10,000 through a locked iPhone: the Apple Pay / Visa flaw explained"
 image: "/images/articles/apple-pay-visa-hack.webp"
 createdAt: "2026-04-17"
-description: "Researchers have shown that it is possible to charge a large amount to a locked iPhone by exploiting Apple Pay's Express Transit mode combined with Visa's protocols. Here is how it works, and how to protect yourself."
+description: "Apple Pay Express Transit plus a Visa card: how researchers charged a locked iPhone, why Mastercard holds up, and how to protect yourself in your settings."
 searchIntent: "How can an Apple Pay and Visa flaw charge a locked iPhone, and how do you protect yourself?"
 tags: ["security", "Apple Pay", "Visa", "NFC", "iPhone", "security flaw"]
 ---
@@ -77,7 +77,7 @@ Apple made a different choice, probably for compatibility with a wide variety of
 
 Visa replied that this type of fraud is **hard to scale in the real world**: you need to be physically close to the victim, have specialised hardware, and coordinate the attack in real time. The company also points to its **zero liability** policy: if you fall victim to this kind of fraud, you get reimbursed.
 
-Apple did not comment directly on this research.
+Apple, for its part, passed the buck: for the company, it is a concern with "a Visa system" ([BBC News](https://www.bbc.co.uk/news/technology-58719891)).
 
 The researchers, for their part, maintain that the flaw is real and exploitable, even if it is not trivial to industrialise.
 
@@ -87,7 +87,7 @@ The researchers, for their part, maintain that the flaw is real and exploitable,
 
 Two simple options:
 
-1. **Turn off Express Transit mode** in Settings → Wallet & Apple Pay → Transit Card → disable "Express Transit Card".
+1. **Turn off Express Transit mode**: Settings → Wallet & Apple Pay → Express Transit Card, and leave no card selected (see [Apple's support page on Express Mode](https://support.apple.com/en-us/105123)).
 2. **Do not put a Visa card in the Express Transit slot**. Use a Mastercard instead, or a dedicated transit card.
 
 If you live in a city where you genuinely use public transport with your phone every day, option 2 is probably the best compromise. You keep the convenience, you take Visa out of the equation.
