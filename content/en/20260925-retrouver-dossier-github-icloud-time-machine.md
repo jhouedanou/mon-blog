@@ -2,7 +2,7 @@
 title: "How to regain access to your GitHub folder after switching to iCloud+ (thanks to Time Machine)"
 createdAt: "2026-09-25T19:30:00Z"
 image: "/images/articles/pexels-jibarofoto-2148222.webp"
-description: "After turning on Desktop and Documents syncing with iCloud+, my GitHub repositories stopped responding. Here is why iCloud Drive blocks Git, and how to get your code folders back from a Time Machine backup."
+description: "iCloud's Desktop & Documents syncing locked up my GitHub repos. Why Git can't cope with iCloud Drive, and how to get everything back with Time Machine."
 searchIntent: "How to recover a GitHub folder on a Mac that is blocked by iCloud Drive's Desktop and Documents syncing, by restoring it with Time Machine?"
 tags: ["tutorial", "apple", "macos", "icloud", "git", "dev"]
 ---
@@ -11,7 +11,7 @@ tags: ["tutorial", "apple", "macos", "icloud", "git", "dev"]
 
 Well, I doubt a competent developer would run into this problem, but it is a mistake that can happen even to the most experienced.
 
-I recently signed up for iCloud's paid plan, largely for its price: 700 CFA francs a month for 50 GB of cloud storage, access to Apple TV (formerly Apple TV+) and Apple Arcade, [included in iCloud+ in Côte d'Ivoire since September](https://www.apple.com/ci/newsroom/2026/09/icloud-plus-expands-to-include-apple-tv-and-apple-arcade/).
+I recently signed up for [iCloud's paid plan](/en/20261006-icloud-plus-099-apple-tv-apple-arcade-murderbot-pluribus), largely for its price: 700 CFA francs a month for 50 GB of cloud storage, access to Apple TV (formerly Apple TV+) and Apple Arcade, [included in iCloud+ in Côte d'Ivoire since September](https://www.apple.com/ci/newsroom/2026/09/icloud-plus-expands-to-include-apple-tv-and-apple-arcade/).
 
 Then I turned on iCloud Drive's "Desktop & Documents Folders" option, the iCloud feature that lets you sync the files and folders on your Desktop and in your Documents folder with your Mac computers. Everything was fine until I tried to pull code from a GitHub repo. The wheel spins, endlessly, with no update.
 

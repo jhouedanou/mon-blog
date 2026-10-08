@@ -2,7 +2,7 @@
 title: "À quoi ressemblerait une apocalypse IA ? Nucléaire, distributeurs en panne et plus d'internet"
 createdAt: "2026-09-26T22:30:00Z"
 image: "/images/articles/pexels-pixabay-55830.webp"
-description: "Pas de robots tueurs. Si l'IA provoque une catastrophe, elle passera par des systèmes dont on dépend déjà : l'arme nucléaire, l'argent et les réseaux. Ça s'est déjà produit, sans IA : la fausse alerte nucléaire de 1983, la panne CrowdStrike, les câbles coupés au large d'Abidjan."
+description: "Pas de robots tueurs : une apocalypse IA passerait par le nucléaire, l'argent et les réseaux. Déjà vu sans IA, de Petrov en 1983 aux câbles coupés d'Abidjan."
 searchIntent: "À quoi ressemblerait concrètement une apocalypse liée à l'intelligence artificielle : quels risques pour l'arme nucléaire, les distributeurs de billets et les paiements, les réseaux et internet, et comment s'y préparer ?"
 tags: ["tech", "opinion", "IA", "société", "sécurité", "afrique"]
 ---

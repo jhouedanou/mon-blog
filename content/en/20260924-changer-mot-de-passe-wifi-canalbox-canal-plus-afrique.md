@@ -2,7 +2,7 @@
 title: "How to change the Wi-Fi password on a Canal+ Afrique CanalBox"
 createdAt: "2026-09-24T19:30:00Z"
 image: "/images/articles/pexels-userpascal-32698507.webp"
-description: "Is your CanalBox password still the one printed under the router, and does the whole neighbourhood know it? Here are the four steps to change it, without calling customer service."
+description: "Is your CanalBox password still the one stuck under the router, and the whole street knows it? Four steps on my.canalbox.africa to change it yourself."
 searchIntent: "How to change or update the Wi-Fi password of a Canal+ Afrique CanalBox from the my.canalbox.africa interface?"
 tags: ["tutorial", "africa", "tech", "security", "canalbox"]
 ---
@@ -10,6 +10,8 @@ tags: ["tutorial", "africa", "tech", "security", "canalbox"]
 When a CanalBox gets installed, the technician leaves you with a Wi-Fi password printed on a sticker under the router. That is handy on day one. Six months later, that password has been handed to visiting cousins, to the neighbour "just for one evening", and to that repairman who took a picture of it to "test the connection". Your speed suffers, and you have no idea who is connected.
 
 Changing it takes five minutes, and you do not need to call customer service. Here is how.
+
+In short: from a device connected to the box's Wi-Fi, open my.canalbox.africa, log in with the router's serial number, then go to **My box** > **Wi-Fi**, change the **Wi-Fi Passphrase** field and click **Save**. The details follow.
 
 ![A Wi-Fi router on a wooden desk](/images/articles/pexels-userpascal-32698507.webp)
 

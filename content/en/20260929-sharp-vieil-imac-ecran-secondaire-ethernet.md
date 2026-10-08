@@ -1,8 +1,9 @@
 ---
 title: "Sharp: turn an old iMac into a second display, with no expensive cable and no hassle"
 createdAt: "2026-09-29T20:30:00Z"
+updatedAt: "2026-10-08T12:00:00Z"
 image: "/images/articles/sharp-imac-ecran-secondaire.webp"
-description: "Sharp is a free, open source app that turns an old iMac into a second display for a newer Mac, Apple Silicon included. All you need is an Ethernet cable. What you need, how to set it up in five steps, and its limits."
+description: "Sharp, a free open source app, turns an old iMac into a second screen for a newer Mac, Apple Silicon included, over Ethernet. Five-step setup, and its limits."
 searchIntent: "How can I use an old iMac as a second display for a MacBook or an Apple Silicon Mac, without Target Display Mode and without buying an expensive cable or adapter?"
 tags: ["tutorial", "apple", "macos", "mac", "open-source", "hardware", "productivity"]
 ---
@@ -27,9 +28,10 @@ That left solutions with dedicated hardware (like the Luna Display dongle), paid
 
 ## What Sharp does
 
-Sharp was built by developer **Amine Rostane**. Version 1.0 came out at the end of September 2026. Here is what it offers:
+Sharp was built by developer **Amine Rostane**. The first version, Sharp 1.0 Beta 1, came out on 24 September 2026, and the app is still in beta. Here is what it offers:
 
-- **two Macs linked by an Ethernet cable**, directly, with no router;
+- **two Macs linked by an Ethernet cable**, directly (no box or router needed) or both wired to the same switch;
+- since beta 2, a **Thunderbolt cable** works too (through macOS's Thunderbolt Bridge), and Sharp prefers it over Ethernet;
 - two modes: **Mirror** (the same desktop on both screens) and **Extend** (the iMac becomes an extra screen);
 - **sound** can play through the iMac's speakers;
 - **free and open source** (GPLv3 licence), with the [code on GitHub](https://github.com/amineross/sharp);
@@ -59,7 +61,8 @@ Each square carries a version number. Sharp checks it against the displayed pict
 | Mac sending the picture | macOS 12.3 (Monterey) or later |
 | Sound on the iMac | macOS 14.2 (Sonoma) or later on the sending Mac |
 | iMac used as the display | macOS 10.15 (Catalina) or later, which means a Late 2012 iMac or newer |
-| Cable | an ordinary Ethernet cable (RJ45) |
+| Older Intel iMac | macOS 10.13.6 (High Sierra), with the dedicated receiver (since beta 2) |
+| Cable | an ordinary Ethernet cable (RJ45), or a Thunderbolt cable if both Macs have the port |
 | Adapter | a USB-C to **gigabit** Ethernet adapter, if your Mac has no Ethernet port |
 
 Two notes:
@@ -74,6 +77,8 @@ The app is in English. Button names are given as they appear.
 ### 1. Download Sharp on both Macs
 
 Open [aminerostane.com/sharp](https://aminerostane.com/sharp) on **each Mac** and download the installer. It is also available in the [releases on GitHub](https://github.com/amineross/sharp/releases).
+
+If your iMac is stuck on macOS 10.13.6 (High Sierra), install **Sharp-Receiver-High-Sierra** on it instead, a display-only receiver available in the GitHub releases.
 
 ### 2. Put it in Applications
 
@@ -98,9 +103,11 @@ If macOS asks, reopen Sharp. Then click **Done**.
 
 **On the iMac**, choose **Use as a display**.
 
+On both Macs, allow **Local Network** access when Sharp asks for it. If the macOS firewall is on, also allow incoming connections for Sharp.
+
 ### 5. Plug in the cable
 
-Connect the two Macs with the Ethernet cable. Sharp finds the other Mac on its own and picks the right connection.
+Connect the two Macs with the Ethernet (or Thunderbolt) cable. Sharp finds the other Mac on its own and picks the right connection.
 
 Open Sharp in the menu bar. If you see **Connected** above the other Mac's name, you are set: the picture is streaming.
 
@@ -129,13 +136,13 @@ In the settings window (the gear icon):
 
 Sharp is promising, but keep this in mind:
 
-- **No Wi-Fi.** The Ethernet cable is required.
+- **No Wi-Fi.** An Ethernet or Thunderbolt cable is required.
 - **Mac to Mac only.** No Windows PC, no iPad.
-- **No iMac older than Late 2012.** They cannot install macOS Catalina.
+- **iMacs older than Late 2012 are limited.** They cannot install macOS Catalina. Only those running macOS 10.13.6 (High Sierra) can serve as a display, with the dedicated receiver.
 - **Extend mode is fragile.** It relies on an undocumented Apple feature. A macOS update could break it. If this mode fails, Sharp falls back to Mirror on its own.
 - **5K is not guaranteed.** The author has not yet validated performance at that resolution.
 - **The iMac is still a computer that stays on.** It uses more power than a plain screen. If either Mac goes to sleep, the stream stops. It resumes on wake.
-- **This is version 1.0**, from a single developer. Expect a few bugs.
+- **It is still a beta** (1.0 Beta 2.2 as of 8 October 2026), from a single developer. Expect a few bugs.
 
 ## In short
 
@@ -148,3 +155,6 @@ To work on the go, an iMac won't follow you. In that case, read my review of [th
 - [Sharp announcement article](https://aminerostane.com/articles/sharp/), by Amine Rostane
 - [Sharp source code on GitHub](https://github.com/amineross/sharp)
 - [Discussion on Reddit (r/iMac)](https://www.reddit.com/r/iMac/comments/1wsm7f8/use_your_imac_as_a_highresolution_display_over/)
+- [Sharp release notes on GitHub](https://github.com/amineross/sharp/releases)
+
+*Updated October 8, 2026: Sharp is still in beta (1.0 Beta 2.2). Since beta 2, it also works over a Thunderbolt cable and offers a receiver for Intel Macs on macOS 10.13.6; it now also asks for Local Network access. Sources: [release notes](https://github.com/amineross/sharp/releases) and [README](https://github.com/amineross/sharp).*
