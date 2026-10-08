@@ -2,7 +2,7 @@
 title: "The \"let's talk about it\" meeting"
 image: "/images/articles/reunion.webp"
 createdAt: "2026-03-25"
-description: "Some thoughts on the famous 'let's talk about it' meeting: why it happens, how to avoid it, and how to get clear decisions without wasting time."
+description: "The \"let's talk about it\" meeting is usually born from a conviction with no argument. Why it thrives, and how to dodge it by asking for objections in writing."
 searchIntent: "How to avoid useless meetings and turn a \"let's talk about it\" meeting into concrete decisions."
 tags: ["opinion", "society"]
 ---
@@ -15,7 +15,7 @@ No, not the "crisis meeting", nor the "kickoff".
 
 That one only shows up when the waves of ego and lack of arguments, carefully cultivated by an education system that rewards regurgitation, come crashing against the wall of technical reality.
 
-## The "let's talk about it" meeting.
+## The "let's talk about it" meeting
 
 It always starts the same way: a request made with the nonchalance of someone who will not have to carry it out.
 Dropped between two messages, as if the effort in time and resources it represents simply did not exist. A request whose size is inversely proportional to the confidence with which it is made.
@@ -42,6 +42,7 @@ It trains them to regurgitate.
 You learn to recite, to validate, to tick boxes. The person who gives the right answer gets rewarded, not the one who asks the best question. Debate is not a skill you develop, it is a threat you learn to dodge.
 
 The useless meeting is a consequence of this lack of training.
+
 - Nobody learned how to formulate a rigorous objection in front of their teachers.
 - Nobody learned to tell an intuition from an argument.
 
@@ -55,10 +56,10 @@ Be pragmatic, and ask the other person to put their concerns in writing. That is
 
 ## And did it work in your case?
 
-Yes, but only by insisting... in many (too many) cases, I got one of these replies:
+Yes, but only by insisting… In many (too many) cases, I got one of these replies:
 
-"We'll see."
-"It's not that urgent."
+"We'll see."\
+"It's not that urgent."\
 "I'm busy right now."
 
 In those cases, keep insisting, not to humiliate anyone, but to help the person articulate what is bothering them and turn vague ideas into real objections. And if, despite your efforts, the written answer never comes, or comes back empty, then no meeting, because a useful meeting starts with a useful sentence.

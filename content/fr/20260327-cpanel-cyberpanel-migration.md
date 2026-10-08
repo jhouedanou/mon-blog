@@ -2,7 +2,8 @@
 title: "Comment Donald Trump m'a poussé à abandonner cPanel pour CyberPanel — et pourquoi je ne regrette rien"
 image: "/images/articles/cpanel-cyberpanel-migration.webp"
 createdAt: "2026-03-27"
-description: "Migrer toute une infrastructure serveur de cPanel vers CyberPanel : retour d'expérience d'un administrateur système en Afrique de l'Ouest, entre hausse des prix, blocage des paiements en zone UEMOA et quête de souveraineté numérique."
+description: "Hausses de prix de cPanel, paiements bloqués en zone UEMOA : retour d'expérience sur ma migration vers CyberPanel et OpenLiteSpeed, et un TTFB divisé par cinq."
+updatedAt: "2026-10-08T12:00:00Z"
 searchIntent: "Comment migrer une infrastructure de cPanel vers CyberPanel et OpenLiteSpeed en Afrique de l’Ouest."
 tags: ["tutoriel", "dev", "afrique"]
 ---
@@ -18,7 +19,8 @@ Puis 2019 est arrivé. cPanel a abandonné son modèle de licence fixe pour un s
 Mais honnêtement, les augmentations de cPanel seules ne m'auraient probablement pas fait bouger. On s'adapte, on ajuste les devis, on grogne un peu et on continue. Ce qui a tout changé, c'est ce qui s'est passé début 2026.
 
 ## Quand Donald Trump a coupé les robinets
-En janvier 2026, l'administration Trump a annoncé une série de mesures drastiques visant à restreindre les flux financiers entre les États-Unis et l'Afrique de l'Ouest. Sous prétexte de lutter contre le blanchiment d'argent et le financement du terrorisme, les autorités américaines ont imposé des restrictions sévères sur les transactions transfrontalières, affectant particulièrement les pays de la zone UEMOA (Union Économique et Monétaire Ouest-Africaine).
+
+En janvier 2026, l'administration Trump a annoncé une série de mesures drastiques visant à restreindre les flux financiers entre les États-Unis et l'Afrique de l'Ouest. Sous prétexte de lutter contre le blanchiment d'argent et le financement du terrorisme, les autorités américaines ont imposé des restrictions sévères sur les transactions transfrontalières, affectant particulièrement les pays de la zone UEMOA (Union économique et monétaire ouest-africaine).
 
 **Résultat concret pour moi** : pendant presque un mois, impossible de payer la licence cPanel. Pas un problème de trésorerie. Un problème d'infrastructure de paiement. Les cartes ne passaient plus. Les alternatives (PayPal, Stripe) étaient instables ou indisponibles depuis la zone UEMOA. Et quand ta licence cPanel expire, WHM te le fait savoir — poliment d'abord, puis de moins en moins.
 
@@ -124,7 +126,7 @@ Si vous gérez des serveurs en Afrique francophone et que vous envisagez la migr
 
 **Maîtrisez la ligne de commande.** CyberPanel a une interface web, mais quand les choses tournent mal (et elles tourneront mal), c'est en SSH que ça se résout. Si vous n'êtes pas à l'aise avec `systemctl`, `vim` et les logs, formez-vous d'abord.
 
-**Gardez Cloudflare devant.** Le CDN Cloudflare en version gratuite devant OpenLiteSpeed, c'est la combinaison magique. Cache, SSL, protection DDoS — gratuit.
+**Gardez Cloudflare devant.** Le CDN Cloudflare en version gratuite devant OpenLiteSpeed, c'est la combinaison magique. Cache, SSL, protection DDoS — gratuit. (Et pour un site statique ou un projet Nuxt, Cloudflare peut même remplacer l'hébergeur : [c'est ce que j'ai fait pour ce blog](/fr/20260402-vercel-cloudflare-pages-migration).)
 
 **Prévoyez deux semaines minimum.** Pas deux jours, deux semaines. Entre la migration des sites, la configuration DNS, les tests, la migration des emails et les inévitables bugs, c'est le minimum réaliste.
 
@@ -137,6 +139,8 @@ La migration de cPanel vers CyberPanel n'était pas dans mes plans. C'est l'augm
 Mais aujourd'hui, avec un **TTFB divisé par cinq**, **zéro frais de licence**, et une **indépendance retrouvée** vis-à-vis des systèmes de paiement internationaux, je ne regrette rien.
 
 Si « Tonton Donald » m'a appris quelque chose, c'est que **la souveraineté numérique, en Afrique, ça commence par le choix de ses outils.**
+
+*Mise à jour du 8 octobre 2026 : ionCube publie aujourd'hui des loaders pour PHP 8.4 et 8.5 ([page officielle des loaders](https://www.ioncube.com/loaders.php)). Avant de rétrograder vers `lsphp82`, vérifiez donc que la version du loader installé correspond à votre version de PHP. Autre raison de ne pas s'éterniser sur PHP 8.2 : il ne reçoit plus de correctifs de sécurité après le 31 décembre 2026 ([calendrier officiel de PHP](https://www.php.net/supported-versions.php)).*
 
 ---
 *[Jean Luc Houédanou](https://houedanou.com) — de nouveau converti à l'open source*
