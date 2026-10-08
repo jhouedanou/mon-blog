@@ -1,7 +1,6 @@
 ---
 title: "On ne sépare pas l'homme de ses dotfiles"
 createdAt: "2026-10-08T13:00:00Z"
-draft: true
 image: "/images/articles/pingui.webp"
 description: "Korben ne fera plus la promo d'Omarchy, la distro de DHH, à cause de ses billets sur l'immigration. Je suis d'accord : les « régions » visées, c'est chez moi."
 searchIntent: "Pourquoi Korben et d'autres libristes boycottent Omarchy, la distribution Linux de DHH, et qu'est-ce que DHH a écrit sur l'immigration en Europe."
@@ -35,7 +34,7 @@ Depuis plus d'un an, sur [son blog](https://world.hey.com/dhh){target="_blank" r
 - **[« As I remember London »](https://world.hey.com/dhh/as-i-remember-london-e7d38e64){target="_blank" rel="noopener"}** (septembre 2025) : il refuse qu'un pays connaisse un « remplacement démographique » comme celui qu'aurait connu Londres.
 - **[« Europe is weak and delusional (but not doomed) »](https://world.hey.com/dhh/europe-is-weak-and-delusional-but-not-doomed-8b10e7cb){target="_blank" rel="noopener"}** (9 décembre 2025) : il oppose une immigration choisie, à l'américaine, à l'immigration de masse venue de régions qu'il décrit comme ayant un QI moyen bas et des habitants « contributeurs nets négatifs ».
 - **[« Three sacred cows that must die so Europe can live »](https://world.hey.com/dhh/three-sacred-cows-that-must-die-so-europe-can-live-1afb203d){target="_blank" rel="noopener"}** (16 juillet 2026) : l'immigration ne réglerait ni la natalité, ni les retraites, ni l'économie, et des millions de personnes déjà installées en Europe devraient repartir.
-- **[« Wolves, sheep, and gypsies »](https://world.hey.com/dhh/wolves-sheep-and-gypsies-ba44af6a){target="_blank" rel="noopener"}** (21 juillet 2026) : il compare les Roms à des loups qu'il faudrait chasser de l'espace public.
+- **[« Wolves, sheep, and gypsies »](https://world.hey.com/dhh/wolves-sheep-and-gypsies-ba44af6a){target="_blank" rel="noopener"}** (21 juillet 2026) : il compare les Roms à des loups et écrit que, lorsqu'ils « prennent possession de l'espace public », on les expulse.
 
 J'ai vérifié, les quatre billets sont toujours en ligne. Dans la même liste, on trouve aussi un billet de juin 2026 intitulé [« The Rape of Britain »](https://world.hey.com/dhh/the-rape-of-britain-610412f8){target="_blank" rel="noopener"}. Je vous laisse imaginer le niveau de nuance.
 
@@ -71,7 +70,7 @@ Et avec Omarchy, c'est encore plus littéral qu'avec un album. Omarchy se vend c
 
 Omarchy a des opinions, c'est son argument de vente. Le problème, ce sont les opinions.
 
-Et puis il y a l'argent. Comme le rappelle Korben, 1Password et 37signals financent le projet à hauteur de 100 000 dollars par an chacun. Le patron de 1Password a expliqué que l'entreprise ne cautionne pas les idées de DHH. D'accord. Mais elle les finance. Quand vous mettez votre logo sur la tribune, vous ne pouvez pas faire semblant de ne pas avoir vu ce qui se dit au micro.
+Et puis il y a l'argent. Comme le rappelle Korben, 1Password et 37signals se sont engagés à verser chacun 100 000 dollars par an, pendant trois ans, à la fondation qui finance Omarchy ([It's FOSS](https://itsfoss.com/news/1password-omarchy-pledge/){target="_blank" rel="noopener"}). Devant ses employés, le patron de 1Password a assuré que l'entreprise ne soutient pas les opinions de DHH. D'accord. Mais elle signe le chèque. Quand vous mettez votre logo sur la tribune, vous ne pouvez pas faire semblant de ne pas avoir vu ce qui se dit au micro.
 
 Évidemment, ça ne veut pas dire que tous ceux qui utilisent ou contribuent à Omarchy pensent comme lui. Korben le dit, et je le redis : la plupart s'en fichent, ou ne savent pas. Maintenant, vous savez.
 
@@ -89,7 +88,7 @@ Et moi, concrètement, j'utilise quoi ? Pas Omarchy, vous l'aurez compris.
 
 En ce moment, je passe pas mal de temps sur ChromeOS, sur l'ordinateur de ma nièce. Ce n'est pas du Linux de puriste, mais ça démarre en dix secondes, ça fait le travail, et personne n'y a glissé ses théories sur l'immigration.
 
-Pour la suite, je lorgne Linux Mint. Mon expérience de Zorin OS sur MacBook a été peu satisfaisante, et Mint a la réputation d'être la distribution la plus tranquille qui soit : pas de culte de la personnalité, une équipe, une communauté, et un bureau qui ne cherche pas à vous impressionner. C'est exactement ce que je cherche.
+Pour la suite, je lorgne Linux Mint. Mon expérience de Zorin OS sur MacBook a été peu satisfaisante. Mint, lui, a la réputation d'être la distribution la plus tranquille qui soit : pas de culte de la personnalité, une équipe, une communauté, et un bureau qui ne cherche pas à vous impressionner. C'est exactement ce que je cherche.
 
 Et puis il y a ce MacBook Pro 2017 avec 16 Go de RAM qui prend un peu la poussière. Apple l'a lâché après macOS Ventura. Mais OpenCore Legacy Patcher 3, l'outil open source qui installe les versions récentes de macOS sur les Mac qu'Apple ne prend plus en charge, arrive en version candidate avec macOS Tahoe, et il semble bien marcher. Comme quoi, on peut garder une vieille machine en vie sans demander la permission à personne. C'est aussi ça, l'esprit du libre.
 
@@ -105,6 +104,7 @@ Protect ya neck.
 
 - Korben, [« Omarchy, non merci »](https://korben.info/omarchy-dhh-boycott.html){target="_blank" rel="noopener"}, 8 octobre 2026
 - Le blog de DHH : [world.hey.com/dhh](https://world.hey.com/dhh){target="_blank" rel="noopener"}
+- It's FOSS, [« 1Password Just Pledged $300,000 to DHH's Omarchy, and its Own Employees Aren't Happy »](https://itsfoss.com/news/1password-omarchy-pledge/){target="_blank" rel="noopener"}, 3 septembre 2026
 - CBS New York, [« R. Kelly's convictions and 30-year prison term upheld by federal appeals court »](https://www.cbsnews.com/newyork/news/federal-appeals-court-upholds-r-kelly-convictions/)
 - CBS Chicago, [« R. Kelly asks President Trump to commute his prison sentence »](https://www.cbsnews.com/chicago/news/r-kelly-president-trump-commute-prison-sentence-sex-abuse/)
 - Rolling Stone, [« Sean 'Diddy' Combs Files Appeal Requesting Release From Prison or Resentencing »](https://www.rollingstone.com/music/music-news/sean-diddy-combs-appeal-requesting-release-or-resentencing-1235490320/)
