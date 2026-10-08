@@ -3,7 +3,7 @@ title: "Corruption will make you late: a (small) concrete example"
 image: "/images/articles/corruption.webp"
 createdAt: "2025-03-12"
 id: 11
-description: "A personal experience in an African bank that shows how corruption and favouritism can paradoxically waste the time of those who take part in it. An account of everyday corrupt practices."
+description: "A queue at Ecobank in Aghien, a head of security selling shortcuts, and the people who paid ending up served last. A true story about corruption."
 searchIntent: "How ordinary corruption in an African bank wastes everyone's time."
 tags: ["society", "africa", "opinion"]
 summary: "A personal story from a bank branch in Africa where the author refuses to take part in the corruption scheme offered by a security guard. The story shows how those who paid to skip the queue end up being served last, illustrating that corruption, far from saving time, makes everyone late."
@@ -66,6 +66,7 @@ And, surprise:
 
 👩🏿‍💼 **"Come in, sir."**  
 🧑🏿‍💼 😊
+
 **In 15 minutes, my card was replaced.**  
 Under the furious stares of the "bosses".
 

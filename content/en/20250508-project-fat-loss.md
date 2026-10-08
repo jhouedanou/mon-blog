@@ -3,15 +3,15 @@ title: "I built an app… a fitness app"
 image: "/images/articles/fitness-afro-abdos.webp"
 createdAt: "2025-05-08"
 id: 13
-description: "After years of neglecting his health in favour of code, the author of this blog decides to take back control… his own way: by building his own fitness tracking app."
+description: "Years of coding at the expense of my health, so I coded the fix: Project Fat Loss, a PWA for tracking weight and workouts, still in beta."
 searchIntent: "How a developer can build a fitness tracking app to take back control of his health."
 tags: ["dev", "lifestyle"]
 summary: "Between code and client deadlines, there is the body. This post tells why and how I built my own fitness app, in beta today, with a design still under construction but real determination behind it."
 ---
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/YsrERv9PeGg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/YsrERv9PeGg" title="Project Fat Loss, a fitness app (YouTube video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-**Ok, you can laugh...but after years of neglecting my health in favour of this "job"**, I decided to take matters into my own hands.
+**OK, you can laugh… but after years of neglecting my health in favour of this "job"**, I decided to take matters into my own hands.
 
 And besides, yet another 'to do' app to put the Udemy React courses into practice, we've all seen that before.
 
@@ -21,8 +21,6 @@ Result: chronic fatigue, fitness at rock bottom, and an unpleasant feeling of fo
 
 So I did what I do best: **code a solution.**  
 Welcome to *Project Fat Loss*.
-
-
 
 ## 💻 An app for getting back on track
 
@@ -36,18 +34,13 @@ I designed this application as a personal tool, simple but functional. Here's wh
 - **📉 Weight tracking**: log your weight day after day, and see the trend on a motivating chart.
 - **📓 Workout history**: every completed session is saved so you can keep an eye on your efforts.
 - **🔄 Sync (in progress)**: eventually, your history will be saved to the cloud or locally, for a real multi-device experience.
-
-- **🏋️  Fully customisable training programme**:  the training programme is entirely customisable: you can pick whichever exercises you want, according to your preferences and goals!
+- **🏋️ Fully customisable training programme**: the training programme is entirely customisable: you can pick whichever exercises you want, according to your preferences and goals!
 The base programme is designed to make you lose about 0.5 kg per week while eating normally. You're free to change, add or swap exercises as you like so your training stays motivating and suited to your pace.
-
- 
-
 
 ## ⚠️ Still in beta (and it shows)
 
 The app works, but it still has its little flaws.  
 The most annoying one: **you can click the "Finish" button several times, which throws off the number of sets recorded**. It's known, it's noted, and it's coming in a future fix.
-
 
 ## 🎨 And the design, shall we talk about it?
 
@@ -56,5 +49,3 @@ For now, it's a functional, minimalist, sometimes slightly rough design. But I'm
 
 ---
 *[Jean Luc Houédanou](https://houedanou.com) — sweaty developer*
-
-
