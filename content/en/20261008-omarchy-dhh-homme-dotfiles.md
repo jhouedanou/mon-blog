@@ -1,7 +1,6 @@
 ---
 title: "You can't separate the man from his dotfiles"
 createdAt: "2026-10-08T13:00:00Z"
-draft: true
 image: "/images/articles/pingui.webp"
 description: "Korben will no longer promote Omarchy, DHH's Linux distro, over his posts on immigration. I agree with him: the « regions » DHH targets are where I live."
 searchIntent: "Why Korben and other free software advocates are boycotting Omarchy, DHH's Linux distribution, and what DHH has written about immigration in Europe."
@@ -35,7 +34,7 @@ For over a year now, on [his blog](https://world.hey.com/dhh){target="_blank" re
 - **[« As I remember London »](https://world.hey.com/dhh/as-i-remember-london-e7d38e64){target="_blank" rel="noopener"}** (September 2025): he refuses to let a country go through a « demographic replacement » like the one he says London went through.
 - **[« Europe is weak and delusional (but not doomed) »](https://world.hey.com/dhh/europe-is-weak-and-delusional-but-not-doomed-8b10e7cb){target="_blank" rel="noopener"}** (December 9, 2025): he contrasts selective, American-style immigration with mass immigration from regions he describes as having low average IQ and « net negative contributors ».
 - **[« Three sacred cows that must die so Europe can live »](https://world.hey.com/dhh/three-sacred-cows-that-must-die-so-europe-can-live-1afb203d){target="_blank" rel="noopener"}** (July 16, 2026): immigration would fix neither the birth rate, nor pensions, nor the economy, and millions of people already living in Europe should leave.
-- **[« Wolves, sheep, and gypsies »](https://world.hey.com/dhh/wolves-sheep-and-gypsies-ba44af6a){target="_blank" rel="noopener"}** (July 21, 2026): he compares the Roma to wolves that should be driven out of public space.
+- **[« Wolves, sheep, and gypsies »](https://world.hey.com/dhh/wolves-sheep-and-gypsies-ba44af6a){target="_blank" rel="noopener"}** (July 21, 2026): he compares the Roma to wolves and writes that when they « take over public spaces », you deport them.
 
 I checked, all four posts are still online. In the same list, there's also a June 2026 post titled [« The Rape of Britain »](https://world.hey.com/dhh/the-rape-of-britain-610412f8){target="_blank" rel="noopener"}. I'll let you imagine the level of nuance.
 
@@ -71,7 +70,7 @@ And with Omarchy, it's even more literal than with an album. Omarchy sells itsel
 
 Omarchy has opinions, that's its selling point. The problem is the opinions.
 
-Then there's the money. As Korben points out, 1Password and 37signals each fund the project with $100,000 a year. 1Password's CEO said the company doesn't endorse DHH's views. Fine. But it funds them. When you put your logo on the stage, you can't pretend you didn't hear what's being said into the mic.
+Then there's the money. As Korben points out, 1Password and 37signals have each pledged $100,000 a year, for three years, to the foundation behind Omarchy ([It's FOSS](https://itsfoss.com/news/1password-omarchy-pledge/){target="_blank" rel="noopener"}). 1Password's CEO told his staff the company doesn't endorse DHH's views. Fine. But it signs the check. When you put your logo on the stage, you can't pretend you didn't hear what's being said into the mic.
 
 Of course, this doesn't mean everyone who uses or contributes to Omarchy thinks like him. Korben says it, and I'll say it again: most people don't care, or don't know. Now you know.
 
@@ -105,6 +104,7 @@ Protect ya neck.
 
 - Korben, [« Omarchy, non merci »](https://korben.info/omarchy-dhh-boycott.html){target="_blank" rel="noopener"}, October 8, 2026 (in French)
 - DHH's blog: [world.hey.com/dhh](https://world.hey.com/dhh){target="_blank" rel="noopener"}
+- It's FOSS, [« 1Password Just Pledged $300,000 to DHH's Omarchy, and its Own Employees Aren't Happy »](https://itsfoss.com/news/1password-omarchy-pledge/){target="_blank" rel="noopener"}, September 3, 2026
 - CBS New York, [« R. Kelly's convictions and 30-year prison term upheld by federal appeals court »](https://www.cbsnews.com/newyork/news/federal-appeals-court-upholds-r-kelly-convictions/)
 - CBS Chicago, [« R. Kelly asks President Trump to commute his prison sentence »](https://www.cbsnews.com/chicago/news/r-kelly-president-trump-commute-prison-sentence-sex-abuse/)
 - Rolling Stone, [« Sean 'Diddy' Combs Files Appeal Requesting Release From Prison or Resentencing »](https://www.rollingstone.com/music/music-news/sean-diddy-combs-appeal-requesting-release-or-resentencing-1235490320/)
