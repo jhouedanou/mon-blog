@@ -3,13 +3,11 @@ title: "Goodbye rejection fees, hello easy transfers and a hidden balance! "
 image: "/images/articles/djamo.webp"
 createdAt: "2024-09-05"
 id: 2024-09-05
-description: "Discover the new features of Djamo, the Ivorian FinTech shaking up banking in West Africa: no more rejection fees, simplified Orange Money transfers and an option to hide your balance."
+description: "Djamo drops its 200 FCFA rejection fee, simplifies transfers with Orange Money and finally lets you hide your balance. Here is what it changes day to day."
 searchIntent: "How Djamo simplifies Orange Money transfers and banking services in Côte d’Ivoire while keeping your balance private."
 tags: ["finance", "africa", "tech"]
-summary: "Djamo, la FinTech ivoirienne, déploie une mise à jour majeure avec trois améliorations significatives : la suppression des frais de rejet pour les transactions refusées, une simplification des transferts Orange Money permettant des opérations directes entre applications, et une nouvelle option pour masquer son solde, répondant ainsi aux besoins de discrétion financière des utilisateurs africains."
+summary: "Djamo, the Ivorian FinTech, is rolling out a major update with three significant improvements: no more rejection fees on declined transactions, simpler Orange Money transfers that go directly from one app to the other, and a new option to hide your balance, meeting African users' need for financial discretion."
 ---
-
-# Djamo: Goodbye rejection fees, hello easy transfers and a hidden balance! 
 
 Djamo is an Ivorian FinTech that is shaking up banking services in West Africa (_yes, it is possible, we are not only made of "brouteurs" and scam enthusiasts around here_). The company has just unveiled a major update to its app, with significant improvements that, in my opinion, really change the user experience.
 

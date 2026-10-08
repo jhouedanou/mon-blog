@@ -1,13 +1,12 @@
 ---
 title: "Bill Gates veut freiner l'IA : l'hypocrisie ne coûte rien quand on a déjà encaissé"
 createdAt: "2026-09-07T02:18:00Z"
+updatedAt: "2026-10-08T12:00:00Z"
 image: "/images/articles/bill-gates-ia-cash.jpeg"
-description: "Bill Gates publie un mémo alarmiste sur l'IA et réclame des taxes et des limites. Venant de l'homme qui a passé trente ans à combattre le logiciel libre, la posture fait sourire. Je fais le parallèle avec la « conversion » de Meta, condamné cette année pour avoir ignoré les dérives de ses réseaux. Conclusion signée Method Man."
+description: "Bill Gates veut taxer l'IA après trente ans de guerre au logiciel libre. Parallèle avec la « conversion » de Meta, condamné pour ses réseaux. C.R.E.A.M."
 searchIntent: "Que propose Bill Gates dans son mémo sur l'IA d'août 2026, pourquoi sa position est jugée hypocrite au regard de son passé contre l'open source, et quel lien avec les condamnations de Meta en 2026 sur la protection des mineurs."
 tags: ["tech", "opinion", "IA", "société"]
 ---
-
-# Bill Gates veut freiner l'IA : l'hypocrisie ne coûte rien quand on a déjà encaissé
 
 Fin août, Bill Gates a publié [un mémo de 6 000 mots sur l'intelligence artificielle](https://www.axios.com/2026/08/26/bill-gates-sounds-the-alarm-on-an-ai-transition). Le ton a surpris tout le monde. L'éternel optimiste de la tech sonne l'alarme : l'IA avance plus vite que les gouvernements, elle va bousculer les cols blancs comme les cols bleus, elle ouvre des risques cyber et biologiques inédits, et « il n'y a aucun plan pour entrer dans l'ère de l'IA ».
 
@@ -47,7 +46,7 @@ En janvier 2025, Mark Zuckerberg annonçait son grand retour à la « liberté d
 
 Puis la justice est passée.
 
-En mars 2026, un jury du Nouveau-Mexique a condamné Meta à 375 millions de dollars pour 37 500 violations délibérées de la loi sur les pratiques commerciales déloyales. Le jury a estimé que l'entreprise avait sciemment porté atteinte à la santé mentale des enfants et dissimulé ce qu'elle savait de l'exploitation sexuelle de mineurs sur ses plateformes. En août, le même tribunal a porté [la facture totale à 567 millions de dollars](https://www.noovo.info/nouvelles/justice/article/mineurs-sur-les-reseaux-sociaux-un-tribunal-condamne-meta-a-verser-567-m/), avec des mesures correctives qui touchent au cœur du produit : limitation du temps d'écran, restrictions sur les notifications, protection contre certains contacts adultes, contrôle de l'âge.
+En mars 2026, un jury du Nouveau-Mexique a condamné Meta à 375 millions de dollars pour 37 500 violations délibérées de la loi sur les pratiques commerciales déloyales. Le jury a estimé que l'entreprise avait sciemment porté atteinte à la santé mentale des enfants et dissimulé ce qu'elle savait de l'exploitation sexuelle de mineurs sur ses plateformes. En août, dans la seconde phase du procès, le même tribunal a condamné Meta à verser [567 millions de dollars de plus](https://www.noovo.info/nouvelles/justice/article/mineurs-sur-les-reseaux-sociaux-un-tribunal-condamne-meta-a-verser-567-m/), soit plus de 940 millions au total, avec des mesures correctives qui touchent au cœur du produit : limitation du temps d'écran, restrictions sur les notifications, protection contre certains contacts adultes, contrôle de l'âge.
 
 Autrement dit, ce que des chercheurs, des parents et quelques employés disaient depuis dix ans a été jugé fondé. Meta savait, et Meta a choisi de ne pas savoir.
 
@@ -72,6 +71,8 @@ C.R.E.A.M.
 Gates a raison sur l'IA. Meta a été condamné pour ses réseaux. Et dans les deux cas, la conclusion est la même : finalement, l'argent arrange tout. Il paie les dégâts, il paie les mémos, il paie même la sagesse.
 
 Get the money. Dollar dollar bill, y'all.
+
+*Mise à jour du 8 octobre 2026 : correction du montant d'août. Les 567 millions de dollars s'ajoutent aux 375 millions de mars, ils ne constituent pas le total, d'après [GigaLaw](https://giga.law/daily-news/2026/8/7/new-mexico-judge-orders-meta-to-pay-567-million-in-mental-health-case).*
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com)*

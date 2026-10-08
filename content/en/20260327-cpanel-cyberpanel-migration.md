@@ -2,12 +2,11 @@
 title: "How Donald Trump pushed me to ditch cPanel for CyberPanel, and why I regret nothing"
 image: "/images/articles/cpanel-cyberpanel-migration.webp"
 createdAt: "2026-03-27"
-description: "Migrating an entire server infrastructure from cPanel to CyberPanel: a sysadmin's field report from West Africa, between price hikes, blocked payments in the UEMOA zone and the quest for digital sovereignty."
+description: "cPanel price hikes, payments blocked in the UEMOA zone: a field report on my migration to CyberPanel and OpenLiteSpeed, and a TTFB divided by five."
+updatedAt: "2026-10-08T12:00:00Z"
 searchIntent: "How to migrate an infrastructure from cPanel to CyberPanel and OpenLiteSpeed in West Africa."
 tags: ["tutorial", "dev", "africa"]
 ---
-
-# How Donald Trump pushed me to ditch cPanel for CyberPanel, and why I regret nothing
 
 I never thought I would write this article one day. Not because the subject is trivial (migrating an entire server infrastructure is anything but trivial) but because the decision was not made in an office, in front of a nice clean benchmark. It was made under stress, in a hurry, and in a geopolitical context nobody in web hosting had seen coming.
 
@@ -20,6 +19,7 @@ Then 2019 came along. cPanel dropped its fixed licence model for a per-account s
 But honestly, cPanel's price hikes alone would probably not have made me move. You adapt, you adjust your quotes, you grumble a bit and you carry on. What changed everything is what happened in early 2026.
 
 ## When Donald Trump turned off the taps
+
 In January 2026, the Trump administration announced a series of drastic measures aimed at restricting financial flows between the United States and West Africa. Under the pretext of fighting money laundering and terrorism financing, the American authorities imposed severe restrictions on cross-border transactions, particularly affecting the countries of the UEMOA zone (the West African Economic and Monetary Union).
 
 **Concrete result for me**: for almost a month, it was impossible to pay for the cPanel licence. Not a cash flow problem. A payment infrastructure problem. Cards no longer went through. The alternatives (PayPal, Stripe) were unstable or unavailable from the UEMOA zone. And when your cPanel licence expires, WHM lets you know, politely at first, then less and less so.
@@ -71,7 +71,7 @@ We are talking about a **TTFB reduction of almost 80%**. And it is not just Open
 ### The final stack
 
 ```
-Client → Cloudflare CDN → OpenLiteSpeed → PHP 8.2 + OPcache → WordPress + Redis + LiteSpeed Cache → MariaDB tuné
+Client → Cloudflare CDN → OpenLiteSpeed → PHP 8.2 + OPcache → WordPress + Redis + LiteSpeed Cache → tuned MariaDB
 ```
 
 Compared with the old one:
@@ -126,7 +126,7 @@ If you manage servers in French-speaking Africa and you are considering the migr
 
 **Master the command line.** CyberPanel has a web interface, but when things go wrong (and they will go wrong), SSH is where it gets fixed. If you are not comfortable with `systemctl`, `vim` and logs, train yourself first.
 
-**Keep Cloudflare in front.** The free Cloudflare CDN in front of OpenLiteSpeed is the magic combination. Cache, SSL, DDoS protection, all free.
+**Keep Cloudflare in front.** The free Cloudflare CDN in front of OpenLiteSpeed is the magic combination. Cache, SSL, DDoS protection, all free. (And for a static site or a Nuxt project, Cloudflare can even replace the host: [that is what I did for this blog](/en/20260402-vercel-cloudflare-pages-migration).)
 
 **Plan for two weeks minimum.** Not two days, two weeks. Between migrating the sites, DNS configuration, testing, email migration and the inevitable bugs, that is the realistic minimum.
 
@@ -139,6 +139,8 @@ Migrating from cPanel to CyberPanel was not in my plans. It was cPanel's continu
 But today, with a **TTFB divided by five**, **zero licence fees**, and **regained independence** from international payment systems, I regret nothing.
 
 If "Uncle Donald" taught me anything, it is that **digital sovereignty, in Africa, starts with the choice of your tools.**
+
+*Updated October 8, 2026: ionCube now publishes loaders for PHP 8.4 and 8.5 ([official loaders page](https://www.ioncube.com/loaders.php)). Before downgrading to `lsphp82`, check that the installed loader version matches your PHP version. Another reason not to linger on PHP 8.2: it stops receiving security fixes after December 31, 2026 ([official PHP schedule](https://www.php.net/supported-versions.php)).*
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com), converted to open source once again*

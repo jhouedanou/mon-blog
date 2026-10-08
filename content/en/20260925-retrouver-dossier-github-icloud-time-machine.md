@@ -2,18 +2,16 @@
 title: "How to regain access to your GitHub folder after switching to iCloud+ (thanks to Time Machine)"
 createdAt: "2026-09-25T19:30:00Z"
 image: "/images/articles/pexels-jibarofoto-2148222.webp"
-description: "After turning on Desktop and Documents syncing with iCloud+, my GitHub repositories stopped responding. Here is why iCloud Drive blocks Git, and how to get your code folders back from a Time Machine backup."
+description: "iCloud's Desktop & Documents syncing locked up my GitHub repos. Why Git can't cope with iCloud Drive, and how to get everything back with Time Machine."
 searchIntent: "How to recover a GitHub folder on a Mac that is blocked by iCloud Drive's Desktop and Documents syncing, by restoring it with Time Machine?"
 tags: ["tutorial", "apple", "macos", "icloud", "git", "dev"]
 ---
-
-# How to regain access to your GitHub folder after switching to iCloud+ (thanks to Time Machine)
 
 > **Before we start.** To answer the questions about my new productivity: yes, I do use AI. For several months now, it has been **correcting** my articles, and above all, it fetches the illustration images from Pexels, like the ones in this post. The problem is not AI, it is the misuse of AI. In my case, it saves me from typos and improves the front matter, the block of information at the top of each article (title, date, image, description, tags), since this blog runs entirely on Markdown files. Not to mention that it makes it easier for me to build new features, like the carousels and audio players in [the Koala Sampler article](/en/20260822-koala-sampler-gratuit-mac-boom-bap).
 
 Well, I doubt a competent developer would run into this problem, but it is a mistake that can happen even to the most experienced.
 
-I recently signed up for iCloud's paid plan, largely for its price: 700 CFA francs a month for 50 GB of cloud storage, access to Apple TV (formerly Apple TV+) and Apple Arcade, [included in iCloud+ in Côte d'Ivoire since September](https://www.apple.com/ci/newsroom/2026/09/icloud-plus-expands-to-include-apple-tv-and-apple-arcade/).
+I recently signed up for [iCloud's paid plan](/en/20261006-icloud-plus-099-apple-tv-apple-arcade-murderbot-pluribus), largely for its price: 700 CFA francs a month for 50 GB of cloud storage, access to Apple TV (formerly Apple TV+) and Apple Arcade, [included in iCloud+ in Côte d'Ivoire since September](https://www.apple.com/ci/newsroom/2026/09/icloud-plus-expands-to-include-apple-tv-and-apple-arcade/).
 
 Then I turned on iCloud Drive's "Desktop & Documents Folders" option, the iCloud feature that lets you sync the files and folders on your Desktop and in your Documents folder with your Mac computers. Everything was fine until I tried to pull code from a GitHub repo. The wheel spins, endlessly, with no update.
 
@@ -125,4 +123,5 @@ Once everything works, delete the iCloud copy. It is no longer useful and it tak
 
 _Photos: [Luis Quintero](https://www.pexels.com/@jibarofoto/), [Oluwaseun Duncan](https://www.pexels.com/@duncanoluwaseun/) and [Arina Krasnikova](https://www.pexels.com/@arina-krasnikova/), on Pexels._
 
+---
 *[Jean-Luc Houédanou](https://houedanou.com)*

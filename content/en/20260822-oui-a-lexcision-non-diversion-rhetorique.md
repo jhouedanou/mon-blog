@@ -2,19 +2,17 @@
 title: "\"Yes to FGM\": what algorithms make of a razor blade"
 createdAt: "2026-08-22T12:40:00Z"
 image: "/images/articles/pexels-cottonbro-4631077.webp"
-description: "\"Yes to FGM\": this campaign out of Mali is thriving on Facebook and Twitter. Why the algorithms reward it, what really motivates those who spread it, and what Ivorian and Malian law say about responsibility online."
+description: "\"Yes to FGM\": born in Mali, this campaign is thriving on Facebook and Twitter. Why the algorithms reward it, and why the only possible answer to it is no."
 searchIntent: "What is the \"yes to FGM\" campaign that started in Mali, why is it thriving on social media, what motivates those who spread it, and what do Ivorian and Malian laws say about responsibility for content published online."
 tags: ["society", "africa", "opinion", "digital"]
 ---
 
-# "Yes to FGM": what algorithms make of a razor blade
-
 This blog is about technology and digital culture. So the title may come as a surprise. Stay anyway: this campaign is a pure product of the platforms. We're right in the middle of the subject.
 
-A "yes to FGM" campaign has been circulating on Facebook and Twitter out of Mali. Let me say it again:  **A "yes to FGM" campaign has been circulating on Facebook and Twitter out of Mali.**
+A "yes to FGM" campaign has been circulating on Facebook and Twitter out of Mali. Let me say it again: **A "yes to FGM" campaign has been circulating on Facebook and Twitter out of Mali.**
 
 
-Because that's where some of us, Africans online, have got to in 2026. We no longer discuss what is being done. We discuss words, context, sensitivities, traditions. And while we debate, the practice quietly carries on. And it's not limited to FGM, oh no.. there are plenty of examples.
+Because that's where some of us, Africans online, have got to in 2026. We no longer discuss what is being done. We discuss words, context, sensitivities, traditions. And while we debate, the practice quietly carries on. And it's not limited to FGM, oh no… there are plenty of examples.
 
 ## Three examples of normalisation
 
@@ -30,7 +28,7 @@ How do you make enemies for life? By stating the truth: as our parents showed us
 
 ### Third technique: making a spectacle of it.
 
-In French-speaking Africa, on "Meta", slander and harassment go under the rallying cries of "gbarai", "buzz", "soko", "kongossa". All of it served up by "bloggers" to their fans, all the time, without a glance at the people targeted. Even prison stops nobody: all you have to do is "ask for forgiveness".
+In French-speaking Africa, on "Meta", slander and harassment go under the rallying cries of "gbarai", "buzz", "soko", "kongossa". All of it served up by "bloggers" to their fans, all the time, without a glance at the people targeted. As if social media were [a grin](/en/20250605-facebook-nest-pas-un-grin). Even prison stops nobody: all you have to do is "ask for forgiveness".
 
 Euphemism, polarisation, spectacle. Three variants of the same move: shifting the debate from the victim to the words. As long as it stays bizi and gbarai, we can shrug.
 
@@ -95,7 +93,7 @@ Let's recap. A mutilation, encouraged online, for a single real benefit: followe
 
 There's no side to spare here. No nuance to find. There are children, a blade, and adults deciding on their behalf in front of an audience.
 
-Enough.
+Enough. 
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com)*

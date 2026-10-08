@@ -2,12 +2,11 @@
 title: "Windows 11 : Installez le sans compte Microsoft (et sans perdre vos cheveux)"
 image: "/images/articles/windows11-bypass.webp"
 createdAt: "2026-04-14"
-description: "Vous venez de formater Windows 11 et Microsoft refuse un compte local ? Guide complet avec 4 solutions qui marchent vraiment — et explications des pièges. Pour ceux qui aiment leur liberté informatique."
+updatedAt: "2026-10-08T12:00:00Z"
+description: "Windows 11 exige un compte Microsoft ? Quatre méthodes pour créer un compte local à l'installation, leurs pièges, et ce qui marche encore selon votre build."
 searchIntent: "Comment installer Windows 11 avec un compte local sans créer de compte Microsoft."
 tags: ["tutoriel", "windows", "sysadmin"]
 ---
-
-# Windows 11 : Installez le sans compte Microsoft (et sans perdre vos cheveux)
 
 Vous venez de formater une machine et Windows 11 vous demande impérativement un compte Microsoft ? Bienvenue dans le monde Microsoft 2026, où créer un utilisateur local est devenu un parcours du combattant.
 
@@ -21,8 +20,8 @@ Depuis les derniers patches Windows 11, Microsoft a décidé que les comptes loc
 
 Vous essayez les anciennes astuces ?
 
-- Email factice comme `no@thankyou.com` (Voir ce clip explicatif : https://www.youtube.com/clip/Ugkxbe-HidbA7gWD_7QvNu3tKLagXSGvShm4 ) ? Rejet.
-- Sauter l'étape en fermant le navigateur  ? Ne marche plus.
+- Email factice comme `no@thankyou.com` (voir [ce clip explicatif](https://www.youtube.com/clip/Ugkxbe-HidbA7gWD_7QvNu3tKLagXSGvShm4)) ? Rejet.
+- Sauter l'étape en fermant le navigateur ? Ne marche plus.
 - Laisser le formulaire vide ? Microsoft re-force la saisie.
 
 C'est pas de la malveillance, c'est juste du business : un utilisateur connecté à un compte Microsoft, c'est un utilisateur tracé, synchro, et dans l'écosystème cloud.
@@ -43,6 +42,8 @@ Avant de foncer tête baissée, comprenez un truc : **le timing est CRITIQUE**. 
 
 C'est la méthode officieuse qui marche — du moins au bon moment.
 
+> **Attention, ça dépend de votre build** : Microsoft a retiré le script `bypassnro.cmd` à partir de la build 26200.5516, celle qui préparait Windows 11 25H2 ([Windows Latest](https://windowslatest.com/2025/03/29/windows-11-is-not-killing-off-hack-that-lets-you-bypass-microsoft-account-but-it-takes-more-efforts-now/)). Si la commande n'est pas reconnue, la même invite (`Maj+F10`) accepte encore, sur certaines images, la clé de registre qu'elle créait : `reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE /v BypassNRO /t REG_DWORD /d 1 /f`, puis `shutdown /r /t 0` pour redémarrer. L'autre raccourci connu, `start ms-cxh:localonly`, a lui aussi été supprimé des builds Insider 26220.6772 ([PCWorld](https://www.pcworld.com/article/2932975/microsoft-kills-two-more-ways-to-install-windows-11-with-local-accounts.html)). Testez avec votre ISO avant de compter dessus.
+
 **MAIS** : il faut la lancer **avant** de connecter l'ordinateur au réseau. Oui, c'est absurde. Oui, c'est comme ça.
 
 **Étapes** :
@@ -54,7 +55,7 @@ C'est la méthode officieuse qui marche — du moins au bon moment.
 5. L'écran de création de compte local s'affiche — pas de compte Microsoft demandé
 6. Créez votre utilisateur local et c'est fini
 
-**Le timing** : avant de cliquer sur « Suivant » pour connecter le réseau. Vous comprenez ? À l'écran de langue/région, avant tout connexion internet.
+**Le timing** : avant de cliquer sur « Suivant » pour connecter le réseau. Vous comprenez ? À l'écran de langue/région, avant toute connexion internet.
 
 **Si vous avez déjà connecté le PC à internet avant d'essayer** : trop tard, passez à la solution 2.
 
@@ -90,20 +91,22 @@ Certains utilisateurs rapportent qu'entrer un email avec du style — genre des 
 
 Exemple : `nope.nope.nope@nope.nope` ou `no@thankyou.combattant@nope.com`
 
-**Honnêtement** : c'est aléatoire. Ça a marché pour certains en 2024, mais les derniers patches l'ont peut-être patché. J'inclus ça pour la forme, mais ne comptez pas dessus.
+**Honnêtement** : c'est aléatoire. Ça a marché pour certains en 2024, mais les derniers patches l'ont peut-être corrigé. J'inclus ça pour la forme, mais ne comptez pas dessus.
 
 ---
 
 ### Solution 4 : RUFUS (le pro move)
 
-Si vous faites une clé USB bootable avec **RUFUS** (le meilleur outil de création de clés USB, point barre), il y a une option « Skip Windows Account » qui vous évite complètement cette étape.
+Si vous faites une clé USB bootable avec **RUFUS** (le meilleur outil de création de clés USB, point barre), il y a une option qui retire l'obligation du compte Microsoft et vous évite complètement cette étape.
 
 **Comment** :
 
 1. Téléchargez [RUFUS](https://rufus.ie/)
-2. Créez une clé USB bootable Windows 11
-3. Dans les options avancées, cochez « Start menu » et « Skip Windows Account » (ou similaire, selon votre version)
+2. Sélectionnez votre ISO de Windows 11 (22H2 ou plus récent) et cliquez sur **Démarrer**
+3. Dans la fenêtre « Windows User Experience » qui s'ouvre, cochez « Remove requirement for an online Microsoft account » (libellé selon la langue et la version de Rufus)
 4. Bootez et installez — pas une seule demande de compte Microsoft
+
+D'après la [FAQ de Rufus](https://github.com/pbatard/rufus/wiki/FAQ), le compte local n'est proposé que si le réseau est débranché au moment de l'écran de création de compte. Débranchez le câble ou ne vous connectez pas au WiFi.
 
 **Avantages** :
 - Zéro interaction avec Microsoft
@@ -127,7 +130,7 @@ Windows a déjà « vérifié » en ligne que vous aviez besoin d'un compte Micr
 
 **Solution** : Solution 2 (couper internet).
 
-### 2. **Le formulaire qui refuse votre email "factice"**
+### 2. **Le formulaire qui refuse votre email « factice »**
 
 Les validations email se sont renforcées. `no@thankyou.com` ne passe plus. Les variantes non plus.
 
@@ -147,13 +150,13 @@ Ou créez une demande d'accessibilité (`Win+U` si possible) — parfois ça ouv
 
 ### 5. **Vous avez créé le compte Microsoft et vous regrettez**
 
-Trop tard. Vous devez utiliser ce compte maintenant. Créer un nouvel utilisateur local après coup ? Oui, c'est possible via Paramètres → Comptes → Créer un compte local, mais vous aurez toujours le compte Microsoft qui traîne.
+Pas de panique, ce n'est pas définitif. Dans Paramètres → Comptes → Vos informations, l'option « Se connecter plutôt avec un compte local » convertit votre session en compte local en gardant vos fichiers ([marche à suivre détaillée chez Pureinfotech](https://pureinfotech.com/switch-from-microsoft-account-to-local-account-windows-11/)). Vous pouvez aussi créer un nouvel utilisateur local via Paramètres → Comptes → Autres utilisateurs, mais le compte Microsoft restera dans un coin.
 
 **Morale** : les solutions 1 ou 2 doivent être appliquées **avant** d'avoir créé un compte Microsoft. Une fois qu'il existe, c'est plus compliqué de le bypasser.
 
-### 6. **Vous avez un message "Impossible de se connecter au serveur de sécurité"**
+### 6. **Vous avez un message « Impossible de se connecter au serveur de sécurité »**
 
-Ça veut juste dire qu'il n'y a pas de connexion internet. C'est l'objectif. Continue, Windows va t'offrir un compte local dans 5 secondes.
+Ça veut juste dire qu'il n'y a pas de connexion internet. C'est l'objectif. Continuez, Windows va vous proposer un compte local dans 5 secondes.
 
 ---
 
@@ -161,7 +164,7 @@ Trop tard. Vous devez utiliser ce compte maintenant. Créer un nouvel utilisateu
 
 | Solution | Timing | Difficulté | Fiabilité | Stress level |
 |----------|--------|-----------|-----------|---|
-| `OOBE\BYPASSNRO` | Avant réseau | ⭐ | 100% | Zéro si c'est au bon moment |
+| `OOBE\BYPASSNRO` | Avant réseau | ⭐ | Selon la build (retiré des récentes) | Zéro si c'est au bon moment |
 | Couper internet | À l'écran compte | ⭐⭐ | 95% | Modéré (faut couper internet) |
 | Email créatif | N'importe quand | ⭐ | 30% | Très fort si ça marche pas |
 | RUFUS | Avant l'install | ⭐ | 100% | Zéro (solution propre) |
@@ -170,7 +173,7 @@ Trop tard. Vous devez utiliser ce compte maintenant. Créer un nouvel utilisateu
 
 ## Le scénario typique (celui que vous vivez probablement)
 
-1. ✅ Vous démarrez Windows 11 sur une surface achetée d'occasion
+1. ✅ Vous démarrez Windows 11 sur une Surface achetée d'occasion
 2. ✅ Écran de langue — parfait
 3. ❌ Vous cliquez sur Suivant sans penser à mal
 4. ❌ Windows vous propose le WiFi — vous vous connectez par automatisme
@@ -205,10 +208,10 @@ Mais vous avez aussi le droit de vouloir une machine locale. Les deux peuvent co
 Si Windows 11 vous frustre vraiment (ce qui est compréhensible) :
 
 - **Windows 10** : comptes locaux sans tracas. Fin du support en octobre 2025, mais pour une machine de test, ça va. Et c'est gratuit.
-- **Linux** (Ubuntu, Fedora, Pop!_OS) : comptes locaux par défaut, gratuit, zéro tracking, plus performant.
-- **macOS** : comptes iCloud optionnels, mais les macs chers et verrouillés.
+- **Linux** (Ubuntu, Fedora, Pop!_OS) : comptes locaux par défaut, gratuit, zéro tracking, plus performant. Et une fois installé, vous pouvez même [cloner votre Ubuntu sans perdre vos données](/fr/20241029-cloner-ubuntu).
+- **macOS** : comptes iCloud optionnels, mais les Mac sont chers et verrouillés.
 
-Mais si vous êtes obligé de Windows 11, ces solutions fonctionnent.
+Mais si vous êtes obligé de passer par Windows 11, ces solutions fonctionnent.
 
 Et franchement ? Pour quelqu'un qui vient de recevoir une Surface refurbisée et qui veut juste créer un compte pour l'utiliser ? C'est inestimable.
 
@@ -232,6 +235,7 @@ Et pour quelqu'un qui vient de recevoir une Surface refurbisée, une vieille mac
 - **Création de compte local après coup** : Paramètres → Comptes → Autres utilisateurs
 - **Supprimer un compte Microsoft** : Paramètres → Comptes → Vos infos → Gérer votre compte Microsoft
 
----
+*Mise à jour du 8 octobre 2026 : Microsoft a retiré `bypassnro.cmd` des builds récentes de Windows 11 ([Windows Latest](https://windowslatest.com/2025/03/29/windows-11-is-not-killing-off-hack-that-lets-you-bypass-microsoft-account-but-it-takes-more-efforts-now/)) puis `start ms-cxh:localonly` des builds Insider ([PCWorld](https://www.pcworld.com/article/2932975/microsoft-kills-two-more-ways-to-install-windows-11-with-local-accounts.html)) : ajout de la clé de registre de secours, correction de la procédure RUFUS d'après sa [FAQ](https://github.com/pbatard/rufus/wiki/FAQ), et du piège n° 5 (on peut repasser en compte local après coup).*
 
-*[Jean-Luc Houédanou](https://houedanou.com) —  Microsoft n'aime pas cet article*
+---
+*[Jean-Luc Houédanou](https://houedanou.com) — Microsoft n'aime pas cet article*

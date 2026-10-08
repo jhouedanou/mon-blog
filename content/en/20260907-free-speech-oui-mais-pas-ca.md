@@ -2,12 +2,10 @@
 title: "Free speech, yes. But not that."
 createdAt: "2026-09-07T15:29:00Z"
 image: "/images/articles/pexels-katrin-bolovtsova-6077189.webp"
-description: "On August 25, 2026, a US federal appeals court ruled that the First Amendment protects the mere private possession of AI-generated child sexual abuse images. What the decision actually says, what it doesn't say, and why a 1969 precedent is out of its depth against diffusion models."
+description: "A US federal appeals court ruled that the First Amendment protects private possession of AI-generated child sexual abuse images. What the ruling actually says."
 searchIntent: "What the 7th Circuit's United States v. Anderegg decision actually says about AI-generated child sexual abuse images, and whether the United States has legalised this content."
 tags: ["ai", "society", "opinion", "legal"]
 ---
-
-# Free speech, yes. But not that.
 
 I am, and I remain, on the side of free speech. But a responsible free speech, the kind that owns its legal consequences. A quick nod, in passing, to certain Ivorian bloggers who have paid the price: saying what you think has a cost, and those who have paid it know that better than I do.
 
@@ -20,9 +18,9 @@ On August 25, 2026, the US Court of Appeals for the 7th Circuit (Illinois, India
 Judge John Z. Lee's reasoning rests on two Supreme Court precedents:
 
 - Stanley v. Georgia (1969): the State cannot criminalise the mere possession of obscene material in one's own home.
-- Ashcroft v. Free Speech Coalition (2002): « virtual » content that depicts no real child is not, legally speaking, child pornography.
+- Ashcroft v. Free Speech Coalition (2002): "virtual" content that depicts no real child is not, legally speaking, child pornography.
 
-The judge clearly didn't sign off with a light heart. In a concurring opinion, he explains that AI models today produce images « virtually indistinguishable » from real abuse, and he asks the Supreme Court to redraw the lines, because he isn't allowed to do it himself.
+The judge clearly didn't sign off with a light heart. In a concurring opinion, he explains that AI models today produce images "virtually indistinguishable" from real abuse, and he asks the Supreme Court to redraw the lines, because he isn't allowed to do it himself.
 
 ## What to keep in mind before sharing a screaming post
 
@@ -31,7 +29,7 @@ The judge clearly didn't sign off with a light heart. In a concurring opinion, h
 - The decision only applies in three US states, and only to federal law. Most states have their own laws criminalising this content, AI or not.
 - The case will very likely go to the Supreme Court.
 
-So no, America has not « legalised AI child pornography ». But yes, a court was forced, by texts from 1969 and 2002, to say that you can't prosecute someone for what's on their hard drive. And that is what bothers me.
+So no, America has not "legalised AI child pornography". But yes, a court was forced, by texts from 1969 and 2002, to say that you can't prosecute someone for what's on their hard drive. And that is what bothers me.
 
 ## The question I'm really asking myself
 
@@ -59,9 +57,9 @@ I'd like to hear from the people who built this industry. Not a foundation press
 
 ## Sources
 
-- *United States v. Anderegg* decision, 7th Circuit, August 25, 2026 (analysis: reason.com/volokh)
-- Snopes, « Why federal judge ruled First Amendment protects certain AI-generated child sex abuse material »
-- Minnesota Lawyer / The Daily Record, « Federal judge warns law is being left behind by AI child sex abuse images »
+- [*United States v. Anderegg* decision, 7th Circuit, August 25, 2026](https://www.fire.org/sites/default/files/2026/08/Opinion%20-%20United%20States%20v.%20Anderegg.pdf) (analysis: reason.com/volokh)
+- Snopes, ["Judge ruled certain AI-generated child sex abuse material is protected by First Amendment. Here's context"](https://www.snopes.com/fact-check/judge-ai-child-sex-abuse-ruling/)
+- Minnesota Lawyer / The Daily Record, ["Federal judge warns law is being left behind by AI child sex abuse images"](https://thedailyrecord.com/2026-08-31/federal-judge-first-amendment-ai-child-sex-abuse-images/)
 
 *Image: KATRIN BOLOVTSOVA — Pexels.*
 

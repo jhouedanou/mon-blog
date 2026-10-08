@@ -2,14 +2,12 @@
 title: "Vérifiez si votre site est responsive sur l'iPhone Duo"
 createdAt: "2026-09-11T20:01:00Z"
 image: "/images/articles/pexels-imadclicks-19022728.webp"
-description: "Apple a sorti son premier iPhone pliable, et un développeur a publié un outil gratuit pour voir à quoi ressemble votre site dessus. Je l'ai essayé sur ce blog, et le résultat m'a appris quelque chose que je ne savais pas sur mon propre site."
+description: "Votre site tient-il sur l'iPhone Duo ? Tailles d'écran plié et déplié, l'outil Iphone Duo Preview, et l'erreur qui m'a fait découvrir une faille sur mon blog."
 searchIntent: "Comment tester si un site web est responsive sur l'iPhone Duo, quelles sont les tailles d'écran plié et déplié, et pourquoi un outil de prévisualisation peut refuser d'afficher un site qui accepte pourtant d'être embarqué."
 tags: ["développement", "responsive", "outils", "apple", "sécurité"]
 ---
 
-# Vérifiez si votre site est responsive sur l'iPhone Duo
-
-Apple a présenté cette semaine son premier iPhone pliable, l'iPhone Duo. Je n'ai pas l'intention d'en acheter un ( mon iPad mini fonctionne toujours ), mais comme tous ceux qui font des sites web, la question m'est venue assez vite : à quoi ressemble mon site là-dessus ?
+Apple a présenté cette semaine son premier iPhone pliable, l'iPhone Duo. Je n'ai pas l'intention d'en acheter un (mon iPad mini fonctionne toujours), mais comme tous ceux qui font des sites web, la question m'est venue assez vite : à quoi ressemble mon site là-dessus ?
 
 Un développeur a justement publié un petit outil pour répondre à cette question. Je l'ai essayé sur houedanou.com, et le résultat n'est pas celui que j'attendais.
 
@@ -69,7 +67,7 @@ Petit détail amusant : au prochain déploiement, l'outil de Rapto affichera exa
 
 ## Et donc, responsive ou pas ?
 
-Comme l'outil ne voulait pas me répondre, j'ai fait le test à la main dans Chrome, en simulant les deux écrans. Apple ne publie que les pixels physiques, j'ai donc supposé un ratio de 3 comme sur les iPhone récents, ce qui donne environ 466 × 678 pixels CSS pour l'écran externe et 890 × 626 pour l'écran interne.
+Comme l'outil ne voulait pas me répondre, j'ai fait le test à la main [dans Chrome](/fr/20260401-persistance-css-chrome-devtools), en simulant les deux écrans. Apple ne publie que les pixels physiques, j'ai donc supposé un ratio de 3 comme sur les iPhone récents, ce qui donne environ 466 × 678 pixels CSS pour l'écran externe et 890 × 626 pour l'écran interne.
 
 Dans les deux cas, la mise en page tient : une seule colonne sur l'écran externe, la largeur complète sur l'écran interne, et aucun débordement horizontal.
 
@@ -83,4 +81,5 @@ Voilà pour l'iPhone Duo. Si vous testez votre site avec l'outil de Rapto et qu'
 
 *Crédits photos : [Imad Clicks](https://www.pexels.com/@imadclicks/) et [picjumbo.com](https://www.pexels.com/@picjumbo-com-55570/) sur Pexels. Capture d'écran : [Iphone Duo Preview](https://duo-responsive.vercel.app/).*
 
+---
 *[Jean-Luc Houédanou](https://houedanou.com)*

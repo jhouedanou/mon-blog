@@ -2,11 +2,11 @@
 title: "Warning: the top Google result for \"Bing Webmaster Tools\" is a phishing site"
 image: "/images/hazars.jpg"
 createdAt: "2026-06-18"
-description: "I just stumbled on a scam that directly targets webmasters and SEOs: a fake Bing Webmaster Tools page, in the top sponsored spot on Google, that hoovers up your Microsoft AND Google credentials. Here is how to spot it."
+updatedAt: "2026-10-08T12:00:00Z"
+description: "A fake Bing Webmaster Tools page, sitting in a sponsored Google result, steals webmasters' Microsoft and Google credentials. How to spot it and what to do."
 searchIntent: "How to recognise a fake Bing Webmaster Tools page before handing over your Google or Microsoft credentials."
 tags: [security, seo, phishing, warning]
 ---
-# Warning: the top Google result for "Bing Webmaster Tools" is a phishing site
 
 Usually, on this blog, I joke around. Not this time.
 
@@ -23,7 +23,7 @@ Then comes the central mechanism: a "Please sign in — Choose an account conven
 - Microsoft
 - Google
 
-This is where the anomaly jumps out. Why would a Bing tool offer sign-in through a Google account? It never would. Microsoft does not send a user to its direct competitor for authentication. That second button has only one purpose: widening the net. Whichever button you pick, you hand your credentials to the attacker.
+An important clarification: the real Bing Webmaster Tools also offers sign-in with a Google account, and has done since 2018 ([Search Engine Journal](https://www.searchenginejournal.com/bing-webmaster-tools-now-social-login-option/236569/)). Those two buttons therefore prove nothing on their own, and that is precisely what makes the copy believable. Here, they have only one purpose: widening the net. Whichever button you pick, you hand your credentials to the attacker.
 
 I would gladly have put up a video, but I lost my old blog's search ranking after publishing a similar one. You will have to make do with a screenshot.
 
@@ -49,8 +49,8 @@ The most worrying part remains the distribution channel. The attacker paid Googl
 Three simple rules are enough to protect yourself:
 
 - **Always check the URL.** The official address is `bing.com/webmasters`. If the domain is neither `microsoft.com` nor `bing.com`, close the tab. `camp.recettee.com` has never hosted a Microsoft service.
-- **Be suspicious of any authentication inconsistency.** No Microsoft service offers sign-in through a Google account. That is the most obvious red flag.
-- **Never sign in through a sponsored result.** For any service that asks for a password (Search Console, Bing, your bank, your host), type the address by hand or use a bookmark you saved yourself. Ignore the ads.
+- **Do not trust the sign-in buttons.** Bing Webmaster Tools genuinely accepts Microsoft, Google and Facebook accounts, so a phishing page can display exactly the same options. Only the domain in the address bar can be trusted.
+- **Never sign in through a sponsored result.** For any service that asks for a password (Search Console, Bing, your bank, your host), type the address by hand or use a bookmark you saved yourself. Ignore the ads. The same reflex applies to emails: I dissected a [fake $358.25 renewal email](/en/20260831-faux-mail-renouvellement-zoho-358-dollars) that plays on the same levers.
 
 ## If you have been compromised
 
@@ -68,4 +68,7 @@ We spend our days hardening servers, patching vulnerabilities and securing confi
 
 Check your tabs, warn your colleagues, and get into the habit of checking the URL before you click.
 
+*Updated October 8, 2026: correcting a mistake on my part. The real Bing Webmaster Tools does accept sign-in with a Google account ([Search Engine Journal](https://www.searchenginejournal.com/bing-webmaster-tools-now-social-login-option/236569/)), so that button is not a sign of phishing in itself. The domain remains the only reliable clue.*
+
+---
 *[Jean-Luc Houédanou](https://houedanou.com)*

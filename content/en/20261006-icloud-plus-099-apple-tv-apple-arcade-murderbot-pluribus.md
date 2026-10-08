@@ -2,12 +2,10 @@
 title: "iCloud+ for $0.99: Apple TV and Apple Arcade included (and Apple TV is really good)"
 createdAt: "2026-10-06T01:00:00Z"
 image: "/images/articles/pexels-jakubzerdzicki-28973296.webp"
-description: "Since September 2026, in Côte d'Ivoire, the $0.99-a-month 50GB iCloud+ plan includes Apple TV and Apple Arcade. I came for the storage, I'm staying for Murderbot and Pluribus."
+description: "Since September 2026 in Côte d'Ivoire, the $0.99 50GB iCloud+ plan includes Apple TV and Apple Arcade. Came for storage, staying for Murderbot and Pluribus."
 searchIntent: "What does the $0.99-a-month iCloud+ plan include in Côte d'Ivoire now that it comes with Apple TV and Apple Arcade, and is Apple TV worth it (Murderbot, Pluribus)?"
 tags: ["apple", "icloud", "africa", "tech", "series"]
 ---
-
-# iCloud+ for $0.99: Apple TV and Apple Arcade included (and Apple TV is really good)
 
 I won't lie: I took iCloud+ for the price. 700 CFA francs a month for 50GB of storage, as I explained in [my article about iCloud and GitHub](/en/20260925-retrouver-dossier-github-icloud-time-machine) (the one where iCloud locked up my repositories, but that's another story).
 
@@ -23,7 +21,7 @@ For $0.99 a month, you get:
 - **Apple TV**, with the series, films and documentaries produced by Apple;
 - **Apple Arcade**, more than 200 games with no ads or in-app purchases, playable offline;
 - **Apple Music Select**, ad-free radio stations programmed by Apple Music;
-- **Family Sharing**, for five family members on top of you.
+- **Family Sharing**, with up to five family members on top of you.
 
 A quick note: Apple TV is the former Apple TV+. Apple [dropped the "+" in October 2025](https://www.macrumors.com/2025/10/13/apple-tv-plus-rebrand/). The name changes, the shows stay.
 
@@ -32,9 +30,9 @@ What you should know before you jump in, from [Apple's announcement](https://www
 - If you were already paying for Apple TV or Apple Arcade separately, Apple cancels those subscriptions. No interruption: access now comes through iCloud+.
 - Full Apple Music is still paid: $2.79 a month for iCloud+ subscribers ($4.49 for a family).
 - You don't need an Apple device for Apple TV: the app also runs on smart TVs and game consoles. Apple Arcade, on the other hand, stays limited to iPhone, iPad, Mac and Apple TV 4K.
-- The offer is reaching more than 100 countries, including Senegal, Mali, Morocco and Nigeria. With it, Apple TV becomes available in 170 countries.
+- The offer is reaching more than 100 countries, including Senegal, Mali, Morocco and Nigeria, [according to Appleosophy](https://appleosophy.com/2026/09/15/icloud-plans-will-soon-include-apple-tv-and-apple-arcade-in-several-countries/). With it, Apple TV becomes available in 170 countries.
 
-And the funny part: the United States and Europe [are not included](https://appleosophy.com/2026/09/15/icloud-plans-will-soon-include-apple-tv-and-apple-arcade-in-several-countries/). Over there, Apple TV on its own cost [$12.99 a month](https://www.macrumors.com/2025/10/13/apple-tv-plus-rebrand/) at the end of 2025. Here, we get Apple TV, Apple Arcade and 50GB of storage for $0.99. For once, West Africa isn't served last.
+And the funny part: the United States and the European Union countries [are not included](https://appleosophy.com/2026/09/15/icloud-plans-will-soon-include-apple-tv-and-apple-arcade-in-several-countries/). Over there, Apple TV on its own cost [$12.99 a month](https://www.macrumors.com/2025/10/13/apple-tv-plus-rebrand/) at the end of 2025. Here, we get Apple TV, Apple Arcade and 50GB of storage for $0.99. For once, West Africa isn't served last.
 
 ## My two favourite shows
 

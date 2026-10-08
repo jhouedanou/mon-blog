@@ -3,51 +3,11 @@ title: "Corruption will make you late: a (small) concrete example"
 image: "/images/articles/corruption.webp"
 createdAt: "2025-03-12"
 id: 11
-description: "A personal experience in an African bank that shows how corruption and favouritism can paradoxically waste the time of those who take part in it. An account of everyday corrupt practices."
+description: "A queue at Ecobank in Aghien, a head of security selling shortcuts, and the people who paid ending up served last. A true story about corruption."
 searchIntent: "How ordinary corruption in an African bank wastes everyone's time."
 tags: ["society", "africa", "opinion"]
 summary: "A personal story from a bank branch in Africa where the author refuses to take part in the corruption scheme offered by a security guard. The story shows how those who paid to skip the queue end up being served last, illustrating that corruption, far from saving time, makes everyone late."
-
-# Open Graph Meta Tags
-og:
-  title: "La corruption vous mettra en retard : un (petit) exemple concret"
-  description: "Une expérience vécue dans une banque africaine montre que la corruption ne fait pas gagner de temps, mais en fait perdre à tous. Un témoignage édifiant."
-  image: "/images/articles/corruption.webp"
-  url: "/fr/lacorruption"
-  type: "article"
-  site_name: "Jean-Luc Houédanou"
-  locale: "fr_FR"
-
-# Twitter Card Meta Tags
-twitter:
-  card: "summary_large_image"
-  title: "La corruption vous mettra en retard : un (petit) exemple concret"
-  description: "La corruption quotidienne dans les banques africaines : pourquoi elle fait perdre du temps à tout le monde. Un récit personnel et une leçon à retenir."
-  image: "/images/articles/corruption.webp"
-  creator: "@jeanluchouedanou"
-
-# Article Meta Tags
-article:
-  published_time: "2025-03-12T00:00:00Z"
-  modified_time: "2025-03-12T00:00:00Z"
-  author: "Jean-Luc Houédanou"
-  section: "Société"
-  tag: ["corruption Afrique", "passe-droits", "banque Afrique", "Ecobank", "pot-de-vin", "file d'attente", "corruption quotidienne", "pratiques bancaires Afrique", "corruption petite échelle", "témoignage corruption"]
-
-# Schema.org structured data
-schema:
-  type: "Article"
-  headline: "La corruption vous mettra en retard : un (petit) exemple concret"
-  description: "Une expérience personnelle dans une banque africaine qui illustre comment la corruption et les passe-droits peuvent paradoxalement faire perdre du temps à ceux qui y participent. Un témoignage sur les pratiques quotidiennes de corruption."
-  image: "/images/articles/corruption.webp"
-  datePublished: "2025-03-12"
-  dateModified: "2025-03-12"
-  author: "Jean-Luc Houédanou"
-  publisher: "Jean-Luc Houédanou"
 ---
-
-# Corruption will make you late: a (small) concrete example  
-
 
 Here is a situation that might seem trivial, but it reflects a deeply rooted reality in Africa, one that is often ignored or simply accepted. 
 
@@ -106,6 +66,7 @@ And, surprise:
 
 👩🏿‍💼 **"Come in, sir."**  
 🧑🏿‍💼 😊
+
 **In 15 minutes, my card was replaced.**  
 Under the furious stares of the "bosses".
 

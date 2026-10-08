@@ -2,12 +2,11 @@
 title: "Migrer un site PrestaShop vers un nouveau nom de domaine : le guide complet"
 image: "/images/articles/prestashop-migration-domaine.webp"
 createdAt: "2026-03-31"
-description: "Changer de nom de domaine sur PrestaShop sans tout casser : base de données, fichiers de config, SSL, cache, redirections 301 et services tiers. Un guide étape par étape, testé en production."
+description: "Changer le nom de domaine d'une boutique PrestaShop sans tout casser : base de données, SSL, cache, redirections 301 et services tiers, étape par étape."
+updatedAt: "2026-10-08T12:00:00Z"
 searchIntent: "Comment changer le nom de domaine d’une boutique PrestaShop avec SSL, redirections 301 et cache."
 tags: ["tutoriel", "dev"]
 ---
-
-# Migrer un site PrestaShop vers un nouveau nom de domaine : le guide complet
 
 Changer de nom de domaine sur PrestaShop, c'est une opération qui fait transpirer même les développeurs expérimentés. Entre la base de données, le cache, le SSL et les redirections SEO, il y a pas mal de pièges. Voici un guide étape par étape, testé en production.
 
@@ -55,29 +54,22 @@ SELECT name, value FROM ps_configuration
 WHERE value LIKE '%ancien-domaine.com%';
 ```
 
-Pensez notamment à mettre à jour :
+Mettez à jour :
 
-- `PS_COOKIE_DOMAIN` et `PS_COOKIE_DOMAIN_SSL`
-- Les URLs de modules tiers (paiement, analytics, etc.)
+- toute autre clé que cette requête fait remonter ;
+- les URLs de modules tiers (paiement, analytics, etc.).
 
-## Étape 2 — Modifier les fichiers de configuration
+## Étape 2 — Fichiers de configuration et `.htaccess`
 
-Selon votre version de PrestaShop :
+Bonne nouvelle : le nom de domaine ne se trouve pas dans les fichiers de configuration de PrestaShop. En 1.7 et 8.x, `app/config/parameters.php` contient les accès à la base de données, les clés de sécurité et quelques réglages techniques, mais pas le domaine (voir le [modèle de paramètres officiel](https://github.com/PrestaShop/PrestaShop/blob/8.2.x/app/config/parameters.yml.dist)). En 1.6, `config/settings.inc.php` joue le même rôle. Vous n'avez à toucher à ces fichiers que si la base de données change elle aussi de serveur ou d'identifiants.
 
-**PrestaShop 8.x** — Vérifiez `/app/config/parameters.php` :
+Le domaine se règle donc en base de données (étape 1), ou dans le back-office s'il est encore accessible : **Paramètres de la boutique > Trafic et SEO**, section de l'URL de la boutique, champs « Domaine de la boutique » et « Domaine SSL » ([documentation PrestaShop 8](https://docs.prestashop-project.org/v.8-documentation/user-guide/configuring-shop/shop-parameters/traffic/seo-and-urls)).
 
-```php
-'ps_shop_domain' => 'nouveau-domaine.com',
-'ps_shop_domain_ssl' => 'nouveau-domaine.com',
+Le fichier à vérifier, c'est le `.htaccess` à la racine de la boutique : cherchez-y l'ancien domaine et remplacez-le s'il apparaît.
+
+```bash
+grep -n "ancien-domaine.com" .htaccess
 ```
-
-**PrestaShop 1.7.x** — Vérifiez `/config/settings.inc.php` :
-
-```php
-define('_PS_BASE_URL_', 'https://nouveau-domaine.com');
-```
-
-**PrestaShop 1.6.x** — Même fichier, mais vérifiez aussi `/config/settings.inc.php` pour les constantes `_COOKIE_KEY_` et autres.
 
 ## Étape 3 — Certificat SSL
 
@@ -91,7 +83,7 @@ sudo certbot --apache -d nouveau-domaine.com -d www.nouveau-domaine.com
 sudo certbot certonly --webroot -w /var/www/nouveau-domaine -d nouveau-domaine.com
 ```
 
-Sur CyberPanel, c'est encore plus simple : **Websites > List Websites > SSL > Issue SSL**.
+Sur CyberPanel ([je raconte ici pourquoi j'y suis passé](/fr/20260327-cpanel-cyberpanel-migration)), c'est encore plus simple : **Websites > List Websites > SSL > Issue SSL**.
 
 Ensuite, activez le SSL dans le back-office PrestaShop :
 **Paramètres de la boutique > Général > Activer SSL** et **Activer SSL sur tout le site**.
@@ -173,12 +165,13 @@ Oui, j'ai un os en travers de la gorge envers le modèle SaaS qui a envahi le we
 
 En France et en Europe, PrestaShop motorise encore des dizaines de milliers de boutiques. Des PME, des artisans, des marques de niche qui n'ont ni le budget ni l'envie de migrer vers une solution qui leur facture un pourcentage sur chaque vente.
 
-Alors oui, l'interface du back-office sent bon les années 2010. Oui, la documentation est parfois un labyrinthe. Oui, on préférerait que certains modules soient gratuits plutôt qu'à 80 € sur la marketplace. Et ce système de templating est tout sauf aisé à prendre en main .
+Alors oui, l'interface du back-office sent bon les années 2010. Oui, la documentation est parfois un labyrinthe. Oui, on préférerait que certains modules soient gratuits plutôt qu'à 80 € sur la marketplace. Et ce système de templating est tout sauf aisé à prendre en main.
 
 Mais en 2026, dans un monde où la souveraineté numérique n'est plus un concept abstrait mais une nécessité quotidienne, avoir un outil e-commerce que tu contrôles de bout en bout — c'est un luxe que beaucoup de solutions modernes ne peuvent tout simplement pas offrir.
 
-PrestaShop n'est pas mort. Il est juste discret . Et parfois, c'est exactement ce dont on a besoin.
+PrestaShop n'est pas mort. Il est juste discret. Et parfois, c'est exactement ce dont on a besoin.
+
+*Mise à jour du 8 octobre 2026 : l'étape 2 a été corrigée. Le nom de domaine n'est pas stocké dans `parameters.php` ni dans `settings.inc.php`, contrairement à ce qu'indiquait la première version, et la clé `PS_COOKIE_DOMAIN` citée à l'étape 1 n'existe pas dans PrestaShop ([code source](https://github.com/PrestaShop/PrestaShop)).*
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com) — fier d'appartenir à la vieille garde du E-commerce*
-

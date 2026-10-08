@@ -2,15 +2,12 @@
 title: "Samsung se moque de l'iPhone Duo, et c'est très bien pour Samsung"
 createdAt: "2026-09-11T22:40:00Z"
 image: "/images/articles/tim-cook-temu.png"
-description: "Pendant toute la conférence Apple, le compte Samsung Mobile US a enchaîné les moqueries sur l'iPhone Duo. J'ai souri, et puis je me suis demandé à qui profitait vraiment la blague."
+description: "Pendant la keynote Apple, Samsung Mobile US a enchaîné les moqueries sur l'iPhone Duo. J'ai souri, puis je me suis demandé à qui profitait vraiment la blague."
 searchIntent: "Pourquoi Samsung s'est moqué de l'iPhone Duo sur X pendant la keynote Apple, ce que ces tweets rapportent à Samsung, et le paradoxe de Samsung Display qui fournit les écrans pliables d'Apple."
 tags: ["apple", "samsung", "marketing", "smartphones", "réseaux sociaux"]
 ---
 
-# Samsung se moque de l'iPhone Duo, et c'est très bien pour Samsung
-
 J'ai suivi la conférence Apple de cette semaine d'un œil distrait, surtout pour voir l'iPhone Duo dont je vous parlais dans [mon précédent billet](/fr/20260911-site-responsive-iphone-duo). Mais le plus divertissant ne se passait pas sur la scène de Cupertino. Il se passait sur X, sur le compte Samsung Mobile US, qui a passé toute la présentation à tacler Apple en direct.
-
 
 ## Les tacles
 
@@ -56,4 +53,5 @@ Si ça se produit avec les pliables, Samsung aura fait la publicité de la caté
 
 *Crédits : captures d'écran des publications de [Samsung Mobile US](https://x.com/SamsungMobileUS) sur X, image tirée de la vidéo Samsung partagée par [@WorkaholicDavid](https://x.com/WorkaholicDavid). Sources : [TV5 Monde](https://information.tv5monde.com/international/ils-nous-ont-copies-samsung-tacle-le-nouvel-iphone-pliable-dapple-sur-les-reseaux-sociaux-2836914), [Phonandroid](https://www.phonandroid.com/pourquoi-chaque-iphone-duo-vendu-par-apple-fait-la-fortune-de-samsung.html).*
 
+---
 *[Jean-Luc Houédanou](https://houedanou.com)*

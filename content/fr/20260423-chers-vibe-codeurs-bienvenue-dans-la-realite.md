@@ -2,21 +2,19 @@
 title: "Chers Vibe Codeurs (sous Claude Code) : bienvenue dans la réalité"
 image: "/images/articles/welcomeToTheNBA.webp"
 createdAt: "2026-04-23"
-description: "Le vibe coding est le Bronny James du développement : un accès privilégié au game grâce à Claude Code, sans avoir payé le prix du métier. Analyse sans filtre, avec en bonus le feuilleton Anthropic d'avril 2026."
+description: "Le vibe coding, c'est le Bronny James du code : l'accès au game grâce à Claude Code, sans payer le prix du métier. Et le feuilleton Anthropic d'avril 2026."
 searchIntent: "Le vibe coding permet-il vraiment de développer sans maîtriser les bases du métier de développeur ?"
 tags: ["développement", "IA", "Claude Code", "Anthropic", "vibe coding", "opinion"]
 ---
 
-# Chers Vibe Codeurs (sous Claude Code) : bienvenue dans la réalité
-
 ## Le « Welcome to the NBA » moment
 
-En octobre 2024, Bronny James, 20 ans, fils d’un des meilleurs joueurs de basket de tous les temps tente un dunk sur Kevin Durant. 
+En octobre 2024, Bronny James, 20 ans, fils d’un des meilleurs joueurs de basket de tous les temps, tente un dunk sur Kevin Durant. 
 KD le contre. 
 Violemment. 
-Les commentateurs appellent ça un *welcome to the league moment* — « Bienvenue en NBA, fiston. »  ce moment où tu réalises que le niveau réel n'a rien à voir avec ce que tu imaginais.
+Les commentateurs appellent ça un *welcome to the league moment* — « Bienvenue en NBA, fiston. » Ce moment où tu réalises que le niveau réel n'a rien à voir avec ce que tu imaginais.
 
-Bronny tourne aujourd'hui à 2,9 points, 0,5 rebond et 1,2 passe décisive par match en saison régulière. 42 matchs joués. Des stats de bout de banc. Le kid a une marge de progression, c'est indéniable — il est jeune, athlétique, il a l’ADN. Mais soyons honnêtes : s'il est dans le roster des Lakers, c'est d'abord parce que LeBron James a mis la pression sur la franchise pour jouer avec son fils. Si Bronny s'appellait Bronny Smith ( au lieu de James), il serait en G-League à South Bay et personne n'en parlerait.
+Bronny tourne aujourd'hui à 2,9 points, 0,5 rebond et 1,2 passe décisive par match en saison régulière. 42 matchs joués. Des stats de bout de banc. Le kid a une marge de progression, c'est indéniable — il est jeune, athlétique, il a l’ADN. Mais soyons honnêtes : s'il est dans le roster des Lakers, c'est d'abord parce que LeBron James a mis la pression sur la franchise pour jouer avec son fils. Si Bronny s'appelait Bronny Smith (au lieu de James), il serait en G-League à South Bay et personne n'en parlerait.
 
 Et si ça continue comme ça — si le talent ne suit pas, si la progression stagne, si le seul argument c'est le nom de famille — Bronny aura une carrière à la Smush Parker. Vous vous souvenez de Smush ? Meneur titulaire des Lakers en 2005-2007, 9 points de moyenne en carrière, 5 saisons, 6 équipes, puis direction la Chine et l'oubli. Le genre de joueur dont Kobe disait qu'il n'avait « pas le droit de lui adresser la parole ».
 
@@ -40,7 +38,7 @@ Je code depuis plus de dix ans. Je suis passé par Udemy, OpenClassrooms (quand 
 
 **Bref. J’ai appris le code avant le vibe coding.**
 
-Et aujourd'hui, oui, j'utilise Claude Code. Tous les jours. Il m'a permis de one-shotter les projets Laravel les plus complexes de ma carrière — des systèmes de gamification, des plate-forme SaaS, des intégrations API que j'aurais mises deux semaines à monter.
+Et aujourd'hui, oui, j'utilise Claude Code. Tous les jours. Il m'a permis de one-shotter les projets Laravel les plus complexes de ma carrière — des systèmes de gamification, des plateformes SaaS, des intégrations API que j'aurais mises deux semaines à monter.
 
 Ce que je ne fais pas :
 
@@ -59,9 +57,9 @@ Et le jour où ça ne marche plus — parce que ce jour arrive toujours — ils 
 
 Je le dis sans détour : **les vibe coders sont la plaie de cette profession.**
 
-Pas parce qu'ils utilisent l'IA. Tout le monde devrait utiliser l'IA. Mais parce qu'ils confondent *générer du code* et *savoir coder*. Parce qu'ils n'ont jamais eu de bugs qui les ont fait pleurer. Parce qu'ils n'ont jamais passé un week-end entier à comprendre pourquoi un `float` cassait tout un layout. Parce qu'ils n'ont jamais eu à expliquer à un client pourquoi la migration de PrestaShop vers un nouveau domaine allait prendre 1 jour et pas trois heures.
+Pas parce qu'ils utilisent l'IA. Tout le monde devrait utiliser l'IA. Mais parce qu'ils confondent *générer du code* et *savoir coder*. Parce qu'ils n'ont jamais eu de bugs qui les ont fait pleurer. Parce qu'ils n'ont jamais passé un week-end entier à comprendre pourquoi un `float` cassait tout un layout. Parce qu'ils n'ont jamais eu à expliquer à un client pourquoi [la migration de PrestaShop vers un nouveau domaine](/fr/20260331-migrer-prestashop-nouveau-nom-de-domaine) allait prendre un jour et pas trois heures.
 
-Ils ont tout avec des prompts. Sans regarder le code. Sans vérifier la qualité. Sans comprendre les implications ou la qualité de ce qui a été généré.
+Ils font tout avec des prompts. Sans regarder le code. Sans vérifier la qualité. Sans comprendre les implications ou la qualité de ce qui a été généré.
 
 C'est comme si Bronny James marquait 30 points dans un match amical contre des collégiens et se proclamait meilleur que Kobe. Le contexte compte. L'adversité compte. L'expérience de l'échec compte.
 
@@ -76,14 +74,14 @@ Le 31 mars, Anthropic a accidentellement publié l'intégralité du code source 
 
 **Le nerfing puis le fiasco Opus 4.7.** 
 
-Opus 4.6 a été silencieusement dégradé pendant des semaines — réponses plus courtes, suivi d'instructions défaillant, refus sur des requêtes légitimes. Un directeur senior chez AMD a écrit que « Claude a régressé au point qu'on ne peut plus lui confier de l'ingénierie complexe ». Opus 4.7, sorti le 16 avril pour corriger le tir, a empiré les choses : un nouveau tokenizer qui gonfle la consommation de 35%, des bugs API, et un « raisonnement adaptatif » qui raisonne moins. Des abonnés Pro atteignaient leur limite après 3 questions.
+Opus 4.6 a été silencieusement dégradé pendant des semaines — réponses plus courtes, suivi d'instructions défaillant, refus sur des requêtes légitimes. Un directeur senior chez AMD a écrit que « Claude a régressé au point qu'on ne peut plus lui confier de l'ingénierie complexe ». Opus 4.7, sorti le 16 avril pour corriger le tir, a empiré les choses : un nouveau tokenizer qui gonfle la consommation de 35 %, des bugs API, et un « raisonnement adaptatif » qui raisonne moins. Des abonnés Pro atteignaient leur limite après 3 questions.
 
 **La suppression de Claude Code du plan Pro.**
 
- Le 21 avril, sans aucune annonce, Anthropic a retiré Claude Code du plan à 20$/mois sur sa page de tarification. Un tiret  à la place d’un point. 
- La documentation modifiée en douce. Quand la communauté a réagi, le Head of Growth a parlé d'un « test sur 2% des nouveaux inscrits » — sauf que les pages publiques avaient été changées pour tout le monde.
- 
- Il va sans dire que chez la concurrence OpenAI, la vanne session a été ouverte.
+Le 21 avril, sans aucune annonce, Anthropic a retiré Claude Code du plan à 20 $/mois sur sa page de tarification. Un tiret à la place d’un point. 
+La documentation modifiée en douce. Quand la communauté a réagi, le Head of Growth a parlé d'un « test sur 2 % des nouveaux inscrits » — sauf que les pages publiques avaient été changées pour tout le monde.
+
+Il va sans dire que chez la concurrence, OpenAI, la session de vannes a été ouverte.
 
 **Et la suppression d'Opus 4.5.** Sur Reddit, les posts de fans d'Opus 4.5 se succèdent — *« sad »*, *« heartbroken »*. Un modèle que beaucoup considéraient comme le plus fiable, retiré sans cérémonie.
 
@@ -104,7 +102,7 @@ Mais s'ils se contentent d'être là grâce à un avantage qu'ils n'ont pas mér
 
 Les développeurs expérimentés vont devenir plus précieux, pas moins. Parce que quand tout le monde peut générer du code, la valeur se déplace vers ceux qui savent **distinguer le bon code du code qui a l'air bon**. Ceux qui savent architecturer un système qui tient à l'échelle. Ceux qui savent debugger quand l'IA hallucine. Ceux qui prennent des décisions techniques qui ne sont pas dans le prompt.
 
-Et pour les développeurs comme moi, basés à Abidjan, qui paient en dollars avec des revenus en FCFA — si Anthropic passe Claude Code de 20$ à 100$, c'est passer de 12 000 à 60 000 FCFA par mois. Un calcul que beaucoup de développeurs africains ne pourront pas justifier.
+Et pour les développeurs comme moi, basés à Abidjan, qui paient en dollars avec des revenus en FCFA — si Anthropic passe Claude Code de 20 $ à 100 $, c'est passer de 12 000 à 60 000 FCFA par mois. Un calcul que beaucoup de développeurs africains ne pourront pas justifier.
 
 ## En conclusion
 
@@ -115,5 +113,4 @@ Et à Anthropic : ressaisissez-vous. On vous a choisis parce que vous étiez cen
 Pas pour modifier vos pages de tarification en douce à 17h un mardi.
 
 ---
-
-*[Jean-Luc Houédanou](https://houedanou.com) — Sinon ... qui gagnerait dans un contre un entre Smush Parker et J Cole ?*
+*[Jean-Luc Houédanou](https://houedanou.com) — Sinon… qui gagnerait dans un contre un entre Smush Parker et J Cole ?*

@@ -2,26 +2,24 @@
 title: "Apple: the wisdom of the giant"
 image: "/images/articles/apple.webp"
 createdAt: "2026-03-26"
-description: "MacBook Neo, Apple Intelligence, foldable iPhone: why Apple no longer tries to revolutionise anything and instead consolidates, integrates and monetises with surgical precision."
+description: "MacBook Neo, Apple Intelligence, foldable iPhone: Apple no longer chases revolutions. It consolidates, integrates and monetises with surgical precision."
 searchIntent: "Why is Apple consolidating its ecosystem instead of chasing a new revolution with the foldable iPhone and Apple Intelligence?"
 tags: ["tech", "apple", "opinion"]
 ---
-# Apple: the wisdom of the giant
 
 ## The MacBook Neo: the luxury of the low end
 
 Apple has just launched what is, by its own standards, an entry-level computer. No M5 chip optimised for the most demanding workloads here, but an A18 Pro, technically a mobile chip, though a capable one as long as you stay inside the Apple universe.
 
-At under 700 euros (or 700 000 FCFA here, taxes helping), the MacBook Neo is an open door to other Apple products, other Apple services, other Apple subscriptions. Apple is not selling a computer, Apple is selling a first hit. But careful: the only low-end thing about this "entry level" is the price. Brushed aluminium chassis, careful finishing, the legendary keyboard and trackpad, it is all there. Outside of Framework laptops, it is hard to find a competitor offering that kind of value at this price. The others cut corners on components, and it shows after a few months of use.
+At under 700 euros (or 700,000 CFA francs here, taxes helping), the MacBook Neo is an open door to other Apple products, other Apple services, other Apple subscriptions. Apple is not selling a computer, Apple is selling a first hit. But careful: the only low-end thing about this "entry level" is the price. Brushed aluminium chassis, careful finishing, the legendary keyboard and trackpad, it is all there. Outside of Framework laptops, it is hard to find a competitor offering that kind of value at this price. The others cut corners on components, and it shows after a few months of use.
 Yes, Razer, I am talking about you. You too, HP.
 On top of that, the MacBook Neo is Apple's most easily repairable computer, which is quite something for an Apple computer. The screen, the battery, the ports, the keyboard. A nice return to its roots for the company with the apple logo.
 
-That said, let's be honest about what this price implies. No native HDMI port. No MagSafe. And above all, an unforgivable crime for a work machine, soldered RAM that cannot be upgraded. You buy exactly what you ordered, as always with Apple, and you are stuck with the apple brand for the lifetime of the machine.
+That said, let's be honest about what this price implies. No native HDMI port. No MagSafe. And above all, an unforgivable crime for a work machine, soldered RAM that cannot be upgraded. You buy exactly what you ordered, as always with Apple, and you are stuck with the Apple brand for the lifetime of the machine.
 
 The ecosystem starts right there, before the first iCloud subscription.
 
-Personally, I am not the target audience, as we say on the shores of the Ébrié lagoon. My daily life is Docker, VS Code, Chrome, and the whole web development ecosystem that runs like clockwork on M1 chips or with the fan at full blast on a "gaming PC". But the A18 Pro runs macOS on Apple Silicon architecture, which opens an unexpected door: iPad apps. LumaFusion, Koala Sampler, Lightroom, tools I use regularly, and getting them on a screen bigger than an iPad Mini is an advantage I find far from negligible.
-
+Personally, I am not the target audience, as we say on the shores of the Ébrié lagoon. My daily life is Docker, VS Code, Chrome, and the whole web development ecosystem that runs like clockwork on M1 chips or with the fan at full blast on a "gaming PC". But the A18 Pro runs macOS on Apple Silicon architecture, which opens an unexpected door: iPad apps. LumaFusion, [Koala Sampler](/en/20260822-koala-sampler-gratuit-mac-boom-bap), Lightroom, tools I use regularly, and getting them on a screen bigger than an iPad Mini is an advantage I find far from negligible.
 
 ## Apple Intelligence: the AI that does not deserve its name
 
@@ -36,7 +34,6 @@ Apple Intelligence is the worst AI on the market: off-target answers, lagging im
 My prediction is that Apple Intelligence in its current form will go join Bixby and Cortana. But unlike Samsung or Microsoft, Apple will not botch its exit. It will cleanly integrate a third-party AI (please, for pity's sake... Claude, or Gemini if need be) with just enough iOS on top to make it look native.
 Apple will not build AI, but it will sell you its experience of AI.
 
-
 ## The foldable iPhone: the object of desire nobody has seen yet
 
 Let's talk about the plain iPhone first, because it perfectly illustrates this new-generation Apple. Every year, the same mechanics: a design almost identical to the previous year, a few millimetres less, a few grams less, a slightly faster chip, a slightly better camera. Users from two years ago feel slightly behind, and they take the plunge (except me, because I still have an iPhone 13 Pro. It works fine.).
@@ -44,7 +41,6 @@ Let's talk about the plain iPhone first, because it perfectly illustrates this n
 The foldable is another story. I do not know exactly when it will arrive. Maybe soon. Maybe never. But if Apple releases a foldable iPhone, here is what I predict: it will be thinner, lighter, and without a visible crease on the screen. Everything Samsung has not yet managed to do properly. Sure, Oppo delivered a masterclass on the subject, but Oppo does not have Apple's symbolic power.
 
 To come back to the foldable iPhone, it will be a pure status object. A vanity screen, in the most literal sense. Symbolically powerful, visually elegant, and ruinous to repair. Apple knows how to sell dreams.
-
 
 ## Apple no longer makes us dream. Apple delivers.
 
@@ -58,8 +54,7 @@ And honestly? It is reassuring. In a sector where everyone is raising billions t
 
 Apple no longer makes us dream. Apple delivers. Gross margin reaches **47.2%**, at the top of forecasts, and for many users, that is exactly what they need.
 
-
-*In short: less magic, more craft. And a bank account that would make a State blush.*
+*In short: less magic, more craft. And a bank account that would make a state blush.*
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com), apple muncher*

@@ -2,12 +2,10 @@
 title: "Hitting walls (and why that is the real job of a dev)"
 image: "/images/Gemini_Generated_Image_oudr54oudr54oudr.jpeg"
 createdAt: "2026-07-06"
-description: "An evening when everything seemed determined to break... until it all finally fell back into place."
+description: "Three days of dev trouble in four acts: slowness, ghost bugs, Franglais and a deployment quota hit at 10:41pm. The real job of a developer, unfiltered."
 searchIntent: "What a string of bugs, slowdowns and deployment problems reveals about the real job of a developer."
 tags: ["development", "behind the scenes", "programming"]
 ---
-
-# Hitting walls (and why that is the real job of a dev)
 
 Hitting wall after wall, stacking up technical headaches, improvising solutions under pressure and moving forward regardless: that is the reality on the ground.
 
@@ -56,7 +54,7 @@ We expected some technical monstrosity. The reality? A simple wrong configuratio
 
 A deployment takes time. Faced with the progress bar, there are two schools: stare at it like a zombie, or make use of the dead time.
 
-I fired up Koala Sampler again, neglected lately. A few well-chosen samples, a very Wu-Tang vibe, and two instrumentals came to life while the servers sweated in the background. Which goes to show, technical frustration can feed creativity.
+I fired up [Koala Sampler](/en/20260822-koala-sampler-gratuit-mac-boom-bap) again, neglected lately. A few well-chosen samples, a very Wu-Tang vibe, and two instrumentals came to life while the servers sweated in the background. Which goes to show, technical frustration can feed creativity.
 
 ---
 
@@ -68,7 +66,7 @@ Speaking of music... shrieking violins, please. The moment when everything seeme
 
 No time to wait until tomorrow. I pull out the prepaid card to switch to the paid tier and unblock the situation. And there, surprise: impossible to get my local cards accepted in Uncle Sam's country. The system refuses the transaction, leaving me stuck at the door.
 
-I had to improvise a fallback in absolute urgency: switch to Cloudflare Pages and GitHub Actions, the whole thing configured in 15 minutes flat with Claude's help. One thing is certain: for my next projects, how a platform handles these geographic payment barriers will be a direct exclusion criterion.
+I had to improvise a fallback in absolute urgency: switch to [Cloudflare Pages](/en/20260402-vercel-cloudflare-pages-migration) and GitHub Actions, the whole thing configured in 15 minutes flat with Claude's help. One thing is certain: for my next projects, how a platform handles these geographic payment barriers will be a direct exclusion criterion.
 
 ---
 
@@ -84,4 +82,5 @@ It is a job I chose, it is not the worst in the world, but above all people are 
 
 On that note, I need to go to sleep. Tomorrow there will be more walls to hit, and I fully intend to face them.
 
+---
 **[Jean-Luc Houédanou](https://houedanou.com)**

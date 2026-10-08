@@ -8,6 +8,8 @@ export const SITE_URL = 'https://houedanou.com'
 export const SITE_NAME = 'Le Blog de Jean-Luc Houédanou'
 export const SITE_LANG = 'fr'
 export const OG_LOCALE = 'fr_FR'
+// og:locale par langue de page : les billets EN ne doivent pas se déclarer en français.
+export const OG_LOCALES = { fr: 'fr_FR', en: 'en_US' }
 export const TWITTER = '@afrowebdesigner'
 export const AUTHOR_NAME = 'Jean-Luc Houédanou'
 

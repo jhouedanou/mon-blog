@@ -2,12 +2,11 @@
 title: "Windows 11: Install it without a Microsoft account (and without losing your hair)"
 image: "/images/articles/windows11-bypass.webp"
 createdAt: "2026-04-14"
-description: "Just formatted Windows 11 and Microsoft refuses a local account? Complete guide with 4 solutions that actually work, plus explanations of the traps. For those who like their computing freedom."
+updatedAt: "2026-10-08T12:00:00Z"
+description: "Windows 11 demands a Microsoft account? Four ways to create a local account during setup, their traps, and what still works depending on your build."
 searchIntent: "How to install Windows 11 with a local account without creating a Microsoft account."
 tags: ["tutorial", "windows", "sysadmin"]
 ---
-
-# Windows 11: Install it without a Microsoft account (and without losing your hair)
 
 You have just formatted a machine and Windows 11 insists on a Microsoft account? Welcome to the Microsoft world of 2026, where creating a local user has become an obstacle course.
 
@@ -21,7 +20,7 @@ Since the latest Windows 11 patches, Microsoft has decided that local accounts w
 
 Trying the old tricks?
 
-- A fake email like `no@thankyou.com` (see this explanatory clip: https://www.youtube.com/clip/Ugkxbe-HidbA7gWD_7QvNu3tKLagXSGvShm4 )? Rejected.
+- A fake email like `no@thankyou.com` (see [this explanatory clip](https://www.youtube.com/clip/Ugkxbe-HidbA7gWD_7QvNu3tKLagXSGvShm4))? Rejected.
 - Skipping the step by closing the browser? No longer works.
 - Leaving the form empty? Microsoft forces you to fill it in again.
 
@@ -42,6 +41,8 @@ Before charging in head first, understand one thing: **timing is CRITICAL**. Whe
 ### Solution 1: `OOBE\BYPASSNRO` (the real solution, if you are in time)
 
 This is the unofficial method that works, at least at the right moment.
+
+> **Careful, it depends on your build**: Microsoft removed the `bypassnro.cmd` script starting with build 26200.5516, the one preparing Windows 11 25H2 ([Windows Latest](https://windowslatest.com/2025/03/29/windows-11-is-not-killing-off-hack-that-lets-you-bypass-microsoft-account-but-it-takes-more-efforts-now/)). If the command is not recognized, the same prompt (`Shift+F10`) still accepts, on some images, the registry key it used to create: `reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE /v BypassNRO /t REG_DWORD /d 1 /f`, then `shutdown /r /t 0` to reboot. The other well-known shortcut, `start ms-cxh:localonly`, was also removed from Insider builds 26220.6772 ([PCWorld](https://www.pcworld.com/article/2932975/microsoft-kills-two-more-ways-to-install-windows-11-with-local-accounts.html)). Test with your ISO before relying on it.
 
 **BUT**: you have to run it **before** connecting the computer to the network. Yes, it is absurd. Yes, that is how it is.
 
@@ -90,20 +91,22 @@ Some users report that entering an email with some flair, like swear words or we
 
 Example: `nope.nope.nope@nope.nope` or `no@thankyou.combattant@nope.com`
 
-**Honestly**: it is random. It worked for some people in 2024, but the latest patches may have patched it. I include it for the record, but do not count on it.
+**Honestly**: it is random. It worked for some people in 2024, but the latest patches may have fixed it. I include it for the record, but do not count on it.
 
 ---
 
 ### Solution 4: RUFUS (the pro move)
 
-If you make a bootable USB stick with **RUFUS** (the best USB stick creation tool, full stop), there is a "Skip Windows Account" option that lets you avoid this step entirely.
+If you make a bootable USB stick with **RUFUS** (the best USB stick creation tool, full stop), there is an option that removes the Microsoft account requirement and lets you avoid this step entirely.
 
 **How**:
 
 1. Download [RUFUS](https://rufus.ie/)
-2. Create a bootable Windows 11 USB stick
-3. In the advanced options, tick "Start menu" and "Skip Windows Account" (or similar, depending on your version)
+2. Select your Windows 11 ISO (22H2 or later) and click **START**
+3. In the "Windows User Experience" window that opens, tick "Remove requirement for an online Microsoft account"
 4. Boot and install, not a single Microsoft account request
+
+According to the [Rufus FAQ](https://github.com/pbatard/rufus/wiki/FAQ), the local account is only offered if the network is unplugged when you reach the account creation screen. Unplug the cable or do not connect to WiFi.
 
 **Advantages**:
 - Zero interaction with Microsoft
@@ -147,7 +150,7 @@ Or bring up an accessibility request (`Win+U` if possible), sometimes it opens a
 
 ### 5. **You created the Microsoft account and you regret it**
 
-Too late. You have to use that account now. Create a new local user afterwards? Yes, it is possible via Settings → Accounts → Create a local account, but you will always have the Microsoft account hanging around.
+Don't panic, it is not final. In Settings → Accounts → Your info, the "Sign in with a local account instead" option converts your session to a local account and keeps your files ([step-by-step guide on Pureinfotech](https://pureinfotech.com/switch-from-microsoft-account-to-local-account-windows-11/)). You can also create a new local user via Settings → Accounts → Other users, but the Microsoft account will stay in a corner.
 
 **Moral**: solutions 1 or 2 must be applied **before** creating a Microsoft account. Once it exists, bypassing it is more complicated.
 
@@ -161,7 +164,7 @@ That just means there is no internet connection. That is the goal. Keep going, W
 
 | Solution | Timing | Difficulty | Reliability | Stress level |
 |----------|--------|-----------|-----------|---|
-| `OOBE\BYPASSNRO` | Before network | ⭐ | 100% | Zero if the timing is right |
+| `OOBE\BYPASSNRO` | Before network | ⭐ | Depends on build (removed from recent ones) | Zero if the timing is right |
 | Cut the internet | At the account screen | ⭐⭐ | 95% | Moderate (you have to cut the internet) |
 | Creative email | Any time | ⭐ | 30% | Very high if it does not work |
 | RUFUS | Before install | ⭐ | 100% | Zero (clean solution) |
@@ -205,7 +208,7 @@ But you also have the right to want a local machine. The two can coexist.
 If Windows 11 really frustrates you (which is understandable):
 
 - **Windows 10**: local accounts with no hassle. End of support in October 2025, but for a test machine, it is fine. And it is free.
-- **Linux** (Ubuntu, Fedora, Pop!_OS): local accounts by default, free, zero tracking, better performance.
+- **Linux** (Ubuntu, Fedora, Pop!_OS): local accounts by default, free, zero tracking, better performance. And once it is installed, you can even [clone your Ubuntu without losing your data](/en/20241029-cloner-ubuntu).
 - **macOS**: iCloud accounts optional, but Macs are expensive and locked down.
 
 But if you are stuck with Windows 11, these solutions work.
@@ -232,6 +235,7 @@ And for someone who has just received a refurbished Surface, an old test machine
 - **Creating a local account afterwards**: Settings → Accounts → Other users
 - **Removing a Microsoft account**: Settings → Accounts → Your info → Manage my Microsoft account
 
----
+*Updated October 8, 2026: Microsoft removed `bypassnro.cmd` from recent Windows 11 builds ([Windows Latest](https://windowslatest.com/2025/03/29/windows-11-is-not-killing-off-hack-that-lets-you-bypass-microsoft-account-but-it-takes-more-efforts-now/)), then `start ms-cxh:localonly` from Insider builds ([PCWorld](https://www.pcworld.com/article/2932975/microsoft-kills-two-more-ways-to-install-windows-11-with-local-accounts.html)): added the fallback registry key, corrected the RUFUS procedure based on its [FAQ](https://github.com/pbatard/rufus/wiki/FAQ), and trap no. 5 (you can switch back to a local account afterwards).*
 
+---
 *[Jean-Luc Houédanou](https://houedanou.com), Microsoft does not like this article*

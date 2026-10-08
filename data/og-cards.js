@@ -45,6 +45,7 @@ export const OG_CARDS = {
   "/images/articles/pixel-watch-notifications-ecran.webp": "/og/pixel-watch-notifications-ecran.jpg",
   "/images/articles/prestashop-migration-domaine.webp": "/og/prestashop-migration-domaine.jpg",
   "/images/articles/puremac.webp": "/og/puremac.jpg",
+  "/images/articles/quest3s-republique.webp": "/og/quest3s-republique.jpg",
   "/images/articles/really.webp": "/og/really.jpg",
   "/images/articles/reunion.webp": "/og/reunion.jpg",
   "/images/articles/sharp-imac-ecran-secondaire.webp": "/og/sharp-imac-ecran-secondaire.jpg",

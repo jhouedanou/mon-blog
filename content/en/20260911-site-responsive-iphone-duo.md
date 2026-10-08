@@ -2,14 +2,12 @@
 title: "Check whether your site is responsive on the iPhone Duo"
 createdAt: "2026-09-11T20:01:00Z"
 image: "/images/articles/pexels-imadclicks-19022728.webp"
-description: "Apple has released its first foldable iPhone, and a developer has published a free tool to see what your site looks like on it. I tried it on this blog, and the result taught me something I didn't know about my own site."
+description: "Does your site hold up on the iPhone Duo? Folded and unfolded screen sizes, the Iphone Duo Preview tool, and the error that revealed a security gap on my blog."
 searchIntent: "How to test whether a website is responsive on the iPhone Duo, what the folded and unfolded screen sizes are, and why a preview tool can refuse to display a site that does in fact allow itself to be embedded."
 tags: ["development", "responsive", "tools", "apple", "security"]
 ---
 
-# Check whether your site is responsive on the iPhone Duo
-
-Apple unveiled its first foldable iPhone this week, the iPhone Duo. I have no intention of buying one ( my iPad mini still works ), but like everyone who builds websites, the question came to me fairly quickly: what does my site look like on it?
+Apple unveiled its first foldable iPhone this week, the iPhone Duo. I have no intention of buying one (my iPad mini still works), but like everyone who builds websites, the question came to me fairly quickly: what does my site look like on it?
 
 A developer has just published a small tool to answer that question. I tried it on houedanou.com, and the result isn't the one I expected.
 
@@ -37,7 +35,7 @@ I pasted this blog's address, and here's what I got:
 This website doesn't allow embedded previews.
 ```
 
-![The Iphone Duo Preview tool showing « This website doesn't allow embedded previews » instead of houedanou.com](/images/articles/iphone-duo-preview-refus-embed.webp)
+![The Iphone Duo Preview tool showing "This website doesn't allow embedded previews" instead of houedanou.com](/images/articles/iphone-duo-preview-refus-embed.webp)
 
 In other words, the site refuses to be displayed inside a third-party page. In the moment, I wasn't unhappy about it. A site that won't let itself be embedded in an iframe is a site protecting itself against clickjacking, the technique of loading your site into an invisible page to make the visitor click buttons they can't see. It's the kind of protection you set up once and forget.
 
@@ -69,7 +67,7 @@ A small amusing detail: on the next deployment, Rapto's tool will display exactl
 
 ## So, responsive or not?
 
-Since the tool wouldn't answer me, I ran the test by hand in Chrome, simulating both screens. Apple only publishes physical pixels, so I assumed a ratio of 3 as on recent iPhones, which gives roughly 466 × 678 CSS pixels for the external screen and 890 × 626 for the internal screen.
+Since the tool wouldn't answer me, I ran the test by hand [in Chrome](/en/20260401-persistance-css-chrome-devtools), simulating both screens. Apple only publishes physical pixels, so I assumed a ratio of 3 as on recent iPhones, which gives roughly 466 × 678 CSS pixels for the external screen and 890 × 626 for the internal screen.
 
 In both cases, the layout holds: a single column on the external screen, full width on the internal screen, and no horizontal overflow.
 
@@ -83,4 +81,5 @@ That's it for the iPhone Duo. If you test your site with Rapto's tool and it tel
 
 *Photo credits: [Imad Clicks](https://www.pexels.com/@imadclicks/) and [picjumbo.com](https://www.pexels.com/@picjumbo-com-55570/) on Pexels. Screenshot: [Iphone Duo Preview](https://duo-responsive.vercel.app/).*
 
+---
 *[Jean-Luc Houédanou](https://houedanou.com)*

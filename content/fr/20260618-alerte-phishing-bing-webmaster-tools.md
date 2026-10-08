@@ -2,11 +2,11 @@
 title: "Alerte : le premier résultat Google pour « Bing Webmaster Tools » est un site de phishing"
 image: "/images/hazars.jpg"
 createdAt: "2026-06-18"
-description: "Je viens de tomber sur une arnaque qui cible directement les webmasters et les SEO : une fausse page Bing Webmaster Tools, en première position sponsorisée sur Google, qui aspire vos identifiants Microsoft ET Google. Voici comment la repérer."
+updatedAt: "2026-10-08T12:00:00Z"
+description: "Une fausse page Bing Webmaster Tools, en lien sponsorisé sur Google, vole les identifiants Microsoft et Google des webmasters. Comment la repérer et réagir."
 searchIntent: "Comment reconnaître une fausse page Bing Webmaster Tools avant de communiquer ses identifiants Google ou Microsoft."
 tags: [sécurité, seo, phishing, alerte]
 ---
-# Alerte : le premier résultat Google pour « Bing Webmaster Tools » est un site de phishing
 
 D'habitude, sur ce blog, je plaisante. Là, non.
 
@@ -23,7 +23,7 @@ Vient ensuite le mécanisme central : une fenêtre « Please sign in — Choose 
 - Microsoft
 - Google
 
-C'est ici que l'anomalie saute aux yeux. Pourquoi un outil Bing proposerait-il une connexion via un compte Google ? Il ne le ferait jamais. Microsoft n'oriente pas un utilisateur vers son concurrent direct pour l'authentifier. Ce second bouton n'a qu'un but : élargir la collecte. Quel que soit le bouton choisi, l'internaute transmet ses identifiants à l'attaquant.
+Précision importante : le vrai Bing Webmaster Tools propose lui aussi une connexion avec un compte Google, et ce depuis 2018 ([Search Engine Journal](https://www.searchenginejournal.com/bing-webmaster-tools-now-social-login-option/236569/)). Ces deux boutons ne prouvent donc rien à eux seuls, et c'est justement ce qui rend la copie crédible. Ici, ils n'ont qu'un but : élargir la collecte. Quel que soit le bouton choisi, l'internaute transmet ses identifiants à l'attaquant.
 
 Je vous aurais volontiers mis une vidéo, mais j'ai perdu le référencement de mon ancien blog après en avoir publié une similaire. Vous devrez vous contenter d'une capture d'écran.
 
@@ -49,8 +49,8 @@ Le plus préoccupant reste le canal de diffusion. L'attaquant a payé Google Ads
 Trois règles simples suffisent à se prémunir :
 
 - **Vérifier systématiquement l'URL.** L'adresse officielle est `bing.com/webmasters`. Si le domaine n'est ni `microsoft.com` ni `bing.com`, fermez l'onglet. `camp.recettee.com` n'a jamais hébergé un service Microsoft.
-- **Se méfier de toute incohérence d'authentification.** Aucun service Microsoft ne propose de connexion via un compte Google. C'est le signal d'alerte le plus évident.
-- **Ne jamais s'authentifier via un résultat sponsorisé.** Pour tout service qui demande un mot de passe (Search Console, Bing, banque, hébergeur), saisissez l'adresse à la main ou passez par un favori que vous avez enregistré vous-même. Ignorez les annonces.
+- **Ne pas se fier aux boutons de connexion.** Bing Webmaster Tools accepte réellement les comptes Microsoft, Google et Facebook : une page de phishing peut donc afficher exactement les mêmes options. Seul le domaine dans la barre d'adresse fait foi.
+- **Ne jamais s'authentifier via un résultat sponsorisé.** Pour tout service qui demande un mot de passe (Search Console, Bing, banque, hébergeur), saisissez l'adresse à la main ou passez par un favori que vous avez enregistré vous-même. Ignorez les annonces. Le même réflexe vaut pour les e-mails : j'ai décortiqué un [faux mail de renouvellement à 358,25 $](/fr/20260831-faux-mail-renouvellement-zoho-358-dollars) qui joue sur les mêmes ressorts.
 
 ## En cas de compromission
 
@@ -68,4 +68,7 @@ Nous passons nos journées à durcir des serveurs, corriger des vulnérabilités
 
 Vérifiez vos onglets, alertez vos collègues, et prenez l'habitude de contrôler l'URL avant de cliquer.
 
+*Mise à jour du 8 octobre 2026 : correction d'une erreur de ma part. Le vrai Bing Webmaster Tools accepte bien la connexion avec un compte Google ([Search Engine Journal](https://www.searchenginejournal.com/bing-webmaster-tools-now-social-login-option/236569/)) ; la présence de ce bouton n'est donc pas un signe de phishing en soi. Le domaine reste le seul indice fiable.*
+
+---
 *[Jean-Luc Houédanou](https://houedanou.com)*

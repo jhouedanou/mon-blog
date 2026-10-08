@@ -2,16 +2,14 @@
 title: "I got my blog's traffic back (and the bots that come with it. Thanks, WordPress)"
 createdAt: "2026-09-22T19:30:00Z"
 image: "/images/articles/worker-cpu-depassements-septembre-2026.webp"
-description: "Cloudflare wrote to tell me my site was exceeding its CPU limit more than a hundred times a day. The culprit wasn't my code, or not only: scanners still looking for a WordPress I uninstalled long ago. Here is what I found in the analytics, and what I changed."
+description: "My Cloudflare Worker hit the free plan's 10 ms CPU limit a hundred times a day. Culprits: scanners hunting a long-gone WordPress. Diagnosis and WAF rules."
 searchIntent: "Why does a site on Cloudflare Workers exceed the free plan's 10 ms CPU limit, how to identify the bots and scanners causing it, and how to block them with WAF rules without upgrading to a paid plan?"
 tags: ["development", "tutorial", "security", "cloudflare", "nuxt"]
 ---
 
-# I got my blog's traffic back (and the bots that come with it. Thanks, WordPress)
-
 > **Update, 23 September.** Since this post went out, I simply removed the Worker: the site is now served as plain files, and the CPU problem went away with it. What follows tells the story of the first fix, as I set it up on 22 September. The rest is at the end of the article.
 
-This blog ran on WordPress for a long time. It has since moved to Nuxt, then to Cloudflare, and all that time hundreds of old addresses stayed in Google's index, in links from other sites and in the bookmarks of a few loyal readers. Over the past few weeks I finally cleaned up: every old URL redirects to the right article, and everything that belonged to WordPress's machinery answered 410, the response that tells Google "this page is gone, stop asking for it" (it has since become a plain 404, more on that at the end).
+This blog ran on WordPress for a long time. It has since moved to Nuxt, then [to Cloudflare](/en/20260402-vercel-cloudflare-pages-migration), and all that time hundreds of old addresses stayed in Google's index, in links from other sites and in the bookmarks of a few loyal readers. Over the past few weeks I finally cleaned up: every old URL redirects to the right article, and everything that belonged to WordPress's machinery answered 410, the response that tells Google "this page is gone, stop asking for it" (it has since become a plain 404, more on that at the end).
 
 The traffic came back. And with it, something I hadn't ordered.
 
@@ -146,4 +144,5 @@ There is one trade-off: the old WordPress addresses now return 404 instead of 41
 
 *Chart: invocations of the mon-blog Worker from 15 to 22 September 2026, from Cloudflare's analytics API.*
 
+---
 *[Jean-Luc Houédanou](https://houedanou.com)*

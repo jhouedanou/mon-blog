@@ -2,12 +2,10 @@
 title: "Dear Vibe Coders (on Claude Code): welcome to reality"
 image: "/images/articles/welcomeToTheNBA.webp"
 createdAt: "2026-04-23"
-description: "Vibe coding is the Bronny James of software development: privileged access to the game thanks to Claude Code, without having paid the price of the trade. An unfiltered take, with the April 2026 Anthropic soap opera as a bonus."
+description: "Vibe coding is the Bronny James of coding: access to the game via Claude Code, without paying the price of the trade. Plus Anthropic's April 2026 soap opera."
 searchIntent: "Does vibe coding really let you build software without mastering the fundamentals of the developer's trade?"
 tags: ["development", "AI", "Claude Code", "Anthropic", "vibe coding", "opinion"]
 ---
-
-# Dear Vibe Coders (on Claude Code): welcome to reality
 
 ## The "Welcome to the NBA" moment
 
@@ -59,9 +57,9 @@ And the day it stops working, because that day always comes, they are lost.
 
 I will say it plainly: **vibe coders are the plague of this profession.**
 
-Not because they use AI. Everyone should use AI. But because they confuse *generating code* with *knowing how to code*. Because they have never had bugs that made them cry. Because they have never spent an entire weekend figuring out why a `float` was breaking a whole layout. Because they have never had to explain to a client why migrating PrestaShop to a new domain would take a day and not three hours.
+Not because they use AI. Everyone should use AI. But because they confuse *generating code* with *knowing how to code*. Because they have never had bugs that made them cry. Because they have never spent an entire weekend figuring out why a `float` was breaking a whole layout. Because they have never had to explain to a client why [migrating PrestaShop to a new domain](/en/20260331-migrer-prestashop-nouveau-nom-de-domaine) would take a day and not three hours.
 
-They get everything with prompts. Without looking at the code. Without checking the quality. Without understanding the implications or the quality of what was generated.
+They do everything with prompts. Without looking at the code. Without checking the quality. Without understanding the implications or the quality of what was generated.
 
 It is as if Bronny James scored 30 points in a friendly against middle schoolers and declared himself better than Kobe. Context matters. Adversity matters. The experience of failure matters.
 
@@ -80,10 +78,10 @@ Opus 4.6 was quietly degraded for weeks: shorter answers, poor instruction follo
 
 **Removing Claude Code from the Pro plan.**
 
- On 21 April, without any announcement, Anthropic removed Claude Code from the $20/month plan on its pricing page. A dash where there used to be a checkmark. 
- The documentation quietly edited. When the community reacted, the Head of Growth talked about a "test on 2% of new sign-ups", except the public pages had been changed for everyone.
- 
- Needless to say, over at OpenAI, the floodgates of mockery were opened.
+On 21 April, without any announcement, Anthropic removed Claude Code from the $20/month plan on its pricing page. A dash where there used to be a checkmark. 
+The documentation quietly edited. When the community reacted, the Head of Growth talked about a "test on 2% of new sign-ups", except the public pages had been changed for everyone.
+
+Needless to say, over at the competition, OpenAI, the floodgates of mockery were opened.
 
 **And the removal of Opus 4.5.** On Reddit, posts from Opus 4.5 fans keep piling up: *"sad"*, *"heartbroken"*. A model many considered the most reliable, retired without ceremony.
 
@@ -115,5 +113,4 @@ And to Anthropic: pull yourselves together. We chose you because you were suppos
 Not to quietly edit your pricing pages at 5pm on a Tuesday.
 
 ---
-
 *[Jean-Luc Houédanou](https://houedanou.com). Otherwise... who would win in a one-on-one between Smush Parker and J Cole?*

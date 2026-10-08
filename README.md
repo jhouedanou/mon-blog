@@ -37,9 +37,9 @@ Ce projet est un blog personnel construit avec Nuxt 3, utilisant le système de 
 
 ## Ajouter un nouvel article
 
-1. Créer un nouveau fichier Markdown dans le dossier `content/[langue]/[année]/[mois]/`
+1. Créer deux fichiers au même nom, `content/fr/AAAAMMJJ-slug.md` et `content/en/AAAAMMJJ-slug.md` (dossiers à plat, le nom de fichier devient l'URL `/fr/AAAAMMJJ-slug`)
 2. Ajouter le frontmatter avec le titre, la date, l'image de couverture, une description naturelle et une intention de recherche formulée comme une question ou un besoin réel
-3. Écrire le contenu de l'article en Markdown
+3. Écrire le contenu de l'article en Markdown, **sans `# Titre` en tête** : le template affiche déjà le titre en H1. Le corps commence à `##`.
 
 ### Métadonnées éditoriales
 
@@ -50,6 +50,15 @@ description: "Guide pratique pour migrer une boutique PrestaShop vers un nouveau
 searchIntent: "Comment changer le nom de domaine d'une boutique PrestaShop sans perdre son référencement ?"
 tags: ["tutoriel", "dev"]
 ```
+
+Rôle de chaque champ :
+
+- `description` : **120 à 160 caractères**. C'est la meta description (Google, og, Twitter, JSON-LD), le résumé du flux RSS et l'encadré « Résumé ».
+- `searchIntent` : la question à laquelle le billet répond. Sert au classement éditorial et aux extraits des listes, pas à la meta description.
+- `updatedAt` (optionnel) : à renseigner uniquement quand le fond du billet change (fait corrigé, procédure mise à jour). Alimente `dateModified` et le sitemap.
+- Liens internes : `[texte](/fr/slug)` ou `[text](/en/slug)`. Liens externes à ouvrir dans un nouvel onglet : `[texte](https://…){target="_blank" rel="noopener"}`.
+
+Les skills Claude Code `claude-blog` et `claude-seo` sont installés dans `.claude/skills` (voir `.claude/skills/VENDORED.md`) : `/blog analyze`, `/blog seo-check`, `/seo technical`, etc.
 
 Les tags servent à relier les articles entre eux. Les pages thématiques disponibles sont `/themes/tutoriels`, `/themes/apple`, `/themes/developpement`, `/themes/afrique-numerique` et `/themes/opinions`.
 

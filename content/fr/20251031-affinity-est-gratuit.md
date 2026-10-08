@@ -3,24 +3,23 @@ title: "Affinity passe au gratuit, et Internet s'énerve déjà"
 image: "/images/articles/affinity.webp"
 createdAt: "2025-10-31"
 id: 2025-10-31
-description: "Affinity devient gratuit et bouleverse le marché de la création graphique. Découvrez pourquoi cette évolution est une excellente nouvelle pour concurrencer Adobe, avec une suite unifiée performante et sans abonnement."
+description: "Affinity devient gratuit et réunit Vecteur, Pixel et Mise en page dans une seule app. J'avais payé les versions 1 et 2, et je trouve ça très bien."
+updatedAt: "2026-10-08T12:00:00Z"
 searchIntent: "Affinity est-il une alternative gratuite et crédible à Adobe pour la création graphique ?"
 tags: ["tech", "opinion"]
-summary: "Affinity passe au modèle gratuit avec une suite unifiée réunissant Vector, Layout et Photo dans une seule application. Une alternative performante à Adobe sans abonnement obligatoire, accessible à tous les créatifs."
+summary: "Affinity passe au modèle gratuit avec une suite unifiée réunissant Vecteur, Pixel et Mise en page dans une seule application. Une alternative performante à Adobe sans abonnement obligatoire, accessible à tous les créatifs."
 ---
 
-# Affinity passe au gratuit, et Internet s'énerve déjà
-
-Affinity vient, une fois de plus, de bouleverser la donne. Jusqu'à présent, la suite créative était payante — un achat unique pour chaque version majeure , sans abonnement, ce qui en faisait une alternative sérieuse à Adobe.
+Affinity vient, une fois de plus, de bouleverser la donne. Jusqu'à présent, la suite créative était payante — un achat unique pour chaque version majeure, sans abonnement, ce qui en faisait une alternative sérieuse à Adobe.
 Mais depuis peu, Affinity est devenue gratuite. Oui, gratuite.
-À une petite condition : il faut désormais un compte Canva pour accéder aux fonctionnalités liées à l'intelligence artificielle, comme la génération d'images.
+À une petite condition : il faut désormais se connecter avec un compte Canva, et les fonctionnalités liées à l'intelligence artificielle, comme la génération d'images, sont réservées aux [abonnés Canva Premium](https://www.affinity.studio/fr_fr).
 
 Et franchement, c'est une excellente nouvelle.
 
 ## Pourquoi c'est une bonne chose
 
 Je fais partie de ceux qui ont acheté la version 1, puis la version 2. Et pourtant, je me réjouis de cette évolution.
-Parce qu'un monde où Adobe ne règne pas seul sur la création graphique est, selon moi, un monde meilleur.
+Parce qu'un monde où [Adobe](/fr/20241212-cher-gens-dadobe) ne règne pas seul sur la création graphique est, selon moi, un monde meilleur.
 
 Soyons justes : Adobe reste une référence. Je n'ai toujours pas trouvé d'équivalent à Lightroom, notamment pour retoucher mes photos prises avec ma Ricoh Theta. Même Darktable ou Affinity Photo n'arrivent pas tout à fait à ce niveau.
 
@@ -28,7 +27,7 @@ Mais pour tout le reste, Affinity reste mon choix préféré à cause de son int
 
 Le fait que cette suite devienne accessible à tous, sans barrière financière, est une excellente nouvelle pour les créatifs indépendants.
 
-## "Oui mais j'ai payé, moi"
+## « Oui, mais j'ai payé, moi »
 
 Il fallait bien que ça arrive.
 
@@ -46,9 +45,9 @@ Tout est désormais réuni dans une seule application.
 
 Trois espaces de travail :
 
-- "Vecteur" pour le dessin vectoriel,
-- "Mise en page" pour la mise en page,
-- "Pixel" pour la retouche d'image.
+- « Vecteur » pour le dessin vectoriel,
+- « Mise en page » pour la mise en page,
+- « Pixel » pour la retouche d'image.
 
 C'est une expérience unifiée, fluide et très agréable — même sur mes anciens MacBook Pro.
 Les raccourcis restent identiques, les exports sont plus simples et plus rapides, et l'interface a gagné en cohérence.
@@ -56,22 +55,23 @@ Les raccourcis restent identiques, les exports sont plus simples et plus rapides
 En quelques minutes, j'avais retrouvé mes repères.
 Pas de réapprentissage, pas de frustration. Juste la sensation familière de travailler dans un environnement stable et efficace.
 
-Pour dire vrai,  à ceux qui s'indignent parce qu'ils ont payé avant les autres, je n'ai pas grand-chose à répondre. C'est un peu comme les fans de Maître Gims qui affirment être les "vrais" parce qu'ils l'écoutaient découper les instrumentaux à l'époque de Sexion d'Assaut, et refusent de reconnaître son évolution artistique.
+Pour dire vrai, à ceux qui s'indignent parce qu'ils ont payé avant les autres, je n'ai pas grand-chose à répondre. C'est un peu comme les fans de Maître Gims qui affirment être les « vrais » parce qu'ils l'écoutaient découper les instrumentaux à l'époque de Sexion d'Assaut, et refusent de reconnaître son évolution artistique.
 
-(Gims reste, quoi qu'on en dise, un excellent chanteur lyrique. )
+(Gims reste, quoi qu'on en dise, un excellent chanteur lyrique.)
 
 ## En résumé
 
 Affinity 3.0 est une excellente surprise.
 Une suite créative complète, moderne, performante et désormais accessible à tous.
-Les outils d'IA sont optionnels, l'expérience reste soignée, et la philosophie "anti-abonnement" d'origine n'est pas trahie.
+Les outils d'IA sont optionnels, l'expérience reste soignée, et la philosophie « anti-abonnement » d'origine n'est pas trahie.
 
 Alors au lieu de s'en offusquer, autant en profiter.
 Téléchargez-la, testez-la, et surtout, créez.
 
 Pour en savoir plus ou télécharger la suite, rendez-vous sur le site officiel :
-[Affinity](https://affinity.serif.com/fr/).
+[Affinity](https://www.affinity.studio/fr_fr).
 
+*Mise à jour du 8 octobre 2026 : précision sur les conditions d'utilisation. Un compte Canva gratuit suffit pour Affinity, mais les outils d'IA demandent une [formule Canva Premium](https://www.affinity.studio/fr_fr). Lien vers le site officiel mis à jour (affinity.studio).*
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com) — designer libéré d'Adobe*

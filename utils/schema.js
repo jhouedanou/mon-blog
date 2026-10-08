@@ -20,14 +20,14 @@ export function breadcrumbLd(trail, pageUrl) {
   }
 }
 
-export function webPageLd({ url, name, description, image, breadcrumb = true, type = 'WebPage' }) {
+export function webPageLd({ url, name, description, image, breadcrumb = true, type = 'WebPage', lang = SITE_LANG }) {
   return {
     '@type': type,
     '@id': `${url}#webpage`,
     url,
     name,
     ...(description ? { description } : {}),
-    inLanguage: SITE_LANG,
+    inLanguage: lang,
     isPartOf: { '@id': WEBSITE_ID },
     ...(image ? { primaryImageOfPage: { '@type': 'ImageObject', url: absoluteUrl(image) } } : {}),
     ...(breadcrumb ? { breadcrumb: { '@id': `${url}#breadcrumb` } } : {}),
@@ -59,8 +59,8 @@ export function collectionPageLd({ url, name, description, items = [], trail }) 
  * `isPartOf` vise le nœud Blog, pas WebSite : un billet appartient au blog, le
  * blog au site. C'est cette chaîne qui rend le graphe d'entité lisible.
  */
-export function articleGraph({ article, url, image, description, tags, themes, stats }) {
-  const trail = [{ name: 'Accueil', path: '/' }]
+export function articleGraph({ article, url, image, description, tags, themes, stats, lang = SITE_LANG }) {
+  const trail = [{ name: lang === 'en' ? 'Home' : 'Accueil', path: lang === 'en' ? '/en' : '/' }]
   if (themes?.[0]) trail.push({ name: themes[0].title, path: `/themes/${themes[0].slug}` })
   trail.push({ name: article?.title, path: url.replace(SITE_URL, '') })
 
@@ -78,13 +78,13 @@ export function articleGraph({ article, url, image, description, tags, themes, s
       publisher: { '@id': PERSON_ID },
       isPartOf: { '@id': BLOG_ID },
       mainEntityOfPage: { '@id': `${url}#webpage` },
-      inLanguage: SITE_LANG,
+      inLanguage: lang,
       ...(tags?.length ? { keywords: tags.join(', ') } : {}),
       ...(themes?.length ? { articleSection: themes.map((t) => t.title) } : {}),
       ...(stats?.words ? { wordCount: stats.words } : {}),
       ...(stats?.minutes ? { timeRequired: `PT${stats.minutes}M` } : {}),
     },
-    webPageLd({ url, name: article?.title, description, image }),
+    webPageLd({ url, name: article?.title, description, image, lang }),
     breadcrumbLd(trail, url),
   ]
 }

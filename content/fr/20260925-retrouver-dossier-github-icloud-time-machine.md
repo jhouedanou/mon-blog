@@ -2,18 +2,16 @@
 title: "Comment retrouver l'accès au dossier GitHub après être passé sur iCloud+ (grâce à Time Machine)"
 createdAt: "2026-09-25T19:30:00Z"
 image: "/images/articles/pexels-jibarofoto-2148222.webp"
-description: "Après avoir activé la synchronisation du Bureau et des Documents avec iCloud+, mes dépôts GitHub ne répondaient plus. Voici pourquoi iCloud Drive bloque Git, et comment récupérer ses dossiers de code avec une sauvegarde Time Machine."
+description: "La synchro iCloud du Bureau et des Documents a bloqué mes dépôts GitHub. Pourquoi Git ne la supporte pas, et comment tout récupérer avec Time Machine."
 searchIntent: "Comment récupérer sur Mac un dossier GitHub bloqué par la synchronisation iCloud Drive des dossiers Bureau et Documents, en le restaurant avec Time Machine ?"
 tags: ["tutoriel", "apple", "macos", "icloud", "git", "dev"]
 ---
-
-# Comment retrouver l'accès au dossier GitHub après être passé sur iCloud+ (grâce à Time Machine)
 
 > **En préambule.** Pour répondre aux questions sur ma nouvelle productivité : oui, j'utilise bel et bien l'IA. Depuis plusieurs mois, elle **corrige** mes articles, et surtout, elle récupère les images d'illustration sur Pexels, comme celles de ce billet. Le problème n'est pas l'IA, c'est la mauvaise utilisation de l'IA. Dans mon cas, elle m'évite des coquilles et elle améliore le frontmatter, le bloc d'informations placé en tête de chaque article (titre, date, image, description, mots-clés), puisque ce blog tourne entièrement sur des fichiers Markdown. Sans compter qu'elle me permet de développer plus facilement de nouvelles fonctionnalités, comme les carrousels et les lecteurs audio de [l'article sur Koala Sampler](/fr/20260822-koala-sampler-gratuit-mac-boom-bap).
 
 Bon, je doute qu'un développeur compétent tombe sur ce problème, mais c'est une erreur qui peut arriver même aux plus expérimenté(e)s.
 
-J'ai récemment pris l'offre payante d'iCloud, en grande partie pour son prix : 700 FCFA par mois pour 50 Go de stockage cloud, un accès à Apple TV (l'ex-Apple TV+) ainsi qu'à Apple Arcade, [inclus dans iCloud+ en Côte d'Ivoire depuis septembre](https://www.apple.com/ci/newsroom/2026/09/icloud-plus-expands-to-include-apple-tv-and-apple-arcade/).
+J'ai récemment pris [l'offre payante d'iCloud](/fr/20261006-icloud-plus-099-apple-tv-apple-arcade-murderbot-pluribus), en grande partie pour son prix : 700 FCFA par mois pour 50 Go de stockage cloud, un accès à Apple TV (l'ex-Apple TV+) ainsi qu'à Apple Arcade, [inclus dans iCloud+ en Côte d'Ivoire depuis septembre](https://www.apple.com/ci/newsroom/2026/09/icloud-plus-expands-to-include-apple-tv-and-apple-arcade/).
 
 Ensuite, j'ai activé l'option « Dossiers Bureau et Documents » d'iCloud Drive, soit la fonctionnalité d'iCloud qui vous permet de synchroniser les fichiers et les dossiers de votre Bureau et de votre dossier Documents avec vos ordinateurs Mac. Tout allait bien jusqu'à ce que j'essaie de rapatrier du code depuis un repo GitHub. La roue tourne, indéfiniment, sans mise à jour.
 
@@ -125,4 +123,5 @@ Une fois que tout fonctionne, supprimez la copie iCloud. Elle ne sert plus à ri
 
 _Photos : [Luis Quintero](https://www.pexels.com/@jibarofoto/), [Oluwaseun Duncan](https://www.pexels.com/@duncanoluwaseun/) et [Arina Krasnikova](https://www.pexels.com/@arina-krasnikova/), sur Pexels._
 
+---
 *[Jean-Luc Houédanou](https://houedanou.com)*

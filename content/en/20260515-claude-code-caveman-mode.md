@@ -2,12 +2,11 @@
 title: "Claude Code in Caveman mode: 75% fewer tokens, agent talk like caveman"
 image: "/images/articles/claude-caveman.webp"
 createdAt: "2026-05-15"
-description: "The Caveman plugin makes Claude Code (and 30+ other agents) talk like a caveman: 65 to 75% fewer tokens, technical accuracy intact. Installation on Windows, macOS and Linux."
+updatedAt: "2026-10-08T12:00:00Z"
+description: "Caveman makes Claude Code and 30+ other agents talk like a caveman: fewer tokens, same technical accuracy. Installation on Windows, macOS and Linux."
 searchIntent: "How to reduce Claude Code's token consumption with the Caveman plugin."
 tags: ["tutorial", "dev", "ai"]
 ---
-
-# Claude Code in Caveman mode: 75% fewer tokens, agent talk like caveman
 
 > *Why use many token when few do trick.*
 
@@ -15,7 +14,7 @@ You pay for Claude by the token. And Claude is a chatterbox. It explains, it rep
 
 Julius Brussee had enough. He released [Caveman](https://github.com/JuliusBrussee/caveman), a plugin for Claude Code (and 30+ other AI agents) that forces the agent to talk like a caveman. **Brain still big. Mouth small.**
 
-Average result over 10 real prompts: **65% fewer output tokens**, up to 87% on long explanations. Technical accuracy: 100%.
+Average result over 10 real prompts, according to the project's README in May 2026: **65% fewer output tokens**, up to 87% on long explanations. Technical accuracy: 100%.
 
 ---
 
@@ -39,29 +38,43 @@ Caveman drops a *skill* file into the agent. That skill tells it: no filler, no 
 
 On Claude Code specifically, a hook writes a small flag file at every session, so Claude speaks Caveman from the very first message, without you typing `/caveman`.
 
-And a fun fact: a paper from March 2026 (*Brevity Constraints Reverse Performance Hierarchies in Language Models*) showed that forcing large models to be concise **improves accuracy by 26 points** on certain benchmarks. Fewer words = sometimes more correct.
+And a fun fact: a paper from March 2026 ([*Brevity Constraints Reverse Performance Hierarchies in Language Models*](https://arxiv.org/abs/2604.00025)) showed that forcing large models to be concise **improves accuracy by 26 points** on certain benchmarks. Fewer words = sometimes more correct.
 
 ---
 
 ## Installation
 
-A single line. The script detects every installed agent and drops the skill for each one. Node ≥18 required. Safe to run again.
+A single line. The script detects every installed agent and drops the skill for each one. Node.js 22.13+ required. Safe to run again. The commands below are pinned to version 3.2.0, the one on the [official install page](https://github.com/JuliusBrussee/caveman/blob/main/INSTALL.md) at the time of this update: check there for the latest version number.
 
 ### macOS, Linux, WSL, Git Bash
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/JuliusBrussee/caveman/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/JuliusBrussee/caveman/v3.2.0/install.sh | bash
 ```
 
 ### Windows (PowerShell 5.1+)
 
 ```powershell
-irm https://raw.githubusercontent.com/JuliusBrussee/caveman/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/JuliusBrussee/caveman/v3.2.0/install.ps1 | iex
 ```
 
 ~30 seconds. Agents that are not installed are skipped.
 
-**To trigger it**: type `/caveman` or say *"talk like caveman"*. To go back: *"normal mode"*.
+### Claude Code only, or just the skill
+
+For Claude Code only, as a plugin:
+
+```bash
+claude plugin marketplace add JuliusBrussee/caveman && claude plugin install caveman@caveman
+```
+
+And if you only want the short answers, without the rest:
+
+```bash
+npx skills add JuliusBrussee/caveman -g
+```
+
+**To trigger it**: type `/caveman` or say *"talk like caveman"*. To go back: *"stop caveman"* or *"normal mode"*.
 
 > If the installer struggles: open your agent and tell it *"Read CLAUDE.md and INSTALL.md, install caveman for me."* The agent fixes its own brain.
 
@@ -69,16 +82,15 @@ irm https://raw.githubusercontent.com/JuliusBrussee/caveman/main/install.ps1 | i
 
 ## Grunt levels
 
-Caveman offers several intensities, to pick according to your tolerance:
+Caveman offers three intensities, to pick according to your tolerance:
 
-| Level | Style |
+| Command | Style |
 | --- | --- |
-| `lite` | Removes filler, normal sentences |
-| `full` | Default Caveman, fragments |
-| `ultra` | Telegraphic, keywords only |
-| `wenyan` | Classical Chinese, even shorter |
+| `/caveman` | Default Caveman, fragments |
+| `/ultracave` (or `/caveman ultra`) | Telegraphic, keywords only |
+| `/megacave` (or `/caveman wenyan`) | Classical Chinese, even shorter |
 
-Switch on the fly: `/caveman ultra`.
+Switch on the fly: `/caveman ultra`. The old `lite` and `full` levels have been merged into `/caveman`.
 
 ---
 
@@ -89,12 +101,13 @@ Switch on the fly: `/caveman ultra`.
 | `/caveman [level]` | Compresses every answer until the end of the session |
 | `/caveman-commit` | Conventional Commit messages, subject ≤ 50 characters |
 | `/caveman-review` | One-line PR comments: `L42: 🔴 bug: user null. Add guard.` |
-| `/caveman-stats` | Tokens saved this session + lifetime total + USD equivalent |
-| `/caveman-compress <file>` | Rewrites a memory file (e.g. `CLAUDE.md`) in caveman-speak. ~46% fewer input tokens **on every following session** |
-| `caveman-shrink` | MCP middleware that compresses MCP tool descriptions |
+| `/caveman-stats` | Actual token usage for the Claude Code session |
+| `/caveman-compress <file>` | Rewrites a memory file (e.g. `CLAUDE.md`) in caveman-speak and keeps a backup. 23 to 49% fewer tokens depending on the file, **on every following session** |
+| `/caveman-help` | Every mode and command on one screen |
+| `caveman-shrink` | MCP middleware that compresses MCP tool descriptions (optional: `--with-mcp-shrink` at install) |
 | `cavecrew-*` | Caveman sub-agents (investigator, builder, reviewer), so the main context lasts longer |
 
-Claude Code also shows a badge in the statusline: `[CAVEMAN] ⛏ 12.4k` (lifetime tokens saved). Can be turned off with `CAVEMAN_STATUSLINE_SAVINGS=0`.
+Claude Code also shows a badge in the statusline with the active mode: `[CAVEMAN]`, `[ULTRACAVE]` or `[MEGACAVE]`.
 
 ---
 
@@ -118,13 +131,15 @@ Average over 10 prompts: **65% output reduction**.
 
 The eval harness is honest: it compares Caveman against *"Answer concisely"* (not against the default verbose mode), so the delta is real.
 
+> **Current as of October 2026**: the README has re-run the measurement on a newer model. Against *"Answer concisely"*, `/caveman` now only removes 3% more tokens at the median, and `/ultracave` 35%. New models already know how to be concise. The figures in the table above date from May 2026 ([source: Caveman README](https://github.com/JuliusBrussee/caveman#the-numbers)).
+
 ---
 
 ## What you should know
 
 Caveman only touches **output tokens**. Reasoning tokens (*thinking*) remain intact: Claude thinks as much as before, it just talks less. The real gain is **readability** and **speed** (~3× faster to read). Saving money is the bonus.
 
-Automatic activation at the start of a session: Claude Code, Codex, Gemini (built in). Cursor, Windsurf, Cline, Copilot: add `--with-init` to the install to get always-on rule files. Other agents are triggered case by case with `/caveman`.
+Automatic activation at the start of a session: Claude Code, Codex, Gemini, Cursor and Copilot CLI (built in). Windsurf, Cline and Copilot in VS Code: add `--with-init` to the install to get always-on rule files. Other agents are triggered case by case with `/caveman` (`$caveman` in Codex without the hook).
 
 ---
 
@@ -142,11 +157,14 @@ Put together: `cavekit` drives the build, `caveman` compresses the output, `cave
 
 ## Verdict
 
-If you work with Claude Code daily and find the answers endless, install Caveman. One line, 30 seconds, and your monthly quota can breathe. The explanations stay correct, just without the frills.
+If you work with Claude Code daily and find the answers endless, install Caveman. One line, 30 seconds, and your monthly quota can breathe. The explanations stay correct, just without the frills. And to drive all of this from your phone, see [Claude Dispatch](/en/20260531-claude-dispatch-smartphone-telecommande-claude-code).
 
-MIT license. *Free like mass mammoth on open plain.*
+Apache-2.0 license since version 3.0.0 (MIT before). *Free like mass mammoth on open plain.*
 
 Link: [github.com/JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman)
+
+
+*Updated October 8, 2026: new install commands (Node.js 22.13+, pinned versions), levels reduced to `/caveman`, `/ultracave` and `/megacave`, updated commands and license (Apache-2.0), and new benchmarks, based on the project's [README](https://github.com/JuliusBrussee/caveman), [install page](https://github.com/JuliusBrussee/caveman/blob/main/INSTALL.md) and [licensing file](https://github.com/JuliusBrussee/caveman/blob/main/LICENSING.md).*
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com), less blah-blah, more code. Ooga booga, tiny bill.*

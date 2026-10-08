@@ -3,56 +3,18 @@ title: "La théorie du micro et celle du verre d'eau : guide de survie à l'ère
 image: "/images/articles/theorieduMicro.webp"
 createdAt: "2024-10-22"
 id: 5
-description: "Un guide pratique pour rester zen face aux commentaires non sollicités sur Internet. Découvrez comment la théorie du verre d'eau peut vous aider à préserver votre sérénité en ligne."
+description: "Un micro professionnel ne fait pas un bon chanteur, ni un bon commentateur. La théorie du verre d'eau pour rester zen face aux experts autoproclamés d'Internet."
 searchIntent: "Comment rester serein face aux commentaires non sollicités et aux conflits sur les réseaux sociaux ?"
 tags: ["opinion", "société"]
 summary: "Face aux experts auto-proclamés et prophètes numériques qui s'expriment sans retenue sur Internet, découvrez comment la théorie du verre d'eau peut vous aider à rester serein. Un guide pratique pour préserver votre santé mentale en ligne."
-
-# Open Graph Meta Tags
-og:
-  title: "La théorie du micro et celle du verre d'eau : guide de survie à l'ère des donneurs d'avis"
-  description: "Comment rester zen face aux commentaires non sollicités sur Internet ? Découvrez la théorie du verre d'eau, votre allié pour préserver votre sérénité en ligne."
-  image: "/images/articles/theorieduMicro.webp"
-  url: "/fr/restons-zen"
-  type: "article"
-  site_name: "Jean-Luc Houédanou"
-  locale: "fr_FR"
-
-# Twitter Card Meta Tags
-twitter:
-  card: "summary_large_image"
-  title: "La théorie du micro et celle du verre d'eau : guide de survie à l'ère des donneurs d'avis"
-  description: "Face aux experts auto-proclamés sur Internet, découvrez comment la théorie du verre d'eau peut vous aider à rester serein. Un guide pratique pour préserver votre santé mentale en ligne."
-  image: "/images/articles/theorieduMicro.webp"
-  creator: "@jeanluchouedanou"
-
-# Article Meta Tags
-article:
-  published_time: "2024-10-22T00:00:00Z"
-  modified_time: "2024-10-22T00:00:00Z"
-  author: "Jean-Luc Houédanou"
-  section: "Bien-être numérique"
-  tag: ["zen attitude", "commentaires non sollicités", "réseaux sociaux", "santé mentale", "gestion des conflits", "communication en ligne"]
-
-# Schema.org structured data
-schema:
-  type: "Article"
-  headline: "La théorie du micro et celle du verre d'eau : guide de survie à l'ère des donneurs d'avis"
-  description: "Un guide pratique pour rester zen face aux commentaires non sollicités sur Internet. Découvrez comment la théorie du verre d'eau peut vous aider à préserver votre sérénité en ligne."
-  image: "/images/articles/theorieduMicro.webp"
-  datePublished: "2024-10-22"
-  dateModified: "2024-10-22"
-  author: "Jean-Luc Houédanou"
-  publisher: "Jean-Luc Houédanou"
 ---
 
-# La théorie du micro et celle du verre d'eau : guide de survie à l'ère des donneurs d'avis
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/ru6yG_WxWVU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Permettez-moi de vous présenter Sandrine.
 Sandrine, c'est celle qui aime chanter au karaoké.
 
-Elle interprète "Never Leave You" de Lumidee au karaoké avec une passion inversement proportionnelle à son talent.
+Elle interprète « Never Leave You » de Lumidee au karaoké avec une passion inversement proportionnelle à son talent.
 
 Imaginez maintenant qu'on lui confie un micro Shure professionnel, le même modèle qu'utilise Beyoncé en studio.
 **Cela ne fera pas d'elle une meilleure chanteuse, n'est-ce pas ?**
@@ -77,29 +39,29 @@ Pourquoi de l'eau ? Car elle est :
 
 ### L'Expert Auto-proclamé
 
-Vous postez innocemment : "Ma connexion xxxxx me donne entièrement et pleinement satisfaction. "
+Vous postez innocemment : « Ma connexion xxxxx me donne entièrement et pleinement satisfaction. »
 
-**Au micro** : "MA CONNEXION INTERNET EST SUPÉRIEURE ! J'AI DEUX DÉCENNIES D'EXPÉRIENCE DANS LES RÉSEAUX !"
+**Au micro** : « MA CONNEXION INTERNET EST SUPÉRIEURE ! J'AI DEUX DÉCENNIES D'EXPÉRIENCE DANS LES RÉSEAUX ! »
 
-**Votre verre d'eau** : Une réponse succincte : "Je vous remercie de votre contribution, bien qu'elle soit non sollicitée".
+**Votre verre d'eau** : Une réponse succincte : « Je vous remercie de votre contribution, bien qu'elle soit non sollicitée. »
 
 Puis dégustez votre eau pendant qu'ils s'évertuent à démontrer leur expertise.
 
-Allez chercher un pichet, car ils peuvent parler pendant longtemps, et chaque mention de leurs "années d'expérience" mérite une gorgée sereine.
+Allez chercher un pichet, car ils peuvent parler pendant longtemps, et chaque mention de leurs « années d'expérience » mérite une gorgée sereine.
 
 Ensuite, rajoutez une couche.
 
-**"Madame/Monsieur. Je ne vous ai rien demandé."**
+**« Madame/Monsieur. Je ne vous ai rien demandé. »**
 
-Puis, vous pouvez ensuite siroter tranquillement votre verre pendant qu'ils s'étouffent avec leur expertise non sollicitée :).
+Vous pouvez ensuite siroter tranquillement votre verre pendant qu'ils s'étouffent avec leur expertise non sollicitée :).
 
 ### Le Prophète Numérique
 
-**Au micro** : "Une reconversion dans le développement ? Le marché est saturé ! Mon neveu crée des sites à prix modique et peine à trouver sa clientèle ! PHP est mort !!! "
+**Au micro** : « Une reconversion dans le développement ? Le marché est saturé ! Mon neveu crée des sites à prix modique et peine à trouver sa clientèle ! PHP est mort !!! »
 
 **Votre verre d'eau** : Savourez tranquillement votre boisson tout en consultant vos opportunités professionnelles.
 
-Lorsqu'ils ajoutent "L'intelligence artificielle va tout bouleverser", servez-vous un second verre.
+Lorsqu'ils ajoutent « L'intelligence artificielle va tout bouleverser », servez-vous un second verre.
 
 Ces mêmes oracles prédisaient la fin d'Internet en 2000... avant de créer leur profil Facebook.
 
@@ -109,7 +71,7 @@ Pendant qu'ils s'évertuent à faire porter leur voix, vous :
 
 - Conservez une sérénité digne d'un maître zen
 - Préservez votre énergie pour des activités constructives
-- Évitez ce que l'on nomme à Abidjan "la vie" (entendez : les controverses stériles)
+- Évitez ce que l'on nomme à Abidjan « la vie » (entendez : les controverses stériles)
 
 Plus leur volume sonore augmente, plus votre sérénité s'hydrate. C'est scientifiquement prouvé.
 
@@ -129,7 +91,7 @@ L'exemple de Sandrine en est la preuve manifeste.
 
 P.S. : Mes excuses, Sandrine, pour cette illustration.
 
-Ton enthousiasme reste admirable, même si "Never Leave You" ne s'en est jamais vraiment remis et que, depuis sa retraite dorée, _Lumidee se dit que, finalement, elle ne chantait pas si mal que cela._
+Ton enthousiasme reste admirable, même si « Never Leave You » ne s'en est jamais vraiment remis et que, depuis sa retraite dorée, _Lumidee se dit que, finalement, elle ne chantait pas si mal que cela._
 
 N.B. : Dans certaines circonstances, le verre d'eau peut être agrémenté de menthe fraîche. Mais ceci relève d'une autre théorie.
 

@@ -1,13 +1,12 @@
 ---
 title: "$358.25 charged: anatomy of the fake renewal email"
 createdAt: "2026-08-31"
+updatedAt: "2026-10-08T12:00:00Z"
 image: "/images/articles/zoho.webp"
-description: "This morning, I received a payment confirmation for 358.25 dollars for a Zoho Backstage renewal, a service I have never used. No link, no attachment, just a phone number to call. Here's how this scam works and what to do if you get the same email."
+description: "A fake Zoho Backstage renewal email for $358.25, with no link and no attachment, just a phone number to call. How this scam works and what to do if you get it."
 searchIntent: "How to recognise a fake Zoho renewal email with a phone number, and what to do if you have already called."
 tags: [security, phishing, alert]
 ---
-
-# $358.25 charged: anatomy of the fake renewal email
 
 This morning, opening my inbox, I come across a payment confirmation: 358.25 dollars, renewal processed successfully, transaction completed, thank you for choosing Zoho Backstage.
 
@@ -19,7 +18,7 @@ The second reflex, fortunately, was to remember that I don't usually leave that 
 
 ## What makes this email different
 
-We've been repeating the same advice for ten years: don't click the links, don't download the attachments, check the address before logging in. Except this email asks for none of that. There's nothing to click, nothing to download, no login form. The only call to action sits in one discreet line, slipped into the middle of the text:
+We've been repeating the same advice for ten years: don't click the links, don't download the attachments, check the address before logging in (that was the whole point of the [fake Bing Webmaster Tools](/en/20260618-alerte-phishing-bing-webmaster-tools)). Except this email asks for none of that. There's nothing to click, nothing to download, no login form. The only call to action sits in one discreet line, slipped into the middle of the text:
 
 > Refund help is available through +1 (812) 552-8528 when a transaction appears without your consent
 
@@ -48,7 +47,7 @@ And all this time, that person has control of your machine.
 
 4. The service you've never used. Zoho Backstage is an event management tool. If you've never organised a conference, you have nothing to renew there. The senders spray millions of addresses knowing that a small fraction of recipients will have a doubt, and that doubt is enough for them.
 
-5. The real sender. The display name says "Zoho Backstage", but the address behind it tells another story. In Gmail, click the arrow next to the name, or open Show original to read the full headers. Look at the `Return-Path` and the result of the SPF and DKIM checks: if they fail, or if the domain isn't `zohocorp.com`, case closed.
+5. The real sender. The display name says "Zoho Backstage", but the address behind it tells another story. In Gmail, click the arrow next to the name, or open Show original to read the full headers. Look at the `Return-Path` and the result of the SPF and DKIM checks: if they fail, or if the domain isn't a Zoho domain (`zoho.com`, `zohocorp.com` or a regional variant such as `zoho.eu` or `zoho.in`), case closed.
 
 6. The absence of any account details. A real billing email contains an invoice number, the last four digits of the card, the plan name and the due date. Here, none of that, quite simply because they know nothing about you.
 
@@ -65,7 +64,7 @@ Zoho enters the rotation because the suite is widely used by SMEs, including her
 - Don't call, ever. That's the only rule that really matters on this one.
 - Check your bank statement directly, from your bank's app or website. No charge? End of story.
 - If you have a real Zoho account, type `zoho.com` yourself into the address bar and look at your invoices from your account. Never go through the email.
-- Report the message to `abuse@zohocorp.com`, then delete it.
+- Report the message to `abuse@zohocorp.com`, [the address Zoho gives](https://help.zoho.com/portal/en/community/topic/phishing-alert-a-must-read-for-all-zoho-sign-users) for phishing, then delete it.
 - Warn your team. That's probably the most important point: these emails also land with your accountant, your assistant, the colleague who holds the company's bank card, and they don't necessarily have the reflex.
 
 ## If someone has already called
@@ -84,4 +83,7 @@ We harden servers, we enforce MFA everywhere, we run audits. And the attack most
 
 The rule to remember, for you and for your colleagues: an email never proves a charge, only your bank does. The email says what the sender wants you to believe, the statement says what actually happened.
 
+*Updated October 8, 2026: clarified Zoho's legitimate sending domains, which aren't limited to `zohocorp.com` (`zoho.com`, `zoho.eu`, `zoho.in`…), based on [the phishing alert published by Zoho](https://help.zoho.com/portal/en/community/topic/phishing-alert-a-must-read-for-all-zoho-sign-users).*
+
+---
 — [Jean-Luc Houédanou](https://houedanou.com) · Zoho Backstage's "customer service" still hasn't called me back 🙂

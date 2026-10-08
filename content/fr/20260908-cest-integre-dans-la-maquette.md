@@ -2,12 +2,10 @@
 title: "« C'est intégré dans la maquette. » (Non.)"
 createdAt: "2026-09-08T20:17:00Z"
 image: "/images/articles/maquette-integree-non.webp"
-description: "Une semaine à vérifier, fichier par fichier, ce qu'on m'annonçait comme fait dans un dossier de handoff. Deux écrans sur quatre étaient réellement là. J'en profite pour lister cinq pièges classiques des projets web, et la façon dont je les gère maintenant."
+description: "« C'est intégré » : deux écrans sur quatre l'étaient vraiment. Ce que grep m'a appris sur un handoff, et cinq pièges de projet web que je gère autrement."
 searchIntent: "Comment vérifier un livrable de handoff annoncé comme terminé, et comment éviter les pièges classiques d'un projet web : lots de retours, contenus non finalisés, validation sans délai, accès DNS refusé, secrets partagés dans un Drive."
 tags: ["gestion de projet", "développement", "handoff", "méthode", "opinion"]
 ---
-
-# « C'est intégré dans la maquette. » (Non.)
 
 Il y a des phrases qui devraient nous faire tendre l'oreille. « Fais-moi confiance », « ça prend deux minutes », ou « on peut faire un call pour en parler ? ». Depuis la semaine dernière, j'ai ajouté « c'est intégré » à ma liste.
 
@@ -71,7 +69,7 @@ Demandez une fenêtre. Quarante-huit heures ouvrées à compter de la livraison,
 
 ### 4. « Aucun accès à notre zone DNS ne peut être communiqué. »
 
-Classique, et souvent légitime : le client ne veut pas ouvrir sa zone à un prestataire, et il a raison. Moi non plus je ne donnerais pas les clés de ma maison à quelqu'un rencontré sur Teams.
+Classique, et souvent légitime : le client ne veut pas ouvrir sa zone à un prestataire, et il a raison. Moi non plus, je ne donnerais pas les clés de ma maison à quelqu'un rencontré sur Teams.
 
 Sauf que sans accès, chaque enregistrement devient un ticket. Validation du sous-domaine, certificat TLS, SPF, DKIM, DMARC : on en a facilement une dizaine, chacun avec un aller-retour et une attente. Ça peut manger une semaine sur un projet qui en compte deux.
 
@@ -110,4 +108,5 @@ Rien de tout ça n'est de la défiance. C'est simplement ce qui reste quand on a
 ---
 *Photo : [Ketut Subiyanto](https://www.pexels.com/photo/4584385/), Pexels.*
 
+---
 *[Jean-Luc Houédanou](https://houedanou.com)*

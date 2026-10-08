@@ -2,16 +2,14 @@
 title: "J'ai récupéré le trafic de mon blog (et les bots qui vont avec. Merci WordPress)"
 createdAt: "2026-09-22T19:30:00Z"
 image: "/images/articles/worker-cpu-depassements-septembre-2026.webp"
-description: "Cloudflare m'a écrit que mon site dépassait sa limite de CPU plus de cent fois par jour. Le coupable n'était pas mon code, ou pas seulement : des scanners qui cherchent encore un WordPress que j'ai désinstallé il y a longtemps. Voici ce que j'ai trouvé dans les analytics, et ce que j'ai changé."
+description: "Mon Worker Cloudflare dépassait la limite de 10 ms de CPU cent fois par jour. Coupables : des scanners en quête d'un WordPress disparu. Analyse et règles WAF."
 searchIntent: "Pourquoi un site sur Cloudflare Workers dépasse-t-il la limite de 10 ms de CPU du plan gratuit, comment identifier les bots et scanners qui le provoquent, et comment les bloquer avec des règles WAF sans passer au plan payant ?"
 tags: ["dev", "tutoriel", "sécurité", "cloudflare", "nuxt"]
 ---
 
-# J'ai récupéré le trafic de mon blog (et les bots qui vont avec. Merci WordPress)
-
 > **Mise à jour du 23 septembre.** Depuis la publication de ce billet, j'ai carrément supprimé le Worker : le site est maintenant servi comme de simples fichiers, et le problème de CPU est parti avec lui. Ce qui suit raconte la première parade, telle que je l'avais mise en place le 22 septembre. La suite est en fin d'article.
 
-Ce blog a longtemps tourné sous WordPress. Depuis, il est passé à Nuxt, puis chez Cloudflare, et pendant tout ce temps des centaines d'anciennes adresses sont restées dans l'index de Google, dans des liens d'autres sites et dans les favoris de quelques lecteurs fidèles. Ces dernières semaines, j'ai fini par faire le ménage : chaque ancienne URL redirige vers le bon article, et tout ce qui appartenait à la mécanique WordPress répondait 410, la réponse qui dit à Google « cette page n'existe plus, arrête de la demander » (c'est devenu une simple 404 depuis, j'y reviens à la fin).
+Ce blog a longtemps tourné sous WordPress. Depuis, il est passé à Nuxt, puis [chez Cloudflare](/fr/20260402-vercel-cloudflare-pages-migration), et pendant tout ce temps des centaines d'anciennes adresses sont restées dans l'index de Google, dans des liens d'autres sites et dans les favoris de quelques lecteurs fidèles. Ces dernières semaines, j'ai fini par faire le ménage : chaque ancienne URL redirige vers le bon article, et tout ce qui appartenait à la mécanique WordPress répondait 410, la réponse qui dit à Google « cette page n'existe plus, arrête de la demander » (c'est devenu une simple 404 depuis, j'y reviens à la fin).
 
 Le trafic est revenu. Et avec lui, quelque chose que je n'avais pas commandé.
 
@@ -146,4 +144,5 @@ Il y a une contrepartie : les anciennes adresses WordPress répondent désormais
 
 *Graphique : invocations du Worker mon-blog du 15 au 22 septembre 2026, d'après l'API d'analyse de Cloudflare.*
 
+---
 *[Jean-Luc Houédanou](https://houedanou.com)*

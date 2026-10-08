@@ -211,7 +211,10 @@ const suggestedArticles = computed(() => {
 });
 
 const currentUrl = computed(() => canonicalUrl(route.path));
+// La meta description vient de `description` (120 à 160 caractères, rédigée
+// pour la SERP). `searchIntent` est une question éditoriale, pas un extrait.
 const metaDescription = computed(() =>
+  String(article.value?.description || "").trim() ||
   getArticleSearchIntent(article.value) ||
   (locale.value === "en"
     ? "An article from Jean-Luc Houédanou's blog on technology, development and digital culture."
@@ -248,6 +251,7 @@ useSeo(() => ({
   publishedTime: article.value?.createdAt,
   modifiedTime: article.value?.updatedAt,
   tags: articleTags.value,
+  lang: locale.value,
   jsonLd: articleGraph({
     article: article.value,
     url: currentUrl.value,
@@ -256,6 +260,7 @@ useSeo(() => ({
     tags: articleTags.value,
     themes: articleThemes.value,
     stats: readingStats.value,
+    lang: locale.value,
   }),
 }));
 
@@ -535,10 +540,6 @@ function formatDate(createdAt) {
   font-kerning: normal;
   font-variant-ligatures: common-ligatures contextual;
   text-rendering: optimizeLegibility;
-
-  :deep(h1:first-child) {
-    display: none;
-  }
 
   :deep(h2) {
     font-family: var(--font-display);
