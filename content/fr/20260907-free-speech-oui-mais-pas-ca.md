@@ -2,7 +2,7 @@
 title: "Free speech, oui. Mais pas ça."
 createdAt: "2026-09-07T15:29:00Z"
 image: "/images/articles/pexels-katrin-bolovtsova-6077189.webp"
-description: "Le 25 août 2026, une cour d'appel fédérale américaine a jugé que le Premier Amendement protège la simple possession privée d'images pédocriminelles générées par IA. Ce que la décision dit vraiment, ce qu'elle ne dit pas, et pourquoi une jurisprudence de 1969 est dépassée face aux modèles de diffusion."
+description: "Une cour d'appel fédérale des États-Unis a jugé que le Premier Amendement protège la possession privée d'images pédocriminelles générées par IA. Décryptage."
 searchIntent: "Que dit vraiment la décision United States v. Anderegg du 7e circuit sur les images pédocriminelles générées par IA, et est-ce que les États-Unis ont légalisé ce contenu."
 tags: ["ia", "société", "opinion", "juridique"]
 ---
@@ -57,8 +57,8 @@ J'aimerais entendre ceux qui ont construit cette industrie. Pas un communiqué d
 
 ## Sources
 
-- Décision *United States v. Anderegg*, 7e circuit, 25 août 2026 (analyse : reason.com/volokh)
-- Snopes, « Why federal judge ruled First Amendment protects certain AI-generated child sex abuse material »
-- Minnesota Lawyer / The Daily Record, « Federal judge warns law is being left behind by AI child sex abuse images »
+- [Décision *United States v. Anderegg*, 7e circuit, 25 août 2026](https://www.fire.org/sites/default/files/2026/08/Opinion%20-%20United%20States%20v.%20Anderegg.pdf) (analyse : reason.com/volokh)
+- Snopes, [« Judge ruled certain AI-generated child sex abuse material is protected by First Amendment. Here's context »](https://www.snopes.com/fact-check/judge-ai-child-sex-abuse-ruling/)
+- Minnesota Lawyer / The Daily Record, [« Federal judge warns law is being left behind by AI child sex abuse images »](https://thedailyrecord.com/2026-08-31/federal-judge-first-amendment-ai-child-sex-abuse-images/)
 
 *Image : KATRIN BOLOVTSOVA — Pexels.*

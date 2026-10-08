@@ -2,7 +2,7 @@
 title: "MacSai et Mole : deux alternatives gratuites à CleanMyMac"
 createdAt: "2026-09-01"
 image: "/images/articles/macao.webp"
-description: "Après PureMac, deux autres nettoyeurs gratuits et open-source pour macOS méritent le détour : MacSai, qui reprend CleanMyMac fonction par fonction, et Mole, un outil en ligne de commande pensé pour les développeurs."
+description: "Après PureMac, deux nettoyeurs gratuits et open source pour macOS : MacSai, qui reprend CleanMyMac fonction par fonction, et Mole, en ligne de commande."
 searchIntent: "Quelles alternatives gratuites et open-source à CleanMyMac installer sur Mac en 2026 ?"
 tags: ["macOS", "open-source", "nettoyeur", "logiciel gratuit", "Homebrew"]
 ---

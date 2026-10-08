@@ -2,7 +2,7 @@
 title: "MacSai and Mole: two free alternatives to CleanMyMac"
 createdAt: "2026-09-01"
 image: "/images/articles/macao.webp"
-description: "After PureMac, two other free and open-source cleaners for macOS are worth a look: MacSai, which mirrors CleanMyMac feature for feature, and Mole, a command-line tool designed for developers."
+description: "After PureMac, two more free, open-source cleaners for macOS: MacSai, which mirrors CleanMyMac feature for feature, and Mole, a command-line tool."
 searchIntent: "Which free and open-source alternatives to CleanMyMac should you install on a Mac in 2026?"
 tags: ["macOS", "open-source", "cleaner", "free software", "Homebrew"]
 ---
@@ -38,10 +38,10 @@ brew install mole
 Once installed, the command is called `mo`. Here are the four to remember:
 
 ```bash
-mo clean       # nettoyage en profondeur des caches et restes d'applications
-mo uninstall   # désinstallation complète d'une application
-mo analyze     # explorateur visuel du disque
-mo status      # tableau de bord système en temps réel
+mo clean       # deep cleanup of caches and app leftovers
+mo uninstall   # complete removal of an application
+mo analyze     # visual disk explorer
+mo status      # real-time system dashboard
 ```
 
 What won me over is the `--dry-run` option available on every destructive command: Mole shows you what it intends to delete before touching a single file. A log of operations is kept, and you can protect certain caches with a whitelist. When you spend your days in a terminal, it's faster than any interface.
