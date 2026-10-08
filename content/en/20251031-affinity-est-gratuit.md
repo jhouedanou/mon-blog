@@ -3,22 +3,23 @@ title: "Affinity Goes Free, and the Internet Is Already Upset"
 image: "/images/articles/affinity.webp"
 createdAt: "2025-10-31"
 id: 2025-10-31
-description: "Affinity goes free and shakes up the graphic design market. Find out why this change is excellent news for competing with Adobe, with a powerful unified suite and no subscription."
+description: "Affinity goes free and merges Vector, Pixel and Layout into a single app. I paid for versions 1 and 2, and honestly, I think it's a very good thing."
+updatedAt: "2026-10-08T12:00:00Z"
 searchIntent: "Is Affinity a credible free alternative to Adobe for graphic design?"
 tags: ["tech", "opinion"]
-summary: "Affinity switches to a free model with a unified suite bringing Vector, Layout and Photo together in a single application. A powerful alternative to Adobe with no mandatory subscription, accessible to all creatives."
+summary: "Affinity switches to a free model with a unified suite bringing Vector, Pixel and Layout together in a single application. A powerful alternative to Adobe with no mandatory subscription, accessible to all creatives."
 ---
 
 Affinity has, once again, just shaken things up. Until now, the creative suite was paid software, a one-time purchase for each major version, with no subscription, which made it a serious alternative to Adobe.
 But recently, Affinity became free. Yes, free.
-With one small condition: you now need a Canva account to access the AI-related features, such as image generation.
+With one small condition: you now need to sign in with a Canva account, and the AI-related features, such as image generation, are reserved for [Canva premium subscribers](https://www.affinity.studio/).
 
 And honestly, that's excellent news.
 
 ## Why this is a good thing
 
 I'm one of those who bought version 1, then version 2. And yet, I welcome this change.
-Because a world where Adobe doesn't reign alone over graphic design is, in my view, a better world.
+Because a world where [Adobe](/en/20241212-cher-gens-dadobe) doesn't reign alone over graphic design is, in my view, a better world.
 
 Let's be fair: Adobe remains a reference. I still haven't found an equivalent to Lightroom, particularly for editing the photos I take with my Ricoh Theta. Even Darktable or Affinity Photo don't quite reach that level.
 
@@ -56,7 +57,7 @@ No relearning, no frustration. Just the familiar feeling of working in a stable,
 
 To tell the truth, to those who are outraged because they paid before everyone else, I don't have much to say. It's a bit like Maître Gims fans who claim to be the "real" ones because they listened to him chopping up instrumentals back in the Sexion d'Assaut days, and refuse to acknowledge his artistic evolution.
 
-(Gims remains, whatever anyone says, an excellent lyrical singer. )
+(Gims remains, whatever anyone says, an excellent lyrical singer.)
 
 ## In short
 
@@ -68,8 +69,9 @@ So instead of taking offence, you might as well make the most of it.
 Download it, try it, and above all, create.
 
 To find out more or download the suite, head to the official website:
-[Affinity](https://affinity.serif.com/fr/).
+[Affinity](https://www.affinity.studio/).
 
+*Updated October 8, 2026: clarified the terms of use. A free Canva account is enough for Affinity, but the AI tools require a [Canva premium plan](https://www.affinity.studio/). Link to the official website updated (affinity.studio).*
 
 ---
 *[Jean Luc Houédanou](https://houedanou.com) — designer freed from Adobe*
