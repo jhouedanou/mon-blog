@@ -2,14 +2,14 @@
 title: "Philippe Simo is a dream seller. Buy."
 createdAt: "2026-09-08T20:47:00Z"
 image: "/images/articles/philippe-simo-vendeur-de-reves.webp"
-description: "Since August, the Franco-African web has been piling onto Philippe Simo for his line about turning 30 and owning property. The line is bad, and I explain why. But a seller of achievable dreams, in French-speaking Africa, is a useful job, and we're short of them."
+description: "Since August, people have piled onto Philippe Simo for his line about owning a home at 30. It's wrong here. But selling achievable dreams is a useful job."
 searchIntent: "Why the Philippe Simo controversy about owning property at 30 is badly framed, how his statement is wrong in the Ivorian and Cameroonian context, and why his message on saving and investing back home remains useful."
 tags: ["opinion", "society", "personal finance", "Africa"]
 ---
 
-Since early August, the Franco-African web has been piling onto Philippe Simo. The reason: he said that at 30, if you don't own your main residence, « poverty is lying in wait for you ». Dozens of channels, including those that have made « Philippe Simo bashing » their bread and butter, got their audience for the week out of it.
+Since early August, the Franco-African web has been piling onto Philippe Simo. The reason: he said that at 30, if you don't own your main residence, "poverty is lying in wait for you". Dozens of channels, including those that have made "Philippe Simo bashing" their bread and butter, got their audience for the week out of it.
 
-I'm not going to take part in that sport. No attacks on the man, no « feymân », no trial for fraud. I'm simply going to talk about what he says and what it's worth.
+I'm not going to take part in that sport. No attacks on the man, no "feymân", no trial for fraud. I'm simply going to talk about what he says and what it's worth.
 
 ## The line is bad, let's say so and move on
 
@@ -27,7 +27,7 @@ People use the term as an accusation. I take it literally.
 
 A dream seller is someone who shows a life you didn't allow yourself to imagine. In a region where you learn very early to aim small, that job has real value.
 
-And his dream is achievable. It's not a lottery, it's not miracle trading, it's not « become a millionaire in three months ». It's: save part of what you earn, invest back home, build wealth over ten years, stop putting your money into things that lose value. It's slow, it's boring, it takes discipline. But it's doable on a normal salary.
+And his dream is achievable. It's not a lottery, it's not miracle trading, it's not "become a millionaire in three months". It's: save part of what you earn, invest back home, build wealth over ten years, stop putting your money into things that lose value. It's slow, it's boring, it takes discipline. But it's doable on a normal salary.
 
 That's actually why his line hurt so much. Many of those insulting him don't have an income problem. They've been earning a decent living for ten years and have put nothing aside. The message hit them where it stings, and a good jolt from time to time does no harm.
 
@@ -39,6 +39,6 @@ The real problem isn't that he talks too loud, it's that he's almost alone in ta
 
 So, for those who want to move forward: debate the idea, correct what's wrong, but don't wreck one of the only useful conversations we've had this year.
 
-For the others, you can go back to your stories about « resting » 🙂
+For the others, you can go back to your stories about "resting" 🙂
 
 _Photo: [Theo Decker](https://www.pexels.com/photo/5447327/), Pexels._
