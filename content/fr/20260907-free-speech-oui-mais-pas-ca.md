@@ -7,8 +7,6 @@ searchIntent: "Que dit vraiment la décision United States v. Anderegg du 7e cir
 tags: ["ia", "société", "opinion", "juridique"]
 ---
 
-# Free speech, oui. Mais pas ça.
-
 Je suis, et je reste, du côté de la liberté d'expression. Mais d'une liberté d'expression responsable, celle qui assume ses conséquences légales. Petit salut au passage à certains blogueurs ivoiriens qui en ont fait les frais : dire ce qu'on pense a un prix, et ceux qui l'ont payé le savent mieux que moi.
 
 Je vais être honnête, j'en ai un peu marre de parler de ce genre de sujet. Mais celui-là, je ne peux pas le laisser passer.

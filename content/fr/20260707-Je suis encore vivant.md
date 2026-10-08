@@ -7,8 +7,6 @@ searchIntent: "Que révèle une série de bugs, de lenteurs et de problèmes de 
 tags: ["développement", "coulisses", "programmation"]
 ---
 
-# Se prendre des murs (et pourquoi c’est ça, le vrai métier de dev)
-
 Se prendre mur sur mur, enchaîner les galères techniques, improviser des solutions dans l'urgence et avancer malgré tout : c’est ça, la réalité du terrain.
 
 N’écoutez pas ceux qui vous soutiennent qu’il suffit d’un coup d'IA et de trois lignes de code pour que tout tourne tout seul. Ce sont soit des menteurs, soit des génies (et dans 99 % des cas, ce sont des menteurs). Ce métier est rythmé par ces fameuses journées où tout s’aligne comme si le projet avait décidé de tester vos nerfs. Lenteurs inexplicables, bugs fantômes, déploiements qui crashent au pire moment...

@@ -7,8 +7,6 @@ searchIntent: "Comment changer le nom de domaine d’une boutique PrestaShop ave
 tags: ["tutoriel", "dev"]
 ---
 
-# Migrer un site PrestaShop vers un nouveau nom de domaine : le guide complet
-
 Changer de nom de domaine sur PrestaShop, c'est une opération qui fait transpirer même les développeurs expérimentés. Entre la base de données, le cache, le SSL et les redirections SEO, il y a pas mal de pièges. Voici un guide étape par étape, testé en production.
 
 ## Prérequis

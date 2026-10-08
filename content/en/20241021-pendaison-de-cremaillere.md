@@ -8,8 +8,6 @@ searchIntent: "Why migrate a WordPress blog to Nuxt 3 and Nuxt Content to publis
 tags: ["dev"]
 ---
 
-# The housekeeping is done
-
 I have just finished setting up my brand new blog, and I have to say... it is a small revolution! A big thank you to Matt Mullenweg, who unknowingly gave me the nudge I needed to get started on this adventure.
 
 But more seriously, I chose to abandon WordPress and dive into the world of Nuxt 3. You may be wondering why? Well, here are a few reasons that convinced me Nuxt 3 is the stack I needed.

@@ -7,8 +7,6 @@ searchIntent: "How to reduce Claude Code's token consumption with the Caveman pl
 tags: ["tutorial", "dev", "ai"]
 ---
 
-# Claude Code in Caveman mode: 75% fewer tokens, agent talk like caveman
-
 > *Why use many token when few do trick.*
 
 You pay for Claude by the token. And Claude is a chatterbox. It explains, it rephrases, it compliments you, it prepares a polished introduction before laying down two useful lines of code.

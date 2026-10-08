@@ -7,8 +7,6 @@ searchIntent: "Comment contrôler une session Claude Code depuis un smartphone a
 tags: ["claude-code", "outils", "productivité", "développement"]
 ---
 
-# Avec Claude Dispatch (Anthropic Remote Control), votre smartphone devient une télécommande pour Claude Code
-
 Il y a des jours où vous devez partir, mais votre code, lui, ne peut pas attendre.
 
 Bug en prod. Client qui rappelle. Réunion dans 20 minutes à l'autre bout d'Abidjan. Ou ce collègue qui a pris l'habitude d'attendre la fin de journée pour mettre à jour la liste des fonctionnalités — quand il ne le fait pas le dimanche soir.

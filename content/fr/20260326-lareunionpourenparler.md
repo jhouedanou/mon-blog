@@ -7,8 +7,6 @@ searchIntent: "Comment éviter les réunions inutiles et transformer une réunio
 tags: ["opinion", "société"]
 ---
 
-# La réunion « pour en parler »
-
 Dans mon domaine de travail, il existe un mal.
 
 Une endémie. 

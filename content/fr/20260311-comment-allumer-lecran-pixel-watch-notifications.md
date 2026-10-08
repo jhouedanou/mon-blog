@@ -9,8 +9,6 @@ tags: ["tech", "tutoriel"]
 summary: "Comment afficher automatiquement les notifications sur l'écran de votre Pixel Watch sans lever le poignet."
 ---
 
-# Pixel Watch : comment afficher automatiquement les notifications à l'écran
-
 Le mois passé, mon compagnon de poignet était une **Oraimo Watch Nova**. C'est un rapport qualité-prix incroyable, avec un bel écran OLED aux couleurs chatoyantes et une autonomie respectable, mais avec un défaut plus ou moins majeur — du moins en ce qui me concerne : le suivi des pas, la mesure de la fréquence cardiaque ainsi que l'estimation de l'effort fourni pendant le sport ne sont pas très précis.
 
 C'est la raison pour laquelle j'ai choisi la **Pixel Watch**. Cette montre conçue par Google intègre nativement l'application de fitness **Fitbit** et mesure avec beaucoup plus d'exactitude le nombre de pas, l'effort cardiaque, le temps de récupération, ainsi que plusieurs autres statistiques qui permettent d'en savoir plus sur sa forme et sa condition physique — en plus d'être une très belle montre.

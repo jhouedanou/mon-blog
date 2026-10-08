@@ -6,7 +6,6 @@ description: "Je viens de tomber sur une arnaque qui cible directement les webma
 searchIntent: "Comment reconnaître une fausse page Bing Webmaster Tools avant de communiquer ses identifiants Google ou Microsoft."
 tags: [sécurité, seo, phishing, alerte]
 ---
-# Alerte : le premier résultat Google pour « Bing Webmaster Tools » est un site de phishing
 
 D'habitude, sur ce blog, je plaisante. Là, non.
 

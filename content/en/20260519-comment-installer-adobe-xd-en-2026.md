@@ -7,8 +7,6 @@ searchIntent: "How to install Adobe XD in 2026 and recover a file when Figma is 
 tags: ["tutorial", "design", "adobe", "figma"]
 ---
 
-# How to install Adobe XD in 2026 (without losing faith in humanity)
-
 You need to build out a mockup that a contact sent you on Adobe XD.  
 In 2026.  
 Yes, I know.

@@ -6,7 +6,6 @@ description: "PureMac is a free, open-source macOS uninstaller and cleaner with 
 searchIntent: "Is PureMac a free, open-source, telemetry-free alternative to CleanMyMac for cleaning a Mac?"
 tags: ["macOS", "open-source", "cleaner", "PureMac", "free software", "Homebrew"]
 ---
-# PureMac: the free tool that cleans your Mac without stealing your data
 
 If you have a recent Mac (Air, Mac mini, entry-level MacBook Pro), you know the problem: Apple sells soldered SSDs that can't be upgraded, often capped at 256 GB. As a result, every gigabyte counts, and cache files, logs and leftovers from uninstalled apps end up seriously nibbling away at your space.
 

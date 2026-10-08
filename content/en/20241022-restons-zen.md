@@ -7,46 +7,8 @@ description: "A practical guide to staying zen in the face of unsolicited commen
 searchIntent: "How to stay calm in the face of unsolicited comments and conflicts on social media?"
 tags: ["opinion", "society"]
 summary: "Face aux experts auto-proclamés et prophètes numériques qui s'expriment sans retenue sur Internet, découvrez comment la théorie du verre d'eau peut vous aider à rester serein. Un guide pratique pour préserver votre santé mentale en ligne."
-
-# Open Graph Meta Tags
-og:
-  title: "La théorie du micro et celle du verre d'eau : guide de survie à l'ère des donneurs d'avis"
-  description: "Comment rester zen face aux commentaires non sollicités sur Internet ? Découvrez la théorie du verre d'eau, votre allié pour préserver votre sérénité en ligne."
-  image: "/images/articles/theorieduMicro.webp"
-  url: "/fr/restons-zen"
-  type: "article"
-  site_name: "Jean-Luc Houédanou"
-  locale: "fr_FR"
-
-# Twitter Card Meta Tags
-twitter:
-  card: "summary_large_image"
-  title: "La théorie du micro et celle du verre d'eau : guide de survie à l'ère des donneurs d'avis"
-  description: "Face aux experts auto-proclamés sur Internet, découvrez comment la théorie du verre d'eau peut vous aider à rester serein. Un guide pratique pour préserver votre santé mentale en ligne."
-  image: "/images/articles/theorieduMicro.webp"
-  creator: "@jeanluchouedanou"
-
-# Article Meta Tags
-article:
-  published_time: "2024-10-22T00:00:00Z"
-  modified_time: "2024-10-22T00:00:00Z"
-  author: "Jean-Luc Houédanou"
-  section: "Bien-être numérique"
-  tag: ["zen attitude", "commentaires non sollicités", "réseaux sociaux", "santé mentale", "gestion des conflits", "communication en ligne"]
-
-# Schema.org structured data
-schema:
-  type: "Article"
-  headline: "La théorie du micro et celle du verre d'eau : guide de survie à l'ère des donneurs d'avis"
-  description: "Un guide pratique pour rester zen face aux commentaires non sollicités sur Internet. Découvrez comment la théorie du verre d'eau peut vous aider à préserver votre sérénité en ligne."
-  image: "/images/articles/theorieduMicro.webp"
-  datePublished: "2024-10-22"
-  dateModified: "2024-10-22"
-  author: "Jean-Luc Houédanou"
-  publisher: "Jean-Luc Houédanou"
 ---
 
-# The microphone theory and the glass of water theory: a survival guide for the age of opinion givers
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/ru6yG_WxWVU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Allow me to introduce Sandrine.

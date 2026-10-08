@@ -7,8 +7,6 @@ searchIntent: "How to recognise a fake Zoho renewal email with a phone number, a
 tags: [security, phishing, alert]
 ---
 
-# $358.25 charged: anatomy of the fake renewal email
-
 This morning, opening my inbox, I come across a payment confirmation: 358.25 dollars, renewal processed successfully, transaction completed, thank you for choosing Zoho Backstage.
 
 The problem is that I've never bought anything from Zoho Backstage. I don't have a Zoho account, I've never organised an event, and I've never paid 358 dollars for anything at all. Yet the email is there, with an official tone and a logo that looks authentic.

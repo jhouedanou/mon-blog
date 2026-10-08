@@ -7,8 +7,6 @@ searchIntent: "Comment récupérer sur Mac un dossier GitHub bloqué par la sync
 tags: ["tutoriel", "apple", "macos", "icloud", "git", "dev"]
 ---
 
-# Comment retrouver l'accès au dossier GitHub après être passé sur iCloud+ (grâce à Time Machine)
-
 > **En préambule.** Pour répondre aux questions sur ma nouvelle productivité : oui, j'utilise bel et bien l'IA. Depuis plusieurs mois, elle **corrige** mes articles, et surtout, elle récupère les images d'illustration sur Pexels, comme celles de ce billet. Le problème n'est pas l'IA, c'est la mauvaise utilisation de l'IA. Dans mon cas, elle m'évite des coquilles et elle améliore le frontmatter, le bloc d'informations placé en tête de chaque article (titre, date, image, description, mots-clés), puisque ce blog tourne entièrement sur des fichiers Markdown. Sans compter qu'elle me permet de développer plus facilement de nouvelles fonctionnalités, comme les carrousels et les lecteurs audio de [l'article sur Koala Sampler](/fr/20260822-koala-sampler-gratuit-mac-boom-bap).
 
 Bon, je doute qu'un développeur compétent tombe sur ce problème, mais c'est une erreur qui peut arriver même aux plus expérimenté(e)s.

@@ -7,8 +7,6 @@ searchIntent: "Pourquoi un site sur Cloudflare Workers dépasse-t-il la limite d
 tags: ["dev", "tutoriel", "sécurité", "cloudflare", "nuxt"]
 ---
 
-# J'ai récupéré le trafic de mon blog (et les bots qui vont avec. Merci WordPress)
-
 > **Mise à jour du 23 septembre.** Depuis la publication de ce billet, j'ai carrément supprimé le Worker : le site est maintenant servi comme de simples fichiers, et le problème de CPU est parti avec lui. Ce qui suit raconte la première parade, telle que je l'avais mise en place le 22 septembre. La suite est en fin d'article.
 
 Ce blog a longtemps tourné sous WordPress. Depuis, il est passé à Nuxt, puis chez Cloudflare, et pendant tout ce temps des centaines d'anciennes adresses sont restées dans l'index de Google, dans des liens d'autres sites et dans les favoris de quelques lecteurs fidèles. Ces dernières semaines, j'ai fini par faire le ménage : chaque ancienne URL redirige vers le bon article, et tout ce qui appartenait à la mécanique WordPress répondait 410, la réponse qui dit à Google « cette page n'existe plus, arrête de la demander » (c'est devenu une simple 404 depuis, j'y reviens à la fin).

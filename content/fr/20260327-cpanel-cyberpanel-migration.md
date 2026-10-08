@@ -7,8 +7,6 @@ searchIntent: "Comment migrer une infrastructure de cPanel vers CyberPanel et Op
 tags: ["tutoriel", "dev", "afrique"]
 ---
 
-# Comment Donald Trump m'a poussé à abandonner cPanel pour CyberPanel — et pourquoi je ne regrette rien
-
 Cet article, je ne pensais pas l'écrire un jour. Pas parce que le sujet est anodin — migrer toute une infrastructure serveur, c'est tout sauf anodin — mais parce que la décision ne s'est pas prise dans un bureau, devant un benchmark bien propre. Elle s'est prise dans le stress, l'urgence, et un contexte géopolitique que personne dans le web hosting n'avait vu venir.
 
 ## Le contexte : cPanel, une relation longue et coûteuse

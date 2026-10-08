@@ -7,8 +7,6 @@ searchIntent: "Comment changer ou mettre à jour le mot de passe Wi-Fi de la Can
 tags: ["tutoriel", "afrique", "tech", "sécurité", "canalbox"]
 ---
 
-# Comment changer le mot de passe Wi-Fi de la CanalBox de Canal+ Afrique
-
 Quand on installe une CanalBox, le technicien vous laisse avec un mot de passe Wi-Fi imprimé sur une étiquette collée sous le routeur. C'est pratique le premier jour. Six mois plus tard, ce mot de passe a été donné aux cousins de passage, au voisin « juste pour une soirée », et à ce réparateur qui l'a photographié pour « tester la connexion ». Votre débit s'en ressent, et vous n'avez aucune idée de qui est connecté.
 
 Le changer prend cinq minutes, et vous n'avez pas besoin d'appeler le service client. Voici comment faire.

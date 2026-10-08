@@ -7,8 +7,6 @@ searchIntent: "Que propose Bill Gates dans son mémo sur l'IA d'août 2026, pour
 tags: ["tech", "opinion", "IA", "société"]
 ---
 
-# Bill Gates veut freiner l'IA : l'hypocrisie ne coûte rien quand on a déjà encaissé
-
 Fin août, Bill Gates a publié [un mémo de 6 000 mots sur l'intelligence artificielle](https://www.axios.com/2026/08/26/bill-gates-sounds-the-alarm-on-an-ai-transition). Le ton a surpris tout le monde. L'éternel optimiste de la tech sonne l'alarme : l'IA avance plus vite que les gouvernements, elle va bousculer les cols blancs comme les cols bleus, elle ouvre des risques cyber et biologiques inédits, et « il n'y a aucun plan pour entrer dans l'ère de l'IA ».
 
 Sa formule, reprise partout : l'IA sera « le plus grand égalisateur jamais inventé, ou la pire source d'injustice ».

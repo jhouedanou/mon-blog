@@ -7,46 +7,8 @@ description: "After years of neglecting his health in favour of code, the author
 searchIntent: "How a developer can build a fitness tracking app to take back control of his health."
 tags: ["dev", "lifestyle"]
 summary: "Between code and client deadlines, there is the body. This post tells why and how I built my own fitness app, in beta today, with a design still under construction but real determination behind it."
-
-# Open Graph Meta Tags
-og:
-  title: "J'ai développé une app… de fitness"
-  description: "Un développeur web crée sa propre application de suivi fitness pour reprendre sa santé en main. Découvrez Project Fat Loss, une PWA pour suivre votre poids et vos entraînements."
-  image: "/images/articles/fitness-afro-abdos.webp"
-  url: "/fr/project-fat-loss"
-  type: "article"
-  site_name: "Jean-Luc Houédanou"
-  locale: "fr_FR"
-
-# Twitter Card Meta Tags
-twitter:
-  card: "summary_large_image"
-  title: "J'ai développé une app… de fitness"
-  description: "Après des années à négliger sa santé, un développeur crée sa propre app de fitness. Project Fat Loss : suivi de poids, entraînements personnalisables et synchronisation multi-appareils."
-  image: "/images/articles/fitness-afro-abdos.webp"
-  creator: "@jeanluchouedanou"
-
-# Article Meta Tags
-article:
-  published_time: "2025-05-08T00:00:00Z"
-  modified_time: "2025-05-08T00:00:00Z"
-  author: "Jean-Luc Houédanou"
-  section: "Développement personnel"
-  tag: ["application fitness", "PWA", "perte de poids", "suivi de santé", "développeur", "sport", "afro", "auto-discipline"]
-
-# Schema.org structured data
-schema:
-  type: "Article"
-  headline: "J'ai développé une app… de fitness"
-  description: "Après des années à négliger sa santé au profit du code, l'auteur de ce blog décide de reprendre le contrôle… à sa manière : en développant sa propre application de suivi fitness."
-  image: "/images/articles/fitness-afro-abdos.webp"
-  datePublished: "2025-05-08"
-  dateModified: "2025-05-08"
-  author: "Jean-Luc Houédanou"
-  publisher: "Jean-Luc Houédanou"
 ---
 
-# I built an app… a fitness app
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/YsrERv9PeGg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 **Ok, you can laugh...but after years of neglecting my health in favour of this "job"**, I decided to take matters into my own hands.

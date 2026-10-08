@@ -7,8 +7,6 @@ searchIntent: "Why the Philippe Simo controversy about owning property at 30 is 
 tags: ["opinion", "society", "personal finance", "Africa"]
 ---
 
-# Philippe Simo is a dream seller. Buy.
-
 Since early August, the Franco-African web has been piling onto Philippe Simo. The reason: he said that at 30, if you don't own your main residence, « poverty is lying in wait for you ». Dozens of channels, including those that have made « Philippe Simo bashing » their bread and butter, got their audience for the week out of it.
 
 I'm not going to take part in that sport. No attacks on the man, no « feymân », no trial for fraud. I'm simply going to talk about what he says and what it's worth.

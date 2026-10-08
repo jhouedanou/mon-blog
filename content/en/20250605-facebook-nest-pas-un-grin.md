@@ -9,8 +9,6 @@ tags: ["society", "africa", "opinion"]
 summary: "Thinking rigorously, respecting others, weighing your words: these are qualities you expect from a professional, especially in a field as symbolic as books and communication. I am not here to lecture anyone, only to remind people that social media is not a grin, that informal group of friends where you argue about everything and nothing, often without substance or filter. Yet sometimes you get the feeling that certain professionals have forgotten these basics."
 ---
 
-# When a Community Manager Mistakes Social Media for the "Grin"
-
 **Hello.**
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XBmb1g9j3Ac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 

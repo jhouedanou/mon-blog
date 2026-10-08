@@ -7,8 +7,7 @@ searchIntent: "How to make CSS changes persistent in Chrome DevTools with Local 
 tags: ["tutorial", "dev"]
 ---
 
-# Phase 1: Making CSS persistent with "Local Overrides"
-
+## Phase 1: Making CSS persistent with "Local Overrides"
 This method is the simplest way to keep your "live" changes, even if you refresh the page.
 
 ### Step 1: preparing the environment
@@ -35,7 +34,7 @@ Action: Change, for example, the `body { background-color: lightblue; }` rule in
 For proof: refresh the page (F5). The background stays light blue, because Chrome injected your local file instead of the remote one. You have persistence.
 ![Préparation de l'environnement](/images/articles/dev/04.webp)
 
-# Phase 2: Workspaces, integrating DevTools and VS Code (advanced)
+## Phase 2: Workspaces, integrating DevTools and VS Code (advanced)
 
 Workspaces let you edit your local project directly, live in Chrome. It is the ultimate productivity step, but it requires a more advanced workflow (Vite, Webpack) for modern frameworks (Vue, Nuxt).
 ![Préparation de l'environnement](/images/articles/dev/05.webp)

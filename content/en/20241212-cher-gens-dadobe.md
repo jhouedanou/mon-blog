@@ -9,8 +9,6 @@ tags: ["tech", "opinion"]
 summary: "A personal account of the frustrations that come with Adobe: broken customer service, forced subscriptions and misleading interfaces. The article explains why the criticism aimed at Adobe is justified, mentions the ongoing lawsuits and suggests alternatives such as Affinity."
 ---
 
-# Why so much hatred for Adobe? Because it's deserved.
-
 Although Affinity Designer is a fine alternative, in a professional setting I have no other choice but to use Adobe. Most of the designs I have to turn into code and websites are made with Adobe, and I don't yet know Affinity Photo 2 well enough to confidently edit the RAW files coming out of my Theta Z1 camera.
 
 So I have to use Adobe... but sometimes at the expense of my mental health, not to mention the price. I'll admit my judgement may be a little exaggerated, but I am deeply disappointed to have no alternative to Adobe.

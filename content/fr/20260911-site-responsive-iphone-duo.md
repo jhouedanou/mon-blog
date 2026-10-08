@@ -7,8 +7,6 @@ searchIntent: "Comment tester si un site web est responsive sur l'iPhone Duo, qu
 tags: ["développement", "responsive", "outils", "apple", "sécurité"]
 ---
 
-# Vérifiez si votre site est responsive sur l'iPhone Duo
-
 Apple a présenté cette semaine son premier iPhone pliable, l'iPhone Duo. Je n'ai pas l'intention d'en acheter un ( mon iPad mini fonctionne toujours ), mais comme tous ceux qui font des sites web, la question m'est venue assez vite : à quoi ressemble mon site là-dessus ?
 
 Un développeur a justement publié un petit outil pour répondre à cette question. Je l'ai essayé sur houedanou.com, et le résultat n'est pas celui que j'attendais.

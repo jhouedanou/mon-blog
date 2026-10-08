@@ -7,8 +7,6 @@ searchIntent: "How to change the domain name of a PrestaShop store with SSL, 301
 tags: ["tutorial", "dev"]
 ---
 
-# Migrating a PrestaShop site to a new domain name: the complete guide
-
 Changing domain name on PrestaShop is an operation that makes even experienced developers sweat. Between the database, the cache, SSL and SEO redirects, there are quite a few traps. Here is a step-by-step guide, tested in production.
 
 ## Prerequisites

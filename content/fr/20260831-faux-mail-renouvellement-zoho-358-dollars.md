@@ -7,8 +7,6 @@ searchIntent: "Comment reconnaître un faux mail de renouvellement Zoho avec un 
 tags: [sécurité, phishing, alerte]
 ---
 
-# 358,25 $ débités : anatomie du faux mail de renouvellement
-
 Ce matin, en ouvrant ma boîte mail, je tombe sur une confirmation de paiement : 358,25 dollars, renouvellement traité avec succès, transaction finalisée, merci d'avoir choisi Zoho Backstage.
 
 Le problème, c'est que je n'ai jamais rien acheté chez Zoho Backstage. Je n'ai pas de compte Zoho, je n'ai jamais organisé d'événement, et je n'ai jamais payé 358 dollars pour quoi que ce soit. Pourtant, le mail est là, avec un ton officiel et un logo qui a l'air authentique.

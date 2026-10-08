@@ -7,8 +7,6 @@ searchIntent: "Koala Sampler est-il gratuit sur Mac, que vaut-il pour faire des 
 tags: ["musique", "outils", "mac"]
 ---
 
-# Koala Sampler : gratuit sur Mac, et largement suffisant pour faire du boom bap
-
 Ceux qui suivent ce blog se souviennent peut-être de [l'interlude de juillet](/fr/20260707-je-suis-encore-vivant#interlude-sampler-pendant-que-les-conteneurs-chauffent) : un déploiement qui traînait, une barre de progression que je regardais avancer, et Koala Sampler relancé pour occuper le temps mort. Deux instrumentaux étaient nés pendant que les serveurs faisaient leur travail.
 
 Depuis, le temps mort est devenu une habitude, et Koala est passé du bouche-trou à l'outil principal. Je vous raconte la suite.

@@ -1,7 +1,7 @@
 import { computed, unref } from 'vue'
 import { useRoute } from 'vue-router'
 import {
-  SITE_NAME, OG_LOCALE, TWITTER, AUTHOR_NAME, DEFAULT_OG_IMAGE,
+  SITE_NAME, OG_LOCALE, OG_LOCALES, TWITTER, AUTHOR_NAME, DEFAULT_OG_IMAGE,
   absoluteUrl, canonicalUrl,
 } from '~/utils/site.js'
 
@@ -17,7 +17,7 @@ export function safeJsonLd(value) {
  * Point d'entrée unique pour les métadonnées d'une page.
  *
  * useSeo({ title, titleTemplate, description, path, canonical, image, imageAlt,
- *          imageIsCard, type, robots, publishedTime, modifiedTime, tags, jsonLd })
+ *          imageIsCard, type, robots, publishedTime, modifiedTime, tags, jsonLd, lang })
  *
  * Accepte aussi une fonction pour les pages dont les données arrivent en asynchrone.
  * Tout passe par UN seul `useHead(() => …)` : au changement de route côté client,
@@ -36,6 +36,8 @@ export function useSeo(input) {
     const type = s.type || 'website'
     const alt = s.imageAlt || s.title || SITE_NAME
     const isArticle = type === 'article'
+    const lang = s.lang || (/^\/en(\/|$)/.test(route.path) ? 'en' : 'fr')
+    const ogLocale = OG_LOCALES[lang] || OG_LOCALE
 
     const head = {
       link: url ? [{ rel: 'canonical', href: url }] : [],
@@ -43,7 +45,9 @@ export function useSeo(input) {
         desc && { name: 'description', content: desc },
         s.robots && { name: 'robots', content: s.robots },
         { property: 'og:site_name', content: SITE_NAME },
-        { property: 'og:locale', content: OG_LOCALE },
+        { property: 'og:locale', content: ogLocale },
+        ...Object.values(OG_LOCALES).filter((l) => l !== ogLocale)
+          .map((l) => ({ property: 'og:locale:alternate', content: l })),
         { property: 'og:type', content: type },
         { property: 'og:title', content: s.title || SITE_NAME },
         desc && { property: 'og:description', content: desc },

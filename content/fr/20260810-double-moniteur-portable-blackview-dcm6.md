@@ -7,8 +7,6 @@ searchIntent: "Faut-il acheter un double moniteur portable pour travailler en d�
 tags: ["tech", "productivité", "matériel", "avis"]
 ---
 
-# Double moniteur portable : gain de productivité ou gadget ?
-
 Je ne me souviens plus de la dernière fois où j'ai travaillé sur un seul écran. Ni chez moi, ni en déplacement. 
 
 ## Pourquoi un double écran ?

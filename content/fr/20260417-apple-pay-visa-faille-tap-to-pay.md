@@ -7,8 +7,6 @@ searchIntent: "Comment une faille Apple Pay et Visa peut-elle débiter un iPhone
 tags: ["sécurité", "Apple Pay", "Visa", "NFC", "iPhone", "faille de sécurité"]
 ---
 
-# Comment des chercheurs ont volé 10 000 $ via un iPhone verrouillé — la faille Apple Pay / Visa expliquéeS
-
 Il y a des histoires de sécurité qui ressemblent à de la science-fiction. Celle-ci s'est passée dans un laboratoire universitaire, documentée, publiée — et elle concerne très probablement le téléphone qui est dans votre poche en ce moment.
 
 Des chercheurs de l'université de Birmingham et de Surrey ont démontré qu'il est possible de **débiter plusieurs milliers d'dollars depuis un iPhone verrouillé**, sans aucune interaction de sa part, en exploitant une combinaison de failles dans Apple Pay et les protocoles de transaction Visa.

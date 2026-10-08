@@ -7,8 +7,6 @@ searchIntent: "Pourquoi la polémique Philippe Simo sur la propriété à 30 ans
 tags: ["opinion", "société", "finances personnelles", "Afrique"]
 ---
 
-# Philippe Simo est un vendeur de rêves. Achetez.
-
 Depuis début août, la webosphère franco-africaine tombe sur Philippe Simo. Le motif : il a dit qu'à 30 ans, si tu n'es pas propriétaire de ta résidence principale, « la pauvreté te guette ». Des dizaines de chaînes, y compris celles qui ont fait du « Philippe Simo bashing » leur fonds de commerce, ont fait leur audience de la semaine avec ça.
 
 Je ne vais pas participer à ce sport-là. Pas d'attaque sur l'homme, pas de « feymân », pas de procès en escroquerie. Je vais simplement parler de ce qu'il dit et de ce que ça vaut.

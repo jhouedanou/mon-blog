@@ -8,8 +8,6 @@ searchIntent: "Pourquoi migrer un blog WordPress vers Nuxt 3 et Nuxt Content pou
 tags: ["dev"]
 ---
 
-# On a fini de faire le ménage
-
 Je viens de terminer la configuration de mon tout nouveau blog, et je dois dire... c’est une petite révolution ! Un grand merci à Matt Mullenweg, qui m’a sans le savoir donné le coup de pouce nécessaire pour me lancer dans cette aventure.
 
 Mais plus sérieusement, j'ai choisi d’abandonner WordPress et de plonger dans le monde de Nuxt 3. Vous vous demandez peut-être pourquoi ? Eh bien, voici quelques raisons qui m’ont convaincu que Nuxt 3 est la stack qu’il me fallait .

@@ -7,8 +7,6 @@ searchIntent: "Should you buy a portable dual monitor for working on the go, and
 tags: ["tech", "productivity", "hardware", "review"]
 ---
 
-# Portable dual monitor: productivity boost or gadget?
-
 I can't remember the last time I worked on a single screen. Not at home, not on the road. 
 
 ## Why a dual screen?

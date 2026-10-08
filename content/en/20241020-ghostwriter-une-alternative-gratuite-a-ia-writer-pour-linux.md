@@ -9,8 +9,6 @@ tags: ["tech", "tutorial"]
 summary: "Ghostwriter est une excellente alternative gratuite et open-source à iA Writer pour les utilisateurs Linux. Cet éditeur Markdown reprend les fonctionnalités essentielles d'iA Writer comme le point d'insertion bleu et le mode focus, tout en ajoutant une vérification orthographique multilingue. Idéal pour les écrivains et blogueurs cherchant un environnement d'écriture épuré sous Linux."
 ---
 
-# Ghostwriter, the iA Writer of Linux
-
 Changing my blog engine allowed me to:
 
 1. (Re)discover the Markdown language

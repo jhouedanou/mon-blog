@@ -7,8 +7,6 @@ searchIntent: "Que contient l'abonnement iCloud+ à 0,99 dollar par mois en Côt
 tags: ["apple", "icloud", "afrique", "tech", "séries"]
 ---
 
-# iCloud+ à 0,99 dollar : Apple TV et Apple Arcade inclus, et pourquoi mes séries préférées sont sur Apple TV
-
 Depuis la mi-septembre, l'abonnement iCloud+ a changé en Côte d'Ivoire. Le premier forfait coûte 0,99 dollar par mois et donne 50 Go de stockage. Il inclut maintenant Apple TV et Apple Arcade, [sans supplément](https://www.apple.com/ci/newsroom/2026/09/icloud-plus-expands-to-include-apple-tv-and-apple-arcade/).
 
 J'ai pris ce forfait en septembre, en grande partie pour son prix : 700 FCFA par mois, comme je le racontais dans [mon article sur iCloud et GitHub](/fr/20260925-retrouver-dossier-github-icloud-time-machine). Et c'est sur Apple TV que je regarde mes deux séries préférées : _Murderbot_ et _Pluribus_.

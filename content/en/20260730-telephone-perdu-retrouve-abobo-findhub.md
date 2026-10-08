@@ -7,8 +7,6 @@ searchIntent: "How to find a lost phone in Abidjan with FindHub, Google's Find M
 tags: ["africa", "society", "opinion", "security", "tech"]
 ---
 
-# How I got my phone back in Abobo, thanks to Google's FindHub (and above all an honest lady)
-
 It all starts with a broken electric window.
 
 I had left the car at the office to sort out that little problem of a window that wouldn't go back up, which can turn out to be a real nuisance in this rainy season.

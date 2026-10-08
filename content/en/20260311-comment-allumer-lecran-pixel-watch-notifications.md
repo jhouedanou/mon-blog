@@ -9,8 +9,6 @@ tags: ["tech", "tutorial"]
 summary: "How to automatically display notifications on your Pixel Watch screen without raising your wrist."
 ---
 
-# Pixel Watch: How to Automatically Show Notifications on the Screen
-
 Last month, my wrist companion was an **Oraimo Watch Nova**. It's incredible value for money, with a lovely OLED screen with shimmering colours and respectable battery life, but with one more or less major flaw, at least as far as I'm concerned: step counting, heart rate measurement and the estimate of effort during sport are not very accurate.
 
 That's why I chose the **Pixel Watch**. This watch designed by Google natively includes the **Fitbit** fitness app and measures step count, cardiac effort, recovery time and several other statistics that tell you more about your fitness and physical condition with far greater accuracy, on top of being a very beautiful watch.

@@ -7,8 +7,6 @@ searchIntent: "What the 7th Circuit's United States v. Anderegg decision actuall
 tags: ["ai", "society", "opinion", "legal"]
 ---
 
-# Free speech, yes. But not that.
-
 I am, and I remain, on the side of free speech. But a responsible free speech, the kind that owns its legal consequences. A quick nod, in passing, to certain Ivorian bloggers who have paid the price: saying what you think has a cost, and those who have paid it know that better than I do.
 
 I'll be honest, I'm getting a bit tired of talking about this kind of subject. But this one I can't let slide.

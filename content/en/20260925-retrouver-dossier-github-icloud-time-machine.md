@@ -7,8 +7,6 @@ searchIntent: "How to recover a GitHub folder on a Mac that is blocked by iCloud
 tags: ["tutorial", "apple", "macos", "icloud", "git", "dev"]
 ---
 
-# How to regain access to your GitHub folder after switching to iCloud+ (thanks to Time Machine)
-
 > **Before we start.** To answer the questions about my new productivity: yes, I do use AI. For several months now, it has been **correcting** my articles, and above all, it fetches the illustration images from Pexels, like the ones in this post. The problem is not AI, it is the misuse of AI. In my case, it saves me from typos and improves the front matter, the block of information at the top of each article (title, date, image, description, tags), since this blog runs entirely on Markdown files. Not to mention that it makes it easier for me to build new features, like the carousels and audio players in [the Koala Sampler article](/en/20260822-koala-sampler-gratuit-mac-boom-bap).
 
 Well, I doubt a competent developer would run into this problem, but it is a mistake that can happen even to the most experienced.

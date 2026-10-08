@@ -7,46 +7,7 @@ description: "Guide pratique pour cloner votre système Ubuntu vers un nouveau S
 searchIntent: "Comment cloner Ubuntu vers un SSD plus grand sans perdre ses données ni casser son installation."
 tags: ["tutoriel", "dev", "tech"]
 summary: "Un tutoriel étape par étape pour cloner votre système Ubuntu vers un nouveau SSD plus spacieux. Ce guide inclut l'identification des disques, un script de clonage complet avec dd, l'extension des partitions et les vérifications nécessaires pour assurer une migration réussie."
-
-# Open Graph Meta Tags
-og:
-  title: "Comment cloner Ubuntu sans perdre ses données et son âme"
-  description: "Guide pratique pour cloner votre système Ubuntu vers un nouveau SSD sans perdre vos données. Un tutoriel complet avec script de clonage."
-  image: "/images/articles/pingui.webp"
-  url: "/fr/cloner-ubuntu"
-  type: "article"
-  site_name: "Jean-Luc Houédanou"
-  locale: "fr_FR"
-
-# Twitter Card Meta Tags
-twitter:
-  card: "summary_large_image"
-  title: "Comment cloner Ubuntu sans perdre ses données et son âme"
-  description: "Tutoriel complet pour migrer Ubuntu vers un nouveau SSD : identification des disques, script de clonage et extension des partitions."
-  image: "/images/articles/pingui.webp"
-  creator: "@jeanluchouedanou"
-
-# Article Meta Tags
-article:
-  published_time: "2024-10-29T00:00:00Z"
-  modified_time: "2024-10-29T00:00:00Z"
-  author: "Jean-Luc Houédanou"
-  section: "Linux"
-  tag: ["cloner Ubuntu", "migration SSD Ubuntu", "dd Linux", "clone système Linux", "augmenter espace disque Ubuntu", "script clonage Linux", "sauvegarde Ubuntu", "resize partition Linux", "fdisk", "parted"]
-
-# Schema.org structured data
-schema:
-  type: "Article"
-  headline: "Comment cloner Ubuntu sans perdre ses données et son âme"
-  description: "Guide pratique pour cloner votre système Ubuntu vers un nouveau SSD sans perdre vos données. Apprenez à migrer facilement votre installation Linux avec un script simple et efficace."
-  image: "/images/articles/pingui.webp"
-  datePublished: "2024-10-29"
-  dateModified: "2024-10-29"
-  author: "Jean-Luc Houédanou"
-  publisher: "Jean-Luc Houédanou"
 ---
-
-# 🚀 Comment cloner Ubuntu sans perdre ses données et son âme
 
 Quand votre SSD de votre ordinateur sous Ubuntu commence à tousser et que les messages "espace disque insuffisant" deviennent la notification la plus fréquente, il est temps d'agir. Dans mon cas, passer à un SSD de 256 Go va me permettre de respirer un peu (et à mon HP Pro X2 aussi).
 

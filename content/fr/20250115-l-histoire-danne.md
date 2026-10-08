@@ -7,46 +7,7 @@ description: "L'histoire tragique d'Anne, victime d'une arnaque en ligne par un 
 searchIntent: "Que retenir de l’arnaque au faux Brad Pitt et du lynchage numérique subi par Anne ?"
 tags: ["société", "opinion"]
 summary: "Anne, une femme fragilisée par un cancer du cerveau, le VIH et un divorce, est tombée dans le piège d'escrocs se faisant passer pour Brad Pitt et son entourage. Après avoir perdu 830 000 euros et tenté de se suicider, elle subit désormais un lynchage médiatique sur les réseaux sociaux. Cet article appelle au respect de la dignité humaine face à la cruauté numérique."
-
-# Open Graph Meta Tags
-og:
-  title: "Anne, le faux Brad Pitt et un véritable lynchage numérique"
-  description: "L'histoire tragique d'Anne, victime d'une arnaque en ligne et d'un lynchage médiatique. Une réflexion sur la cruauté numérique et le respect de la dignité humaine."
-  image: "/images/articles/anne.webp"
-  url: "/fr/l-histoire-danne"
-  type: "article"
-  site_name: "Jean-Luc Houédanou"
-  locale: "fr_FR"
-
-# Twitter Card Meta Tags
-twitter:
-  card: "summary_large_image"
-  title: "Anne, le faux Brad Pitt et un véritable lynchage numérique"
-  description: "Une femme victime d'arnaque et de cyberharcèlement : l'histoire d'Anne et les leçons à tirer sur la dignité humaine en ligne."
-  image: "/images/articles/anne.webp"
-  creator: "@jeanluchouedanou"
-
-# Article Meta Tags
-article:
-  published_time: "2025-01-15T00:00:00Z"
-  modified_time: "2025-01-15T00:00:00Z"
-  author: "Jean-Luc Houédanou"
-  section: "Société"
-  tag: ["arnaque en ligne", "faux Brad Pitt", "escroquerie amoureuse", "lynchage numérique", "cyberharcèlement", "arnaque romance", "brouteur", "extorsion de fonds", "réseaux sociaux", "Twitter", "X"]
-
-# Schema.org structured data
-schema:
-  type: "Article"
-  headline: "Anne, le faux Brad Pitt et un véritable lynchage numérique"
-  description: "L'histoire tragique d'Anne, victime d'une arnaque en ligne par un faux Brad Pitt qui lui a extorqué 800 000 euros, suivie d'un lynchage médiatique sur les réseaux sociaux. Une réflexion sur la cruauté numérique et le respect de la dignité humaine."
-  image: "/images/articles/anne.webp"
-  datePublished: "2025-01-15"
-  dateModified: "2025-01-15"
-  author: "Jean-Luc Houédanou"
-  publisher: "Jean-Luc Houédanou"
 ---
-
-# Anne, le faux Brad Pitt et un véritable lynchage numérique
 
 _Préambule : cette sombre histoire trouve ses racines dans mon pays d'origine, le Bénin. Aux dernières nouvelles, les autorités compétentes ont été informées de cette affaire, les escrocs responsables ayant été identifiées par Find My Scammer. Ils iront donc probablement faire un long séjour en prison, et la justice sera rendue, car ces individus ne représentent en rien les valeurs traditionnelles de respect,de dignité humaine et d'hospitalité propres au Bénin._
 

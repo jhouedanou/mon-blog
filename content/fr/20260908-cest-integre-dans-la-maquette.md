@@ -7,8 +7,6 @@ searchIntent: "Comment vérifier un livrable de handoff annoncé comme terminé,
 tags: ["gestion de projet", "développement", "handoff", "méthode", "opinion"]
 ---
 
-# « C'est intégré dans la maquette. » (Non.)
-
 Il y a des phrases qui devraient nous faire tendre l'oreille. « Fais-moi confiance », « ça prend deux minutes », ou « on peut faire un call pour en parler ? ». Depuis la semaine dernière, j'ai ajouté « c'est intégré » à ma liste.
 
 Je récupère un dossier de handoff pour un projet client. Cahier des charges, matrice de scoring, maquettes HTML, design system, kit graphique, plan de tracking. Le pack a l'air sérieux, il a même une table des matières, et j'ai neuf jours pour livrer.

@@ -7,8 +7,6 @@ searchIntent: "Comment installer Windows 11 avec un compte local sans créer de 
 tags: ["tutoriel", "windows", "sysadmin"]
 ---
 
-# Windows 11 : Installez le sans compte Microsoft (et sans perdre vos cheveux)
-
 Vous venez de formater une machine et Windows 11 vous demande impérativement un compte Microsoft ? Bienvenue dans le monde Microsoft 2026, où créer un utilisateur local est devenu un parcours du combattant.
 
 > **Avertissement** : cet article contient des quantités déraisonnables de frustration contre les interfaces cassées, au moins deux commandes cryptiques, et la découverte que « coupure internet » était la réponse à votre problème depuis le départ.

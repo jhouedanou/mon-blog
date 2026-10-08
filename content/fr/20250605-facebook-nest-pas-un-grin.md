@@ -9,8 +9,6 @@ tags: ["société", "afrique", "opinion"]
 summary: "Penser avec rigueur, respecter autrui, peser ses mots : autant de qualités qu'on attend d'un professionnel — surtout dans un secteur aussi symbolique que le livre et la communication. Je ne suis pas ici pour faire la morale, mais pour rappeler que les réseaux sociaux ne sont pas un grin — ce groupe informel de discussion entre amis où l'on débat de tout et de rien, souvent sans fond ni filtre. Mais parfois, on a l'impression que certains professionnels ont oublié ces notions de base."
 ---
 
-# Quand un Community Manager confond réseaux sociaux et "Grin"
-
 **Bonjour.**
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XBmb1g9j3Ac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 

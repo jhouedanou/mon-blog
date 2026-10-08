@@ -7,8 +7,6 @@ searchIntent: "Why Samsung mocked the iPhone Duo on X during the Apple keynote, 
 tags: ["apple", "samsung", "marketing", "smartphones", "social media"]
 ---
 
-# Samsung mocks the iPhone Duo, and that's very good for Samsung
-
 I followed this week's Apple event with half an eye, mainly to see the iPhone Duo I told you about in [my previous post](/en/20260911-site-responsive-iphone-duo). But the most entertaining part wasn't happening on the Cupertino stage. It was happening on X, on the Samsung Mobile US account, which spent the entire presentation taking live shots at Apple.
 
 

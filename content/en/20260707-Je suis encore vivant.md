@@ -7,8 +7,6 @@ searchIntent: "What a string of bugs, slowdowns and deployment problems reveals 
 tags: ["development", "behind the scenes", "programming"]
 ---
 
-# Hitting walls (and why that is the real job of a dev)
-
 Hitting wall after wall, stacking up technical headaches, improvising solutions under pressure and moving forward regardless: that is the reality on the ground.
 
 Don't listen to the people who insist that a dash of AI and three lines of code is all it takes for everything to run itself. They are either liars or geniuses (and 99% of the time, they are liars). This trade is punctuated by those famous days when everything lines up as if the project had decided to test your nerves. Unexplained slowness, ghost bugs, deployments crashing at the worst possible moment...

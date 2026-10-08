@@ -7,46 +7,8 @@ description: "Après des années à négliger sa santé au profit du code, l'aut
 searchIntent: "Comment un développeur peut créer une application de suivi fitness pour reprendre le contrôle de sa santé."
 tags: ["dev", "lifestyle"]
 summary: "Entre le code et les deadlines clients, il y a le corps. Ce billet raconte pourquoi et comment j'ai développé ma propre app de fitness, en bêta aujourd'hui, avec un design en chantier mais une vraie volonté derrière."
-
-# Open Graph Meta Tags
-og:
-  title: "J'ai développé une app… de fitness"
-  description: "Un développeur web crée sa propre application de suivi fitness pour reprendre sa santé en main. Découvrez Project Fat Loss, une PWA pour suivre votre poids et vos entraînements."
-  image: "/images/articles/fitness-afro-abdos.webp"
-  url: "/fr/project-fat-loss"
-  type: "article"
-  site_name: "Jean-Luc Houédanou"
-  locale: "fr_FR"
-
-# Twitter Card Meta Tags
-twitter:
-  card: "summary_large_image"
-  title: "J'ai développé une app… de fitness"
-  description: "Après des années à négliger sa santé, un développeur crée sa propre app de fitness. Project Fat Loss : suivi de poids, entraînements personnalisables et synchronisation multi-appareils."
-  image: "/images/articles/fitness-afro-abdos.webp"
-  creator: "@jeanluchouedanou"
-
-# Article Meta Tags
-article:
-  published_time: "2025-05-08T00:00:00Z"
-  modified_time: "2025-05-08T00:00:00Z"
-  author: "Jean-Luc Houédanou"
-  section: "Développement personnel"
-  tag: ["application fitness", "PWA", "perte de poids", "suivi de santé", "développeur", "sport", "afro", "auto-discipline"]
-
-# Schema.org structured data
-schema:
-  type: "Article"
-  headline: "J'ai développé une app… de fitness"
-  description: "Après des années à négliger sa santé au profit du code, l'auteur de ce blog décide de reprendre le contrôle… à sa manière : en développant sa propre application de suivi fitness."
-  image: "/images/articles/fitness-afro-abdos.webp"
-  datePublished: "2025-05-08"
-  dateModified: "2025-05-08"
-  author: "Jean-Luc Houédanou"
-  publisher: "Jean-Luc Houédanou"
 ---
 
-# J'ai développé une app… de fitness
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/YsrERv9PeGg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 **Ok, tu peux rigoler...mais après des années à négliger ma santé au profit de ce "métier"**, j'ai décidé de prendre les choses en main.

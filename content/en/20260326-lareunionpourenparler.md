@@ -7,8 +7,6 @@ searchIntent: "How to avoid useless meetings and turn a \"let's talk about it\" 
 tags: ["opinion", "society"]
 ---
 
-# The "let's talk about it" meeting
-
 In my line of work, there is a disease.
 
 An endemic one.

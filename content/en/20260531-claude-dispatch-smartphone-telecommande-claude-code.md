@@ -7,8 +7,6 @@ searchIntent: "How to control a Claude Code session from a smartphone with Claud
 tags: ["claude-code", "tools", "productivity", "development"]
 ---
 
-# With Claude Dispatch (Anthropic Remote Control), your smartphone becomes a remote control for Claude Code
-
 There are days when you have to leave, but your code cannot wait.
 
 A bug in prod. A client calling back. A meeting in 20 minutes on the other side of Abidjan. Or that colleague who has got into the habit of waiting until the end of the day to update the feature list, when he is not doing it on Sunday evening.

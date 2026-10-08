@@ -6,7 +6,6 @@ description: "MacBook Neo, Apple Intelligence, iPhone pliable : pourquoi Apple n
 searchIntent: "Pourquoi Apple consolide-t-elle son écosystème au lieu de chercher une nouvelle révolution avec l’iPhone pliable et Apple Intelligence ?"
 tags: ["tech", "apple", "opinion"]
 ---
-# Apple : la sagesse du géant
 
 ## Le MacBook Neo : le luxe du bas de gamme
 

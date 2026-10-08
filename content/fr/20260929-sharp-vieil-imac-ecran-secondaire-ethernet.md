@@ -7,8 +7,6 @@ searchIntent: "Comment utiliser un vieil iMac comme écran secondaire d'un MacBo
 tags: ["tutoriel", "apple", "macos", "mac", "open-source", "matériel", "productivité"]
 ---
 
-# Sharp : transformer un vieil iMac en écran secondaire, sans câble coûteux ni prise de tête
-
 Beaucoup d'entre nous ont un vieil iMac dans un coin. L'écran est encore très beau. L'ordinateur derrière, lui, est devenu lent, et macOS ne le met plus à jour.
 
 L'idée est simple : garder l'écran et s'en servir comme deuxième moniteur pour un Mac plus récent. En pratique, c'était compliqué. Jusqu'à **Sharp**, une application gratuite et open source repérée sur [Reddit (r/iMac)](https://www.reddit.com/r/iMac/comments/1wsm7f8/use_your_imac_as_a_highresolution_display_over/). Elle fait le travail avec un simple câble Ethernet.

@@ -7,8 +7,6 @@ searchIntent: "Comment installer Adobe XD en 2026 et récupérer un fichier quan
 tags: ["tutoriel", "design", "adobe", "figma"]
 ---
 
-# Comment installer Adobe XD en 2026 (sans perdre foi en l'humanité)
-
 Vous devez intégrer une maquette qu'un contact vous a envoyée sur Adobe XD.  
 En 2026.  
 Oui, je sais.

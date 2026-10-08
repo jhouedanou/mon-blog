@@ -7,8 +7,6 @@ searchIntent: "How to change or update the Wi-Fi password of a Canal+ Afrique Ca
 tags: ["tutorial", "africa", "tech", "security", "canalbox"]
 ---
 
-# How to change the Wi-Fi password on a Canal+ Afrique CanalBox
-
 When a CanalBox gets installed, the technician leaves you with a Wi-Fi password printed on a sticker under the router. That is handy on day one. Six months later, that password has been handed to visiting cousins, to the neighbour "just for one evening", and to that repairman who took a picture of it to "test the connection". Your speed suffers, and you have no idea who is connected.
 
 Changing it takes five minutes, and you do not need to call customer service. Here is how.

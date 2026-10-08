@@ -7,46 +7,7 @@ description: "How and why I migrated my blog from WordPress to Nuxt and Nuxt Con
 searchIntent: "Why migrate a WordPress blog to Nuxt Content and a Markdown architecture that is simpler to maintain."
 tags: ["dev", "tech"]
 summary: "Cet article explique ma décision d'abandonner WordPress comme moteur de blog en raison de ses vulnérabilités et limitations, au profit d'une solution plus moderne basée sur Nuxt 3 et Nuxt Content. J'y détaille le processus de migration, la nouvelle architecture technique et les prochaines étapes d'amélioration, notamment pour le design et l'intégration d'Open Graph."
-
-# Open Graph Meta Tags
-og:
-  title: "On fait un peu le ménage."
-  description: "Pourquoi migrer de WordPress vers Nuxt et Nuxt Content ? Découvrez les avantages d'une architecture moderne basée sur Markdown et Vercel."
-  image: "/images/articles/menage-image.webp"
-  url: "/fr/on-fait-un-peu-le-ménage"
-  type: "article"
-  site_name: "Jean-Luc Houédanou"
-  locale: "fr_FR"
-
-# Twitter Card Meta Tags
-twitter:
-  card: "summary_large_image"
-  title: "On fait un peu le ménage."
-  description: "Migration de WordPress vers Nuxt Content : retour d'expérience, avantages techniques et perspectives d'amélioration."
-  image: "/images/articles/menage-image.webp"
-  creator: "@jeanluchouedanou"
-
-# Article Meta Tags
-article:
-  published_time: "2024-10-05T00:00:00Z"
-  modified_time: "2024-10-05T00:00:00Z"
-  author: "Jean-Luc Houédanou"
-  section: "Développement web"
-  tag: ["migration WordPress", "Nuxt 3", "Nuxt Content", "blog Markdown", "Vercel", "sécurité WordPress", "alternative WordPress", "JAMstack", "site statique", "développement web moderne"]
-
-# Schema.org structured data
-schema:
-  type: "Article"
-  headline: "On fait un peu le ménage."
-  description: "Comment et pourquoi j'ai migré mon blog de WordPress vers Nuxt et Nuxt Content. Découvrez les raisons de ce changement et les avantages d'une architecture basée sur des fichiers Markdown et Vercel."
-  image: "/images/articles/menage-image.webp"
-  datePublished: "2024-10-05"
-  dateModified: "2024-10-05"
-  author: "Jean-Luc Houédanou"
-  publisher: "Jean-Luc Houédanou"
 ---
-
-# Doing a bit of housekeeping.
 
 I had been looking for a good excuse to get rid of WordPress for a long time, at least as a blog engine. For years I was a fervent defender of this CMS, but I have to admit I feel more and more uncomfortable with it. Its simplicity and how easy it is to tweak gave me endless possibilities, but some things are just hopeless:
 

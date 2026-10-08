@@ -9,8 +9,6 @@ tags: ["tech", "opinion"]
 summary: "Affinity passe au modèle gratuit avec une suite unifiée réunissant Vector, Layout et Photo dans une seule application. Une alternative performante à Adobe sans abonnement obligatoire, accessible à tous les créatifs."
 ---
 
-# Affinity passe au gratuit, et Internet s'énerve déjà
-
 Affinity vient, une fois de plus, de bouleverser la donne. Jusqu'à présent, la suite créative était payante — un achat unique pour chaque version majeure , sans abonnement, ce qui en faisait une alternative sérieuse à Adobe.
 Mais depuis peu, Affinity est devenue gratuite. Oui, gratuite.
 À une petite condition : il faut désormais un compte Canva pour accéder aux fonctionnalités liées à l'intelligence artificielle, comme la génération d'images.

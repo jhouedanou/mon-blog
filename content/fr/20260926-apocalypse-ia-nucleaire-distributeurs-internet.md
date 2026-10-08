@@ -7,8 +7,6 @@ searchIntent: "À quoi ressemblerait concrètement une apocalypse liée à l'int
 tags: ["tech", "opinion", "IA", "société", "sécurité", "afrique"]
 ---
 
-# À quoi ressemblerait une apocalypse IA ? Nucléaire, distributeurs en panne et plus d'internet
-
 Quand on parle d'apocalypse IA, on pense tout de suite à Terminator : une intelligence artificielle devient consciente, lance les missiles, puis envoie des robots finir le travail.
 
 Je ne crois pas que ça se passera comme ça. Si l'IA provoque une catastrophe, elle le fera à travers des systèmes dont on dépend déjà tous les jours : l'arme nucléaire, l'argent et les réseaux. Et on sait déjà à quoi ça ressemble, parce que ça s'est déjà produit, en plus petit. Sans IA.

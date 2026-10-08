@@ -7,8 +7,6 @@ searchIntent: "How to install Windows 11 with a local account without creating a
 tags: ["tutorial", "windows", "sysadmin"]
 ---
 
-# Windows 11: Install it without a Microsoft account (and without losing your hair)
-
 You have just formatted a machine and Windows 11 insists on a Microsoft account? Welcome to the Microsoft world of 2026, where creating a local user has become an obstacle course.
 
 > **Warning**: this article contains unreasonable quantities of frustration with broken interfaces, at least two cryptic commands, and the discovery that "cut the internet" was the answer to your problem all along.

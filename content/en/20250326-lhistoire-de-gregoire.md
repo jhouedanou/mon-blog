@@ -7,46 +7,7 @@ description: "The story of Grégoire, a perfectionist freelance developer faced 
 searchIntent: "How a freelance developer handles a request for inclusive writing that clashes with his principles."
 tags: ["opinion", "dev"]
 summary: "A perfectionist freelance developer has to deal with a request for inclusive writing from an important CAC 40 client. Despite his initial reluctance and meticulous work, he discovers his efforts were ultimately pointless when the texts are converted back to classic French. A story that illustrates the conflict between personal principles and professional demands."
-
-# Open Graph Meta Tags
-og:
-  title: "L'histoire de Grégoire : quand la grammaire rencontre le business"
-  description: "Un développeur perfectionniste face à l'écriture inclusive : l'histoire de Grégoire et ses compromis professionnels avec un client du CAC 40. Une leçon sur l'adaptation."
-  image: "/images/articles/gregoire.webp"
-  url: "/fr/lhistoire-de-gregoire"
-  type: "article"
-  site_name: "Jean-Luc Houédanou"
-  locale: "fr_FR"
-
-# Twitter Card Meta Tags
-twitter:
-  card: "summary_large_image"
-  title: "L'histoire de Grégoire : quand la grammaire rencontre le business"
-  description: "Deux semaines à jongler avec des points médians pour rien ? L'histoire d'un développeur perfectionniste face à l'écriture inclusive et aux réalités du business."
-  image: "/images/articles/gregoire.webp"
-  creator: "@jeanluchouedanou"
-
-# Article Meta Tags
-article:
-  published_time: "2025-03-26T00:00:00Z"
-  modified_time: "2025-03-26T00:00:00Z"
-  author: "Jean-Luc Houédanou"
-  section: "Professionnel"
-  tag: ["développeur freelance", "écriture inclusive", "grammaire", "client CAC 40", "points médians", "perfectionnisme", "compromis professionnel", "rédaction web"]
-
-# Schema.org structured data
-schema:
-  type: "Article"
-  headline: "L'histoire de Grégoire : quand la grammaire rencontre le business"
-  description: "L'histoire de Grégoire, un développeur freelance perfectionniste confronté à l'écriture inclusive pour un client important. Une anecdote sur les compromis entre principes linguistiques et réalités professionnelles."
-  image: "/images/articles/gregoire.webp"
-  datePublished: "2025-03-26"
-  dateModified: "2025-03-26"
-  author: "Jean-Luc Houédanou"
-  publisher: "Jean-Luc Houédanou"
 ---
-
-# Money has a universal grammar
 
 *Names of places and people have been changed. A few details too.*
 

@@ -7,8 +7,6 @@ searchIntent: "How can I use an old iMac as a second display for a MacBook or an
 tags: ["tutorial", "apple", "macos", "mac", "open-source", "hardware", "productivity"]
 ---
 
-# Sharp: turn an old iMac into a second display, with no expensive cable and no hassle
-
 Many of us have an old iMac sitting in a corner. The screen still looks great. The computer behind it has become slow, and macOS no longer updates it.
 
 The idea is simple: keep the screen and use it as a second monitor for a newer Mac. In practice, it was complicated. Until **Sharp**, a free, open source app spotted on [Reddit (r/iMac)](https://www.reddit.com/r/iMac/comments/1wsm7f8/use_your_imac_as_a_highresolution_display_over/). It does the job with a plain Ethernet cable.

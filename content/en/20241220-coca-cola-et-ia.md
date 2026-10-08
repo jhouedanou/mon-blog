@@ -8,7 +8,6 @@ searchIntent: "Why did Coca-Cola's AI-generated Christmas ad work despite the cr
 tags: ["tech", "opinion"]
 summary: "Coca-Cola stirred up controversy with its first AI-generated Christmas ad. Despite criticism of its imperfect aesthetics, this marketing strategy brilliantly succeeded in strengthening the brand's association with the holiday season by generating discussion and occupying the media space."
 ---
-# Coca-Cola, AI and Christmas: the mix that gets people talking (but also sells)
 
 Just like KFC on the 24th of December in Japan or pistachio sauce on New Year's Day along the shores of the Ébrié Lagoon, Coca-Cola's magical ads during the holiday season are an unmissable tradition.
 This year, the brand decided to add a technological touch to its Christmas magic.

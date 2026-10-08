@@ -7,8 +7,6 @@ searchIntent: "What Bill Gates proposes in his August 2026 memo on AI, why his p
 tags: ["tech", "opinion", "AI", "society"]
 ---
 
-# Bill Gates wants to slow down AI: hypocrisy is cheap once you've already cashed in
-
 In late August, Bill Gates published [a 6,000-word memo on artificial intelligence](https://www.axios.com/2026/08/26/bill-gates-sounds-the-alarm-on-an-ai-transition). The tone surprised everyone. Tech's eternal optimist is sounding the alarm: AI is moving faster than governments, it will shake up white-collar and blue-collar workers alike, it opens up unprecedented cyber and biological risks, and « there is no plan for entering the AI era ».
 
 His line, quoted everywhere: AI will be « the greatest equalizer ever invented, or the worst source of injustice ».

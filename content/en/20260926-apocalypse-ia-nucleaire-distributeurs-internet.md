@@ -7,8 +7,6 @@ searchIntent: "What would an AI-driven apocalypse actually look like: what are t
 tags: ["tech", "opinion", "AI", "society", "security", "africa"]
 ---
 
-# What would an AI apocalypse look like? Nuclear weapons, broken ATMs and no more internet
-
 When people talk about an AI apocalypse, everyone thinks of Terminator right away: an artificial intelligence becomes self-aware, launches the missiles, then sends robots to finish the job.
 
 I don't think it will happen that way. If AI causes a catastrophe, it will do so through systems we already depend on every day: nuclear weapons, money and networks. And we already know what that looks like, because it has already happened, on a smaller scale. Without AI.

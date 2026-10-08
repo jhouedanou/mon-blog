@@ -7,8 +7,6 @@ searchIntent: "Le vibe coding permet-il vraiment de développer sans maîtriser 
 tags: ["développement", "IA", "Claude Code", "Anthropic", "vibe coding", "opinion"]
 ---
 
-# Chers Vibe Codeurs (sous Claude Code) : bienvenue dans la réalité
-
 ## Le « Welcome to the NBA » moment
 
 En octobre 2024, Bronny James, 20 ans, fils d’un des meilleurs joueurs de basket de tous les temps tente un dunk sur Kevin Durant. 

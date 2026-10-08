@@ -7,8 +7,6 @@ searchIntent: "Which free and open-source alternatives to CleanMyMac should you 
 tags: ["macOS", "open-source", "cleaner", "free software", "Homebrew"]
 ---
 
-# MacSai and Mole: two free alternatives to CleanMyMac
-
 In July, I told you about [PureMac](/en/20260718-puremac-nettoyeur-mac-gratuit-open-source), a free, telemetry-free cleaner for Mac. The situation hasn't changed since: Apple's soldered SSDs fill up fast, and CleanMyMac wants a subscription to empty caches that macOS knows perfectly well how to empty on its own.
 
 Since then, two other projects have caught my attention. They're nothing alike, and that's precisely why I'm telling you about them together.

@@ -7,8 +7,6 @@ searchIntent: "Qu'est-ce que la campagne « oui à l'excision » partie du Mali,
 tags: ["société", "afrique", "opinion", "numérique"]
 ---
 
-# « Oui à l'excision » : ce que les algorithmes font d'une lame de rasoir
-
 Ce blog parle de technologie et de culture numérique. Le titre peut donc surprendre. Restez quand même : cette campagne est un pur produit des plateformes. On est en plein dans le sujet.
 
 Une campagne « oui à l'excision » circule sur Facebook et Twitter depuis le Mali. JE reprends :  **Une campagne « oui à l'excision » circule sur Facebook et Twitter depuis le Mali.**

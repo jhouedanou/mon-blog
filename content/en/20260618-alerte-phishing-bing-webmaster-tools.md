@@ -6,7 +6,6 @@ description: "I just stumbled on a scam that directly targets webmasters and SEO
 searchIntent: "How to recognise a fake Bing Webmaster Tools page before handing over your Google or Microsoft credentials."
 tags: [security, seo, phishing, warning]
 ---
-# Warning: the top Google result for "Bing Webmaster Tools" is a phishing site
 
 Usually, on this blog, I joke around. Not this time.
 

@@ -7,8 +7,6 @@ searchIntent: "Comment retrouver un téléphone perdu à Abidjan avec FindHub, l
 tags: ["afrique", "société", "opinion", "sécurité", "tech"]
 ---
 
-# Comment j'ai retrouvé mon téléphone à Abobo — grâce à FindHub de Google (et surtout à une dame honnête)
-
 Tout commence par une panne de remonte-vitre électrique.
 
 J'avais laissé la voiture au bureau pour régler ce petit problème de vitre qui ne remonte plus, ce qui peut s'avérer particulièrement embêtant par ces temps où il pleut.

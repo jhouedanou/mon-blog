@@ -7,8 +7,6 @@ searchIntent: "Does vibe coding really let you build software without mastering 
 tags: ["development", "AI", "Claude Code", "Anthropic", "vibe coding", "opinion"]
 ---
 
-# Dear Vibe Coders (on Claude Code): welcome to reality
-
 ## The "Welcome to the NBA" moment
 
 In October 2024, Bronny James, 20 years old, son of one of the greatest basketball players of all time, goes up for a dunk on Kevin Durant. 

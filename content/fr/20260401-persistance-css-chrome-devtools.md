@@ -7,8 +7,7 @@ searchIntent: "Comment rendre des modifications CSS persistantes dans Chrome Dev
 tags: ["tutoriel", "dev"]
 ---
 
-# Phase 1 : Rendre le CSS persistant avec les "Local Overrides"
-
+## Phase 1 : Rendre le CSS persistant avec les "Local Overrides"
 Cette méthode est la plus simple pour conserver vos modifications "live", même si vous rafraîchissez la page.
 
 ### Étape 1 : préparation de l'environnement
@@ -35,7 +34,7 @@ Action : Modifiez, par exemple, la règle `body { background-color: lightblue; }
 Pour preuve : rafraîchissez la page (F5). Le fond reste bleu clair, car Chrome a injecté votre fichier local au lieu du fichier distant. Vous avez la persistance.
 ![Préparation de l'environnement](/images/articles/dev/04.webp)
 
-# Phase 2 : Workspaces — intégrer DevTools et VS Code (avancé)
+## Phase 2 : Workspaces — intégrer DevTools et VS Code (avancé)
 
 Les Workspaces vous permettent de modifier directement votre projet local, en direct dans Chrome. C'est l'étape ultime de la productivité, mais elle nécessite un workflow plus avancé (Vite, Webpack) pour les frameworks modernes (Vue, Nuxt).
 ![Préparation de l'environnement](/images/articles/dev/05.webp)

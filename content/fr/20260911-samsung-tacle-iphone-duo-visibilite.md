@@ -7,8 +7,6 @@ searchIntent: "Pourquoi Samsung s'est moqué de l'iPhone Duo sur X pendant la ke
 tags: ["apple", "samsung", "marketing", "smartphones", "réseaux sociaux"]
 ---
 
-# Samsung se moque de l'iPhone Duo, et c'est très bien pour Samsung
-
 J'ai suivi la conférence Apple de cette semaine d'un œil distrait, surtout pour voir l'iPhone Duo dont je vous parlais dans [mon précédent billet](/fr/20260911-site-responsive-iphone-duo). Mais le plus divertissant ne se passait pas sur la scène de Cupertino. Il se passait sur X, sur le compte Samsung Mobile US, qui a passé toute la présentation à tacler Apple en direct.
 
 

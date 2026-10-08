@@ -7,8 +7,6 @@ searchIntent: "What is the \"yes to FGM\" campaign that started in Mali, why is 
 tags: ["society", "africa", "opinion", "digital"]
 ---
 
-# "Yes to FGM": what algorithms make of a razor blade
-
 This blog is about technology and digital culture. So the title may come as a surprise. Stay anyway: this campaign is a pure product of the platforms. We're right in the middle of the subject.
 
 A "yes to FGM" campaign has been circulating on Facebook and Twitter out of Mali. Let me say it again:  **A "yes to FGM" campaign has been circulating on Facebook and Twitter out of Mali.**

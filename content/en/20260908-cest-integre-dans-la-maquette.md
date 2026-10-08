@@ -7,8 +7,6 @@ searchIntent: "How to verify a handoff deliverable announced as complete, and ho
 tags: ["project management", "development", "handoff", "method", "opinion"]
 ---
 
-# « It's been integrated into the mockup. » (No.)
-
 There are phrases that should make us prick up our ears. « Trust me », « it takes two minutes », or « can we do a call to talk about it? ». Since last week, I've added « it's been integrated » to my list.
 
 I pick up a handoff package for a client project. Specifications, scoring matrix, HTML mockups, design system, graphic kit, tracking plan. The pack looks serious, it even has a table of contents, and I have nine days to deliver.

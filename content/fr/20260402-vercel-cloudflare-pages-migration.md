@@ -7,8 +7,6 @@ searchIntent: "Comment migrer un projet Nuxt de Vercel vers Cloudflare Pages pou
 tags: ["tutoriel", "dev", "afrique"]
 ---
 
-# De Vercel à Cloudflare Pages : comment j'ai dit au revoir aux frais d'hébergement (et pourquoi tu dois aussi)
-
 Vous connaissez ce sentiment ? Vous lancez votre petit projet perso sur Vercel, tout va bien… jusqu'au moment où vous recevez votre première facture.
 
 Moi aussi, j'ai connu ça.

@@ -1,14 +1,11 @@
 ---
 title: "iCloud+ for $0.99: Apple TV and Apple Arcade included, and why my favourite shows are on Apple TV"
 createdAt: "2026-10-06T01:00:00Z"
-draft: true
 image: "/images/articles/pexels-jakubzerdzicki-28973296.webp"
 description: "Since September 2026, in Côte d'Ivoire, the $0.99-a-month 50GB iCloud+ plan includes Apple TV and Apple Arcade. What the plan contains, and why my favourite shows, Murderbot and Pluribus, are on Apple TV."
 searchIntent: "What does the $0.99-a-month iCloud+ plan include in Côte d'Ivoire now that it comes with Apple TV and Apple Arcade, and which Apple TV shows are worth watching (Murderbot, Pluribus, Severance)?"
 tags: ["apple", "icloud", "africa", "tech", "series"]
 ---
-
-# iCloud+ for $0.99: Apple TV and Apple Arcade included, and why my favourite shows are on Apple TV
 
 Since mid-September, the iCloud+ subscription has changed in Côte d'Ivoire. The first plan costs $0.99 a month and gives you 50GB of storage. It now includes Apple TV and Apple Arcade, [at no extra cost](https://www.apple.com/ci/newsroom/2026/09/icloud-plus-expands-to-include-apple-tv-and-apple-arcade/).
 

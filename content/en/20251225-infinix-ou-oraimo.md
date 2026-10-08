@@ -8,7 +8,6 @@ searchIntent: "Which smartwatch to choose between the Infinix Watch 3 and the Or
 tags: ["tech"]
 summary: "Detailed comparison of the Infinix Watch 3 and the Oraimo Nova AM to work out the best watch for your priorities: design, connected features or battery life."
 ---
-# Infinix Watch 3 vs Oraimo Nova AM: Looks or Productivity
 
 Although both brands belong to the giant **Transsion Holdings** and their prices are close, the Infinix Watch 3 and the Oraimo Nova AM are not quite aimed at the same audience. Here is a detailed comparison to help you choose between the two.
 

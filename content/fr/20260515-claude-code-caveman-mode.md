@@ -7,8 +7,6 @@ searchIntent: "Comment réduire la consommation de tokens de Claude Code avec le
 tags: ["tutoriel", "dev", "ia"]
 ---
 
-# Claude Code en mode Caveman : -75% de tokens, agent parle comme homme des cavernes
-
 > *Why use many token when few do trick.*
 
 Vous payez Claude au token. Et Claude, c'est un bavard. Il vous explique, il reformule, il vous complimente, il vous prépare une introduction soignée avant de poser deux lignes de code utiles.

@@ -6,7 +6,6 @@ description: "MacBook Neo, Apple Intelligence, foldable iPhone: why Apple no lon
 searchIntent: "Why is Apple consolidating its ecosystem instead of chasing a new revolution with the foldable iPhone and Apple Intelligence?"
 tags: ["tech", "apple", "opinion"]
 ---
-# Apple: the wisdom of the giant
 
 ## The MacBook Neo: the luxury of the low end
 

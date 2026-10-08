@@ -8,7 +8,6 @@ searchIntent: "Pourquoi la publicité de Noël générée par IA de Coca-Cola a-
 tags: ["tech", "opinion"]
 summary: "Coca-Cola a créé la controverse avec sa première publicité de Noël générée par IA. Malgré les critiques sur l'esthétique imparfaite, cette stratégie marketing a brillamment réussi à renforcer l'association de la marque avec les fêtes de fin d'année en générant des discussions et en occupant l'espace médiatique."
 ---
-# Coca-Cola, IA et Noël : le mélange qui fait parler (mais également vendre)
 
 Tout comme le KFC du 24 décembre au Japon ou la sauce pistache du jour de l'An sur les bords de la Lagune Ébrié, les publicités féériques de Coca-Cola pendant la période des fêtes sont une tradition incontournable.
 Cette année, la marque a décidé d'ajouter une touche technologique à sa magie de Noël.

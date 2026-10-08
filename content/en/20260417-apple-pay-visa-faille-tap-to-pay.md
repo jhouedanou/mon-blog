@@ -7,8 +7,6 @@ searchIntent: "How can an Apple Pay and Visa flaw charge a locked iPhone, and ho
 tags: ["security", "Apple Pay", "Visa", "NFC", "iPhone", "security flaw"]
 ---
 
-# How researchers stole $10,000 through a locked iPhone: the Apple Pay / Visa flaw explained
-
 Some security stories sound like science fiction. This one happened in a university lab, was documented and published, and it very probably concerns the phone sitting in your pocket right now.
 
 Researchers from the universities of Birmingham and Surrey have shown that it is possible to **charge several thousand dollars to a locked iPhone**, without any interaction from its owner, by exploiting a combination of weaknesses in Apple Pay and Visa's transaction protocols.
