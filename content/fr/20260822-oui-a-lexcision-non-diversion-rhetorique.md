@@ -3,7 +3,7 @@ title: "« Oui à l'excision » : ce que les algorithmes font d'une lame de raso
 createdAt: "2026-08-22T12:40:00Z"
 image: "/images/articles/pexels-cottonbro-4631077.webp"
 description: "« Oui à l'excision » : partie du Mali, cette campagne prospère sur Facebook et Twitter. Pourquoi les algorithmes la récompensent et pourquoi la réponse est non."
-searchIntent: "Qu'est-ce que la campagne « oui à l'excision » partie du Mali, pourquoi elle prospère sur les réseaux sociaux, quels sont les motifs de ceux qui la relaient, et ce que disent les lois ivoirienne et malienne sur la responsabilité des contenus publiés en ligne."
+searchIntent: "Qu'est-ce que la campagne « oui à l'excision » partie du Mali, pourquoi les algorithmes des réseaux sociaux la font prospérer et qu'est-ce que ceux qui la relaient y gagnent ?"
 tags: ["société", "afrique", "opinion", "numérique"]
 ---
 

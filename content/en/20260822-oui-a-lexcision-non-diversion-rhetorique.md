@@ -3,7 +3,7 @@ title: "\"Yes to FGM\": what algorithms make of a razor blade"
 createdAt: "2026-08-22T12:40:00Z"
 image: "/images/articles/pexels-cottonbro-4631077.webp"
 description: "\"Yes to FGM\": born in Mali, this campaign is thriving on Facebook and Twitter. Why the algorithms reward it, and why the only possible answer to it is no."
-searchIntent: "What is the \"yes to FGM\" campaign that started in Mali, why is it thriving on social media, what motivates those who spread it, and what do Ivorian and Malian laws say about responsibility for content published online."
+searchIntent: "What is the \"yes to FGM\" campaign that started in Mali, why do social media algorithms help it thrive, and what do those who spread it gain from it?"
 tags: ["society", "africa", "opinion", "digital"]
 ---
 

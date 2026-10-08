@@ -1,6 +1,7 @@
 ---
 title: "MacSai and Mole: two free alternatives to CleanMyMac"
 createdAt: "2026-09-01"
+updatedAt: "2026-10-08T12:00:00Z"
 image: "/images/articles/macao.webp"
 description: "After PureMac, two more free, open-source cleaners for macOS: MacSai, which mirrors CleanMyMac feature for feature, and Mole, a command-line tool."
 searchIntent: "Which free and open-source alternatives to CleanMyMac should you install on a Mac in 2026?"
@@ -17,7 +18,7 @@ Since then, two other projects have caught my attention. They're nothing alike, 
 
 You'll find everything you'd expect from a full cleaner: system caches and logs, an uninstaller that tracks down files apps forget, a malware scanner, startup item management, duplicate detection, and a visual disk map to spot the folders that weigh a lot. One detail I hadn't seen anywhere else: universal binary thinning, which strips the Intel part out of apps on Apple Silicon Macs.
 
-On first launch on my MacBook, a Smart Scan sent 5.66 GB to the trash: 4.42 GB of useless system files and 2.96 GB of browsing traces. Nothing is erased permanently, everything goes through the macOS Trash, which leaves time to recover a file if in doubt.
+On first launch on my MacBook, a Smart Scan sent 5.66 GB to the trash, between useless system files and browsing traces. Nothing is erased permanently, everything goes through the macOS Trash, which leaves time to recover a file if in doubt.
 
 It requires macOS 14 at minimum. Installation is a one-liner:
 
@@ -53,6 +54,8 @@ The developer also offers a graphical version, Mole for Mac, which organises the
 If you want an interface and the complete equivalent of CleanMyMac, go for MacSai. If you live in the Terminal, go for Mole. And if you're simply looking for a clean, no-frills uninstaller, PureMac still does the job very well.
 
 In all three cases, the code can be read by anyone, nothing leaves your machine, and you pay nothing. Hard to do better as a comparison with CleanMyMac.
+
+*Correction, October 8, 2026: removed the Smart Scan breakdown by category (4.42 GB and 2.96 GB), whose sum did not match the 5.66 GB total sent to the trash.*
 
 ---
 [Jean-Luc Houédanou](https://houedanou.com)

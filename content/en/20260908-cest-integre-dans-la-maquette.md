@@ -1,5 +1,5 @@
 ---
-title: "« It's been integrated into the mockup. » (No.)"
+title: "“It's been integrated into the mockup.” (No.)"
 createdAt: "2026-09-08T20:17:00Z"
 image: "/images/articles/maquette-integree-non.webp"
 description: "\"It's been integrated\": only two screens out of four actually were. What grep taught me about a handoff, and five web project traps I now handle differently."

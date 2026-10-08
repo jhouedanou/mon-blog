@@ -1,6 +1,7 @@
 ---
 title: "Portable dual monitor: productivity boost or gadget?"
 createdAt: "2026-08-10"
+updatedAt: "2026-10-08T12:00:00Z"
 image: "/images/articles/image_b81a07e7.webp"
 description: "Two 14-inch screens that unfold on either side of the laptop: my take on this portable dual monitor, its real strengths, its limits and who it is actually for."
 searchIntent: "Should you buy a portable dual monitor for working on the go, and what are the pros and cons compared with an iPad in Sidecar or a regular USB-C monitor."
@@ -57,7 +58,7 @@ That's exactly the configuration I have on my fixed desk. The difference is that
 
 Finally, as for the hinge, little to no worry, the supplied kickstand takes the weight of the whole thing and transfers it to the table.
 
-But above all, it's surprisingly thin: once the two screens are folded, the thickness of the whole thing is more or less that of an iPad, which is a real plus for transport. The weight is also kept in check: a few grams for the whole thing, which remains reasonable for an ultraportable.
+But above all, it's surprisingly thin: once the two screens are folded, the thickness of the whole thing is more or less that of an iPad, which is a real plus for transport. The weight is also kept in check: about 1 kg for the whole thing according to [Blackview's product page](https://www.blackview.hk/products/item/dcm6){target="_blank" rel="noopener"}, which remains reasonable to carry alongside an ultraportable.
 
 
 ## Drawbacks 
@@ -92,6 +93,8 @@ Avoid the ones sold on Facebook through sponsored posts, as well as those shown 
 If you're in Abidjan, you can find them in local shops, like the Samsung market in Treichville or the computer and phone accessories arcade near the allocodrome in Riviera 2.
 
 Alternatively, there are online platforms where you can buy quality products at competitive prices from Amazon and have them delivered to Abidjan, like Cart'in.
+
+*Correction, October 8, 2026: the device does not weigh "a few grams" but about 1 kg, according to Blackview's product page.*
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com)*

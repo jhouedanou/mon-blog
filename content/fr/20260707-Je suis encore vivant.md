@@ -1,7 +1,7 @@
 ---
 title: "Se prendre des murs (et pourquoi c’est ça, le vrai métier de dev)"
 image: "/images/Gemini_Generated_Image_oudr54oudr54oudr.jpeg"
-createdAt: "2026-07-06"
+createdAt: "2026-07-07"
 description: "Trois jours de galères de dev en quatre actes : lenteurs, bugs fantômes, franglais et quota de déploiement atteint à 22 h 41. Le vrai métier, sans filtre."
 searchIntent: "Que révèle une série de bugs, de lenteurs et de problèmes de déploiement sur le vrai métier de développeur."
 tags: ["développement", "coulisses", "programmation"]

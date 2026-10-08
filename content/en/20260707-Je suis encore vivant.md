@@ -1,7 +1,7 @@
 ---
 title: "Hitting walls (and why that is the real job of a dev)"
 image: "/images/Gemini_Generated_Image_oudr54oudr54oudr.jpeg"
-createdAt: "2026-07-06"
+createdAt: "2026-07-07"
 description: "Three days of dev trouble in four acts: slowness, ghost bugs, Franglais and a deployment quota hit at 10:41pm. The real job of a developer, unfiltered."
 searchIntent: "What a string of bugs, slowdowns and deployment problems reveals about the real job of a developer."
 tags: ["development", "behind the scenes", "programming"]

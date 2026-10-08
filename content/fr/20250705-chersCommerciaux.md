@@ -2,6 +2,7 @@
 title: "Apple, iOS (et les AirTags) racontent tout à votre patron"
 image: "/images/articles/yeah.webp"
 createdAt: "2025-07-05"
+updatedAt: "2026-10-08T12:00:00Z"
 id: 2025-07-05
 description: "iPhone, MacBook, voiture de fonction avec AirTag : vos outils pro documentent vos détours. Ce que dit la loi ivoirienne, et comment éviter le piège."
 searchIntent: "Comment les outils Apple et les équipements professionnels peuvent suivre les déplacements d’un commercial."
@@ -30,7 +31,7 @@ Que vous soyez commercial, développeur ou community manager, votre employeur vo
 
 À première vue, ce trio est un kit de productivité idéal. En réalité, c'est aussi un **réseau de capteurs silencieux**. Ces appareils sont des témoins numériques qui enregistrent vos trajets, vos connexions et vos habitudes.
 
-Oui, même la voiture. Surtout si un AirTag a été discrètement placé « pour la sécurité ». Officiellement, il est là pour protéger le véhicule. Officieusement, il peut également surveiller vos moindres détours.
+Oui, même la voiture. Surtout si un AirTag a été discrètement placé « pour la sécurité ». Officiellement, il est là pour protéger le véhicule. Officieusement, il peut également surveiller vos moindres détours. Discret, il ne l'est toutefois pas indéfiniment : un AirTag séparé de son propriétaire qui se déplace avec vous finit par déclencher sur iPhone l'alerte « Détection d'un AirTag suivant vos déplacements », et les téléphones sous Android 6.0 ou ultérieur préviennent eux aussi automatiquement ([assistance Apple](https://support.apple.com/fr-fr/119874){target="_blank" rel="noopener"}).
 
 ## La technologie ne ment pas : l'exemple du tableau de bord
 
@@ -76,6 +77,8 @@ Il n'y a pas de solution miracle, mais une approche basée sur la prudence et la
 Un AirTag dans votre voiture, un iPhone dans votre poche, un MacBook dans votre sac… Ce ne sont pas que des outils. Ce sont aussi des narrateurs. Et le récit qu'ils construisent doit être en accord avec votre fiche de poste.
 
 La technologie ne juge pas, elle se contente de documenter. C'est à vous de décider si cette documentation sera votre alibi ou votre piège.
+
+*Correction du 8 octobre 2026 : ajout d'une précision sourcée sur les alertes de suivi indésirable qu'Apple et Android envoient à la personne qui se déplace avec un AirTag.*
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com) — espion technologique malgré lui*

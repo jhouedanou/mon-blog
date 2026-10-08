@@ -57,7 +57,8 @@ I'd like to hear from the people who built this industry. Not a foundation press
 
 ## Sources
 
-- [*United States v. Anderegg* decision, 7th Circuit, August 25, 2026](https://www.fire.org/sites/default/files/2026/08/Opinion%20-%20United%20States%20v.%20Anderegg.pdf) (analysis: reason.com/volokh)
+- [*United States v. Anderegg* decision, 7th Circuit, August 25, 2026](https://www.fire.org/sites/default/files/2026/08/Opinion%20-%20United%20States%20v.%20Anderegg.pdf)
+- Eugene Volokh, The Volokh Conspiracy (Reason), August 27, 2026, ["Home Possession of AI-Generated Porn Depicting Fake Children Remains Constitutionally Protected, Seventh Circuit Rules"](https://reason.com/volokh/2026/08/27/home-possession-of-ai-generated-porn-depicting-fake-children-remains-constitutionally-protected-seventh-circuit-rules/){target="_blank" rel="noopener"}
 - Snopes, ["Judge ruled certain AI-generated child sex abuse material is protected by First Amendment. Here's context"](https://www.snopes.com/fact-check/judge-ai-child-sex-abuse-ruling/)
 - Minnesota Lawyer / The Daily Record, ["Federal judge warns law is being left behind by AI child sex abuse images"](https://thedailyrecord.com/2026-08-31/federal-judge-first-amendment-ai-child-sex-abuse-images/)
 

@@ -4,6 +4,7 @@ image: "/images/articles/apple.webp"
 createdAt: "2026-03-26"
 description: "MacBook Neo, Apple Intelligence, iPhone pliable : Apple ne cherche plus la révolution. Elle consolide, intègre et monétise avec une précision chirurgicale."
 searchIntent: "Pourquoi Apple consolide-t-elle son écosystème au lieu de chercher une nouvelle révolution avec l’iPhone pliable et Apple Intelligence ?"
+updatedAt: "2026-10-08T12:00:00Z"
 tags: ["tech", "apple", "opinion"]
 ---
 
@@ -25,9 +26,9 @@ Personnellement, je ne suis pas le public cible — comme on dit sur les bords d
 
 Posons les chiffres sur la table, parce qu'ils donnent le vertige.
 
-Anthropic — l'entreprise derrière Claude — a levé plus de 27 milliards de dollars en 14 tours de table. Son dernier tour de table : 30 milliards en Series G, la deuxième plus grande levée de fonds privée de l'histoire, valorisant la société à 380 milliards de dollars. OpenAI, de son côté, a levé 40 milliards en mars 2025, dans ce qui reste le plus grand tour de table privé jamais réalisé. Google a annoncé jusqu'à 185 milliards de dollars de dépenses en capital cette année, en investissant massivement dans Gemini.
+Anthropic — l'entreprise derrière Claude — a levé près de 64 milliards de dollars depuis sa création en 2021. Son dernier tour de table, en février : 30 milliards en Series G, valorisant la société à 380 milliards de dollars ([Crunchbase](https://news.crunchbase.com/ai/anthropic-raises-30b-second-largest-deal-all-time/){target="_blank" rel="noopener"}). OpenAI, de son côté, avait levé 40 milliards en mars 2025, avant d'annoncer fin février un tour de 110 milliards, le plus gros tour de table privé jamais réalisé ([Crunchbase](https://news.crunchbase.com/venture/openai-raise-largest-ai-venture-deal-ever/){target="_blank" rel="noopener"}). Google a annoncé jusqu'à 185 milliards de dollars de dépenses en capital cette année, en investissant massivement dans Gemini.
 
-En face de tout ça : Apple Intelligence, avec ses 11 milliards engloutis. C'est du génie — mais pas pour les raisons qu'on croit.
+En face de tout ça : Apple Intelligence, et une Apple qui ne dit même pas combien elle y met. Toutes dépenses d'investissement confondues, elle a mis environ 12,7 milliards de dollars sur son exercice 2025 ([CNBC](https://www.cnbc.com/2025/10/30/apple-isnt-playing-the-same-ai-capex-game-as-the-rest-of-the-megacaps.html){target="_blank" rel="noopener"}). C'est du génie — mais pas pour les raisons qu'on croit.
 
 Apple Intelligence est la moins bonne IA du marché — réponses à côté, génération d'images en retrait, instabilité chronique. Et Apple l'a visiblement compris avant tout le monde : l'intégration de ChatGPT ou de Gemini dans iOS n'est pas un aveu de faiblesse, c'est la confirmation d'une stratégie. Pourquoi brûler des milliards à construire ce que d'autres ont déjà construit mieux que toi ?
 
@@ -46,15 +47,17 @@ Pour revenir à l'iPhone pliable, ce sera un pur objet de statut. Un écran de v
 
 Apple ne fait plus rêver comme avant. Plus de *"one more thing"* qui retourne l'industrie. Plus de keynote qui redéfinit une catégorie entière. Ce qu'Apple fait aujourd'hui, c'est consolider, intégrer, et monétiser avec une précision chirurgicale.
 
-Et les chiffres donnent le vertige, mais pas pour les raisons qu'on attendrait. Le chiffre d'affaires annuel d'Apple dépasse les **435 milliards de dollars** sur les douze derniers mois — soit à peu près le PIB d'un pays comme l'Autriche. L'iPhone représente à lui seul plus de la moitié des revenus totaux, avec 201 milliards de dollars, tandis que le segment Services — iCloud, App Store, abonnements — a progressé de **13 % en un an**. Ce n'est pas une entreprise tech. C'est une machine à abonnements habillée en aluminium brossé.
+Et les chiffres donnent le vertige, mais pas pour les raisons qu'on attendrait. Le chiffre d'affaires annuel d'Apple dépasse les **435 milliards de dollars** sur les douze derniers mois — de quoi rivaliser avec le PIB d'un pays européen de taille moyenne. L'iPhone représente à lui seul plus de la moitié des revenus totaux — 85,3 milliards de dollars sur le seul trimestre de Noël, un record —, tandis que le segment Services — iCloud, App Store, abonnements — a progressé de **14 % en un an** ([résultats trimestriels d'Apple](https://www.apple.com/newsroom/2026/01/apple-reports-first-quarter-results/){target="_blank" rel="noopener"}). Ce n'est pas une entreprise tech. C'est une machine à abonnements habillée en aluminium brossé.
 
-En bourse, le tableau est tout aussi parlant : l'action AAPL s'échange autour de **251 dollars** aujourd'hui, pour une capitalisation boursière de **3 710 milliards de dollars** — la plus grande du monde. Sur un an, le titre a progressé de plus de 15 %, après avoir atteint un sommet historique à 288 dollars en décembre 2025. Pourtant, depuis le début de l'année 2026, l'action accuse une légère sous-performance de **-7,44 %** — signe que les marchés attendent de voir si Apple Intelligence tiendra ses promesses, ou si elle rejoindra le cimetière des Siri trop promis.
+En bourse, le tableau est tout aussi parlant : l'action AAPL s'échange autour de **251 dollars** ces jours-ci ([historique des cours AAPL](https://www.statmuse.com/money/ask/apple-stock-price-in-march-2026){target="_blank" rel="noopener"}), pour une capitalisation boursière d'environ **3 700 milliards de dollars** — parmi les toutes premières du monde, derrière Nvidia. Sur un an, le titre a progressé de près de 15 %, après avoir touché un sommet historique autour de 288 dollars début décembre 2025. Pourtant, depuis le début de l'année 2026, l'action accuse une sous-performance d'environ **-7 %** — signe que les marchés attendent de voir si Apple Intelligence tiendra ses promesses, ou si elle rejoindra le cimetière des Siri trop promis.
 
 Et franchement ? C'est rassurant. Dans un secteur où tout le monde lève des milliards pour promettre l'AGI d'ici 18 mois, avoir un acteur qui dit *« on va faire ça bien, pas forcément en premier »* — c'est presque subversif.
 
-Apple ne fait plus rêver. Apple délivre. La marge brute atteint **47,2 %**, au sommet des prévisions — et pour beaucoup d'utilisateurs, c'est exactement ce dont ils ont besoin.
+Apple ne fait plus rêver. Apple délivre. La marge brute a atteint **48,2 %** au dernier trimestre, au-dessus de la fourchette annoncée par l'entreprise ([comptes trimestriels d'Apple](https://www.apple.com/newsroom/pdfs/fy2026-q1/FY26_Q1_Consolidated_Financial_Statements.pdf){target="_blank" rel="noopener"}) — et pour beaucoup d'utilisateurs, c'est exactement ce dont ils ont besoin.
 
 *En bref : moins de magie, plus de métier. Et un compte en banque à faire pâlir un État.*
+
+*Correction du 8 octobre 2026 : les chiffres de levée de fonds ont été corrigés et sourcés. Anthropic avait levé près de 64 milliards de dollars au total (et non « plus de 27 milliards en 14 tours »), et le record de levée privée appartenait déjà, à la date du billet, aux 110 milliards d'OpenAI. Le chiffre de « 11 milliards » pour Apple Intelligence, introuvable, a été remplacé par les dépenses d'investissement publiées. Les chiffres financiers et boursiers ont été recalés sur les publications d'Apple et l'historique des cours : marge brute de 48,2 % (et non 47,2 %), iPhone et Services du dernier trimestre, capitalisation derrière celle de Nvidia.*
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com) — croqueur de pommes*

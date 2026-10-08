@@ -1,5 +1,5 @@
 ---
-title: "How Donald Trump pushed me to ditch cPanel for CyberPanel, and why I regret nothing"
+title: "How the UEMOA card blockage pushed me to ditch cPanel for CyberPanel, and why I regret nothing"
 image: "/images/articles/cpanel-cyberpanel-migration.webp"
 createdAt: "2026-03-27"
 description: "cPanel price hikes, payments blocked in the UEMOA zone: a field report on my migration to CyberPanel and OpenLiteSpeed, and a TTFB divided by five."
@@ -14,13 +14,13 @@ I never thought I would write this article one day. Not because the subject is t
 
 I have been living with cPanel/WHM for more than ten years. Like many sysadmins in West Africa, I grew up professionally with this interface. Creating an account, configuring a domain, managing databases, everything went through WHM. It was comfortable, familiar, and for a long time the price stayed reasonable.
 
-Then 2019 came along. cPanel dropped its fixed licence model for a per-account system. And since then, every year, like a morbid ritual, prices go up. In 2024, the Solo licence cost **$15.99/month**. In 2025, it went to **$16**. In 2026? **$18**. The Pro licence (up to 30 accounts) jumped from **$27.25** to **$32**, a **17%** increase in one year. When you manage several dozen sites, the bill was getting hard to justify.
+Then 2019 came along. cPanel dropped its fixed licence model for a per-account system. And since then, every year, like a morbid ritual, prices go up. At partner rates (what cPanel charges hosting companies and licence resellers), the Solo licence was **$16/month** in 2025. In 2026? **$18**. The Pro licence (up to 30 accounts) jumped from **$27.25** to **$32**, a **17%** increase in one year ([2025-2026 partner price list, detailed by VPSBG](https://www.vpsbg.eu/blog/cpanel-price-increase-2026){target="_blank" rel="noopener"}). And list prices are worse: Solo at **$29.99**, Pro at **$53.99** ([official cPanel pricing](https://cpanel.net/pricing/){target="_blank" rel="noopener"}), up from $26.99 and $46.99 in 2025. When you manage several dozen sites, the bill was getting hard to justify.
 
 But honestly, cPanel's price hikes alone would probably not have made me move. You adapt, you adjust your quotes, you grumble a bit and you carry on. What changed everything is what happened in early 2026.
 
-## When Donald Trump turned off the taps
+## When the taps were turned off
 
-In January 2026, the Trump administration announced a series of drastic measures aimed at restricting financial flows between the United States and West Africa. Under the pretext of fighting money laundering and terrorism financing, the American authorities imposed severe restrictions on cross-border transactions, particularly affecting the countries of the UEMOA zone (the West African Economic and Monetary Union).
+In early January 2026, online payments with bank cards issued in the UEMOA zone (the West African Economic and Monetary Union) started failing. From January 2, Air Côte d'Ivoire and other airlines in the region were telling customers that online card sales were "temporarily suspended" ([Barid TV, January 16, 2026](https://barid.tv/2026/01/16/uemoa-le-bras-de-fer-des-paiements-en-ligne-gim-switch-defie-visa-et-mastercard/){target="_blank" rel="noopener"}). The cause: not a Trump administration measure, as I first wrote, but Decision No. 31 of GIM-UEMOA, the regional interbank group, approved by the BCEAO (the regional central bank). It requires every transaction made with a card issued in the zone, even when it goes through Visa or Mastercard, to also be routed and cleared through the regional GIM-Switch platform. Visa and Mastercard did not keep up in time. On January 29, they were given an ultimatum: comply by March 31, 2026 ([Financial Afrik, January 29, 2026](https://www.financialafrik.com/2026/01/29/uemoa-les-cartes-visa-et-mastercard-ont-90-jours-pour-se-conformer/){target="_blank" rel="noopener"}). A tug of war over payment sovereignty, with our bank cards stuck in the middle.
 
 **Concrete result for me**: for almost a month, it was impossible to pay for the cPanel licence. Not a cash flow problem. A payment infrastructure problem. Cards no longer went through. The alternatives (PayPal, Stripe) were unstable or unavailable from the UEMOA zone. And when your cPanel licence expires, WHM lets you know, politely at first, then less and less so.
 
@@ -114,7 +114,7 @@ CyberPanel's automatic backup feature greeted me with a lovely error message: *"
 
 This forced migration taught me something important about our trade in West Africa: **our dependence on proprietary American tools is a systemic risk.**
 
-When a policy change in Washington can prevent you from paying your server licence for a month, when the suspension of Visa/Mastercard payments in the UEMOA zone can block your business overnight, you need a plan B. And that plan B is **open source**.
+When a tug of war between a regional regulator and two American card networks can prevent you from paying your server licence for a month, when the suspension of Visa/Mastercard payments in the UEMOA zone can block your business overnight, you need a plan B. And that plan B is **open source**.
 
 CyberPanel is not perfect. OpenLiteSpeed is not perfect. But they are free, fast, and **nobody can cut off your access because your bank card no longer goes through.**
 
@@ -138,9 +138,9 @@ Migrating from cPanel to CyberPanel was not in my plans. It was cPanel's continu
 
 But today, with a **TTFB divided by five**, **zero licence fees**, and **regained independence** from international payment systems, I regret nothing.
 
-If "Uncle Donald" taught me anything, it is that **digital sovereignty, in Africa, starts with the choice of your tools.**
+"Uncle Donald" turned out to have nothing to do with it. But if this crisis taught me anything, it is that **digital sovereignty, in Africa, starts with the choice of your tools.**
 
-*Updated October 8, 2026: ionCube now publishes loaders for PHP 8.4 and 8.5 ([official loaders page](https://www.ioncube.com/loaders.php)). Before downgrading to `lsphp82`, check that the installed loader version matches your PHP version. Another reason not to linger on PHP 8.2: it stops receiving security fixes after December 31, 2026 ([official PHP schedule](https://www.php.net/supported-versions.php)).*
+*Updated October 8, 2026: ionCube now publishes loaders for PHP 8.4 and 8.5 ([official loaders page](https://www.ioncube.com/loaders.php)). Before downgrading to `lsphp82`, check that the installed loader version matches your PHP version. Another reason not to linger on PHP 8.2: it stops receiving security fixes after December 31, 2026 ([official PHP schedule](https://www.php.net/supported-versions.php)). Correction, same day: the first version of this post blamed the payment blockage on a January 2026 Trump administration measure. It actually came from GIM-UEMOA's Decision No. 31 (see above). The 2025 and 2026 prices are now labelled as cPanel partner rates, with list prices alongside; the $15.99 figure given for 2024 matched no cPanel price list and has been removed.*
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com), converted to open source once again*

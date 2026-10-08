@@ -70,10 +70,23 @@ dd if=$DISQUE_SOURCE of=$DISQUE_DESTINATION bs=64K conv=noerror,sync status=prog
 # Extension de la partition
 echo "Extension de la partition..."
 parted $DISQUE_DESTINATION resizepart 2 100%
-resize2fs "${DISQUE_DESTINATION}2"
+
+# Nom de la partition : /dev/sdb2, mais /dev/nvme0n1p2 ou /dev/mmcblk0p2
+# (si le nom du disque finit par un chiffre, Linux ajoute un « p »)
+if [[ $DISQUE_DESTINATION =~ [0-9]$ ]]; then
+    PARTITION="${DISQUE_DESTINATION}p2"
+else
+    PARTITION="${DISQUE_DESTINATION}2"
+fi
+
+# resize2fs refuse souvent d'agrandir une partition démontée non vérifiée
+e2fsck -f "$PARTITION"
+resize2fs "$PARTITION"
 
 echo "Clonage terminé ! 🎉"
 ```
+
+Two details of the script deserve an explanation. First, `resize2fs` refuses to grow an unmounted partition that has not been checked since it was last mounted, and asks you to run `e2fsck -f` first ([resize2fs source code](https://github.com/tytso/e2fsprogs/blob/master/resize/main.c){target="_blank" rel="noopener"}): so the script does that beforehand. Second, on an NVMe SSD the disk is called `/dev/nvme0n1` and its second partition `/dev/nvme0n1p2`, not `/dev/nvme0n12`: when the disk name ends with a digit, Linux adds a "p" ([Arch Linux wiki](https://wiki.archlinux.org/title/Device_file#Partition){target="_blank" rel="noopener"}). The script handles both cases.
 
 ### 3. Running It
 
@@ -103,7 +116,7 @@ Check that the new partition really uses all the available space.
 - Tired disk: if the source disk has read errors, do not rely on the script's `conv=noerror,sync` option. The [Arch Linux documentation](https://wiki.archlinux.org/title/Dd#Cloning_an_entire_hard_disk) advises against these options in that case and recommends ddrescue;
 - Duplicate identifiers: dd copies everything, partition UUIDs included ([same source](https://wiki.archlinux.org/title/Dd#Cloning_an_entire_hard_disk)). Unplug the old disk before rebooting on the new one, so the system does not mix the two up.
 
-*Updated October 8, 2026: added sourced precautions (cloning from a live session, source disk with read errors, identical UUIDs after cloning).*
+*Updated October 8, 2026: added sourced precautions (cloning from a live session, source disk with read errors, identical UUIDs after cloning); script fixed: `e2fsck -f` before `resize2fs`, and correct partition name on NVMe or eMMC disks (`/dev/nvme0n1p2` instead of `/dev/nvme0n12`).*
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com) — cloner of penguins*
