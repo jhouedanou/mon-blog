@@ -73,3 +73,6 @@ Gates a raison sur l'IA. Meta a été condamné pour ses réseaux. Et dans les d
 Get the money. Dollar dollar bill, y'all.
 
 *Mise à jour du 8 octobre 2026 : correction du montant d'août. Les 567 millions de dollars s'ajoutent aux 375 millions de mars, ils ne constituent pas le total, d'après [GigaLaw](https://giga.law/daily-news/2026/8/7/new-mexico-judge-orders-meta-to-pay-567-million-in-mental-health-case).*
+
+---
+*[Jean-Luc Houédanou](https://houedanou.com)*

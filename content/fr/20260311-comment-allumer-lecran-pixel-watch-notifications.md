@@ -67,4 +67,4 @@ Ces applications sont généralement légères, gratuites et conçues pour réso
 *Mise à jour du 8 octobre 2026 : la description de Wear Reminder a été corrigée d'après [sa fiche Play Store](https://play.google.com/store/apps/details?id=org.freepoc.wearreminder2) (l'application s'appelle désormais Wear Reminder 2 et envoie des rappels et d'autres contenus du téléphone vers la montre).*
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com) — réveilleur de montres*
+*[Jean-Luc Houédanou](https://houedanou.com) — réveilleur de montres*

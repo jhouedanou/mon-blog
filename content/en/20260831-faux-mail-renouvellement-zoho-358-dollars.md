@@ -83,6 +83,7 @@ We harden servers, we enforce MFA everywhere, we run audits. And the attack most
 
 The rule to remember, for you and for your colleagues: an email never proves a charge, only your bank does. The email says what the sender wants you to believe, the statement says what actually happened.
 
-— [Jean Luc Houédanou](https://houedanou.com) · Zoho Backstage's "customer service" still hasn't called me back 🙂
-
 *Updated October 8, 2026: clarified Zoho's legitimate sending domains, which aren't limited to `zohocorp.com` (`zoho.com`, `zoho.eu`, `zoho.in`…), based on [the phishing alert published by Zoho](https://help.zoho.com/portal/en/community/topic/phishing-alert-a-must-read-for-all-zoho-sign-users).*
+
+---
+— [Jean-Luc Houédanou](https://houedanou.com) · Zoho Backstage's "customer service" still hasn't called me back 🙂

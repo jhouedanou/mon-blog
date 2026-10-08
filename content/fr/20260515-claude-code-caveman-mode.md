@@ -163,7 +163,8 @@ Licence Apache-2.0 depuis la version 3.0.0 (MIT avant). *Free like mass mammoth 
 
 Lien : [github.com/JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman)
 
----
-*Jean Luc Houédanou — moins de bla-bla, plus de code. Ooga booga, facture mini.*
 
 *Mise à jour du 8 octobre 2026 : nouvelles commandes d'installation (Node.js 22.13+, versions épinglées), niveaux réduits à `/caveman`, `/ultracave` et `/megacave`, commandes et licence (Apache-2.0) mises à jour, et nouveaux benchmarks, d'après le [README](https://github.com/JuliusBrussee/caveman), la [page d'installation](https://github.com/JuliusBrussee/caveman/blob/main/INSTALL.md) et le [fichier de licence](https://github.com/JuliusBrussee/caveman/blob/main/LICENSING.md) du projet.*
+
+---
+*[Jean-Luc Houédanou](https://houedanou.com) — moins de bla-bla, plus de code. Ooga booga, facture mini.*

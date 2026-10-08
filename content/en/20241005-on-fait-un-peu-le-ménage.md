@@ -36,4 +36,4 @@ The next steps are:
 See you very soon.
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com) — digital mover*
+*[Jean-Luc Houédanou](https://houedanou.com) — digital mover*

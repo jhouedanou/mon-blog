@@ -52,8 +52,7 @@ For my part, my usage stays simple: I have never delegated writing my code to Cl
 
 Simple. Efficient. Three steps.
 
----
-
-*[Jean Houédanou](https://houedanou.com). This is the kind of feature that gives meaning to the rising price of RAM.*
-
 *Updated October 8, 2026: clarifications based on the [official Remote Control documentation](https://code.claude.com/docs/en/remote-control): the feature is called Remote Control (Dispatch is the Cowork equivalent), it is open to the Pro, Max, Team and Enterprise plans, the session shows up in the app's Code tab, and it reconnects after sleep.*
+
+---
+*[Jean-Luc Houédanou](https://houedanou.com). This is the kind of feature that gives meaning to the rising price of RAM.*

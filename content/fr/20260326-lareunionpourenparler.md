@@ -69,4 +69,4 @@ PS : Si malgré tout vous décidez de tenir cette réunion, prévoyez un ordre d
 Avec des arguments.
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com) — ennemi juré des réunions*
+*[Jean-Luc Houédanou](https://houedanou.com) — ennemi juré des réunions*

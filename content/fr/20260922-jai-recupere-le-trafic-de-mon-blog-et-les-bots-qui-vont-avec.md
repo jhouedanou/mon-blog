@@ -143,3 +143,6 @@ Il y a une contrepartie : les anciennes adresses WordPress répondent désormais
 ---
 
 *Graphique : invocations du Worker mon-blog du 15 au 22 septembre 2026, d'après l'API d'analyse de Cloudflare.*
+
+---
+*[Jean-Luc Houédanou](https://houedanou.com)*

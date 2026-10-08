@@ -235,8 +235,7 @@ And for someone who has just received a refurbished Surface, an old test machine
 - **Creating a local account afterwards**: Settings → Accounts → Other users
 - **Removing a Microsoft account**: Settings → Accounts → Your info → Manage my Microsoft account
 
----
-
-*[Jean Houédanou](https://houedanou.com), Microsoft does not like this article*
-
 *Updated October 8, 2026: Microsoft removed `bypassnro.cmd` from recent Windows 11 builds ([Windows Latest](https://windowslatest.com/2025/03/29/windows-11-is-not-killing-off-hack-that-lets-you-bypass-microsoft-account-but-it-takes-more-efforts-now/)), then `start ms-cxh:localonly` from Insider builds ([PCWorld](https://www.pcworld.com/article/2932975/microsoft-kills-two-more-ways-to-install-windows-11-with-local-accounts.html)): added the fallback registry key, corrected the RUFUS procedure based on its [FAQ](https://github.com/pbatard/rufus/wiki/FAQ), and trap no. 5 (you can switch back to a local account afterwards).*
+
+---
+*[Jean-Luc Houédanou](https://houedanou.com), Microsoft does not like this article*

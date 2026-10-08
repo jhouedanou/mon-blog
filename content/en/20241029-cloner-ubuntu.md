@@ -106,4 +106,4 @@ Check that the new partition really uses all the available space.
 *Updated October 8, 2026: added sourced precautions (cloning from a live session, source disk with read errors, identical UUIDs after cloning).*
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com) — cloner of penguins*
+*[Jean-Luc Houédanou](https://houedanou.com) — cloner of penguins*

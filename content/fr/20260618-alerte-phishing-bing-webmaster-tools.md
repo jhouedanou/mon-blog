@@ -68,6 +68,7 @@ Nous passons nos journées à durcir des serveurs, corriger des vulnérabilités
 
 Vérifiez vos onglets, alertez vos collègues, et prenez l'habitude de contrôler l'URL avant de cliquer.
 
-— Jean Houédanou · [houedanou.com](https://houedanou.com)
-
 *Mise à jour du 8 octobre 2026 : correction d'une erreur de ma part. Le vrai Bing Webmaster Tools accepte bien la connexion avec un compte Google ([Search Engine Journal](https://www.searchenginejournal.com/bing-webmaster-tools-now-social-login-option/236569/)) ; la présence de ce bouton n'est donc pas un signe de phishing en soi. Le domaine reste le seul indice fiable.*
+
+---
+*[Jean-Luc Houédanou](https://houedanou.com)*

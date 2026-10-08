@@ -19,4 +19,4 @@ But more seriously, I chose to abandon WordPress and dive into the world of Nuxt
 - but above all, writing my articles in Markdown is just great. No more fighting with Gutenberg (even though I quite like it...) or the WordPress editor. Simplicity and efficiency all round!
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com) — tenant of the web*
+*[Jean-Luc Houédanou](https://houedanou.com) — tenant of the web*

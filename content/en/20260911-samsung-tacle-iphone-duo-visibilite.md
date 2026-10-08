@@ -52,3 +52,6 @@ If that happens with foldables, Samsung will have advertised the category while 
 ---
 
 *Credits: screenshots of posts by [Samsung Mobile US](https://x.com/SamsungMobileUS) on X, still taken from the Samsung video shared by [@WorkaholicDavid](https://x.com/WorkaholicDavid). Sources: [TV5 Monde](https://information.tv5monde.com/international/ils-nous-ont-copies-samsung-tacle-le-nouvel-iphone-pliable-dapple-sur-les-reseaux-sociaux-2836914), [Phonandroid](https://www.phonandroid.com/pourquoi-chaque-iphone-duo-vendu-par-apple-fait-la-fortune-de-samsung.html).*
+
+---
+*[Jean-Luc Houédanou](https://houedanou.com)*

@@ -70,4 +70,4 @@ Si iA Writer reste une référence dans le domaine des éditeurs Markdown, Ghost
 *Mise à jour du 8 octobre 2026 : iA Writer est disponible sur macOS, Windows, iPhone et iPad, mais toujours pas sous Linux. Ajout des commandes d'installation de Ghostwriter (dépôts Ubuntu et Flathub).*
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com) — écrivain sans distraction*
+*[Jean-Luc Houédanou](https://houedanou.com) — écrivain sans distraction*

@@ -59,5 +59,4 @@ If you have to open an XD file, do it. Deliver. Get paid. Then propose a full mi
 The goal is not to win a tooling debate. The goal is to finish the project before Creative Cloud asks you for an existential re-login in the middle of your workflow.
 
 ---
-
-*[Jean Houédanou](https://houedanou.com). Adobe XD is a bit like a fax machine in 4K: technically impressive, strategically questionable.*
+*[Jean-Luc Houédanou](https://houedanou.com). Adobe XD is a bit like a fax machine in 4K: technically impressive, strategically questionable.*

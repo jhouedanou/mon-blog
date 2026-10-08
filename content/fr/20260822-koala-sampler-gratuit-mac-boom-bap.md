@@ -69,3 +69,6 @@ Pour ceux qui veulent voir à quoi ressemble le logiciel avant de l'installer, v
 ## Pour commencer
 
 Koala Sampler est disponible gratuitement sur le [Mac App Store](https://apps.apple.com/fr/app/koala-sampler/id1479881366?mt=12), et la documentation se trouve sur [koalasampler.com](https://www.koalasampler.com). Si vous en sortez quelque chose, envoyez-le-moi 🙂
+
+---
+*[Jean-Luc Houédanou](https://houedanou.com)*

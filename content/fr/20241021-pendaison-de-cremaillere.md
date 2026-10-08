@@ -19,4 +19,4 @@ Mais plus sérieusement, j’ai choisi d’abandonner WordPress et de plonger da
 - mais surtout, rédiger mes articles en Markdown, c’est juste génial. Plus besoin de batailler avec Gutenberg (même si je l’aime bien…) ou l’éditeur de WordPress. Simplicité et efficacité au rendez-vous !
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com) — locataire du web*
+*[Jean-Luc Houédanou](https://houedanou.com) — locataire du web*

@@ -86,3 +86,6 @@ These are not survivalist habits. They are the same habits that already help whe
 ---
 
 _Photos: [Pixabay](https://www.pexels.com/@pixabay/), [Eduardo Soares](https://www.pexels.com/@eduschadesoares/) and [Brett Sayles](https://www.pexels.com/@brett-sayles/), on Pexels._
+
+---
+*[Jean-Luc Houédanou](https://houedanou.com)*

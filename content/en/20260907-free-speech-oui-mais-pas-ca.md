@@ -62,3 +62,6 @@ I'd like to hear from the people who built this industry. Not a foundation press
 - Minnesota Lawyer / The Daily Record, ["Federal judge warns law is being left behind by AI child sex abuse images"](https://thedailyrecord.com/2026-08-31/federal-judge-first-amendment-ai-child-sex-abuse-images/)
 
 *Image: KATRIN BOLOVTSOVA — Pexels.*
+
+---
+*[Jean-Luc Houédanou](https://houedanou.com)*

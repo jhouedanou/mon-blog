@@ -73,3 +73,6 @@ Gates is right about AI. Meta was found liable for its networks. And in both cas
 Get the money. Dollar dollar bill, y'all.
 
 *Updated October 8, 2026: corrected the August figure. The 567 million dollars come on top of March's 375 million, they are not the total, according to [GigaLaw](https://giga.law/daily-news/2026/8/7/new-mexico-judge-orders-meta-to-pay-567-million-in-mental-health-case).*
+
+---
+*[Jean-Luc Houédanou](https://houedanou.com)*

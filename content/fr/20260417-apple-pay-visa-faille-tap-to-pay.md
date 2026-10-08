@@ -105,5 +105,4 @@ La bonne nouvelle, c'est que la solution est à portée de main dans vos réglag
 Maintenant vous savez.
 
 ---
-
-_[Jean Luc Houédanou](https://houedanou.com) — content d'avoir un téléphone Android._
+_[Jean-Luc Houédanou](https://houedanou.com) — content d'avoir un téléphone Android._

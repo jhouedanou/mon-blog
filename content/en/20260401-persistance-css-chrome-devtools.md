@@ -80,5 +80,4 @@ Local Overrides for quick debugging, Workspaces for active development: combined
 *Updated October 8, 2026: in recent versions of Chrome, the **Filesystem** tab is called **Workspace**, and you connect a folder with **Add folder manually**. Chrome can also connect the folder automatically if your development server serves a `.well-known/appspecific/com.chrome.devtools.json` file ([Chrome documentation on Workspaces](https://developer.chrome.com/docs/devtools/workspaces)). Phase 2 now also makes clear that changes are only written to disk on `Ctrl+S`, and phase 1 points out that styles declared in the HTML are not saved from the Styles pane.*
 
 ---
-
-*[Jean Luc Houédanou](https://houedanou.com), official distributor of Ctrl+S · #CtrlSLeRetour*
+*[Jean-Luc Houédanou](https://houedanou.com), official distributor of Ctrl+S · #CtrlSLeRetour*

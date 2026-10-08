@@ -122,3 +122,6 @@ Une fois que tout fonctionne, supprimez la copie iCloud. Elle ne sert plus à ri
 ---
 
 _Photos : [Luis Quintero](https://www.pexels.com/@jibarofoto/), [Oluwaseun Duncan](https://www.pexels.com/@duncanoluwaseun/) et [Arina Krasnikova](https://www.pexels.com/@arina-krasnikova/), sur Pexels._
+
+---
+*[Jean-Luc Houédanou](https://houedanou.com)*

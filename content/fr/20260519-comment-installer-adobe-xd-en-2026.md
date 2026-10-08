@@ -59,5 +59,4 @@ Si vous devez ouvrir un fichier XD, faites-le. Livrez. Encaissez. Puis proposez 
 Le but n'est pas de gagner un débat d'outils. Le but, c'est de finir le projet avant que Creative Cloud ne vous demande une reconnexion existentielle au milieu de votre flux de travail.
 
 ---
-
-*[Jean Houédanou](https://houedanou.com) — Adobe XD, c'est un peu comme un fax en 4K : techniquement impressionnant, stratégiquement discutable.*
+*[Jean-Luc Houédanou](https://houedanou.com) — Adobe XD, c'est un peu comme un fax en 4K : techniquement impressionnant, stratégiquement discutable.*

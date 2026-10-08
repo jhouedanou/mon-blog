@@ -82,4 +82,5 @@ C'est un métier que j'ai choisi, ce n'est pas le pire du monde, mais surtout de
 
 Sur ce, je dois aller dormir. Demain, il y aura encore des murs à se prendre, et je compte bien les affronter.
 
-**Jean-Luc Houédanou**
+---
+**[Jean-Luc Houédanou](https://houedanou.com)**

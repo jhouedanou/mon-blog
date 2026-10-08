@@ -67,4 +67,4 @@ These apps are generally lightweight, free, and designed to solve very specific 
 *Updated October 8, 2026: the Wear Reminder description has been corrected based on [its Play Store listing](https://play.google.com/store/apps/details?id=org.freepoc.wearreminder2) (the app is now called Wear Reminder 2 and sends reminders and other phone content to the watch).*
 
 ---
-*[Jean Luc Houédanou](https://houedanou.com) — waker of watches*
+*[Jean-Luc Houédanou](https://houedanou.com) — waker of watches*

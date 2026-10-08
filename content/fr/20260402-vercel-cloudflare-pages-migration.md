@@ -330,5 +330,4 @@ Et pour un développeur africain qui doit jongler avec les conversions de devise
 *Mise à jour du 8 octobre 2026 : l'exemple de l'étape 1 a été corrigé, la clé de configuration Nitro est `preset` (au singulier, une simple chaîne), comme dans l'exemple du piège n° 4 ([documentation Nitro](https://nitro.build/deploy/providers/cloudflare)). La ligne « Edge functions » du tableau indique maintenant la limite du plan gratuit, 100 000 requêtes par jour ([tarifs Cloudflare Workers](https://developers.cloudflare.com/workers/platform/pricing/)). Netlify est passé à une tarification par crédits : l'offre gratuite donne 300 crédits, et la bande passante en consomme 20 par Go ([tarifs Netlify](https://www.netlify.com/pricing/)). Enfin, la documentation de Nitro recommande désormais Cloudflare Workers plutôt que Pages pour les nouveaux déploiements, et ce blog n'utilise plus de Worker du tout : il est servi en fichiers statiques ([je raconte pourquoi ici](/fr/20260922-jai-recupere-le-trafic-de-mon-blog-et-les-bots-qui-vont-avec)).*
 
 ---
-
 *[Jean-Luc Houédanou](https://houedanou.com) — toujours à la chasse aux outils qui ne cassent pas la tirelire*

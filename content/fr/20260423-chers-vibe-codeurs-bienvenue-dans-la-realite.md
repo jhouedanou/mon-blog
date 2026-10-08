@@ -113,5 +113,4 @@ Et à Anthropic : ressaisissez-vous. On vous a choisis parce que vous étiez cen
 Pas pour modifier vos pages de tarification en douce à 17h un mardi.
 
 ---
-
-*Jean Houédanou — Sinon… qui gagnerait dans un contre un entre Smush Parker et J Cole ?*
+*[Jean-Luc Houédanou](https://houedanou.com) — Sinon… qui gagnerait dans un contre un entre Smush Parker et J Cole ?*
