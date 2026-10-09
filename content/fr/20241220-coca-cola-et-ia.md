@@ -5,6 +5,7 @@ createdAt: "2024-12-20"
 id: 2024-12-20
 description: "Coca-Cola a confié sa pub de Noël « Holidays Are Coming » à l'IA. Le public a grincé des dents, mais tout le monde en a parlé : c'était peut-être le but."
 searchIntent: "Pourquoi la publicité de Noël générée par IA de Coca-Cola a-t-elle fonctionné malgré les critiques ?"
+updatedAt: "2026-10-08T12:00:00Z"
 tags: ["tech", "opinion"]
 summary: "Coca-Cola a créé la controverse avec sa première publicité de Noël générée par IA. Malgré les critiques sur l'esthétique imparfaite, cette stratégie marketing a brillamment réussi à renforcer l'association de la marque avec les fêtes de fin d'année en générant des discussions et en occupant l'espace médiatique."
 ---
@@ -22,7 +23,9 @@ Cela suffit amplement à renforcer son association avec Noël, en opposant ceux 
 L'objectif n'était pas de convaincre ou de plaire à tout le monde.
 Non, l'enjeu est ailleurs : marquer les esprits et ancrer encore plus profondément la marque dans l'imaginaire collectif des fêtes.
 
-_(1) D'un point de vue technique, cette publicité est générée par un modèle basé sur DALL-E, donc obsolète à l'heure où <a href="https://www.instagram.com/generativeai_official/reel/DDwb4ZmSl7C/" target="_blank">Veo 2</a> de Google nous a tous impressionnés par son photoréalisme et sa capacité à conserver la cohérence d'une scène à l'autre, ainsi qu'à respecter la physique._
+_(1) D'un point de vue technique, cette publicité a été réalisée avec Leonardo, Luma, Runway et Kling ([PetaPixel, 18 novembre 2024](https://petapixel.com/2024/11/18/coca-cola-uses-ai-video-to-reimagine-its-classic-christmas-ad){target="_blank" rel="noopener"}), des générateurs déjà dépassés à l'heure où <a href="https://www.instagram.com/generativeai_official/reel/DDwb4ZmSl7C/" target="_blank">Veo 2</a> de Google nous a tous impressionnés par son photoréalisme et sa capacité à conserver la cohérence d'une scène à l'autre, ainsi qu'à respecter la physique._
+
+*Correction du 8 octobre 2026 : la première version de ce billet affirmait que la publicité était générée par un modèle basé sur DALL-E. Elle a en réalité été produite avec Leonardo, Luma, Runway et Kling, selon PetaPixel.*
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com) — buveur de pixels*

@@ -1,6 +1,7 @@
 ---
 title: "Double moniteur portable : gain de productivité ou gadget ?"
 createdAt: "2026-08-10"
+updatedAt: "2026-10-08T12:00:00Z"
 image: "/images/articles/image_b81a07e7.webp"
 description: "Deux écrans 14 pouces qui se déplient de part et d'autre du laptop : mon retour sur ce double moniteur portable, ses vrais atouts, ses limites et à qui il sert."
 searchIntent: "Faut-il acheter un double moniteur portable pour travailler en déplacement, avantages et inconvénients face à un iPad Sidecar ou un moniteur USB-C classique."
@@ -57,7 +58,7 @@ C'est exactement la configuration que j'ai sur mon bureau fixe. La différence, 
 
 Enfin, côté charnière, peu voire aucune inquiétude, la béquille fournie reprend le poids de l'ensemble et le reporte sur la table.
 
-Mais surtout, c'est étonnamment fin : une fois les deux écrans repliés, l'épaisseur de l'ensemble est plus ou moins celle d'un iPad : c'est un vrai plus pour le transport. Le poids est également contenu : quelques grammes pour l'ensemble, ce qui reste raisonnable pour un ultraportable.
+Mais surtout, c'est étonnamment fin : une fois les deux écrans repliés, l'épaisseur de l'ensemble est plus ou moins celle d'un iPad : c'est un vrai plus pour le transport. Le poids est également contenu : environ 1 kg pour l'ensemble d'après la [fiche produit Blackview](https://www.blackview.hk/products/item/dcm6){target="_blank" rel="noopener"}, ce qui reste raisonnable pour accompagner un ultraportable.
 
 
 ## Inconvénients 
@@ -92,6 +93,8 @@ Il faudra éviter ceux vendus sur Facebook via des posts sponsorisés, ainsi que
 Si vous êtes à Abidjan, vous pourrez en trouver dans les magasins locaux, comme le marché Samsung à Treichville ou encore la galerie d'accessoires informatiques ou de téléphones vers l'allocodrome de la Riviera 2.
 
 Alternativement, il existe des plateformes en ligne où vous pouvez acheter des produits de qualité à des prix compétitifs depuis Amazon et vous faire livrer à Abidjan, comme Cart'in.
+
+*Correction du 8 octobre 2026 : le dispositif ne pèse pas « quelques grammes » mais environ 1 kg, selon la fiche produit Blackview.*
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com)*

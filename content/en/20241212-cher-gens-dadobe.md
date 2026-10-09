@@ -1,12 +1,13 @@
 ---
 title: "Why so much hatred for Adobe? (Because it's deserved.)"
 image: "/images/articles/adobe.webp"
-createdAt: "2024-12-12"
+createdAt: "2024-12-13"
+updatedAt: "2026-10-08T12:00:00Z"
 id: 2024-12-12
 description: "A payment method you cannot change, a support AI that blocks the way, an Adobe Express plan slipped in behind my back: why the hatred for Adobe is deserved."
 searchIntent: "Why is Adobe so heavily criticised and what alternatives can replace its creative subscriptions?"
 tags: ["tech", "opinion"]
-summary: "A personal account of the frustrations that come with Adobe: broken customer service, forced subscriptions and misleading interfaces. The article explains why the criticism aimed at Adobe is justified, mentions the ongoing lawsuits and suggests alternatives such as Affinity."
+summary: "A personal account of the frustrations that come with Adobe: broken customer service, forced subscriptions and misleading interfaces. The article explains why the criticism aimed at Adobe is justified, mentions the US government's complaint against Adobe and suggests alternatives such as Affinity."
 ---
 
 Although Affinity Designer is a fine alternative, in a professional setting I have no other choice but to use Adobe. Most of the designs I have to turn into code and websites are [made with Adobe](/en/20260519-comment-installer-adobe-xd-en-2026), and I don't yet know Affinity Photo 2 well enough to confidently edit the RAW files coming out of my Theta Z1 camera.
@@ -32,14 +33,16 @@ I don't even use that service and I have no wish to pay more than necessary. Wha
 
 A new battle with customer service followed: "I don't want Adobe Express, I don't use it and I don't want to pay for it." After going through two customer advisors, I cancelled that unsolicited subscription. But the experience left a bitter taste: Adobe, through its abusive practices, draws criticism that is largely deserved, along with all the hatred in the world. Online, in real life and in the courts.
 
-Because yes, Adobe is facing several lawsuits over questionable business practices:
+Because yes, Adobe is being sued over questionable business practices, in a complaint filed in June 2024 by the US Department of Justice on referral from the FTC:
 
 - **Hidden cancellation fees**: the [US Department of Justice is suing Adobe](https://www.ftc.gov/news-events/news/press-releases/2024/06/ftc-takes-action-against-adobe-executives-hiding-fees-preventing-consumers-easily-cancelling) for concealing cancellation fees that can reach several hundred dollars. These fees apply to annual subscriptions paid monthly.
 - **Misleading interfaces**: the Federal Trade Commission (FTC) accuses Adobe of designing interfaces that push users to subscribe without clearly disclosing the terms. Cancelling then becomes an obstacle course.
 
 These stories reveal a well-oiled strategy for making the user experience deliberately frustrating.
 
-In conclusion: stop using their services, if you can. Or go for a monthly subscription with no commitment (i.e. [Affinity](/en/20251031-affinity-est-gratuit)).
+In conclusion: stop using their services, if you can. Or go for software with no subscription, paid for once and for all (i.e. [Affinity](/en/20251031-affinity-est-gratuit), sold as a perpetual licence: [ProVideo Coalition](https://www.provideocoalition.com/affinity-suite-version-2-a-new-standard-in-creative-software/){target="_blank" rel="noopener"}).
+
+*Correction, October 8, 2026: Affinity was sold as a perpetual licence, not a monthly subscription; and Adobe was facing a single complaint (Department of Justice, on referral from the FTC), not several lawsuits. Since then, in March 2026, Adobe agreed to a 150 million dollar settlement to resolve it: 75 million in civil penalties and 75 million in free services for customers, along with an obligation to clearly disclose early termination fees and allow easy cancellation. When it was announced, the settlement still needed the court's approval ([US Department of Justice](https://www.justice.gov/opa/pr/adobe-agrees-150-million-settlement-and-injunction-resolve-alleged-violations-restore-online){target="_blank" rel="noopener"}).*
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com) — Adobe survivor*

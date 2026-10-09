@@ -1,10 +1,10 @@
 ---
-title: "Avec Claude Dispatch, votre smartphone devient une télécommande pour Claude Code"
+title: "Avec Remote Control, votre smartphone devient une télécommande pour Claude Code"
 image: "/images/articles/clauderemote.webp"
 createdAt: "2026-05-31"
 updatedAt: "2026-10-08T12:00:00Z"
 description: "Piloter depuis votre téléphone une session Claude Code qui tourne sur votre ordinateur : mise en place en 3 étapes, plans éligibles et limites à connaître."
-searchIntent: "Comment contrôler une session Claude Code depuis un smartphone avec Claude Dispatch."
+searchIntent: "Comment contrôler une session Claude Code depuis un smartphone avec Remote Control."
 tags: ["claude-code", "outils", "productivité", "développement"]
 ---
 
@@ -14,7 +14,7 @@ Bug en prod. Client qui rappelle. Réunion dans 20 minutes à l'autre bout d'Abi
 
 On pourrait s'y résigner, appeler ça « la vie du bureau » et subir en pestant. Ce n'est pas mon approche. Dans les rares cas où je ne bloque pas ces sollicitations tardives — *oui, bloquées. Je suis professionnel, mais j'ai une vie. Et l'expérience montre que les messages envoyés à 18h pétantes ne sont jamais de vraies urgences, juste une façon de donner l'impression qu'on est un « gros bosseur qui ne lâche rien » (autrement connu sous un nom que ma bonne éducation m'empêche de donner ici)* — je rentre, j'allume le MacBook, et je laisse tourner Claude Code pour livrer sans sacrifier mon bien-être.
 
-Ce workflow est rendu possible par **Remote Control**, la fonction de Claude Code que j'appelle ici Dispatch par abus de langage. Le vrai **Dispatch** est son cousin côté Cowork, dans l'app Claude Desktop ([MacStories l'a testé](https://www.macstories.net/stories/hands-on-with-claude-dispatch-for-cowork/)). Le principe de [Remote Control](https://code.claude.com/docs/en/remote-control) : transformer votre smartphone en télécommande de votre session Claude Code active.
+Ce workflow est rendu possible par **Remote Control**, la fonction de Claude Code que j'appelais Dispatch par abus de langage dans la première version de ce billet. Le vrai **Dispatch** est son cousin côté Cowork, dans l'app Claude Desktop ([MacStories l'a testé](https://www.macstories.net/stories/hands-on-with-claude-dispatch-for-cowork/)). Le principe de [Remote Control](https://code.claude.com/docs/en/remote-control) : transformer votre smartphone en télécommande de votre session Claude Code active.
 
 ## Ce que ça fait concrètement
 
@@ -52,7 +52,7 @@ Pour ma part, l'usage reste simple : je n'ai jamais délégué l'écriture de mo
 
 Simple. Efficace. Trois étapes.
 
-*Mise à jour du 8 octobre 2026 : précisions d'après la [documentation officielle de Remote Control](https://code.claude.com/docs/en/remote-control) — la fonction s'appelle Remote Control (Dispatch est l'équivalent pour Cowork), elle est ouverte aux plans Pro, Max, Team et Enterprise, la session se retrouve dans l'onglet Code de l'app, et elle se reconnecte après une mise en veille.*
+*Mise à jour du 8 octobre 2026 : précisions d'après la [documentation officielle de Remote Control](https://code.claude.com/docs/en/remote-control) — la fonction s'appelle Remote Control (Dispatch est l'équivalent pour Cowork), elle est ouverte aux plans Pro, Max, Team et Enterprise, la session se retrouve dans l'onglet Code de l'app, et elle se reconnecte après une mise en veille. Le titre a été corrigé en conséquence (il parlait de « Claude Dispatch »).*
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com) — C'est le genre de fonctionnalités qui donnent un sens à l'augmentation des prix des mémoires RAM.*

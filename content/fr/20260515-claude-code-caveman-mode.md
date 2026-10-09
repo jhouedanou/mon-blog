@@ -131,7 +131,7 @@ Moyenne sur 10 prompts : **65 % de réduction d'output**.
 
 Le harnais d'éval est honnête : il compare Caveman contre *« Answer concisely »* (pas contre le mode verbeux par défaut), donc le delta est réel.
 
-> **À jour en octobre 2026** : le README a refait la mesure sur un modèle plus récent. Face à *« Answer concisely »*, `/caveman` ne retire plus que 3 % de tokens supplémentaires en médiane, et `/ultracave` 35 %. Les nouveaux modèles savent déjà être concis. Les chiffres du tableau ci-dessus datent de mai 2026 ([source : README de Caveman](https://github.com/JuliusBrussee/caveman#the-numbers)).
+> **À jour en octobre 2026** : le « -75 % » du titre, c'est la promesse affichée par le [README de mai 2026](https://github.com/JuliusBrussee/caveman/blob/e843518438b2cfb404edf00db2d8e64c1d975e34/README.md){target="_blank" rel="noopener"} (« ~75% of output tokens »), alors que ses propres mesures donnaient déjà 65 % en moyenne (le tableau ci-dessus). Le README a depuis refait la mesure sur un modèle plus récent, et la référence n'est plus une réponse sans consigne, mais la consigne *« Answer concisely »* : face à elle, `/caveman` ne retire plus que 3 % de tokens de sortie supplémentaires en médiane, et `/ultracave` 35 %. Les nouveaux modèles savent déjà être concis. Le chiffre mis en avant aujourd'hui est ailleurs : 33,2 % de tokens d'entrée en moins sur des sessions complètes, grâce au proxy du projet ([source : README de Caveman](https://github.com/JuliusBrussee/caveman#the-numbers){target="_blank" rel="noopener"}).
 
 ---
 
@@ -164,7 +164,7 @@ Licence Apache-2.0 depuis la version 3.0.0 (MIT avant). *Free like mass mammoth 
 Lien : [github.com/JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman)
 
 
-*Mise à jour du 8 octobre 2026 : nouvelles commandes d'installation (Node.js 22.13+, versions épinglées), niveaux réduits à `/caveman`, `/ultracave` et `/megacave`, commandes et licence (Apache-2.0) mises à jour, et nouveaux benchmarks, d'après le [README](https://github.com/JuliusBrussee/caveman), la [page d'installation](https://github.com/JuliusBrussee/caveman/blob/main/INSTALL.md) et le [fichier de licence](https://github.com/JuliusBrussee/caveman/blob/main/LICENSING.md) du projet.*
+*Mise à jour du 8 octobre 2026 : nouvelles commandes d'installation (Node.js 22.13+, versions épinglées), niveaux réduits à `/caveman`, `/ultracave` et `/megacave`, commandes et licence (Apache-2.0) mises à jour, et nouveaux benchmarks (le « -75 % » du titre est la promesse de mai 2026, pas une mesure actuelle), d'après le [README](https://github.com/JuliusBrussee/caveman), la [page d'installation](https://github.com/JuliusBrussee/caveman/blob/main/INSTALL.md) et le [fichier de licence](https://github.com/JuliusBrussee/caveman/blob/main/LICENSING.md) du projet.*
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com) — moins de bla-bla, plus de code. Ooga booga, facture mini.*

@@ -1,15 +1,18 @@
 ---
-title: "How researchers stole $10,000 through a locked iPhone: the Apple Pay / Visa flaw explained"
+title: "How researchers made a £1,000 payment with a locked iPhone: the Apple Pay / Visa flaw explained"
 image: "/images/articles/apple-pay-visa-hack.webp"
 createdAt: "2026-04-17"
 description: "Apple Pay Express Transit plus a Visa card: how researchers charged a locked iPhone, why Mastercard holds up, and how to protect yourself in your settings."
 searchIntent: "How can an Apple Pay and Visa flaw charge a locked iPhone, and how do you protect yourself?"
+updatedAt: "2026-10-08T12:00:00Z"
 tags: ["security", "Apple Pay", "Visa", "NFC", "iPhone", "security flaw"]
 ---
 
 Some security stories sound like science fiction. This one happened in a university lab, was documented and published, and it very probably concerns the phone sitting in your pocket right now.
 
 Researchers from the universities of Birmingham and Surrey have shown that it is possible to **charge several thousand dollars to a locked iPhone**, without any interaction from its owner, by exploiting a combination of weaknesses in Apple Pay and Visa's transaction protocols.
+
+An important detail: this research is not new. It was made public on September 30, 2021 ([University of Surrey press release](https://www.surrey.ac.uk/news/visa-and-apple-pay-vulnerabilities-leaves-iphone-users-open-payment-fraud){target="_blank" rel="noopener"}) and presented at the 2022 IEEE Symposium on Security and Privacy, under the title *Practical EMV Relay Protection*. But Express Transit mode and Visa cards are still in our phones, and the lesson has not aged a day.
 
 Watch the full demonstration (English)
 :youtube{video="PPJ6NJkmDAo" title="VISA"}
@@ -103,6 +106,8 @@ Express Transit _is_ convenient. The fact that Visa is accepted everywhere _is_ 
 The good news is that the fix is right there in your settings. The bad news is that most users have no idea this attack surface even exists.
 
 Now you know.
+
+*Correction, October 8, 2026: the first version of this post presented this research as recent. It was published in September 2021 by the universities of Birmingham and Surrey; the date and source have been added at the top of the article. The title also said "$10,000": the demo payment was £1,000 ([University of Surrey](https://www.surrey.ac.uk/news/visa-and-apple-pay-vulnerabilities-leaves-iphone-users-open-payment-fraud){target="_blank" rel="noopener"}).*
 
 ---
 _[Jean-Luc Houédanou](https://houedanou.com), happy to own an Android phone._

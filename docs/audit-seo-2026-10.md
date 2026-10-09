@@ -66,3 +66,31 @@ source introuvable).
 - `20250705-chersCommerciaux` : la protection anti-traque des AirTag (alerte sur l'iPhone de la personne suivie) n'est pas mentionnée.
 - `20260730-telephone-perdu…` : « prises de murs surmontables » → « prises de tête » ?
 - `20260907-free-speech…` : le titre Snopes a été remplacé par le titre actuel de l'article ; l'analyse Volokh reste sans lien.
+
+## Suivi des points à trancher (8 octobre 2026, soir)
+
+**Corrigés, avec source et note de correction datée**
+- `20260327-cpanel-cyberpanel-migration` : aucune mesure de l'administration Trump n'existe. Le blocage venait de la décision n° 31 du GIM-UEMOA (routage obligatoire par GIM-Switch, ultimatum à Visa et Mastercard au 31 mars 2026). Récit, intertitre et **titre** corrigés. Les prix cPanel sont présentés comme des tarifs partenaires, et les prix publics sont ajoutés.
+- `20260326-lasagessedugeant` : levées d'Anthropic (près de 64 milliards depuis 2021, dont 30 milliards en février 2026), record d'OpenAI (110 milliards), chiffres trimestriels d'Apple et capitalisation boursière corrigés et sourcés.
+- `20260417-apple-pay-visa-faille-tap-to-pay` : la recherche date de septembre 2021 ; **titre** corrigé, le paiement de démonstration était de 1 000 £ et non de 10 000 $.
+- `20241220-coca-cola-et-ia` : la pub a été faite avec Leonardo, Luma, Runway et Kling, pas avec DALL-E.
+- `20241212-cher-gens-dadobe` : `createdAt` passe au 13/12 (le vendredi 13), Affinity était vendu en licence perpétuelle, une seule plainte, « tribunaux », accord à 150 M$ de mars 2026.
+- `20241029-cloner-ubuntu` : script corrigé (`e2fsck -f` avant `resize2fs`, suffixe `p` pour les disques NVMe et mmcblk).
+- `20241021-2-non-ce-cable-de-240w…` : au-delà de 60 W, il faut un câble 5 A e-marqué.
+- `20260810-double-moniteur-portable-blackview-dcm6` : environ 1 kg, et non « quelques grammes ».
+- `20260901-macsai-mole…` : le détail du Smart Scan, dont la somme était fausse, est retiré.
+- `20260531-claude-dispatch…` : **titre** « Remote Control », le vrai nom de la fonction.
+- `20260515-claude-code-caveman-mode` : l'encadré précise que « -75 % » était la promesse de mai 2026, et donne les mesures actuelles.
+- `20250705-chersCommerciaux` : ajout de l'alerte anti-traque des AirTag (iPhone et Android).
+- `20260907-free-speech…` : lien vers l'analyse de Volokh.
+- `20251104-josh-vs-aircotedivoire` : la version FR est désormais en français.
+- `20260822-oui-a-lexcision…` : `searchIntent` aligné sur le contenu.
+- `20260908-cest-integre-dans-la-maquette` : guillemets du titre EN.
+- `20260707-Je suis encore vivant` : `createdAt` aligné sur le 07/07.
+
+**Conservés volontairement**
+- « prises de murs surmontables » : expression de l'auteur (cf. « des murs à se prendre »).
+- Djamo, CanalBox : non vérifiables de l'extérieur, billets datés.
+- Infinix (phrase tirée du billet Pixel Watch) et note de correction du billet Bing : validés.
+- Captures IA du billet DevTools : à remplacer par de vraies captures quand l'auteur le pourra.
+- Josh : les incohérences du récit (« chief ground agent » ou « station manager », surclassement « en plein vol ») sont laissées à l'auteur.

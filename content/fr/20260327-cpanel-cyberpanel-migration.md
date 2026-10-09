@@ -1,5 +1,5 @@
 ---
-title: "Comment Donald Trump m'a poussé à abandonner cPanel pour CyberPanel — et pourquoi je ne regrette rien"
+title: "Comment le blocage des cartes en zone UEMOA m'a poussé à abandonner cPanel pour CyberPanel — et pourquoi je ne regrette rien"
 image: "/images/articles/cpanel-cyberpanel-migration.webp"
 createdAt: "2026-03-27"
 description: "Hausses de prix de cPanel, paiements bloqués en zone UEMOA : retour d'expérience sur ma migration vers CyberPanel et OpenLiteSpeed, et un TTFB divisé par cinq."
@@ -14,13 +14,13 @@ Cet article, je ne pensais pas l'écrire un jour. Pas parce que le sujet est ano
 
 Ça fait plus de dix ans que je vis avec cPanel/WHM. Comme beaucoup d'administrateurs systèmes en Afrique de l'Ouest, j'ai grandi professionnellement avec cette interface. Créer un compte, configurer un domaine, gérer des bases de données — tout passait par WHM. C'était confortable, familier, et pendant longtemps, le prix restait raisonnable.
 
-Puis 2019 est arrivé. cPanel a abandonné son modèle de licence fixe pour un système par compte. Et depuis, chaque année, comme un rituel morbide, les prix augmentent. En 2024, la licence Solo coûtait **15,99 $/mois**. En 2025, elle est passée à **16 $**. En 2026 ? **18 $**. La licence Pro (jusqu'à 30 comptes) a bondi de **27,25 $** à **32 $** — une hausse de **17 %** en un an. Quand tu gères plusieurs dizaines de sites, la facture devenait difficile à justifier.
+Puis 2019 est arrivé. cPanel a abandonné son modèle de licence fixe pour un système par compte. Et depuis, chaque année, comme un rituel morbide, les prix augmentent. Au tarif partenaire (celui que cPanel facture aux hébergeurs et aux revendeurs de licences), la licence Solo valait **16 $/mois** en 2025. En 2026 ? **18 $**. La licence Pro (jusqu'à 30 comptes) a bondi de **27,25 $** à **32 $** — une hausse de **17 %** en un an ([grille partenaire 2025-2026 détaillée par VPSBG](https://www.vpsbg.eu/blog/cpanel-price-increase-2026){target="_blank" rel="noopener"}). Et au prix public, c'est pire : Solo à **29,99 $**, Pro à **53,99 $** ([tarifs officiels cPanel](https://cpanel.net/pricing/){target="_blank" rel="noopener"}), contre 26,99 $ et 46,99 $ en 2025. Quand tu gères plusieurs dizaines de sites, la facture devenait difficile à justifier.
 
 Mais honnêtement, les augmentations de cPanel seules ne m'auraient probablement pas fait bouger. On s'adapte, on ajuste les devis, on grogne un peu et on continue. Ce qui a tout changé, c'est ce qui s'est passé début 2026.
 
-## Quand Donald Trump a coupé les robinets
+## Quand les robinets se sont fermés
 
-En janvier 2026, l'administration Trump a annoncé une série de mesures drastiques visant à restreindre les flux financiers entre les États-Unis et l'Afrique de l'Ouest. Sous prétexte de lutter contre le blanchiment d'argent et le financement du terrorisme, les autorités américaines ont imposé des restrictions sévères sur les transactions transfrontalières, affectant particulièrement les pays de la zone UEMOA (Union économique et monétaire ouest-africaine).
+Début janvier 2026, les paiements en ligne par carte bancaire émise dans la zone UEMOA (Union économique et monétaire ouest-africaine) ont commencé à tomber. Dès le 2 janvier, Air Côte d'Ivoire et d'autres compagnies de la région affichaient que la vente en ligne par carte était « momentanément suspendue » ([Barid TV, 16 janvier 2026](https://barid.tv/2026/01/16/uemoa-le-bras-de-fer-des-paiements-en-ligne-gim-switch-defie-visa-et-mastercard/){target="_blank" rel="noopener"}). En cause : pas une mesure de l'administration Trump, comme je l'ai d'abord écrit, mais la décision n° 31 du GIM-UEMOA, le groupement interbancaire régional, validée par la BCEAO. Elle exige que toute transaction faite avec une carte émise dans la zone, même quand elle passe par Visa ou Mastercard, soit aussi routée et compensée par la plateforme régionale GIM-Switch. Visa et Mastercard n'ont pas suivi à temps. Le 29 janvier, un ultimatum leur a été fixé au 31 mars 2026 ([Financial Afrik, 29 janvier 2026](https://www.financialafrik.com/2026/01/29/uemoa-les-cartes-visa-et-mastercard-ont-90-jours-pour-se-conformer/){target="_blank" rel="noopener"}). Un bras de fer de souveraineté monétique, avec nos cartes bancaires au milieu.
 
 **Résultat concret pour moi** : pendant presque un mois, impossible de payer la licence cPanel. Pas un problème de trésorerie. Un problème d'infrastructure de paiement. Les cartes ne passaient plus. Les alternatives (PayPal, Stripe) étaient instables ou indisponibles depuis la zone UEMOA. Et quand ta licence cPanel expire, WHM te le fait savoir — poliment d'abord, puis de moins en moins.
 
@@ -114,7 +114,7 @@ La fonctionnalité de sauvegarde automatique de CyberPanel m'a accueilli avec un
 
 Cette migration forcée m'a enseigné quelque chose d'important sur notre métier en Afrique de l'Ouest : **notre dépendance aux outils propriétaires américains est un risque systémique.**
 
-Quand un changement de politique à Washington peut t'empêcher de payer ta licence serveur pendant un mois, quand la suspension des paiements Visa/Mastercard en zone UEMOA peut bloquer ton activité du jour au lendemain — il faut avoir un plan B. Et ce plan B, c'est **l'open source**.
+Quand un bras de fer entre un régulateur régional et deux réseaux de cartes américains peut t'empêcher de payer ta licence serveur pendant un mois, quand la suspension des paiements Visa/Mastercard en zone UEMOA peut bloquer ton activité du jour au lendemain — il faut avoir un plan B. Et ce plan B, c'est **l'open source**.
 
 CyberPanel n'est pas parfait. OpenLiteSpeed n'est pas parfait. Mais ils sont gratuits, performants, et **personne ne peut te couper l'accès parce que ta carte bancaire ne passe plus.**
 
@@ -138,9 +138,9 @@ La migration de cPanel vers CyberPanel n'était pas dans mes plans. C'est l'augm
 
 Mais aujourd'hui, avec un **TTFB divisé par cinq**, **zéro frais de licence**, et une **indépendance retrouvée** vis-à-vis des systèmes de paiement internationaux, je ne regrette rien.
 
-Si « Tonton Donald » m'a appris quelque chose, c'est que **la souveraineté numérique, en Afrique, ça commence par le choix de ses outils.**
+« Tonton Donald » n'y était finalement pour rien. Mais si cette crise m'a appris quelque chose, c'est que **la souveraineté numérique, en Afrique, ça commence par le choix de ses outils.**
 
-*Mise à jour du 8 octobre 2026 : ionCube publie aujourd'hui des loaders pour PHP 8.4 et 8.5 ([page officielle des loaders](https://www.ioncube.com/loaders.php)). Avant de rétrograder vers `lsphp82`, vérifiez donc que la version du loader installé correspond à votre version de PHP. Autre raison de ne pas s'éterniser sur PHP 8.2 : il ne reçoit plus de correctifs de sécurité après le 31 décembre 2026 ([calendrier officiel de PHP](https://www.php.net/supported-versions.php)).*
+*Mise à jour du 8 octobre 2026 : ionCube publie aujourd'hui des loaders pour PHP 8.4 et 8.5 ([page officielle des loaders](https://www.ioncube.com/loaders.php)). Avant de rétrograder vers `lsphp82`, vérifiez donc que la version du loader installé correspond à votre version de PHP. Autre raison de ne pas s'éterniser sur PHP 8.2 : il ne reçoit plus de correctifs de sécurité après le 31 décembre 2026 ([calendrier officiel de PHP](https://www.php.net/supported-versions.php)). Correction du même jour : la première version de ce billet attribuait le blocage des paiements à une mesure de l'administration Trump de janvier 2026. Il venait en réalité de la décision n° 31 du GIM-UEMOA (voir plus haut). Les prix de 2025 et 2026 sont précisés comme tarifs partenaires, avec les prix publics en regard ; le chiffre de 15,99 $ donné pour 2024 ne correspondait à aucune grille cPanel et a été retiré.*
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com) — de nouveau converti à l'open source*

@@ -2,6 +2,7 @@
 title: "Non, ce câble de 240W ne chargera pas plus vite votre vieux macbook"
 image: "/images/articles/really.webp"
 createdAt: "2024-10-21T09:00:00Z"
+updatedAt: "2026-10-08T12:00:00Z"
 id: 8
 description: "Un vendeur voulait me fourguer un câble USB-C de 240 W pour mon MacBook Pro 2017. Pourquoi il ne le chargera pas plus vite, et comment éviter la vente forcée."
 searchIntent: "Un câble USB-C de 240 W charge-t-il vraiment un MacBook Pro 2017 plus vite ?"
@@ -51,9 +52,13 @@ Je saisis le câble 60W, laissant le vendeur perplexe, et me dirige vers la cais
 
 Plus sérieusement… votre MacBook Pro 2017 n'est pas un bolide conçu pour absorber 240W comme s'il s'agissait d'un petit-déjeuner léger. Il préfère un régime plus modeste, avec un standard de charge moins puissant. Oui, le câble 240W est rétrocompatible, comme un adulte qui sait parler aux enfants. Mais il ne va pas forcer votre MacBook à manger plus qu'il ne peut.
 
+Petite rectification technique, tout de même : contrairement à ce que j'ai affirmé au vendeur, un câble 60 W ne « suffit » pas tout à fait. Apple livre les MacBook Pro 15 pouces de 2016 et après avec un adaptateur USB-C de 87 W ([support Apple](https://support.apple.com/fr-fr/109509){target="_blank" rel="noopener"}). Or un câble USB-C classique, prévu pour 3 A, plafonne à 60 W ; au-delà, il faut un câble donné pour 5 A, soit 100 W ([USB-IF](https://www.usb.org/usb-charger-pd){target="_blank" rel="noopener"}), et tout câble de plus de 3 A embarque une puce d'identification, on dit qu'il est « e-marqué » ([spécification USB Type-C](https://www.usb.org/sites/default/files/USB%20Type-C%20Spec%20R2.0%20-%20August%202019.pdf){target="_blank" rel="noopener"}). Avec mon câble 60 W, le MacBook charge, mais à 60 W maximum au lieu de 87. Le bon câble, c'était donc un 100 W. Pas un 240 W : au-delà de 100 W, plus rien ne change pour cette machine.
+
 **Rappelez-vous que dans le monde de la technologie, comme dans la vie, ce n'est pas toujours le plus gros ou le plus puissant qui gagne. C'est celui qui est le mieux adapté à vos besoins.**
 
 Et ça, aucun vendeur arrogant ne pourra vous le vendre : c'est à vous de le savoir.
+
+*Correction du 8 octobre 2026 : Le vendeur avait tort sur le 240 W, mais j'avais tort sur le 60 W : avec le chargeur 87 W d'origine, il faut un câble USB-C 5 A (100 W) pour profiter de toute la puissance ; un câble 60 W limite la charge à 60 W.*
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com) — débunkeur de watts*

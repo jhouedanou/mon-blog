@@ -19,7 +19,7 @@ Je les ai classés du plus facile au plus difficile. Pour chacun : de quoi ça p
 
 → [Voir sur le Meta Quest Store](https://www.meta.com/experiences/republique-vr/1794123900713107/)
 
-**L'histoire** : Hope est une jeune femme enfermée dans Metamorphosis. C'est un État totalitaire, dirigé par un homme qu'on appelle l'Overseer. Tout le monde y est surveillé. Vous ne jouez pas Hope. Vous piratez le système de surveillance. Et vous la guidez à travers les caméras pour l'aider à s'échapper.
+**L'histoire** : Hope est une jeune femme enfermée à Metamorphosis. C'est le [centre fermé](https://en.wikipedia.org/wiki/République_%28video_game%29) d'un État totalitaire, dirigé par un homme qu'on appelle l'Overseer. Tout le monde y est surveillé. Vous ne jouez pas Hope. Vous piratez le système de surveillance. Et vous la guidez à travers les caméras pour l'aider à s'échapper.
 
 Le jeu vient de Camouflaj, un studio de Seattle. Son fondateur, Ryan Payton, a travaillé sur *Metal Gear Solid 4*. Le jeu est né d'une campagne Kickstarter en 2012. Il est sorti en épisodes sur iPhone à partir de 2013. La version en réalité virtuelle est arrivée sur Quest en [juillet 2019](https://uploadvr.com/republique-oculus-quest/).
 
@@ -59,7 +59,7 @@ Heureusement, il reste le mode « dojo ». Il est plus intéressant qu'il n'y pa
 
 Et il y a un caméo de mon super-héros préféré de tous les temps. Monsieur Johnny Blaze. Le Ghost Rider en personne. Je ne vous dis pas où. Mais lui mériterait son propre jeu en réalité virtuelle. Une moto en flammes, une chaîne, un crâne qui brûle. Qu'est-ce qu'on attend ?
 
-Je joue en mode « Kidpool ». Cette option coupe les gros mots et les blagues lourdes. Attention, elle ne touche pas à la violence. [Les critiques le précisent](https://www.empireonline.com/gaming/reviews/deadpool-vr) : on découpe toujours des ennemis en deux. Aux États-Unis, le jeu reste classé pour les plus de 17 ans. Ce n'est pas un jeu pour les enfants. Kidpool rend juste les dialogues plus supportables.
+Je joue en mode « Kidpool ». Cette option coupe les gros mots et les blagues lourdes. Attention, elle ne touche pas à la violence. [Les critiques le précisent](https://www.empireonline.com/gaming/reviews/deadpool-vr) : on découpe toujours des ennemis en deux. Aux États-Unis, le jeu reste [classé pour les plus de 17 ans](https://www.esrb.org/ratings/40934/marvels-deadpool-vr/). Ce n'est pas un jeu pour les enfants. Kidpool rend juste les dialogues plus supportables.
 
 ## Moyen : le temps est votre ami
 
@@ -71,7 +71,7 @@ Je joue en mode « Kidpool ». Cette option coupe les gros mots et les blagues l
 
 **L'histoire** : il n'y en a presque pas. Des silhouettes rouges veulent vous tuer, dans un décor tout blanc.
 
-Le jeu vous parlait entre les niveaux, avec un petit délire sur le contrôle et l'obéissance. Il allait jusqu'à vous demander de vous tirer une balle pour prouver votre obéissance. Le studio a [retiré ces scènes en juillet 2021](https://www.gamedeveloper.com/game-platforms/-i-superhot-vr-i-devs-remove-self-harm-elements-from-the-game-you-deserve-better-). Et c'est très bien comme ça.
+Le jeu vous parlait entre les niveaux, avec un petit délire sur le contrôle et l'obéissance. Il allait jusqu'à vous demander de vous tirer une balle pour le prouver. Le studio a [retiré ces scènes en juillet 2021](https://www.gamedeveloper.com/game-platforms/-i-superhot-vr-i-devs-remove-self-harm-elements-from-the-game-you-deserve-better-). Et c'est très bien comme ça.
 
 De toute façon, on vient pour le principe : le temps n'avance que quand vous bougez. Vous restez immobile ? Les balles restent figées en l'air. Vous tournez la tête ? Elles avancent un peu. Le jeu vient du studio polonais SUPERHOT Team. Il est sorti en 2016 sur PC, et en 2019 sur le premier Quest.
 
@@ -125,7 +125,7 @@ La difficulté vient surtout du mouvement : il faut un estomac solide. Et il n'y
 
 → [Voir sur le Meta Quest Store](https://www.meta.com/experiences/until-you-fall/2567459230020142/)
 
-**L'histoire** : vous êtes un chevalier des runes. Vous vous battez dans un monde fantastique aux couleurs néon. C'est un « roguelite » de [Schell Games](https://untilyoufall.schellgames.com/news/ps-vr-quest-launch), sorti sur Quest en septembre 2020. Le principe : quand vous mourez, vous recommencez depuis le début. Vous gardez juste quelques améliorations.
+**L'histoire** : vous êtes un chevalier des runes. Vous vous battez dans un monde fantastique aux couleurs néon. C'est un « roguelite » de Schell Games, sorti sur Quest en [septembre 2020](https://www.roadtovr.com/until-you-fall-psvr-quest-release-date/). Le principe : quand vous mourez, vous recommencez depuis le début. Vous gardez juste quelques améliorations.
 
 **Sa personnalité** : le prof d'escrime exigeant. Il vous fait refaire le même exercice. Encore et encore. Jusqu'à ce que ce soit parfait.
 
@@ -161,7 +161,7 @@ Le jeu vient d'un petit studio, Ben Olding Games. Il est édité par Clique Game
 
 Les mouvements, eux, ne sont pas orthodoxes. On ne reproduit pas de vraies techniques. On frappe comme on peut. Mais on retrouve tous les archétypes des films de kung-fu. Il y a des copies à peine déguisées de Jet Li, de Jackie Chan, d'Ip Man… Et même de Beatrix Kiddo, la mariée de *Kill Bill*. Une blonde qui apprend le kung-fu auprès d'un vieux maître.
 
-Personnellement, j'aurais préféré jouer Pai Mei, le maître en question. Mais on a un clone de Gordon Liu. C'est lui qui jouait Pai Mei dans *Kill Bill*. C'est surtout le héros de *La 36e Chambre de Shaolin*. Les 36 chambres, comme dans *Enter the Wu-Tang (36 Chambers)*. Oui, encore le Wu-Tang. Et c'est fun.
+Personnellement, j'aurais préféré jouer Pai Mei, le maître en question. Mais on a un clone de Gordon Liu. C'est lui qui jouait Pai Mei dans *Kill Bill*. C'est surtout le héros de *La 36e Chambre de Shaolin*. Les 36 chambres, comme dans *Enter the Wu-Tang (36 Chambers)*. Oui, [encore le Wu-Tang](/fr/20260907-bill-gates-ia-hypocrisie-meta-cash-rules-everything). Et c'est fun.
 
 Seul problème : je n'arrive toujours pas à passer le niveau des trois ninjas, en mode difficile. Trois contre un. Aucun honneur, ces gens-là.
 
@@ -179,7 +179,7 @@ Le principe : vous ne vous déplacez pas librement. Vous tuez un ennemi. Vous at
 
 **Mon avis** : c'est sans aucun doute le plus difficile de la liste. Les ennemis vous entourent. Ils tirent vite et juste. Chaque niveau est un petit puzzle : dans quel ordre les tuer, et avec quelle arme, pour ne jamais rester coincé.
 
-On meurt beaucoup au début. Puis on finit par enchaîner les gestes sans réfléchir. Se baisser, tirer, attraper l'arme, être projeté, recommencer. C'est encore plus nerveux que Pistol Whip. C'est un vrai cardio. Après une demi-heure, j'ai besoin d'une douche. Je ne plaisante pas.
+On meurt beaucoup au début. Puis on finit par enchaîner les gestes sans réfléchir. Se baisser, tirer, attraper l'arme, être projeté, recommencer. C'est encore plus nerveux que Pistol Whip. C'est un [vrai cardio](/fr/20250508-project-fat-loss). Après une demi-heure, j'ai besoin d'une douche. Je ne plaisante pas.
 
 Mais visuellement, c'est une claque. Les décors changent à chaque niveau. Un wagon de métro. Une ville du Far West, avec des cow-boys aux balcons. Un bateau pirate. Un hall d'immeuble façon *Matrix*. Et même des niveaux plongés dans le noir, où l'on repère les ennemis au son.
 

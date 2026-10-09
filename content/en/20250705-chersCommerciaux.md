@@ -2,6 +2,7 @@
 title: "Apple, iOS (and AirTags) Tell Your Boss Everything"
 image: "/images/articles/yeah.webp"
 createdAt: "2025-07-05"
+updatedAt: "2026-10-08T12:00:00Z"
 id: 2025-07-05
 description: "iPhone, MacBook, company car with an AirTag: your work tools document every detour. What Ivorian law says, and how to avoid the trap."
 searchIntent: "How Apple tools and company equipment can track a sales rep's movements."
@@ -30,7 +31,7 @@ Whether you're a sales rep, a developer or a community manager, your employer eq
 
 At first glance, this trio is the ideal productivity kit. In reality, it's also a **network of silent sensors**. These devices are digital witnesses that log your trips, your connections and your habits.
 
-Yes, even the car. Especially if an AirTag has been discreetly placed "for security". Officially, it's there to protect the vehicle. Unofficially, it can also keep an eye on your every detour.
+Yes, even the car. Especially if an AirTag has been discreetly placed "for security". Officially, it's there to protect the vehicle. Unofficially, it can also keep an eye on your every detour. It won't stay discreet forever, though: an AirTag separated from its owner that is moving with you eventually triggers the "AirTag Found Moving With You" alert on an iPhone, and phones running Android 6.0 or later also warn you automatically ([Apple Support](https://support.apple.com/en-us/119874){target="_blank" rel="noopener"}).
 
 ## Technology doesn't lie: the dashboard example
 
@@ -76,6 +77,8 @@ There is no miracle solution, but an approach based on caution and transparency 
 An AirTag in your car, an iPhone in your pocket, a MacBook in your bag... These are not just tools. They are also narrators. And the story they build had better match your job description.
 
 Technology doesn't judge, it simply documents. It's up to you to decide whether that documentation will be your alibi or your trap.
+
+*Correction, October 8, 2026: added a sourced clarification about the unwanted-tracking alerts Apple and Android send to the person travelling with an AirTag.*
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com) — reluctant tech spy*

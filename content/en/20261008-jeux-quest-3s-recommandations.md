@@ -19,7 +19,7 @@ I've ranked them from easiest to hardest. For each one: what it's about, its per
 
 → [See it on the Meta Quest Store](https://www.meta.com/experiences/republique-vr/1794123900713107/)
 
-**The story**: Hope is a young woman locked inside Metamorphosis. It's a totalitarian state, run by a man known as the Overseer. Everyone there is watched. You don't play Hope. You hack the surveillance system. And you guide her through the cameras to help her escape.
+**The story**: Hope is a young woman locked inside Metamorphosis. It's the [closed facility](https://en.wikipedia.org/wiki/République_%28video_game%29) of a totalitarian state, run by a man known as the Overseer. Everyone there is watched. You don't play Hope. You hack the surveillance system. And you guide her through the cameras to help her escape.
 
 The game comes from Camouflaj, a Seattle studio. Its founder, Ryan Payton, worked on *Metal Gear Solid 4*. The game was born from a Kickstarter campaign in 2012. It came out in episodes on iPhone from 2013. The virtual reality version arrived on Quest in [July 2019](https://uploadvr.com/republique-oculus-quest/).
 
@@ -59,7 +59,7 @@ Luckily, there's still the "dojo" mode. It's more interesting than it sounds. Yo
 
 And there's a cameo from my favourite superhero of all time. Mister Johnny Blaze. The Ghost Rider himself. I won't tell you where. But he deserves his own VR game. A flaming motorbike, a chain, a burning skull. What are we waiting for?
 
-I play in "Kidpool" mode. This option cuts the swearing and the crude jokes. Be careful, it doesn't touch the violence. [Reviews point it out](https://www.empireonline.com/gaming/reviews/deadpool-vr): you still slice enemies in half. In the United States, the game is still rated for ages 17 and up. It's not a game for children. Kidpool just makes the dialogue easier to live with.
+I play in "Kidpool" mode. This option cuts the swearing and the crude jokes. Be careful, it doesn't touch the violence. [Reviews point it out](https://www.empireonline.com/gaming/reviews/deadpool-vr): you still slice enemies in half. In the United States, the game is still [rated for ages 17 and up](https://www.esrb.org/ratings/40934/marvels-deadpool-vr/). It's not a game for children. Kidpool just makes the dialogue easier to live with.
 
 ## Medium: time is on your side
 
@@ -71,7 +71,7 @@ I play in "Kidpool" mode. This option cuts the swearing and the crude jokes. Be 
 
 **The story**: there's almost none. Red figures want to kill you, in an all-white setting.
 
-The game used to talk to you between levels, with a little riff on control and obedience. It went as far as asking you to shoot yourself to prove your obedience. The studio [removed those scenes in July 2021](https://www.gamedeveloper.com/game-platforms/-i-superhot-vr-i-devs-remove-self-harm-elements-from-the-game-you-deserve-better-). And that's for the best.
+The game used to talk to you between levels, with a little riff on control and obedience. It went as far as asking you to shoot yourself to prove it. The studio [removed those scenes in July 2021](https://www.gamedeveloper.com/game-platforms/-i-superhot-vr-i-devs-remove-self-harm-elements-from-the-game-you-deserve-better-). And that's for the best.
 
 Anyway, you're there for the hook: time only moves when you move. Stand still? The bullets freeze in mid-air. Turn your head? They creep forward. The game comes from the Polish studio SUPERHOT Team. It came out in 2016 on PC, and in 2019 on the first Quest.
 
@@ -125,7 +125,7 @@ The difficulty mostly comes from the movement: you need a strong stomach. And th
 
 → [See it on the Meta Quest Store](https://www.meta.com/experiences/until-you-fall/2567459230020142/)
 
-**The story**: you're a rune knight. You fight in a neon-coloured fantasy world. It's a roguelite from [Schell Games](https://untilyoufall.schellgames.com/news/ps-vr-quest-launch), released on Quest in September 2020. The rule: when you die, you start again from the beginning. You only keep a few upgrades.
+**The story**: you're a rune knight. You fight in a neon-coloured fantasy world. It's a roguelite from Schell Games, released on Quest in [September 2020](https://www.roadtovr.com/until-you-fall-psvr-quest-release-date/). The rule: when you die, you start again from the beginning. You only keep a few upgrades.
 
 **Its personality**: the demanding fencing teacher. He makes you repeat the same drill. Again and again. Until it's perfect.
 
@@ -161,7 +161,7 @@ The game comes from a small studio, Ben Olding Games. It's published by Clique G
 
 The movement, though, isn't orthodox. You don't reproduce real techniques. You hit however you can. But you find all the kung fu movie archetypes. There are barely disguised copies of Jet Li, Jackie Chan, Ip Man… And even Beatrix Kiddo, the Bride from *Kill Bill*. A blonde woman learning kung fu from an old master.
 
-Personally, I'd have preferred to play Pai Mei, the master in question. But there's a Gordon Liu clone. He's the one who played Pai Mei in *Kill Bill*. Above all, he's the hero of *The 36th Chamber of Shaolin*. The 36 chambers, as in *Enter the Wu-Tang (36 Chambers)*. Yes, the Wu-Tang again. And it's fun.
+Personally, I'd have preferred to play Pai Mei, the master in question. But there's a Gordon Liu clone. He's the one who played Pai Mei in *Kill Bill*. Above all, he's the hero of *The 36th Chamber of Shaolin*. The 36 chambers, as in *Enter the Wu-Tang (36 Chambers)*. Yes, [the Wu-Tang again](/en/20260907-bill-gates-ia-hypocrisie-meta-cash-rules-everything). And it's fun.
 
 One problem: I still can't get past the level with the three ninjas, in hard mode. Three against one. These people have no honour.
 
@@ -179,7 +179,7 @@ The hook: you can't move freely. You kill an enemy. You grab their weapon. And y
 
 **My take**: it's without a doubt the hardest game on the list. Enemies surround you. They shoot fast and straight. Each level is a little puzzle: in what order to kill them, and with which weapon, so you never get stuck.
 
-You die a lot at first. Then you start chaining moves without thinking. Duck, shoot, grab the weapon, get thrown forward, repeat. It's even more intense than Pistol Whip. It's a real cardio workout. After half an hour, I need a shower. I'm not joking.
+You die a lot at first. Then you start chaining moves without thinking. Duck, shoot, grab the weapon, get thrown forward, repeat. It's even more intense than Pistol Whip. It's a [real cardio workout](/en/20250508-project-fat-loss). After half an hour, I need a shower. I'm not joking.
 
 But visually, it's stunning. The setting changes with every level. A subway car. A Wild West town, with cowboys on the balconies. A pirate ship. A *Matrix*-style lobby. And even levels plunged into darkness, where you locate enemies by sound.
 
@@ -205,7 +205,7 @@ A small irony: *Arkham Shadow* and *Iron Man VR* both come from Camouflaj. The s
 
 ## What about Beat Saber?
 
-![Two light sabers, one red and one blue, slicing cubes in Beat Saber](/images/articles/quest3s-beat-saber.webp)
+![Two glowing sabers, one red and one blue, slicing cubes in Beat Saber](/images/articles/quest3s-beat-saber.webp)
 
 → [See it on the Meta Quest Store](https://www.meta.com/experiences/beat-saber/2448060205267927/)
 

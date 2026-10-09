@@ -1,15 +1,18 @@
 ---
-title: "Comment des chercheurs ont volé 10 000 $ via un iPhone verrouillé — la faille Apple Pay / Visa expliquée"
+title: "Comment des chercheurs ont payé 1 000 £ avec un iPhone verrouillé — la faille Apple Pay / Visa expliquée"
 image: "/images/articles/apple-pay-visa-hack.webp"
 createdAt: "2026-04-17"
 description: "Mode Express Transit d'Apple Pay et carte Visa : comment des chercheurs ont débité un iPhone verrouillé, pourquoi Mastercard résiste, et comment vous protéger."
 searchIntent: "Comment une faille Apple Pay et Visa peut-elle débiter un iPhone verrouillé et comment s’en protéger ?"
+updatedAt: "2026-10-08T12:00:00Z"
 tags: ["sécurité", "Apple Pay", "Visa", "NFC", "iPhone", "faille de sécurité"]
 ---
 
 Il y a des histoires de sécurité qui ressemblent à de la science-fiction. Celle-ci s'est passée dans un laboratoire universitaire, documentée, publiée — et elle concerne très probablement le téléphone qui est dans votre poche en ce moment.
 
 Des chercheurs de l'université de Birmingham et de Surrey ont démontré qu'il est possible de **débiter plusieurs milliers de dollars depuis un iPhone verrouillé**, sans aucune interaction de sa part, en exploitant une combinaison de failles dans Apple Pay et les protocoles de transaction Visa.
+
+Précision importante : la recherche ne date pas d'hier. Elle a été rendue publique le 30 septembre 2021 ([communiqué de l'université de Surrey](https://www.surrey.ac.uk/news/visa-and-apple-pay-vulnerabilities-leaves-iphone-users-open-payment-fraud){target="_blank" rel="noopener"}) et présentée au symposium IEEE Security & Privacy de 2022, sous le titre *Practical EMV Relay Protection*. Mais le mode Express Transit et les cartes Visa sont toujours dans nos téléphones, et la leçon n'a pas pris une ride.
 
 Regarder la démonstration complète (anglais)
 :youtube{video="PPJ6NJkmDAo" title="VISA"}
@@ -103,6 +106,8 @@ Express Transit _est_ pratique. Le fait que Visa soit accepté partout _est_ une
 La bonne nouvelle, c'est que la solution est à portée de main dans vos réglages. La mauvaise, c'est que la plupart des utilisateurs ne savent pas que cette surface d'attaque existe.
 
 Maintenant vous savez.
+
+*Correction du 8 octobre 2026 : la première version de ce billet présentait cette recherche comme récente. Elle a été publiée en septembre 2021 par les universités de Birmingham et de Surrey ; la date et la source ont été ajoutées en début d'article. Le titre annonçait aussi « 10 000 $ » : le paiement de démonstration était de 1 000 £ ([université de Surrey](https://www.surrey.ac.uk/news/visa-and-apple-pay-vulnerabilities-leaves-iphone-users-open-payment-fraud){target="_blank" rel="noopener"}).*
 
 ---
 _[Jean-Luc Houédanou](https://houedanou.com) — content d'avoir un téléphone Android._

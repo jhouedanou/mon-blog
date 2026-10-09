@@ -1,6 +1,7 @@
 ---
 title: "MacSai et Mole : deux alternatives gratuites à CleanMyMac"
 createdAt: "2026-09-01"
+updatedAt: "2026-10-08T12:00:00Z"
 image: "/images/articles/macao.webp"
 description: "Après PureMac, deux nettoyeurs gratuits et open source pour macOS : MacSai, qui reprend CleanMyMac fonction par fonction, et Mole, en ligne de commande."
 searchIntent: "Quelles alternatives gratuites et open-source à CleanMyMac installer sur Mac en 2026 ?"
@@ -17,7 +18,7 @@ Depuis, deux autres projets ont retenu mon attention. Ils ne se ressemblent pas 
 
 On y retrouve tout ce qu'on attend d'un nettoyeur complet : caches et journaux système, un désinstalleur qui traque les fichiers oubliés par les applications, un scanner de logiciels malveillants, la gestion des éléments de démarrage, la détection de doublons, et une carte visuelle du disque pour repérer les dossiers qui pèsent lourd. Un détail que je n'avais vu nulle part ailleurs : l'amincissement des binaires universels, qui retire la partie Intel des applications sur les Mac Apple Silicon.
 
-Au premier lancement sur mon MacBook, un Smart Scan a envoyé 5,66 Go à la corbeille : 4,42 Go de fichiers système inutiles et 2,96 Go de traces de navigation. Rien n'est effacé définitivement, tout passe par la Corbeille de macOS, ce qui laisse le temps de récupérer un fichier en cas de doute.
+Au premier lancement sur mon MacBook, un Smart Scan a envoyé 5,66 Go à la corbeille, entre fichiers système inutiles et traces de navigation. Rien n'est effacé définitivement, tout passe par la Corbeille de macOS, ce qui laisse le temps de récupérer un fichier en cas de doute.
 
 Il faut macOS 14 au minimum. L'installation tient en une ligne :
 
@@ -53,6 +54,8 @@ Le développeur propose aussi une version graphique, Mole pour Mac, qui organise
 Si vous voulez une interface et l'équivalent complet de CleanMyMac, prenez MacSai. Si vous vivez dans le Terminal, prenez Mole. Et si vous cherchez simplement un désinstalleur propre et sans fioritures, PureMac fait toujours très bien le travail.
 
 Dans les trois cas, le code est lisible par n'importe qui, rien ne quitte votre machine, et vous ne payez rien. Difficile de faire mieux comme comparatif avec CleanMyMac.
+
+*Correction du 8 octobre 2026 : retrait du détail par catégorie du Smart Scan (4,42 Go et 2,96 Go), dont la somme ne correspondait pas au total de 5,66 Go envoyé à la corbeille.*
 
 ---
 [Jean-Luc Houédanou](https://houedanou.com)
