@@ -2,7 +2,7 @@
 title: "Pas besoin d'être dev ou barbu pour aimer Mac et Linux"
 createdAt: "2026-10-08T21:00:00Z"
 draft: true
-image: "/images/articles/pingui.webp"
+image: "/images/articles/pexels-mikhail-nilov-7681016.webp"
 description: "Mac et Linux ne sont pas réservés aux développeurs barbus. Ce qui marche (démarrage, mises à jour, sécurité, Zorin OS) et ce qui fâche (prix, Wi-Fi, support)."
 searchIntent: "Faut-il être développeur pour utiliser un Mac ou Linux au quotidien, et quels sont les vrais avantages et limites de macOS et de Zorin OS ?"
 tags: ["opinion", "apple", "macos", "linux", "open-source"]
@@ -121,6 +121,8 @@ Et si vous hésitez encore : en ce moment, je passe pas mal de temps sur ChromeO
 - Apple, [Mac compatibles avec macOS 27](https://support.apple.com/en-us/127255){target="_blank" rel="noopener"}
 - Dortania, [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher/releases){target="_blank" rel="noopener"}
 - Debian Wiki, [pilote Broadcom wl](https://wiki.debian.org/wl){target="_blank" rel="noopener"}
+
+_Photo de couverture : [Mikhail Nilov](https://www.pexels.com/@mikhail-nilov/){target="_blank" rel="noopener"}, sur Pexels._
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com) — la barbe est facultative*
