@@ -89,6 +89,12 @@ Les bénévoles d'OpenCore Legacy Patcher ont prouvé que ces Mac pouvaient tour
 
 Pour être honnête, il y a aussi de vraies limites techniques. macOS 27, sorti le 14 septembre 2026, ne tourne que sur les Mac Apple Silicon ([Apple](https://support.apple.com/en-us/127255){target="_blank" rel="noopener"}), et ça, aucun bricolage ne le contournera. Les Mac Intel ont eu leur dernière grande version avec Tahoe.
 
+### Une mise à jour, ce n'est pas toujours un cadeau
+
+Être encore pris en charge ne garantit pas non plus que tout va bien. J'ai un MacBook M1 à la maison, et j'ai l'impression qu'il est plus lent depuis que j'ai installé macOS 27 « Golden Gate ». Sans parler des petites contrariétés : le trackball qu'il a fallu reconfigurer, et le contrôle du volume de mon moniteur, désormais grisé.
+
+Rien de dramatique. Mais c'est un rappel utile : sur Mac aussi, une grosse mise à jour se prépare. Comme c'est vous qui décidez quand l'installer, rien ne vous oblige à le faire le jour de sa sortie.
+
 ### Linux : le support matériel, c'est couci-couça
 
 Linux tourne presque partout. Presque.
