@@ -2,7 +2,7 @@
 title: "You don't need to be a bearded dev to love Mac and Linux"
 createdAt: "2026-10-08T21:00:00Z"
 draft: true
-image: "/images/articles/pingui.webp"
+image: "/images/articles/pexels-mikhail-nilov-7681016.webp"
 description: "Mac and Linux aren't just for bearded developers. What works (startup, updates, security, Zorin OS) and what hurts (price, Wi-Fi, support)."
 searchIntent: "Do you need to be a developer to use a Mac or Linux every day, and what are the real strengths and limits of macOS and Zorin OS?"
 tags: ["opinion", "apple", "macos", "linux", "open-source"]
@@ -121,6 +121,8 @@ And if you're still hesitating: these days, I spend quite a bit of time on Chrom
 - Apple, [Macs compatible with macOS 27](https://support.apple.com/en-us/127255){target="_blank" rel="noopener"}
 - Dortania, [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher/releases){target="_blank" rel="noopener"}
 - Debian Wiki, [Broadcom wl driver](https://wiki.debian.org/wl){target="_blank" rel="noopener"}
+
+_Cover photo: [Mikhail Nilov](https://www.pexels.com/@mikhail-nilov/){target="_blank" rel="noopener"}, on Pexels._
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com) — beard optional*
