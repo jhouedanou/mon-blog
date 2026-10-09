@@ -57,9 +57,9 @@ Heureusement, il reste le mode « dojo ». Il est plus intéressant qu'il n'y pa
 
 **Mon avis** : c'est mon péché mignon. Deadpool parle tout le temps. Il se moque de vous et du jeu lui-même. Les combats sont fluides. La difficulté se règle, donc on peut le finir sans être un as.
 
-Et il y a un caméo de mon super-héros préféré de tous les temps. Monsieur Johnny Blaze. Le Ghost Rider en personne. Je ne vous dis pas où. Mais lui mériterait son propre jeu en réalité virtuelle. Une moto en flammes, une chaîne, un crâne qui brûle. Qu'est-ce qu'on attend ?
+Et il y a un caméo de mon super-héros préféré de tous les temps. Monsieur Johnny Blaze. Le Ghost Rider en personne ([la critique de Pocket Tactics le confirme](https://www.pockettactics.com/deadpool-vr-review){target="_blank" rel="noopener"}). Je ne vous dis pas où. Mais lui mériterait son propre jeu en réalité virtuelle. Une moto en flammes, une chaîne, un crâne qui brûle. Qu'est-ce qu'on attend ?
 
-Je joue en mode « Kidpool ». Cette option coupe les gros mots et les blagues lourdes. Attention, elle ne touche pas à la violence. [Les critiques le précisent](https://www.empireonline.com/gaming/reviews/deadpool-vr) : on découpe toujours des ennemis en deux. Aux États-Unis, le jeu reste [classé pour les plus de 17 ans](https://www.esrb.org/ratings/40934/marvels-deadpool-vr/). Ce n'est pas un jeu pour les enfants. Kidpool rend juste les dialogues plus supportables.
+Je joue en mode « Kidpool ». Cette option coupe les gros mots ([GamingTrend](https://gamingtrend.com/deadpool-vr-review-merc-goes-meta){target="_blank" rel="noopener"}). Attention, elle ne touche pas à la violence. [Les critiques le précisent](https://www.empireonline.com/gaming/reviews/deadpool-vr) : on découpe toujours des ennemis en deux. Aux États-Unis, le jeu reste [classé pour les plus de 17 ans](https://www.esrb.org/ratings/40934/marvels-deadpool-vr/). Ce n'est pas un jeu pour les enfants. Kidpool rend juste les dialogues plus supportables.
 
 ## Moyen : le temps est votre ami
 
@@ -113,7 +113,7 @@ La difficulté vient surtout du mouvement : il faut un estomac solide. Et il n'y
 
 → [Voir sur le Meta Quest Store](https://www.meta.com/experiences/ninja-legends/2398880980156491/)
 
-**L'histoire** : aucune, ou presque. Des vagues d'assassins et de guerriers arrivent. Vous les affrontez au sabre, avec des armes de jet et des pouvoirs spéciaux. Le jeu vient de Coinflip Studios, un petit studio. C'est son premier jeu, sorti en 2019. Le style est cartoon, ce qui fait passer la violence.
+**L'histoire** : aucune, ou presque. Des vagues d'assassins et de guerriers arrivent. Vous les affrontez au sabre, avec des armes de jet et des pouvoirs spéciaux. Le jeu vient de Coinflip Studios, un petit studio. C'est son [premier jeu sur Quest](https://www.meta.com/blog/ninja-knowledge-vr-dev-tips-from-coinflip-studios/){target="_blank" rel="noopener"}, sorti en 2019. Le style est cartoon, ce qui fait passer la violence.
 
 **Sa personnalité** : le dessin animé du samedi matin. Coloré, bagarreur, sans prise de tête. Et plus sportif qu'il n'en a l'air.
 
@@ -139,7 +139,7 @@ Mais c'est répétitif. Un roguelite, c'est refaire les mêmes salles encore et 
 
 → [Voir sur le Meta Quest Store](https://www.meta.com/experiences/pistol-whip/2104963472963790/)
 
-**L'histoire** : pas vraiment. [Cloudhead Games](https://www.roadtovr.com/pistol-whip-launch-date-quest-steamvr/) l'a sorti en novembre 2019. Le studio le présentait comme un mélange de Superhot et de Beat Saber. Vous avancez tout seul sur un rail, au rythme de la musique. Vous tirez sur tout ce qui bouge et vous esquivez les balles. Les niveaux s'inspirent des films d'action.
+**L'histoire** : pas vraiment. [Cloudhead Games](https://www.roadtovr.com/pistol-whip-launch-date-quest-steamvr/) l'a sorti en novembre 2019. Il était présenté comme un mélange de Superhot et de Beat Saber. Vous avancez tout seul sur un rail, au rythme de la musique. Vous tirez sur tout ce qui bouge et vous esquivez les balles. Les niveaux s'inspirent des films d'action.
 
 **Sa personnalité** : le DJ armé. Il ne s'arrête jamais. Et c'est lui qui choisit le tempo.
 

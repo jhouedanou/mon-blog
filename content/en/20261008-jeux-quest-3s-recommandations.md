@@ -57,9 +57,9 @@ Luckily, there's still the "dojo" mode. It's more interesting than it sounds. Yo
 
 **My take**: it's my guilty pleasure. Deadpool never stops talking. He makes fun of you and of the game itself. The fights are smooth. The difficulty is adjustable, so you can finish it without being an ace.
 
-And there's a cameo from my favourite superhero of all time. Mister Johnny Blaze. The Ghost Rider himself. I won't tell you where. But he deserves his own VR game. A flaming motorbike, a chain, a burning skull. What are we waiting for?
+And there's a cameo from my favourite superhero of all time. Mister Johnny Blaze. The Ghost Rider himself ([Pocket Tactics' review confirms it](https://www.pockettactics.com/deadpool-vr-review){target="_blank" rel="noopener"}). I won't tell you where. But he deserves his own VR game. A flaming motorbike, a chain, a burning skull. What are we waiting for?
 
-I play in "Kidpool" mode. This option cuts the swearing and the crude jokes. Be careful, it doesn't touch the violence. [Reviews point it out](https://www.empireonline.com/gaming/reviews/deadpool-vr): you still slice enemies in half. In the United States, the game is still [rated for ages 17 and up](https://www.esrb.org/ratings/40934/marvels-deadpool-vr/). It's not a game for children. Kidpool just makes the dialogue easier to live with.
+I play in "Kidpool" mode. This option cuts the swearing ([GamingTrend](https://gamingtrend.com/deadpool-vr-review-merc-goes-meta){target="_blank" rel="noopener"}). Be careful, it doesn't touch the violence. [Reviews point it out](https://www.empireonline.com/gaming/reviews/deadpool-vr): you still slice enemies in half. In the United States, the game is still [rated for ages 17 and up](https://www.esrb.org/ratings/40934/marvels-deadpool-vr/). It's not a game for children. Kidpool just makes the dialogue easier to live with.
 
 ## Medium: time is on your side
 
@@ -113,7 +113,7 @@ The difficulty mostly comes from the movement: you need a strong stomach. And th
 
 → [See it on the Meta Quest Store](https://www.meta.com/experiences/ninja-legends/2398880980156491/)
 
-**The story**: none, or nearly. Waves of assassins and warriors come at you. You take them on with a sword, throwing weapons and special powers. The game comes from Coinflip Studios, a small studio. It's their first game, released in 2019. The style is cartoonish, which takes the edge off the violence.
+**The story**: none, or nearly. Waves of assassins and warriors come at you. You take them on with a sword, throwing weapons and special powers. The game comes from Coinflip Studios, a small studio. It's their [first game on Quest](https://www.meta.com/blog/ninja-knowledge-vr-dev-tips-from-coinflip-studios/){target="_blank" rel="noopener"}, released in 2019. The style is cartoonish, which takes the edge off the violence.
 
 **Its personality**: the Saturday-morning cartoon. Colourful, scrappy, easy-going. And more athletic than it looks.
 
@@ -139,7 +139,7 @@ But it's repetitive. A roguelite means replaying the same rooms over and over. A
 
 → [See it on the Meta Quest Store](https://www.meta.com/experiences/pistol-whip/2104963472963790/)
 
-**The story**: not really one. [Cloudhead Games](https://www.roadtovr.com/pistol-whip-launch-date-quest-steamvr/) released it in November 2019. The studio pitched it as a mix of Superhot and Beat Saber. You move forward on a rail, to the beat of the music. You shoot everything that moves and dodge bullets. The levels draw on action movies.
+**The story**: not really one. [Cloudhead Games](https://www.roadtovr.com/pistol-whip-launch-date-quest-steamvr/) released it in November 2019. It was billed as a mix of Superhot and Beat Saber. You move forward on a rail, to the beat of the music. You shoot everything that moves and dodge bullets. The levels draw on action movies.
 
 **Its personality**: the armed DJ. He never stops. And he's the one setting the tempo.
 

@@ -9,7 +9,7 @@ tags: ["opinion", "apple", "macos", "linux", "open-source"]
 
 There's a cliché that refuses to die. The Mac is for designers and developers. Linux is for bearded guys in hoodies typing green lines on a black screen.
 
-I'm a developer, true. But that's not why I love these two systems. I love them for a much simpler reason: they let me work.
+I'm a developer, true. I also have a beard. But that's not why I love these two systems. I love them for a much simpler reason: they let me work.
 
 Here's the tour, with what works, and what hurts.
 
