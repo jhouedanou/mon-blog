@@ -1,7 +1,6 @@
 ---
 title: "Pas besoin d'être dev ou barbu pour aimer Mac et Linux"
 createdAt: "2026-10-08T21:00:00Z"
-draft: true
 image: "/images/articles/pexels-mikhail-nilov-7681016.webp"
 description: "Mac et Linux ne sont pas réservés aux développeurs barbus. Ce qui marche (démarrage, mises à jour, sécurité, Zorin OS) et ce qui fâche (prix, Wi-Fi, support)."
 searchIntent: "Faut-il être développeur pour utiliser un Mac ou Linux au quotidien, et quels sont les vrais avantages et limites de macOS et de Zorin OS ?"
