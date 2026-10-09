@@ -89,6 +89,12 @@ The volunteers behind OpenCore Legacy Patcher proved these Macs could run newer 
 
 To be fair, there are real technical limits too. macOS 27, released on September 14, 2026, only runs on Apple Silicon Macs ([Apple](https://support.apple.com/en-us/127255){target="_blank" rel="noopener"}), and no hack will get around that. Intel Macs got their last major version with Tahoe.
 
+### An update isn't always a gift
+
+Still being supported doesn't guarantee everything is fine either. I have an M1 MacBook at home, and I get the feeling it's been slower since I installed macOS 27 "Golden Gate". Not to mention the small annoyances: the trackball I had to set up again, and my monitor's volume control, now greyed out.
+
+Nothing dramatic. But it's a useful reminder: on a Mac too, a big update needs some preparation. And since you decide when to install it, nothing forces you to do it on release day.
+
 ### Linux: hardware support is so-so
 
 Linux runs almost everywhere. Almost.
