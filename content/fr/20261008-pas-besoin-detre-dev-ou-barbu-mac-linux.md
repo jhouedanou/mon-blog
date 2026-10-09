@@ -9,7 +9,7 @@ tags: ["opinion", "apple", "macos", "linux", "open-source"]
 
 Il y a un cliché qui a la vie dure. Le Mac, ce serait pour les graphistes et les développeurs. Linux, pour les barbus en sweat à capuche qui tapent des lignes vertes sur fond noir.
 
-Je suis développeur, c'est vrai. Mais ce n'est pas pour ça que j'aime ces deux systèmes. Je les aime pour une raison beaucoup plus bête : ils me laissent travailler.
+Je suis développeur, c'est vrai. Je suis également barbu. Mais ce n'est pas pour ça que j'aime ces deux systèmes. Je les aime pour une raison beaucoup plus bête : ils me laissent travailler.
 
 Petit tour du propriétaire, avec ce qui marche, et ce qui fâche.
 
