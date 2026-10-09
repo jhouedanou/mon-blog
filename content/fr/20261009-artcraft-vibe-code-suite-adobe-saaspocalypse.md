@@ -80,14 +80,14 @@ Deux bémols, que le projet signale lui-même :
 - certains réglages ne passent pas, comme le profil d'appareil ou les « Looks ». L'application les liste à l'import au lieu de les ignorer en silence ;
 - pour les presets d'avant Lightroom 4 (le moteur de 2010), les réglages sont approximés avec les curseurs actuels.
 
-Et un troisième bémol, propre à la Theta. Le DNG de la Z1 contient les deux images fisheye côte à côte, pas encore assemblées. Dans Lightroom Classic, c'est [le plug-in THETA Stitcher de Ricoh](https://thetaz1.com/en/creativity/){target="_blank" rel="noopener"} qui fait l'assemblage. LightCraft, lui, n'accepte pas encore de plug-ins.
+Et un troisième bémol, propre à la Theta, qu'il faut avoir en tête avant le week-end. Le DNG de la Z1 contient les deux images fisheye côte à côte, pas encore assemblées. Dans Lightroom Classic, c'est [le plug-in THETA Stitcher de Ricoh](https://thetaz1.com/en/creativity/){target="_blank" rel="noopener"} qui les assemble, et LightCraft n'accepte pas de plug-ins. Il faudra donc développer dans LightCraft, exporter en TIFF, puis trouver comment assembler sans le plug-in.
 
 Mon plan pour ce week-end :
 
 1. importer mon dossier de presets dans LightCraft ;
 2. les appliquer à une poignée de DNG de la Theta ;
 3. comparer avec ce que donnaient ces presets dans Lightroom ;
-4. exporter en TIFF et trouver comment assembler la photo sans le plug-in, puis vérifier qu'elle est bien reconnue comme une 360.
+4. exporter en TIFF, assembler la photo sans le plug-in, puis vérifier qu'elle est bien reconnue comme une 360.
 
 Et côté Affinity, une surprise : PhotoCraft ouvre les fichiers Affinity (.afphoto, .afdesign, .afpub), en lecture seule. Les effets et réglages qu'il ne sait pas encore rendre sont listés dans un avertissement. Je testerai aussi, sur des copies.
 

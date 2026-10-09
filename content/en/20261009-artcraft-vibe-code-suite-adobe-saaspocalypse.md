@@ -80,14 +80,14 @@ Two caveats, which the project points out itself:
 - some settings don't carry over, such as the camera profile or "Looks". The app lists them on import instead of silently dropping them;
 - for presets from before Lightroom 4 (the 2010 process version), settings are approximated with today's sliders.
 
-And a third caveat, specific to the Theta. The Z1's DNG holds the two fisheye images side by side, not yet stitched. In Lightroom Classic, [Ricoh's THETA Stitcher plug-in](https://thetaz1.com/en/creativity/){target="_blank" rel="noopener"} does the stitching. LightCraft doesn't support plug-ins yet.
+And a third caveat, specific to the Theta, worth keeping in mind before the weekend. The Z1's DNG holds the two fisheye images side by side, not yet stitched. In Lightroom Classic, [Ricoh's THETA Stitcher plug-in](https://thetaz1.com/en/creativity/){target="_blank" rel="noopener"} stitches them, and LightCraft doesn't support plug-ins. So the workflow will be: develop in LightCraft, export to TIFF, then figure out how to stitch without the plug-in.
 
 My plan for this weekend:
 
 1. import my presets folder into LightCraft;
 2. apply them to a handful of Theta DNGs;
 3. compare with what those presets gave me in Lightroom;
-4. export to TIFF, figure out how to stitch the photo without the plug-in, then check that it's still recognized as a 360.
+4. export to TIFF, stitch the photo without the plug-in, then check that it's still recognized as a 360.
 
 And on the Affinity side, a surprise: PhotoCraft opens Affinity files (.afphoto, .afdesign, .afpub), read-only. Effects and adjustments it can't render yet are listed in a warning. I'll test that too, on copies.
 
