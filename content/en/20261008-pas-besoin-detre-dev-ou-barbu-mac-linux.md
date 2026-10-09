@@ -1,7 +1,6 @@
 ---
 title: "You don't need to be a bearded dev to love Mac and Linux"
 createdAt: "2026-10-08T21:00:00Z"
-draft: true
 image: "/images/articles/pexels-mikhail-nilov-7681016.webp"
 description: "Mac and Linux aren't just for bearded developers. What works (startup, updates, security, Zorin OS) and what hurts (price, Wi-Fi, support)."
 searchIntent: "Do you need to be a developer to use a Mac or Linux every day, and what are the real strengths and limits of macOS and Zorin OS?"
