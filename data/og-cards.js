@@ -10,6 +10,7 @@ export const OG_CARDS = {
   "/images/articles/anne.webp": "/og/anne.jpg",
   "/images/articles/apple-pay-visa-hack.webp": "/og/apple-pay-visa-hack.jpg",
   "/images/articles/apple.webp": "/og/apple.jpg",
+  "/images/articles/artcraft-photocraft.webp": "/og/artcraft-photocraft.jpg",
   "/images/articles/bescherelle/01.webp": "/og/bescherelle-01.jpg",
   "/images/articles/bill-gates-ia-cash.jpeg": "/og/bill-gates-ia-cash.jpg",
   "/images/articles/claude-caveman.webp": "/og/claude-caveman.jpg",

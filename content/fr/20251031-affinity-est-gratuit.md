@@ -73,5 +73,7 @@ Pour en savoir plus ou télécharger la suite, rendez-vous sur le site officiel 
 
 *Mise à jour du 8 octobre 2026 : précision sur les conditions d'utilisation. Un compte Canva gratuit suffit pour Affinity, mais les outils d'IA demandent une [formule Canva Premium](https://www.affinity.studio/fr_fr). Lien vers le site officiel mis à jour (affinity.studio).*
 
+*Octobre 2026 : pour le regret Lightroom, je teste [ArtCraft, une suite open source qui imite Adobe sur Windows, Mac et Linux](/fr/20261009-artcraft-vibe-code-suite-adobe-saaspocalypse), et surtout LightCraft avec mes presets de Theta.*
+
 ---
 *[Jean-Luc Houédanou](https://houedanou.com) — designer libéré d'Adobe*
