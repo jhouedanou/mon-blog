@@ -69,7 +69,7 @@ This is where Linux is unbeatable. Everything can be changed: the look, the desk
 
 … then join the dev side of the Force. Linux runs 62.7% of websites whose operating system is known ([W3Techs](https://w3techs.com/technologies/details/os-linux){target="_blank" rel="noopener"}) and every single one of the world's 500 most powerful supercomputers since 2017 ([TOP500](https://www.top500.org/statistics/details/osfam/1/){target="_blank" rel="noopener"}). Even Microsoft ended up building a real Linux into Windows, with WSL, and open-sourced it in 2025 ([Microsoft](https://blogs.windows.com/windowsdeveloper/2025/05/19/the-windows-subsystem-for-linux-is-now-open-source/){target="_blank" rel="noopener"}). When yesterday's enemy joins in, the tool must be good.
 
-Learning Linux on your everyday computer means learning the environment a good chunk of the internet runs on. And if you want to go further with customization, there's plenty to do, [without going through Omarchy](/en/20261008-omarchy-dhh-homme-dotfiles).
+Learning Linux on your everyday computer means learning the environment a good chunk of the internet runs on. And if you want to go further with customization, there's plenty to do.
 
 ## What hurts
 
