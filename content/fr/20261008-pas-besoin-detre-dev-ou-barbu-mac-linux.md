@@ -69,7 +69,7 @@ C'est là que Linux est imbattable. Tout se change : l'apparence, le bureau, le 
 
 … alors rejoignez le côté dev de la Force. Linux fait tourner 62,7 % des sites web dont on connaît le système ([W3Techs](https://w3techs.com/technologies/details/os-linux){target="_blank" rel="noopener"}) et la totalité des 500 superordinateurs les plus puissants du monde depuis 2017 ([TOP500](https://www.top500.org/statistics/details/osfam/1/){target="_blank" rel="noopener"}). Même Microsoft a fini par intégrer un vrai Linux dans Windows, avec WSL, et l'a passé en open source en 2025 ([Microsoft](https://blogs.windows.com/windowsdeveloper/2025/05/19/the-windows-subsystem-for-linux-is-now-open-source/){target="_blank" rel="noopener"}). Si l'ennemi d'hier s'y met, c'est que l'outil est bon.
 
-Apprendre Linux sur son ordinateur de tous les jours, c'est apprendre l'environnement sur lequel tourne une bonne partie d'internet. Et si vous voulez aller plus loin dans la personnalisation, il y a de quoi faire, [sans passer par Omarchy](/fr/20261008-omarchy-dhh-homme-dotfiles).
+Apprendre Linux sur son ordinateur de tous les jours, c'est apprendre l'environnement sur lequel tourne une bonne partie d'internet. Et si vous voulez aller plus loin dans la personnalisation, il y a de quoi faire.
 
 ## Ce qui fâche
 

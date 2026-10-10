@@ -25,6 +25,9 @@ export const EXACT_REDIRECTS = {
   '/fr/on-fait-un-peu-le-menage': '/fr/20241005-on-fait-un-peu-le-menage',
   '/fr/non-ce-cable-de-240w-ne-chargera-pas-plus-vite-votre':
     '/fr/20241021-2-non-ce-cable-de-240w-ne-chargera-pas-plus-vite-votre',
+  // Billet Omarchy retiré le 10/10/2026 : renvoi vers le billet Linux du même jour.
+  '/fr/20261008-omarchy-dhh-homme-dotfiles': '/fr/20261008-pas-besoin-detre-dev-ou-barbu-mac-linux',
+  '/en/20261008-omarchy-dhh-homme-dotfiles': '/en/20261008-pas-besoin-detre-dev-ou-barbu-mac-linux',
 }
 
 /**
