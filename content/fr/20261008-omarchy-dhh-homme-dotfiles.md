@@ -1,12 +1,22 @@
 ---
 title: "On ne sépare pas l'homme de ses dotfiles"
 createdAt: "2026-10-08T13:00:00Z"
-updatedAt: "2026-10-11T21:00:00Z"
+updatedAt: "2026-10-11T22:00:00Z"
 image: "/images/articles/pingui.webp"
-description: "Korben ne fera plus la promo d'Omarchy, la distro de DHH, à cause de ses billets sur l'immigration. Je suis d'accord : les « régions » visées, c'est chez moi."
-searchIntent: "Pourquoi Korben et d'autres libristes boycottent Omarchy, la distribution Linux de DHH, et qu'est-ce que DHH a écrit sur l'immigration en Europe."
+description: "J'avais suivi Korben dans son boycott d'Omarchy, la distro de DHH. Trois jours plus tard, je retourne ma veste : Omarchy a ressuscité mon vieux MacBook."
+searchIntent: "Pourquoi boycotter Omarchy, la distribution Linux de DHH, et pourquoi l'installer quand même sur un vieux MacBook Pro de 2016 ?"
 tags: ["opinion", "linux", "open-source", "société"]
 ---
+
+Je vais faire un retournement de veste.
+
+Le 8 octobre, j'ai publié ici un billet pour dire que je suivais Korben dans son boycott d'Omarchy, la distribution Linux de DHH. J'y promettais de ne pas en parler ici et de ne pas la recommander. Trois jours plus tard, Omarchy tourne sur mon MacBook Pro fin 2016. Et j'en parle.
+
+La raison tient en une phrase : un système avec Claude intégré, qui m'évite de trop bidouiller et qui est beau, je suis preneur.
+
+Je vous explique tout plus bas, avec les réglages qu'il m'a fallu pour faire revivre le MacBook. Mais d'abord, je vous laisse ce que j'écrivais le 8 octobre. Je n'en retire rien sur DHH.
+
+## Ce que j'écrivais le 8 octobre
 
 C'est rare que je reprenne le billet d'un autre blogueur. Ce n'est pas mon truc, je préfère écrire mes propres âneries. Mais aujourd'hui, ça vient de Korben.
 
@@ -16,7 +26,7 @@ Petite parenthèse, puisqu'on y est. Mettons fin à ça une bonne fois : c'est m
 
 Mais revenons au sujet.
 
-## Ce que dit Korben
+### Ce que dit Korben
 
 Ce matin, Korben a publié [« Omarchy, non merci »](https://korben.info/omarchy-dhh-boycott.html){target="_blank" rel="noopener"}. Il y annonce qu'il ne veut plus utiliser ni promouvoir Omarchy, et il explique pourquoi.
 
@@ -26,7 +36,7 @@ Pour ceux qui ne suivent pas : Omarchy est une distribution Linux basée sur Arc
 
 Et DHH a un blog.
 
-## Ce qu'écrit DHH
+### Ce qu'écrit DHH
 
 Depuis plus d'un an, sur [son blog](https://world.hey.com/dhh){target="_blank" rel="noopener"}, DHH ne parle plus seulement de code. Il parle d'immigration. Korben a traduit et cité quatre billets, et je vous les résume :
 
@@ -37,7 +47,7 @@ Depuis plus d'un an, sur [son blog](https://world.hey.com/dhh){target="_blank" r
 
 J'ai vérifié, les quatre billets sont toujours en ligne. Dans la même liste, on trouve aussi un billet de juin 2026 intitulé [« The Rape of Britain »](https://world.hey.com/dhh/the-rape-of-britain-610412f8){target="_blank" rel="noopener"}. Je vous laisse imaginer le niveau de nuance.
 
-## Les « régions », c'est chez moi
+### Les « régions », c'est chez moi
 
 Je vais vous dire pourquoi ce billet de Korben m'a fait réagir plus que d'habitude.
 
@@ -51,7 +61,7 @@ Ce n'est pas de la « politique ». Je n'ai aucun problème avec quelqu'un qui p
 
 Oui, je sais : point Godwin. C'est même le premier de l'histoire de ce blog. Je l'assume. Quand quelqu'un classe des peuples entiers selon leur QI supposé, la comparaison n'est pas une exagération, c'est un rappel.
 
-## « Il faut séparer l'homme de l'œuvre »
+### « Il faut séparer l'homme de l'œuvre »
 
 On va me le sortir, donc je réponds tout de suite : non.
 
@@ -65,7 +75,7 @@ Et puis il y a l'argent. Comme le rappelle Korben, 1Password et 37signals se son
 
 Évidemment, ça ne veut pas dire que tous ceux qui utilisent ou contribuent à Omarchy pensent comme lui. Korben le dit, et je le redis : la plupart s'en fichent, ou ne savent pas. Maintenant, vous savez.
 
-## Ce que je fais, moi
+### Ce que je fais, moi
 
 Mon boycott ne va pas faire trembler grand monde, je le sais. Mais je n'en parlerai pas ici, je ne le recommanderai pas, et si vous me demandez une distro pour débuter ou pour frimer avec un bureau en mosaïque, je vous enverrai ailleurs.
 
@@ -73,31 +83,75 @@ Parce que la bonne nouvelle, c'est que tout ce qu'offre Omarchy existe sans DHH.
 
 Le libre, à la base, c'est un projet humaniste. L'idée que le savoir appartient à tout le monde, que n'importe qui, n'importe où, peut lire le code, le modifier et le partager. Un gamin d'Abobo a exactement les mêmes droits sur le noyau Linux qu'un ingénieur de Copenhague. C'est même pour ça que beaucoup d'entre nous, ici, sommes tombés dedans. Une distro qui met en avant un homme qui veut trier les gens selon leur origine, c'est un contresens.
 
-## Ryoku a ressuscité mon vieux MacBook
+## Pourquoi je retourne ma veste
 
-Et moi, concrètement, j'utilise quoi ? Pas Omarchy, vous l'aurez compris.
+Commençons par l'évidence : je me contredis. J'ai écrit qu'on ne sépare pas l'homme de ses dotfiles, et j'installe ses dotfiles. Je ne vais pas faire semblant que c'est cohérent. Voici ce qui a fait pencher la balance.
 
-À la base, je voulais juste essayer [Ryoku](https://ryoku.dev){target="_blank" rel="noopener"}. C'est une distribution basée sur Arch Linux, avec un bureau en mosaïque piloté au clavier, sous Hyprland ou niri. Le même esprit qu'Omarchy, donc. Son site le dit franchement : Ryoku est une alternative à Omarchy, un projet à part, pas un fork.
+À la base, je voulais essayer [Ryoku](https://ryoku.dev){target="_blank" rel="noopener"}, une alternative à Omarchy, basée elle aussi sur Arch Linux. Finalement, c'est Omarchy que j'ai installé, pour ces raisons.
 
-Je l'ai installé sur mon MacBook Pro 2017 avec 16 Go de RAM, celui qui prenait la poussière. Apple [l'a lâché après macOS Ventura](/fr/20261008-pas-besoin-detre-dev-ou-barbu-mac-linux). Je testais OpenCore Legacy Patcher 3, l'outil open source qui installe les versions récentes de macOS sur les Mac qu'Apple ne prend plus en charge. Finalement, c'est Ryoku qui l'a ressuscité. Comme quoi, on peut garder une vieille machine en vie sans demander la permission à personne. C'est aussi ça, l'esprit du libre.
+**Claude est intégré.** Omarchy est livré avec Claude Code, l'assistant de programmation d'Anthropic, et avec OpenCode ([manuel d'Omarchy](https://learn.omacom.io/2/the-omarchy-manual/107/ai){target="_blank" rel="noopener"}). La commande `cx` lance Claude Code en « danger mode », c'est-à-dire sans demander de confirmation à chaque action. Omarchy fournit aussi une « skill », un mode d'emploi que l'assistant lit pour modifier le système : la barre du haut, les thèmes. Le manuel la dit expérimentale. Et c'est avec Claude que j'ai réglé les problèmes du MacBook, vous le verrez plus bas.
 
-### Aparté : l'homme derrière Ryoku
+**Moins de bidouille.** J'écrivais qu'on peut tout refaire sans DHH, avec Arch, Hyprland et des dotfiles : « Ça vous prendra peut-être une heure au lieu de deux minutes. » J'étais optimiste. Assembler tout ça soi-même prend bien plus qu'une heure. Omarchy arrive prêt : bureau, raccourcis, applications, thèmes. Et les mises à jour passent par une seule commande, qui prend un snapshot du système avant de toucher à quoi que ce soit. Si une mise à jour casse quelque chose, on redémarre sur le snapshot d'avant ([manuel d'Omarchy](https://learn.omacom.io/2/the-omarchy-manual/68/updates){target="_blank" rel="noopener"}).
 
-Avant d'installer Ryoku, j'ai fait ce que je vous conseille depuis le début de ce billet : regarder qui est derrière.
+**C'est beau.** Un thème Omarchy change tout le système d'un coup : terminal, barre, fenêtres, fond d'écran. Je l'avais écrit moi-même : « C'est joli ». C'est toujours vrai.
 
-Il s'appelle Carlos, et il se présente lui-même [sur le site du projet](https://ryoku.dev){target="_blank" rel="noopener"}. Il a 27 ans, il est guatémaltèque et américain, marié et père de deux enfants. Il a servi dans l'armée américaine, d'abord dans l'infanterie, puis comme spécialiste informatique, avant de reprendre des études en cybersécurité et en réseaux. Et il écrit Ryoku le soir : « Most of this distro gets written after the kids are asleep. » La plus grande partie de cette distro s'écrit une fois les enfants couchés.
+**Ça ne lui rapporte rien.** Omarchy est un logiciel libre, sous licence MIT ([GitHub](https://github.com/basecamp/omarchy){target="_blank" rel="noopener"}). Je ne paie rien pour l'utiliser. L'argent dont parlait Korben vient des sponsors, comme 1Password, pas des utilisateurs.
 
-Lui aussi dit que sa distro a des opinions. Mais il précise laquelle : « Ryoku is opinionated, and my opinion is freedom. » Son opinion, c'est la liberté : pas d'applications imposées, un bureau qu'on peut changer sans tout réinstaller, et un projet gratuit qui doit le rester. Le code est public, sous licence GPL-3.0. Il y travaille le soir et le week-end, avec l'aide de contributeurs, et accepte les dons.
+**Sa vie, c'est sa vie.** Je ne choisis pas mes outils selon la vie privée de ceux qui les fabriquent. Celle de Tim Cook ou de Sam Altman ne regarde qu'eux, et c'est très bien comme ça.
 
-Je ne connais pas Carlos, et je ne sais pas ce qu'il pense de tout. Mais sur son site, il parle de son travail, de ses enfants et de la liberté de l'utilisateur. Pas de QI par région. C'est tout ce que je demande à quelqu'un dont j'installe les dotfiles.
+**Personne n'est parfait.** Elon Musk, je préfère ne pas en parler. Et je ne suis pas un modèle non plus : j'ai perdu mes cheveux en route et gagné quelques kilos.
+
+## Omarchy a ressuscité mon vieux MacBook
+
+Apple a arrêté les mises à jour du MacBook Pro fin 2016 après macOS Monterey ([Apple](https://support.apple.com/fr-fr/108052){target="_blank" rel="noopener"}). Le mien ne servait plus. Aujourd'hui, il tourne sous Omarchy, avec un noyau Linux 7.2.
+
+Omarchy n'a pas tout réglé tout seul. Voici les trois changements que j'ai dû faire.
+
+### Le Wi-Fi : des réglages sur la CanalBox
+
+Juste après l'installation, le Wi-Fi ne fonctionnait pas. Il a fallu changer des réglages sur ma CanalBox, ma box internet.
+
+### Les mises à jour : `omarchy update`, pas `pacman -Syu`
+
+Sous Arch, le réflexe, c'est `sudo pacman -Syu`. Omarchy m'a arrêté net avec un « Woah partner ». Il faut passer par sa propre commande :
+
+```bash
+omarchy update
+```
+
+Elle prend un snapshot, applique les migrations d'Omarchy (les changements de configuration), puis met à jour les paquets. Avec `pacman -Syu`, on risque de rater ces migrations.
+
+### Le son : un pilote à compiler
+
+Ces MacBook utilisent une puce audio Cirrus CS8409. Pour que les haut-parleurs marchent sous Linux, il faut un pilote maintenu par la communauté, [snd_hda_macbookpro](https://github.com/davidjo/snd_hda_macbookpro){target="_blank" rel="noopener"}. Il se compile sur la machine.
+
+1. Installer les outils de compilation et les headers du noyau d'Omarchy. Ne sautez pas cette étape : le script du pilote en a besoin.
+
+```bash
+sudo pacman -S --needed base-devel git wget patch dkms linux-omarchy-headers
+```
+
+2. Télécharger et installer le pilote :
+
+```bash
+git clone https://github.com/davidjo/snd_hda_macbookpro.git
+cd snd_hda_macbookpro
+sudo ./install.cirrus.driver.sh -i
+```
+
+3. Redémarrer, puis tester avec le volume bas :
+
+```bash
+speaker-test -c 2 -t wav -l 1
+```
+
+On doit entendre « Front Left », puis « Front Right ». Le pilote passe par DKMS : il se recompile tout seul à chaque mise à jour du noyau faite avec `omarchy update`.
 
 ## Conclusion
 
-À côté, je passe aussi pas mal de temps sur ChromeOS, sur l'ordinateur de ma nièce. Ce n'est pas du Linux de puriste, mais ça démarre en dix secondes, ça fait le travail, et personne n'y a glissé ses théories sur l'immigration.
+Apple avait lâché ce MacBook. Omarchy l'a remis en route.
 
-Pour la suite, je lorgne Linux Mint. Mon expérience de Zorin OS sur MacBook a été peu satisfaisante. Mint, lui, a la réputation d'être la distribution la plus tranquille qui soit : pas de culte de la personnalité, une équipe, une communauté, et un bureau qui ne cherche pas à vous impressionner. C'est exactement ce que je cherche.
-
-DHH peut garder ses loups et ses moutons. Moi, je garde Linux, et mon vieux MacBook. Et pour ceux qui se posent encore la question : être d'accord avec Korben, ce n'est pas le copier. C'est avoir lu les mêmes billets de DHH et en avoir tiré la même conclusion.
+Sur DHH, je n'ai pas changé d'avis : ses billets sur l'immigration restent ce qu'ils sont, et sur ce point, je suis toujours d'accord avec Korben. Sur Omarchy, j'ai changé d'avis. Ce n'est pas glorieux, mais je préfère vous le dire que de le cacher.
 
 ## Sources
 
@@ -105,4 +159,7 @@ DHH peut garder ses loups et ses moutons. Moi, je garde Linux, et mon vieux MacB
 - Le blog de DHH : [world.hey.com/dhh](https://world.hey.com/dhh){target="_blank" rel="noopener"}
 - It's FOSS, [« 1Password Just Pledged $300,000 to DHH's Omarchy, and its Own Employees Aren't Happy »](https://itsfoss.com/news/1password-omarchy-pledge/){target="_blank" rel="noopener"}, 3 septembre 2026
 - Ryoku, [ryoku.dev](https://ryoku.dev){target="_blank" rel="noopener"}
-- AppleInsider, [« Old Macs could run Tahoe soon, with this great hack »](https://appleinsider.com/articles/26/10/05/old-macs-could-run-tahoe-soon-with-this-great-hack), 5 octobre 2026
+- Manuel d'Omarchy : [« AI »](https://learn.omacom.io/2/the-omarchy-manual/107/ai){target="_blank" rel="noopener"} et [« Updates »](https://learn.omacom.io/2/the-omarchy-manual/68/updates){target="_blank" rel="noopener"}
+- Omarchy sur [GitHub](https://github.com/basecamp/omarchy){target="_blank" rel="noopener"} (licence MIT)
+- Apple, [Identifier votre modèle de MacBook Pro](https://support.apple.com/fr-fr/108052){target="_blank" rel="noopener"}
+- davidjo, [snd_hda_macbookpro](https://github.com/davidjo/snd_hda_macbookpro){target="_blank" rel="noopener"}, pilote audio pour les puces Cirrus CS8409

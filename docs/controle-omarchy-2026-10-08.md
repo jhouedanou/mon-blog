@@ -72,25 +72,27 @@ Ajout dans la conclusion : l'auteur essaie d'abord Ryoku. `updatedAt` passe au 1
 | Ryoku : distribution basée sur Arch, bureau sous Hyprland ou niri | Vérifié | [ryoku.dev](https://ryoku.dev), [LinuxLinks](https://www.linuxlinks.com/ryoku-arch-based-linux-distribution-custom-wayland-desktop/) |
 | « Is Ryoku an Omarchy alternative? » « Yes, and it is its own project, not a fork. » | Vérifié | [FAQ de ryoku.dev](https://ryoku.dev) |
 
-## Réécriture (11 octobre 2026, soir)
+## Réécriture : le retournement de veste (11 octobre 2026, soir)
 
-Passages retirés, en FR et en EN : Wu-Tang (Method Man, RZA, *Enter the Wu-Tang*,
-« Protect ya neck »), R. Kelly, Diddy et G. Craige Lewis. Leurs sources sont retirées
-(CBS ×2, Rolling Stone, Forbes, Rolling Out, Wikipédia, Primetimer). Les lignes R. Kelly,
-Diddy, G. Craige Lewis et Wu-Tang du factcheck ci-dessus ne s'appliquent plus.
+Le billet s'ouvre désormais sur le retournement de veste : l'auteur a installé Omarchy sur
+son MacBook Pro fin 2016. Le texte du 8 octobre suit, sous « Ce que j'écrivais le 8 octobre »
+(titres passés en H3), puis viennent les arguments, les réglages du MacBook et la conclusion.
 
-Liens internes : les liens vers les billets Bill Gates / C.R.E.A.M. et Koala Sampler
-partent avec les passages Wu-Tang. Il reste 1 lien interne, vers le billet Mac et Linux
-(« lâché après macOS Ventura »).
-
-Ajouts : une section « Ryoku a ressuscité mon vieux MacBook » (le MacBook Pro 2017 tourne
-sous Ryoku) et un aparté sur l'auteur de Ryoku.
+Retirés, en FR et en EN : Wu-Tang (Method Man, RZA, « Protect ya neck »), R. Kelly, Diddy,
+G. Craige Lewis, OpenCore Legacy Patcher, ChromeOS, Linux Mint, et leurs sources (CBS ×2,
+Rolling Stone, Forbes, Rolling Out, Wikipédia, Primetimer, AppleInsider). Les lignes
+correspondantes du factcheck ci-dessus ne s'appliquent plus. Les liens internes vers les
+billets Bill Gates / C.R.E.A.M. et Koala Sampler partent avec le Wu-Tang : le billet n'a
+plus de lien interne.
 
 | Affirmation | Statut | Source |
 |---|---|---|
-| L'auteur s'appelle Carlos ; 27 ans, guatémaltèque et américain, marié, deux enfants | Vérifié, dit par lui-même | [ryoku.dev](https://ryoku.dev) |
-| Armée américaine : infanterie puis spécialiste IT ; études en cybersécurité et réseaux | Vérifié, dit par lui-même | [ryoku.dev](https://ryoku.dev) |
-| « Most of this distro gets written after the kids are asleep. » | Citation exacte | [ryoku.dev](https://ryoku.dev) |
-| « Ryoku is opinionated, and my opinion is freedom. » | Citation exacte | [ryoku.dev](https://ryoku.dev) |
-| Gratuit et le restera, GPL-3.0, soirs et week-ends, contributeurs, dons | Vérifié | [ryoku.dev](https://ryoku.dev), [GitHub](https://github.com/ryoku-dev/ryoku) |
-| Ryoku a ressuscité le MacBook Pro 2017 de l'auteur | Expérience de l'auteur du blog | — |
+| Omarchy est livré avec Claude Code et OpenCode | Vérifié | [manuel d'Omarchy, « AI »](https://learn.omacom.io/2/the-omarchy-manual/107/ai) |
+| `cx` lance Claude Code en « danger mode » ; skill Omarchy expérimentale | Vérifié | idem |
+| Ne pas utiliser `pacman -Syu` ; `omarchy update` fait un snapshot puis les migrations | Vérifié | [manuel d'Omarchy, « Updates »](https://learn.omacom.io/2/the-omarchy-manual/68/updates) |
+| Omarchy est sous licence MIT | Vérifié | [GitHub](https://github.com/basecamp/omarchy) |
+| Dernier macOS du MacBook Pro 2016 : Monterey | Vérifié | [Apple](https://support.apple.com/fr-fr/108052) |
+| Pilote son pour puces Cirrus CS8409 | Vérifié | [snd_hda_macbookpro](https://github.com/davidjo/snd_hda_macbookpro) |
+| « Woah partner », noyau 7.2, commandes du pilote, Wi-Fi réglé sur la CanalBox | Expérience de l'auteur (journal de terminal fourni) | — |
+
+À compléter : le détail des réglages faits sur la CanalBox pour le Wi-Fi.
