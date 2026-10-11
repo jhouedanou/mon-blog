@@ -83,6 +83,20 @@ Because the good news is that everything Omarchy offers exists without DHH. Arch
 
 Free software, at its core, is a humanist project. The idea that knowledge belongs to everyone, that anyone, anywhere, can read code, change it and share it. A kid from Abobo has exactly the same rights over the Linux kernel as an engineer in Copenhagen. That's even why many of us here fell into it. A distro that puts forward a man who wants to sort people by origin is a contradiction in terms.
 
+## What you told me
+
+After the October 8 post, I got some reactions. Here are two (translated from French).
+
+The first, about Omarchy:
+
+> It manages to make Linux sexy where the other commercial distros failed. That said, I don't use it, because I'm not a fan of Arch or Hyprland.
+
+The second:
+
+> I'm on Omarchy and I love this distribution, I find it really perfect for me. But I read your post and now I'm torn: I love this distribution, but what he writes is hateful.
+
+That's where I am too.
+
 ## Why I'm flip-flopping
 
 Let's start with the obvious: I'm contradicting myself. I wrote that you can't separate the man from his dotfiles, and now I'm installing his dotfiles. I won't pretend it's consistent. Here's what tipped the scales.

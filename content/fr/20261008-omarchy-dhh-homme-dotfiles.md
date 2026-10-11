@@ -83,6 +83,20 @@ Parce que la bonne nouvelle, c'est que tout ce qu'offre Omarchy existe sans DHH.
 
 Le libre, à la base, c'est un projet humaniste. L'idée que le savoir appartient à tout le monde, que n'importe qui, n'importe où, peut lire le code, le modifier et le partager. Un gamin d'Abobo a exactement les mêmes droits sur le noyau Linux qu'un ingénieur de Copenhague. C'est même pour ça que beaucoup d'entre nous, ici, sommes tombés dedans. Une distro qui met en avant un homme qui veut trier les gens selon leur origine, c'est un contresens.
 
+## Ce que vous m'avez répondu
+
+Après le billet du 8 octobre, j'ai reçu des réactions. En voici deux.
+
+La première, sur Omarchy :
+
+> Il parvient à rendre Linux sexy là où les autres distros commerciales ont échoué. Après, je ne l'utilise pas, car je ne suis pas fan d'Arch et d'Hyprland.
+
+La deuxième :
+
+> Je suis sur Omarchy et j'adore cette distribution, je la trouve vraiment parfaite pour moi. Mais j'ai lu ton article et maintenant je suis partagé : j'adore cette distribution, mais ce qu'il écrit est détestable.
+
+C'est là où j'en suis aussi.
+
 ## Pourquoi je retourne ma veste
 
 Commençons par l'évidence : je me contredis. J'ai écrit qu'on ne sépare pas l'homme de ses dotfiles, et j'installe ses dotfiles. Je ne vais pas faire semblant que c'est cohérent. Voici ce qui a fait pencher la balance.

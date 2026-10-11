@@ -95,4 +95,10 @@ plus de lien interne.
 | Pilote son pour puces Cirrus CS8409 | Vérifié | [snd_hda_macbookpro](https://github.com/davidjo/snd_hda_macbookpro) |
 | « Woah partner », noyau 7.2, commandes du pilote, Wi-Fi réglé sur la CanalBox | Expérience de l'auteur (journal de terminal fourni) | — |
 
+Ajout d'une section « Ce que vous m'avez répondu » : deux réactions de lecteurs fournies par
+l'auteur, citées sans nom, orthographe corrigée (« partagé », « distros »).
+
+Billet Mac et Linux : le lien « sans passer par Omarchy » devient « j'ai fini par installer
+Omarchy sur mon vieux MacBook » (FR et EN).
+
 À compléter : le détail des réglages faits sur la CanalBox pour le Wi-Fi.
