@@ -1,7 +1,7 @@
 ---
 title: "You can't separate the man from his dotfiles"
 createdAt: "2026-10-08T13:00:00Z"
-updatedAt: "2026-10-11T12:00:00Z"
+updatedAt: "2026-10-11T21:00:00Z"
 image: "/images/articles/pingui.webp"
 description: "Korben will no longer promote Omarchy, DHH's Linux distro, over his posts on immigration. I agree with him: the « regions » DHH targets are where I live."
 searchIntent: "Why Korben and other free software advocates are boycotting Omarchy, DHH's Linux distribution, and what DHH has written about immigration in Europe."
@@ -12,9 +12,7 @@ I rarely pick up another blogger's post. It's not my thing, I'd rather write my 
 
 Yes, Korben. The French blogger I've been accused of copying for fifteen years.
 
-Quick aside, since we're here. When I was rapping, people said I was copying [Method Man](/en/20260907-bill-gates-ia-hypocrisie-meta-cash-rules-everything). When I was making beats, they said I was copying RZA. And since I started writing about tech, they say I'm copying Korben. So let's settle this once and for all: it's my writing style, it's my voice. I write short sentences, I slip Wu-Tang in everywhere, and I talk about tech from Abidjan. That's called having a personality.
-
-I do, however, plead guilty to imitating RZA. Wu-Tang Clan was my favourite rap group, and when you're starting out with [a sampler](/en/20260822-koala-sampler-gratuit-mac-boom-bap), you're not trying to be original, you're trying to make your snare sound like *Enter the Wu-Tang*. Your Honour, I don't dispute the facts.
+Quick aside, since we're here. Let's settle this once and for all: it's my writing style, it's my voice. I write short sentences and I talk about tech from Abidjan. That's called having a personality.
 
 But back to the topic.
 
@@ -57,17 +55,9 @@ Yes, I know: Godwin's law. It's actually the first one in this blog's history. I
 
 Someone will bring it up, so I'll answer right away: no.
 
-And to get back to music, this isn't a rule I'm making up for the occasion. I've applied it for years, and it has cost me songs I loved.
+You can't separate the man from his ideas or his actions. A song, a book, a piece of software: every time you consume them, you let a bit of the person into your home.
 
-There's a good reason I don't listen to R. Kelly anymore. Just look at the news. Found guilty in 2021 in New York of racketeering and sex trafficking, sentenced to 30 years in prison. Found guilty in 2022 in Chicago of child pornography and enticing minors, sentenced to 20 years, mostly running concurrently with the first sentence. The Supreme Court declined to hear his appeal in the Chicago case in 2024, the appeals court upheld the New York conviction in 2025, and this summer his lawyers asked Donald Trump to commute his sentence. Projected release date: 2045. And heaven only knows « The Storm Is Over Now » and « I Wish » were my favourite songs. But when they play, I don't hear the voice anymore. I hear the victims.
-
-I also avoid anything remotely connected to P. Diddy. I admired him a lot. *No Way Out* was a classic for me, back when I listened to rap. Then came the 2016 video, aired by CNN in 2024, showing him hitting Cassie and dragging her down a hotel hallway. Then the trial: in July 2025, he was acquitted of racketeering and sex trafficking, but found guilty of transporting people across state lines for prostitution. Fifty months in prison and a $500,000 fine. His appeal was argued in April, the decision is still pending, and just this week the US press reported that his release date had been pushed back.
-
-And I avoid G. Craige Lewis, who used to be my favourite pastor. Yes, the EX Ministries guy, the one who explained in *The Truth Behind Hip Hop* that rap was an open door to the devil. For a former rapper, you'll admit it was a bold choice. In recent months, he has faced allegations of extramarital affairs with women from his church, spread in part by a member of his own family. Nothing has been tried in court, he has responded in a video, and I'm not a judge. But a pastor only has two things to offer: his word and his example. When the example falters, the word no longer gets through.
-
-See the common thread? You can't separate the man from his ideas or his actions. An R. Kelly ballad, a Diddy album, a Lewis sermon: every time you consume them, you let a bit of the person into your home.
-
-And with Omarchy, it's even more literal than with an album. Omarchy sells itself as an *opinionated* distribution: DHH's choices, his shortcuts, his apps, his dotfiles, installed as-is on your machine. The work is literally the man's taste. His name is all over the site, he gives the talks, he is the product.
+And with Omarchy, it's even more literal than with a song or a book. Omarchy sells itself as an *opinionated* distribution: DHH's choices, his shortcuts, his apps, his dotfiles, installed as-is on your machine. The work is literally the man's taste. His name is all over the site, he gives the talks, he is the product.
 
 Omarchy has opinions, that's its selling point. The problem is the opinions.
 
@@ -83,37 +73,36 @@ Because the good news is that everything Omarchy offers exists without DHH. Arch
 
 Free software, at its core, is a humanist project. The idea that knowledge belongs to everyone, that anyone, anywhere, can read code, change it and share it. A kid from Abobo has exactly the same rights over the Linux kernel as an engineer in Copenhagen. That's even why many of us here fell into it. A distro that puts forward a man who wants to sort people by origin is a contradiction in terms.
 
-## Conclusion
+## Ryoku brought my old MacBook back to life
 
 So what do I actually use? Not Omarchy, you guessed it.
 
-In the first place, I'm trying [Ryoku](https://ryoku.dev){target="_blank" rel="noopener"}. It's an Arch Linux-based distribution with a keyboard-driven tiling desktop, running on Hyprland or niri. Same spirit as Omarchy, then. Its website says it plainly: Ryoku is an Omarchy alternative, its own project, not a fork. You don't need to install DHH's dotfiles to get a good-looking Arch desktop.
+In the first place, I just wanted to try [Ryoku](https://ryoku.dev){target="_blank" rel="noopener"}. It's an Arch Linux-based distribution with a keyboard-driven tiling desktop, running on Hyprland or niri. Same spirit as Omarchy, then. Its website says it plainly: Ryoku is an Omarchy alternative, its own project, not a fork.
 
-Right now, I also spend quite a bit of time on ChromeOS, on my niece's computer. It's not purist Linux, but it boots in ten seconds, it gets the job done, and nobody slipped their immigration theories into it.
+I installed it on my 2017 MacBook Pro with 16 GB of RAM, the one that was gathering dust. Apple [dropped it after macOS Ventura](/en/20261008-pas-besoin-detre-dev-ou-barbu-mac-linux). I was testing OpenCore Legacy Patcher 3, the open source tool that installs recent macOS versions on Macs Apple no longer supports. In the end, Ryoku is what brought it back to life. Proof that you can keep an old machine alive without asking anyone's permission. That's the free software spirit too.
+
+### Aside: the man behind Ryoku
+
+Before installing Ryoku, I did what I've been telling you to do since the start of this post: look at who's behind it.
+
+His name is Carlos, and he introduces himself [on the project's website](https://ryoku.dev){target="_blank" rel="noopener"}. He's 27, Guatemalan and American, married with two kids. He served in the US Army, first as an infantryman, then as an IT specialist, before going back to school for cybersecurity and networking. And he writes Ryoku in the evenings: « Most of this distro gets written after the kids are asleep. »
+
+He also says his distro has opinions. But he tells you which one: « Ryoku is opinionated, and my opinion is freedom. » No apps forced on you, a desktop you can change without reinstalling, and a project that is free and will stay free. The code is public, under the GPL-3.0 licence. He works on it on nights and weekends, with help from contributors, and accepts donations.
+
+I don't know Carlos, and I don't know what he thinks about everything. But on his site, he talks about his work, his kids and the user's freedom. No IQ by region. That's all I ask of someone whose dotfiles I install.
+
+## Conclusion
+
+Alongside it, I also spend quite a bit of time on ChromeOS, on my niece's computer. It's not purist Linux, but it boots in ten seconds, it gets the job done, and nobody slipped their immigration theories into it.
 
 Next, I'm eyeing Linux Mint. My experience with Zorin OS on a MacBook was underwhelming, and Mint has a reputation as the calmest distribution around: no personality cult, a team, a community, and a desktop that isn't trying to impress you. That's exactly what I'm after.
 
-And then there's this 2017 MacBook Pro with 16 GB of RAM gathering a bit of dust. Apple dropped it after macOS Ventura. But OpenCore Legacy Patcher 3, the open source tool that installs recent macOS versions on Macs Apple no longer supports, is reaching release candidate with macOS Tahoe, and it seems to work well. Proof that you can keep an old machine alive without asking anyone's permission. That's the free software spirit too.
-
-I said earlier that I plead guilty to imitating RZA. A quick reminder about RZA: Wu-Tang Clan was born from a Staten Island kid obsessed with Hong Kong kung fu movies. American soul samples, Chinese movie dialogue, a Shaolin mythology, nine MCs from Brooklyn and Staten Island. The greatest rap group in history is a mix of cultures from all four corners of the world.
-
-What makes great work is never purity. It's the mix.
-
-DHH can keep his wolves and his sheep. I'll keep Wu-Tang and Linux. And for those still wondering: agreeing with Korben isn't copying him. It's reading the same DHH posts and reaching the same conclusion.
-
-Protect ya neck.
+DHH can keep his wolves and his sheep. I'll keep Linux, and my old MacBook. And for those still wondering: agreeing with Korben isn't copying him. It's reading the same DHH posts and reaching the same conclusion.
 
 ## Sources
 
 - Korben, [« Omarchy, non merci »](https://korben.info/omarchy-dhh-boycott.html){target="_blank" rel="noopener"}, October 8, 2026 (in French)
 - DHH's blog: [world.hey.com/dhh](https://world.hey.com/dhh){target="_blank" rel="noopener"}
 - It's FOSS, [« 1Password Just Pledged $300,000 to DHH's Omarchy, and its Own Employees Aren't Happy »](https://itsfoss.com/news/1password-omarchy-pledge/){target="_blank" rel="noopener"}, September 3, 2026
-- CBS New York, [« R. Kelly's convictions and 30-year prison term upheld by federal appeals court »](https://www.cbsnews.com/newyork/news/federal-appeals-court-upholds-r-kelly-convictions/)
-- CBS Chicago, [« R. Kelly asks President Trump to commute his prison sentence »](https://www.cbsnews.com/chicago/news/r-kelly-president-trump-commute-prison-sentence-sex-abuse/)
-- Rolling Stone, [« Sean 'Diddy' Combs Files Appeal Requesting Release From Prison or Resentencing »](https://www.rollingstone.com/music/music-news/sean-diddy-combs-appeal-requesting-release-or-resentencing-1235490320/)
-- Forbes, [« Sean 'Diddy' Combs Heads To Federal Appeals Court To Argue For Release From Prison »](https://www.forbes.com/sites/conormurray/2026/04/09/sean-diddy-combs-heads-to-federal-appeals-court-to-argue-for-release-from-prison/), April 9, 2026
-- Rolling Out, [« Troubling week for Diddy: Delayed release, hefty fee order »](https://rollingout.com/2026/10/08/diddy-release-delayed-legal-fee-order/), October 8, 2026
 - Ryoku, [ryoku.dev](https://ryoku.dev){target="_blank" rel="noopener"}
 - AppleInsider, [« Old Macs could run Tahoe soon, with this great hack »](https://appleinsider.com/articles/26/10/05/old-macs-could-run-tahoe-soon-with-this-great-hack), October 5, 2026
-- Wikipedia, [G. Craige Lewis](https://en.wikipedia.org/wiki/G._Craige_Lewis)
-- Primetimer, [« Who is pastor G Craige Lewis? »](https://www.primetimer.com/features/who-is-pastor-g-craige-lewis-adamant-believers-minister-embroiled-in-scandal-as-reported-hard-disk-of-audio-and-video-evidence-allegations-surface-online)

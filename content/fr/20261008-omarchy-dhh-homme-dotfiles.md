@@ -1,7 +1,7 @@
 ---
 title: "On ne sépare pas l'homme de ses dotfiles"
 createdAt: "2026-10-08T13:00:00Z"
-updatedAt: "2026-10-11T12:00:00Z"
+updatedAt: "2026-10-11T21:00:00Z"
 image: "/images/articles/pingui.webp"
 description: "Korben ne fera plus la promo d'Omarchy, la distro de DHH, à cause de ses billets sur l'immigration. Je suis d'accord : les « régions » visées, c'est chez moi."
 searchIntent: "Pourquoi Korben et d'autres libristes boycottent Omarchy, la distribution Linux de DHH, et qu'est-ce que DHH a écrit sur l'immigration en Europe."
@@ -12,9 +12,7 @@ C'est rare que je reprenne le billet d'un autre blogueur. Ce n'est pas mon truc,
 
 Oui, Korben. Le blogueur qu'on m'accuse de copier depuis quinze ans.
 
-Petite parenthèse, puisqu'on y est. Quand je rappais, on disait que je copiais [Method Man](/fr/20260907-bill-gates-ia-hypocrisie-meta-cash-rules-everything). Quand je faisais du son, on disait que je copiais RZA. Et depuis que j'écris sur la tech, on dit que je copie Korben. Alors mettons fin à tout ça une bonne fois : c'est mon style d'écriture, c'est ma voix. Je fais des phrases courtes, je glisse du Wu-Tang partout, et je parle de la tech depuis Abidjan. Ça s'appelle avoir une personnalité.
-
-Par contre, je plaide coupable pour l'imitation de RZA. Le Wu-Tang Clan était mon groupe de rap préféré, et quand tu débutes avec [un sampler](/fr/20260822-koala-sampler-gratuit-mac-boom-bap), tu ne cherches pas à être original, tu cherches à faire sonner ta caisse claire comme dans *Enter the Wu-Tang*. Votre honneur, je ne conteste pas les faits.
+Petite parenthèse, puisqu'on y est. Mettons fin à ça une bonne fois : c'est mon style d'écriture, c'est ma voix. Je fais des phrases courtes et je parle de la tech depuis Abidjan. Ça s'appelle avoir une personnalité.
 
 Mais revenons au sujet.
 
@@ -57,17 +55,9 @@ Oui, je sais : point Godwin. C'est même le premier de l'histoire de ce blog. Je
 
 On va me le sortir, donc je réponds tout de suite : non.
 
-Et pour en revenir à la musique, ce n'est pas une règle que j'invente pour l'occasion. Je l'applique depuis des années, et elle m'a coûté des chansons que j'aimais.
+On ne peut pas dissocier l'homme de ses idées ou de ses actes. Une chanson, un livre, un logiciel : chaque fois qu'on les consomme, on fait entrer un peu de la personne chez soi.
 
-Il y a une bonne raison pour laquelle je n'écoute plus R. Kelly. Il suffit de voir son actualité. Reconnu coupable en 2021 à New York de racket et de trafic sexuel, condamné à 30 ans de prison. Reconnu coupable en 2022 à Chicago de pédopornographie et d'incitation de mineures, condamné à 20 ans, en grande partie confondus avec la première peine. La Cour suprême a refusé d'examiner son appel dans l'affaire de Chicago en 2024, la cour d'appel a confirmé la condamnation new-yorkaise en 2025, et cet été, ses avocats ont demandé à Donald Trump de commuer sa peine. Date de sortie prévue : 2045. Et le ciel seul sait que « The Storm Is Over Now » et « I Wish » étaient mes chansons préférées. Mais quand elles passent, je n'entends plus la voix. J'entends les victimes.
-
-J'évite aussi tout ce qui touche, même de loin, à P. Diddy. Je l'admirais beaucoup. *No Way Out*, c'était un classique pour moi, à l'époque où j'écoutais du rap. Puis il y a eu la vidéo de 2016, diffusée par CNN en 2024, où on le voit frapper Cassie et la traîner dans le couloir d'un hôtel. Puis le procès : en juillet 2025, il a été acquitté de racket et de trafic sexuel, mais reconnu coupable d'avoir fait voyager des personnes d'un État à l'autre à des fins de prostitution. Cinquante mois de prison et 500 000 dollars d'amende. Son appel a été plaidé en avril, la décision se fait attendre, et cette semaine encore, la presse américaine annonçait que sa date de libération était repoussée.
-
-Et j'évite G. Craige Lewis, qui fut mon pasteur préféré. Oui, l'homme d'EX Ministries, celui qui expliquait dans *The Truth Behind Hip Hop* que le rap était une porte ouverte au diable. Pour un ancien rappeur, avouez que le choix était audacieux. Ces derniers mois, il est visé par des accusations de liaisons extraconjugales avec des femmes de son église, diffusées notamment par un membre de sa propre famille. Rien n'a été jugé, il a répondu en vidéo, et je ne suis pas un tribunal. Mais un pasteur n'a que deux choses à offrir : sa parole et son exemple. Quand l'exemple vacille, la parole ne passe plus.
-
-Vous voyez le point commun ? On ne peut pas dissocier l'homme de ses idées ou de ses actes. Une ballade de R. Kelly, un album de Diddy, un sermon de Lewis : chaque fois qu'on les consomme, on fait entrer un peu de la personne chez soi.
-
-Et avec Omarchy, c'est encore plus littéral qu'avec un album. Omarchy se vend comme une distribution *opinionated*, une distro « qui a des opinions » : les choix de DHH, ses raccourcis, ses applications, ses dotfiles, installés tels quels sur votre machine. L'œuvre, c'est littéralement le goût de l'homme. Son nom est partout sur le site, c'est lui qui fait les conférences, c'est lui le produit.
+Et avec Omarchy, c'est encore plus littéral qu'avec une chanson ou un livre. Omarchy se vend comme une distribution *opinionated*, une distro « qui a des opinions » : les choix de DHH, ses raccourcis, ses applications, ses dotfiles, installés tels quels sur votre machine. L'œuvre, c'est littéralement le goût de l'homme. Son nom est partout sur le site, c'est lui qui fait les conférences, c'est lui le produit.
 
 Omarchy a des opinions, c'est son argument de vente. Le problème, ce sont les opinions.
 
@@ -83,37 +73,36 @@ Parce que la bonne nouvelle, c'est que tout ce qu'offre Omarchy existe sans DHH.
 
 Le libre, à la base, c'est un projet humaniste. L'idée que le savoir appartient à tout le monde, que n'importe qui, n'importe où, peut lire le code, le modifier et le partager. Un gamin d'Abobo a exactement les mêmes droits sur le noyau Linux qu'un ingénieur de Copenhague. C'est même pour ça que beaucoup d'entre nous, ici, sommes tombés dedans. Une distro qui met en avant un homme qui veut trier les gens selon leur origine, c'est un contresens.
 
-## Conclusion
+## Ryoku a ressuscité mon vieux MacBook
 
 Et moi, concrètement, j'utilise quoi ? Pas Omarchy, vous l'aurez compris.
 
-À la base, j'essaie [Ryoku](https://ryoku.dev){target="_blank" rel="noopener"}. C'est une distribution basée sur Arch Linux, avec un bureau en mosaïque piloté au clavier, sous Hyprland ou niri. Le même esprit qu'Omarchy, donc. Son site le dit franchement : Ryoku est une alternative à Omarchy, un projet à part, pas un fork. Pas besoin d'installer les dotfiles de DHH pour avoir un beau bureau sous Arch.
+À la base, je voulais juste essayer [Ryoku](https://ryoku.dev){target="_blank" rel="noopener"}. C'est une distribution basée sur Arch Linux, avec un bureau en mosaïque piloté au clavier, sous Hyprland ou niri. Le même esprit qu'Omarchy, donc. Son site le dit franchement : Ryoku est une alternative à Omarchy, un projet à part, pas un fork.
 
-En ce moment, je passe aussi pas mal de temps sur ChromeOS, sur l'ordinateur de ma nièce. Ce n'est pas du Linux de puriste, mais ça démarre en dix secondes, ça fait le travail, et personne n'y a glissé ses théories sur l'immigration.
+Je l'ai installé sur mon MacBook Pro 2017 avec 16 Go de RAM, celui qui prenait la poussière. Apple [l'a lâché après macOS Ventura](/fr/20261008-pas-besoin-detre-dev-ou-barbu-mac-linux). Je testais OpenCore Legacy Patcher 3, l'outil open source qui installe les versions récentes de macOS sur les Mac qu'Apple ne prend plus en charge. Finalement, c'est Ryoku qui l'a ressuscité. Comme quoi, on peut garder une vieille machine en vie sans demander la permission à personne. C'est aussi ça, l'esprit du libre.
+
+### Aparté : l'homme derrière Ryoku
+
+Avant d'installer Ryoku, j'ai fait ce que je vous conseille depuis le début de ce billet : regarder qui est derrière.
+
+Il s'appelle Carlos, et il se présente lui-même [sur le site du projet](https://ryoku.dev){target="_blank" rel="noopener"}. Il a 27 ans, il est guatémaltèque et américain, marié et père de deux enfants. Il a servi dans l'armée américaine, d'abord dans l'infanterie, puis comme spécialiste informatique, avant de reprendre des études en cybersécurité et en réseaux. Et il écrit Ryoku le soir : « Most of this distro gets written after the kids are asleep. » La plus grande partie de cette distro s'écrit une fois les enfants couchés.
+
+Lui aussi dit que sa distro a des opinions. Mais il précise laquelle : « Ryoku is opinionated, and my opinion is freedom. » Son opinion, c'est la liberté : pas d'applications imposées, un bureau qu'on peut changer sans tout réinstaller, et un projet gratuit qui doit le rester. Le code est public, sous licence GPL-3.0. Il y travaille le soir et le week-end, avec l'aide de contributeurs, et accepte les dons.
+
+Je ne connais pas Carlos, et je ne sais pas ce qu'il pense de tout. Mais sur son site, il parle de son travail, de ses enfants et de la liberté de l'utilisateur. Pas de QI par région. C'est tout ce que je demande à quelqu'un dont j'installe les dotfiles.
+
+## Conclusion
+
+À côté, je passe aussi pas mal de temps sur ChromeOS, sur l'ordinateur de ma nièce. Ce n'est pas du Linux de puriste, mais ça démarre en dix secondes, ça fait le travail, et personne n'y a glissé ses théories sur l'immigration.
 
 Pour la suite, je lorgne Linux Mint. Mon expérience de Zorin OS sur MacBook a été peu satisfaisante. Mint, lui, a la réputation d'être la distribution la plus tranquille qui soit : pas de culte de la personnalité, une équipe, une communauté, et un bureau qui ne cherche pas à vous impressionner. C'est exactement ce que je cherche.
 
-Et puis il y a ce MacBook Pro 2017 avec 16 Go de RAM qui prend un peu la poussière. Apple l'a lâché après macOS Ventura. Mais OpenCore Legacy Patcher 3, l'outil open source qui installe les versions récentes de macOS sur les Mac qu'Apple ne prend plus en charge, arrive en version candidate avec macOS Tahoe, et il semble bien marcher. Comme quoi, on peut garder une vieille machine en vie sans demander la permission à personne. C'est aussi ça, l'esprit du libre.
-
-Je disais plus haut que je plaide coupable d'avoir imité RZA. Petit rappel sur RZA : le Wu-Tang Clan est né d'un gamin de Staten Island obsédé par les films de kung-fu de Hong Kong. Des samples de soul américaine, des dialogues de films chinois, une mythologie Shaolin, neuf MC de Brooklyn et de Staten Island. Le plus grand groupe de rap de l'histoire est un mélange de cultures venues des quatre coins du monde.
-
-Ce qui fait une grande œuvre, ce n'est jamais la pureté. C'est le mélange.
-
-DHH peut garder ses loups et ses moutons. Moi, je garde le Wu-Tang et Linux. Et pour ceux qui se posent encore la question : être d'accord avec Korben, ce n'est pas le copier. C'est avoir lu les mêmes billets de DHH et en avoir tiré la même conclusion.
-
-Protect ya neck.
+DHH peut garder ses loups et ses moutons. Moi, je garde Linux, et mon vieux MacBook. Et pour ceux qui se posent encore la question : être d'accord avec Korben, ce n'est pas le copier. C'est avoir lu les mêmes billets de DHH et en avoir tiré la même conclusion.
 
 ## Sources
 
 - Korben, [« Omarchy, non merci »](https://korben.info/omarchy-dhh-boycott.html){target="_blank" rel="noopener"}, 8 octobre 2026
 - Le blog de DHH : [world.hey.com/dhh](https://world.hey.com/dhh){target="_blank" rel="noopener"}
 - It's FOSS, [« 1Password Just Pledged $300,000 to DHH's Omarchy, and its Own Employees Aren't Happy »](https://itsfoss.com/news/1password-omarchy-pledge/){target="_blank" rel="noopener"}, 3 septembre 2026
-- CBS New York, [« R. Kelly's convictions and 30-year prison term upheld by federal appeals court »](https://www.cbsnews.com/newyork/news/federal-appeals-court-upholds-r-kelly-convictions/)
-- CBS Chicago, [« R. Kelly asks President Trump to commute his prison sentence »](https://www.cbsnews.com/chicago/news/r-kelly-president-trump-commute-prison-sentence-sex-abuse/)
-- Rolling Stone, [« Sean 'Diddy' Combs Files Appeal Requesting Release From Prison or Resentencing »](https://www.rollingstone.com/music/music-news/sean-diddy-combs-appeal-requesting-release-or-resentencing-1235490320/)
-- Forbes, [« Sean 'Diddy' Combs Heads To Federal Appeals Court To Argue For Release From Prison »](https://www.forbes.com/sites/conormurray/2026/04/09/sean-diddy-combs-heads-to-federal-appeals-court-to-argue-for-release-from-prison/), 9 avril 2026
-- Rolling Out, [« Troubling week for Diddy: Delayed release, hefty fee order »](https://rollingout.com/2026/10/08/diddy-release-delayed-legal-fee-order/), 8 octobre 2026
 - Ryoku, [ryoku.dev](https://ryoku.dev){target="_blank" rel="noopener"}
 - AppleInsider, [« Old Macs could run Tahoe soon, with this great hack »](https://appleinsider.com/articles/26/10/05/old-macs-could-run-tahoe-soon-with-this-great-hack), 5 octobre 2026
-- Wikipédia, [G. Craige Lewis](https://en.wikipedia.org/wiki/G._Craige_Lewis)
-- Primetimer, [« Who is pastor G Craige Lewis? »](https://www.primetimer.com/features/who-is-pastor-g-craige-lewis-adamant-believers-minister-embroiled-in-scandal-as-reported-hard-disk-of-audio-and-video-evidence-allegations-surface-online)
