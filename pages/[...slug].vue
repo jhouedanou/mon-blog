@@ -232,8 +232,9 @@ useHead(() => ({
     })),
     {
       rel: "alternate",
+      // Anglais par défaut pour les visiteurs dont la langue n'est pas le français.
       hreflang: "x-default",
-      href: canonicalUrl(translatedArticlePath(route.path, "fr") || route.path),
+      href: canonicalUrl(translatedArticlePath(route.path, "en") || route.path),
     },
   ],
 }));
