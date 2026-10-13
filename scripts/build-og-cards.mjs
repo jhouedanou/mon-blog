@@ -22,9 +22,9 @@ const WIDTH = 1200
 const HEIGHT = 630
 const JPEG = { quality: 82, mozjpeg: true, chromaSubsampling: '4:2:0' }
 
-const BG = '#f6f5f0'
-const ACCENT = '#b0541f'
-const INK = '#1f1d1a'
+const BG = '#f1f4f1'
+const ACCENT = '#0a7040'
+const INK = '#121714'
 
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
 
@@ -35,7 +35,7 @@ function defaultCardSvg() {
   <rect x="0" y="0" width="18" height="${HEIGHT}" fill="${ACCENT}"/>
   <text x="96" y="250" font-family="Georgia, 'Times New Roman', serif" font-size="150" font-weight="600" fill="${INK}">Journal<tspan fill="${ACCENT}">.</tspan></text>
   <text x="100" y="340" font-family="Helvetica, Arial, sans-serif" font-size="44" font-weight="600" fill="${INK}">Jean-Luc Houédanou</text>
-  <text x="100" y="400" font-family="Helvetica, Arial, sans-serif" font-size="30" fill="#5a5651">Tech, culture numérique et réflexions depuis Abidjan</text>
+  <text x="100" y="400" font-family="Helvetica, Arial, sans-serif" font-size="30" fill="#3f4a43">Tech, culture numérique et réflexions depuis Abidjan</text>
   <text x="100" y="560" font-family="Helvetica, Arial, sans-serif" font-size="28" font-weight="600" fill="${ACCENT}">houedanou.com</text>
 </svg>`
 }
