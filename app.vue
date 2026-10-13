@@ -94,12 +94,17 @@ const isDark = ref(false)
 const mobileMenuOpen = ref(false)
 const scrolled = ref(false)
 
-// Le site s'affiche en clair par défaut, quel que soit le réglage système. Le
-// bouton du header ne fait qu'un écart temporaire vers le sombre pour la visite
-// en cours (sessionStorage) : au prochain onglet ou à la prochaine visite, on
-// repart du clair. Un ancien choix stocké dans localStorage par une version
-// précédente est ignoré et nettoyé.
+// Le site suit le réglage clair / sombre du système, et le suit en direct s'il
+// change pendant la visite. Le bouton du header ne fait qu'un écart temporaire
+// pour la visite en cours (sessionStorage) : au prochain onglet ou à la
+// prochaine visite, on repart du réglage système. Un ancien choix stocké dans
+// localStorage par une version précédente est ignoré et nettoyé.
 const THEME_OVERRIDE_KEY = 'theme-override'
+let systemDarkQuery = null
+
+function systemPrefersDark() {
+  return !!systemDarkQuery?.matches
+}
 
 function applyTheme(dark) {
   isDark.value = dark
@@ -108,20 +113,31 @@ function applyTheme(dark) {
 
 function readOverride() {
   try {
-    return sessionStorage.getItem(THEME_OVERRIDE_KEY)
+    const value = sessionStorage.getItem(THEME_OVERRIDE_KEY)
+    return value === 'dark' || value === 'light' ? value : null
   } catch {
     return null
   }
+}
+
+function currentThemeIsDark() {
+  const override = readOverride()
+  return override ? override === 'dark' : systemPrefersDark()
 }
 
 function toggleDarkMode() {
   const next = !isDark.value
   applyTheme(next)
   try {
-    // Revenir au clair, c'est revenir au défaut : on efface simplement l'écart.
-    if (next) sessionStorage.setItem(THEME_OVERRIDE_KEY, 'dark')
-    else sessionStorage.removeItem(THEME_OVERRIDE_KEY)
+    // Revenir au réglage système, c'est revenir au défaut : on efface l'écart.
+    if (next === systemPrefersDark()) sessionStorage.removeItem(THEME_OVERRIDE_KEY)
+    else sessionStorage.setItem(THEME_OVERRIDE_KEY, next ? 'dark' : 'light')
   } catch {}
+}
+
+function onSystemThemeChange() {
+  // Un écart choisi pendant la visite reste prioritaire.
+  if (!readOverride()) applyTheme(systemPrefersDark())
 }
 
 function onScroll() {
@@ -130,12 +146,15 @@ function onScroll() {
 
 onMounted(() => {
   try { localStorage.removeItem('theme') } catch {}
-  applyTheme(readOverride() === 'dark')
+  systemDarkQuery = window.matchMedia('(prefers-color-scheme: dark)')
+  systemDarkQuery.addEventListener('change', onSystemThemeChange)
+  applyTheme(currentThemeIsDark())
   window.addEventListener('scroll', onScroll, { passive: true })
   onScroll()
 })
 
 onUnmounted(() => {
+  systemDarkQuery?.removeEventListener('change', onSystemThemeChange)
   window.removeEventListener('scroll', onScroll)
 })
 
@@ -248,22 +267,25 @@ useHead(() => ({
       innerHTML: safeJsonLd(siteGraph),
     },
     {
-      // Exécuté avant le premier rendu : pose le thème (clair, ou l'écart de
-      // session) sur <html> pour éviter le flash clair au chargement en sombre.
+      // Exécuté avant le premier rendu : pose le thème (réglage système, ou
+      // l'écart de session) sur <html> pour éviter un flash de la mauvaise couleur.
       id: 'theme-init',
       tagPosition: 'head',
-      innerHTML: `(function(){try{var d=sessionStorage.getItem('${THEME_OVERRIDE_KEY}')==='dark';document.documentElement.setAttribute('data-theme',d?'dark':'light')}catch(e){}})();`,
+      innerHTML: `(function(){try{var o=null;try{o=sessionStorage.getItem('${THEME_OVERRIDE_KEY}')}catch(e){}var d=o==='dark'||(o!=='light'&&window.matchMedia('(prefers-color-scheme: dark)').matches);document.documentElement.setAttribute('data-theme',d?'dark':'light')}catch(e){}})();`,
     },
   ],
   // Pas de `data-theme` ici : unhead ré-appliquerait « light » à chaque mise à
   // jour réactive et écraserait le thème posé par le script ci-dessus. Le CSS
-  // traite `html:not([data-theme])` comme clair, c'est le repli côté serveur.
+  // traite `html:not([data-theme])` selon `prefers-color-scheme`, c'est le
+  // repli côté serveur et sans JavaScript.
   htmlAttrs: {
     // Requis pour que `hyphens: auto` charge le bon dictionnaire de césure.
     lang: locale.value,
   },
   meta: [
-    { name: 'theme-color', content: '#e9e5da' },
+    // Couleur de la barre du navigateur, alignée sur --bg-primary de chaque thème.
+    { key: 'theme-color-light', name: 'theme-color', media: '(prefers-color-scheme: light)', content: '#e9e5da' },
+    { key: 'theme-color-dark', name: 'theme-color', media: '(prefers-color-scheme: dark)', content: '#171512' },
   ],
   link: [
     {

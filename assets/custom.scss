@@ -104,7 +104,9 @@ html[data-theme="light"] {
   color-scheme: light;
 }
 
-html[data-theme="dark"] {
+/* Jetons du thème sombre, partagés entre le choix explicite (data-theme, posé
+   par app.vue) et le repli sans JavaScript, qui suit le réglage système. */
+@mixin dark-theme-tokens {
   --bg-primary: #171512;
   --bg-secondary: #1d1a16;
   --bg-card: #221f1a;
@@ -137,6 +139,16 @@ html[data-theme="dark"] {
   --overlay-bg: rgba(23, 21, 18, 0.92);
 
   color-scheme: dark;
+}
+
+html[data-theme="dark"] {
+  @include dark-theme-tokens;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme]) {
+    @include dark-theme-tokens;
+  }
 }
 
 /* ==========================================

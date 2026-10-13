@@ -151,7 +151,7 @@ i18n: {
       meta: [
         { name: 'msapplication-TileColor', content: '#ffffff' },
         { name: 'msapplication-TileImage', content: '/ms-icon-144x144.png' },
-        { name: 'theme-color', content: '#f6f5f0' }
+        // theme-color (clair et sombre) est posé dans app.vue.
       ]
     }
   },
