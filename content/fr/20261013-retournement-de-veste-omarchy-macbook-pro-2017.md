@@ -1,25 +1,25 @@
 ---
-title: "Retournement de veste : Omarchy a ressuscité mon MacBook Pro 2017"
+title: "Omarchy sur mon MacBook Pro 2017 : le bilan après trois jours"
 createdAt: "2026-10-13T18:00:00Z"
-image: "/images/articles/pingui.webp"
-description: "J'avais juré de ne pas toucher à Omarchy, le Linux de DHH. Samedi, je l'installais sur mon MacBook Pro 2017. Ce qui marche, ce qui coince, et ma conscience."
+image: "/images/articles/omarchy-matrix-boot.webp"
+description: "Trois jours d'Omarchy, le Linux de DHH, sur mon MacBook Pro 2017 : ce qui marche, ce qui coince (Bluetooth, écrans externes), et ma conscience."
 searchIntent: "Comment se passe Omarchy (Arch Linux + Hyprland) au quotidien sur un MacBook Pro Intel de 2017 : performances, son, Bluetooth, écrans externes, et que penser de son créateur DHH ?"
 tags: ["linux", "omarchy", "hyprland", "apple", "open-source", "opinion"]
 ---
 
 Je vais commencer par le plus difficile : j'ai retourné ma veste.
 
-Jeudi 8 octobre, j'ai publié un billet pour dire que je ne toucherais pas à Omarchy, la distribution Linux de DHH, à cause de ce qu'il écrit sur l'immigration. Samedi 10, j'ai retiré le billet. Et le même jour, j'ai installé Omarchy sur mon vieux MacBook Pro.
+Jeudi 8 octobre, j'ai publié un billet pour dire que je ne toucherais pas à Omarchy, la distribution Linux de DHH, à cause de ce qu'il écrit sur l'immigration. Samedi 10, je l'installais sur mon vieux MacBook Pro.
 
 Il faut parfois savoir reconnaître ses torts. Et reconnaître quand on a cédé à la peur. La peur de cautionner, en l'occurrence. J'avais mélangé deux questions : ce que vaut l'outil, et ce que je pense de son auteur. Et j'avais tranché la première sans jamais l'avoir essayé.
 
-Alors je l'ai essayé. Voilà ce que donnent trois jours d'Omarchy sur un MacBook Pro de 2017.
+J'ai déjà raconté [pourquoi j'ai changé d'avis](/fr/20261008-omarchy-dhh-homme-dotfiles), avec vos réactions et les réglages qu'il m'a fallu pour faire revivre le MacBook. Ici, place au bilan : voilà ce que donnent trois jours d'Omarchy sur un MacBook Pro de 2017.
 
 ## Omarchy, c'est quoi ?
 
 Omarchy est une distribution basée sur Arch Linux, avec Hyprland comme bureau. Pas de fenêtres qu'on traîne à la souris : elles se rangent toutes seules en mosaïque, et on les pilote au clavier. Tout est installé et réglé d'avance, des raccourcis aux thèmes. La version actuelle est la 4.0.4, sortie le 15 septembre ([GitHub](https://github.com/omacom/omarchy/releases){target="_blank" rel="noopener"}).
 
-Bonne surprise pour les vieux Mac : le manuel annonce une prise en charge intégrée des Mac Intel. L'installeur ajoute tout seul les pilotes Wi-Fi Broadcom et le pilote du clavier des MacBook Pro 2016 et 2017 ([manuel d'Omarchy](https://github.com/omacom/omarchy/blob/v4.0.4/manual/44-mac-support.md){target="_blank" rel="noopener"}). Quand on se souvient de mon [Wi-Fi aux abonnés absents sous Zorin OS](/fr/20261008-pas-besoin-detre-dev-ou-barbu-mac-linux), ça fait plaisir à lire.
+Bonne surprise pour les vieux Mac : le manuel annonce une prise en charge intégrée des Mac Intel. L'installeur ajoute tout seul les pilotes Wi-Fi Broadcom et le pilote du clavier des MacBook Pro 2016 et 2017 ([manuel d'Omarchy](https://github.com/omacom/omarchy/blob/v4.0.4/manual/44-mac-support.md){target="_blank" rel="noopener"}). Quand on se souvient de mon [Wi-Fi aux abonnés absents sous Zorin OS](/fr/20261008-pas-besoin-detre-dev-ou-barbu-mac-linux), ça fait plaisir à lire. Chez moi, il a quand même fallu toucher aux réglages de ma CanalBox, comme je l'ai [raconté ici](/fr/20261008-omarchy-dhh-homme-dotfiles).
 
 Attention quand même : Omarchy efface tout le disque. Ce n'est pas un système qu'on installe à côté de macOS sur un Mac.
 
@@ -49,7 +49,7 @@ Tout se configure. Absolument tout. Les thèmes changent d'un coup le terminal, 
 
 Premier pépin : pas de son. Les haut-parleurs restaient muets, alors que le système affichait une sortie audio tout à fait normale.
 
-C'est un problème connu des MacBook Pro 2016 et 2017. Leur puce audio Cirrus Logic n'est pas gérée correctement par le pilote livré avec Linux ([Arch Wiki](https://wiki.archlinux.org/title/Laptop/Apple){target="_blank" rel="noopener"}). La solution, c'est un pilote communautaire, [snd_hda_macbookpro](https://github.com/davidjo/snd_hda_macbookpro){target="_blank" rel="noopener"}. Je l'ai installé, et le son est revenu. Sur Arch, il existe aussi en paquet AUR :
+C'est un problème connu des MacBook Pro 2016 et 2017. Leur puce audio Cirrus Logic n'est pas gérée correctement par le pilote livré avec Linux ([Arch Wiki](https://wiki.archlinux.org/title/Laptop/Apple){target="_blank" rel="noopener"}). La solution, c'est un pilote communautaire, [snd_hda_macbookpro](https://github.com/davidjo/snd_hda_macbookpro){target="_blank" rel="noopener"}. Je l'ai installé, et le son est revenu. J'ai détaillé l'installation pas à pas dans [le billet précédent](/fr/20261008-omarchy-dhh-homme-dotfiles). Sur Arch, il existe aussi en paquet AUR :
 
 ```bash
 yay -S snd-hda-macbookpro-dkms-git
@@ -128,6 +128,8 @@ Si elle imprime, je vous le dirai. Si elle ne veut rien savoir, je vous le dirai
 - BlueZ, [fichier de configuration main.conf](https://github.com/bluez/bluez/blob/master/src/main.conf){target="_blank" rel="noopener"}
 - GitHub, [Hyprmon](https://github.com/erans/hyprmon){target="_blank" rel="noopener"}
 - Lerd, [lerd.sh](https://lerd.sh){target="_blank" rel="noopener"}
+
+_Couverture : l'écran de démarrage [omarchy-matrix-plymouth](https://github.com/jhouedanou/omarchy-matrix-plymouth){target="_blank" rel="noopener"}, recomposé à partir des images du dépôt (licence MIT)._
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com) — veste réversible*

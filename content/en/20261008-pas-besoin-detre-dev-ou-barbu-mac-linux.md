@@ -129,7 +129,7 @@ And if you're still hesitating: these days, I spend quite a bit of time on Chrom
 
 _Cover photo: [Mikhail Nilov](https://www.pexels.com/@mikhail-nilov/){target="_blank" rel="noopener"}, on Pexels._
 
-*October 2026: since then, my old 2017 MacBook Pro has been running Linux, and it's my main computer again. The whole story is in [how I turned my coat on Omarchy](/en/20261013-retournement-de-veste-omarchy-macbook-pro-2017).*
+*October 2026: since then, my old 2017 MacBook Pro has been running Linux, and it's my main computer again. Three days in, here's the verdict: [Omarchy on my 2017 MacBook Pro](/en/20261013-retournement-de-veste-omarchy-macbook-pro-2017).*
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com) — beard optional*

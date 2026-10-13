@@ -129,7 +129,7 @@ Et si vous hésitez encore : en ce moment, je passe pas mal de temps sur ChromeO
 
 _Photo de couverture : [Mikhail Nilov](https://www.pexels.com/@mikhail-nilov/){target="_blank" rel="noopener"}, sur Pexels._
 
-*Octobre 2026 : depuis, mon vieux MacBook Pro 2017 tourne sous Linux, et c'est redevenu mon ordinateur principal. Je raconte tout dans [mon retournement de veste sur Omarchy](/fr/20261013-retournement-de-veste-omarchy-macbook-pro-2017).*
+*Octobre 2026 : depuis, mon vieux MacBook Pro 2017 tourne sous Linux, et c'est redevenu mon ordinateur principal. Le bilan après trois jours : [Omarchy sur mon MacBook Pro 2017](/fr/20261013-retournement-de-veste-omarchy-macbook-pro-2017).*
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com) — la barbe est facultative*
