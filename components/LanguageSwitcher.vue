@@ -10,6 +10,7 @@
             :aria-label="item.label"
             :title="item.label"
             :hreflang="item.code"
+            @click="rememberLanguage(item.code)"
         >{{ item.code.toUpperCase() }}</NuxtLink>
     </nav>
 </template>
@@ -19,7 +20,7 @@ import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { useSwitchLocalePath } from '#i18n'
-import { translatedArticlePath } from '~/utils/i18n.js'
+import { translatedArticlePath, rememberLanguage } from '~/utils/i18n.js'
 
 const route = useRoute()
 const { locale, locales, t } = useI18n()

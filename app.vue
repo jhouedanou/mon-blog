@@ -160,6 +160,7 @@ onUnmounted(() => {
 
 import { SITE_URL, SITE_NAME, PERSON_ID, WEBSITE_ID, BLOG_ID } from '~/utils/site.js'
 import { safeJsonLd } from '~/composables/useSeo.js'
+import { LANGUAGE_REDIRECT_SCRIPT } from '~/utils/i18n.js'
 
 const HOME_TITLE = 'Le Blog de Jean-Luc Houédanou — Tech, culture numérique et réflexions depuis Abidjan'
 
@@ -265,6 +266,13 @@ useHead(() => ({
       id: 'ld-site',
       type: 'application/ld+json',
       innerHTML: safeJsonLd(siteGraph),
+    },
+    {
+      // Exécuté avant le premier rendu : envoie le visiteur vers sa langue
+      // (voir utils/i18n.js).
+      id: 'lang-init',
+      tagPosition: 'head',
+      innerHTML: LANGUAGE_REDIRECT_SCRIPT,
     },
     {
       // Exécuté avant le premier rendu : pose le thème (réglage système, ou
