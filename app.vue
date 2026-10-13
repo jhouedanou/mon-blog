@@ -1,6 +1,6 @@
 <template>
   <NuxtLayout>
-    <NuxtLoadingIndicator color="#b0541f" :height="2" />
+    <NuxtLoadingIndicator color="var(--accent)" :height="2" />
 
     <a href="#main-content" class="skip-link">{{ $t('skipToContent') }}</a>
 
@@ -292,8 +292,8 @@ useHead(() => ({
   },
   meta: [
     // Couleur de la barre du navigateur, alignée sur --bg-primary de chaque thème.
-    { key: 'theme-color-light', name: 'theme-color', media: '(prefers-color-scheme: light)', content: '#e9e5da' },
-    { key: 'theme-color-dark', name: 'theme-color', media: '(prefers-color-scheme: dark)', content: '#171512' },
+    { key: 'theme-color-light', name: 'theme-color', media: '(prefers-color-scheme: light)', content: '#f1f4f1' },
+    { key: 'theme-color-dark', name: 'theme-color', media: '(prefers-color-scheme: dark)', content: '#0b0f0c' },
   ],
   link: [
     {
