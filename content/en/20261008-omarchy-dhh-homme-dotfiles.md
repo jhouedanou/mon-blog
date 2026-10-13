@@ -1,16 +1,16 @@
 ---
 title: "You can't separate the man from his dotfiles"
 createdAt: "2026-10-08T13:00:00Z"
-updatedAt: "2026-10-11T22:00:00Z"
+updatedAt: "2026-10-13T21:00:00Z"
 image: "/images/articles/pingui.webp"
 description: "I followed Korben in his boycott of Omarchy, DHH's Linux distro. Three days later, I'm flip-flopping: Omarchy brought my old MacBook back to life."
-searchIntent: "Why boycott Omarchy, DHH's Linux distribution, and why install it anyway on an old 2016 MacBook Pro?"
+searchIntent: "Why boycott Omarchy, DHH's Linux distribution, and why install it anyway on an old 2017 MacBook Pro?"
 tags: ["opinion", "linux", "open-source", "society"]
 ---
 
 I'm about to flip-flop.
 
-On October 8, I published a post here saying I was following Korben in his boycott of Omarchy, DHH's Linux distribution. I promised not to talk about it here and not to recommend it. Three days later, Omarchy runs on my late 2016 MacBook Pro. And here I am, talking about it.
+On October 8, I published a post here saying I was following Korben in his boycott of Omarchy, DHH's Linux distribution. I promised not to talk about it here and not to recommend it. Three days later, Omarchy runs on my 2017 MacBook Pro. And here I am, talking about it.
 
 The reason fits in one sentence: an OS with Claude built in, that spares me too much tinkering and that looks good? I'm in.
 
@@ -117,7 +117,7 @@ In the first place, I wanted to try [Ryoku](https://ryoku.dev){target="_blank" r
 
 ## Omarchy brought my old MacBook back to life
 
-Apple stopped updating the late 2016 MacBook Pro after macOS Monterey ([Apple](https://support.apple.com/en-us/108052){target="_blank" rel="noopener"}). Mine was no longer in use. Today, it runs Omarchy, with Linux kernel 7.2.
+Apple stopped updating the 2017 MacBook Pro after macOS Ventura: Sonoma no longer supports it ([Apple](https://support.apple.com/en-us/105113){target="_blank" rel="noopener"}). Mine was no longer in use. Today, it runs Omarchy, with Linux kernel 7.2.
 
 Omarchy didn't fix everything on its own. Here are the three changes I had to make.
 
@@ -167,6 +167,8 @@ Apple had dropped this MacBook. Omarchy got it running again.
 
 On DHH, I haven't changed my mind: his posts on immigration are what they are, and on that point I still agree with Korben. On Omarchy, I have changed my mind. It's not glorious, but I'd rather tell you than hide it.
 
+Three days later, I took stock: what works, what still doesn't (Bluetooth, external displays), and the printer waiting for me. It's all in [Omarchy on My 2017 MacBook Pro: Three Days In](/en/20261013-retournement-de-veste-omarchy-macbook-pro-2017).
+
 ## Sources
 
 - Korben, [« Omarchy, non merci »](https://korben.info/omarchy-dhh-boycott.html){target="_blank" rel="noopener"}, October 8, 2026 (in French)
@@ -175,5 +177,5 @@ On DHH, I haven't changed my mind: his posts on immigration are what they are, a
 - Ryoku, [ryoku.dev](https://ryoku.dev){target="_blank" rel="noopener"}
 - Omarchy manual: [« AI »](https://learn.omacom.io/2/the-omarchy-manual/107/ai){target="_blank" rel="noopener"} and [« Updates »](https://learn.omacom.io/2/the-omarchy-manual/68/updates){target="_blank" rel="noopener"}
 - Omarchy on [GitHub](https://github.com/basecamp/omarchy){target="_blank" rel="noopener"} (MIT licence)
-- Apple, [Identify your MacBook Pro model](https://support.apple.com/en-us/108052){target="_blank" rel="noopener"}
+- Apple, [macOS Sonoma is compatible with these computers](https://support.apple.com/en-us/105113){target="_blank" rel="noopener"}
 - davidjo, [snd_hda_macbookpro](https://github.com/davidjo/snd_hda_macbookpro){target="_blank" rel="noopener"}, audio driver for Cirrus CS8409 chips

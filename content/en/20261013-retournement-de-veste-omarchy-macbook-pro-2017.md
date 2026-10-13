@@ -1,25 +1,25 @@
 ---
-title: "Turncoat: Omarchy Brought My 2017 MacBook Pro Back to Life"
+title: "Omarchy on My 2017 MacBook Pro: Three Days In"
 createdAt: "2026-10-13T18:00:00Z"
-image: "/images/articles/pingui.webp"
-description: "I swore I'd never touch Omarchy, DHH's Linux distro. On Saturday, I put it on my 2017 MacBook Pro. What works, what doesn't, and where my conscience stands."
+image: "/images/articles/omarchy-matrix-boot.webp"
+description: "Three days of Omarchy, DHH's Linux distro, on my 2017 MacBook Pro: what works, what doesn't (Bluetooth, external displays), and my conscience."
 searchIntent: "What is daily use of Omarchy (Arch Linux + Hyprland) like on a 2017 Intel MacBook Pro: performance, audio, Bluetooth, external displays, and what to make of its creator DHH?"
 tags: ["linux", "omarchy", "hyprland", "apple", "open-source", "opinion"]
 ---
 
 I'll start with the hardest part: I turned my coat.
 
-On Thursday, October 8, I published a post saying I wouldn't touch Omarchy, DHH's Linux distribution, because of what he writes about immigration. On Saturday the 10th, I took the post down. And that same day, I installed Omarchy on my old MacBook Pro.
+On Thursday, October 8, I published a post saying I wouldn't touch Omarchy, DHH's Linux distribution, because of what he writes about immigration. On Saturday the 10th, I installed it on my old MacBook Pro.
 
 Sometimes you have to admit you were wrong. And admit when you gave in to fear. The fear of endorsing him, in this case. I had mixed up two questions: what the tool is worth, and what I think of its author. And I had settled the first one without ever trying it.
 
-So I tried it. Here's what three days of Omarchy look like on a 2017 MacBook Pro.
+I've already explained [why I changed my mind](/en/20261008-omarchy-dhh-homme-dotfiles), with your reactions and the tweaks it took to bring the MacBook back. This one is the review: here's what three days of Omarchy look like on a 2017 MacBook Pro.
 
 ## What is Omarchy?
 
 Omarchy is a distribution based on Arch Linux, with Hyprland as the desktop. No windows to drag around with the mouse: they tile themselves, and you drive them from the keyboard. Everything comes installed and preconfigured, from the shortcuts to the themes. The current version is 4.0.4, released on September 15 ([GitHub](https://github.com/omacom/omarchy/releases){target="_blank" rel="noopener"}).
 
-Good news for old Macs: the manual promises built-in support for Intel Macs. The installer adds the Broadcom Wi-Fi drivers and the keyboard driver for 2016 and 2017 MacBook Pros on its own ([Omarchy manual](https://github.com/omacom/omarchy/blob/v4.0.4/manual/44-mac-support.md){target="_blank" rel="noopener"}). If you remember my [missing Wi-Fi under Zorin OS](/en/20261008-pas-besoin-detre-dev-ou-barbu-mac-linux), that's a relief to read.
+Good news for old Macs: the manual promises built-in support for Intel Macs. The installer adds the Broadcom Wi-Fi drivers and the keyboard driver for 2016 and 2017 MacBook Pros on its own ([Omarchy manual](https://github.com/omacom/omarchy/blob/v4.0.4/manual/44-mac-support.md){target="_blank" rel="noopener"}). If you remember my [missing Wi-Fi under Zorin OS](/en/20261008-pas-besoin-detre-dev-ou-barbu-mac-linux), that's a relief to read. On my end, I still had to change some settings on my CanalBox router, as I [explained here](/en/20261008-omarchy-dhh-homme-dotfiles).
 
 One warning, though: Omarchy wipes the whole drive. On a Mac, it's not something you install next to macOS.
 
@@ -49,7 +49,7 @@ Of course, I couldn't resist. With Claude, I built my Matrix theme, all the way 
 
 First hiccup: no sound. The speakers stayed silent, even though the system showed a perfectly normal audio output.
 
-It's a known issue on 2016 and 2017 MacBook Pros. Their Cirrus Logic audio chip isn't handled properly by the driver that ships with Linux ([Arch Wiki](https://wiki.archlinux.org/title/Laptop/Apple){target="_blank" rel="noopener"}). The fix is a community driver, [snd_hda_macbookpro](https://github.com/davidjo/snd_hda_macbookpro){target="_blank" rel="noopener"}. I installed it, and the sound came back. On Arch, it's also available as an AUR package:
+It's a known issue on 2016 and 2017 MacBook Pros. Their Cirrus Logic audio chip isn't handled properly by the driver that ships with Linux ([Arch Wiki](https://wiki.archlinux.org/title/Laptop/Apple){target="_blank" rel="noopener"}). The fix is a community driver, [snd_hda_macbookpro](https://github.com/davidjo/snd_hda_macbookpro){target="_blank" rel="noopener"}. I installed it, and the sound came back. I walked through the installation step by step in [the previous post](/en/20261008-omarchy-dhh-homme-dotfiles). On Arch, it's also available as an AUR package:
 
 ```bash
 yay -S snd-hda-macbookpro-dkms-git
@@ -129,5 +129,7 @@ If it prints, I'll tell you. If it refuses to cooperate, I'll tell you that too.
 - GitHub, [Hyprmon](https://github.com/erans/hyprmon){target="_blank" rel="noopener"}
 - Lerd, [lerd.sh](https://lerd.sh){target="_blank" rel="noopener"}
 
+_Cover: the [omarchy-matrix-plymouth](https://github.com/jhouedanou/omarchy-matrix-plymouth){target="_blank" rel="noopener"} boot screen, rebuilt from the repo's images (MIT licence)._
+
 ---
-*[Jean-Luc Houédanou](https://houedanou.com) — turncoat, reversible edition*
+*[Jean-Luc Houédanou](https://houedanou.com) — reversible jacket*

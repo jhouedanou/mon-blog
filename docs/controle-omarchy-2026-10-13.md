@@ -59,6 +59,23 @@ Outils : claude-blog (`blog-reviewer`, `blog-seo`, `analyze_blog.py`), vérifica
 
 ## Points laissés à l'auteur
 
-- Image de couverture : réutilisée (déjà sur le billet Ubuntu de 2024).
-- Redirection des anciennes URLs Omarchy vers ce billet plutôt que vers « Mac et Linux ».
 - Le Wi-Fi « du premier coup » n'est pas affirmé : à ajouter si c'est le cas.
+
+## Mise à jour du 13 octobre (soir) : deux billets, un seul MacBook
+
+Le billet du 8 octobre (`20261008-omarchy-dhh-homme-dotfiles`) avait été remis en ligne et réécrit en
+retournement de veste le 11 octobre (PR #25), en parallèle de ce billet. Choix de l'auteur : garder les deux.
+
+- L'ancien billet garde le débat, les réactions des lecteurs, les raisons du revirement et les réglages
+  (CanalBox, `omarchy update`, pilote son pas à pas). Le nouveau devient le bilan après trois jours.
+- Nouveau titre : « Omarchy sur mon MacBook Pro 2017 : le bilan après trois jours » (EN : « Omarchy on My
+  2017 MacBook Pro: Three Days In »). Description réécrite (143 et 142 car.).
+- Intro du nouveau billet : « j'ai retiré le billet » supprimé, remplacé par un lien vers l'ancien.
+  Liens croisés ajoutés (Wi-Fi CanalBox, installation du pilote son) ; renvoi vers le bilan en fin d'ancien billet.
+- La machine est un MacBook Pro **2017** (confirmé par l'auteur) : l'ancien billet disait « fin 2016 » et
+  « Monterey ». Corrigé en « 2017 » et « Ventura », source Apple remplacée par la liste de compatibilité Sonoma.
+  `updatedAt` de l'ancien billet passé au 13 octobre.
+- Pas de redirection : les deux URLs restent en ligne.
+- Nouvelle couverture : `omarchy-matrix-boot.webp`, l'écran de démarrage du thème recomposé à partir des PNG du
+  dépôt omarchy-matrix-plymouth (MIT), avec sa carte OG `/og/omarchy-matrix-boot.jpg`. L'ancien billet garde pingui.webp.
+- Note de fin du billet Mac et Linux : reformulée pour pointer vers le bilan, le corps renvoyant déjà vers l'ancien billet.

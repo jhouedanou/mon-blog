@@ -75,7 +75,7 @@ Ajout dans la conclusion : l'auteur essaie d'abord Ryoku. `updatedAt` passe au 1
 ## Réécriture : le retournement de veste (11 octobre 2026, soir)
 
 Le billet s'ouvre désormais sur le retournement de veste : l'auteur a installé Omarchy sur
-son MacBook Pro fin 2016. Le texte du 8 octobre suit, sous « Ce que j'écrivais le 8 octobre »
+son MacBook Pro 2017 (corrigé le 13 octobre : « fin 2016 » était une erreur). Le texte du 8 octobre suit, sous « Ce que j'écrivais le 8 octobre »
 (titres passés en H3), puis viennent les arguments, les réglages du MacBook et la conclusion.
 
 Retirés, en FR et en EN : Wu-Tang (Method Man, RZA, « Protect ya neck »), R. Kelly, Diddy,
@@ -91,7 +91,7 @@ plus de lien interne.
 | `cx` lance Claude Code en « danger mode » ; skill Omarchy expérimentale | Vérifié | idem |
 | Ne pas utiliser `pacman -Syu` ; `omarchy update` fait un snapshot puis les migrations | Vérifié | [manuel d'Omarchy, « Updates »](https://learn.omacom.io/2/the-omarchy-manual/68/updates) |
 | Omarchy est sous licence MIT | Vérifié | [GitHub](https://github.com/basecamp/omarchy) |
-| Dernier macOS du MacBook Pro 2016 : Monterey | Vérifié | [Apple](https://support.apple.com/fr-fr/108052) |
+| Dernier macOS du MacBook Pro 2017 : Ventura (corrigé le 13 octobre, la machine est un 2017) | Vérifié | [Apple, Sonoma](https://support.apple.com/fr-fr/105113) |
 | Pilote son pour puces Cirrus CS8409 | Vérifié | [snd_hda_macbookpro](https://github.com/davidjo/snd_hda_macbookpro) |
 | « Woah partner », noyau 7.2, commandes du pilote, Wi-Fi réglé sur la CanalBox | Expérience de l'auteur (journal de terminal fourni) | — |
 
