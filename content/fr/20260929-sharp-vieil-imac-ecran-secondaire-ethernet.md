@@ -148,6 +148,8 @@ Sharp est prometteur, mais il faut savoir ceci :
 
 Si un iMac de 2012 à 2020 dort chez vous, et que vous avez un Mac plus récent, Sharp vous donne un deuxième écran pour le prix d'un câble Ethernet. L'installation prend quelques minutes, et le texte reste net.
 
+Et si c'est l'ordinateur lui-même que vous voulez relancer, [installez macOS sur un SSD externe](/fr/20261014-installer-macos-ssd-externe-imac-2017) : un iMac 2017 retrouve une seconde vie sans qu'on l'ouvre.
+
 Pour travailler en déplacement, un iMac ne vous suivra pas. Dans ce cas, lisez mon retour sur [le double moniteur portable](/fr/20260810-double-moniteur-portable-blackview-dcm6).
 
 **Sources :**
