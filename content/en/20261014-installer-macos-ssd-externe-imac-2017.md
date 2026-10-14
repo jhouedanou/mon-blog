@@ -9,7 +9,7 @@ tags: ["tutorial", "apple", "macos", "mac", "hardware", "ssd"]
 
 I had a 2017 iMac sitting abandoned in a corner. The kind of machine you stop turning on, because it takes forever to boot and opening Safari becomes an ordeal.
 
-The culprit, almost every time, is the internal drive. The good news: you don't need to open the iMac to replace it. You just install macOS on an **external SSD** and boot from it. I went with a 1 TB **Lexar SL500** and installed **macOS Ventura** on it. Here's how to do it, step by step.
+The culprit, almost every time, is the internal drive. The good news: you don't need to open the iMac to replace it. You just install macOS on an **external SSD** and boot from it. I went with a 1 TB **Lexar SL500** and installed **macOS Ventura** on it. The result: the iMac boots faster. Here's how to do it, step by step.
 
 ![A 2017 iMac booting from a 1 TB external SSD plugged in over USB-C](/images/articles/imac-2017-macos-ssd-externe.webp)
 

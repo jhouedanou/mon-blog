@@ -9,7 +9,7 @@ tags: ["tutoriel", "apple", "macos", "mac", "matériel", "ssd"]
 
 J'avais un iMac 2017 abandonné dans un coin. Le genre de machine qu'on n'allume plus, parce qu'elle met une éternité à démarrer et qu'ouvrir Safari devient une épreuve.
 
-Le coupable, presque toujours, c'est le disque interne. La bonne nouvelle : pas besoin d'ouvrir l'iMac pour le changer. Il suffit d'installer macOS sur un **SSD externe** et de démarrer dessus. Moi, j'ai pris un **Lexar SL500** de 1 To, et j'y ai installé **macOS Ventura**. Voici comment faire, étape par étape.
+Le coupable, presque toujours, c'est le disque interne. La bonne nouvelle : pas besoin d'ouvrir l'iMac pour le changer. Il suffit d'installer macOS sur un **SSD externe** et de démarrer dessus. Moi, j'ai pris un **Lexar SL500** de 1 To, et j'y ai installé **macOS Ventura**. Résultat : l'iMac démarre plus rapidement. Voici comment faire, étape par étape.
 
 ![Un iMac 2017 démarre sur un SSD externe de 1 To branché en USB-C](/images/articles/imac-2017-macos-ssd-externe.webp)
 
