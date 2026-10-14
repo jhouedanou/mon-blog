@@ -9,7 +9,7 @@ tags: ["tutorial", "apple", "macos", "mac", "hardware", "ssd"]
 
 I had a 2017 iMac sitting abandoned in a corner. The kind of machine you stop turning on, because it takes forever to boot and opening Safari becomes an ordeal.
 
-The culprit, almost every time, is the internal drive. The good news: you don't need to open the iMac to replace it. You just install macOS on an **external SSD** and boot from it. I went with a 1 TB Lexar SSD. Here's how to do it, step by step.
+The culprit, almost every time, is the internal drive. The good news: you don't need to open the iMac to replace it. You just install macOS on an **external SSD** and boot from it. I went with a 1 TB **Lexar SL500** and installed **macOS Ventura** on it. Here's how to do it, step by step.
 
 ![A 2017 iMac booting from a 1 TB external SSD plugged in over USB-C](/images/articles/imac-2017-macos-ssd-externe.webp)
 
@@ -59,7 +59,7 @@ The upshot: on this iMac, a 20 Gbps SSD won't go any faster than a 10 Gbps SSD. 
 | [Lexar SL500](https://americas.lexar.com/product/lexar-sl500-portable-ssd/){target="_blank" rel="noopener"} | USB 3.2 Gen 2x2 (20 Gbps) | 2,000 MB/s | about 1,000 MB/s |
 | [Lexar Armor 700](https://americas.lexar.com/product/lexar-armor-700-portable-ssd/){target="_blank" rel="noopener"} | USB 3.2 Gen 2x2 (20 Gbps) | 2,000 MB/s | about 1,000 MB/s |
 
-The 2,000 MB/s models use a standard (USB 3.2 Gen 2x2) that Macs don't support. Lexar even warns that performance may be lower on a Mac ([SL500 product page](https://americas.lexar.com/product/lexar-sl500-portable-ssd/){target="_blank" rel="noopener"}). On the 2017 iMac, they fall back to 10 Gbps: TechRadar's review measured the SL500 at about 1,000 MB/s on macOS ([TechRadar](https://www.techradar.com/pro/lexar-sl500-portable-ssd-review){target="_blank" rel="noopener"}). If you're buying an SSD just for this iMac, a 10 Gbps model is enough.
+The 2,000 MB/s models use a standard (USB 3.2 Gen 2x2) that Macs don't support. Lexar even warns that performance may be lower on a Mac ([SL500 product page](https://americas.lexar.com/product/lexar-sl500-portable-ssd/){target="_blank" rel="noopener"}). On the 2017 iMac, they fall back to 10 Gbps: TechRadar's review measured the SL500 at about 1,000 MB/s on macOS ([TechRadar](https://www.techradar.com/pro/lexar-sl500-portable-ssd-review){target="_blank" rel="noopener"}). That's the case with my SL500: on this iMac, it can't go any faster than an ES3. If you're buying an SSD just for this iMac, a 10 Gbps model is enough.
 
 ## Which macOS to install
 
@@ -72,7 +72,7 @@ The 2,000 MB/s models use a standard (USB 3.2 Gen 2x2) that Macs don't support. 
 
 Apple stopped at **Ventura** for the 2017 iMac ([Ventura compatibility](https://support.apple.com/en-us/102861){target="_blank" rel="noopener"}). Sonoma no longer supports it. The latest version is **Ventura 13.7.8**, released on August 20, 2025 ([Apple](https://support.apple.com/en-us/124929){target="_blank" rel="noopener"}). There hasn't been an update since. Apple hasn't said so officially, but Ventura is probably no longer maintained.
 
-So I'll start with Ventura, the official method. I cover Sequoia further down.
+Ventura is what I installed, using Apple's official method. That's what I walk through first. I cover Sequoia further down.
 
 ## Install macOS Ventura on the external SSD in five steps
 
@@ -80,7 +80,7 @@ These steps follow Apple's method to [start up a Mac from an external drive](htt
 
 ### 1. Plug in the SSD
 
-Plug the SSD into one of the two **USB-C** (Thunderbolt 3) ports on the back of the iMac, with a USB-C to USB-C cable (often included with the SSD).
+Plug the SSD into one of the two **USB-C** (Thunderbolt 3) ports on the back of the iMac, with a USB-C to USB-C cable. The SL500 comes with one; other SSDs often do too.
 
 ### 2. Erase and format the SSD
 
@@ -155,7 +155,7 @@ Where do things stand as of October 14, 2026?
 - **Tahoe** is only supported by the **3.0.0-rc.3** pre-release (October 8, 2026). GitHub warns you to expect instability and data loss ([release notes](https://github.com/dortania/OpenCore-Legacy-Patcher/releases/tag/3.0.0-rc.3){target="_blank" rel="noopener"}).
 - **macOS 27 Golden Gate** only runs on Apple silicon Macs. No tool will install it on an Intel iMac ([MacRumors](https://www.macrumors.com/2026/06/08/macs-compatible-macos-golden-gate/){target="_blank" rel="noopener"}).
 
-How it works with an external SSD:
+I haven't tested it myself: I stuck with Ventura. How it works with an external SSD:
 
 1. Boot into Ventura (on the SSD) and install OCLP.
 2. In OCLP, click **Build and Install OpenCore**. The tool lists the drives it can install OpenCore on: choose the **Lexar SSD**. The internal drive stays untouched.
