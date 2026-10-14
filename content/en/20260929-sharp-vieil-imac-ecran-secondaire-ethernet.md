@@ -148,6 +148,8 @@ Sharp is promising, but keep this in mind:
 
 If a 2012 to 2020 iMac is gathering dust at home and you have a newer Mac, Sharp gives you a second screen for the price of an Ethernet cable. Setup takes a few minutes, and text stays sharp.
 
+And if it's the computer itself you want to bring back, [install macOS on an external SSD](/en/20261014-installer-macos-ssd-externe-imac-2017): a 2017 iMac gets a second life without being opened.
+
 To work on the go, an iMac won't follow you. In that case, read my review of [the portable dual monitor](/en/20260810-double-moniteur-portable-blackview-dcm6).
 
 **Sources:**
