@@ -21,6 +21,8 @@ Donc non. J'ai juste regardé un documentaire sur Netflix, et j'ai envie d'en pa
 
 Il raconte l'histoire de Cilvaringz, un fan néerlando-marocain qui a réussi à entrer dans le cercle du Wu-Tang Clan. Et celle de l'album le plus cher de tous les temps.
 
+Côté Wu-Tang, deux membres apparaissent à l'écran : RZA et Cappadonna.
+
 ## Un *fun watch*, et c'est déjà bien
 
 Mon verdict (qui n'est pas une critique, on est d'accord) : c'est un *fun watch*. On passe un bon moment. On lance ça un vendredi soir, et on oublie son téléphone.
@@ -36,6 +38,8 @@ Pourtant, le Wu-Tang compte pour moi. Quand je grandissais, ce groupe a été un
 Le plus drôle, c'est que je n'aimais pas le rap. Ce qui m'a attiré, c'est le mélange : du kung-fu et du rap. Des extraits de vieux films de kung-fu entre les morceaux, et des beats sombres. Je n'avais jamais rien entendu de pareil. Le nom du groupe vient d'ailleurs d'un film de kung-fu, *Shaolin and Wu Tang*, sorti en 1983.
 
 Et face à la négativité du rap de l'époque, le Wu-Tang était clairement au-dessus. Du moins jusqu'à *Wu-Tang Forever*, en 1997. Après, la chute a été rude.
+
+Petite parenthèse, puisque je [fais moi-même du boom bap sur Koala Sampler](/fr/20260822-koala-sampler-gratuit-mac-boom-bap) : mon top 5 des producteurs, c'est RZA, DJ Premier, J Dilla, Just Blaze et Easy Mo Bee. Et au micro, Method Man reste pour moi le meilleur de tous les temps, devant DMX, Busta Rhymes, Rockness Monstah et Lord Have Mercy.
 
 ## RZA : des nouilles instantanées au coffret en argent
 
@@ -88,41 +92,27 @@ Et ce disciple va rendre la pareille avec une idée complètement folle.
 
 Le résultat s'appelle *Once Upon a Time in Shaolin*. 31 titres, enregistrés en secret pendant environ six ans, rangés dans un coffret en argent fait à la main. Avec une règle : interdiction de le vendre au public avant 2103. Oui, 2103. Prenez soin de vous.
 
+Pour moi, cette démarche artistique est parfaite. Un album unique, qu'on ne peut ni streamer ni copier, traité comme une œuvre d'art. Le message est clair, et il est juste. En tant qu'ancien fan, je la respecte.
+
+Dans le film, on entend quelques extraits de l'album. Par exemple, U-God qui rappe sur des trompettes soul. Le reste, ce sera pour 2103.
+
 En 2015, l'album est vendu aux enchères. L'acheteur : Martin Shkreli, un homme d'affaires très controversé. Le prix : 2 millions de dollars, soit environ 1,2 milliard de FCFA. Le Livre Guinness des records le déclare album le plus précieux du monde, devant des disques d'Elvis et des Beatles.
 
 La suite est digne d'un film. Shkreli est condamné pour fraude. En 2018, la justice américaine saisit ses biens, album compris. En 2021, l'État le revend. Puis un collectif de collectionneurs de NFT, PleasrDAO, le rachète pour 4 millions de dollars, soit environ 2,3 milliards de FCFA.
 
 Un album qui passe du studio au tribunal, puis à la crypto. Comme je l'écrivais [à propos de Bill Gates](/fr/20260907-bill-gates-ia-hypocrisie-meta-cash-rules-everything) : Cash Rules Everything Around Me. Le Wu-Tang l'avait prédit en 1993.
 
-Petit détail, pour être complet : les neuf membres du Wu-Tang n'apparaissent qu'en images d'archives. Pas de nouvelle interview. Pour un film sur le Wu-Tang, c'est un peu dommage. Mais je ne suis pas critique de cinéma, donc je n'ai rien dit. (Retenez bien : rien dit.)
-
-## Mes tops 5 : producteurs et rappeurs
-
-Puisqu'on parle de RZA, petite parenthèse. Je [fais moi-même du boom bap sur Koala Sampler](/fr/20260822-koala-sampler-gratuit-mac-boom-bap), alors j'ai mon avis sur les producteurs. Voici mon top 5 :
-
-1. **RZA**, évidemment ;
-2. **DJ Premier**, alias Premo ;
-3. **J Dilla** ;
-4. **Just Blaze** ;
-5. **Easy Mo Bee**.
-
-Et côté micro ? Pour moi, Method Man est le meilleur rappeur de tous les temps. Voici mon top 5, dans cet ordre :
-
-1. **Method Man** ;
-2. **DMX** ;
-3. **Busta Rhymes** ;
-4. **Rockness Monstah**, de Heltah Skeltah ;
-5. **Lord Have Mercy**, du Flipmode Squad.
-
 ## En résumé
 
-*Le Disciple*, c'est un bon moment. Pas une révélation, pas un chef-d'œuvre. Mais une belle histoire : un gamin du ghetto devient un patron, et il donne sa chance à un fan venu des Pays-Bas. Ensemble, ils créent un album unique, vendu une fortune, saisi par la justice et racheté par des fans de crypto.
+*Le Disciple*, c'est un bon moment. Pas une révélation, pas un chef-d'œuvre. Mais une belle histoire : un gamin du ghetto devient un patron, et il donne sa chance à un fan venu des Pays-Bas. Ensemble, ils créent un album unique, avec une démarche artistique parfaite. Un album vendu une fortune, saisi par la justice et racheté par des fans de crypto.
 
 Je ne vais pas réécouter le Wu-Tang en boucle ce week-end. Mais j'ai souri du début à la fin.
 
 Et ce documentaire m'inspire. Il me donne envie d'éviter certains poncifs, et de faire ce qui a du sens.
 
 Et je le redis, pour les personnes concernées : ceci n'était pas une critique de film.
+
+Wu-Tang Forever.
 
 ## Sources
 

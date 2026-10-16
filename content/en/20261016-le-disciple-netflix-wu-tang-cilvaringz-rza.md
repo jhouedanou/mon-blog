@@ -21,6 +21,8 @@ So no. I just watched a documentary on Netflix, and I want to talk about it. The
 
 It tells the story of Cilvaringz, a Dutch-Moroccan fan who made his way into the Wu-Tang Clan's inner circle. And the story of the most expensive album of all time.
 
+On the Wu-Tang side, two members appear on screen: RZA and Cappadonna.
+
 ## A fun watch, and that's already good
 
 My verdict (which is not a review, we agree on that): it's a fun watch. You have a good time. You put it on on a Friday night, and you forget about your phone.
@@ -36,6 +38,8 @@ And yet, the Wu-Tang matters to me. When I was growing up, this group was a kind
 The funny thing is, I didn't like rap. What drew me in was the mix: kung fu and rap. Clips from old kung fu movies between the tracks, and dark beats. I had never heard anything like it. The group's name actually comes from a kung fu film, *Shaolin and Wu Tang*, released in 1983.
 
 And next to the negativity of rap back then, the Wu-Tang was clearly above the rest. At least until *Wu-Tang Forever*, in 1997. After that, the fall was hard.
+
+A quick aside, since I [make boom bap myself on Koala Sampler](/en/20260822-koala-sampler-gratuit-mac-boom-bap): my top 5 producers are RZA, DJ Premier, J Dilla, Just Blaze and Easy Mo Bee. And on the mic, Method Man is still, for me, the greatest of all time, ahead of DMX, Busta Rhymes, Rockness Monstah and Lord Have Mercy.
 
 ## RZA: from instant noodles to a silver box
 
@@ -88,41 +92,27 @@ In the late 2000s, Cilvaringz came up with a Wu-Tang album in **a single copy**.
 
 The result is called *Once Upon a Time in Shaolin*. 31 tracks, recorded in secret over about six years, stored in a handmade silver box. With one rule: it cannot be sold to the public before 2103. Yes, 2103. Take care of yourselves.
 
+For me, this artistic approach is perfect. A one-of-a-kind album that you can't stream or copy, treated as a work of art. The message is clear, and it's right. As a former fan, I respect it.
+
+In the film, you hear a few excerpts from the album. For example, U-God rapping over soul trumpets. The rest will have to wait until 2103.
+
 In 2015, the album was sold at auction. The buyer: Martin Shkreli, a highly controversial businessman. The price: 2 million dollars, about 1.2 billion CFA francs. Guinness World Records named it the most valuable album in the world, ahead of records by Elvis and the Beatles.
 
 What followed is worthy of a movie. Shkreli was convicted of fraud. In 2018, the US justice system seized his assets, album included. In 2021, the government sold it. Then an NFT collectors' collective, PleasrDAO, bought it for 4 million dollars, about 2.3 billion CFA francs.
 
 An album that went from the studio to the courtroom, then to crypto. As I wrote [about Bill Gates](/en/20260907-bill-gates-ia-hypocrisie-meta-cash-rules-everything): Cash Rules Everything Around Me. The Wu-Tang called it in 1993.
 
-A small detail, to be complete: the nine members of the Wu-Tang only appear in archive footage. No new interviews. For a film about the Wu-Tang, that's a bit of a shame. But I'm not a film critic, so I didn't say anything. (Remember: I said nothing.)
-
-## My top 5s: producers and rappers
-
-Since we're talking about RZA, a quick aside. I [make boom bap myself on Koala Sampler](/en/20260822-koala-sampler-gratuit-mac-boom-bap), so I have opinions about producers. Here's my top 5:
-
-1. **RZA**, obviously;
-2. **DJ Premier**, aka Premo;
-3. **J Dilla**;
-4. **Just Blaze**;
-5. **Easy Mo Bee**.
-
-And on the mic? For me, Method Man is the greatest rapper of all time. Here's my top 5, in this order:
-
-1. **Method Man**;
-2. **DMX**;
-3. **Busta Rhymes**;
-4. **Rockness Monstah**, from Heltah Skeltah;
-5. **Lord Have Mercy**, from the Flipmode Squad.
-
 ## In short
 
-*The Disciple* is a good time. Not a revelation, not a masterpiece. But a beautiful story: a kid from the projects becomes a boss, and gives his chance to a fan from the Netherlands. Together, they create a one-of-a-kind album, sold for a fortune, seized by the courts and bought back by crypto fans.
+*The Disciple* is a good time. Not a revelation, not a masterpiece. But a beautiful story: a kid from the projects becomes a boss, and gives his chance to a fan from the Netherlands. Together, they create a one-of-a-kind album, with a perfect artistic approach. An album sold for a fortune, seized by the courts and bought back by crypto fans.
 
 I won't be listening to the Wu-Tang on repeat this weekend. But I smiled from start to finish.
 
 And this documentary inspires me. It makes me want to avoid certain clichés, and do what makes sense.
 
 And I'll say it again, for the people concerned: this was not a film review.
+
+Wu-Tang Forever.
 
 ## Sources
 
