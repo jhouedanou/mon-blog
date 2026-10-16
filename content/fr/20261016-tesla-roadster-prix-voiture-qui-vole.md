@@ -35,9 +35,11 @@ Voilà ce qu'elle a fait pendant la démo :
 - Elle s'est lancée en l'air, a tourné sur elle-même, et s'est posée en douceur.
 - Elle a sauté par-dessus **cinq véhicules Tesla** : un Cybercab, un Cybertruck, un Semi, un Model Y et un Model 3.
 
-Le secret ? Des propulseurs de SpaceX. Ce sont des propulseurs à gaz froid : ils soufflent de l'air comprimé. Pschhhht. Sur la version la plus folle, il y en a dix tout autour de la voiture. Ils sont reliés à 600 litres d'air comprimé, selon Lars Moravy, vice-président de l'ingénierie chez Tesla. Plus il y a d'air, plus la voiture reste en l'air longtemps. Et les réservoirs se rechargent.
+Le secret ? Des propulseurs de SpaceX. Ce sont des propulseurs à gaz froid : ils soufflent de l'air comprimé. Sur la version la plus folle, il y en a dix tout autour de la voiture. Ils sont reliés à 600 litres d'air comprimé, selon Lars Moravy, vice-président de l'ingénierie chez Tesla. Plus il y a d'air, plus la voiture reste en l'air longtemps. Et les réservoirs se rechargent.
 
-Imaginez ça sur le pont HKB un lundi matin. Embouteillage ? Pschhht. Vous passez au-dessus des gbakas. (Non, ce n'est pas autorisé. Mais laissez-moi rêver.)
+Imaginez ça sur le pont HKB un lundi matin. Plus de péages.
+Embouteillage ? Pschhht. 
+Vous passez au-dessus des gbakas. (Non, ce n'est pas autorisé. Mais laissez-moi rêver.)
 
 CNET a tout résumé en dix minutes. Regardez, ça vaut le coup :
 
@@ -58,7 +60,9 @@ Et en virage, ça change tout. Selon Tesla, des pneus seuls tiennent environ 1,2
 
 **Deuxième tour de magie : les propulseurs.** À l'arrière, ils ajoutent leur poussée à celle des moteurs. Tesla annonce plus de 80 kilonewtons. C'est à peu près la force qu'il faut pour soulever 8 tonnes. Dans une voiture de sport. Oui.
 
-Ce sont aussi ces propulseurs qui permettent les acrobaties en l'air. Ils gèrent l'équilibre de la voiture pendant le saut. Tesla parle de « gymnastique ». Moi, j'appelle ça de la sorcellerie.
+Ce sont aussi ces propulseurs qui permettent les acrobaties en l'air. Ils gèrent l'équilibre de la voiture pendant le saut. Tesla parle de « gymnastique ». 
+Ekié.
+Moi, j'appelle ça de la sorcellerie.
 
 **Et à l'intérieur ?** Deux places, un intérieur très simple, un look inspiré de l'aviation. Le volant n'est pas relié mécaniquement aux roues : tout passe par l'électronique. C'est ce qu'on appelle le « steer-by-wire ».
 
