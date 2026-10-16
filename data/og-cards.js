@@ -55,6 +55,7 @@ export const OG_CARDS = {
   "/images/articles/reunion.webp": "/og/reunion.jpg",
   "/images/articles/sharp-imac-ecran-secondaire.webp": "/og/sharp-imac-ecran-secondaire.jpg",
   "/images/articles/tesla-roadster-propulseurs.webp": "/og/tesla-roadster-propulseurs.jpg",
+  "/images/articles/the-disciple-cilvaringz-rza.webp": "/og/the-disciple-cilvaringz-rza.jpg",
   "/images/articles/theorieduMicro.webp": "/og/theoriedumicro.jpg",
   "/images/articles/tim-cook-temu.png": "/og/tim-cook-temu.jpg",
   "/images/articles/welcomeToTheNBA.webp": "/og/welcometothenba.jpg",
