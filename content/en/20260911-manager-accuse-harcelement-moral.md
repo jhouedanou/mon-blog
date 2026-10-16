@@ -1,6 +1,6 @@
 ---
 title: "The day asking for accountability became workplace bullying"
-createdAt: "2026-09-11T20:04:00Z"
+createdAt: "2026-10-16T02:23:00Z"
 image: "/images/articles/harceleur-moral.webp"
 description: "Looking back on a few months as interim head of a small team in Abidjan, between ignored deadlines, lost clients and an accusation of workplace bullying received the day I simply asked for an explanation."
 searchIntent: "What to do when an employee accuses their manager of workplace bullying after being asked for an explanation?"
