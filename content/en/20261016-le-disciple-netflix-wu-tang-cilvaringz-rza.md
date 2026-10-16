@@ -97,7 +97,7 @@ An album that went from the studio to the courtroom, then to crypto. As I wrote 
 
 A small detail, to be complete: the nine members of the Wu-Tang only appear in archive footage. No new interviews. For a film about the Wu-Tang, that's a bit of a shame. But I'm not a film critic, so I didn't say anything. (Remember: I said nothing.)
 
-## My top 5 producers
+## My top 5s: producers and rappers
 
 Since we're talking about RZA, a quick aside. I [make boom bap myself on Koala Sampler](/en/20260822-koala-sampler-gratuit-mac-boom-bap), so I have opinions about producers. Here's my top 5:
 
@@ -106,6 +106,14 @@ Since we're talking about RZA, a quick aside. I [make boom bap myself on Koala S
 3. **J Dilla**;
 4. **Just Blaze**;
 5. **Easy Mo Bee**.
+
+And on the mic? For me, Method Man is the greatest rapper of all time. Here's my top 5, in this order:
+
+1. **Method Man**;
+2. **DMX**;
+3. **Busta Rhymes**;
+4. **Rockness Monstah**, from Heltah Skeltah;
+5. **Lord Have Mercy**, from the Flipmode Squad.
 
 ## In short
 
