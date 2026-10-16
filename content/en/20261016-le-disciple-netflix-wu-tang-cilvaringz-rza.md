@@ -30,6 +30,14 @@ But let's be honest: this film won't make me listen to the Wu-Tang again. My old
 
 What I liked was something else: seeing something positive. A kid from the projects who becomes a boss. A boss who reaches out. A fan who becomes a colleague. In 2026, that feels good.
 
+## The Wu-Tang, my therapy
+
+And yet, the Wu-Tang matters to me. When I was growing up, this group was a kind of therapy.
+
+The funny thing is, I didn't like rap. What drew me in was the mix: kung fu and rap. Clips from old kung fu movies between the tracks, and dark beats. I had never heard anything like it. The group's name actually comes from a kung fu film, *Shaolin and Wu Tang*, released in 1983.
+
+And next to the negativity of rap back then, the Wu-Tang was clearly above the rest. At least until *Wu-Tang Forever*, in 1997. After that, the fall was hard.
+
 ## RZA: from instant noodles to a silver box
 
 Before we talk about the disciple, let's talk about the master.
@@ -89,9 +97,9 @@ An album that went from the studio to the courtroom, then to crypto. As I wrote 
 
 A small detail, to be complete: the nine members of the Wu-Tang only appear in archive footage. No new interviews. For a film about the Wu-Tang, that's a bit of a shame. But I'm not a film critic, so I didn't say anything. (Remember: I said nothing.)
 
-## My top 4 producers
+## My top 5 producers
 
-Since we're talking about RZA, a quick aside. I [make boom bap myself on Koala Sampler](/en/20260822-koala-sampler-gratuit-mac-boom-bap), so I have opinions about producers. Here's my top 4:
+Since we're talking about RZA, a quick aside. I [make boom bap myself on Koala Sampler](/en/20260822-koala-sampler-gratuit-mac-boom-bap), so I have opinions about producers. Here's my top 5:
 
 1. **RZA**, obviously;
 2. **DJ Premier**, aka Premo;
@@ -99,13 +107,13 @@ Since we're talking about RZA, a quick aside. I [make boom bap myself on Koala S
 4. **Just Blaze**;
 5. **Easy Mo Bee**.
 
-Yes, that's five. I can count. But I can't drop any of them. So it's a top 4 with five spots. It's my blog, I make the rules. Like RZA with Loud Records.
-
 ## In short
 
 *The Disciple* is a good time. Not a revelation, not a masterpiece. But a beautiful story: a kid from the projects becomes a boss, and gives his chance to a fan from the Netherlands. Together, they create a one-of-a-kind album, sold for a fortune, seized by the courts and bought back by crypto fans.
 
 I won't be listening to the Wu-Tang on repeat this weekend. But I smiled from start to finish.
+
+And this documentary inspires me. It makes me want to avoid certain clichés, and do what makes sense.
 
 And I'll say it again, for the people concerned: this was not a film review.
 
