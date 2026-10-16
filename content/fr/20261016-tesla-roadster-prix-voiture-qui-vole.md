@@ -8,7 +8,9 @@ searchIntent: "Quel est le prix du nouveau Tesla Roadster présenté en octobre 
 tags: ["tech", "tesla", "voiture électrique"]
 ---
 
-Je vais commencer par le plus important. Accrochez-vous.
+Ce que je viens de voir est sans doute la démo de produit la plus folle de l'année.
+
+Non, ce n'est pas de l'IA.
 
 Cette voiture vole.
 
@@ -41,6 +43,25 @@ Imaginez ça sur le pont HKB un lundi matin. Embouteillage ? Pschhht. Vous passe
 CNET a tout résumé en dix minutes. Regardez, ça vaut le coup :
 
 :youtube{video="TWHXrLzUKJc" title="Tesla's Flying Roadster Revealed (CNET)"}
+
+## Elle défie les lois de la physique (enfin, presque)
+
+Pendant la présentation, Tesla a dit que cette voiture « enfreint les lois de la physique ». Elle ne les enfreint pas vraiment. Elle triche avec. Et elle triche très bien.
+
+**Premier tour de magie : l'aspiration.** Sous la voiture, de gros ventilateurs aspirent l'air. Ça crée un vide sous la voiture. Résultat : la voiture est plaquée contre la route. Assez fort pour rouler la tête en bas, comme on l'a vu sur la rampe.
+
+Le système a deux modes :
+
+- **à basse vitesse**, il aspire au maximum, pour bien accrocher au démarrage ;
+- **à haute vitesse**, il ouvre des passages à l'avant et à l'arrière, pour mieux laisser passer l'air sous la voiture.
+
+Et en virage, ça change tout. Selon Tesla, des pneus seuls tiennent environ 1,26 G. Avec l'aspiration, le Roadster prend ses virages à plus de 2 G. Pour faire simple : dans le virage, vous êtes poussé sur le côté avec une force égale à deux fois votre poids. Votre déjeuner aussi.
+
+**Deuxième tour de magie : les propulseurs.** À l'arrière, ils ajoutent leur poussée à celle des moteurs. Tesla annonce plus de 80 kilonewtons. C'est à peu près la force qu'il faut pour soulever 8 tonnes. Dans une voiture de sport. Oui.
+
+Ce sont aussi ces propulseurs qui permettent les acrobaties en l'air. Ils gèrent l'équilibre de la voiture pendant le saut. Tesla parle de « gymnastique ». Moi, j'appelle ça de la sorcellerie.
+
+**Et à l'intérieur ?** Deux places, un intérieur très simple, un look inspiré de l'aviation. Le volant n'est pas relié mécaniquement aux roues : tout passe par l'électronique. C'est ce qu'on appelle le « steer-by-wire ».
 
 ## Trois versions, de « rapide » à « fusée »
 

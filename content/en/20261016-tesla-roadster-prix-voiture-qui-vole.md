@@ -8,7 +8,9 @@ searchIntent: "How much does the new Tesla Roadster unveiled in October 2026 cos
 tags: ["tech", "tesla", "electric car"]
 ---
 
-I'll start with the most important part. Hold on tight.
+What I just watched is probably the craziest product demo of the year.
+
+No, it's not AI.
 
 This car flies.
 
@@ -41,6 +43,25 @@ Picture this on the HKB bridge in Abidjan on a Monday morning. Traffic jam? Psss
 CNET summed it all up in ten minutes. Watch it, it's worth it:
 
 :youtube{video="TWHXrLzUKJc" title="Tesla's Flying Roadster Revealed (CNET)"}
+
+## It defies the laws of physics (well, almost)
+
+During the event, Tesla said this car "breaks the laws of physics". It doesn't really break them. It cheats. And it cheats very well.
+
+**First magic trick: suction.** Under the car, big fans suck out the air. That creates a low-pressure area under the car. The result: the car is pressed against the road. Hard enough to drive upside down, as we saw on the ramp.
+
+The system has two modes:
+
+- **at low speed**, it sucks as hard as it can, for maximum grip when starting;
+- **at high speed**, it opens passages at the front and back, to let air flow better under the car.
+
+And in corners, it changes everything. According to Tesla, tires alone hold about 1.26 G. With suction, the Roadster takes corners at more than 2 G. Put simply: in the corner, you're pushed sideways with a force equal to twice your weight. Your lunch too.
+
+**Second magic trick: the thrusters.** At the back, they add their thrust to the motors'. Tesla claims more than 80 kilonewtons. That's roughly the force needed to lift 8 tonnes. In a sports car. Yes.
+
+These thrusters also make the stunts in the air possible. They handle the car's balance during the jump. Tesla calls it "gymnastics". I call it witchcraft.
+
+**And inside?** Two seats, a very simple interior, a look inspired by aircraft. The steering wheel isn't mechanically connected to the wheels: everything goes through electronics. That's called "steer-by-wire".
 
 ## Three versions, from "fast" to "rocket"
 
