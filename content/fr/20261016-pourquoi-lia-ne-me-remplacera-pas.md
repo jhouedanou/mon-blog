@@ -1,7 +1,6 @@
 ---
 title: "Pourquoi l'IA ne me remplacera pas (et pourquoi je ne peux plus m'en passer)"
 createdAt: "2026-10-16T01:00:00Z"
-draft: true
 image: "/images/articles/pexels-tara-winstead-8386435.webp"
 description: "J'ai longtemps refusé l'IA. Puis un piratage nous a forcés à vibe coder une app avec Claude. La dette technique a suivi. Pourquoi l'IA ne me remplacera pas."
 searchIntent: "L'IA va-t-elle remplacer les développeurs ? Retour d'expérience d'un développeur : vibe coding en urgence avec Claude, dette technique, et usages quotidiens de l'IA."

@@ -1,7 +1,6 @@
 ---
 title: "Why AI won't replace me (and why I can't do without it anymore)"
 createdAt: "2026-10-16T01:00:00Z"
-draft: true
 image: "/images/articles/pexels-tara-winstead-8386435.webp"
 description: "I refused AI for a long time. Then a hack forced us to vibe code an app with Claude. The technical debt followed. Why AI won't replace me."
 searchIntent: "Will AI replace developers? A developer's experience: emergency vibe coding with Claude, technical debt, and everyday uses of AI."
