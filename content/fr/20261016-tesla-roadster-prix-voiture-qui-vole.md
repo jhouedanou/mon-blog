@@ -1,7 +1,6 @@
 ---
 title: "Tesla Roadster : on ne connaît pas son prix, mais cette voiture VOLE"
 createdAt: "2026-10-16T08:34:00Z"
-draft: true
 image: "/images/articles/tesla-roadster-propulseurs.webp"
 description: "Neuf ans après l'annonce, Tesla a enfin montré le nouveau Roadster. Pas de prix, des réservations de 50 000 à 250 000 dollars. Et surtout : cette voiture vole !"
 searchIntent: "Quel est le prix du nouveau Tesla Roadster présenté en octobre 2026, et est-ce qu'il vole vraiment ?"

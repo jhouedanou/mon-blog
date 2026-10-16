@@ -1,7 +1,6 @@
 ---
 title: "Tesla Roadster: we don't know its price, but this car FLIES"
 createdAt: "2026-10-16T08:34:00Z"
-draft: true
 image: "/images/articles/tesla-roadster-propulseurs.webp"
 description: "Nine years after it was announced, Tesla finally showed the new Roadster. No price, reservations from $50,000 to $250,000. And above all: this car flies!"
 searchIntent: "How much does the new Tesla Roadster unveiled in October 2026 cost, and does it really fly?"
