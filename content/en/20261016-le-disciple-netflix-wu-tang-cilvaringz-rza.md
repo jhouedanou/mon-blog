@@ -1,7 +1,6 @@
 ---
 title: "“The Disciple” on Netflix: this is not a film review"
 createdAt: "2026-10-16T20:45:00Z"
-draft: true
 image: "/images/articles/the-disciple-cilvaringz-rza.webp"
 description: "The Disciple, on Netflix: a Dutch fan gets into the Wu-Tang, and RZA goes from the projects to the most expensive album ever. A fun watch."
 searchIntent: "What is the Netflix documentary The Disciple about Cilvaringz, RZA and the Wu-Tang Clan's one-copy album, and is it worth watching?"
