@@ -1,6 +1,6 @@
 ---
 title: "Le jour où demander des comptes est devenu du harcèlement moral"
-createdAt: "2026-09-11T20:04:00Z"
+createdAt: "2026-10-16T02:23:00Z"
 image: "/images/articles/harceleur-moral.webp"
 description: "Retour sur quelques mois d'intérim à la tête d'une petite équipe à Abidjan, entre deadlines ignorées, clients perdus et une accusation de harcèlement moral reçue le jour où j'ai simplement demandé des explications."
 searchIntent: "Que faire quand un collaborateur accuse son manager de harcèlement moral après une demande d'explications ?"
