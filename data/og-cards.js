@@ -33,6 +33,7 @@ export const OG_CARDS = {
   "/images/articles/macao.webp": "/og/macao.jpg",
   "/images/articles/maquette-integree-non.webp": "/og/maquette-integree-non.jpg",
   "/images/articles/menage-image.webp": "/og/menage-image.jpg",
+  "/images/articles/migration-wordpress-nuxt-adresses.webp": "/og/migration-wordpress-nuxt-adresses.jpg",
   "/images/articles/mockup.webp": "/og/mockup.jpg",
   "/images/articles/mouff.webp": "/og/mouff.jpg",
   "/images/articles/niece.webp": "/og/niece.jpg",

@@ -9,12 +9,24 @@
  * Correspondances exactes ancienne URL -> nouvelle URL.
  * Les clés doivent être des chemins littéraux (aucun joker).
  *
- * Ces 9 entrées proviennent des blocs `og:url` hérités du front matter : ce sont
- * les seules anciennes URLs que le dépôt permet de reconstituer aujourd'hui.
- * Les destinations sont en ASCII pur : @nuxt/content slugifie les noms de
- * fichiers (« …-le-ménage.md » est servi sur « …-le-menage »).
+ * Toutes les adresses d'articles ont changé plusieurs fois depuis la sortie de
+ * WordPress. Elles sont reconstituées depuis l'historique Git (emplacement des
+ * fichiers dans content/ à chaque époque) :
+ *   - /AAAA/MM/<slug>     du 10 au 18 octobre 2024 (content/2024/MM/)
+ *   - /fr/AAAA/MM/<slug>  du 18 octobre au 20 décembre 2024
+ *   - /fr/<slug>          du 20 décembre 2024 au 26 mars 2026
+ *   - /en/<slug>          du 20 décembre 2024 au 23 mars 2025
+ * Les URL qui n'ont vécu que quelques minutes ne sont pas reprises.
+ *
+ * Les destinations sont en ASCII pur et en minuscules : @nuxt/content slugifie
+ * les noms de fichiers (« …-le-ménage.md » → « …-le-menage »,
+ * « chersCommerciaux.md » → « cherscommerciaux »).
+ *
+ * Les permaliens WordPress (www.houedanou.com/AAAA/MM/<slug>/) ne sont pas
+ * dans le dépôt : il faut l'export WordPress ou les 404 de la Search Console.
  */
 export const EXACT_REDIRECTS = {
+  // FR, URL plates (20 décembre 2024 → 26 mars 2026)
   '/fr/project-fat-loss': '/fr/20250508-project-fat-loss',
   '/fr/ipados26': '/fr/20250615-ipados26',
   '/fr/lacorruption': '/fr/20250101-lacorruption',
@@ -25,6 +37,71 @@ export const EXACT_REDIRECTS = {
   '/fr/on-fait-un-peu-le-menage': '/fr/20241005-on-fait-un-peu-le-menage',
   '/fr/non-ce-cable-de-240w-ne-chargera-pas-plus-vite-votre':
     '/fr/20241021-2-non-ce-cable-de-240w-ne-chargera-pas-plus-vite-votre',
+  '/fr/djamo-adieu-frais-de-rejet-bonjour-transferts-faciles-et-solde-discret':
+    '/fr/20240905-djamo-adieu-frais-de-rejet-bonjour-transferts-faciles-et-solde-discret',
+  '/fr/ghostwriter-une-alternative-gratuite-a-ia-writer-pour-linux':
+    '/fr/20241020-ghostwriter-une-alternative-gratuite-a-ia-writer-pour-linux',
+  '/fr/pendaison-de-cremaillere': '/fr/20241021-pendaison-de-cremaillere',
+  '/fr/cher-gens-dadobe': '/fr/20241212-cher-gens-dadobe',
+  '/fr/coca-cola-et-ia': '/fr/20241220-coca-cola-et-ia',
+  '/fr/liaetmoi': '/fr/20250604-liaetmoi',
+  '/fr/facebook-nest-pas-un-grin': '/fr/20250605-facebook-nest-pas-un-grin',
+  '/fr/cherscommerciaux': '/fr/20250705-cherscommerciaux',
+  '/fr/affinity-est-gratuit': '/fr/20251031-affinity-est-gratuit',
+  '/fr/josh-vs-aircotedivoire': '/fr/20251104-josh-vs-aircotedivoire',
+  '/fr/infinix-ou-oraimo': '/fr/20251225-infinix-ou-oraimo',
+  '/fr/comment-allumer-lecran-pixel-watch-notifications':
+    '/fr/20260311-comment-allumer-lecran-pixel-watch-notifications',
+
+  // FR, /fr/AAAA/MM/<slug> (18 octobre → 20 décembre 2024)
+  '/fr/2024/09/djamo-adieu-frais-de-rejet-bonjour-transferts-faciles-et-solde-discret':
+    '/fr/20240905-djamo-adieu-frais-de-rejet-bonjour-transferts-faciles-et-solde-discret',
+  '/fr/2024/10/on-fait-un-peu-le-menage': '/fr/20241005-on-fait-un-peu-le-menage',
+  '/fr/2024/10/ghostwriter-une-alternative-gratuite-a-ia-writer-pour-linux':
+    '/fr/20241020-ghostwriter-une-alternative-gratuite-a-ia-writer-pour-linux',
+  '/fr/2024/10/non-ce-cable-de-240w-ne-chargera-pas-plus-vite-votre':
+    '/fr/20241021-2-non-ce-cable-de-240w-ne-chargera-pas-plus-vite-votre',
+  '/fr/2024/10/pendaison-de-cremaillere': '/fr/20241021-pendaison-de-cremaillere',
+  '/fr/2024/10/restons-zen': '/fr/20241022-restons-zen',
+  '/fr/2024/10/cloner-ubuntu': '/fr/20241029-cloner-ubuntu',
+  '/fr/2024/12/cher-gens-dadobe': '/fr/20241212-cher-gens-dadobe',
+
+  // Sans préfixe de langue, /AAAA/MM/<slug> (10 → 18 octobre 2024)
+  '/2024/09/djamo-adieu-frais-de-rejet-bonjour-transferts-faciles-et-solde-discret':
+    '/fr/20240905-djamo-adieu-frais-de-rejet-bonjour-transferts-faciles-et-solde-discret',
+  '/2024/10/on-fait-un-peu-le-menage': '/fr/20241005-on-fait-un-peu-le-menage',
+
+  // Billet retiré le 8 avril 2026, republié réécrit le 11 septembre 2026
+  '/fr/20260327-harceleur-moral': '/fr/20260911-manager-accuse-harcelement-moral',
+
+  // EN, /en/AAAA/MM/<slug> (18 octobre → 20 décembre 2024)
+  '/en/2024/09/djamo-adieu-frais-de-rejet-bonjour-transferts-faciles-et-solde-discret':
+    '/en/20240905-djamo-adieu-frais-de-rejet-bonjour-transferts-faciles-et-solde-discret',
+  '/en/2024/10/on-fait-un-peu-le-menage': '/en/20241005-on-fait-un-peu-le-menage',
+  '/en/2024/10/ghostwriter-une-alternative-gratuite-a-ia-writer-pour-linux':
+    '/en/20241020-ghostwriter-une-alternative-gratuite-a-ia-writer-pour-linux',
+  '/en/2024/10/non-ce-cable-de-240w-ne-chargera-pas-plus-vite-votre':
+    '/en/20241021-2-non-ce-cable-de-240w-ne-chargera-pas-plus-vite-votre',
+  '/en/2024/10/pendaison-de-cremaillere': '/en/20241021-pendaison-de-cremaillere',
+  '/en/2024/10/restons-zen': '/en/20241022-restons-zen',
+  '/en/2024/10/cloner-ubuntu': '/en/20241029-cloner-ubuntu',
+  '/en/2024/12/cher-gens-dadobe': '/en/20241212-cher-gens-dadobe',
+
+  // EN, URL plates (20 décembre 2024 → 23 mars 2025)
+  '/en/djamo-adieu-frais-de-rejet-bonjour-transferts-faciles-et-solde-discret':
+    '/en/20240905-djamo-adieu-frais-de-rejet-bonjour-transferts-faciles-et-solde-discret',
+  '/en/on-fait-un-peu-le-menage': '/en/20241005-on-fait-un-peu-le-menage',
+  '/en/ghostwriter-une-alternative-gratuite-a-ia-writer-pour-linux':
+    '/en/20241020-ghostwriter-une-alternative-gratuite-a-ia-writer-pour-linux',
+  '/en/non-ce-cable-de-240w-ne-chargera-pas-plus-vite-votre':
+    '/en/20241021-2-non-ce-cable-de-240w-ne-chargera-pas-plus-vite-votre',
+  '/en/pendaison-de-cremaillere': '/en/20241021-pendaison-de-cremaillere',
+  '/en/restons-zen': '/en/20241022-restons-zen',
+  '/en/cloner-ubuntu': '/en/20241029-cloner-ubuntu',
+  '/en/cher-gens-dadobe': '/en/20241212-cher-gens-dadobe',
+  '/en/coca-cola-et-ia': '/en/20241220-coca-cola-et-ia',
+  '/en/l-histoire-danne': '/en/20250115-l-histoire-danne',
+  '/en/lacoorruption': '/en/20250101-lacorruption',
 }
 
 /**

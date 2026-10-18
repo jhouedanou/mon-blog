@@ -36,10 +36,12 @@ export function rememberLanguage(code) {
 // la visite, il envoie vers l'autre langue si ce n'est pas celle du visiteur.
 // Le site est statique, la redirection ne peut donc se faire que côté client.
 // Les robots ne sont jamais redirigés : Google doit continuer à indexer les
-// deux langues. Les slugs d'articles commencent par une date (AAAAMMJJ) ;
+// deux langues. « google » couvre les agents qui n'ont pas « bot » dans leur
+// nom, dont Google-InspectionTool (le test en direct de la Search Console).
+// Les slugs d'articles commencent par une date (AAAAMMJJ) ;
 // c'est ce qui distingue /en/<slug> d'une page comme /en/tags.
 export const LANGUAGE_REDIRECT_SCRIPT = String.raw`(function(){try{
-if(/bot|crawl|spider|slurp|mediapartners|lighthouse|headless|preview|facebookexternalhit|embedly|whatsapp|telegram|discord|slack|linkedin|twitter|skype|yandex|baidu|duckduck|semrush|ahrefs/i.test(navigator.userAgent))return;
+if(/bot|crawl|spider|slurp|google|mediapartners|lighthouse|headless|preview|facebookexternalhit|embedly|whatsapp|telegram|discord|slack|linkedin|twitter|skype|yandex|baidu|duckduck|semrush|ahrefs/i.test(navigator.userAgent))return;
 var s=window.sessionStorage;if(s.getItem('lang-checked'))return;s.setItem('lang-checked','1');
 var c=null;try{c=localStorage.getItem('${LANG_CHOICE_KEY}')}catch(e){}
 var n=((navigator.languages&&navigator.languages[0])||navigator.language||'').toLowerCase();
