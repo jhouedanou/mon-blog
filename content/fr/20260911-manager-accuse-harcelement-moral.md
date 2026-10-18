@@ -7,8 +7,6 @@ searchIntent: "Que faire quand un collaborateur accuse son manager de harcèleme
 tags: ["opinion", "société", "management"]
 ---
 
-# Le jour où demander des comptes est devenu du harcèlement moral
-
 J'ai appris l'année dernière, un peu par hasard et sans l'avoir demandé, que j'étais un harceleur moral et un manager toxique. Je n'ai pas eu besoin de passer un test de personnalité pour ça, une simple réunion un lundi matin a suffi. Comme l'histoire est terminée depuis un moment et que les principaux intéressés ont quitté l'entreprise, je peux enfin la raconter tranquillement.
 
 ## Le décor
