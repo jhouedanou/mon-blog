@@ -33,11 +33,12 @@ const switchLocalePath = useSwitchLocalePath()
 // Exception : un tag n'a pas le même slug d'une langue à l'autre (afrique,
 // africa). switchLocalePath menait de /en/tags/africa à /tags/africa, une page
 // vide en noindex que le prerender générait puis que le sitemap annonçait
-// (53 pages). Depuis une page de tag, on renvoie vers l'index des tags.
+// (53 pages). Depuis une page de tag, l'autre langue renvoie vers son index
+// des tags ; la langue courante reste sur la page.
 const TAG_PAGE = /^(\/en)?\/tags\/[^/]+\/?$/
 
 function otherLocalePath(code) {
-    if (TAG_PAGE.test(route.path)) return code === 'en' ? '/en/tags' : '/tags'
+    if (TAG_PAGE.test(route.path) && code !== locale.value) return code === 'en' ? '/en/tags' : '/tags'
     return switchLocalePath(code)
 }
 

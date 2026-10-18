@@ -10,7 +10,7 @@ tags: ["development", "tutorial", "security", "cloudflare", "nuxt"]
 
 > **Update, 23 September.** Since this post went out, I simply removed the Worker: the site is now served as plain files, and the CPU problem went away with it. What follows tells the story of the first fix, as I set it up on 22 September. The rest is at the end of the article.
 
-> **Correction, 18 October.** The paragraph below says that every old URL redirects to the right article. That was wrong: only nine did. The other 42 have redirected since 18 October; I explain how in [WordPress → Nuxt migration: I lost my search rankings, here's how I got them back](/en/20261018-migration-wordpress-nuxt-referencement-perdu-recupere).
+> **Correction, 18 October.** The paragraph below says that every old URL redirects to the right article. That was wrong: only nine did. The other 42 have redirected since 18 October; I explain how in [WordPress → Nuxt migration: I lost my SEO, here's how I got it back](/en/20261018-migration-wordpress-nuxt-referencement-perdu-recupere).
 
 This blog ran on WordPress for a long time. It has since moved to Nuxt, then [to Cloudflare](/en/20260402-vercel-cloudflare-pages-migration), and all that time hundreds of old addresses stayed in Google's index, in links from other sites and in the bookmarks of a few loyal readers. Over the past few weeks I finally cleaned up: every old URL redirects to the right article, and everything that belonged to WordPress's machinery answered 410, the response that tells Google "this page is gone, stop asking for it" (it has since become a plain 404, more on that at the end).
 
