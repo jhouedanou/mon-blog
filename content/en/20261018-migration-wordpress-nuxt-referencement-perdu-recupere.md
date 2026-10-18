@@ -50,7 +50,7 @@ That last point matters. When `robots.txt` answers with a server error, [Google 
 
 **In September 2026: server errors.** The Cloudflare Worker serving the site kept going over its CPU time limit, mostly because of bots looking for sensitive files. As a knock-on effect, real readers got 522 errors, even on the home page. I told that story in [I got my blog's traffic back (and the bots that come with it)](/en/20260922-jai-recupere-le-trafic-de-mon-blog-et-les-bots-qui-vont-avec).
 
-**And for the old WordPress, on `www`: a 522 error, to this day.** `www.houedanou.com` doesn't redirect to `houedanou.com`. Cloudflare receives the request and finds no server behind it. Every old link to the WordPress site lands on that error.
+**And for the old WordPress, on `www`: a 522 error, until October 18, 2026.** `www.houedanou.com` didn't redirect to `houedanou.com`. Cloudflare received the request and found no server behind it. Every old link to the WordPress site landed on that error.
 
 ## The other missing signals
 
@@ -89,6 +89,16 @@ Two traps:
 - **The 301 code has to be spelled out.** By default, Nuxt (via Nitro) redirects with a 307 code, which means "temporary". With a temporary redirect, [Google keeps the old address in its results](https://developers.google.com/search/docs/crawling-indexing/301-redirects){target="_blank" rel="noopener"}. With a 301, it shows the new one.
 - **The URL isn't always the file name.** Nuxt Content strips accents and lowercases everything: `chersCommerciaux.md` is served at `/fr/cherscommerciaux`, `on-fait-un-peu-le-ménage.md` at `/fr/on-fait-un-peu-le-menage`. A redirect to the file name leads to a 404.
 
+### Redirect `www` to the domain without `www`
+
+Since October 18, 2026, `www.houedanou.com/<path>` redirects with a 301 to `houedanou.com/<path>`, keeping the path and the parameters. This isn't set up in the site's code, but in the Cloudflare dashboard (Rules, then Redirect Rules):
+
+- source address: `https://www.houedanou.com/*`
+- target address: `https://houedanou.com/${1}`
+- code: 301, with "Preserve query string" checked
+
+An old link to the WordPress site now lands on the main domain. If the post has an equivalent, it gets redirected. If not, it gets a clean 404 instead of a 522 error.
+
 ### A real 404 for everything else
 
 An address with no equivalent shouldn't be redirected to the home page: Google treats that as a *soft 404*. It should just answer 404. Since September 23, 2026, the site has been fully generated ahead of time and served as plain files. An unknown address gets the site's 404 page, with a real 404 code.
@@ -105,7 +115,6 @@ A canonical tag on every page, the language declared correctly on the English pa
 
 - **The posts from the WordPress days.** They aren't on the new site, so their addresses have nowhere to redirect to. To recover them, I'd need the exact list of their addresses: a WordPress export, or the 404 pages in Search Console.
 - **Three posts deleted along the way**: "A scam to steal your password", "Trolls are clowns" and "How I built my site with Nuxt 3". Their addresses answer 404, and that's the right answer.
-- **The `www`.** Redirecting `www.houedanou.com` to `houedanou.com` isn't set up in the site's code, but in the Cloudflare dashboard (Rules, then Redirect Rules). That's the next thing I'm doing.
 
 ## Where the site stands today
 

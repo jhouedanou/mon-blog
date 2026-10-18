@@ -30,7 +30,7 @@ contenu des billets.
 | Canonical différente de l'URL | 3 : `/en/a-propos`, `/en/cv`, `/en/confidentialite` → version FR | À trancher (voir plus bas) |
 | `robots.txt` | 200, pointe vers `sitemap_index.xml` | OK |
 | `http://` → `https://` | 301 | OK |
-| **`https://www.houedanou.com/`** | **522** (Cloudflare ne trouve pas d'origine) | **À corriger dans Cloudflare** |
+| **`https://www.houedanou.com/`** | **522** (Cloudflare ne trouve pas d'origine) | **Corrigé** : règle de redirection Cloudflare, 301 vers `houedanou.com`, chemin et paramètres conservés |
 | `/page/` → `/page` | 307 (`html_handling = drop-trailing-slash`) | OK |
 | `/sitemap.xml` | 307 vers `/sitemap_index.xml` | OK |
 | Anciennes adresses `/fr/<slug>` (avant le 26 mars 2026) | 9 en 301, 12 en 404 | **Corrigé** : 21 en 301 |
@@ -85,12 +85,13 @@ Le détail, avec les commits, est dans le billet. Les points qui ont pesé sur l
   dans son nom et était redirigé vers `/en`.
 - Billet du 22 septembre : note de correction. Il affirmait que chaque ancienne URL était
   redirigée, alors que 9 seulement l'étaient.
+- Cloudflare (hors dépôt) : règle de redirection `https://www.houedanou.com/*` →
+  `https://houedanou.com/${1}`, 301, « Preserve query string ». Vérifié : `www` répond 301 et
+  `www.houedanou.com/fr/2024/10/restons-zen` arrive sur le billet en deux sauts.
 
 ## À faire, par ordre de priorité
 
-1. **Rediriger `www` vers le domaine racine** (tableau de bord Cloudflare, Règles → Redirections,
-   modèle « Redirect from WWW to root », code 301, en gardant le chemin). Ça ne se règle pas dans
-   le dépôt. C'est l'adresse de tous les anciens liens WordPress.
+1. ~~Rediriger `www` vers le domaine racine~~ : fait le 18 octobre 2026 (voir plus haut).
 2. **Search Console**, propriété de domaine `houedanou.com` (elle couvre `www`) :
    - Indexation → Pages : exporter « Introuvable (404) », « Soft 404 » et « Page avec
      redirection ». Les adresses `/AAAA/MM/<slug>/` sont les permaliens WordPress : décider pour

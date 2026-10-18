@@ -50,7 +50,7 @@ Ce dernier point compte. Quand `robots.txt` répond par une erreur serveur, [Goo
 
 **En septembre 2026 : des erreurs de serveur.** Le Worker de Cloudflare qui servait le site dépassait sa limite de temps de calcul, surtout à cause de robots qui cherchaient des fichiers sensibles. Par ricochet, de vrais lecteurs ont reçu des erreurs 522, jusque sur la page d'accueil. J'ai raconté cet épisode dans [J'ai récupéré le trafic de mon blog (et les bots qui vont avec)](/fr/20260922-jai-recupere-le-trafic-de-mon-blog-et-les-bots-qui-vont-avec).
 
-**Et pour l'ancien WordPress, sur `www` : une erreur 522, encore aujourd'hui.** `www.houedanou.com` ne redirige pas vers `houedanou.com`. Cloudflare reçoit la requête et ne trouve aucun serveur derrière. Tous les vieux liens vers le WordPress tombent sur cette erreur.
+**Et pour l'ancien WordPress, sur `www` : une erreur 522, jusqu'au 18 octobre 2026.** `www.houedanou.com` ne redirigeait pas vers `houedanou.com`. Cloudflare recevait la requête et ne trouvait aucun serveur derrière. Tous les vieux liens vers le WordPress tombaient sur cette erreur.
 
 ## Les autres signaux qui manquaient
 
@@ -89,6 +89,16 @@ Deux pièges :
 - **Le code 301 doit être écrit en toutes lettres.** Par défaut, Nuxt (via Nitro) redirige avec un code 307, qui veut dire « temporaire ». Avec une redirection temporaire, [Google garde l'ancienne adresse dans ses résultats](https://developers.google.com/search/docs/crawling-indexing/301-redirects){target="_blank" rel="noopener"}. Avec une 301, il affiche la nouvelle.
 - **Le nom de l'URL n'est pas toujours le nom du fichier.** Nuxt Content retire les accents et met tout en minuscules : `chersCommerciaux.md` est servi sur `/fr/cherscommerciaux`, `on-fait-un-peu-le-ménage.md` sur `/fr/on-fait-un-peu-le-menage`. Une redirection vers le nom du fichier mène à une 404.
 
+### Rediriger `www` vers le domaine sans `www`
+
+Depuis le 18 octobre 2026, `www.houedanou.com/<chemin>` redirige en 301 vers `houedanou.com/<chemin>`, en gardant le chemin et les paramètres. Ça ne se règle pas dans le code du site, mais dans le tableau de bord de Cloudflare (Rules, puis Redirect Rules) :
+
+- adresse d'origine : `https://www.houedanou.com/*`
+- adresse cible : `https://houedanou.com/${1}`
+- code : 301, avec « Preserve query string » coché
+
+Un vieux lien vers le WordPress arrive maintenant sur le domaine principal. Si le billet a un équivalent, il est redirigé. Sinon, il reçoit un 404 propre au lieu d'une erreur 522.
+
 ### Un vrai 404 pour tout le reste
 
 Une adresse qui n'a pas d'équivalent ne doit pas être redirigée vers l'accueil : Google traite ça comme un *soft 404*. Elle doit répondre 404, tout simplement. Depuis le 23 septembre 2026, le site est entièrement généré à l'avance et servi comme de simples fichiers. Une adresse inconnue reçoit la page 404 du site, avec un vrai code 404.
@@ -105,7 +115,6 @@ Balise canonique sur chaque page, langue déclarée correctement sur les pages a
 
 - **Les billets de l'époque WordPress.** Ils ne sont pas sur le nouveau site, donc leurs adresses n'ont nulle part où rediriger. Pour les retrouver, il me faudrait la liste exacte de leurs adresses : un export WordPress, ou les pages en erreur 404 dans la Search Console.
 - **Trois billets supprimés en route** : « Un scam pour voler votre mot de passe », « Les trolls sont des clowns » et « Comment j'ai construit mon site avec Nuxt 3 ». Leurs adresses répondent 404, et c'est la bonne réponse.
-- **Le `www`.** La redirection de `www.houedanou.com` vers `houedanou.com` ne se règle pas dans le code du site, mais dans le tableau de bord de Cloudflare (Règles, puis Redirections). C'est la prochaine chose que je fais.
 
 ## Où en est le site aujourd'hui
 
