@@ -7,8 +7,6 @@ searchIntent: "What to do when an employee accuses their manager of workplace bu
 tags: ["opinion", "society", "management"]
 ---
 
-# The day asking for accountability became workplace bullying
-
 I learned last year, somewhat by chance and without having asked, that I was a workplace bully and a toxic manager. I didn't need to take a personality test for that, a simple Monday morning meeting was enough. Since the story has been over for a while and the main people involved have left the company, I can finally tell it calmly.
 
 ## The setting

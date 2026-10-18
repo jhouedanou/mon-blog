@@ -29,12 +29,24 @@ const switchLocalePath = useSwitchLocalePath()
 // Les articles vivent dans content/<locale>/<slug> : leur URL porte déjà la
 // langue (/fr/<slug>, /en/<slug>) et switchLocalePath produirait /en/fr/<slug>.
 // Pour le reste du site (accueil, tags, thématiques), on s'appuie sur i18n.
+//
+// Exception : un tag n'a pas le même slug d'une langue à l'autre (afrique,
+// africa). switchLocalePath menait de /en/tags/africa à /tags/africa, une page
+// vide en noindex que le prerender générait puis que le sitemap annonçait
+// (53 pages). Depuis une page de tag, on renvoie vers l'index des tags.
+const TAG_PAGE = /^(\/en)?\/tags\/[^/]+\/?$/
+
+function otherLocalePath(code) {
+    if (TAG_PAGE.test(route.path)) return code === 'en' ? '/en/tags' : '/tags'
+    return switchLocalePath(code)
+}
+
 const items = computed(() =>
     locales.value.map((entry) => {
         const code = typeof entry === 'string' ? entry : entry.code
         return {
             code,
-            to: translatedArticlePath(route.path, code) || switchLocalePath(code),
+            to: translatedArticlePath(route.path, code) || otherLocalePath(code),
             label: code === 'en' ? t('switchToEnglish') : t('switchToFrench'),
         }
     })
