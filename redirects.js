@@ -71,9 +71,6 @@ export const EXACT_REDIRECTS = {
     '/fr/20240905-djamo-adieu-frais-de-rejet-bonjour-transferts-faciles-et-solde-discret',
   '/2024/10/on-fait-un-peu-le-menage': '/fr/20241005-on-fait-un-peu-le-menage',
 
-  // Billet retiré le 8 avril 2026, republié réécrit le 11 septembre 2026
-  '/fr/20260327-harceleur-moral': '/fr/20260911-manager-accuse-harcelement-moral',
-
   // EN, /en/AAAA/MM/<slug> (18 octobre → 20 décembre 2024)
   '/en/2024/09/djamo-adieu-frais-de-rejet-bonjour-transferts-faciles-et-solde-discret':
     '/en/20240905-djamo-adieu-frais-de-rejet-bonjour-transferts-faciles-et-solde-discret',
