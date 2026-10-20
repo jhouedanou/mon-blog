@@ -1,7 +1,7 @@
 ---
 title: "Hacked WordPress site: find out how the attacker got in"
 createdAt: "2026-10-20T09:00:00Z"
-image: "/images/articles/wordpress-pirate-trace-logs.webp"
+image: "/images/articles/pexels-pixabay-276452.webp"
 description: "WordPress site hacked? Before cleaning up, find the way in from the server logs: a guessed admin password, a plugin uploaded via wp-admin. Commands included."
 searchIntent: "My WordPress site was hacked: what should I do first, and how do I find in the server logs how the attacker got in (admin password, plugin, FTP)?"
 tags: ["tutorial", "wordpress", "security", "development"]
@@ -208,7 +208,7 @@ These bots aren't after anyone in particular. They try the same addresses on eve
 
 ---
 
-*Image: the trace of a guessed password and an uploaded plugin in an access log. Example: times, number of attempts and plugin name are made up.*
+*Photo: [Pixabay](https://www.pexels.com/photo/276452/), Pexels.*
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com) — log reader, preferably before the big clean-up*

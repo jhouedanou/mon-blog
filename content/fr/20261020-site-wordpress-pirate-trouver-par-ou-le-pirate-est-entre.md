@@ -1,7 +1,7 @@
 ---
 title: "Site WordPress piraté : trouver par où le pirate est entré"
 createdAt: "2026-10-20T09:00:00Z"
-image: "/images/articles/wordpress-pirate-trace-logs.webp"
+image: "/images/articles/pexels-pixabay-276452.webp"
 description: "Site WordPress piraté, que faire ? D'abord trouver la porte d'entrée dans les logs : mot de passe deviné, plugin envoyé par wp-admin. Commandes incluses."
 searchIntent: "Mon site WordPress a été piraté : que faire en premier, et comment retrouver dans les logs du serveur par où le pirate est entré (mot de passe admin, plugin, FTP) ?"
 tags: ["tutoriel", "wordpress", "sécurité", "dev"]
@@ -208,7 +208,7 @@ Ces robots ne visent personne en particulier. Ils essaient les mêmes adresses s
 
 ---
 
-*Image : la trace d'un mot de passe deviné puis d'un plugin téléversé, dans un journal d'accès. Exemple : heures, nombre d'essais et nom du plugin fictifs.*
+*Photo : [Pixabay](https://www.pexels.com/photo/276452/), Pexels.*
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com) — lecteur de logs, de préférence avant le grand ménage*

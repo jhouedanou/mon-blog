@@ -1,7 +1,7 @@
 ---
 title: "Migration WordPress → Nuxt : j'ai perdu mon référencement, voici comment je l'ai récupéré"
 createdAt: "2026-10-18T20:45:00Z"
-image: "/images/articles/migration-wordpress-nuxt-adresses.webp"
+image: "/images/articles/pexels-ketut-subiyanto-4246238.webp"
 description: "Quatre changements d'adresse, des erreurs 500, des pages « introuvables » en 200 : ce que ma migration vers Nuxt a coûté en SEO, et comment je l'ai réparé."
 searchIntent: "Pourquoi perd-on son référencement après une migration de WordPress vers Nuxt, et comment le récupérer : redirections 301, soft 404, robots.txt, sitemap, www ?"
 tags: ["dev", "tutoriel", "seo", "nuxt", "cloudflare"]
@@ -133,7 +133,7 @@ Je referai le point dans quelques semaines, avec les chiffres de la Search Conso
 
 ---
 
-*Image : les adresses successives du billet sur Djamo, d'après l'historique Git du site.*
+*Photo : [Ketut Subiyanto](https://www.pexels.com/photo/4246238/), Pexels.*
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com) — déménageur numérique, redirections comprises*

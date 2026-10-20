@@ -1,7 +1,7 @@
 ---
 title: "WordPress → Nuxt migration: I lost my SEO, here's how I got it back"
 createdAt: "2026-10-18T20:45:00Z"
-image: "/images/articles/migration-wordpress-nuxt-adresses.webp"
+image: "/images/articles/pexels-ketut-subiyanto-4246238.webp"
 description: "Four address changes, 500 errors, \"not found\" pages served with a 200: what my migration to Nuxt cost in SEO, and how I fixed it."
 searchIntent: "Why does a site lose its SEO after migrating from WordPress to Nuxt, and how do you get it back: 301 redirects, soft 404s, robots.txt, sitemap, www?"
 tags: ["dev", "tutorial", "seo", "nuxt", "cloudflare"]
@@ -133,7 +133,7 @@ I'll check in again in a few weeks, with the Search Console numbers. If the curv
 
 ---
 
-*Image: the successive addresses of the Djamo post, from the site's Git history.*
+*Photo: [Ketut Subiyanto](https://www.pexels.com/photo/4246238/), Pexels.*
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com) — digital mover, redirects included*
