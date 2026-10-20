@@ -60,6 +60,7 @@ export const OG_CARDS = {
   "/images/articles/tim-cook-temu.png": "/og/tim-cook-temu.jpg",
   "/images/articles/welcomeToTheNBA.webp": "/og/welcometothenba.jpg",
   "/images/articles/windows11-bypass.webp": "/og/windows11-bypass.jpg",
+  "/images/articles/wordpress-pirate-trace-logs.webp": "/og/wordpress-pirate-trace-logs.jpg",
   "/images/articles/worker-cpu-depassements-septembre-2026.webp": "/og/worker-cpu-depassements-septembre-2026.jpg",
   "/images/articles/yeah.webp": "/og/yeah.jpg",
   "/images/articles/zoho.webp": "/og/zoho.jpg",
