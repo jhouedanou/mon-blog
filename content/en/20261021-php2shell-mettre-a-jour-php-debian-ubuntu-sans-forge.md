@@ -38,32 +38,41 @@ Forge recommends its dashboard: PHP tab, "Update PHP" button. The upside is that
 
 ## The command, over SSH
 
-Log in as root (`sudo -i`) and paste this block. It runs on Ubuntu and Debian with Nginx and PHP-FPM, which is how Forge sets servers up.
+Log in as root (`sudo -i`) and paste this block. It runs on Ubuntu and Debian with Nginx and PHP-FPM (how Forge sets servers up) or with Apache, using PHP-FPM or mod_php. It's not for LiteSpeed: see further down.
 
 ```bash
 FIXED="8.5.12 8.4.27 8.3.36 8.2.35"
 export DEBIAN_FRONTEND=noninteractive NEEDRESTART_MODE=a LC_ALL=C
 echo "=== $(hostname) – $(lsb_release -ds 2>/dev/null)"
+WEB=""; for w in nginx apache2 lsws; do systemctl is-active --quiet $w && WEB="$WEB $w"; done
+echo "Web server:${WEB:- none detected}"
+MODPHP=$(ls /etc/apache2/mods-enabled/ 2>/dev/null | grep -oE '^php[0-9.]+\.load' | grep -oE '[0-9]+\.[0-9]+')
+[ -n "$MODPHP" ] && echo "⚠️ Apache mod_php enabled (PHP $MODPHP) – highest risk according to PHP"
+echo "$WEB" | grep -q lsws && echo "⚠️ LiteSpeed detected: PHP comes from lsphp packages, use the LiteSpeed procedure"
 for f in $(grep -l 'launchpad.*ondrej/php' /etc/apt/sources.list.d/* 2>/dev/null); do cp "$f" /root/$(basename "$f").bak; sed -i 's#https\?://ppa\.launchpad\(content\)\?\.net/ondrej/php/ubuntu#https://ppa.setup-php.com/ondrej/php/ubuntu#' "$f"; echo "Package source switched: $f"; done
 apt-get update 2>&1 | grep -iE 'err.*php|gpg|no_pubkey'
 for v in $(ls /etc/php); do
   C=$(apt-cache policy php$v-common | awk '/Candidate/ {print $2}' | cut -d- -f1)
   if [ -n "$C" ] && echo "$FIXED" | grep -qwF "$C"; then
     echo "PHP $v: installing $C..."
-    apt-get install -qq --only-upgrade -y -o Dpkg::Options::="--force-confold" $(dpkg -l "php$v*" | awk '/^ii/ {print $2}') >/dev/null
+    apt-get install -qq --only-upgrade -y -o Dpkg::Options::="--force-confold" $(dpkg -l "php$v*" "libapache2-mod-php$v*" 2>/dev/null | awk '/^ii/ {print $2}') >/dev/null
   else
     echo "PHP $v: ⚠️ NO PATCH AVAILABLE (installed: $(dpkg-query -W -f='${Version}' php$v-common 2>/dev/null), candidate: $(apt-cache policy php$v-common | awk '/Candidate/ {print $2}')) – temporary mitigation only"
   fi
 done
-sed -i 's/^;\?session.upload_progress.enabled.*/session.upload_progress.enabled = 0/' /etc/php/*/fpm/php.ini 2>/dev/null
+sed -i 's/^;\?session.upload_progress.enabled.*/session.upload_progress.enabled = 0/' /etc/php/*/fpm/php.ini /etc/php/*/apache2/php.ini /etc/php/*/cgi/php.ini 2>/dev/null
 for s in $(systemctl list-units --type=service --no-legend --plain 'php*-fpm*' | awk '{print $1}'); do systemctl restart "$s"; done
+echo "$WEB" | grep -q apache2 && systemctl restart apache2
 for a in $(ls /home/*/*/artisan /home/*/*/current/artisan 2>/dev/null); do sudo -u $(stat -c %U $a) php $a queue:restart >/dev/null 2>&1; done
 echo "=== RESULT"
-for v in $(ls /etc/php); do [ -x /usr/sbin/php-fpm$v ] && echo "MITIGATION PHP $v: $(/usr/sbin/php-fpm$v -i | grep upload_progress.enabled)"; done
-USED=$(grep -rhoE 'php[0-9.]+-fpm' /etc/nginx/ 2>/dev/null | grep -oE '[0-9]+\.[0-9]+' | sort -u)
-[ -z "$USED" ] && echo "No website uses PHP-FPM: PHP is not exposed to the web on this server"
-for v in $USED; do R=$(/usr/sbin/php-fpm$v -v 2>/dev/null | head -1 | awk '{print $2}'); if [ -n "$R" ] && echo "$FIXED" | grep -qwF "$R"; then echo "PHP VERSION: $R ✅ patched"; else echo "PHP VERSION: $R ❌ NOT patched"; fi; done
-for d in $(grep -RhE '^\s*server_name\s' /etc/nginx/sites-enabled/ /etc/nginx/conf.d/ 2>/dev/null | sed -E 's/^\s*server_name\s+//;s/;.*//' | tr -s ' \t' '\n' | grep -vE '^$|^_$|^localhost$|^[0-9.]+$|default' | sort -u); do echo "DOMAIN: $d → HTTP $(curl -s -o /dev/null -m 10 -w '%{http_code}' https://$d)"; done
+grep -H '^session.upload_progress.enabled' /etc/php/*/fpm/php.ini /etc/php/*/apache2/php.ini 2>/dev/null | sed 's#^/etc/php/#MITIGATION #'
+FPMV=$(grep -rhoE 'php[0-9.]+-fpm' /etc/nginx/ /etc/apache2/ 2>/dev/null | grep -oE '[0-9]+\.[0-9]+' | sort -u)
+[ -z "$FPMV$MODPHP" ] && echo "No website uses PHP: PHP is not exposed to the web on this server"
+chk(){ if [ -n "$2" ] && echo "$FIXED" | grep -qwF "$2"; then echo "PHP VERSION ($1): $2 ✅ patched"; else echo "PHP VERSION ($1): $2 ❌ NOT patched"; fi; }
+for v in $FPMV; do chk "php-fpm $v" "$(/usr/sbin/php-fpm$v -v 2>/dev/null | head -1 | awk '{print $2}')"; done
+for v in $MODPHP; do chk "mod_php $v" "$(dpkg-query -W -f='${Version}' libapache2-mod-php$v 2>/dev/null | cut -d- -f1)"; done
+DOMS=$( { grep -RhE '^\s*server_name\s' /etc/nginx/sites-enabled/ /etc/nginx/conf.d/ 2>/dev/null | sed -E 's/^\s*server_name\s+//;s/;.*//'; grep -RhiE '^\s*(ServerName|ServerAlias)\s' /etc/apache2/sites-enabled/ 2>/dev/null | sed -E 's/^\s*\S+\s+//'; } | tr -s ' \t' '\n' | sed 's/:.*//' | grep -vE '^$|^_$|^localhost$|^[0-9.]+$|default|\*' | sort -u)
+for d in $DOMS; do echo "DOMAIN: $d → HTTP $(curl -s -o /dev/null -m 10 -w '%{http_code}' https://$d)"; done
 echo "DATE: $(date -u '+%d %b %Y, %H:%M') (UTC)"
 ```
 
@@ -71,23 +80,26 @@ Expect a few seconds of downtime per PHP version while PHP-FPM restarts. If you 
 
 What you should see in the result:
 
-- `MITIGATION`: `=> Off => Off` for each version, or no line at all if there's no PHP-FPM.
-- `✅` for each version in use.
+- `MITIGATION`: `session.upload_progress.enabled = 0` for each file (fpm and/or apache2).
+- `✅` for each version in use (php-fpm or mod_php).
 - HTTP `200`, `301` or `302` for each domain.
+- "LiteSpeed detected": this script isn't the right one, use the lsphp procedure (further down).
 
 ## What the command does, step by step
 
-**1. It repairs the package source.** Older Forge servers still point at Launchpad, the original home of the `ondrej/php` repository. Forge now uses `ppa.setup-php.com`, a mirror of that repository. The `for f in …` loop swaps one for the other, after copying the original file to `/root/` (`.bak`). That's the step Forge's button does for you, and the one people forget over SSH.
+**1. It identifies the web server.** Nginx, Apache or LiteSpeed: it prints the ones running. It also flags mod_php, the riskiest case according to PHP, because the attack lands before any application code runs, inside Apache's own process. And it warns you if LiteSpeed is running: its PHP comes from other packages, which this script doesn't touch.
 
-**2. It checks the fix is actually there.** `apt-get update` only shows errors about PHP or GPG keys. Then, for each installed version (`ls /etc/php`), `apt-cache policy` gives the version you are about to receive. If it isn't in the `FIXED` list, the command installs nothing and says so, showing the installed and candidate versions. That's on purpose: tonight, some packages hadn't reached the mirrors yet, especially on ARM servers (8.4 and 8.5 on arm64, according to [the mirror's maintainer](https://github.com/shivammathur/setup-php/issues/1139){target="_blank" rel="noopener"}).
+**2. It repairs the package source.** Older Forge servers still point at Launchpad, the original home of the `ondrej/php` repository. Forge now uses `ppa.setup-php.com`, a mirror of that repository. The `for f in …` loop swaps one for the other, after copying the original file to `/root/` (`.bak`). That's the step Forge's button does for you, and the one people forget over SSH.
 
-**3. It upgrades every package for that version.** `--only-upgrade` installs nothing new, `--force-confold` keeps your `php.ini` and PHP-FPM pools as they are. The variables at the top stop apt and `needrestart` from pausing to ask questions. `LC_ALL=C` forces apt to answer in English: on a server set to French, it prints "Candidat" instead of "Candidate", and the command wouldn't find any version.
+**3. It checks the fix is actually there.** `apt-get update` only shows errors about PHP or GPG keys. Then, for each installed version (`ls /etc/php`), `apt-cache policy` gives the version you are about to receive. If it isn't in the `FIXED` list, the command installs nothing and says so, showing the installed and candidate versions. That's on purpose: tonight, some packages hadn't reached the mirrors yet, especially on ARM servers (8.4 and 8.5 on arm64, according to [the mirror's maintainer](https://github.com/shivammathur/setup-php/issues/1139){target="_blank" rel="noopener"}).
 
-**4. It turns off one PHP feature as a precaution.** `session.upload_progress.enabled = 0` is one of the temporary mitigations recommended by PHP and relayed by the [Dutch NCSC](https://github.com/NCSC-NL/php2shell){target="_blank" rel="noopener"}. It's a safety net for versions not yet fixed. The downside: upload progress bars built on that feature stop working. If your site has none, leave it off. The report shows, for each version, the value PHP-FPM actually reads: `=> Off => Off` means the mitigation is in place.
+**4. It upgrades every package for that version.** `--only-upgrade` installs nothing new, `--force-confold` keeps your `php.ini` and PHP-FPM pools as they are. The Apache module (`libapache2-mod-php`) is upgraded along with the rest. The variables at the top stop apt and `needrestart` from pausing to ask questions. `LC_ALL=C` forces apt to answer in English: on a server set to French, it prints "Candidat" instead of "Candidate", and the command wouldn't find any version.
 
-**5. It restarts PHP-FPM and Laravel queues.** Until a process restarts, it keeps the old PHP in memory. The command restarts every `php*-fpm` service, then runs `php artisan queue:restart` for each Laravel app found under `/home`, as the user who owns it. If you use Horizon, Reverb or Octane, restart those too: `php artisan horizon:terminate`, `php artisan reverb:restart`, and for Octane, a full restart of its Supervisor program (`octane:reload` isn't enough).
+**5. It turns off one PHP feature as a precaution.** `session.upload_progress.enabled = 0` is one of the temporary mitigations recommended by PHP and relayed by the [Dutch NCSC](https://github.com/NCSC-NL/php2shell){target="_blank" rel="noopener"}. It's a safety net for versions not yet fixed. The downside: upload progress bars built on that feature stop working. If your site has none, leave it off. The command turns it off in the PHP-FPM, Apache and CGI `php.ini` files.
 
-**6. It reports back.** First the step 4 mitigation, version by version. Then, for each PHP version Nginx uses, the installed PHP-FPM version, with ✅ or ❌. If no site uses PHP-FPM, it says so: PHP isn't exposed to the web on that server. Finally, it calls every domain declared in `sites-enabled` and `conf.d` and prints the HTTP code: `200`, `301` or `302`, the site is answering; `502`, PHP-FPM isn't running, go and look; `000`, no answer at all (a domain no longer pointing at this server, a missing certificate).
+**6. It restarts PHP-FPM, Apache and Laravel queues.** Until a process restarts, it keeps the old PHP in memory. The command restarts every `php*-fpm` service, then Apache if it's running (a real `restart`: with mod_php, a `reload` isn't enough), then runs `php artisan queue:restart` for each Laravel app found under `/home`, as the user who owns it. If you use Horizon, Reverb or Octane, restart those too: `php artisan horizon:terminate`, `php artisan reverb:restart`, and for Octane, a full restart of its Supervisor program (`octane:reload` isn't enough).
+
+**7. It reports back.** First the step 5 mitigation line, file by file. Then, for each PHP version Nginx or Apache uses, the installed PHP-FPM or mod_php version, with ✅ or ❌. If no site uses PHP, it says so: PHP isn't exposed to the web on that server. Finally, it calls every domain declared in the Nginx (`server_name`) and Apache (`ServerName`, `ServerAlias`) configuration and prints the HTTP code: `200`, `301` or `302`, the site is answering; `502`, PHP-FPM isn't running, go and look; `000`, no answer at all (a domain no longer pointing at this server, a missing certificate).
 
 ## Without Forge: Debian and Ubuntu
 
@@ -109,6 +121,22 @@ One trap on **Ubuntu without Forge**, with Ubuntu's own PHP: the distribution ba
 ```bash
 zgrep -E 'CVE-2026-10961[89]' /usr/share/doc/php8.3-fpm/changelog.Debian.gz
 ```
+
+### With LiteSpeed or CyberPanel
+
+OpenLiteSpeed and LiteSpeed use neither PHP-FPM nor mod_php, but their own packages, `lsphp` (for example `lsphp83`), installed under `/usr/local/lsws/`. That's the case with CyberPanel, which I run on a Hostinger VPS under AlmaLinux (I covered it in [my move from cPanel to CyberPanel](/en/20260327-cpanel-cyberpanel-migration)). The command from the start doesn't see them. The procedure:
+
+```bash
+# AlmaLinux, Rocky
+sudo dnf upgrade 'lsphp*'
+# Ubuntu, Debian
+sudo apt-get install --only-upgrade $(dpkg -l 'lsphp*' | awk '/^ii/ {print $2}')
+# then, in both cases
+sudo pkill lsphp
+/usr/local/lsws/lsphp83/bin/php -v
+```
+
+`pkill lsphp` stops the PHP processes: LiteSpeed starts them again on the next visit, with the new version. Check that it appears in the fixed versions table: if the package isn't out yet, the `session.upload_progress` mitigation goes in each `lsphp`'s `php.ini` (`/usr/local/lsws/lsphp83/etc/php/8.3/litespeed/php.ini` on Ubuntu, for example).
 
 One last case: FrankenPHP bundles its own PHP, which apt doesn't update. Move to FrankenPHP 1.13.2, or rebuild the Docker image.
 
