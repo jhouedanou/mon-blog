@@ -101,6 +101,99 @@ What you should see in the result:
 
 **7. It reports back.** First the step 5 mitigation line, file by file. Then, for each PHP version Nginx or Apache uses, the installed PHP-FPM or mod_php version, with ✅ or ❌. If no site uses PHP, it says so: PHP isn't exposed to the web on that server. Finally, it calls every domain declared in the Nginx (`server_name`) and Apache (`ServerName`, `ServerAlias`) configuration and prints the HTTP code: `200`, `301` or `302`, the site is answering; `502`, PHP-FPM isn't running, go and look; `000`, no answer at all (a domain no longer pointing at this server, a missing certificate).
 
+## Several Forge servers: the API and Termius
+
+With one or two servers, you log in, paste the command, done. With a whole fleet, you first need to know which site runs on which PHP, then check everywhere. I do it in two steps: Forge's API for the inventory and the update, [Termius](https://termius.com/){target="_blank" rel="noopener"} to check over SSH on every server at once.
+
+### The inventory with the Forge API
+
+You need a token: in Forge, profile menu, **API**, then *Create token*. Read access is enough for the inventory. To trigger the update through the API, you also need server management access. The new API is scoped by organisation (`https://forge.laravel.com/api/orgs/{org}/…`). The useful endpoints, according to [its OpenAPI specification](https://forge.laravel.com/api/docs.openapi){target="_blank" rel="noopener"}:
+
+| Request | What it returns |
+|---|---|
+| `GET /orgs` | Each organisation's `slug` |
+| `GET /orgs/{org}/servers` | IP, SSH port, Ubuntu version, default PHP for sites and for the command line |
+| `GET /orgs/{org}/servers/{id}/sites` | Each site, with its `php_version` |
+| `GET /orgs/{org}/servers/{id}/php/versions` | Installed PHP versions, with their ID |
+| `PUT /orgs/{org}/servers/{id}/php/versions/{php_id}` | Updates that version to the latest patch: the "Update PHP" button, without the dashboard |
+
+This small Python script goes through everything without changing anything. It only needs Python, already there on macOS and Linux:
+
+```python
+#!/usr/bin/env python3
+# PHP inventory of every Forge server (read-only).
+# FORGE_TOKEN=... python3 forge-php.py         → servers, PHP versions, sites
+# FORGE_TOKEN=... python3 forge-php.py --ssh   → ~/.ssh/config blocks for Termius
+import json, os, sys, urllib.request
+
+API = "https://forge.laravel.com/api"
+TOKEN = os.environ["FORGE_TOKEN"]
+
+def get(path):
+    """Paginated GET: returns every item in data[]."""
+    items, url = [], f"{API}{path}?page[size]=100"
+    while url:
+        req = urllib.request.Request(url, headers={"Authorization": f"Bearer {TOKEN}", "Accept": "application/json"})
+        with urllib.request.urlopen(req) as r:
+            body = json.load(r)
+        items += body.get("data", [])
+        nxt = (body.get("links") or {}).get("next")
+        url = (nxt if nxt.startswith("http") else "https://forge.laravel.com" + nxt) if nxt else None
+    return items
+
+for org in get("/orgs"):
+    slug = org["attributes"]["slug"]
+    for srv in get(f"/orgs/{slug}/servers"):
+        a, sid = srv["attributes"], srv["id"]
+        if "--ssh" in sys.argv:
+            print(f"Host {a['name']}\n  HostName {a['ip_address']}\n  Port {a['ssh_port']}\n  User forge\n")
+            continue
+        php = get(f"/orgs/{slug}/servers/{sid}/php/versions")
+        print(f"\n■ {a['name']}  {a['ip_address']}  Ubuntu {a['ubuntu_version']}  [org {slug}, server {sid}]")
+        print("  Installed PHP: " + ", ".join(f"{p['attributes']['version']} (id {p['id']})" for p in php))
+        for site in get(f"/orgs/{slug}/servers/{sid}/sites"):
+            print(f"  - {site['attributes']['name']:<40} {site['attributes'].get('php_version')}")
+```
+
+One limit: the API gives the branch (`php83`), not the patch number. It tells you a site runs PHP 8.3, not whether it's 8.3.35 or 8.3.36. For that, you have to look on the server.
+
+### Checking everywhere with Termius
+
+The same script, run with `--ssh`, writes one SSH entry per server:
+
+```bash
+FORGE_TOKEN=your_token python3 forge-php.py --ssh >> ~/.ssh/config
+```
+
+In Termius: **Hosts**, the **New Host** menu, **Import**, then **~/.ssh** ([documentation](https://docs.termius.com/getting-started/import-existing-hosts/){target="_blank" rel="noopener"}). Every server comes in at once. The user is `forge`: your SSH key must be in Termius and added in Forge for that account.
+
+Then **Vault**, **Snippets**, **New Snippet**, and this script. It doesn't need root:
+
+```bash
+FIXED="8.5.12 8.4.27 8.3.36 8.2.35"
+for f in /etc/nginx/sites-enabled/*; do
+  v=$(grep -ohE 'php[0-9.]+-fpm' "$f" | head -1 | grep -oE '[0-9]+\.[0-9]+'); [ -z "$v" ] && continue
+  r=$(/usr/sbin/php-fpm$v -v 2>/dev/null | head -1 | awk '{print $2}')
+  echo "$FIXED" | grep -qwF "$r" && e="✅" || e="❌"
+  echo "$(hostname) | $(basename "$f") | PHP $r $e"
+done
+```
+
+Open the snippet, tick every server and click **Run**: Termius opens one tab per server and runs the script there ([snippets documentation](https://docs.termius.com/terminal/snippets.md){target="_blank" rel="noopener"}). **Save targets** keeps the selection for next time. Each site comes out on one line: server, site, actual PHP-FPM version, ✅ or ❌.
+
+### Fixing the ❌
+
+The simplest way goes through the API, with no SSH and no password. The version ID (`php_id`) is the one the inventory prints:
+
+```bash
+curl -X PUT -H "Authorization: Bearer $FORGE_TOKEN" -H "Accept: application/json" \
+  https://forge.laravel.com/api/orgs/ORG/servers/SERVER/php/versions/PHP_ID
+```
+
+Forge answers straight away (`202`) and runs the update right after. Wait a minute, then run the Termius snippet again. To run this post's big command through Termius instead, you need root: as the `forge` user, `sudo -i` asks for the server's sudo password, the one Forge shows when the server is created, different on each server. Across a whole fleet, the API is simpler.
+
+Either way, queues don't restart on their own: one last snippet with `php artisan queue:restart` (and `horizon:terminate` with Horizon) in each application.
+
 ## Without Forge: Debian and Ubuntu
 
 On Debian with the distribution's own PHP, it's simpler: fixes come through Debian's security repository, like everything else. According to [Mattias Geniar's summary](https://ma.ttias.be/php-cve-2026-109618-patch/){target="_blank" rel="noopener"}, the fixed packages are `8.4.27-1~deb13u1` for Debian 13 and `8.2.35-1~deb12u1` for Debian 12.
