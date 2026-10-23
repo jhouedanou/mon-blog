@@ -42,6 +42,7 @@ export const OG_CARDS = {
   "/images/articles/pexels-jibarofoto-2148222.webp": "/og/pexels-jibarofoto-2148222.jpg",
   "/images/articles/pexels-katrin-bolovtsova-6077189.webp": "/og/pexels-katrin-bolovtsova-6077189.jpg",
   "/images/articles/pexels-ketut-subiyanto-4246238.webp": "/og/pexels-ketut-subiyanto-4246238.jpg",
+  "/images/articles/pexels-luca-sammarco-6142159.webp": "/og/pexels-luca-sammarco-6142159.jpg",
   "/images/articles/pexels-mikhail-nilov-7681016.webp": "/og/pexels-mikhail-nilov-7681016.jpg",
   "/images/articles/pexels-panumas-nikhomkhai-1148820.webp": "/og/pexels-panumas-nikhomkhai-1148820.jpg",
   "/images/articles/pexels-pixabay-276452.webp": "/og/pexels-pixabay-276452.jpg",
