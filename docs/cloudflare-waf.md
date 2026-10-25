@@ -94,12 +94,12 @@ or http.user_agent contains "nikto"
 
 `curl` n'est volontairement pas dans la liste : il sert à vérifier le site.
 
-## Règle 3 — Scrapers SEO et crawlers IA
+## Règle 3 — Scrapers SEO
 
-Nom : `Crawlers : SEO et IA`
+Nom : `Crawlers : SEO`
 
-Relevés le même jour : AhrefsBot (265), Baiduspider (113), CCBot (74),
-Perplexity (72), DotBot (71), Hunyuan (71), Amazonbot (56).
+Relevés le 22 septembre 2026 : AhrefsBot (265), Baiduspider (113),
+DotBot (71).
 
 ```
 http.user_agent contains "AhrefsBot"
@@ -110,33 +110,29 @@ or http.user_agent contains "BLEXBot"
 or http.user_agent contains "DataForSeoBot"
 or http.user_agent contains "PetalBot"
 or http.user_agent contains "Baiduspider"
-or http.user_agent contains "CCBot"
-or http.user_agent contains "Hunyuan"
-or http.user_agent contains "Amazonbot"
-or http.user_agent contains "PerplexityBot"
-or http.user_agent contains "Perplexity-User"
-or http.user_agent contains "GPTBot"
-or http.user_agent contains "ChatGPT-User"
-or http.user_agent contains "OAI-SearchBot"
-or http.user_agent contains "ClaudeBot"
-or http.user_agent contains "Claude-User"
-or http.user_agent contains "Claude-SearchBot"
-or http.user_agent contains "anthropic-ai"
-or http.user_agent contains "Bytespider"
-or http.user_agent contains "meta-externalagent"
-or http.user_agent contains "cohere-ai"
-or http.user_agent contains "Diffbot"
-or http.user_agent contains "ImagesiftBot"
-or http.user_agent contains "omgili"
-or http.user_agent contains "YouBot"
-or http.user_agent contains "DuckAssistBot"
-or http.user_agent contains "PanguBot"
-or http.user_agent contains "Timpibot"
 ```
 
-Plus simple pour la partie IA, et tenu à jour par Cloudflare :
-**Security → Bots → Block AI bots** (interrupteur), qui couvre aussi les
-crawlers absents de cette liste. Les deux peuvent coexister.
+## Robots d'IA : autorisés
+
+Depuis le 25 octobre 2026, les robots d'IA (GPTBot, ClaudeBot, PerplexityBot,
+Google-Extended, CCBot…) peuvent lire le site. ChatGPT, Claude, Perplexity
+ou Gemini ne peuvent citer le blog que si ces robots y ont accès.
+
+Avant, trois réglages Cloudflare les bloquaient. Les trois doivent être
+désactivés, sinon le blocage reste :
+
+1. **Règle WAF 3.** L'ancienne règle « Crawlers : SEO et IA » renvoyait 403
+   aux user-agents d'IA. La remplacer par l'expression ci-dessus.
+2. **Security → Bots → Block AI bots** (ou **AI Crawl Control**) : mettre
+   sur *Do not block*.
+3. **robots.txt géré** : dans **AI Crawl Control** (ou **Security → Bots**),
+   désactiver *Instruct AI bot traffic with robots.txt* / *Manage your
+   robots.txt*. Cloudflare ajoute sinon, en tête du fichier, un
+   `Disallow: /` pour GPTBot, ClaudeBot, Google-Extended… et la ligne
+   `Content-Signal: ai-train=no`.
+
+Le `robots.txt` du site (`server/routes/robots.txt.ts`) nomme ces robots dans
+son groupe `Allow: /`, au cas où le point 3 serait réactivé.
 
 ## Après mise en place
 
@@ -147,6 +143,14 @@ curl -sI https://houedanou.com/.env | head -1
 curl -sI https://houedanou.com/phpinfo.php | head -1
 curl -sI -A "AhrefsBot/7.0" https://houedanou.com/ | head -1
 curl -sI https://houedanou.com/fr/20250508-project-fat-loss | head -1   # doit rester 200
+```
+
+Et les robots d'IA (un 200, plus de 403) :
+
+```bash
+curl -sI -A "GPTBot/1.2" https://houedanou.com/ | head -1
+curl -sI -A "ClaudeBot/1.0" https://houedanou.com/ | head -1
+curl -s https://houedanou.com/robots.txt | grep -c "Cloudflare Managed"   # doit afficher 0
 ```
 
 Les blocages apparaissent dans **Security → Events**.
