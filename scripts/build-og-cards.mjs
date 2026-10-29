@@ -28,13 +28,13 @@ const INK = '#121714'
 
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
 
-// Carte par défaut : signature « Journal. », nom, accroche.
+// Carte par défaut : « Le Blog de », nom en signature, accroche.
 function defaultCardSvg() {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${WIDTH}" height="${HEIGHT}">
   <rect width="100%" height="100%" fill="${BG}"/>
   <rect x="0" y="0" width="18" height="${HEIGHT}" fill="${ACCENT}"/>
-  <text x="96" y="250" font-family="Georgia, 'Times New Roman', serif" font-size="150" font-weight="600" fill="${INK}">Journal<tspan fill="${ACCENT}">.</tspan></text>
-  <text x="100" y="340" font-family="Helvetica, Arial, sans-serif" font-size="44" font-weight="600" fill="${INK}">Jean-Luc Houédanou</text>
+  <text x="100" y="170" font-family="Helvetica, Arial, sans-serif" font-size="44" font-weight="600" fill="#3f4a43">Le Blog de</text>
+  <text x="96" y="290" font-family="Georgia, 'Times New Roman', serif" font-size="104" font-weight="600" fill="${INK}">Jean-Luc Houédanou<tspan fill="${ACCENT}">.</tspan></text>
   <text x="100" y="400" font-family="Helvetica, Arial, sans-serif" font-size="30" fill="#3f4a43">Tech, culture numérique et réflexions depuis Abidjan</text>
   <text x="100" y="560" font-family="Helvetica, Arial, sans-serif" font-size="28" font-weight="600" fill="${ACCENT}">houedanou.com</text>
 </svg>`
@@ -46,7 +46,7 @@ function brandBandSvg() {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${WIDTH}" height="${h}">
   <rect width="100%" height="100%" fill="${BG}" fill-opacity="0.94"/>
   <rect x="0" y="0" width="${WIDTH}" height="4" fill="${ACCENT}"/>
-  <text x="48" y="54" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="600" fill="${INK}">Journal<tspan fill="${ACCENT}">.</tspan></text>
+  <text x="48" y="54" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="600" fill="${INK}">Le Blog de Jean-Luc Houédanou<tspan fill="${ACCENT}">.</tspan></text>
   <text x="${WIDTH - 48}" y="54" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="600" fill="${ACCENT}">houedanou.com</text>
 </svg>`
 }

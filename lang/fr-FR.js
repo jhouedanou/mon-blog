@@ -41,8 +41,8 @@ export default {
 
   // Accueil
   heroLede: "Retours d'expérience, outils web, administration système et culture numérique depuis Abidjan.",
-  journal: "Journal",
-  endOfJournal: "Fin du journal",
+  blogName: "Le Blog de Jean-Luc Houédanou",
+  endOfBlog: "Fin du blog",
 
   // Article
   summary: "Résumé",
@@ -50,9 +50,10 @@ export default {
   share: "Partager",
   articleTagsLabel: "Étiquettes de l'article",
   oldArticles: "Mes anciens articles",
+  byAuthor: "Par",
 
   // Thématiques
-  exploreJournal: "Explorer le journal",
+  exploreBlog: "Explorer le blog",
   themesTitle: "Les thématiques",
   themesLede: "Des chemins éditoriaux pour retrouver les articles par sujet, plutôt que par date de publication.",
   themesNavLabel: "Thématiques du blog",
