@@ -3,7 +3,7 @@
 // Un constructeur par TYPE de page, jamais une copie par page.
 import {
   SITE_URL, SITE_NAME, PERSON_ID, WEBSITE_ID, BLOG_ID,
-  SITE_LANG, canonicalUrl, absoluteUrl,
+  SITE_LANG, AUTHOR_NAME, SAME_AS, canonicalUrl, absoluteUrl,
 } from './site.js'
 
 /** trail : [{ name, path }] — le dernier élément est la page courante. */
@@ -74,7 +74,16 @@ export function articleGraph({ article, url, image, description, tags, themes, s
       ...(image ? { image: [image] } : {}),
       datePublished: article?.createdAt,
       dateModified: article?.updatedAt || article?.createdAt,
-      author: { '@id': PERSON_ID },
+      // Même @id que le Person global : Google fusionne les deux nœuds. Nom,
+      // URL et profils sont répétés ici pour les lecteurs (robots d'IA) qui
+      // lisent le billet seul sans résoudre la référence.
+      author: {
+        '@type': 'Person',
+        '@id': PERSON_ID,
+        name: AUTHOR_NAME,
+        url: SITE_URL,
+        sameAs: SAME_AS,
+      },
       publisher: { '@id': PERSON_ID },
       isPartOf: { '@id': BLOG_ID },
       mainEntityOfPage: { '@id': `${url}#webpage` },

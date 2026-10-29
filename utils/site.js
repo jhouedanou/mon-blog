@@ -22,6 +22,21 @@ export const PERSON_ID = `${SITE_URL}/#person`
 export const WEBSITE_ID = `${SITE_URL}/#website`
 export const BLOG_ID = `${SITE_URL}/#blog`
 
+// Profils de la même personne (propriété `sameAs`). Une seule liste : le nœud
+// Person global et l'auteur de chaque billet la lisent ici. Chaque URL doit
+// aussi figurer en lien visible sur /a-propos. URLs canoniques, sans redirection.
+export const SAME_AS = [
+  'https://github.com/jhouedanou',
+  'https://www.linkedin.com/in/jlhouedanou',
+  'https://www.youtube.com/@JeanLucHouedanou',
+  'https://www.facebook.com/bloghouedanou/',
+  'https://www.slideshare.net/jhouedanou',
+  'https://www.quora.com/profile/Jean-Luc-Houedanou',
+  'https://x.com/afrowebdesigner',
+  'https://www.instagram.com/jlhouedanou/',
+  'https://jhouedanou.github.io/Curriculum-vitae/',
+]
+
 /** Absolutise un chemin ; laisse passer une URL déjà absolue. */
 export function absoluteUrl(path) {
   if (!path) return SITE_URL

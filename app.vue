@@ -158,7 +158,7 @@ onUnmounted(() => {
   window.removeEventListener('scroll', onScroll)
 })
 
-import { SITE_URL, SITE_NAME, PERSON_ID, WEBSITE_ID, BLOG_ID } from '~/utils/site.js'
+import { SITE_URL, SITE_NAME, PERSON_ID, WEBSITE_ID, BLOG_ID, SAME_AS } from '~/utils/site.js'
 import { safeJsonLd } from '~/composables/useSeo.js'
 import { LANGUAGE_REDIRECT_SCRIPT } from '~/utils/i18n.js'
 
@@ -174,7 +174,8 @@ const siteGraph = {
       '@type': 'Person',
       '@id': PERSON_ID,
       name: 'Jean-Luc Houédanou',
-      alternateName: ['Jean Luc Houedanou', 'Don Dada', 'JLH'],
+      // `afrowebdesigner` : le pseudonyme de X/Twitter, rattaché au nom réel.
+      alternateName: ['Jean Luc Houedanou', 'afrowebdesigner', 'Don Dada', 'JLH'],
       url: SITE_URL,
       image: {
         '@type': 'ImageObject',
@@ -182,7 +183,9 @@ const siteGraph = {
         url: `${SITE_URL}/images/1837389.jpeg`,
         contentUrl: `${SITE_URL}/images/1837389.jpeg`,
       },
-      jobTitle: 'Développeur web full-stack & Administrateur systèmes',
+      // Même intitulé que le poste actuel du CV (data/cv.js) : /cv déclare un
+      // nœud Person au même @id, deux intitulés différents se cumuleraient.
+      jobTitle: 'Directeur solutions digitales',
       description:
         "Développeur web full-stack et administrateur systèmes basé à Abidjan, Côte d'Ivoire. Blogueur tech sur houedanou.com.",
       worksFor: {
@@ -206,17 +209,7 @@ const siteGraph = {
         'Administration système Linux',
         'Culture numérique en Afrique',
       ],
-      sameAs: [
-        'https://github.com/jhouedanou',
-        'https://ci.linkedin.com/in/jlhouedanou',
-        'https://www.youtube.com/@JeanLucHouedanou',
-        'https://www.facebook.com/bloghouedanou/',
-        'https://www.slideshare.net/jhouedanou',
-        'https://www.quora.com/profile/Jean-Luc-Houedanou',
-        'https://twitter.com/afrowebdesigner',
-        'https://www.instagram.com/jlhouedanou/',
-        'https://jhouedanou.github.io/Curriculum-vitae/',
-      ],
+      sameAs: SAME_AS,
     },
     {
       '@type': 'WebSite',
