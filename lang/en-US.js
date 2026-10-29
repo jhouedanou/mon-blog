@@ -41,8 +41,8 @@ export default {
 
   // Home
   heroLede: "Hands-on experience, web tools, system administration and digital culture from Abidjan.",
-  journal: "Journal",
-  endOfJournal: "End of the journal",
+  blogName: "Jean-Luc Houédanou's Blog",
+  endOfBlog: "End of the blog",
 
   // Article
   summary: "Summary",
@@ -50,9 +50,10 @@ export default {
   share: "Share",
   articleTagsLabel: "Article tags",
   oldArticles: "My older articles",
+  byAuthor: "By",
 
   // Themes
-  exploreJournal: "Explore the journal",
+  exploreBlog: "Explore the blog",
   themesTitle: "Themes",
   themesLede: "Editorial paths to find articles by subject rather than by publication date.",
   themesNavLabel: "Blog themes",

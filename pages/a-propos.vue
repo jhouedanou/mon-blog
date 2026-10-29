@@ -69,7 +69,7 @@
               <i class="material-icons">code</i>
               GitHub
             </a>
-            <a href="https://ci.linkedin.com/in/jlhouedanou" target="_blank" rel="noopener noreferrer" class="about-contact__link">
+            <a href="https://www.linkedin.com/in/jlhouedanou" target="_blank" rel="noopener noreferrer" class="about-contact__link">
               <i class="material-icons">work</i>
               LinkedIn
             </a>
@@ -81,7 +81,7 @@
               <i class="material-icons">groups</i>
               Facebook
             </a>
-            <a href="https://twitter.com/afrowebdesigner" target="_blank" rel="noopener noreferrer" class="about-contact__link">
+            <a href="https://x.com/afrowebdesigner" target="_blank" rel="noopener noreferrer" class="about-contact__link">
               <i class="material-icons">alternate_email</i>
               X / Twitter
             </a>

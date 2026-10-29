@@ -8,7 +8,7 @@
       <div class="site-header__inner">
         <NuxtLink :to="localePath('/')" class="site-header__brand" :aria-label="`${$t('home')} - Le Blog de Jean-Luc Houédanou`">
           <img class="site-header__mark" src="/favicon-96x96.png" alt="" aria-hidden="true" width="32" height="32" />
-          <span class="site-header__wordmark">Journal<em>.</em></span>
+          <span class="site-header__wordmark"><span class="site-header__kicker">Le Blog de </span><span class="site-header__first-name">Jean-Luc</span> Houédanou<em>.</em></span>
         </NuxtLink>
 
         <button
@@ -158,7 +158,7 @@ onUnmounted(() => {
   window.removeEventListener('scroll', onScroll)
 })
 
-import { SITE_URL, SITE_NAME, PERSON_ID, WEBSITE_ID, BLOG_ID } from '~/utils/site.js'
+import { SITE_URL, SITE_NAME, AUTHOR_NAME, PERSON_ID, WEBSITE_ID, BLOG_ID, SAME_AS } from '~/utils/site.js'
 import { safeJsonLd } from '~/composables/useSeo.js'
 import { LANGUAGE_REDIRECT_SCRIPT } from '~/utils/i18n.js'
 
@@ -174,7 +174,8 @@ const siteGraph = {
       '@type': 'Person',
       '@id': PERSON_ID,
       name: 'Jean-Luc Houédanou',
-      alternateName: ['Jean Luc Houedanou', 'Don Dada', 'JLH'],
+      // `afrowebdesigner` : le pseudonyme de X/Twitter, rattaché au nom réel.
+      alternateName: ['Jean Luc Houedanou', 'afrowebdesigner', 'Don Dada', 'JLH'],
       url: SITE_URL,
       image: {
         '@type': 'ImageObject',
@@ -182,7 +183,9 @@ const siteGraph = {
         url: `${SITE_URL}/images/1837389.jpeg`,
         contentUrl: `${SITE_URL}/images/1837389.jpeg`,
       },
-      jobTitle: 'Développeur web full-stack & Administrateur systèmes',
+      // Même intitulé que le poste actuel du CV (data/cv.js) : /cv déclare un
+      // nœud Person au même @id, deux intitulés différents se cumuleraient.
+      jobTitle: 'Directeur solutions digitales',
       description:
         "Développeur web full-stack et administrateur systèmes basé à Abidjan, Côte d'Ivoire. Blogueur tech sur houedanou.com.",
       worksFor: {
@@ -206,24 +209,15 @@ const siteGraph = {
         'Administration système Linux',
         'Culture numérique en Afrique',
       ],
-      sameAs: [
-        'https://github.com/jhouedanou',
-        'https://ci.linkedin.com/in/jlhouedanou',
-        'https://www.youtube.com/@JeanLucHouedanou',
-        'https://www.facebook.com/bloghouedanou/',
-        'https://www.slideshare.net/jhouedanou',
-        'https://www.quora.com/profile/Jean-Luc-Houedanou',
-        'https://twitter.com/afrowebdesigner',
-        'https://www.instagram.com/jlhouedanou/',
-        'https://jhouedanou.github.io/Curriculum-vitae/',
-      ],
+      sameAs: SAME_AS,
     },
     {
       '@type': 'WebSite',
       '@id': WEBSITE_ID,
       url: SITE_URL,
-      name: 'Journal — Le Blog de Jean-Luc Houédanou',
-      alternateName: 'Le Blog de Jean-Luc Houédanou',
+      // `name` est le nom de site que Google affiche au-dessus du résultat.
+      name: SITE_NAME,
+      alternateName: [AUTHOR_NAME, 'houedanou.com'],
       inLanguage: 'fr',
       author: { '@id': PERSON_ID },
       publisher: { '@id': PERSON_ID },
@@ -257,10 +251,14 @@ const siteGraph = {
 }
 
 useHead(() => ({
-  // Suffixe court à dessein : plusieurs titres d'articles font déjà 55-70
-  // caractères, un suffixe de 31 garantirait la troncature SERP sur la partie
-  // utile. Le domaine est la marque.
-  titleTemplate: (title) => (title ? `${title} — houedanou.com` : HOME_TITLE),
+  // Le nom de l'auteur est la marque : il suit chaque titre pour que le site
+  // ressorte sur la recherche « Jean-Luc Houédanou ». Pas le nom complet du
+  // blog (31 caractères) : les titres d'articles font déjà 55-70 caractères.
+  // Pas de doublon quand le titre contient déjà le nom (À propos, CV).
+  titleTemplate: (title) => {
+    if (!title) return HOME_TITLE
+    return title.includes(AUTHOR_NAME) ? title : `${title} — ${AUTHOR_NAME}`
+  },
   script: [
     {
       id: 'ld-site',
@@ -409,6 +407,19 @@ main {
     color: var(--accent);
     transition: color 0.25s ease;
   }
+}
+
+// « Le Blog de » au-dessus du nom : le texte reste une seule phrase pour les
+// robots, sans élargir l'en-tête.
+.site-header__kicker {
+  display: block;
+  margin-bottom: 0.2rem;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
 }
 
 .site-header__nav {
@@ -589,8 +600,19 @@ main {
     order: 2;
   }
 
+  // Le nom passe sur deux lignes, sans le carré du logo : l'ensemble reste
+  // aussi étroit que l'ancien « Journal. » et ne pousse pas les boutons hors écran.
+  .site-header__mark {
+    display: none;
+  }
+
   .site-header__wordmark {
-    font-size: 1.3rem;
+    font-size: 1.05rem;
+    line-height: 1.1;
+  }
+
+  .site-header__first-name {
+    display: block;
   }
 }
 </style>

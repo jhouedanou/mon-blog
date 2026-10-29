@@ -5,7 +5,7 @@
             <aside class="home-sidebar">
                 <section class="hero-intro">
                     <div class="hero-intro__line">
-                        <span class="hero-intro__eyebrow">— {{ $t('journal') }} {{ currentYear }} ·
+                        <span class="hero-intro__eyebrow">— {{ $t('blogName') }} ·
                             <span v-if="articles && articles.length">{{ articles.length }} {{ $t('articles') }}</span>
                         </span>
                     </div>
@@ -87,7 +87,7 @@
                         <span class="loading-dot"></span>
                     </div>
                     <p v-if="allLoaded && displayedArticles.length > 0" class="all-loaded-msg">
-                        — {{ $t('endOfJournal') }} —
+                        — {{ $t('endOfBlog') }} —
                     </p>
                 </div>
             </div>
@@ -117,7 +117,6 @@ const isLoadingMore = ref(false)
 const scrollSentinel = ref(null)
 let infiniteObserver = null
 const searchQuery = ref('')
-const currentYear = new Date().getFullYear()
 
 const { data: articles } = await useAsyncData(`articles-${locale.value}`, () =>
     queryContent(locale.value)

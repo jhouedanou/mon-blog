@@ -8,7 +8,7 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <img class="footer-brand__mark" src="/favicon-96x96.png" alt="" aria-hidden="true" width="28" height="28" />
-                    <span class="footer-brand__wordmark">Journal<em>.</em></span>
+                    <span class="footer-brand__wordmark"><span class="footer-brand__kicker">Le Blog de </span>Jean-Luc Houédanou<em>.</em></span>
                 </div>
                 <div class="footer-meta">
                     <p class="footer-copy">&copy; {{ new Date().getFullYear() }} Jean-Luc Houédanou. {{ $t('allRightsReserved') }}</p>
@@ -112,6 +112,17 @@ const localePath = useLocalePath()
 .footer-brand__wordmark em {
     font-style: normal;
     color: var(--accent);
+}
+
+.footer-brand__kicker {
+    display: block;
+    margin-bottom: 0.2rem;
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
 }
 
 /* Meta — right side */

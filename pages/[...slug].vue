@@ -11,6 +11,9 @@
       </div>
       <header class="article-header">
         <div class="article-header__meta">
+          <!-- Signature visible : confirme en HTML l'auteur déclaré en JSON-LD. -->
+          <NuxtLink to="/a-propos" rel="author" class="article-header__author">{{ $t('byAuthor') }} Jean-Luc Houédanou</NuxtLink>
+          <span class="article-header__divider" aria-hidden="true">·</span>
           <span class="article-header__date">{{ formatDate(article.createdAt) }}</span>
           <span class="article-header__divider" aria-hidden="true">·</span>
           <span v-if="readingTime" class="article-header__reading-time">
@@ -406,6 +409,20 @@ function formatDate(createdAt) {
   color: var(--accent);
   text-transform: uppercase;
   letter-spacing: 0.1em;
+}
+
+.article-header__author {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+
+  &:hover {
+    color: var(--accent);
+  }
 }
 
 .article-header__divider {

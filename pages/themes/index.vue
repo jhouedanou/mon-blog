@@ -2,7 +2,7 @@
   <div class="themes-index">
     <div class="themes-index__container">
       <header class="themes-index__header">
-        <span class="themes-index__eyebrow">— {{ $t('exploreJournal') }}</span>
+        <span class="themes-index__eyebrow">— {{ $t('exploreBlog') }}</span>
         <h1 class="themes-index__title">{{ $t('themesTitle') }}</h1>
         <p class="themes-index__lede">{{ $t('themesLede') }}</p>
       </header>
