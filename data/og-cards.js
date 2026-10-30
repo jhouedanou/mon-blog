@@ -37,6 +37,7 @@ export const OG_CARDS = {
   "/images/articles/mouff.webp": "/og/mouff.jpg",
   "/images/articles/niece.webp": "/og/niece.jpg",
   "/images/articles/omarchy-matrix-boot.webp": "/og/omarchy-matrix-boot.jpg",
+  "/images/articles/opendisplay-accueil.webp": "/og/opendisplay-accueil.jpg",
   "/images/articles/pexels-cottonbro-4631077.webp": "/og/pexels-cottonbro-4631077.jpg",
   "/images/articles/pexels-imadclicks-19022728.webp": "/og/pexels-imadclicks-19022728.jpg",
   "/images/articles/pexels-jakubzerdzicki-28973296.webp": "/og/pexels-jakubzerdzicki-28973296.jpg",
