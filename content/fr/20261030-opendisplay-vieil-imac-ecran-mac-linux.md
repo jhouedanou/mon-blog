@@ -1,7 +1,7 @@
 ---
 title: "OpenDisplay : un vieil iMac comme écran pour un Mac ou un PC Linux, gratuitement"
 createdAt: "2026-10-30T15:00:00Z"
-image: "/images/articles/opendisplay-accueil.webp"
+image: "/images/articles/opendisplay-macbook-omarchy-imac.webp"
 description: "OpenDisplay, gratuit et open source, fait d'un vieil iMac l'écran d'un Mac ou d'un PC Linux. Installation pas à pas, et ce qu'on perd en qualité."
 searchIntent: "Comment utiliser gratuitement un vieil iMac comme deuxième écran d'un Mac ou d'un PC sous Linux avec OpenDisplay, et quelle qualité d'image attendre ?"
 tags: ["tutoriel", "apple", "macos", "mac", "linux", "omarchy", "open-source", "matériel"]
@@ -9,7 +9,9 @@ tags: ["tutoriel", "apple", "macos", "mac", "linux", "omarchy", "open-source", "
 
 **Réponse courte.** OpenDisplay est une application gratuite et open source. Elle fait d'un vieil iMac le deuxième écran d'un Mac récent ou d'un PC sous Linux. On installe un récepteur sur l'iMac, un émetteur sur l'autre machine, et c'est tout. Mais l'image voyage en vidéo compressée : elle est moins nette et moins fluide qu'un vrai écran branché en câble. Les chiffres sont plus bas.
 
-![La page d'accueil d'OpenDisplay : « Use your 5K iMac as your Mac's second monitor »](/images/articles/opendisplay-accueil.webp)
+Je l'ai fait avec mon MacBook Pro 2017 sous Omarchy : l'iMac affiche bien son bureau étendu.
+
+![À gauche, le MacBook Pro 2017 sous Omarchy, avec l'installation et les journaux d'od-sender dans le terminal. À droite, l'iMac qui affiche le bureau étendu du MacBook](/images/articles/opendisplay-macbook-omarchy-imac.webp)
 
 ## OpenDisplay en bref
 
@@ -33,7 +35,7 @@ OpenDisplay marche aussi avec un iPhone, un iPad ou une tablette Android. Ici, j
 Deux pièges :
 
 - **Un iMac de 2012 à 2014 ne peut pas servir d'écran** : il ne reçoit pas macOS Monterey. Pour lui, voyez [Sharp](/fr/20260929-sharp-vieil-imac-ecran-secondaire-ethernet).
-- **Un Mac trop ancien pour Sonoma ne peut pas envoyer l'image.** Mon MacBook Pro 2017, par exemple, s'arrête à macOS Ventura. Sous [Omarchy](/fr/20261013-retournement-de-veste-omarchy-macbook-pro-2017), il peut par contre servir d'émetteur. D'où le cas Linux plus bas.
+- **Un Mac trop ancien pour Sonoma ne peut pas envoyer l'image.** Mon MacBook Pro 2017, par exemple, s'arrête à macOS Ventura. Sous [Omarchy](/fr/20261013-retournement-de-veste-omarchy-macbook-pro-2017), il peut par contre servir d'émetteur : c'est le montage de la photo. D'où le cas Linux plus bas.
 
 ## Sur l'iMac : installer le récepteur
 
@@ -73,10 +75,12 @@ L'émetteur Linux s'appelle `od-sender`. Il est **en bêta**.
 sudo pacman -S --needed base-devel git
 git clone https://github.com/peetzweg/opendisplay
 cd opendisplay/linux/packaging/arch/opendisplay-sender
-makepkg -si
+./from-checkout.sh -si
 ```
 
-`makepkg -si` installe aussi les outils de compilation (Rust, clang et, sur un PC Intel ou AMD, nasm). Il vous demande donc votre mot de passe. La compilation prend quelques minutes, plus sur une petite machine.
+La documentation officielle indique `makepkg -si` à la place. Le 30 octobre 2026, chez moi, cette commande échouait avec l'erreur `cd: opendisplay-1.25.0/linux: No such file or directory`. Le script `from-checkout.sh`, rangé dans le même dossier, compile la version actuelle du dépôt (la 1.30.1 chez moi), et lui marche.
+
+Il installe aussi les outils de compilation (Rust, clang et, sur un PC Intel ou AMD, nasm). Il vous demande donc votre mot de passe. La compilation prend quelques minutes, plus sur une petite machine.
 
 **Sur une autre distribution** (Ubuntu 24.04, Debian 13, Fedora 39 ou plus récentes), prenez l'archive toute prête sur la [page des versions](https://github.com/peetzweg/opendisplay/releases/latest){target="_blank" rel="noopener"}, puis :
 
@@ -115,7 +119,9 @@ En clair : à pleine finesse, l'iMac 5K affiche 30 images par seconde. C'est bie
 
 **4. Un Mac Intel limite la définition.** Le format HEVC, le plus net, ne sert que si le Mac qui envoie a une puce Apple et que l'iMac décode le HEVC (la plupart des Mac de 2017 et après). Sinon, c'est le H.264, limité à 4096 × 2304 pixels. Sur un iMac 5K, le bureau passe alors de 2560 × 1440 à 2048 × 1152 points. À l'inverse, un iMac non Retina en 1920 × 1080 reçoit son image pixel pour pixel, à 60 images par seconde.
 
-**5. Depuis Linux, c'est plus lent et plus lourd.** L'émetteur Linux n'utilise pas la carte graphique : le processeur fait tout le travail. Il n'a pas de HEVC. Vers un iMac 5K, comptez 55 à 70 ms de délai, contre environ 20 ms vers un iPhone, et un processeur bien occupé. Sur Hyprland, le curseur est dessiné dans la vidéo : il suit la souris avec du retard. Et la version Linux n'est testée officiellement que sur Omarchy pour Mac Apple Silicon (Asahi Linux). Sur un PC Intel ou AMD, elle « devrait marcher », selon le développeur.
+**5. Depuis Linux, c'est plus lent et plus lourd.** L'émetteur Linux n'utilise pas la carte graphique : le processeur fait tout le travail. Il n'a pas de HEVC. Vers un iMac 5K, comptez 55 à 70 ms de délai, contre environ 20 ms vers un iPhone, et un processeur bien occupé. Sur Hyprland, le curseur est dessiné dans la vidéo : il suit la souris avec du retard. Et la version Linux n'est testée officiellement que sur Omarchy pour Mac Apple Silicon (Asahi Linux). Sur un PC Intel ou AMD, elle « devrait marcher », selon le développeur. Sur mon MacBook Pro 2017, un Mac Intel, elle marche.
+
+Sur ce MacBook, les journaux d'`od-sender` (visibles sur la photo) donnent environ 24 ms pour encoder une image, et de 60 à 100 ms environ entre la capture et l'envoi. Il faut encore ajouter le réseau et l'affichage sur l'iMac. Quand rien ne bouge à l'écran, l'émetteur n'envoie presque rien : moins d'une image par seconde.
 
 Sur une machine modeste, baissez la cadence :
 
@@ -157,8 +163,7 @@ Pour lire et coder entre deux Mac reliés par un câble, Sharp donne un texte pl
 - [README d'OpenDisplay sur GitHub](https://github.com/peetzweg/opendisplay){target="_blank" rel="noopener"} : FAQ, mesures et comparatif
 - [Installation de l'émetteur Linux](https://opendisplay.app/docs/linux/install/){target="_blank" rel="noopener"}, documentation officielle
 - [README de l'émetteur Linux](https://github.com/peetzweg/opendisplay/blob/main/linux/README.md){target="_blank" rel="noopener"} : bureaux pris en charge et limites connues
-
-*Capture d'écran : page d'accueil d'[opendisplay.app](https://opendisplay.app/){target="_blank" rel="noopener"}, le 30 octobre 2026.*
+- [Script from-checkout.sh](https://github.com/peetzweg/opendisplay/blob/main/linux/packaging/arch/opendisplay-sender/from-checkout.sh){target="_blank" rel="noopener"}, dans le dépôt d'OpenDisplay
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com)*
