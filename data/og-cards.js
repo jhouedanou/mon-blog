@@ -36,7 +36,7 @@ export const OG_CARDS = {
   "/images/articles/mockup.webp": "/og/mockup.jpg",
   "/images/articles/mouff.webp": "/og/mouff.jpg",
   "/images/articles/niece.webp": "/og/niece.jpg",
-  "/images/articles/omarchy-matrix-boot.webp": "/og/omarchy-matrix-boot.jpg",
+  "/images/articles/omarchy-macbook-pro-2017-deux-ecrans.webp": "/og/omarchy-macbook-pro-2017-deux-ecrans.jpg",
   "/images/articles/opendisplay-macbook-omarchy-imac.webp": "/og/opendisplay-macbook-omarchy-imac.jpg",
   "/images/articles/pexels-cottonbro-4631077.webp": "/og/pexels-cottonbro-4631077.jpg",
   "/images/articles/pexels-imadclicks-19022728.webp": "/og/pexels-imadclicks-19022728.jpg",
