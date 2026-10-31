@@ -1,7 +1,7 @@
 ---
 title: "Omarchy on My 2017 MacBook Pro: Three Days In"
 createdAt: "2026-10-13T18:00:00Z"
-image: "/images/articles/omarchy-matrix-boot.webp"
+image: "/images/articles/omarchy-macbook-pro-2017-deux-ecrans.webp"
 description: "Three days of Omarchy, DHH's Linux distro, on my 2017 MacBook Pro: what works, what doesn't (Bluetooth, external displays), and my conscience."
 searchIntent: "What is daily use of Omarchy (Arch Linux + Hyprland) like on a 2017 Intel MacBook Pro: performance, audio, Bluetooth, external displays, and what to make of its creator DHH?"
 tags: ["linux", "omarchy", "hyprland", "apple", "open-source", "opinion"]
@@ -44,6 +44,8 @@ After two days, you find your bearings. One app per workspace, everything from t
 Everything can be configured. Absolutely everything. Themes change the terminal, the browser, the bar, the notifications and the lock screen in one go. Omarchy ships 22 of them, and you can make your own in `~/.config/omarchy/themes/` ([Omarchy manual](https://github.com/omacom/omarchy/blob/v4.0.4/manual/06-themes.md){target="_blank" rel="noopener"}).
 
 Of course, I couldn't resist. With Claude, I built my Matrix theme, all the way down to the boot screen: green character rain falls while I type the password that unlocks the drive. The Plymouth theme is online, free and MIT-licensed: [omarchy-matrix-plymouth](https://github.com/jhouedanou/omarchy-matrix-plymouth){target="_blank" rel="noopener"}. It picks up the colors of the active Omarchy theme, so it doesn't have to stay green.
+
+![The omarchy-matrix-plymouth boot screen: the Omarchy logo and the password field, over green character rain](/images/articles/omarchy-matrix-boot.webp)
 
 ### Sound, fixed with the right driver
 
@@ -129,7 +131,7 @@ If it prints, I'll tell you. If it refuses to cooperate, I'll tell you that too.
 - GitHub, [Hyprmon](https://github.com/erans/hyprmon){target="_blank" rel="noopener"}
 - Lerd, [lerd.sh](https://lerd.sh){target="_blank" rel="noopener"}
 
-_Cover: the [omarchy-matrix-plymouth](https://github.com/jhouedanou/omarchy-matrix-plymouth){target="_blank" rel="noopener"} boot screen, rebuilt from the repo's images (MIT licence)._
+_Cover: my 2017 MacBook Pro running Omarchy, connected to two external screens. Boot screen: [omarchy-matrix-plymouth](https://github.com/jhouedanou/omarchy-matrix-plymouth){target="_blank" rel="noopener"}, rebuilt from the repo's images (MIT licence)._
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com) — reversible jacket*
