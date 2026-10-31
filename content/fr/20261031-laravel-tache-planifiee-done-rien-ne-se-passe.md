@@ -10,7 +10,7 @@ tags: ["tutoriel", "dev", "php", "laravel", "linux"]
 
 ## Le symptôme
 
-Sur SOBOA Foot, une application Laravel hébergée sur Laravel Forge, une tâche planifiée affichait DONE. Pourtant, rien ne se passait. Et aucun message d'erreur : la sortie partait dans `/dev/null`.
+Je fais du Laravel de temps en temps. Dernièrement, sur une application hébergée sur Laravel Forge, une tâche planifiée affichait DONE. Pourtant, rien ne se passait. Et aucun message d'erreur : la sortie partait dans `/dev/null`.
 
 `/dev/null`, c'est la poubelle de Linux. Tout ce qu'on y envoie disparaît.
 

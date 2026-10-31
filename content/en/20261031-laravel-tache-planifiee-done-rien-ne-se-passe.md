@@ -10,7 +10,7 @@ tags: ["tutorial", "development", "php", "laravel", "linux"]
 
 ## The symptom
 
-On SOBOA Foot, a Laravel app hosted on Laravel Forge, a scheduled task showed DONE. Yet nothing happened. And no error message: the output went to `/dev/null`.
+I do some Laravel now and then. Recently, on an app hosted on Laravel Forge, a scheduled task showed DONE. Yet nothing happened. And no error message: the output went to `/dev/null`.
 
 `/dev/null` is the Linux bin. Whatever you send there disappears.
 
