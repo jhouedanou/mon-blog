@@ -1,7 +1,7 @@
 ---
 title: "Omarchy sur mon MacBook Pro 2017 : le bilan après trois jours"
 createdAt: "2026-10-13T18:00:00Z"
-image: "/images/articles/omarchy-matrix-boot.webp"
+image: "/images/articles/omarchy-macbook-pro-2017-deux-ecrans.webp"
 description: "Trois jours d'Omarchy, le Linux de DHH, sur mon MacBook Pro 2017 : ce qui marche, ce qui coince (Bluetooth, écrans externes), et ma conscience."
 searchIntent: "Comment se passe Omarchy (Arch Linux + Hyprland) au quotidien sur un MacBook Pro Intel de 2017 : performances, son, Bluetooth, écrans externes, et que penser de son créateur DHH ?"
 tags: ["linux", "omarchy", "hyprland", "apple", "open-source", "opinion"]
@@ -44,6 +44,8 @@ Au bout de deux jours, on prend ses marques. Une application par espace de trava
 Tout se configure. Absolument tout. Les thèmes changent d'un coup le terminal, le navigateur, la barre, les notifications et l'écran de verrouillage. Omarchy en fournit 22, et on peut créer les siens dans `~/.config/omarchy/themes/` ([manuel d'Omarchy](https://github.com/omacom/omarchy/blob/v4.0.4/manual/06-themes.md){target="_blank" rel="noopener"}).
 
 Évidemment, je n'ai pas résisté. Avec Claude, j'ai monté mon thème Matrix, jusqu'à l'écran de démarrage : la pluie de caractères verts tombe pendant que je tape le mot de passe qui déchiffre le disque. Le thème Plymouth est en ligne, gratuit et sous licence MIT : [omarchy-matrix-plymouth](https://github.com/jhouedanou/omarchy-matrix-plymouth){target="_blank" rel="noopener"}. Il reprend les couleurs du thème Omarchy actif, donc il ne reste pas forcément vert.
+
+![L'écran de démarrage omarchy-matrix-plymouth : le logo Omarchy et le champ du mot de passe, sur une pluie de caractères verts](/images/articles/omarchy-matrix-boot.webp)
 
 ### Le son, réglé avec le bon pilote
 
@@ -129,7 +131,7 @@ Si elle imprime, je vous le dirai. Si elle ne veut rien savoir, je vous le dirai
 - GitHub, [Hyprmon](https://github.com/erans/hyprmon){target="_blank" rel="noopener"}
 - Lerd, [lerd.sh](https://lerd.sh){target="_blank" rel="noopener"}
 
-_Couverture : l'écran de démarrage [omarchy-matrix-plymouth](https://github.com/jhouedanou/omarchy-matrix-plymouth){target="_blank" rel="noopener"}, recomposé à partir des images du dépôt (licence MIT)._
+_Couverture : mon MacBook Pro 2017 sous Omarchy, relié à deux écrans externes. Écran de démarrage : [omarchy-matrix-plymouth](https://github.com/jhouedanou/omarchy-matrix-plymouth){target="_blank" rel="noopener"}, recomposé à partir des images du dépôt (licence MIT)._
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com) — veste réversible*
