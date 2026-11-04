@@ -3,8 +3,8 @@ title: "Everything, everything, everything: you'll find it all at Oraimo"
 createdAt: "2026-11-03T23:30:00Z"
 draft: true
 image: "/images/articles/oraimo-produits.webp"
-description: "Earbuds, headphones, air fryer, hot plate, spray mop, slides: my take on the Oraimo products I use every day in Abidjan. No commission, just use."
-searchIntent: "Are Oraimo products (earbuds, headphones, kitchen appliances, cleaning tools, clothes) really worth the money?"
+description: "Power bank, earbuds, air fryer, mop, mug: the Oraimo products I'd buy again, and the ones I wouldn't. No commission, just everyday use."
+searchIntent: "Are Oraimo products (earbuds, power bank, kitchen appliances, cleaning tools, clothes) really worth the money?"
 tags: ["tech", "hardware", "review", "africa"]
 ---
 
@@ -14,7 +14,11 @@ So today is all about Oraimo. I don't get any commission on the products I'm abo
 
 To keep it short: in most cases, Oraimo products are excellent value for money. Beyond the marketing, it's a Chinese brand (part of the Transsion group, like Tecno, Infinix and itel) that managed to settle in here thanks to good-quality products at good prices.
 
-## Sound
+So I've sorted the Oraimo products I use into three groups: the ones I'd buy again without a second thought, the ones I'd buy again with a catch, and the ones I wouldn't buy again.
+
+## I'd buy again, no question
+
+### Earphones
 
 My first Oraimo product, and so my first contact with the brand, was a pair of earphones: the Oraimo CONCH, wired in-ear earphones sold for 2,000 to 3,000 CFA francs (roughly $3.50 to $5) in Abidjan. The sound is a touch bass-heavy, but they're sturdy. I often buy them for friends and family who want good earphones that don't cost too much.
 
@@ -24,27 +28,31 @@ Then one day, on my way to the shops, I lost the charging case of my Sony WF-C50
 
 ![Oraimo SpaceBuds 2 wireless earbuds in space grey, sitting in their open charging case](/images/articles/oraimo-spacebuds-2.webp)
 
-I also have the Oraimo BoomPop 2 headphones. They're good headphones, with good battery life, but the sound is nothing special, and neither is the noise cancellation. Worse: the faux-leather ear pads are flaking.
+### Power bank
 
-![Oraimo BoomPop 2 wireless headphones, black with neon green rings around the ear cups](/images/articles/oraimo-boompop-2.webp)
+I also have the Oraimo PowerJet 130 power bank (27,600 mAh, up to 100 W). It's very good.
 
-## Watches
+<!-- TO ADD: what you charge with it (phone, laptop…) and why it's very good. -->
 
-I love smartwatches. I've already written about the Oraimo Watch Nova AM in [this article](/en/20251225-infinix-ou-oraimo), even though it now sleeps in a drawer, next to the Infinix one. I have a Google Pixel Watch, which is simply better.
+![Grey Oraimo PowerJet 130 power bank, with three ports and a small screen showing the charge level and power](/images/articles/oraimo-powerjet-130.webp)
 
-![Oraimo Watch Nova AM smartwatch, with a square case and a black strap](/images/articles/oraimo-watch-nova-am.webp)
+### Mug and insulated bottle
 
-## Kitchen
+But Oraimo doesn't only make electronics. For my coffee, I have the Oraimo ThermoGo insulated mug (750 ml). And I have the Oraimo MegaDrink 1200 insulated bottle (1.2 L, leak-proof).
 
-But Oraimo doesn't only do audio. I have a [SmartAirFryer](https://ci.oraimo.com/product/oraimo-1500w-cooking-visible-smart-air-fryer){target="_blank" rel="noopener"}: it's the first air fryer I've used that doesn't smell of burnt plastic, and its non-stick coating is very easy to clean.
+<!-- TO ADD: your take on the mug and the bottle (how long coffee stays hot, drinks stay cold…). -->
+
+![Black Oraimo ThermoGo insulated mug, with a handle and a locking lid](/images/articles/oraimo-thermogo.webp)
+
+![Grey stainless steel Oraimo MegaDrink 1200 insulated bottle, with a green carrying ring on the cap](/images/articles/oraimo-megadrink-1200.webp)
+
+### Kitchen
+
+I have a [SmartAirFryer](https://ci.oraimo.com/product/oraimo-1500w-cooking-visible-smart-air-fryer){target="_blank" rel="noopener"}: it's the first air fryer I've used that doesn't smell of burnt plastic, and its non-stick coating is very easy to clean.
 
 ![Black Oraimo SmartAirFryer, with a window in the basket to watch the food cook](/images/articles/oraimo-smartairfryer.webp)
 
-I also have the FlexiCooker, a 2,200 W ceramic hot plate with preset programmes, some more energy-efficient than others.
-
-![Oraimo FlexiCooker ceramic hot plate, with its display and preset programme buttons](/images/articles/oraimo-flexicooker.webp)
-
-## Cleaning
+### Cleaning
 
 Once the meal is cooked, it's time to clean. For the dishes, I have the [Oraimo Ultra Cleaner Scrubber](https://ci.oraimo.com/product/oraimo-cordless-1.5h-runtime-electric-spin-brush-with-5-replacement-heads){target="_blank" rel="noopener"}, a cordless electric spin brush (1.5 hours of battery life, 5 heads) that degreases pots and kitchen counters.
 
@@ -54,7 +62,7 @@ And I have the [MistGlide](https://ci.oraimo.com/product/oraimo-mistglide-multi-
 
 ![Oraimo MistGlide spray mop, with its tank on the handle and a flat microfibre head](/images/articles/oraimo-mistglide.webp)
 
-## Everything else
+### Bathroom and clothes
 
 I also have the Oraimo electric toothbrush [TO CONFIRM: SmartDent, SmartDent C2, SoniCare or Magnisonic], which works very well. And even clothes: the NanoShield T-shirts, which resist stains, the EcoLuxe polo shirts and the [CrestFrom](https://ci.oraimo.com/product/oraimo-crestfrom-ergonomic-anti-skid-slipper-ohds-003){target="_blank" rel="noopener"} slides, heavily inspired by the Yeezy Foam Runner.
 
@@ -62,7 +70,25 @@ I also have the Oraimo electric toothbrush [TO CONFIRM: SmartDent, SmartDent C2,
 
 ![Black Oraimo CrestFrom slides, with a wave-sculpted sole](/images/articles/oraimo-crestfrom.webp)
 
-One constant, with a few exceptions: quality at a low price.
+## I'd buy again, with a catch
+
+I have the FlexiCooker, a 2,200 W ceramic hot plate with preset programmes. The catch: some of those programmes use more electricity than others.
+
+![Oraimo FlexiCooker ceramic hot plate, with its display and preset programme buttons](/images/articles/oraimo-flexicooker.webp)
+
+## I wouldn't buy again
+
+I have the Oraimo BoomPop 2 headphones. They're good headphones, with good battery life, but the sound is nothing special, and neither is the noise cancellation. Worse: the faux-leather ear pads are flaking.
+
+![Oraimo BoomPop 2 wireless headphones, black with neon green rings around the ear cups](/images/articles/oraimo-boompop-2.webp)
+
+I love smartwatches. I've already written about the Oraimo Watch Nova AM in [this article](/en/20251225-infinix-ou-oraimo), even though it now sleeps in a drawer, next to the Infinix one. I have a Google Pixel Watch, which is simply better.
+
+![Oraimo Watch Nova AM smartwatch, with a square case and a black strap](/images/articles/oraimo-watch-nova-am.webp)
+
+## In short
+
+One constant, with a few exceptions: quality at a low price. The exceptions: the BoomPop 2 headphones and the Watch Nova AM.
 
 _Images: Oraimo._
 
