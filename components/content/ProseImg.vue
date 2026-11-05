@@ -2,7 +2,7 @@
   <!-- Remplace le ProseImg de Nuxt Content : même image (optimisée par
        @nuxt/image), plus une lightbox au clic. `span` et `button` restent
        valides dans le <p> que Markdown met autour de chaque image. -->
-  <span class="zoomable">
+  <span ref="rootEl" class="zoomable">
     <component
       :is="ImageComponent"
       class="zoomable__img"
@@ -12,7 +12,9 @@
       :height="height"
       @click="openFromImage"
     />
-    <button type="button" class="zoomable__btn" :aria-label="t('zoomImage')" @click="open">
+    <!-- Pas de loupe dans un lien : le clic suivrait le lien, et un bouton
+         dans un <a> n'est pas du HTML valide. -->
+    <button v-if="!inLink" type="button" class="zoomable__btn" :aria-label="t('zoomImage')" @click="open">
       <i class="material-icons" aria-hidden="true">zoom_in</i>
     </button>
 
@@ -30,6 +32,7 @@
           <img
             class="lightbox__img"
             :class="{ 'is-zoomed': zoomed }"
+            :style="zoomed ? { width: `${zoomWidth}px` } : null"
             :src="refinedSrc"
             :alt="alt"
             @click.stop="toggleZoom"
@@ -44,7 +47,7 @@
 </template>
 
 <script setup>
-import { computed, nextTick, ref } from 'vue'
+import { computed, nextTick, onMounted, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { withTrailingSlash, withLeadingSlash, joinURL } from 'ufo'
 import ImageComponent from '#build/mdc-image-component.mjs'
@@ -71,8 +74,15 @@ const refinedSrc = computed(() => {
 
 const isOpen = ref(false)
 const zoomed = ref(false)
+const zoomWidth = ref(0)
+const inLink = ref(false)
+const rootEl = ref(null)
 const dialogEl = ref(null)
 const scrollerEl = ref(null)
+
+onMounted(() => {
+  inLink.value = Boolean(rootEl.value?.closest('a'))
+})
 
 async function open() {
   isOpen.value = true
@@ -90,8 +100,10 @@ function close() {
   dialogEl.value?.close()
 }
 
-// Appelé par close() et par la touche Échap.
+// Appelé par close() et par la touche Échap. L'événement `close` arrive
+// après coup : si la lightbox a été rouverte entre-temps, on l'ignore.
 function onClose() {
+  if (dialogEl.value?.open) return
   isOpen.value = false
   zoomed.value = false
 }
@@ -101,18 +113,25 @@ function onDialogClick(event) {
   if (event.target === dialogEl.value || event.target === scrollerEl.value) close()
 }
 
-// Un clic sur l'image zoome, en gardant sous le doigt le point touché.
+// Un clic sur l'image zoome (deux fois la taille affichée, 960 px au moins),
+// en gardant sous le doigt le point touché.
 async function toggleZoom(event) {
-  const rect = event.currentTarget.getBoundingClientRect()
+  const img = event.currentTarget
+  const rect = img.getBoundingClientRect()
   const rx = (event.clientX - rect.left) / rect.width
   const ry = (event.clientY - rect.top) / rect.height
+  if (!zoomed.value) zoomWidth.value = Math.round(Math.max(rect.width * 2, 960))
   zoomed.value = !zoomed.value
   await nextTick()
   const s = scrollerEl.value
-  if (zoomed.value && s) {
-    s.scrollLeft = rx * s.scrollWidth - s.clientWidth / 2
-    s.scrollTop = ry * s.scrollHeight - s.clientHeight / 2
-  }
+  if (!zoomed.value || !s) return
+  // Position de l'image dans la zone défilante, marge intérieure comprise.
+  const box = s.getBoundingClientRect()
+  const after = img.getBoundingClientRect()
+  const left = after.left - box.left + s.scrollLeft
+  const top = after.top - box.top + s.scrollTop
+  s.scrollLeft = left + rx * after.width - (event.clientX - box.left)
+  s.scrollTop = top + ry * after.height - (event.clientY - box.top)
 }
 </script>
 
@@ -193,6 +212,7 @@ async function toggleZoom(event) {
 /* margin: auto centre l'image sans couper le haut quand elle déborde. */
 .lightbox__img {
   display: block;
+  flex-shrink: 0; /* sinon le zoom est ramené à la largeur de l'écran */
   margin: auto;
   max-width: calc(100vw - 2rem);
   max-height: calc(100dvh - 2rem);
@@ -200,8 +220,8 @@ async function toggleZoom(event) {
   cursor: zoom-in;
 }
 
+/* La largeur zoomée est posée en ligne par toggleZoom. */
 .lightbox__img.is-zoomed {
-  width: max(calc(100vw - 2rem), 960px);
   height: auto;
   max-width: none;
   max-height: none;
