@@ -104,8 +104,9 @@ html[data-theme="light"] {
   color-scheme: light;
 }
 
-/* Jetons du thème sombre, partagés entre le choix explicite (data-theme, posé
-   par app.vue) et le repli sans JavaScript, qui suit le réglage système. */
+/* Jetons du thème sombre. Le site est clair par défaut, quel que soit le
+   réglage système : le sombre ne s'applique que si le lecteur le choisit avec
+   le bouton du header (data-theme="dark", posé par app.vue). */
 @mixin dark-theme-tokens {
   /* Mode sombre façon terminal : noir à peine vert, accent vert phosphore. */
   --bg-primary: #0b0f0c;
@@ -144,12 +145,6 @@ html[data-theme="light"] {
 
 html[data-theme="dark"] {
   @include dark-theme-tokens;
-}
-
-@media (prefers-color-scheme: dark) {
-  html:not([data-theme]) {
-    @include dark-theme-tokens;
-  }
 }
 
 /* ==========================================
