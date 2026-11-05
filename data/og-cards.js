@@ -55,6 +55,7 @@ export const OG_CARDS = {
   "/images/articles/pexels-towfiqu-barbhuiya-9755391.webp": "/og/pexels-towfiqu-barbhuiya-9755391.jpg",
   "/images/articles/pexels-userpascal-32698507.webp": "/og/pexels-userpascal-32698507.jpg",
   "/images/articles/philippe-simo-vendeur-de-reves.webp": "/og/philippe-simo-vendeur-de-reves.jpg",
+  "/images/articles/pi-spi-couverture.webp": "/og/pi-spi-couverture.jpg",
   "/images/articles/pingui.webp": "/og/pingui.jpg",
   "/images/articles/pixel-watch-notifications-ecran.webp": "/og/pixel-watch-notifications-ecran.jpg",
   "/images/articles/prestashop-migration-domaine.webp": "/og/prestashop-migration-domaine.jpg",
