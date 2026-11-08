@@ -37,7 +37,7 @@ A concrete example: « Ce qu'elles nous servent là est affreux » (roughly, "wh
 
 That turn of phrase, on top of being condescending, rests on a rather loose use of the verb "servir".
 
-You don't "serve" a grammar mistake the way you serve a coffee. This awkward wording, used precisely to criticise other people's French, betrays an imperfect command of the language, which is quite something coming from someone who presumes to hand out Bescherelles.
+You don't "serve" a grammar mistake the way you serve a coffee. This awkward wording, used precisely to criticise other people's French, betrays an imperfect command of the language, which is quite something coming from someone who [presumes to hand out Bescherelles](/en/20241022-restons-zen).
 
 Then there's this.
 
@@ -76,7 +76,7 @@ It needs to be said: it was not the bookshop as a whole that spoke out. In fact,
 
 ![The bookshop's clarification](/images/articles/bescherelle/00.webp)
 
-It was just one CM, poorly trained or poorly supervised, who in a few clicks turned a cultural showcase into a stage for misogynistic stand-up.
+It was just one CM, poorly trained or poorly supervised, who in a few clicks turned a cultural showcase into [a stage for misogynistic stand-up](/en/20260822-oui-a-lexcision-non-diversion-rhetorique).
 
 In conclusion, ladies, be yourselves.
 

@@ -15,7 +15,7 @@ summary: "Between code and client deadlines, there is the body. This post tells 
 
 And besides, yet another 'to do' app to put the Udemy React courses into practice, we've all seen that before.
 
-Between the all-nighters on Visual Studio Code, the last-minute deliverables, the never-ending client projects, I pushed my physical condition into the background for a long time. 
+Between the all-nighters on Visual Studio Code, [the last-minute deliverables](/en/20260707-je-suis-encore-vivant), the never-ending client projects, I pushed my physical condition into the background for a long time. 
 
 Result: chronic fatigue, fitness at rock bottom, and an unpleasant feeling of forgetting about myself.
 

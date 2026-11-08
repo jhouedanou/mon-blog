@@ -208,7 +208,7 @@
 import { ref, computed, onMounted } from 'vue'
 import { useSeo } from '~/composables/useSeo.js'
 import { webPageLd, breadcrumbLd } from '~/utils/schema.js'
-import { canonicalUrl, PERSON_ID } from '~/utils/site.js'
+import { canonicalUrl, PERSON_ID, PERSON_URL, AUTHOR_JOB_TITLE } from '~/utils/site.js'
 import {
   identity, profile, experience, previousRoles, education,
   skills, projects, languages, levelLabels, labels, sourceFiles,
@@ -272,10 +272,12 @@ useSeo(() => ({
       '@id': PERSON_ID,
       name: identity.name,
       email: `mailto:${identity.email}`,
-      url: identity.portfolio,
+      // Le portfolio est déjà dans SAME_AS (utils/site.js) : `url` reste la
+      // page de profil, identique au nœud global, pour ne pas cumuler deux URL.
+      url: PERSON_URL,
       address: { '@type': 'PostalAddress', addressLocality: 'Abidjan', addressCountry: 'CI' },
       sameAs: [identity.github, identity.blog],
-      jobTitle: lang.value === 'fr' ? 'Directeur solutions digitales' : 'Digital Solutions Director',
+      jobTitle: AUTHOR_JOB_TITLE[lang.value] || AUTHOR_JOB_TITLE.fr,
     },
     {
       ...webPageLd({ url: cvUrl, name: cvTitle.value, description: cvDescription.value, image: '/images/1837389.jpeg', type: 'ProfilePage' }),

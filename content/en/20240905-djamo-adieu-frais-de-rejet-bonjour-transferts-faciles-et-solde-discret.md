@@ -27,7 +27,7 @@ The second improvement concerns money transfers via Orange Money. Where you prev
 
 Users can now transfer money directly from one app to the other, without juggling different syntaxes: the transfer happens across two screens, the Djamo one where you enter the amount to transfer, and the Orange Money mobile app one where you confirm the transaction.
 
-This deeper integration promises to make money transfers faster, simpler and less error-prone.
+This deeper integration promises to make [money transfers faster, simpler](/en/20261105-pi-spi-bceao-banque-mobile-money-explique) and less error-prone.
 
 ## **Hiding your balance**
 

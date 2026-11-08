@@ -35,7 +35,7 @@ C'est d'ailleurs pour ça que sa phrase a fait si mal. Beaucoup de ceux qui l'in
 
 Nos modèles publics sont des footballeurs, des artistes, et une bonne partie de gens dont personne ne sait d'où vient l'argent (je ne donne pas de noms, vous les connaissez). Un type qui parle d'épargne, d'investissement au pays et de patrimoine sur des chaînes suivies par des centaines de milliers de personnes, ça nous tire vers le haut. Même quand il rate une phrase.
 
-Le vrai problème n'est pas qu'il parle trop fort, c'est qu'il soit presque seul à parler de ça. S'il y avait vingt Philippe Simo avec des approches différentes, une sortie ratée sur les 30 ans serait une opinion parmi d'autres, pas une chasse à l'homme.
+Le vrai problème n'est pas qu'il parle trop fort, c'est qu'il soit presque seul à parler de ça. S'il y avait vingt Philippe Simo avec des approches différentes, une sortie ratée sur les 30 ans serait une opinion parmi d'autres, pas [une chasse à l'homme](/fr/20250115-l-histoire-danne).
 
 Donc, pour ceux qui ont envie d'avancer : discutez l'idée, corrigez ce qui est faux, mais ne cassez pas l'un des seuls débats utiles qu'on ait eus cette année.
 

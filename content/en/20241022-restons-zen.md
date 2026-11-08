@@ -53,7 +53,7 @@ Then add another layer.
 
 **"Madam/Sir. I did not ask you anything."**
 
-You can then quietly sip your glass while they choke on their unsolicited expertise :).
+You can then quietly sip your glass while they choke on their [unsolicited expertise](/en/20250605-facebook-nest-pas-un-grin) :).
 
 ### The Digital Prophet
 
@@ -61,7 +61,7 @@ You can then quietly sip your glass while they choke on their unsolicited expert
 
 **Your glass of water**: Quietly enjoy your drink while browsing your job opportunities.
 
-When they add "Artificial intelligence is going to turn everything upside down", pour yourself a second glass.
+When they add "[Artificial intelligence is going to turn everything upside down](/en/20261016-pourquoi-lia-ne-me-remplacera-pas)", pour yourself a second glass.
 
 These same oracles predicted the end of the Internet in 2000... before creating their Facebook profile.
 

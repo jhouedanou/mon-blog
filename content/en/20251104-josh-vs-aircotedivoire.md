@@ -56,7 +56,7 @@ That said, Air Côte d'Ivoire didn't navigate smooth skies either. Their perform
 
 This last point represents a real air pocket in their strategy. Even after upgrading the passenger during the flight, ACI never contacted JC again. For a company seeking to take flight in the long-haul market, this lack of after-sales service is a missed opportunity.
 
-Moreover, blocking JC on Instagram (an influencer with nearly a million subscribers) transforms poor management into a delicate situation. This confrontational approach reinforces the impression of a "power struggle" rather than a willingness to dialogue.
+Moreover, blocking JC on Instagram (an influencer with nearly a million subscribers) transforms poor management into a delicate situation. This confrontational approach reinforces the impression of a "power struggle" rather than a willingness to dialogue. A company's social media is not [a grin, a chat among friends](/en/20250605-facebook-nest-pas-un-grin).
 
 ### An escalation that raises questions
 

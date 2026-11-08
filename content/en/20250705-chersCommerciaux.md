@@ -39,7 +39,7 @@ Picture this: one morning, your boss opens a dashboard. He doesn't read a report
 
 That's where technology doesn't lie.
 
-* **AirTag + Find My**: these technologies allow near real-time location, relayed by the many iPhones nearby.
+* **AirTag + Find My**: these technologies allow [near real-time location](/en/20260730-telephone-perdu-retrouve-abobo-findhub), relayed by the many iPhones nearby.
 * **iCloud**: photos, documents and locations can be synced automatically.
 * **Timestamped history**: every detour and every stop is recorded, dated and geolocated.
 
@@ -64,7 +64,7 @@ There is no miracle solution, but an approach based on caution and transparency 
 
 **As an employee:**
 * **Understand what's at stake**: consider that every work tool can become an awkward witness.
-* **Separate work from personal life**: never mix your uses.
+* **Separate work from personal life**: [never mix your uses](/en/20261028-whatsapp-nest-pas-un-moyen-de-communication-professionnel).
 * **Ask questions**: don't hesitate to find out about the apps and technologies installed on your equipment.
 
 **As an employer:**

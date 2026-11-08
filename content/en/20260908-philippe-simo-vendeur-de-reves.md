@@ -35,7 +35,7 @@ That's actually why his line hurt so much. Many of those insulting him don't hav
 
 Our public role models are footballers, artists, and a fair number of people whose money nobody knows the source of (I'm not naming names, you know them). A guy who talks about saving, investing back home and building wealth on channels followed by hundreds of thousands of people pulls us upward. Even when he fumbles a line.
 
-The real problem isn't that he talks too loud, it's that he's almost alone in talking about this. If there were twenty Philippe Simos with different approaches, a botched statement about turning 30 would be one opinion among others, not a manhunt.
+The real problem isn't that he talks too loud, it's that he's almost alone in talking about this. If there were twenty Philippe Simos with different approaches, a botched statement about turning 30 would be one opinion among others, not [a manhunt](/en/20250115-l-histoire-danne).
 
 So, for those who want to move forward: debate the idea, correct what's wrong, but don't wreck one of the only useful conversations we've had this year.
 

@@ -12,6 +12,13 @@ export const OG_LOCALE = 'fr_FR'
 export const OG_LOCALES = { fr: 'fr_FR', en: 'en_US' }
 export const TWITTER = '@afrowebdesigner'
 export const AUTHOR_NAME = 'Jean-Luc Houédanou'
+// Intitulé du schéma Person, identique au sous-titre visible de /a-propos.
+// Une seule source : app.vue et /cv déclarent la même Person (même @id),
+// deux intitulés différents se cumuleraient.
+export const AUTHOR_JOB_TITLE = {
+  fr: 'Développeur web full-stack & Administrateur systèmes',
+  en: 'Full-stack web developer & Systems administrator',
+}
 
 // Les cartes sociales doivent être en JPEG : X et LinkedIn ne rendent pas le WebP.
 export const DEFAULT_OG_IMAGE = '/og/default.jpg'
@@ -19,6 +26,10 @@ export const DEFAULT_OG_IMAGE = '/og/default.jpg'
 // Identifiants du graphe d'entité. Un `@id` qui diffère d'un slash suffit à créer
 // deux entités distinctes aux yeux de Google : ils vivent ici, pas en dur.
 export const PERSON_ID = `${SITE_URL}/#person`
+// URL de la Person : la page de profil (ProfilePage de /a-propos), celle que vise
+// la signature « Par Jean-Luc Houédanou » des billets. Une seule valeur pour tous
+// les nœuds au même @id (app.vue, billets, /cv), sinon Google cumule deux URL.
+export const PERSON_URL = `${SITE_URL}/a-propos`
 export const WEBSITE_ID = `${SITE_URL}/#website`
 export const BLOG_ID = `${SITE_URL}/#blog`
 

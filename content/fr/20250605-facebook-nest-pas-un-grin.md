@@ -37,7 +37,7 @@ Exemple concret : « Ce qu'elles nous servent là est affreux ».
 
 Cette tournure, en plus d'être condescendante, repose sur une utilisation hasardeuse du verbe « servir ».
 
-On ne « sert » pas une erreur de grammaire comme on sert un café. Cette formulation maladroite, pourtant employée pour critiquer la langue des autres, révèle une maîtrise imparfaite du français — un comble, pour quelqu'un qui a la prétention de distribuer des Bescherelle.
+On ne « sert » pas une erreur de grammaire comme on sert un café. Cette formulation maladroite, pourtant employée pour critiquer la langue des autres, révèle une maîtrise imparfaite du français — un comble, pour quelqu'un qui a [la prétention de distribuer des Bescherelle](/fr/20241022-restons-zen).
 
 Ensuite, il y a ceci.
 
@@ -76,7 +76,7 @@ Il faut le souligner : ce n'est pas la librairie dans son ensemble qui s'est exp
 
 ![Mise au point de la librairie](/images/articles/bescherelle/00.webp)
 
-C'est juste un(e) CM — mal formé(e) ou mal encadré(e) — qui, en quelques clics, a transformé une vitrine culturelle en scène de stand-up misogyne.
+C'est juste un(e) CM — mal formé(e) ou mal encadré(e) — qui, en quelques clics, a transformé une vitrine culturelle en [scène de stand-up misogyne](/fr/20260822-oui-a-lexcision-non-diversion-rhetorique).
 
 En conclusion, mesdames, soyez vous-mêmes.
 

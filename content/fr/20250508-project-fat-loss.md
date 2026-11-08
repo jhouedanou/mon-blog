@@ -15,7 +15,7 @@ summary: "Entre le code et les deadlines clients, il y a le corps. Ce billet rac
 
 Et puis, une énième app « to do » pour mettre en application les cours Udemy de React, c'est du déjà-vu.
 
-Entre les nuits blanches sur Visual Studio Code, les livrables de dernière minute, les projets clients à n'en plus finir, j'ai longtemps relégué ma condition physique au second plan. 
+Entre les nuits blanches sur Visual Studio Code, [les livrables de dernière minute](/fr/20260707-je-suis-encore-vivant), les projets clients à n'en plus finir, j'ai longtemps relégué ma condition physique au second plan. 
 
 Résultat : fatigue chronique, forme en berne, et une sensation désagréable de s'oublier.
 

@@ -2,7 +2,7 @@
 // `useSeo({ jsonLd })`, qui les enveloppe dans un unique @graph par page.
 // Un constructeur par TYPE de page, jamais une copie par page.
 import {
-  SITE_URL, SITE_NAME, PERSON_ID, WEBSITE_ID, BLOG_ID,
+  SITE_URL, SITE_NAME, PERSON_ID, PERSON_URL, WEBSITE_ID, BLOG_ID,
   SITE_LANG, AUTHOR_NAME, SAME_AS, canonicalUrl, absoluteUrl,
 } from './site.js'
 
@@ -81,7 +81,7 @@ export function articleGraph({ article, url, image, description, tags, themes, s
         '@type': 'Person',
         '@id': PERSON_ID,
         name: AUTHOR_NAME,
-        url: SITE_URL,
+        url: PERSON_URL,
         sameAs: SAME_AS,
       },
       publisher: { '@id': PERSON_ID },

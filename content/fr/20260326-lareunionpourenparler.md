@@ -18,7 +18,7 @@ Celle-là n'apparaît que lorsque les vagues de l'ego et du manque d'arguments �
 ## La réunion « pour en parler »
 
 Ça commence toujours de la même façon : une demande formulée avec la désinvolture de quelqu'un qui n'aura pas à la réaliser.
-Formulée entre deux messages, comme si l'effort en temps et ressources qu'elle représente n'existait pas. Une demande dont la taille est inversement proportionnelle à l'aplomb avec lequel elle est posée.
+[Formulée entre deux messages](/fr/20261028-whatsapp-nest-pas-un-moyen-de-communication-professionnel), comme si l'effort en temps et ressources qu'elle représente n'existait pas. Une demande dont la taille est inversement proportionnelle à l'aplomb avec lequel elle est posée.
 
 En réponse, on envoie une analyse technique : options comparées, risques anticipés, recommandation d'outils qui font déjà le travail, plan de développement détaillé. En d'autres termes, on réfléchit à la place de celui qui n'a pas pris le temps de le faire.
 
@@ -52,7 +52,7 @@ Sans en exiger la substance.
 ## Que faut-il faire ?
 
 À cet instant, il faut éviter de tomber dans le piège d'une énième réunion fantôme, car vous avez déjà proposé une solution argumentée et documentée. Rien de productif ne sortira de cette réunion — je vous le garantis.
-Soyez pragmatiques, et demandez à votre interlocuteur de formuler par écrit ses appréhensions. C'est une base saine pour continuer l'échange.
+Soyez pragmatiques, et demandez à votre interlocuteur de [formuler par écrit ses appréhensions](/fr/20260908-cest-integre-dans-la-maquette). C'est une base saine pour continuer l'échange.
 
 ## Et ça a marché dans ton cas ?
 

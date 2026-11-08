@@ -39,7 +39,7 @@ Imaginez un matin, votre supérieur ouvre un tableau de bord. Il n'y lit pas un 
 
 C'est là que la technologie ne ment pas.
 
-* **AirTag + Localiser (Find My)** : ces technologies permettent une localisation en temps quasi réel, relayée par les nombreux iPhones aux alentours.
+* **AirTag + Localiser (Find My)** : ces technologies permettent [une localisation en temps quasi réel](/fr/20260730-telephone-perdu-retrouve-abobo-findhub), relayée par les nombreux iPhones aux alentours.
 * **iCloud** : photos, documents et positions peuvent être automatiquement synchronisés.
 * **Historique horodaté** : chaque détour et chaque arrêt est enregistré, daté et géolocalisé.
 
@@ -64,7 +64,7 @@ Il n'y a pas de solution miracle, mais une approche basée sur la prudence et la
 
 **En tant qu'employé :**
 * **Comprenez l'enjeu** : considérez que chaque outil professionnel peut devenir un témoin gênant.
-* **Séparez le pro du perso** : ne mélangez jamais vos usages.
+* **Séparez le pro du perso** : [ne mélangez jamais vos usages](/fr/20261028-whatsapp-nest-pas-un-moyen-de-communication-professionnel).
 * **Posez des questions** : n'hésitez pas à vous renseigner sur les applications et les technologies installées sur vos équipements.
 
 **En tant qu'employeur :**

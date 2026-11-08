@@ -138,7 +138,7 @@ onUnmounted(() => {
   window.removeEventListener('scroll', onScroll)
 })
 
-import { SITE_URL, SITE_NAME, AUTHOR_NAME, PERSON_ID, WEBSITE_ID, BLOG_ID, SAME_AS } from '~/utils/site.js'
+import { SITE_URL, SITE_NAME, AUTHOR_NAME, AUTHOR_JOB_TITLE, PERSON_ID, PERSON_URL, WEBSITE_ID, BLOG_ID, SAME_AS } from '~/utils/site.js'
 import { safeJsonLd } from '~/composables/useSeo.js'
 import { LANGUAGE_REDIRECT_SCRIPT } from '~/utils/i18n.js'
 
@@ -155,17 +155,17 @@ const siteGraph = {
       '@id': PERSON_ID,
       name: 'Jean-Luc Houédanou',
       // `afrowebdesigner` : le pseudonyme de X/Twitter, rattaché au nom réel.
-      alternateName: ['Jean Luc Houedanou', 'afrowebdesigner', 'Don Dada', 'JLH'],
-      url: SITE_URL,
+      alternateName: ['Jean Luc Houédanou', 'Jean Luc Houedanou', 'afrowebdesigner', 'Don Dada', 'JLH'],
+      url: PERSON_URL,
       image: {
         '@type': 'ImageObject',
         '@id': `${SITE_URL}/#personimage`,
         url: `${SITE_URL}/images/1837389.jpeg`,
         contentUrl: `${SITE_URL}/images/1837389.jpeg`,
       },
-      // Même intitulé que le poste actuel du CV (data/cv.js) : /cv déclare un
-      // nœud Person au même @id, deux intitulés différents se cumuleraient.
-      jobTitle: 'Directeur solutions digitales',
+      // Même intitulé que le sous-titre de /a-propos et que le nœud Person de /cv
+      // (même @id) : voir AUTHOR_JOB_TITLE dans utils/site.js.
+      jobTitle: AUTHOR_JOB_TITLE.fr,
       description:
         "Développeur web full-stack et administrateur systèmes basé à Abidjan, Côte d'Ivoire. Blogueur tech sur houedanou.com.",
       worksFor: {
@@ -198,7 +198,8 @@ const siteGraph = {
       // `name` est le nom de site que Google affiche au-dessus du résultat.
       name: SITE_NAME,
       alternateName: [AUTHOR_NAME, 'houedanou.com'],
-      inLanguage: 'fr',
+      // Site bilingue : les billets existent en /fr et en /en.
+      inLanguage: ['fr', 'en'],
       author: { '@id': PERSON_ID },
       publisher: { '@id': PERSON_ID },
       copyrightHolder: { '@id': PERSON_ID },
@@ -222,7 +223,8 @@ const siteGraph = {
       name: SITE_NAME,
       description:
         "Retours d'expérience, outils web, administration système et culture numérique depuis Abidjan.",
-      inLanguage: 'fr',
+      // Site bilingue : les billets existent en /fr et en /en.
+      inLanguage: ['fr', 'en'],
       isPartOf: { '@id': WEBSITE_ID },
       author: { '@id': PERSON_ID },
       publisher: { '@id': PERSON_ID },

@@ -56,7 +56,7 @@ Cela dit, Air Côte d'Ivoire n'a pas non plus volé dans un ciel sans nuages. Sa
 
 Ce dernier point est un vrai trou d'air dans leur stratégie. Même après avoir surclassé le passager en vol, ACI n'a jamais recontacté JC. Pour une compagnie qui veut prendre son envol sur le long-courrier, ce manque de service après-vente est une occasion manquée.
 
-En plus, bloquer JC sur Instagram (un influenceur avec près d'un million d'abonnés) transforme une mauvaise gestion en situation délicate. Cette approche conflictuelle renforce l'impression d'un « bras de fer » plutôt que d'une volonté de dialogue.
+En plus, bloquer JC sur Instagram (un influenceur avec près d'un million d'abonnés) transforme une mauvaise gestion en situation délicate. Cette approche conflictuelle renforce l'impression d'un « bras de fer » plutôt que d'une volonté de dialogue. [Les réseaux sociaux d'une entreprise ne sont pas un grin](/fr/20250605-facebook-nest-pas-un-grin).
 
 ### Une escalade qui interroge
 
