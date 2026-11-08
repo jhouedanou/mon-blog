@@ -138,7 +138,7 @@ onUnmounted(() => {
   window.removeEventListener('scroll', onScroll)
 })
 
-import { SITE_URL, SITE_NAME, AUTHOR_NAME, PERSON_ID, PERSON_URL, WEBSITE_ID, BLOG_ID, SAME_AS } from '~/utils/site.js'
+import { SITE_URL, SITE_NAME, AUTHOR_NAME, AUTHOR_JOB_TITLE, PERSON_ID, PERSON_URL, WEBSITE_ID, BLOG_ID, SAME_AS } from '~/utils/site.js'
 import { safeJsonLd } from '~/composables/useSeo.js'
 import { LANGUAGE_REDIRECT_SCRIPT } from '~/utils/i18n.js'
 
@@ -163,9 +163,9 @@ const siteGraph = {
         url: `${SITE_URL}/images/1837389.jpeg`,
         contentUrl: `${SITE_URL}/images/1837389.jpeg`,
       },
-      // Même intitulé que le poste actuel du CV (data/cv.js) : /cv déclare un
-      // nœud Person au même @id, deux intitulés différents se cumuleraient.
-      jobTitle: 'Directeur solutions digitales',
+      // Même intitulé que le sous-titre de /a-propos et que le nœud Person de /cv
+      // (même @id) : voir AUTHOR_JOB_TITLE dans utils/site.js.
+      jobTitle: AUTHOR_JOB_TITLE.fr,
       description:
         "Développeur web full-stack et administrateur systèmes basé à Abidjan, Côte d'Ivoire. Blogueur tech sur houedanou.com.",
       worksFor: {

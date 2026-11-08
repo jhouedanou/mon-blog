@@ -12,6 +12,13 @@ export const OG_LOCALE = 'fr_FR'
 export const OG_LOCALES = { fr: 'fr_FR', en: 'en_US' }
 export const TWITTER = '@afrowebdesigner'
 export const AUTHOR_NAME = 'Jean-Luc Houédanou'
+// Intitulé du schéma Person, identique au sous-titre visible de /a-propos.
+// Une seule source : app.vue et /cv déclarent la même Person (même @id),
+// deux intitulés différents se cumuleraient.
+export const AUTHOR_JOB_TITLE = {
+  fr: 'Développeur web full-stack & Administrateur systèmes',
+  en: 'Full-stack web developer & Systems administrator',
+}
 
 // Les cartes sociales doivent être en JPEG : X et LinkedIn ne rendent pas le WebP.
 export const DEFAULT_OG_IMAGE = '/og/default.jpg'
