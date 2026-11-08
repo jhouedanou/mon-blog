@@ -53,7 +53,7 @@ Ensuite, rajoutez une couche.
 
 **« Madame/Monsieur. Je ne vous ai rien demandé. »**
 
-Vous pouvez ensuite siroter tranquillement votre verre pendant qu'ils s'étouffent avec leur expertise non sollicitée :).
+Vous pouvez ensuite siroter tranquillement votre verre pendant qu'ils s'étouffent avec leur [expertise non sollicitée](/fr/20250605-facebook-nest-pas-un-grin) :).
 
 ### Le Prophète Numérique
 
@@ -61,7 +61,7 @@ Vous pouvez ensuite siroter tranquillement votre verre pendant qu'ils s'étouffe
 
 **Votre verre d'eau** : Savourez tranquillement votre boisson tout en consultant vos opportunités professionnelles.
 
-Lorsqu'ils ajoutent « L'intelligence artificielle va tout bouleverser », servez-vous un second verre.
+Lorsqu'ils ajoutent « [L'intelligence artificielle va tout bouleverser](/fr/20261016-pourquoi-lia-ne-me-remplacera-pas) », servez-vous un second verre.
 
 Ces mêmes oracles prédisaient la fin d'Internet en 2000... avant de créer leur profil Facebook.
 

@@ -27,7 +27,7 @@ La deuxième amélioration concerne les transferts d'argent via Orange Money. L�
 
 Les utilisateurs peuvent dorénavant effectuer des transferts directement d'une application à l'autre, sans avoir à jongler entre différentes syntaxes : le transfert se fait en deux écrans, celui de Djamo où vous précisez le montant à transférer, et celui de l'app mobile Orange Money où vous validez la transaction.
 
-Cette intégration plus poussée promet de rendre les transferts d'argent plus rapides, plus simples et moins sujets aux erreurs.
+Cette intégration plus poussée promet de rendre [les transferts d'argent plus rapides, plus simples](/fr/20261105-pi-spi-bceao-banque-mobile-money-explique) et moins sujets aux erreurs.
 
 ## **Cacher son solde**
 

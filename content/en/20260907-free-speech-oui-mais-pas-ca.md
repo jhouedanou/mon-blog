@@ -53,7 +53,7 @@ It's not fair, I'll grant you that. But it works.
 
 ## What I'd like to hear
 
-I'd like to hear from the people who built this industry. Not a foundation press release, not a corporate blog post, a real opinion. Because making something possible means carrying a share of the responsibility for it.
+I'd like to hear from [the people who built this industry](/en/20260907-bill-gates-ia-hypocrisie-meta-cash-rules-everything). Not a foundation press release, not a corporate blog post, a real opinion. Because making something possible means carrying a share of the responsibility for it.
 
 ## Sources
 

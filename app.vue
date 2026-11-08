@@ -138,7 +138,7 @@ onUnmounted(() => {
   window.removeEventListener('scroll', onScroll)
 })
 
-import { SITE_URL, SITE_NAME, AUTHOR_NAME, PERSON_ID, WEBSITE_ID, BLOG_ID, SAME_AS } from '~/utils/site.js'
+import { SITE_URL, SITE_NAME, AUTHOR_NAME, PERSON_ID, PERSON_URL, WEBSITE_ID, BLOG_ID, SAME_AS } from '~/utils/site.js'
 import { safeJsonLd } from '~/composables/useSeo.js'
 import { LANGUAGE_REDIRECT_SCRIPT } from '~/utils/i18n.js'
 
@@ -155,8 +155,8 @@ const siteGraph = {
       '@id': PERSON_ID,
       name: 'Jean-Luc Houédanou',
       // `afrowebdesigner` : le pseudonyme de X/Twitter, rattaché au nom réel.
-      alternateName: ['Jean Luc Houedanou', 'afrowebdesigner', 'Don Dada', 'JLH'],
-      url: SITE_URL,
+      alternateName: ['Jean Luc Houédanou', 'Jean Luc Houedanou', 'afrowebdesigner', 'Don Dada', 'JLH'],
+      url: PERSON_URL,
       image: {
         '@type': 'ImageObject',
         '@id': `${SITE_URL}/#personimage`,
@@ -198,7 +198,8 @@ const siteGraph = {
       // `name` est le nom de site que Google affiche au-dessus du résultat.
       name: SITE_NAME,
       alternateName: [AUTHOR_NAME, 'houedanou.com'],
-      inLanguage: 'fr',
+      // Site bilingue : les billets existent en /fr et en /en.
+      inLanguage: ['fr', 'en'],
       author: { '@id': PERSON_ID },
       publisher: { '@id': PERSON_ID },
       copyrightHolder: { '@id': PERSON_ID },
@@ -222,7 +223,8 @@ const siteGraph = {
       name: SITE_NAME,
       description:
         "Retours d'expérience, outils web, administration système et culture numérique depuis Abidjan.",
-      inLanguage: 'fr',
+      // Site bilingue : les billets existent en /fr et en /en.
+      inLanguage: ['fr', 'en'],
       isPartOf: { '@id': WEBSITE_ID },
       author: { '@id': PERSON_ID },
       publisher: { '@id': PERSON_ID },

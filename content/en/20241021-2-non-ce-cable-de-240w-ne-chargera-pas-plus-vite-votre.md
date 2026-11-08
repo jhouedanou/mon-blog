@@ -14,7 +14,7 @@ There are three trades whose members, many of them anyway, will not be going to 
 
 The first because of their tendency to overcharge for repairs, the second because of their notorious inability to respect deadlines and appointments, and the last because a good number of them do not know much about anything, but fill their intellectual void with arrogance or dishonesty.
 
-Take for example this salesman I met today in a big store in town, while I was looking for a cable to charge my (not that old, actually) 2017 MacBook Pro.
+Take for example this salesman I met today in a big store in town, while I was looking for a cable to charge my (not that old, actually) [2017 MacBook Pro](/en/20261013-retournement-de-veste-omarchy-macbook-pro-2017).
 
 "Hello sir, can I help you?"
 

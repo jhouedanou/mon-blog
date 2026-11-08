@@ -13,7 +13,7 @@ J'avais laissé la voiture au bureau pour régler ce petit problème de vitre qu
 
 N'ayant plus de moyen de locomotion, je me déplaçais en Yango. Et là, première erreur — bête, mais fondatrice de toute cette histoire : je monte à l'arrière. Ce ne sont pas les habitudes de la maison. Moi, normalement, je m'assois devant. Ce soir-là, non. J'avais des envies de confort. Que j'ai regrettées ensuite.
 
-La journée se passe ensuite comme d'habitude (prises de murs surmontables, bugs résolus et gestion des urgences). Fatigué, je récupère ma voiture vers 16 heures et me mets en route pour la maison vers 21 heures (j'habite à la Riviera Triangle, et c'est la seule heure qui me permet de partir du bureau et d'arriver à la maison en moins de 30 minutes et sans embouteillages).
+La journée se passe ensuite comme d'habitude ([prises de murs](/fr/20260707-je-suis-encore-vivant) surmontables, bugs résolus et gestion des urgences). Fatigué, je récupère ma voiture vers 16 heures et me mets en route pour la maison vers 21 heures (j'habite à la Riviera Triangle, et c'est la seule heure qui me permet de partir du bureau et d'arriver à la maison en moins de 30 minutes et sans embouteillages).
 
 Une fois arrivé vers le Lycée Français, je me rends compte qu'un de mes téléphones — un CMF Phone 1 que j'utilise pour du développement mobile — est resté dans le Yango.
 

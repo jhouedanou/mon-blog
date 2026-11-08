@@ -17,7 +17,7 @@ Cette année, la marque a décidé d'ajouter une touche technologique à sa magi
 Pour sa campagne « Holidays Are Coming », Coca-Cola a offert au public sa première grande expérience avec une publicité vidéo générée par intelligence artificielle(1).
 Le public n'a pas adhéré, trouvant l'esthétique globale de la vidéo déconcertante, voire imparfaite pour une société de l'envergure de Coca-Cola. Les réseaux sociaux se sont enflammés, les débats se sont animés et un dialogue s'est créé... le tout probablement autour de canettes et de bouteilles de Coca-Cola.
 
-En termes plus clairs, cette stratégie marketing (fort bien orchestrée) a fonctionné. Grâce à cette vidéo, Coca-Cola a réussi à occuper le terrain et à imprégner les esprits : que vous aimiez ou non, vous parlez de Coca-Cola.
+En termes plus clairs, cette stratégie marketing (fort bien orchestrée) a fonctionné. Grâce à cette vidéo, Coca-Cola a réussi à [occuper le terrain et à imprégner les esprits](/fr/20260911-samsung-tacle-iphone-duo-visibilite) : que vous aimiez ou non, vous parlez de Coca-Cola.
 Cela suffit amplement à renforcer son association avec Noël, en opposant ceux qui préfèrent les anciens spots (j'en fais partie) et ceux qui apprécient la nouveauté et sont passionnés par la technologie.
 
 L'objectif n'était pas de convaincre ou de plaire à tout le monde.

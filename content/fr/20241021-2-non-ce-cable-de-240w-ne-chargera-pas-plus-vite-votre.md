@@ -14,7 +14,7 @@ Il y a 3 corps de métiers dont nombre de représentants n'iront pas au paradis 
 
 Les premiers à cause de leur tendance à surfacturer des réparations, les seconds à cause de leur incapacité notoire à respecter les délais et les rendez-vous, et les derniers parce que bon nombre d'entre eux n'y connaissent pas grand-chose, mais bouchent leur vide intellectuel avec de l'arrogance ou de la malhonnêteté.
 
-Prenez par exemple ce vendeur, rencontré aujourd'hui dans un grand magasin de la place, tandis que je cherchais un câble pour charger mon (pas si vieux que ça en fait) MacBook Pro 2017.
+Prenez par exemple ce vendeur, rencontré aujourd'hui dans un grand magasin de la place, tandis que je cherchais un câble pour charger mon (pas si vieux que ça en fait) [MacBook Pro 2017](/fr/20261013-retournement-de-veste-omarchy-macbook-pro-2017).
 
 « Bonjour monsieur, je peux vous aider ? »
 

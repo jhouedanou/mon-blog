@@ -53,7 +53,7 @@ Ce n'est pas juste, je vous l'accorde. Mais c'est efficace.
 
 ## Ce que j'aimerais entendre
 
-J'aimerais entendre ceux qui ont construit cette industrie. Pas un communiqué de fondation, pas un billet de blog d'entreprise, un vrai avis. Parce que rendre une chose possible, c'est en porter une part de responsabilité.
+J'aimerais entendre [ceux qui ont construit cette industrie](/fr/20260907-bill-gates-ia-hypocrisie-meta-cash-rules-everything). Pas un communiqué de fondation, pas un billet de blog d'entreprise, un vrai avis. Parce que rendre une chose possible, c'est en porter une part de responsabilité.
 
 ## Sources
 

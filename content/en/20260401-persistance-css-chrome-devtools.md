@@ -75,7 +75,7 @@ Technical confirmation: as long as you do not hit `CTRL+S` (save) in Chrome DevT
 
 ## Conclusion
 
-Local Overrides for quick debugging, Workspaces for active development: combined, they turn DevTools into a real productivity companion.
+Local Overrides for quick debugging, Workspaces for active development: combined, they turn DevTools into a real productivity companion. DevTools can also simulate other screen sizes, for example to [test a site on the iPhone Duo](/en/20260911-site-responsive-iphone-duo).
 
 *Updated October 8, 2026: in recent versions of Chrome, the **Filesystem** tab is called **Workspace**, and you connect a folder with **Add folder manually**. Chrome can also connect the folder automatically if your development server serves a `.well-known/appspecific/com.chrome.devtools.json` file ([Chrome documentation on Workspaces](https://developer.chrome.com/docs/devtools/workspaces)). Phase 2 now also makes clear that changes are only written to disk on `Ctrl+S`, and phase 1 points out that styles declared in the HTML are not saved from the Styles pane.*
 

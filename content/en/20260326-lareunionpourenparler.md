@@ -18,7 +18,7 @@ That one only shows up when the waves of ego and lack of arguments, carefully cu
 ## The "let's talk about it" meeting
 
 It always starts the same way: a request made with the nonchalance of someone who will not have to carry it out.
-Dropped between two messages, as if the effort in time and resources it represents simply did not exist. A request whose size is inversely proportional to the confidence with which it is made.
+[Dropped between two messages](/en/20261028-whatsapp-nest-pas-un-moyen-de-communication-professionnel), as if the effort in time and resources it represents simply did not exist. A request whose size is inversely proportional to the confidence with which it is made.
 
 In response, you send a technical analysis: options compared, risks anticipated, recommendations for tools that already do the job, a detailed development plan. In other words, you do the thinking for the person who did not take the time to do it.
 
@@ -52,7 +52,7 @@ Without requiring any of its substance.
 ## What should you do?
 
 At that moment, you have to avoid falling into the trap of yet another ghost meeting, because you have already proposed a reasoned and documented solution. Nothing productive will come out of that meeting, I guarantee it.
-Be pragmatic, and ask the other person to put their concerns in writing. That is a healthy basis for continuing the conversation.
+Be pragmatic, and ask the other person to [put their concerns in writing](/en/20260908-cest-integre-dans-la-maquette). That is a healthy basis for continuing the conversation.
 
 ## And did it work in your case?
 

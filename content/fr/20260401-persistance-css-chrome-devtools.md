@@ -75,7 +75,7 @@ Confirmation technique : tant que vous ne faites pas `CTRL+S` (sauvegarder) dans
 
 ## Conclusion
 
-Local Overrides pour du debug rapide, Workspaces pour le développement actif : combinés, ils transforment DevTools en un vrai compagnon de productivité.
+Local Overrides pour du debug rapide, Workspaces pour le développement actif : combinés, ils transforment DevTools en un vrai compagnon de productivité. DevTools sait aussi simuler d'autres tailles d'écran, par exemple pour [tester un site sur l'iPhone Duo](/fr/20260911-site-responsive-iphone-duo).
 
 *Mise à jour du 8 octobre 2026 : dans les versions récentes de Chrome, l'onglet **Filesystem** s'appelle **Workspace**, et la connexion d'un dossier se fait via **Add folder manually**. Chrome peut aussi connecter le dossier automatiquement si votre serveur de développement sert un fichier `.well-known/appspecific/com.chrome.devtools.json` ([documentation Chrome sur les Workspaces](https://developer.chrome.com/docs/devtools/workspaces)). La phase 2 précise aussi que les modifications ne sont écrites sur le disque qu'au `Ctrl+S`, et la phase 1 signale que les styles déclarés dans le HTML ne sont pas enregistrés depuis le panneau Styles.*
 

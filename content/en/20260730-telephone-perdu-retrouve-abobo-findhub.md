@@ -13,7 +13,7 @@ I had left the car at the office to sort out that little problem of a window tha
 
 With no vehicle of my own, I was getting around by Yango. And there came the first mistake, a silly one, but the foundation of this whole story: I got in the back. That's not how we do things around here. Normally, I sit in the front. Not that evening. I felt like some comfort. Which I regretted afterwards.
 
-The day then goes on as usual (walls to climb over, bugs fixed and emergencies handled). Tired, I pick up my car around 4 pm and set off for home around 9 pm (I live in Riviera Triangle, and that's the only time that lets me leave the office and get home in under 30 minutes with no traffic jams).
+The day then goes on as usual ([walls to climb over](/en/20260707-je-suis-encore-vivant), bugs fixed and emergencies handled). Tired, I pick up my car around 4 pm and set off for home around 9 pm (I live in Riviera Triangle, and that's the only time that lets me leave the office and get home in under 30 minutes with no traffic jams).
 
 Once I get near the Lycée Français, I realise that one of my phones, a CMF Phone 1 I use for mobile development, is still in the Yango.
 

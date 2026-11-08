@@ -19,6 +19,10 @@ export const DEFAULT_OG_IMAGE = '/og/default.jpg'
 // Identifiants du graphe d'entité. Un `@id` qui diffère d'un slash suffit à créer
 // deux entités distinctes aux yeux de Google : ils vivent ici, pas en dur.
 export const PERSON_ID = `${SITE_URL}/#person`
+// URL de la Person : la page de profil (ProfilePage de /a-propos), celle que vise
+// la signature « Par Jean-Luc Houédanou » des billets. Une seule valeur pour tous
+// les nœuds au même @id (app.vue, billets, /cv), sinon Google cumule deux URL.
+export const PERSON_URL = `${SITE_URL}/a-propos`
 export const WEBSITE_ID = `${SITE_URL}/#website`
 export const BLOG_ID = `${SITE_URL}/#blog`
 
