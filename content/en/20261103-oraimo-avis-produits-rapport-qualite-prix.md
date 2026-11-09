@@ -1,7 +1,6 @@
 ---
 title: "Oraimo review: everything, everything"
-createdAt: "2026-11-03T23:30:00Z"
-draft: true
+createdAt: "2026-11-09T19:05:00Z"
 image: "/images/articles/oraimo-produits.webp"
 description: "My Oraimo review: power bank, earbuds, air fryer, mop, mug. The products I'd buy again, and the ones I wouldn't. No commission, just everyday use."
 searchIntent: "Are Oraimo products (earbuds, power bank, kitchen appliances, cleaning tools, clothes) really worth the money?"
