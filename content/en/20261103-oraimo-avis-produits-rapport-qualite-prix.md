@@ -1,6 +1,7 @@
 ---
 title: "Oraimo review: everything, everything"
 createdAt: "2026-11-09T19:05:00Z"
+updatedAt: "2026-11-09T19:19:00Z"
 image: "/images/articles/oraimo-produits.webp"
 description: "My Oraimo review: power bank, earbuds, air fryer, mop, mug. The products I'd buy again, and the ones I wouldn't. No commission, just everyday use."
 searchIntent: "Are Oraimo products (earbuds, power bank, kitchen appliances, cleaning tools, clothes) really worth the money?"
@@ -23,9 +24,9 @@ My first Oraimo product, and so my first contact with the brand, was a pair of e
 
 ![Oraimo CONCH wired in-ear earphones, black, with an inline remote and a 3.5 mm jack](/images/articles/oraimo-conch-2.webp)
 
-Then one day, on my way to the shops, I lost the charging case of my Sony WF-C500. (By the way, you can't charge them in the case of other Sony earbuds: I tried with the WF-1000XM4 case.) I wanted a cheap fix, so I bought the [Oraimo SpaceBuds 2](https://ci.oraimo.com/product/oraimo-spacebuds-2-true-wireless-earbuds-otw-631-spacegrey){target="_blank" rel="noopener"}. They're better than I expected, even if the noise cancellation is only so-so. Battery life is good. And above all, they survived a trip through the washing machine (Quick 45-minute cycle, 40 °C).
+Then one day, on my way to the shops, I lost the charging case of my Sony WF-C500. (By the way, you can't charge them in the case of other Sony earbuds: I tried with the WF-1000XM4 case.) I wanted a cheap fix, so I bought the [Oraimo SpaceBuds](https://oraimo.com/en/product/beyond-sound-spacebuds){target="_blank" rel="noopener"}, the first model. They're better than I expected, even if the noise cancellation is only so-so. Battery life is good. And above all, they survived a trip through the washing machine (Quick 45-minute cycle, 40 °C).
 
-![Oraimo SpaceBuds 2 wireless earbuds in space grey, sitting in their open charging case](/images/articles/oraimo-spacebuds-2.webp)
+![Black Oraimo SpaceBuds wireless earbuds in front of their open charging case, lit by a blue ring](/images/articles/oraimo-spacebuds.webp)
 
 ### Power bank
 
@@ -53,7 +54,7 @@ Once the meal is cooked, it's time to clean. For the dishes, I have the [Oraimo 
 
 ![White Oraimo cordless electric spin brush, surrounded by its five replacement heads](/images/articles/oraimo-ultracleaner-scrubber.webp)
 
-And I have the [MistGlide](https://ci.oraimo.com/product/oraimo-mistglide-multi-surface-use-deep-cleaning-spray-mop--ohcs-001){target="_blank" rel="noopener"}, which may be the spray mop that has lasted me the longest.
+And I have the [MistGlide](https://ci.oraimo.com/product/oraimo-mistglide-multi-surface-use-deep-cleaning-spray-mop--ohcs-001){target="_blank" rel="noopener"}. I've had it for 6 months: it's the spray mop that has lasted me the longest.
 
 ![Oraimo MistGlide spray mop, with its tank on the handle and a flat microfibre head](/images/articles/oraimo-mistglide.webp)
 
@@ -77,9 +78,9 @@ I also have the EcoLuxe polo shirts, at 9,000 CFA francs. They're comfortable. 
 
 ## I wouldn't buy again
 
-I have the Oraimo BoomPop 2 headphones. They're good headphones, with good battery life, but the sound is nothing special, and neither is the noise cancellation. Worse: the faux-leather ear pads are flaking.
+I have the Oraimo BoomPop Pro headphones. They're good headphones, with good battery life, but the sound is nothing special, and neither is the noise cancellation. Worse: the faux-leather ear pads are flaking.
 
-![Oraimo BoomPop 2 wireless headphones, black with neon green rings around the ear cups](/images/articles/oraimo-boompop-2.webp)
+![Oraimo BoomPop Pro wireless headphones, black with gold accents on the headband](/images/articles/oraimo-boompop-pro.webp)
 
 I love smartwatches. I've already written about the Oraimo Watch Nova AM in [my comparison with the Infinix Watch 3](/en/20251225-infinix-ou-oraimo). Today I wear neither of them: I have a [Google Pixel Watch](/en/20260311-comment-allumer-lecran-pixel-watch-notifications), which is better.
 
@@ -90,24 +91,24 @@ I love smartwatches. I've already written about the Oraimo Watch Nova AM in [my 
 | Product | Price paid (CFA francs) | Would I buy it again? | In one sentence |
 |---|---|---|---|
 | CONCH earphones | 2,000 to 3,000 | Yes | Sturdy, with slightly too much bass. |
-| SpaceBuds 2 earbuds | 20,000 | Yes | Good battery life, so-so noise cancellation, and they survived the washing machine. |
+| SpaceBuds earbuds | 20,000 | Yes | Good battery life, so-so noise cancellation, and they survived the washing machine. |
 | PowerJet 130 power bank | 32,500 | Yes | Very good, and it handles life on the move well. |
 | ThermoGo mug | 7,000 | Yes | A 750 ml insulated mug that keeps drinks cold for more than half a day. |
 | MegaDrink 1200 bottle | 12,000 | Yes | A 1.2 L leak-proof insulated bottle that keeps drinks cold for more than half a day. |
 | SmartAirFryer | 30,000 | Yes | No smell of burnt plastic, and very easy to clean. |
 | Ultra Cleaner Scrubber spin brush | 9,000 | Yes | It degreases pots and kitchen counters. |
-| MistGlide mop | 7,000 | Yes | The spray mop that has lasted me the longest. |
+| MistGlide mop | 7,000 | Yes | The spray mop that has lasted me the longest: 6 months so far. |
 | MagniSonic toothbrush | 5,000 | Yes | Works very well. |
 | NanoShield T-shirts | 7,000 | Yes | Comfortable and stain-resistant. |
 | CrestFrom slides | 4,900 | Yes | Very comfortable, and heavily inspired by the Yeezy Foam Runner. |
 | FlexiCooker hot plate | 30,000 | Yes, with a catch | Some programmes use more electricity than others. |
 | EcoLuxe polo shirts | 9,000 | Yes, with a catch | Comfortable, but in Chinese sizes, so smaller. |
-| BoomPop 2 headphones | 25,000 | No | Ordinary sound and noise cancellation, flaking ear pads. |
+| BoomPop Pro headphones | 25,000 | No | Ordinary sound and noise cancellation, flaking ear pads. |
 | Watch Nova AM | 15,000 | No | My Google Pixel Watch is better. |
 
 These are the prices I paid in Abidjan, on Glovo, at a shop two streets from my place, or on Oraimo's website. Online prices change often with promotions.
 
-Almost all of these products are good quality for their low price. The exceptions: the BoomPop 2 headphones and the Watch Nova AM.
+Almost all of these products are good quality for their low price. The exceptions: the BoomPop Pro headphones and the Watch Nova AM.
 
 _Images: Oraimo._
 
