@@ -88,7 +88,7 @@ I love smartwatches. I've already written about the Oraimo Watch Nova AM in [my 
 
 ## My Oraimo review, in short
 
-<!-- TO ADD: price paid for the FlexiCooker and the Watch Nova AM. -->
+<!-- TO ADD: price paid for the Watch Nova AM. -->
 
 | Product | Price paid (CFA francs) | Would I buy it again? | In one sentence |
 |---|---|---|---|
@@ -103,7 +103,7 @@ I love smartwatches. I've already written about the Oraimo Watch Nova AM in [my 
 | MagniSonic toothbrush | 5,000 | Yes | Works very well. |
 | NanoShield T-shirts | 7,000 | Yes | Comfortable and stain-resistant. |
 | CrestFrom slides | 4,900 | Yes | Heavily inspired by the Yeezy Foam Runner. |
-| FlexiCooker hot plate | — | Yes, with a catch | Some programmes use more electricity than others. |
+| FlexiCooker hot plate | 30,000 | Yes, with a catch | Some programmes use more electricity than others. |
 | EcoLuxe polo shirts | 9,000 | Yes, with a catch | Comfortable, but in Chinese sizes, so smaller. |
 | BoomPop 2 headphones | 25,000 | No | Ordinary sound and noise cancellation, flaking ear pads. |
 | Watch Nova AM | — | No | My Google Pixel Watch is better. |

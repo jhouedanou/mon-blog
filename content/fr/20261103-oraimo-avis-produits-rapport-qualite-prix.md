@@ -88,7 +88,7 @@ J'adore les montres connectées. J'ai déjà parlé de l'Oraimo Watch Nova AM da
 
 ## Mon avis sur Oraimo, en résumé
 
-<!-- À PRÉCISER : prix payé pour la FlexiCooker et la Watch Nova AM. -->
+<!-- À PRÉCISER : prix payé pour la Watch Nova AM. -->
 
 | Produit | Prix payé (FCFA) | Je rachète ? | En une phrase |
 |---|---|---|---|
@@ -103,7 +103,7 @@ J'adore les montres connectées. J'ai déjà parlé de l'Oraimo Watch Nova AM da
 | Brosse à dents MagniSonic | 5 000 | Oui | Très efficace. |
 | T-shirts NanoShield | 7 000 | Oui | Confortables, ils résistent aux taches. |
 | Claquettes CrestFrom | 4 900 | Oui | Très inspirées des Yeezy Foam Runner. |
-| Plaque FlexiCooker | — | Oui, avec un bémol | Certains programmes consomment plus d'électricité que d'autres. |
+| Plaque FlexiCooker | 30 000 | Oui, avec un bémol | Certains programmes consomment plus d'électricité que d'autres. |
 | Polos EcoLuxe | 9 000 | Oui, avec un bémol | Confortables, mais en tailles chinoises, donc plus petits. |
 | Casque BoomPop 2 | 25 000 | Non | Son et réduction de bruit ordinaires, coussinets qui s'effritent. |
 | Montre Watch Nova AM | — | Non | Ma Google Pixel Watch est meilleure. |
