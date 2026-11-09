@@ -1,22 +1,22 @@
 ---
-title: "MacSai et Mole : deux alternatives gratuites à CleanMyMac"
+title: "Deux alternatives gratuites à CleanMyMac"
 createdAt: "2026-09-01"
 updatedAt: "2026-10-08T12:00:00Z"
 image: "/images/articles/macao.webp"
-description: "Après PureMac, deux nettoyeurs gratuits et open source pour macOS : MacSai, qui reprend CleanMyMac fonction par fonction, et Mole, en ligne de commande."
+description: "Deux alternatives gratuites à CleanMyMac : MacSai, qui le reprend fonction par fonction, et Mole, en ligne de commande. Et lequel choisir, PureMac compris."
 searchIntent: "Quelles alternatives gratuites et open-source à CleanMyMac installer sur Mac en 2026 ?"
 tags: ["macOS", "open-source", "nettoyeur", "logiciel gratuit", "Homebrew"]
 ---
 
-En juillet, je vous parlais de [PureMac](/fr/20260718-puremac-nettoyeur-mac-gratuit-open-source), un nettoyeur gratuit et sans télémétrie pour Mac. Le constat n'a pas changé depuis : les SSD soudés d'Apple se remplissent vite, et CleanMyMac demande un abonnement pour vider des caches que macOS sait très bien vider tout seul.
+En juillet, je vous parlais de [PureMac, un nettoyeur Mac gratuit et open source](/fr/20260718-puremac-nettoyeur-mac-gratuit-open-source), sans télémétrie. Le constat n'a pas changé depuis : les SSD soudés d'Apple se remplissent vite (on peut toujours [installer macOS sur un SSD externe](/fr/20261014-installer-macos-ssd-externe-imac-2017), mais c'est une autre histoire), et CleanMyMac demande un abonnement pour vider des caches que macOS sait très bien vider tout seul.
 
-Depuis, deux autres projets ont retenu mon attention. Ils ne se ressemblent pas du tout, et c'est justement pour ça que je vous en parle ensemble.
+Depuis, deux autres alternatives gratuites à CleanMyMac ont retenu mon attention : MacSai et Mole. Ils ne se ressemblent pas du tout, et c'est justement pour ça que je vous en parle ensemble.
 
 ## MacSai, le clone assumé de CleanMyMac
 
-[MacSai](https://github.com/iliyami/MacSai) est un logiciel gratuit et open-source, sous licence BSD, écrit en Swift 6 et SwiftUI. L'objectif du projet est clair : reproduire chaque fonction importante de CleanMyMac, sans abonnement, sans publicité et sans télémétrie. Le code est public, l'application est notarisée par Apple, et le projet annonce plus de 480 tests automatisés.
+[MacSai](https://github.com/iliyami/MacSai) est un logiciel gratuit et open-source, sous licence BSD, écrit en Swift 6 et SwiftUI. Le projet veut reproduire chaque fonction importante de CleanMyMac, sans abonnement, sans publicité et sans télémétrie. Le code est public, l'application est notarisée par Apple, et le projet annonce plus de 480 tests automatisés.
 
-On y retrouve tout ce qu'on attend d'un nettoyeur complet : caches et journaux système, un désinstalleur qui traque les fichiers oubliés par les applications, un scanner de logiciels malveillants, la gestion des éléments de démarrage, la détection de doublons, et une carte visuelle du disque pour repérer les dossiers qui pèsent lourd. Un détail que je n'avais vu nulle part ailleurs : l'amincissement des binaires universels, qui retire la partie Intel des applications sur les Mac Apple Silicon.
+On y retrouve tout ce qu'on attend d'un nettoyeur complet : caches et journaux système, un désinstalleur qui traque les fichiers oubliés par les applications (la Corbeille ne nettoie pas tout, je le rappelle dans [Pas besoin d'être dev pour aimer Mac et Linux](/fr/20261008-pas-besoin-detre-dev-ou-barbu-mac-linux)), un scanner de logiciels malveillants, la gestion des éléments de démarrage, la détection de doublons, et une carte visuelle du disque pour repérer les dossiers qui pèsent lourd. Un détail que je n'avais vu nulle part ailleurs : l'amincissement des binaires universels, qui retire la partie Intel des applications sur les Mac Apple Silicon.
 
 Au premier lancement sur mon MacBook, un Smart Scan a envoyé 5,66 Go à la corbeille, entre fichiers système inutiles et traces de navigation. Rien n'est effacé définitivement, tout passe par la Corbeille de macOS, ce qui laisse le temps de récupérer un fichier en cas de doute.
 
@@ -49,11 +49,11 @@ Ce qui m'a convaincu, c'est l'option `--dry-run` disponible sur chaque commande 
 
 Le développeur propose aussi une version graphique, Mole pour Mac, qui organise les mêmes outils en « planètes » thématiques. Celle-là est payante, un achat unique d'environ 19 dollars sans abonnement, avec un essai gratuit où chaque outil fonctionne deux fois. La version Terminal, elle, reste gratuite.
 
-## Lequel choisir ?
+## Quelle alternative gratuite à CleanMyMac choisir ?
 
-Si vous voulez une interface et l'équivalent complet de CleanMyMac, prenez MacSai. Si vous vivez dans le Terminal, prenez Mole. Et si vous cherchez simplement un désinstalleur propre et sans fioritures, PureMac fait toujours très bien le travail.
+Si vous voulez une interface et l'équivalent complet de CleanMyMac, prenez MacSai. Si vous vivez dans le Terminal, prenez Mole. Et si vous cherchez simplement un désinstalleur propre et sans fioritures, [PureMac](/fr/20260718-puremac-nettoyeur-mac-gratuit-open-source) fait toujours très bien le travail.
 
-Dans les trois cas, le code est lisible par n'importe qui, rien ne quitte votre machine, et vous ne payez rien. Difficile de faire mieux comme comparatif avec CleanMyMac.
+Dans les trois cas, le code est lisible par n'importe qui, rien ne quitte votre machine, et vous ne payez rien. CleanMyMac ne peut pas en dire autant.
 
 *Correction du 8 octobre 2026 : retrait du détail par catégorie du Smart Scan (4,42 Go et 2,96 Go), dont la somme ne correspondait pas au total de 5,66 Go envoyé à la corbeille.*
 

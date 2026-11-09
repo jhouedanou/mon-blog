@@ -1,9 +1,9 @@
 ---
-title: "Everything, everything, everything: you'll find it all at Oraimo"
+title: "Oraimo review: everything, everything"
 createdAt: "2026-11-03T23:30:00Z"
 draft: true
 image: "/images/articles/oraimo-produits.webp"
-description: "Power bank, earbuds, air fryer, mop, mug: the Oraimo products I'd buy again, and the ones I wouldn't. No commission, just everyday use."
+description: "My Oraimo review: power bank, earbuds, air fryer, mop, mug. The products I'd buy again, and the ones I wouldn't. No commission, just everyday use."
 searchIntent: "Are Oraimo products (earbuds, power bank, kitchen appliances, cleaning tools, clothes) really worth the money?"
 tags: ["tech", "hardware", "review", "africa"]
 ---
@@ -12,7 +12,7 @@ Yes, I dared to paraphrase that old reactionary Pierre Perret (his song "Tout, t
 
 So today is all about Oraimo. I don't get any commission on the products I'm about to talk about. I'm writing this because a lot of people see this brand and its products on every street corner, and wonder what they're really worth.
 
-To keep it short: in most cases, Oraimo products are excellent value for money. Beyond the marketing, it's a Chinese brand (part of the Transsion group, like Tecno, Infinix and itel) that managed to settle in here thanks to good-quality products at good prices.
+To keep my Oraimo review short: in most cases, Oraimo products are excellent value for money. Beyond the marketing, it's a Chinese brand (part of the Transsion group, like Tecno, Infinix and itel) that has managed to establish itself here thanks to good-quality products at good prices.
 
 So I've sorted the Oraimo products I use into three groups: the ones I'd buy again without a second thought, the ones I'd buy again with a catch, and the ones I wouldn't buy again.
 
@@ -82,11 +82,11 @@ I have the Oraimo BoomPop 2 headphones. They're good headphones, with good batte
 
 ![Oraimo BoomPop 2 wireless headphones, black with neon green rings around the ear cups](/images/articles/oraimo-boompop-2.webp)
 
-I love smartwatches. I've already written about the Oraimo Watch Nova AM in [this article](/en/20251225-infinix-ou-oraimo), even though it now sleeps in a drawer, next to the Infinix one. I have a Google Pixel Watch, which is simply better.
+I love smartwatches. I've already written about the Oraimo Watch Nova AM in [my comparison with the Infinix Watch 3](/en/20251225-infinix-ou-oraimo), even though it now sleeps in a drawer, next to the Infinix one. I have a [Google Pixel Watch](/en/20260311-comment-allumer-lecran-pixel-watch-notifications), which is simply better.
 
 ![Oraimo Watch Nova AM smartwatch, with a square case and a black strap](/images/articles/oraimo-watch-nova-am.webp)
 
-## In short
+## My Oraimo review, in short
 
 One constant, with a few exceptions: quality at a low price. The exceptions: the BoomPop 2 headphones and the Watch Nova AM.
 

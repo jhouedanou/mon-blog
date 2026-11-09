@@ -1,5 +1,5 @@
 ---
-title: "Lemon Studio: the FL Studio clone exists, and it doesn't excite me that much anymore"
+title: "Lemon Studio, the FL Studio clone: so-so"
 createdAt: "2026-10-26T18:30:00Z"
 updatedAt: "2026-10-28T15:00:00Z"
 image: "/images/articles/lemon-studio.webp"
@@ -8,7 +8,7 @@ searchIntent: "How good is Lemon Studio, the free open-source FL Studio clone bu
 tags: ["opinion", "music", "AI", "open-source", "vibe coding"]
 ---
 
-In early October, I wrote about [ArtCraft, the Adobe suite rebuilt with Claude](/en/20261009-artcraft-vibe-code-suite-adobe-saaspocalypse). This time, FL Studio has its clone. It's called Lemon Studio.
+In early October, I wrote about [ArtCraft, the Adobe suite rebuilt with Claude](/en/20261009-artcraft-vibe-code-suite-adobe-saaspocalypse). This time, FL Studio has its free, open-source clone. It's called Lemon Studio.
 
 _Update, October 28, 2026: I tested it. My verdict is at the end of the post._
 
@@ -28,7 +28,7 @@ The project has no ties to Image-Line, the company behind FL Studio. Its documen
 
 ## Does it work? So-so
 
-From what I've seen, it works so-so. The project says it itself: "Lemon Studio is pre-alpha software." Several features are incomplete. There's no version to download: you have to build it from source.
+From what I've seen, it works so-so. The project says so itself: "Lemon Studio is pre-alpha software." Several features are incomplete. There's no version to download: you have to build it from source.
 
 If I were a little less buried in work, I'd give it a try.
 
@@ -38,7 +38,7 @@ Personally, it doesn't excite me that much anymore. And I'm not sure I like the 
 
 Late September, the Adobe suite. Today, FL Studio. The pattern is the same: take a well-known app and rebuild it with AI. Same interface, same menus, same habits.
 
-One detail sums up the situation. In its documentation, Lemon Studio's author asks that its code not be used in ArtCraft. They specify it's a request, not a license condition. The person cloning FL Studio doesn't want their clone reused.
+One detail sums up the situation. In its documentation, Lemon Studio's author asks that their code not be used in ArtCraft. They make clear it's a request, not a license condition. The person cloning FL Studio doesn't want their clone reused.
 
 I understand the request. But it shows the problem: when copying gets easy, everyone copies everyone, and nobody wants to be copied.
 
@@ -46,7 +46,7 @@ I understand the request. But it shows the problem: when copying gets easy, ever
 
 In the future, the barriers to software development may fall. A single developer, with Claude, can rebuild an app that a company spent years building. FL Studio has existed since 1998, back when it was still called FruityLoops.
 
-That's good news for people who can't afford it. I wrote about it with [Koala Sampler](/en/20260822-koala-sampler-gratuit-mac-boom-bap): many people buy cracked copies of FL Studio in Facebook groups, often stuffed with spyware. A free, legal clone beats that.
+That's good news for people who can't afford it. I wrote about this in my post on [Koala Sampler, the free sampler for Mac](/en/20260822-koala-sampler-gratuit-mac-boom-bap): many people buy cracked copies of FL Studio in Facebook groups, often stuffed with spyware. A free, legal clone beats that.
 
 But if anyone can rebuild anything, rebuilding is no longer enough. Two things will matter:
 
@@ -66,7 +66,7 @@ I finally found the time to try Lemon Studio. It's very far from FL Studio.
 
 Take a look at [MorningDAW](https://www.morningdaw.com/){target="_blank" rel="noopener"} instead, developed by Mattias and Nicklas Holmgren of Morningdew Media. It's free, with no trial and no time limit, on macOS, Windows and Linux. You just need to create an account to download it.
 
-It looks vibe coded too, granted. [Bedroom Producers Blog](https://bedroomproducersblog.com/2026/10/24/morningdew-media-releases-morningdaw-a-free-daw-for-macos-windows-and-linux/){target="_blank" rel="noopener"} finds that its interface shows "some common signs of the vibe-coded aesthetic". And it includes an assistant that runs on your own Claude Code account. Its developers don't say how they coded it.
+It looks [vibe coded](/en/20260423-chers-vibe-codeurs-bienvenue-dans-la-realite) too, granted. [Bedroom Producers Blog](https://bedroomproducersblog.com/2026/10/24/morningdew-media-releases-morningdaw-a-free-daw-for-macos-windows-and-linux/){target="_blank" rel="noopener"} finds that its interface shows "some common signs of the vibe-coded aesthetic". And it includes an assistant that runs on your own Claude Code account. Its developers don't say how they coded it.
 
 But MorningDAW is original. It doesn't copy an existing app:
 

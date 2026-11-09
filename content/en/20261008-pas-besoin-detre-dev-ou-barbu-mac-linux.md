@@ -1,13 +1,13 @@
 ---
-title: "You don't need to be a bearded dev to love Mac and Linux"
+title: "Mac or Linux? No need to be a bearded dev"
 createdAt: "2026-10-08T21:00:00Z"
 image: "/images/articles/pexels-mikhail-nilov-7681016.webp"
-description: "Mac and Linux aren't just for bearded developers. What works (startup, updates, security, Zorin OS) and what hurts (price, Wi-Fi, support)."
+description: "Mac or Linux, without being a developer: what works (startup, updates, security, Zorin OS) and what hurts (price, Wi-Fi, support)."
 searchIntent: "Do you need to be a developer to use a Mac or Linux every day, and what are the real strengths and limits of macOS and Zorin OS?"
 tags: ["opinion", "apple", "macos", "linux", "open-source"]
 ---
 
-There's a cliché that refuses to die. The Mac is for designers and developers. Linux is for bearded guys in hoodies typing green lines on a black screen.
+There's a cliché that refuses to die: whether it's Mac or Linux, it's for specialists. The Mac is for designers and developers. Linux is for bearded guys in hoodies typing green lines on a black screen.
 
 I'm a developer, true. I also have a beard. But that's not why I love these two systems. I love them for a much simpler reason: they let me work.
 
@@ -17,7 +17,7 @@ Here's the tour, with what works, and what hurts.
 
 ### You open it, it's ready
 
-On an Apple Silicon Mac, you lift the lid and you work. Apple promised it back in 2020, when the M1 chips launched: the Mac wakes from sleep instantly, "just like iPhone" ([Apple](https://www.apple.com/newsroom/2020/11/introducing-the-next-generation-of-mac/){target="_blank" rel="noopener"}). I don't have a stopwatch to show you, but that's exactly what I live every day.
+On an Apple Silicon Mac, you lift the lid and you work. Apple promised it back in 2020, when the M1 chips launched: the Mac wakes from sleep instantly, "just like iPhone" ([Apple](https://www.apple.com/newsroom/2020/11/introducing-the-next-generation-of-mac/){target="_blank" rel="noopener"}). I don't have a stopwatch to show you, but that's exactly what I get every day.
 
 ### No surprise updates
 
@@ -25,7 +25,7 @@ On a Mac, you decide. In **System Settings > General > Software Update**, you ch
 
 Urgent security fixes install in the background, and Apple says it in black and white: they don't make your Mac restart ([Apple](https://support.apple.com/en-us/101591){target="_blank" rel="noopener"}). No "Your computer will restart in 15 minutes" in the middle of a presentation.
 
-On the other side, Windows 11 has made an effort: since July 2026, Microsoft bundles updates so it only forces one restart a month, outside active hours. But you can only pause updates for 35 days, and once the deadline hits, Windows installs and restarts ([Microsoft](https://support.microsoft.com/en-us/servicing/os/windows/docs/2026/07/kb5121772-one-restart-a-month-for-windows-updates){target="_blank" rel="noopener"}). Better than before. Not the same philosophy.
+Windows 11 has made an effort: since July 2026, Microsoft bundles updates so it only forces one restart a month, outside active hours. But you can only pause updates for 35 days, and once the deadline hits, Windows installs and restarts ([Microsoft](https://support.microsoft.com/en-us/servicing/os/windows/docs/2026/07/kb5121772-one-restart-a-month-for-windows-updates){target="_blank" rel="noopener"}). Better than before. Not the same philosophy.
 
 ### No antivirus to set up
 
@@ -49,7 +49,7 @@ Small catch: the Trash doesn't clean everything. Some apps leave files behind. F
 
 ### Zorin OS, the Linux that looks like what you know
 
-If I had to recommend a single distribution to someone who has never touched Linux, it would be [Zorin OS](https://zorin.com/os/){target="_blank" rel="noopener"}. Version 18 came out on October 14, 2025, the very day Windows 10 support ended, and it was downloaded more than 3.3 million times in six months ([Zorin](https://blog.zorin.com/2026/04/15/zorin-os-18.1-is-released/){target="_blank" rel="noopener"}). That's no accident.
+If I had to recommend a single distribution to someone who has never touched Linux, it would be [Zorin OS](https://zorin.com/os/){target="_blank" rel="noopener"}. Version 18 came out on October 14, 2025, the very day Windows 10 support ended, and it was downloaded more than 3.3 million times in six months ([Zorin](https://blog.zorin.com/2026/04/15/zorin-os-18.1-is-released/){target="_blank" rel="noopener"}).
 
 In practice:
 
@@ -69,11 +69,11 @@ This is where Linux is unbeatable. Everything can be changed: the look, the desk
 
 … then join the dev side of the Force. Linux runs 62.7% of websites whose operating system is known ([W3Techs](https://w3techs.com/technologies/details/os-linux){target="_blank" rel="noopener"}) and every single one of the world's 500 most powerful supercomputers since 2017 ([TOP500](https://www.top500.org/statistics/details/osfam/1/){target="_blank" rel="noopener"}). Even Microsoft ended up building a real Linux into Windows, with WSL, and open-sourced it in 2025 ([Microsoft](https://blogs.windows.com/windowsdeveloper/2025/05/19/the-windows-subsystem-for-linux-is-now-open-source/){target="_blank" rel="noopener"}). When yesterday's enemy joins in, the tool must be good.
 
-Learning Linux on your everyday computer means learning the environment a good chunk of the internet runs on. And if you want to go further with customization, there's plenty to do: I ended up [installing Omarchy on my old MacBook](/en/20261008-omarchy-dhh-homme-dotfiles).
+Learning Linux on your everyday computer means learning the environment a good chunk of the internet runs on. And if you want to take customization further, there's [Omarchy, which I had been boycotting](/en/20261008-omarchy-dhh-homme-dotfiles) and ended up installing on my old MacBook.
 
 ## What hurts
 
-I'm not going to sell you a dream. Both camps have their flaws.
+I'm not going to sugarcoat it. Both camps have their flaws.
 
 ### The Mac is expensive
 
@@ -99,7 +99,7 @@ Nothing dramatic. But it's a useful reminder: on a Mac too, a big update needs s
 
 Linux runs almost everywhere. Almost.
 
-I installed Zorin OS on a MacBook. Everything went fine… until it was time to connect to Wi-Fi. Nowhere to be found. The reason: many MacBooks use a Broadcom Wi-Fi chip whose driver isn't free software ([Debian](https://wiki.debian.org/wl){target="_blank" rel="noopener"}). So it isn't enabled out of the box, and to install it… you need internet. A snake eating its own tail.
+I installed Zorin OS on a MacBook. Everything went fine… until it was time to connect to Wi-Fi. Nowhere to be found. The reason: many MacBooks use a Broadcom Wi-Fi chip whose driver isn't free software ([Debian](https://wiki.debian.org/wl){target="_blank" rel="noopener"}). So it isn't enabled out of the box, and to install it… you need internet. A classic catch-22.
 
 There is a fix: plug in an Ethernet cable, or share your phone's connection over USB, then open the **Additional Drivers** tool. The Zorin forum is full of MacBooks in this situation ([Zorin forum](https://forum.zorin.com/t/wi-fi-not-working-on-macbook-no-wi-fi-adapter-found/60470){target="_blank" rel="noopener"}). But when you're starting out, that's exactly the kind of wall that makes people give up.
 
@@ -111,7 +111,7 @@ If you want a computer that starts, updates without bothering you and asks you f
 
 If you want a free system that brings an old machine back to life and lets you change everything, and you're OK tinkering a bit at first: try Linux. Start with Zorin OS, from a USB stick, without erasing anything.
 
-And if you're still hesitating: these days, I spend quite a bit of time on ChromeOS, on my niece's computer. Proof that you can switch systems without switching heads. The beard was never mandatory.
+And if you're still hesitating: these days, I spend quite a bit of time on ChromeOS, on my niece's computer. Proof that you can switch systems without changing who you are. The beard was never mandatory.
 
 ## Sources
 

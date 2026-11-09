@@ -1,24 +1,24 @@
 ---
-title: "358,25 $ débités : anatomie du faux mail de renouvellement"
+title: "Faux mail Zoho à 358,25 $ : n'appelez pas"
 createdAt: "2026-08-31"
 updatedAt: "2026-10-08T12:00:00Z"
 image: "/images/articles/zoho.webp"
-description: "Faux mail de renouvellement Zoho Backstage à 358,25 $ : ni lien ni pièce jointe, juste un numéro à appeler. Comment marche l'arnaque, et que faire."
+description: "Faux mail Zoho : un renouvellement Backstage à 358,25 $, ni lien ni pièce jointe, juste un numéro à appeler. Comment marche l'arnaque, et que faire."
 searchIntent: "Comment reconnaître un faux mail de renouvellement Zoho avec un numéro de téléphone, et que faire si on a déjà appelé."
 tags: [sécurité, phishing, alerte]
 ---
 
 Ce matin, en ouvrant ma boîte mail, je tombe sur une confirmation de paiement : 358,25 dollars, renouvellement traité avec succès, transaction finalisée, merci d'avoir choisi Zoho Backstage.
 
-Le problème, c'est que je n'ai jamais rien acheté chez Zoho Backstage. Je n'ai pas de compte Zoho, je n'ai jamais organisé d'événement, et je n'ai jamais payé 358 dollars pour quoi que ce soit. Pourtant, le mail est là, avec un ton officiel et un logo qui a l'air authentique.
+Le problème, c'est que je n'ai jamais rien acheté chez Zoho Backstage : c'est un faux mail Zoho. Je n'ai pas de compte Zoho, je n'ai jamais organisé d'événement, et je n'ai jamais payé 358 dollars pour quoi que ce soit. Pourtant, le mail est là, avec un ton officiel et un logo qui a l'air authentique.
 
 Le premier réflexe, celui que nous avons tous, est de chercher le bouton pour annuler. C'est exactement ce que les auteurs de ce mail attendent.
 
 Le second réflexe, heureusement, a été de me souvenir que je n'ai pas l'habitude de laisser traîner des montants pareils sur mes cartes prépayées. Ça aide à garder la tête froide.
 
-## Ce qui rend ce mail différent
+## Ce qui rend ce faux mail Zoho différent
 
-On répète les mêmes conseils depuis dix ans : ne cliquez pas sur les liens, ne téléchargez pas les pièces jointes, vérifiez l'adresse avant de vous connecter (c'était tout l'enjeu du [faux Bing Webmaster Tools](/fr/20260618-alerte-phishing-bing-webmaster-tools)). Sauf que ce mail-là ne demande rien de tout ça. Il n'y a rien à cliquer, rien à télécharger, aucun formulaire de connexion. Le seul appel à l'action tient dans une ligne discrète, glissée au milieu du texte :
+On répète les mêmes conseils depuis dix ans : ne cliquez pas sur les liens, ne téléchargez pas les pièces jointes, vérifiez l'adresse avant de vous connecter (c'était tout l'enjeu de la [fausse page Bing Webmaster Tools en tête de Google](/fr/20260618-alerte-phishing-bing-webmaster-tools)). Sauf que ce mail-là ne demande rien de tout ça. Il n'y a rien à cliquer, rien à télécharger, aucun formulaire de connexion. Le seul appel à l'action tient dans une ligne discrète, glissée au milieu du texte :
 
 > Refund help is available through +1 (812) 552-8528 when a transaction appears without your consent
 
@@ -37,7 +37,7 @@ Le scénario est rodé et il ne varie presque jamais.
 
 Et pendant tout ce temps, cette personne a la main sur votre machine.
 
-## Les six signaux qui auraient dû m'alerter
+## Reconnaître un faux mail Zoho : les six signaux qui auraient dû m'alerter
 
 1. Le numéro de téléphone américain. Aucun éditeur de logiciel sérieux ne met un numéro à rappeler dans un mail de facturation. Chez Zoho, Adobe ou Microsoft, le support passe par votre espace client, jamais par un numéro reçu dans un message non sollicité. Ce signal suffit à lui seul.
 
@@ -49,17 +49,17 @@ Et pendant tout ce temps, cette personne a la main sur votre machine.
 
 5. L'expéditeur réel. Le nom affiché annonce « Zoho Backstage », mais l'adresse derrière raconte autre chose. Dans Gmail, cliquez sur la flèche à côté du nom, ou ouvrez Afficher l'original pour lire les en-têtes complets. Regardez le `Return-Path` et le résultat des vérifications SPF et DKIM : si elles échouent, ou si le domaine n'est pas un domaine Zoho (`zoho.com`, `zohocorp.com` ou une déclinaison régionale comme `zoho.eu` ou `zoho.in`), l'affaire est réglée.
 
-6. L'absence de tout élément de compte. Un vrai mail de facturation contient un numéro de facture, les quatre derniers chiffres de la carte, le nom du plan et la date d'échéance. Ici, rien de tout cela, tout simplement parce qu'ils ne savent rien de vous.
+6. L'absence de tout élément de compte. Un vrai mail de facturation contient un numéro de facture, les quatre derniers chiffres de la carte, le nom du plan et la date d'échéance. Ici, rien de tout cela : ils ne savent rien de vous.
 
 ## Pourquoi Zoho, justement ?
 
 Les mêmes campagnes tournent depuis des années avec Norton, McAfee, Geek Squad ou PayPal. Leur point commun, ce sont des services que vous avez peut-être souscrits sans vous en souvenir : un antivirus installé il y a trois ans, un compte créé pour un test, un abonnement d'équipe payé par un collègue.
 
-Ces campagnes ne cherchent pas à vous convaincre que vous devez payer, mais que vous avez peut-être déjà payé. Ce n'est plus la cupidité qu'elles exploitent, c'est l'envie parfaitement légitime de récupérer son argent.
+Ces campagnes ne cherchent pas à vous convaincre que vous devez payer, mais que vous avez peut-être déjà payé. Ce n'est plus la cupidité qu'elles exploitent, c'est l'envie, légitime, de récupérer son argent (l'[arnaque au faux Brad Pitt](/fr/20250115-l-histoire-danne), elle, misait sur les sentiments).
 
 Zoho entre dans la rotation parce que la suite est très utilisée par les PME, y compris chez nous. Beaucoup d'entre nous ont un compte Zoho quelque part. Backstage, nettement moins, mais qui prend le temps de vérifier la différence en voyant 358 dollars partir ?
 
-## Ce qu'il faut faire
+## Que faire si vous recevez ce mail
 
 - Ne pas appeler, jamais. C'est la seule règle qui compte vraiment sur ce coup-là.
 - Vérifier son relevé bancaire directement, depuis l'application ou le site de sa banque. Aucun débit ? Fin de l'histoire.
@@ -79,9 +79,9 @@ Zoho entre dans la rotation parce que la suite est très utilisée par les PME, 
 
 ## Pour finir
 
-On blinde des serveurs, on impose le MFA partout, on fait des audits. Et l'attaque qui a le plus de chances de passer reste un mail moche, sans lien, avec un numéro de téléphone dedans. Il n'y a aucune technique là-dedans, juste un montant bien choisi et le pari que la panique fera le reste.
+On blinde des serveurs, on impose le MFA partout, on fait des audits, on cherche [par où le pirate est entré dans un site WordPress](/fr/20261020-site-wordpress-pirate-trouver-par-ou-le-pirate-est-entre). Et l'attaque qui a le plus de chances de passer reste un mail moche, sans lien, avec un numéro de téléphone dedans. Il n'y a aucune technique là-dedans, juste un montant bien choisi et le pari que la panique fera le reste.
 
-La règle à retenir, pour vous comme pour vos collègues : un mail ne prouve jamais un débit, seule votre banque le prouve. Le mail dit ce que l'expéditeur veut vous faire croire, le relevé dit ce qui s'est réellement passé.
+La règle à retenir, pour vous comme pour vos collègues : un mail ne prouve jamais un débit, seule votre banque le prouve.
 
 *Mise à jour du 8 octobre 2026 : précision sur les domaines d'envoi légitimes de Zoho, qui ne se limitent pas à `zohocorp.com` (`zoho.com`, `zoho.eu`, `zoho.in`…), d'après [l'alerte phishing publiée par Zoho](https://help.zoho.com/portal/en/community/topic/phishing-alert-a-must-read-for-all-zoho-sign-users).*
 

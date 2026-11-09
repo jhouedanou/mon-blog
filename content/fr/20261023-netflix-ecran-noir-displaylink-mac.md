@@ -1,17 +1,18 @@
 ---
-title: "Netflix reste noir sur un écran DisplayLink : 3 solutions sur Mac"
+title: "Netflix écran noir avec DisplayLink sur Mac"
 createdAt: "2026-10-23T21:00:00Z"
+updatedAt: "2026-11-08"
 image: "/images/articles/pexels-luca-sammarco-6142159.webp"
-description: "Sur Mac, Netflix affiche une image noire dès qu'un écran DisplayLink est branché. Trois solutions, et le port natif du dock Ugreen CM555."
+description: "Netflix écran noir sur Mac, mais le son passe ? C'est l'écran DisplayLink. Trois solutions, et le port natif du dock Ugreen CM555."
 searchIntent: "Comment regarder Netflix sur un Mac relié à un dock DisplayLink quand la vidéo reste noire mais que le son marche, et quel port du dock Ugreen CM555 est natif ?"
 tags: ["tutoriel", "apple", "macos", "matériel", "tech"]
 ---
 
-**Réponse courte.** Sur Mac, Netflix affiche une image noire, avec le son, dès qu'un écran est branché en DisplayLink. Trois solutions : désactiver l'accélération matérielle dans Chrome ou Edge, regarder sur un écran qui n'utilise pas DisplayLink, ou brancher l'écran sur une sortie vidéo native. Sur le dock Ugreen CM555, la sortie native, c'est le port **HDMI 2**.
+Sur Mac, Netflix passe en écran noir, avec le son, dès qu'un écran est branché en DisplayLink. Trois solutions : désactiver l'accélération matérielle dans Chrome ou Edge, changer de navigateur ou débrancher les écrans DisplayLink le temps du film, ou brancher l'écran sur une sortie vidéo native. Sur le dock Ugreen CM555, la sortie native, c'est le port **HDMI 2**.
 
 ## Mon matériel
 
-Je garde mes machines longtemps et j'en tire le maximum. À la maison, je travaille sur un **MacBook M1**, le modèle de base. Je l'utilise presque comme un ordinateur de bureau.
+Je garde mes machines longtemps et j'en tire le maximum : mon [iMac 2017 démarre sur un SSD externe](/fr/20261014-installer-macos-ssd-externe-imac-2017), et mon [MacBook Pro 2017 est passé sous Omarchy](/fr/20261013-retournement-de-veste-omarchy-macbook-pro-2017). À la maison, je travaille sur un **MacBook M1**, le modèle de base. Je l'utilise presque comme un ordinateur de bureau.
 
 Problème : un Mac M1 de base ne gère qu'**un seul écran externe**. Moi, j'en ai deux :
 
@@ -26,13 +27,15 @@ Pour brancher les deux, j'utilise un dock **Ugreen CM555** (référence 90325, v
 
 Pour coder, tout va bien. Pour Netflix, c'est une autre histoire.
 
-## Le problème : le son, mais pas l'image
+## Netflix en écran noir : le son, mais pas l'image
 
 Avec un écran DisplayLink branché, la vidéo démarre, le son passe, mais l'image reste noire. DisplayLink le reconnaît dans [sa documentation](https://support.displaylink.com/knowledgebase/articles/830301-content-protected-video-does-not-play-on-mac-while){target="_blank" rel="noopener"}. Netflix n'est pas seul : Disney+, Amazon Prime Video, HBO, YouTube TV, Udemy et iTunes sont aussi touchés.
 
 Le plus gênant : selon DisplayLink, **dès qu'un écran DisplayLink est branché, la vidéo protégée peut être bloquée sur tous les écrans**, même sur celui du Mac.
 
 Pourquoi ? Un écran DisplayLink n'est pas branché sur la carte graphique. Le logiciel copie l'image de l'écran, puis l'envoie par USB. C'est pour cela que macOS lui demande l'autorisation « Enregistrement de l'écran » ([Deux Ordis](https://deuxordis.xyz/blog/displaylink-mac-autorisations/){target="_blank" rel="noopener"}). Or les vidéos de Netflix sont protégées contre la copie. Elles ne passent pas par ce chemin : à la place, on voit un rectangle noir.
+
+L'aide de Netflix, elle, ne parle pas de DisplayLink. Pour un écran noir avec le son sur Mac, elle conseille de mettre à jour son navigateur ou d'en changer, et rappelle qu'AirPlay, la duplication d'écran et Sidecar ne sont plus pris en charge ([aide Netflix](https://help.netflix.com/fr/node/11634){target="_blank" rel="noopener"}).
 
 ## Solution 1 : désactiver l'accélération matérielle (Chrome ou Edge)
 
@@ -53,7 +56,7 @@ Ne sautez pas l'étape 5. Sur le [forum DisplayLink](https://www.displaylink.org
 DisplayLink propose aussi deux options simples ([support DisplayLink](https://support.displaylink.com/knowledgebase/articles/830301-content-protected-video-does-not-play-on-mac-while){target="_blank" rel="noopener"}) :
 
 - **Essayez un autre navigateur.**
-- **Regardez la vidéo sur l'écran intégré du Mac.** Si l'image reste noire, débranchez l'écran DisplayLink le temps du film.
+- **Débranchez temporairement tous les écrans DisplayLink**, le temps du film, et regardez la vidéo sur l'écran intégré du Mac.
 
 Astuce : pas besoin de toucher aux câbles. Les écrans DisplayLink ne marchent que si DisplayLink Manager est ouvert. Quittez-le depuis son icône dans la barre des menus : les écrans DisplayLink s'éteignent. Relancez-le après le film.
 
@@ -81,6 +84,8 @@ Pour savoir quel écran est sur le port natif : quittez DisplayLink Manager. L'�
 | Désactiver l'accélération matérielle | Régler Chrome ou Edge, puis `Cmd + Q` | Pas dans Safari ni Firefox |
 | Autre navigateur ou écran du Mac | Changer de navigateur, ou quitter DisplayLink Manager | L'écran DisplayLink s'éteint pendant le film |
 | Sortie vidéo native | Brancher l'écran sur le port HDMI 2 du CM555, ou un câble USB-C vers HDMI | Une seule sortie native sur un Mac M1 de base |
+
+*Correction du 8 novembre 2026 : la deuxième solution suit désormais la [documentation de DisplayLink](https://support.displaylink.com/knowledgebase/articles/830301-content-protected-video-does-not-play-on-mac-while){target="_blank" rel="noopener"}, qui conseille de débrancher temporairement tous les écrans DisplayLink. Regarder sur l'écran du Mac ne suffit pas tant que l'un d'eux reste branché. Ajout de ce que dit l'aide de Netflix.*
 
 ---
 

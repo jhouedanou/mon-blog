@@ -1,33 +1,33 @@
 ---
-title: "Omarchy on My 2017 MacBook Pro: Three Days In"
+title: "Omarchy on a 2017 MacBook Pro: Three Days In"
 createdAt: "2026-10-13T18:00:00Z"
 image: "/images/articles/omarchy-macbook-pro-2017-deux-ecrans.webp"
-description: "Three days of Omarchy, DHH's Linux distro, on my 2017 MacBook Pro: what works, what doesn't (Bluetooth, external displays), and my conscience."
+description: "Omarchy on a 2017 MacBook Pro, three days in: performance, sound, Hyprland, what still doesn't work (Bluetooth, external displays), and my conscience."
 searchIntent: "What is daily use of Omarchy (Arch Linux + Hyprland) like on a 2017 Intel MacBook Pro: performance, audio, Bluetooth, external displays, and what to make of its creator DHH?"
 tags: ["linux", "omarchy", "hyprland", "apple", "open-source", "opinion"]
 ---
 
-I'll start with the hardest part: I turned my coat.
+I'll start with the hardest part: I've become a turncoat.
 
-On Thursday, October 8, I published a post saying I wouldn't touch Omarchy, DHH's Linux distribution, because of what he writes about immigration. On Saturday the 10th, I installed it on my old MacBook Pro.
+On Thursday, October 8, I published a post saying I wouldn't touch Omarchy, DHH's Linux distribution, because of what he writes about immigration. On Saturday the 10th, I installed it on my old 2017 MacBook Pro.
 
 Sometimes you have to admit you were wrong. And admit when you gave in to fear. The fear of endorsing him, in this case. I had mixed up two questions: what the tool is worth, and what I think of its author. And I had settled the first one without ever trying it.
 
-I've already explained [why I changed my mind](/en/20261008-omarchy-dhh-homme-dotfiles), with your reactions and the tweaks it took to bring the MacBook back. This one is the review: here's what three days of Omarchy look like on a 2017 MacBook Pro.
+I've already explained [why I gave up my Omarchy boycott](/en/20261008-omarchy-dhh-homme-dotfiles), with your reactions and the tweaks it took to bring the MacBook back. This one is the review of three days of Omarchy on a 2017 MacBook Pro.
 
 ## What is Omarchy?
 
 Omarchy is a distribution based on Arch Linux, with Hyprland as the desktop. No windows to drag around with the mouse: they tile themselves, and you drive them from the keyboard. Everything comes installed and preconfigured, from the shortcuts to the themes. The current version is 4.0.4, released on September 15 ([GitHub](https://github.com/omacom/omarchy/releases){target="_blank" rel="noopener"}).
 
-Good news for old Macs: the manual promises built-in support for Intel Macs. The installer adds the Broadcom Wi-Fi drivers and the keyboard driver for 2016 and 2017 MacBook Pros on its own ([Omarchy manual](https://github.com/omacom/omarchy/blob/v4.0.4/manual/44-mac-support.md){target="_blank" rel="noopener"}). If you remember my [missing Wi-Fi under Zorin OS](/en/20261008-pas-besoin-detre-dev-ou-barbu-mac-linux), that's a relief to read. On my end, I still had to change some settings on my CanalBox router, as I [explained here](/en/20261008-omarchy-dhh-homme-dotfiles).
+Good news for old Macs: the manual promises built-in support for Intel Macs. The installer adds the Broadcom Wi-Fi drivers and the keyboard driver for 2016 and 2017 MacBook Pros on its own ([Omarchy manual](https://github.com/omacom/omarchy/blob/v4.0.4/manual/44-mac-support.md){target="_blank" rel="noopener"}). If you remember my [missing Wi-Fi under Zorin OS](/en/20261008-pas-besoin-detre-dev-ou-barbu-mac-linux), that's a relief to read. On my end, I still had to [change some settings on my CanalBox router](/en/20261008-omarchy-dhh-homme-dotfiles), as I've already explained.
 
 One warning, though: Omarchy wipes the whole drive. On a Mac, it's not something you install next to macOS.
 
-## What works
+## Omarchy on a 2017 MacBook Pro: what works
 
 ### The MacBook can breathe
 
-It's the first thing you notice. The MacBook is snappier. The Omarchy manual, for its part, claims a 36% performance gain on a 2019 MacBook Pro just from installing the system ([Omarchy manual](https://github.com/omacom/omarchy/blob/v4.0.4/manual/44-mac-support.md){target="_blank" rel="noopener"}). And above all, on mine, the fan has calmed down.
+It's the first thing you notice. The MacBook is snappier. The Omarchy manual claims a 36% performance gain on a 2019 MacBook Pro just from installing the system ([Omarchy manual](https://github.com/omacom/omarchy/blob/v4.0.4/manual/44-mac-support.md){target="_blank" rel="noopener"}). And above all, on mine, the fan has calmed down.
 
 Under macOS, all it took was opening Chrome for the MacBook to think it was a hair dryer. Now the fan only kicks in when I run a big project on Docker or on [Lerd](https://lerd.sh){target="_blank" rel="noopener"}, the Linux equivalent of Laravel Herd. In other words, when it actually has a reason to blow.
 
@@ -41,7 +41,7 @@ After two days, you find your bearings. One app per workspace, everything from t
 
 ### Configurable to your heart's content
 
-Everything can be configured. Absolutely everything. Themes change the terminal, the browser, the bar, the notifications and the lock screen in one go. Omarchy ships 22 of them, and you can make your own in `~/.config/omarchy/themes/` ([Omarchy manual](https://github.com/omacom/omarchy/blob/v4.0.4/manual/06-themes.md){target="_blank" rel="noopener"}).
+Everything can be configured. Themes change the terminal, the browser, the bar, the notifications and the lock screen in one go. Omarchy ships 22 of them, and you can make your own in `~/.config/omarchy/themes/` ([Omarchy manual](https://github.com/omacom/omarchy/blob/v4.0.4/manual/06-themes.md){target="_blank" rel="noopener"}).
 
 Of course, I couldn't resist. With Claude, I built my Matrix theme, all the way down to the boot screen: green character rain falls while I type the password that unlocks the drive. The Plymouth theme is online, free and MIT-licensed: [omarchy-matrix-plymouth](https://github.com/jhouedanou/omarchy-matrix-plymouth){target="_blank" rel="noopener"}. It picks up the colors of the active Omarchy theme, so it doesn't have to stay green.
 
@@ -51,7 +51,7 @@ Of course, I couldn't resist. With Claude, I built my Matrix theme, all the way 
 
 First hiccup: no sound. The speakers stayed silent, even though the system showed a perfectly normal audio output.
 
-It's a known issue on 2016 and 2017 MacBook Pros. Their Cirrus Logic audio chip isn't handled properly by the driver that ships with Linux ([Arch Wiki](https://wiki.archlinux.org/title/Laptop/Apple){target="_blank" rel="noopener"}). The fix is a community driver, [snd_hda_macbookpro](https://github.com/davidjo/snd_hda_macbookpro){target="_blank" rel="noopener"}. I installed it, and the sound came back. I walked through the installation step by step in [the previous post](/en/20261008-omarchy-dhh-homme-dotfiles). On Arch, it's also available as an AUR package:
+It's a known issue on 2016 and 2017 MacBook Pros. Their Cirrus Logic audio chip isn't handled properly by the driver that ships with Linux ([Arch Wiki](https://wiki.archlinux.org/title/Laptop/Apple){target="_blank" rel="noopener"}). The fix is a community driver, [snd_hda_macbookpro](https://github.com/davidjo/snd_hda_macbookpro){target="_blank" rel="noopener"}. I installed it, and the sound came back. I walked through [the driver installation, step by step](/en/20261008-omarchy-dhh-homme-dotfiles) in the previous post. On Arch, it's also available as an AUR package:
 
 ```bash
 yay -S snd-hda-macbookpro-dkms-git
@@ -112,9 +112,9 @@ Is that enough? I don't know. I'd rather tell you I don't have the answer than p
 
 Here's the conclusion I didn't see coming. Since Saturday, I've used my 2017 MacBook Pro every day. More than the M1 MacBook, even.
 
-The M1, for its part, feels slower to me since I installed macOS 27 "Golden Gate", as I mentioned in my [post about Mac and Linux](/en/20261008-pas-besoin-detre-dev-ou-barbu-mac-linux). Meanwhile, the machine Apple dropped after macOS Ventura opens Chrome without breaking a sweat, switches themes in a second and shows *Matrix* rain at boot. You can keep an old machine alive without asking anyone's permission. I was already doing it with my [old iMac turned into a second screen](/en/20260929-sharp-vieil-imac-ecran-secondaire-ethernet).
+The M1, on the other hand, has felt slower to me since I installed macOS 27 "Golden Gate", as I mentioned in my [post about Mac and Linux](/en/20261008-pas-besoin-detre-dev-ou-barbu-mac-linux). Meanwhile, the machine Apple dropped after macOS Ventura opens Chrome without breaking a sweat, switches themes in a second and shows *Matrix* rain at boot. You can keep an old machine alive without asking anyone's permission. I was already doing it with my [old iMac turned into a second screen](/en/20260929-sharp-vieil-imac-ecran-secondaire-ethernet).
 
-That leaves the big test: the printer. It stares at me. I stare back. I haven't had time to take it on yet.
+That leaves the big test: [the thermal printer](/en/20261021-imprimante-thermique-netum-a401s-linux-omarchy-claude). It stares at me. I stare back. I haven't had time to take it on yet.
 
 On paper, Omarchy is ready: the CUPS printing service is installed and enabled, and you add a printer by searching for "Print Settings" in the menu ([Omarchy FAQ](https://github.com/omacom/omarchy/blob/v4.0.4/manual/46-faq.md){target="_blank" rel="noopener"}). One catch: since version 4.0.2, automatic discovery of network printers has been "temporarily" disabled ([release notes](https://github.com/omacom/omarchy/releases/tag/v4.0.2){target="_blank" rel="noopener"}). I may have to give it the address by hand.
 

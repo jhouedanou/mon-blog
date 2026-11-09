@@ -1,13 +1,13 @@
 ---
-title: "OpenDisplay: an old iMac as a free second screen for a Mac or a Linux PC"
+title: "OpenDisplay: an old iMac as a Linux monitor"
 createdAt: "2026-10-30T15:00:00Z"
 image: "/images/articles/opendisplay-macbook-omarchy-imac.webp"
-description: "OpenDisplay, free and open source, turns an old iMac into a screen for a Mac or a Linux PC. Step-by-step setup, and what you lose in picture quality."
+description: "OpenDisplay, free and open source, turns an old iMac into a monitor for a Linux PC or a Mac, even over Wi-Fi. Step-by-step setup, and what you lose in quality."
 searchIntent: "How can I use an old iMac as a free second screen for a Mac or a Linux PC with OpenDisplay, and what picture quality should I expect?"
 tags: ["tutorial", "apple", "macos", "mac", "linux", "omarchy", "open-source", "hardware"]
 ---
 
-**Short answer.** OpenDisplay is a free, open source app. It turns an old iMac into the second screen of a newer Mac or of a Linux PC. You install a receiver on the iMac, a sender on the other machine, and that's it. But the picture travels as compressed video: it is less sharp and less smooth than a real screen on a cable. The numbers are below.
+OpenDisplay is a free, open source app. It turns an old iMac into a monitor for a Linux PC, or a second screen for a newer Mac, even over Wi-Fi. You install a receiver on the iMac, a sender on the other machine, and that's it. But the picture travels as compressed video: it's less sharp and less smooth than a real screen plugged in with a cable. The numbers are below.
 
 I did it with my 2017 MacBook Pro running Omarchy: the iMac does show its extended desktop.
 
@@ -34,8 +34,8 @@ OpenDisplay also works with an iPhone, an iPad or an Android tablet. Here, I onl
 
 Two traps:
 
-- **An iMac from 2012 to 2014 cannot be the screen**: it does not get macOS Monterey. For that one, see [Sharp](/en/20260929-sharp-vieil-imac-ecran-secondaire-ethernet).
-- **A Mac too old for Sonoma cannot send.** My 2017 MacBook Pro, for example, stops at macOS Ventura. Under [Omarchy](/en/20261013-retournement-de-veste-omarchy-macbook-pro-2017), though, it can be the sender: that is the setup in the photo. Hence the Linux case below.
+- **An iMac from 2012 to 2014 cannot be the screen**: it does not get macOS Monterey. For that one, see [Sharp, which turns it into a second monitor for a Mac over an Ethernet cable](/en/20260929-sharp-vieil-imac-ecran-secondaire-ethernet).
+- **A Mac too old for Sonoma cannot send.** My 2017 MacBook Pro, for example, stops at macOS Ventura. Under [Omarchy](/en/20261013-retournement-de-veste-omarchy-macbook-pro-2017), though, it can be the sender: that's the setup in the photo. Hence the Linux case below.
 
 ## On the iMac: install the receiver
 
@@ -51,7 +51,7 @@ Open **OpenDisplay Receiver**. Allow **Local Network** access when macOS asks. T
 
 The app is signed and notarized by Apple: no warning on first launch. It updates itself.
 
-## Case 1: from a Mac to the iMac
+## Case 1: the iMac as a second screen for a Mac
 
 1. On the newer Mac, install the sender: `OpenDisplay.dmg`, on the same GitHub page, or:
 
@@ -65,7 +65,7 @@ The app is signed and notarized by Apple: no warning on first launch. It updates
 
 To use a cable, link the two Macs with a Thunderbolt or Ethernet cable. A USB-C **data** cable works too if both Macs run a recent macOS (a charge-only cable does not work). OpenDisplay moves to the cable by itself, even mid-session.
 
-## Case 2: from a Linux PC to the iMac
+## Case 2: the iMac as a monitor for a Linux PC
 
 The Linux sender is called `od-sender`. It is **in beta**.
 
@@ -119,7 +119,7 @@ In plain terms: at full sharpness, the 5K iMac shows 30 frames per second. Fine 
 
 **4. An Intel Mac limits the resolution.** HEVC, the sharper format, is only used when the sending Mac has an Apple chip and the iMac decodes HEVC (most Macs from 2017 on). Otherwise it is H.264, capped at 4096 × 2304 pixels. On a 5K iMac, the desktop then drops from 2560 × 1440 to 2048 × 1152 points. On the other hand, a non-Retina 1920 × 1080 iMac gets its picture pixel for pixel, at 60 frames per second.
 
-**5. From Linux, it is slower and heavier.** The Linux sender does not use the graphics card: the processor does all the work. It has no HEVC. To a 5K iMac, expect 55 to 70 ms of latency, against about 20 ms to an iPhone, and a busy processor. On Hyprland, the cursor is drawn into the video: it follows the mouse with a delay. And the Linux version is only officially tested on Omarchy for Apple Silicon Macs (Asahi Linux). On an Intel or AMD PC, it "is expected to work", according to the developer. On my 2017 MacBook Pro, an Intel Mac, it works.
+**5. From Linux, it's slower and heavier.** The Linux sender doesn't use the graphics card: the processor does all the work. It has no HEVC. To a 5K iMac, expect 55 to 70 ms of latency, compared with about 20 ms to an iPhone, and a busy processor. On Hyprland, the cursor is drawn into the video: it follows the mouse with a delay. And the Linux version is only officially tested on Omarchy for Apple Silicon Macs (Asahi Linux). On an Intel or AMD PC, it "is expected to work", according to the developer. On my 2017 MacBook Pro, an Intel Mac, it works.
 
 On that MacBook, the `od-sender` logs (visible in the photo) show about 24 ms to encode a frame, and roughly 60 to 100 ms from capture to send. Add the network and the display on the iMac on top of that. When nothing moves on screen, the sender sends almost nothing: less than one frame per second.
 
@@ -133,13 +133,13 @@ A smaller resolution on the iMac also lightens the load.
 
 **6. Wi-Fi adds hitches.** Between two Macs, prefer the cable. On Wi-Fi, on the sending Mac, set AirDrop to **Contacts Only** or **No One**. With **Everyone**, the Mac's Wi-Fi pauses for about 75 ms twice a second to look for devices, and the picture jumps each time.
 
-**What is still missing:**
+**What's still missing:**
 
 - **no sound** through the iMac's speakers;
-- **the iMac's keyboard and mouse** do not control the other machine (it is planned);
+- **the iMac's keyboard and mouse** don't control the other machine (that's planned);
 - **from Linux, the stream is not encrypted**: use it only on a network you trust. No mirror mode either;
 - **on the Mac side, OpenDisplay relies on an undocumented Apple feature**: a macOS update can break it;
-- **a purple dot** shows in the sending Mac's menu bar. That is normal: macOS tells you the screen is being recorded;
+- **a purple dot** shows in the sending Mac's menu bar. That's normal: macOS tells you the screen is being recorded;
 - **the iMac is still a computer that stays on**: it uses more power than a plain screen.
 
 ## Which setting to pick
@@ -150,12 +150,14 @@ A smaller resolution on the iMac also lightens the load.
 
 ## OpenDisplay or Sharp?
 
-I already covered [Sharp](/en/20260929-sharp-vieil-imac-ecran-secondaire-ethernet), which does the same job between two Macs.
+I already covered [Sharp, which turns an old iMac into a second monitor over a cable](/en/20260929-sharp-vieil-imac-ecran-secondaire-ethernet): it does the same job, but only between two Macs.
 
-- **Sharp** sends still text losslessly, so it is perfectly sharp. It sends sound. It accepts iMacs from late 2012, and the sending Mac can run macOS 12.3. But it needs a cable, and it only works between two Macs.
+- **Sharp** sends still text losslessly, so it's perfectly sharp. It sends sound. It accepts iMacs from late 2012, and the sending Mac can run macOS 12.3. But it needs a cable, and it only works between two Macs.
 - **OpenDisplay** works over Wi-Fi, accepts a Linux PC as the sender, and also works with an iPhone or an iPad. But everything goes through compressed video, without sound.
 
 For reading and coding between two Macs on a cable, Sharp gives sharper text. For a Linux PC or a Wi-Fi link, OpenDisplay is the only one of the two that works.
+
+And if it's the computer itself you want to bring back, there's another option: [install macOS on an external SSD](/en/20261014-installer-macos-ssd-externe-imac-2017), without opening the iMac.
 
 **Sources:**
 

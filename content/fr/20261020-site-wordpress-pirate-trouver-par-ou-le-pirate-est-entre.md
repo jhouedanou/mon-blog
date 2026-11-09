@@ -1,13 +1,14 @@
 ---
-title: "Site WordPress piraté : trouver par où le pirate est entré"
+title: "WordPress piraté : trouver la porte d'entrée"
 createdAt: "2026-10-20T09:00:00Z"
 image: "/images/articles/pexels-pixabay-276452.webp"
 description: "Site WordPress piraté, que faire ? D'abord trouver la porte d'entrée dans les logs : mot de passe deviné, plugin envoyé par wp-admin. Commandes incluses."
+updatedAt: "2026-11-08"
 searchIntent: "Mon site WordPress a été piraté : que faire en premier, et comment retrouver dans les logs du serveur par où le pirate est entré (mot de passe admin, plugin, FTP) ?"
 tags: ["tutoriel", "wordpress", "sécurité", "dev"]
 ---
 
-**Réponse courte.** Avant de nettoyer quoi que ce soit, copiez les logs du serveur. Puis cherchez-y la porte d'entrée : une rafale de `POST /wp-login.php` suivie d'une connexion réussie veut dire que le mot de passe a été deviné ; un `upload-plugin` juste après veut dire que le pirate a installé son propre plugin depuis l'administration. Tant que vous ne savez pas par où il est entré, il reviendra par le même chemin, même après une restauration propre.
+Sur un site WordPress piraté, avant de nettoyer quoi que ce soit, copiez les logs du serveur. Puis cherchez-y la porte d'entrée : une rafale de `POST /wp-login.php` suivie d'une connexion réussie veut dire que le mot de passe a été deviné ; un `upload-plugin` juste après veut dire que le pirate a installé son propre plugin depuis l'administration. Tant que vous ne savez pas par où il est entré, il reviendra par le même chemin, même après une restauration propre.
 
 C'est exactement ce que j'ai trouvé en août, sur un site d'actualité africain que je devais remettre d'aplomb. Voici la méthode, commandes comprises.
 
@@ -66,7 +67,7 @@ Une ligne de log ressemble à ça (format « combined », le plus courant) :
 203.0.113.45 - - [12/Aug/2026:03:14:07 +0000] "POST /wp-login.php HTTP/1.1" 200 4521 "-" "Mozilla/5.0"
 ```
 
-Dans l'ordre : l'IP, la date, la requête, puis le **code de réponse** (`200` ici). C'est ce code qui va tout dire.
+Dans l'ordre : l'IP, la date, la requête, puis le **code de réponse** (`200` ici). C'est ce code qui nous intéresse.
 
 ## Piste 1 : un mot de passe administrateur deviné
 
@@ -172,6 +173,7 @@ Pas de `302` suspect, pas de téléversement ? La porte est ailleurs. Les signat
 | Accès FTP ou SSH volé | `/var/log/secure` (AlmaLinux), `/var/log/auth.log` ou `journalctl -u ssh` (Debian, Ubuntu), journal FTP du panneau | Une connexion réussie depuis une IP inconnue |
 | Compte d'hébergement compromis | Historique de connexion du panneau | Une session ouverte que vous n'avez pas ouverte |
 | Site voisin infecté | Les autres sites du même compte | Le même fichier malveillant, plus ancien, ailleurs |
+| Faille de PHP lui-même, comme PHP2Shell en octobre 2026 | La version de PHP-FPM ou de mod_php installée | Une version sans le correctif : voir [comment mettre à jour PHP contre PHP2Shell](/fr/20261021-php2shell-mettre-a-jour-php-debian-ubuntu-sans-forge) |
 
 Pour la première piste, WP-CLI compare les fichiers de WordPress et des plugins du dépôt officiel avec les originaux. Tout fichier modifié ou ajouté ressort :
 
@@ -204,7 +206,9 @@ Ces réglages ne valent que si on a d'abord vérifié qu'il ne reste rien : un p
 
 Sur le site d'août, il n'y avait ni faille inconnue ni pirate de génie. Le mot de passe administrateur a été deviné, et WordPress a fait le reste : il propose à tout administrateur d'installer du code sur le serveur en trois clics. Les logs racontaient toute l'histoire, à condition de les lire avant de tout effacer.
 
-Ces robots ne visent personne en particulier. Ils essaient les mêmes adresses sur tous les sites, y compris ceux qui ne tournent plus sous WordPress. Ce blog l'a quitté [il y a deux ans](/fr/20261018-migration-wordpress-nuxt-referencement-perdu-recupere), et les robots cherchent toujours son `wp-login.php` : je l'ai raconté dans [J'ai récupéré le trafic de mon blog (et les bots qui vont avec)](/fr/20260922-jai-recupere-le-trafic-de-mon-blog-et-les-bots-qui-vont-avec). Votre site n'est pas trop petit pour être piraté. Il est juste sur la liste, comme tous les autres.
+Ces robots ne visent personne en particulier. Ils essaient les mêmes adresses sur tous les sites, y compris ceux qui ne tournent plus sous WordPress. Ce blog l'a quitté [il y a deux ans](/fr/20261018-migration-wordpress-nuxt-referencement-perdu-recupere), et les robots cherchent toujours son `wp-login.php` : c'est même [pourquoi mon blog dépassait la limite CPU de Cloudflare Workers](/fr/20260922-jai-recupere-le-trafic-de-mon-blog-et-les-bots-qui-vont-avec). Votre site n'est pas trop petit pour être piraté. Il est juste sur la liste, comme tous les autres.
+
+*Mise à jour du 8 novembre 2026 : le tableau des portes d'entrée compte une ligne de plus, une faille de PHP lui-même, comme PHP2Shell, corrigée le 21 octobre 2026 ([annonce du projet PHP](https://www.php.net/archive/2026.php){target="_blank" rel="noopener"}).*
 
 ---
 

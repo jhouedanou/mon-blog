@@ -1,13 +1,13 @@
 ---
-title: "OpenDisplay : un vieil iMac comme écran pour un Mac ou un PC Linux, gratuitement"
+title: "OpenDisplay : l'iMac en écran d'un PC Linux"
 createdAt: "2026-10-30T15:00:00Z"
 image: "/images/articles/opendisplay-macbook-omarchy-imac.webp"
-description: "OpenDisplay, gratuit et open source, fait d'un vieil iMac l'écran d'un Mac ou d'un PC Linux. Installation pas à pas, et ce qu'on perd en qualité."
+description: "OpenDisplay, gratuit et open source, fait d'un vieil iMac l'écran d'un PC Linux ou d'un Mac, même en Wi-Fi. Installation pas à pas, et ce qu'on perd en qualité."
 searchIntent: "Comment utiliser gratuitement un vieil iMac comme deuxième écran d'un Mac ou d'un PC sous Linux avec OpenDisplay, et quelle qualité d'image attendre ?"
 tags: ["tutoriel", "apple", "macos", "mac", "linux", "omarchy", "open-source", "matériel"]
 ---
 
-**Réponse courte.** OpenDisplay est une application gratuite et open source. Elle fait d'un vieil iMac le deuxième écran d'un Mac récent ou d'un PC sous Linux. On installe un récepteur sur l'iMac, un émetteur sur l'autre machine, et c'est tout. Mais l'image voyage en vidéo compressée : elle est moins nette et moins fluide qu'un vrai écran branché en câble. Les chiffres sont plus bas.
+OpenDisplay est une application gratuite et open source. Elle fait d'un vieil iMac l'écran d'un PC sous Linux ou le deuxième écran d'un Mac récent, même en Wi-Fi. On installe un récepteur sur l'iMac, un émetteur sur l'autre machine, et c'est tout. Mais l'image voyage en vidéo compressée : elle est moins nette et moins fluide qu'un vrai écran branché en câble. Les chiffres sont plus bas.
 
 Je l'ai fait avec mon MacBook Pro 2017 sous Omarchy : l'iMac affiche bien son bureau étendu.
 
@@ -34,7 +34,7 @@ OpenDisplay marche aussi avec un iPhone, un iPad ou une tablette Android. Ici, j
 
 Deux pièges :
 
-- **Un iMac de 2012 à 2014 ne peut pas servir d'écran** : il ne reçoit pas macOS Monterey. Pour lui, voyez [Sharp](/fr/20260929-sharp-vieil-imac-ecran-secondaire-ethernet).
+- **Un iMac de 2012 à 2014 ne peut pas servir d'écran** : il ne reçoit pas macOS Monterey. Pour lui, voyez [Sharp, qui en fait l'écran secondaire d'un Mac par câble Ethernet](/fr/20260929-sharp-vieil-imac-ecran-secondaire-ethernet).
 - **Un Mac trop ancien pour Sonoma ne peut pas envoyer l'image.** Mon MacBook Pro 2017, par exemple, s'arrête à macOS Ventura. Sous [Omarchy](/fr/20261013-retournement-de-veste-omarchy-macbook-pro-2017), il peut par contre servir d'émetteur : c'est le montage de la photo. D'où le cas Linux plus bas.
 
 ## Sur l'iMac : installer le récepteur
@@ -51,7 +51,7 @@ Lancez **OpenDisplay Receiver**. Acceptez l'accès au **réseau local** quand ma
 
 L'appli est signée et vérifiée par Apple : pas d'alerte au premier lancement. Elle se met à jour toute seule.
 
-## Cas 1 : d'un Mac à l'iMac
+## Cas 1 : l'iMac en deuxième écran d'un Mac
 
 1. Sur le Mac récent, installez l'émetteur : `OpenDisplay.dmg`, sur la même page GitHub, ou :
 
@@ -65,7 +65,7 @@ L'appli est signée et vérifiée par Apple : pas d'alerte au premier lancement.
 
 Pour passer au câble, reliez les deux Mac avec un câble Thunderbolt ou Ethernet. Un câble USB-C **de données** marche aussi si les deux Mac ont un macOS récent (un câble de charge seule ne marche pas). OpenDisplay bascule tout seul sur le câble, même en cours de route.
 
-## Cas 2 : d'un PC Linux à l'iMac
+## Cas 2 : l'iMac en écran d'un PC Linux
 
 L'émetteur Linux s'appelle `od-sender`. Il est **en bêta**.
 
@@ -150,12 +150,14 @@ Choisir une définition plus petite sur l'iMac allège aussi le travail.
 
 ## OpenDisplay ou Sharp ?
 
-J'ai déjà présenté [Sharp](/fr/20260929-sharp-vieil-imac-ecran-secondaire-ethernet), qui fait le même travail entre deux Mac.
+J'ai déjà présenté [Sharp, qui transforme un vieil iMac en écran secondaire par câble](/fr/20260929-sharp-vieil-imac-ecran-secondaire-ethernet) : il fait le même travail, mais entre deux Mac seulement.
 
 - **Sharp** envoie le texte immobile sans perte, donc parfaitement net. Il envoie le son. Il accepte les iMac dès fin 2012, et le Mac qui envoie peut tourner sous macOS 12.3. Mais il faut un câble, et il ne marche qu'entre deux Mac.
 - **OpenDisplay** marche en Wi-Fi, accepte un PC Linux comme émetteur, et sert aussi pour un iPhone ou un iPad. Mais tout passe en vidéo compressée, sans son.
 
 Pour lire et coder entre deux Mac reliés par un câble, Sharp donne un texte plus net. Pour un PC Linux ou une liaison en Wi-Fi, OpenDisplay est le seul des deux qui marche.
+
+Et si c'est l'ordinateur lui-même que vous voulez relancer, il y a une autre piste : [installer macOS sur un SSD externe](/fr/20261014-installer-macos-ssd-externe-imac-2017), sans ouvrir l'iMac.
 
 **Sources :**
 

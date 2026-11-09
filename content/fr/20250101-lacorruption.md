@@ -1,15 +1,15 @@
 ---
-title: "La corruption vous mettra en retard : un (petit) exemple concret"
+title: "La petite corruption vous mettra en retard"
 image: "/images/articles/corruption.webp"
 createdAt: "2025-03-12"
 id: 11
-description: "Une file d'attente chez Ecobank à Aghien, un chef de la sécurité qui vend des passe-droits, et ceux qui ont payé servis en dernier. Récit vécu."
+description: "Petite corruption à la banque : chez Ecobank à Aghien, un chef de la sécurité vend des passe-droits, et ceux qui ont payé passent en dernier. Récit vécu."
 searchIntent: "Comment la corruption ordinaire dans une banque africaine fait perdre du temps à tout le monde."
 tags: ["société", "afrique", "opinion"]
-summary: "Un récit personnel dans une agence bancaire en Afrique où l'auteur refuse de participer au système de corruption proposé par un agent de sécurité. L'histoire démontre comment ceux qui ont payé pour passer devant tout le monde se retrouvent finalement servis en dernier, illustrant que la corruption, loin de faire gagner du temps, met tout le monde en retard."
+summary: "Dans une agence bancaire, un agent de sécurité me propose de passer devant tout le monde contre de l'argent. Je refuse. Ceux qui ont payé sont servis en dernier : la corruption met tout le monde en retard."
 ---
 
-Voici une situation qui pourrait sembler banale, mais elle reflète une réalité bien ancrée en Afrique, souvent ignorée ou simplement acceptée. 
+Voici une situation qui pourrait sembler banale, mais elle reflète une réalité bien ancrée en Afrique, souvent ignorée ou simplement acceptée : la petite corruption. 
 
 Il y a des endroits où je déteste aller. 
 
@@ -27,7 +27,7 @@ En novembre dernier, me voilà contraint de me rendre au centre d'Ecobank à Agh
 
 Pas le choix, je prends mon mal en patience.  
 
-## Un « service » bien rodé  
+## Petite corruption : un « service » bien rodé  
 
 Après 30 minutes d'attente, je suis interpellé par **👮🏿‍♂️ « le chef du service sécurité »**, qui s'approche et me lance d'un ton complice :  
 
@@ -74,6 +74,8 @@ Sous les regards furieux des « boss ».
 
 La corruption ne vous fait pas gagner du temps.  
 Au contraire, **elle vous met tous en retard.**
+
+PS : dans un autre genre, [la dame d'Abobo qui m'a rendu mon téléphone perdu](/fr/20260730-telephone-perdu-retrouve-abobo-findhub) n'a rien demandé en échange. Et pour envoyer de l'argent, plus besoin de passer au guichet : [PI-SPI relie la banque au mobile money](/fr/20261105-pi-spi-bceao-banque-mobile-money-explique), et [Djamo le faisait déjà avec Orange Money](/fr/20240905-djamo-adieu-frais-de-rejet-bonjour-transferts-faciles-et-solde-discret).
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com) — lanceur d'alertes amateur*

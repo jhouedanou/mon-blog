@@ -1,29 +1,29 @@
 ---
-title: "The story of Grégoire: when grammar meets business"
+title: "French inclusive writing: Grégoire's story"
 image: "/images/articles/gregoire.webp"
 createdAt: "2025-03-26"
 id: 12
-description: "Grégoire, a freelance developer allergic to grammar mistakes, must use inclusive writing for a CAC 40 client. Two weeks of interpuncts for nothing."
+description: "Grégoire, a freelance developer allergic to grammar mistakes, must use French inclusive writing for a CAC 40 client. Two weeks of interpuncts for nothing."
 searchIntent: "How a freelance developer handles a request for inclusive writing that clashes with his principles."
 tags: ["opinion", "dev"]
-summary: "A perfectionist freelance developer has to deal with a request for inclusive writing from an important CAC 40 client. Despite his initial reluctance and meticulous work, he discovers his efforts were ultimately pointless when the texts are converted back to classic French. A story that illustrates the conflict between personal principles and professional demands."
+summary: "Grégoire, a fussy freelance developer, has to deliver a site in French inclusive writing for a major CAC 40 client. He does it carefully, then finds out the texts will be switched back to standard French."
 ---
 
 *Names of places and people have been changed. A few details too.*
 
 My friend, let's call him **"Grégoire"**, is the kind of guy who gets annoyed when you say *"malgré que"*. He once nearly blocked his own girlfriend over a misplaced *"autant pour moi"*. 
 
-In other words, Grégoire is a pain, very French, and a bit too much of a perfectionist.
+In other words, Grégoire is a pain, very French, and a bit too much of a perfectionist. Which makes him the last person you'd ask for a website in French inclusive writing.
 
-Grégoire is also a **freelance developer**: he is as talented as he is fussy about language, the kind to rant against badly indented code or code not commented in *"proper French"*.
+Grégoire is also a **freelance developer**: he is as talented as he is [fussy about language](/en/20250605-facebook-nest-pas-un-grin), the kind who rants about badly indented code, or code not commented in *"proper French"*.
 
-## When grammar meets business
+## French inclusive writing: when grammar meets business
 
-One day, while we're chatting, **an ultra-important client** (a big CAC 40 company, to name no names) entrusts him with **the development of a strategic website**. Everything goes well... until the last line of the brief:
+One day, while we're chatting, **a super-important client** (a big CAC 40 company, no names mentioned) entrusts him with **the development of a strategic website**. Everything goes well... until the last line of the brief:
 
 *"We would like the copy written in inclusive writing."*
 
-Grégoire nearly faints before my eyes. He rereads the sentence. He turns his phone towards the webcam, face pale and panicked:
+Grégoire nearly faints right in front of me. He rereads the sentence. He turns his phone towards the webcam, face pale and panicked:
 
 *"Grando, is this a test? They really want me to write 'les collaborateur·rice·s'?!"*
 
@@ -49,14 +49,14 @@ Me: *"Breathe, Greg. It's not the end of the world."*
 
 Him: *"TWO WEEKS! Two weeks juggling interpuncts, checking every term, fighting with the syntax... AND ALL THAT FOR NOTHING?!"*
 
-Luckily, I was able to show him how to use **Claude 3.7 Sonnet**, [an AI assistant](/en/20250604-liaetmoi) that helped him quickly convert all his texts between the inclusive and classic versions. In a few minutes, he was able to generate both versions and keep them in sync, which saved him hours of tedious manual work.
+Luckily, I was able to show him how to use **Claude 3.7 Sonnet**, [an AI assistant](/en/20250604-liaetmoi) that helped him quickly convert all his texts between the inclusive and classic versions. In a few minutes, he had both versions, in sync, instead of spending hours redoing everything by hand.
 
 *"It's easier with AI, I have to admit"*, he conceded with a sigh.
 
 ## Moral
 
-**Grégoire is relieved, and above all, he is paid.** More seriously, he learned an important lesson:
-money has a universal grammar, and above all, you should never take your work too personally. **Knowing how to adapt (and keeping your cool when faced with scatterbrained or unmotivated interns) is also a form of intelligence.**
+**Grégoire is relieved, and above all, he is paid.** More seriously, he learned a lesson:
+money has a universal grammar, and you should never take your work too personally. **Knowing how to adapt (and [keeping your cool](/en/20241022-restons-zen) when faced with scatterbrained or unmotivated interns) is also a form of intelligence.**
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com) — bug storyteller*

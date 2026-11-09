@@ -1,20 +1,20 @@
 ---
-title: "Sharp : transformer un vieil iMac en écran secondaire, sans câble coûteux ni prise de tête"
+title: "Vieil iMac en écran secondaire via Ethernet"
 createdAt: "2026-09-29T20:30:00Z"
 updatedAt: "2026-10-08T12:00:00Z"
 image: "/images/articles/sharp-imac-ecran-secondaire.webp"
-description: "Sharp, appli gratuite et open source, fait d'un vieil iMac l'écran secondaire d'un Mac récent, même Apple Silicon, via Ethernet. Installation et limites."
+description: "Vieil iMac en écran secondaire d'un Mac récent, même Apple Silicon, sans mode d'affichage cible : Sharp, gratuit, passe par Ethernet. Installation et limites."
 searchIntent: "Comment utiliser un vieil iMac comme écran secondaire d'un MacBook ou d'un Mac Apple Silicon, sans Target Display Mode et sans acheter de câble ou d'adaptateur cher ?"
 tags: ["tutoriel", "apple", "macos", "mac", "open-source", "matériel", "productivité"]
 ---
 
-Beaucoup d'entre nous ont un vieil iMac dans un coin. L'écran est encore très beau. L'ordinateur derrière, lui, est devenu lent, et macOS ne le met plus à jour.
+Beaucoup d'entre nous ont un vieil iMac dans un coin. Si l'écran est encore très beau, l'ordinateur derrière, lui, est devenu lent, et macOS ne le met plus à jour.
 
-L'idée est simple : garder l'écran et s'en servir comme deuxième moniteur pour un Mac plus récent. En pratique, c'était compliqué. Jusqu'à **Sharp**, une application gratuite et open source repérée sur [Reddit (r/iMac)](https://www.reddit.com/r/iMac/comments/1wsm7f8/use_your_imac_as_a_highresolution_display_over/). Elle fait le travail avec un simple câble Ethernet.
+L'idée est simple : faire du vieil iMac l'écran secondaire d'un Mac plus récent, même un Mac Apple Silicon. En pratique, c'était compliqué. Jusqu'à **Sharp**, une application gratuite et open source repérée sur [Reddit (r/iMac)](https://www.reddit.com/r/iMac/comments/1wsm7f8/use_your_imac_as_a_highresolution_display_over/). Elle fait le travail avec un simple câble Ethernet.
 
 ![Un MacBook et un iMac affichent la même image grâce à Sharp, en mode recopie](/images/articles/sharp-imac-ecran-secondaire.webp)
 
-## Pourquoi c'était compliqué avant
+## Pourquoi le mode d'affichage cible ne suffit pas
 
 Apple proposait le **mode d'affichage cible** (*Target Display Mode*). Il permettait d'utiliser un iMac comme écran. Mais il a trois gros défauts :
 
@@ -50,7 +50,7 @@ Sharp combine donc deux méthodes :
 1. **Quand l'image bouge** (défilement, vidéo), il envoie une vidéo compressée. L'affichage reste fluide.
 2. **Quand l'image s'arrête**, il envoie des petits carrés de 64 × 64 pixels **sans perte**. Ils remplacent la vidéo, morceau par morceau.
 
-Résultat : vous faites défiler une page, c'est fluide. Vous arrêtez pour lire, le texte redevient net, pixel pour pixel.
+Quand vous faites défiler une page, c'est fluide. Quand vous vous arrêtez pour lire, le texte redevient net, pixel pour pixel.
 
 Chaque carré porte un numéro de version. Sharp le compare à l'image affichée avant de le poser. Un vieux carré ne peut donc pas recouvrir une image plus récente.
 
@@ -70,7 +70,7 @@ Deux remarques :
 - **Prenez un adaptateur gigabit** (1 Gbit/s). Les modèles à 100 Mbit/s, souvent les moins chers, sont trop lents.
 - **Le câble Ethernet ne coûte presque rien.** Vous en avez peut-être déjà un, livré avec votre box. Au total, comptez le prix d'un câble et, au besoin, d'un adaptateur. On est loin des câbles Thunderbolt et des adaptateurs Apple du mode d'affichage cible.
 
-## Installation en cinq étapes
+## Transformer l'iMac en écran secondaire en cinq étapes
 
 L'application est en anglais. Les noms des boutons sont donc donnés tels qu'ils apparaissent.
 
@@ -137,7 +137,7 @@ Dans la fenêtre des réglages (l'icône d'engrenage) :
 Sharp est prometteur, mais il faut savoir ceci :
 
 - **Pas de Wi-Fi.** Un câble Ethernet ou Thunderbolt est obligatoire.
-- **Mac vers Mac uniquement.** Pas de PC Windows, pas d'iPad.
+- **Mac vers Mac uniquement.** Pas de PC Windows, pas d'iPad. Pour un PC Linux ou une liaison en Wi-Fi, voyez [OpenDisplay, qui fait d'un vieil iMac l'écran d'un PC Linux ou d'un Mac](/fr/20261030-opendisplay-vieil-imac-ecran-mac-linux), au prix d'un texte moins net.
 - **Les iMac d'avant fin 2012 sont limités.** Ils ne peuvent pas installer macOS Catalina. Seuls ceux qui tournent sous macOS 10.13.6 (High Sierra) peuvent servir d'écran, avec le récepteur dédié.
 - **Le mode Extend est fragile.** Il utilise une fonction d'Apple qui n'est pas documentée. Une mise à jour de macOS peut le casser. Si ce mode échoue, Sharp repasse de lui-même en Mirror.
 - **La 5K n'est pas garantie.** L'auteur n'a pas encore validé les performances à cette définition.

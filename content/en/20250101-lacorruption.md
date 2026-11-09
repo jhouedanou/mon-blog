@@ -1,15 +1,15 @@
 ---
-title: "Corruption will make you late: a (small) concrete example"
+title: "Petty corruption will make you late"
 image: "/images/articles/corruption.webp"
 createdAt: "2025-03-12"
 id: 11
-description: "A queue at Ecobank in Aghien, a head of security selling shortcuts, and the people who paid ending up served last. A true story about corruption."
+description: "Petty corruption at the bank: at Ecobank in Aghien, a head of security sells shortcuts, and the people who paid end up served last. A true story."
 searchIntent: "How ordinary corruption in an African bank wastes everyone's time."
 tags: ["society", "africa", "opinion"]
-summary: "A personal story from a bank branch in Africa where the author refuses to take part in the corruption scheme offered by a security guard. The story shows how those who paid to skip the queue end up being served last, illustrating that corruption, far from saving time, makes everyone late."
+summary: "In a bank branch, a security guard offers to let me skip the queue for a fee. I say no. Those who paid end up served last: corruption makes everyone late."
 ---
 
-Here is a situation that might seem trivial, but it reflects a deeply rooted reality in Africa, one that is often ignored or simply accepted. 
+Here's a situation that might seem trivial, but it reflects a deeply rooted reality in Africa, one that is often ignored or simply accepted: petty corruption. 
 
 There are places I hate going to. 
 
@@ -25,9 +25,9 @@ Last November, there I was, forced to go to the Ecobank centre in Aghien to rene
 
 When I arrived at 7am, the scene was set: **a long queue**.  
 
-No choice, I waited patiently.  
+No choice: I settled in for the wait.  
 
-## A well-oiled "service"  
+## Petty corruption: a well-oiled "service"  
 
 After 30 minutes of waiting, I was approached by **👮🏿‍♂️ "the head of security"**, who came up to me and said in a conspiratorial tone:  
 
@@ -36,7 +36,7 @@ After 30 minutes of waiting, I was approached by **👮🏿‍♂️ "the head o
 👮🏿‍♂️ **"Ah, boss, you too, you shouldn't do things like this."**  
 🧑🏿‍💼 **"Oh?"**  
 👮🏿‍♂️ **"Yes, ah... When you come like this, you see me, and we sort it out quickly."**  
-🧑🏿‍💼 **"I understand."** (in a dry tone... yes, that morning I was in a foul mood and in no way inclined to play along.)  
+🧑🏿‍💼 **"I understand."** (in a dry tone... yes, that morning I was in a foul mood and not about to play along.)  
 👮🏿‍♂️ **"Ok, so we sort it out after, right?"**  
 🧑🏿‍💼 **"I said I understand."**  
 
@@ -47,7 +47,7 @@ Surprised by my answer, he turned on his heels with a contemptuous look.
 Another 30 minutes go by.  
 
 The bank finally opens. Who goes in first? The **💼 "bosses"**, meaning those who slipped a banknote to the famous chief.  
-As for us, the plebs, we keep waiting. Fortunately it was less hot than usual, which made the wait more bearable.  
+As for us, the plebs, we keep waiting. Fortunately it was cooler than usual, which made the wait more bearable.  
 
 Thirty minutes later, it was finally my turn.  
 But not without feeling the heavy stare of the head of security.  
@@ -74,6 +74,8 @@ Under the furious stares of the "bosses".
 
 Corruption doesn't save you time.  
 On the contrary, **it makes all of you late.**
+
+PS: at the other end of the scale, [the lady in Abobo who gave me back my lost phone](/en/20260730-telephone-perdu-retrouve-abobo-findhub) asked for nothing in return. And to send money, you don't need the counter anymore: [PI-SPI links the bank to mobile money](/en/20261105-pi-spi-bceao-banque-mobile-money-explique), and [Djamo was already doing it with Orange Money](/en/20240905-djamo-adieu-frais-de-rejet-bonjour-transferts-faciles-et-solde-discret).
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com) — amateur whistleblower*

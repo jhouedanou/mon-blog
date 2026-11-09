@@ -1,5 +1,5 @@
 ---
-title: "PHP2Shell : mettre à jour PHP sur Debian et Ubuntu quand Forge ne répond plus"
+title: "PHP2Shell : mettre à jour PHP sans Forge"
 createdAt: "2026-10-21T21:30:00Z"
 image: "/images/articles/pexels-panumas-nikhomkhai-1148820.webp"
 description: "PHP2Shell : deux failles critiques de PHP déjà exploitées. Forge ne répond plus ? Voici la commande pour mettre à jour PHP en SSH sur Debian et Ubuntu."
@@ -7,7 +7,7 @@ searchIntent: "Comment corriger PHP2Shell (CVE-2026-109618, CVE-2026-109619) et 
 tags: ["tutoriel", "sécurité", "php", "linux", "dev"]
 ---
 
-**Réponse courte.** Deux failles de PHP, baptisées PHP2Shell, permettent de prendre la main sur un serveur web sans mot de passe, avec une seule requête. Elles sont corrigées depuis ce mercredi 21 octobre dans PHP 8.5.12, 8.4.27, 8.3.36 et 8.2.35, et déjà exploitées. Sur un serveur Laravel Forge, les mises à jour automatiques ne touchent pas à PHP : il faut le faire à la main. Forge étant aux abonnés absents, voici la marche à suivre, en SSH, avec la commande que j'ai passée sur mes serveurs.
+Deux failles de PHP, baptisées PHP2Shell, permettent de prendre la main sur un serveur web sans mot de passe, avec une seule requête. Elles sont corrigées depuis ce mercredi 21 octobre dans PHP 8.5.12, 8.4.27, 8.3.36 et 8.2.35, et déjà exploitées. Sur un serveur Laravel Forge, les mises à jour automatiques ne touchent pas à PHP : il faut le mettre à jour à la main. Forge étant aux abonnés absents, voici la marche à suivre, en SSH, avec la commande que j'ai passée sur mes serveurs.
 
 ## PHP2Shell, c'est quoi
 
@@ -36,7 +36,7 @@ On pourrait croire qu'un serveur avec les mises à jour automatiques d'Ubuntu es
 
 Forge recommande de passer par son tableau de bord, onglet PHP, bouton « Update PHP ». L'avantage : il répare au passage la source des paquets. Sauf que ce soir, Forge est aux abonnés absents. Reste le SSH.
 
-## La commande, en SSH
+## La commande pour mettre à jour PHP en SSH
 
 Connectez-vous en root (`sudo -i`), puis collez ce bloc. Il tourne sur Ubuntu et sur Debian, avec Nginx et PHP-FPM (la configuration d'un serveur Forge) ou avec Apache, en PHP-FPM comme en mod_php. Avec LiteSpeed, il ne convient pas : voir plus bas.
 
@@ -238,7 +238,7 @@ Dernier cas : FrankenPHP embarque son propre PHP, qu'apt ne met pas à jour. Il 
 La commande affiche « PAS DE CORRECTIF » ? Comparez les deux versions entre parenthèses. Sauf sur Ubuntu avec le PHP d'Ubuntu (voir plus haut), le paquet corrigé n'a pas encore atteint votre miroir. Relancez-la dans une heure. En attendant :
 
 - **La parade `session.upload_progress`** est déjà appliquée par la commande. Elle réduit le risque, elle ne le supprime pas.
-- **Cloudflare** a déployé des règles de pare-feu contre les attaques connues, pour tous ses clients, offre gratuite comprise, selon [Help Net Security](https://www.helpnetsecurity.com/2026/10/21/php2shell-php-vulnerabilities-patched-cve-2026-109618-cve-2026-109619/){target="_blank" rel="noopener"}. Si votre site passe par Cloudflare, c'est une couche de plus. J'ai raconté comment ces règles m'ont déjà débarrassé de robots indésirables dans [J'ai récupéré le trafic de mon blog (et les bots qui vont avec)](/fr/20260922-jai-recupere-le-trafic-de-mon-blog-et-les-bots-qui-vont-avec).
+- **Cloudflare** a déployé des règles de pare-feu contre les attaques connues, pour tous ses clients, offre gratuite comprise, selon [Help Net Security](https://www.helpnetsecurity.com/2026/10/21/php2shell-php-vulnerabilities-patched-cve-2026-109618-cve-2026-109619/){target="_blank" rel="noopener"}. Si votre site passe par Cloudflare, c'est une couche de plus. Le pare-feu de Cloudflare m'a déjà débarrassé de robots indésirables, quand [mon blog dépassait la limite CPU de Cloudflare Workers](/fr/20260922-jai-recupere-le-trafic-de-mon-blog-et-les-bots-qui-vont-avec).
 - **Le NCSC britannique** conseille de mettre hors ligne ce qui ne peut pas être corrigé tout de suite. Pour un site vitrine qui peut attendre demain matin, c'est l'option la plus sûre.
 
 Et si le serveur tourne encore en PHP 8.1 ou plus ancien, aucune attente ne servira : il faut installer une version suivie et y basculer les sites.
@@ -252,6 +252,8 @@ sudo grep -lsE 'php.*\(deleted\)$' /proc/[0-9]*/maps
 ```
 
 Aucune ligne en sortie : plus rien n'utilise l'ancienne version de PHP. Sinon, le numéro dans le chemin (`/proc/<numéro>/maps`) est celui du processus à redémarrer.
+
+Tant que vous êtes en SSH sur un serveur WordPress, vérifiez aussi que Redis ne prend pas toute la mémoire : j'explique [comment vider et limiter une mémoire Redis pleine](/fr/20261031-redis-plein-vps-wordpress-vider-limiter).
 
 ## Je vous laisse
 

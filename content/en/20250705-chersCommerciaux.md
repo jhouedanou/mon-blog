@@ -1,25 +1,27 @@
 ---
-title: "Apple, iOS (and AirTags) Tell Your Boss Everything"
+title: "Employee location tracking: iOS tells all"
 image: "/images/articles/yeah.webp"
 createdAt: "2025-07-05"
 updatedAt: "2026-10-08T12:00:00Z"
 id: 2025-07-05
-description: "iPhone, MacBook, company car with an AirTag: your work tools document every detour. What Ivorian law says, and how to avoid the trap."
+description: "Employee location tracking: a work iPhone, a MacBook and a company car with an AirTag document every detour. What Ivorian law says, and how to avoid the trap."
 searchIntent: "How Apple tools and company equipment can track a sales rep's movements."
 tags: ["tech", "apple", "opinion"]
-summary: "Technology doesn't judge, it documents. It's up to you to make sure that documentation tells the right story."
+summary: "A work iPhone or an AirTag in a company car can tell your employer where you are. What the tech can do, what the law says, and how to tell if you're being tracked."
 ---
+Employee location tracking, the Apple way: your work iPhone, your MacBook and the company car (especially with an AirTag inside) tell your boss where you've been, detours included.
+
 ## iPhone, MacBook, company car… your work tools are watching you
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Is335kg_bjs?si=p8y19nzm0SQzkjRi" title="Work tools on iOS: silent witnesses of your digital life (YouTube video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Hello everyone. It's been a while since I last updated the blog. Not out of laziness, but because work life has turned into a marathon these past few weeks. More responsibilities, more projects, and fewer hours of sleep. But I'm holding on, like a runner who finally spots the finish line in the distance.
+Hello everyone. It's been a while since I last updated the blog. Not out of laziness, but because work life has turned into a marathon these past few weeks. More responsibilities, more projects, and fewer hours of sleep. But I'm hanging in there, and the finish line isn't far off.
 
-Today I want to talk about something that concerns a lot of professionals in Abidjan: company-provided equipment. These tools are not just a productivity kit, they are also silent witnesses to your life.
+Today I want to talk about something that concerns a lot of professionals in Abidjan: company-provided equipment. These tools aren't just a productivity kit, they're also silent witnesses to your life.
 
 ## The costly oversight: the trap of company equipment
 
-In Abidjan, many professionals are equipped with cutting-edge devices, but a lot of them seem to forget that these tools are not mere accessories. Your iPhone, MacBook or company car **observe, record and archive almost everything you do**.
+In Abidjan, many professionals are equipped with cutting-edge devices, but a lot of them seem to forget that these tools aren't just accessories. Your iPhone, MacBook or company car **observe, record and archive almost everything you do**.
 
 While you go about your life, your devices are running their own investigation. It's the classic scene: an employee using his work iPhone for nights out in Yopougon, his MacBook for personal projects, or his company car for a weekend in Assinie.
 
@@ -29,7 +31,7 @@ All while thinking nobody knows. That's a mistake that can cost you dearly.
 
 Whether you're a sales rep, a developer or a community manager, your employer equips you to make your work more efficient. A brand new iPhone, a lightning-fast MacBook, and sometimes a company car.
 
-At first glance, this trio is the ideal productivity kit. In reality, it's also a **network of silent sensors**. These devices are digital witnesses that log your trips, your connections and your habits.
+At first glance, this trio is the ideal productivity kit. In reality, it's also a **network of silent sensors**. These devices are digital witnesses that log your trips, your connections and your habits. And even when it's locked, an iPhone can still answer an NFC terminal, as the [Apple Pay Visa hack in Express Transit mode](/en/20260417-apple-pay-visa-faille-tap-to-pay) showed.
 
 Yes, even the car. Especially if an AirTag has been discreetly placed "for security". Officially, it's there to protect the vehicle. Unofficially, it can also keep an eye on your every detour. It won't stay discreet forever, though: an AirTag separated from its owner that is moving with you eventually triggers the "AirTag Found Moving With You" alert on an iPhone, and phones running Android 6.0 or later also warn you automatically ([Apple Support](https://support.apple.com/en-us/119874){target="_blank" rel="noopener"}).
 
@@ -43,9 +45,9 @@ That's where technology doesn't lie.
 * **iCloud**: photos, documents and locations can be synced automatically.
 * **Timestamped history**: every detour and every stop is recorded, dated and geolocated.
 
-That's where the drama can unfold. Your boss will ask you for explanations, and that can lead to suspicion or sanctions. And there you were, thinking you were just enjoying a long weekend.
+And that's where things can go wrong. Your boss will ask you for explanations, and that can lead to suspicion or sanctions. And there you were, thinking you were just enjoying a long weekend.
 
-## The legal framework in Côte d'Ivoire: rights and duties
+## Employee location tracking in Côte d'Ivoire: rights and duties
 
 **Law No. 2013-450** on data protection and the **ARTCI** (Côte d'Ivoire's Telecommunications/ICT Regulatory Authority) govern the monitoring of company property.
 
@@ -74,7 +76,7 @@ There is no miracle solution, but an approach based on caution and transparency 
 
 ## Conclusion: documentation or trap
 
-An AirTag in your car, an iPhone in your pocket, a MacBook in your bag... These are not just tools. They are also narrators. And the story they build had better match your job description.
+An AirTag in your car, an iPhone in your pocket, a MacBook in your bag... These aren't just tools, they're also narrators. And the story they tell had better match your job description.
 
 Technology doesn't judge, it simply documents. It's up to you to decide whether that documentation will be your alibi or your trap.
 

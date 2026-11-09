@@ -1,35 +1,35 @@
 ---
-title: "How to regain access to your GitHub folder after switching to iCloud+ (thanks to Time Machine)"
+title: "Git repo stuck in iCloud Drive: the fix"
 createdAt: "2026-09-25T19:30:00Z"
 image: "/images/articles/pexels-jibarofoto-2148222.webp"
-description: "iCloud's Desktop & Documents syncing locked up my GitHub repos. Why Git can't cope with iCloud Drive, and how to get everything back with Time Machine."
+description: "Git repo stuck in iCloud Drive since turning on Desktop & Documents? Why Git can't cope with that syncing, and how to get everything back with Time Machine."
 searchIntent: "How to recover a GitHub folder on a Mac that is blocked by iCloud Drive's Desktop and Documents syncing, by restoring it with Time Machine?"
 tags: ["tutorial", "apple", "macos", "icloud", "git", "dev"]
 ---
 
-> **Before we start.** To answer the questions about my new productivity: yes, I do use AI. For several months now, it has been **correcting** my articles, and above all, it fetches the illustration images from Pexels, like the ones in this post. The problem is not AI, it is the misuse of AI. In my case, it saves me from typos and improves the front matter, the block of information at the top of each article (title, date, image, description, tags), since this blog runs entirely on Markdown files. Not to mention that it makes it easier for me to build new features, like the carousels and audio players in [the Koala Sampler article](/en/20260822-koala-sampler-gratuit-mac-boom-bap).
+> **Before we start.** To answer the questions about my new productivity: yes, I do use AI. For several months now, it has been **correcting** my articles, and above all, it fetches the illustration images from Pexels, like the ones in this post. The problem isn't AI, it's the misuse of AI. In my case, it saves me from typos and improves the front matter, the block of information at the top of each article (title, date, image, description, tags), since [this blog runs entirely on Markdown files](/en/20241021-pendaison-de-cremaillere). Not to mention that it makes it easier for me to build new features, like the carousels and audio players in [the Koala Sampler article](/en/20260822-koala-sampler-gratuit-mac-boom-bap).
 
-Well, I doubt a competent developer would run into this problem, but it is a mistake that can happen even to the most experienced.
+Well, I doubt a competent developer would end up with a Git repo stuck in iCloud Drive, but it's a mistake that can happen even to the most experienced.
 
 I recently signed up for [iCloud's paid plan](/en/20261006-icloud-plus-099-apple-tv-apple-arcade-murderbot-pluribus), largely for its price: 700 CFA francs a month for 50 GB of cloud storage, access to Apple TV (formerly Apple TV+) and Apple Arcade, [included in iCloud+ in Côte d'Ivoire since September](https://www.apple.com/ci/newsroom/2026/09/icloud-plus-expands-to-include-apple-tv-and-apple-arcade/).
 
-Then I turned on iCloud Drive's "Desktop & Documents Folders" option, the iCloud feature that lets you sync the files and folders on your Desktop and in your Documents folder with your Mac computers. Everything was fine until I tried to pull code from a GitHub repo. The wheel spins, endlessly, with no update.
+Then I turned on iCloud Drive's "Desktop & Documents Folders" option, which syncs the files and folders on your Desktop and in your Documents folder across your Macs. Everything was fine until I tried to pull code from a GitHub repo. The wheel spins, endlessly, with no update.
 
-The problem is that a folder synced by iCloud Drive is not compatible with Git.
+The problem is that a folder synced by iCloud Drive isn't compatible with Git.
 
-Here is how I got my code folders back: with Time Machine.
+Here's how I got my code folders back with Time Machine.
 
 ## Why iCloud Drive blocks Git
 
-If you use GitHub Desktop, your repositories are stored by default in `Documents/GitHub`. Turning on "Desktop & Documents Folders" therefore sends all your repositories to iCloud: the code, the hidden `.git` folder that holds the whole history, and the dependencies. In a JavaScript project, the `node_modules` folder alone often contains tens of thousands of files.
+If you use GitHub Desktop, your repositories are stored by default in `Documents/GitHub`. So turning on "Desktop & Documents Folders" sends all your repositories to iCloud: the code, the hidden `.git` folder that holds the whole history, and the dependencies. In a JavaScript project, the `node_modules` folder alone often contains tens of thousands of files.
 
-Git is not designed to work in a folder that another program changes at the same time. With every command (`pull`, `commit`, `checkout`), it creates, edits and renames many small files in `.git`, in a fraction of a second. iCloud, for its part, watches every file in the folder to upload it to its servers. Several things can then go wrong:
+Git isn't designed to work in a folder that another program changes at the same time. With every command (`pull`, `commit`, `checkout`), it creates, edits and renames many small files in `.git`, in a fraction of a second. iCloud, meanwhile, watches every file in the folder to upload it to its servers. Several things can then go wrong:
 
-- **Everything slows down.** Every file Git creates or changes has to be synced in turn, sometimes while iCloud has not finished uploading the repository's thousands of files.
+- **Everything slows down.** Every file Git creates or changes has to be synced in turn, sometimes while iCloud hasn't finished uploading the repository's thousands of files.
 - **Some files are no longer on the disk.** If "Optimize Mac Storage" is turned on and the disk is running low on space, macOS keeps some files only in iCloud. When Git needs to read them, it waits for them to download. On a slow connection, that wait can last a very long time, and the wheel spins endlessly.
-- **The repository can get corrupted.** When two versions of the same file conflict, iCloud does not merge them: it keeps both and renames one, for example `index 2` or `HEAD 2`. Git does not know these files, and the repository can become unreadable.
+- **The repository can get corrupted.** When two versions of the same file conflict, iCloud doesn't merge them: it keeps both and renames one, for example `index 2` or `HEAD 2`. Git doesn't know what these files are, and the repository can become unreadable.
 
-Your code already has an online copy: the one you push to GitHub. It does not need a second copy in iCloud.
+Your code already has an online copy: the one you push to GitHub. It doesn't need a second copy in iCloud.
 
 ![A MacBook Air showing code in an editor](/images/articles/pexels-duncanoluwaseun-226232.webp)
 
@@ -41,13 +41,13 @@ Your code already has an online copy: the one you push to GitHub. It does not ne
 
 No Time Machine backup? Everything you pushed to GitHub is still there. Turn off "Desktop & Documents Folders" (step 1), then clone your repositories again into a folder outside iCloud (see "So it does not happen again", below).
 
-## The 6 steps
+## Recover the GitHub folder with Time Machine: the 6 steps
 
 ### 1. Turn off "Desktop & Documents Folders"
 
-Open the Apple menu, then **System Settings**. Click your name, then **iCloud**. Click **Drive** (or **iCloud Drive**, depending on your version of macOS), turn off **Desktop & Documents Folders**, then click **Done**.
+Open the Apple menu, then **System Settings**. Click your name, then **iCloud**. Click **Drive** (or **iCloud Drive**, depending on your version of macOS), turn off **Desktop & Documents Folders**, then click **Done** ([Apple](https://support.apple.com/en-us/126628){target="_blank" rel="noopener"}).
 
-Your files do not disappear: they stay in iCloud Drive, and macOS creates new Desktop and Documents folders on your Mac. Your Documents folder becomes a local folder again, one that iCloud no longer syncs. That is where Time Machine will put the GitHub folder back.
+Your files don't disappear: they stay in iCloud Drive, and macOS creates new Desktop and Documents folders on your Mac. Your Documents folder becomes a local folder again, one that iCloud no longer syncs. That's where Time Machine will put the GitHub folder back.
 
 ### 2. Open Time Machine on the Documents folder
 
@@ -57,17 +57,17 @@ Connect the backup disk. Open a Finder window on the new **Documents** folder, t
 
 ### 3. Go back to a backup from before iCloud
 
-Use the arrows next to the window, or the timeline on the right edge of the screen, to go back in time. Pick the most recent backup made **before** you turned on "Desktop & Documents Folders": the more recent it is, the less work you will have to catch up on. The **GitHub** folder shows up again in Documents.
+Use the arrows next to the window, or the timeline on the right edge of the screen, to go back in time. Pick the most recent backup made **before** you turned on "Desktop & Documents Folders": the more recent it is, the less work you'll have to catch up on. The **GitHub** folder shows up again in Documents.
 
 ### 4. Restore the GitHub folder
 
-Select the **GitHub** folder, then click **Restore**. Time Machine puts it back in its original location, `Documents/GitHub`, which is a local folder again.
+Select the **GitHub** folder, then click **Restore**. Time Machine puts it back in its original location, `Documents/GitHub`, which is a local folder again ([Apple](https://support.apple.com/guide/mac-help/restore-files-mh11422/mac){target="_blank" rel="noopener"}).
 
-Since the path has not changed, GitHub Desktop finds your repositories again. If it shows "Can't find" for one of them, click **Locate…** and point it to the repository's folder.
+Since the path hasn't changed, GitHub Desktop finds your repositories again. If it shows "Can't find" for one of them, click **Locate…** and point it to the repository's folder.
 
 ### 5. Bring the repositories up to date
 
-The backup predates the incident, so it is missing the commits pushed to GitHub since then. For each repository, open Terminal and run:
+The backup predates the incident, so it's missing the commits pushed to GitHub since then. For each repository, open Terminal and run:
 
 ```bash
 cd ~/Documents/GitHub/project-name
@@ -88,7 +88,7 @@ git stash pop
 
 ### 6. Recover unpushed work, then delete the iCloud copy
 
-The old copy of your repositories is still in iCloud Drive, under **Documents > GitHub**. If you had work that was never pushed to GitHub, that is where it is. Do not copy its files over the restored repository: you would overwrite the newer versions that `git pull` just brought back, and lose the history of your commits.
+The old copy of your repositories is still in iCloud Drive, under **Documents > GitHub**. If you had work that was never pushed to GitHub, that's where it is. Don't copy its files over the restored repository: you would overwrite the newer versions that `git pull` just brought back, and lose the history of your commits.
 
 **For commits that were never pushed**, let Git recover them. From the restored repository, replace `main` with the name of your branch and run:
 
@@ -98,11 +98,11 @@ git merge recup-icloud
 git push
 ```
 
-The first line copies the commits from the iCloud copy into a new branch, `recup-icloud`. The second merges them into your branch, and Git reports any conflicts. The third finally sends them to GitHub. To type the path without mistakes, type `git fetch ` then drag the project folder from iCloud Drive into the Terminal window.
+The first line copies the commits from the iCloud copy into a new branch, `recup-icloud`. The second merges them into your branch, and Git reports any conflicts. The third sends them to GitHub. To get the path right, type `git fetch ` then drag the project folder from iCloud Drive into the Terminal window.
 
-**For changes that were never committed**, copy the files concerned into a separate folder, outside the repository, and compare them with the ones in the restored repository before carrying your changes over. Do the same if Git cannot read the iCloud copy.
+**For changes that were never committed**, copy the files concerned into a separate folder, outside the repository, and compare them with the ones in the restored repository before carrying your changes over. Do the same if Git can't read the iCloud copy.
 
-Once everything works, delete the iCloud copy. It is no longer useful and it takes up part of your 50 GB. If you make a mistake, iCloud keeps it for another 30 days in **Recently Deleted**, on iCloud.com.
+Once everything works, delete the iCloud copy. You don't need it any more, and it takes up part of your 50 GB. If you make a mistake, iCloud keeps it for another 30 days in **Recently Deleted**, on iCloud.com.
 
 ## So it does not happen again
 
@@ -117,7 +117,7 @@ Once everything works, delete the iCloud copy. It is no longer useful and it tak
 
 - **Change GitHub Desktop's clone folder.** When cloning, replace `Documents/GitHub` with `~/Developer` in the **Local path** field. GitHub Desktop remembers the last folder you used.
 - **Turn "Desktop & Documents Folders" back on if you want to**, once the code is out of Documents.
-- **Keep Time Machine**, it is how I got my repositories back. And push to GitHub often: a pushed commit no longer depends on your Mac.
+- **Keep Time Machine**, it's how I got my repositories back. On an [iMac revived with macOS on an external SSD](/en/20261014-installer-macos-ssd-externe-imac-2017), the old internal drive can even serve as the Time Machine disk: better than nothing, but no substitute for a real external backup. And push to GitHub often: a pushed commit no longer depends on your Mac.
 
 ---
 

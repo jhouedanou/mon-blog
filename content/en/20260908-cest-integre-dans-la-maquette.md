@@ -1,13 +1,13 @@
 ---
-title: "“It's been integrated into the mockup.” (No.)"
+title: "Design handoff check: 'it's integrated'? No."
 createdAt: "2026-09-08T20:17:00Z"
 image: "/images/articles/maquette-integree-non.webp"
-description: "\"It's been integrated\": only two screens out of four actually were. What grep taught me about a handoff, and five web project traps I now handle differently."
+description: "Checking a design handoff with grep: only two of the four 'integrated' screens really were. Plus five web project traps I now handle differently."
 searchIntent: "How to verify a handoff deliverable announced as complete, and how to avoid the classic traps of a web project: batched feedback, unfinalised content, validation without a deadline, refused DNS access, secrets shared in a Drive."
 tags: ["project management", "development", "handoff", "method", "opinion"]
 ---
 
-There are phrases that should make us prick up our ears. "Trust me", "it takes two minutes", or "can we do a call to talk about it?". Since last week, I've added "it's been integrated" to my list.
+There are phrases that should make us prick up our ears. "Trust me", "it takes two minutes", or "can we do a call to talk about it?". Since last week, I've added "it's been integrated" to my list. A design handoff announced as done is something you check.
 
 I pick up a handoff package for a client project. Specifications, scoring matrix, HTML mockups, design system, graphic kit, tracking plan. The pack looks serious, it even has a table of contents, and I have nine days to deliver.
 
@@ -15,7 +15,7 @@ After a first read, I list eight gaps. The answer comes two days later, in a mis
 
 Perfect, I tell myself. Except no.
 
-## Thirty seconds of checking
+## Checking a design handoff in thirty seconds
 
 Before opening an editor, I open a terminal. It's not distrust, it's a habit I've picked up over time.
 
@@ -31,19 +31,19 @@ I do a second, broader pass, in case the cookie banner was hiding under another 
 grep -n -i -o -E ".{0,90}(cookie|consent|données personnelles|j'accepte).{0,90}" *.dc.html
 ```
 
-A single result, and it's an admin toggle: "Autoriser l'export de données personnelles". No cookie banner, no consent checkbox. The word "cookie" appears nowhere in the mockup files.
+A single result, and it's an admin toggle: "Autoriser l'export de données personnelles". No cookie banner, no consent checkbox. The word "cookie" appears nowhere in the [mockup files](/en/20260519-comment-installer-adobe-xd-en-2026).
 
 Two points out of four, then. I sent back the findings with line numbers and board names. It's amazing how a line number cuts a debate short: you can't do a call to talk about it with `grep`.
 
-## The real cost
+## The real cost of an unverified announcement
 
-Two missing screens can be made up in a day, maybe two. What costs is what changes afterwards.
+Two missing screens can be fixed in a day, maybe two. The real cost is what changes afterwards.
 
 Before, when I was told "it's done", I integrated. Now I open the files, at every announcement, even when I'm told "it's really done this time". Nobody has costed that time. It doesn't appear in any schedule, any quote, any Excel line, and it is now permanent on this project.
 
-That's the price of a single unverified announcement. It doesn't cost the two screens, it costs the trust, and trust saves a kind of time that nothing replaces.
+That's the price of a single unverified announcement. It doesn't cost the two screens, it costs trust, and trust saves you time that nothing else can replace.
 
-## Five traps this project served me in one week
+## Five web project traps served in one week
 
 They're not specific to my client, I've run into them everywhere. You'll surely recognise them.
 
@@ -57,9 +57,9 @@ The right answer isn't to refuse, it's to rephrase in terms of dependencies: her
 
 That's the classic answer when you ask for a site structure, and it's in good faith: the other person hears "content", you were asking for "structure". You didn't have the same conversation, but you had it together.
 
-The problem comes from the request. "The list of chapters and the topics covered" reads like an order for editorial content, therefore like three weeks of work, therefore like "we'll see". It's better to name the exact object you want to receive: a table, one row per chapter, with the columns listed and one example row filled in, provisional accepted. Then there's no room for interpretation.
+The problem comes from the request. "The list of chapters and the topics covered" reads like an order for editorial content, therefore like three weeks of work, therefore like "we'll see". It's better to name the exact object you want to receive: a table, one row per chapter, with the columns listed and one example row filled in, provisional is fine. Then there's no room for interpretation.
 
-Since then, I send the empty file along with the request. It has divided my back-and-forth by three.
+Since then, I send the empty file along with the request. It has cut my back-and-forth by two thirds.
 
 ### 3. "No validation deadline is imposed at this stage."
 
@@ -71,9 +71,9 @@ Ask for a window. Forty-eight working hours from delivery is reasonable, and nob
 
 Classic, and often legitimate: the client doesn't want to open their zone to a contractor, and they're right. I wouldn't give the keys to my house to someone I met on Teams either.
 
-Except that without access, every record becomes a ticket. Subdomain validation, TLS certificate, SPF, DKIM, DMARC: you easily get a dozen, each with a round trip and a wait. That can eat a week on a project that has two.
+Except that without access, every record becomes a ticket. Subdomain validation, TLS certificate, SPF, DKIM, DMARC: you easily get a dozen, each with a round trip and a wait. That can eat a week of a two-week project.
 
-The solution fits in one line in their zone: an NS delegation for the subdomain only. They keep full control of the main domain, give no access, and can revoke the delegation whenever they want. You manage the subdomain's records without asking permission every time. It's exactly their control requirement, satisfied differently. Propose it before accepting ticket mode, half the time it goes through.
+The solution fits in one line in their zone: an NS delegation for the subdomain only. They keep full control of the main domain, give no access, and can revoke the delegation whenever they want. You manage the subdomain's records without asking permission every time. It meets their need for control, just in a different way. Propose it before accepting ticket mode, half the time it goes through.
 
 ### 5. The secret that travels in the shared Drive
 
@@ -83,7 +83,7 @@ An API token is not project data. It isn't passed along in a deliverable, it isn
 
 ## The only method that holds
 
-On this kind of project, I long responded with analysis: argued, precise emails, with headings, bullet points and appendices, explaining why such a thing blocked such another. Nobody read them. In return, I got the great classic: "I don't really see it, can we do a call to talk about it?". I've already devoted [an entire article to that meeting "to talk about it"](/en/20260326-lareunionpourenparler), which is something of a cousin to "it's been integrated": in both cases, people prefer speech because in writing, you can check.
+On this kind of project, I spent a long time answering with analysis: well-argued, precise emails, with headings, bullet points and appendices, explaining why this blocked that. Nobody read them. In return, I got the all-time classic: "I don't really see it, can we do a call to talk about it?". I've already devoted [an entire article to that meeting "to talk about it"](/en/20260326-lareunionpourenparler), which is something of a cousin to "it's been integrated": in both cases, people prefer talking, because in writing, you can check.
 
 What works is shorter and less tiring: dependencies and dates.
 
@@ -93,7 +93,7 @@ What works is shorter and less tiring: dependencies and dates.
 
 It doesn't read like a reproach, so it isn't argued about like a reproach. It reads like a fact.
 
-And above all, everything in writing, in a channel visible to everyone. No private messages on anything that commits to a date. Not out of distrust, but because the day the deadline slips, the only thing protecting you is a dated history nobody can rewrite. People's memory, on the other hand, gets very creative after a missed deadline.
+And above all, everything in writing, in a channel visible to everyone. No [private messages on WhatsApp](/en/20261028-whatsapp-nest-pas-un-moyen-de-communication-professionnel) or anywhere else on anything that commits to a date. Not out of distrust, but because the day the deadline slips, the only thing protecting you is a dated history nobody can rewrite. People's memory, on the other hand, gets very creative after a missed deadline.
 
 ## What I do now, systematically
 

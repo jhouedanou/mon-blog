@@ -1,54 +1,52 @@
 ---
-title: "De Vercel à Cloudflare Pages : comment j'ai dit au revoir aux frais d'hébergement (et pourquoi tu dois aussi)"
+title: "Vercel vers Cloudflare Pages : zéro facture"
 image: "/images/articles/cloudflarevercel.webp"
 createdAt: "2026-04-02"
-description: "Migrer un projet Nuxt de Vercel vers Cloudflare : bande passante illimitée, zéro facture, et les quatre erreurs de déploiement que j'ai dû franchir."
-updatedAt: "2026-10-08T12:00:00Z"
+description: "Migrer un site Nuxt de Vercel vers Cloudflare Pages : bande passante illimitée, zéro facture, et les quatre erreurs de déploiement que j'ai dû franchir."
+updatedAt: "2026-11-08T12:00:00Z"
 searchIntent: "Comment migrer un projet Nuxt de Vercel vers Cloudflare Pages pour réduire ses coûts d’hébergement."
 tags: ["tutoriel", "dev", "afrique"]
 ---
 
-Vous connaissez ce sentiment ? Vous lancez votre petit projet perso sur Vercel, tout va bien… jusqu'au moment où vous recevez votre première facture.
+Vous lancez votre petit projet perso sur Vercel, tout va bien… jusqu'à votre première facture.
 
-Moi aussi, j'ai connu ça.
+Moi aussi, j'ai connu ça, et voici comment j'ai migré ce blog Nuxt de Vercel vers Cloudflare Pages, jusqu'à une facture d'hébergement de 0 FCFA.
 
 > **Avertissement** : cet article contient des quantités déraisonnables de messages d'erreur, de frustration, et au moins un formulaire web qui refuse de fonctionner. Âmes sensibles, s'abstenir.
 
-Sauf qu'après [les péripéties avec cPanel](/fr/20260327-cpanel-cyberpanel-migration) et l'impossible paiement des licences (merci Tonton Donald 🫡…), je me suis dit : **si je dois choisir mes outils, autant que ce soit gratuit, et autant que ce soit bon.**
+Sauf qu'après [ma migration forcée de cPanel vers CyberPanel](/fr/20260327-cpanel-cyberpanel-migration) et l'impossible paiement des licences (merci Tonton Donald 🫡… enfin non, il n'y était pour rien : c'était le bras de fer entre le GIM-UEMOA et Visa/Mastercard), je me suis dit : **si je dois choisir mes outils, autant que ce soit gratuit, et autant que ce soit bon.**
 
-C'est comme ça que j'ai découvert qu'on n'avait pas vraiment besoin de payer pour avoir du hosting qui déménage les montagnes.
+C'est comme ça que j'ai découvert qu'on n'avait pas vraiment besoin de payer pour avoir du hosting qui déménage.
 
 ---
 
 ## Le problème avec Vercel (et pourquoi je dois bouger)
 
-Vercel, c'est confortable. Très confortable.
+Vercel, c'est très confortable.
 
 - Déploiement depuis GitHub en trois clics
 - HTTPS gratuit
 - CDN monde
 - Edge Functions gratuites
 
-Mais voilà : le tier gratuit, c'est **100 Go de bande passante par mois**. Et une fois que vous dépassez (ou que vous approchez), les prix montent vite. Très vite.
+Mais voilà : le tier gratuit, c'est **100 Go de bande passante par mois**. Et une fois que vous dépassez (ou que vous approchez), les prix montent vite. Sur l'offre gratuite (Hobby), un dépassement oblige le plus souvent à attendre 30 jours avant de réutiliser la ressource ; pour continuer tout de suite, il faut passer à l'offre Pro, à 20 $ par mois et par membre ([offre Hobby de Vercel](https://vercel.com/docs/plans/hobby){target="_blank" rel="noopener"}).
 
-Sachant que je dois héberger plusieurs projets perso (incluant ce blog, et d'autres expériences numériques), l'addition s'accumule.
+Sachant que je dois héberger plusieurs projets perso (incluant ce blog, [passé de WordPress à Nuxt en 2024](/fr/20241005-on-fait-un-peu-le-menage), et d'autres expériences numériques), l'addition s'accumule.
 
 Vercel n'est pas mauvais. Il faut juste être honnête : c'est fait pour les startups financées, pas pour les développeurs africains qui veulent garder leur indépendance.
 
 ---
 
-## Pourquoi Cloudflare Pages ? (Le vrai game-changer)
+## Pourquoi Cloudflare Pages ?
 
 Bon, d'abord je dois clarifier un truc : **Cloudflare n'est pas parfait**. Mais pour ce que je fais, c'est le meilleur rapport qualité/prix gratuit que j'ai trouvé.
 
 Voici pourquoi :
 
-### 1. **Bande passante illimitée** 🚀
+### 1. **Bande passante illimitée**
 
 Avec Vercel : 100 Go/mois (gratuit), puis ça coûte cher.
 Avec Cloudflare Pages : **illimité**.
-
-Je répète : **illimité**.
 
 Si votre blog explose en visibilité (hypothèse optimiste), vous ne paierez rien de plus.
 
@@ -56,35 +54,31 @@ Si votre blog explose en visibilité (hypothèse optimiste), vous ne paierez rie
 
 Contrairement à GitHub Pages (qui ne fait que du statique), Cloudflare Pages supporte les **edge functions** gratuitement.
 
-Ça veut dire quoi ? Que je peux servir du contenu dynamique, des API calls, du rendu côté serveur — tout ça sans coûts supplémentaires.
+Concrètement, je peux servir du contenu dynamique, des API calls, du rendu côté serveur, sans coût supplémentaire.
 
-Mon Nuxt 3 avec SSR ? Ça marche parfaitement.
+Mon Nuxt 3 en SSR y tourne sans problème.
 
-### 3. **CDN ultra-rapide (mais vraiment très rapide)**
+### 3. **CDN très rapide**
 
-Cloudflare gère le plus grand réseau de data centers du monde. Votre site est servi depuis le serveur Cloudflare le plus proche de l'utilisateur.
+Cloudflare gère l'un des plus grands réseaux de data centers du monde. Votre site est servi depuis le serveur Cloudflare le plus proche de l'utilisateur.
 
-**Latence zéro pour nos utilisateurs locaux**.
+**Moins de latence pour nos utilisateurs locaux**.
 
 ### 4. **100 000 requêtes par jour (gratuites)**
 
 Mon blog vient d'être migré. Premier jour sur Cloudflare Pages : **492 requêtes sur les 100 000 autorisées par jour**. On est large.
 
-Pour mettre ça en perspective : Vercel limite la bande passante, Cloudflare limite les requêtes — mais à 100 000/jour, il faut vraiment que votre site devienne viral pour atteindre cette limite.
+Vercel limite la bande passante, Cloudflare limite les requêtes, mais à 100 000/jour, il faut vraiment que votre site devienne viral pour atteindre cette limite.
 
 ### 5. **Configuration ridicule**
 
-- 3 000 minutes de build/mois (gratuit — et avec seulement 27 minutes utilisées après plusieurs déploiements, on est très large)
+- 3 000 minutes de build/mois (gratuit, et avec seulement 27 minutes utilisées après plusieurs déploiements, on est très large). C'est le quota de [Workers Builds](https://developers.cloudflare.com/workers/ci-cd/builds/limits-and-pricing/){target="_blank" rel="noopener"} ; un projet de type Pages est compté en builds, 500 par mois ([limites de Cloudflare Pages](https://developers.cloudflare.com/pages/platform/limits/){target="_blank" rel="noopener"})
 - Connexion directe à GitHub
 - Auto-déploiement à chaque push
 - Certificats SSL auto-renouvelés
 - 200 000 événements d'observabilité/jour (logs, traces)
 
-C'est presque trop simple.
-
-Enfin, en théorie.
-
-En pratique, lisez la section « Les pièges » plus bas avant de vous réjouir. 😬
+C'est presque trop simple. Enfin, en théorie : lisez la section « Les pièges » plus bas avant de vous réjouir. 😬
 
 ### 6. **Le prix du domaine personnalisé**
 
@@ -94,7 +88,7 @@ C'est gratos.
 
 ---
 
-## Comment j'ai basculé (et comment vous pouvez le faire)
+## Comment j'ai migré de Vercel vers Cloudflare Pages (et comment le faire)
 
 ### Step 1 : Modifier le preset Nitro
 
@@ -108,7 +102,7 @@ export default defineNuxtConfig({
 })
 ```
 
-C'est littéralement tout ce que vous devez changer dans votre config Nuxt.
+C'est tout ce que vous devez changer dans votre config Nuxt.
 
 ### Step 2 : Créer le fichier `wrangler.toml`
 
@@ -160,6 +154,8 @@ Chez votre registrar DNS (GoDaddy dans mon cas) :
 
 Vous pouvez garder vos DNS chez GoDaddy et juste ajouter un CNAME. Ou vous pouvez tout basculer chez Cloudflare (c'est gratuit aussi).
 
+Attention, l'option B ne marche que pour un sous-domaine comme `www`, sur un projet Pages. Un domaine nu (`exemple.com`) exige les nameservers de Cloudflare ([domaines personnalisés de Pages](https://developers.cloudflare.com/pages/configuration/custom-domains/){target="_blank" rel="noopener"}), et le domaine personnalisé d'un projet Workers, une zone active chez Cloudflare ([Custom Domains de Workers](https://developers.cloudflare.com/workers/configuration/routing/custom-domains/){target="_blank" rel="noopener"}). Dans ces deux cas, c'est l'option A.
+
 ---
 
 ## Les pièges (parce qu'il y en a toujours)
@@ -179,17 +175,19 @@ Exemple `_redirects` :
 /api/* https://api.example.com/:splat 200
 ```
 
+Et profitez-en pour rediriger en 301 vos anciennes adresses. Sur ce blog, je ne l'ai fait que des mois plus tard, et je raconte ce que ça m'a coûté dans [mon billet sur le SEO perdu après la migration](/fr/20261018-migration-wordpress-nuxt-referencement-perdu-recupere).
+
 ### 3. **Le `wrangler.toml` : un vrai champ de mines**
 
-Celui-là m'a coûté des **heures**. Et je ne parle pas d'heures productives — je parle d'heures à tourner en rond entre des messages d'erreur cryptiques et un dashboard Cloudflare buggé.
+Celui-là m'a coûté des **heures** à tourner en rond entre des messages d'erreur cryptiques et un dashboard Cloudflare buggé.
 
-**Première erreur** : j'avais dans mon `wrangler.toml` une config `[site]` avec `bucket = "./dist"` — un vestige de l'ancienne méthode Workers Sites. Résultat ? Wrangler cherchait un fichier `workers-site/index.js` qui n'existait pas :
+**Première erreur** : j'avais dans mon `wrangler.toml` une config `[site]` avec `bucket = "./dist"`, un vestige de l'ancienne méthode Workers Sites. Résultat : Wrangler cherchait un fichier `workers-site/index.js` qui n'existait pas :
 
 ```
 ✘ [ERROR] The entry-point file at "workers-site/index.js" was not found.
 ```
 
-**Deuxième erreur** : j'ai remplacé par `pages_build_output_dir = "./dist"` — c'est la bonne config pour Cloudflare **Pages**. Sauf que ma commande de déploiement dans le dashboard était `npx wrangler deploy` — qui est une commande pour **Workers**, pas pour Pages. Résultat :
+**Deuxième erreur** : j'ai remplacé par `pages_build_output_dir = "./dist"`, la bonne config pour Cloudflare **Pages**. Sauf que ma commande de déploiement dans le dashboard était `npx wrangler deploy`, une commande pour **Workers**, pas pour Pages. Résultat :
 
 ```
 ▲ [WARNING] It seems that you have run `wrangler deploy` on a Pages project,
@@ -230,7 +228,7 @@ Vous pensez que c'est fini ? Moi aussi je pensais.
   This could expose your private server-side code to the public Internet.
 ```
 
-La solution ? Créer un fichier `.assetsignore` dans `dist/` qui contient `_worker.js`. Sauf que `dist/` est régénéré à chaque build, donc il faut le créer automatiquement. J'ai modifié mon script de build dans `package.json` :
+La solution : créer un fichier `.assetsignore` dans `dist/` qui contient `_worker.js`. Sauf que `dist/` est régénéré à chaque build, donc il faut le créer automatiquement. J'ai modifié mon script de build dans `package.json` :
 
 ```json
 "build": "nuxt build && echo _worker.js > dist/.assetsignore"
@@ -271,7 +269,7 @@ Assurez-vous que Cloudflare a les bonnes permissions sur votre repo. Si votre bu
 
 ---
 
-## Ce que j'ai gagné (honnêtement)
+## Vercel ou Cloudflare Pages : ce que j'ai gagné (honnêtement)
 
 | Métrique | Vercel | Cloudflare |
 |----------|--------|-----------|
@@ -279,17 +277,17 @@ Assurez-vous que Cloudflare a les bonnes permissions sur votre repo. Si votre bu
 | SSR | ✅ | ✅ |
 | Vitesse | ⚡⚡⚡ | ⚡⚡⚡⚡ |
 | Bande passante | 100 Go/mois | Illimitée |
-| Requêtes/jour | Non communiqué | 100 000 (492 utilisées le 1er jour) |
+| Requêtes incluses | 1 million par mois | 100 000 par jour (492 utilisées le 1er jour) |
 | Build minutes/mois | 6 000 | 3 000 (27 utilisées en 2 jours) |
 | Edge functions | Quelques gratuites | Incluses (100 000 requêtes/jour) |
 | Facilité de setup | ⭐⭐⭐ | ⭐ (4 erreurs et un `echo` plus tard) |
 | Support | Bon | Excellent |
 
-Le vrai gain ? **Zéro stress financier** + **performance identique ou meilleure**.
+Ce que j'y gagne : **zéro stress financier**, pour des **performances identiques ou meilleures**.
 
 ---
 
-## Et les autres alternatives ?
+## Et les autres alternatives gratuites à Vercel ?
 
 Juste pour être exhaustif :
 
@@ -297,7 +295,7 @@ Juste pour être exhaustif :
 - **Netlify** : Solide, SSR complet, offre gratuite à 300 crédits (la bande passante est décomptée en crédits). Bonne alternative à Cloudflare.
 - **Render** : Gratuit mais le service « dort » après inactivité. Pas idéal pour un blog.
 
-Mais entre ces trois ? **Cloudflare Pages gagne à chaque fois**.
+Mais face à ces trois-là, **Cloudflare Pages gagne à chaque fois**.
 
 ---
 
@@ -311,7 +309,7 @@ Récapitulons mon après-midi du 2 avril 2026 :
 4. ❌ `_worker.js` uploadé comme asset public (code serveur exposé sur Internet)
 5. ✅ Un `echo _worker.js > dist/.assetsignore` et tout marche
 
-Quatre erreurs. Un après-midi. Et la solution finale tient en une ligne de shell.
+Quatre erreurs en un après-midi, et la solution finale tient en une ligne de shell.
 
 Si quelqu'un de Cloudflare lit ceci : **votre formulaire de configuration de build est cassé**. Et la distinction entre Pages et Workers est aussi claire qu'un rond-point à Abidjan à 18h.
 
@@ -321,13 +319,15 @@ TTFB : ~120 ms\
 Pages rendues : instantanées\
 Facture : 0 FCFA
 
-Depuis cPanel vers CyberPanel, j'ai compris quelque chose : **les outils gratuits et open-source ne sont pas des compromis. C'est juste que le chemin pour les configurer ressemble parfois à un parcours du combattant.**
+Depuis ma migration de cPanel vers CyberPanel, j'ai compris une chose : **les outils gratuits et open source ne sont pas des compromis. Ils sont juste parfois pénibles à configurer.**
 
-Cloudflare Pages, c'est le restaurant où la cuisine est incroyable mais où il faut traverser un labyrinthe pour trouver la porte d'entrée. Une fois dedans, vous ne regrettez rien.
+Cloudflare Pages, c'est le restaurant où la cuisine est excellente mais où il faut traverser un labyrinthe pour trouver la porte d'entrée. Une fois dedans, vous ne regrettez rien.
 
 Et pour un développeur africain qui doit jongler avec les conversions de devises, les frais bancaires, et les ruptures de paiement aléatoires : **un outil gratuit qui marche vraiment, ça n'a pas de prix** — même si la mise en route vous coûte quelques cheveux (pas grave en ce qui me concerne, vu le peu qu'il me reste).
 
 *Mise à jour du 8 octobre 2026 : l'exemple de l'étape 1 a été corrigé, la clé de configuration Nitro est `preset` (au singulier, une simple chaîne), comme dans l'exemple du piège n° 4 ([documentation Nitro](https://nitro.build/deploy/providers/cloudflare)). La ligne « Edge functions » du tableau indique maintenant la limite du plan gratuit, 100 000 requêtes par jour ([tarifs Cloudflare Workers](https://developers.cloudflare.com/workers/platform/pricing/)). Netlify est passé à une tarification par crédits : l'offre gratuite donne 300 crédits, et la bande passante en consomme 20 par Go ([tarifs Netlify](https://www.netlify.com/pricing/)). Enfin, la documentation de Nitro recommande désormais Cloudflare Workers plutôt que Pages pour les nouveaux déploiements, et ce blog n'utilise plus de Worker du tout : il est servi en fichiers statiques ([je raconte pourquoi ici](/fr/20260922-jai-recupere-le-trafic-de-mon-blog-et-les-bots-qui-vont-avec)).*
+
+*Correction du 8 novembre 2026 : « merci Tonton Donald » était injuste. Le blocage des paiements par carte venait de la décision n° 31 du GIM-UEMOA, qui a fixé à Visa et Mastercard un ultimatum au 31 mars 2026 ([Financial Afrik](https://www.financialafrik.com/2026/01/29/uemoa-les-cartes-visa-et-mastercard-ont-90-jours-pour-se-conformer/){target="_blank" rel="noopener"}). Dans le tableau, Vercel publie bien un quota de requêtes pour son offre gratuite : 1 million par mois ([offre Hobby](https://vercel.com/docs/plans/hobby){target="_blank" rel="noopener"}), et non « non communiqué ». Ajouts du même jour : ce qui se passe quand on dépasse l'offre gratuite de Vercel, la différence entre le quota de build de Workers et celui de Pages, et les limites de l'option CNAME.*
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com) — toujours à la chasse aux outils qui ne cassent pas la tirelire*

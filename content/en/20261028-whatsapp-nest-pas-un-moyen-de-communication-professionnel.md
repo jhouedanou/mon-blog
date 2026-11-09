@@ -1,15 +1,15 @@
 ---
-title: "WhatsApp is not a professional communication tool"
+title: "WhatsApp for work: why I say no"
 createdAt: "2026-10-28T14:00:00Z"
 image: "/images/articles/pexels-rahul-shah-6458056.webp"
-description: "WhatsApp is not a work tool: no usable record, no working hours, endless voice notes and groups. My approach: say no, send an email, block the number."
+description: "WhatsApp for work? No usable record, no working hours, endless voice notes and groups. My approach: say no, send an email, then block the number."
 searchIntent: "Should you use WhatsApp for work communication, and how do you turn down work requests sent over WhatsApp?"
 tags: ["opinion", "society", "africa", "productivity"]
 ---
 
 WhatsApp is not a professional communication tool.
 
-In Abidjan, though, it's the default channel. A quote, a mockup to approve, an invoice, access to a server, a rescheduled meeting: everything goes through WhatsApp. Often on a personal number. Often in the evening.
+In Abidjan, though, it's the default channel for work. A quote, a mockup to approve, an invoice, access to a server, a rescheduled meeting: everything goes through WhatsApp. Often on a personal number. Often in the evening.
 
 I refuse. Here's why, and how I do it.
 
@@ -19,7 +19,7 @@ I refuse. Here's why, and how I do it.
 
 A request arrives between a family photo, a funny video and a voice note. Three weeks later, nobody can find who approved what, or when.
 
-An email has a subject, a date, recipients and people in copy. You can file it, search it and forward it. The day a deadline slips, that dated record is what protects you. I explained this in ["It's integrated in the mockup"](/en/20260908-cest-integre-dans-la-maquette).
+An email has a subject, a date, recipients and people in copy. You can file it, search it and forward it. The day a deadline slips, that dated record is what protects you. I made the same point when I wrote about [how I checked a design handoff](/en/20260908-cest-integre-dans-la-maquette).
 
 ### There are no working hours anymore
 
@@ -27,21 +27,21 @@ WhatsApp is in your pocket, on the same phone as your family and friends. The wo
 
 ### Voice notes waste the receiver's time
 
-Four minutes of voice note for a request that fit in two lines. You can't skim it, search it for a word, or copy a passage into a quote. The sender saves time. The receiver loses it.
+A four-minute voice note for a request that fit in two lines. You can't skim it, search it for a word, or copy a passage into a quote. The sender saves time. The receiver loses it.
 
 ### Groups drown decisions
 
-Someone adds you, without asking, to a group of forty people. Decisions get lost between the "noted", the thumbs-up and the birthday messages.
+Someone adds you, without asking, to a group of forty people. Decisions get lost between the "noted", the thumbs-up and the birthday messages, just like in [a grin](/en/20250605-facebook-nest-pas-un-grin).
 
 ### Personal and professional get mixed up
 
-Your number, your profile picture, your status updates: your clients and colleagues can see them. And when someone leaves the company, the message history leaves with their phone. A work mailbox stays with the company.
+Your number, your profile picture, your status updates: your clients and colleagues can see them. And when someone leaves the company, the message history leaves with their phone. A work mailbox stays with the company. Same rule as for [the work iPhone and company car that tell your boss everything](/en/20250705-cherscommerciaux): don't mix the two.
 
 ### A message is not a request
 
-An email forces you to write the whole request: the context, the question, the deadline. On WhatsApp, people send "Did you see?" and wait. It's the written version of [the meeting "to talk about it"](/en/20260326-lareunionpourenparler): you avoid stating the problem.
+An email forces you to write the whole request: the context, the question, the deadline. On WhatsApp, people send "Did you see?" and wait. It's the written version of [the useless "let's talk about it" meeting](/en/20260326-lareunionpourenparler): you avoid stating the problem.
 
-## My approach: say no, send an email, block
+## How to turn down work requests on WhatsApp
 
 My approach comes down to three steps: say no, send an email, block.
 

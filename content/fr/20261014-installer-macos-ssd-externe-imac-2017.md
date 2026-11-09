@@ -1,5 +1,5 @@
 ---
-title: "Installer macOS sur un SSD externe pour relancer un iMac 2017"
+title: "Installer macOS sur SSD externe (iMac 2017)"
 createdAt: "2026-10-14T18:00:00Z"
 image: "/images/articles/imac-2017-macos-ssd-externe.webp"
 description: "Un iMac 2017 qui rame ? Installez macOS sur un SSD externe de 1 To branché en USB-C, sans ouvrir la machine. Ventura, OpenCore et limites."
@@ -9,7 +9,7 @@ tags: ["tutoriel", "apple", "macos", "mac", "matériel", "ssd"]
 
 J'avais un iMac 2017 abandonné dans un coin. Le genre de machine qu'on n'allume plus, parce qu'elle met une éternité à démarrer et qu'ouvrir Safari devient une épreuve.
 
-Le coupable, presque toujours, c'est le disque interne. La bonne nouvelle : pas besoin d'ouvrir l'iMac pour le changer. Il suffit d'installer macOS sur un **SSD externe** et de démarrer dessus. Moi, j'ai pris un **Lexar SL500** de 1 To, et j'y ai installé **macOS Ventura**. Résultat : l'iMac démarre plus rapidement. Voici comment faire, étape par étape.
+Le coupable, presque toujours, c'est le disque interne, et pas besoin d'ouvrir l'iMac pour le changer : il suffit d'installer macOS sur un **SSD externe** et de démarrer dessus. Moi, j'ai pris un **Lexar SL500** de 1 To, et j'y ai installé **macOS Ventura**. Résultat : l'iMac démarre plus rapidement. Voici comment faire, étape par étape.
 
 ![Un iMac 2017 démarre sur un SSD externe de 1 To branché en USB-C](/images/articles/imac-2017-macos-ssd-externe.webp)
 
@@ -20,7 +20,7 @@ Sauf si un SSD avait été choisi en option à l'achat, l'iMac 2017 sortait de l
 - un **disque dur de 1 To à 5 400 tr/min** sur le 21,5 pouces d'entrée de gamme et sur le 21,5 pouces 4K à 3,0 GHz ;
 - un **Fusion Drive** (un petit SSD associé à un disque dur) sur le 21,5 pouces 4K à 3,4 GHz et sur tous les 27 pouces 5K.
 
-Un disque dur à 5 400 tr/min est lent : Seagate annonce « jusqu'à 140 Mo/s » pour les siens, et c'est un maximum ([fiche Seagate](https://www.seagate.com/www-content/datasheets/pdfs/barracuda-2-5-DS1907-2-1907US-en_US.pdf){target="_blank" rel="noopener"}). En pratique, on tourne plutôt autour de 100 Mo/s. Mais le vrai problème est ailleurs : macOS lit et écrit en permanence des milliers de petits fichiers éparpillés. Pour ça, un disque dur est très lent, parce que sa tête de lecture doit se déplacer à chaque fois. Un SSD n'a aucune pièce mobile. C'est là qu'il fait toute la différence.
+Un disque dur à 5 400 tr/min est lent : Seagate annonce « jusqu'à 140 Mo/s » pour les siens, et c'est un maximum ([fiche Seagate](https://www.seagate.com/www-content/datasheets/pdfs/barracuda-2-5-DS1907-2-1907US-en_US.pdf){target="_blank" rel="noopener"}). En pratique, on tourne plutôt autour de 100 Mo/s. Mais le vrai problème est ailleurs : macOS lit et écrit en permanence des milliers de petits fichiers éparpillés. Pour ça, un disque dur est très lent, parce que sa tête de lecture doit se déplacer à chaque fois. Un SSD n'a aucune pièce mobile, et c'est sur ces petits fichiers qu'il fait la différence.
 
 ## Pourquoi un SSD externe plutôt qu'un SSD interne
 
@@ -199,7 +199,7 @@ Un iMac 2017 qui rame n'est pas bon pour la poubelle. Avec un SSD externe de 1 T
 
 Ventura est la voie simple. OpenCore Legacy Patcher ouvre la porte à Sequoia, au prix d'un peu d'entretien.
 
-Et si l'ordinateur ne vous intéresse plus mais que l'écran est encore beau, il reste une autre piste : [transformer le vieil iMac en écran secondaire avec Sharp](/fr/20260929-sharp-vieil-imac-ecran-secondaire-ethernet). Pour les vieux Mac portables, j'ai aussi tenté [Omarchy sur mon MacBook Pro 2017](/fr/20261013-retournement-de-veste-omarchy-macbook-pro-2017).
+Et si l'ordinateur ne vous intéresse plus mais que l'écran est encore beau, il reste deux autres pistes : [transformer le vieil iMac en écran secondaire avec Sharp](/fr/20260929-sharp-vieil-imac-ecran-secondaire-ethernet), ou [en faire l'écran d'un PC Linux avec OpenDisplay](/fr/20261030-opendisplay-vieil-imac-ecran-mac-linux). Pour les vieux Mac portables, j'ai aussi tenté [Omarchy sur mon MacBook Pro 2017](/fr/20261013-retournement-de-veste-omarchy-macbook-pro-2017).
 
 **Sources :**
 

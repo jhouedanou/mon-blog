@@ -1,13 +1,13 @@
 ---
-title: "Non, ce câble de 240W ne chargera pas plus vite votre vieux macbook"
+title: "Câble USB-C MacBook Pro : non, pas le 240 W"
 image: "/images/articles/really.webp"
 createdAt: "2024-10-21T09:00:00Z"
 updatedAt: "2026-10-08T12:00:00Z"
 id: 8
-description: "Un vendeur voulait me fourguer un câble USB-C de 240 W pour mon MacBook Pro 2017. Pourquoi il ne le chargera pas plus vite, et comment éviter la vente forcée."
+description: "Quel câble USB-C pour MacBook Pro 2017 ? Pas le 240 W qu'un vendeur voulait me fourguer : un câble 5 A (100 W) suffit. Et comment éviter la vente forcée."
 searchIntent: "Un câble USB-C de 240 W charge-t-il vraiment un MacBook Pro 2017 plus vite ?"
 tags: ["tech", "opinion"]
-summary: "Un récit personnel confrontant un vendeur qui tente de vendre un câble USB-C de 240W pour un MacBook Pro 2017. L'article explique pourquoi un câble plus puissant ne charge pas plus rapidement un appareil dont le contrôleur interne limite la puissance de charge, et comment les consommateurs peuvent éviter ce type de vente abusive en comprenant les besoins réels de leurs appareils."
+summary: "Un vendeur voulait me vendre un câble USB-C de 240 W pour mon MacBook Pro 2017. Ce câble ne le chargera pas plus vite, c'est l'ordinateur qui limite la puissance. Au-delà de 60 W, il faut en revanche un câble 5 A."
 ---
 
 Il y a 3 corps de métiers dont nombre de représentants n'iront pas au paradis : les mécaniciens, les menuisiers et les vendeurs d'appareils électroniques (avec, par extension, leurs déclinaisons sur TikTok).
@@ -26,7 +26,7 @@ Prenez par exemple ce vendeur, rencontré aujourd'hui dans un grand magasin de l
 
 « Ahh, le boss ! Faut prendre le câble 240W là. C'est ça qui est bon dêh ! » insiste-t-il en agitant un câble devant mon nez.
 
-Je prends une profonde inspiration, essayant de rester calme malgré mon impatience croissante.
+Je prends une grande inspiration pour rester calme.
 
 « Écoutez, je sais ce dont j'ai besoin. Le 240W est excessif pour mon modèle. »
 
@@ -48,15 +48,19 @@ Désarçonné, le vendeur tente une dernière approche : « Mais… mais enfin, 
 
 Je réponds, en repérant enfin le câble 60W dont j'ai besoin : « Pas dans ce cas. Celui-ci fera parfaitement l'affaire. Merci pour votre aide, mais je vais prendre celui-là. »
 
-Je saisis le câble 60W, laissant le vendeur perplexe, et me dirige vers la caisse, satisfait d'avoir évité une vente abusive et pressé de pouvoir enfin partir avec le bon produit.
+Je saisis le câble 60W et me dirige vers la caisse, content d'avoir évité une vente abusive. Le vendeur reste perplexe.
 
 Plus sérieusement… votre MacBook Pro 2017 n'est pas un bolide conçu pour absorber 240W comme s'il s'agissait d'un petit-déjeuner léger. Il préfère un régime plus modeste, avec un standard de charge moins puissant. Oui, le câble 240W est rétrocompatible, comme un adulte qui sait parler aux enfants. Mais il ne va pas forcer votre MacBook à manger plus qu'il ne peut.
 
-Petite rectification technique, tout de même : contrairement à ce que j'ai affirmé au vendeur, un câble 60 W ne « suffit » pas tout à fait. Apple livre les MacBook Pro 15 pouces de 2016 et après avec un adaptateur USB-C de 87 W ([support Apple](https://support.apple.com/fr-fr/109509){target="_blank" rel="noopener"}). Or un câble USB-C classique, prévu pour 3 A, plafonne à 60 W ; au-delà, il faut un câble donné pour 5 A, soit 100 W ([USB-IF](https://www.usb.org/usb-charger-pd){target="_blank" rel="noopener"}), et tout câble de plus de 3 A embarque une puce d'identification, on dit qu'il est « e-marqué » ([spécification USB Type-C](https://www.usb.org/sites/default/files/USB%20Type-C%20Spec%20R2.0%20-%20August%202019.pdf){target="_blank" rel="noopener"}). Avec mon câble 60 W, le MacBook charge, mais à 60 W maximum au lieu de 87. Le bon câble, c'était donc un 100 W. Pas un 240 W : au-delà de 100 W, plus rien ne change pour cette machine.
+## Quel câble USB-C pour charger un MacBook Pro ?
 
-**Rappelez-vous que dans le monde de la technologie, comme dans la vie, ce n'est pas toujours le plus gros ou le plus puissant qui gagne. C'est celui qui est le mieux adapté à vos besoins.**
+Petite rectification technique, tout de même : contrairement à ce que j'ai affirmé au vendeur, un câble 60 W ne « suffit » pas tout à fait. Apple livre les MacBook Pro 15 pouces de 2016 et après avec un adaptateur USB-C de 87 W ([support Apple](https://support.apple.com/fr-fr/109509){target="_blank" rel="noopener"}). Or un câble USB-C classique, prévu pour 3 A, plafonne à 60 W. Au-delà, il faut un câble donné pour 5 A, soit 100 W ([USB-IF](https://www.usb.org/usb-charger-pd){target="_blank" rel="noopener"}). Tout câble de plus de 3 A embarque une puce d'identification : on dit qu'il est « e-marqué » ([spécification USB Type-C](https://www.usb.org/sites/default/files/USB%20Type-C%20Spec%20R2.0%20-%20August%202019.pdf){target="_blank" rel="noopener"}). Avec mon câble 60 W, le MacBook charge, mais à 60 W maximum au lieu de 87. Le bon câble, c'était donc un 100 W. Pas un 240 W : au-delà de 100 W, plus rien ne change pour cette machine.
+
+**En technologie, ce n'est pas toujours le plus gros ou le plus puissant qui gagne : c'est le mieux adapté à vos besoins.**
 
 Et ça, aucun vendeur arrogant ne pourra vous le vendre : c'est à vous de le savoir.
+
+Pour d'autres histoires de watts et de vieux Mac : [le double moniteur portable, qui fait passer la charge du MacBook en USB-C](/fr/20260810-double-moniteur-portable-blackview-dcm6), et [comment relancer un vieil iMac 2017 en installant macOS sur un SSD externe](/fr/20261014-installer-macos-ssd-externe-imac-2017).
 
 *Correction du 8 octobre 2026 : Le vendeur avait tort sur le 240 W, mais j'avais tort sur le 60 W : avec le chargeur 87 W d'origine, il faut un câble USB-C 5 A (100 W) pour profiter de toute la puissance ; un câble 60 W limite la charge à 60 W.*
 

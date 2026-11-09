@@ -1,12 +1,12 @@
 ---
-title: "Quand un Community Manager confond réseaux sociaux et le Grin"
+title: "Le community manager qui se croyait au grin"
 image: "/images/articles/bescherelle/01.webp"
 createdAt: "2025-06-05"
 id: 2025-06-05
 description: "Le community manager d'une librairie ivoirienne propose un Bescherelle aux femmes, avec ses propres fautes d'accord. Les réseaux sociaux ne sont pas un grin."
-searchIntent: "Pourquoi les réseaux sociaux ne remplacent pas un espace de discussion professionnel et responsable en Afrique."
+searchIntent: "Que révèle le dérapage du community manager d'une librairie ivoirienne qui proposait un Bescherelle aux femmes, et pourquoi les réseaux sociaux ne sont-ils pas un grin ?"
 tags: ["société", "afrique", "opinion"]
-summary: "Penser avec rigueur, respecter autrui, peser ses mots : autant de qualités qu'on attend d'un professionnel — surtout dans un secteur aussi symbolique que le livre et la communication. Je ne suis pas ici pour faire la morale, mais pour rappeler que les réseaux sociaux ne sont pas un grin — ce groupe informel de discussion entre amis où l'on débat de tout et de rien, souvent sans fond ni filtre. Mais parfois, on a l'impression que certains professionnels ont oublié ces notions de base."
+summary: "Un community manager du secteur du livre qui publie comme s'il était au grin, entre amis et sans filtre. Les réseaux sociaux d'une entreprise demandent plus de rigueur et de respect."
 ---
 
 **Bonjour.**
@@ -15,11 +15,11 @@ summary: "Penser avec rigueur, respecter autrui, peser ses mots : autant de qual
 
 Je suis Jean-Luc Houédanou, développeur web et défenseur assumé du bon sens.
 
-Penser avec rigueur, respecter autrui, peser ses mots : autant de qualités qu'on attend d'un professionnel — surtout dans un secteur aussi symbolique que le livre et la communication. Je ne suis pas ici pour faire la morale, mais pour rappeler que les réseaux sociaux ne sont pas un *grin* — ce groupe informel de discussion entre amis où l'on débat de tout et de rien, souvent sans fond ni filtre.
+Penser avec rigueur, respecter autrui, peser ses mots : autant de qualités qu'on attend d'un professionnel — surtout d'un community manager, dans un secteur aussi symbolique que le livre et la communication. Je ne suis pas ici pour faire la morale, mais pour rappeler que les réseaux sociaux ne sont pas un *grin* — ce groupe informel de discussion entre amis où l'on débat de tout et de rien, souvent sans fond ni filtre.
 
 Mais parfois, on a l'impression que certains professionnels ont oublié ces notions de base.
 
-## Un retour en arrière consternant
+## Community manager : un retour en arrière consternant
 
 Récemment, un community manager d'une structure bien connue du secteur littéraire ivoirien a cru bon de commenter la maîtrise du français chez les femmes de manière pour le moins… maladroite.
 
@@ -28,8 +28,6 @@ Sa « solution » : offrir un Bescherelle, non sans une pointe de sarcasme.
 ![Commentaire sexiste du community manager sur les femmes et les iPhone](/images/articles/bescherelle/01.webp)
 
 Une réaction qui, au-delà du mépris affiché, illustre un mélange regrettable d'arrogance et de méconnaissance grammaticale.
-
-Et c'est là que le bât blesse.
 
 ## Quand on veut corriger, mieux vaut être irréprochable
 
@@ -49,7 +47,7 @@ Quelques observations :
 - « Tête d'illettrés » : ici, le mot *illettrés* est au masculin pluriel, alors que le sujet de la phrase est féminin (« elles »). La bonne tournure serait donc *tête d'illettrées*.
 - Il y a aussi un souci de cohérence stylistique : on aligne « allure », « démarche » et « tête » dans une même structure, mais avec des images de registres différents, ce qui crée un effet bancal.
 
-Ce qui devait être une critique sur la maîtrise du français se retourne donc contre son auteur : on ne peut pas corriger les autres en oubliant les accords de base. Et surtout, il n'est jamais pertinent de porter un jugement aussi général, encore moins sur un ton méprisant, quand on s'adresse à un public large – et potentiellement jeune – depuis une page institutionnelle.
+Ce qui devait être une critique sur la maîtrise du français se retourne donc contre son auteur : on ne peut pas [corriger la grammaire des autres](/fr/20250326-lhistoire-de-gregoire) en oubliant les accords de base. Et surtout, il n'est jamais pertinent de porter un jugement aussi général, encore moins sur un ton méprisant, quand on s'adresse à un public large – et potentiellement jeune – depuis une page institutionnelle.
 
 ## L'ironie de la posture critique
 
@@ -64,7 +62,7 @@ On tient là une façon de penser empruntée aux codes de la manosphère.
 
 Pour ceux qui ne connaissent pas encore cet univers particulier, j'avais déjà exploré les eaux troubles de la manosphère dans [un précédent article](https://jeanluchouedanou.blogspot.com/2023/04/ma-plongee-dans-les-eaux-troubles-de-la.html).
 
-(*Spoiler : 2 ans plus tard, ça n'a pas vieilli.*)
+(*2 ans plus tard, ça n'a pas vieilli.*)
 
 Prochaine étape logique : interdire aux femmes l'accès aux bibliothèques le vendredi soir, ou juste leur permettre l'accès aux rayons « romance » et « développement personnel » à droite pour « les filles qui rêvent », les essais politiques et *Les 48 lois du pouvoir* à gauche pour « les vrais penseurs », les mâles alpha.
 
@@ -72,7 +70,7 @@ Prochaine étape logique : interdire aux femmes l'accès aux bibliothèques le v
 
 Ce n'est pas un procès, mais un appel au professionnalisme et au respect.
 
-Il faut le souligner : ce n'est pas la librairie dans son ensemble qui s'est exprimée. D'ailleurs, cette dernière a fait une mise au point ferme, que je salue.
+Précisons : ce n'est pas la librairie dans son ensemble qui s'est exprimée. D'ailleurs, cette dernière a fait une mise au point ferme, que je salue.
 
 ![Mise au point de la librairie](/images/articles/bescherelle/00.webp)
 

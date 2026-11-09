@@ -1,5 +1,5 @@
 ---
-title: "How to clone Ubuntu without losing your data or your soul"
+title: "Clone Ubuntu to a bigger SSD, soul included"
 image: "/images/articles/pingui.webp"
 createdAt: "2024-10-29"
 updatedAt: "2026-10-08T12:00:00Z"
@@ -7,23 +7,23 @@ id: 2024-10-29
 description: "Cloning Ubuntu to a bigger SSD with dd: identify the disks, run the script, grow the partition and avoid the mistakes that wipe everything out."
 searchIntent: "How to clone Ubuntu to a bigger SSD without losing data or breaking the installation."
 tags: ["tutorial", "dev", "tech"]
-summary: "A step-by-step tutorial for cloning your Ubuntu system to a new, roomier SSD. This guide covers identifying the disks, a complete cloning script using dd, extending the partitions and the checks needed to make sure the migration succeeds."
+summary: "A step-by-step tutorial for cloning Ubuntu to a bigger SSD: find the right disks, clone with dd, grow the partition and run the checks."
 ---
 
-When the SSD in your Ubuntu machine starts coughing and "insufficient disk space" messages become your most frequent notification, it is time to act. In my case, moving to a 256 GB SSD will let me breathe a little (and my HP Pro x2 too).
+When the SSD in your Ubuntu machine starts coughing and "insufficient disk space" messages become your most frequent notification, it's time to clone Ubuntu to a bigger SSD with `dd`, without reinstalling anything. In my case, moving to a 256 GB SSD will let me breathe a little (and my HP Pro x2 too).
 
-## 🎯 What You Will Need
+## What You Will Need
 
 - A new SSD (in my case, 256 GB)
 - Your current, working Ubuntu
 - A bootable USB stick (just in case)
 - 30 minutes of your time (plus coffee time)
 
-## 🛠 The Step by Step Procedure
+## Clone Ubuntu to a Bigger SSD, Step by Step
 
 ### 1. Identifying the Disks
 
-First crucial step: figuring out who is who in our merry system:
+First crucial step: figuring out who's who in our merry system:
 
 ```bash
 sudo fdisk -l
@@ -86,7 +86,7 @@ resize2fs "$PARTITION"
 echo "Clonage terminé ! 🎉"
 ```
 
-Two details of the script deserve an explanation. First, `resize2fs` refuses to grow an unmounted partition that has not been checked since it was last mounted, and asks you to run `e2fsck -f` first ([resize2fs source code](https://github.com/tytso/e2fsprogs/blob/master/resize/main.c){target="_blank" rel="noopener"}): so the script does that beforehand. Second, on an NVMe SSD the disk is called `/dev/nvme0n1` and its second partition `/dev/nvme0n1p2`, not `/dev/nvme0n12`: when the disk name ends with a digit, Linux adds a "p" ([Arch Linux wiki](https://wiki.archlinux.org/title/Device_file#Partition){target="_blank" rel="noopener"}). The script handles both cases.
+Two details in the script need explaining. First, `resize2fs` refuses to grow an unmounted partition that hasn't been checked since it was last mounted, and asks you to run `e2fsck -f` first ([resize2fs source code](https://github.com/tytso/e2fsprogs/blob/master/resize/main.c){target="_blank" rel="noopener"}), so the script does exactly that. Second, on an NVMe SSD the disk is called `/dev/nvme0n1` and its second partition `/dev/nvme0n1p2`, not `/dev/nvme0n12`: when the disk name ends with a digit, Linux adds a "p" ([Arch Linux wiki](https://wiki.archlinux.org/title/Device_file#Partition){target="_blank" rel="noopener"}). The script handles both cases.
 
 ### 3. Running It
 
@@ -106,15 +106,17 @@ sudo fdisk -l
 
 Check that the new partition really uses all the available space.
 
-## 🎯 Important Points
+## Important Points Before Cloning
 
 - Double-check the letters assigned to each hard drive;
 - Backup: even though I trust my script, I still made a backup beforehand. You can never be too careful!
 - Checking the disk names: I repeat.
-  This is THE part where you must not get it wrong;
+  This is THE part you can't get wrong;
 - Patience: cloning can take a while, depending on how much data you have;
 - Tired disk: if the source disk has read errors, do not rely on the script's `conv=noerror,sync` option. The [Arch Linux documentation](https://wiki.archlinux.org/title/Dd#Cloning_an_entire_hard_disk) advises against these options in that case and recommends ddrescue;
 - Duplicate identifiers: dd copies everything, partition UUIDs included ([same source](https://wiki.archlinux.org/title/Dd#Cloning_an_entire_hard_disk)). Unplug the old disk before rebooting on the new one, so the system does not mix the two up.
+
+It was on this same HP Pro x2, running Linux, that I discovered [Ghostwriter, the free iA Writer alternative](/en/20241020-ghostwriter-une-alternative-gratuite-a-ia-writer-pour-linux). On the Mac side, for an old iMac with a worn-out drive, I went another way: [installing macOS on an external SSD](/en/20261014-installer-macos-ssd-externe-imac-2017). And if you also have to reinstall a Windows PC, here is how to [install Windows 11 without a Microsoft account](/en/20260414-windows-sans-prise-de-tete).
 
 *Updated October 8, 2026: added sourced precautions (cloning from a live session, source disk with read errors, identical UUIDs after cloning); script fixed: `e2fsck -f` before `resize2fs`, and correct partition name on NVMe or eMMC disks (`/dev/nvme0n1p2` instead of `/dev/nvme0n12`).*
 

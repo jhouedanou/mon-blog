@@ -1,9 +1,9 @@
 ---
-title: "On ne sépare pas l'homme de ses dotfiles"
+title: "Boycott d'Omarchy : l'homme et ses dotfiles"
 createdAt: "2026-10-08T13:00:00Z"
 updatedAt: "2026-10-13T21:00:00Z"
 image: "/images/articles/pingui.webp"
-description: "J'avais suivi Korben dans son boycott d'Omarchy, la distro de DHH. Trois jours plus tard, je retourne ma veste : Omarchy a ressuscité mon vieux MacBook."
+description: "Boycott d'Omarchy : ce que DHH écrit sur l'immigration, vu d'Abidjan, pourquoi on ne sépare pas l'homme de ses dotfiles, et mon retournement de veste."
 searchIntent: "Pourquoi boycotter Omarchy, la distribution Linux de DHH, et pourquoi l'installer quand même sur un vieux MacBook Pro de 2017 ?"
 tags: ["opinion", "linux", "open-source", "société"]
 ---
@@ -97,7 +97,7 @@ La deuxième :
 
 C'est là où j'en suis aussi.
 
-## Pourquoi je retourne ma veste
+## Boycott d'Omarchy : pourquoi je retourne ma veste
 
 Commençons par l'évidence : je me contredis. J'ai écrit qu'on ne sépare pas l'homme de ses dotfiles, et j'installe ses dotfiles. Je ne vais pas faire semblant que c'est cohérent. Voici ce qui a fait pencher la balance.
 
@@ -123,7 +123,7 @@ Omarchy n'a pas tout réglé tout seul. Voici les trois changements que j'ai dû
 
 ### Le Wi-Fi : des réglages sur la CanalBox
 
-Juste après l'installation, le Wi-Fi ne fonctionnait pas. Il a fallu changer des réglages sur ma CanalBox, ma box internet.
+Juste après l'installation, le Wi-Fi ne fonctionnait pas. Il a fallu changer des réglages sur [ma CanalBox](/fr/20260924-changer-mot-de-passe-wifi-canalbox-canal-plus-afrique), ma box internet.
 
 ### Les mises à jour : `omarchy update`, pas `pacman -Syu`
 
@@ -167,7 +167,7 @@ Apple avait lâché ce MacBook. Omarchy l'a remis en route.
 
 Sur DHH, je n'ai pas changé d'avis : ses billets sur l'immigration restent ce qu'ils sont, et sur ce point, je suis toujours d'accord avec Korben. Sur Omarchy, j'ai changé d'avis. Ce n'est pas glorieux, mais je préfère vous le dire que de le cacher.
 
-Trois jours plus tard, j'ai fait le bilan : ce qui marche, ce qui coince encore (Bluetooth, écrans externes) et l'imprimante qui m'attend. C'est à lire dans [Omarchy sur mon MacBook Pro 2017 : le bilan après trois jours](/fr/20261013-retournement-de-veste-omarchy-macbook-pro-2017).
+Trois jours plus tard, j'ai fait le point sur ce qui marche, ce qui coince encore (Bluetooth, écrans externes) et [l'imprimante thermique](/fr/20261021-imprimante-thermique-netum-a401s-linux-omarchy-claude) qui m'attend : c'est dans [mon bilan d'Omarchy sur MacBook Pro 2017](/fr/20261013-retournement-de-veste-omarchy-macbook-pro-2017).
 
 ## Sources
 

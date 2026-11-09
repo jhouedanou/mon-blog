@@ -1,19 +1,19 @@
 ---
-title: "Tesla Roadster: we don't know its price, but this car FLIES"
+title: "Tesla Roadster price: unknown, but it FLIES"
 createdAt: "2026-10-16T08:34:00Z"
 image: "/images/articles/tesla-roadster-propulseurs.webp"
-description: "Nine years after it was announced, Tesla finally showed the new Roadster. No price, reservations from $50,000 to $250,000. And above all: this car flies!"
+description: "The new Tesla Roadster's price is still unknown: just reservations from $50,000 to $250,000. But nine years after it was announced, this car flies!"
 searchIntent: "How much does the new Tesla Roadster unveiled in October 2026 cost, and does it really fly?"
 tags: ["tech", "tesla", "electric car"]
 ---
 
-What I just watched is probably the craziest product demo of the year.
+What I just watched is probably the craziest product demo of the year: the unveiling of the new Tesla Roadster. It even beats [the iPhone Duo keynote](/en/20260911-samsung-tacle-iphone-duo-visibilite).
 
-No, it's not AI.
+No, it's not AI, unlike [Coca-Cola's Christmas ad](/en/20241220-coca-cola-et-ia).
 
 This car flies.
 
-Yes. It flies. I saw it take off, turn in the air and land. And I'm still not over it.
+Yes. It flies. I saw it take off, turn in the air and land. And I'm still not over it. Its price, on the other hand, is still a mystery.
 
 ## Nine years of waiting
 
@@ -21,7 +21,7 @@ Quick reminder. Tesla announced the new Roadster in November 2017. Deliveries we
 
 And on Thursday, October 15, 2026, in Texas, near Waco, Tesla finally showed it. Nine years later.
 
-Elon Musk had talked about "the most exciting, whether it works or not, demo ever of any product". Spoiler: it worked.
+Elon Musk had talked about "the most exciting, whether it works or not, demo ever of any product". It worked.
 
 ## Yes, it flies (I'll say it again)
 
@@ -35,11 +35,11 @@ Here's what it did during the demo:
 - It launched into the air, spun around, and landed gently.
 - It jumped over **five Tesla vehicles**: a Cybercab, a Cybertruck, a Semi, a Model Y and a Model 3.
 
-The secret? SpaceX thrusters. They are cold-gas thrusters: they blow out compressed air. Pssshhh. On the wildest version, there are ten of them all around the car. They are connected to 600 liters of compressed air, according to Lars Moravy, Tesla's vice president of engineering. The more air, the longer the car stays in the air. And the tanks can be refilled.
+The secret: SpaceX thrusters. They're cold-gas thrusters: they blow out compressed air. Pssshhh. On the wildest version, there are ten of them all around the car. They're connected to 600 liters of compressed air, according to Lars Moravy, Tesla's vice president of engineering. The more air, the longer the car stays in the air. And the tanks can be refilled.
 
 Picture this on the HKB bridge in Abidjan on a Monday morning. Traffic jam? Pssshhh. You fly over the minibuses. (No, it's not allowed. But let me dream.)
 
-CNET summed it all up in ten minutes. Watch it, it's worth it:
+CNET summed it all up in ten minutes, with real footage (not [AI-generated video](/en/20250604-liaetmoi)). Watch it, it's worth it:
 
 :youtube{video="TWHXrLzUKJc" title="Tesla's Flying Roadster Revealed (CNET)"}
 
@@ -54,7 +54,7 @@ The system has two modes:
 - **at low speed**, it sucks as hard as it can, for maximum grip when starting;
 - **at high speed**, it opens passages at the front and back, to let air flow better under the car.
 
-And in corners, it changes everything. According to Tesla, tires alone hold about 1.26 G. With suction, the Roadster takes corners at more than 2 G. Put simply: in the corner, you're pushed sideways with a force equal to twice your weight. Your lunch too.
+And in corners, it makes a huge difference. According to Tesla, tires alone hold about 1.26 G. With suction, the Roadster takes corners at more than 2 G. Put simply: in the corner, you're pushed sideways with a force equal to twice your weight. Your lunch too.
 
 **Second magic trick: the thrusters.** At the back, they add their thrust to the motors'. Tesla claims more than 80 kilonewtons. That's roughly the force needed to lift 8 tonnes. In a sports car. Yes.
 
@@ -76,7 +76,7 @@ Tesla also claims more than 300 miles of range and a top speed of more than 230 
 
 ![A driver in a white suit, helmet in hand, walks toward the new white Tesla Roadster parked in a desert](/images/articles/tesla-roadster-desert.webp)
 
-## So, what about the price?
+## So, what about the Tesla Roadster's price?
 
 Mystery. Tesla gave no price. For any version.
 
@@ -88,7 +88,7 @@ What we know are the reservations:
 
 In 2017, Tesla announced $200,000 for the base version. And $250,000 for the "Founders" series, the first 1,000 cars. Nothing says the price will be the same today.
 
-And production? 2028, according to Musk. After nine years of delays, I wouldn't bet my car on it. But I want to believe.
+Production is planned for 2028, according to Musk. After nine years of delays, I wouldn't bet my car on it. But I want to believe.
 
 ## What changed since 2017
 
@@ -108,7 +108,7 @@ Another detail: the compressed air is stored in carbon fiber tanks. It's the sam
 
 I'm not the target audience. With 29 million CFA francs just to reserve one, very few people are.
 
-But I admit it: I watched the demo like a kid. A car driving upside down. Jumping over five others. Landing like a SpaceX rocket. Nine years of delays, no price, promises scaled back… and yet, I smiled from start to finish.
+But I admit it: I watched the demo like a kid. A car driving upside down, jumping over five others and landing like a SpaceX rocket. Nine years of delays, no price, promises scaled back… and yet, I smiled from start to finish.
 
 Because this car flies. And nobody can take that away from it.
 

@@ -1,19 +1,19 @@
 ---
-title: "Tesla Roadster : on ne connaît pas son prix, mais cette voiture VOLE"
+title: "Tesla Roadster : prix inconnu, mais il VOLE"
 createdAt: "2026-10-16T08:34:00Z"
 image: "/images/articles/tesla-roadster-propulseurs.webp"
-description: "Neuf ans après l'annonce, Tesla a enfin montré le nouveau Roadster. Pas de prix, des réservations de 50 000 à 250 000 dollars. Et surtout : cette voiture vole !"
+description: "Le prix du nouveau Tesla Roadster reste inconnu : juste des réservations de 50 000 à 250 000 dollars. Mais neuf ans après l'annonce, cette voiture vole !"
 searchIntent: "Quel est le prix du nouveau Tesla Roadster présenté en octobre 2026, et est-ce qu'il vole vraiment ?"
 tags: ["tech", "tesla", "voiture électrique"]
 ---
 
-Ce que je viens de voir est sans doute la démo de produit la plus folle de l'année.
+Ce que je viens de voir est sans doute la démo de produit la plus folle de l'année : la présentation du nouveau Tesla Roadster. Elle bat même [la keynote de l'iPhone Duo](/fr/20260911-samsung-tacle-iphone-duo-visibilite).
 
-Non, ce n'est pas de l'IA.
+Non, ce n'est pas de l'IA, contrairement à [la pub de Noël de Coca-Cola](/fr/20241220-coca-cola-et-ia).
 
 Cette voiture vole.
 
-Oui. Elle vole. Je l'ai vue décoller, tourner en l'air et se poser. Et je ne m'en remets toujours pas.
+Oui. Elle vole. Je l'ai vue décoller, tourner en l'air et se poser. Et je ne m'en remets toujours pas. Son prix, lui, reste un mystère.
 
 ## Neuf ans d'attente
 
@@ -21,7 +21,7 @@ Petit rappel. Tesla a annoncé le nouveau Roadster en novembre 2017. Les livrais
 
 Et jeudi 15 octobre 2026, au Texas, près de Waco, Tesla l'a enfin montré. Neuf ans plus tard.
 
-Elon Musk avait parlé de « la démo la plus excitante de tous les temps, que ça marche ou pas ». Spoiler : ça a marché.
+Elon Musk avait parlé de « la démo la plus excitante de tous les temps, que ça marche ou pas ». Ça a marché.
 
 ## Oui, elle vole (je le répète)
 
@@ -35,13 +35,13 @@ Voilà ce qu'elle a fait pendant la démo :
 - Elle s'est lancée en l'air, a tourné sur elle-même, et s'est posée en douceur.
 - Elle a sauté par-dessus **cinq véhicules Tesla** : un Cybercab, un Cybertruck, un Semi, un Model Y et un Model 3.
 
-Le secret ? Des propulseurs de SpaceX. Ce sont des propulseurs à gaz froid : ils soufflent de l'air comprimé. Sur la version la plus folle, il y en a dix tout autour de la voiture. Ils sont reliés à 600 litres d'air comprimé, selon Lars Moravy, vice-président de l'ingénierie chez Tesla. Plus il y a d'air, plus la voiture reste en l'air longtemps. Et les réservoirs se rechargent.
+Le secret : des propulseurs de SpaceX. Ce sont des propulseurs à gaz froid : ils soufflent de l'air comprimé. Sur la version la plus folle, il y en a dix tout autour de la voiture. Ils sont reliés à 600 litres d'air comprimé, selon Lars Moravy, vice-président de l'ingénierie chez Tesla. Plus il y a d'air, plus la voiture reste en l'air longtemps. Et les réservoirs se rechargent.
 
 Imaginez ça sur le pont HKB un lundi matin. Plus de péages.
 Embouteillage ? Pschhht. 
 Vous passez au-dessus des gbakas. (Non, ce n'est pas autorisé. Mais laissez-moi rêver.)
 
-CNET a tout résumé en dix minutes. Regardez, ça vaut le coup :
+CNET a tout résumé en dix minutes, avec de vraies images (pas des [vidéos générées par IA](/fr/20250604-liaetmoi)). Regardez, ça vaut le coup :
 
 :youtube{video="TWHXrLzUKJc" title="Tesla's Flying Roadster Revealed (CNET)"}
 
@@ -56,7 +56,7 @@ Le système a deux modes :
 - **à basse vitesse**, il aspire au maximum, pour bien accrocher au démarrage ;
 - **à haute vitesse**, il ouvre des passages à l'avant et à l'arrière, pour mieux laisser passer l'air sous la voiture.
 
-Et en virage, ça change tout. Selon Tesla, des pneus seuls tiennent environ 1,26 G. Avec l'aspiration, le Roadster prend ses virages à plus de 2 G. Pour faire simple : dans le virage, vous êtes poussé sur le côté avec une force égale à deux fois votre poids. Votre déjeuner aussi.
+Et en virage, ça fait une énorme différence. Selon Tesla, des pneus seuls tiennent environ 1,26 G. Avec l'aspiration, le Roadster prend ses virages à plus de 2 G. Pour faire simple : dans le virage, vous êtes poussé sur le côté avec une force égale à deux fois votre poids. Votre déjeuner aussi.
 
 **Deuxième tour de magie : les propulseurs.** À l'arrière, ils ajoutent leur poussée à celle des moteurs. Tesla annonce plus de 80 kilonewtons. C'est à peu près la force qu'il faut pour soulever 8 tonnes. Dans une voiture de sport. Oui.
 
@@ -80,7 +80,7 @@ Tesla annonce aussi plus de 480 km d'autonomie et une vitesse de pointe de plus 
 
 ![Un pilote en combinaison blanche, casque à la main, marche vers le nouveau Tesla Roadster blanc garé dans un désert](/images/articles/tesla-roadster-desert.webp)
 
-## Et le prix, alors ?
+## Et le prix du Tesla Roadster, alors ?
 
 Mystère. Tesla n'a donné aucun prix. Pour aucune version.
 
@@ -92,7 +92,7 @@ Ce qu'on connaît, ce sont les réservations :
 
 En 2017, Tesla annonçait 200 000 dollars pour la version de base. Et 250 000 dollars pour la série « Founders », les 1 000 premières voitures. Rien ne dit que ce sera le même prix aujourd'hui.
 
-Et la production ? En 2028, selon Musk. Après neuf ans de retard, je ne parierais pas ma voiture dessus. Mais j'ai envie d'y croire.
+La production est prévue pour 2028, selon Musk. Après neuf ans de retard, je ne parierais pas ma voiture dessus. Mais j'ai envie d'y croire.
 
 ## Ce qui a changé depuis 2017
 
@@ -112,7 +112,7 @@ Autre détail : l'air comprimé est stocké dans des réservoirs en fibre de car
 
 Je ne suis pas le public cible. Avec 29 millions de FCFA rien que pour réserver, très peu de gens le sont.
 
-Mais je l'avoue : j'ai regardé la démo comme un gamin. Une voiture qui roule la tête en bas. Qui saute par-dessus cinq autres. Qui se pose comme une fusée de SpaceX. Neuf ans de retard, pas de prix, des promesses revues à la baisse… et pourtant, j'ai souri du début à la fin.
+Mais je l'avoue : j'ai regardé la démo comme un gamin. Une voiture qui roule la tête en bas, qui saute par-dessus cinq autres et qui se pose comme une fusée de SpaceX. Neuf ans de retard, pas de prix, des promesses revues à la baisse… et pourtant, j'ai souri du début à la fin.
 
 Parce que cette voiture vole. Et ça, personne ne pourra le lui enlever.
 

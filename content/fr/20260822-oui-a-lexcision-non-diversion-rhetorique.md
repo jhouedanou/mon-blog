@@ -1,5 +1,5 @@
 ---
-title: "« Oui à l'excision » : ce que les algorithmes font d'une lame de rasoir"
+title: "Campagne « oui à l'excision » : c'est non"
 createdAt: "2026-08-22T12:40:00Z"
 image: "/images/articles/pexels-cottonbro-4631077.webp"
 description: "« Oui à l'excision » : partie du Mali, cette campagne prospère sur Facebook et Twitter. Pourquoi les algorithmes la récompensent et pourquoi la réponse est non."
@@ -7,7 +7,7 @@ searchIntent: "Qu'est-ce que la campagne « oui à l'excision » partie du Mali,
 tags: ["société", "afrique", "opinion", "numérique"]
 ---
 
-Ce blog parle de technologie et de culture numérique. Le titre peut donc surprendre. Restez quand même : cette campagne est un pur produit des plateformes. On est en plein dans le sujet.
+Ce blog parle de technologie et de culture numérique. Le titre peut donc surprendre. Restez quand même : cette campagne « oui à l'excision » est un pur produit des plateformes. On est en plein dans le sujet.
 
 Une campagne « oui à l'excision » circule sur Facebook et Twitter depuis le Mali. Je reprends : **Une campagne « oui à l'excision » circule sur Facebook et Twitter depuis le Mali.**
 
@@ -28,13 +28,13 @@ Comment se faire des ennemis à vie ? En posant la vérité : comme nos parents 
 
 ### Troisième procédé : la mise en spectacle.
 
-En Afrique francophone, sur le « Meta », la calomnie et le harcèlement passent sous le cri de ralliement « gbarai », « buzz », « soko », « kongossa ». Le tout servi par des « blogueurs » à leurs fans, tout le temps, sans un regard pour les personnes visées. Comme si les réseaux sociaux étaient [un grin](/fr/20250605-facebook-nest-pas-un-grin). Même la prison n'arrête personne : il suffit de « demander pardon ».
+En Afrique francophone, sur le « Meta », [la calomnie et le harcèlement](/fr/20250115-l-histoire-danne) passent sous le cri de ralliement « gbarai », « buzz », « soko », « kongossa ». Le tout servi par des « blogueurs » à leurs fans, tout le temps, sans un regard pour les personnes visées. Comme si les réseaux sociaux étaient [un grin](/fr/20250605-facebook-nest-pas-un-grin). Même la prison n'arrête personne : il suffit de « demander pardon ».
 
 Euphémisme, polarisation, mise en spectacle. Trois variantes du même geste : déplacer le débat de la victime vers les mots. Tant que ça reste du bizi et du gbarai, on peut hausser les épaules.
 
 ## Chacun son fil d'actualité
 
-C'est ce que je fais. Libre à chacun d'occuper sa connexion comme il veut. Moi, je masque ces contenus depuis des années.
+C'est ce que je fais, [verre d'eau à la main](/fr/20241022-restons-zen). Libre à chacun d'occuper sa connexion comme il veut. Moi, je masque ces contenus depuis des années.
 
 L'algorithme de Facebook l'a bien compris.
 
@@ -72,6 +72,8 @@ Face à cela, une seule position possible. C'est NON.
 N.O.N.
 
 On ne mutile pas le corps d'une enfant. C'est une ligne rouge, et elle est absolue. Il s'agit de filles qui n'ont rien demandé, qui n'ont rien consenti, et à qui des adultes enlèvent une partie de leur anatomie de la plus barbare des manières.
+
+## Ce que les algorithmes font du « oui à l'excision »
 
 Ces gens ne sont pas fous. Il y a une logique derrière leurs publications. Et elle n'a presque rien à voir avec l'excision. Elle a tout à voir avec les plateformes.
 

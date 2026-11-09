@@ -1,15 +1,15 @@
 ---
-title: "Install macOS on an External SSD to Revive a 2017 iMac"
+title: "Install macOS on an External SSD (2017 iMac)"
 createdAt: "2026-10-14T18:00:00Z"
 image: "/images/articles/imac-2017-macos-ssd-externe.webp"
-description: "Is your 2017 iMac slow? Install macOS on a 1 TB external SSD over USB-C, without opening the machine. Ventura, OpenCore and the limits."
+description: "Is your 2017 iMac slow? Install macOS on an external SSD over USB-C and boot from it, without opening the machine. Ventura, OpenCore and the limits."
 searchIntent: "How do you install macOS on an external SSD and boot from it to revive a slow old 2017 iMac, without opening the iMac to replace the internal drive?"
 tags: ["tutorial", "apple", "macos", "mac", "hardware", "ssd"]
 ---
 
 I had a 2017 iMac sitting abandoned in a corner. The kind of machine you stop turning on, because it takes forever to boot and opening Safari becomes an ordeal.
 
-The culprit, almost every time, is the internal drive. The good news: you don't need to open the iMac to replace it. You just install macOS on an **external SSD** and boot from it. I went with a 1 TB **Lexar SL500** and installed **macOS Ventura** on it. The result: the iMac boots faster. Here's how to do it, step by step.
+The culprit, almost every time, is the internal drive, and you don't need to open the iMac to replace it: just install macOS on an **external SSD** and boot from it. I went with a 1 TB **Lexar SL500** and installed **macOS Ventura** on it. The result: the iMac boots faster. Here's how to do it, step by step.
 
 ![A 2017 iMac booting from a 1 TB external SSD plugged in over USB-C](/images/articles/imac-2017-macos-ssd-externe.webp)
 
@@ -20,11 +20,11 @@ Unless an SSD was picked as an option at purchase, the 2017 iMac left the factor
 - a **1 TB hard drive at 5,400 rpm** on the entry-level 21.5-inch and on the 3.0 GHz 21.5-inch 4K;
 - a **Fusion Drive** (a small SSD paired with a hard drive) on the 3.4 GHz 21.5-inch 4K and on every 27-inch 5K.
 
-A 5,400 rpm hard drive is slow. Seagate advertises "up to 140 MB/s" for its own, and that's a maximum ([Seagate datasheet](https://www.seagate.com/www-content/datasheets/pdfs/barracuda-2-5-DS1907-2-1907US-en_US.pdf){target="_blank" rel="noopener"}). In practice, you get closer to 100 MB/s. But the real problem lies elsewhere: macOS constantly reads and writes thousands of small, scattered files. A hard drive is very slow at that, because its read head has to move every time. An SSD has no moving parts. That's where it makes all the difference.
+A 5,400 rpm hard drive is slow. Seagate advertises "up to 140 MB/s" for its own, and that's a maximum ([Seagate datasheet](https://www.seagate.com/www-content/datasheets/pdfs/barracuda-2-5-DS1907-2-1907US-en_US.pdf){target="_blank" rel="noopener"}). In practice, you get closer to 100 MB/s. But the real problem lies elsewhere: macOS constantly reads and writes thousands of small, scattered files. A hard drive is very slow at that, because its read head has to move every time. An SSD has no moving parts, and that's what makes the difference with all those small files.
 
 ## Why an external SSD rather than an internal one
 
-Replacing the internal drive of a 2017 iMac is possible. But the display is **glued** to the chassis. You have to unglue it, glue it back, and you risk breaking it.
+Replacing the internal drive of a 2017 iMac is possible. But the display is **glued** to the chassis. You have to pry it off, glue it back on, and you risk breaking it.
 
 An external SSD has three advantages:
 
@@ -199,7 +199,7 @@ A slow 2017 iMac isn't ready for the trash. With a 1 TB external SSD plugged in 
 
 Ventura is the simple path. OpenCore Legacy Patcher opens the door to Sequoia, at the cost of a little upkeep.
 
-And if the computer no longer interests you but the screen still looks great, there's another option: [turn the old iMac into a second screen with Sharp](/en/20260929-sharp-vieil-imac-ecran-secondaire-ethernet). For old Mac laptops, I also tried [Omarchy on my 2017 MacBook Pro](/en/20261013-retournement-de-veste-omarchy-macbook-pro-2017).
+And if the computer no longer interests you but the screen still looks great, there are two other options: [turn the old iMac into a second screen with Sharp](/en/20260929-sharp-vieil-imac-ecran-secondaire-ethernet), or [make it the monitor of a Linux PC with OpenDisplay](/en/20261030-opendisplay-vieil-imac-ecran-mac-linux). For old Mac laptops, I also tried [Omarchy on my 2017 MacBook Pro](/en/20261013-retournement-de-veste-omarchy-macbook-pro-2017).
 
 **Sources:**
 

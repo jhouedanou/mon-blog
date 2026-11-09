@@ -1,19 +1,21 @@
 ---
-title: "Apple, iOS (et les AirTags) racontent tout à votre patron"
+title: "Géolocalisation des salariés : iOS dit tout"
 image: "/images/articles/yeah.webp"
 createdAt: "2025-07-05"
 updatedAt: "2026-10-08T12:00:00Z"
 id: 2025-07-05
-description: "iPhone, MacBook, voiture de fonction avec AirTag : vos outils pro documentent vos détours. Ce que dit la loi ivoirienne, et comment éviter le piège."
+description: "Géolocalisation des salariés : iPhone, MacBook et voiture de fonction avec AirTag documentent vos détours. Ce que dit la loi ivoirienne, et le piège à éviter."
 searchIntent: "Comment les outils Apple et les équipements professionnels peuvent suivre les déplacements d’un commercial."
 tags: ["tech", "apple", "opinion"]
-summary: "La technologie ne juge pas, elle documente. À vous de faire en sorte que cette documentation raconte la bonne histoire."
+summary: "Un iPhone de service ou un AirTag dans la voiture de fonction peut dire à votre employeur où vous êtes. Ce que la technique permet, ce que dit la loi, et comment savoir si vous êtes suivi."
 ---
+Géolocalisation des salariés : votre iPhone pro, votre MacBook et la voiture de fonction (surtout avec un AirTag dedans) racontent vos trajets à votre patron, détours compris.
+
 ## iPhone, MacBook, voiture de fonction… vos outils de travail vous observent
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Is335kg_bjs?si=p8y19nzm0SQzkjRi" title="Outils pro sur iOS : témoins silencieux de votre vie numérique (vidéo YouTube)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Bonjour à tous. Ça faisait un moment que je n'avais pas mis à jour le blog. Pas par paresse, mais parce que la vie professionnelle a pris des allures de marathon ces dernières semaines. Plus de responsabilités, plus de projets, et moins d'heures de sommeil. Mais je tiens le coup, comme un coureur qui aperçoit enfin la ligne d'arrivée au loin.
+Bonjour à tous. Ça faisait un moment que je n'avais pas mis à jour le blog. Pas par paresse, mais parce que la vie professionnelle a pris des allures de marathon ces dernières semaines. Plus de responsabilités, plus de projets, et moins d'heures de sommeil. Mais je tiens le coup, et la ligne d'arrivée n'est plus très loin.
 
 Aujourd'hui, je veux aborder un sujet qui concerne beaucoup de professionnels à Abidjan : l'équipement fourni par l'entreprise. Ces outils ne sont pas seulement un kit de productivité, ils sont aussi des témoins silencieux de votre vie.
 
@@ -29,9 +31,9 @@ Et tout ça, en pensant que personne n'est au courant. C'est une erreur qui peut
 
 Que vous soyez commercial, développeur ou community manager, votre employeur vous équipe pour optimiser votre travail. Un iPhone flambant neuf, un MacBook ultra-rapide, et parfois, une voiture de fonction.
 
-À première vue, ce trio est un kit de productivité idéal. En réalité, c'est aussi un **réseau de capteurs silencieux**. Ces appareils sont des témoins numériques qui enregistrent vos trajets, vos connexions et vos habitudes.
+À première vue, ce trio est un kit de productivité idéal. En réalité, c'est aussi un **réseau de capteurs silencieux**. Ces appareils sont des témoins numériques qui enregistrent vos trajets, vos connexions et vos habitudes. Et même verrouillé, un iPhone peut encore répondre à un terminal NFC, comme l'a montré la [faille Apple Pay Visa du mode Express Transit](/fr/20260417-apple-pay-visa-faille-tap-to-pay).
 
-Oui, même la voiture. Surtout si un AirTag a été discrètement placé « pour la sécurité ». Officiellement, il est là pour protéger le véhicule. Officieusement, il peut également surveiller vos moindres détours. Discret, il ne l'est toutefois pas indéfiniment : un AirTag séparé de son propriétaire qui se déplace avec vous finit par déclencher sur iPhone l'alerte « Détection d'un AirTag suivant vos déplacements », et les téléphones sous Android 6.0 ou ultérieur préviennent eux aussi automatiquement ([assistance Apple](https://support.apple.com/fr-fr/119874){target="_blank" rel="noopener"}).
+Oui, même la voiture. Surtout si un AirTag a été discrètement placé « pour la sécurité ». Officiellement, il est là pour protéger le véhicule. Officieusement, il peut également surveiller vos moindres détours. Mais il ne reste pas discret indéfiniment : un AirTag séparé de son propriétaire qui se déplace avec vous finit par déclencher sur iPhone l'alerte « Détection d'un AirTag suivant vos déplacements », et les téléphones sous Android 6.0 ou ultérieur préviennent eux aussi automatiquement ([assistance Apple](https://support.apple.com/fr-fr/119874){target="_blank" rel="noopener"}).
 
 ## La technologie ne ment pas : l'exemple du tableau de bord
 
@@ -43,9 +45,9 @@ C'est là que la technologie ne ment pas.
 * **iCloud** : photos, documents et positions peuvent être automatiquement synchronisés.
 * **Historique horodaté** : chaque détour et chaque arrêt est enregistré, daté et géolocalisé.
 
-C'est là que le drame peut se produire. Votre supérieur vous demandera des explications, et cela peut entraîner des suspicions ou des sanctions. Et vous, vous pensiez simplement profiter d'un week-end prolongé.
+Et là, ça peut mal tourner. Votre supérieur vous demandera des explications, et cela peut entraîner des suspicions ou des sanctions. Et vous, vous pensiez simplement profiter d'un week-end prolongé.
 
-## Le cadre légal en Côte d'Ivoire : droits et devoirs
+## Géolocalisation des salariés en Côte d'Ivoire : droits et devoirs
 
 La **Loi n°2013-450** sur la protection des données et l'**ARTCI** (Autorité de Régulation des Télécommunications/TIC de Côte d'Ivoire) encadrent la surveillance des biens de l'entreprise.
 
@@ -74,7 +76,7 @@ Il n'y a pas de solution miracle, mais une approche basée sur la prudence et la
 
 ## Conclusion : la documentation ou le piège
 
-Un AirTag dans votre voiture, un iPhone dans votre poche, un MacBook dans votre sac… Ce ne sont pas que des outils. Ce sont aussi des narrateurs. Et le récit qu'ils construisent doit être en accord avec votre fiche de poste.
+Un AirTag dans votre voiture, un iPhone dans votre poche, un MacBook dans votre sac… Ce ne sont pas que des outils, ce sont aussi des narrateurs. Et leur récit a intérêt à coller à votre fiche de poste.
 
 La technologie ne juge pas, elle se contente de documenter. C'est à vous de décider si cette documentation sera votre alibi ou votre piège.
 

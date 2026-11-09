@@ -1,13 +1,13 @@
 ---
-title: "Pourquoi l'IA ne me remplacera pas (et pourquoi je ne peux plus m'en passer)"
+title: "L'IA va remplacer les développeurs ? Pas moi"
 createdAt: "2026-10-16T01:00:00Z"
 image: "/images/articles/pexels-tara-winstead-8386435.webp"
-description: "J'ai longtemps refusé l'IA. Puis un piratage nous a forcés à vibe coder une app avec Claude. La dette technique a suivi. Pourquoi l'IA ne me remplacera pas."
+description: "L'IA va-t-elle remplacer les développeurs ? J'ai longtemps refusé l'IA, puis un piratage nous a forcés à vibe coder une app avec Claude. La dette a suivi."
 searchIntent: "L'IA va-t-elle remplacer les développeurs ? Retour d'expérience d'un développeur : vibe coding en urgence avec Claude, dette technique, et usages quotidiens de l'IA."
 tags: ["IA", "développement", "opinion", "linux", "omarchy"]
 ---
 
-Avant de dire pourquoi l'IA ne me remplacera pas, il faut dire ce qu'elle est.
+L'IA va-t-elle remplacer les développeurs ? Moi, en tout cas, elle ne me remplacera pas. Mais avant de dire pourquoi, il faut dire ce qu'elle est.
 
 ## L'IA, c'est quoi ?
 
@@ -29,7 +29,7 @@ J'avais peur qu'elle me rende mauvais. J'avais peur qu'elle fasse le travail à 
 
 Puis j'ai essayé Claude. Je lui posais des questions précises. Je m'en servais pour le debug. Je gardais la main sur le code. Ça marchait bien.
 
-Mais je refusais de lui confier une application entière. Le vibe coding, je le regardais de loin. Et j'en pensais [tout le mal possible](/fr/20260423-chers-vibe-codeurs-bienvenue-dans-la-realite).
+Mais je refusais de lui confier une application entière. [Le vibe coding](/fr/20260423-chers-vibe-codeurs-bienvenue-dans-la-realite), je le regardais de loin. Et j'en pensais tout le mal possible.
 
 Puis la réalité m'a rattrapé.
 
@@ -57,7 +57,7 @@ On va me dire : avec Fable, ça aurait été mieux. Fable, c'est le modèle le p
 
 Je ne vais pas mentir : je m'en sers tous les jours.
 
-**Pour ma nièce.** Je prépare ses guides de révision avec l'IA. Elle explique souvent mieux que moi. [Je l'avais déjà dit](/fr/20250604-liaetmoi) l'année de son CEPE.
+**Pour ma nièce.** Je prépare ses guides de révision avec l'IA. Elle explique souvent mieux que moi. Je l'avais déjà dit l'année de son CEPE, en parlant de [l'IA et de ses devoirs de mathématiques](/fr/20250604-liaetmoi).
 
 **Pour le debug.** Je colle le message d'erreur. J'explique le contexte. Et on cherche ensemble. L'IA ne trouve pas toujours. Mais ça va plus vite que de lire des réponses de 2014 sur un forum.
 
@@ -67,7 +67,7 @@ Je ne vais pas mentir : je m'en sers tous les jours.
 
 ## Omarchy : je n'ai jamais été aussi heureux sous Linux
 
-Et puis il y a Omarchy, la distribution Linux de DHH. Je l'ai [installée sur mon vieux MacBook Pro de 2017](/fr/20261013-retournement-de-veste-omarchy-macbook-pro-2017). Oui, après avoir juré que je n'y toucherais pas. [Je sais](/fr/20261008-omarchy-dhh-homme-dotfiles).
+Et puis il y a Omarchy, la distribution Linux de DHH. Je l'ai [installée sur mon vieux MacBook Pro de 2017](/fr/20261013-retournement-de-veste-omarchy-macbook-pro-2017). Oui, après avoir [juré que je ne toucherais pas à Omarchy](/fr/20261008-omarchy-dhh-homme-dotfiles). Je sais.
 
 Je n'ai jamais été aussi heureux sous Linux. Linux n'est pas devenu plus simple. C'est Claude qui résout tous mes problèmes. Pas de son ? Claude trouve le bon pilote. Le Bluetooth ne marche pas bien ? Claude me donne les commandes à tester. Un thème Matrix jusqu'à l'écran de démarrage ? On l'a fait ensemble.
 
@@ -86,7 +86,7 @@ Mais regardez ce qui nous a coûté cher. Ce n'est pas d'écrire le code. Sonnet
 - savoir ce qu'on veut construire ;
 - vérifier ce que l'IA a écrit ;
 - comprendre le code six mois plus tard ;
-- être là quand ça casse.
+- [être là quand ça casse](/fr/20260707-je-suis-encore-vivant).
 
 Même quand un ancien collègue décide de tout supprimer.
 

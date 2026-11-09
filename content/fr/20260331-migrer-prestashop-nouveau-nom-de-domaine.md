@@ -1,22 +1,22 @@
 ---
-title: "Migrer un site PrestaShop vers un nouveau nom de domaine : le guide complet"
+title: "Changer de domaine PrestaShop, garder le SEO"
 image: "/images/articles/prestashop-migration-domaine.webp"
 createdAt: "2026-03-31"
-description: "Changer le nom de domaine d'une boutique PrestaShop sans tout casser : base de données, SSL, cache, redirections 301 et services tiers, étape par étape."
-updatedAt: "2026-10-08T12:00:00Z"
-searchIntent: "Comment changer le nom de domaine d’une boutique PrestaShop avec SSL, redirections 301 et cache."
+description: "Changer de domaine PrestaShop sans perdre son référencement : base de données, SSL, cache, redirections 301 et Search Console, étape par étape."
+updatedAt: "2026-11-08T12:00:00Z"
+searchIntent: "Comment changer le nom de domaine d’une boutique PrestaShop sans perdre son référencement : SSL, redirections 301, cache et Search Console ?"
 tags: ["tutoriel", "dev"]
 ---
 
-Changer de nom de domaine sur PrestaShop, c'est une opération qui fait transpirer même les développeurs expérimentés. Entre la base de données, le cache, le SSL et les redirections SEO, il y a pas mal de pièges. Voici un guide étape par étape, testé en production.
+Changer de nom de domaine sur PrestaShop, c'est une opération qui fait transpirer même les développeurs expérimentés. Entre la base de données, le cache, le SSL et les redirections SEO, il y a pas mal de pièges. Voici un guide étape par étape, testé en production, pour changer de domaine PrestaShop sans perdre son référencement.
 
-## Prérequis
+## Prérequis avant de changer de nom de domaine
 
 Avant de toucher à quoi que ce soit :
 
 - Un accès SSH au serveur (ou au minimum phpMyAdmin + FTP)
 - Une sauvegarde complète : fichiers + base de données
-- Le nouveau domaine déjà configuré côté DNS (enregistrements A et CNAME pointant vers le serveur)
+- Le nouveau domaine déjà configuré côté DNS (enregistrements A et CNAME pointant vers le serveur). S'il passe par Cloudflare, confiez-lui le domaine par ses nameservers, comme dans l'option A de [ma migration de Vercel vers Cloudflare Pages](/fr/20260402-vercel-cloudflare-pages-migration)
 - Un certificat SSL prêt à être déployé sur le nouveau domaine
 
 > **Règle d'or** : ne faites jamais cette manipulation en pleine heure de pointe. Privilégiez un créneau de faible trafic.
@@ -83,7 +83,7 @@ sudo certbot --apache -d nouveau-domaine.com -d www.nouveau-domaine.com
 sudo certbot certonly --webroot -w /var/www/nouveau-domaine -d nouveau-domaine.com
 ```
 
-Sur CyberPanel ([je raconte ici pourquoi j'y suis passé](/fr/20260327-cpanel-cyberpanel-migration)), c'est encore plus simple : **Websites > List Websites > SSL > Issue SSL**.
+Sur CyberPanel ([pourquoi je suis passé de cPanel à CyberPanel](/fr/20260327-cpanel-cyberpanel-migration)), c'est encore plus simple : **Websites > List Websites > SSL > Issue SSL**.
 
 Ensuite, activez le SSL dans le back-office PrestaShop :
 **Paramètres de la boutique > Général > Activer SSL** et **Activer SSL sur tout le site**.
@@ -95,17 +95,15 @@ PrestaShop est très agressif sur le cache. Si vous ne le videz pas, vous allez 
 ```bash
 # Supprimer le cache applicatif
 rm -rf var/cache/prod/* var/cache/dev/*
-
-# Si vous êtes sur LiteSpeed / OpenLiteSpeed
-# Purgez aussi le cache serveur
-/usr/local/lsws/bin/lswsctrl purgeall
 ```
+
+Sur LiteSpeed ou OpenLiteSpeed, ne comptez pas sur `lswsctrl` pour vider ce cache : il sert seulement à démarrer, arrêter ou recharger le serveur ([code source d'OpenLiteSpeed](https://github.com/litespeedtech/openlitespeed/blob/master/dist/bin/lswsctrl){target="_blank" rel="noopener"}). Si la boutique utilise le module LiteSpeed Cache, videz son cache depuis le back-office PrestaShop ([documentation LiteSpeed Cache pour PrestaShop](https://docs.litespeedtech.com/lscache/lscps/){target="_blank" rel="noopener"}).
 
 Vous pouvez aussi passer par le back-office : **Paramètres avancés > Performances > Vider le cache**.
 
-## Étape 5 — Redirections 301 depuis l'ancien domaine
+## Étape 5 — Redirections 301 : ne pas perdre son référencement
 
-C'est l'étape la plus importante pour le SEO. Sans redirections 301, vous perdez tout votre référencement acquis.
+C'est l'étape la plus importante pour le SEO. Sans redirections 301, vous perdez tout votre référencement acquis. Ce blog en a fait l'expérience : ce que des adresses sans redirection lui ont coûté, je le raconte dans [SEO perdu après migration : je l'ai récupéré](/fr/20261018-migration-wordpress-nuxt-referencement-perdu-recupere).
 
 Sur l'ancien domaine, placez ce `.htaccess` à la racine :
 
@@ -126,13 +124,13 @@ server {
 
 Si vous êtes sur OpenLiteSpeed, ajoutez une règle de réécriture dans le vhost ou via CyberPanel.
 
-> **Gardez ces redirections actives au minimum 6 à 12 mois.** Google met du temps à digérer un changement de domaine.
+> **Gardez ces redirections actives au moins un an.** Google met du temps à digérer un changement de domaine, et conseille de garder les redirections le plus longtemps possible, en général au moins un an ([Google Search Central](https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes?hl=fr){target="_blank" rel="noopener"}).
 
 ## Étape 6 — Mettre à jour les services tiers
 
 C'est l'étape qu'on oublie systématiquement. Faites le tour de :
 
-- **Google Search Console** : ajoutez le nouveau domaine comme propriété et utilisez l'outil *Changement d'adresse*
+- **Google Search Console** : ajoutez le nouveau domaine comme propriété et utilisez l'outil *Changement d'adresse*, une fois la redirection 301 en place ; il faut être propriétaire de l'ancienne et de la nouvelle propriété ([aide Search Console](https://support.google.com/webmasters/answer/9370220?hl=fr){target="_blank" rel="noopener"})
 - **Google Analytics / Matomo** : mettez à jour l'URL du site
 - **Google Merchant Center** : si vous faites du Shopping
 - **Modules de paiement** : mettez à jour les URLs de callback/webhook (PayPal, Stripe, CinetPay, etc.). Sans ça, les confirmations de paiement vont échouer silencieusement
@@ -157,9 +155,9 @@ Si votre PrestaShop est configuré en multistore, vérifiez **Paramètres avanc�
 
 ## « Mais qui utilise encore PrestaShop en 2026 ? »
 
-Bonne question. Et la réponse, c'est : **beaucoup plus de monde qu'on ne le croit**.
+Bonne question : **beaucoup plus de monde qu'on ne le croit**.
 
-En Afrique francophone, PrestaShop reste une solution massivement déployée. Pas par nostalgie — par pragmatisme. C'est un CMS e-commerce open source, gratuit, qui tourne sur n'importe quel hébergement mutualisé à 35 000 FCFA par mois. Pas besoin d'un abonnement Shopify en dollars dont le paiement peut être bloqué du jour au lendemain par une décision géopolitique. Pas besoin de dépendre d'une plateforme SaaS américaine qui peut décider unilatéralement de fermer les comptes d'une région entière.
+En Afrique francophone, PrestaShop reste une solution massivement déployée. Pas par nostalgie, par pragmatisme. C'est un CMS e-commerce open source, gratuit, qui tourne sur n'importe quel hébergement mutualisé à 35 000 FCFA par mois. Pas besoin d'un abonnement Shopify en dollars dont le paiement peut être bloqué du jour au lendemain par une décision géopolitique. Pas besoin de dépendre d'une plateforme SaaS américaine qui peut décider unilatéralement de fermer les comptes d'une région entière.
 
 Oui, j'ai un os en travers de la gorge envers le modèle SaaS qui a envahi le web ces dernières années. Mais je digresse... PrestaShop, c'est **ton** serveur, **ta** base de données, **tes** fichiers. Personne ne peut te couper l'accès à ta propre boutique.
 
@@ -167,11 +165,13 @@ En France et en Europe, PrestaShop motorise encore des dizaines de milliers de b
 
 Alors oui, l'interface du back-office sent bon les années 2010. Oui, la documentation est parfois un labyrinthe. Oui, on préférerait que certains modules soient gratuits plutôt qu'à 80 € sur la marketplace. Et ce système de templating est tout sauf aisé à prendre en main.
 
-Mais en 2026, dans un monde où la souveraineté numérique n'est plus un concept abstrait mais une nécessité quotidienne, avoir un outil e-commerce que tu contrôles de bout en bout — c'est un luxe que beaucoup de solutions modernes ne peuvent tout simplement pas offrir.
+Mais en 2026, alors que la souveraineté numérique est devenue une nécessité quotidienne, avoir un outil e-commerce que tu contrôles de bout en bout, c'est un luxe que beaucoup de solutions modernes ne peuvent pas offrir.
 
-PrestaShop n'est pas mort. Il est juste discret. Et parfois, c'est exactement ce dont on a besoin.
+PrestaShop n'est pas mort, il est juste discret.
 
 *Mise à jour du 8 octobre 2026 : l'étape 2 a été corrigée. Le nom de domaine n'est pas stocké dans `parameters.php` ni dans `settings.inc.php`, contrairement à ce qu'indiquait la première version, et la clé `PS_COOKIE_DOMAIN` citée à l'étape 1 n'existe pas dans PrestaShop ([code source](https://github.com/PrestaShop/PrestaShop)).*
+
+*Correction du 8 novembre 2026 : à l'étape 4, sur OpenLiteSpeed, `lswsctrl` n'a pas de commande `purgeall` ; la bonne méthode est indiquée sous la commande. À l'étape 5, la durée des redirections suit maintenant la recommandation de Google, au moins un an (au lieu de « au minimum 6 à 12 mois »), et l'outil de changement d'adresse de la Search Console est sourcé.*
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com) — fier d'appartenir à la vieille garde du E-commerce*

@@ -1,17 +1,17 @@
 ---
-title: "Comment changer le mot de passe Wi-Fi de la CanalBox de Canal+ Afrique"
+title: "CanalBox : changer le mot de passe Wi-Fi"
 createdAt: "2026-09-24T19:30:00Z"
 image: "/images/articles/pexels-userpascal-32698507.webp"
-description: "Le mot de passe de votre CanalBox est celui collé sous le routeur, et tout le quartier le connaît ? Quatre étapes sur my.canalbox.africa pour le changer seul."
+description: "Tout le quartier connaît le mot de passe Wi-Fi de votre CanalBox ? Pour le changer, quatre étapes sur my.canalbox.africa, sans appeler le service client."
 searchIntent: "Comment changer ou mettre à jour le mot de passe Wi-Fi de la CanalBox de Canal+ Afrique depuis l'interface my.canalbox.africa ?"
 tags: ["tutoriel", "afrique", "tech", "sécurité", "canalbox"]
 ---
 
-Quand on installe une CanalBox, le technicien vous laisse avec un mot de passe Wi-Fi imprimé sur une étiquette collée sous le routeur. C'est pratique le premier jour. Six mois plus tard, ce mot de passe a été donné aux cousins de passage, au voisin « juste pour une soirée », et à ce réparateur qui l'a photographié pour « tester la connexion ». Votre débit s'en ressent, et vous n'avez aucune idée de qui est connecté.
+Quand on installe une CanalBox de Canal+ Afrique, le technicien vous laisse avec un mot de passe Wi-Fi imprimé sur une étiquette collée sous le routeur. C'est pratique le premier jour. Six mois plus tard, ce mot de passe a été donné aux cousins de passage, au voisin « juste pour une soirée », et à ce réparateur qui l'a photographié pour « tester la connexion ». Votre débit s'en ressent, et vous n'avez aucune idée de qui est connecté.
 
 Le changer prend cinq minutes, et vous n'avez pas besoin d'appeler le service client. Voici comment faire.
 
-En bref : depuis un appareil connecté au Wi-Fi de la box, ouvrez my.canalbox.africa, identifiez-vous avec le numéro de série du routeur, puis allez dans **My box** > **Wi-Fi**, changez le champ **Wi-Fi Passphrase** et cliquez sur **Save**. Le détail suit.
+Depuis un appareil connecté au Wi-Fi de la box, ouvrez my.canalbox.africa, identifiez-vous avec le numéro de série du routeur, puis allez dans **My box** > **Wi-Fi**, changez le champ **Wi-Fi Passphrase** et cliquez sur **Save**.
 
 ![Un routeur Wi-Fi posé sur un bureau en bois](/images/articles/pexels-userpascal-32698507.webp)
 
@@ -22,7 +22,7 @@ Deux choses à avoir sous la main :
 - **Le numéro de série de la CanalBox.** Il est sur l'étiquette collée sous le routeur, en général à côté d'un code-barres. Retournez la box et notez-le (ou prenez-le en photo).
 - **Un appareil connecté au Wi-Fi de la CanalBox.** Téléphone, tablette ou ordinateur, peu importe, mais il doit être connecté à *ce* réseau. L'interface de gestion ne répond pas depuis la 4G ou depuis un autre réseau.
 
-## Les 4 étapes
+## Changer le mot de passe Wi-Fi de la CanalBox en 4 étapes
 
 ### 1. Ouvrir l'interface de la CanalBox
 
@@ -31,6 +31,8 @@ Connectez-vous au réseau Wi-Fi de la CanalBox, puis ouvrez cette adresse dans v
 ```
 https://my.canalbox.africa/login
 ```
+
+Tapez-la vous-même dans la barre d'adresse, plutôt que de passer par un résultat de recherche : [le premier résultat Google pour « Bing Webmaster Tools » était un site de phishing](/fr/20260618-alerte-phishing-bing-webmaster-tools).
 
 ### 2. Entrer le numéro de série
 
@@ -50,12 +52,14 @@ C'est tout. Tous les appareils qui étaient connectés sont maintenant déconnec
 
 ## Quelques conseils pour le nouveau mot de passe
 
-- **Douze caractères minimum.** Un mot de passe court se devine en quelques minutes avec un logiciel gratuit.
+- **Douze caractères minimum.** Un mot de passe court se devine en quelques minutes avec un logiciel gratuit. C'est un mot de passe deviné qui a ouvert la porte du [site WordPress piraté que j'ai dû remettre d'aplomb en août](/fr/20261020-site-wordpress-pirate-trouver-par-ou-le-pirate-est-entre).
 - **Pas votre numéro de téléphone, ni votre date de naissance.** Ce sont les premières choses qu'un voisin essaie.
 - **Une phrase plutôt qu'un mot.** « MonRizGrasDuDimanche2026 » est plus long, plus solide et plus facile à retenir que « Xk7#p2 ».
 - **Notez-le quelque part.** Dans le gestionnaire de mots de passe de votre téléphone, par exemple, pas sur un post-it collé au routeur, sinon vous revenez au point de départ.
 
 Si vous voulez aller plus loin, le même menu **Wi-Fi** permet aussi de changer le nom du réseau. Remplacer le nom par défaut par quelque chose qui ne dit pas « CanalBox » évite de signaler à tout l'immeuble quel modèle de routeur vous utilisez.
+
+Ce n'est pas le seul réglage utile de la CanalBox : j'ai dû en changer d'autres pour que [le Wi-Fi marche sous Omarchy, la distribution Linux de DHH](/fr/20261008-omarchy-dhh-homme-dotfiles), sur mon vieux MacBook Pro.
 
 ---
 

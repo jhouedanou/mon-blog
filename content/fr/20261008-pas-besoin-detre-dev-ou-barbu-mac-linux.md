@@ -1,13 +1,13 @@
 ---
-title: "Pas besoin d'être dev ou barbu pour aimer Mac et Linux"
+title: "Mac ou Linux sans être dev (ni barbu)"
 createdAt: "2026-10-08T21:00:00Z"
 image: "/images/articles/pexels-mikhail-nilov-7681016.webp"
-description: "Mac et Linux ne sont pas réservés aux développeurs barbus. Ce qui marche (démarrage, mises à jour, sécurité, Zorin OS) et ce qui fâche (prix, Wi-Fi, support)."
+description: "Mac ou Linux, sans être développeur : ce qui marche (démarrage, mises à jour, sécurité, Zorin OS) et ce qui fâche (prix, Wi-Fi, support)."
 searchIntent: "Faut-il être développeur pour utiliser un Mac ou Linux au quotidien, et quels sont les vrais avantages et limites de macOS et de Zorin OS ?"
 tags: ["opinion", "apple", "macos", "linux", "open-source"]
 ---
 
-Il y a un cliché qui a la vie dure. Le Mac, ce serait pour les graphistes et les développeurs. Linux, pour les barbus en sweat à capuche qui tapent des lignes vertes sur fond noir.
+Il y a un cliché qui a la vie dure : Mac ou Linux, c'est pour les spécialistes. Le Mac, ce serait pour les graphistes et les développeurs. Linux, pour les barbus en sweat à capuche qui tapent des lignes vertes sur fond noir.
 
 Je suis développeur, c'est vrai. Je suis également barbu. Mais ce n'est pas pour ça que j'aime ces deux systèmes. Je les aime pour une raison beaucoup plus bête : ils me laissent travailler.
 
@@ -49,7 +49,7 @@ Petit bémol : la Corbeille ne nettoie pas tout. Certaines apps laissent des fic
 
 ### Zorin OS, le Linux qui ressemble à ce que vous connaissez
 
-Si je devais conseiller une seule distribution à quelqu'un qui n'a jamais touché à Linux, ce serait [Zorin OS](https://zorin.com/os/){target="_blank" rel="noopener"}. Sa version 18 est sortie le 14 octobre 2025, le jour même de la fin du support de Windows 10, et elle a été téléchargée plus de 3,3 millions de fois en six mois ([Zorin](https://blog.zorin.com/2026/04/15/zorin-os-18.1-is-released/){target="_blank" rel="noopener"}). Ce n'est pas un hasard.
+Si je devais conseiller une seule distribution à quelqu'un qui n'a jamais touché à Linux, ce serait [Zorin OS](https://zorin.com/os/){target="_blank" rel="noopener"}. Sa version 18 est sortie le 14 octobre 2025, le jour même de la fin du support de Windows 10, et elle a été téléchargée plus de 3,3 millions de fois en six mois ([Zorin](https://blog.zorin.com/2026/04/15/zorin-os-18.1-is-released/){target="_blank" rel="noopener"}).
 
 Ce que ça donne concrètement :
 
@@ -69,7 +69,7 @@ C'est là que Linux est imbattable. Tout se change : l'apparence, le bureau, le 
 
 … alors rejoignez le côté dev de la Force. Linux fait tourner 62,7 % des sites web dont on connaît le système ([W3Techs](https://w3techs.com/technologies/details/os-linux){target="_blank" rel="noopener"}) et la totalité des 500 superordinateurs les plus puissants du monde depuis 2017 ([TOP500](https://www.top500.org/statistics/details/osfam/1/){target="_blank" rel="noopener"}). Même Microsoft a fini par intégrer un vrai Linux dans Windows, avec WSL, et l'a passé en open source en 2025 ([Microsoft](https://blogs.windows.com/windowsdeveloper/2025/05/19/the-windows-subsystem-for-linux-is-now-open-source/){target="_blank" rel="noopener"}). Si l'ennemi d'hier s'y met, c'est que l'outil est bon.
 
-Apprendre Linux sur son ordinateur de tous les jours, c'est apprendre l'environnement sur lequel tourne une bonne partie d'internet. Et si vous voulez aller plus loin dans la personnalisation, il y a de quoi faire : j'ai fini par [installer Omarchy sur mon vieux MacBook](/fr/20261008-omarchy-dhh-homme-dotfiles).
+Apprendre Linux sur son ordinateur de tous les jours, c'est apprendre l'environnement sur lequel tourne une bonne partie d'internet. Et pour aller plus loin dans la personnalisation, il y a [Omarchy, que je boycottais pourtant](/fr/20261008-omarchy-dhh-homme-dotfiles) et que j'ai fini par installer sur mon vieux MacBook.
 
 ## Ce qui fâche
 

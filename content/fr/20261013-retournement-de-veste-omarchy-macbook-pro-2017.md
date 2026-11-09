@@ -1,29 +1,29 @@
 ---
-title: "Omarchy sur mon MacBook Pro 2017 : le bilan après trois jours"
+title: "Omarchy sur MacBook Pro 2017 : le bilan"
 createdAt: "2026-10-13T18:00:00Z"
 image: "/images/articles/omarchy-macbook-pro-2017-deux-ecrans.webp"
-description: "Trois jours d'Omarchy, le Linux de DHH, sur mon MacBook Pro 2017 : ce qui marche, ce qui coince (Bluetooth, écrans externes), et ma conscience."
+description: "Omarchy sur MacBook Pro 2017, trois jours après : performances, son, Hyprland, ce qui coince (Bluetooth, écrans externes), et ma conscience."
 searchIntent: "Comment se passe Omarchy (Arch Linux + Hyprland) au quotidien sur un MacBook Pro Intel de 2017 : performances, son, Bluetooth, écrans externes, et que penser de son créateur DHH ?"
 tags: ["linux", "omarchy", "hyprland", "apple", "open-source", "opinion"]
 ---
 
 Je vais commencer par le plus difficile : j'ai retourné ma veste.
 
-Jeudi 8 octobre, j'ai publié un billet pour dire que je ne toucherais pas à Omarchy, la distribution Linux de DHH, à cause de ce qu'il écrit sur l'immigration. Samedi 10, je l'installais sur mon vieux MacBook Pro.
+Jeudi 8 octobre, j'ai publié un billet pour dire que je ne toucherais pas à Omarchy, la distribution Linux de DHH, à cause de ce qu'il écrit sur l'immigration. Samedi 10, je l'installais sur mon vieux MacBook Pro 2017.
 
 Il faut parfois savoir reconnaître ses torts. Et reconnaître quand on a cédé à la peur. La peur de cautionner, en l'occurrence. J'avais mélangé deux questions : ce que vaut l'outil, et ce que je pense de son auteur. Et j'avais tranché la première sans jamais l'avoir essayé.
 
-J'ai déjà raconté [pourquoi j'ai changé d'avis](/fr/20261008-omarchy-dhh-homme-dotfiles), avec vos réactions et les réglages qu'il m'a fallu pour faire revivre le MacBook. Ici, place au bilan : voilà ce que donnent trois jours d'Omarchy sur un MacBook Pro de 2017.
+J'ai déjà raconté [pourquoi j'ai renoncé à boycotter Omarchy](/fr/20261008-omarchy-dhh-homme-dotfiles), avec vos réactions et les réglages qu'il m'a fallu pour faire revivre le MacBook. Ici, je fais le bilan de trois jours d'Omarchy sur un MacBook Pro de 2017.
 
 ## Omarchy, c'est quoi ?
 
 Omarchy est une distribution basée sur Arch Linux, avec Hyprland comme bureau. Pas de fenêtres qu'on traîne à la souris : elles se rangent toutes seules en mosaïque, et on les pilote au clavier. Tout est installé et réglé d'avance, des raccourcis aux thèmes. La version actuelle est la 4.0.4, sortie le 15 septembre ([GitHub](https://github.com/omacom/omarchy/releases){target="_blank" rel="noopener"}).
 
-Bonne surprise pour les vieux Mac : le manuel annonce une prise en charge intégrée des Mac Intel. L'installeur ajoute tout seul les pilotes Wi-Fi Broadcom et le pilote du clavier des MacBook Pro 2016 et 2017 ([manuel d'Omarchy](https://github.com/omacom/omarchy/blob/v4.0.4/manual/44-mac-support.md){target="_blank" rel="noopener"}). Quand on se souvient de mon [Wi-Fi aux abonnés absents sous Zorin OS](/fr/20261008-pas-besoin-detre-dev-ou-barbu-mac-linux), ça fait plaisir à lire. Chez moi, il a quand même fallu toucher aux réglages de ma CanalBox, comme je l'ai [raconté ici](/fr/20261008-omarchy-dhh-homme-dotfiles).
+Bonne surprise pour les vieux Mac : le manuel annonce une prise en charge intégrée des Mac Intel. L'installeur ajoute tout seul les pilotes Wi-Fi Broadcom et le pilote du clavier des MacBook Pro 2016 et 2017 ([manuel d'Omarchy](https://github.com/omacom/omarchy/blob/v4.0.4/manual/44-mac-support.md){target="_blank" rel="noopener"}). Quand on se souvient de mon [Wi-Fi aux abonnés absents sous Zorin OS](/fr/20261008-pas-besoin-detre-dev-ou-barbu-mac-linux), ça fait plaisir à lire. Chez moi, il a quand même fallu [toucher aux réglages de ma CanalBox](/fr/20261008-omarchy-dhh-homme-dotfiles), comme je l'ai déjà raconté.
 
 Attention quand même : Omarchy efface tout le disque. Ce n'est pas un système qu'on installe à côté de macOS sur un Mac.
 
-## Ce qui marche
+## Omarchy sur MacBook Pro 2017 : ce qui marche
 
 ### Le MacBook respire
 
@@ -41,7 +41,7 @@ Au bout de deux jours, on prend ses marques. Une application par espace de trava
 
 ### Configurable à volonté
 
-Tout se configure. Absolument tout. Les thèmes changent d'un coup le terminal, le navigateur, la barre, les notifications et l'écran de verrouillage. Omarchy en fournit 22, et on peut créer les siens dans `~/.config/omarchy/themes/` ([manuel d'Omarchy](https://github.com/omacom/omarchy/blob/v4.0.4/manual/06-themes.md){target="_blank" rel="noopener"}).
+Tout se configure. Les thèmes changent d'un coup le terminal, le navigateur, la barre, les notifications et l'écran de verrouillage. Omarchy en fournit 22, et on peut créer les siens dans `~/.config/omarchy/themes/` ([manuel d'Omarchy](https://github.com/omacom/omarchy/blob/v4.0.4/manual/06-themes.md){target="_blank" rel="noopener"}).
 
 Évidemment, je n'ai pas résisté. Avec Claude, j'ai monté mon thème Matrix, jusqu'à l'écran de démarrage : la pluie de caractères verts tombe pendant que je tape le mot de passe qui déchiffre le disque. Le thème Plymouth est en ligne, gratuit et sous licence MIT : [omarchy-matrix-plymouth](https://github.com/jhouedanou/omarchy-matrix-plymouth){target="_blank" rel="noopener"}. Il reprend les couleurs du thème Omarchy actif, donc il ne reste pas forcément vert.
 
@@ -51,7 +51,7 @@ Tout se configure. Absolument tout. Les thèmes changent d'un coup le terminal, 
 
 Premier pépin : pas de son. Les haut-parleurs restaient muets, alors que le système affichait une sortie audio tout à fait normale.
 
-C'est un problème connu des MacBook Pro 2016 et 2017. Leur puce audio Cirrus Logic n'est pas gérée correctement par le pilote livré avec Linux ([Arch Wiki](https://wiki.archlinux.org/title/Laptop/Apple){target="_blank" rel="noopener"}). La solution, c'est un pilote communautaire, [snd_hda_macbookpro](https://github.com/davidjo/snd_hda_macbookpro){target="_blank" rel="noopener"}. Je l'ai installé, et le son est revenu. J'ai détaillé l'installation pas à pas dans [le billet précédent](/fr/20261008-omarchy-dhh-homme-dotfiles). Sur Arch, il existe aussi en paquet AUR :
+C'est un problème connu des MacBook Pro 2016 et 2017. Leur puce audio Cirrus Logic n'est pas gérée correctement par le pilote livré avec Linux ([Arch Wiki](https://wiki.archlinux.org/title/Laptop/Apple){target="_blank" rel="noopener"}). La solution, c'est un pilote communautaire, [snd_hda_macbookpro](https://github.com/davidjo/snd_hda_macbookpro){target="_blank" rel="noopener"}. Je l'ai installé, et le son est revenu. J'ai détaillé [l'installation du pilote, pas à pas](/fr/20261008-omarchy-dhh-homme-dotfiles) dans le billet précédent. Sur Arch, il existe aussi en paquet AUR :
 
 ```bash
 yay -S snd-hda-macbookpro-dkms-git
@@ -114,7 +114,7 @@ Voilà la conclusion à laquelle je ne m'attendais pas. Depuis samedi, j'utilise
 
 Le M1, lui, me semble plus lent depuis que j'ai installé macOS 27 « Golden Gate », comme je le racontais dans mon [billet sur Mac et Linux](/fr/20261008-pas-besoin-detre-dev-ou-barbu-mac-linux). Pendant ce temps, la machine qu'Apple a lâchée après macOS Ventura ouvre Chrome sans souffler, change de thème en une seconde et affiche la pluie de *Matrix* au démarrage. On peut garder une vieille machine en vie sans demander la permission à personne. C'est déjà ce que je faisais avec mon [vieil iMac recyclé en écran secondaire](/fr/20260929-sharp-vieil-imac-ecran-secondaire-ethernet).
 
-Reste le grand test : l'imprimante. Elle me regarde. Je la regarde. Je n'ai pas encore eu le temps de m'y frotter.
+Reste le grand test : [l'imprimante thermique](/fr/20261021-imprimante-thermique-netum-a401s-linux-omarchy-claude). Elle me regarde. Je la regarde. Je n'ai pas encore eu le temps de m'y frotter.
 
 Sur le papier, Omarchy est prêt : le service d'impression CUPS est installé et activé, et on ajoute une imprimante en cherchant « Print Settings » dans le menu ([FAQ d'Omarchy](https://github.com/omacom/omarchy/blob/v4.0.4/manual/46-faq.md){target="_blank" rel="noopener"}). Petit bémol : depuis la version 4.0.2, la détection automatique des imprimantes réseau est désactivée « temporairement » ([notes de version](https://github.com/omacom/omarchy/releases/tag/v4.0.2){target="_blank" rel="noopener"}). Il faudra peut-être lui donner l'adresse à la main.
 

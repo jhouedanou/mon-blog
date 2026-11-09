@@ -1,6 +1,7 @@
 ---
-title: "Koala Sampler : gratuit sur Mac, et largement suffisant pour faire du boom bap"
+title: "Koala Sampler gratuit sur Mac : boom bap validé"
 createdAt: "2026-08-22T15:15:00Z"
+updatedAt: "2026-11-08"
 image: "/images/articles/koala.webp"
 description: "Koala Sampler est gratuit sur Mac, parfaitement légal et largement suffisant pour faire du boom bap. Cinq morceaux faits avec et un projet source à télécharger."
 searchIntent: "Koala Sampler est-il gratuit sur Mac, que vaut-il pour faire des beats boom bap, et où écouter des morceaux faits avec ?"
@@ -9,17 +10,17 @@ tags: ["musique", "outils", "mac"]
 
 Ceux qui suivent ce blog se souviennent peut-être de [l'interlude de juillet](/fr/20260707-je-suis-encore-vivant#interlude-sampler-pendant-que-les-conteneurs-chauffent) : un déploiement qui traînait, une barre de progression que je regardais avancer, et Koala Sampler relancé pour occuper le temps mort. Deux instrumentaux étaient nés pendant que les serveurs faisaient leur travail.
 
-Depuis, le temps mort est devenu une habitude, et Koala est passé du bouche-trou à l'outil principal. Je vous raconte la suite.
+Depuis, le temps mort est devenu une habitude, et Koala Sampler, gratuit sur Mac, est passé du bouche-trou à l'outil principal de mon boom bap. Je vous raconte la suite.
 
-## Pourquoi Koala ?
+## Pourquoi Koala Sampler sur Mac ?
 
-D'abord parce qu'il est gratuit sur Mac. Pas en version d'essai, pas avec un crack : gratuit sur le Mac App Store, signé par son développeur Marek Bereza (elf audio). La version mobile coûte environ 5 euros si vous voulez sampler en déplacement.
+D'abord parce qu'il est gratuit sur Mac. Pas en version d'essai, pas avec un crack : gratuit sur le Mac App Store, signé par son développeur Marek Bereza (elf audio). La version iPhone et iPad coûte 5,99 € sur l'[App Store](https://apps.apple.com/fr/app/koala-sampler-beat-maker/id1449584007){target="_blank" rel="noopener"} si vous voulez sampler en déplacement, et elle existe aussi sur Android.
 
 Ensuite parce qu'il fait exactement ce qu'il faut, dans l'esprit d'un sampleur mobile : jusqu'à 64 samples par projet, un séquenceur avec swing, la séparation de stems par IA, et même le support des plugins VST3 et AUv3 sur Mac. L'interface est minimaliste, et c'est voulu. Pas de pages de réglages, pas de micro-édition, on reste concentré sur le beat.
 
 Enfin, parce que c'est une alternative pour ceux qui achètent des « licences » FL Studio ou Cubase à 5 000 francs dans les groupes Facebook. Vous payez pour un crack, souvent farci de logiciels espions, qui aspirera vos mots de passe et votre mobile money avant même votre premier beat. Un vrai sampleur, légal et propre, coûte zéro franc, juste ici.
 
-## La preuve en musique
+## La preuve en musique : cinq morceaux boom bap
 
 Du boom bap, évidemment : batteries poussiéreuses, samples découpés à la main, ambiance très années 90. C'est exactement ce pour quoi ce sampleur est fait.
 
@@ -68,7 +69,11 @@ Pour ceux qui veulent voir à quoi ressemble le logiciel avant de l'installer, v
 
 ## Pour commencer
 
-Koala Sampler est disponible gratuitement sur le [Mac App Store](https://apps.apple.com/fr/app/koala-sampler/id1479881366?mt=12), et la documentation se trouve sur [koalasampler.com](https://www.koalasampler.com). Si vous en sortez quelque chose, envoyez-le-moi 🙂
+Koala Sampler est disponible gratuitement sur le [Mac App Store](https://apps.apple.com/fr/app/koala-sampler/id1479881366?mt=12), et la documentation se trouve sur [koalasampler.com](https://www.koalasampler.com). Passez par le Store, pas par un lien trouvé au hasard : même [le premier résultat Google peut être un site de phishing](/fr/20260618-alerte-phishing-bing-webmaster-tools). Si vous en sortez quelque chose, envoyez-le-moi 🙂
+
+Vous cherchez plutôt un logiciel de musique complet, façon FL Studio ? J'ai testé depuis [Lemon Studio, le clone gratuit de FL Studio](/fr/20261026-lemon-studio-clone-fl-studio), et je vous dis quel logiciel gratuit choisir à la place.
+
+*Correction du 8 novembre 2026 : la version iPhone et iPad coûte 5,99 € sur l'App Store français, et non « environ 5 euros ». Elle existe aussi sur Android.*
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com)*
