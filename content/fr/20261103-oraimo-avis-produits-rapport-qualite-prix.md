@@ -1,6 +1,7 @@
 ---
 title: "Avis produits Oraimo : tout, tout, tout"
 createdAt: "2026-11-09T19:05:00Z"
+updatedAt: "2026-11-09T19:19:00Z"
 image: "/images/articles/oraimo-produits.webp"
 description: "Mon avis sur les produits Oraimo : batterie, écouteurs, air fryer, balai, mug. Ceux que je rachèterais, et ceux que je ne rachèterais pas. Sans commission."
 searchIntent: "Les produits Oraimo (écouteurs, batterie externe, électroménager, ménage, vêtements) valent-ils vraiment leur prix ?"
@@ -23,9 +24,9 @@ Mon premier produit Oraimo, et donc mon premier contact avec la marque, est une 
 
 ![Écouteurs filaires intra-auriculaires Oraimo CONCH, noirs, avec une télécommande sur le fil et une prise jack 3,5 mm](/images/articles/oraimo-conch-2.webp)
 
-Puis un jour, en allant faire les courses, j'ai perdu le boîtier de charge de mes Sony WF-C500. (Au passage, impossible de les recharger avec le boîtier d'autres écouteurs Sony : j'ai essayé avec celui des WF-1000XM4.) Je cherchais une solution pas trop chère, alors j'ai acheté les [Oraimo SpaceBuds 2](https://ci.oraimo.com/product/oraimo-spacebuds-2-true-wireless-earbuds-otw-631-spacegrey){target="_blank" rel="noopener"}. Ils sont meilleurs que je ne le pensais, même si la réduction du bruit ambiant est passable. L'autonomie, elle, est bonne. Et surtout, ils ont survécu à un passage en machine (cycle Quick 45 minutes, 40 °C).
+Puis un jour, en allant faire les courses, j'ai perdu le boîtier de charge de mes Sony WF-C500. (Au passage, impossible de les recharger avec le boîtier d'autres écouteurs Sony : j'ai essayé avec celui des WF-1000XM4.) Je cherchais une solution pas trop chère, alors j'ai acheté les [Oraimo SpaceBuds](https://oraimo.com/en/product/beyond-sound-spacebuds){target="_blank" rel="noopener"}, le premier modèle. Ils sont meilleurs que je ne le pensais, même si la réduction du bruit ambiant est passable. L'autonomie, elle, est bonne. Et surtout, ils ont survécu à un passage en machine (cycle Quick 45 minutes, 40 °C).
 
-![Écouteurs sans fil Oraimo SpaceBuds 2 gris sidéral, posés dans leur boîtier de charge ouvert](/images/articles/oraimo-spacebuds-2.webp)
+![Écouteurs sans fil Oraimo SpaceBuds noirs, posés devant leur boîtier de charge ouvert, éclairé d'un anneau bleu](/images/articles/oraimo-spacebuds.webp)
 
 ### La batterie externe
 
@@ -53,7 +54,7 @@ Une fois le repas cuisiné, il faut nettoyer. Pour la vaisselle, j'ai l'[Oraimo 
 
 ![Brosse électrique rotative sans fil Oraimo, blanche, entourée de ses cinq têtes de rechange](/images/articles/oraimo-ultracleaner-scrubber.webp)
 
-Et j'ai le [MistGlide](https://ci.oraimo.com/product/oraimo-mistglide-multi-surface-use-deep-cleaning-spray-mop--ohcs-001){target="_blank" rel="noopener"}, qui est peut-être le balai à spray qui m'a duré le plus longtemps.
+Et j'ai le [MistGlide](https://ci.oraimo.com/product/oraimo-mistglide-multi-surface-use-deep-cleaning-spray-mop--ohcs-001){target="_blank" rel="noopener"}. Je l'ai depuis 6 mois : c'est le balai à spray qui m'a duré le plus longtemps.
 
 ![Balai à spray Oraimo MistGlide, avec son réservoir fixé sur le manche et sa tête plate en microfibre](/images/articles/oraimo-mistglide.webp)
 
@@ -77,9 +78,9 @@ J'ai aussi les polos EcoLuxe, à 9 000 FCFA. Ils sont confortables. Le bémol 
 
 ## Je ne rachète pas
 
-J'ai le casque Oraimo BoomPop 2. C'est un bon casque, avec une bonne autonomie, mais un son qui n'a rien d'exceptionnel, tout comme sa réduction de bruit. Pire : les coussinets en similicuir sont en train de s'effriter.
+J'ai le casque Oraimo BoomPop Pro. C'est un bon casque, avec une bonne autonomie, mais un son qui n'a rien d'exceptionnel, tout comme sa réduction de bruit. Pire : les coussinets en similicuir sont en train de s'effriter.
 
-![Casque sans fil Oraimo BoomPop 2, noir avec des anneaux vert fluo autour des écouteurs](/images/articles/oraimo-boompop-2.webp)
+![Casque sans fil Oraimo BoomPop Pro, noir avec des touches dorées sur l'arceau](/images/articles/oraimo-boompop-pro.webp)
 
 J'adore les montres connectées. J'ai déjà parlé de l'Oraimo Watch Nova AM dans [mon comparatif avec l'Infinix Watch 3](/fr/20251225-infinix-ou-oraimo). Aujourd'hui, je ne porte plus ni l'une ni l'autre : j'ai une [Google Pixel Watch](/fr/20260311-comment-allumer-lecran-pixel-watch-notifications), qui est meilleure.
 
@@ -90,24 +91,24 @@ J'adore les montres connectées. J'ai déjà parlé de l'Oraimo Watch Nova AM da
 | Produit | Prix payé (FCFA) | Je rachète ? | En une phrase |
 |---|---|---|---|
 | Écouteurs CONCH | 2 000 à 3 000 | Oui | Solides, avec des basses un peu trop fortes. |
-| Écouteurs SpaceBuds 2 | 20 000 | Oui | Bonne autonomie, réduction de bruit passable, et ils ont survécu à la machine à laver. |
+| Écouteurs SpaceBuds | 20 000 | Oui | Bonne autonomie, réduction de bruit passable, et ils ont survécu à la machine à laver. |
 | Batterie PowerJet 130 | 32 500 | Oui | Très bonne, et elle gère bien en déplacement. |
 | Mug ThermoGo | 7 000 | Oui | Un mug isotherme de 750 ml, qui garde le frais plus d'une demi-journée. |
 | Bouteille MegaDrink 1200 | 12 000 | Oui | Une bouteille isotherme de 1,2 L, étanche, qui garde le frais plus d'une demi-journée. |
 | Friteuse SmartAirFryer | 30 000 | Oui | Aucune odeur de plastique brûlé, et elle se nettoie très facilement. |
 | Brosse rotative Ultra Cleaner Scrubber | 9 000 | Oui | Elle dégraisse casseroles et comptoirs. |
-| Balai MistGlide | 7 000 | Oui | Le balai à spray qui m'a duré le plus longtemps. |
+| Balai MistGlide | 7 000 | Oui | Le balai à spray qui m'a duré le plus longtemps : 6 mois à ce jour. |
 | Brosse à dents MagniSonic | 5 000 | Oui | Très efficace. |
 | T-shirts NanoShield | 7 000 | Oui | Confortables, ils résistent aux taches. |
 | Claquettes CrestFrom | 4 900 | Oui | Très confortables, et très inspirées des Yeezy Foam Runner. |
 | Plaque FlexiCooker | 30 000 | Oui, avec un bémol | Certains programmes consomment plus d'électricité que d'autres. |
 | Polos EcoLuxe | 9 000 | Oui, avec un bémol | Confortables, mais en tailles chinoises, donc plus petits. |
-| Casque BoomPop 2 | 25 000 | Non | Son et réduction de bruit ordinaires, coussinets qui s'effritent. |
+| Casque BoomPop Pro | 25 000 | Non | Son et réduction de bruit ordinaires, coussinets qui s'effritent. |
 | Montre Watch Nova AM | 15 000 | Non | Ma Google Pixel Watch est meilleure. |
 
 Ce sont les prix que j'ai payés à Abidjan, sur Glovo, chez un vendeur à deux rues de chez moi ou sur le site d'Oraimo. En ligne, ils changent souvent avec les promotions.
 
-Presque tous ces produits sont de bonne qualité pour leur petit prix. Les exceptions : le casque BoomPop 2 et la Watch Nova AM.
+Presque tous ces produits sont de bonne qualité pour leur petit prix. Les exceptions : le casque BoomPop Pro et la Watch Nova AM.
 
 _Images : Oraimo._
 
