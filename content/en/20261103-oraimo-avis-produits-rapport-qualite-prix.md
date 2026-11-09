@@ -88,23 +88,27 @@ I love smartwatches. I've already written about the Oraimo Watch Nova AM in [my 
 
 ## My Oraimo review, in short
 
-| Product | Would I buy it again? | In one sentence |
-|---|---|---|
-| CONCH earphones | Yes | Sturdy, with slightly too much bass, for 2,000 to 3,000 CFA francs. |
-| SpaceBuds 2 earbuds | Yes | Good battery life, so-so noise cancellation, and they survived the washing machine. |
-| PowerJet 130 power bank | Yes | Very good, and it handles life on the move well. |
-| ThermoGo mug | Yes | A 750 ml insulated mug that keeps drinks cold for more than half a day. |
-| MegaDrink 1200 bottle | Yes | A 1.2 L leak-proof insulated bottle that keeps drinks cold for more than half a day. |
-| SmartAirFryer | Yes | No smell of burnt plastic, and very easy to clean. |
-| Ultra Cleaner Scrubber spin brush | Yes | It degreases pots and kitchen counters. |
-| MistGlide mop | Yes | The spray mop that has lasted me the longest. |
-| MagniSonic toothbrush | Yes | Works very well. |
-| NanoShield T-shirts | Yes | Comfortable and stain-resistant, for 7,000 CFA francs. |
-| CrestFrom slides | Yes | Heavily inspired by the Yeezy Foam Runner. |
-| FlexiCooker hot plate | Yes, with a catch | Some programmes use more electricity than others. |
-| EcoLuxe polo shirts | Yes, with a catch | Comfortable, for 9,000 CFA francs, but in Chinese sizes, so smaller. |
-| BoomPop 2 headphones | No | Ordinary sound and noise cancellation, flaking ear pads. |
-| Watch Nova AM | No | My Google Pixel Watch is better. |
+<!-- TO ADD: price paid for the FlexiCooker and the Watch Nova AM. -->
+
+| Product | Price paid (CFA francs) | Would I buy it again? | In one sentence |
+|---|---|---|---|
+| CONCH earphones | 2,000 to 3,000 | Yes | Sturdy, with slightly too much bass. |
+| SpaceBuds 2 earbuds | 20,000 | Yes | Good battery life, so-so noise cancellation, and they survived the washing machine. |
+| PowerJet 130 power bank | 32,500 | Yes | Very good, and it handles life on the move well. |
+| ThermoGo mug | 7,000 | Yes | A 750 ml insulated mug that keeps drinks cold for more than half a day. |
+| MegaDrink 1200 bottle | 12,000 | Yes | A 1.2 L leak-proof insulated bottle that keeps drinks cold for more than half a day. |
+| SmartAirFryer | 30,000 | Yes | No smell of burnt plastic, and very easy to clean. |
+| Ultra Cleaner Scrubber spin brush | 9,000 | Yes | It degreases pots and kitchen counters. |
+| MistGlide mop | 7,000 | Yes | The spray mop that has lasted me the longest. |
+| MagniSonic toothbrush | 5,000 | Yes | Works very well. |
+| NanoShield T-shirts | 7,000 | Yes | Comfortable and stain-resistant. |
+| CrestFrom slides | 4,900 | Yes | Heavily inspired by the Yeezy Foam Runner. |
+| FlexiCooker hot plate | — | Yes, with a catch | Some programmes use more electricity than others. |
+| EcoLuxe polo shirts | 9,000 | Yes, with a catch | Comfortable, but in Chinese sizes, so smaller. |
+| BoomPop 2 headphones | 25,000 | No | Ordinary sound and noise cancellation, flaking ear pads. |
+| Watch Nova AM | — | No | My Google Pixel Watch is better. |
+
+These are the prices I paid in Abidjan, on Glovo, at a shop two streets from my place, or on Oraimo's website. Online prices change often with promotions.
 
 Almost all of these products are good quality for their low price. The exceptions: the BoomPop 2 headphones and the Watch Nova AM.
 

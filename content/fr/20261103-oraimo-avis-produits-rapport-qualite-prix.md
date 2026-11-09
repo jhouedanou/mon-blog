@@ -88,23 +88,27 @@ J'adore les montres connectées. J'ai déjà parlé de l'Oraimo Watch Nova AM da
 
 ## Mon avis sur Oraimo, en résumé
 
-| Produit | Je rachète ? | En une phrase |
-|---|---|---|
-| Écouteurs CONCH | Oui | Solides, avec des basses un peu trop fortes, pour 2 000 à 3 000 FCFA. |
-| Écouteurs SpaceBuds 2 | Oui | Bonne autonomie, réduction de bruit passable, et ils ont survécu à la machine à laver. |
-| Batterie PowerJet 130 | Oui | Très bonne, et elle gère bien en déplacement. |
-| Mug ThermoGo | Oui | Un mug isotherme de 750 ml, qui garde le frais plus d'une demi-journée. |
-| Bouteille MegaDrink 1200 | Oui | Une bouteille isotherme de 1,2 L, étanche, qui garde le frais plus d'une demi-journée. |
-| Friteuse SmartAirFryer | Oui | Aucune odeur de plastique brûlé, et elle se nettoie très facilement. |
-| Brosse rotative Ultra Cleaner Scrubber | Oui | Elle dégraisse casseroles et comptoirs. |
-| Balai MistGlide | Oui | Le balai à spray qui m'a duré le plus longtemps. |
-| Brosse à dents MagniSonic | Oui | Très efficace. |
-| T-shirts NanoShield | Oui | Confortables, ils résistent aux taches, pour 7 000 FCFA. |
-| Claquettes CrestFrom | Oui | Très inspirées des Yeezy Foam Runner. |
-| Plaque FlexiCooker | Oui, avec un bémol | Certains programmes consomment plus d'électricité que d'autres. |
-| Polos EcoLuxe | Oui, avec un bémol | Confortables, pour 9 000 FCFA, mais en tailles chinoises, donc plus petits. |
-| Casque BoomPop 2 | Non | Son et réduction de bruit ordinaires, coussinets qui s'effritent. |
-| Montre Watch Nova AM | Non | Ma Google Pixel Watch est meilleure. |
+<!-- À PRÉCISER : prix payé pour la FlexiCooker et la Watch Nova AM. -->
+
+| Produit | Prix payé (FCFA) | Je rachète ? | En une phrase |
+|---|---|---|---|
+| Écouteurs CONCH | 2 000 à 3 000 | Oui | Solides, avec des basses un peu trop fortes. |
+| Écouteurs SpaceBuds 2 | 20 000 | Oui | Bonne autonomie, réduction de bruit passable, et ils ont survécu à la machine à laver. |
+| Batterie PowerJet 130 | 32 500 | Oui | Très bonne, et elle gère bien en déplacement. |
+| Mug ThermoGo | 7 000 | Oui | Un mug isotherme de 750 ml, qui garde le frais plus d'une demi-journée. |
+| Bouteille MegaDrink 1200 | 12 000 | Oui | Une bouteille isotherme de 1,2 L, étanche, qui garde le frais plus d'une demi-journée. |
+| Friteuse SmartAirFryer | 30 000 | Oui | Aucune odeur de plastique brûlé, et elle se nettoie très facilement. |
+| Brosse rotative Ultra Cleaner Scrubber | 9 000 | Oui | Elle dégraisse casseroles et comptoirs. |
+| Balai MistGlide | 7 000 | Oui | Le balai à spray qui m'a duré le plus longtemps. |
+| Brosse à dents MagniSonic | 5 000 | Oui | Très efficace. |
+| T-shirts NanoShield | 7 000 | Oui | Confortables, ils résistent aux taches. |
+| Claquettes CrestFrom | 4 900 | Oui | Très inspirées des Yeezy Foam Runner. |
+| Plaque FlexiCooker | — | Oui, avec un bémol | Certains programmes consomment plus d'électricité que d'autres. |
+| Polos EcoLuxe | 9 000 | Oui, avec un bémol | Confortables, mais en tailles chinoises, donc plus petits. |
+| Casque BoomPop 2 | 25 000 | Non | Son et réduction de bruit ordinaires, coussinets qui s'effritent. |
+| Montre Watch Nova AM | — | Non | Ma Google Pixel Watch est meilleure. |
+
+Ce sont les prix que j'ai payés à Abidjan, sur Glovo, chez un vendeur à deux rues de chez moi ou sur le site d'Oraimo. En ligne, ils changent souvent avec les promotions.
 
 Presque tous ces produits sont de bonne qualité pour leur petit prix. Les exceptions : le casque BoomPop 2 et la Watch Nova AM.
 
