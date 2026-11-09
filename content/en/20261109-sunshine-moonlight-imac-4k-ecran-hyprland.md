@@ -4,13 +4,16 @@ createdAt: "2026-11-09T12:00:00Z"
 draft: true
 image: "/images/articles/imac-2017-macos-ssd-externe.webp"
 description: "No Target Display Mode on the 2017 4K iMac? Sunshine and Moonlight turn it into the monitor of a Hyprland PC, over a Thunderbolt cable. Step by step."
+summary: "The 2017 Retina 4K iMac has no Target Display Mode. With Sunshine on a Hyprland PC, Moonlight on the iMac and a Thunderbolt cable, it still becomes a second screen, with sound and its own keyboard."
 searchIntent: "How can I use a 2017 Retina 4K iMac, which has no Target Display Mode, as the monitor of a Linux PC (Hyprland, Omarchy) with Sunshine, Moonlight and a Thunderbolt cable?"
 tags: ["tutorial", "apple", "macos", "mac", "linux", "omarchy", "open-source", "hardware"]
 ---
 
 Yes, I know, I keep coming back to this, but I just think this computer is too beautiful to leave it gathering dust.
 
-After [Sharp](/en/20260929-sharp-vieil-imac-ecran-secondaire-ethernet), the [external SSD](/en/20261014-installer-macos-ssd-externe-imac-2017) and [OpenDisplay](/en/20261030-opendisplay-vieil-imac-ecran-mac-linux), here is a fourth post about my 2017 21.5-inch Retina 4K iMac. The goal: make it the monitor of my 2017 MacBook Pro running [Omarchy](/en/20261013-retournement-de-veste-omarchy-macbook-pro-2017). The tools: **Sunshine** on the MacBook, **Moonlight** on the iMac, and a Thunderbolt cable between the two. It's free, and the iMac stays as it is.
+This post shows how to turn my 2017 21.5-inch Retina 4K iMac into the monitor of my 2017 MacBook Pro running [Omarchy](/en/20261013-retournement-de-veste-omarchy-macbook-pro-2017). You need two free apps, **Sunshine** on the MacBook and **Moonlight** on the iMac, and a Thunderbolt cable between the two. The iMac stays as it is.
+
+It's my fourth post about this iMac, after [Sharp](/en/20260929-sharp-vieil-imac-ecran-secondaire-ethernet), the [external SSD](/en/20261014-installer-macos-ssd-externe-imac-2017) and [OpenDisplay](/en/20261030-opendisplay-vieil-imac-ecran-mac-linux).
 
 ## Why not a plain video cable
 
@@ -21,7 +24,7 @@ The iMac's Thunderbolt 3 ports send a picture to a monitor. They don't receive o
 That leaves two options:
 
 - **software**: the method in this post. The cable is a fast network link, not a video cable;
-- **hardware**: remove the iMac's logic board and fit a controller board made for its panel. On this model, the panel is often an LG LM215UH1, but check the part number printed on the back before you buy. The iMac becomes a real 4K monitor plugged in directly, but it's no longer a computer.
+- **hardware**: remove the iMac's logic board and fit a controller board made for its panel. On this model, the panel is an LG LM215UH1-SDB1, according to [iFixit's teardown](https://www.ifixit.com/Guide/iMac+Intel+21.5-Inch+Retina+4K+Display+%282017%29+Teardown/92170){target="_blank" rel="noopener"}. Still, check the label on the back of yours before you buy. The iMac becomes a real 4K monitor plugged in directly, but it's no longer a computer.
 
 I'm starting with software: it's free, and you can undo it.
 
@@ -31,6 +34,9 @@ I'm starting with software: it's free, and you can undo it.
 - **Moonlight** is the client. On the iMac, it receives the video and shows it full screen.
 - **Hyprland**, Omarchy's window manager, creates a **virtual screen**. The MacBook sees it as a real extra monitor. Sunshine records that virtual screen, and the iMac shows it.
 - **The Thunderbolt cable** links the two machines in a direct network, with no router or Wi-Fi.
+- **In the other direction**, the iMac's keyboard and mouse control the MacBook. Sunshine also sends the sound. All three are on by default ([Sunshine configuration](https://docs.lizardbyte.dev/projects/sunshine/latest/md_docs_2configuration.html){target="_blank" rel="noopener"}).
+
+![Diagram of the setup. On the 2017 MacBook Pro running Omarchy, Hyprland creates a virtual screen named imac, and Sunshine records it and compresses it into video. The video and the sound travel over a Thunderbolt cable, used as a direct network between the MacBook (10.0.0.1) and the iMac (10.0.0.2). On the 2017 Retina 4K iMac, Moonlight shows the desktop at 4096 × 2304. In the other direction, the iMac's keyboard and mouse control the MacBook. Create the virtual screen before you start Sunshine.](/images/articles/sunshine-moonlight-schema-en.svg)
 
 ## What you need
 
@@ -59,7 +65,9 @@ sudo ip link set thunderbolt0 up
 ping 10.0.0.2
 ```
 
-The `thunderbolt-net` driver speaks the same protocol as the macOS Thunderbolt Bridge: the two machines recognise each other. If `ping` gets no reply, run `boltctl list`. If the iMac shows up as not authorized, authorize it with `sudo boltctl enroll --policy auto <uuid>`, copying the ID it shows.
+Linux uses Apple's Thunderbolt networking protocol. So with a Mac on the other end, the `thunderbolt-net` driver loads by itself when you plug in the cable ([Linux kernel documentation](https://docs.kernel.org/admin-guide/thunderbolt.html){target="_blank" rel="noopener"}). The `modprobe` command is just in case.
+
+If `ping` gets no reply, run `boltctl list`. If the iMac shows up as not authorized, authorize it with `sudo boltctl enroll --policy auto <uuid>`, copying the ID it shows.
 
 The `ip` commands are wiped at reboot. To keep the address, Omarchy uses systemd-networkd: create the file `/etc/systemd/network/50-thunderbolt.network`:
 
@@ -98,7 +106,7 @@ Install Sunshine from the AUR:
 yay -S sunshine-bin
 ```
 
-If that package won't start (it sometimes breaks after an Arch update), LizardByte, the team behind Sunshine, also runs its own repository for Arch: see its [documentation](https://docs.lizardbyte.dev/projects/sunshine/latest/){target="_blank" rel="noopener"}.
+An Arch update sometimes breaks this package. If that happens, LizardByte, the team behind Sunshine, also runs its own repository for Arch: see its [documentation](https://docs.lizardbyte.dev/projects/sunshine/latest/){target="_blank" rel="noopener"}.
 
 In `~/.config/sunshine/sunshine.conf`, tell Sunshine which screen to record:
 
@@ -108,6 +116,8 @@ output_name = imac
 ```
 
 `wlr` is the capture method for Wayland desktops like Hyprland.
+
+Sound goes to the iMac by default. If you'd rather hear it on the MacBook, add `stream_audio = disabled`.
 
 Run `sunshine`, open `https://localhost:47990` in the browser and create a login.
 
@@ -154,12 +164,16 @@ Replace `5` with the number of the workspace you want to move.
 
 ## Sunshine and Moonlight, or OpenDisplay?
 
-I already got [OpenDisplay working with this MacBook running Omarchy](/en/20261030-opendisplay-vieil-imac-ecran-mac-linux). Both methods do the same job: record a virtual screen, compress it into video, show it on the iMac. The differences:
+I've already tested [OpenDisplay on this same MacBook running Omarchy](/en/20261030-opendisplay-vieil-imac-ecran-mac-linux), and it works: the iMac does show the extended desktop. But on Linux, OpenDisplay compresses the picture with the processor alone. On my MacBook, its logs showed about 24 ms to compress a frame, and 60 to 100 ms from capture to send.
+
+Sunshine can compress with the graphics chip instead, through VA-API on Intel and AMD chips ([Sunshine README](https://github.com/LizardByte/Sunshine){target="_blank" rel="noopener"}). For 4K, Sunshine suggests at least an Intel HD Graphics 510. The 2017 MacBook Pro's chip is newer.
+
+Both methods do the same job: record a virtual screen, compress it into video, show it on the iMac. The differences:
 
 | | OpenDisplay | Sunshine and Moonlight |
 | --- | --- | --- |
 | Setup | two apps, almost nothing to configure | more steps (network, virtual screen, configuration) |
-| Video compression on Linux | by the processor alone, in H.264 | by the graphics chip when the driver allows it, HEVC possible |
+| Video compression on Linux | by the processor alone, in H.264 | by the graphics chip (VA-API), in HEVC if the driver allows it |
 | Sound on the iMac | no | yes |
 | The iMac's keyboard and mouse | don't control the PC | control the PC |
 | Intended use | an extra screen | remote gaming, adapted here as a screen |
@@ -169,7 +183,10 @@ If OpenDisplay is enough for you, keep it: it's simpler. If the MacBook's proces
 **Sources:**
 
 - [Use your iMac as a display (Target Display Mode)](https://support.apple.com/en-us/105126){target="_blank" rel="noopener"}, Apple Support
-- [Sunshine configuration](https://docs.lizardbyte.dev/projects/sunshine/latest/md_docs_2configuration.html){target="_blank" rel="noopener"}: `capture` and `output_name`
+- [iMac Intel 21.5-Inch Retina 4K Display (2017) Teardown](https://www.ifixit.com/Guide/iMac+Intel+21.5-Inch+Retina+4K+Display+%282017%29+Teardown/92170){target="_blank" rel="noopener"}, iFixit: panel part number
+- [Thunderbolt, "Networking over Thunderbolt cable" section](https://docs.kernel.org/admin-guide/thunderbolt.html){target="_blank" rel="noopener"}, Linux kernel documentation
+- [Sunshine configuration](https://docs.lizardbyte.dev/projects/sunshine/latest/md_docs_2configuration.html){target="_blank" rel="noopener"}: `capture`, `output_name`, `stream_audio`, keyboard and mouse
+- [Sunshine README](https://github.com/LizardByte/Sunshine){target="_blank" rel="noopener"}: hardware encoding with the graphics chip (VA-API)
 - [sunshine-hyprland-virtual-display](https://github.com/jhonsnake/sunshine-hyprland-virtual-display){target="_blank" rel="noopener"}: Sunshine with a Hyprland virtual screen
 - [Using hyprctl](https://wiki.hypr.land/0.49.0/Configuring/Using-hyprctl/){target="_blank" rel="noopener"}, Hyprland wiki: `hyprctl output create`
 - [Moonlight](https://moonlight-stream.org/){target="_blank" rel="noopener"}, official site
