@@ -64,9 +64,11 @@ Et j'ai le [MistGlide](https://ci.oraimo.com/product/oraimo-mistglide-multi-surf
 
 ### La salle de bain et les vêtements
 
-J'ai aussi la brosse à dents électrique Oraimo très efficace. Et même des vêtements : les t-shirts NanoShield, qui résistent aux taches, les polos EcoLuxe et les claquettes [CrestFrom](https://ci.oraimo.com/product/oraimo-crestfrom-ergonomic-anti-skid-slipper-ohds-003){target="_blank" rel="noopener"}, très inspirées des Yeezy Foam Runner.
+J'ai aussi la brosse à dents électrique Oraimo Magnisonic, très efficace. Et même des vêtements : les t-shirts NanoShield, qui résistent aux taches, les polos EcoLuxe et les claquettes [CrestFrom](https://ci.oraimo.com/product/oraimo-crestfrom-ergonomic-anti-skid-slipper-ohds-003){target="_blank" rel="noopener"}, très inspirées des Yeezy Foam Runner.
 
-<!-- À AJOUTER : photo de la brosse à dents (une fois le modèle précisé), du t-shirt NanoShield et du polo EcoLuxe. -->
+<!-- À AJOUTER : photo du t-shirt NanoShield et du polo EcoLuxe. -->
+
+![Brosse à dents électrique Oraimo Magnisonic, noire et fine, avec une tête aux poils blancs et verts](/images/articles/oraimo-magnisonic.webp)
 
 ![Claquettes Oraimo CrestFrom noires, à la semelle sculptée en vagues](/images/articles/oraimo-crestfrom.webp)
 

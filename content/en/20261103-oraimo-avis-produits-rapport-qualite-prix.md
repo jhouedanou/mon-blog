@@ -64,9 +64,11 @@ And I have the [MistGlide](https://ci.oraimo.com/product/oraimo-mistglide-multi-
 
 ### Bathroom and clothes
 
-I also have the Oraimo electric toothbrush [TO CONFIRM: SmartDent, SmartDent C2, SoniCare or Magnisonic], which works very well. And even clothes: the NanoShield T-shirts, which resist stains, the EcoLuxe polo shirts and the [CrestFrom](https://ci.oraimo.com/product/oraimo-crestfrom-ergonomic-anti-skid-slipper-ohds-003){target="_blank" rel="noopener"} slides, heavily inspired by the Yeezy Foam Runner.
+I also have the Oraimo Magnisonic electric toothbrush, which works very well. And even clothes: the NanoShield T-shirts, which resist stains, the EcoLuxe polo shirts and the [CrestFrom](https://ci.oraimo.com/product/oraimo-crestfrom-ergonomic-anti-skid-slipper-ohds-003){target="_blank" rel="noopener"} slides, heavily inspired by the Yeezy Foam Runner.
 
-<!-- TO ADD: photo of the toothbrush (once the model is confirmed), the NanoShield T-shirt and the EcoLuxe polo. -->
+<!-- TO ADD: photo of the NanoShield T-shirt and the EcoLuxe polo. -->
+
+![Slim black Oraimo Magnisonic electric toothbrush, with a white and green brush head](/images/articles/oraimo-magnisonic.webp)
 
 ![Black Oraimo CrestFrom slides, with a wave-sculpted sole](/images/articles/oraimo-crestfrom.webp)
 
