@@ -88,8 +88,6 @@ J'adore les montres connectées. J'ai déjà parlé de l'Oraimo Watch Nova AM da
 
 ## Mon avis sur Oraimo, en résumé
 
-<!-- À PRÉCISER : prix payé pour la Watch Nova AM. -->
-
 | Produit | Prix payé (FCFA) | Je rachète ? | En une phrase |
 |---|---|---|---|
 | Écouteurs CONCH | 2 000 à 3 000 | Oui | Solides, avec des basses un peu trop fortes. |
@@ -106,7 +104,7 @@ J'adore les montres connectées. J'ai déjà parlé de l'Oraimo Watch Nova AM da
 | Plaque FlexiCooker | 30 000 | Oui, avec un bémol | Certains programmes consomment plus d'électricité que d'autres. |
 | Polos EcoLuxe | 9 000 | Oui, avec un bémol | Confortables, mais en tailles chinoises, donc plus petits. |
 | Casque BoomPop 2 | 25 000 | Non | Son et réduction de bruit ordinaires, coussinets qui s'effritent. |
-| Montre Watch Nova AM | — | Non | Ma Google Pixel Watch est meilleure. |
+| Montre Watch Nova AM | 15 000 | Non | Ma Google Pixel Watch est meilleure. |
 
 Ce sont les prix que j'ai payés à Abidjan, sur Glovo, chez un vendeur à deux rues de chez moi ou sur le site d'Oraimo. En ligne, ils changent souvent avec les promotions.
 

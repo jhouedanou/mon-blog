@@ -88,8 +88,6 @@ I love smartwatches. I've already written about the Oraimo Watch Nova AM in [my 
 
 ## My Oraimo review, in short
 
-<!-- TO ADD: price paid for the Watch Nova AM. -->
-
 | Product | Price paid (CFA francs) | Would I buy it again? | In one sentence |
 |---|---|---|---|
 | CONCH earphones | 2,000 to 3,000 | Yes | Sturdy, with slightly too much bass. |
@@ -106,7 +104,7 @@ I love smartwatches. I've already written about the Oraimo Watch Nova AM in [my 
 | FlexiCooker hot plate | 30,000 | Yes, with a catch | Some programmes use more electricity than others. |
 | EcoLuxe polo shirts | 9,000 | Yes, with a catch | Comfortable, but in Chinese sizes, so smaller. |
 | BoomPop 2 headphones | 25,000 | No | Ordinary sound and noise cancellation, flaking ear pads. |
-| Watch Nova AM | — | No | My Google Pixel Watch is better. |
+| Watch Nova AM | 15,000 | No | My Google Pixel Watch is better. |
 
 These are the prices I paid in Abidjan, on Glovo, at a shop two streets from my place, or on Oraimo's website. Online prices change often with promotions.
 
