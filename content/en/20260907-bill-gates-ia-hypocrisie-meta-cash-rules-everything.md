@@ -1,14 +1,14 @@
 ---
-title: "Bill Gates wants to slow down AI: hypocrisy is cheap once you've already cashed in"
+title: "Bill Gates's AI memo: hypocrisy is cheap"
 createdAt: "2026-09-07T02:18:00Z"
 updatedAt: "2026-10-08T12:00:00Z"
 image: "/images/articles/bill-gates-ia-cash.jpeg"
-description: "Bill Gates wants AI taxes after thirty years of war on free software. A parallel with Meta's \"conversion\", found liable over its networks. C.R.E.A.M."
+description: "In his AI memo, Bill Gates wants to tax tokens and robots, after thirty years of war on free software. A parallel with Meta's 'conversion'. C.R.E.A.M."
 searchIntent: "What Bill Gates proposes in his August 2026 memo on AI, why his position is seen as hypocritical given his record against open source, and how it connects to Meta's 2026 verdicts on the protection of minors."
 tags: ["tech", "opinion", "AI", "society"]
 ---
 
-In late August, Bill Gates published [a 6,000-word memo on artificial intelligence](https://www.axios.com/2026/08/26/bill-gates-sounds-the-alarm-on-an-ai-transition). The tone surprised everyone. Tech's eternal optimist is sounding the alarm: AI is moving faster than governments, it will shake up white-collar and blue-collar workers alike, it opens up unprecedented cyber and biological risks, and "there is no plan for entering the AI era".
+In late August, Bill Gates published [a 6,000-word memo on artificial intelligence](https://www.axios.com/2026/08/26/bill-gates-sounds-the-alarm-on-an-ai-transition). The tone surprised everyone. Tech's eternal optimist is sounding the alarm: AI is moving faster than governments, it will shake up white-collar and blue-collar workers alike, it opens up unprecedented [cyber and biological risks](/en/20260926-apocalypse-ia-nucleaire-distributeurs-internet), and "there is no plan for entering the AI era".
 
 His line, quoted everywhere: AI will be "the greatest equalizer ever invented, or the worst source of injustice".
 
@@ -30,21 +30,21 @@ For thirty years, anything that looked like sharing, like openness, like a techn
 
 ## Hypocritical, yes. So what?
 
-Let's be honest, it is a somewhat hypocritical position. The word is strong, but it is accurate. Gates is calling for brakes on a technological revolution after being the main beneficiary of the previous one, which he led without the slightest brake.
+Let's be honest, it's a somewhat hypocritical position. It's a strong word, but it's accurate. Gates is calling for brakes on a technological revolution after being the main beneficiary of the previous one, which he led without the slightest brake.
 
 What's more, Microsoft, of which he remains one of the biggest shareholders, is one of OpenAI's main backers and sells AI by the shovelful through Azure. It's easier to propose a tax on tokens when you've already cashed in your own.
 
 But we'll have to get used to it, because this is the normal cycle of tech fortunes. First you break everything, crush the competition and ignore the critics. Then you cash in. And finally you become wise: you create a foundation, you write memos, you worry about humanity.
 
-This isn't specific to Gates. It's the trajectory of every industrial baron since Carnegie and Rockefeller. The repentant always has more credibility than the victim, because he has the means to pay for the microphones.
+This isn't specific to Gates. It's the trajectory of every industrial baron since Carnegie and Rockefeller. The reformed sinner always has more credibility than the victim, because he can pay for the microphones.
 
-In his defence, Gates at least has the decency to wait until retirement. Others do their conversion while still in office.
+In his defence, Gates at least has the decency to wait until retirement. Others convert while still in charge.
 
 ## Meta, or the live conversion
 
-In January 2025, Mark Zuckerberg announced his great return to "free speech": the end of fact-checking in the United States, lighter moderation, a mea culpa over the "censorship" of previous years. At the same time, the company was repainting itself as the champion of "open" AI with its Llama models, distributed for free. The closed giant of Facebook turned apostle of openness. Does that ring a bell?
+In January 2025, Mark Zuckerberg announced his great return to ["free speech"](/en/20260907-free-speech-oui-mais-pas-ca): the end of fact-checking in the United States, lighter moderation, a mea culpa over the "censorship" of previous years. At the same time, the company was repainting itself as the champion of "open" AI with its Llama models, distributed for free. The closed giant of Facebook turned apostle of openness. Does that ring a bell?
 
-Then the courts came through.
+Then the courts stepped in.
 
 In March 2026, a New Mexico jury ordered Meta to pay 375 million dollars for 37,500 deliberate violations of the unfair trade practices law. The jury found that the company had knowingly harmed children's mental health and concealed what it knew about the sexual exploitation of minors on its platforms. In August, in the second phase of the trial, the same court ordered Meta to pay [a further 567 million dollars](https://www.noovo.info/nouvelles/justice/article/mineurs-sur-les-reseaux-sociaux-un-tribunal-condamne-meta-a-verser-567-m/), bringing the total to more than 940 million, with corrective measures that go to the heart of the product: screen time limits, restrictions on notifications, protection against certain adult contacts, age verification.
 
@@ -52,9 +52,9 @@ In other words, what researchers, parents and a few employees had been saying fo
 
 And while a court was listing the damage, the company was telling the world it was defending freedom and openness. Meta's conversion, like Gates's, costs nothing. It comes after the cashing in, and it even serves to protect the next round.
 
-It's what I was already writing [about the "yes to FGM" campaign](/en/20260822-oui-a-lexcision-non-diversion-rhetorique): platforms don't distinguish approval from anger, they see engagement and they push. The excesses are not accidents of the model, they are the model. A New Mexico jury has just said so with numbers.
+It's what I already wrote [about the "yes to FGM" campaign](/en/20260822-oui-a-lexcision-non-diversion-rhetorique): platforms don't distinguish approval from anger, they see engagement and they push. The excesses are not accidents of the model, they are the model. A New Mexico jury has just said so with numbers.
 
-## What to take from this
+## What to take from Bill Gates's memo
 
 You can applaud the substance of Gates's memo without buying the posture. Taxing tokens, funding retraining, slowing the flight away from human labour: these are real avenues, and they deserve to be discussed here too, where AI is going to hit economies that have no safety nets at all.
 
@@ -68,7 +68,7 @@ The great philosopher Clifford "Method Man" Smith, of the Wu-Tang Clan, had alre
 
 C.R.E.A.M.
 
-Gates is right about AI. Meta was found liable for its networks. And in both cases, the conclusion is the same: in the end, money fixes everything. It pays for the damage, it pays for the memos, it even pays for the wisdom.
+Gates is right about AI. Meta was found liable for its networks. And in both cases, the conclusion is the same: money fixes everything. It pays for the damage, it pays for the memos, it even pays for the wisdom.
 
 Get the money. Dollar dollar bill, y'all.
 

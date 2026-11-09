@@ -1,15 +1,15 @@
 ---
-title: "WhatsApp n'est pas un moyen de communication professionnel"
+title: "WhatsApp au travail : pourquoi je dis non"
 createdAt: "2026-10-28T14:00:00Z"
 image: "/images/articles/pexels-rahul-shah-6458056.webp"
-description: "WhatsApp n'est pas un outil de travail : on n'y retrouve rien, et il n'a pas d'horaires. Mon approche : dire non, envoyer un email, bloquer."
+description: "WhatsApp au travail ? On n'y retrouve rien et il n'a pas d'horaires : ce n'est pas un outil pro. Mon approche : dire non, envoyer un email, bloquer."
 searchIntent: "Faut-il utiliser WhatsApp pour communiquer au travail, et comment refuser les demandes professionnelles envoyées sur WhatsApp ?"
 tags: ["opinion", "société", "afrique", "productivité"]
 ---
 
 WhatsApp n'est pas un moyen de communication professionnel.
 
-À Abidjan, c'est pourtant le canal par défaut. Un devis, une maquette à valider, une facture, un accès à un serveur, une réunion déplacée : tout passe par WhatsApp. Souvent sur un numéro personnel. Souvent le soir.
+À Abidjan, c'est pourtant le canal par défaut au travail. Un devis, une maquette à valider, une facture, un accès à un serveur, une réunion déplacée : tout passe par WhatsApp. Souvent sur un numéro personnel. Souvent le soir.
 
 Moi, je refuse. Voici pourquoi, et comment je fais.
 
@@ -19,7 +19,7 @@ Moi, je refuse. Voici pourquoi, et comment je fais.
 
 Une demande arrive entre une photo de famille, une vidéo drôle et une note vocale. Trois semaines plus tard, personne ne retrouve qui a validé quoi, ni quand.
 
-Un email a un objet, une date, des destinataires et des personnes en copie. On peut le classer, le chercher et le transférer. Le jour où une échéance saute, c'est cet historique daté qui vous protège. Je l'expliquais dans [« C'est intégré dans la maquette »](/fr/20260908-cest-integre-dans-la-maquette).
+Un email a un objet, une date, des destinataires et des personnes en copie. On peut le classer, le chercher et le transférer. Le jour où une échéance saute, c'est cet historique daté qui vous protège. J'en parlais déjà en racontant [comment j'ai vérifié un livrable de handoff](/fr/20260908-cest-integre-dans-la-maquette).
 
 ### Il n'y a plus d'horaires
 
@@ -31,17 +31,17 @@ Quatre minutes de note vocale pour une demande qui tenait en deux lignes. On ne 
 
 ### Les groupes noient les décisions
 
-On vous ajoute sans vous demander votre avis dans un groupe de quarante personnes. Les décisions s'y perdent entre les « bien reçu », les pouces levés et les messages d'anniversaire.
+On vous ajoute sans vous demander votre avis dans un groupe de quarante personnes. Les décisions s'y perdent entre les « bien reçu », les pouces levés et les messages d'anniversaire, comme dans [un grin](/fr/20250605-facebook-nest-pas-un-grin).
 
 ### Le personnel et le professionnel se mélangent
 
-Votre numéro, votre photo de profil, vos statuts : vos clients et vos collègues y ont accès. Et quand quelqu'un quitte l'entreprise, l'historique des échanges part avec son téléphone. Une boîte mail professionnelle, elle, reste à l'entreprise.
+Votre numéro, votre photo de profil, vos statuts : vos clients et vos collègues y ont accès. Et quand quelqu'un quitte l'entreprise, l'historique des échanges part avec son téléphone. Une boîte mail professionnelle, elle, reste à l'entreprise. C'est la même règle que pour [l'iPhone et la voiture de fonction qui racontent tout à votre patron](/fr/20250705-cherscommerciaux) : on ne mélange pas les usages.
 
 ### Un message n'est pas une demande
 
 Un email oblige à écrire la demande en entier : le contexte, la question, l'échéance. Sur WhatsApp, on envoie « Tu as vu ? » et on attend. C'est la version écrite de [la réunion « pour en parler »](/fr/20260326-lareunionpourenparler) : on évite de formuler le problème.
 
-## Mon approche : dire non, envoyer un email, bloquer
+## Comment refuser une demande pro sur WhatsApp
 
 Mon approche tient en trois étapes : dire non, envoyer un email, bloquer.
 

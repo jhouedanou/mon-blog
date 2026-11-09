@@ -1,5 +1,5 @@
 ---
-title: "Comment cloner Ubuntu sans perdre ses données et son âme"
+title: "Cloner Ubuntu vers un SSD plus grand avec dd"
 image: "/images/articles/pingui.webp"
 createdAt: "2024-10-29"
 updatedAt: "2026-10-08T12:00:00Z"
@@ -7,19 +7,19 @@ id: 2024-10-29
 description: "Cloner Ubuntu vers un SSD plus grand avec dd : identifier les disques, lancer le script, agrandir la partition et éviter les erreurs qui effacent tout."
 searchIntent: "Comment cloner Ubuntu vers un SSD plus grand sans perdre ses données ni casser son installation."
 tags: ["tutoriel", "dev", "tech"]
-summary: "Un tutoriel étape par étape pour cloner votre système Ubuntu vers un nouveau SSD plus spacieux. Ce guide inclut l'identification des disques, un script de clonage complet avec dd, l'extension des partitions et les vérifications nécessaires pour assurer une migration réussie."
+summary: "Un tutoriel pas à pas pour cloner Ubuntu vers un SSD plus grand : repérer les disques, cloner avec dd, agrandir la partition et faire les vérifications."
 ---
 
-Quand le SSD de votre ordinateur sous Ubuntu commence à tousser et que les messages « espace disque insuffisant » deviennent la notification la plus fréquente, il est temps d'agir. Dans mon cas, passer à un SSD de 256 Go va me permettre de respirer un peu (et à mon HP Pro x2 aussi).
+Quand le SSD de votre ordinateur sous Ubuntu commence à tousser et que les messages « espace disque insuffisant » deviennent la notification la plus fréquente, il est temps de cloner Ubuntu vers un SSD plus grand avec `dd`, sans rien réinstaller. Dans mon cas, passer à un SSD de 256 Go va me permettre de respirer un peu (et à mon HP Pro x2 aussi).
 
-## 🎯 Ce dont vous aurez besoin
+## Ce dont vous aurez besoin
 
 - Un nouveau SSD (dans mon cas, 256 Go)
 - Votre Ubuntu actuel fonctionnel
 - Une clé USB bootable (au cas où)
 - 30 minutes de votre temps (plus le temps du café)
 
-## 🛠 La procédure étape par étape
+## Cloner Ubuntu vers un SSD plus grand, étape par étape
 
 ### 1. Identification des disques
 
@@ -86,7 +86,7 @@ resize2fs "$PARTITION"
 echo "Clonage terminé ! 🎉"
 ```
 
-Deux détails du script méritent une explication. D'abord, `resize2fs` refuse d'agrandir une partition démontée qui n'a pas été vérifiée depuis son dernier montage et demande de lancer `e2fsck -f` d'abord ([code source de resize2fs](https://github.com/tytso/e2fsprogs/blob/master/resize/main.c){target="_blank" rel="noopener"}) : le script le fait donc avant. Ensuite, sur un SSD NVMe, le disque s'appelle `/dev/nvme0n1` et sa deuxième partition `/dev/nvme0n1p2`, pas `/dev/nvme0n12` : quand le nom du disque finit par un chiffre, Linux ajoute un « p » ([wiki Arch Linux](https://wiki.archlinux.org/title/Device_file#Partition){target="_blank" rel="noopener"}). Le script gère les deux cas.
+Deux détails du script méritent une explication. D'abord, `resize2fs` refuse d'agrandir une partition démontée qui n'a pas été vérifiée depuis son dernier montage, et demande de lancer `e2fsck -f` au préalable ([code source de resize2fs](https://github.com/tytso/e2fsprogs/blob/master/resize/main.c){target="_blank" rel="noopener"}) : c'est ce que fait le script. Ensuite, sur un SSD NVMe, le disque s'appelle `/dev/nvme0n1` et sa deuxième partition `/dev/nvme0n1p2`, pas `/dev/nvme0n12` : quand le nom du disque finit par un chiffre, Linux ajoute un « p » ([wiki Arch Linux](https://wiki.archlinux.org/title/Device_file#Partition){target="_blank" rel="noopener"}). Le script gère les deux cas.
 
 ### 3. Exécution
 
@@ -106,7 +106,7 @@ sudo fdisk -l
 
 Vérifiez que la nouvelle partition utilise bien tout l'espace disponible.
 
-## 🎯 Points importants
+## Points importants avant de cloner
 
 - Vérifiez les lettres correspondant à chaque disque dur ;
 - Sauvegarde : même si je fais confiance à mon script, j'ai tout de même fait une sauvegarde avant. On n'est jamais trop prudent !
@@ -115,6 +115,8 @@ Vérifiez que la nouvelle partition utilise bien tout l'espace disponible.
 - Patience : le clonage peut prendre un certain temps, selon la taille de vos données ;
 - Disque fatigué : si le disque source présente des erreurs de lecture, ne comptez pas sur l'option `conv=noerror,sync` du script. La [documentation d'Arch Linux](https://wiki.archlinux.org/title/Dd#Cloning_an_entire_hard_disk) déconseille ces options dans ce cas et recommande ddrescue ;
 - Identifiants en double : dd copie tout, y compris les UUID des partitions ([même source](https://wiki.archlinux.org/title/Dd#Cloning_an_entire_hard_disk)). Débranchez l'ancien disque avant de redémarrer sur le nouveau, pour que le système ne confonde pas les deux.
+
+C'est sur ce même HP Pro x2, sous Linux, que j'ai découvert [Ghostwriter, l'alternative gratuite à iA Writer](/fr/20241020-ghostwriter-une-alternative-gratuite-a-ia-writer-pour-linux). Côté Mac, pour un vieil iMac au disque fatigué, j'ai pris une autre voie : [installer macOS sur un SSD externe](/fr/20261014-installer-macos-ssd-externe-imac-2017). Et si vous devez aussi réinstaller un PC sous Windows, voici comment [installer Windows 11 sans compte Microsoft](/fr/20260414-windows-sans-prise-de-tete).
 
 *Mise à jour du 8 octobre 2026 : ajout de précautions sourcées (clonage depuis une session live, disque source avec erreurs de lecture, UUID identiques après le clonage) ; script corrigé : `e2fsck -f` avant `resize2fs`, et nom de partition correct sur les disques NVMe ou eMMC (`/dev/nvme0n1p2` au lieu de `/dev/nvme0n12`).*
 

@@ -1,20 +1,20 @@
 ---
-title: "Ghostwriter, l'iA Writer de Linux"
+title: "Ghostwriter, l'alternative Linux à iA Writer"
 image: "/images/articles/mockup.webp"
 createdAt: "2024-10-20"
 updatedAt: "2026-10-08T12:00:00Z"
 id: 2024-10-20
-description: "iA Writer n'existe pas sous Linux. Ghostwriter, l'éditeur Markdown gratuit et open source de KDE, reprend son mode focus. Installation et correcteur français."
+description: "Alternative gratuite à iA Writer sous Linux : Ghostwriter, l'éditeur Markdown open source de KDE, reprend son mode focus. Installation et correcteur français."
 searchIntent: "Quelle alternative gratuite à iA Writer choisir sur Linux pour écrire en Markdown sans distraction ?"
 tags: ["tech", "tutoriel"]
-summary: "Ghostwriter est une excellente alternative gratuite et open-source à iA Writer pour les utilisateurs Linux. Cet éditeur Markdown reprend les fonctionnalités essentielles d'iA Writer comme le point d'insertion bleu et le mode focus, tout en ajoutant une vérification orthographique multilingue. Idéal pour les écrivains et blogueurs cherchant un environnement d'écriture épuré sous Linux."
+summary: "Ghostwriter est un éditeur Markdown gratuit et open source pour Linux. Il reprend le point d'insertion bleu et le mode focus d'iA Writer, et ajoute une correction orthographique en plusieurs langues."
 ---
 
 Vous cherchez une alternative gratuite à iA Writer sous Linux ? La mienne s'appelle [Ghostwriter](https://ghostwriter.kde.org/ "Ghostwriter"), un éditeur Markdown open source maintenu par KDE.
 
 [Changer de moteur de blog](/fr/20241005-on-fait-un-peu-le-menage) m'a permis de :
 
-1. (Re)découvrir le langage Markdown
+1. (Re)découvrir le langage Markdown, dans lequel s'écrit désormais [mon blog sans base de données](/fr/20241021-pendaison-de-cremaillere)
 2. Dépoussiérer mes environnements d'écriture sans distractions, comme OmmWriter ou iA Writer
 
 ## iA Writer : le meilleur éditeur Markdown ?
@@ -27,9 +27,9 @@ iA Writer est le meilleur éditeur Markdown au monde. Voici pourquoi :
 
 Cependant, iA Writer n'existe pas sous Linux : il est disponible sur macOS, Windows, iPhone et iPad ([site officiel](https://ia.net/writer)).
 
-## À la recherche d'une alternative pour Linux
+## À la recherche d'une alternative à iA Writer pour Linux
 
-Mon ordinateur principal est une tablette hybride HP Pro x2 fonctionnant sous Linux (plus précisément la dernière version de Zorin OS Pro). En cherchant une alternative à iA Writer, j'ai découvert [Ghostwriter](https://ghostwriter.kde.org/ "Ghostwriter").
+Mon ordinateur principal est une tablette hybride HP Pro x2 fonctionnant sous Linux (plus précisément la dernière version de Zorin OS Pro), celle-là même dont j'ai ensuite [cloné le système vers un SSD plus grand](/fr/20241029-cloner-ubuntu). En cherchant une alternative à iA Writer, j'ai découvert [Ghostwriter](https://ghostwriter.kde.org/ "Ghostwriter").
 
 ## Ghostwriter : un concurrent sérieux
 
@@ -39,7 +39,7 @@ Cette application gratuite reprend mes fonctionnalités préférées d'iA Writer
 - Un mode focus similaire à celui d'iA Writer
 - Une vérification orthographique intégrée
 
-## Installer Ghostwriter
+## Installer Ghostwriter sous Linux
 
 ### 1. Installer l'application
 
@@ -65,7 +65,7 @@ sudo apt-get install hunspell-fr
 
 ## Conclusion
 
-Si iA Writer reste une référence dans le domaine des éditeurs Markdown, Ghostwriter s'avère être une excellente alternative pour les utilisateurs Linux. Il offre une expérience d'écriture sans distraction similaire à iA Writer, tout en étant gratuit et open source. Pour les écrivains, blogueurs ou tout utilisateur à la recherche d'un environnement d'écriture épuré et efficace sous Linux, Ghostwriter mérite certainement d'être essayé.
+iA Writer reste une référence parmi les éditeurs Markdown, mais sous Linux, Ghostwriter est une excellente alternative. On y retrouve l'écriture sans distraction d'iA Writer, et il est gratuit et open source. Si vous écrivez sous Linux et cherchez un éditeur épuré, essayez-le. Et non, [pas besoin d'être dev ou barbu pour aimer Linux](/fr/20261008-pas-besoin-detre-dev-ou-barbu-mac-linux).
 
 *Mise à jour du 8 octobre 2026 : iA Writer est disponible sur macOS, Windows, iPhone et iPad, mais toujours pas sous Linux. Ajout des commandes d'installation de Ghostwriter (dépôts Ubuntu et Flathub).*
 

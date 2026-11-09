@@ -1,5 +1,5 @@
 ---
-title: "Pixel Watch : comment afficher automatiquement les notifications à l'écran"
+title: "Notifications Pixel Watch : allumer l'écran"
 image: "/images/articles/pixel-watch-notifications-ecran.webp"
 createdAt: "2026-03-11"
 id: 2026-03-11
@@ -10,9 +10,9 @@ tags: ["tech", "tutoriel"]
 summary: "Comment afficher automatiquement les notifications sur l'écran de votre Pixel Watch sans lever le poignet."
 ---
 
-Réponse courte : par défaut, la **Pixel Watch** n'allume pas son écran à l'arrivée d'une notification. Pour obtenir ce comportement, il faut installer l'application **Wear Notification Helper** sur le téléphone **et** sur la montre, puis choisir les applications dont les notifications doivent réveiller l'écran.
+Par défaut, la **Pixel Watch** n'allume pas son écran à l'arrivée d'une notification. Pour allumer l'écran à chaque notification, il faut installer l'application **Wear Notification Helper** sur le téléphone **et** sur la montre, puis choisir les applications dont les notifications doivent réveiller l'écran.
 
-Le mois passé, mon compagnon de poignet était une **Oraimo Watch Nova** (j'avais d'ailleurs comparé l'Oraimo Nova AM à l'Infinix Watch 3 dans [ce billet](/fr/20251225-infinix-ou-oraimo)). C'est un rapport qualité-prix incroyable, avec un bel écran OLED aux couleurs chatoyantes et une autonomie respectable, mais avec un défaut plus ou moins majeur, du moins en ce qui me concerne : le suivi des pas, la mesure de la fréquence cardiaque ainsi que l'estimation de l'effort fourni pendant le sport ne sont pas très précis.
+Le mois passé, mon compagnon de poignet était une **Oraimo Watch Nova** (j'en parlais dans mon [comparatif Infinix Watch 3 vs Oraimo Nova AM](/fr/20251225-infinix-ou-oraimo)). C'est un excellent rapport qualité-prix, avec un bel écran OLED aux couleurs vives et une autonomie respectable. Mais elle a un défaut plus ou moins majeur, du moins pour moi qui ai [développé ma propre app de fitness](/fr/20250508-project-fat-loss) : le suivi des pas, la mesure de la fréquence cardiaque ainsi que l'estimation de l'effort fourni pendant le sport ne sont pas très précis.
 
 C'est la raison pour laquelle j'ai choisi la **Pixel Watch**. Cette montre conçue par Google intègre nativement l'application de fitness **Fitbit** et mesure avec beaucoup plus d'exactitude le nombre de pas, l'effort cardiaque, le temps de récupération, ainsi que plusieurs autres statistiques qui permettent d'en savoir plus sur sa forme et sa condition physique. En plus d'être une très belle montre.
 
@@ -27,11 +27,11 @@ Par défaut, une notification sur **Wear OS** active simplement le geste **Tilt 
 J'aurais aimé qu'il existe un moyen de configurer ce comportement.
 J'active presque toujours **Always On Display**, afin de ne pas être limité à l'utilisation du Tilt to Wake.
 
-Je n'aime pas devoir faire un geste pour consulter une notification, d'autant plus que le réveil automatique de l'écran fonctionne mieux sur certaines autres montres intelligentes que j'ai utilisées que sur la Pixel Watch.
+Je n'aime pas devoir faire un geste pour consulter une notification, d'autant plus que le réveil automatique de l'écran fonctionne mieux sur [certaines autres montres intelligentes que j'ai utilisées](/fr/20251225-infinix-ou-oraimo) que sur la Pixel Watch.
 
-## Solution : utiliser Wear Notification Helper
+## Allumer l'écran à chaque notification avec Wear Notification Helper
 
-Heureusement, ce comportement peut être facilement corrigé avec l'application **Wear Notification Helper**.
+Heureusement, l'application **Wear Notification Helper** corrige facilement ce comportement.
 
 ### Ce qu'il vous faut
 
@@ -46,7 +46,7 @@ Heureusement, ce comportement peut être facilement corrigé avec l'application 
 4. Sélectionnez les applications dont vous souhaitez voir les notifications réveiller l'écran de la montre.
 5. Si vous le voulez, personnalisez les alertes pour chaque application : vibration spécifique, son personnalisé ou même lecture vocale du titre de la notification.
 
-Le développeur a publié un [tutoriel vidéo](https://www.youtube.com/watch?v=CH0tF4hLB-w) qui montre l'application en action sur une Pixel Watch.
+Le développeur a publié un [tutoriel vidéo où les notifications s'affichent dès leur arrivée sur une Pixel Watch](https://www.youtube.com/watch?v=CH0tF4hLB-w).
 
 Cela permet de recréer un comportement beaucoup plus proche de celui que l'on retrouve sur d'autres montres connectées.
 

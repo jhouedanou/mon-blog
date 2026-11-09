@@ -1,5 +1,5 @@
 ---
-title: "Lemon Studio : le clone de FL Studio existe, et ça ne me botte plus tant que ça"
+title: "Lemon Studio, clone de FL Studio : couci-couça"
 createdAt: "2026-10-26T18:30:00Z"
 updatedAt: "2026-10-28T15:00:00Z"
 image: "/images/articles/lemon-studio.webp"
@@ -8,7 +8,7 @@ searchIntent: "Que vaut Lemon Studio, le clone gratuit et open source de FL Stud
 tags: ["opinion", "musique", "IA", "open-source", "vibe coding"]
 ---
 
-Début octobre, je vous parlais d'[ArtCraft, la suite Adobe refaite avec Claude](/fr/20261009-artcraft-vibe-code-suite-adobe-saaspocalypse). Cette fois, c'est FL Studio qui a son clone. Il s'appelle Lemon Studio.
+Début octobre, je vous parlais d'[ArtCraft, la suite Adobe refaite avec Claude](/fr/20261009-artcraft-vibe-code-suite-adobe-saaspocalypse). Cette fois, c'est FL Studio qui a son clone gratuit et open source. Il s'appelle Lemon Studio.
 
 _Mise à jour du 28 octobre 2026 : je l'ai testé. Mon verdict est en fin de billet._
 
@@ -46,7 +46,7 @@ Je comprends sa demande. Mais elle montre le problème : quand copier devient fa
 
 À l'avenir, les barrières du développement logiciel peuvent tomber. Un développeur seul, avec Claude, peut refaire un logiciel qu'une entreprise a construit pendant des années. FL Studio existe depuis 1998, quand il s'appelait encore FruityLoops.
 
-C'est une bonne nouvelle pour ceux qui n'ont pas les moyens. Je l'écrivais à propos de [Koala Sampler](/fr/20260822-koala-sampler-gratuit-mac-boom-bap) : beaucoup achètent des cracks de FL Studio dans les groupes Facebook, souvent farcis de logiciels espions. Un clone gratuit et légal vaut mieux que ça.
+C'est une bonne nouvelle pour ceux qui n'ont pas les moyens. Je l'écrivais à propos de [Koala Sampler, le sampleur gratuit sur Mac](/fr/20260822-koala-sampler-gratuit-mac-boom-bap) : beaucoup achètent des cracks de FL Studio dans les groupes Facebook, souvent farcis de logiciels espions. Un clone gratuit et légal vaut mieux que ça.
 
 Mais si tout le monde peut tout refaire, refaire ne suffit plus. Il faudra miser sur deux choses :
 
@@ -66,7 +66,7 @@ J'ai fini par trouver le temps d'essayer Lemon Studio. Il est très loin de FL S
 
 Regardez plutôt [MorningDAW](https://www.morningdaw.com/){target="_blank" rel="noopener"}, développé par Mattias et Nicklas Holmgren, de Morningdew Media. Il est gratuit, sans période d'essai ni limite de temps, sur macOS, Windows et Linux. Il faut seulement créer un compte pour le télécharger.
 
-Lui aussi a l'air vibe codé, certes. [Bedroom Producers Blog](https://bedroomproducersblog.com/2026/10/24/morningdew-media-releases-morningdaw-a-free-daw-for-macos-windows-and-linux/){target="_blank" rel="noopener"} trouve que son interface montre « certains signes courants de l'esthétique vibe codée ». Et il intègre un assistant qui fonctionne avec votre propre compte Claude Code. Ses développeurs ne disent pas comment ils l'ont codé.
+Lui aussi a l'air [vibe codé](/fr/20260423-chers-vibe-codeurs-bienvenue-dans-la-realite), certes. [Bedroom Producers Blog](https://bedroomproducersblog.com/2026/10/24/morningdew-media-releases-morningdaw-a-free-daw-for-macos-windows-and-linux/){target="_blank" rel="noopener"} trouve que son interface montre « certains signes courants de l'esthétique vibe codée ». Et il intègre un assistant qui fonctionne avec votre propre compte Claude Code. Ses développeurs ne disent pas comment ils l'ont codé.
 
 Mais MorningDAW est original. Il ne copie pas un logiciel existant :
 

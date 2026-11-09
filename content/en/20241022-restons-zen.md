@@ -1,29 +1,27 @@
 ---
-title: "The microphone theory and the glass of water theory: a survival guide for the age of opinion givers"
+title: "Unsolicited advice: try a glass of water"
 image: "/images/articles/theorieduMicro.webp"
 createdAt: "2024-10-22"
 id: 5
-description: "A pro microphone does not make a good singer, or a good commenter. The glass of water theory for staying zen in front of the Internet's self-proclaimed experts."
+description: "Unsolicited advice online? A pro microphone makes neither a good singer nor a good commenter. The glass of water theory for staying zen with know-it-alls."
 searchIntent: "How to stay calm in the face of unsolicited comments and conflicts on social media?"
 tags: ["opinion", "society"]
-summary: "Faced with the self-proclaimed experts and digital prophets who speak out without restraint on the Internet, find out how the glass of water theory can help you stay calm. A practical guide to preserving your mental health online."
+summary: "When self-appointed experts comment on everything online, my glass of water theory helps you stay calm before you reply."
 ---
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/ru6yG_WxWVU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Allow me to introduce Sandrine.
+How do you deal with unsolicited advice online and stay zen? I have a theory. But first, allow me to introduce Sandrine.
 Sandrine is the one who loves singing karaoke.
 
 She performs "Never Leave You" by Lumidee at karaoke with a passion inversely proportional to her talent.
 
 Now imagine we hand her a professional Shure microphone, the same model Beyoncé uses in the studio.
-**That will not make her a better singer, will it?**
+**That won't make her a better singer.**
 
-The Internet is exactly that: we handed professional microphones to people who should have stayed in the audience. But unlike the karaoke bar where Sandrine holds court, there is no way to slip out quietly.
+The Internet is exactly that: we handed professional microphones to people who should have stayed in the audience. But unlike the karaoke bar where Sandrine holds court, there's no way to slip out quietly.
 
-Hence the importance of having a strategy.
-
-This is where the glass of water theory comes in.
+Hence the need for a strategy: the glass of water theory.
 
 ## The glass of water principle
 
@@ -49,7 +47,7 @@ Then sip your water while they strive to demonstrate their expertise.
 
 Go and fetch a pitcher, because they can talk for a long time, and every mention of their "years of experience" deserves a serene sip.
 
-Then add another layer.
+Then lay it on a little thicker.
 
 **"Madam/Sir. I did not ask you anything."**
 
@@ -65,7 +63,7 @@ When they add "[Artificial intelligence is going to turn everything upside down]
 
 These same oracles predicted the end of the Internet in 2000... before creating their Facebook profile.
 
-## Why this approach works
+## Why the glass of water works against unsolicited advice
 
 While they strain to make their voice heard, you:
 
@@ -73,27 +71,27 @@ While they strain to make their voice heard, you:
 - Save your energy for constructive activities
 - Avoid what we call in Abidjan "la vie" (meaning: sterile controversies)
 
-The louder they get, the more hydrated your serenity becomes. It is scientifically proven.
+The louder they get, the more hydrated your serenity becomes. It's scientifically proven.
 
 ## The wisdom of the glass of water
 
-The true power of the glass of water lies in keeping your hands busy. When the temptation to reply to an unconstructive comment arises, a sip of water is in order. At the very least, you will be perfectly hydrated.
+The real strength of the glass of water is that it keeps your hands busy. When you feel the urge to reply to an unconstructive comment, take a sip of water. At the very least, you'll be perfectly hydrated.
 
-At best, you will have avoided many unproductive debates.
+At best, you will have avoided many unproductive debates, the kind [social media algorithms feed on](/en/20260822-oui-a-lexcision-non-diversion-rhetorique).
 
 ## In conclusion
 
 The Internet has democratised speaking up, but nobody is obliged to attend every performance. Sometimes the most appropriate response is to withdraw gracefully, glass of water in hand, leaving the others to perform alone.
 
-Essential reminder: a microphone does not automatically make what is said relevant.
+Essential reminder: a microphone doesn't automatically make what is said relevant.
 
-Sandrine's example is clear proof of that.
+Sandrine is living proof.
 
 P.S.: My apologies, Sandrine, for this illustration.
 
-Your enthusiasm remains admirable, even if "Never Leave You" never really recovered and, from her golden retirement, _Lumidee tells herself that, all things considered, she did not sing that badly after all._
+Your enthusiasm remains admirable, even if "Never Leave You" never really recovered and, from her golden retirement, _Lumidee tells herself she didn't sing that badly after all._
 
-N.B.: In certain circumstances, the glass of water may be garnished with fresh mint. But that is another theory altogether.
+N.B.: In certain circumstances, the glass of water may be garnished with fresh mint. But that's another theory altogether.
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com) — zen master of the internets*

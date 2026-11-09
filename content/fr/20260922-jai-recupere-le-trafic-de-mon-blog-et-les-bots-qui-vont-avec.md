@@ -1,8 +1,8 @@
 ---
-title: "J'ai récupéré le trafic de mon blog (et les bots qui vont avec. Merci WordPress)"
+title: "Limite CPU Cloudflare Workers : bots bloqués"
 createdAt: "2026-09-22T19:30:00Z"
 image: "/images/articles/worker-cpu-depassements-septembre-2026.webp"
-description: "Mon Worker Cloudflare dépassait la limite de 10 ms de CPU cent fois par jour. Coupables : des scanners en quête d'un WordPress disparu. Analyse et règles WAF."
+description: "Limite CPU Cloudflare Workers dépassée cent fois par jour : des scanners cherchaient un WordPress disparu. Diagnostic, règles WAF, puis plus de Worker du tout."
 updatedAt: "2026-10-18T20:45:00Z"
 searchIntent: "Pourquoi un site sur Cloudflare Workers dépasse-t-il la limite de 10 ms de CPU du plan gratuit, comment identifier les bots et scanners qui le provoquent, et comment les bloquer avec des règles WAF sans passer au plan payant ?"
 tags: ["dev", "tutoriel", "sécurité", "cloudflare", "nuxt"]
@@ -12,11 +12,11 @@ tags: ["dev", "tutoriel", "sécurité", "cloudflare", "nuxt"]
 
 > **Correction du 18 octobre.** Le paragraphe ci-dessous affirme que chaque ancienne URL redirige vers le bon article. C'était faux : seules neuf l'étaient. Les 42 autres le sont depuis le 18 octobre, je raconte comment dans [Migration WordPress → Nuxt : j'ai perdu mon référencement, voici comment je l'ai récupéré](/fr/20261018-migration-wordpress-nuxt-referencement-perdu-recupere).
 
-Ce blog a longtemps tourné sous WordPress. Depuis, il est passé à Nuxt, puis [chez Cloudflare](/fr/20260402-vercel-cloudflare-pages-migration), et pendant tout ce temps des centaines d'anciennes adresses sont restées dans l'index de Google, dans des liens d'autres sites et dans les favoris de quelques lecteurs fidèles. Ces dernières semaines, j'ai fini par faire le ménage : chaque ancienne URL redirige vers le bon article, et tout ce qui appartenait à la mécanique WordPress répondait 410, la réponse qui dit à Google « cette page n'existe plus, arrête de la demander » (c'est devenu une simple 404 depuis, j'y reviens à la fin).
+Ce blog a longtemps tourné sous WordPress. Depuis, il est [passé à Nuxt](/fr/20241005-on-fait-un-peu-le-menage), puis [chez Cloudflare](/fr/20260402-vercel-cloudflare-pages-migration), et pendant tout ce temps des centaines d'anciennes adresses sont restées dans l'index de Google, dans des liens d'autres sites et dans les favoris de quelques lecteurs fidèles. Ces dernières semaines, j'ai fini par faire le ménage : chaque ancienne URL redirige vers le bon article, et tout ce qui appartenait à la mécanique WordPress répondait 410, la réponse qui dit à Google « cette page n'existe plus, arrête de la demander » (c'est devenu une simple 404 depuis, j'y reviens à la fin).
 
-Le trafic est revenu. Et avec lui, quelque chose que je n'avais pas commandé.
+Le trafic est revenu. Et avec lui, quelque chose que je n'avais pas commandé : des bots qui poussaient mon site au-delà de la limite CPU de Cloudflare Workers.
 
-## Le courriel de Cloudflare
+## Le courriel de Cloudflare : limite CPU dépassée
 
 Un matin, ceci dans ma boîte :
 
@@ -66,7 +66,7 @@ Ensuite, j'ai regardé quelles adresses étaient demandées. Je m'attendais à d
 /google-credentials.json
 ```
 
-Aucun de ces fichiers n'a jamais existé sur ce site. Ce ne sont pas des lecteurs qui se trompent d'adresse, ce sont des scanners qui testent, sur tous les domaines qu'ils croisent, la liste des fichiers que des développeurs pressés laissent parfois traîner : la configuration avec les mots de passe, le dépôt Git, les clés d'accès au cloud. Et, bien sûr, la porte d'entrée de WordPress, parce que WordPress fait tourner près d'un site sur deux et que ça vaut toujours le coup d'essayer.
+Aucun de ces fichiers n'a jamais existé sur ce site. Ce ne sont pas des lecteurs qui se trompent d'adresse, ce sont des scanners qui testent, sur tous les domaines qu'ils croisent, la liste des fichiers que des développeurs pressés laissent parfois traîner : la configuration avec les mots de passe, le dépôt Git, les clés d'accès au cloud. Et, bien sûr, [la porte d'entrée de WordPress](/fr/20261020-site-wordpress-pirate-trouver-par-ou-le-pirate-est-entre), parce que WordPress fait tourner près d'un site sur deux et que ça vaut toujours le coup d'essayer.
 
 Les navigateurs déclarés par ces visiteurs valent le détour :
 
@@ -111,9 +111,9 @@ La page d'erreur de Nuxt, avec ses suggestions, restait en place pour les humain
 
 Au passage, la même enquête a fait tomber un autre gaspillage : les listes d'articles chargeaient le texte intégral des 48 billets pour n'afficher que des titres et des dates. Le temps de lecture, lui, était recalculé à chaque affichage en parcourant tout ce texte. Il est maintenant calculé une fois au déploiement, et rangé avec l'article.
 
-### Au bord : bloquer avant même d'arriver au site
+### Au bord : bloquer les bots avec le WAF de Cloudflare
 
-Répondre vite, c'est bien. Toutefois, le plus efficace reste de ne pas laisser ces requêtes arriver jusqu'au site. Cloudflare permet, même sur le plan gratuit, de créer cinq règles de pare-feu qui s'appliquent en amont. Une requête bloquée là ne réveillait pas le Worker, et ne coûtait donc rien. Ces règles sont d'ailleurs toujours en place.
+Répondre vite, c'est bien. Mais le plus efficace, c'est encore de ne pas laisser ces requêtes arriver jusqu'au site. Cloudflare permet, même sur le plan gratuit, de créer cinq règles de pare-feu qui s'appliquent en amont. Une requête bloquée là ne réveillait pas le Worker, et ne coûtait donc rien. Ces règles sont d'ailleurs toujours en place.
 
 J'en ai créé trois :
 

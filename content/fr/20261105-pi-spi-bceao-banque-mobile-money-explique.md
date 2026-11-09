@@ -1,5 +1,5 @@
 ---
-title: "PI-SPI expliqué simplement : de la banque au mobile money en quelques secondes"
+title: "PI-SPI BCEAO : de la banque au mobile money"
 image: "/images/articles/pi-spi-couverture.webp"
 createdAt: "2026-11-05T21:00:00Z"
 description: "PI-SPI n'est pas une appli : c'est le réseau de la BCEAO qui relie banques et mobile money dans l'UEMOA. Alias, frais, pièges : l'essentiel en bref."
@@ -7,13 +7,13 @@ searchIntent: "Qu'est-ce que PI-SPI de la BCEAO, comment s'en servir pour envoye
 tags: ["finance", "afrique", "tutoriel", "mobile money"]
 ---
 
-**Réponse courte.** PI-SPI n'est pas une application. C'est le réseau de paiement instantané de la BCEAO. Il relie les banques, les mobile money et les microfinances des 8 pays de l'UEMOA. Vous vous en servez depuis l'appli que vous utilisez déjà. L'argent arrive en quelques secondes, et l'envoi est gratuit jusqu'à 8 000 FCFA par jour.
+PI-SPI n'est pas une application : c'est le réseau de paiement instantané de la BCEAO. Il relie les banques, les mobile money et les microfinances des 8 pays de l'UEMOA. Vous vous en servez depuis l'appli que vous utilisez déjà. L'argent arrive en quelques secondes, et l'envoi est gratuit jusqu'à 8 000 FCFA par jour.
 
-## Ce que c'est
+## Qu'est-ce que PI-SPI ?
 
 PI-SPI veut dire **Plateforme interopérable du système de paiement instantané**. La BCEAO l'a lancée le 30 septembre 2025, à Dakar. Elle fonctionne 24 h/24, 7 j/7.
 
-Son rôle : faire passer l'argent d'un établissement à un autre. D'une banque vers un mobile money, d'un mobile money vers une microfinance, et ainsi de suite. Dans les 8 pays de l'UEMOA : Bénin, Burkina Faso, Côte d'Ivoire, Guinée-Bissau, Mali, Niger, Sénégal et Togo.
+Elle fait passer l'argent d'un établissement à un autre : d'une banque vers un mobile money, d'un mobile money vers une microfinance, et ainsi de suite. Elle couvre les 8 pays de l'UEMOA : Bénin, Burkina Faso, Côte d'Ivoire, Guinée-Bissau, Mali, Niger, Sénégal et Togo.
 
 Vous ne téléchargez rien. Vous passez par l'appli de votre établissement habituel, s'il est connecté à PI-SPI ([Djamo](/fr/20240905-djamo-adieu-frais-de-rejet-bonjour-transferts-faciles-et-solde-discret), par exemple).
 
@@ -23,7 +23,9 @@ Voici comment l'argent circule :
 
 ![Schéma d'un envoi PI-SPI d'Ecobank vers Orange Money. Dans l'appli Ecobank, on entre l'alias du destinataire, on vérifie son nom et son pays, puis on valide. PI-SPI, le réseau de la BCEAO qui relie banques, mobile money et microfinances des 8 pays de l'UEMOA, transmet l'argent en quelques secondes vers le compte Orange Money du destinataire. Envoi gratuit jusqu'à 8 000 FCFA par jour, puis 0,8 % HT au plus. Un envoi ne s'annule pas.](/images/articles/pi-spi-schema.svg)
 
-## Comment s'en servir
+Tout se passe dans l'appli Ecobank. Pas besoin de passer en agence, ni de faire la queue comme [ce samedi matin à Aghien, face à un chef de la sécurité qui vendait des passe-droits](/fr/20250101-lacorruption).
+
+## Comment utiliser PI-SPI pour envoyer de l'argent
 
 **1. Créez votre alias.** Ouvrez votre appli financière, allez dans la rubrique PI-SPI et suivez les instructions. L'alias est votre identifiant unique dans toute l'UEMOA. Il est rattaché à votre compte. Vous avez deux choix :
 
@@ -36,7 +38,7 @@ Voici comment l'argent circule :
 
 Seule condition : l'établissement de votre destinataire doit, lui aussi, être connecté à PI-SPI.
 
-## Combien ça coûte
+## Combien coûte un transfert PI-SPI ?
 
 | Opération | Prix |
 |---|---|
@@ -56,6 +58,8 @@ Un transfert PI-SPI est instantané et irrévocable. Une fois l'argent parti, im
 
 Avant de valider, votre appli affiche le nom et le pays du bénéficiaire. **Vérifiez-les à chaque fois.**
 
+Les arnaqueurs comptent justement là-dessus : [l'arnaque au faux mail de renouvellement Zoho](/fr/20260831-faux-mail-renouvellement-zoho-358-dollars) se termine par un virement que la victime envoie elle-même.
+
 ## En résumé
 
 - PI-SPI n'est pas une appli : c'est un réseau, celui de la BCEAO.
@@ -68,6 +72,8 @@ Merci à [Régis Bamba](https://x.com/regisbamba){target="_blank" rel="noopener"
 
 **Sources :**
 
+- [Communiqué du 2 octobre 2026 sur les transferts de monnaie électronique par PI-SPI](https://www.bceao.int/sites/default/files/2026-10/Communiqu%C3%A9%20du%202%20octobre%202026.pdf){target="_blank" rel="noopener"}, BCEAO
+- [L'alias](https://pispi.bceao.int/lalias){target="_blank" rel="noopener"}, site officiel de PI-SPI (BCEAO)
 - [Lancement officiel de PI-SPI](https://www.bceao.int/fr/content/lancement-officiel-de-la-plateforme-interoperable-du-systeme-de-paiement-instantane-pi-spi){target="_blank" rel="noopener"}, BCEAO
 - [La BCEAO rend PI-SPI obligatoire et élargit la gratuité des transferts](https://droitmediasfinance.com/index.php/actualites/droit-tech-fintech/1402-uemoa-la-bceao-rend-pi-spi-obligatoire-et-elargit-la-gratuite-des-transferts-de-monnaie-electronique-des-le-2-novembre-2026){target="_blank" rel="noopener"}, Droit Médias Finance
 - [Des frais PI-SPI possibles au-delà de 8 000 FCFA](https://beninwebtv.bj/uemoa-des-frais-pi-spi-possibles-au-dela-de-8-000-fcfa-des-novembre/){target="_blank" rel="noopener"}, Bénin Web TV

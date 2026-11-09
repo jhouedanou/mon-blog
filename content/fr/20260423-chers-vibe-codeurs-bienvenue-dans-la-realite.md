@@ -1,11 +1,13 @@
 ---
-title: "Chers Vibe Codeurs (sous Claude Code) : bienvenue dans la réalité"
+title: "Limites du vibe coding : bienvenue en NBA"
 image: "/images/articles/welcomeToTheNBA.webp"
 createdAt: "2026-04-23"
-description: "Le vibe coding, c'est le Bronny James du code : l'accès au game grâce à Claude Code, sans payer le prix du métier. Et le feuilleton Anthropic d'avril 2026."
+description: "Les limites du vibe coding sous Claude Code : l'accès au game sans payer le prix du métier, façon Bronny James. Et le feuilleton Anthropic d'avril 2026."
 searchIntent: "Le vibe coding permet-il vraiment de développer sans maîtriser les bases du métier de développeur ?"
 tags: ["développement", "IA", "Claude Code", "Anthropic", "vibe coding", "opinion"]
 ---
+
+Les limites du vibe coding, sous Claude Code comme ailleurs, tiennent en une scène de basket.
 
 ## Le « Welcome to the NBA » moment
 
@@ -16,7 +18,7 @@ Les commentateurs appellent ça un *welcome to the league moment* — « Bienve
 
 Bronny tourne aujourd'hui à 2,9 points, 0,5 rebond et 1,2 passe décisive par match en saison régulière. 42 matchs joués. Des stats de bout de banc. Le kid a une marge de progression, c'est indéniable — il est jeune, athlétique, il a l’ADN. Mais soyons honnêtes : s'il est dans le roster des Lakers, c'est d'abord parce que LeBron James a mis la pression sur la franchise pour jouer avec son fils. Si Bronny s'appelait Bronny Smith (au lieu de James), il serait en G-League à South Bay et personne n'en parlerait.
 
-Et si ça continue comme ça — si le talent ne suit pas, si la progression stagne, si le seul argument c'est le nom de famille — Bronny aura une carrière à la Smush Parker. Vous vous souvenez de Smush ? Meneur titulaire des Lakers en 2005-2007, 9 points de moyenne en carrière, 5 saisons, 6 équipes, puis direction la Chine et l'oubli. Le genre de joueur dont Kobe disait qu'il n'avait « pas le droit de lui adresser la parole ».
+Et si le talent ne suit pas, si la progression stagne, si le seul argument reste le nom de famille, Bronny aura une carrière à la Smush Parker. Vous vous souvenez de Smush ? Meneur titulaire des Lakers en 2005-2007, 9 points de moyenne en carrière, 5 saisons, 6 équipes, puis direction la Chine et l'oubli. Le genre de joueur dont Kobe disait qu'il n'avait « pas le droit de lui adresser la parole ».
 
 Vous voyez où je veux en venir.
 
@@ -32,7 +34,7 @@ Ou que tu as épuisé tous les crédits de ton plan.
 
 Et là, comme Bronny face à KD, tu réalises que le niveau réel n'a rien à voir avec ce que tu imaginais.
 
-## Ce que je fais (et ce que je ne fais pas)
+## Ce que je fais avec Claude Code (et ce que je ne fais pas)
 
 Je code depuis plus de dix ans. Je suis passé par Udemy, OpenClassrooms (quand ça s'appelait encore le Site du Zéro), les tutoriels PHP de Grafikart, les nuits blanches sur des segfault sans Stack Overflow. J'ai fait du FTP manuel sur des serveurs mutualisés OVH à 3 euros par mois. J'ai migré des projets de jQuery vers Vue, de Vue 2 vers Vue 3, de Nuxt 2 vers Nuxt 3. J'ai debuggé des conflits de merge à 2h du matin un dimanche. 
 
@@ -57,11 +59,11 @@ Et le jour où ça ne marche plus — parce que ce jour arrive toujours — ils 
 
 Je le dis sans détour : **les vibe coders sont la plaie de cette profession.**
 
-Pas parce qu'ils utilisent l'IA. Tout le monde devrait utiliser l'IA. Mais parce qu'ils confondent *générer du code* et *savoir coder*. Parce qu'ils n'ont jamais eu de bugs qui les ont fait pleurer. Parce qu'ils n'ont jamais passé un week-end entier à comprendre pourquoi un `float` cassait tout un layout. Parce qu'ils n'ont jamais eu à expliquer à un client pourquoi [la migration de PrestaShop vers un nouveau domaine](/fr/20260331-migrer-prestashop-nouveau-nom-de-domaine) allait prendre un jour et pas trois heures.
+Pas parce qu'ils utilisent l'IA. Tout le monde devrait utiliser l'IA. Mais parce qu'ils confondent *générer du code* et *savoir coder*. Parce qu'ils n'ont jamais eu de [bugs qui les ont fait pleurer](/fr/20260707-je-suis-encore-vivant). Parce qu'ils n'ont jamais passé un week-end entier à comprendre pourquoi un `float` cassait tout un layout. Parce qu'ils n'ont jamais eu à expliquer à un client pourquoi [la migration de PrestaShop vers un nouveau domaine](/fr/20260331-migrer-prestashop-nouveau-nom-de-domaine) allait prendre un jour et pas trois heures.
 
 Ils font tout avec des prompts. Sans regarder le code. Sans vérifier la qualité. Sans comprendre les implications ou la qualité de ce qui a été généré.
 
-C'est comme si Bronny James marquait 30 points dans un match amical contre des collégiens et se proclamait meilleur que Kobe. Le contexte compte. L'adversité compte. L'expérience de l'échec compte.
+C'est comme si Bronny James marquait 30 points dans un match amical contre des collégiens et se proclamait meilleur que Kobe. Le contexte compte. L'adversité et l'expérience de l'échec aussi.
 
 ## Pendant ce temps, chez Anthropic...
 
@@ -85,7 +87,7 @@ Il va sans dire que chez la concurrence, OpenAI, la session de vannes a été ou
 
 **Et la suppression d'Opus 4.5.** Sur Reddit, les posts de fans d'Opus 4.5 se succèdent — *« sad »*, *« heartbroken »*. Un modèle que beaucoup considéraient comme le plus fiable, retiré sans cérémonie.
 
-En résumé : fuite de code source vibecodé, performances nerfées, tarification opaque, communication désastreuse. Pour une entreprise qui se vend comme « le labo IA responsable », c'est un sacré coup.
+Fuite de code source vibecodé, performances nerfées, tarification opaque, communication désastreuse : pour une entreprise qui se vend comme « le labo IA responsable », c'est un sacré coup.
 
 ## La barrière à l'entrée, c'est une bonne chose
 
@@ -96,11 +98,11 @@ Je refuse de vivre dans un monde où n'importe qui peut coder une application en
 
 La marge de progression existe — pour Bronny comme pour les vibe coders. Bronny peut bosser, améliorer son tir (à 3 points surtout, le petit a vraiment une bonne détente, mais son jumpshot est horrible), travailler sa défense, et devenir un joueur NBA respectable. Les vibe coders peuvent apprendre les fondamentaux, comprendre ce que l'IA génère et devenir de vrais développeurs.
 
-Mais s'ils se contentent d'être là grâce à un avantage qu'ils n'ont pas mérité — le nom de LeBron pour l'un, les prompts de Claude Code pour les autres — sans jamais investir le travail nécessaire pour comprendre le jeu, alors leur carrière finira comme celle de Smush Parker. Oubliée. Anecdotique. Un nom que personne ne retient.
+Mais s'ils se contentent d'être là grâce à un avantage qu'ils n'ont pas mérité — le nom de LeBron pour l'un, les prompts de Claude Code pour les autres — sans jamais investir le travail nécessaire pour comprendre le jeu, alors leur carrière finira comme celle de Smush Parker : un nom que personne ne retient.
 
 ## Et pour nous, les vieux de la vieille ?
 
-Les développeurs expérimentés vont devenir plus précieux, pas moins. Parce que quand tout le monde peut générer du code, la valeur se déplace vers ceux qui savent **distinguer le bon code du code qui a l'air bon**. Ceux qui savent architecturer un système qui tient à l'échelle. Ceux qui savent debugger quand l'IA hallucine. Ceux qui prennent des décisions techniques qui ne sont pas dans le prompt.
+Les [développeurs expérimentés vont devenir plus précieux](/fr/20261016-pourquoi-lia-ne-me-remplacera-pas), pas moins. Parce que quand tout le monde peut générer du code, la valeur se déplace vers ceux qui savent **distinguer le bon code du code qui a l'air bon**. Ceux qui savent architecturer un système qui tient à l'échelle. Ceux qui savent debugger quand l'IA hallucine. Ceux qui prennent des décisions techniques qui ne sont pas dans le prompt.
 
 Et pour les développeurs comme moi, basés à Abidjan, qui paient en dollars avec des revenus en FCFA — si Anthropic passe Claude Code de 20 $ à 100 $, c'est passer de 12 000 à 60 000 FCFA par mois. Un calcul que beaucoup de développeurs africains ne pourront pas justifier.
 

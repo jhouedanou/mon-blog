@@ -1,29 +1,29 @@
 ---
-title: "NETUM A401S Thermal Printer on Linux: Claude Got It Talking"
+title: "NETUM A401S on Linux: Claude Got It Talking"
 createdAt: "2026-10-21T16:00:00Z"
 image: "/images/articles/pexels-towfiqu-barbhuiya-9755391.webp"
-description: "My NETUM A401S thermal printer only printed from an Android app. Claude decoded its language: it now prints on Linux (Omarchy), widget included."
+description: "NETUM A401S on Linux: my Bluetooth thermal printer only printed from an Android app. Claude decoded its language, CPCL. Now it prints, widget included."
 searchIntent: "How do you print from Linux to a driverless Bluetooth A4 thermal printer (NETUM / Zjiang A401S, ScanPrint app), and how can AI help recover its protocol?"
 tags: ["linux", "omarchy", "AI", "vibe coding", "hardware", "open-source", "dev"]
 ---
 
-A few days ago, Ryan Doyle shared a funny experiment on X. He sent Claude his smart TV's listing with one question: "Can you hack this?" The AI walked him through it step by step. The result: no more ads, no more forced apps, a faster interface and the screensaver of his choice ([TechCrunch](https://techcrunch.com/2026/10/19/people-are-using-ai-to-make-their-smart-tvs-dumb-again/){target="_blank" rel="noopener"}).
+A few days ago, while my NETUM A401S thermal printer was still giving Linux the cold shoulder, Ryan Doyle shared a funny experiment on X. He sent Claude his smart TV's listing with one question: "Can you hack this?" The AI walked him through it step by step. The result: no more ads, no more forced apps, a faster interface and the screensaver of his choice ([TechCrunch](https://techcrunch.com/2026/10/19/people-are-using-ai-to-make-their-smart-tvs-dumb-again/){target="_blank" rel="noopener"}).
 
 The internet says he "vibe coded" his TV. TechCrunch even talks about making smart TVs "dumb again". Personally, I'd rather say he made it smarter. A TV that only obeys its owner is finally a TV that deserves the word *smart*.
 
 The idea has spread on GitHub, with projects like [tv-vibehack](https://github.com/Gathin23/tv-vibehack){target="_blank" rel="noopener"} and [dumbtv](https://github.com/humblemuzzu/dumbtv){target="_blank" rel="noopener"}. The principle is always the same: Android TVs have the same debugging tool as our phones, ADB, and Claude uses it to switch off the clutter ([It's FOSS](https://itsfoss.com/news/debloat-smart-tv/){target="_blank" rel="noopener"}).
 
-That gave me an idea. In [my last Omarchy post](/en/20261013-retournement-de-veste-omarchy-macbook-pro-2017), I left you with a printer staring at me. I was staring back. If Claude can make a TV smarter, maybe it can teach my printer to talk to Linux.
+That gave me an idea. In [my review of Omarchy on the 2017 MacBook Pro](/en/20261013-retournement-de-veste-omarchy-macbook-pro-2017), I left you with a printer staring at me. I was staring back. If Claude can make a TV smarter, maybe it can teach my printer to talk to Linux.
 
 I promised to tell you whether it would print. It prints. Claude found what was wrong, and fixed it. And as a bonus, I even have a widget.
 
-## A printer that only talked to Android
+## NETUM A401S: a printer that only talked to Android
 
 The printer is an **A401S** sold by NETUM: a small portable A4 thermal printer. No ink, a battery, Bluetooth, and an Android app called **ScanPrint**. From the phone, everything works.
 
 From my 2017 MacBook Pro running Omarchy, nothing. In the previous post, I reassured myself that the CUPS print service comes preinstalled. You still need a driver. No driver, nothing in CUPS, and documentation that boils down to "download the app".
 
-An Android TV can be driven with the debugging tool Google built in. My printer has nothing like that. No service door. We had to find the language it speaks.
+An Android TV can be driven with the debugging tool Google built in. My printer has nothing like that. No back door. We had to find the language it speaks.
 
 ## Claude investigates
 
@@ -47,7 +47,7 @@ The connection goes through without pairing. Claude sends an ESC/POS image (`GS 
 
 ### The Bluetooth Low Energy detour
 
-Since the serial port gave nothing, the next lead was BLE: maybe the phone went through there. BlueZ, the Linux Bluetooth stack, kept connecting over classic Bluetooth, since the printer does both. But since version 3.14, Python can open an ATT channel over Low Energy directly ([Python documentation](https://docs.python.org/3/library/socket.html){target="_blank" rel="noopener"}):
+Since the serial port gave nothing, the next lead was BLE: maybe that's what the phone used. BlueZ, the Linux Bluetooth stack, kept connecting over classic Bluetooth, since the printer does both. But since version 3.14, Python can open an ATT channel over Low Energy directly ([Python documentation](https://docs.python.org/3/library/socket.html){target="_blank" rel="noopener"}):
 
 ```python
 s = socket.socket(socket.AF_BLUETOOTH, socket.SOCK_SEQPACKET, socket.BTPROTO_L2CAP)
@@ -55,13 +55,13 @@ s.bind(("00:00:00:00:00:00", 0, 4, socket.BDADDR_LE_PUBLIC))
 s.connect((addr, 0, 4, socket.BDADDR_LE_PUBLIC))
 ```
 
-That made it possible to list its services: a data channel, `ff02`, with **credit-based flow control** (the printer announces `01 07` then `02 f4 00`, meaning "7 packets ahead, 244 bytes max"), and an `ff80` channel that answers `ERROR` to everything. That one is the Bluetooth module's AT command interface. Best left alone.
+That let us list its services: a data channel, `ff02`, with **credit-based flow control** (the printer announces `01 07` then `02 f4 00`, meaning "7 packets ahead, 244 bytes max"), and an `ff80` channel that answers `ERROR` to everything. That one is the Bluetooth module's AT command interface. Best left alone.
 
 Instructive, but still nothing on paper, neither in ESC/POS nor in the "Luck Jingle" format, another common family. It swallowed the data without ever answering.
 
 ### The right lead: read the app
 
-The app's name is what unlocked everything. We got the ScanPrint APK (`com.netum.scanprint`) and decompiled it with [jadx](https://github.com/skylot/jadx){target="_blank" rel="noopener"}. The interface is in Flutter, but the Bluetooth part stayed in Java. Three findings were enough.
+The app's name is what cracked it. We got the ScanPrint APK (`com.netum.scanprint`) and decompiled it with [jadx](https://github.com/skylot/jadx){target="_blank" rel="noopener"}. The interface is in Flutter, but the Bluetooth part stayed in Java. Three findings were enough.
 
 **1. The model gets special treatment.**
 
@@ -107,7 +107,7 @@ And the answer:
 
 That confirms the real manufacturer, Zjiang, and finally explains the beeps: according to the app's code, `printerStatus: 6` means **low battery**. 14%. The beeps didn't mean "I don't understand". They meant "I'm hungry". The real blocker was the language.
 
-## The first page
+## The first page printed from Linux
 
 With the right format, the test band finally comes out, and the printer confirms:
 
@@ -162,7 +162,7 @@ The code (the command, the widget and the protocol description) is MIT-licensed.
 
 ## My distro-hopping days are over
 
-A distro hopper is someone who switches Linux distributions every other week, always looking for the one where everything will work the first time. I was one. Zorin OS on my HP Pro x2 tablet, back when I discovered [Ghostwriter](/en/20241020-ghostwriter-une-alternative-gratuite-a-ia-writer-pour-linux) on it. Zorin again, on a MacBook where the Wi-Fi [never wanted to show up](/en/20261008-pas-besoin-detre-dev-ou-barbu-mac-linux). Then Omarchy, [installed reluctantly](/en/20261008-omarchy-dhh-homme-dotfiles).
+A distro hopper is someone who switches Linux distributions every other week, always looking for the one where everything will work the first time. I was one. Zorin OS on my HP Pro x2 tablet, back when I discovered [Ghostwriter](/en/20241020-ghostwriter-une-alternative-gratuite-a-ia-writer-pour-linux) on it. [Zorin again, on a MacBook](/en/20261008-pas-besoin-detre-dev-ou-barbu-mac-linux) where the Wi-Fi never wanted to show up. Then [Omarchy, installed reluctantly after boycotting it](/en/20261008-omarchy-dhh-homme-dotfiles).
 
 I think my distro-hopping days ended today.
 
@@ -170,9 +170,9 @@ Not because Omarchy is perfect: you've read about my struggles with the Magic Mo
 
 ## The power of Linux
 
-The power of Linux isn't the tiling desktop, or the themes, or the *Matrix* rain at boot, even though I'm attached to it. It's a system that never tells you "that's not supported". Bluetooth is just a socket there, which Python opens with its standard module. The image is a PBM file. Compression is a free library every distribution ships. On the Linux side, everything was there, documented, open. All we had to do was put the pieces together.
+The power of Linux isn't the tiling desktop, or the themes, or the *Matrix* rain at boot, much as I love it. It's a system that never tells you "that's not supported". Bluetooth is just a socket there, which Python opens with its standard module. The image is a PBM file. Compression is a free library every distribution ships. On the Linux side, everything was already there, documented and open. All we had to do was put the pieces together.
 
-Claude led the investigation. Linux provided the tools, without locking anything down. Ryan Doyle made his TV smarter. My printer still only speaks CPCL. But now, Linux speaks it too. On a MacBook its manufacturer abandoned, with a printer whose manufacturer never gave Linux a thought.
+Claude led the investigation, and Linux provided the tools without locking anything down. Ryan Doyle made his TV smarter. My printer still only speaks CPCL, but now Linux speaks it too: on a MacBook its manufacturer abandoned, with a printer whose manufacturer never gave Linux a thought.
 
 Nobody gave me permission. Nobody had to.
 

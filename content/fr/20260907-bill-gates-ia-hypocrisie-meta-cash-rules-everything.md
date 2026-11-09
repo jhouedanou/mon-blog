@@ -1,14 +1,14 @@
 ---
-title: "Bill Gates veut freiner l'IA : l'hypocrisie ne coûte rien quand on a déjà encaissé"
+title: "Mémo de Bill Gates sur l'IA : C.R.E.A.M."
 createdAt: "2026-09-07T02:18:00Z"
 updatedAt: "2026-10-08T12:00:00Z"
 image: "/images/articles/bill-gates-ia-cash.jpeg"
-description: "Bill Gates veut taxer l'IA après trente ans de guerre au logiciel libre. Parallèle avec la « conversion » de Meta, condamné pour ses réseaux. C.R.E.A.M."
+description: "Bill Gates veut taxer tokens et robots dans son mémo sur l'IA, après trente ans de guerre au logiciel libre. Parallèle avec la « conversion » de Meta."
 searchIntent: "Que propose Bill Gates dans son mémo sur l'IA d'août 2026, pourquoi sa position est jugée hypocrite au regard de son passé contre l'open source, et quel lien avec les condamnations de Meta en 2026 sur la protection des mineurs."
 tags: ["tech", "opinion", "IA", "société"]
 ---
 
-Fin août, Bill Gates a publié [un mémo de 6 000 mots sur l'intelligence artificielle](https://www.axios.com/2026/08/26/bill-gates-sounds-the-alarm-on-an-ai-transition). Le ton a surpris tout le monde. L'éternel optimiste de la tech sonne l'alarme : l'IA avance plus vite que les gouvernements, elle va bousculer les cols blancs comme les cols bleus, elle ouvre des risques cyber et biologiques inédits, et « il n'y a aucun plan pour entrer dans l'ère de l'IA ».
+Fin août, Bill Gates a publié [un mémo de 6 000 mots sur l'intelligence artificielle](https://www.axios.com/2026/08/26/bill-gates-sounds-the-alarm-on-an-ai-transition). Le ton a surpris tout le monde. L'éternel optimiste de la tech sonne l'alarme : l'IA avance plus vite que les gouvernements, elle va bousculer les cols blancs comme les cols bleus, elle ouvre des [risques cyber](/fr/20260926-apocalypse-ia-nucleaire-distributeurs-internet) et biologiques inédits, et « il n'y a aucun plan pour entrer dans l'ère de l'IA ».
 
 Sa formule, reprise partout : l'IA sera « le plus grand égalisateur jamais inventé, ou la pire source d'injustice ».
 
@@ -42,7 +42,7 @@ Ce n'est pas propre à Gates. C'est la trajectoire de tous les barons de l'indus
 
 ## Meta, ou la conversion en direct
 
-En janvier 2025, Mark Zuckerberg annonçait son grand retour à la « liberté d'expression » : fin du fact-checking aux États-Unis, modération allégée, mea culpa sur la « censure » des années précédentes. En parallèle, l'entreprise se repeignait en championne de l'IA « ouverte » avec ses modèles Llama, distribués gratuitement. Le géant fermé de Facebook devenu apôtre de l'ouverture. Ça ne vous rappelle rien ?
+En janvier 2025, Mark Zuckerberg annonçait son grand retour à la [« liberté d'expression »](/fr/20260907-free-speech-oui-mais-pas-ca) : fin du fact-checking aux États-Unis, modération allégée, mea culpa sur la « censure » des années précédentes. En parallèle, l'entreprise se repeignait en championne de l'IA « ouverte » avec ses modèles Llama, distribués gratuitement. Le géant fermé de Facebook devenu apôtre de l'ouverture. Ça ne vous rappelle rien ?
 
 Puis la justice est passée.
 
@@ -54,7 +54,7 @@ Et pendant qu'un tribunal listait les dégâts, l'entreprise expliquait au monde
 
 C'est ce que j'écrivais déjà [à propos de la campagne « oui à l'excision »](/fr/20260822-oui-a-lexcision-non-diversion-rhetorique) : les plateformes ne distinguent pas l'approbation de la colère, elles voient de l'engagement et elles poussent. Les dérives ne sont pas des accidents du modèle, elles sont le modèle. Un jury du Nouveau-Mexique vient de le dire avec des chiffres.
 
-## Ce qu'on peut en tirer
+## Ce qu'on peut tirer du mémo de Bill Gates
 
 On peut applaudir le fond du mémo de Gates sans acheter la posture. Taxer les tokens, financer la reconversion, ralentir la fuite hors du travail humain : ce sont de vraies pistes, et elles méritent d'être discutées ici aussi, où l'IA va frapper des économies qui n'ont pas de filets de sécurité du tout.
 
@@ -68,7 +68,7 @@ Le grand philosophe Clifford « Method Man » Smith, du Wu-Tang Clan, avait déj
 
 C.R.E.A.M.
 
-Gates a raison sur l'IA. Meta a été condamné pour ses réseaux. Et dans les deux cas, la conclusion est la même : finalement, l'argent arrange tout. Il paie les dégâts, il paie les mémos, il paie même la sagesse.
+Gates a raison sur l'IA. Meta a été condamné pour ses réseaux. Et dans les deux cas, la conclusion est la même : l'argent arrange tout. Il paie les dégâts, il paie les mémos, il paie même la sagesse.
 
 Get the money. Dollar dollar bill, y'all.
 

@@ -1,13 +1,13 @@
 ---
-title: "PHP2Shell: updating PHP on Debian and Ubuntu when Forge goes quiet"
+title: "PHP2Shell patch: update PHP without Forge"
 createdAt: "2026-10-21T21:30:00Z"
 image: "/images/articles/pexels-panumas-nikhomkhai-1148820.webp"
-description: "PHP2Shell: two critical PHP flaws, already exploited. Forge not answering? Here is the command to update PHP over SSH on Debian and Ubuntu servers."
+description: "PHP2Shell: two critical PHP flaws, already exploited. Forge not answering? Here is the command to install the patch over SSH on Debian and Ubuntu."
 searchIntent: "How do I fix PHP2Shell (CVE-2026-109618, CVE-2026-109619) and update PHP-FPM over SSH on a Debian or Ubuntu server, including Laravel Forge servers?"
 tags: ["tutorial", "security", "php", "linux", "development"]
 ---
 
-**Short answer.** Two PHP flaws, nicknamed PHP2Shell, let an attacker take over a web server with a single request and no password. They were fixed on Wednesday, October 21, in PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35, and they are already being exploited. On a Laravel Forge server, automatic updates don't touch PHP: you have to do it yourself. With Forge gone quiet, here is the way through, over SSH, with the command I'm running on my servers.
+Two PHP flaws, nicknamed PHP2Shell, let an attacker take over a web server with a single request and no password. The patch came out on Wednesday, October 21, in PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35, and the flaws are already being exploited. On a Laravel Forge server, automatic updates don't touch PHP: you have to update it yourself. With Forge gone quiet, here's how to do it over SSH, with the command I'm running on my servers.
 
 ## What PHP2Shell is
 
@@ -34,9 +34,9 @@ For PHP 8.1 and older, the PHP project published source patches to build yoursel
 
 You might think a server with Ubuntu's automatic updates is covered. It isn't. Forge installs PHP from Ondřej Surý's packages, not from Ubuntu, and `unattended-upgrades` only applies Ubuntu's own security updates. [Forge's advisory](https://laravel.com/forge/docs/knowledge-base/php-security-release-october-2026){target="_blank" rel="noopener"} says so plainly: you have to update PHP yourself, server by server, version by version.
 
-Forge recommends its dashboard: PHP tab, "Update PHP" button. The upside is that it also repairs the package source along the way. Except tonight, Forge has gone quiet. That leaves SSH.
+Forge recommends going through its dashboard: PHP tab, "Update PHP" button. The upside is that it also repairs the package source along the way. Except tonight, Forge has gone quiet. That leaves SSH.
 
-## The command, over SSH
+## The command to patch PHP over SSH
 
 Log in as root (`sudo -i`) and paste this block. It runs on Ubuntu and Debian with Nginx and PHP-FPM (how Forge sets servers up) or with Apache, using PHP-FPM or mod_php. It's not for LiteSpeed: see further down.
 
@@ -91,7 +91,7 @@ What you should see in the result:
 
 **2. It repairs the package source.** Older Forge servers still point at Launchpad, the original home of the `ondrej/php` repository. Forge now uses `ppa.setup-php.com`, a mirror of that repository. The `for f in …` loop swaps one for the other, after copying the original file to `/root/` (`.bak`). That's the step Forge's button does for you, and the one people forget over SSH.
 
-**3. It checks the fix is actually there.** `apt-get update` only shows errors about PHP or GPG keys. Then, for each installed version (`ls /etc/php`), `apt-cache policy` gives the version you are about to receive. If it isn't in the `FIXED` list, the command installs nothing and says so, showing the installed and candidate versions. That's on purpose: tonight, some packages hadn't reached the mirrors yet, especially on ARM servers (8.4 and 8.5 on arm64, according to [the mirror's maintainer](https://github.com/shivammathur/setup-php/issues/1139){target="_blank" rel="noopener"}).
+**3. It checks the fix is actually there.** `apt-get update` only shows errors about PHP or GPG keys. Then, for each installed version (`ls /etc/php`), `apt-cache policy` gives the version you're about to get. If it isn't in the `FIXED` list, the command installs nothing and says so, showing the installed and candidate versions. That's on purpose: tonight, some packages hadn't reached the mirrors yet, especially on ARM servers (8.4 and 8.5 on arm64, according to [the mirror's maintainer](https://github.com/shivammathur/setup-php/issues/1139){target="_blank" rel="noopener"}).
 
 **4. It upgrades every package for that version.** `--only-upgrade` installs nothing new, `--force-confold` keeps your `php.ini` and PHP-FPM pools as they are. The Apache module (`libapache2-mod-php`) is upgraded along with the rest. The variables at the top stop apt and `needrestart` from pausing to ask questions. `LC_ALL=C` forces apt to answer in English: on a server set to French, it prints "Candidat" instead of "Candidate", and the command wouldn't find any version.
 
@@ -238,7 +238,7 @@ One last case: FrankenPHP bundles its own PHP, which apt doesn't update. Move to
 The command prints "NO PATCH AVAILABLE"? Compare the two versions in brackets. Unless you're on Ubuntu with Ubuntu's own PHP (see above), the fixed package hasn't reached your mirror yet. Run it again in an hour. Meanwhile:
 
 - **The `session.upload_progress` mitigation** is already applied by the command. It lowers the risk, it doesn't remove it.
-- **Cloudflare** has deployed firewall rules against the known attacks, for all customers, free plan included, according to [Help Net Security](https://www.helpnetsecurity.com/2026/10/21/php2shell-php-vulnerabilities-patched-cve-2026-109618-cve-2026-109619/){target="_blank" rel="noopener"}. If your site sits behind Cloudflare, that's one more layer. I told how those rules already rid me of unwanted bots in [I got my blog's traffic back (and the bots that come with it)](/en/20260922-jai-recupere-le-trafic-de-mon-blog-et-les-bots-qui-vont-avec).
+- **Cloudflare** has deployed firewall rules against the known attacks, for all customers, free plan included, according to [Help Net Security](https://www.helpnetsecurity.com/2026/10/21/php2shell-php-vulnerabilities-patched-cve-2026-109618-cve-2026-109619/){target="_blank" rel="noopener"}. If your site sits behind Cloudflare, that's one more layer. Cloudflare's firewall already rid me of unwanted bots when [my blog kept hitting the Cloudflare Workers CPU limit](/en/20260922-jai-recupere-le-trafic-de-mon-blog-et-les-bots-qui-vont-avec).
 - **The UK NCSC** advises taking offline whatever can't be fixed right away. For a brochure site that can wait until tomorrow morning, that's the safest option.
 
 And if the server still runs PHP 8.1 or older, no amount of waiting will help: install a supported version and switch the sites to it.
@@ -252,6 +252,8 @@ sudo grep -lsE 'php.*\(deleted\)$' /proc/[0-9]*/maps
 ```
 
 No output: nothing uses the old PHP any more. Otherwise, the number in the path (`/proc/<number>/maps`) is the process to restart.
+
+While you're on a WordPress server over SSH, also check that Redis isn't taking all the memory: here's [what to do when Redis memory is full](/en/20261031-redis-plein-vps-wordpress-vider-limiter).
 
 ## I'll leave you to it
 

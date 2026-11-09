@@ -1,19 +1,20 @@
 ---
-title: "Hacked WordPress site: find out how the attacker got in"
+title: "Hacked WordPress site: how did they get in?"
 createdAt: "2026-10-20T09:00:00Z"
 image: "/images/articles/pexels-pixabay-276452.webp"
-description: "WordPress site hacked? Before cleaning up, find the way in from the server logs: a guessed admin password, a plugin uploaded via wp-admin. Commands included."
+description: "Hacked WordPress site? Before cleaning up, find the way in from the server logs: a guessed admin password, a plugin uploaded via wp-admin. Commands included."
+updatedAt: "2026-11-08"
 searchIntent: "My WordPress site was hacked: what should I do first, and how do I find in the server logs how the attacker got in (admin password, plugin, FTP)?"
 tags: ["tutorial", "wordpress", "security", "development"]
 ---
 
-**Short answer.** Before you clean anything, copy the server logs. Then look for the way in: a burst of `POST /wp-login.php` followed by a successful login means the password was guessed; an `upload-plugin` right after means the attacker installed their own plugin from the dashboard. Until you know how they got in, they will come back the same way, even after a clean restore.
+On a hacked WordPress site, before you clean anything, copy the server logs. Then look for the way in: a burst of `POST /wp-login.php` followed by a successful login means the password was guessed; an `upload-plugin` right after means the attacker installed their own plugin from the dashboard. Until you know how they got in, they'll come back the same way, even after a clean restore.
 
-That's exactly what I found in August, on an African news site I had to put back on its feet. Here's the method, commands included.
+That's exactly what I found in August, on an African news site I had to get back on its feet. Here's the method, commands included.
 
 ## What to do first when a WordPress site is hacked
 
-The reflex is to delete everything and restore a backup. That's the best way to erase the evidence and leave the door open. In order:
+The first instinct is to delete everything and restore a backup. That's the best way to erase the evidence and leave the door open. In order:
 
 1. **Copy the logs**, right away. Access logs rotate: depending on the host, files older than a few days get compressed, then deleted. Without them, there's nothing to investigate.
 2. **Archive the hacked site** (files and database), infected as it is. It's your crime scene.
@@ -66,11 +67,11 @@ A log line looks like this (the common "combined" format):
 203.0.113.45 - - [12/Aug/2026:03:14:07 +0000] "POST /wp-login.php HTTP/1.1" 200 4521 "-" "Mozilla/5.0"
 ```
 
-In order: the IP, the date, the request, then the **response code** (`200` here). That code tells the whole story.
+In order: the IP, the date, the request, then the **response code** (`200` here). That code is what we're after.
 
 ## Lead 1: a guessed admin password
 
-When the password is wrong, `wp-login.php` answers `200`: it shows the form again with an error message. When the password is right, it answers `302`: a redirect to `/wp-admin/`. A brute-force attack therefore leaves a very readable signature: hundreds of `POST` requests returning `200`, then one `302`.
+When the password is wrong, `wp-login.php` answers `200`: it shows the form again with an error message. When the password is right, it answers `302`: a redirect to `/wp-admin/`. So a brute-force attack leaves a very readable signature: hundreds of `POST` requests returning `200`, then one `302`.
 
 Count attempts per IP address:
 
@@ -105,7 +106,7 @@ wp user session list <username> --fields=login_time,ip,ua
 **Reading the result:**
 
 - **Many failures, then a success from the same IP**: the password was guessed. It was too short or too common.
-- **A burst on `xmlrpc.php`, then a single `302` on `wp-login.php`**: same thing. The password was found through `xmlrpc.php`, then used on the login page, which therefore shows no failures.
+- **A burst on `xmlrpc.php`, then a single `302` on `wp-login.php`**: same thing. The password was found through `xmlrpc.php`, then used on the login page, which is why it shows no failures.
 - **A success with no failures anywhere, from an unknown IP**: the attacker already had the password. One reused elsewhere, a phishing email, or spyware on an editor's computer. That's the [fake Zoho renewal email](/en/20260831-faux-mail-renouvellement-zoho-358-dollars) scenario: nobody guesses anything, they just ask.
 
 ## Lead 2: a malicious plugin uploaded via wp-admin
@@ -131,7 +132,7 @@ find wp-content -name '*.php' -printf '%C+ %p\n' | sort -r | head -30
 find wp-content/uploads -name '*.php'
 ```
 
-The second command should return nothing: the media folder has no reason to hold PHP. Careful, a `chmod`, a `chown` or a restore also update the `ctime`: run this search before touching the files.
+The second command should return nothing: the media folder has no reason to hold PHP. Careful: a `chmod`, a `chown` or a restore also update the `ctime`: run this search before touching the files.
 
 In the logs, requests to a PHP file of the plugin show when it was used, and from where:
 
@@ -172,6 +173,7 @@ No suspicious `302`, no upload? The door is somewhere else. The most common sign
 | Stolen FTP or SSH access | `/var/log/secure` (AlmaLinux), `/var/log/auth.log` or `journalctl -u ssh` (Debian, Ubuntu), the panel's FTP log | A successful login from an unknown IP |
 | Compromised hosting account | The panel's login history | A session you didn't open |
 | Infected neighbor site | Other sites on the same account | The same malicious file, older, somewhere else |
+| A flaw in PHP itself, like PHP2Shell in October 2026 | The installed PHP-FPM or mod_php version | A version without the fix: see [how to patch PHP against PHP2Shell](/en/20261021-php2shell-mettre-a-jour-php-debian-ubuntu-sans-forge) |
 
 For the first lead, WP-CLI compares WordPress core and plugins from the official directory against the originals. Any modified or added file shows up:
 
@@ -204,7 +206,9 @@ These settings only help if you've first checked that nothing is left behind: a 
 
 On the August site, there was no unknown vulnerability and no genius hacker. The administrator password was guessed, and WordPress did the rest: it lets any administrator install code on the server in three clicks. The logs told the whole story, as long as you read them before wiping everything.
 
-These bots aren't after anyone in particular. They try the same addresses on every site, including those that no longer run WordPress. This blog left it [two years ago](/en/20261018-migration-wordpress-nuxt-referencement-perdu-recupere), and bots still look for its `wp-login.php`: I told that story in [I got my blog's traffic back (and the bots that come with it)](/en/20260922-jai-recupere-le-trafic-de-mon-blog-et-les-bots-qui-vont-avec). Your site isn't too small to get hacked. It's just on the list, like all the others.
+These bots aren't after anyone in particular. They try the same addresses on every site, including those that no longer run WordPress. This blog left it [two years ago](/en/20261018-migration-wordpress-nuxt-referencement-perdu-recupere), and bots still look for its `wp-login.php`: that's actually [why my blog kept hitting the Cloudflare Workers CPU limit](/en/20260922-jai-recupere-le-trafic-de-mon-blog-et-les-bots-qui-vont-avec). Your site isn't too small to get hacked. It's just on the list, like all the others.
+
+*Updated November 8, 2026: the table of ways in now has one more row, a flaw in PHP itself, like PHP2Shell, fixed on October 21, 2026 ([PHP project announcement](https://www.php.net/archive/2026.php){target="_blank" rel="noopener"}).*
 
 ---
 

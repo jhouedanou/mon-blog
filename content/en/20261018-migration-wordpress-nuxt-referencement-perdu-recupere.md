@@ -1,19 +1,19 @@
 ---
-title: "WordPress → Nuxt migration: I lost my SEO, here's how I got it back"
+title: "Lost SEO after migration: how I got it back"
 createdAt: "2026-10-18T20:45:00Z"
 image: "/images/articles/pexels-ketut-subiyanto-4246238.webp"
-description: "Four address changes, 500 errors, \"not found\" pages served with a 200: what my migration to Nuxt cost in SEO, and how I fixed it."
+description: "Lost SEO after migration from WordPress to Nuxt: four successive URLs, 500 errors, soft 404s. How I got it back with 301s, a www redirect and real 404s."
 searchIntent: "Why does a site lose its SEO after migrating from WordPress to Nuxt, and how do you get it back: 301 redirects, soft 404s, robots.txt, sitemap, www?"
 tags: ["dev", "tutorial", "seo", "nuxt", "cloudflare"]
 ---
 
-This blog left WordPress in October 2024. I wrote about it at the time in [Doing a bit of housekeeping](/en/20241005-on-fait-un-peu-le-menage). What I didn't write about is what the move cost in SEO. In fact, I only fully understood it today, going back through the site's Git history, commit by commit, and rebuilding the site as it was at different dates.
+This blog changed engines in October 2024. At the time I wrote about [why I was leaving WordPress for Nuxt](/en/20241005-on-fait-un-peu-le-menage), then about [the result, a flat-file blog with no database](/en/20241021-pendaison-de-cremaillere). What I didn't write about is the SEO I lost after the migration. In fact, I only fully understood it today, going back through the site's Git history, commit by commit, and rebuilding the site as it was at different dates.
 
 The main problem wasn't Nuxt. It was the addresses. A single post changed URL four times, and for nearly two years, the old addresses led nowhere.
 
-## What Google knew before
+## What Google knew before the migration
 
-Under WordPress, the blog lived on `www.houedanou.com`, with addresses shaped like `/year/month/title/`. For example:
+Back on WordPress, the blog lived at `www.houedanou.com`, with addresses shaped like `/year/month/title/`. For example:
 
 ```
 https://www.houedanou.com/2022/09/cette-application-nest-pas-disponible-dans-votre-pays-la-solution/
@@ -46,9 +46,9 @@ The answer depended on the period, and none of them was the right one.
 
 That last point matters. When `robots.txt` answers with a server error, [Google stops crawling the site for 12 hours](https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt){target="_blank" rel="noopener"}, then uses the last known version of the file for 30 days, before acting as if it didn't exist. It's not a disaster in the long run, but it's a bad start, at the exact moment Google was supposed to discover the new site.
 
-**From late March to September 2026: an "Article not found" page, with a 200 code.** The site had moved to Cloudflare. Unknown addresses displayed an error message, but the server answered "200, all good". Google calls that a *soft 404*: a page that says it doesn't exist, served as if it did. Except that on March 26, 2026, every article address had just changed. So for five months, every address Google had in memory answered "Article not found", with no redirect.
+**From late March to September 2026: an "Article not found" page, with a 200 code.** The site had [moved from Vercel to Cloudflare](/en/20260402-vercel-cloudflare-pages-migration). Unknown addresses displayed an error message, but the server answered "200, all good". Google calls that a *soft 404*: a page that says it doesn't exist, served as if it did. Except that on March 26, 2026, every article address had just changed. So for five months, every address Google had in memory answered "Article not found", with no redirect.
 
-**In September 2026: server errors.** The Cloudflare Worker serving the site kept going over its CPU time limit, mostly because of bots looking for sensitive files. As a knock-on effect, real readers got 522 errors, even on the home page. I told that story in [I got my blog's traffic back (and the bots that come with it)](/en/20260922-jai-recupere-le-trafic-de-mon-blog-et-les-bots-qui-vont-avec).
+**In September 2026: server errors.** The Cloudflare Worker serving the site kept going over its CPU time limit, mostly because of bots looking for sensitive files. As a knock-on effect, real readers got 522 errors, even on the home page. I told that story in [my post on the Cloudflare Workers CPU limit and the bots](/en/20260922-jai-recupere-le-trafic-de-mon-blog-et-les-bots-qui-vont-avec).
 
 **And for the old WordPress, on `www`: a 522 error, until October 18, 2026.** `www.houedanou.com` didn't redirect to `houedanou.com`. Cloudflare received the request and found no server behind it. Every old link to the WordPress site landed on that error.
 
@@ -62,11 +62,11 @@ The addresses were the bulk of the problem. But going back through the history, 
 - **A meta description that asked a question.** From July to October 2026, the site showed the `searchIntent` field (the question the post answers) in search results instead of the summary.
 - **A temporary redirect on every page.** From April to September 2026, Cloudflare answered with a 307 redirect from `/a-propos` to `/a-propos/`, while the canonical tag declared the version without the trailing slash.
 
-## What I fixed
+## How I got my SEO back
 
 ### Redirect every old address, with a 301
 
-This is the fix that matters most. The first nine redirects date from September 1, 2026. In [my September 22 post](/en/20260922-jai-recupere-le-trafic-de-mon-blog-et-les-bots-qui-vont-avec), I wrote that every old URL redirected to the right article. That was wrong: 42 were missing.
+This is the fix that matters most, just as it is when [changing a PrestaShop store's domain name](/en/20260331-migrer-prestashop-nouveau-nom-de-domaine). The first nine redirects date from September 1, 2026. In [my September 22 post on the Cloudflare Workers CPU limit](/en/20260922-jai-recupere-le-trafic-de-mon-blog-et-les-bots-qui-vont-avec), I wrote that every old URL redirected to the right article. That was wrong: 42 were missing.
 
 Git history lets you find them all. For each period, you know where each file sat in `content/`, and therefore what its address was. Today, 51 old addresses redirect to the right post:
 

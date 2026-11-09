@@ -1,19 +1,19 @@
 ---
-title: "La réunion « pour en parler »"
+title: "Réunion inutile : celle « pour en parler »"
 image: "/images/articles/reunion.webp"
 createdAt: "2026-03-25"
-description: "La réunion « pour en parler » naît souvent d'une conviction sans argument. Pourquoi elle prospère, et comment l'éviter en exigeant des objections écrites."
+description: "La réunion inutile « pour en parler » naît d'une conviction sans argument. Pourquoi elle prospère, et comment l'éviter en exigeant des objections écrites."
 searchIntent: "Comment éviter les réunions inutiles et transformer une réunion « pour en parler » en décisions concrètes."
 tags: ["opinion", "société"]
 ---
 
 Dans mon domaine de travail, il existe un mal.
 
-Une endémie.
+Une endémie : la réunion inutile.
 
 Non, pas la « réunion de crise », ni le « kickoff ».
 
-Celle-là n'apparaît que lorsque les vagues de l'ego et du manque d'arguments — soigneusement cultivés par un système éducatif qui récompense la restitution — viennent se briser sur le mur de la réalité technique.
+Celle-là n'apparaît que lorsque les vagues de l'ego et du manque d'arguments — soigneusement cultivés par un système éducatif qui récompense la restitution — viennent se briser sur [le mur de la réalité technique](/fr/20260707-je-suis-encore-vivant).
 
 ## La réunion « pour en parler »
 
@@ -49,7 +49,7 @@ La réunion inutile est une conséquence de ce manque de formation.
 On convoque donc une réunion — parce que la réunion, elle, donne l'illusion du sérieux.\
 Sans en exiger la substance.
 
-## Que faut-il faire ?
+## Comment éviter une réunion inutile ?
 
 À cet instant, il faut éviter de tomber dans le piège d'une énième réunion fantôme, car vous avez déjà proposé une solution argumentée et documentée. Rien de productif ne sortira de cette réunion — je vous le garantis.
 Soyez pragmatiques, et demandez à votre interlocuteur de [formuler par écrit ses appréhensions](/fr/20260908-cest-integre-dans-la-maquette). C'est une base saine pour continuer l'échange.
@@ -62,9 +62,9 @@ Oui, mais en insistant… Dans beaucoup (trop) de cas, j'ai eu droit à l'une de
 « C'est pas si urgent que ça. »\
 « Je suis occupé pour l'instant. »
 
-Dans ces cas, insistez, pas pour humilier — mais pour aider la personne à formuler ce qui la gêne, et transformer les idées floues en vraies objections. Et si, malgré vos efforts, la réponse écrite ne vient pas — ou est vide — pas de réunion, car une réunion utile commence par une phrase utile.
+Dans ces cas, insistez, non pas pour humilier, mais pour aider la personne à formuler ce qui la gêne, et transformer les idées floues en vraies objections. Et si, malgré vos efforts, la réponse écrite ne vient pas (ou qu'elle est vide), pas de réunion, car une réunion utile commence par une phrase utile.
 
-PS : Si malgré tout vous décidez de tenir cette réunion, prévoyez un ordre du jour, un temps limité — 10 minutes max, sans retard toléré — et une question unique à trancher.
+PS : Si malgré tout vous décidez de tenir cette réunion, prévoyez un ordre du jour, un temps limité (10 minutes max, sans retard toléré) et une question unique à trancher.
 
 Avec des arguments.
 

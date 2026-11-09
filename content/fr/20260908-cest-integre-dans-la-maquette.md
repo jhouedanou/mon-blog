@@ -1,13 +1,13 @@
 ---
-title: "« C'est intégré dans la maquette. » (Non.)"
+title: "Vérifier un handoff : c'est intégré ? Non."
 createdAt: "2026-09-08T20:17:00Z"
 image: "/images/articles/maquette-integree-non.webp"
-description: "« C'est intégré » : deux écrans sur quatre l'étaient vraiment. Ce que grep m'a appris sur un handoff, et cinq pièges de projet web que je gère autrement."
+description: "Vérifier un handoff avec grep : deux écrans « intégrés » sur quatre l'étaient vraiment. Et cinq pièges de projet web que je gère autrement."
 searchIntent: "Comment vérifier un livrable de handoff annoncé comme terminé, et comment éviter les pièges classiques d'un projet web : lots de retours, contenus non finalisés, validation sans délai, accès DNS refusé, secrets partagés dans un Drive."
 tags: ["gestion de projet", "développement", "handoff", "méthode", "opinion"]
 ---
 
-Il y a des phrases qui devraient nous faire tendre l'oreille. « Fais-moi confiance », « ça prend deux minutes », ou « on peut faire un call pour en parler ? ». Depuis la semaine dernière, j'ai ajouté « c'est intégré » à ma liste.
+Il y a des phrases qui devraient nous faire tendre l'oreille. « Fais-moi confiance », « ça prend deux minutes », ou « on peut faire un call pour en parler ? ». Depuis la semaine dernière, j'ai ajouté « c'est intégré » à ma liste. Un livrable de handoff annoncé comme terminé, ça se vérifie.
 
 Je récupère un dossier de handoff pour un projet client. Cahier des charges, matrice de scoring, maquettes HTML, design system, kit graphique, plan de tracking. Le pack a l'air sérieux, il a même une table des matières, et j'ai neuf jours pour livrer.
 
@@ -15,7 +15,7 @@ Après une première lecture, je liste huit manques. La réponse arrive deux jou
 
 Parfait, me dis-je. Sauf que non.
 
-## Trente secondes de vérification
+## Vérifier un livrable de handoff en trente secondes
 
 Avant d'ouvrir un éditeur, j'ouvre un terminal. Ce n'est pas de la méfiance, c'est une habitude que j'ai prise avec le temps.
 
@@ -31,11 +31,11 @@ Je fais une deuxième passe, plus large, au cas où le bandeau cookies se serait
 grep -n -i -o -E ".{0,90}(cookie|consent|données personnelles|j'accepte).{0,90}" *.dc.html
 ```
 
-Un seul résultat, et c'est un interrupteur d'administration : « Autoriser l'export de données personnelles ». Aucun bandeau cookies, aucune case de consentement. Le mot « cookie » n'apparaît nulle part dans les fichiers de maquette.
+Un seul résultat, et c'est un interrupteur d'administration : « Autoriser l'export de données personnelles ». Aucun bandeau cookies, aucune case de consentement. Le mot « cookie » n'apparaît nulle part dans les [fichiers de maquette](/fr/20260519-comment-installer-adobe-xd-en-2026).
 
 Deux points sur quatre, donc. J'ai renvoyé le constat avec les numéros de ligne et les noms de planches. C'est fou comme un numéro de ligne coupe court aux débats : on ne peut pas faire un call pour en parler avec `grep`.
 
-## Le vrai coût
+## Le vrai coût d'une annonce non vérifiée
 
 Deux écrans manquants, ça se rattrape en une journée, peut-être deux. Ce qui coûte, c'est ce qui change après.
 
@@ -43,7 +43,7 @@ Avant, quand on me disait « c'est fait », j'intégrais. Maintenant j'ouvre les
 
 C'est le prix d'une seule annonce non vérifiée. Elle ne coûte pas les deux écrans, elle coûte la confiance, et la confiance fait gagner un temps qu'on ne remplace par rien.
 
-## Cinq pièges que ce projet m'a servis en une semaine
+## Cinq pièges de projet web servis en une semaine
 
 Ils ne sont pas propres à mon client, je les ai croisés partout. Vous les reconnaîtrez sûrement.
 
@@ -93,7 +93,7 @@ Ce qui marche est plus court et moins fatigant : des dépendances et des dates.
 
 Ça ne se lit pas comme un reproche, donc ça ne se discute pas comme un reproche. Ça se lit comme un fait.
 
-Et surtout, tout par écrit, dans un canal visible par tout le monde. Pas de message privé sur les sujets qui engagent une date. Non par méfiance, mais parce que le jour où l'échéance saute, la seule chose qui vous protège, c'est un historique daté que personne ne peut réécrire. La mémoire des gens, elle, devient très créative après une échéance ratée.
+Et surtout, tout par écrit, dans un canal visible par tout le monde. Pas de [message privé sur WhatsApp](/fr/20261028-whatsapp-nest-pas-un-moyen-de-communication-professionnel) ni ailleurs sur les sujets qui engagent une date. Non par méfiance, mais parce que le jour où l'échéance saute, la seule chose qui vous protège, c'est un historique daté que personne ne peut réécrire. La mémoire des gens, elle, devient très créative après une échéance ratée.
 
 ## Ce que je fais maintenant, systématiquement
 

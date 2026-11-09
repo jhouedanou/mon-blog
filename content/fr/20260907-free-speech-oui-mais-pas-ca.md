@@ -1,17 +1,17 @@
 ---
-title: "Free speech, oui. Mais pas ça."
+title: "Affaire Anderegg : free speech, mais pas ça"
 createdAt: "2026-09-07T15:29:00Z"
 image: "/images/articles/pexels-katrin-bolovtsova-6077189.webp"
-description: "Une cour d'appel fédérale des États-Unis a jugé que le Premier Amendement protège la possession privée d'images pédocriminelles générées par IA. Décryptage."
+description: "United States v. Anderegg : le 7e circuit a jugé que le Premier Amendement protège la possession privée d'images pédocriminelles générées par IA. Décryptage."
 searchIntent: "Que dit vraiment la décision United States v. Anderegg du 7e circuit sur les images pédocriminelles générées par IA, et est-ce que les États-Unis ont légalisé ce contenu."
 tags: ["ia", "société", "opinion", "juridique"]
 ---
 
 Je suis, et je reste, du côté de la liberté d'expression. Mais d'une liberté d'expression responsable, celle qui assume ses conséquences légales. Petit salut au passage à certains blogueurs ivoiriens qui en ont fait les frais : dire ce qu'on pense a un prix, et ceux qui l'ont payé le savent mieux que moi.
 
-Je vais être honnête, j'en ai un peu marre de parler de ce genre de sujet. Mais celui-là, je ne peux pas le laisser passer.
+Je vais être honnête, j'en ai un peu marre de parler de ce genre de sujet. Mais celui-là, je ne peux pas le laisser passer : la décision *United States v. Anderegg* sur les images pédocriminelles générées par IA.
 
-## Les faits
+## United States v. Anderegg : les faits
 
 Le 25 août 2026, la Cour d'appel fédérale du 7e circuit (Illinois, Indiana, Wisconsin) a rendu une décision dans l'affaire *United States v. Anderegg*. Un homme du Wisconsin, poursuivi pour avoir produit, distribué et possédé des images pédocriminelles générées par IA, a obtenu que le chef d'accusation de simple possession privée soit rejeté au nom du Premier Amendement.
 
@@ -33,7 +33,7 @@ Donc non, l'Amérique n'a pas « légalisé la pédopornographie IA ». Mais oui
 
 ## La question que je me pose vraiment
 
-Je travaille avec l'IA tous les jours, j'écris des prompts tous les jours. Alors ma question est simple : quel genre de personne s'assoit devant un modèle et tape ce genre de détails ?
+[Je travaille avec l'IA tous les jours](/fr/20250604-liaetmoi), j'écris des prompts tous les jours. Alors ma question est simple : quel genre de personne s'assoit devant un modèle et tape ce genre de détails ?
 
 Ce n'est pas un accident ni un bug. Un modèle ne produit pas ça tout seul, quelqu'un a décrit, précisé, recommencé, pendant des heures. Des milliers d'images, selon le dossier. À un moment, la question n'est plus juridique, elle est humaine.
 
@@ -45,7 +45,7 @@ Le simple fait que de la RAM, des GPU, de l'électricité et du travail d'ingén
 
 Parents, arrêtez de poster les photos de vos enfants.
 
-Oui, je sais, on est dans le victim blaming. Ce n'est pas à vous de vous adapter à des malades, c'est aux malades d'être arrêtés, et vous avez raison sur le principe. Mais personnellement, je ne compte ni sur ce genre de personnes pour devenir responsables du jour au lendemain, ni sur les tribunaux pour rattraper leur retard avant que la technologie ait encore avancé de dix ans.
+Oui, je sais, on est dans le [victim blaming](/fr/20250115-l-histoire-danne). Ce n'est pas à vous de vous adapter à des malades, c'est aux malades d'être arrêtés, et vous avez raison sur le principe. Mais personnellement, je ne compte ni sur ce genre de personnes pour devenir responsables du jour au lendemain, ni sur les tribunaux pour rattraper leur retard avant que la technologie ait encore avancé de dix ans.
 
 Le seul levier que vous contrôlez réellement, c'est ce que vous mettez en ligne. Chaque photo publique de votre enfant est une donnée d'entraînement potentielle, un visage réutilisable, un point de départ pour quelqu'un que vous ne rencontrerez jamais. Certes, les deepfakes d'enfants réels ne sont pas une zone grise juridique. Mais à ce moment-là, le mal est déjà fait.
 

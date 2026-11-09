@@ -2,24 +2,24 @@
 title: "Philippe Simo is a dream seller. Buy."
 createdAt: "2026-09-08T20:47:00Z"
 image: "/images/articles/philippe-simo-vendeur-de-reves.webp"
-description: "Since August, people have piled onto Philippe Simo for his line about owning a home at 30. It's wrong here. But selling achievable dreams is a useful job."
+description: "Philippe Simo, a dream seller? His line about owning a home at 30 is wrong here. But selling achievable dreams is a useful job."
 searchIntent: "Why the Philippe Simo controversy about owning property at 30 is badly framed, how his statement is wrong in the Ivorian and Cameroonian context, and why his message on saving and investing back home remains useful."
 tags: ["opinion", "society", "personal finance", "africa"]
 ---
 
-Since early August, the Franco-African web has been piling onto Philippe Simo. The reason: he said that at 30, if you don't own your main residence, "poverty is lying in wait for you". Dozens of channels, including those that have made "Philippe Simo bashing" their bread and butter, got their audience for the week out of it.
+Since early August, the Franco-African web has been piling onto Philippe Simo. The reason: he said that at 30, if you don't own your main residence, "poverty is lying in wait for you". Dozens of channels, including those that have made "Philippe Simo bashing" their bread and butter, [got their audience for the week out of it](/en/20260822-oui-a-lexcision-non-diversion-rhetorique).
 
-I'm not going to take part in that sport. No attacks on the man, no "feymân", no trial for fraud. I'm simply going to talk about what he says and what it's worth.
+I'm not going to take part in that sport (I've already said what I think of [the opinion givers the internet handed a microphone to](/en/20241022-restons-zen)). No attacks on the man, no "feymân", no trial for fraud. I'm simply going to talk about what he says and what it's worth.
 
-## The line is bad, let's say so and move on
+## Owning a home at 30: the line is bad, let's say so and move on
 
 At 30, owner or poor: in our context, it's false, and it needs to be said.
 
-In Côte d'Ivoire as in Cameroon, mortgage credit is reserved for a minority. You need a permanent contract, a down payment, guarantees, and a bank willing to lend over fifteen years at a decent rate. Most young workers are in the informal sector or on short contracts. What holds them back isn't willpower, it's access to financing.
+In Côte d'Ivoire as in Cameroon, mortgages are reserved for a minority. You need a permanent contract, a down payment, guarantees, and a bank willing to lend over fifteen years at a decent rate. Most young workers are in the informal sector or on short contracts. What holds them back isn't willpower, it's access to financing.
 
-There's also a confusion in his line. Buying your main residence is not the same thing as building wealth. A plot of land, a business, training or seed capital can bring in more than a flat bought too early and too expensive.
+His line also mixes two things up. Buying your main residence is not the same thing as building wealth. A plot of land, a business, training or seed capital can bring in more than a flat bought too early and too expensive.
 
-There, the criticism is made, it fits in a few lines. On to the real subject.
+There, criticism done, and it fits in a few lines. On to the real subject.
 
 ## Dream seller is not an insult
 
@@ -33,7 +33,7 @@ That's actually why his line hurt so much. Many of those insulting him don't hav
 
 ## We need more people like him
 
-Our public role models are footballers, artists, and a fair number of people whose money nobody knows the source of (I'm not naming names, you know them). A guy who talks about saving, investing back home and building wealth on channels followed by hundreds of thousands of people pulls us upward. Even when he fumbles a line.
+Our public role models are footballers, artists, and a fair number of people whose money comes from nobody knows where (I'm not naming names, you know them). A guy who talks about saving, investing back home and building wealth on channels followed by hundreds of thousands of people pulls us upward. Even when he fumbles a line.
 
 The real problem isn't that he talks too loud, it's that he's almost alone in talking about this. If there were twenty Philippe Simos with different approaches, a botched statement about turning 30 would be one opinion among others, not [a manhunt](/en/20250115-l-histoire-danne).
 

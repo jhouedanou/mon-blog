@@ -1,14 +1,14 @@
 ---
-title: "Double moniteur portable : gain de productivité ou gadget ?"
+title: "Double moniteur portable : gain ou gadget ?"
 createdAt: "2026-08-10"
 updatedAt: "2026-10-08T12:00:00Z"
 image: "/images/articles/image_b81a07e7.webp"
-description: "Deux écrans 14 pouces qui se déplient de part et d'autre du laptop : mon retour sur ce double moniteur portable, ses vrais atouts, ses limites et à qui il sert."
+description: "Double moniteur portable Blackview DCM6 : deux écrans 14 pouces qui se déplient autour du laptop. Mon avis, ses vrais atouts, ses limites, et à qui il sert."
 searchIntent: "Faut-il acheter un double moniteur portable pour travailler en déplacement, avantages et inconvénients face à un iPad Sidecar ou un moniteur USB-C classique."
 tags: ["tech", "productivité", "matériel", "avis"]
 ---
 
-Je ne me souviens plus de la dernière fois où j'ai travaillé sur un seul écran. Ni chez moi, ni en déplacement. 
+Je ne me souviens plus de la dernière fois où j'ai travaillé sur un seul écran. Ni chez moi, ni en déplacement. Pour les déplacements, justement, je me suis équipé d'un double moniteur portable, le Blackview DCM6. Mon verdict : ni une révolution ni un gadget, mais un outil de niche.
 
 ## Pourquoi un double écran ?
 
@@ -45,7 +45,7 @@ Premièrement, l'installation est simple (pas de pilote requis, sauf dans un cas
 - un USB-C + un HDMI ;
 - un HDMI + un USB-A (câble et pilote fournis dans ce dernier cas).
 
-Mon MacBook Pro 13" n'a que **deux ports Thunderbolt 3**. Les deux écrans les occupant entièrement, il ne reste plus rien pour l'alimentation. Heureusement, la charge inversée 100 W de l'ensemble permet de faire passer le courant par le même dispositif — à condition d'avoir un chargeur de 65 W minimum.
+Mon MacBook Pro 13" n'a que **deux ports Thunderbolt 3**. Les deux écrans les occupant entièrement, il ne reste plus rien pour l'alimentation. Heureusement, la charge inversée 100 W de l'ensemble permet de faire passer le courant par le même dispositif — à condition d'avoir un chargeur de 65 W minimum (côté câble, voyez [quel câble USB-C choisir pour charger un MacBook Pro](/fr/20241021-2-non-ce-cable-de-240w-ne-chargera-pas-plus-vite-votre)).
 
 
 Ensuite, en déplacement, ma disposition est toujours la même :
@@ -65,7 +65,7 @@ Mais surtout, c'est étonnamment fin : une fois les deux écrans repliés, l'ép
 
 En premier, **l'encombrement.** Une fois déplié, ce dispositif transforme un laptop en un laptop avec un écran de 41 pouces en comptant les bordures. Sans oublier les câbles.
 
-**La qualité des dalles.** Face à un écran de MacBook, le verdict est sans appel : colorimétrie différente de l'écran principal, luminosité plus faible. 
+**La qualité des dalles.** Face à un écran de MacBook, ça ne tient pas la comparaison : colorimétrie différente de l'écran principal, luminosité plus faible. 
 Mais pour du code, ça va. 
 
 **La résolution.** C'est le reproche le plus solide à mes yeux : **du 1080p sur du 14 pouces**, ça pique quand on vient d'un écran Retina. Le texte paraît moins net et, à confort de lecture égal, on affiche moins de choses.
@@ -76,9 +76,9 @@ Mais pour du code, ça va.
 
 La réponse dépend d'une seule question : **est-ce que vous travaillez souvent hors de vos postes fixes ?**
 
-**Si vous êtes toujours au même bureau** : n'achetez pas ça. Un grand écran fera mieux, avec une meilleure image et zéro manipulation. Et si un vieil iMac traîne chez vous, il peut même [devenir un écran secondaire](/fr/20260929-sharp-vieil-imac-ecran-secondaire-ethernet).
+**Si vous êtes toujours au même bureau** : n'achetez pas ça. Un grand écran fera mieux, avec une meilleure image et zéro manipulation. Et si un vieil iMac traîne chez vous, il peut même [devenir un écran secondaire avec Sharp](/fr/20260929-sharp-vieil-imac-ecran-secondaire-ethernet), ou [l'écran d'un PC Linux avec OpenDisplay](/fr/20261030-opendisplay-vieil-imac-ecran-mac-linux).
 
-**Si vous bougez régulièrement** — client, coworking, hôtel, aéroport — le calcul change. Ce dispositif n’est pas meilleur qu'un écran de bureau : il est meilleur que *rien*. Et « rien », c'est ce qu'on a habituellement en déplacement.
+**Si vous bougez régulièrement** (client, coworking, hôtel, aéroport), le calcul change. Ce dispositif n’est pas meilleur qu'un écran de bureau : il est meilleur que *rien*. Et « rien », c'est ce qu'on a habituellement en déplacement.
 
 Le 1080p reste un vrai compromis, que je ressens tous les jours. Le montage/démontage prend une minute, ce qui n'est rien quand on s'installe pour une demi-journée, mais beaucoup pour vingt minutes de travail.
 

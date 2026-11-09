@@ -1,27 +1,35 @@
 ---
-title: "Check whether your site is responsive on the iPhone Duo"
+title: "Is your site responsive on the iPhone Duo?"
 createdAt: "2026-09-11T20:01:00Z"
 image: "/images/articles/pexels-imadclicks-19022728.webp"
-description: "Does your site hold up on the iPhone Duo? Folded and unfolded screen sizes, the Iphone Duo Preview tool, and the error that revealed a security gap on my blog."
+description: "Is your site responsive on the iPhone Duo? Folded and unfolded screen sizes, the Iphone Duo Preview tool, and the error that exposed a security gap on my blog."
+updatedAt: "2026-11-08"
 searchIntent: "How to test whether a website is responsive on the iPhone Duo, what the folded and unfolded screen sizes are, and why a preview tool can refuse to display a site that does in fact allow itself to be embedded."
 tags: ["development", "responsive", "tools", "apple", "security"]
 ---
 
-Apple unveiled its first foldable iPhone this week, the iPhone Duo. I have no intention of buying one (my iPad mini still works), but like everyone who builds websites, the question came to me fairly quickly: what does my site look like on it?
+Apple unveiled its first foldable iPhone this week, the iPhone Duo. I have no intention of buying one ([my iPad mini](/en/20250615-ipados26) still works), but like everyone who builds websites, the question came to me fairly quickly: what does my site look like on it?
 
-A developer has just published a small tool to answer that question. I tried it on houedanou.com, and the result isn't the one I expected.
+A developer has just published a small tool to test whether a site is responsive on the iPhone Duo. I tried it on houedanou.com, and the result wasn't what I expected.
 
-## The iPhone Duo
+## iPhone Duo screen sizes, folded and unfolded
 
-It's the first foldable iPhone, in the line of Samsung's Galaxy Folds. Folded, it has the format of a passport, with a 5.4-inch external screen (1398 × 2034 pixels). Unfolded, you get a small tablet in landscape, with a 7.6-inch internal screen (1878 × 2670 pixels) in a 6.48 × 4.64-inch body.
+It's the first foldable iPhone, following in the footsteps of Samsung's Galaxy Folds (Samsung, incidentally, [mocked the iPhone Duo](/en/20260911-samsung-tacle-iphone-duo-visibilite) throughout the keynote). Folded, it's the size of a passport, with a 5.4-inch external screen (1398 × 2034 pixels). Unfolded, you get a small tablet in landscape, with a 7.6-inch internal screen (1878 × 2670 pixels) in a 6.48 × 4.64-inch body.
 
-For those who build websites, that means two screen sizes to handle on a single device, and a visitor who can switch from one to the other mid-read, simply by unfolding their phone.
+For those who build websites, that means two screen sizes to handle on a single device, and a visitor who can switch from one to the other mid-read, simply by unfolding their phone. Here are the figures from [Apple's tech specs](https://www.apple.com/iphone-duo/specs/){target="_blank" rel="noopener"}, with my conversion to CSS pixels:
+
+| | External screen (folded) | Internal screen (unfolded) |
+|---|---|---|
+| Diagonal | 5.4 inches | 7.6 inches |
+| Resolution | 1398 × 2034 pixels | 1878 × 2670 pixels |
+| Density | 460 ppi | 430 ppi |
+| CSS pixels (my estimate, ratio of 3) | about 466 × 678 | about 890 × 626, in landscape |
 
 ![A foldable smartphone held in hand, screen unfolded](/images/articles/pexels-imadclicks-19022728.webp)
 
-## The tool: Iphone Duo Preview
+## Testing your site with the Iphone Duo Preview tool
 
-It's called Iphone Duo Preview and it was developed by Caleb Kalejaiye, aka [Rapto](https://x.com/heyrapto) on X. The principle is simple: you paste your site's address, and it appears inside an iPhone Duo frame. Two modes are offered, *Single* for the external screen and *Extended* for the internal screen. You can then browse the site as you would on a real phone.
+It's called Iphone Duo Preview and it was developed by Caleb Kalejaiye, aka [Rapto](https://x.com/heyrapto) on X. The idea is simple: you paste your site's address, and it appears inside an iPhone Duo frame. Two modes are offered, *Single* for the external screen and *Extended* for the internal screen. You can then browse the site as you would on a real phone.
 
 It's free, no sign-up, and everything happens in your browser.
 
@@ -41,7 +49,7 @@ In other words, the site refuses to be displayed inside a third-party page. In t
 
 Except I didn't remember setting it up.
 
-## Checking
+## Checking the X-Frame-Options and CSP headers
 
 For good measure, I looked at the headers returned by the server:
 
@@ -63,19 +71,28 @@ Content-Security-Policy: frame-ancestors 'self';
 
 This directive tells the browser that only houedanou.com is allowed to display houedanou.com's pages in an iframe. It has no effect on the scripts, fonts or iframes the site loads itself, so the Disqus comments keep working.
 
-A small amusing detail: on the next deployment, Rapto's tool will display exactly the same message for my site. Except this time, it'll be true 🙂
+The funny part: on the next deployment, Rapto's tool will display exactly the same message for my site. Except this time, it'll be true 🙂
 
-## So, responsive or not?
+## So, responsive or not? The Chrome DevTools test
 
 Since the tool wouldn't answer me, I ran the test by hand [in Chrome](/en/20260401-persistance-css-chrome-devtools), simulating both screens. Apple only publishes physical pixels, so I assumed a ratio of 3 as on recent iPhones, which gives roughly 466 × 678 CSS pixels for the external screen and 890 × 626 for the internal screen.
 
 In both cases, the layout holds: a single column on the external screen, full width on the internal screen, and no horizontal overflow.
+
+To run the test on your own site:
+
+1. Open Chrome DevTools and click **Toggle device toolbar** to switch to device mode.
+2. In the **Dimensions** list, choose **Edit**, then **Add custom device** ([Chrome documentation](https://developer.chrome.com/docs/devtools/device-mode){target="_blank" rel="noopener"}).
+3. Create two devices, "iPhone Duo folded" at 466 × 678 and "iPhone Duo unfolded" at 890 × 626, with a device pixel ratio (DPR) of 3.
+4. Switch from one to the other, reloading the page, and look for a horizontal scrollbar or a cut-off element.
 
 ![A wireframe sketch next to a smartphone](/images/articles/pexels-picjumbo-com-196644.webp)
 
 What I do note, though, is that the unfolded internal screen is wide but fairly short: 890 pixels wide for only 626 high. We're all used to testing our breakpoints by width. On this device, it's the height you'll need to keep an eye on. Between a fixed header, a cookie banner and a newsletter banner, there isn't much room left for content.
 
 That's it for the iPhone Duo. If you test your site with Rapto's tool and it tells you your site refuses previews, don't take its word for it: go check your headers yourself. You might be in for a good surprise, or a bad one.
+
+*Updated November 8, 2026: added the table of screen sizes, from Apple's tech specs (with pixel density), and the steps to simulate both screens in Chrome DevTools.*
 
 ---
 

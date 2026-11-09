@@ -1,9 +1,9 @@
 ---
-title: "You can't separate the man from his dotfiles"
+title: "Omarchy and DHH: the man and his dotfiles"
 createdAt: "2026-10-08T13:00:00Z"
 updatedAt: "2026-10-13T21:00:00Z"
 image: "/images/articles/pingui.webp"
-description: "I followed Korben in his boycott of Omarchy, DHH's Linux distro. Three days later, I'm flip-flopping: Omarchy brought my old MacBook back to life."
+description: "The Omarchy DHH controversy, seen from Abidjan: what DHH writes about immigration, why you can't separate the man from his dotfiles, and my flip-flop."
 searchIntent: "Why boycott Omarchy, DHH's Linux distribution, and why install it anyway on an old 2017 MacBook Pro?"
 tags: ["opinion", "linux", "open-source", "society"]
 ---
@@ -30,7 +30,7 @@ But back to the topic.
 
 This morning, Korben published [« Omarchy, non merci »](https://korben.info/omarchy-dhh-boycott.html){target="_blank" rel="noopener"} (« Omarchy, no thanks »). He announces that he will no longer use or promote Omarchy, and explains why.
 
-Let me be clear right away: I agree with him. Not because it's Korben, but because on this one, he's right. And since I'm not here to polish anyone's shoes, I'll add what he can't say for me: seen from Abidjan, this debate has a slightly different flavour.
+Let me be clear right away: I agree with him. Not because it's Korben, but because on this one, he's right. And since I'm not here to suck up to anyone, I'll add what he can't say for me: seen from Abidjan, this debate has a slightly different flavour.
 
 For those who don't follow: Omarchy is an Arch-based Linux distribution, with a keyboard-driven tiling desktop, themes that restyle the whole system at once, and a two-minute install. It's pretty, it's fast, it's very trendy among developers. Its creator is DHH, David Heinemeier Hansson, the man behind Ruby on Rails and 37signals.
 
@@ -97,11 +97,11 @@ The second:
 
 That's where I am too.
 
-## Why I'm flip-flopping
+## Why I'm flip-flopping on the Omarchy boycott
 
 Let's start with the obvious: I'm contradicting myself. I wrote that you can't separate the man from his dotfiles, and now I'm installing his dotfiles. I won't pretend it's consistent. Here's what tipped the scales.
 
-In the first place, I wanted to try [Ryoku](https://ryoku.dev){target="_blank" rel="noopener"}, an Omarchy alternative also based on Arch Linux. In the end, I installed Omarchy, for these reasons.
+Originally, I wanted to try [Ryoku](https://ryoku.dev){target="_blank" rel="noopener"}, an Omarchy alternative also based on Arch Linux. In the end, I installed Omarchy, for these reasons.
 
 **Claude is built in.** Omarchy ships with Claude Code, Anthropic's coding assistant, and with OpenCode ([Omarchy manual](https://learn.omacom.io/2/the-omarchy-manual/107/ai){target="_blank" rel="noopener"}). The `cx` command starts Claude Code in « danger mode », meaning it doesn't ask for confirmation at every step. Omarchy also ships a « skill », instructions the assistant reads to change the system: the top bar, the themes. The manual calls it experimental. And Claude is how I fixed the MacBook's problems, as you'll see below.
 
@@ -117,13 +117,13 @@ In the first place, I wanted to try [Ryoku](https://ryoku.dev){target="_blank" r
 
 ## Omarchy brought my old MacBook back to life
 
-Apple stopped updating the 2017 MacBook Pro after macOS Ventura: Sonoma no longer supports it ([Apple](https://support.apple.com/en-us/105113){target="_blank" rel="noopener"}). Mine was no longer in use. Today, it runs Omarchy, with Linux kernel 7.2.
+Apple stopped updating the 2017 MacBook Pro after macOS Ventura: Sonoma no longer supports it ([Apple](https://support.apple.com/en-us/105113){target="_blank" rel="noopener"}). I'd stopped using mine. Today, it runs Omarchy, with Linux kernel 7.2.
 
 Omarchy didn't fix everything on its own. Here are the three changes I had to make.
 
 ### Wi-Fi: settings on the CanalBox
 
-Right after the install, Wi-Fi didn't work. I had to change some settings on my CanalBox, my internet box.
+Right after the install, Wi-Fi didn't work. I had to change some settings on [my CanalBox](/en/20260924-changer-mot-de-passe-wifi-canalbox-canal-plus-afrique), my internet box.
 
 ### Updates: `omarchy update`, not `pacman -Syu`
 
@@ -167,7 +167,7 @@ Apple had dropped this MacBook. Omarchy got it running again.
 
 On DHH, I haven't changed my mind: his posts on immigration are what they are, and on that point I still agree with Korben. On Omarchy, I have changed my mind. It's not glorious, but I'd rather tell you than hide it.
 
-Three days later, I took stock: what works, what still doesn't (Bluetooth, external displays), and the printer waiting for me. It's all in [Omarchy on My 2017 MacBook Pro: Three Days In](/en/20261013-retournement-de-veste-omarchy-macbook-pro-2017).
+Three days later, I took stock: what works, what still doesn't (Bluetooth, external displays), and [the thermal printer](/en/20261021-imprimante-thermique-netum-a401s-linux-omarchy-claude) waiting for me. It's all in [my review of Omarchy on a 2017 MacBook Pro](/en/20261013-retournement-de-veste-omarchy-macbook-pro-2017).
 
 ## Sources
 

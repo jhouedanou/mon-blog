@@ -1,23 +1,26 @@
 ---
-title: "Comment j'ai retrouvé mon téléphone à Abobo — grâce à FindHub de Google (et surtout à une dame honnête)"
+title: "Téléphone perdu : Find Hub m'a mené à Abobo"
 createdAt: "2026-07-30"
+updatedAt: "2026-11-08"
 image: "/images/articles/PXL_20260724_120434299.webp"
-description: "J'oublie un téléphone dans un Yango, FindHub le localise à Abobo. Récit d'une nuit blanche, d'un appel paternel, d'une dame honnête et de 12 000 FCFA de taxi."
-searchIntent: "Comment retrouver un téléphone perdu à Abidjan avec FindHub, le service « Localiser » de Google, et quelles sont ses limites de précision."
+description: "Téléphone perdu dans un Yango : Find Hub le localise à Abobo, à deux rues près. Une nuit blanche, un appel paternel, une dame honnête et 12 000 FCFA de taxi."
+searchIntent: "Comment retrouver un téléphone perdu à Abidjan avec Find Hub, le service « Localiser » de Google, et quelles sont ses limites de précision."
 tags: ["afrique", "société", "opinion", "sécurité", "tech"]
 ---
+
+Mon téléphone perdu, Find Hub de Google l'a localisé à Abobo. Une dame honnête a fait le reste.
 
 Tout commence par une panne de remonte-vitre électrique.
 
 J'avais laissé la voiture au bureau pour régler ce petit problème de vitre qui ne remonte plus, ce qui peut s'avérer particulièrement embêtant par ces temps où il pleut.
 
-N'ayant plus de moyen de locomotion, je me déplaçais en Yango. Et là, première erreur — bête, mais fondatrice de toute cette histoire : je monte à l'arrière. Ce ne sont pas les habitudes de la maison. Moi, normalement, je m'assois devant. Ce soir-là, non. J'avais des envies de confort. Que j'ai regrettées ensuite.
+N'ayant plus de moyen de locomotion, je me déplaçais en Yango. Et là, première erreur, bête mais à l'origine de toute cette histoire : je monte à l'arrière. Ce ne sont pas les habitudes de la maison. Moi, normalement, je m'assois devant. Ce soir-là, non. J'avais des envies de confort. Que j'ai regrettées ensuite.
 
 La journée se passe ensuite comme d'habitude ([prises de murs](/fr/20260707-je-suis-encore-vivant) surmontables, bugs résolus et gestion des urgences). Fatigué, je récupère ma voiture vers 16 heures et me mets en route pour la maison vers 21 heures (j'habite à la Riviera Triangle, et c'est la seule heure qui me permet de partir du bureau et d'arriver à la maison en moins de 30 minutes et sans embouteillages).
 
-Une fois arrivé vers le Lycée Français, je me rends compte qu'un de mes téléphones — un CMF Phone 1 que j'utilise pour du développement mobile — est resté dans le Yango.
+Une fois arrivé vers le Lycée Français, je me rends compte qu'un de mes téléphones (un CMF Phone 1 que j'utilise pour du développement mobile) est resté dans le Yango.
 
-Réflexe de développeur : j'attrape un autre téléphone, j'ouvre **[FindHub](https://www.google.com/android/find)** (le nouveau « Localiser » de Google). Et là, le point bleu s'affiche tranquillement… à Abobo, derrière le nouveau CHU.
+Réflexe de développeur : j'attrape un autre téléphone, j'ouvre **[Find Hub](https://www.google.com/android/find)** (le nouveau « Localiser » de Google). Et là, le point bleu s'affiche tranquillement… à Abobo, derrière le nouveau CHU. Pour une fois, la géolocalisation joue pour moi : d'habitude, sur ce blog, c'est plutôt [l'AirTag de la voiture de fonction qui raconte tout au patron](/fr/20250705-cherscommerciaux).
 
 ## La parenthèse Abobo (parce qu'il faut la faire)
 
@@ -30,14 +33,14 @@ Non, je ne vais pas te sortir les poncifs sur Abobo, le quartier, ses habitants.
 Maintenant, la vraie panique. Elle n'est pas dans le téléphone. Elle est dans ce qu'il y a dedans :
 
 - **Authenticator** — donc mes double-authentifications.
-- **Ecobank, Djamo & Wave** — donc l'argent.
+- **Ecobank, [Djamo](/fr/20240905-djamo-adieu-frais-de-rejet-bonjour-transferts-faciles-et-solde-discret) & Wave** — donc l'argent.
 - Et surtout **TOUTES les notifications**. Y compris celles de la banque.
 
 Et comme le destin ne fait jamais les choses à moitié : sur le chemin du retour, la voiture me sort un gros STOP lié à une panne de câble ABS. Autrement dit, une vraie grosse panne. Merci, la vie. Vraiment.
 
 ## Le lendemain : je faisais déjà le deuil
 
-Au matin, j'avais rangé l'affaire dans la case « perdu ». J'étais passé au deuil, la phase acceptation. Et c'est précisément à ce moment que le téléphone sonne — l'autre téléphone. M. Houédanou Senior. Le père.
+Au matin, j'avais rangé l'affaire dans la case « perdu ». J'étais passé au deuil, la phase acceptation. Et c'est précisément à ce moment que le téléphone sonne. L'autre téléphone. M. Houédanou Senior. Le père.
 
 > — Allô
 > — Allô
@@ -59,7 +62,7 @@ Moi, je suis à la Riviera Triangle. Le téléphone, à Abobo. Entre les deux, t
 - Coût du trajet : **5 600 FCFA**.
 - Aller **et** retour : **12 000 FCFA**.
 
-FindHub m'indiquait le point « à deux rues près ». Sauf que les deux rues, à Abobo, ça compte. Renseignements pris et coup de fil passé, ce n'était pas exactement là : je devais plutôt filer vers le carrefour Container.
+Find Hub m'indiquait le point « à deux rues près ». Sauf que les deux rues, à Abobo, ça compte. Renseignements pris et coup de fil passé, ce n'était pas exactement là : je devais plutôt filer vers le carrefour Container.
 
 ## La dame en or
 
@@ -69,13 +72,15 @@ Elle a quand même insisté pour que je déverrouille le téléphone pour vérif
 
 **Voilà pour Abobo et vos poncifs à deux francs six sous.**
 
-## Ce que je retiens (la morale)
+## Téléphone perdu et Find Hub : ce que je retiens (la morale)
 
 Trois leçons, gratuites, apprises à 12 000 FCFA :
 
-1. **[FindHub](https://www.google.com/android/find), c'est bien — mais ce n'est pas précis.** Ça te pose dans le bon quartier, pas devant la bonne porte. Prépare-toi à finir l'enquête à l'ancienne, au téléphone et à la marche.
+1. **[Find Hub](https://www.google.com/android/find), c'est bien, mais ce n'est pas précis.** Ça te pose dans le bon quartier, pas devant la bonne porte. Google le dit lui-même : le GPS situe l'appareil à une vingtaine de mètres près, le réseau mobile à quelques milliers de mètres, et le cercle autour du point indique la fiabilité de la position ([aide Google](https://support.google.com/android/answer/6160491?hl=fr){target="_blank" rel="noopener"}). Prépare-toi à finir l'enquête à l'ancienne, au téléphone et à la marche.
 2. **Ne fais pas le boss, ne monte pas à l'arrière du Yango.** Même si c'est une Alto qui vient te chercher. Devant, tu vois tes affaires, tu vois ta poche, tu descends en une seule fois. Derrière, tu sèmes.
 3. **Les chauffeurs Yango ne sont pas toujours des pros.** Certains ne vérifient même pas la banquette après la course. Le réflexe « bien descendre », c'est toi qui dois l'avoir.
+
+*Mise à jour du 8 novembre 2026 : ajout de la précision de localisation annoncée par Google ([aide Google](https://support.google.com/android/answer/6160491?hl=fr){target="_blank" rel="noopener"}), et du nom officiel du service, Find Hub (« Localiser » en français).*
 
 ---
 _[Jean-Luc Houédanou](https://houedanou.com) — FindHub t'emmène à Abobo, mais c'est l'honnêteté d'une inconnue qui te ramène le téléphone._

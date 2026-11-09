@@ -1,5 +1,5 @@
 ---
-title: "\"Yes to FGM\": what algorithms make of a razor blade"
+title: "'Yes to FGM' campaign: the answer is no"
 createdAt: "2026-08-22T12:40:00Z"
 image: "/images/articles/pexels-cottonbro-4631077.webp"
 description: "\"Yes to FGM\": born in Mali, this campaign is thriving on Facebook and Twitter. Why the algorithms reward it, and why the only possible answer to it is no."
@@ -7,7 +7,7 @@ searchIntent: "What is the \"yes to FGM\" campaign that started in Mali, why do 
 tags: ["society", "africa", "opinion", "digital"]
 ---
 
-This blog is about technology and digital culture. So the title may come as a surprise. Stay anyway: this campaign is a pure product of the platforms. We're right in the middle of the subject.
+This blog is about technology and digital culture. So the title may come as a surprise. Stay anyway: this "yes to FGM" campaign is a pure product of the platforms. So we're right on topic.
 
 A "yes to FGM" campaign has been circulating on Facebook and Twitter out of Mali. Let me say it again: **A "yes to FGM" campaign has been circulating on Facebook and Twitter out of Mali.**
 
@@ -18,7 +18,7 @@ Because that's where some of us, Africans online, have got to in 2026. We no lon
 
 ### First technique: the euphemism.
 
-Change the word, and the problem disappears. In the country where I live, online prostitution has become "gérer bizi" (understand "running a business"). A fun and lucrative activity, apparently. Nobody talks about the consequences. They only worry those they happen to.
+Change the word, and the problem disappears. In the country where I live, online prostitution has become "gérer bizi" (read: "running a business"). A fun and lucrative activity, apparently. Nobody talks about the consequences. They only worry those they happen to.
 
 ### Second technique: polarisation.
 
@@ -28,15 +28,15 @@ How do you make enemies for life? By stating the truth: as our parents showed us
 
 ### Third technique: making a spectacle of it.
 
-In French-speaking Africa, on "Meta", slander and harassment go under the rallying cries of "gbarai", "buzz", "soko", "kongossa". All of it served up by "bloggers" to their fans, all the time, without a glance at the people targeted. As if social media were [a grin](/en/20250605-facebook-nest-pas-un-grin). Even prison stops nobody: all you have to do is "ask for forgiveness".
+In French-speaking Africa, on "Meta", [slander and harassment](/en/20250115-l-histoire-danne) travel under the rallying cries of "gbarai", "buzz", "soko", "kongossa". All of it served up by "bloggers" to their fans, all the time, without a glance at the people targeted. As if social media were [a grin](/en/20250605-facebook-nest-pas-un-grin). Even prison stops nobody: all you have to do is "ask for forgiveness".
 
 Euphemism, polarisation, spectacle. Three variants of the same move: shifting the debate from the victim to the words. As long as it stays bizi and gbarai, we can shrug.
 
 ## To each their own feed
 
-That's what I do. Everyone is free to fill their connection however they like. Me, I've been hiding this kind of content for years.
+That's what I do, [glass of water in hand](/en/20241022-restons-zen). Everyone is free to spend their bandwidth however they like. Personally, I've been hiding this kind of content for years.
 
-Facebook's algorithm has understood that well.
+Facebook's algorithm got the message.
 
 Twitter's, much less so. Maybe that's why I stumbled, one evening, on a free-for-all between those who say "yes to FGM" and **those who have a brain.**
 
@@ -48,11 +48,11 @@ Excuse my bias too. Serious subjects turned into ideological ones, no thanks. An
 
 Back to the subject. The controversy, [documented by BBC Afrique](https://www.bbc.com/afrique/articles/c4g3nr40drwo), started in Mali in response to a mobilisation against female genital mutilation. On Facebook and Twitter, men, and more surprisingly women, calmly explain that we should keep on cutting young girls.
 
-What am I saying: little girls. To "build their future" and protect them from relationships outside marriage.
+Make that little girls. To "build their future" and protect them from relationships outside marriage.
 
 The logic? We don't trust a girl's judgement, so we remove part of her body on her behalf. All in the name of African values and a supposed religious prescription.
 
-The most extraordinary part remains their slogan: "We want to protect her", flanked by a logo in the shape of a razor blade. I thought it was a parody. It isn't.
+The most extraordinary part is their slogan: "We want to protect her", flanked by a logo in the shape of a razor blade. I thought it was a parody. It isn't.
 
 Proof in pictures.
 
@@ -73,6 +73,8 @@ N.O.
 
 You do not mutilate a child's body. It's a red line, and it's absolute. These are girls who asked for nothing, who consented to nothing, and from whom adults remove part of their anatomy in the most barbaric way.
 
+## What algorithms make of "yes to FGM"
+
 These people are not mad. There's a logic behind their posts. And it has almost nothing to do with FGM. It has everything to do with the platforms.
 
 They don't hold a conviction, they occupy a position. On a social network, the value of an opinion isn't its correctness, it's its rarity. Everyone is against FGM: saying "I'm against it" earns nothing. 
@@ -81,7 +83,7 @@ They don't hold a conviction, they occupy a position. On a social network, the v
 
 Outrage is the fuel. The algorithm doesn't tell approval from anger. It sees engagement, and it pushes. Every "are you sick or what?" works for free to build the audience of the person it insults. That's why these accounts never try to convince anyone: convincing would kill the conversation, and the conversation is the product.
 
-The sovereigntist flag serves as wrapping. Defending FGM lets you repaint yourself as a defender of authentic Africa against the West. Except that the first people fighting FGM in Africa are African, often survivors. Presenting them as relays for foreigners is deciding on their behalf. A second time.
+The sovereigntist flag serves as wrapping. Defending FGM lets you repaint yourself as a defender of authentic Africa against the West. Except that the first people fighting FGM in Africa are African, often survivors. Painting them as foreign mouthpieces means deciding for them. A second time.
 
 And above all, the feeling that it costs nothing. Behind a handle or a profile, everyone is convinced that posting has no consequences. A playground where words weigh nothing.
 

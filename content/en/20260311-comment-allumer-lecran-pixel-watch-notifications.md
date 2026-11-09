@@ -1,20 +1,20 @@
 ---
-title: "Pixel Watch: How to Automatically Show Notifications on the Screen"
+title: "Pixel Watch: Wake Screen on Notifications"
 image: "/images/articles/pixel-watch-notifications-ecran.webp"
 createdAt: "2026-03-11"
 id: 2026-03-11
-description: "By default, the Pixel Watch doesn't light up its screen when a notification arrives. The Wear Notification Helper app fixes that, step by step."
+description: "By default, the Pixel Watch doesn't wake its screen when a notification arrives. The Wear Notification Helper app fixes that: setup and settings, step by step."
 updatedAt: "2026-10-08T12:00:00Z"
 searchIntent: "How to automatically display notifications on a Pixel Watch screen without raising your wrist."
 tags: ["tech", "tutorial"]
 summary: "How to automatically display notifications on your Pixel Watch screen without raising your wrist."
 ---
 
-Short answer: by default, the **Pixel Watch** doesn't light up its screen when a notification arrives. To get that behaviour, you need to install the **Wear Notification Helper** app on the phone **and** on the watch, then choose the apps whose notifications should wake the screen.
+By default, the **Pixel Watch** doesn't wake its screen when a notification arrives. To wake the screen on every notification, you need to install the **Wear Notification Helper** app on the phone **and** on the watch, then choose the apps whose notifications should wake the screen.
 
-Last month, my wrist companion was an **Oraimo Watch Nova** (I had compared the Oraimo Nova AM with the Infinix Watch 3 in [this post](/en/20251225-infinix-ou-oraimo)). It's incredible value for money, with a lovely OLED screen with shimmering colours and respectable battery life, but with one more or less major flaw, at least as far as I'm concerned: step counting, heart rate measurement and the estimate of effort during sport are not very accurate.
+Last month, my wrist companion was an **Oraimo Watch Nova** (I covered it in my [Infinix Watch 3 vs Oraimo Nova AM comparison](/en/20251225-infinix-ou-oraimo)). It's great value for money, with a lovely OLED screen, vivid colours and respectable battery life. But it has one more or less major flaw, at least for me, since I've [built my own fitness app](/en/20250508-project-fat-loss): step counting, heart rate measurement and the effort estimate during workouts aren't very accurate.
 
-That's why I chose the **Pixel Watch**. This watch designed by Google natively includes the **Fitbit** fitness app and measures step count, cardiac effort, recovery time and several other statistics that tell you more about your fitness and physical condition with far greater accuracy. On top of being a very beautiful watch.
+That's why I chose the **Pixel Watch**. Google's watch comes with the **Fitbit** fitness app built in and measures step count, cardiac effort, recovery time and several other statistics that tell you more about your fitness and physical condition with far greater accuracy. And it's a very good-looking watch.
 
 ## Why notifications don't wake the Pixel Watch screen
 
@@ -27,11 +27,11 @@ By default, a notification on **Wear OS** simply activates the **Tilt to Wake** 
 I wish there were a way to configure this behaviour.
 I almost always enable **Always On Display**, so as not to be limited to using Tilt to Wake.
 
-I don't like having to make a gesture to check a notification, all the more so since the automatic screen wake works better on some other smartwatches I've used than on the Pixel Watch.
+I don't like having to make a gesture to check a notification, all the more so since the automatic screen wake works better on [some other smartwatches I've used](/en/20251225-infinix-ou-oraimo) than on the Pixel Watch.
 
-## Solution: use Wear Notification Helper
+## Wake the screen on every notification with Wear Notification Helper
 
-Fortunately, this behaviour can easily be fixed with the **Wear Notification Helper** app.
+Fortunately, the **Wear Notification Helper** app fixes this easily.
 
 ### What you need
 
@@ -46,7 +46,7 @@ Fortunately, this behaviour can easily be fixed with the **Wear Notification Hel
 4. Select the apps whose notifications you want to wake the watch screen.
 5. If you like, customise the alerts for each app: a specific vibration, a custom sound, or even having the notification title read aloud.
 
-The developer has published a [video tutorial](https://www.youtube.com/watch?v=CH0tF4hLB-w) showing the app in action on a Pixel Watch.
+The developer has published a [video tutorial showing notifications appear as soon as they arrive on a Pixel Watch](https://www.youtube.com/watch?v=CH0tF4hLB-w).
 
 This recreates a behaviour much closer to what you find on other smartwatches.
 
@@ -54,9 +54,9 @@ This recreates a behaviour much closer to what you find on other smartwatches.
 
 The **Wear Notification Helper** app is developed by **Malcolm Bryant**, an independent developer behind the [Freepoc](https://www.freepoc.org/) website, who has been publishing utility apps for Android and **Wear OS** for many years.
 
-His aim is generally to fill certain gaps in the Wear OS system or to add advanced features for smartwatches.
+His apps usually fill gaps in Wear OS or add advanced features for smartwatches.
 
-Among his other Wear OS apps, you'll find in particular:
+His other Wear OS apps include:
 
 - **Wear Reminder 2** – sends reminders and other phone content to a Wear OS watch
 - **Wear Battery Monitor** – detects abnormal battery drain on a smartwatch

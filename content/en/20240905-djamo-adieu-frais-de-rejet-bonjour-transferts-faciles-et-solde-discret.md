@@ -1,29 +1,29 @@
 ---
-title: "Goodbye rejection fees, hello easy transfers and a hidden balance! "
+title: "Djamo & Orange Money: goodbye rejection fees"
 image: "/images/articles/djamo.webp"
 createdAt: "2024-09-05"
 id: 2024-09-05
-description: "Djamo drops its 200 FCFA rejection fee, simplifies transfers with Orange Money and finally lets you hide your balance. Here is what it changes day to day."
+description: "Djamo and Orange Money: direct app-to-app transfers, no more 200 FCFA rejection fee, and a balance you can hide. What it changes day to day."
 searchIntent: "How Djamo simplifies Orange Money transfers and banking services in Côte d’Ivoire while keeping your balance private."
 tags: ["finance", "africa", "tech"]
-summary: "Djamo, the Ivorian FinTech, is rolling out a major update with three significant improvements: no more rejection fees on declined transactions, simpler Orange Money transfers that go directly from one app to the other, and a new option to hide your balance, meeting African users' need for financial discretion."
+summary: "Djamo drops rejection fees on declined payments, makes Orange Money transfers simpler and lets you hide your balance in the app."
 ---
 
-Djamo is an Ivorian FinTech that is shaking up banking services in West Africa (_yes, it is possible, we are not only made of "brouteurs" and scam enthusiasts around here_). The company has just unveiled a major update to its app, with significant improvements that, in my opinion, really change the user experience.
+Djamo is an Ivorian FinTech shaking up banking services in West Africa (_yes, it's possible, it's not all "[brouteurs](/en/20250115-l-histoire-danne)" and scam enthusiasts around here_). It has just released a big update to its app, with improvements that, in my opinion, change the user experience.
 
-Here are the ones that caught my attention.
+Here are the ones that caught my attention: no more rejection fees, simpler Orange Money transfers and the option to hide your balance.
 
 ## **Goodbye rejection fees!**
 
-The first big new thing, and not the least, is the **removal of rejection fees**. Until now, when a transaction was declined because of an insufficient balance, users had to pay an extra 200 FCFA. That may sound trivial, but some merchants try to charge several times after a failed payment attempt, which can significantly eat into your card balance when you top it up.
+First up: the **removal of rejection fees**. Until now, when a transaction was declined because of an insufficient balance, users had to pay an extra 200 FCFA. That may sound trivial, but some merchants try to charge several times after a failed payment attempt, which can take a serious bite out of your card balance when you top it up.
 
-With this update, those fees are now a thing of the past. That is good news.
+With this update, those fees are gone. That's good news.
 
-**It is important to note that removing rejection fees should not be seen as a blank cheque for using the card irresponsibly**. I encourage you to use your account carefully and thoughtfully, and above all to plan, plan, plan your spending: the idea here, as I see it, is to make life simpler for users.
+**Careful, though: the end of rejection fees is not a blank cheque to use your card irresponsibly**. I encourage you to use your account carefully, and above all to plan, plan, plan your spending: the idea here, as I see it, is to make life simpler for users.
 
-## **Simplified Orange Money transfers**
+## **Djamo and Orange Money: simpler transfers**
 
-The second improvement concerns money transfers via Orange Money. Where you previously had to go through a tedious procedure (either by generating payment codes, through the app or via USSD codes), the process is now considerably simpler.
+The second improvement concerns money transfers via Orange Money. You used to have to go through a tedious procedure (generating payment codes, in the app or with USSD codes). Now it's much simpler.
 
 Users can now transfer money directly from one app to the other, without juggling different syntaxes: the transfer happens across two screens, the Djamo one where you enter the amount to transfer, and the Orange Money mobile app one where you confirm the transaction.
 
@@ -35,9 +35,9 @@ One of the secrets to happiness and a long life in Africa was passed on to me ab
 
 _"Little brother… **you don't play with money secrets.** Never let anyone outside your close family, which means excluding your colleagues, your friends and the rest of the world, know how much you earn or what your means are."_
 
-This wisdom highlights the importance of financial discretion, something Djamo seems to have understood well by introducing the option to hide your balance.
+Advice Djamo seems to have taken on board: the app now lets you hide your balance.
 
-More seriously, these innovations show that Djamo really understands its users' needs, from small daily annoyances to big financial challenges. I sincerely hope the other players in the sector will take inspiration from this momentum to make our lives easier.
+More seriously, these changes show that Djamo understands its users' needs, down to the small everyday hassles. I hope the other players in the sector follow suit and make our lives easier (and spare us [the queues at the branch, and the shortcuts sold along them](/en/20250101-lacorruption)).
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com) — pocket economist*

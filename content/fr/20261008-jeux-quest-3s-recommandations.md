@@ -1,15 +1,15 @@
 ---
-title: "République VR et mes autres jeux préférés sur Quest 3S, du plus facile au plus difficile"
+title: "Mes jeux Quest 3S, du plus facile au plus dur"
 createdAt: "2026-10-08T15:00:00Z"
 image: "/images/articles/quest3s-republique.webp"
-description: "Mes jeux préférés sur Meta Quest 3S, de République VR à Vendetta Forever, classés du plus facile au plus difficile, avec leur personnalité et mon avis."
+description: "Mes jeux Meta Quest 3S préférés, de République VR à Vendetta Forever, classés du plus facile au plus difficile, avec leur personnalité et mon avis."
 searchIntent: "Quels jeux acheter sur Meta Quest 3S, classés par difficulté : avis sur République VR, Vader Immortal, Deadpool VR, Superhot VR, Action Hero, Sairento VR, Ninja Legends, Until You Fall, Pistol Whip, Dragon Fist et Vendetta Forever."
 tags: ["jeux vidéo", "réalité virtuelle", "meta quest", "avis"]
 ---
 
-On me demande souvent quoi installer sur un Quest 3S. Voici ma liste. Ce ne sont pas les meilleurs jeux du monde selon la presse. Ce sont ceux auxquels je joue vraiment. Dans mon salon, à Abidjan, en transpirant.
+On me demande souvent quels jeux installer sur un Meta Quest 3S. Voici ma liste. Ce ne sont pas les meilleurs jeux du monde selon la presse. Ce sont ceux auxquels je joue vraiment. Dans mon salon, à Abidjan, en transpirant.
 
-Je les ai classés du plus facile au plus difficile. Pour chacun : de quoi ça parle, sa personnalité, et mon avis. Spoiler : tout en bas, il y a Vendetta Forever. Il n'y est pas par hasard.
+Je les ai classés du plus facile au plus difficile. Pour chacun : de quoi ça parle, sa personnalité, et mon avis. Tout en bas, il y a Vendetta Forever, et il n'y est pas par hasard.
 
 ## Facile : pas besoin de réflexes
 
@@ -25,7 +25,7 @@ Le jeu vient de Camouflaj, un studio de Seattle. Son fondateur, Ryan Payton, a t
 
 **Sa personnalité** : le roman d'espionnage de la bande. Calme, patient, un peu paranoïaque. On le lance avec un thé, pas avec une serviette autour du cou.
 
-**Mon avis** : c'est peut-être mon préféré de la liste. C'est le seul qui a une vraie histoire. Il y a des personnages, de l'infiltration, du suspense. Et jouer celui qui regarde à travers les caméras, ça marche encore mieux en réalité virtuelle. On est littéralement dans la salle de surveillance. Pas besoin de transpirer. Pas besoin de réflexes. Il faut juste réfléchir, et avoir envie de connaître la suite.
+**Mon avis** : c'est peut-être mon préféré de la liste. C'est le seul qui a une vraie histoire. Il y a des personnages, de l'infiltration, du suspense. Et jouer celui qui regarde à travers les caméras, ça marche encore mieux en réalité virtuelle. On est dans la salle de surveillance. Pas besoin de transpirer. Pas besoin de réflexes. Il faut juste réfléchir, et avoir envie de connaître la suite.
 
 ### Vader Immortal
 
@@ -73,7 +73,7 @@ Je joue en mode « Kidpool ». Cette option coupe les gros mots ([GamingTrend](h
 
 Le jeu vous parlait entre les niveaux, avec un petit délire sur le contrôle et l'obéissance. Il allait jusqu'à vous demander de vous tirer une balle pour le prouver. Le studio a [retiré ces scènes en juillet 2021](https://www.gamedeveloper.com/game-platforms/-i-superhot-vr-i-devs-remove-self-harm-elements-from-the-game-you-deserve-better-). Et c'est très bien comme ça.
 
-De toute façon, on vient pour le principe : le temps n'avance que quand vous bougez. Vous restez immobile ? Les balles restent figées en l'air. Vous tournez la tête ? Elles avancent un peu. Le jeu vient du studio polonais SUPERHOT Team. Il est sorti en 2016 sur PC, et en 2019 sur le premier Quest.
+De toute façon, on vient pour le principe : le temps n'avance que quand vous bougez. Si vous restez immobile, les balles restent figées en l'air. Si vous tournez la tête, elles avancent un peu. Le jeu vient du studio polonais SUPERHOT Team. Il est sorti en 2016 sur PC, et en 2019 sur le premier Quest.
 
 **Sa personnalité** : le maître zen. Il ne dit presque rien. Il vous apprend la patience. Et il vous punit dès que vous paniquez.
 
@@ -181,7 +181,7 @@ Le principe : vous ne vous déplacez pas librement. Vous tuez un ennemi. Vous at
 
 On meurt beaucoup au début. Puis on finit par enchaîner les gestes sans réfléchir. Se baisser, tirer, attraper l'arme, être projeté, recommencer. C'est encore plus nerveux que Pistol Whip. C'est un [vrai cardio](/fr/20250508-project-fat-loss). Après une demi-heure, j'ai besoin d'une douche. Je ne plaisante pas.
 
-Mais visuellement, c'est une claque. Les décors changent à chaque niveau. Un wagon de métro. Une ville du Far West, avec des cow-boys aux balcons. Un bateau pirate. Un hall d'immeuble façon *Matrix*. Et même des niveaux plongés dans le noir, où l'on repère les ennemis au son.
+Mais visuellement, c'est une claque. Les décors changent à chaque niveau : un wagon de métro, une ville du Far West avec des cow-boys aux balcons, un bateau pirate, un hall d'immeuble façon *Matrix*, et même des niveaux plongés dans le noir, où l'on repère les ennemis au son.
 
 Les couleurs sont vives. Les animations sont propres. Tout reste lisible au milieu du chaos. Quand on réussit un niveau d'une traite, on a l'impression d'avoir tourné une scène de film en plan-séquence.
 
@@ -201,7 +201,7 @@ Bref, je ne comprends rien au personnage.
 
 C'est pareil pour *Iron Man VR*. Tony Stark, même profil : un milliardaire qui combat le crime à coups de gadgets, sans grande efficacité. Décidément, ce n'est pas pour moi.
 
-Petite ironie : *Arkham Shadow* et *Iron Man VR* viennent tous les deux de Camouflaj. Le studio de *République*. Mon jeu préféré et les deux jeux que je refuse de lancer sortent de la même maison. Comme quoi, je juge les héros, pas les studios.
+Petite ironie : *Arkham Shadow* et *Iron Man VR* viennent tous les deux de Camouflaj, le studio de *République*. Mon jeu préféré et les deux jeux que je refuse de lancer sortent de la même maison. Comme quoi, je juge les héros, pas les studios.
 
 ## Et Beat Saber ?
 
@@ -209,9 +209,9 @@ Petite ironie : *Arkham Shadow* et *Iron Man VR* viennent tous les deux de Camou
 
 → [Voir sur le Meta Quest Store](https://www.meta.com/experiences/beat-saber/2448060205267927/)
 
-Vous avez peut-être remarqué qu'il manque le jeu le plus célèbre du casque. *Beat Saber*, de Beat Games. C'est un bon premier contact avec la réalité virtuelle. Deux sabres, des cubes qui arrivent en musique. En trente secondes, on comprend ce que le casque sait faire. Mais je ne pense pas y avoir touché depuis plusieurs mois. On en fait vite le tour.
+Vous avez peut-être remarqué qu'il manque le jeu le plus célèbre du casque : *Beat Saber*, de Beat Games. C'est un bon premier contact avec la réalité virtuelle. Deux sabres, des cubes qui arrivent en musique. En trente secondes, on comprend ce que le casque sait faire. Mais je ne pense pas y avoir touché depuis plusieurs mois. On en fait vite le tour.
 
-## En résumé
+## Mes jeux Quest 3S par difficulté, en résumé
 
 | Jeu              | Difficulté | Sa personnalité            | Mon avis                                   |
 | ---------------- | ---------- | -------------------------- | ------------------------------------------ |
@@ -226,6 +226,8 @@ Vous avez peut-être remarqué qu'il manque le jeu le plus célèbre du casque. 
 | Pistol Whip      | difficile  | le DJ armé                 | très nerveux                               |
 | Dragon Fist      | difficile  | le vidéoclub de kung-fu    | beau, fun, mais ces trois ninjas…          |
 | Vendetta Forever | très dur   | le chorégraphe sadique     | le plus dur, un vrai cardio, et une claque |
+
+Pour travailler, en revanche, j'ai essayé [le bureau virtuel dans un casque de réalité virtuelle, face au double moniteur portable](/fr/20260810-double-moniteur-portable-blackview-dcm6), sans être convaincu.
 
 Et vous, quels sont vos jeux préférés sur Quest ? Laissez-les dans les commentaires. Surtout si vous savez battre les trois ninjas de Dragon Fist en mode difficile.
 

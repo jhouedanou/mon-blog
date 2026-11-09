@@ -1,12 +1,12 @@
 ---
-title: "Redis plein sur un VPS WordPress : le vider et le limiter"
+title: "Mémoire Redis pleine : la vider, la limiter"
 createdAt: "2026-10-31T19:30:00Z"
-description: "Redis prend toute la RAM de votre VPS WordPress ? Videz-le, puis limitez-le avec maxmemory et allkeys-lru. Les commandes, et pourquoi il grossit."
+description: "Mémoire Redis pleine sur votre VPS WordPress ? Videz-la, puis limitez-la avec maxmemory et allkeys-lru. Les commandes, et pourquoi Redis grossit."
 searchIntent: "Comment vider et limiter Redis quand sa mémoire est pleine sur un VPS WordPress (cache objet), avec maxmemory et allkeys-lru ?"
 tags: ["tutoriel", "linux", "sysadmin", "wordpress", "dev"]
 ---
 
-**Réponse courte.** Par défaut, Redis n'a aucune limite de mémoire et n'efface rien. Sur un VPS WordPress, le cache objet le remplit jusqu'à prendre toute la RAM. La solution tient en deux réglages : `maxmemory`, pour fixer une limite, et `maxmemory-policy allkeys-lru`, pour que Redis efface les clés les moins utilisées quand il atteint cette limite. Pour récupérer la mémoire tout de suite, videz-le avec `FLUSHALL ASYNC`.
+Si la mémoire de Redis est pleine sur votre VPS WordPress, c'est la faute des réglages par défaut : Redis n'a aucune limite de mémoire et n'efface rien. Le cache objet de WordPress le remplit donc jusqu'à prendre toute la RAM. La solution tient en deux réglages : `maxmemory`, pour fixer une limite, et `maxmemory-policy allkeys-lru`, pour que Redis efface les clés les moins utilisées quand il atteint cette limite. Pour récupérer la mémoire tout de suite, videz-le avec `FLUSHALL ASYNC`.
 
 ## Ce qui m'est arrivé
 
@@ -20,11 +20,11 @@ Trois choses se cumulent :
 - **Rien n'est effacé.** La politique par défaut s'appelle `noeviction`. Quand il n'y a plus de place, Redis refuse les nouvelles écritures au lieu d'effacer des clés.
 - **Les clés de WordPress n'expirent pas.** WordPress range dans Redis le résultat de ses requêtes. Beaucoup de ces clés n'ont pas de date d'expiration. Avec l'extension Redis Object Cache, aucune durée maximale n'est fixée par défaut (`WP_REDIS_MAXTTL` vaut 0).
 
-Résultat : chaque page, chaque recherche, chaque passage de robot ajoute des clés, et aucune ne part.
+Résultat : chaque page, chaque recherche, chaque [passage de robot](/fr/20260922-jai-recupere-le-trafic-de-mon-blog-et-les-bots-qui-vont-avec) ajoute des clés, et aucune ne part.
 
 Quand la RAM est pleine, le serveur ralentit. Puis Linux arrête des programmes pour libérer de la mémoire : parfois MySQL, parfois Redis lui-même. Et si une limite existe mais sans politique pour effacer, WordPress reçoit l'erreur `OOM command not allowed when used memory > 'maxmemory'`.
 
-## 1. Mesurer
+## 1. Mesurer la mémoire de Redis
 
 Connectez-vous en SSH au serveur, puis :
 
@@ -41,7 +41,7 @@ free -h
 
 Si Redis répond `NOAUTH`, il est protégé par un mot de passe : ajoutez `-a 'votre_mot_de_passe'` après `redis-cli`.
 
-## 2. Vider
+## 2. Vider Redis avec FLUSHALL ASYNC
 
 Ici, Redis ne sert que de cache : WordPress peut recalculer tout ce qu'il contient. Le vider ne casse rien. Le site est juste un peu plus lent, le temps que le cache se remplisse à nouveau.
 
@@ -61,7 +61,7 @@ redis-cli -n 0 FLUSHDB ASYNC
 
 Vider ne règle rien à long terme : sans limite, Redis regrossira. D'où l'étape suivante.
 
-## 3. Limiter
+## 3. Limiter Redis avec maxmemory et allkeys-lru
 
 Ouvrez la configuration de Redis (sur Debian et Ubuntu : `/etc/redis/redis.conf`). Ajoutez ces deux lignes, ou retirez le `#` devant si elles y sont déjà :
 
@@ -124,7 +124,7 @@ Si plusieurs sites WordPress partagent le même Redis, donnez à chacun son pré
 - `maxmemory` et `allkeys-lru` règlent le problème pour de bon.
 - `CONFIG REWRITE`, ou une modification de `redis.conf`, garde le réglage après un redémarrage.
 
-Tant que vous êtes en SSH sur le serveur, vérifiez aussi que PHP est à jour : voyez [PHP2Shell](/fr/20261021-php2shell-mettre-a-jour-php-debian-ubuntu-sans-forge).
+Tant que vous êtes en SSH sur le serveur, vérifiez aussi que PHP est à jour : j'explique [comment mettre à jour PHP contre PHP2Shell](/fr/20261021-php2shell-mettre-a-jour-php-debian-ubuntu-sans-forge). Et si un site WordPress du serveur a été piraté, [ses logs disent par où le pirate est entré](/fr/20261020-site-wordpress-pirate-trouver-par-ou-le-pirate-est-entre).
 
 **Sources :**
 

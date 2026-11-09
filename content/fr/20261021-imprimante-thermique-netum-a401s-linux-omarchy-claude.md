@@ -1,23 +1,23 @@
 ---
-title: "Imprimante thermique NETUM A401S sous Linux : Claude l'a fait parler"
+title: "NETUM A401S sous Linux : Claude l'a décodée"
 createdAt: "2026-10-21T16:00:00Z"
 image: "/images/articles/pexels-towfiqu-barbhuiya-9755391.webp"
-description: "Mon imprimante thermique NETUM A401S n'imprimait que depuis une appli Android. Claude a décodé son langage : elle imprime sous Linux, widget compris."
+description: "NETUM A401S sous Linux : mon imprimante thermique Bluetooth n'imprimait que depuis une appli Android. Claude a décodé son langage, le CPCL. Widget compris."
 searchIntent: "Comment faire imprimer sous Linux une imprimante thermique A4 Bluetooth sans pilote (NETUM / Zjiang A401S, appli ScanPrint), et comment l'IA aide à retrouver son protocole ?"
 tags: ["linux", "omarchy", "IA", "vibe coding", "matériel", "open-source", "dev"]
 ---
 
-Il y a quelques jours, Ryan Doyle a raconté sur X une drôle d'expérience. Il a envoyé à Claude la fiche de sa smart TV, avec une question : « Can you hack this? » L'IA l'a guidé pas à pas. Résultat : plus de publicités, plus d'applications imposées, une interface plus rapide et l'économiseur d'écran de son choix ([TechCrunch](https://techcrunch.com/2026/10/19/people-are-using-ai-to-make-their-smart-tvs-dumb-again/){target="_blank" rel="noopener"}).
+Il y a quelques jours, pendant que mon imprimante thermique NETUM A401S boudait encore Linux, Ryan Doyle a raconté sur X une drôle d'expérience. Il a envoyé à Claude la fiche de sa smart TV, avec une question : « Can you hack this? » L'IA l'a guidé pas à pas. Résultat : plus de publicités, plus d'applications imposées, une interface plus rapide et l'économiseur d'écran de son choix ([TechCrunch](https://techcrunch.com/2026/10/19/people-are-using-ai-to-make-their-smart-tvs-dumb-again/){target="_blank" rel="noopener"}).
 
 Internet dit qu'il a « vibe codé » sa télé. TechCrunch parle même de rendre les smart TV « bêtes à nouveau ». Personnellement, je préfère dire qu'il l'a rendue plus intelligente. Une télé qui n'obéit qu'à son propriétaire, c'est enfin une télé qui mérite le mot *smart*.
 
 L'idée a fait des petits sur GitHub, avec des projets comme [tv-vibehack](https://github.com/Gathin23/tv-vibehack){target="_blank" rel="noopener"} et [dumbtv](https://github.com/humblemuzzu/dumbtv){target="_blank" rel="noopener"}. Le principe est toujours le même : les télés Android ont le même outil de débogage que nos téléphones, ADB, et Claude s'en sert pour désactiver ce qui encombre ([It's FOSS](https://itsfoss.com/news/debloat-smart-tv/){target="_blank" rel="noopener"}).
 
-Ça m'a donné une idée. Dans [mon dernier billet sur Omarchy](/fr/20261013-retournement-de-veste-omarchy-macbook-pro-2017), je vous laissais avec une imprimante qui me regardait. Je la regardais. Si Claude sait rendre une télé plus intelligente, il saura peut-être apprendre à mon imprimante à parler à Linux.
+Ça m'a donné une idée. Dans [mon bilan d'Omarchy sur le MacBook Pro 2017](/fr/20261013-retournement-de-veste-omarchy-macbook-pro-2017), je vous laissais avec une imprimante qui me regardait. Je la regardais. Si Claude sait rendre une télé plus intelligente, il saura peut-être apprendre à mon imprimante à parler à Linux.
 
 Je vous avais promis de vous dire si elle imprimait. Elle imprime. Claude a trouvé ce qui coinçait, et il l'a réglé. Et en bonus, j'ai même un widget.
 
-## Une imprimante qui ne parlait qu'à Android
+## NETUM A401S : une imprimante qui ne parlait qu'à Android
 
 L'imprimante, c'est une **A401S** vendue par NETUM : une petite imprimante thermique A4 portable. Pas d'encre, une batterie, du Bluetooth, et une appli Android nommée **ScanPrint**. Depuis le téléphone, tout va bien.
 
@@ -107,7 +107,7 @@ Et la réponse :
 
 Ça confirme le vrai fabricant, Zjiang, et ça explique enfin les bips : d'après le code de l'appli, `printerStatus: 6` veut dire **batterie faible**. 14 %. Les bips ne voulaient pas dire « je ne comprends pas ». Ils voulaient dire « j'ai faim ». Le vrai blocage, c'était la langue.
 
-## La première page
+## La première page imprimée sous Linux
 
 Avec le bon format, la bande de test sort enfin, et l'imprimante confirme :
 
@@ -162,7 +162,7 @@ Le code (la commande, le widget et la description du protocole) est sous licence
 
 ## Mes jours de distrohopper sont finis
 
-Un distrohopper, c'est quelqu'un qui change de distribution Linux tous les quatre matins, toujours à la recherche de celle où tout marchera du premier coup. J'en ai été un. Zorin OS sur ma tablette HP Pro x2, à l'époque où j'y ai découvert [Ghostwriter](/fr/20241020-ghostwriter-une-alternative-gratuite-a-ia-writer-pour-linux). Zorin encore, sur un MacBook où le Wi-Fi [n'a jamais voulu se montrer](/fr/20261008-pas-besoin-detre-dev-ou-barbu-mac-linux). Puis Omarchy, [installé à reculons](/fr/20261008-omarchy-dhh-homme-dotfiles).
+Un distrohopper, c'est quelqu'un qui change de distribution Linux tous les quatre matins, toujours à la recherche de celle où tout marchera du premier coup. J'en ai été un. Zorin OS sur ma tablette HP Pro x2, à l'époque où j'y ai découvert [Ghostwriter](/fr/20241020-ghostwriter-une-alternative-gratuite-a-ia-writer-pour-linux). [Zorin encore, sur un MacBook](/fr/20261008-pas-besoin-detre-dev-ou-barbu-mac-linux) où le Wi-Fi n'a jamais voulu se montrer. Puis [Omarchy, installé à reculons après l'avoir boycotté](/fr/20261008-omarchy-dhh-homme-dotfiles).
 
 Je pense que mes jours de distrohopper se sont terminés aujourd'hui.
 
@@ -170,9 +170,9 @@ Pas parce qu'Omarchy est parfait : vous avez lu mes déboires avec la Magic Mous
 
 ## La puissance de Linux
 
-La puissance de Linux, ce n'est pas le bureau en mosaïque, ni les thèmes, ni la pluie de *Matrix* au démarrage, même si j'y tiens. C'est un système qui ne vous répond jamais « ce n'est pas prévu ». Le Bluetooth y est un simple socket, que Python ouvre avec son module standard. L'image est un fichier PBM. La compression est une bibliothèque libre que toutes les distributions proposent. Côté Linux, tout était là, documenté, ouvert. Il suffisait d'assembler les morceaux.
+La puissance de Linux, ce n'est pas le bureau en mosaïque, ni les thèmes, ni la pluie de *Matrix* au démarrage, même si j'y tiens. C'est un système qui ne vous répond jamais « ce n'est pas prévu ». Le Bluetooth y est un simple socket, que Python ouvre avec son module standard. L'image est un fichier PBM. La compression est une bibliothèque libre que toutes les distributions proposent. Côté Linux, tout était déjà là, documenté et ouvert. Il suffisait d'assembler les morceaux.
 
-Claude a mené l'enquête. Linux a fourni les outils, sans rien verrouiller. Ryan Doyle a rendu sa télé plus intelligente. Mon imprimante, elle, ne parle toujours que le CPCL. Mais maintenant, Linux le parle aussi. Sur un MacBook que son fabricant a abandonné, avec une imprimante dont le fabricant n'a jamais pensé à Linux.
+Claude a mené l'enquête, et Linux a fourni les outils sans rien verrouiller. Ryan Doyle a rendu sa télé plus intelligente. Mon imprimante, elle, ne parle toujours que le CPCL, mais maintenant, Linux le parle aussi : sur un MacBook que son fabricant a abandonné, avec une imprimante dont le fabricant n'a jamais pensé à Linux.
 
 Personne ne m'a donné l'autorisation. Personne n'avait à me la donner.
 

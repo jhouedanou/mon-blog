@@ -1,17 +1,17 @@
 ---
-title: "Migration WordPress → Nuxt : j'ai perdu mon référencement, voici comment je l'ai récupéré"
+title: "SEO perdu après migration : je l'ai récupéré"
 createdAt: "2026-10-18T20:45:00Z"
 image: "/images/articles/pexels-ketut-subiyanto-4246238.webp"
-description: "Quatre changements d'adresse, des erreurs 500, des pages « introuvables » en 200 : ce que ma migration vers Nuxt a coûté en SEO, et comment je l'ai réparé."
+description: "SEO perdu après migration de WordPress vers Nuxt : quatre adresses successives, des erreurs 500, des soft 404. Et comment je l'ai récupéré, en 301."
 searchIntent: "Pourquoi perd-on son référencement après une migration de WordPress vers Nuxt, et comment le récupérer : redirections 301, soft 404, robots.txt, sitemap, www ?"
 tags: ["dev", "tutoriel", "seo", "nuxt", "cloudflare"]
 ---
 
-Ce blog a quitté WordPress en octobre 2024. Je l'ai raconté à l'époque dans [On fait un peu le ménage](/fr/20241005-on-fait-un-peu-le-menage). Ce que je n'avais pas raconté, c'est ce que ce déménagement a coûté en référencement. Je ne l'ai d'ailleurs compris en entier qu'aujourd'hui, en reprenant l'historique Git du site, commit par commit, et en reconstruisant le site tel qu'il était à différentes dates.
+Ce blog a changé de moteur en octobre 2024. J'ai raconté à l'époque [pourquoi j'ai quitté WordPress pour Nuxt](/fr/20241005-on-fait-un-peu-le-menage), puis [le résultat, un blog sans base de données](/fr/20241021-pendaison-de-cremaillere). Ce que je n'avais pas raconté, c'est tout le SEO perdu après la migration. Je ne l'ai d'ailleurs vraiment compris qu'aujourd'hui, en reprenant l'historique Git du site, commit par commit, et en reconstruisant le site tel qu'il était à différentes dates.
 
 Le problème principal n'était pas Nuxt. C'étaient les adresses. Un même billet a changé quatre fois d'URL, et pendant près de deux ans, les anciennes adresses ne menaient nulle part.
 
-## Ce que Google connaissait avant
+## Ce que Google connaissait avant la migration
 
 Sous WordPress, le blog vivait sur `www.houedanou.com`, avec des adresses de la forme `/année/mois/titre/`. Par exemple :
 
@@ -46,9 +46,9 @@ La réponse a dépendu de l'époque, et aucune n'était la bonne.
 
 Ce dernier point compte. Quand `robots.txt` répond par une erreur serveur, [Google arrête d'explorer le site pendant 12 heures](https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt){target="_blank" rel="noopener"}, puis utilise la dernière version connue du fichier pendant 30 jours, avant de faire comme s'il n'existait pas. Ce n'est pas une catastrophe sur la durée, mais c'est un mauvais départ, au moment précis où Google devait découvrir le nouveau site.
 
-**De fin mars à septembre 2026 : une page « Article introuvable », avec un code 200.** Le site était passé chez Cloudflare. Les adresses inconnues affichaient un message d'erreur, mais le serveur répondait « 200, tout va bien ». Google appelle ça un *soft 404* : une page qui dit qu'elle n'existe pas, servie comme si elle existait. Or le 26 mars 2026, toutes les adresses d'articles venaient de changer. Pendant cinq mois, chaque adresse que Google avait en mémoire répondait donc « Article introuvable », sans redirection.
+**De fin mars à septembre 2026 : une page « Article introuvable », avec un code 200.** Le site était [passé de Vercel à Cloudflare](/fr/20260402-vercel-cloudflare-pages-migration). Les adresses inconnues affichaient un message d'erreur, mais le serveur répondait « 200, tout va bien ». Google appelle ça un *soft 404* : une page qui dit qu'elle n'existe pas, servie comme si elle existait. Or le 26 mars 2026, toutes les adresses d'articles venaient de changer. Pendant cinq mois, chaque adresse que Google avait en mémoire répondait donc « Article introuvable », sans redirection.
 
-**En septembre 2026 : des erreurs de serveur.** Le Worker de Cloudflare qui servait le site dépassait sa limite de temps de calcul, surtout à cause de robots qui cherchaient des fichiers sensibles. Par ricochet, de vrais lecteurs ont reçu des erreurs 522, jusque sur la page d'accueil. J'ai raconté cet épisode dans [J'ai récupéré le trafic de mon blog (et les bots qui vont avec)](/fr/20260922-jai-recupere-le-trafic-de-mon-blog-et-les-bots-qui-vont-avec).
+**En septembre 2026 : des erreurs de serveur.** Le Worker de Cloudflare qui servait le site dépassait sa limite de temps de calcul, surtout à cause de robots qui cherchaient des fichiers sensibles. Par ricochet, de vrais lecteurs ont reçu des erreurs 522, jusque sur la page d'accueil. J'ai raconté cet épisode dans [mon billet sur la limite CPU de Cloudflare Workers et les bots](/fr/20260922-jai-recupere-le-trafic-de-mon-blog-et-les-bots-qui-vont-avec).
 
 **Et pour l'ancien WordPress, sur `www` : une erreur 522, jusqu'au 18 octobre 2026.** `www.houedanou.com` ne redirigeait pas vers `houedanou.com`. Cloudflare recevait la requête et ne trouvait aucun serveur derrière. Tous les vieux liens vers le WordPress tombaient sur cette erreur.
 
@@ -62,11 +62,11 @@ Les adresses étaient le gros du problème. Mais en relisant l'historique, j'ai 
 - **Une meta description qui posait une question.** De juillet à octobre 2026, le site affichait dans les résultats de recherche le champ `searchIntent` (la question à laquelle répond le billet) au lieu du résumé.
 - **Une redirection temporaire sur chaque page.** D'avril à septembre 2026, Cloudflare répondait par une redirection 307 de `/a-propos` vers `/a-propos/`, alors que la balise canonique déclarait la version sans barre oblique.
 
-## Ce que j'ai corrigé
+## Comment j'ai récupéré mon référencement
 
 ### Rediriger chaque ancienne adresse, en 301
 
-C'est la correction qui compte le plus. Les neuf premières redirections datent du 1er septembre 2026. Dans [mon billet du 22 septembre](/fr/20260922-jai-recupere-le-trafic-de-mon-blog-et-les-bots-qui-vont-avec), j'écrivais que chaque ancienne URL redirigeait vers le bon article. C'était faux : il en manquait 42.
+C'est la correction qui compte le plus, comme lors d'[un changement de nom de domaine sur PrestaShop](/fr/20260331-migrer-prestashop-nouveau-nom-de-domaine). Les neuf premières redirections datent du 1er septembre 2026. Dans [mon billet du 22 septembre sur la limite CPU de Cloudflare Workers](/fr/20260922-jai-recupere-le-trafic-de-mon-blog-et-les-bots-qui-vont-avec), j'écrivais que chaque ancienne URL redirigeait vers le bon article. C'était faux : il en manquait 42.
 
 L'historique Git permet de toutes les retrouver. Pour chaque époque, on sait où se trouvait chaque fichier dans `content/`, donc quelle était son adresse. Aujourd'hui, 51 anciennes adresses redirigent vers le bon billet :
 

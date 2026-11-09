@@ -1,5 +1,5 @@
 ---
-title: "République VR and my other favourite Quest 3S games, from easiest to hardest"
+title: "My Quest 3S games, from easiest to hardest"
 createdAt: "2026-10-08T15:00:00Z"
 image: "/images/articles/quest3s-republique.webp"
 description: "My favourite Meta Quest 3S games, from République VR to Vendetta Forever, ranked from easiest to hardest, with their personality and my honest take."
@@ -7,9 +7,9 @@ searchIntent: "Which games to buy on Meta Quest 3S, ranked by difficulty: opinio
 tags: ["video games", "virtual reality", "meta quest", "review"]
 ---
 
-People often ask me what to install on a Quest 3S. Here's my list. These aren't the best games in the world according to the press. They're the ones I actually play. In my living room, in Abidjan, sweating.
+People often ask me which games to install on a Meta Quest 3S. Here's my list. These aren't the best games in the world according to the press. They're the ones I actually play. In my living room, in Abidjan, sweating.
 
-I've ranked them from easiest to hardest. For each one: what it's about, its personality, and my take. Spoiler: at the very bottom, there's Vendetta Forever. It's not there by accident.
+I've ranked them from easiest to hardest. For each one: what it's about, its personality, and my take. At the very bottom sits Vendetta Forever, and it's not there by accident.
 
 ## Easy: no reflexes needed
 
@@ -25,7 +25,7 @@ The game comes from Camouflaj, a Seattle studio. Its founder, Ryan Payton, worke
 
 **Its personality**: the spy novel of the bunch. Calm, patient, a little paranoid. You launch it with a cup of tea, not with a towel around your neck.
 
-**My take**: it may be my favourite on the list. It's the only one with a real story. There are characters, stealth, suspense. And playing the one watching through the cameras works even better in virtual reality. You are literally in the surveillance room. No need to sweat. No need for reflexes. You just have to think, and want to know what happens next.
+**My take**: it may be my favourite on the list. It's the only one with a real story. There are characters, stealth, suspense. And playing the one watching through the cameras works even better in virtual reality. You're in the surveillance room yourself. No need to sweat. No need for reflexes. You just have to think, and want to know what happens next.
 
 ### Vader Immortal
 
@@ -39,7 +39,7 @@ The game comes from Camouflaj, a Seattle studio. Its founder, Ryan Payton, worke
 
 **My take**: very good. You hold a lightsaber. You stand face to face with Vader. You hear him breathing right next to you. This is exactly what virtual reality does well.
 
-The Force is well implemented. You reach out your hand to pull an object or throw an enemy, and it works. You feel like a Jedi, not just a player. The game guides you from start to finish. It never leaves you stuck.
+The Force is well implemented. You reach out to pull an object or throw an enemy, and it works. You feel like a Jedi, not just a player. The game guides you from start to finish. It never leaves you stuck.
 
 The problem is the length. The three episodes run [about two hours](https://www.engadget.com/2019/10/31/vader-immortal-episode-3-star-wars) in total. The length of a film. You want more, and there isn't any.
 
@@ -59,7 +59,7 @@ Luckily, there's still the "dojo" mode. It's more interesting than it sounds. Yo
 
 And there's a cameo from my favourite superhero of all time. Mister Johnny Blaze. The Ghost Rider himself ([Pocket Tactics' review confirms it](https://www.pockettactics.com/deadpool-vr-review){target="_blank" rel="noopener"}). I won't tell you where. But he deserves his own VR game. A flaming motorbike, a chain, a burning skull. What are we waiting for?
 
-I play in "Kidpool" mode. This option cuts the swearing ([GamingTrend](https://gamingtrend.com/deadpool-vr-review-merc-goes-meta){target="_blank" rel="noopener"}). Be careful, it doesn't touch the violence. [Reviews point it out](https://www.empireonline.com/gaming/reviews/deadpool-vr): you still slice enemies in half. In the United States, the game is still [rated for ages 17 and up](https://www.esrb.org/ratings/40934/marvels-deadpool-vr/). It's not a game for children. Kidpool just makes the dialogue easier to live with.
+I play in "Kidpool" mode. This option cuts the swearing ([GamingTrend](https://gamingtrend.com/deadpool-vr-review-merc-goes-meta){target="_blank" rel="noopener"}). Careful, though: it leaves the violence alone. [Reviews point it out](https://www.empireonline.com/gaming/reviews/deadpool-vr): you still slice enemies in half. In the United States, the game is still [rated for ages 17 and up](https://www.esrb.org/ratings/40934/marvels-deadpool-vr/). It's not a game for children. Kidpool just makes the dialogue easier to live with.
 
 ## Medium: time is on your side
 
@@ -73,7 +73,7 @@ I play in "Kidpool" mode. This option cuts the swearing ([GamingTrend](https://g
 
 The game used to talk to you between levels, with a little riff on control and obedience. It went as far as asking you to shoot yourself to prove it. The studio [removed those scenes in July 2021](https://www.gamedeveloper.com/game-platforms/-i-superhot-vr-i-devs-remove-self-harm-elements-from-the-game-you-deserve-better-). And that's for the best.
 
-Anyway, you're there for the hook: time only moves when you move. Stand still? The bullets freeze in mid-air. Turn your head? They creep forward. The game comes from the Polish studio SUPERHOT Team. It came out in 2016 on PC, and in 2019 on the first Quest.
+Anyway, you're there for the hook: time only moves when you move. If you stand still, the bullets freeze in mid-air. If you turn your head, they creep forward. The game comes from the Polish studio SUPERHOT Team. It came out in 2016 on PC, and in 2019 on the first Quest.
 
 **Its personality**: the Zen master. He barely says a word. He teaches you patience. And he punishes you the moment you panic.
 
@@ -157,9 +157,9 @@ The game comes from a small studio, Ben Olding Games. It's published by Clique G
 
 **Its personality**: the kung fu video store. It has seen everything. It knows every line. And it pulls out its favourite tapes one by one.
 
-**My take**: it's beautiful. The settings are nicely textured: the temples, the training courtyards, the sunsets. You're in the mood from the very first second. And the music fools no one. The main theme is clearly inspired by Wong Fei-hung's, the hero of *Once Upon a Time in China*. That's Tsui Hark's saga, starring Jet Li.
+**My take**: it's beautiful. The settings are nicely textured: the temples, the training courtyards, the sunsets. It sets the mood from the very first second. And the music gives it away. The main theme is clearly inspired by Wong Fei-hung's, the hero of *Once Upon a Time in China*. That's Tsui Hark's saga, starring Jet Li.
 
-The movement, though, isn't orthodox. You don't reproduce real techniques. You hit however you can. But you find all the kung fu movie archetypes. There are barely disguised copies of Jet Li, Jackie Chan, Ip Man… And even Beatrix Kiddo, the Bride from *Kill Bill*. A blonde woman learning kung fu from an old master.
+The movement, though, isn't orthodox. You don't reproduce real techniques. You hit however you can. But all the kung fu movie archetypes are there. There are barely disguised copies of Jet Li, Jackie Chan, Ip Man… And even Beatrix Kiddo, the Bride from *Kill Bill*. A blonde woman learning kung fu from an old master.
 
 Personally, I'd have preferred to play Pai Mei, the master in question. But there's a Gordon Liu clone. He's the one who played Pai Mei in *Kill Bill*. Above all, he's the hero of *The 36th Chamber of Shaolin*. The 36 chambers, as in *Enter the Wu-Tang (36 Chambers)*. Yes, [the Wu-Tang again](/en/20260907-bill-gates-ia-hypocrisie-meta-cash-rules-everything). And it's fun.
 
@@ -181,7 +181,7 @@ The hook: you can't move freely. You kill an enemy. You grab their weapon. And y
 
 You die a lot at first. Then you start chaining moves without thinking. Duck, shoot, grab the weapon, get thrown forward, repeat. It's even more intense than Pistol Whip. It's a [real cardio workout](/en/20250508-project-fat-loss). After half an hour, I need a shower. I'm not joking.
 
-But visually, it's stunning. The setting changes with every level. A subway car. A Wild West town, with cowboys on the balconies. A pirate ship. A *Matrix*-style lobby. And even levels plunged into darkness, where you locate enemies by sound.
+But visually, it's stunning. The setting changes with every level: a subway car, a Wild West town with cowboys on the balconies, a pirate ship, a *Matrix*-style lobby, and even levels plunged into darkness, where you locate enemies by sound.
 
 The colours are bright. The animations are clean. Everything stays readable in the middle of the chaos. When you clear a level in one go, it feels like you've just shot a movie scene in a single take.
 
@@ -191,9 +191,9 @@ The colours are bright. The animations are clean. Everything stays readable in t
 
 → [See it on the Meta Quest Store](https://www.meta.com/experiences/batman-arkham-shadow/3551691271620960/)
 
-Lots of people own *Batman: Arkham Shadow*. Meta gave it away with Quest 3 and Quest 3S headsets bought [until the end of April 2025](https://www.roadtovr.com/quest-3-and-3s-batman-vr-bundle/). People often recommend it to me. But it doesn't speak to me.
+Lots of people own *Batman: Arkham Shadow*. Meta gave it away with Quest 3 and Quest 3S headsets bought [until the end of April 2025](https://www.roadtovr.com/quest-3-and-3s-batman-vr-bundle/). People often recommend it to me. But it doesn't appeal to me.
 
-I don't like the character, or his universe. A billionaire dresses up. At night, he goes out to beat up Gotham's thugs. That has never made me dream.
+I don't like the character, or his universe. A billionaire dresses up. At night, he goes out to beat up Gotham's thugs. That has never done anything for me.
 
 He has the means to solve the problem. Yet the Joker escapes, again and again. He could fund the whole city's police force. He prefers to buy gadgets. He has no powers. And he still tries to take on Superman.
 
@@ -201,7 +201,7 @@ In short, I don't understand the character at all.
 
 Same goes for *Iron Man VR*. Tony Stark, same profile: a billionaire fighting crime with gadgets, not very efficiently. Billionaire vigilantes are definitely not for me.
 
-A small irony: *Arkham Shadow* and *Iron Man VR* both come from Camouflaj. The studio behind *République*. My favourite game and the two games I refuse to launch come from the same house. Proof that I judge the heroes, not the studios.
+A small irony: *Arkham Shadow* and *Iron Man VR* both come from Camouflaj, the studio behind *République*. My favourite game and the two games I refuse to launch were made by the same people. Proof that I judge the heroes, not the studios.
 
 ## What about Beat Saber?
 
@@ -209,9 +209,9 @@ A small irony: *Arkham Shadow* and *Iron Man VR* both come from Camouflaj. The s
 
 → [See it on the Meta Quest Store](https://www.meta.com/experiences/beat-saber/2448060205267927/)
 
-You may have noticed that the headset's most famous game is missing. *Beat Saber*, from Beat Games. It's a good first contact with virtual reality. Two sabers, cubes flying at you to the music. Within thirty seconds, you understand what the headset can do. But I don't think I've touched it in several months. You get through it quickly.
+You may have noticed that the headset's most famous game is missing: *Beat Saber*, from Beat Games. It's a good first taste of virtual reality. Two sabers, cubes flying at you to the music. Within thirty seconds, you understand what the headset can do. But I don't think I've touched it in several months. You see everything it has to offer pretty quickly.
 
-## In short
+## My Quest 3S games by difficulty, in short
 
 | Game             | Difficulty | Its personality               | My take                                 |
 | ---------------- | ---------- | ----------------------------- | --------------------------------------- |
@@ -226,6 +226,8 @@ You may have noticed that the headset's most famous game is missing. *Beat Saber
 | Pistol Whip      | hard       | the armed DJ                  | very intense                            |
 | Dragon Fist      | hard       | the kung fu video store       | beautiful, fun, but those three ninjas… |
 | Vendetta Forever | very hard  | the sadistic choreographer    | the hardest, real cardio, and stunning  |
+
+For work, on the other hand, I tried [the virtual desktop in a VR headset, up against the portable dual monitor](/en/20260810-double-moniteur-portable-blackview-dcm6), and wasn't convinced.
 
 What about you, what are your favourite Quest games? Leave them in the comments. Especially if you know how to beat the three ninjas in Dragon Fist on hard mode.
 

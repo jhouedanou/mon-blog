@@ -1,5 +1,5 @@
 ---
-title: "À quoi ressemblerait une apocalypse IA ? Nucléaire, distributeurs en panne et plus d'internet"
+title: "À quoi ressemblerait une apocalypse IA ?"
 createdAt: "2026-09-26T22:30:00Z"
 image: "/images/articles/pexels-pixabay-55830.webp"
 description: "Pas de robots tueurs : une apocalypse IA passerait par le nucléaire, l'argent et les réseaux. Déjà vu sans IA, de Petrov en 1983 aux câbles coupés d'Abidjan."
@@ -9,7 +9,7 @@ tags: ["tech", "opinion", "IA", "société", "sécurité", "afrique"]
 
 Quand on parle d'apocalypse IA, on pense tout de suite à Terminator : une intelligence artificielle devient consciente, lance les missiles, puis envoie des robots finir le travail.
 
-Je ne crois pas que ça se passera comme ça. Si l'IA provoque une catastrophe, elle le fera à travers des systèmes dont on dépend déjà tous les jours : l'arme nucléaire, l'argent et les réseaux. Et on sait déjà à quoi ça ressemble, parce que ça s'est déjà produit, en plus petit. Sans IA.
+Je ne crois pas que ça se passera comme ça. Si l'IA provoque une catastrophe, elle le fera à travers des systèmes dont on dépend déjà tous les jours : l'arme nucléaire, l'argent et les réseaux. Et on sait à quoi ça ressemble, parce que c'est déjà arrivé, en plus petit. Sans IA.
 
 Les entreprises de la tech elles-mêmes préviennent du danger. Fin août, la même semaine que [le mémo de Bill Gates](/fr/20260907-bill-gates-ia-hypocrisie-meta-cash-rules-everything), plus de 100 entreprises ont signé [une lettre ouverte lancée par OpenAI](https://www.lemondeinformatique.fr/actualites/lire-openai-et-plus-de-100-entreprises-appellent-a-une-action-collective-en-matiere-de-cyberdefense-100759.html). Parmi elles : Anthropic, Google, Microsoft, Amazon, Cloudflare, CrowdStrike, mais aussi Visa et Mastercard. Leur message : « Dans les mois qui viennent, les cyberattaques menées avec l'IA vont devenir beaucoup plus répandues et sophistiquées. »
 
@@ -67,7 +67,7 @@ Internet repose sur quelques câbles et quelques grandes entreprises. Une erreur
 
 Et sans réseau, le reste s'arrête aussi : plus de mobile money, plus de paiement par carte, plus de WhatsApp pour le travail ou la famille. Les distributeurs, et même les systèmes d'alerte, dépendent des réseaux.
 
-## Ce que j'en retiens
+## Se préparer à une apocalypse IA : ce que j'en retiens
 
 Aucun de ces scénarios n'a besoin d'une IA consciente ou méchante. Il suffit d'une IA utilisée par les mauvaises personnes, ou d'une IA à qui on fait trop confiance et qui a accès à des systèmes dont on ne peut pas se passer.
 
@@ -79,9 +79,9 @@ Pour nous, au quotidien, ça tient en quelques habitudes simples :
 - **Ne dépendez pas d'un seul moyen de paiement.** Une carte, un compte mobile money et un peu d'espèces.
 - **Ayez deux puces de deux opérateurs différents.** En mars 2024, ceux qui avaient une puce Moov avaient encore internet.
 - **Notez les numéros importants sur papier.** Famille, médecin, banque : si votre téléphone tombe en panne, vous saurez encore qui appeler, depuis n'importe quel téléphone.
-- **Faites des sauvegardes hors ligne.** Un disque dur externe ne dépend ni d'internet ni d'un serveur à l'autre bout du monde. J'en parlais récemment avec [Time Machine](/fr/20260925-retrouver-dossier-github-icloud-time-machine).
+- **Faites des sauvegardes hors ligne.** Un disque dur externe ne dépend ni d'internet ni d'un serveur à l'autre bout du monde. J'en parlais récemment à propos de [Time Machine](/fr/20260925-retrouver-dossier-github-icloud-time-machine).
 
-Ce ne sont pas des gestes de survivaliste. Ce sont les mêmes gestes qui servent déjà quand le réseau saute, ou quand le distributeur du quartier est en panne.
+Ce ne sont pas des gestes de survivaliste : ils servent déjà quand le réseau saute, ou quand le distributeur du quartier est en panne.
 
 ---
 

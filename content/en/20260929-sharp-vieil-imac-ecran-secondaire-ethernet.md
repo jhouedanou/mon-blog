@@ -1,20 +1,20 @@
 ---
-title: "Sharp: turn an old iMac into a second display, with no expensive cable and no hassle"
+title: "Old iMac as a second monitor over Ethernet"
 createdAt: "2026-09-29T20:30:00Z"
 updatedAt: "2026-10-08T12:00:00Z"
 image: "/images/articles/sharp-imac-ecran-secondaire.webp"
-description: "Sharp, a free open source app, turns an old iMac into a second screen for a newer Mac, Apple Silicon included, over Ethernet. Five-step setup, and its limits."
+description: "Use an old iMac as a second monitor for a newer Mac, Apple Silicon included, with no Target Display Mode: Sharp, free, runs over Ethernet. Setup and limits."
 searchIntent: "How can I use an old iMac as a second display for a MacBook or an Apple Silicon Mac, without Target Display Mode and without buying an expensive cable or adapter?"
 tags: ["tutorial", "apple", "macos", "mac", "open-source", "hardware", "productivity"]
 ---
 
-Many of us have an old iMac sitting in a corner. The screen still looks great. The computer behind it has become slow, and macOS no longer updates it.
+Many of us have an old iMac sitting in a corner. The screen still looks great, but the computer behind it has become slow, and macOS no longer updates it.
 
-The idea is simple: keep the screen and use it as a second monitor for a newer Mac. In practice, it was complicated. Until **Sharp**, a free, open source app spotted on [Reddit (r/iMac)](https://www.reddit.com/r/iMac/comments/1wsm7f8/use_your_imac_as_a_highresolution_display_over/). It does the job with a plain Ethernet cable.
+The idea is simple: use the old iMac as a second monitor for a newer Mac, even an Apple Silicon Mac. In practice, it was complicated. Until **Sharp**, a free, open source app spotted on [Reddit (r/iMac)](https://www.reddit.com/r/iMac/comments/1wsm7f8/use_your_imac_as_a_highresolution_display_over/). It does the job with a plain Ethernet cable.
 
 ![A MacBook and an iMac showing the same picture with Sharp, in mirror mode](/images/articles/sharp-imac-ecran-secondaire.webp)
 
-## Why it was complicated before
+## Why Target Display Mode is not enough
 
 Apple used to offer **Target Display Mode**. It let you use an iMac as a screen. But it has three big drawbacks:
 
@@ -22,13 +22,13 @@ Apple used to offer **Target Display Mode**. It let you use an iMac as a screen.
 - it does **not work with Apple Silicon Macs** (M1, M2, M3…);
 - 5K Retina iMacs were **never** compatible.
 
-Another option: **AirPlay to Mac**. But the iMac must be from 2019 or later. Older ones cannot receive.
+Another option: **AirPlay to Mac**. But the iMac must be from 2019 or later. Older models can't act as receivers.
 
 That left solutions with dedicated hardware (like the Luna Display dongle), paid software, or workarounds that take a long time to set up.
 
 ## What Sharp does
 
-Sharp was built by developer **Amine Rostane**. The first version, Sharp 1.0 Beta 1, came out on 24 September 2026, and the app is still in beta. Here is what it offers:
+Sharp was built by developer **Amine Rostane**. The first version, Sharp 1.0 Beta 1, came out on 24 September 2026, and the app is still in beta. Here's what it offers:
 
 - **two Macs linked by an Ethernet cable**, directly (no box or router needed) or both wired to the same switch;
 - since beta 2, a **Thunderbolt cable** works too (through macOS's Thunderbolt Bridge), and Sharp prefers it over Ethernet;
@@ -39,7 +39,7 @@ Sharp was built by developer **Amine Rostane**. The first version, Sharp 1.0 Bet
 
 ## Why text stays sharp
 
-The name says it: text stays sharp. That is the app's main strength.
+The name says it: text stays sharp. That's the app's main strength.
 
 The starting problem: a standard (gigabit) Ethernet link is too slow to send the raw picture. 4K at 60 frames per second needs about **twelve times** more bandwidth. So the picture has to be compressed.
 
@@ -50,9 +50,9 @@ So Sharp combines two methods:
 1. **When the picture moves** (scrolling, video), it sends compressed video. The display stays smooth.
 2. **When the picture stops**, it sends small 64 × 64 pixel squares **with no loss**. They replace the video, piece by piece.
 
-The result: you scroll a page, it is smooth. You stop to read, the text becomes sharp again, pixel for pixel.
+Scroll a page and it's smooth. Stop to read and the text turns sharp again, pixel for pixel.
 
-Each square carries a version number. Sharp checks it against the displayed picture before placing it. An old square cannot cover a newer picture.
+Each square carries a version number. Sharp checks it against the displayed picture before placing it. So an old square can't cover a newer picture.
 
 ## What you need
 
@@ -68,9 +68,9 @@ Each square carries a version number. Sharp checks it against the displayed pict
 Two notes:
 
 - **Get a gigabit adapter** (1 Gbit/s). 100 Mbit/s models, often the cheapest, are too slow.
-- **An Ethernet cable costs almost nothing.** You may already have one that came with your internet box. In total, count the price of a cable and, if needed, an adapter. That is far from the Thunderbolt cables and Apple adapters Target Display Mode required.
+- **An Ethernet cable costs almost nothing.** You may already have one that came with your internet box. In total, count the price of a cable and, if needed, an adapter. That's a far cry from the Thunderbolt cables and Apple adapters Target Display Mode required.
 
-## Setup in five steps
+## Set up the iMac as a second monitor in five steps
 
 The app is in English. Button names are given as they appear.
 
@@ -109,13 +109,13 @@ On both Macs, allow **Local Network** access when Sharp asks for it. If the macO
 
 Connect the two Macs with the Ethernet (or Thunderbolt) cable. Sharp finds the other Mac on its own and picks the right connection.
 
-Open Sharp in the menu bar. If you see **Connected** above the other Mac's name, you are set: the picture is streaming.
+Open Sharp in the menu bar. If you see **Connected** above the other Mac's name, you're set: the picture is streaming.
 
 ## Mirror or extended display
 
 Sharp starts in **Mirror** mode: the same desktop on both screens.
 
-For more room, choose **Extend**. Then, in **System Settings → Displays**, arrange the screens to match your desk. All that is left is to drag a window over to the iMac.
+For more room, choose **Extend**. Then, in **System Settings → Displays**, arrange the screens to match your desk. All that's left is to drag a window over to the iMac.
 
 ## Useful settings
 
@@ -137,12 +137,12 @@ In the settings window (the gear icon):
 Sharp is promising, but keep this in mind:
 
 - **No Wi-Fi.** An Ethernet or Thunderbolt cable is required.
-- **Mac to Mac only.** No Windows PC, no iPad.
+- **Mac to Mac only.** No Windows PC, no iPad. For a Linux PC or a Wi-Fi link, see [OpenDisplay, which turns an old iMac into a monitor for a Linux PC or a Mac](/en/20261030-opendisplay-vieil-imac-ecran-mac-linux), at the cost of less sharp text.
 - **iMacs older than Late 2012 are limited.** They cannot install macOS Catalina. Only those running macOS 10.13.6 (High Sierra) can serve as a display, with the dedicated receiver.
 - **Extend mode is fragile.** It relies on an undocumented Apple feature. A macOS update could break it. If this mode fails, Sharp falls back to Mirror on its own.
 - **5K is not guaranteed.** The author has not yet validated performance at that resolution.
 - **The iMac is still a computer that stays on.** It uses more power than a plain screen. If either Mac goes to sleep, the stream stops. It resumes on wake.
-- **It is still a beta** (1.0 Beta 2.2 as of 8 October 2026), from a single developer. Expect a few bugs.
+- **It's still a beta** (1.0 Beta 2.2 as of 8 October 2026), from a single developer. Expect a few bugs.
 
 ## In short
 

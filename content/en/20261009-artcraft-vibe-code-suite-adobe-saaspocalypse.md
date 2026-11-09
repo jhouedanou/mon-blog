@@ -1,17 +1,17 @@
 ---
-title: "ArtCraft: Someone Vibe Coded the Adobe Suite, and the SaaSpocalypse Is Real"
+title: "ArtCraft: Someone Vibe Coded the Adobe Suite"
 createdAt: "2026-10-09T18:00:00Z"
 image: "/images/articles/artcraft-photocraft.webp"
-description: "ArtCraft rebuilds Photoshop, Lightroom and Premiere in Rust with Claude, for free, on Windows, Mac and Linux. An Affinity fan, I'm testing it this weekend."
+description: "ArtCraft, the open-source Adobe suite built with Claude, remakes Photoshop, Lightroom and Premiere in Rust for Windows, Mac and Linux. What works, what doesn't."
 searchIntent: "What is ArtCraft (PhotoCraft, LightCraft, FilmCraft), the AI-built open-source Adobe clones, and can they replace Photoshop or Lightroom?"
 tags: ["opinion", "tech", "AI", "open-source", "free software", "vibe coding", "linux"]
 ---
 
-In April, I wrote that vibe coding was the Bronny James of code. Six months later, someone vibe coded the Adobe suite.
+In April, I wrote that vibe coding was the Bronny James of code. Six months later, someone vibe coded the Adobe suite, open source, and it's called ArtCraft.
 
-Not a Paint clone. Not yet another to-do list. Photoshop, Lightroom, Premiere, Illustrator, After Effects, InDesign and Acrobat. All seven.
+Not a Paint clone or yet another to-do list: Photoshop, Lightroom, Premiere, Illustrator, After Effects, InDesign and Acrobat. All seven.
 
-I came across it in a video by FUTC, a photography YouTuber who is also a developer. The title doesn't do nuance: ["Somebody Vibe Coded EVERY SINGLE ADOBE App"](https://www.youtube.com/watch?v=eFB79TYI-Vw){target="_blank" rel="noopener"}. The project is called ArtCraft. And this weekend, I'm trying it.
+I came across it in a video by FUTC, a photography YouTuber who is also a developer. The title doesn't do nuance: ["Somebody Vibe Coded EVERY SINGLE ADOBE App"](https://www.youtube.com/watch?v=eFB79TYI-Vw){target="_blank" rel="noopener"}. And this weekend, I'm trying ArtCraft.
 
 ## What is ArtCraft?
 
@@ -53,7 +53,7 @@ FUTC explains that Adobe's pricing, its terms of service and its AI policies are
 - **LightCraft**, the Lightroom equivalent: importing RAW files and Lightroom presets. Previews stay low-resolution to keep things smooth, but standard presets come through.
 - **FilmCraft**, the Premiere equivalent: 5K 10-bit footage and H.265 files. It stutters at times, and at the time of filming it lacked features like ripple delete, but hardware-accelerated encoding works.
 
-The verdict: it's an alpha, still rough around the edges, but surprisingly capable for a project put together in a few days. VectorCraft, DesignCraft and EffectCraft are still to be tested.
+In short, it's an alpha, still rough around the edges, but surprisingly capable for a project put together in a few days. VectorCraft, DesignCraft and EffectCraft are still to be tested.
 
 ## The real advantage: Windows, Mac and Linux
 
@@ -91,7 +91,7 @@ My plan for this weekend:
 
 And on the Affinity side, a surprise: PhotoCraft opens Affinity files (.afphoto, .afdesign, .afpub), read-only. Effects and adjustments it can't render yet are listed in a warning. I'll test that too, on copies.
 
-## What still doesn't work
+## Can ArtCraft replace Photoshop?
 
 Replace Photoshop? Not yet, by the project's own admission. And I'm not going to [sell you a dream](/en/20260908-philippe-simo-vendeur-de-reves).
 
