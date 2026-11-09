@@ -59,7 +59,7 @@ Et j'ai le [MistGlide](https://ci.oraimo.com/product/oraimo-mistglide-multi-surf
 
 ### La salle de bain et les vêtements
 
-J'ai aussi la brosse à dents électrique [Oraimo MagniSonic](https://oraimo.com/en/product/sonic-power-ultimate-ease-magnisonic){target="_blank" rel="noopener"}, très efficace. Et même des vêtements : les t-shirts NanoShield, qui résistent aux taches, et les claquettes [CrestFrom](https://ci.oraimo.com/product/oraimo-crestfrom-ergonomic-anti-skid-slipper-ohds-003){target="_blank" rel="noopener"}, très inspirées des Yeezy Foam Runner. Les t-shirts coûtent 7 000 FCFA. Ils sont confortables, et je n'ai eu aucun problème de taille.
+J'ai aussi la brosse à dents électrique [Oraimo MagniSonic](https://oraimo.com/en/product/sonic-power-ultimate-ease-magnisonic){target="_blank" rel="noopener"}, très efficace. Et même des vêtements : les t-shirts NanoShield, qui résistent aux taches, et les claquettes [CrestFrom](https://ci.oraimo.com/product/oraimo-crestfrom-ergonomic-anti-skid-slipper-ohds-003){target="_blank" rel="noopener"}, très inspirées des Yeezy Foam Runner et très confortables. Les t-shirts coûtent 7 000 FCFA. Ils sont confortables, et je n'ai eu aucun problème de taille.
 
 <!-- À AJOUTER : photo du t-shirt NanoShield et du polo EcoLuxe. -->
 
@@ -99,7 +99,7 @@ J'adore les montres connectées. J'ai déjà parlé de l'Oraimo Watch Nova AM da
 | Balai MistGlide | 7 000 | Oui | Le balai à spray qui m'a duré le plus longtemps. |
 | Brosse à dents MagniSonic | 5 000 | Oui | Très efficace. |
 | T-shirts NanoShield | 7 000 | Oui | Confortables, ils résistent aux taches. |
-| Claquettes CrestFrom | 4 900 | Oui | Très inspirées des Yeezy Foam Runner. |
+| Claquettes CrestFrom | 4 900 | Oui | Très confortables, et très inspirées des Yeezy Foam Runner. |
 | Plaque FlexiCooker | 30 000 | Oui, avec un bémol | Certains programmes consomment plus d'électricité que d'autres. |
 | Polos EcoLuxe | 9 000 | Oui, avec un bémol | Confortables, mais en tailles chinoises, donc plus petits. |
 | Casque BoomPop 2 | 25 000 | Non | Son et réduction de bruit ordinaires, coussinets qui s'effritent. |

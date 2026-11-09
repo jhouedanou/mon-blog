@@ -59,7 +59,7 @@ And I have the [MistGlide](https://ci.oraimo.com/product/oraimo-mistglide-multi-
 
 ### Bathroom and clothes
 
-I also have the [Oraimo MagniSonic](https://oraimo.com/en/product/sonic-power-ultimate-ease-magnisonic){target="_blank" rel="noopener"} electric toothbrush, which works very well. And even clothes: the NanoShield T-shirts, which resist stains, and the [CrestFrom](https://ci.oraimo.com/product/oraimo-crestfrom-ergonomic-anti-skid-slipper-ohds-003){target="_blank" rel="noopener"} slides, heavily inspired by the Yeezy Foam Runner. The T-shirts cost 7,000 CFA francs. They're comfortable, and I've had no sizing problems.
+I also have the [Oraimo MagniSonic](https://oraimo.com/en/product/sonic-power-ultimate-ease-magnisonic){target="_blank" rel="noopener"} electric toothbrush, which works very well. And even clothes: the NanoShield T-shirts, which resist stains, and the [CrestFrom](https://ci.oraimo.com/product/oraimo-crestfrom-ergonomic-anti-skid-slipper-ohds-003){target="_blank" rel="noopener"} slides, heavily inspired by the Yeezy Foam Runner and very comfortable. The T-shirts cost 7,000 CFA francs. They're comfortable, and I've had no sizing problems.
 
 <!-- TO ADD: photo of the NanoShield T-shirt and the EcoLuxe polo. -->
 
@@ -99,7 +99,7 @@ I love smartwatches. I've already written about the Oraimo Watch Nova AM in [my 
 | MistGlide mop | 7,000 | Yes | The spray mop that has lasted me the longest. |
 | MagniSonic toothbrush | 5,000 | Yes | Works very well. |
 | NanoShield T-shirts | 7,000 | Yes | Comfortable and stain-resistant. |
-| CrestFrom slides | 4,900 | Yes | Heavily inspired by the Yeezy Foam Runner. |
+| CrestFrom slides | 4,900 | Yes | Very comfortable, and heavily inspired by the Yeezy Foam Runner. |
 | FlexiCooker hot plate | 30,000 | Yes, with a catch | Some programmes use more electricity than others. |
 | EcoLuxe polo shirts | 9,000 | Yes, with a catch | Comfortable, but in Chinese sizes, so smaller. |
 | BoomPop 2 headphones | 25,000 | No | Ordinary sound and noise cancellation, flaking ear pads. |
