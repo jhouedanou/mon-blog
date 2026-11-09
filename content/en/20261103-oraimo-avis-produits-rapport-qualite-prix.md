@@ -60,7 +60,7 @@ And I have the [MistGlide](https://ci.oraimo.com/product/oraimo-mistglide-multi-
 
 ### Bathroom and clothes
 
-I also have the [Oraimo MagniSonic](https://oraimo.com/en/product/sonic-power-ultimate-ease-magnisonic){target="_blank" rel="noopener"} electric toothbrush, which works very well. And even clothes: the NanoShield T-shirts, which resist stains, the EcoLuxe polo shirts and the [CrestFrom](https://ci.oraimo.com/product/oraimo-crestfrom-ergonomic-anti-skid-slipper-ohds-003){target="_blank" rel="noopener"} slides, heavily inspired by the Yeezy Foam Runner.
+I also have the [Oraimo MagniSonic](https://oraimo.com/en/product/sonic-power-ultimate-ease-magnisonic){target="_blank" rel="noopener"} electric toothbrush, which works very well. And even clothes: the NanoShield T-shirts, which resist stains, and the [CrestFrom](https://ci.oraimo.com/product/oraimo-crestfrom-ergonomic-anti-skid-slipper-ohds-003){target="_blank" rel="noopener"} slides, heavily inspired by the Yeezy Foam Runner. The T-shirts cost 7,000 CFA francs. They're comfortable, and I've had no sizing problems.
 
 <!-- TO ADD: photo of the NanoShield T-shirt and the EcoLuxe polo. -->
 
@@ -73,6 +73,8 @@ I also have the [Oraimo MagniSonic](https://oraimo.com/en/product/sonic-power-ul
 I have the [FlexiCooker](https://ug.oraimo.com/product/oraimo-flexicooker-2200w-electric-ceramic-hot-plate){target="_blank" rel="noopener"}, a 2,200 W ceramic hot plate with preset programmes. The catch: some of those programmes use more electricity than others.
 
 ![Oraimo FlexiCooker ceramic hot plate, with its display and preset programme buttons](/images/articles/oraimo-flexicooker.webp)
+
+I also have the EcoLuxe polo shirts, at 9,000 CFA francs. They're comfortable. The catch: they use Chinese sizing, so they're smaller.
 
 ## I wouldn't buy again
 
@@ -97,8 +99,10 @@ I love smartwatches. I've already written about the Oraimo Watch Nova AM in [my 
 | Ultra Cleaner Scrubber spin brush | Yes | It degreases pots and kitchen counters. |
 | MistGlide mop | Yes | The spray mop that has lasted me the longest. |
 | MagniSonic toothbrush | Yes | Works very well. |
-| NanoShield T-shirts, EcoLuxe polos, CrestFrom slides | Yes | The T-shirts resist stains. |
+| NanoShield T-shirts | Yes | Comfortable and stain-resistant, for 7,000 CFA francs. |
+| CrestFrom slides | Yes | Heavily inspired by the Yeezy Foam Runner. |
 | FlexiCooker hot plate | Yes, with a catch | Some programmes use more electricity than others. |
+| EcoLuxe polo shirts | Yes, with a catch | Comfortable, for 9,000 CFA francs, but in Chinese sizes, so smaller. |
 | BoomPop 2 headphones | No | Ordinary sound and noise cancellation, flaking ear pads. |
 | Watch Nova AM | No | My Google Pixel Watch is better. |
 

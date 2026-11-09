@@ -60,7 +60,7 @@ Et j'ai le [MistGlide](https://ci.oraimo.com/product/oraimo-mistglide-multi-surf
 
 ### La salle de bain et les vêtements
 
-J'ai aussi la brosse à dents électrique [Oraimo MagniSonic](https://oraimo.com/en/product/sonic-power-ultimate-ease-magnisonic){target="_blank" rel="noopener"}, très efficace. Et même des vêtements : les t-shirts NanoShield, qui résistent aux taches, les polos EcoLuxe et les claquettes [CrestFrom](https://ci.oraimo.com/product/oraimo-crestfrom-ergonomic-anti-skid-slipper-ohds-003){target="_blank" rel="noopener"}, très inspirées des Yeezy Foam Runner.
+J'ai aussi la brosse à dents électrique [Oraimo MagniSonic](https://oraimo.com/en/product/sonic-power-ultimate-ease-magnisonic){target="_blank" rel="noopener"}, très efficace. Et même des vêtements : les t-shirts NanoShield, qui résistent aux taches, et les claquettes [CrestFrom](https://ci.oraimo.com/product/oraimo-crestfrom-ergonomic-anti-skid-slipper-ohds-003){target="_blank" rel="noopener"}, très inspirées des Yeezy Foam Runner. Les t-shirts coûtent 7 000 FCFA. Ils sont confortables, et je n'ai eu aucun problème de taille.
 
 <!-- À AJOUTER : photo du t-shirt NanoShield et du polo EcoLuxe. -->
 
@@ -73,6 +73,8 @@ J'ai aussi la brosse à dents électrique [Oraimo MagniSonic](https://oraimo.com
 J'ai la [FlexiCooker](https://ug.oraimo.com/product/oraimo-flexicooker-2200w-electric-ceramic-hot-plate){target="_blank" rel="noopener"}, une plaque chauffante en céramique (2 200 W) avec des programmes préréglés. Le bémol : certains programmes consomment plus d'électricité que d'autres.
 
 ![Plaque chauffante en céramique Oraimo FlexiCooker, avec son écran et ses boutons de programmes préréglés](/images/articles/oraimo-flexicooker.webp)
+
+J'ai aussi les polos EcoLuxe, à 9 000 FCFA. Ils sont confortables. Le bémol : ils suivent les tailles chinoises, donc ils sont plus petits.
 
 ## Je ne rachète pas
 
@@ -97,8 +99,10 @@ J'adore les montres connectées. J'ai déjà parlé de l'Oraimo Watch Nova AM da
 | Brosse rotative Ultra Cleaner Scrubber | Oui | Elle dégraisse casseroles et comptoirs. |
 | Balai MistGlide | Oui | Le balai à spray qui m'a duré le plus longtemps. |
 | Brosse à dents MagniSonic | Oui | Très efficace. |
-| T-shirts NanoShield, polos EcoLuxe, claquettes CrestFrom | Oui | Les t-shirts résistent aux taches. |
+| T-shirts NanoShield | Oui | Confortables, ils résistent aux taches, pour 7 000 FCFA. |
+| Claquettes CrestFrom | Oui | Très inspirées des Yeezy Foam Runner. |
 | Plaque FlexiCooker | Oui, avec un bémol | Certains programmes consomment plus d'électricité que d'autres. |
+| Polos EcoLuxe | Oui, avec un bémol | Confortables, pour 9 000 FCFA, mais en tailles chinoises, donc plus petits. |
 | Casque BoomPop 2 | Non | Son et réduction de bruit ordinaires, coussinets qui s'effritent. |
 | Montre Watch Nova AM | Non | Ma Google Pixel Watch est meilleure. |
 
