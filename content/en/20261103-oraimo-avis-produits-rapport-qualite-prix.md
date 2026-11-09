@@ -12,7 +12,7 @@ Yes, I dared to paraphrase that old reactionary Pierre Perret (his song "Tout, t
 
 So today is all about Oraimo. I don't get any commission on the products I'm about to talk about. I'm writing this because a lot of people see this brand and its products everywhere in Abidjan, and wonder what they're really worth.
 
-To keep my Oraimo review short: in most cases, Oraimo products are excellent value for money. In practice, it's a Chinese brand (part of the Transsion group, like Tecno, Infinix and itel) that has managed to establish itself here thanks to good-quality products at good prices.
+To keep my Oraimo review short: in most cases, Oraimo products are excellent value for money. It's a Chinese brand (part of the Transsion group, like Tecno, Infinix and itel) that has managed to establish itself here thanks to good-quality products at good prices.
 
 So I've sorted the Oraimo products I use into three groups: the ones I'd buy again without a second thought, the ones I'd buy again with a catch, and the ones I wouldn't buy again.
 
@@ -30,17 +30,13 @@ Then one day, on my way to the shops, I lost the charging case of my Sony WF-C50
 
 ### Power bank
 
-I also have the [Oraimo PowerJet 130](https://oraimo.com/en/product/multi-device-type-c-fast-charging-triple-outputs-100w-recharge-9-times-faster-smart-led-display-low-current-charging-mode-flight-friendly-compatible-with-apple-samsung-hp-and-more-pd30-qc30-compatible-powerjet-130){target="_blank" rel="noopener"} power bank (27,600 mAh, up to 100 W). It's very good.
-
-<!-- TO ADD: what you charge with it (phone, laptop…) and why it's very good. -->
+I also have the [Oraimo PowerJet 130](https://oraimo.com/en/product/multi-device-type-c-fast-charging-triple-outputs-100w-recharge-9-times-faster-smart-led-display-low-current-charging-mode-flight-friendly-compatible-with-apple-samsung-hp-and-more-pd30-qc30-compatible-powerjet-130){target="_blank" rel="noopener"} power bank (27,600 mAh, up to 100 W). It's very good and handles life on the move well.
 
 ![Grey Oraimo PowerJet 130 power bank, with three ports and a small screen showing the charge level and power](/images/articles/oraimo-powerjet-130.webp)
 
 ### Mug and insulated bottle
 
-But Oraimo doesn't only make electronics. For my coffee, I have the [Oraimo ThermoGo](https://oraimo.com/en/product/all-day-heat-retention-with-easy-grip-oraimo-thermogo){target="_blank" rel="noopener"} insulated mug (750 ml). And I have the [Oraimo MegaDrink 1200](https://www.jumia.ci/oraimo-bouteille-isotherme-portable-megadrink-1200-de-12-l-etanche-32345740.html){target="_blank" rel="noopener"} insulated bottle (1.2 L, leak-proof).
-
-<!-- TO ADD: your take on the mug and the bottle (how long coffee stays hot, drinks stay cold…). -->
+But Oraimo doesn't only make electronics. For my coffee, I have the [Oraimo ThermoGo](https://oraimo.com/en/product/all-day-heat-retention-with-easy-grip-oraimo-thermogo){target="_blank" rel="noopener"} insulated mug (750 ml). And I have the [Oraimo MegaDrink 1200](https://www.jumia.ci/oraimo-bouteille-isotherme-portable-megadrink-1200-de-12-l-etanche-32345740.html){target="_blank" rel="noopener"} insulated bottle (1.2 L, leak-proof). Both keep drinks cold well, for more than half a day.
 
 ![Black Oraimo ThermoGo insulated mug, with a handle and a locking lid](/images/articles/oraimo-thermogo.webp)
 
@@ -84,7 +80,7 @@ I have the Oraimo BoomPop 2 headphones. They're good headphones, with good batte
 
 ![Oraimo BoomPop 2 wireless headphones, black with neon green rings around the ear cups](/images/articles/oraimo-boompop-2.webp)
 
-I love smartwatches. I've already written about the Oraimo Watch Nova AM in [my comparison with the Infinix Watch 3](/en/20251225-infinix-ou-oraimo), even though I no longer wear it, or the Infinix one. I have a [Google Pixel Watch](/en/20260311-comment-allumer-lecran-pixel-watch-notifications), which is better.
+I love smartwatches. I've already written about the Oraimo Watch Nova AM in [my comparison with the Infinix Watch 3](/en/20251225-infinix-ou-oraimo). Today I wear neither of them: I have a [Google Pixel Watch](/en/20260311-comment-allumer-lecran-pixel-watch-notifications), which is better.
 
 ![Oraimo Watch Nova AM smartwatch, with a square case and a black strap](/images/articles/oraimo-watch-nova-am.webp)
 
@@ -94,9 +90,9 @@ I love smartwatches. I've already written about the Oraimo Watch Nova AM in [my 
 |---|---|---|
 | CONCH earphones | Yes | Sturdy, with slightly too much bass, for 2,000 to 3,000 CFA francs. |
 | SpaceBuds 2 earbuds | Yes | Good battery life, so-so noise cancellation, and they survived the washing machine. |
-| PowerJet 130 power bank | Yes | Very good. |
-| ThermoGo mug | Yes | A 750 ml insulated mug for my coffee. |
-| MegaDrink 1200 bottle | Yes | A 1.2 L insulated bottle, leak-proof. |
+| PowerJet 130 power bank | Yes | Very good, and it handles life on the move well. |
+| ThermoGo mug | Yes | A 750 ml insulated mug that keeps drinks cold for more than half a day. |
+| MegaDrink 1200 bottle | Yes | A 1.2 L leak-proof insulated bottle that keeps drinks cold for more than half a day. |
 | SmartAirFryer | Yes | No smell of burnt plastic, and very easy to clean. |
 | Ultra Cleaner Scrubber spin brush | Yes | It degreases pots and kitchen counters. |
 | MistGlide mop | Yes | The spray mop that has lasted me the longest. |

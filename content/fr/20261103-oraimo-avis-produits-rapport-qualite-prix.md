@@ -12,7 +12,7 @@ Oui, j'ai osé paraphraser ce vieux réac de Pierre Perret. Mais qu'est-ce que v
 
 Aujourd'hui, c'est donc spécial Oraimo. Je ne touche aucune commission sur les produits dont je vais parler. J'écris cet article parce que beaucoup de gens voient cette marque et ses produits partout à Abidjan, et se demandent ce qu'ils valent vraiment.
 
-Pour faire court, mon avis sur les produits Oraimo : dans la plupart des cas, ils offrent un excellent rapport qualité-prix. Concrètement, c'est une marque chinoise (du groupe Transsion, comme Tecno, Infinix et itel) qui a réussi à s'implanter chez nous grâce à des produits de qualité à bon prix.
+Pour faire court, mon avis sur les produits Oraimo : dans la plupart des cas, ils offrent un excellent rapport qualité-prix. C'est une marque chinoise (du groupe Transsion, comme Tecno, Infinix et itel) qui a réussi à s'implanter chez nous grâce à des produits de qualité à bon prix.
 
 J'ai donc classé les produits Oraimo que j'utilise en trois groupes : ceux que je rachèterais sans hésiter, ceux que je rachèterais avec un bémol, et ceux que je ne rachèterais pas.
 
@@ -30,17 +30,13 @@ Puis un jour, en allant faire les courses, j'ai perdu le boîtier de charge de m
 
 ### La batterie externe
 
-J'ai aussi la batterie externe [Oraimo PowerJet 130](https://oraimo.com/en/product/multi-device-type-c-fast-charging-triple-outputs-100w-recharge-9-times-faster-smart-led-display-low-current-charging-mode-flight-friendly-compatible-with-apple-samsung-hp-and-more-pd30-qc30-compatible-powerjet-130){target="_blank" rel="noopener"} (27 600 mAh, jusqu'à 100 W). Elle est très bonne.
-
-<!-- À COMPLÉTER : ce que tu charges avec (téléphone, ordinateur portable…) et pourquoi elle est très bonne. -->
+J'ai aussi la batterie externe [Oraimo PowerJet 130](https://oraimo.com/en/product/multi-device-type-c-fast-charging-triple-outputs-100w-recharge-9-times-faster-smart-led-display-low-current-charging-mode-flight-friendly-compatible-with-apple-samsung-hp-and-more-pd30-qc30-compatible-powerjet-130){target="_blank" rel="noopener"} (27 600 mAh, jusqu'à 100 W). Elle est très bonne et gère bien en déplacement.
 
 ![Batterie externe Oraimo PowerJet 130, grise, avec trois ports et un petit écran qui affiche la charge et la puissance](/images/articles/oraimo-powerjet-130.webp)
 
 ### Le mug et la bouteille isotherme
 
-Mais Oraimo ne fait pas que de l'électronique. Pour le café, j'ai le mug isotherme [Oraimo ThermoGo](https://oraimo.com/en/product/all-day-heat-retention-with-easy-grip-oraimo-thermogo){target="_blank" rel="noopener"} (750 ml). Et j'ai la bouteille isotherme [Oraimo MegaDrink 1200](https://www.jumia.ci/oraimo-bouteille-isotherme-portable-megadrink-1200-de-12-l-etanche-32345740.html){target="_blank" rel="noopener"} (1,2 L, étanche).
-
-<!-- À COMPLÉTER : ton avis sur le mug et la bouteille (combien de temps le café reste chaud, la boisson reste fraîche…). -->
+Mais Oraimo ne fait pas que de l'électronique. Pour le café, j'ai le mug isotherme [Oraimo ThermoGo](https://oraimo.com/en/product/all-day-heat-retention-with-easy-grip-oraimo-thermogo){target="_blank" rel="noopener"} (750 ml). Et j'ai la bouteille isotherme [Oraimo MegaDrink 1200](https://www.jumia.ci/oraimo-bouteille-isotherme-portable-megadrink-1200-de-12-l-etanche-32345740.html){target="_blank" rel="noopener"} (1,2 L, étanche). Les deux conservent bien le frais, pendant plus d'une demi-journée.
 
 ![Mug isotherme Oraimo ThermoGo noir, avec une poignée et un couvercle qui se verrouille](/images/articles/oraimo-thermogo.webp)
 
@@ -84,19 +80,19 @@ J'ai le casque Oraimo BoomPop 2. C'est un bon casque, avec une bonne autonomie, 
 
 ![Casque sans fil Oraimo BoomPop 2, noir avec des anneaux vert fluo autour des écouteurs](/images/articles/oraimo-boompop-2.webp)
 
-J'adore les montres connectées. J'ai déjà parlé de l'Oraimo Watch Nova AM dans [mon comparatif avec l'Infinix Watch 3](/fr/20251225-infinix-ou-oraimo), même si je ne porte plus ni elle ni celle d'Infinix. J'ai une [Google Pixel Watch](/fr/20260311-comment-allumer-lecran-pixel-watch-notifications) qui est meilleure.
+J'adore les montres connectées. J'ai déjà parlé de l'Oraimo Watch Nova AM dans [mon comparatif avec l'Infinix Watch 3](/fr/20251225-infinix-ou-oraimo). Aujourd'hui, je ne porte plus ni l'une ni l'autre : j'ai une [Google Pixel Watch](/fr/20260311-comment-allumer-lecran-pixel-watch-notifications), qui est meilleure.
 
 ![Montre connectée Oraimo Watch Nova AM, au boîtier carré et au bracelet noir](/images/articles/oraimo-watch-nova-am.webp)
 
 ## Mon avis sur Oraimo, en résumé
 
-| Produit | Je rachète ? | En une phrase |
+| Produit | Je rachète ? | En une phrase |
 |---|---|---|
 | Écouteurs CONCH | Oui | Solides, avec des basses un peu trop fortes, pour 2 000 à 3 000 FCFA. |
 | Écouteurs SpaceBuds 2 | Oui | Bonne autonomie, réduction de bruit passable, et ils ont survécu à la machine à laver. |
-| Batterie PowerJet 130 | Oui | Très bonne. |
-| Mug ThermoGo | Oui | Un mug isotherme de 750 ml pour le café. |
-| Bouteille MegaDrink 1200 | Oui | Une bouteille isotherme de 1,2 L, étanche. |
+| Batterie PowerJet 130 | Oui | Très bonne, et elle gère bien en déplacement. |
+| Mug ThermoGo | Oui | Un mug isotherme de 750 ml, qui garde le frais plus d'une demi-journée. |
+| Bouteille MegaDrink 1200 | Oui | Une bouteille isotherme de 1,2 L, étanche, qui garde le frais plus d'une demi-journée. |
 | Friteuse SmartAirFryer | Oui | Aucune odeur de plastique brûlé, et elle se nettoie très facilement. |
 | Brosse rotative Ultra Cleaner Scrubber | Oui | Elle dégraisse casseroles et comptoirs. |
 | Balai MistGlide | Oui | Le balai à spray qui m'a duré le plus longtemps. |
