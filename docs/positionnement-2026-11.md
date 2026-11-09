@@ -63,6 +63,7 @@ après la mise en ligne.
 | | `20261023-netflix-ecran-noir-displaylink-mac` | Netflix écran noir DisplayLink |
 | Vieux Mac, écrans | `20260929-sharp-vieil-imac-…` | vieil iMac en écran secondaire |
 | | `20261030-opendisplay-vieil-imac-…` | iMac en écran d'un PC Linux |
+| | `20261109-sunshine-moonlight-imac-4k-…` (brouillon) | Sunshine Moonlight écran virtuel Hyprland |
 | | `20261014-installer-macos-ssd-externe-imac-2017` | installer macOS sur un SSD externe |
 | | `20260810-double-moniteur-portable-…` | double moniteur portable |
 | | `20241021-2-non-ce-cable-de-240w-…` | câble USB-C pour MacBook Pro |

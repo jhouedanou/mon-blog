@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 890" width="640" height="890" role="img" aria-labelledby="titre desc" font-family="Helvetica, Arial, sans-serif">
   <title id="titre">Du MacBook à l'iMac avec Sunshine et Moonlight</title>
-  <desc id="desc">Sur le MacBook Pro 2017 sous Omarchy, Hyprland crée un écran virtuel nommé imac. Sunshine filme cet écran et le compresse en vidéo. La vidéo et le son passent par un câble Thunderbolt, qui sert de réseau direct entre le MacBook (10.0.0.1) et l'iMac (10.0.0.2). Sur l'iMac Retina 4K 2017, Moonlight reçoit la vidéo et l'affiche en plein écran, en 4096 × 2304. Dans l'autre sens, le clavier et la souris de l'iMac pilotent le MacBook. Il faut créer l'écran virtuel avant de lancer Sunshine. Sinon, l'iMac affiche le mauvais écran ou une image noire.</desc>
+  <desc id="desc">Sur le MacBook Pro 2017 sous Omarchy, Hyprland crée un écran virtuel nommé imac. Sunshine filme cet écran et le compresse en vidéo. La vidéo et le son passent par un câble Thunderbolt, qui sert de réseau direct entre le MacBook (10.0.0.1) et l'iMac (10.0.0.2). Sur l'iMac Retina 4K 2017, Moonlight reçoit la vidéo et l'affiche en plein écran, en 4K (3840 × 2160). Dans l'autre sens, le clavier et la souris de l'iMac pilotent le MacBook. Il faut créer l'écran virtuel avant de lancer Sunshine. Sinon, l'iMac affiche le mauvais écran ou une image noire.</desc>
 
   <defs>
     <marker id="fleche" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
@@ -44,7 +44,7 @@
   <text x="90" y="588" font-size="14" font-weight="700" letter-spacing="1.5" fill="#1f5fbf">IMAC RETINA 4K 2017 · MACOS VENTURA</text>
   <text x="90" y="622" font-size="25" font-weight="700" fill="#14161c">Moonlight</text>
   <text x="90" y="658" font-size="18" fill="#3e4452">4. Reçoit la vidéo et le son</text>
-  <text x="90" y="688" font-size="18" fill="#3e4452">5. Affiche le bureau en 4096 × 2304</text>
+  <text x="90" y="688" font-size="18" fill="#3e4452">5. Affiche le bureau en 4K (3840 × 2160)</text>
 
   <!-- Dans l'autre sens -->
   <rect x="30" y="734" width="284" height="128" rx="12" fill="#e6eefa" stroke="#1f5fbf" stroke-width="1.5"/>
@@ -58,5 +58,5 @@
   <text x="348" y="768" font-size="14" font-weight="700" letter-spacing="1.5" fill="#b4541a">ATTENTION</text>
   <text x="348" y="798" font-size="17" font-weight="700" fill="#14161c">L'écran virtuel d'abord,</text>
   <text x="348" y="820" font-size="17" font-weight="700" fill="#14161c">Sunshine ensuite</text>
-  <text x="348" y="844" font-size="15" fill="#3e4452">Sinon : image noire ou mauvais écran.</text>
+  <text x="348" y="844" font-size="15" fill="#3e4452">Sinon : noir ou mauvais écran.</text>
 </svg>

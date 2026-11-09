@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 890" width="640" height="890" role="img" aria-labelledby="title desc" font-family="Helvetica, Arial, sans-serif">
   <title id="title">From the MacBook to the iMac with Sunshine and Moonlight</title>
-  <desc id="desc">On the 2017 MacBook Pro running Omarchy, Hyprland creates a virtual screen named imac. Sunshine records that screen and compresses it into video. The video and the sound travel over a Thunderbolt cable, used as a direct network between the MacBook (10.0.0.1) and the iMac (10.0.0.2). On the 2017 Retina 4K iMac, Moonlight receives the video and shows it full screen, at 4096 × 2304. In the other direction, the iMac's keyboard and mouse control the MacBook. Create the virtual screen before you start Sunshine. Otherwise, the iMac shows the wrong screen or a black picture.</desc>
+  <desc id="desc">On the 2017 MacBook Pro running Omarchy, Hyprland creates a virtual screen named imac. Sunshine captures that screen and compresses it into video. The video and the sound travel over a Thunderbolt cable, used as a direct network between the MacBook (10.0.0.1) and the iMac (10.0.0.2). On the 2017 Retina 4K iMac, Moonlight receives the video and shows it full screen, in 4K (3840 × 2160). In the other direction, the iMac's keyboard and mouse control the MacBook. Create the virtual screen before you start Sunshine. Otherwise, the iMac shows the wrong screen or a black picture.</desc>
 
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
@@ -19,7 +19,7 @@
   <text x="90" y="140" font-size="14" font-weight="700" letter-spacing="1.5" fill="#1f5fbf">2017 MACBOOK PRO · OMARCHY</text>
   <text x="90" y="174" font-size="25" font-weight="700" fill="#14161c">Hyprland and Sunshine</text>
   <text x="90" y="210" font-size="18" fill="#3e4452">1. Hyprland creates the "imac" virtual screen</text>
-  <text x="90" y="240" font-size="18" fill="#3e4452">2. Sunshine records that screen</text>
+  <text x="90" y="240" font-size="18" fill="#3e4452">2. Sunshine captures that screen</text>
   <text x="90" y="270" font-size="18" fill="#3e4452">3. It compresses it into video (HEVC)</text>
 
   <!-- Arrow 1 -->
@@ -44,7 +44,7 @@
   <text x="90" y="588" font-size="14" font-weight="700" letter-spacing="1.5" fill="#1f5fbf">2017 RETINA 4K IMAC · MACOS VENTURA</text>
   <text x="90" y="622" font-size="25" font-weight="700" fill="#14161c">Moonlight</text>
   <text x="90" y="658" font-size="18" fill="#3e4452">4. Receives the video and the sound</text>
-  <text x="90" y="688" font-size="18" fill="#3e4452">5. Shows the desktop at 4096 × 2304</text>
+  <text x="90" y="688" font-size="18" fill="#3e4452">5. Shows the desktop in 4K (3840 × 2160)</text>
 
   <!-- Other direction -->
   <rect x="30" y="734" width="284" height="128" rx="12" fill="#e6eefa" stroke="#1f5fbf" stroke-width="1.5"/>
