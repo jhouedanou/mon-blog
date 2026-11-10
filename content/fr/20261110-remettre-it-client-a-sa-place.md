@@ -18,24 +18,24 @@ J'ai une règle, tirée de l'expérience : plus il est junior, moins il connaît
 
 L'IT expérimenté pose deux questions, lit le README et déploie. Le junior, lui, doit montrer qu'il existe. Alors il fait des choses que personne ne lui a demandées.
 
-Exemple de cette semaine. J'ai retiré les noms, le reste est exact.
+Un exemple récent. J'ai retiré les noms et changé les détails qui permettraient de reconnaître le projet. Le déroulé, lui, est vrai.
 
-Lundi, 16 h 51. J'envoie le mail de mise en production. Le domaine d'envoi des e-mails est déjà vérifié, il n'y a rien à faire côté DNS. Les variables d'environnement sont dans un lien sécurisé. Quatre collègues sont en copie.
+J'envoie le mail de mise en production. Tout ce qui pouvait être préparé l'est déjà. Les variables d'environnement sont dans un lien sécurisé. Mes collègues sont en copie.
 
-La réponse tient en deux points. Le premier : une variable est vide. Le second, je le cite : « j'ai créé une propre base de données de notre côté pour ça, dois-je changer cela ? »
+La réponse tient en deux points. Le premier : une variable est vide. Le second : il a créé sa propre base de données de son côté, et il demande s'il doit changer cela.
 
-Relisez la phrase. L'application est livrée avec sa base, sécurisée, avec authentification multifacteur. Personne n'a demandé une deuxième base. Il en a créé une, il l'a branchée, et ensuite il demande s'il fallait.
+Relisez la phrase. L'application est livrée avec sa base, déjà sécurisée. Personne n'a demandé une deuxième base. Il en a créé une, il l'a branchée, et ensuite il demande s'il fallait.
 
 ## Ce que cette base a coûté
 
 Voici la suite, dans l'ordre.
 
-- **La variable vide.** C'était normal. Ce secret se génère à la création du webhook, et le webhook a besoin de l'URL finale de production. Il fallait donc attendre le déploiement. J'ai répondu avec ce qui fonctionne, ce qui ne fonctionne pas, et le fichier et la ligne où ça bloque.
-- **La base.** Retour à la base prévue. Le conteneur redémarre en boucle : la migration échoue parce que le schéma existe déjà.
-- **Le domaine.** L'application est servie sur un autre domaine que celui prévu. Et un secret de test est resté en place.
-- **Les comptes.** Une fois le site en ligne : « les anciens comptes admin, y compris moi-même, ne peuvent plus se connecter ». C'est normal aussi : ces comptes avaient été créés dans la base qu'il avait inventée.
+- **La variable vide.** C'était normal. Cette valeur ne peut être générée qu'après le déploiement. J'ai répondu avec ce qui fonctionne, ce qui ne fonctionne pas, et le fichier et la ligne où ça bloque.
+- **La base.** Retour à la base prévue. L'application redémarre en boucle, parce que l'installation avait été faite pour l'autre base.
+- **La configuration.** D'autres réglages ne sont pas ceux prévus, et une valeur de test est restée en place.
+- **Les comptes.** Une fois le site en ligne, les comptes administrateur ne fonctionnent plus, le sien compris. C'est normal aussi : ces comptes avaient été créés dans la base qu'il avait inventée.
 
-Treize messages au total, du lundi au mardi. À mon avis, sans la base surprise, quatre suffisaient.
+Plus d'une dizaine de messages au total. À mon avis, sans la base surprise, quatre suffisaient.
 
 ## La pédagogie : trois règles
 
@@ -53,17 +53,17 @@ En privé, « j'ai créé une autre base » devient un mois plus tard « le pres
 
 ### 3. Je pointe des faits
 
-Je n'écris pas « vous n'auriez pas dû ». J'écris : « C'est la base de production. Il n'y en a pas d'autre. »
+Je n'écris pas « vous n'auriez pas dû ». J'écris : « La base de production est celle du mail. Il n'y en a pas d'autre. »
 
-Ensuite vient la preuve : un contrôle fait directement sur la base, un objet témoin par migration, les quatorze présents, capture d'écran jointe. Ensuite viennent les actions, numérotées, une par ligne.
+Ensuite vient la preuve : un contrôle fait directement sur la base, étape par étape, avec la capture d'écran jointe. Ensuite viennent les actions, numérotées, une par ligne.
 
-Quand il m'a écrit que des comptes ne fonctionnaient plus, ma réponse faisait une ligne : « Merci d'indiquer directement la liste des comptes et adresses e-mail à recréer. » Pas de commentaire sur la cause. La cause est déjà écrite plus haut dans le fil, et tout le monde l'a lue.
+Quand il m'a écrit que des comptes ne fonctionnaient plus, ma réponse faisait une ligne : je lui ai demandé la liste des comptes à recréer. Pas de commentaire sur la cause. La cause est déjà écrite plus haut dans le fil, et tout le monde l'a lue.
 
 J'utilise la même méthode pour [vérifier un livrable annoncé comme terminé](/fr/20260908-cest-integre-dans-la-maquette) : un numéro de ligne ne se discute pas.
 
 ### Et ça marche
 
-Au milieu du fil, il a lu le README. Il a alors posé deux bonnes questions : est-ce bien la base de production, et jusqu'à quelle migration est-elle à jour ? J'ai répondu point par point, et le site était en ligne peu après.
+Au milieu du fil, il a lu la documentation. Il a alors posé deux bonnes questions, précises, sur l'état de la base. J'ai répondu point par point, et le site était en ligne peu après.
 
 C'est le but. Je ne cherche pas à l'écraser. Je cherche à l'amener sur les faits, parce que sur les faits il travaille bien.
 

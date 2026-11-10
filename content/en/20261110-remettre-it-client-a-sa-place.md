@@ -18,24 +18,24 @@ I have a rule, drawn from experience: the more junior they are, the less they kn
 
 An experienced IT person asks two questions, reads the README and deploys. A junior one has to show they exist. So they do things nobody asked for.
 
-Here is this week's example. I removed the names; the rest is accurate.
+Here is a recent example. I removed the names and changed the details that would identify the project. The sequence of events is true.
 
-Monday, 4:51 pm. I send the go-live email. The sending domain for emails is already verified, so there is nothing to do on the DNS side. The environment variables are in a secure link. Four colleagues are in copy.
+I send the go-live email. Everything that could be prepared already is. The environment variables are in a secure link. My colleagues are in copy.
 
-The reply has two points. First: one variable is empty. Second, and I quote (translated from French): "I created our own database on our side for this, should I change that?"
+The reply has two points. First: one variable is empty. Second: they created their own database on their side, and they ask whether they should change that.
 
-Read the sentence again. The application ships with its database, secured, with multi-factor authentication. Nobody asked for a second database. They created one, plugged it in, and then asked whether they should have.
+Read the sentence again. The application ships with its database, already secured. Nobody asked for a second database. They created one, plugged it in, and then asked whether they should have.
 
 ## What that database cost
 
 Here is what followed, in order.
 
-- **The empty variable.** That was normal. This secret is generated when the webhook is created, and the webhook needs the final production URL. So we had to wait for the deployment. I replied with what works, what does not work, and the file and line where it blocks.
-- **The database.** Back to the planned database. The container restarts in a loop: the migration fails because the schema already exists.
-- **The domain.** The application is served on a different domain from the planned one. And a test secret was left in place.
-- **The accounts.** Once the site was live: "the old admin accounts, including mine, can no longer log in". That was normal too: those accounts had been created in the database they had invented.
+- **The empty variable.** That was normal. This value can only be generated after the deployment. I replied with what works, what does not work, and the file and line where it blocks.
+- **The database.** Back to the planned database. The application restarts in a loop, because the installation had been done for the other database.
+- **The configuration.** Other settings are not the planned ones, and a test value was left in place.
+- **The accounts.** Once the site was live, the administrator accounts no longer worked, theirs included. That was normal too: those accounts had been created in the database they had invented.
 
-Thirteen messages in total, from Monday to Tuesday. In my opinion, without the surprise database, four would have been enough.
+More than ten messages in total. In my opinion, without the surprise database, four would have been enough.
 
 ## The teaching method: three rules
 
@@ -53,17 +53,17 @@ In private, "I created another database" becomes, a month later, "the contractor
 
 ### 3. I point to facts
 
-I don't write "you shouldn't have". I write: "This is the production database. There is no other one."
+I don't write "you shouldn't have". I write: "The production database is the one in the email. There is no other one."
 
-Then comes the proof: a check run directly on the database, one witness object per migration, all fourteen present, screenshot attached. Then come the actions, numbered, one per line.
+Then comes the proof: a check run directly on the database, step by step, with the screenshot attached. Then come the actions, numbered, one per line.
 
-When they wrote that some accounts no longer worked, my answer was one line: "Please send the list of accounts and email addresses to recreate." No comment on the cause. The cause is already written higher up in the thread, and everyone has read it.
+When they wrote that some accounts no longer worked, my answer was one line: I asked for the list of accounts to recreate. No comment on the cause. The cause is already written higher up in the thread, and everyone has read it.
 
 I use the same method to [check a deliverable announced as done](/en/20260908-cest-integre-dans-la-maquette): nobody argues with a line number.
 
 ### And it works
 
-In the middle of the thread, they read the README. They then asked two good questions: is this really the production database, and up to which migration is it current? I answered point by point, and the site was live shortly after.
+In the middle of the thread, they read the documentation. They then asked two good, precise questions about the state of the database. I answered point by point, and the site was live shortly after.
 
 That is the goal. I am not trying to crush anyone. I am trying to bring them onto the facts, because on the facts they work well.
 
