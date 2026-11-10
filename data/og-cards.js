@@ -27,6 +27,7 @@ export const OG_CARDS = {
   "/images/articles/image_b81a07e7.webp": "/og/image-b81a07e7.jpg",
   "/images/articles/infinixoraimo.webp": "/og/infinixoraimo.jpg",
   "/images/articles/ipad-mini-6.webp": "/og/ipad-mini-6.jpg",
+  "/images/articles/it-client-en-copie.webp": "/og/it-client-en-copie.jpg",
   "/images/articles/joshcahill.webp": "/og/joshcahill.jpg",
   "/images/articles/koala.webp": "/og/koala.jpg",
   "/images/articles/lemon-studio.webp": "/og/lemon-studio.jpg",
