@@ -1,6 +1,7 @@
 ---
 title: "Why you sometimes have to put a client's IT person in their place"
 createdAt: "2026-11-10T18:00:00Z"
+draft: true
 image: "/images/articles/it-client-en-copie.webp"
 description: "Acceptance testing passed, then the client's IT person created their own database. My method: no WhatsApp, everyone in copy, and facts."
 searchIntent: "How do you deal with a client's IT person who complicates a production release, and how do you set them straight without a conflict?"

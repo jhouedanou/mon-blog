@@ -1,6 +1,7 @@
 ---
 title: "Pourquoi il faut parfois remettre les IT des clients à leur place"
 createdAt: "2026-11-10T18:00:00Z"
+draft: true
 image: "/images/articles/it-client-en-copie.webp"
 description: "Recette validée, puis l'IT du client crée sa propre base de données. Ma méthode pour le recadrer : pas de WhatsApp, tout le monde en copie, des faits."
 searchIntent: "Comment gérer l'informaticien d'un client qui complique une mise en production, et comment le recadrer sans conflit ?"
