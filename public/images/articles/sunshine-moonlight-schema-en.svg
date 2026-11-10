@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 890" width="640" height="890" role="img" aria-labelledby="title desc" font-family="Helvetica, Arial, sans-serif">
+  <title id="title">From the MacBook to the iMac with Sunshine and Moonlight</title>
+  <desc id="desc">On the 2017 MacBook Pro running Omarchy, Hyprland creates a virtual screen named imac. Sunshine captures that screen and compresses it into video. The video and the sound travel over a Thunderbolt cable, used as a direct network between the MacBook (10.0.0.1) and the iMac (10.0.0.2). On the 2017 Retina 4K iMac, Moonlight receives the video and shows it full screen, in 4K (3840 × 2160). In the other direction, the iMac's keyboard and mouse control the MacBook. Create the virtual screen before you start Sunshine. Otherwise, the iMac shows the wrong screen or a black picture.</desc>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#1f5fbf"/>
+    </marker>
+  </defs>
+
+  <rect width="640" height="890" fill="#f8f9fc"/>
+
+  <!-- Title -->
+  <text x="320" y="50" text-anchor="middle" font-size="27" font-weight="700" fill="#14161c">From the MacBook to the iMac</text>
+  <text x="320" y="80" text-anchor="middle" font-size="18" fill="#5d6373">Sunshine and Moonlight, over a Thunderbolt cable</text>
+
+  <!-- 1. MacBook -->
+  <rect x="60" y="106" width="520" height="182" rx="14" fill="#ffffff" stroke="#aab2c3" stroke-width="2"/>
+  <text x="90" y="140" font-size="14" font-weight="700" letter-spacing="1.5" fill="#1f5fbf">2017 MACBOOK PRO · OMARCHY</text>
+  <text x="90" y="174" font-size="25" font-weight="700" fill="#14161c">Hyprland and Sunshine</text>
+  <text x="90" y="210" font-size="18" fill="#3e4452">1. Hyprland creates the "imac" virtual screen</text>
+  <text x="90" y="240" font-size="18" fill="#3e4452">2. Sunshine captures that screen</text>
+  <text x="90" y="270" font-size="18" fill="#3e4452">3. It compresses it into video (HEVC)</text>
+
+  <!-- Arrow 1 -->
+  <line x1="320" y1="292" x2="320" y2="336" stroke="#1f5fbf" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <!-- 2. Cable -->
+  <rect x="30" y="346" width="580" height="150" rx="16" fill="#1f5fbf"/>
+  <text x="320" y="392" text-anchor="middle" font-size="32" font-weight="700" fill="#ffffff">Thunderbolt cable</text>
+  <text x="320" y="422" text-anchor="middle" font-size="18" fill="#e6eefa">A direct network, no router or Wi-Fi</text>
+  <rect x="88" y="442" width="200" height="36" rx="18" fill="none" stroke="#ffffff" stroke-opacity="0.75" stroke-width="1.5"/>
+  <text x="188" y="466" text-anchor="middle" font-size="16" fill="#ffffff">MacBook 10.0.0.1</text>
+  <text x="320" y="467" text-anchor="middle" font-size="22" fill="#ffffff">↔</text>
+  <rect x="352" y="442" width="200" height="36" rx="18" fill="none" stroke="#ffffff" stroke-opacity="0.75" stroke-width="1.5"/>
+  <text x="452" y="466" text-anchor="middle" font-size="16" fill="#ffffff">iMac 10.0.0.2</text>
+
+  <!-- Arrow 2 -->
+  <line x1="320" y1="500" x2="320" y2="544" stroke="#1f5fbf" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="338" y="528" font-size="16" font-style="italic" fill="#1f5fbf">video and sound</text>
+
+  <!-- 3. iMac -->
+  <rect x="60" y="554" width="520" height="152" rx="14" fill="#ffffff" stroke="#aab2c3" stroke-width="2"/>
+  <text x="90" y="588" font-size="14" font-weight="700" letter-spacing="1.5" fill="#1f5fbf">2017 RETINA 4K IMAC · MACOS VENTURA</text>
+  <text x="90" y="622" font-size="25" font-weight="700" fill="#14161c">Moonlight</text>
+  <text x="90" y="658" font-size="18" fill="#3e4452">4. Receives the video and the sound</text>
+  <text x="90" y="688" font-size="18" fill="#3e4452">5. Shows the desktop in 4K (3840 × 2160)</text>
+
+  <!-- Other direction -->
+  <rect x="30" y="734" width="284" height="128" rx="12" fill="#e6eefa" stroke="#1f5fbf" stroke-width="1.5"/>
+  <text x="52" y="768" font-size="14" font-weight="700" letter-spacing="1.5" fill="#1f5fbf">THE OTHER WAY</text>
+  <text x="52" y="798" font-size="17" font-weight="700" fill="#14161c">The iMac's keyboard</text>
+  <text x="52" y="820" font-size="17" font-weight="700" fill="#14161c">and mouse</text>
+  <text x="52" y="844" font-size="15" fill="#3e4452">control the MacBook.</text>
+
+  <!-- Warning -->
+  <rect x="326" y="734" width="284" height="128" rx="12" fill="#fdf1e7" stroke="#b4541a" stroke-width="1.5"/>
+  <text x="348" y="768" font-size="14" font-weight="700" letter-spacing="1.5" fill="#b4541a">WARNING</text>
+  <text x="348" y="798" font-size="17" font-weight="700" fill="#14161c">Virtual screen first,</text>
+  <text x="348" y="820" font-size="17" font-weight="700" fill="#14161c">Sunshine second</text>
+  <text x="348" y="844" font-size="15" fill="#3e4452">Otherwise: black or wrong screen.</text>
+</svg>
