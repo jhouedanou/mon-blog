@@ -7,14 +7,14 @@ searchIntent: "Comment corriger les failles de session PHP (CVE-2026-115560, CVE
 tags: ["tutoriel", "sécurité", "php", "nginx", "linux"]
 ---
 
-Deux nouvelles failles critiques dans PHP, une dans nginx, et un noyau Linux à mettre à jour : il faut passer nginx en 1.31.9, PHP en 8.2.36, 8.3.37, 8.4.28 ou 8.5.13, couper `session.upload_progress`, puis redémarrer le serveur. Trois blocs de commandes à coller en SSH, dix minutes par serveur. Et si vous avez envie de changer de métier, c'est maintenant : après, il y aura encore une mise à jour.
+Deux nouvelles failles critiques dans PHP, une dans nginx, et un noyau Linux à tenir à jour : il faut passer nginx en 1.31.9 (ou installer le paquet corrigé d'Ubuntu), PHP en 8.2.36, 8.3.37, 8.4.28 ou 8.5.13, couper `session.upload_progress`, puis redémarrer le serveur. Trois blocs de commandes à coller en SSH, dix minutes par serveur. Et si vous avez envie de changer de métier, c'est maintenant : après, il y aura encore une mise à jour.
 
 Il y a un mois, je passais ma soirée à corriger [PHP2Shell](/fr/20261021-php2shell-mettre-a-jour-php-debian-ubuntu-sans-forge). Je pensais être tranquille jusqu'à Noël. J'ai tenu trente jours.
 
 **L'essentiel :**
 
 - **PHP** : deux failles dans les sessions, notées 9,2 sur 10, corrigées le 19 novembre 2026 dans PHP 8.5.13, 8.4.28, 8.3.37 et 8.2.36.
-- **nginx** : une corruption de mémoire dans HTTP/2, baptisée nginx2root, corrigée le 18 novembre dans nginx 1.31.9 et 1.30.7.
+- **nginx** : une corruption de mémoire dans HTTP/2, premier maillon de la chaîne nginx2root, corrigée le 18 novembre dans nginx 1.31.9 et 1.30.7.
 - **Pas d'attaque connue** à ce jour, ni pour l'une ni pour l'autre. C'est le bon moment pour corriger : avant.
 - **Les commandes** de cet article valent pour Ubuntu 22.04 ou plus récent.
 
@@ -33,9 +33,9 @@ Soyons honnêtes : ces failles sont moins faciles à exploiter que PHP2Shell. Le
 
 ### La faille nginx : nginx2root
 
-**CVE-2026-123007** est une corruption de mémoire dans le module HTTP/2 de nginx. Elle est classée « major » par [nginx](https://nginx.org/en/security_advisories.html){target="_blank" rel="noopener"} et touche toutes les versions de 1.9.5 à 1.31.8. La version 1.9.5 date de 2015 : onze ans de nginx sont concernés. Seule condition : que HTTP/2 soit activé, ce qui est le cas sur à peu près tous les sites en HTTPS.
+**CVE-2026-123007** est une corruption de mémoire dans le module HTTP/2 de nginx. Elle est classée « major » par [nginx](https://nginx.org/en/security_advisories.html){target="_blank" rel="noopener"} et touche toutes les versions de 1.9.5 à 1.31.8. La version 1.9.5 date de 2015 : onze ans de nginx sont concernés. Condition de départ : que HTTP/2 soit activé, ce qui est courant sur les sites en HTTPS.
 
-Les chercheurs de [Xint](https://xint.io/blog/nginx2root-remote-code-execution){target="_blank" rel="noopener"}, qui l'ont trouvée, ont enchaîné cinq failles de nginx sous le nom nginx2root. Pour devenir root, c'est-à-dire administrateur de la machine, leur chaîne se termine par une faille du noyau Linux. D'où le troisième bloc de cet article.
+Les chercheurs de [Xint](https://xint.io/blog/nginx2root-remote-code-execution){target="_blank" rel="noopener"} ont enchaîné cinq failles de nginx, dont celle-ci, sous le nom nginx2root. Pour devenir root, c'est-à-dire administrateur de la machine, leur chaîne se termine par une faille du noyau Linux. D'où le troisième bloc de cet article.
 
 Là encore, pas d'attaque connue. Selon [StepSecurity](https://www.stepsecurity.io/blog/cve-2026-123007-nginx-http2-rce){target="_blank" rel="noopener"}, l'attaque demande d'envoyer environ 119 Gio de données en moins d'une heure à un serveur peu chargé. Ce n'est pas à la portée du premier robot venu. Ce sera à la portée du deuxième.
 
@@ -56,11 +56,23 @@ Les trois blocs valent pour **Ubuntu 22.04 ou plus récent**. Vérifiez d'abord 
 lsb_release -ds
 ```
 
-Puis passez en root :
+Puis passez en root et rafraîchissez la liste des paquets :
 
 ```bash
 sudo -i
 ```
+
+```bash
+apt-get update
+```
+
+Enfin, regardez d'où vient votre nginx. La réponse décide si vous faites le bloc 1 ou si vous le sautez :
+
+```bash
+apt-cache policy nginx | grep -E "ondrej|nginx.org|ubuntu.com"
+```
+
+`ondrej` ou `nginx.org` : faites le bloc 1. Seulement `ubuntu.com` : sautez-le.
 
 Si vous gérez plusieurs serveurs, la méthode de l'article PHP2Shell pour [lancer la même commande sur tout un parc](/fr/20261021-php2shell-mettre-a-jour-php-debian-ubuntu-sans-forge) marche aussi ici.
 
@@ -85,6 +97,8 @@ nginx -v; systemctl is-active nginx
 
 Attendu : `test is successful`, `nginx/1.31.9`, `active`.
 
+Lancez ce bloc à une heure creuse : le changement de dépôt remplace le paquet nginx, et si le test de configuration échoue, vos sites restent coupés le temps de corriger.
+
 Ce que fait le bloc, dans l'ordre :
 
 1. **Il sauvegarde** `/etc/nginx` dans `/root`. Si quelque chose casse, la configuration d'avant est là.
@@ -94,7 +108,7 @@ Ce que fait le bloc, dans l'ordre :
 5. **Il désactive le site d'exemple** que le paquet officiel installe (`default.conf`, avec `server_name localhost`), pour qu'il ne réponde pas à la place d'un de vos sites.
 6. **Il teste la configuration, puis redémarre nginx.** Un redémarrage complet, pas un simple rechargement : un rechargement garde l'ancien programme en mémoire.
 
-**Si `nginx -t` échoue** en citant une ligne `load_module`, c'est normal : les modules fournis par l'ancien dépôt (brotli, geoip, image-filter, xslt) n'existent pas dans le paquet officiel. Ouvrez le fichier indiqué, commentez la ligne avec un `#`, puis relancez `nginx -t && systemctl restart nginx`. Si votre configuration utilise brotli, commentez aussi les directives `brotli`.
+**Si `nginx -t` échoue** en citant une ligne `load_module`, c'est normal : les modules fournis par l'ancien dépôt (brotli, geoip, image-filter, xslt) n'existent pas dans le paquet officiel. Ouvrez le fichier indiqué, commentez la ligne avec un `#` (ou supprimez le lien cassé dans `/etc/nginx/modules-enabled/`), puis relancez `nginx -t && systemctl restart nginx`. Si votre configuration utilise brotli, commentez aussi les directives `brotli`.
 
 ## Bloc 2 : mettre PHP à jour
 
@@ -121,16 +135,17 @@ Deux précisions.
 **Vérifiez qu'aucun site ne réactive l'option** dans sa propre configuration :
 
 ```bash
-grep -rn "upload_progress" /etc/php/*/fpm/pool.d/
+grep -rn "upload_progress.enabled" /etc/php/*/fpm/pool.d/ /etc/php/*/fpm/conf.d/
+find /home /var/www -name .user.ini -exec grep -Hn upload_progress {} + 2>/dev/null
 ```
 
-Aucune ligne en sortie : rien à faire. Sinon, passez la valeur à `Off` dans le fichier indiqué et redémarrez PHP-FPM. Qui y perd ? Seulement les sites qui affichent une barre de progression d'envoi de fichier gérée par PHP. La plupart la gèrent dans le navigateur et ne verront aucune différence.
+Aucune ligne en sortie : rien à faire. Sinon, passez la valeur à `Off` dans le fichier indiqué et redémarrez PHP-FPM. Le bloc ne touche que PHP-FPM : avec Apache et mod_php, faites le même réglage dans `/etc/php/*/apache2/php.ini`, puis redémarrez Apache. Qui y perd ? Seulement les sites qui affichent une barre de progression d'envoi de fichier gérée par PHP. La plupart la gèrent dans le navigateur et ne verront aucune différence.
 
 ## Bloc 3 : mettre Ubuntu et le noyau à jour
 
 ```bash
 uname -r
-apt-get upgrade -y -o Dpkg::Options::=--force-confold
+apt-get upgrade -y --with-new-pkgs -o Dpkg::Options::=--force-confold
 [ -f /var/run/reboot-required ] && echo "REDEMARRAGE NECESSAIRE"
 ```
 
@@ -149,7 +164,7 @@ uname -r; nginx -v; systemctl is-active nginx
 systemctl list-units --type=service 'php*-fpm*' --no-legend
 ```
 
-Attendu : un noyau plus récent, nginx en 1.31.9, `active` et `running`.
+Attendu : un noyau plus récent, nginx en 1.31.9, `active` et `running`. Si vous avez sauté le bloc 1, nginx garde son numéro habituel d'Ubuntu (par exemple `1.24.0` sur Ubuntu 24.04) : Ubuntu corrige sans changer de version.
 
 Pourquoi le noyau ? Parce que la chaîne nginx2root se termine par une faille du noyau Linux pour devenir root. Une précision honnête : d'après Xint, cette faille du noyau n'avait pas encore de correctif à la date de leur article. Le redémarrage d'aujourd'hui installe tous les correctifs déjà publiés. Il faudra refaire ce bloc quand celui-là sortira. Je sais. Moi aussi.
 
@@ -167,7 +182,7 @@ Le projet PHP ne publie plus de version pour ces branches. Ubuntu corrige encore
 
 ### Peut-on se protéger de nginx2root sans mettre nginx à jour ?
 
-En partie. Désactiver HTTP/2 (`http2 off;`) ferme la faille principale, mais pas les neuf autres corrigées dans la même version, et vos sites seront plus lents. C'est un pansement pour tenir une nuit, pas une solution.
+En partie. Désactiver HTTP/2 (`http2 off;`, ou retirer `http2` des lignes `listen` sur un nginx antérieur à 1.25.1) coupe l'accès à la faille principale, mais pas aux neuf autres corrigées dans la même version, et vos sites seront plus lents. C'est un pansement pour tenir une nuit, pas une solution.
 
 ### Faut-il vraiment redémarrer le serveur ?
 

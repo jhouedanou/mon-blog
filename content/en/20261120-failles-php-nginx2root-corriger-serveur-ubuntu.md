@@ -7,14 +7,14 @@ searchIntent: "How do I fix the PHP session flaws (CVE-2026-115560, CVE-2026-126
 tags: ["tutorial", "security", "php", "nginx", "linux"]
 ---
 
-Two new critical flaws in PHP, one in nginx, and a Linux kernel to update: you need to move nginx to 1.31.9 and PHP to 8.2.36, 8.3.37, 8.4.28 or 8.5.13, turn off `session.upload_progress`, then reboot the server. Three blocks of commands to paste over SSH, ten minutes per server. And if you feel like changing careers, now is the time: after this, there will be another update.
+Two new critical flaws in PHP, one in nginx, and a Linux kernel to keep up to date: you need to move nginx to 1.31.9 (or install Ubuntu's patched package) and PHP to 8.2.36, 8.3.37, 8.4.28 or 8.5.13, turn off `session.upload_progress`, then reboot the server. Three blocks of commands to paste over SSH, ten minutes per server. And if you feel like changing careers, now is the time: after this, there will be another update.
 
 A month ago, I spent my evening patching [PHP2Shell](/en/20261021-php2shell-mettre-a-jour-php-debian-ubuntu-sans-forge). I thought I'd have some peace until Christmas. I lasted thirty days.
 
 **The short version:**
 
 - **PHP**: two flaws in sessions, rated 9.2 out of 10, fixed on November 19, 2026 in PHP 8.5.13, 8.4.28, 8.3.37 and 8.2.36.
-- **nginx**: a memory corruption in HTTP/2, nicknamed nginx2root, fixed on November 18 in nginx 1.31.9 and 1.30.7.
+- **nginx**: a memory corruption in HTTP/2, the first link in the nginx2root chain, fixed on November 18 in nginx 1.31.9 and 1.30.7.
 - **No known attack** so far, for either one. This is the right time to patch: before.
 - **The commands** in this post are for Ubuntu 22.04 or newer.
 
@@ -33,9 +33,9 @@ Let's be honest: these flaws are harder to exploit than PHP2Shell. The [PHP proj
 
 ### The nginx flaw: nginx2root
 
-**CVE-2026-123007** is a memory corruption in nginx's HTTP/2 module. [nginx](https://nginx.org/en/security_advisories.html){target="_blank" rel="noopener"} rates it "major", and it affects every version from 1.9.5 to 1.31.8. Version 1.9.5 dates from 2015: eleven years of nginx are affected. The only condition is that HTTP/2 is enabled, which is the case on just about every HTTPS site.
+**CVE-2026-123007** is a memory corruption in nginx's HTTP/2 module. [nginx](https://nginx.org/en/security_advisories.html){target="_blank" rel="noopener"} rates it "major", and it affects every version from 1.9.5 to 1.31.8. Version 1.9.5 dates from 2015: eleven years of nginx are affected. The starting condition is that HTTP/2 is enabled, which is common on HTTPS sites.
 
-The researchers at [Xint](https://xint.io/blog/nginx2root-remote-code-execution){target="_blank" rel="noopener"}, who found it, chained five nginx flaws together under the name nginx2root. To become root, meaning administrator of the machine, their chain ends with a flaw in the Linux kernel. Hence the third block in this post.
+The researchers at [Xint](https://xint.io/blog/nginx2root-remote-code-execution){target="_blank" rel="noopener"} chained five nginx flaws together, this one included, under the name nginx2root. To become root, meaning administrator of the machine, their chain ends with a flaw in the Linux kernel. Hence the third block in this post.
 
 Here again, no known attack. According to [StepSecurity](https://www.stepsecurity.io/blog/cve-2026-123007-nginx-http2-rce){target="_blank" rel="noopener"}, the attack means sending about 119 GiB of data in under an hour to a server with little load. The first bot that comes along can't do that. The second one will.
 
@@ -56,11 +56,23 @@ The three blocks are for **Ubuntu 22.04 or newer**. Check first:
 lsb_release -ds
 ```
 
-Then switch to root:
+Then switch to root and refresh the package list:
 
 ```bash
 sudo -i
 ```
+
+```bash
+apt-get update
+```
+
+Last, check where your nginx comes from. The answer decides whether you run block 1 or skip it:
+
+```bash
+apt-cache policy nginx | grep -E "ondrej|nginx.org|ubuntu.com"
+```
+
+`ondrej` or `nginx.org`: run block 1. Only `ubuntu.com`: skip it.
 
 If you manage several servers, the method from the PHP2Shell post for [running the same command across a whole fleet](/en/20261021-php2shell-mettre-a-jour-php-debian-ubuntu-sans-forge) works here too.
 
@@ -85,6 +97,8 @@ nginx -v; systemctl is-active nginx
 
 Expected: `test is successful`, `nginx/1.31.9`, `active`.
 
+Run this block at a quiet hour: switching repositories replaces the nginx package, and if the configuration test fails, your sites stay down while you fix it.
+
 What the block does, in order:
 
 1. **It backs up** `/etc/nginx` to `/root`. If something breaks, the previous configuration is there.
@@ -94,7 +108,7 @@ What the block does, in order:
 5. **It disables the example site** that the official package installs (`default.conf`, with `server_name localhost`), so it doesn't answer in place of one of your sites.
 6. **It tests the configuration, then restarts nginx.** A full restart, not a plain reload: a reload keeps the old program in memory.
 
-**If `nginx -t` fails** and points at a `load_module` line, that's normal: the modules shipped by the old repository (brotli, geoip, image-filter, xslt) don't exist in the official package. Open the file it names, comment the line out with a `#`, then run `nginx -t && systemctl restart nginx` again. If your configuration uses brotli, comment out the `brotli` directives too.
+**If `nginx -t` fails** and points at a `load_module` line, that's normal: the modules shipped by the old repository (brotli, geoip, image-filter, xslt) don't exist in the official package. Open the file it names, comment the line out with a `#` (or delete the broken link in `/etc/nginx/modules-enabled/`), then run `nginx -t && systemctl restart nginx` again. If your configuration uses brotli, comment out the `brotli` directives too.
 
 ## Block 2: update PHP
 
@@ -121,16 +135,17 @@ Two notes.
 **Check that no site turns the option back on** in its own configuration:
 
 ```bash
-grep -rn "upload_progress" /etc/php/*/fpm/pool.d/
+grep -rn "upload_progress.enabled" /etc/php/*/fpm/pool.d/ /etc/php/*/fpm/conf.d/
+find /home /var/www -name .user.ini -exec grep -Hn upload_progress {} + 2>/dev/null
 ```
 
-No output: nothing to do. Otherwise, set the value to `Off` in the file it names and restart PHP-FPM. Who loses out? Only sites that show a file upload progress bar handled by PHP. Most handle it in the browser and won't see any difference.
+No output: nothing to do. Otherwise, set the value to `Off` in the file it names and restart PHP-FPM. The block only touches PHP-FPM: with Apache and mod_php, make the same change in `/etc/php/*/apache2/php.ini`, then restart Apache. Who loses out? Only sites that show a file upload progress bar handled by PHP. Most handle it in the browser and won't see any difference.
 
 ## Block 3: update Ubuntu and the kernel
 
 ```bash
 uname -r
-apt-get upgrade -y -o Dpkg::Options::=--force-confold
+apt-get upgrade -y --with-new-pkgs -o Dpkg::Options::=--force-confold
 [ -f /var/run/reboot-required ] && echo "REDEMARRAGE NECESSAIRE"
 ```
 
@@ -149,7 +164,7 @@ uname -r; nginx -v; systemctl is-active nginx
 systemctl list-units --type=service 'php*-fpm*' --no-legend
 ```
 
-Expected: a newer kernel, nginx at 1.31.9, `active` and `running`.
+Expected: a newer kernel, nginx at 1.31.9, `active` and `running`. If you skipped block 1, nginx keeps its usual Ubuntu number (for example `1.24.0` on Ubuntu 24.04): Ubuntu patches without changing the version.
 
 Why the kernel? Because the nginx2root chain ends with a Linux kernel flaw to become root. One honest note: according to Xint, that kernel flaw had no fix yet when their article came out. Today's reboot installs every fix already published. You'll have to run this block again when that one is released. I know. Me too.
 
@@ -167,7 +182,7 @@ The PHP project no longer publishes releases for those branches. Ubuntu still fi
 
 ### Can I protect myself from nginx2root without updating nginx?
 
-Partly. Disabling HTTP/2 (`http2 off;`) closes the main flaw, but not the nine others fixed in the same version, and your sites will be slower. It's a bandage to get through one night, not a solution.
+Partly. Disabling HTTP/2 (`http2 off;`, or removing `http2` from the `listen` lines on an nginx older than 1.25.1) cuts off access to the main flaw, but not to the nine others fixed in the same version, and your sites will be slower. It's a bandage to get through one night, not a solution.
 
 ### Do I really have to reboot the server?
 
