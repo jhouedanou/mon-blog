@@ -261,6 +261,8 @@ Une faille qui donne la main sans mot de passe, sur le langage qui fait tourner 
 
 Je vous laisse… la nuit va être longue.
 
+**Mise à jour du 20 novembre 2026** : un mois plus tard, PHP et nginx ont de nouveau des failles critiques. La suite est ici : [corriger les failles de session PHP et nginx2root sur Ubuntu](/fr/20261120-failles-php-nginx2root-corriger-serveur-ubuntu).
+
 ---
 
 *Photo : [Panumas Nikhomkhai](https://www.pexels.com/photo/1148820/), Pexels.*
