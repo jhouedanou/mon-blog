@@ -7,9 +7,11 @@ searchIntent: "How do I fix the PHP session flaws (CVE-2026-115560, CVE-2026-126
 tags: ["tutorial", "security", "php", "nginx", "linux"]
 ---
 
-Two new critical flaws in PHP, one in nginx, and a Linux kernel to keep up to date: you need to move nginx to 1.31.9 (or install Ubuntu's patched package) and PHP to 8.2.36, 8.3.37, 8.4.28 or 8.5.13, turn off `session.upload_progress`, then reboot the server. Three blocks of commands to paste over SSH, ten minutes per server. And if you feel like changing careers, now is the time: after this, there will be another update.
+I wrote in July that [a developer's real job is hitting walls](/en/20260707-je-suis-encore-vivant). I still believe it. But this is starting to be a lot of walls.
 
-A month ago, I spent my evening patching [PHP2Shell](/en/20261021-php2shell-mettre-a-jour-php-debian-ubuntu-sans-forge). I thought I'd have some peace until Christmas. I lasted thirty days.
+A month ago, I spent my evening patching [PHP2Shell](/en/20261021-php2shell-mettre-a-jour-php-debian-ubuntu-sans-forge). I thought I'd have some peace until Christmas. I lasted thirty days. Thankfully I have my faith, and Cameroonian web comedians (Takam, Les Baos, Eric le Retour, Neil Cruz…), to make these lonely moments easier to bear. Meanwhile, I took the plunge: I installed Omarchy on my 2017 iMac, after [the MacBook Pro from the same year](/en/20261013-retournement-de-veste-omarchy-macbook-pro-2017). If you're going to hit walls, you might as well pick one yourself.
+
+This week's wall: two new critical flaws in PHP, one in nginx, and a Linux kernel to keep up to date. You need to move nginx to 1.31.9 (or install Ubuntu's patched package) and PHP to 8.2.36, 8.3.37, 8.4.28 or 8.5.13, turn off `session.upload_progress`, then reboot the server. Three blocks of commands to paste over SSH, ten minutes per server. And if you feel like changing careers, now is the time: after this, there will be another update.
 
 **The short version:**
 
@@ -66,19 +68,33 @@ sudo -i
 apt-get update
 ```
 
-Last, check where your nginx comes from. The answer decides whether you run block 1 or skip it:
+Last, check where your nginx comes from. The answer decides whether you run block 1 or skip it. This is the command from [Laravel Forge's procedure](https://laravel.com/forge/docs/knowledge-base/nginx-to-root){target="_blank" rel="noopener"}:
 
 ```bash
-apt-cache policy nginx | grep -E "ondrej|nginx.org|ubuntu.com"
+dpkg-query -W -f='${Version}  ${Maintainer}\n' nginx
 ```
 
-`ondrej` or `nginx.org`: run block 1. Only `ubuntu.com`: skip it.
+| The line contains | Your nginx comes from | What to do |
+|---|---|---|
+| `sury.org` | Ondřej Surý's repository | Block 1 |
+| `nginx-packaging@f5.com` | the official nginx.org repository | Block 1 (it will only do the update) |
+| `Ubuntu` | Ubuntu's packages | Skip block 1 |
 
 If you manage several servers, the method from the PHP2Shell post for [running the same command across a whole fleet](/en/20261021-php2shell-mettre-a-jour-php-debian-ubuntu-sans-forge) works here too.
 
 ## Block 1: update nginx
 
-This block is for servers whose nginx came from Ondřej Surý's repository (`ondrej/nginx`), such as Laravel Forge servers. If your nginx comes from Ubuntu's packages, skip this block: block 3 will update it, since Ubuntu has published the fixes ([USN-9159-1](https://ubuntu.com/security/notices/USN-9159-1){target="_blank" rel="noopener"} and [USN-9182-1](https://ubuntu.com/security/notices/USN-9182-1){target="_blank" rel="noopener"}).
+This block is for servers whose nginx comes from Ondřej Surý's repository (`ondrej/nginx`) or from the official nginx.org repository. If your nginx comes from Ubuntu's packages, skip it: block 3 will update it, since Ubuntu has published the fixes ([USN-9159-1](https://ubuntu.com/security/notices/USN-9159-1){target="_blank" rel="noopener"} and [USN-9182-1](https://ubuntu.com/security/notices/USN-9182-1){target="_blank" rel="noopener"}).
+
+### DigitalOcean or elsewhere: what really changes
+
+I looked for a separate procedure for DigitalOcean. Nothing is documented. What matters is not the host, it's who installed nginx. Three cases:
+
+- **Server created by Laravel Forge before the end of April 2026**, on DigitalOcean or anywhere else: nginx comes from Ondřej Surý's repository. You have to remove that source, because the repository was deleted and will never ship the fixed version. Careful: you remove the source, not nginx. There's no need to uninstall the package, [Forge's procedure](https://laravel.com/forge/docs/knowledge-base/nginx-to-root){target="_blank" rel="noopener"} doesn't ask for it. And the usual command, `add-apt-repository --remove`, fails because the repository no longer exists: block 1 deletes the file by hand. Newer Forge servers are already on nginx.org.
+- **DigitalOcean droplet set up without Forge**: nginx comes from Ubuntu's packages, which DigitalOcean serves from [its own mirror](https://docs.digitalocean.com/products/droplets/details/mirrors/){target="_blank" rel="noopener"}. Don't be surprised to read `mirrors.digitalocean.com` instead of `archive.ubuntu.com` during `apt-get update`. Skip block 1.
+- **Elsewhere, without Forge**: nginx usually comes from Ubuntu's packages. Skip block 1.
+
+When in doubt, the `dpkg-query` command from the previous section settles it. It doesn't know who your host is, and it's right anyway.
 
 ```bash
 cp -a /etc/nginx /root/nginx-backup-$(date +%F)
@@ -164,7 +180,7 @@ uname -r; nginx -v; systemctl is-active nginx
 systemctl list-units --type=service 'php*-fpm*' --no-legend
 ```
 
-Expected: a newer kernel, nginx at 1.31.9, `active` and `running`. If you skipped block 1, nginx keeps its usual Ubuntu number (for example `1.24.0` on Ubuntu 24.04): Ubuntu patches without changing the version.
+Expected: a newer kernel, nginx at 1.31.9, `active` and `running`. If you skipped block 1, nginx keeps its usual Ubuntu number, because Ubuntu patches without changing the version. Run the `dpkg-query` command from the start again: the patched package is `1.24.0-2ubuntu7.21` on Ubuntu 24.04 and `1.18.0-6ubuntu14.24` on Ubuntu 22.04. An older number means the package hasn't arrived yet: run block 3 again a little later.
 
 Why the kernel? Because the nginx2root chain ends with a Linux kernel flaw to become root. One honest note: according to Xint, that kernel flaw had no fix yet when their article came out. Today's reboot installs every fix already published. You'll have to run this block again when that one is released. I know. Me too.
 

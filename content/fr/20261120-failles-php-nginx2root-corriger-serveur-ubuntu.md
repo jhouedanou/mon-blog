@@ -7,9 +7,11 @@ searchIntent: "Comment corriger les failles de session PHP (CVE-2026-115560, CVE
 tags: ["tutoriel", "sécurité", "php", "nginx", "linux"]
 ---
 
-Deux nouvelles failles critiques dans PHP, une dans nginx, et un noyau Linux à tenir à jour : il faut passer nginx en 1.31.9 (ou installer le paquet corrigé d'Ubuntu), PHP en 8.2.36, 8.3.37, 8.4.28 ou 8.5.13, couper `session.upload_progress`, puis redémarrer le serveur. Trois blocs de commandes à coller en SSH, dix minutes par serveur. Et si vous avez envie de changer de métier, c'est maintenant : après, il y aura encore une mise à jour.
+J'ai écrit en juillet que [le vrai métier de dev, c'est de se prendre des murs](/fr/20260707-je-suis-encore-vivant). Je le pense toujours. Mais là, ça commence à faire beaucoup de murs quand même.
 
-Il y a un mois, je passais ma soirée à corriger [PHP2Shell](/fr/20261021-php2shell-mettre-a-jour-php-debian-ubuntu-sans-forge). Je pensais être tranquille jusqu'à Noël. J'ai tenu trente jours.
+Il y a un mois, je passais ma soirée à corriger [PHP2Shell](/fr/20261021-php2shell-mettre-a-jour-php-debian-ubuntu-sans-forge). Je pensais être tranquille jusqu'à Noël. J'ai tenu trente jours. Heureusement que j'ai la foi, ainsi que les humoristes camerounais du Web (Takam, les Baos, Eric le Retour, Neil Cruz…), pour rendre ces moments de solitude plus supportables. En parallèle, j'ai sauté le pas : j'ai installé Omarchy sur mon iMac de 2017, après [le MacBook Pro de la même année](/fr/20261013-retournement-de-veste-omarchy-macbook-pro-2017). Quitte à se prendre des murs, autant en choisir un soi-même.
+
+Le mur de la semaine : deux nouvelles failles critiques dans PHP, une dans nginx, et un noyau Linux à tenir à jour. Il faut passer nginx en 1.31.9 (ou installer le paquet corrigé d'Ubuntu), PHP en 8.2.36, 8.3.37, 8.4.28 ou 8.5.13, couper `session.upload_progress`, puis redémarrer le serveur. Trois blocs de commandes à coller en SSH, dix minutes par serveur. Et si vous avez envie de changer de métier, c'est maintenant : après, il y aura encore une mise à jour.
 
 **L'essentiel :**
 
@@ -66,19 +68,33 @@ sudo -i
 apt-get update
 ```
 
-Enfin, regardez d'où vient votre nginx. La réponse décide si vous faites le bloc 1 ou si vous le sautez :
+Enfin, regardez d'où vient votre nginx. La réponse décide si vous faites le bloc 1 ou si vous le sautez. C'est la commande de [la procédure de Laravel Forge](https://laravel.com/forge/docs/knowledge-base/nginx-to-root){target="_blank" rel="noopener"} :
 
 ```bash
-apt-cache policy nginx | grep -E "ondrej|nginx.org|ubuntu.com"
+dpkg-query -W -f='${Version}  ${Maintainer}\n' nginx
 ```
 
-`ondrej` ou `nginx.org` : faites le bloc 1. Seulement `ubuntu.com` : sautez-le.
+| La ligne contient | Votre nginx vient | À faire |
+|---|---|---|
+| `sury.org` | du dépôt d'Ondřej Surý | Bloc 1 |
+| `nginx-packaging@f5.com` | du dépôt officiel nginx.org | Bloc 1 (il ne fera que la mise à jour) |
+| `Ubuntu` | des paquets d'Ubuntu | Sautez le bloc 1 |
 
 Si vous gérez plusieurs serveurs, la méthode de l'article PHP2Shell pour [lancer la même commande sur tout un parc](/fr/20261021-php2shell-mettre-a-jour-php-debian-ubuntu-sans-forge) marche aussi ici.
 
 ## Bloc 1 : mettre nginx à jour
 
-Ce bloc est fait pour les serveurs dont nginx venait du dépôt d'Ondřej Surý (`ondrej/nginx`), comme les serveurs Laravel Forge. Si votre nginx vient des paquets d'Ubuntu, sautez ce bloc : le bloc 3 le mettra à jour, Ubuntu ayant publié les correctifs ([USN-9159-1](https://ubuntu.com/security/notices/USN-9159-1){target="_blank" rel="noopener"} et [USN-9182-1](https://ubuntu.com/security/notices/USN-9182-1){target="_blank" rel="noopener"}).
+Ce bloc est fait pour les serveurs dont nginx vient du dépôt d'Ondřej Surý (`ondrej/nginx`) ou du dépôt officiel nginx.org. Si votre nginx vient des paquets d'Ubuntu, sautez-le : le bloc 3 le mettra à jour, Ubuntu ayant publié les correctifs ([USN-9159-1](https://ubuntu.com/security/notices/USN-9159-1){target="_blank" rel="noopener"} et [USN-9182-1](https://ubuntu.com/security/notices/USN-9182-1){target="_blank" rel="noopener"}).
+
+### DigitalOcean ou ailleurs : ce qui change vraiment
+
+J'ai cherché si DigitalOcean imposait une marche à suivre à part. Rien de documenté. Ce qui compte n'est pas l'hébergeur, c'est qui a installé nginx. Trois cas :
+
+- **Serveur créé par Laravel Forge avant fin avril 2026**, chez DigitalOcean comme ailleurs : nginx vient du dépôt d'Ondřej Surý. Il faut retirer cette source, parce que le dépôt a été supprimé et ne livrera jamais la version corrigée. Attention : on retire la source, pas nginx. Inutile de désinstaller le paquet, [la procédure de Forge](https://laravel.com/forge/docs/knowledge-base/nginx-to-root){target="_blank" rel="noopener"} ne le demande pas. Et la commande habituelle, `add-apt-repository --remove`, échoue puisque le dépôt n'existe plus : le bloc 1 supprime le fichier à la main. Les serveurs Forge plus récents sont déjà sur nginx.org.
+- **Droplet DigitalOcean installé sans Forge** : nginx vient des paquets d'Ubuntu, que DigitalOcean sert depuis [son propre miroir](https://docs.digitalocean.com/products/droplets/details/mirrors/){target="_blank" rel="noopener"}. Ne soyez pas surpris de lire `mirrors.digitalocean.com` à la place de `archive.ubuntu.com` pendant `apt-get update`. Sautez le bloc 1.
+- **Ailleurs, sans Forge** : nginx vient en général des paquets d'Ubuntu. Sautez le bloc 1.
+
+Dans le doute, la commande `dpkg-query` de la section précédente tranche. Elle ne connaît pas votre hébergeur et elle a raison quand même.
 
 ```bash
 cp -a /etc/nginx /root/nginx-backup-$(date +%F)
@@ -164,7 +180,7 @@ uname -r; nginx -v; systemctl is-active nginx
 systemctl list-units --type=service 'php*-fpm*' --no-legend
 ```
 
-Attendu : un noyau plus récent, nginx en 1.31.9, `active` et `running`. Si vous avez sauté le bloc 1, nginx garde son numéro habituel d'Ubuntu (par exemple `1.24.0` sur Ubuntu 24.04) : Ubuntu corrige sans changer de version.
+Attendu : un noyau plus récent, nginx en 1.31.9, `active` et `running`. Si vous avez sauté le bloc 1, nginx garde son numéro habituel d'Ubuntu, parce qu'Ubuntu corrige sans changer de version. Relancez alors la commande `dpkg-query` du début : le paquet corrigé est `1.24.0-2ubuntu7.21` sur Ubuntu 24.04 et `1.18.0-6ubuntu14.24` sur Ubuntu 22.04. Un numéro plus ancien veut dire que le paquet n'est pas encore arrivé : refaites le bloc 3 un peu plus tard.
 
 Pourquoi le noyau ? Parce que la chaîne nginx2root se termine par une faille du noyau Linux pour devenir root. Une précision honnête : d'après Xint, cette faille du noyau n'avait pas encore de correctif à la date de leur article. Le redémarrage d'aujourd'hui installe tous les correctifs déjà publiés. Il faudra refaire ce bloc quand celui-là sortira. Je sais. Moi aussi.
 
