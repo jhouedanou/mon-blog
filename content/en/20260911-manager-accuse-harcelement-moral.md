@@ -4,84 +4,81 @@ createdAt: "2026-09-11T20:04:00Z"
 updatedAt: "2026-11-20T12:00:00Z"
 draft: true
 image: "/images/articles/harceleur-moral.webp"
-description: "Accused of workplace bullying for asking why a piece of work failed. Four effects of that accusation on managers and on the employees who do good work."
+description: "Accused of workplace bullying for asking why a piece of work failed. A period that was not easy, told with some humour, and what it costs good employees."
 searchIntent: "What to do when an employee accuses their manager of workplace bullying after being asked for an explanation?"
-summary: "I asked why a piece of work had failed at a client, and the answer was \"workplace bullying\". What Ivorian law says, and four effects of that accusation: bosses go quiet, a label forms, discipline stops, and serious employees pay."
+summary: "An interim role leading a small team in Abidjan, a furious client, one question on a Monday morning, and the answer: workplace bullying. What the Ivorian Labour Code says, why the period was not easy for me, and who really pays in this kind of story."
 tags: ["opinion", "society", "management"]
 ---
 
-I asked someone on my team why a piece of work had failed at a client. She answered that this was workplace bullying.
+I learned last year, somewhat by chance and without having asked, that I was a workplace bully and a toxic manager. I didn't need to take a personality test for that, a simple Monday morning meeting was enough. Since the story has been over for a while and the main people involved have left the company, I can finally tell it calmly.
 
-The story is old, and the people involved have left the company. I am not telling their lives here. I keep the useful facts. Then I look at what this accusation changes for managers, and for the employees who do good work.
+## The setting
 
-## The facts
+While a replacement was being found for a manager who was leaving, I was asked to step in as interim head of a small team handling fairly varied projects: community management, activations, a bit of content production.
 
-I was interim head of a small team in Abidjan. For a few months, deadlines were missed. Deliverables went to clients with spelling mistakes. One client's brand guidelines were ignored, and that client wrote it to the whole team a few days later.
+The results didn't take long. Deadlines were treated as mere suggestions, deliverables went out to the client with spelling mistakes and AI-generated visuals where the characters had six fingers, and every remark was met with « the manager is supposed to protect us ». Protect us from what, I never really found out. From the client, I imagine.
 
-Then an operation went wrong over a weekend. The client called me the next day, furious. On Monday, I met the person responsible. I laid out the facts, without shouting, and I asked one question: why?
+A client sends us their brand guidelines? They're ignored, and I'm told in veiled terms that I'd be better off going back to my web development. The same client sends a rather salty email to the whole team a few days later saying exactly what I had said.
 
-The answer: "This is denigration, this is a campaign of moral harassment."
+On the company side, the bill runs to several million CFA francs and clients who left slamming the door.
 
-Over that period, the company lost clients and several million CFA francs.
+## One question too many
 
-## What Ivorian law calls moral harassment
+The breaking point comes on a Saturday, the day of a big activation for a client. It goes badly. On Sunday, the client calls me, furious, and I spend my day putting out the fire with all the diplomacy I can muster. On Monday, I ask the person concerned, still politely, what happened. No shouting, no overturned desk. Facts, figures, and a fairly simple question: « why? ».
 
-The 2015 Ivorian Labour Code defines moral harassment (workplace bullying) in its [article 5](https://loidici.biz/?p=1690). It lists "abusive behaviour, threats, attacks, words, intimidation, writings, attitudes, repeated acts against an employee".
+The answer lands, and I hadn't seen it coming: « This is disparagement, this is a campaign of workplace bullying. »
 
-Workplace bullying exists, and the law is right to punish it. But asking for an explanation about failed work, with facts and without shouting, is neither a threat nor intimidation. It is a manager's job. I had already looked at what Ivorian law allows an employer on another subject, [tracking employees' location](/en/20250705-chersCommerciaux): there too, the text is more precise than what people say at the office.
+I understood that day that the management software had received an update I had missed. Losing money is a minor episode, delivering rubbish is part of the creative process, and asking for accountability is an assault.
 
-An American video maker, Chi Brown, published a video titled "Bad Black Employees Ruin It for the Rest of Us". He talks about Black employees in the United States. In Abidjan, the boss and the employee are both Black, so the question does not arise in the same way. But he describes four mechanisms, and I have seen all four. I take them one by one.
+For good measure, I still went and read the Ivorian Labour Code. Its [article 5](https://loidici.biz/?p=1690) talks about « abusive behaviour », « threats », « intimidation », « repeated acts against an employee ». I didn't find « asked why the client was calling him on a Sunday » in there. Workplace bullying exists, people really suffer from it, and that is exactly why the word shouldn't be a joker played every time a job is badly done. I had done the same reading exercise for [tracking employees' location](/en/20250705-chersCommerciaux), with the same finding: the text rarely says what the office makes it say.
 
-## 1. Bosses say in private what they keep quiet in public
+## What it did to me
 
-Chi Brown relies on the sociologist William Julius Wilson and his book *When Work Disappears* (1996). Wilson interviewed about 200 employers in Chicago. Among those who commented on the attitude and reliability of Black workers from poor neighbourhoods, 74% of white employers spoke negatively. Among Black employers, it was 80%.
+I tell all this as a joke, but I won't play the tough guy: those few months were not easy for me. When you are told you are toxic, you end up asking yourself the question for real, and it is not a pleasant question to ask yourself on a Sunday evening. It took me a while to laugh about it. This post is proof that I got there, more or less.
 
-Chi Brown's explanation: a Black boss is not afraid of being called racist, so he says what he thinks.
+## What the word changes at the office
 
-These figures are disputed. The researcher Susan Turner Meiklejohn [criticised Wilson's method](https://econpapers.repec.org/RePEc:sae:ecdequ:v:13:y:1999:i:4:p:321-338) and found much lower results in her own survey. Wilson also shows that many of these employers screened out Black applicants at the hiring stage.
+Looking back, what I mostly saw is what this word does to a team once it has been said.
 
-I keep the mechanism. A manager who is afraid of an accusation stops speaking in meetings. He speaks elsewhere: to senior management, to other managers, or when hiring. The employee never hears the criticism. So the employee cannot improve.
+The manager who has taken a « workplace bullying » in the face says nothing more in meetings. He keeps it for the coffee machine, for the director's office, and above all for the day he has to hire. The person concerned will never know what people think of their work, which remains the surest method for not improving.
 
-## 2. A few people are enough to create a label
+Then come the labels. Two or three experiences of this kind are enough for an employer to start talking about « young people these days », « creatives » or « the ones from that school ». Everyone has heard these sentences in an office. It's unfair, obviously: someone is made to pay for another person's six fingers. But that's how it goes, and every botched deliverable adds a line to the file.
 
-Chi Brown gives a number: when about 20% of a group arrives late, refuses work or speaks badly, the whole group gets the label. That is his estimate, not a measurement.
+## How to stay a « cool » manager when everything is sinking
 
-The mechanism itself is simple. An employer remembers bad experiences. At the next hire, he avoids profiles that look like them.
+There remains the easy way out, which is to ask nothing of anyone any more. Since high standards have apparently become a pathology, I told myself I had to adapt. So here are the few rules I should have followed to remain a good guy in the eyes of my team.
 
-In Abidjan, the label is not about skin colour. It is about "young people", about "creatives", or about "the ones from that school". It is unfair: one person is judged on another person's work. I do not defend this reflex. I say that it exists, and that every sloppy piece of work makes it stronger.
+### Rule number 1: look elsewhere
 
-## 3. Fear of the accusation stops discipline
+If a project is sinking, don't look at the project. The sky is magnificent this time of year, and its reflection on the Ébrié lagoon is very soothing.
 
-In the United States, the Civil Rights Act of 1991 lets an employee who suffered intentional discrimination claim damages before a jury. According to Chi Brown, managers then fear a lawsuit, and they stop disciplining. After that, they hesitate to hire someone they think they cannot fire.
+### Rule number 2: celebrate departures
 
-Here, the words that frighten are "moral harassment" and "toxic manager".
+A client leaves screaming? Organise a little party to celebrate this « refocusing opportunity ». There will be bissap juice.
 
-A manager who has heard them once has two choices. He can keep asking for accountability. Or he can go quiet: see nothing, hear nothing, say nothing. In that case, nobody complains about him. The mistakes continue, and the clients leave.
+### Rule number 3: smile
 
-## 4. Serious employees pay for the others
+Money is evaporating? Smile, stress is bad for the complexion, and profitability is a very 20th-century notion anyway.
 
-This is Chi Brown's most important point, and I agree with him. The ones who pay are the serious employees.
+In short, stop asking questions. Become a manager who sees nothing, hears nothing and says nothing. It may be the end of your company, but at least nobody will complain about your toxicity while the ship goes down.
 
-They pay three times:
+## The ones who really pay
 
-- **Inside the company.** A lost client means fewer projects and less budget for everyone, including those who delivered on time.
-- **At hiring.** The label from point 2 sticks to them. A wary recruiter does not give them time to show their work.
-- **Day to day.** They see that nobody is held to account. They wonder why they make the effort.
+I said the period was hard for me, but in this story the manager isn't the one to feel sorriest for. The ones who do their work well are.
 
-Chi Brown ends on individual responsibility: take pride in your work and do it properly. I add the manager's responsibility. If he goes quiet to have peace, he abandons the people who work well.
+When the client slams the door, he slams it for everyone, including the one who handed in their part on time. When the next recruiter reads « community manager » on a CV, he'll think of the six fingers before he thinks of the candidate. And the one who makes the effort ends up wondering why he bothers, since nobody asks anything of his neighbour.
 
-## What I do now
+Keeping quiet to have peace means dropping the ones who work.
 
-I did not stop asking for accountability. But I have rules.
+## What I did instead
 
-1. **I write down what I expect.** The request goes by email, with a date, and [not on WhatsApp](/en/20261028-whatsapp-nest-pas-un-moyen-de-communication-professionnel). If an accusation comes, there is a record of what was said, and in what tone.
-2. **I check before the client does.** I check myself [a deliverable announced as finished](/en/20260908-cest-integre-dans-la-maquette). A mistake found internally costs less than a call from a furious client.
-3. **I talk about the work, not the person.** "This visual does not follow the guidelines" is a fact. "You never pay attention" is a judgement.
-4. **I take the accusation seriously.** If someone speaks of harassment, senior management must hear it, and the labour inspectorate exists for that. A manager with nothing to hide has nothing to fear from a check.
+Unfortunately for my image, I didn't manage to apply the three rules. I accepted being the bad guy, I kept asking for accountability and I said what I thought of the deliverables. I only took care of the form: my requests go by email, with a date, [never on WhatsApp](/en/20261028-whatsapp-nest-pas-un-moyen-de-communication-professionnel), and I [check for myself what I'm told is finished](/en/20260908-cest-integre-dans-la-maquette) before the client takes care of it. The day I'm accused again, there will at least be a record of what I said, and in what tone.
 
-The company is still here. I went back to development, and the team I lead today delivers and improves. I still think that saying clearly what you expect from people is a way of respecting them.
+And I'm still here. So is the company, along with the clients who survived the episode. Things have even improved, slowly but surely.
 
-And you, have you ever been called "the bad guy" for asking for work done properly? We can talk about it in the comments.
+Today, I'm back in my natural habitat, which is development, where the logic of algorithms is noticeably less capricious than that of certain humans. The developers currently under my responsibility seem, by the way, to be getting along very well with my toxic personality: they work, they improve and they deliver. It would seem that clearly saying what you expect from people is still the most honest way of respecting them.
+
+And you, have you ever been « the bad guy » simply for expecting work done properly? We can discuss it in the comments, calmly, I wouldn't want to bully anyone 🙂
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com)*

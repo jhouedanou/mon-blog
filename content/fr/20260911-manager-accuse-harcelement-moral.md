@@ -4,84 +4,81 @@ createdAt: "2026-09-11T20:04:00Z"
 updatedAt: "2026-11-20T12:00:00Z"
 draft: true
 image: "/images/articles/harceleur-moral.webp"
-description: "Accusé de harcèlement moral pour avoir demandé une explication sur un travail raté. Quatre effets de cette accusation sur les managers et les bons employés."
+description: "Accusé de harcèlement moral pour avoir demandé une explication sur un travail raté. Une période pas facile, racontée avec un peu d'humour, et ce qu'elle coûte aux bons employés."
 searchIntent: "Que faire quand un collaborateur accuse son manager de harcèlement moral après une demande d'explications ?"
-summary: "J'ai demandé pourquoi un travail avait échoué chez un client, et on m'a répondu « harcèlement moral ». Ce que dit la loi ivoirienne, et quatre effets de cette accusation : les patrons se taisent, une étiquette se crée, la discipline s'arrête, et les employés sérieux paient."
+summary: "Un intérim à la tête d'une petite équipe à Abidjan, un client furieux, une question posée un lundi matin, et la réponse : « harcèlement moral ». Ce qu'en dit le Code du travail ivoirien, pourquoi la période n'a pas été facile pour moi, et qui paie vraiment dans ce genre d'histoire."
 tags: ["opinion", "société", "management"]
 ---
 
-J'ai demandé à une personne de mon équipe pourquoi un travail avait échoué chez un client. Elle m'a répondu que c'était du harcèlement moral.
+J'ai appris l'année dernière, un peu par hasard et sans l'avoir demandé, que j'étais un harceleur moral et un manager toxique. Je n'ai pas eu besoin de passer un test de personnalité pour ça, une simple réunion un lundi matin a suffi. Comme l'histoire est terminée depuis un moment et que les principaux intéressés ont quitté l'entreprise, je peux enfin la raconter tranquillement.
 
-L'histoire est ancienne, et les personnes concernées ont quitté l'entreprise. Je ne raconte pas leur vie ici. Je garde les faits utiles. Ensuite, je regarde ce que cette accusation change pour les managers, et pour les employés qui travaillent bien.
+## Le décor
 
-## Les faits
+En attendant de trouver un remplaçant à une manager qui s'en allait, on me demande d'assurer l'intérim à la tête d'une petite équipe qui s'occupe de projets assez variés : community management, activations, un peu de production de contenus.
 
-J'assurais l'intérim à la tête d'une petite équipe, à Abidjan. Pendant quelques mois, des délais n'ont pas été tenus. Des livrables sont partis chez des clients avec des fautes. La charte graphique d'un client a été ignorée, et ce client l'a écrit à toute l'équipe quelques jours plus tard.
+Le résultat ne se fait pas attendre. Les deadlines sont traitées comme de simples suggestions, les livrables partent chez le client avec des fautes d'orthographe et des visuels générés par IA où les personnages ont six doigts, et à chaque remarque on me répond que « le manager est censé nous protéger ». Protéger de quoi, je ne l'ai jamais vraiment su. Du client, j'imagine.
 
-Puis une opération a mal tourné pendant un week-end. Le client m'a appelé le lendemain, furieux. Le lundi, j'ai reçu la personne responsable. J'ai présenté les faits, sans crier, et j'ai posé une question : pourquoi ?
+Un client nous envoie sa charte graphique ? Elle est ignorée, et on me fait comprendre à mots couverts que je ferais mieux de retourner à mon développement web. Le même client envoie quelques jours plus tard un email assez salé à toute l'équipe pour dire exactement ce que j'avais dit.
 
-La réponse : « C'est du dénigrement, c'est une campagne de harcèlement moral. »
+Côté entreprise, la facture se chiffre en plusieurs millions de francs CFA et en clients qui sont partis en claquant la porte.
 
-Sur cette période, l'entreprise a perdu des clients et plusieurs millions de francs CFA.
+## La question de trop
 
-## Ce que la loi ivoirienne appelle harcèlement moral
+Le point de rupture arrive un samedi, jour d'une grosse activation pour un client. Elle se passe mal. Le dimanche, le client m'appelle, furieux, et je passe ma journée à éteindre l'incendie avec toute la diplomatie dont je suis capable. Le lundi, je demande à la personne concernée, toujours poliment, ce qui s'est passé. Pas de cris, pas de bureau renversé. Des faits, des chiffres, et une question assez simple : « pourquoi ? ».
 
-Le Code du travail ivoirien de 2015 définit le harcèlement moral à son [article 5](https://loidici.biz/?p=1690). Il cite « les comportements abusifs, les menaces, les attaques, les paroles, les intimidations, les écrits, les attitudes, les agissements répétés à l'encontre d'un salarié ».
+La réponse tombe, et je ne l'avais pas vue venir : « C'est du dénigrement, c'est une campagne de harcèlement moral. »
 
-Le harcèlement moral existe, et la loi a raison de le punir. Mais demander une explication sur un travail raté, avec des faits et sans crier, n'est ni une menace ni une intimidation. C'est le travail d'un manager. J'avais déjà regardé ce que la loi ivoirienne permet à l'employeur sur un autre sujet, [la géolocalisation des salariés](/fr/20250705-chersCommerciaux) : là aussi, le texte est plus précis que ce qu'on en dit au bureau.
+J'ai compris ce jour-là que le logiciel du management avait reçu une mise à jour que j'avais ratée. Perdre de l'argent est une péripétie, livrer n'importe quoi fait partie du processus créatif, et demander des comptes est une agression.
 
-Un vidéaste américain, Chi Brown, a publié une vidéo intitulée « Bad Black Employees Ruin It for the Rest of Us ». Il y parle des employés noirs aux États-Unis. À Abidjan, le patron et l'employé sont noirs tous les deux, et la question ne se pose donc pas de la même façon. Mais il décrit quatre mécanismes, et je les ai vus tous les quatre. Je les reprends un par un.
+Par acquit de conscience, je suis quand même allé lire le Code du travail ivoirien. Son [article 5](https://loidici.biz/?p=1690) parle de « comportements abusifs », de « menaces », d'« intimidations », d'« agissements répétés à l'encontre d'un salarié ». Je n'y ai pas trouvé « a demandé pourquoi le client l'appelait un dimanche ». Le harcèlement moral existe, des gens en souffrent pour de vrai, et c'est bien pour ça que le mot ne devrait pas servir de joker à chaque fois qu'un travail est mal fait. J'avais fait le même exercice de lecture pour [la géolocalisation des salariés](/fr/20250705-chersCommerciaux), avec le même constat : le texte dit rarement ce qu'on lui fait dire au bureau.
 
-## 1. Les patrons disent en privé ce qu'ils taisent en public
+## Ce que ça m'a fait
 
-Chi Brown s'appuie sur le sociologue William Julius Wilson et son livre *When Work Disappears* (1996). Wilson a interrogé environ 200 employeurs de Chicago. Parmi ceux qui ont commenté l'attitude et le sérieux des travailleurs noirs des quartiers pauvres, 74 % des employeurs blancs en disaient du mal. Chez les employeurs noirs, c'était 80 %.
+Je raconte tout ça sur le ton de la blague, mais je ne vais pas faire le fier : ces quelques mois n'ont pas été faciles pour moi. Quand on vous dit que vous êtes toxique, vous finissez par vous poser la question pour de bon, et ce n'est pas une question agréable à se poser un dimanche soir. J'ai mis du temps à en rire. Ce billet est la preuve que j'y suis arrivé, à peu près.
 
-L'explication de Chi Brown : un patron noir ne craint pas d'être traité de raciste, donc il dit ce qu'il pense.
+## Ce que le mot change au bureau
 
-Ces chiffres sont discutés. La chercheuse Susan Turner Meiklejohn a [critiqué la méthode de Wilson](https://econpapers.repec.org/RePEc:sae:ecdequ:v:13:y:1999:i:4:p:321-338) et a trouvé des résultats bien plus faibles dans sa propre enquête. Wilson montre aussi que beaucoup de ces employeurs écartaient les candidats noirs dès le recrutement.
+Avec le recul, j'ai surtout vu ce que ce mot fait à une équipe une fois qu'il a été prononcé.
 
-Je retiens le mécanisme. Un manager qui a peur d'une accusation ne dit plus rien en réunion. Il parle ailleurs : à la direction, à d'autres managers, ou au moment de recruter. L'employé n'entend jamais la critique. Il ne peut donc pas se corriger.
+Le manager qui a pris un « harcèlement moral » dans la figure ne dit plus rien en réunion. Il garde ça pour la machine à café, pour le bureau du directeur, et surtout pour le jour où il faudra recruter. L'intéressé, lui, ne saura jamais ce qu'on pense de son travail, ce qui reste la méthode la plus sûre pour ne pas s'améliorer.
 
-## 2. Quelques personnes suffisent à créer une étiquette
+Ensuite viennent les étiquettes. Il suffit de deux ou trois expériences de ce genre pour qu'un employeur se mette à parler des « jeunes d'aujourd'hui », des « créatifs » ou de « ceux qui sortent de telle école ». Tout le monde a déjà entendu ces phrases dans un bureau. C'est injuste, évidemment : on fait payer à quelqu'un les six doigts d'un autre. Mais ça se passe comme ça, et chaque livrable bâclé ajoute une ligne au dossier.
 
-Chi Brown avance un chiffre : quand environ 20 % d'un groupe arrive en retard, refuse le travail ou parle mal, tout le groupe reçoit l'étiquette. C'est son estimation, pas une mesure.
+## Comment rester un manager « cool » quand tout coule
 
-Le mécanisme, lui, est simple. Un employeur se souvient de ses mauvaises expériences. Au recrutement suivant, il évite les profils qui leur ressemblent.
+Il reste la solution de facilité, qui est de ne plus rien demander à personne. Puisque l'exigence est apparemment devenue une pathologie, je me suis dit qu'il fallait s'adapter. Voici donc les quelques règles que j'aurais dû suivre pour rester un type bien aux yeux de mon équipe.
 
-À Abidjan, l'étiquette ne porte pas sur la couleur de peau. Elle porte sur « les jeunes », sur « les créatifs », ou sur « ceux qui sortent de telle école ». C'est injuste : on juge une personne sur le travail d'une autre. Je ne défends pas ce réflexe. Je dis qu'il existe, et que chaque travail bâclé le renforce.
+### Règle numéro 1 : regarder ailleurs
 
-## 3. La peur de l'accusation arrête la discipline
+Si un projet coule, ne regardez pas le projet. Le ciel est magnifique en cette saison, et son reflet sur la lagune Ébrié est très apaisant.
 
-Aux États-Unis, le *Civil Rights Act* de 1991 permet à un salarié victime de discrimination volontaire de demander des dommages et intérêts devant un jury. Selon Chi Brown, des managers ont alors peur du procès, et ils ne sanctionnent plus. Ensuite, ils hésitent à embaucher une personne qu'ils pensent ne pas pouvoir licencier.
+### Règle numéro 2 : fêter les départs
 
-Chez nous, les mots qui font peur sont « harcèlement moral » et « manager toxique ».
+Un client s'en va en hurlant ? Organisez un petit pot pour célébrer cette « opportunité de recentrage ». Il y aura du jus de bissap.
 
-Le manager qui les a entendus une fois a deux choix. Il peut continuer à demander des comptes. Ou il peut se taire : ne plus rien voir, ne plus rien entendre, ne plus rien dire. Dans ce cas, personne ne se plaint de lui. Les erreurs continuent, et les clients partent.
+### Règle numéro 3 : sourire
 
-## 4. Les employés sérieux paient pour les autres
+L'argent s'évapore ? Souriez, le stress est mauvais pour le teint, et la rentabilité est de toute façon une notion très XXe siècle.
 
-C'est le point le plus important de Chi Brown, et je suis d'accord avec lui. Ceux qui paient sont les employés sérieux.
+En résumé, ne posez plus de questions. Devenez un manager qui ne voit rien, n'entend rien et ne dit rien. Ce sera peut-être la fin de votre boîte, mais au moins personne ne se plaindra de votre toxicité pendant que le navire coule.
 
-Ils paient trois fois :
+## Ceux qui paient vraiment
 
-- **Dans l'entreprise.** Un client perdu, c'est moins de projets et moins de budget pour tout le monde, y compris pour ceux qui ont livré à l'heure.
-- **Au recrutement.** L'étiquette du point 2 leur colle à la peau. Un recruteur méfiant ne leur laisse pas le temps de montrer leur travail.
-- **Au quotidien.** Ils voient que personne ne rend de comptes. Ils se demandent pourquoi ils font des efforts.
+J'ai dit que la période avait été pénible pour moi, mais dans cette histoire ce n'est pas le manager qu'il faut plaindre le plus. Ce sont ceux qui font bien leur travail.
 
-Chi Brown conclut sur la responsabilité de chacun : être fier de son travail et le faire correctement. J'ajoute la responsabilité du manager. S'il se tait pour être tranquille, il abandonne ceux qui travaillent bien.
+Quand le client claque la porte, il la claque pour tout le monde, y compris pour celui qui avait rendu sa partie à l'heure. Quand le prochain recruteur lira « community manager » sur un CV, il pensera aux six doigts avant de penser au candidat. Et celui qui se donne du mal finit par se demander pourquoi il se fatigue, puisque personne ne demande rien à son voisin.
 
-## Ce que je fais maintenant
+Se taire pour avoir la paix, c'est laisser tomber ceux qui bossent.
 
-Je n'ai pas arrêté de demander des comptes. Mais j'ai des règles.
+## Ce que j'ai fait à la place
 
-1. **J'écris ce que j'attends.** La demande part par mail, avec une date, et [pas sur WhatsApp](/fr/20261028-whatsapp-nest-pas-un-moyen-de-communication-professionnel). En cas d'accusation, il reste une trace de ce qui a été dit, et sur quel ton.
-2. **Je vérifie avant le client.** Je contrôle moi-même [un livrable annoncé comme terminé](/fr/20260908-cest-integre-dans-la-maquette). Une faute trouvée en interne coûte moins cher qu'un appel d'un client furieux.
-3. **Je parle du travail, pas de la personne.** « Ce visuel ne respecte pas la charte » est un fait. « Tu ne fais jamais attention » est un jugement.
-4. **Je prends l'accusation au sérieux.** Si quelqu'un parle de harcèlement, la direction doit l'entendre, et l'inspection du travail existe pour ça. Un manager qui n'a rien à cacher n'a rien à craindre d'une vérification.
+Malheureusement pour mon image, je n'ai pas réussi à appliquer les trois règles. J'ai accepté d'être le méchant, j'ai continué à demander des comptes et j'ai dit ce que je pensais des livrables. J'ai seulement soigné la forme : mes demandes partent par email, avec une date, [jamais sur WhatsApp](/fr/20261028-whatsapp-nest-pas-un-moyen-de-communication-professionnel), et je [vérifie moi-même ce qu'on m'annonce comme terminé](/fr/20260908-cest-integre-dans-la-maquette) avant que le client ne s'en charge. Le jour où on m'accusera de nouveau, il y aura au moins une trace de ce que j'ai dit, et sur quel ton.
 
-L'entreprise est toujours là. Je suis revenu au développement, et l'équipe que j'encadre aujourd'hui livre et progresse. Je continue de penser que dire clairement ce qu'on attend des gens est une façon de les respecter.
+Et je suis toujours là. L'entreprise aussi, ainsi que les clients qui ont survécu à l'épisode. Les choses se sont même améliorées, lentement mais sûrement.
 
-Et vous, avez-vous déjà été accusé d'être « le méchant » pour avoir demandé un travail fait correctement ? On peut en parler dans les commentaires.
+Aujourd'hui, j'ai retrouvé mon habitat naturel, c'est-à-dire le développement, où la logique des algorithmes est nettement moins capricieuse que celle de certains humains. Les développeurs qui sont actuellement sous ma responsabilité semblent d'ailleurs très bien s'accommoder de ma personnalité toxique : ils bossent, ils progressent et ils livrent. Il faut croire que dire clairement ce qu'on attend des gens reste encore la façon la plus honnête de les respecter.
+
+Et vous, avez-vous déjà été « le méchant » simplement pour avoir attendu un travail fait correctement ? On peut en discuter dans les commentaires, calmement, je ne voudrais harceler personne 🙂
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com)*
