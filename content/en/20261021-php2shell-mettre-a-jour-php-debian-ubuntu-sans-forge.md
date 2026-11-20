@@ -261,6 +261,8 @@ A flaw that hands over a server without a password, in the language behind a goo
 
 I'll leave you to it… it's going to be a long night.
 
+**Update, November 20, 2026**: one month later, PHP and nginx have critical flaws again. The follow-up is here: [fixing the PHP session flaws and nginx2root on Ubuntu](/en/20261120-failles-php-nginx2root-corriger-serveur-ubuntu).
+
 ---
 
 *Photo: [Panumas Nikhomkhai](https://www.pexels.com/photo/1148820/), Pexels.*
