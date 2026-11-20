@@ -4,7 +4,7 @@ createdAt: "2026-09-11T20:04:00Z"
 updatedAt: "2026-11-20T12:00:00Z"
 draft: true
 image: "/images/articles/harceleur-moral.webp"
-description: "Accusé de harcèlement moral pour avoir demandé une explication sur un travail raté. Une période pas facile, racontée avec un peu d'humour, et ce qu'elle coûte aux bons employés."
+description: "Accusé de harcèlement moral pour avoir demandé une explication sur un travail raté. Une période pas facile pour moi, racontée avec un peu d'humour."
 searchIntent: "Que faire quand un collaborateur accuse son manager de harcèlement moral après une demande d'explications ?"
 summary: "Un intérim à la tête d'une petite équipe à Abidjan, un client furieux, une question posée un lundi matin, et la réponse : « harcèlement moral ». Ce qu'en dit le Code du travail ivoirien, pourquoi la période n'a pas été facile pour moi, et qui paie vraiment dans ce genre d'histoire."
 tags: ["opinion", "société", "management"]
