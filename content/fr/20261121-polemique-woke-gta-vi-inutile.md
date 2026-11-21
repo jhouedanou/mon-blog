@@ -60,11 +60,25 @@ Prenons la peinture, citée comme preuve de corvée. Ce n'est pas une tâche que
 
 Le jeu propose son lot de cambriolages, de carjackings et d'activités stupides. C'est GTA. Faire des courses entre deux braquages n'enlève pas les braquages. Ça leur donne un décor. Même les braqueurs ont besoin de papier toilette.
 
+## Pas de fusillade dans un club gay, pas de prostituées : pourquoi ?
+
+L'autre grief qui tourne : dans GTA VI, on ne pourrait pas ouvrir le feu dans un club gay. On ne peut pas non plus s'offrir les services des strip-teaseuses ni payer une prostituée, une première dans la série depuis 2001, [comme le relève IBTimes](https://www.ibtimes.co.uk/gta-6-removes-sex-worker-mechanic-strip-clubs-remain-1833292). Pour certains, c'est la preuve que le jeu a été censuré par le wokisme.
+
+La vraie question, c'est pourquoi.
+
+Pour le club gay, il suffit de regarder la carte. Leonida, c'est la Floride. En 2016, à Orlando, un homme a tué 49 personnes au Pulse, une boîte gay. Rockstar n'a rien expliqué officiellement, mais je vois mal un studio laisser les joueurs rejouer la pire tuerie homophobe de l'histoire américaine dans l'État où elle a eu lieu. Ce n'est pas du wokisme. C'est du bon sens, et sans doute l'avis de quelques avocats.
+
+Pour les prostituées, la réponse est encore plus simple. Depuis GTA III, la mécanique était connue de tous : on paie, puis on tue la femme pour récupérer son argent. Pendant vingt-cinq ans, c'est l'exemple qu'on a ressorti dans chaque débat sur la violence dans les jeux vidéo. Rockstar a fini par fermer le dossier. Personne ne regrettera cette fonctionnalité, à part ceux qui font des vidéos pour dire qu'ils la regrettent.
+
+Et qu'on ne vienne pas me dire que le jeu est devenu sage.
+
 ## Le quota GTA est rempli
 
-Personnellement, je trouve que le cahier des charges habituel est respecté : vulgarité, nudité, violence. Tout y est. Rockstar a coché toutes les cases, et sans doute deux ou trois que la censure n'a pas encore inventées.
+Personnellement, je trouve que le cahier des charges habituel est respecté : vulgarité, nudité, violence. Tout y est. Deux mécaniques en moins, ça ne fait pas un jeu pour enfants.
 
 Et c'est posé sur une histoire un peu tragique. Une mère qui abandonne son enfant pour un braquage qui tourne mal. Un ex-mari dans la vente de drogue. On est loin d'un jeu aseptisé par un comité de bien-pensants. C'est un GTA qui a simplement décidé que ses personnages auraient une vie entre les fusillades.
+
+Sur un point, je rejoins quand même les râleurs, mais pas pour les mêmes raisons. Personnellement, en dehors de Lucia, je trouve la représentation des femmes dans ce jeu désastreuse. Lucia a une histoire, des choix, une colère. Les autres servent de décor : des corps en bikini, des danseuses, des faire-valoir. Il suffit de regarder l'affiche officielle. Si quelqu'un cherche un vrai reproche à faire à GTA VI, il est là. Pas dans un bouquet de fleurs.
 
 La satire n'a pas disparu. Elle a changé de cible. Elle vise moins les passants et plus les gens qui vivent dans ce monde. Ça peut déplaire, mais ce n'est pas de l'idéologie. C'est de l'écriture.
 

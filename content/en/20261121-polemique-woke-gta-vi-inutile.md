@@ -60,11 +60,25 @@ Take the painting, held up as proof of chores. It isn't a task Lucia hands to Ja
 
 The game has its share of burglaries, carjackings and stupid activities. It's GTA. Doing the shopping between two heists doesn't remove the heists. It gives them a setting. Even robbers need toilet paper.
 
+## No shooting in a gay club, no sex workers: why?
+
+The other complaint going around: in GTA VI, you supposedly can't open fire in a gay club. You also can't pay for the strippers' services or hire a sex worker, a first for the series since 2001, [as IBTimes points out](https://www.ibtimes.co.uk/gta-6-removes-sex-worker-mechanic-strip-clubs-remain-1833292). For some, that's proof the game was censored by wokeness.
+
+The real question is why.
+
+For the gay club, just look at the map. Leonida is Florida. In 2016, in Orlando, a man killed 49 people at Pulse, a gay nightclub. Rockstar hasn't explained anything officially, but I can't see a studio letting players replay the worst anti-gay mass shooting in American history in the state where it happened. That isn't wokeness. It's common sense, and probably the opinion of a few lawyers.
+
+For sex workers, the answer is even simpler. Since GTA III, everyone knew the mechanic: you pay, then you kill the woman to get your money back. For twenty-five years, it was the example dragged out in every debate about violence in video games. Rockstar finally closed the file. Nobody will miss that feature, except the people making videos to say they miss it.
+
+And don't tell me the game has gone soft.
+
 ## The GTA quota is met
 
-Personally, I think the usual specification is met: vulgarity, nudity, violence. It's all there. Rockstar ticked every box, and probably two or three the censors haven't invented yet.
+Personally, I think the usual specification is met: vulgarity, nudity, violence. It's all there. Two mechanics fewer doesn't make it a children's game.
 
 And it sits on top of a somewhat tragic story. A mother who abandons her child for a heist that goes wrong. An ex-husband dealing drugs. This is far from a game sanitised by a committee of the right-thinking. It's a GTA that simply decided its characters would have a life between the shootouts.
+
+On one point, I do agree with the complainers, just not for the same reasons. Personally, apart from Lucia, I find the way this game portrays women disastrous. Lucia has a story, choices, anger. The others are set dressing: bodies in bikinis, dancers, sidekicks. Just look at the official poster. If anyone is looking for a real criticism of GTA VI, that's where it is. Not in a bunch of flowers.
 
 The satire hasn't disappeared. It has changed target. It aims less at passers-by and more at the people who live in this world. You may not like that, but it isn't ideology. It's writing.
 
