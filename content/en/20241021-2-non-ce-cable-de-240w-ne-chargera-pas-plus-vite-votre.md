@@ -50,19 +50,19 @@ I reply, finally spotting the 60W cable I need: "Not in this case. This one will
 
 I grab the 60W cable and head to the till, glad to have dodged the hard sell. The salesman is left puzzled.
 
-More seriously... your 2017 MacBook Pro is not a race car built to swallow 240W like a light breakfast. It prefers a more modest diet, with a less powerful charging standard. Yes, the 240W cable is backward compatible, like an adult who knows how to talk to children. But it will not force your MacBook to eat more than it can.
+More seriously... your 2017 MacBook Pro is not built to take 240W and it uses a less powerful charging standard. Yes, the 240W cable is backward compatible, so it works with a less powerful device, but it will not force your MacBook to draw more power than it can accept.
 
 ## Which USB-C cable to charge a MacBook Pro?
 
-A small technical correction, though: contrary to what I told the salesman, a 60W cable is not quite "enough". Apple ships 15-inch MacBook Pro models from 2016 onwards with an 87W USB-C adapter ([Apple Support](https://support.apple.com/en-us/109509){target="_blank" rel="noopener"}). A standard USB-C cable, rated for 3 A, tops out at 60W. Beyond that, you need a cable rated for 5 A, meaning 100W ([USB-IF](https://www.usb.org/usb-charger-pd){target="_blank" rel="noopener"}). Any cable rated above 3 A carries an identification chip: it's called "e-marked" ([USB Type-C specification](https://www.usb.org/sites/default/files/USB%20Type-C%20Spec%20R2.0%20-%20August%202019.pdf){target="_blank" rel="noopener"}). With my 60W cable, the MacBook charges, but at 60W at most instead of 87W. So the right cable was a 100W one. Not a 240W one: above 100W, nothing changes for this machine.
+I do have to correct one technical point, though, because contrary to what I told the salesman, a 60W cable is not quite "enough". Apple ships 15-inch MacBook Pro models from 2016 onwards with an 87W USB-C adapter ([Apple Support](https://support.apple.com/en-us/109509){target="_blank" rel="noopener"}). A standard USB-C cable, rated for 3 A, tops out at 60W. Beyond that, you need a cable rated for 5 A, meaning 100W ([USB-IF](https://www.usb.org/usb-charger-pd){target="_blank" rel="noopener"}). Any cable rated above 3 A carries an identification chip, it's called "e-marked" ([USB Type-C specification](https://www.usb.org/sites/default/files/USB%20Type-C%20Spec%20R2.0%20-%20August%202019.pdf){target="_blank" rel="noopener"}). With my 60W cable, the MacBook charges, but at 60W at most instead of 87W. So the right cable was a 100W one, and a 240W one adds nothing, because above 100W, nothing changes for this machine.
 
-**In tech, it's not always the biggest or the most powerful that wins: it's the one that best fits your needs.**
+**In tech, the best choice is the product that best fits your needs, and that's not always the biggest or the most powerful.**
 
-And no arrogant salesman can sell you that: it's up to you to know it.
+And no arrogant salesman can sell you that, it's up to you to know it.
 
 For more stories of watts and old Macs: [the portable dual monitor that passes the MacBook's charge through over USB-C](/en/20260810-double-moniteur-portable-blackview-dcm6), and [how to revive an old 2017 iMac by installing macOS on an external SSD](/en/20261014-installer-macos-ssd-externe-imac-2017).
 
 *Correction, October 8, 2026: the salesman was wrong about the 240W cable, but I was wrong about the 60W one: with the original 87W charger, you need a 5 A (100W) USB-C cable to get the full power; a 60W cable caps charging at 60W.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com) — debunker of watts*
+*[Jean-Luc Houédanou](https://houedanou.com)*

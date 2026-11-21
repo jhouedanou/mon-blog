@@ -8,21 +8,21 @@ searchIntent: "Koala Sampler est-il gratuit sur Mac, que vaut-il pour faire des 
 tags: ["musique", "outils", "mac"]
 ---
 
-Ceux qui suivent ce blog se souviennent peut-être de [l'interlude de juillet](/fr/20260707-je-suis-encore-vivant#interlude-sampler-pendant-que-les-conteneurs-chauffent) : un déploiement qui traînait, une barre de progression que je regardais avancer, et Koala Sampler relancé pour occuper le temps mort. Deux instrumentaux étaient nés pendant que les serveurs faisaient leur travail.
+Ceux qui suivent ce blog se souviennent peut-être de [l'interlude de juillet](/fr/20260707-je-suis-encore-vivant#interlude-sampler-pendant-que-les-conteneurs-chauffent), avec un déploiement qui traînait, une barre de progression que je regardais avancer, et Koala Sampler relancé pour occuper le temps mort. Deux instrumentaux étaient nés pendant que les serveurs faisaient leur travail.
 
 Depuis, le temps mort est devenu une habitude, et Koala Sampler, gratuit sur Mac, est passé du bouche-trou à l'outil principal de mon boom bap. Je vous raconte la suite.
 
 ## Pourquoi Koala Sampler sur Mac ?
 
-D'abord parce qu'il est gratuit sur Mac. Pas en version d'essai, pas avec un crack : gratuit sur le Mac App Store, signé par son développeur Marek Bereza (elf audio). La version iPhone et iPad coûte 5,99 € sur l'[App Store](https://apps.apple.com/fr/app/koala-sampler-beat-maker/id1449584007){target="_blank" rel="noopener"} si vous voulez sampler en déplacement, et elle existe aussi sur Android.
+D'abord parce qu'il est gratuit sur Mac, sans version d'essai ni crack, directement sur le Mac App Store, signé par son développeur Marek Bereza (elf audio). La version iPhone et iPad coûte 5,99 € sur l'[App Store](https://apps.apple.com/fr/app/koala-sampler-beat-maker/id1449584007){target="_blank" rel="noopener"} si vous voulez sampler en déplacement, et elle existe aussi sur Android.
 
-Ensuite parce qu'il fait exactement ce qu'il faut, dans l'esprit d'un sampleur mobile : jusqu'à 64 samples par projet, un séquenceur avec swing, la séparation de stems par IA, et même le support des plugins VST3 et AUv3 sur Mac. L'interface est minimaliste, et c'est voulu. Pas de pages de réglages, pas de micro-édition, on reste concentré sur le beat.
+Ensuite parce qu'il fait exactement ce qu'il faut, dans l'esprit d'un sampleur mobile : jusqu'à 64 samples par projet, un séquenceur avec swing, la séparation de stems par IA, et même le support des plugins VST3 et AUv3 sur Mac. L'interface est volontairement minimaliste, sans pages de réglages ni micro-édition, et on reste concentré sur le beat.
 
-Enfin, parce que c'est une alternative pour ceux qui achètent des « licences » FL Studio ou Cubase à 5 000 francs dans les groupes Facebook. Vous payez pour un crack, souvent farci de logiciels espions, qui aspirera vos mots de passe et votre mobile money avant même votre premier beat. Un vrai sampleur, légal et propre, coûte zéro franc, juste ici.
+Enfin, parce que c'est une alternative pour ceux qui achètent des « licences » FL Studio ou Cubase à 5 000 francs dans les groupes Facebook. Vous payez pour un crack, souvent infecté par des logiciels espions, qui volera vos mots de passe et votre mobile money avant même votre premier beat. Un sampleur légal et propre coûte zéro franc, juste ici.
 
-## La preuve en musique : cinq morceaux boom bap
+## Cinq morceaux boom bap
 
-Du boom bap, évidemment : batteries poussiéreuses, samples découpés à la main, ambiance très années 90. C'est exactement ce pour quoi ce sampleur est fait.
+Du boom bap, évidemment, avec des batteries poussiéreuses, des samples découpés à la main et une ambiance très années 90. C'est exactement ce pour quoi ce sampleur est fait.
 
 ::media-carousel
 ---
@@ -47,7 +47,7 @@ items:
 
 ## Le projet source, pour les curieux
 
-Voici un projet source, au format natif de Koala. Écoutez d'abord ce qu'il donne, puis téléchargez-le et ouvrez-le dans l'application : vous aurez le beat complet sous les doigts, avec les samples, les patterns et les effets.
+Voici un projet source, au format natif de Koala. Écoutez d'abord ce qu'il donne, puis téléchargez-le et ouvrez-le dans l'application, et vous aurez le beat complet sous les doigts, avec les samples, les patterns et les effets.
 
 ::media-embed{src="https://drive.google.com/file/d/1PVN-2Zy4o6hn-hZBHi2Er4aMFTaqvD0y/preview" title="Le beat du projet source" poster="/images/articles/demo.webp" height="240"}
 ::
@@ -56,7 +56,7 @@ Voici un projet source, au format natif de Koala. Écoutez d'abord ce qu'il donn
 
 ## Koala en action
 
-Pour ceux qui veulent voir à quoi ressemble le logiciel avant de l'installer, voici trois captures de sessions réelles : découpe de samples, séquençage, et un aperçu de l'interface sur Mac. Rien de scénarisé, c'est mon usage quotidien.
+Pour ceux qui veulent voir à quoi ressemble le logiciel avant de l'installer, voici trois captures de sessions réelles : découpe de samples, séquençage, et un aperçu de l'interface sur Mac. C'est mon usage quotidien, sans mise en scène.
 
 ::media-embed{src="https://livid.com/embed/iS0NnuO8dgEp" title="Découpe d'un sample dans Koala" ratio="100 / 152.222" maxWidth="420"}
 ::
@@ -69,7 +69,7 @@ Pour ceux qui veulent voir à quoi ressemble le logiciel avant de l'installer, v
 
 ## Pour commencer
 
-Koala Sampler est disponible gratuitement sur le [Mac App Store](https://apps.apple.com/fr/app/koala-sampler/id1479881366?mt=12), et la documentation se trouve sur [koalasampler.com](https://www.koalasampler.com). Passez par le Store, pas par un lien trouvé au hasard : même [le premier résultat Google peut être un site de phishing](/fr/20260618-alerte-phishing-bing-webmaster-tools). Si vous en sortez quelque chose, envoyez-le-moi 🙂
+Koala Sampler est disponible gratuitement sur le [Mac App Store](https://apps.apple.com/fr/app/koala-sampler/id1479881366?mt=12), et la documentation se trouve sur [koalasampler.com](https://www.koalasampler.com). Passez par le Store plutôt que par un lien trouvé au hasard, parce que même [le premier résultat Google peut être un site de phishing](/fr/20260618-alerte-phishing-bing-webmaster-tools). Si vous en sortez quelque chose, envoyez-le-moi 🙂
 
 Vous cherchez plutôt un logiciel de musique complet, façon FL Studio ? J'ai testé depuis [Lemon Studio, le clone gratuit de FL Studio](/fr/20261026-lemon-studio-clone-fl-studio), et je vous dis quel logiciel gratuit choisir à la place.
 
