@@ -63,7 +63,7 @@ If requests keep coming in on WhatsApp despite the no and the email, I block the
 
 ## What I refuse
 
-I'm happy to work with people, but not on a channel where you can't find anything, that has no working hours, and that mixes my private life with my work. Email does better on all three counts, and an email address is free.
+Working with people is not a problem for me, but I refuse a channel where you can't find anything, that has no working hours, and that mixes my private life with my work. Email does better on all three counts, and an email address is free.
 
 _Photo: [Rahul Shah](https://www.pexels.com/@-rahulshah-/){target="_blank" rel="noopener"}, on Pexels._
 

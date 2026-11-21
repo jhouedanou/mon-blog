@@ -29,7 +29,7 @@ C'est du business, parce qu'un utilisateur connecté à un compte Microsoft, c'e
 
 Mais parfois, vous avez besoin d'une machine qui fonctionne localement, une Surface achetée d'occasion, une VM de test ou un vieux laptop que vous remettez en circulation, et là vous êtes bloqué.
 
-Windows 11 est fait pour les entreprises et les utilisateurs qui acceptent de vivre dans le cloud, et les développeurs africains qui veulent garder leur indépendance informatique n'en font pas partie.
+Microsoft n'est pas méchant, mais Windows 11 est fait pour les entreprises et les utilisateurs qui acceptent de vivre dans le cloud, et pas pour les développeurs africains qui veulent garder leur indépendance informatique.
 
 ---
 

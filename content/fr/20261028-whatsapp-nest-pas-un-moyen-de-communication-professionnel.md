@@ -63,7 +63,7 @@ Si les demandes continuent d'arriver sur WhatsApp malgré le non et l'email, je 
 
 ## Ce que je refuse
 
-Je travaille volontiers avec les gens, mais pas sur un canal où l'on ne retrouve rien, qui n'a pas d'horaires et qui mélange ma vie privée et mon travail. L'email fait mieux sur ces trois points, et une adresse email est gratuite.
+Travailler avec les gens ne me pose pas de problème, mais je refuse un canal où l'on ne retrouve rien, qui n'a pas d'horaires et qui mélange ma vie privée et mon travail. L'email fait mieux sur ces trois points, et une adresse email est gratuite.
 
 _Photo : [Rahul Shah](https://www.pexels.com/@-rahulshah-/){target="_blank" rel="noopener"}, sur Pexels._
 

@@ -39,7 +39,7 @@ And it doesn't stop at Adobe. On October 7, [the same team](https://github.com/s
 
 I have to be honest, since I spent an entire post [going after vibe coders](/en/20260423-chers-vibe-codeurs-bienvenue-dans-la-realite).
 
-That's not Brandon Thomas's case. In his Reddit announcement, as reported by Gizmodo, he describes himself as a fifteen-year industry veteran, not some casual vibe coder. His GitHub profile states his specialty, Rust. He knows what he's asking the machine for, and he knows how to read what it gives back.
+Brandon Thomas is not Bronny James. In his Reddit announcement, as reported by Gizmodo, he describes himself as a fifteen-year industry veteran, not some casual vibe coder. His GitHub profile states his specialty, Rust. He knows what he's asking the machine for, and he knows how to read what it gives back.
 
 That's what I was saying in April, AI multiplies the skills of people who already have them. For someone who knows the job, Claude provides a team of assistants who never get tired.
 

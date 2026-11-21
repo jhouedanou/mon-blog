@@ -61,7 +61,7 @@ Zoho enters the rotation because the suite is widely used by SMEs, including her
 
 ## What to do if you get this email
 
-- Don't call, ever. That's the only rule that matters on this one.
+- Don't call, ever. That's the first rule.
 - Check your bank statement directly, from your bank's app or website. If there's no charge, the story ends there.
 - If you have a real Zoho account, type `zoho.com` yourself into the address bar and look at your invoices from your account. Never go through the email.
 - Report the message to `abuse@zohocorp.com`, [the address Zoho gives](https://help.zoho.com/portal/en/community/topic/phishing-alert-a-must-read-for-all-zoho-sign-users) for phishing, then delete it.

@@ -60,7 +60,7 @@ You can applaud the substance of Gates's memo without buying the posture. Taxing
 
 You do have to remember who is speaking, though. The man calling for caution today was crushing his competitors yesterday, and his memo will change nothing about what Microsoft does tomorrow. Listen to the argument, and keep an eye on the author.
 
-And don't expect it to change. The late conversions of the powerful are a form of wealth management, since you protect what you've earned by regulating those who come after.
+And don't expect it to change. The late conversions of the powerful have less to do with morals than with wealth management, since you protect what you've earned by regulating those who come after.
 
 ## Cash Rules Everything Around Me
 

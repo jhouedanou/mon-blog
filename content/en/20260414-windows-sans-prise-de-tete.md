@@ -29,7 +29,7 @@ It's business, because a user signed in with a Microsoft account is a tracked, s
 
 But sometimes you need a machine that works locally, a second-hand Surface, a test VM or an old laptop you are putting back into service, and then you're stuck.
 
-Windows 11 is built for businesses and for users who agree to live in the cloud, and African developers who want to keep their computing independence are not among them.
+Microsoft isn't evil, but Windows 11 is built for businesses and for users who agree to live in the cloud, and not for African developers who want to keep their computing independence.
 
 ---
 

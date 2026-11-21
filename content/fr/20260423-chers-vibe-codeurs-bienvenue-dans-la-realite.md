@@ -61,7 +61,7 @@ Tout le monde devrait utiliser l'IA, et ce n'est pas ce que je leur reproche. Je
 
 Ils font tout avec des prompts, sans regarder le code, sans vérifier sa qualité et sans comprendre les implications de ce qui a été généré.
 
-Une application générée qui tourne en démo ne prouve rien, parce que le contexte compte, et l'adversité et l'expérience de l'échec aussi.
+C'est comme si Bronny James marquait 30 points dans un match amical contre des collégiens et se proclamait meilleur que Kobe, alors que le contexte compte, et l'adversité et l'expérience de l'échec aussi.
 
 ## Pendant ce temps, chez Anthropic...
 

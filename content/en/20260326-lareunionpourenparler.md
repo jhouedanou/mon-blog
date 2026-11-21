@@ -16,7 +16,7 @@ That one only shows up when ego and lack of arguments, carefully cultivated by a
 ## The "let's talk about it" meeting
 
 It always starts the same way, with a request made with the nonchalance of someone who won't have to carry it out.
-It gets [dropped between two messages](/en/20261028-whatsapp-nest-pas-un-moyen-de-communication-professionnel), as if the effort in time and resources it represents did not exist. A request whose size is inversely proportional to the confidence with which it is made.
+It gets [dropped between two messages](/en/20261028-whatsapp-nest-pas-un-moyen-de-communication-professionnel), as if the effort in time and resources it represents did not exist. It is a big request, made with full confidence.
 
 In response, you send a technical analysis: options compared, risks anticipated, recommendations for tools that already do the job, a detailed development plan. So you do the thinking for the person who didn't take the time to do it.
 

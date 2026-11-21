@@ -85,7 +85,7 @@ I keep the place of the answer. LL answered on the record, where everyone listen
 
 I leave the ego. LL answered a line that he himself had had erased, and that is what started the war. I answer with a line number and a screenshot.
 
-Canibus had talent, and the junior may have some too. They still have to learn that on someone else's project, you do your part without adding anything of your own.
+Canibus had talent, and the junior may have some too. They still have to learn that on someone else's track, you lay down your verse and you hand the mic back.
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com)*

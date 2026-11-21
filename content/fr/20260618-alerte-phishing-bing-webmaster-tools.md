@@ -18,7 +18,7 @@ C'est une page de phishing, et elle est bien faite.
 
 L'adresse est `camp.recettee.com`, sans aucun rapport avec Microsoft ni avec Bing. Pourtant, la page copie fidèlement la landing page officielle de Bing Webmaster Tools : logo Microsoft Bing, accroche « Want more users for your site? », promesse d'outils SEO/GEO gratuits, bandeau « 500 $ de crédit pub ».
 
-Le piège vient ensuite, avec une fenêtre « Please sign in », sous-titrée « Choose an account convenient to you », et deux options de connexion :
+Le piège vient ensuite, avec une fenêtre « Please sign in — Choose an account convenient to you » et deux options de connexion :
 
 - Microsoft
 - Google

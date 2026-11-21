@@ -16,7 +16,7 @@ Celle-là n'apparaît que lorsque l'ego et le manque d'arguments, soigneusement 
 ## La réunion « pour en parler »
 
 Ça commence toujours de la même façon, par une demande formulée avec la désinvolture de quelqu'un qui n'aura pas à la réaliser.
-Elle est [formulée entre deux messages](/fr/20261028-whatsapp-nest-pas-un-moyen-de-communication-professionnel), comme si l'effort en temps et ressources qu'elle représente n'existait pas. Une demande dont la taille est inversement proportionnelle à l'aplomb avec lequel elle est posée.
+Elle est [formulée entre deux messages](/fr/20261028-whatsapp-nest-pas-un-moyen-de-communication-professionnel), comme si l'effort en temps et ressources qu'elle représente n'existait pas. C'est une grosse demande, posée avec aplomb.
 
 En réponse, on envoie une analyse technique : options comparées, risques anticipés, recommandation d'outils qui font déjà le travail, plan de développement détaillé. On réfléchit donc à la place de celui qui n'a pas pris le temps de le faire.
 

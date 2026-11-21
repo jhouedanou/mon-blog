@@ -61,7 +61,7 @@ Everyone should use AI, and that's not what I hold against them. What I hold aga
 
 They do everything with prompts, without looking at the code, without checking its quality and without understanding the implications of what was generated.
 
-A generated application that runs in a demo proves nothing, because context matters, and so do adversity and the experience of failure.
+It's as if Bronny James scored 30 points in a friendly against middle schoolers and declared himself better than Kobe, when context matters, and so do adversity and the experience of failure.
 
 ## Meanwhile, at Anthropic...
 

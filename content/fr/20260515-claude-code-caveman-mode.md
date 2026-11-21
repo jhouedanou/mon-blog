@@ -178,7 +178,7 @@ Julius pousse une philosophie : *l'agent fait plus avec moins.* Depuis la versio
 
 ## Verdict
 
-Si vous bossez avec Claude Code au quotidien et que vous trouvez les réponses interminables, installez Caveman. L'installation prend une ligne et 30 secondes, et votre quota mensuel dure plus longtemps. Les explications restent justes, sans les fioritures. Relisez-les quand même, parce que pousser sans relire, c'est [la limite du vibe coding](/fr/20260423-chers-vibe-codeurs-bienvenue-dans-la-realite), et relire fait partie de [ce que l'IA ne remplace pas chez un développeur](/fr/20261016-pourquoi-lia-ne-me-remplacera-pas). Et pour piloter tout ça depuis votre téléphone, il y a [Claude Code Remote Control](/fr/20260531-claude-dispatch-smartphone-telecommande-claude-code).
+Si vous bossez avec Claude Code au quotidien et que vous trouvez les réponses interminables, installez Caveman. L'installation prend une ligne et 30 secondes, et les réponses raccourcissent, même si l'économie de tokens mesurée reste modeste (3 % selon le README actuel, 8,5 % selon JetBrains). Les explications restent justes, sans les fioritures. Relisez-les quand même, parce que pousser sans relire, c'est [la limite du vibe coding](/fr/20260423-chers-vibe-codeurs-bienvenue-dans-la-realite), et relire fait partie de [ce que l'IA ne remplace pas chez un développeur](/fr/20261016-pourquoi-lia-ne-me-remplacera-pas). Et pour piloter tout ça depuis votre téléphone, il y a [Claude Code Remote Control](/fr/20260531-claude-dispatch-smartphone-telecommande-claude-code).
 
 Licence Apache-2.0 depuis la version 3.0.0 (avant : MIT pour le skill, BSL pour le moteur). *Free like mass mammoth on open plain.*
 

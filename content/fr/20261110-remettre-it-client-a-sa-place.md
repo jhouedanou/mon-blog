@@ -85,7 +85,7 @@ Je garde l'endroit de la réponse. LL a répondu sur le disque, là où tout le 
 
 Je laisse l'ego. LL a répondu à une phrase qu'il avait lui-même fait effacer, et c'est ce qui a lancé la guerre. Moi, je réponds avec un numéro de ligne et une capture d'écran.
 
-Canibus avait du talent, et le junior en a peut-être aussi. Il lui reste à apprendre que sur le projet d'un autre, on fait sa part sans rien ajouter de son côté.
+Canibus avait du talent, et le junior en a peut-être aussi. Il lui reste à apprendre que sur le morceau d'un autre, on pose son couplet et on rend le micro.
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com)*

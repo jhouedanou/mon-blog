@@ -39,7 +39,7 @@ Et ça ne s'arrête pas à Adobe. Le 7 octobre, [la même équipe](https://githu
 
 Je dois être honnête, puisque j'ai passé un billet entier à [taper sur les vibe codeurs](/fr/20260423-chers-vibe-codeurs-bienvenue-dans-la-realite).
 
-Brandon Thomas n'est pas dans ce cas. Dans son annonce sur Reddit, rapportée par Gizmodo, il se présente comme un vétéran avec quinze ans de métier, pas comme un simple vibe codeur. Son profil GitHub indique sa spécialité, Rust. Il sait ce qu'il demande à la machine, et il sait lire ce qu'elle lui rend.
+Brandon Thomas n'est pas Bronny James. Dans son annonce sur Reddit, rapportée par Gizmodo, il se présente comme un vétéran avec quinze ans de métier, pas comme un simple vibe codeur. Son profil GitHub indique sa spécialité, Rust. Il sait ce qu'il demande à la machine, et il sait lire ce qu'elle lui rend.
 
 C'est ce que je disais en avril, l'IA multiplie le métier de celui qui l'a déjà. Pour quelqu'un qui connaît son métier, Claude fournit une équipe d'assistants qui ne se fatiguent jamais.
 

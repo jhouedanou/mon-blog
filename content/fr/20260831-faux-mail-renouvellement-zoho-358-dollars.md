@@ -61,7 +61,7 @@ Zoho entre dans la rotation parce que la suite est très utilisée par les PME, 
 
 ## Que faire si vous recevez ce mail
 
-- Ne pas appeler, jamais. C'est la seule règle qui compte sur ce coup-là.
+- Ne pas appeler, jamais. C'est la première règle.
 - Vérifier son relevé bancaire directement, depuis l'application ou le site de sa banque. S'il n'y a aucun débit, l'histoire s'arrête là.
 - Si vous avez un vrai compte Zoho, tapez vous-même `zoho.com` dans la barre d'adresse et consultez vos factures depuis votre espace. Ne passez jamais par le mail.
 - Signaler le message à `abuse@zohocorp.com`, [l'adresse indiquée par Zoho](https://help.zoho.com/portal/en/community/topic/phishing-alert-a-must-read-for-all-zoho-sign-users) pour le phishing, puis le supprimer.

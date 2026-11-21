@@ -178,7 +178,7 @@ Julius is pushing a philosophy: *the agent does more with less.* Since version 4
 
 ## Verdict
 
-If you work with Claude Code daily and find the answers endless, install Caveman. The install takes one line and 30 seconds, and your monthly quota lasts longer. The explanations stay correct, without the frills. Read them anyway, because pushing without reading is [the limit of vibe coding](/en/20260423-chers-vibe-codeurs-bienvenue-dans-la-realite), and reading them is part of [what AI doesn't replace in a developer](/en/20261016-pourquoi-lia-ne-me-remplacera-pas). And to drive all of this from your phone, there's [Claude Code Remote Control](/en/20260531-claude-dispatch-smartphone-telecommande-claude-code).
+If you work with Claude Code daily and find the answers endless, install Caveman. The install takes one line and 30 seconds, and the answers get shorter, even if the measured token savings stay modest (3% according to the current README, 8.5% according to JetBrains). The explanations stay correct, without the frills. Read them anyway, because pushing without reading is [the limit of vibe coding](/en/20260423-chers-vibe-codeurs-bienvenue-dans-la-realite), and reading them is part of [what AI doesn't replace in a developer](/en/20261016-pourquoi-lia-ne-me-remplacera-pas). And to drive all of this from your phone, there's [Claude Code Remote Control](/en/20260531-claude-dispatch-smartphone-telecommande-claude-code).
 
 Apache-2.0 license since version 3.0.0 (before that: MIT for the skill, BSL for the engine). *Free like mass mammoth on open plain.*
 

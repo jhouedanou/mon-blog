@@ -67,7 +67,7 @@ On this point, Linux is unbeatable. Everything can be changed: the look, the des
 
 ### And if one day you want to code…
 
-… then you'll be in the right place. Linux runs 62.7% of websites whose operating system is known ([W3Techs](https://w3techs.com/technologies/details/os-linux){target="_blank" rel="noopener"}) and every single one of the world's 500 most powerful supercomputers since 2017 ([TOP500](https://www.top500.org/statistics/details/osfam/1/){target="_blank" rel="noopener"}). Even Microsoft ended up building a real Linux into Windows, with WSL, and open-sourced it in 2025 ([Microsoft](https://blogs.windows.com/windowsdeveloper/2025/05/19/the-windows-subsystem-for-linux-is-now-open-source/){target="_blank" rel="noopener"}), and when yesterday's enemy joins in, the tool must be good.
+… then Linux is made for that. Linux runs 62.7% of websites whose operating system is known ([W3Techs](https://w3techs.com/technologies/details/os-linux){target="_blank" rel="noopener"}) and every single one of the world's 500 most powerful supercomputers since 2017 ([TOP500](https://www.top500.org/statistics/details/osfam/1/){target="_blank" rel="noopener"}). Even Microsoft ended up building a real Linux into Windows, with WSL, and open-sourced it in 2025 ([Microsoft](https://blogs.windows.com/windowsdeveloper/2025/05/19/the-windows-subsystem-for-linux-is-now-open-source/){target="_blank" rel="noopener"}), and when yesterday's enemy joins in, the tool must be good.
 
 Learning Linux on your everyday computer means learning the environment a good chunk of the internet runs on. And if you want to take customization further, there's [Omarchy, which I had been boycotting](/en/20261008-omarchy-dhh-homme-dotfiles) and ended up installing on my old MacBook.
 
@@ -111,7 +111,7 @@ If you want a computer that starts, updates without bothering you and asks you f
 
 If you want a free system that lets you reuse an old machine and lets you change everything, and you're OK tinkering a bit at first, try Linux. Start with Zorin OS, from a USB stick, without erasing anything.
 
-And if you're still hesitating, these days I spend quite a bit of time on ChromeOS, on my niece's computer, which shows you can switch systems without being a specialist. The beard was never mandatory.
+And if you're still hesitating, these days I spend quite a bit of time on ChromeOS, on my niece's computer, which shows you can switch systems without changing who you are. The beard was never mandatory.
 
 ## Sources
 

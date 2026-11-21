@@ -60,7 +60,7 @@ On peut applaudir le fond du mémo de Gates sans acheter la posture. Taxer les t
 
 Il faut toutefois se souvenir de qui parle. Celui qui appelle à la prudence aujourd'hui écrasait ses concurrents hier, et son mémo ne changera rien à ce que Microsoft fera demain. Écoutez l'argument, et gardez un œil sur l'auteur.
 
-Et ne vous attendez pas à ce que ça change. Les conversions tardives des puissants relèvent de la gestion de patrimoine, puisqu'on protège ce qu'on a gagné en encadrant ceux qui viennent après.
+Et ne vous attendez pas à ce que ça change. Les conversions tardives des puissants relèvent moins de la morale que de la gestion de patrimoine, puisqu'on protège ce qu'on a gagné en encadrant ceux qui viennent après.
 
 ## Cash Rules Everything Around Me
 
