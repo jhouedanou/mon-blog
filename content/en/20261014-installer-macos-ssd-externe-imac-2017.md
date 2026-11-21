@@ -7,9 +7,9 @@ searchIntent: "How do you install macOS on an external SSD and boot from it to r
 tags: ["tutorial", "apple", "macos", "mac", "hardware", "ssd"]
 ---
 
-I had a 2017 iMac sitting abandoned in a corner. The kind of machine you stop turning on, because it takes forever to boot and opening Safari becomes an ordeal.
+I had a 2017 iMac sitting abandoned in a corner, the kind of machine you stop turning on because it takes a very long time to boot and opening Safari becomes painful.
 
-The culprit, almost every time, is the internal drive, and you don't need to open the iMac to replace it: just install macOS on an **external SSD** and boot from it. I went with a 1 TB **Lexar SL500** and installed **macOS Ventura** on it. The result: the iMac boots faster. Here's how to do it, step by step.
+The cause, almost every time, is the internal drive, and you don't need to open the iMac to replace it, you just install macOS on an **external SSD** and boot from it. I went with a 1 TB **Lexar SL500** and installed **macOS Ventura** on it. Since then, the iMac boots faster. Here's how to do it, step by step.
 
 ![A 2017 iMac booting from a 1 TB external SSD plugged in over USB-C](/images/articles/imac-2017-macos-ssd-externe.webp)
 
@@ -20,11 +20,11 @@ Unless an SSD was picked as an option at purchase, the 2017 iMac left the factor
 - a **1 TB hard drive at 5,400 rpm** on the entry-level 21.5-inch and on the 3.0 GHz 21.5-inch 4K;
 - a **Fusion Drive** (a small SSD paired with a hard drive) on the 3.4 GHz 21.5-inch 4K and on every 27-inch 5K.
 
-A 5,400 rpm hard drive is slow. Seagate advertises "up to 140 MB/s" for its own, and that's a maximum ([Seagate datasheet](https://www.seagate.com/www-content/datasheets/pdfs/barracuda-2-5-DS1907-2-1907US-en_US.pdf){target="_blank" rel="noopener"}). In practice, you get closer to 100 MB/s. But the real problem lies elsewhere: macOS constantly reads and writes thousands of small, scattered files. A hard drive is very slow at that, because its read head has to move every time. An SSD has no moving parts, and that's what makes the difference with all those small files.
+A 5,400 rpm hard drive is slow. Seagate advertises "up to 140 MB/s" for its own, and that's a maximum ([Seagate datasheet](https://www.seagate.com/www-content/datasheets/pdfs/barracuda-2-5-DS1907-2-1907US-en_US.pdf){target="_blank" rel="noopener"}). In practice, you get closer to 100 MB/s. But the problem mostly comes from the fact that macOS constantly reads and writes thousands of small, scattered files. A hard drive is very slow at that, because its read head has to move every time. An SSD has no moving parts, and that's what makes the difference with all those small files.
 
 ## Why an external SSD rather than an internal one
 
-Replacing the internal drive of a 2017 iMac is possible. But the display is **glued** to the chassis. You have to pry it off, glue it back on, and you risk breaking it.
+Replacing the internal drive of a 2017 iMac is possible, but the display is **glued** to the chassis, you have to pry it off, glue it back on, and you risk breaking it.
 
 An external SSD has three advantages:
 
@@ -32,7 +32,7 @@ An external SSD has three advantages:
 - **it's reversible**: unplug the SSD and the iMac boots from its original drive again (and it can still serve as a [second screen with Sharp](/en/20260929-sharp-vieil-imac-ecran-secondaire-ethernet));
 - **the SSD isn't wasted**: if the iMac eventually gives up, you keep it as a storage drive.
 
-More good news: the 2017 iMac has **no T2 chip**. So there's no security setting to change to let it boot from an external drive ([Apple's list of Macs with the T2 chip](https://support.apple.com/en-us/HT208862){target="_blank" rel="noopener"}). Don't confuse it with the 2017 iMac Pro, which does have one.
+More good news, the 2017 iMac has **no T2 chip**. So there's no security setting to change to let it boot from an external drive ([Apple's list of Macs with the T2 chip](https://support.apple.com/en-us/HT208862){target="_blank" rel="noopener"}). Don't confuse it with the 2017 iMac Pro, which does have one.
 
 ## What you need
 
@@ -50,7 +50,7 @@ The 2017 iMac has two **Thunderbolt 3 (USB-C)** ports. Over USB, they top out at
 
 It also has four USB-A ports. These are 5 Gbps USB 3 ports, or about 400 MB/s in practice ([Tom's Hardware](https://www.tomshardware.com/reviews/usb-3-uas-turbo,3215-2.html){target="_blank" rel="noopener"}). They work, but plug the SSD into a USB-C port instead.
 
-The upshot: on this iMac, a 20 Gbps SSD won't go any faster than a 10 Gbps SSD. Here are a few 1 TB Lexar models:
+So on this iMac, a 20 Gbps SSD won't go any faster than a 10 Gbps SSD. Here are a few 1 TB Lexar models:
 
 | Model | Interface | Advertised speed (read) | On the 2017 iMac |
 | --- | --- | --- | --- |
@@ -72,7 +72,7 @@ The 2,000 MB/s models use a standard (USB 3.2 Gen 2x2) that Macs don't support. 
 
 Apple stopped at **Ventura** for the 2017 iMac ([Ventura compatibility](https://support.apple.com/en-us/102861){target="_blank" rel="noopener"}). Sonoma no longer supports it. The latest version is **Ventura 13.7.8**, released on August 20, 2025 ([Apple](https://support.apple.com/en-us/124929){target="_blank" rel="noopener"}). There hasn't been an update since. Apple hasn't said so officially, but Ventura is probably no longer maintained.
 
-Ventura is what I installed, using Apple's official method. That's what I walk through first. I cover Sequoia further down.
+Ventura is what I installed, using Apple's official method, which I walk through first, and I cover Sequoia further down.
 
 ## Install macOS Ventura on the external SSD in five steps
 
@@ -99,9 +99,9 @@ Apple recommends APFS, especially for an SSD ([Disk Utility](https://support.app
 
 ### 3. Download macOS Ventura
 
-The easiest way: open [Ventura in the App Store](https://apps.apple.com/app/macos-ventura/id1638787999?mt=12){target="_blank" rel="noopener"} and click **Get**. If **Software Update** opens instead, click **Download**. If the installer launches on its own when it's done, skip straight to step 4. The link comes from Apple's [Download and install macOS](https://support.apple.com/en-us/102662){target="_blank" rel="noopener"} page.
+The easiest way is to open [Ventura in the App Store](https://apps.apple.com/app/macos-ventura/id1638787999?mt=12){target="_blank" rel="noopener"} and click **Get**. If **Software Update** opens instead, click **Download**. If the installer launches on its own when it's done, skip straight to step 4. The link comes from Apple's [Download and install macOS](https://support.apple.com/en-us/102662){target="_blank" rel="noopener"} page.
 
-If the App Store acts up, use Terminal (you need macOS Catalina or later on the internal drive). This command lists the available versions:
+If the App Store doesn't work, use Terminal (you need macOS Catalina or later on the internal drive). This command lists the available versions:
 
 ```bash
 softwareupdate --list-full-installers
@@ -133,7 +133,7 @@ To make the iMac always boot from the SSD:
 
 To pick the drive each time, there's **Startup Manager**: turn on the iMac while holding down the **Option (⌥)** key, then choose the drive ([Apple](https://support.apple.com/en-us/102603){target="_blank" rel="noopener"}). If it doesn't work after a restart, shut the iMac down completely and try again.
 
-## Another method: install from macOS Recovery
+## Install from macOS Recovery
 
 If the iMac no longer boots from its internal drive at all, use **macOS Recovery**, which downloads the system from the internet ([Apple](https://support.apple.com/en-us/102655){target="_blank" rel="noopener"}):
 
@@ -145,17 +145,17 @@ Go with **Option + Command + R**. In Recovery, first open **Disk Utility** to fo
 
 You need a regular internet connection. Wi-Fi networks with a login page (hotels, train stations) won't work. An Ethernet cable plugged into your router is ideal.
 
-## Going further: Sequoia with OpenCore Legacy Patcher
+## Moving to Sequoia with OpenCore Legacy Patcher
 
 To go beyond Ventura, there's **OpenCore Legacy Patcher** (OCLP). This free, open source tool makes macOS believe it's running on a supported Mac, then adds the missing drivers. It supports all three 2017 iMacs ([supported models](https://dortania.github.io/OpenCore-Legacy-Patcher/MODELS.html){target="_blank" rel="noopener"}), since [version 1.0.0](https://github.com/dortania/OpenCore-Legacy-Patcher/releases/1.0.0){target="_blank" rel="noopener"} from October 2023.
 
-Where do things stand as of October 14, 2026?
+Here is where the tool stands as of October 14, 2026:
 
 - The stable version, **OCLP 2.5.1** (September 19, 2026), supports **Sequoia** ([GitHub](https://github.com/dortania/OpenCore-Legacy-Patcher/releases){target="_blank" rel="noopener"}).
 - **Tahoe** is only supported by the **3.0.0-rc.3** pre-release (October 8, 2026). GitHub warns you to expect instability and data loss ([release notes](https://github.com/dortania/OpenCore-Legacy-Patcher/releases/tag/3.0.0-rc.3){target="_blank" rel="noopener"}).
 - **macOS 27 Golden Gate** only runs on Apple silicon Macs. No tool will install it on an Intel iMac ([MacRumors](https://www.macrumors.com/2026/06/08/macs-compatible-macos-golden-gate/){target="_blank" rel="noopener"}).
 
-I haven't tested it myself: I stuck with Ventura. How it works with an external SSD:
+I haven't tested it myself, I stuck with Ventura. Here is how it works with an external SSD:
 
 1. Boot into Ventura (on the SSD) and install OCLP.
 2. In OCLP, click **Build and Install OpenCore**. The tool lists the drives it can install OpenCore on: choose the **Lexar SSD**. The internal drive stays untouched.
@@ -169,7 +169,7 @@ Three things to know:
 - **No Apple Intelligence or iPhone Mirroring.** These features require an Apple silicon Mac (or a T2 chip for mirroring), patched or not.
 - **It's unofficial.** If something breaks, Apple won't help you. Keep a backup.
 
-My advice: start with Ventura. If the iMac proves useful and you want a newer system, move to Sequoia with OCLP 2.5.1. Tahoe, only for tinkering.
+I advise you to start with Ventura. If the iMac proves useful and you want a newer system, move to Sequoia with OCLP 2.5.1. Tahoe, only for tinkering.
 
 ## After the installation
 
@@ -183,23 +183,19 @@ To find out whether yours supports it, look in **System Information** (Applicati
 
 There's no rush. As long as you don't erase it, it's your plan B: unplug the SSD, and the iMac boots just like before.
 
-Once everything runs smoothly, you can erase it in Disk Utility and use it as storage for large files, or as a **Time Machine** drive to back up the SSD. Time Machine already saved me [when iCloud locked up my GitHub repos](/en/20260925-retrouver-dossier-github-icloud-time-machine). A backup on the same computer doesn't replace a real external backup, but it's better than nothing.
+Once everything runs smoothly, you can erase it in Disk Utility and use it as storage for large files, or as a **Time Machine** drive to back up the SSD. Time Machine already saved me [when iCloud locked up my GitHub repos](/en/20260925-retrouver-dossier-github-icloud-time-machine). A backup on the same computer doesn't replace an external backup, but it's better than nothing.
 
 ## The limits of macOS on an external SSD
 
 - **The SSD has to stay plugged in.** If you unplug it while macOS is running, the system crashes and you risk losing data.
 - **The installation is tied to this Mac.** Apple says so: an SSD set up on this iMac isn't meant to boot a different Mac model.
-- **Ventura hasn't had a single update** since August 20, 2025. For everyday use on the internet, that's a real security weakness.
+- **Ventura hasn't had a single update** since August 20, 2025. For everyday use on the internet, that's a security weakness.
 - **The USB-A ports are slower.** About 400 MB/s instead of 1,000 MB/s on the USB-C ports.
 - **OpenCore needs upkeep.** You have to reapply the patches after every update, and nothing is guaranteed.
 
-## In short
+## Other options for an old Mac
 
-A slow 2017 iMac isn't ready for the trash. With a 1 TB external SSD plugged in over USB-C, macOS installed on it and the SSD set as the startup disk, you give it a second life without a screwdriver and without prying off the display.
-
-Ventura is the simple path. OpenCore Legacy Patcher opens the door to Sequoia, at the cost of a little upkeep.
-
-And if the computer no longer interests you but the screen still looks great, there are two other options: [turn the old iMac into a second screen with Sharp](/en/20260929-sharp-vieil-imac-ecran-secondaire-ethernet), or [make it the monitor of a Linux PC with OpenDisplay](/en/20261030-opendisplay-vieil-imac-ecran-mac-linux). For old Mac laptops, I also tried [Omarchy on my 2017 MacBook Pro](/en/20261013-retournement-de-veste-omarchy-macbook-pro-2017).
+If the computer no longer interests you but the screen still looks great, there are two other options: [turn the old iMac into a second screen with Sharp](/en/20260929-sharp-vieil-imac-ecran-secondaire-ethernet), or [make it the monitor of a Linux PC with OpenDisplay](/en/20261030-opendisplay-vieil-imac-ecran-mac-linux). For old Mac laptops, I also tried [Omarchy on my 2017 MacBook Pro](/en/20261013-retournement-de-veste-omarchy-macbook-pro-2017).
 
 **Sources:**
 

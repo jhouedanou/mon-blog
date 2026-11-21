@@ -58,13 +58,13 @@ His apps usually fill gaps in Wear OS or add advanced features for smartwatches.
 
 His other Wear OS apps include:
 
-- **Wear Reminder 2** – sends reminders and other phone content to a Wear OS watch
-- **Wear Battery Monitor** – detects abnormal battery drain on a smartwatch
-- **Wear Installer** – makes it easier to install Android apps on Wear OS watches
+- **Wear Reminder 2**: sends reminders and other phone content to a Wear OS watch
+- **Wear Battery Monitor**: detects abnormal battery drain on a smartwatch
+- **Wear Installer**: makes it easier to install Android apps on Wear OS watches
 
 These apps are generally lightweight, free, and designed to solve very specific problems encountered by smartwatch users. The full list is on [his Play Store developer page](https://play.google.com/store/apps/developer?id=Malcolm+Bryant).
 
 *Updated October 8, 2026: the Wear Reminder description has been corrected based on [its Play Store listing](https://play.google.com/store/apps/details?id=org.freepoc.wearreminder2) (the app is now called Wear Reminder 2 and sends reminders and other phone content to the watch).*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com) — waker of watches*
+*[Jean-Luc Houédanou](https://houedanou.com)*

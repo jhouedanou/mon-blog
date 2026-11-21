@@ -8,23 +8,21 @@ searchIntent: "Comment installer Adobe XD en 2026 (formule Creative Cloud Pro ou
 tags: ["tutoriel", "design", "adobe", "figma"]
 ---
 
-Vous devez [intégrer une maquette](/fr/20260908-cest-integre-dans-la-maquette) qu'un contact vous a envoyée sur Adobe XD.  
-En 2026.  
-Oui, je sais.
+Vous devez [intégrer une maquette](/fr/20260908-cest-integre-dans-la-maquette) qu'un contact vous a envoyée sur Adobe XD, en 2026. Oui, je sais.
 
-Bonne nouvelle : on peut encore installer Adobe XD en 2026. Il faut passer par l'application Creative Cloud et avoir la formule Creative Cloud Pro (l'ex-« Tout Creative Cloud »), ou son essai gratuit.
+Bonne nouvelle, on peut encore installer Adobe XD en 2026. Il faut passer par l'application Creative Cloud et avoir la formule Creative Cloud Pro (l'ex-« Tout Creative Cloud »), ou son essai gratuit.
 
-On va dire les choses proprement : la recommandation officielle du web, c'est souvent « utilise Figma » ou « ouvre ça dans [editor.figpea.com](https://editor.figpea.com/){target="_blank" rel="noopener"} », une visionneuse gratuite de fichiers XD et PSD. Sur le papier, c’est beau. Dans la vraie vie, quand vous avez un client qui attend un livrable et des calques complexes à inspecter, ce n'est pas toujours aussi fluide.
+La recommandation officielle du web, c'est souvent « utilise Figma » ou « ouvre ça dans [editor.figpea.com](https://editor.figpea.com/){target="_blank" rel="noopener"} », une visionneuse gratuite de fichiers XD et PSD. Sur le papier, c’est beau, mais quand vous avez un client qui attend un livrable et des calques complexes à inspecter, ce n'est pas toujours aussi fluide.
 
 ---
 
 ## Adobe XD est-il encore disponible en 2026 ?
 
-Oui, mais en sursis. La [FAQ officielle d'Adobe XD](https://helpx.adobe.com/fr/xd/desktop/introduction/faq.html){target="_blank" rel="noopener"}, mise à jour en septembre 2026, le dit en toutes lettres : XD est « toujours en mode de maintenance ». Plus de nouvelles fonctionnalités, seulement des corrections de bugs et de sécurité pour les clients existants. Adobe promet d'annoncer la fin du support « avec un délai de préavis important ».
+Oui, mais pour une durée qu'Adobe ne précise pas. La [FAQ officielle d'Adobe XD](https://helpx.adobe.com/fr/xd/desktop/introduction/faq.html){target="_blank" rel="noopener"}, mise à jour en septembre 2026, le dit en toutes lettres : XD est « toujours en mode de maintenance ». Plus de nouvelles fonctionnalités, seulement des corrections de bugs et de sécurité pour les clients existants. Adobe promet d'annoncer la fin du support « avec un délai de préavis important ».
 
 XD figure toujours dans la liste des applications de [la formule Creative Cloud Pro](https://www.adobe.com/fr/creativecloud/whats-included/plans/cci-all-apps-whats-included.html){target="_blank" rel="noopener"}, le nouveau nom de « Tout Creative Cloud ». Il ne tourne que sur macOS et Windows.
 
-Puisque Adobe a placé XD en mode maintenance perpétuelle (paix à son âme), voici la méthode réaliste pour les gens qui veulent juste bosser, livrer, et passer à autre chose.
+Puisque Adobe a placé XD en mode maintenance perpétuelle, voici la méthode réaliste pour les gens qui veulent juste bosser, livrer, et passer à autre chose.
 
 ---
 
@@ -49,7 +47,7 @@ Une fois XD installé et lancé :
 * Exportez immédiatement toutes les ressources nécessaires (SVG, PNG, codes couleurs).
 * Fermez l'application et préparez votre transition.
 
-Si vous croisez encore un designer qui impose XD aujourd'hui, pas besoin de l'agresser : envoyez-lui juste un lien Figma et un café. L'évangélisation douce marche mieux. C’est la méthode que j'emploie pour convaincre les clients de migrer vers Figma, et le combo « promesse d'une vie sans bugs d'export » + « café » fait souvent des miracles.
+Si vous croisez encore un designer qui impose XD aujourd'hui, pas besoin de l'agresser, envoyez-lui un lien Figma et un café, la manière douce marche mieux. C’est la méthode que j'emploie pour convaincre les clients de migrer vers Figma, et la promesse d'une vie sans bugs d'export, avec un café, suffit souvent.
 
 ---
 
@@ -62,23 +60,23 @@ D'après la [FAQ d'Adobe XD](https://helpx.adobe.com/fr/xd/desktop/introduction/
 
 ---
 
-## Figma, Figpea, XD : le verdict sans diplomatie
+## Mon avis sur Figma, Figpea et XD
 
-Soyons francs : l'écosystème Adobe reste fermé et parfois pénible quand votre seul objectif est d'intégrer une interface rapidement (j'ai déjà [dit tout le bien que je pense d'Adobe](/fr/20241212-cher-gens-dadobe)). 
+L'écosystème Adobe reste fermé et parfois pénible quand votre seul objectif est d'intégrer une interface rapidement (j'ai déjà [dit tout le bien que je pense d'Adobe](/fr/20241212-cher-gens-dadobe)). 
 
 Figma reste le choix rationnel pour collaborer et transmettre un projet. 
 
-Adobe XD, c'est désormais du legacy. On l'ouvre parce qu'on y est forcé, pas parce qu'on le choisit.
+Adobe XD, c'est désormais du legacy, qu'on ouvre parce qu'on y est forcé.
 
 ---
 
 ## Après le fichier XD, passez à Figma
 
-Si vous devez ouvrir un fichier XD, faites-le. Livrez. Encaissez. Puis proposez une migration complète vers Figma dès le prochain sprint.
+Si vous devez ouvrir un fichier XD, faites-le, livrez, encaissez, puis proposez une migration complète vers Figma dès le prochain sprint.
 
-Le but n'est pas de gagner un débat d'outils, mais de finir le projet avant que Creative Cloud ne vous demande une reconnexion existentielle au milieu de votre flux de travail.
+Le but est de finir le projet avant que Creative Cloud ne vous demande de vous reconnecter au milieu de votre travail, et le débat d'outils peut attendre.
 
 *Mise à jour du 8 novembre 2026 : ajout du statut officiel d'Adobe XD (toujours en mode maintenance d'après la FAQ d'Adobe), du nouveau nom de la formule (Creative Cloud Pro, ex-« Tout Creative Cloud »), des conditions de l'essai gratuit et d'une section de dépannage.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com) — Adobe XD, c'est un peu comme un fax en 4K : techniquement impressionnant, stratégiquement discutable.*
+*[Jean-Luc Houédanou](https://houedanou.com)*

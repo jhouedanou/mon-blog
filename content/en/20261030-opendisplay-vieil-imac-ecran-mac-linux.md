@@ -7,9 +7,9 @@ searchIntent: "How can I use an old iMac as a free second screen for a Mac or a 
 tags: ["tutorial", "apple", "macos", "mac", "linux", "omarchy", "open-source", "hardware"]
 ---
 
-OpenDisplay is a free, open source app. It turns an old iMac into a monitor for a Linux PC, or a second screen for a newer Mac, even over Wi-Fi. You install a receiver on the iMac, a sender on the other machine, and that's it. But the picture travels as compressed video: it's less sharp and less smooth than a real screen plugged in with a cable. The numbers are below.
+OpenDisplay is a free, open source app that turns an old iMac into a monitor for a Linux PC, or a second screen for a newer Mac, even over Wi-Fi. All you do is install a receiver on the iMac and a sender on the other machine. But the picture travels as compressed video, so it's less sharp and less smooth than a screen plugged in with a cable, and the numbers are below.
 
-I did it with my 2017 MacBook Pro running Omarchy: the iMac does show its extended desktop.
+I did it with my 2017 MacBook Pro running Omarchy, and the iMac does show its extended desktop.
 
 ![On the left, the 2017 MacBook Pro running Omarchy, with the od-sender install and logs in the terminal. On the right, the iMac showing the MacBook's extended desktop](/images/articles/opendisplay-macbook-omarchy-imac.webp)
 
@@ -37,7 +37,7 @@ Two traps:
 - **An iMac from 2012 to 2014 cannot be the screen**: it does not get macOS Monterey. For that one, see [Sharp, which turns it into a second monitor for a Mac over an Ethernet cable](/en/20260929-sharp-vieil-imac-ecran-secondaire-ethernet).
 - **A Mac too old for Sonoma cannot send.** My 2017 MacBook Pro, for example, stops at macOS Ventura. Under [Omarchy](/en/20261013-retournement-de-veste-omarchy-macbook-pro-2017), though, it can be the sender: that's the setup in the photo. Hence the Linux case below.
 
-## On the iMac: install the receiver
+## Install the receiver on the iMac
 
 This step is the same in both cases.
 
@@ -49,7 +49,7 @@ brew install --cask opendisplay-receiver
 
 Open **OpenDisplay Receiver**. Allow **Local Network** access when macOS asks. The iMac now waits for a connection.
 
-The app is signed and notarized by Apple: no warning on first launch. It updates itself.
+The app is signed and notarized by Apple, so there's no warning on first launch, and it updates itself.
 
 ## Case 1: the iMac as a second screen for a Mac
 
@@ -99,9 +99,9 @@ od-sender run --to iMac   # extends the desktop onto the iMac
 
 After `--to`, type part of the name that `list` shows. On Omarchy, send a window to the iMac with **Super + Shift + →**. **Ctrl + C** stops everything and removes the virtual screen.
 
-## The quality trade-offs, plainly
+## What you lose in quality
 
-OpenDisplay does not plug the iMac in like a real screen. The sender records a virtual screen, compresses it into video and sends it. The iMac decodes that video and shows it. Each step costs something.
+OpenDisplay does not plug the iMac in like a real screen. The sender records a virtual screen, compresses it into video and sends it, then the iMac decodes that video and shows it, and each step degrades the picture a little or adds delay.
 
 **1. The picture is heavily compressed.** Between two Macs, the stream uses at most 18 Mb/s. A raw 5K picture at 30 frames per second needs about 10 Gb/s. So the picture is compressed several hundred times. On text that does not move, it holds up well. When the picture moves, details drop out for a moment.
 
@@ -115,13 +115,13 @@ OpenDisplay does not plug the iMac in like a real screen. The sender records a v
 | Default | Fast | 2560 × 1440 | about 58 | about 12 ms |
 | 1600 × 900 | Best | 1600 × 900 | about 55 | about 15 ms |
 
-In plain terms: at full sharpness, the 5K iMac shows 30 frames per second. Fine for reading and writing, less so for video. To get 60 frames per second, you accept a softer picture (**Fast**) or a smaller desktop. With an older chip, you get less: an M1 Pro drops to about 23 frames per second at 5K.
+So at full sharpness, the 5K iMac shows 30 frames per second. Fine for reading and writing, less so for video. To get 60 frames per second, you accept a softer picture (**Fast**) or a smaller desktop. With an older chip, you get less: an M1 Pro drops to about 23 frames per second at 5K.
 
 **4. An Intel Mac limits the resolution.** HEVC, the sharper format, is only used when the sending Mac has an Apple chip and the iMac decodes HEVC (most Macs from 2017 on). Otherwise it is H.264, capped at 4096 × 2304 pixels. On a 5K iMac, the desktop then drops from 2560 × 1440 to 2048 × 1152 points. On the other hand, a non-Retina 1920 × 1080 iMac gets its picture pixel for pixel, at 60 frames per second.
 
-**5. From Linux, it's slower and heavier.** The Linux sender doesn't use the graphics card: the processor does all the work. It has no HEVC. To a 5K iMac, expect 55 to 70 ms of latency, compared with about 20 ms to an iPhone, and a busy processor. On Hyprland, the cursor is drawn into the video: it follows the mouse with a delay. And the Linux version is only officially tested on Omarchy for Apple Silicon Macs (Asahi Linux). On an Intel or AMD PC, it "is expected to work", according to the developer. On my 2017 MacBook Pro, an Intel Mac, it works.
+**5. From Linux, it's slower and heavier.** The Linux sender doesn't use the graphics card: the processor does all the work. It has no HEVC. To a 5K iMac, expect 55 to 70 ms of latency, compared with about 20 ms to an iPhone, and a busy processor. On Hyprland, the cursor is drawn into the video, so it follows the mouse with a delay. And the Linux version is only officially tested on Omarchy for Apple Silicon Macs (Asahi Linux). On an Intel or AMD PC, it "is expected to work", according to the developer. On my 2017 MacBook Pro, an Intel Mac, it works.
 
-On that MacBook, the `od-sender` logs (visible in the photo) show about 24 ms to encode a frame, and roughly 60 to 100 ms from capture to send. Add the network and the display on the iMac on top of that. When nothing moves on screen, the sender sends almost nothing: less than one frame per second.
+On that MacBook, the `od-sender` logs (visible in the photo) show about 24 ms to encode a frame, and roughly 60 to 100 ms from capture to send. Add the network and the display on the iMac on top of that. When nothing moves on screen, the sender sends almost nothing, less than one frame per second.
 
 On a modest machine, lower the frame rate:
 

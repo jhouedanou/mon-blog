@@ -58,13 +58,13 @@ Son objectif est généralement de combler certaines limitations du système Wea
 
 Parmi ses autres applications pour Wear OS, on trouve notamment :
 
-- **Wear Reminder 2** – envoie des rappels et d'autres contenus du téléphone vers une montre Wear OS
-- **Wear Battery Monitor** – permet de détecter une consommation anormale de batterie sur une montre connectée
-- **Wear Installer** – facilite l'installation d'applications Android sur les montres Wear OS
+- **Wear Reminder 2** : envoie des rappels et d'autres contenus du téléphone vers une montre Wear OS
+- **Wear Battery Monitor** : permet de détecter une consommation anormale de batterie sur une montre connectée
+- **Wear Installer** : facilite l'installation d'applications Android sur les montres Wear OS
 
 Ces applications sont généralement légères, gratuites et conçues pour résoudre des problèmes très spécifiques rencontrés par les utilisateurs de montres connectées. La liste complète est sur [sa page développeur du Play Store](https://play.google.com/store/apps/developer?id=Malcolm+Bryant).
 
 *Mise à jour du 8 octobre 2026 : la description de Wear Reminder a été corrigée d'après [sa fiche Play Store](https://play.google.com/store/apps/details?id=org.freepoc.wearreminder2) (l'application s'appelle désormais Wear Reminder 2 et envoie des rappels et d'autres contenus du téléphone vers la montre).*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com) — réveilleur de montres*
+*[Jean-Luc Houédanou](https://houedanou.com)*

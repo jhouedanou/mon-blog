@@ -8,7 +8,7 @@ updatedAt: "2026-11-08T12:00:00Z"
 tags: ["security", "Apple Pay", "Visa", "NFC", "iPhone", "security flaw"]
 ---
 
-Some security stories sound like science fiction. The Apple Pay / Visa hack, though, happened in a university lab. It was documented and published, and it very probably affects the phone sitting in your pocket right now.
+The Apple Pay / Visa hack sounds far-fetched, and yet it was demonstrated in a university lab, documented and published, and it very probably affects the phone sitting in your pocket right now.
 
 Researchers from the universities of Birmingham and Surrey showed that it's possible to **charge a locked iPhone for any amount** (£1,000 in their demonstration), without any interaction from its owner, by exploiting a combination of weaknesses in Apple Pay and Visa's transaction protocols.
 
@@ -19,13 +19,13 @@ Watch the full demonstration (English)
 
 ---
 
-## Express Transit mode: convenient, but dangerous
+## Express Transit mode, convenient but dangerous
 
 To understand the attack, you first need to understand Apple Pay's **Express Transit** mode.
 
-This mode was designed for public transport: you hold your locked iPhone up to a metro turnstile, the payment goes through instantly, no Face ID, no PIN. The idea is a good one. Nobody wants to ask people to unlock their phone every time they walk through a gate.
+This mode was designed for public transport: you hold your locked iPhone up to a metro turnstile, the payment goes through instantly, no Face ID, no PIN. The idea is a good one, because nobody wants to ask people to unlock their phone every time they walk through a gate.
 
-The problem is that this mode deliberately switches off the usual protections. And any NFC terminal can, by sending the right signal, _make the iPhone think it's in front of a metro turnstile_.
+The problem is that this mode deliberately switches off the usual protections, and any NFC terminal can, by sending the right signal, _make the iPhone think it's in front of a metro turnstile_.
 
 ---
 
@@ -35,22 +35,19 @@ The problem is that this mode deliberately switches off the usual protections. A
 
 The researchers use two off-the-shelf NFC devices: a Proxmark, which pretends to be a payment terminal to the iPhone, and an NFC-enabled Android phone (not even rooted), which pretends to be an iPhone to a real terminal.
 
-The two devices are linked together: in their tests, the Proxmark was plugged into a laptop over USB, and the laptop relayed the messages over Wi-Fi to the Android phone ([researchers' page](https://practical_emv.gitlab.io/){target="_blank" rel="noopener"}). The result: the phone and the terminal think they are talking directly to each other, while everything actually passes through the researchers, who can read and **modify** the data in transit.
+The two devices are linked together: in their tests, the Proxmark was plugged into a laptop over USB, and the laptop relayed the messages over Wi-Fi to the Android phone ([researchers' page](https://practical_emv.gitlab.io/){target="_blank" rel="noopener"}). So the phone and the terminal think they are talking directly to each other, while everything passes through the researchers, who can read and **modify** the data in transit.
 
 ### Act 2: Fooling the iPhone
 
-The researchers send a signal that imitates a public transport terminal, and the phone automatically switches into **Express Transit mode**. The lock disappears. Apple Pay is ready to pay.
+The researchers send a signal that imitates a public transport terminal, and the phone automatically switches into **Express Transit mode**. The lock disappears and Apple Pay is ready to pay.
 
 The iPhone thinks it's paying for a $2 ride.
 
 ### Act 3: Fooling the terminal
 
-This is where it gets technical. The researchers **flip a few bits** in the transaction data: among other things, they set the flag that tells the terminal the cardholder has already authenticated on the phone (Face ID or passcode). The terminal therefore reads a retail purchase, let's say $10,000, and approves it as if it had received all the required verifications.
+This step is more technical. The researchers **flip a few bits** in the transaction data: among other things, they set the flag that tells the terminal the cardholder has already authenticated on the phone (Face ID or passcode). The terminal therefore reads a retail purchase, let's say $10,000, and approves it as if it had received all the required verifications.
 
-The phone said yes because it thought it was paying for a bus.  
-The terminal said yes because it thought the user had authenticated.
-
-Nobody noticed anything. The money is gone.
+The phone said yes because it thought it was paying for a bus, the terminal said yes because it thought the user had authenticated, and the money is gone without anybody noticing anything.
 
 ---
 
@@ -62,7 +59,7 @@ The answer lies in architectural choices.
 
 **Visa**, on the other hand, **does not mandate that layer for online retail transactions**. The data travels, but it is not "sealed" end to end in the same way. That absence is what makes the bit manipulation described above possible.
 
-This isn't a bug in Visa's code, but an **architectural choice** that trades a layer of security for simplicity and compatibility.
+Visa made an **architectural choice** here that trades a layer of security for simplicity and compatibility, and there is no bug in its code.
 
 ---
 
@@ -72,7 +69,7 @@ The flaw on the iPhone side comes from a specific behaviour: the iPhone trusts t
 
 Samsung phones (and Android in general) **check the transaction amount** independently. If a terminal says "transit" but the amount is $10,000, the phone rejects the transaction.
 
-Apple made a different choice, probably for compatibility with a wide variety of transport systems. That choice turned out to be the weak link.
+Apple made a different choice, probably for compatibility with a wide variety of transport systems, and that choice is what the attack exploits.
 
 ---
 
@@ -80,7 +77,7 @@ Apple made a different choice, probably for compatibility with a wide variety of
 
 Visa replied that this type of fraud is **hard to scale in the real world**: you need to be physically close to the victim, have specialised hardware, and coordinate the attack in real time. The company also points to its **zero liability** policy: if you fall victim to this kind of fraud, you get reimbursed.
 
-Apple, for its part, passed the buck: as far as the company is concerned, it's an issue with "a Visa system" ([BBC News](https://www.bbc.co.uk/news/technology-58719891)).
+Apple, for its part, put the responsibility on Visa. As far as the company is concerned, it's an issue with "a Visa system" ([BBC News](https://www.bbc.co.uk/news/technology-58719891)).
 
 The researchers, though, maintain that the flaw is real and exploitable, even if it isn't easy to pull off at scale.
 
@@ -93,7 +90,7 @@ Two simple options:
 1. **Turn off Express Transit mode**: Settings → Wallet & Apple Pay → Express Transit Card, and leave no card selected (see [Apple's support page on Express Mode](https://support.apple.com/en-us/105123): it is turned on by default when you add an eligible transit card or other compatible card).
 2. **Do not put a Visa card in the Express Transit slot**. Use a Mastercard instead, or a dedicated transit card.
 
-If you live in a city where you genuinely use public transport with your phone every day, option 2 is probably the best compromise. You keep the convenience, you take Visa out of the equation.
+If you live in a city where you use public transport with your phone every day, option 2 is probably the best compromise. You keep the convenience without exposing a Visa card.
 
 And if the iPhone is lost or stolen, the researchers advise turning on Lost Mode and calling your bank to block the card ([researchers' page](https://practical_emv.gitlab.io/){target="_blank" rel="noopener"}). On Android, Find Hub is what locates the device, and it helped me [find my lost phone in Abobo](/en/20260730-telephone-perdu-retrouve-abobo-findhub).
 
@@ -103,15 +100,15 @@ Either way, check a suspicious charge on your bank statement, never through a ph
 
 ## What this says about our relationship with security
 
-What strikes me in this story is not the sophistication of the attack. It's the **constant tension between convenience and security** that manufacturers and payment networks have to deal with.
+What strikes me in this story, more than the sophistication of the attack, is the **constant tension between convenience and security** that manufacturers and payment networks have to deal with.
 
-Express Transit _is_ convenient. The fact that Visa is accepted everywhere _is_ a strength. And it's precisely those advantages that open the door to the flaw. Same goes for [the iPhone and AirTag that tell your boss where you've been](/en/20250705-cherscommerciaux): what makes your life easier also documents it.
+Express Transit is convenient, and the fact that Visa is accepted everywhere is a strength, but those advantages are what make the flaw possible. It's the same with [the iPhone and AirTag that tell your boss where you've been](/en/20250705-cherscommerciaux), where what makes your life easier also keeps a record of your movements.
 
-The good news is that the fix is right there in your settings. The bad news is that most users have no idea this attack surface even exists.
+The fix is in your settings, but most users have no idea this attack surface exists.
 
 *Correction, October 8, 2026: the first version of this post presented this research as recent. It was published in September 2021 by the universities of Birmingham and Surrey; the date and source have been added at the top of the article. The title also said "$10,000": the demo payment was £1,000 ([University of Surrey](https://www.surrey.ac.uk/news/visa-and-apple-pay-vulnerabilities-leaves-iphone-users-open-payment-fraud){target="_blank" rel="noopener"}).*
 
 *Correction, November 8, 2026: the attack does not use two Proxmarks, but a Proxmark facing the iPhone and an Android phone facing the terminal, linked through a laptop; the manipulation in act 3 concerns the flag saying the cardholder authenticated on the phone, not a "low value" or "high value" marker; and it works for any amount ([researchers' page](https://practical_emv.gitlab.io/){target="_blank" rel="noopener"}). Added: Express Mode is on by default ([Apple Support](https://support.apple.com/en-us/105123){target="_blank" rel="noopener"}), and the researchers' advice if the phone is lost or stolen.*
 
 ---
-_[Jean-Luc Houédanou](https://houedanou.com), happy to own an Android phone._
+*[Jean-Luc Houédanou](https://houedanou.com)*

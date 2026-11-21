@@ -7,9 +7,9 @@ searchIntent: "Comment installer macOS sur un disque SSD externe et démarrer de
 tags: ["tutoriel", "apple", "macos", "mac", "matériel", "ssd"]
 ---
 
-J'avais un iMac 2017 abandonné dans un coin. Le genre de machine qu'on n'allume plus, parce qu'elle met une éternité à démarrer et qu'ouvrir Safari devient une épreuve.
+J'avais un iMac 2017 abandonné dans un coin, le genre de machine qu'on n'allume plus parce qu'elle met très longtemps à démarrer et qu'ouvrir Safari devient pénible.
 
-Le coupable, presque toujours, c'est le disque interne, et pas besoin d'ouvrir l'iMac pour le changer : il suffit d'installer macOS sur un **SSD externe** et de démarrer dessus. Moi, j'ai pris un **Lexar SL500** de 1 To, et j'y ai installé **macOS Ventura**. Résultat : l'iMac démarre plus rapidement. Voici comment faire, étape par étape.
+La cause, presque toujours, c'est le disque interne, et pas besoin d'ouvrir l'iMac pour le changer, il suffit d'installer macOS sur un **SSD externe** et de démarrer dessus. Moi, j'ai pris un **Lexar SL500** de 1 To, et j'y ai installé **macOS Ventura**. Depuis, l'iMac démarre plus rapidement. Voici comment faire, étape par étape.
 
 ![Un iMac 2017 démarre sur un SSD externe de 1 To branché en USB-C](/images/articles/imac-2017-macos-ssd-externe.webp)
 
@@ -20,11 +20,11 @@ Sauf si un SSD avait été choisi en option à l'achat, l'iMac 2017 sortait de l
 - un **disque dur de 1 To à 5 400 tr/min** sur le 21,5 pouces d'entrée de gamme et sur le 21,5 pouces 4K à 3,0 GHz ;
 - un **Fusion Drive** (un petit SSD associé à un disque dur) sur le 21,5 pouces 4K à 3,4 GHz et sur tous les 27 pouces 5K.
 
-Un disque dur à 5 400 tr/min est lent : Seagate annonce « jusqu'à 140 Mo/s » pour les siens, et c'est un maximum ([fiche Seagate](https://www.seagate.com/www-content/datasheets/pdfs/barracuda-2-5-DS1907-2-1907US-en_US.pdf){target="_blank" rel="noopener"}). En pratique, on tourne plutôt autour de 100 Mo/s. Mais le vrai problème est ailleurs : macOS lit et écrit en permanence des milliers de petits fichiers éparpillés. Pour ça, un disque dur est très lent, parce que sa tête de lecture doit se déplacer à chaque fois. Un SSD n'a aucune pièce mobile, et c'est sur ces petits fichiers qu'il fait la différence.
+Un disque dur à 5 400 tr/min est lent : Seagate annonce « jusqu'à 140 Mo/s » pour les siens, et c'est un maximum ([fiche Seagate](https://www.seagate.com/www-content/datasheets/pdfs/barracuda-2-5-DS1907-2-1907US-en_US.pdf){target="_blank" rel="noopener"}). En pratique, on tourne plutôt autour de 100 Mo/s. Mais le problème vient surtout du fait que macOS lit et écrit en permanence des milliers de petits fichiers éparpillés. Pour ça, un disque dur est très lent, parce que sa tête de lecture doit se déplacer à chaque fois. Un SSD n'a aucune pièce mobile, et c'est sur ces petits fichiers qu'il fait la différence.
 
 ## Pourquoi un SSD externe plutôt qu'un SSD interne
 
-Changer le disque interne d'un iMac 2017, c'est possible. Mais l'écran est **collé** sur le châssis. Il faut le décoller, le recoller, et on risque de le casser.
+Changer le disque interne d'un iMac 2017, c'est possible, mais l'écran est **collé** sur le châssis, il faut le décoller, le recoller, et on risque de le casser.
 
 Le SSD externe a trois avantages :
 
@@ -32,7 +32,7 @@ Le SSD externe a trois avantages :
 - **c'est réversible** : débranchez le SSD, l'iMac redémarre sur son disque d'origine (et pourra toujours servir d'[écran secondaire avec Sharp](/fr/20260929-sharp-vieil-imac-ecran-secondaire-ethernet)) ;
 - **le SSD n'est pas perdu** : si l'iMac finit par lâcher, il vous restera comme disque de stockage.
 
-Bonne nouvelle aussi : l'iMac 2017 n'a **pas de puce T2**. Il n'y a donc aucun réglage de sécurité à changer pour l'autoriser à démarrer sur un disque externe ([liste Apple des Mac avec puce T2](https://support.apple.com/fr-fr/HT208862){target="_blank" rel="noopener"}). Attention à ne pas le confondre avec l'iMac Pro de 2017, qui en a une.
+Autre bonne nouvelle, l'iMac 2017 n'a **pas de puce T2**. Il n'y a donc aucun réglage de sécurité à changer pour l'autoriser à démarrer sur un disque externe ([liste Apple des Mac avec puce T2](https://support.apple.com/fr-fr/HT208862){target="_blank" rel="noopener"}). Attention à ne pas le confondre avec l'iMac Pro de 2017, qui en a une.
 
 ## Ce qu'il vous faut
 
@@ -50,7 +50,7 @@ L'iMac 2017 a deux ports **Thunderbolt 3 (USB-C)**. En USB, ils montent à **10 
 
 Il a aussi quatre ports USB-A. Ce sont des ports USB 3 à 5 Gbit/s, soit environ 400 Mo/s en pratique ([Tom's Hardware](https://www.tomshardware.com/reviews/usb-3-uas-turbo,3215-2.html){target="_blank" rel="noopener"}). Ça marche, mais branchez plutôt le SSD sur un port USB-C.
 
-Conséquence : sur cet iMac, un SSD à 20 Gbit/s n'ira pas plus vite qu'un SSD à 10 Gbit/s. Voici quelques modèles Lexar de 1 To :
+Sur cet iMac, un SSD à 20 Gbit/s n'ira donc pas plus vite qu'un SSD à 10 Gbit/s. Voici quelques modèles Lexar de 1 To :
 
 | Modèle | Interface | Débit annoncé (lecture) | Sur l'iMac 2017 |
 | --- | --- | --- | --- |
@@ -72,7 +72,7 @@ Les modèles à 2 000 Mo/s utilisent une norme (USB 3.2 Gen 2x2) que les Mac ne 
 
 Apple s'est arrêté à **Ventura** pour l'iMac 2017 ([compatibilité Ventura](https://support.apple.com/fr-fr/102861){target="_blank" rel="noopener"}). Sonoma ne le prend plus en charge. La dernière version est **Ventura 13.7.8**, sortie le 20 août 2025 ([Apple](https://support.apple.com/fr-fr/124929){target="_blank" rel="noopener"}). Depuis, aucune mise à jour. Apple ne l'a pas annoncé officiellement, mais Ventura n'est probablement plus maintenu.
 
-C'est Ventura que j'ai installé, avec la méthode officielle d'Apple. C'est elle que je détaille d'abord. Je parle de Sequoia plus bas.
+C'est Ventura que j'ai installé, avec la méthode officielle d'Apple, que je détaille d'abord, et je parle de Sequoia plus bas.
 
 ## Installer macOS Ventura sur le SSD externe en cinq étapes
 
@@ -99,9 +99,9 @@ Apple recommande l'APFS, surtout pour un SSD ([Utilitaire de disque](https://sup
 
 ### 3. Télécharger macOS Ventura
 
-Le plus simple : ouvrez [Ventura dans l'App Store](https://apps.apple.com/app/macos-ventura/id1638787999?mt=12){target="_blank" rel="noopener"} et cliquez sur **Obtenir**. Si c'est **Mise à jour de logiciels** qui s'ouvre, cliquez sur **Télécharger**. Si l'installateur se lance tout seul à la fin, passez directement à l'étape 4. Le lien vient de la page d'Apple [Télécharger et installer macOS](https://support.apple.com/fr-fr/102662){target="_blank" rel="noopener"}.
+Le plus simple est d'ouvrir [Ventura dans l'App Store](https://apps.apple.com/app/macos-ventura/id1638787999?mt=12){target="_blank" rel="noopener"} et de cliquer sur **Obtenir**. Si c'est **Mise à jour de logiciels** qui s'ouvre, cliquez sur **Télécharger**. Si l'installateur se lance tout seul à la fin, passez directement à l'étape 4. Le lien vient de la page d'Apple [Télécharger et installer macOS](https://support.apple.com/fr-fr/102662){target="_blank" rel="noopener"}.
 
-Si l'App Store fait des siennes, passez par le Terminal (il faut macOS Catalina ou plus récent sur le disque interne). Cette commande liste les versions disponibles :
+Si l'App Store ne marche pas, passez par le Terminal (il faut macOS Catalina ou plus récent sur le disque interne). Cette commande liste les versions disponibles :
 
 ```bash
 softwareupdate --list-full-installers
@@ -133,7 +133,7 @@ Pour que l'iMac démarre toujours sur le SSD :
 
 Pour choisir le disque au cas par cas, il y a le **gestionnaire de démarrage** : allumez l'iMac en maintenant la touche **Option (⌥, Alt)** enfoncée, puis choisissez le disque ([Apple](https://support.apple.com/fr-fr/102603){target="_blank" rel="noopener"}). Si ça ne marche pas après un redémarrage, éteignez complètement l'iMac et réessayez.
 
-## Autre méthode : installer depuis la récupération macOS
+## Installer depuis la récupération macOS
 
 Si l'iMac ne démarre plus du tout sur son disque interne, passez par la **récupération macOS**, qui télécharge le système depuis Internet ([Apple](https://support.apple.com/fr-fr/102655){target="_blank" rel="noopener"}) :
 
@@ -145,17 +145,17 @@ Prenez **Option + ⌘ + R**. Dans la récupération, ouvrez d'abord **Utilitaire
 
 Il faut une connexion Internet classique. Les réseaux Wi-Fi avec page de connexion (hôtel, gare) ne marchent pas. Un câble Ethernet branché sur la box, c'est l'idéal.
 
-## Aller plus loin : Sequoia avec OpenCore Legacy Patcher
+## Passer à Sequoia avec OpenCore Legacy Patcher
 
 Pour dépasser Ventura, il existe **OpenCore Legacy Patcher** (OCLP). Cet outil gratuit et open source fait croire à macOS qu'il tourne sur un Mac compatible, puis il ajoute les pilotes manquants. Il prend en charge les trois iMac 2017 ([modèles pris en charge](https://dortania.github.io/OpenCore-Legacy-Patcher/MODELS.html){target="_blank" rel="noopener"}), depuis la [version 1.0.0](https://github.com/dortania/OpenCore-Legacy-Patcher/releases/1.0.0){target="_blank" rel="noopener"} d'octobre 2023.
 
-Où en est-on au 14 octobre 2026 ?
+Voici où en est l'outil au 14 octobre 2026 :
 
 - La version stable, **OCLP 2.5.1** (19 septembre 2026), gère **Sequoia** ([GitHub](https://github.com/dortania/OpenCore-Legacy-Patcher/releases){target="_blank" rel="noopener"}).
 - **Tahoe** n'est géré que par la préversion **3.0.0-rc.3** (8 octobre 2026). GitHub prévient : attendez-vous à de l'instabilité et à des pertes de données ([notes de version](https://github.com/dortania/OpenCore-Legacy-Patcher/releases/tag/3.0.0-rc.3){target="_blank" rel="noopener"}).
 - **macOS 27 Golden Gate** ne tourne que sur les Mac Apple Silicon. Aucun outil ne l'installera sur un iMac Intel ([MacRumors](https://www.macrumors.com/2026/06/08/macs-compatible-macos-golden-gate/){target="_blank" rel="noopener"}).
 
-Je ne l'ai pas testé moi-même : je suis resté sur Ventura. Le principe, avec un SSD externe :
+Je ne l'ai pas testé moi-même, je suis resté sur Ventura. Voici le principe, avec un SSD externe :
 
 1. Démarrez sur Ventura (sur le SSD) et installez OCLP.
 2. Dans OCLP, cliquez sur **Build and Install OpenCore**. L'outil liste les disques sur lesquels il peut installer OpenCore : choisissez le **SSD Lexar**. Le disque interne reste intact.
@@ -169,7 +169,7 @@ Trois choses à savoir :
 - **Pas d'Apple Intelligence ni de recopie de l'iPhone.** Ces fonctions demandent un Mac Apple Silicon (ou une puce T2 pour la recopie), patché ou pas.
 - **C'est non officiel.** Si quelque chose casse, Apple ne vous aidera pas. Gardez une sauvegarde.
 
-Mon conseil : commencez par Ventura. Si l'iMac vous rend service et que vous voulez un système plus récent, passez à Sequoia avec OCLP 2.5.1. Tahoe, seulement pour jouer.
+Je vous conseille de commencer par Ventura. Si l'iMac vous rend service et que vous voulez un système plus récent, passez à Sequoia avec OCLP 2.5.1. Tahoe, seulement pour jouer.
 
 ## Après l'installation
 
@@ -183,23 +183,19 @@ Pour savoir si le vôtre en profite, regardez dans **Informations système** (Ap
 
 Rien ne presse. Tant que vous ne l'effacez pas, c'est votre plan B : débranchez le SSD, et l'iMac redémarre comme avant.
 
-Une fois que tout marche bien, vous pouvez l'effacer dans Utilitaire de disque et vous en servir comme stockage pour les gros fichiers, ou comme disque **Time Machine** pour sauvegarder le SSD. Time Machine m'a déjà tiré d'affaire [quand iCloud a bloqué mes dépôts GitHub](/fr/20260925-retrouver-dossier-github-icloud-time-machine). Une sauvegarde sur le même ordinateur ne remplace pas une vraie sauvegarde externe, mais c'est mieux que rien.
+Une fois que tout marche bien, vous pouvez l'effacer dans Utilitaire de disque et vous en servir comme stockage pour les gros fichiers, ou comme disque **Time Machine** pour sauvegarder le SSD. Time Machine m'a déjà tiré d'affaire [quand iCloud a bloqué mes dépôts GitHub](/fr/20260925-retrouver-dossier-github-icloud-time-machine). Une sauvegarde sur le même ordinateur ne remplace pas une sauvegarde externe, mais c'est mieux que rien.
 
 ## Les limites d'un macOS sur SSD externe
 
 - **Le SSD doit rester branché.** Si vous le débranchez pendant que macOS tourne, le système plante et vous risquez de perdre des données.
 - **L'installation est propre à ce Mac.** Apple le précise : un SSD préparé sur cet iMac n'est pas fait pour démarrer un autre modèle de Mac.
-- **Ventura n'a eu aucune mise à jour** depuis le 20 août 2025. Pour un usage de tous les jours sur Internet, c'est un vrai point faible en matière de sécurité.
+- **Ventura n'a eu aucune mise à jour** depuis le 20 août 2025. Pour un usage de tous les jours sur Internet, c'est un point faible en matière de sécurité.
 - **Les ports USB-A sont plus lents.** Environ 400 Mo/s au lieu de 1 000 Mo/s sur les ports USB-C.
 - **OpenCore demande de l'entretien.** Il faut réappliquer les correctifs après chaque mise à jour, et rien n'est garanti.
 
-## En résumé
+## D'autres pistes pour un vieux Mac
 
-Un iMac 2017 qui rame n'est pas bon pour la poubelle. Avec un SSD externe de 1 To branché en USB-C, macOS installé dessus et le SSD choisi comme disque de démarrage, on lui redonne une seconde vie sans tournevis et sans décoller l'écran.
-
-Ventura est la voie simple. OpenCore Legacy Patcher ouvre la porte à Sequoia, au prix d'un peu d'entretien.
-
-Et si l'ordinateur ne vous intéresse plus mais que l'écran est encore beau, il reste deux autres pistes : [transformer le vieil iMac en écran secondaire avec Sharp](/fr/20260929-sharp-vieil-imac-ecran-secondaire-ethernet), ou [en faire l'écran d'un PC Linux avec OpenDisplay](/fr/20261030-opendisplay-vieil-imac-ecran-mac-linux). Pour les vieux Mac portables, j'ai aussi tenté [Omarchy sur mon MacBook Pro 2017](/fr/20261013-retournement-de-veste-omarchy-macbook-pro-2017).
+Si l'ordinateur ne vous intéresse plus mais que l'écran est encore beau, il reste deux autres pistes : [transformer le vieil iMac en écran secondaire avec Sharp](/fr/20260929-sharp-vieil-imac-ecran-secondaire-ethernet), ou [en faire l'écran d'un PC Linux avec OpenDisplay](/fr/20261030-opendisplay-vieil-imac-ecran-mac-linux). Pour les vieux Mac portables, j'ai aussi tenté [Omarchy sur mon MacBook Pro 2017](/fr/20261013-retournement-de-veste-omarchy-macbook-pro-2017).
 
 **Sources :**
 

@@ -16,7 +16,7 @@ Since then, two other free CleanMyMac alternatives have caught my attention: Mac
 
 [MacSai](https://github.com/iliyami/MacSai) is free and open-source software, under the BSD licence, written in Swift 6 and SwiftUI. The project sets out to reproduce every important CleanMyMac feature, with no subscription, no ads and no telemetry. The code is public, the app is notarised by Apple, and the project claims more than 480 automated tests.
 
-You'll find everything you'd expect from a full cleaner: system caches and logs, an uninstaller that tracks down files apps forget (the Trash doesn't clean everything, as I point out in [You don't need to be a bearded dev to love Mac and Linux](/en/20261008-pas-besoin-detre-dev-ou-barbu-mac-linux)), a malware scanner, startup item management, duplicate detection, and a visual disk map to spot the biggest folders. One detail I hadn't seen anywhere else: universal binary thinning, which strips the Intel part out of apps on Apple Silicon Macs.
+You'll find everything you'd expect from a full cleaner: system caches and logs, an uninstaller that tracks down files apps forget (the Trash doesn't clean everything, as I point out in [You don't need to be a bearded dev to love Mac and Linux](/en/20261008-pas-besoin-detre-dev-ou-barbu-mac-linux)), a malware scanner, startup item management, duplicate detection, and a visual disk map to spot the biggest folders. I hadn't seen universal binary thinning anywhere else, and it strips the Intel part out of apps on Apple Silicon Macs.
 
 On first launch on my MacBook, a Smart Scan sent 5.66 GB to the trash, a mix of junk system files and browsing traces. Nothing is erased permanently, everything goes through the macOS Trash, so you have time to get a file back if you're not sure.
 
@@ -30,7 +30,7 @@ The DMG is also available on the project's [Releases page](https://github.com/il
 
 ## Mole, for those who live in the Terminal
 
-[Mole](https://github.com/tw93/Mole), developed by tw93, takes the opposite path. No window, no buttons, everything happens in the Terminal. The project is free, open-source under the GPL licence, and it packs what CleanMyMac, AppCleaner, DaisyDisk and iStat Menus do into a single binary.
+[Mole](https://github.com/tw93/Mole), developed by tw93, does the opposite, with no window and no buttons, since everything happens in the Terminal. The project is free, open-source under the GPL licence, and it packs what CleanMyMac, AppCleaner, DaisyDisk and iStat Menus do into a single binary.
 
 ```bash
 brew install mole
@@ -51,7 +51,7 @@ The developer also offers a graphical version, Mole for Mac, which organises the
 
 ## Which free CleanMyMac alternative should you choose?
 
-If you want an interface and a full CleanMyMac equivalent, go for MacSai. If you live in the Terminal, go for Mole. And if you're simply looking for a clean, no-frills uninstaller, [PureMac](/en/20260718-puremac-nettoyeur-mac-gratuit-open-source) still does the job very well.
+If you want an interface and a full CleanMyMac equivalent, go for MacSai. If you live in the Terminal, go for Mole. And if you're looking for a clean, no-frills uninstaller, [PureMac](/en/20260718-puremac-nettoyeur-mac-gratuit-open-source) still does the job very well.
 
 In all three cases, the code can be read by anyone, nothing leaves your machine, and you pay nothing. CleanMyMac can't say the same.
 

@@ -7,9 +7,9 @@ searchIntent: "Comment utiliser gratuitement un vieil iMac comme deuxième écra
 tags: ["tutoriel", "apple", "macos", "mac", "linux", "omarchy", "open-source", "matériel"]
 ---
 
-OpenDisplay est une application gratuite et open source. Elle fait d'un vieil iMac l'écran d'un PC sous Linux ou le deuxième écran d'un Mac récent, même en Wi-Fi. On installe un récepteur sur l'iMac, un émetteur sur l'autre machine, et c'est tout. Mais l'image voyage en vidéo compressée : elle est moins nette et moins fluide qu'un vrai écran branché en câble. Les chiffres sont plus bas.
+OpenDisplay est une application gratuite et open source qui fait d'un vieil iMac l'écran d'un PC sous Linux ou le deuxième écran d'un Mac récent, même en Wi-Fi. Il suffit d'installer un récepteur sur l'iMac et un émetteur sur l'autre machine. Mais l'image voyage en vidéo compressée, donc elle est moins nette et moins fluide qu'un écran branché en câble, et les chiffres sont plus bas.
 
-Je l'ai fait avec mon MacBook Pro 2017 sous Omarchy : l'iMac affiche bien son bureau étendu.
+Je l'ai fait avec mon MacBook Pro 2017 sous Omarchy, et l'iMac affiche bien son bureau étendu.
 
 ![À gauche, le MacBook Pro 2017 sous Omarchy, avec l'installation et les journaux d'od-sender dans le terminal. À droite, l'iMac qui affiche le bureau étendu du MacBook](/images/articles/opendisplay-macbook-omarchy-imac.webp)
 
@@ -37,7 +37,7 @@ Deux pièges :
 - **Un iMac de 2012 à 2014 ne peut pas servir d'écran** : il ne reçoit pas macOS Monterey. Pour lui, voyez [Sharp, qui en fait l'écran secondaire d'un Mac par câble Ethernet](/fr/20260929-sharp-vieil-imac-ecran-secondaire-ethernet).
 - **Un Mac trop ancien pour Sonoma ne peut pas envoyer l'image.** Mon MacBook Pro 2017, par exemple, s'arrête à macOS Ventura. Sous [Omarchy](/fr/20261013-retournement-de-veste-omarchy-macbook-pro-2017), il peut par contre servir d'émetteur : c'est le montage de la photo. D'où le cas Linux plus bas.
 
-## Sur l'iMac : installer le récepteur
+## Installer le récepteur sur l'iMac
 
 Cette étape est la même dans les deux cas.
 
@@ -49,7 +49,7 @@ brew install --cask opendisplay-receiver
 
 Lancez **OpenDisplay Receiver**. Acceptez l'accès au **réseau local** quand macOS le demande. L'iMac attend alors une connexion.
 
-L'appli est signée et vérifiée par Apple : pas d'alerte au premier lancement. Elle se met à jour toute seule.
+L'appli est signée et vérifiée par Apple, donc il n'y a pas d'alerte au premier lancement, et elle se met à jour toute seule.
 
 ## Cas 1 : l'iMac en deuxième écran d'un Mac
 
@@ -99,9 +99,9 @@ od-sender run --to iMac   # étend le bureau sur l'iMac
 
 Après `--to`, mettez une partie du nom que `list` affiche. Sur Omarchy, envoyez une fenêtre vers l'iMac avec **Super + Maj + →**. **Ctrl + C** arrête tout et retire l'écran virtuel.
 
-## Les sacrifices qualité, sans enrober
+## Ce qu'on perd en qualité
 
-OpenDisplay ne branche pas l'iMac comme un vrai écran. L'émetteur filme un écran virtuel, le compresse en vidéo et l'envoie. L'iMac décode cette vidéo et l'affiche. Chaque étape coûte quelque chose.
+OpenDisplay ne branche pas l'iMac comme un vrai écran. L'émetteur filme un écran virtuel, le compresse en vidéo et l'envoie, puis l'iMac décode cette vidéo et l'affiche, et chaque étape dégrade un peu l'image ou ajoute du délai.
 
 **1. L'image est très compressée.** Entre deux Mac, le flux monte au plus à 18 Mb/s. Une image 5K brute, à 30 images par seconde, demande environ 10 Gb/s. L'image est donc compressée plusieurs centaines de fois. Sur un texte qui ne bouge pas, ça passe bien. Quand l'image bouge, des détails disparaissent un instant.
 
@@ -115,13 +115,13 @@ OpenDisplay ne branche pas l'iMac comme un vrai écran. L'émetteur filme un éc
 | Par défaut | Fast | 2560 × 1440 | environ 58 | environ 12 ms |
 | 1600 × 900 | Best | 1600 × 900 | environ 55 | environ 15 ms |
 
-En clair : à pleine finesse, l'iMac 5K affiche 30 images par seconde. C'est bien pour lire et écrire, moins pour une vidéo. Pour avoir 60 images par seconde, il faut accepter une image plus floue (**Fast**) ou un bureau plus petit. Avec une puce plus ancienne, c'est moins : un M1 Pro tombe à environ 23 images par seconde en 5K.
+À pleine finesse, l'iMac 5K affiche donc 30 images par seconde. C'est bien pour lire et écrire, moins pour une vidéo. Pour avoir 60 images par seconde, il faut accepter une image plus floue (**Fast**) ou un bureau plus petit. Avec une puce plus ancienne, c'est moins : un M1 Pro tombe à environ 23 images par seconde en 5K.
 
 **4. Un Mac Intel limite la définition.** Le format HEVC, le plus net, ne sert que si le Mac qui envoie a une puce Apple et que l'iMac décode le HEVC (la plupart des Mac de 2017 et après). Sinon, c'est le H.264, limité à 4096 × 2304 pixels. Sur un iMac 5K, le bureau passe alors de 2560 × 1440 à 2048 × 1152 points. À l'inverse, un iMac non Retina en 1920 × 1080 reçoit son image pixel pour pixel, à 60 images par seconde.
 
-**5. Depuis Linux, c'est plus lent et plus lourd.** L'émetteur Linux n'utilise pas la carte graphique : le processeur fait tout le travail. Il n'a pas de HEVC. Vers un iMac 5K, comptez 55 à 70 ms de délai, contre environ 20 ms vers un iPhone, et un processeur bien occupé. Sur Hyprland, le curseur est dessiné dans la vidéo : il suit la souris avec du retard. Et la version Linux n'est testée officiellement que sur Omarchy pour Mac Apple Silicon (Asahi Linux). Sur un PC Intel ou AMD, elle « devrait marcher », selon le développeur. Sur mon MacBook Pro 2017, un Mac Intel, elle marche.
+**5. Depuis Linux, c'est plus lent et plus lourd.** L'émetteur Linux n'utilise pas la carte graphique : le processeur fait tout le travail. Il n'a pas de HEVC. Vers un iMac 5K, comptez 55 à 70 ms de délai, contre environ 20 ms vers un iPhone, et un processeur bien occupé. Sur Hyprland, le curseur est dessiné dans la vidéo, donc il suit la souris avec du retard. Et la version Linux n'est testée officiellement que sur Omarchy pour Mac Apple Silicon (Asahi Linux). Sur un PC Intel ou AMD, elle « devrait marcher », selon le développeur. Sur mon MacBook Pro 2017, un Mac Intel, elle marche.
 
-Sur ce MacBook, les journaux d'`od-sender` (visibles sur la photo) donnent environ 24 ms pour encoder une image, et de 60 à 100 ms environ entre la capture et l'envoi. Il faut encore ajouter le réseau et l'affichage sur l'iMac. Quand rien ne bouge à l'écran, l'émetteur n'envoie presque rien : moins d'une image par seconde.
+Sur ce MacBook, les journaux d'`od-sender` (visibles sur la photo) donnent environ 24 ms pour encoder une image, et de 60 à 100 ms environ entre la capture et l'envoi. Il faut encore ajouter le réseau et l'affichage sur l'iMac. Quand rien ne bouge à l'écran, l'émetteur n'envoie presque rien, moins d'une image par seconde.
 
 Sur une machine modeste, baissez la cadence :
 
