@@ -22,7 +22,7 @@ Josh Cahill, vlogueur aviation reconnu, a récemment publié une vidéo racontan
 
 Voilà ce qu'il a déclaré après une série de désagréments avant et pendant son vol. Les problèmes ont commencé à l'enregistrement, où JC a eu une mauvaise surprise : lui qui s'était préparé mentalement à voyager en classe affaires s'est retrouvé en économie, sans explication claire du personnel au sol.
 
-## Booking.com, le détail qui change le débat
+## Booking.com, le détail qui change l'altitude du débat
 
 Son billet en classe affaires était à 1 000 €.
 
@@ -32,29 +32,29 @@ Plus révélateur encore, un agent au sol a explicitement indiqué que ce type d
 
 C'est peut-être un oubli, mais il est de taille. 
 
-Pour un voyageur aussi expérimenté (plus de 800 vols), cette omission interroge. Les professionnels du voyage savent que les réservations passées par les agences de voyage en ligne peuvent provoquer des problèmes de gestion que seul l'intermédiaire peut résoudre. Taire ce détail, c'est publier une critique incomplète.
+Pour un voyageur aussi expérimenté (plus de 800 vols), cette omission interroge. Les professionnels du voyage savent que les réservations passées par les agences de voyage en ligne peuvent provoquer des turbulences de gestion que seul l'intermédiaire peut résoudre. Taire ce détail, c'est publier une critique incomplète.
 
 Si vous réservez via un tiers, les problèmes viennent souvent de cet intermédiaire plutôt que de la compagnie elle-même. Omettre ce fait fausse le récit et cible injustement la compagnie.
 
-## Air Côte d'Ivoire s'est rattrapée en vol, mais pas après
+## Un redressement en altitude, suivi d'un atterrissage improvisé
 
 Malgré un départ chaotique, Air Côte d'Ivoire a réussi un redressement impressionnant en plein vol. Le responsable des agents au sol est intervenu personnellement, a surclassé JC sur un meilleur siège et lui a garanti un service de qualité pour le reste du trajet. Un effort louable pour satisfaire le client.
 
-Cela dit, la prestation d'Air Côte d'Ivoire s'est révélée extrêmement inégale.
+Cela dit, Air Côte d'Ivoire n'a pas non plus volé dans un ciel sans nuages. Sa prestation s'est révélée extrêmement inégale.
 
-### Ce qui a marché
+### Ce qui a décollé
 
 - Un Airbus A330-900 Neo flambant neuf et bien équipé
-- Un rattrapage en vol, avec un surclassement à l'initiative du chef d'escale
+- Un redressement en altitude, avec un surclassement à l'initiative du chef d'escale
 - Un service à bord de qualité sur le vol aller
 
-### Ce qui n'a pas marché
+### Ce qui s'est crashé
 
 - Un enregistrement chaotique qui a mal lancé l'expérience
 - Un service de l'équipage moins convaincant sur le vol retour
 - Un suivi après incident perfectible : pas d'explication officielle, pas d'excuses formelles, pas de remboursement de la différence tarifaire.
 
-Ce dernier point est une faiblesse dans leur stratégie. Même après avoir surclassé le passager en vol, ACI n'a jamais recontacté JC. Pour une compagnie qui veut se lancer sur le long-courrier, ce manque de service après-vente est une occasion manquée.
+Ce dernier point est un trou d'air dans leur stratégie. Même après avoir surclassé le passager en vol, ACI n'a jamais recontacté JC. Pour une compagnie qui veut prendre son envol sur le long-courrier, ce manque de service après-vente est une occasion manquée.
 
 En plus, bloquer JC sur Instagram (un influenceur avec près d'un million d'abonnés) transforme une mauvaise gestion en situation délicate. Cette approche conflictuelle renforce l'impression d'un « bras de fer » plutôt que d'une volonté de dialogue. [Les réseaux sociaux d'une entreprise ne sont pas un grin](/fr/20250605-facebook-nest-pas-un-grin).
 
@@ -62,17 +62,17 @@ En plus, bloquer JC sur Instagram (un influenceur avec près d'un million d'abon
 
 Dans sa vidéo, JC emploie des termes particulièrement forts comme « ségrégation » et « raciste » pour décrire certains incidents qui semblent plutôt mineurs (des difficultés pour filmer, une attente à l'embarquement). Pour quelqu'un déjà banni des vols de Qatar Airways, on peut se demander s'il n'y a pas une tendance à amplifier les situations.
 
-Des accusations aussi graves sont-elles justifiées pour ces incidents-là ? La question reste ouverte, mais ce vocabulaire attise la polémique.
+Des accusations aussi graves sont-elles justifiées pour ces incidents-là ? La question reste en circuit d'attente, mais ce vocabulaire attise la polémique.
 
-## La leçon de cette affaire
+## La leçon de vol
 
-Cette affaire montre comment une succession de malentendus des deux côtés peut créer [une tempête médiatique](/fr/20250115-l-histoire-danne) là où un peu de professionnalisme et de bonne foi aurait suffi à l'éviter.
+Cette affaire montre comment une succession de malentendus des deux côtés peut créer [une tempête médiatique](/fr/20250115-l-histoire-danne) là où un peu de professionnalisme et de bonne foi aurait permis un vol sans encombre.
 
-Ce genre d'incident peut arriver à n'importe quelle compagnie, surtout lors d'un vol inaugural, quand les équipes cherchent encore leur rythme. Ce qui compte, c'est la capacité à tirer les leçons de ces incidents. Air Côte d'Ivoire a déjà montré qu'elle savait réagir en vol, avec son surclassement spontané et un équipement de qualité.
+Ce genre d'incident peut arriver à n'importe quelle compagnie, surtout lors d'un vol inaugural, quand les équipes cherchent encore leur rythme. Ce qui compte, c'est la capacité à tirer les leçons de ces turbulences. Air Côte d'Ivoire a déjà montré qu'elle savait réagir en vol, avec son surclassement spontané et un équipement de qualité.
 
-Pour les influenceurs, la crédibilité passe par la transparence. Omettre une information importante, même sans le vouloir, transforme une critique légitime en récit incomplet. Une grande audience implique de grandes responsabilités, et près d'un million d'abonnés, ça veut dire que vos mots pèsent lourd. Un tableau plus complet, Booking.com compris, aurait mieux servi votre audience et la vérité.
+Pour les influenceurs, la transparence est l'instrument de vol de la crédibilité. Omettre une information importante, même sans le vouloir, transforme une critique légitime en récit incomplet. Une grande audience implique de grandes responsabilités, et près d'un million d'abonnés, ça veut dire que vos mots pèsent lourd. Un tableau plus complet, Booking.com compris, aurait mieux servi votre audience et la vérité.
 
-Je suis convaincu qu'avec un peu plus d'expérience et un service après-vente mieux structuré, Air Côte d'Ivoire s'en sortira mieux face à la concurrence sur le long-courrier. Les compagnies africaines ont toute leur place sur la scène internationale, et cet incident n'est qu'une leçon parmi d'autres.
+Je suis convaincu qu'avec un peu plus d'expérience et un service après-vente mieux structuré, Air Côte d'Ivoire naviguera plus sereinement dans le ciel concurrentiel du long-courrier. Les compagnies africaines ont toute leur place sur la scène internationale, et cet incident n'est qu'une leçon de vol parmi d'autres.
 
 Les deux parties ont de la marge pour progresser : l'une en excellence opérationnelle et en relation client, l'autre en exhaustivité journalistique.
 
