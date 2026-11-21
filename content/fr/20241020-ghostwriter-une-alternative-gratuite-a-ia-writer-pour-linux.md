@@ -17,7 +17,7 @@ Vous cherchez une alternative gratuite à iA Writer sous Linux ? La mienne s'app
 1. (Re)découvrir le langage Markdown, dans lequel s'écrit désormais [mon blog sans base de données](/fr/20241021-pendaison-de-cremaillere)
 2. Dépoussiérer mes environnements d'écriture sans distractions, comme OmmWriter ou iA Writer
 
-## iA Writer : le meilleur éditeur Markdown ?
+## iA Writer est-il le meilleur éditeur Markdown ?
 
 iA Writer est le meilleur éditeur Markdown au monde. Voici pourquoi :
 
@@ -25,13 +25,13 @@ iA Writer est le meilleur éditeur Markdown au monde. Voici pourquoi :
 - Il propose un mode « focus » qui met en exergue la ligne, la phrase ou le paragraphe en cours d'écriture, en assombrissant le reste du texte.
 - iA Writer est conçu pour que l'attention de l'utilisateur soit centrée sur le texte, et non sur l'interface utilisateur ou la mise en forme.
 
-Cependant, iA Writer n'existe pas sous Linux : il est disponible sur macOS, Windows, iPhone et iPad ([site officiel](https://ia.net/writer)).
+Cependant, iA Writer n'existe pas sous Linux, il est seulement disponible sur macOS, Windows, iPhone et iPad ([site officiel](https://ia.net/writer)).
 
 ## À la recherche d'une alternative à iA Writer pour Linux
 
 Mon ordinateur principal est une tablette hybride HP Pro x2 fonctionnant sous Linux (plus précisément la dernière version de Zorin OS Pro), celle-là même dont j'ai ensuite [cloné le système vers un SSD plus grand](/fr/20241029-cloner-ubuntu). En cherchant une alternative à iA Writer, j'ai découvert [Ghostwriter](https://ghostwriter.kde.org/ "Ghostwriter").
 
-## Ghostwriter : un concurrent sérieux
+## Ghostwriter, un concurrent sérieux
 
 Cette application gratuite reprend mes fonctionnalités préférées d'iA Writer :
 
@@ -70,4 +70,4 @@ iA Writer reste une référence parmi les éditeurs Markdown, mais sous Linux, G
 *Mise à jour du 8 octobre 2026 : iA Writer est disponible sur macOS, Windows, iPhone et iPad, mais toujours pas sous Linux. Ajout des commandes d'installation de Ghostwriter (dépôts Ubuntu et Flathub).*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com) — écrivain sans distraction*
+*[Jean-Luc Houédanou](https://houedanou.com)*

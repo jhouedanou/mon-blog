@@ -17,9 +17,9 @@ Et puis, une énième app « to do » pour mettre en application les cours Udemy
 
 Entre les nuits blanches sur Visual Studio Code, [les livrables de dernière minute](/fr/20260707-je-suis-encore-vivant), les projets clients à n'en plus finir, j'ai longtemps relégué ma condition physique au second plan. 
 
-Résultat : fatigue chronique, forme en berne, et une sensation désagréable de s'oublier.
+J'y ai gagné une fatigue chronique, une forme en berne et une sensation désagréable de m'oublier.
 
-Alors j'ai fait ce que je sais faire de mieux : **coder une solution.**  
+Alors j'ai fait ce que je sais faire de mieux, **coder une solution.**  
 Bienvenue dans *Project Fat Loss*.
 
 ## Une app de suivi de perte de poids pour se reprendre en main
@@ -40,14 +40,14 @@ Le programme de base est conçu pour te faire perdre environ 0,5 kg par semaine,
 ## Encore en bêta (et ça se voit)
 
 L'app fonctionne, mais elle a encore ses petits défauts.  
-Le plus gênant : **il est possible de cliquer plusieurs fois sur le bouton « Terminer », ce qui fausse le nombre de séries enregistrées**. C'est connu, c'est noté, et ça arrive dans une future correction.
+Le plus gênant, c'est qu'**il est possible de cliquer plusieurs fois sur le bouton « Terminer », ce qui fausse le nombre de séries enregistrées**. C'est connu, c'est noté, et ça arrive dans une future correction.
 
 ## Et le design, on en parle ?
 
-Je vais pas mentir : **on est loin de ce que j'ai pu faire ici (shameless self plug)**, [DinoR Calorie Counter](https://dinor-calorie-counter-alt.vercel.app/).  
+Je vais pas mentir, **on est loin de ce que j'ai pu faire ici (shameless self plug)**, [DinoR Calorie Counter](https://dinor-calorie-counter-alt.vercel.app/).  
 Pour l'instant, c'est un design fonctionnel, minimaliste, parfois un peu brut. Mais j'y travaille. Dans les jours qui viennent, l'interface sera plus soignée et plus fluide, avec des animations et une meilleure lisibilité.
 
 Depuis, j'ai [amélioré Project Fat Loss avec Cursor et l'IA](/fr/20250604-liaetmoi). Pour le cardio, il y a aussi [mes jeux Quest 3S, du plus facile au plus difficile](/fr/20261008-jeux-quest-3s-recommandations), et j'ai comparé [deux montres connectées pour le sport, l'Infinix Watch 3 et l'Oraimo Nova AM](/fr/20251225-infinix-ou-oraimo).
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com) — développeur en sueur*
+*[Jean-Luc Houédanou](https://houedanou.com)*
