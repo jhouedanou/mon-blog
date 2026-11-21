@@ -8,13 +8,13 @@ searchIntent: "Should you buy a portable dual monitor for working on the go, and
 tags: ["tech", "productivity", "hardware", "review"]
 ---
 
-I can't remember the last time I worked on a single screen. Not at home, not on the road. And for the road, I got myself a portable dual monitor, the Blackview DCM6. My verdict: neither a revolution nor a gadget, but a niche tool.
+I can't remember the last time I worked on a single screen, at home or on the road. And for the road, I got myself a portable dual monitor, the Blackview DCM6. My verdict is that it's neither a revolution nor a gadget, but a niche tool.
 
 ## Why a dual screen?
 
 The thing is, when I code (and I code often… everywhere… all the time), I need immediate visual feedback, so I can check how my lines of code render in the web browser. 
 
-At the same time, I also need to look at documentation or the fixes Claude suggests: juggling between macOS "spaces" or Windows "virtual desktops" is no substitute for being able to **see everything at once**, and with every desktop switch there are tiny breaks in attention.
+At the same time, I also need to look at documentation or the fixes Claude suggests, and juggling between macOS "spaces" or Windows "virtual desktops" is no substitute for being able to **see everything at once**, because with every desktop switch there are tiny breaks in attention.
 
 ## My existing solutions (and their limits)
 
@@ -54,11 +54,11 @@ Next, on the road, my layout is always the same:
 - **Centre screen** (the laptop): terminal and code editor. That's where my eyes are 90% of the time.
 - **Right screen**: browser, docs, app preview.
 
-That's exactly the setup I have at my desk. The difference is that I can now recreate it anywhere. **That's the real gain: continuity of the working environment**, not raw display area.
+That's exactly the setup I have at my desk, and I can now recreate it anywhere. **The gain is continuity of the working environment**, more than raw display area.
 
 Finally, the hinge is barely a worry: the supplied kickstand takes the weight of the whole thing and transfers it to the table.
 
-But above all, it's surprisingly thin: once the two screens are folded, the whole thing is about as thick as an iPad, which is a real plus when you carry it around. The weight is also kept in check: about 1 kg for the whole thing according to [Blackview's product page](https://www.blackview.hk/products/item/dcm6){target="_blank" rel="noopener"}, which remains reasonable to carry alongside an ultraportable.
+But above all, it's surprisingly thin. Once the two screens are folded, the whole thing is about as thick as an iPad, which is a plus when you carry it around. The weight is also kept in check, about 1 kg for the whole thing according to [Blackview's product page](https://www.blackview.hk/products/item/dcm6){target="_blank" rel="noopener"}, which remains reasonable to carry alongside an ultraportable.
 
 
 ## Drawbacks 
@@ -78,13 +78,13 @@ The answer depends on a single question: **do you often work away from your usua
 
 **If you're always at the same desk**: don't buy this. A big monitor will do better, with a better image and zero fiddling. And if you have an old iMac lying around, it can even [become a second monitor with Sharp](/en/20260929-sharp-vieil-imac-ecran-secondaire-ethernet), or [the monitor of a Linux PC with OpenDisplay](/en/20261030-opendisplay-vieil-imac-ecran-mac-linux).
 
-**If you move around regularly** (client sites, coworking spaces, hotels, airports), the maths changes. This device isn't better than a desktop monitor: it's better than *nothing*. And "nothing" is what you usually have on the road.
+**If you move around regularly** (client sites, coworking spaces, hotels, airports), the maths changes. This device isn't better than a desktop monitor, but it's better than *nothing*, and "nothing" is what you usually have on the road.
 
-The 1080p remains a real compromise, one I feel every day. Setting up and packing away takes a minute, which is nothing when you're settling in for half a day, but a lot for twenty minutes of work.
+The 1080p remains a compromise, one I feel every day. Setting up and packing away takes a minute, which is nothing when you're settling in for half a day, but a lot for twenty minutes of work.
 
 So it's **neither a revolution nor a gadget, but a niche tool that answers a specific need well**. 
 
-Mine: being able to see everything at once, without juggling virtual desktops, and with decent reading comfort.
+Mine is being able to see everything at once, without juggling virtual desktops, and with decent reading comfort.
 
 ## Where to buy it?
 

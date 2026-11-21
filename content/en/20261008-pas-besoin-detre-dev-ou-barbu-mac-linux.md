@@ -7,13 +7,13 @@ searchIntent: "Do you need to be a developer to use a Mac or Linux every day, an
 tags: ["opinion", "apple", "macos", "linux", "open-source"]
 ---
 
-There's a cliché that refuses to die: whether it's Mac or Linux, it's for specialists. The Mac is for designers and developers. Linux is for bearded guys in hoodies typing green lines on a black screen.
+There's a cliché that refuses to die, the idea that Mac or Linux is for specialists. The Mac is supposedly for designers and developers, and Linux for bearded guys in hoodies typing green lines on a black screen.
 
-I'm a developer, true. I also have a beard. But that's not why I love these two systems. I love them for a much simpler reason: they let me work.
+I'm a developer, true, and I also have a beard. But if I love these two systems, it's for a much simpler reason, they let me work.
 
-Here's the tour, with what works, and what hurts.
+Here's what works, and what hurts.
 
-## The Mac: it starts, you work
+## On a Mac, it starts and you work
 
 ### You open it, it's ready
 
@@ -23,9 +23,9 @@ On an Apple Silicon Mac, you lift the lid and you work. Apple promised it back i
 
 On a Mac, you decide. In **System Settings > General > Software Update**, you choose separately whether to download updates, install new macOS versions, or only security responses ([Apple](https://support.apple.com/guide/mac-help/keep-your-mac-up-to-date-mchlpx1065/mac){target="_blank" rel="noopener"}).
 
-Urgent security fixes install in the background, and Apple says it in black and white: they don't make your Mac restart ([Apple](https://support.apple.com/en-us/101591){target="_blank" rel="noopener"}). No "Your computer will restart in 15 minutes" in the middle of a presentation.
+Urgent security fixes install in the background, and Apple writes that they don't make your Mac restart ([Apple](https://support.apple.com/en-us/101591){target="_blank" rel="noopener"}). So there's no "Your computer will restart in 15 minutes" in the middle of a presentation.
 
-Windows 11 has made an effort: since July 2026, Microsoft bundles updates so it only forces one restart a month, outside active hours. But you can only pause updates for 35 days, and once the deadline hits, Windows installs and restarts ([Microsoft](https://support.microsoft.com/en-us/servicing/os/windows/docs/2026/07/kb5121772-one-restart-a-month-for-windows-updates){target="_blank" rel="noopener"}). Better than before. Not the same philosophy.
+Windows 11 has made an effort: since July 2026, Microsoft bundles updates so it only forces one restart a month, outside active hours. But you can only pause updates for 35 days, and once the deadline hits, Windows installs and restarts ([Microsoft](https://support.microsoft.com/en-us/servicing/os/windows/docs/2026/07/kb5121772-one-restart-a-month-for-windows-updates){target="_blank" rel="noopener"}). It's better than before, but it's not the same philosophy.
 
 ### No antivirus to set up
 
@@ -35,17 +35,17 @@ macOS already ships with its own protection, and it asks you for nothing:
 - **Gatekeeper** checks that a downloaded app comes from an identified developer and that Apple has scanned it before letting you open it ([Apple](https://support.apple.com/en-us/102445){target="_blank" rel="noopener"});
 - **System Integrity Protection** stops even an administrator from tampering with macOS's vital files ([Apple](https://support.apple.com/en-us/102149){target="_blank" rel="noopener"}).
 
-No license to renew, no flashing orange window trying to sell you the Premium version.
+There's no license to renew and no flashing orange window trying to sell you the Premium version.
 
-A word of caution though: "no antivirus to set up" doesn't mean "no viruses". In August 2026, Microsoft dissected a campaign targeting Macs with fake download pages: you're asked to paste a command into Terminal, and that command installs a password stealer ([Microsoft](https://www.microsoft.com/en-us/security/blog/2026/08/05/macos-clickfix-campaign-learned-hide/){target="_blank" rel="noopener"}). No protection survives someone opening the door themselves. The rule is simple: never paste a command because a web page tells you to. Same reflex as with the [fake Bing Webmaster Tools page](/en/20260618-alerte-phishing-bing-webmaster-tools) or the [fake Zoho renewal email](/en/20260831-faux-mail-renouvellement-zoho-358-dollars).
+A word of caution though: "no antivirus to set up" doesn't mean "no viruses". In August 2026, Microsoft dissected a campaign targeting Macs with fake download pages: you're asked to paste a command into Terminal, and that command installs a password stealer ([Microsoft](https://www.microsoft.com/en-us/security/blog/2026/08/05/macos-clickfix-campaign-learned-hide/){target="_blank" rel="noopener"}). No protection survives someone running the command themselves. So never paste a command because a web page tells you to. It's the same reflex as with the [fake Bing Webmaster Tools page](/en/20260618-alerte-phishing-bing-webmaster-tools) or the [fake Zoho renewal email](/en/20260831-faux-mail-renouvellement-zoho-358-dollars).
 
 ### Installing an app is child's play
 
-From the App Store, one click. Outside of it, you open the downloaded file and drag the app into the **Applications** folder. To uninstall it, Apple literally tells you to drag it to the Trash ([Apple](https://support.apple.com/en-us/102610){target="_blank" rel="noopener"}). No twelve-screen setup wizard, no pre-ticked box that installs a toolbar.
+From the App Store, it takes one click. Outside of it, you open the downloaded file and drag the app into the **Applications** folder. To uninstall it, Apple literally tells you to drag it to the Trash ([Apple](https://support.apple.com/en-us/102610){target="_blank" rel="noopener"}). There's no twelve-screen setup wizard and no pre-ticked box that installs a toolbar.
 
-Small catch: the Trash doesn't clean everything. Some apps leave files behind. For that, there are free tools like [PureMac](/en/20260718-puremac-nettoyeur-mac-gratuit-open-source) or [MacSai and Mole](/en/20260901-macsai-mole-alternatives-gratuites-cleanmymac).
+On the other hand, the Trash doesn't clean everything, because some apps leave files behind. For that, there are free tools like [PureMac](/en/20260718-puremac-nettoyeur-mac-gratuit-open-source) or [MacSai and Mole](/en/20260901-macsai-mole-alternatives-gratuites-cleanmymac).
 
-## Linux: the power, without the beard
+## Linux, without being a specialist
 
 ### Zorin OS, the Linux that looks like what you know
 
@@ -57,61 +57,61 @@ In practice:
 - an interface that looks like Windows right after install, with several layouts to choose from (the one that mimics macOS is reserved for the paid Pro edition);
 - **Zorin Connect**, which links your Android phone to the PC for notifications, texts and files;
 - most Windows software installs with a double-click on the .exe file, and Zorin recognizes the installers of more than 240 Windows apps to suggest an alternative when needed ([Zorin](https://help.zorin.com/docs/apps-games/windows-app-support/){target="_blank" rel="noopener"}, [Zorin OS 18.1](https://blog.zorin.com/2026/04/15/zorin-os-18.1-is-released/){target="_blank" rel="noopener"}). Not every app makes it, as Zorin itself admits;
-- **2 GB of memory** is enough to install it ([Zorin](https://help.zorin.com/docs/getting-started/system-requirements/){target="_blank" rel="noopener"}). The old PC sleeping in a cupboard because it "lags on Windows" may still have good years ahead.
+- **2 GB of memory** is enough to install it ([Zorin](https://help.zorin.com/docs/getting-started/system-requirements/){target="_blank" rel="noopener"}). The old PC put away in a cupboard because it "lags on Windows" may still be usable for a few years.
 
-And we're not alone: in September 2026, Linux accounted for 5.07% of computers in Africa, versus 4.54% worldwide ([StatCounter](https://gs.statcounter.com/os-market-share/desktop/africa){target="_blank" rel="noopener"}).
+And we're not alone, since in September 2026, Linux accounted for 5.07% of computers in Africa, versus 4.54% worldwide ([StatCounter](https://gs.statcounter.com/os-market-share/desktop/africa){target="_blank" rel="noopener"}).
 
 ### Flexibility, if you want it
 
-This is where Linux is unbeatable. Everything can be changed: the look, the desktop, how windows behave, the default apps. Nothing forces you to. But the day you feel like it, nobody stops you. In 2024, my main computer was an HP Pro x2 tablet running Zorin OS, and that's where I discovered [Ghostwriter](/en/20241020-ghostwriter-une-alternative-gratuite-a-ia-writer-pour-linux), the Markdown editor that replaced iA Writer for me.
+On this point, Linux is unbeatable. Everything can be changed: the look, the desktop, how windows behave, the default apps. Nothing forces you to, but the day you feel like it, nobody stops you. In 2024, my main computer was an HP Pro x2 tablet running Zorin OS, and that's where I discovered [Ghostwriter](/en/20241020-ghostwriter-une-alternative-gratuite-a-ia-writer-pour-linux), the Markdown editor that replaced iA Writer for me.
 
 ### And if one day you want to code…
 
-… then join the dev side of the Force. Linux runs 62.7% of websites whose operating system is known ([W3Techs](https://w3techs.com/technologies/details/os-linux){target="_blank" rel="noopener"}) and every single one of the world's 500 most powerful supercomputers since 2017 ([TOP500](https://www.top500.org/statistics/details/osfam/1/){target="_blank" rel="noopener"}). Even Microsoft ended up building a real Linux into Windows, with WSL, and open-sourced it in 2025 ([Microsoft](https://blogs.windows.com/windowsdeveloper/2025/05/19/the-windows-subsystem-for-linux-is-now-open-source/){target="_blank" rel="noopener"}). When yesterday's enemy joins in, the tool must be good.
+… then you'll be in the right place. Linux runs 62.7% of websites whose operating system is known ([W3Techs](https://w3techs.com/technologies/details/os-linux){target="_blank" rel="noopener"}) and every single one of the world's 500 most powerful supercomputers since 2017 ([TOP500](https://www.top500.org/statistics/details/osfam/1/){target="_blank" rel="noopener"}). Even Microsoft ended up building a real Linux into Windows, with WSL, and open-sourced it in 2025 ([Microsoft](https://blogs.windows.com/windowsdeveloper/2025/05/19/the-windows-subsystem-for-linux-is-now-open-source/){target="_blank" rel="noopener"}), and when yesterday's enemy joins in, the tool must be good.
 
 Learning Linux on your everyday computer means learning the environment a good chunk of the internet runs on. And if you want to take customization further, there's [Omarchy, which I had been boycotting](/en/20261008-omarchy-dhh-homme-dotfiles) and ended up installing on my old MacBook.
 
 ## What hurts
 
-I'm not going to sugarcoat it. Both camps have their flaws.
+I'm not going to lie to you, both systems have their flaws.
 
 ### The Mac is expensive
 
-That's complaint number one, and it's deserved. The cheapest Mac, the MacBook Neo, came out in March 2026 at $599 ([Apple](https://www.apple.com/newsroom/2026/03/say-hello-to-macbook-neo/){target="_blank" rel="noopener"}). Three months later, Apple raised it by $100, blaming the price of memory ([MacRumors](https://www.macrumors.com/2026/06/25/apple-just-raised-macbook-neo-prices/){target="_blank" rel="noopener"}). In France, it now starts at €799 ([Consomac](https://consomac.fr/bonplan-24426-le-macbook-neo-a-partir-de-699-100.html){target="_blank" rel="noopener"}), around 524,000 CFA francs before customs duties and the reseller's margin. In Abidjan, Apple doesn't even display a price: you have to go through a reseller.
+That's complaint number one, and it's deserved. The cheapest Mac, the MacBook Neo, came out in March 2026 at $599 ([Apple](https://www.apple.com/newsroom/2026/03/say-hello-to-macbook-neo/){target="_blank" rel="noopener"}). Three months later, Apple raised it by $100, blaming the price of memory ([MacRumors](https://www.macrumors.com/2026/06/25/apple-just-raised-macbook-neo-prices/){target="_blank" rel="noopener"}). In France, it now starts at €799 ([Consomac](https://consomac.fr/bonplan-24426-le-macbook-neo-a-partir-de-699-100.html){target="_blank" rel="noopener"}), around 524,000 CFA francs before customs duties and the reseller's margin. In Abidjan, Apple doesn't even display a price, you have to go through a reseller.
 
 ### Support is limited, sometimes artificially
 
-A Mac lasts a long time. Longer than Apple is willing to support it.
+A Mac lasts a long time, longer than Apple is willing to support it.
 
-My 2017 MacBook Pro with 16 GB of memory is the perfect example: Apple dropped it after macOS Ventura. The hardware still holds up, but no more updates. And it's not always about power: in 2023, macOS Sonoma dropped the 2017 MacBook Pros and iMacs, but kept the iMac Pro… from 2017 ([Apple](https://support.apple.com/en-us/105113){target="_blank" rel="noopener"}).
+My 2017 MacBook Pro with 16 GB of memory is a good example, since Apple dropped it after macOS Ventura. The hardware still holds up, but it gets no more updates. And it's not always about power, because in 2023, macOS Sonoma dropped the 2017 MacBook Pros and iMacs, but kept the iMac Pro… from 2017 ([Apple](https://support.apple.com/en-us/105113){target="_blank" rel="noopener"}).
 
 The volunteers behind OpenCore Legacy Patcher proved these Macs could run newer versions: their tool let people install Sonoma on 83 models Apple had left behind ([GitHub](https://github.com/dortania/OpenCore-Legacy-Patcher/releases/tag/1.0.0){target="_blank" rel="noopener"}). Version 3, still in testing, targets macOS Tahoe, and the developers themselves warn you to expect crashes ([GitHub](https://github.com/dortania/OpenCore-Legacy-Patcher/releases){target="_blank" rel="noopener"}). I'm testing it on my 2017, knowing the risks.
 
 To be fair, there are real technical limits too. macOS 27, released on September 14, 2026, only runs on Apple Silicon Macs ([Apple](https://support.apple.com/en-us/127255){target="_blank" rel="noopener"}), and no hack will get around that. Intel Macs got their last major version with Tahoe.
 
-### An update isn't always a gift
+### An update can also cause problems
 
 Still being supported doesn't guarantee everything is fine either. I have an M1 MacBook at home, and I get the feeling it's been slower since I installed macOS 27 "Golden Gate". Not to mention the small annoyances: the trackball I had to set up again, and my monitor's volume control, now greyed out.
 
-Nothing dramatic. But it's a useful reminder: on a Mac too, a big update needs some preparation. And since you decide when to install it, nothing forces you to do it on release day.
+Nothing dramatic, but it's a reminder that on a Mac too, a big update needs some preparation. And since you decide when to install it, nothing forces you to do it on release day.
 
-### Linux: hardware support is so-so
+### On Linux, hardware support is so-so
 
-Linux runs almost everywhere. Almost.
+Linux runs almost everywhere, but there are exceptions.
 
-I installed Zorin OS on a MacBook. Everything went fine… until it was time to connect to Wi-Fi. Nowhere to be found. The reason: many MacBooks use a Broadcom Wi-Fi chip whose driver isn't free software ([Debian](https://wiki.debian.org/wl){target="_blank" rel="noopener"}). So it isn't enabled out of the box, and to install it… you need internet. A classic catch-22.
+I installed Zorin OS on a MacBook. Everything went fine… until it was time to connect to Wi-Fi, which didn't work, because many MacBooks use a Broadcom Wi-Fi chip whose driver isn't free software ([Debian](https://wiki.debian.org/wl){target="_blank" rel="noopener"}). So it isn't enabled out of the box, and to install it… you need internet.
 
-There is a fix: plug in an Ethernet cable, or share your phone's connection over USB, then open the **Additional Drivers** tool. The Zorin forum is full of MacBooks in this situation ([Zorin forum](https://forum.zorin.com/t/wi-fi-not-working-on-macbook-no-wi-fi-adapter-found/60470){target="_blank" rel="noopener"}). But when you're starting out, that's exactly the kind of wall that makes people give up.
+There is a fix, you plug in an Ethernet cable, or share your phone's connection over USB, then open the **Additional Drivers** tool. The Zorin forum is full of MacBooks in this situation ([Zorin forum](https://forum.zorin.com/t/wi-fi-not-working-on-macbook-no-wi-fi-adapter-found/60470){target="_blank" rel="noopener"}). But when you're starting out, that's exactly the kind of blocker that makes people give up.
 
 Wi-Fi isn't the only trap. NVIDIA graphics cards often need a separate driver ([Ubuntu](https://ubuntu.com/server/docs/how-to/graphics/install-nvidia-drivers/){target="_blank" rel="noopener"}), and many fingerprint readers aren't recognized ([fprint](https://fprint.freedesktop.org/supported-devices.html){target="_blank" rel="noopener"}). Before installing Linux on a machine, a quick search for "computer name + Linux" will save you some surprises.
 
 ## So, Mac or Linux?
 
-If you want a computer that starts, updates without bothering you and asks you for nothing, and you can afford it: get a Mac.
+If you want a computer that starts, updates without bothering you and asks you for nothing, and you can afford it, get a Mac.
 
-If you want a free system that brings an old machine back to life and lets you change everything, and you're OK tinkering a bit at first: try Linux. Start with Zorin OS, from a USB stick, without erasing anything.
+If you want a free system that lets you reuse an old machine and lets you change everything, and you're OK tinkering a bit at first, try Linux. Start with Zorin OS, from a USB stick, without erasing anything.
 
-And if you're still hesitating: these days, I spend quite a bit of time on ChromeOS, on my niece's computer. Proof that you can switch systems without changing who you are. The beard was never mandatory.
+And if you're still hesitating, these days I spend quite a bit of time on ChromeOS, on my niece's computer, which shows you can switch systems without being a specialist. The beard was never mandatory.
 
 ## Sources
 
@@ -132,4 +132,4 @@ _Cover photo: [Mikhail Nilov](https://www.pexels.com/@mikhail-nilov/){target="_b
 *October 2026: since then, my old 2017 MacBook Pro has been running Linux, and it's my main computer again. Three days in, here's the verdict: [Omarchy on my 2017 MacBook Pro](/en/20261013-retournement-de-veste-omarchy-macbook-pro-2017).*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com) — beard optional*
+*[Jean-Luc Houédanou](https://houedanou.com)*

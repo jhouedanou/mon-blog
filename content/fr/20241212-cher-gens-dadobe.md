@@ -18,7 +18,7 @@ Je dois donc utiliser Adobe... mais parfois au détriment de ma santé mentale, 
 
 Or, ce matin, ma frustration a atteint un point culminant. Je HAIS Adobe, et je me suis juré de me plonger à fond dans la suite Affinity, loin des tracas d'Adobe. Laissez-moi vous expliquer.
 
-## Changer de moyen de paiement chez Adobe : mission impossible
+## Impossible de changer de moyen de paiement chez Adobe
 
 Tout a commencé un vendredi 13 décembre, lorsque j'ai voulu mettre à jour mes moyens de paiement sur un compte Adobe. Première surprise d'une série qui a rendu ce début de journée particulièrement pénible :
 
@@ -39,7 +39,7 @@ Je n'utilise même pas ce service et je ne souhaite pas payer plus que nécessai
 
 Une nouvelle bataille avec le service client s'est ensuivie : « Je ne veux pas d'Adobe Express, je ne l'utilise pas et je ne veux pas payer pour ça. » Après être passé par deux conseillers clients, j'ai annulé cet abonnement non sollicité. Mais cette expérience a laissé un goût amer : Adobe, par ses pratiques abusives, suscite des critiques largement méritées, ainsi que toute la haine du monde. Sur internet, dans la vie et les tribunaux.
 
-## Frais de résiliation cachés : la plainte contre Adobe
+## La plainte contre Adobe pour frais de résiliation cachés
 
 Car oui, Adobe est poursuivi pour des pratiques commerciales douteuses, dans une plainte déposée en juin 2024 par le ministère américain de la Justice, saisi par la FTC :
 
@@ -57,4 +57,4 @@ Arrêtez d'utiliser leurs services, si possible. Ou optez pour un logiciel sans 
 *Novembre 2026 : autre piste pour échapper à l'abonnement, [ArtCraft, des clones open source de Photoshop, Lightroom et Premiere codés avec l'IA](/fr/20261009-artcraft-vibe-code-suite-adobe-saaspocalypse), à essayer sur des copies de fichiers.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com) — rescapé d'Adobe*
+*[Jean-Luc Houédanou](https://houedanou.com)*
