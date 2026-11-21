@@ -1,5 +1,5 @@
 ---
-title: "La polémique woke autour de GTA VI est inutile"
+title: "GTA VI n'est pas woke, Jason est juste un bon mec"
 createdAt: "2026-11-21T18:00:00Z"
 image: "/images/articles/gta6-officiel.webp"
 description: "GTA VI serait woke, Jason serait soumis à Lucia. Les fleurs, Cal, les corvées, les cambriolages : pourquoi cette polémique ne tient pas."
