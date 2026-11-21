@@ -7,7 +7,7 @@ searchIntent: "GTA VI est-il woke ? Que valent les critiques sur Jason, Lucia et
 tags: ["opinion", "jeux vidéo", "youtube", "gta"]
 ---
 
-Bon, je vais être honnête dès le départ, GTA VI ne m'intéresse pas. Je m'étais dit qu'il m'intéresserait le jour où Yango et Hostinger se mettraient aux couleurs de Vice City, et c'est arrivé, puisque le rose et le violet sont maintenant partout, dans l'appli qui me trouve un chauffeur comme dans le tableau de bord qui héberge mes sites. Le jeu est sorti le 19 novembre, et deux jours plus tard il avait envahi mes applis et mes fils d'actualité.
+Bon, je vais être honnête dès le départ, GTA VI ne m'intéresse pas. Je comptais l'ignorer tranquillement, mais Yango, Hostinger et mon fil d'actualité, LinkedIn compris, en ont décidé autrement. Le jeu est sorti le 19 novembre, et deux jours plus tard le rose et le violet de Vice City étaient partout, dans l'appli qui me trouve un chauffeur, dans le tableau de bord qui héberge mes sites, et jusque sur LinkedIn.
 
 Et sur YouTube, un sujet revient en boucle : GTA VI serait « woke ».
 

@@ -7,7 +7,7 @@ searchIntent: "Is GTA VI woke? Are the critiques of Jason, Lucia and the gamepla
 tags: ["opinion", "video games", "youtube", "gta"]
 ---
 
-Okay, let me be honest from the start, GTA VI doesn't interest me. I told myself it would interest me the day Yango and Hostinger put on Vice City colours, and that day came, since the pink and purple are now everywhere, in the app that finds me a driver as much as in the dashboard that hosts my websites. The game came out on November 19, and two days later it had taken over my apps and my feeds.
+Okay, let me be honest from the start, GTA VI doesn't interest me. I was planning to quietly ignore it, but Yango, Hostinger and my news feed, LinkedIn included, decided otherwise. The game came out on November 19, and two days later the Vice City pink and purple were everywhere, in the app that finds me a driver, in the dashboard that hosts my websites, and even on LinkedIn.
 
 And on YouTube, one topic keeps coming back: GTA VI is supposedly "woke".
 
