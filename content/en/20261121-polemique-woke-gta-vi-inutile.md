@@ -1,34 +1,34 @@
 ---
 title: "The woke controversy around GTA VI is pointless"
 createdAt: "2026-11-21T18:00:00Z"
-image: "/images/articles/gta6-polemique-youtube.webp"
-description: "\"GTA 6 Is Simp Slop\": a YouTube video calls GTA VI woke and submissive. Lucia, Jason, Cal, the heists: why this controversy doesn't hold up."
-searchIntent: "Is GTA VI woke? Is the \"GTA 6 Is Simp Slop\" critique of Jason, Lucia and the gameplay fair, and why does YouTube reward this kind of controversy?"
+image: "/images/articles/gta6-officiel.webp"
+description: "GTA VI is supposedly woke, Jason supposedly submissive to Lucia. The flowers, Cal, the chores, the heists: why this controversy doesn't hold up."
+searchIntent: "Is GTA VI woke? Are the critiques of Jason, Lucia and the gameplay fair, and why does YouTube reward this kind of controversy?"
 tags: ["opinion", "video games", "youtube", "gta"]
 ---
 
-Let me be honest from the first line: GTA VI doesn't interest me. It will interest me the day Yango and Hostinger put on Vice City colours. Until then, I watch from a distance.
+Let me be honest from the first line: GTA VI doesn't interest me. I told myself it would interest me the day Yango and Hostinger put on Vice City colours. That day came. The pink and purple are everywhere, right down to the app that finds me a driver and the dashboard that hosts my websites.
 
-But from a distance, you see clearly. The game came out on November 19, and two days later YouTube has already found its bone to chew on: GTA VI is supposedly "woke". That isn't a video game problem. It's a YouTube problem.
+That's the thing with GTA VI: even when you've decided to ignore it, it follows you. The game came out on November 19, and two days later it had taken over my apps, my feeds, and YouTube had found its bone to chew on: GTA VI is supposedly "woke". That isn't a video game problem. It's a YouTube problem.
 
-## "GTA 6 Is Simp Slop": what the video says
+## What people hold against GTA VI
 
-The video is called "GTA 6 Is Simp Slop". It's by Locke The Bounty Hunter and runs about twenty minutes. The title sets the tone: a *simp* is a man who is too submissive to a woman, and *slop* is cheap industrial mush.
+The critiques all sound alike, and one title sums them up well: "GTA 6 Is Simp Slop", a video by Locke The Bounty Hunter, one among dozens of the same kind. A *simp* is a man who is too submissive to a woman. *Slop* is cheap industrial mush.
 
 The complaint comes down to four points:
 
 - **The gameplay.** Too many everyday chores, like fixing a sink or doing the shopping, and not enough car chases or heists.
-- **Jason.** A protagonist with no charisma, at Lucia's service. The creator calls it a "submissive boyfriend simulator".
+- **Jason.** A protagonist with no charisma, at Lucia's service. People call it a "submissive boyfriend simulator".
 - **Ideology.** The game is supposedly shaped by progressive ideas, with less freedom and satire that has lost its bite.
 - **The verdict.** A guaranteed letdown for players of the older games.
 
-Twenty minutes to say that a 2026 game isn't San Andreas. Let's go point by point.
+Hours of videos to say that a 2026 game isn't San Andreas. Let's go point by point.
 
 ## The real subject: YouTube lives on controversy
 
 On YouTube, outrage is a business model. An angry title gets more clicks than a nuanced one. A thumbnail with a red arrow gets more clicks than a calm one. And the furious comments underneath count too: the algorithm reads them as engagement.
 
-So the creator has no interest in saying "it's a good game with some debatable choices". Nobody shares that. The incentive is to find the angle that makes people angry. In 2026, that angle has a name: woke.
+So a creator has no interest in saying "it's a good game with some debatable choices". Nobody shares that. The incentive is to find the angle that makes people angry. In 2026, that angle has a name: woke.
 
 I've already written that [a social network is not a grin](/en/20250605-facebook-nest-pas-un-grin), the street-corner tea circle where people actually talk: online, nobody discusses, everybody plays to the gallery. YouTube is the long-form version of the same problem. The gallery pays, in views.
 
@@ -38,7 +38,7 @@ The most shared clip shows Jason buying flowers. Proof that he's submissive, app
 
 Let's put it back in context. Those flowers are part of a mission tied to Lucia getting out of prison. A man who greets his partner with flowers when she walks out of prison is a man who cares about her. In a game where you steal cars, it's actually rather refreshing.
 
-And the video forgets the other direction. When Jason gets shot, Lucia is the one who takes care of him.
+And the critics forget the other direction. When Jason gets shot, Lucia is the one who takes care of him.
 
 He looks after her, she looks after him. Maintaining the relationship is part of the game, like maintaining your weapons or your car. That's called a healthy couple's dynamic. If that's being a *simp*, the word means nothing anymore.
 
@@ -72,11 +72,11 @@ Visually, GTA VI is gorgeous. Vice City has never looked this believable. But it
 
 Above all, it isn't a game I would play. Not because it's supposedly woke. Because my gaming evenings happen elsewhere, with a headset on. The Quest 3S has better games for me, and I wrote [the list, from easiest to hardest](/en/20261008-jeux-quest-3s-recommandations).
 
-So I don't hold anything against GTA VI. I hold it against the video for selling anger wrapped up as a review. A game can disappoint. It can be slow, too scripted, locked at 30 fps. Those are real arguments. "Jason buys his girlfriend flowers" isn't one.
+So I don't hold anything against GTA VI. I hold it against these videos for selling anger wrapped up as a review. A game can disappoint. It can be slow, too scripted, locked at 30 fps. Those are real arguments. "Jason buys his girlfriend flowers" isn't one.
 
-One last thing. Before writing this post, I watched [the walkthrough](https://www.youtube.com/watch?v=Ve2M5i_DSKI&t=35727s), and I understand the hype. Vice City feels alive. The characters have a story. The missions are not just household chores. I also understand why the video picked the flowers and the bed: across hours of gameplay, those are the only minutes that could make a scandal.
+One last thing. Before writing this post, I watched [the walkthrough](https://www.youtube.com/watch?v=Ve2M5i_DSKI&t=35727s), and I understand the hype. Vice City feels alive. The characters have a story. The missions are not just household chores. I also understand why the critics picked the flowers and the bed: across hours of gameplay, those are the only minutes that could make a scandal.
 
-I still won't play it. See you the day Yango drops me off in Vice City.
+I still won't play it. But I have no illusions left: I can ignore GTA VI, it won't ignore me.
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com)*

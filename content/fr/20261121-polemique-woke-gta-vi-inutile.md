@@ -1,34 +1,34 @@
 ---
 title: "La polémique woke autour de GTA VI est inutile"
 createdAt: "2026-11-21T18:00:00Z"
-image: "/images/articles/gta6-polemique-youtube.webp"
-description: "« GTA 6 Is Simp Slop » : une vidéo YouTube accuse GTA VI d'être woke et soumis. Lucia, Jason, Cal, les cambriolages : pourquoi cette polémique ne tient pas."
-searchIntent: "GTA VI est-il woke ? Que vaut la critique « GTA 6 Is Simp Slop » sur Jason, Lucia et le gameplay, et pourquoi YouTube récompense ce genre de polémique ?"
+image: "/images/articles/gta6-officiel.webp"
+description: "GTA VI serait woke, Jason serait soumis à Lucia. Les fleurs, Cal, les corvées, les cambriolages : pourquoi cette polémique ne tient pas."
+searchIntent: "GTA VI est-il woke ? Que valent les critiques sur Jason, Lucia et le gameplay, et pourquoi YouTube récompense ce genre de polémique ?"
 tags: ["opinion", "jeux vidéo", "youtube", "gta"]
 ---
 
-Je vais être honnête dès la première ligne : GTA VI ne m'intéresse pas. Il m'intéressera le jour où Yango et Hostinger se mettront aux couleurs de Vice City. D'ici là, je regarde de loin.
+Je vais être honnête dès la première ligne : GTA VI ne m'intéresse pas. Je m'étais dit qu'il m'intéresserait le jour où Yango et Hostinger se mettraient aux couleurs de Vice City. C'est arrivé. Le rose et le violet sont partout, jusque dans l'appli qui me trouve un chauffeur et le tableau de bord qui héberge mes sites.
 
-Mais de loin, on voit bien. Le jeu est sorti le 19 novembre, et deux jours plus tard YouTube a déjà trouvé son os à ronger : GTA VI serait « woke ». Ce n'est pas un problème de jeu vidéo. C'est un problème de YouTube.
+Voilà le problème avec GTA VI : même quand on a décidé de l'ignorer, il vous suit. Le jeu est sorti le 19 novembre, et deux jours plus tard il a envahi mes applis, mes fils d'actualité, et YouTube a trouvé son os à ronger : GTA VI serait « woke ». Ce n'est pas un problème de jeu vidéo. C'est un problème de YouTube.
 
-## « GTA 6 Is Simp Slop » : ce que dit la vidéo
+## Ce qu'on reproche à GTA VI
 
-La vidéo s'appelle « GTA 6 Is Simp Slop ». Elle est signée Locke The Bounty Hunter et dure une vingtaine de minutes. Le titre annonce la couleur : *simp*, c'est l'homme trop soumis à une femme, et *slop*, c'est la bouillie industrielle.
+Les critiques se ressemblent toutes, et un titre les résume bien : « GTA 6 Is Simp Slop », une vidéo de Locke The Bounty Hunter parmi des dizaines du même genre. *Simp*, c'est l'homme trop soumis à une femme. *Slop*, c'est la bouillie industrielle.
 
 Le reproche tient en quatre points :
 
 - **Le gameplay.** Trop de tâches du quotidien, comme réparer un évier ou faire des courses, et pas assez de poursuites ou de braquages.
-- **Jason.** Un protagoniste sans charisme, au service de Lucia. Le vidéaste parle de « simulateur de petit ami soumis ».
+- **Jason.** Un protagoniste sans charisme, au service de Lucia. On parle de « simulateur de petit ami soumis ».
 - **L'idéologie.** Le jeu serait influencé par le progressisme, avec moins de liberté et une satire qui perdrait son mordant.
 - **Le verdict.** Un échec annoncé pour les joueurs des anciens épisodes.
 
-Vingt minutes pour dire qu'un jeu de 2026 n'est pas San Andreas. Voyons point par point.
+Des heures de vidéos pour dire qu'un jeu de 2026 n'est pas San Andreas. Voyons point par point.
 
 ## Le vrai sujet : YouTube vit de la polémique
 
 Sur YouTube, l'indignation est un modèle économique. Un titre en colère fait plus de clics qu'un titre nuancé. Une miniature avec une flèche rouge fait plus de clics qu'une miniature calme. Et les commentaires furieux, en dessous, comptent aussi : l'algorithme les lit comme de l'engagement.
 
-Le vidéaste n'a donc aucun intérêt à dire « c'est un bon jeu, avec des choix discutables ». Personne ne partage ça. Il a intérêt à trouver l'angle qui énerve. En 2026, l'angle qui énerve a un nom : woke.
+Un vidéaste n'a donc aucun intérêt à dire « c'est un bon jeu, avec des choix discutables ». Personne ne partage ça. Il a intérêt à trouver l'angle qui énerve. En 2026, l'angle qui énerve a un nom : woke.
 
 J'ai déjà écrit qu'[un réseau social n'est pas un grin](/fr/20250605-facebook-nest-pas-un-grin) : on n'y discute pas, on y joue pour la galerie. YouTube est la version longue du même problème. La galerie paie, en vues.
 
@@ -38,7 +38,7 @@ Le passage le plus partagé, c'est Jason qui achète des fleurs. Preuve qu'il es
 
 Remettons le contexte. Ces fleurs, c'est une mission liée à la sortie de prison de Lucia. Un homme qui accueille sa compagne à la sortie de prison avec des fleurs, ça s'appelle un homme qui tient à elle. Dans un jeu où l'on vole des voitures, c'est même plutôt rafraîchissant.
 
-Et la vidéo oublie l'autre sens. Quand Jason se fait tirer dessus, c'est Lucia qui s'occupe de lui.
+Et les critiques oublient l'autre sens. Quand Jason se fait tirer dessus, c'est Lucia qui s'occupe de lui.
 
 Lui s'occupe d'elle, elle s'occupe de lui. Entretenir la relation fait partie du jeu, comme entretenir ses armes ou sa voiture. On appelle ça une dynamique de couple saine. Si c'est ça, être *simp*, le mot n'a plus de sens.
 
@@ -72,11 +72,11 @@ Visuellement, GTA VI est très beau. Vice City n'a jamais été aussi crédible.
 
 Et surtout, ce n'est pas un jeu auquel je jouerais. Pas parce qu'il serait woke. Parce que mes soirées de jeu se passent ailleurs, casque sur la tête. Le Quest 3S a de meilleurs jeux pour moi, et j'en ai fait [la liste, du plus facile au plus dur](/fr/20261008-jeux-quest-3s-recommandations).
 
-Je ne reproche donc rien à GTA VI. Je reproche à la vidéo de vendre de la colère sous l'emballage d'une critique. Un jeu peut décevoir. Il peut être lent, trop scénarisé, bloqué à 30 fps. Ce sont de vrais arguments. « Jason achète des fleurs à sa copine » n'en est pas un.
+Je ne reproche donc rien à GTA VI. Je reproche à ces vidéos de vendre de la colère sous l'emballage d'une critique. Un jeu peut décevoir. Il peut être lent, trop scénarisé, bloqué à 30 fps. Ce sont de vrais arguments. « Jason achète des fleurs à sa copine » n'en est pas un.
 
-Une dernière chose. Avant d'écrire ce billet, j'ai regardé [le walkthrough](https://www.youtube.com/watch?v=Ve2M5i_DSKI&t=35727s), et je comprends l'engouement. Vice City vit. Les personnages ont une histoire. Les missions ne se résument pas à des tâches ménagères. Je comprends aussi pourquoi la vidéo a choisi les fleurs et le lit : sur des heures de jeu, ce sont les seules minutes qui pouvaient faire scandale.
+Une dernière chose. Avant d'écrire ce billet, j'ai regardé [le walkthrough](https://www.youtube.com/watch?v=Ve2M5i_DSKI&t=35727s), et je comprends l'engouement. Vice City vit. Les personnages ont une histoire. Les missions ne se résument pas à des tâches ménagères. Je comprends aussi pourquoi les critiques ont choisi les fleurs et le lit : sur des heures de jeu, ce sont les seules minutes qui pouvaient faire scandale.
 
-Je n'y jouerai pas pour autant. Rendez-vous le jour où Yango me dépose à Vice City.
+Je n'y jouerai pas pour autant. Mais je ne me fais plus d'illusions : je peux ignorer GTA VI, lui ne m'ignorera pas.
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com)*
