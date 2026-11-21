@@ -13,11 +13,11 @@ summary: "Grégoire, a fussy freelance developer, has to deliver a site in Frenc
 
 My friend, let's call him **"Grégoire"**, is the kind of guy who gets annoyed when you say *"malgré que"*. He once nearly blocked his own girlfriend over a misplaced *"autant pour moi"*. 
 
-In other words, Grégoire is a pain, very French, and a bit too much of a perfectionist. Which makes him the last person you'd ask for a website in French inclusive writing.
+So Grégoire is a pain, very French, and a bit too much of a perfectionist. Which makes him the last person you'd ask for a website in French inclusive writing.
 
-Grégoire is also a **freelance developer**: he is as talented as he is [fussy about language](/en/20250605-facebook-nest-pas-un-grin), the kind who rants about badly indented code, or code not commented in *"proper French"*.
+Grégoire is also a **freelance developer**, as talented as he is [fussy about language](/en/20250605-facebook-nest-pas-un-grin), the kind who rants about badly indented code, or code not commented in *"proper French"*.
 
-## French inclusive writing: when grammar meets business
+## The client wants French inclusive writing
 
 One day, while we're chatting, **a super-important client** (a big CAC 40 company, no names mentioned) entrusts him with **the development of a strategic website**. Everything goes well... until the last line of the brief:
 
@@ -37,9 +37,9 @@ Him: *"I'd rather die."*
 
 ## The weight of words, the shock of the bank transfer
 
-Two weeks later, a BIG advance payment cashed in, and after relentless work (and a lot of interpuncts swallowed like bitter pills), Grégoire finally submits the beta version of the website, including his copy, **scrupulously written in inclusive writing**. 
+Two weeks later, a BIG advance payment cashed in, and after relentless work (and a lot of interpuncts typed against his will), Grégoire finally submits the beta version of the website, including his copy, **scrupulously written in inclusive writing**. 
 
-Problem: **the intern in charge of copywriting sends him back the approved versions... in classic French, with no inclusive writing whatsoever!**
+Except that **the intern in charge of copywriting sends him back the approved versions... in classic French, with no inclusive writing whatsoever!**
 
 Grégoire explodes. He calls me, on the verge of a nervous breakdown.
 
@@ -53,10 +53,10 @@ Luckily, I was able to show him how to use **Claude 3.7 Sonnet**, [an AI assista
 
 *"It's easier with AI, I have to admit"*, he conceded with a sigh.
 
-## Moral
+## What Grégoire took away from it
 
 **Grégoire is relieved, and above all, he is paid.** More seriously, he learned a lesson:
 money has a universal grammar, and you should never take your work too personally. **Knowing how to adapt (and [keeping your cool](/en/20241022-restons-zen) when faced with scatterbrained or unmotivated interns) is also a form of intelligence.**
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com) — bug storyteller*
+*[Jean-Luc Houédanou](https://houedanou.com)*

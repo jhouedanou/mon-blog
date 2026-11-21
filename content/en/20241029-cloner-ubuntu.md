@@ -23,7 +23,7 @@ When the SSD in your Ubuntu machine starts coughing and "insufficient disk space
 
 ### 1. Identifying the Disks
 
-First crucial step: figuring out who's who in our merry system:
+The first step, a crucial one, is figuring out who's who in our merry system:
 
 ```bash
 sudo fdisk -l
@@ -86,11 +86,11 @@ resize2fs "$PARTITION"
 echo "Clonage terminé ! 🎉"
 ```
 
-Two details in the script need explaining. First, `resize2fs` refuses to grow an unmounted partition that hasn't been checked since it was last mounted, and asks you to run `e2fsck -f` first ([resize2fs source code](https://github.com/tytso/e2fsprogs/blob/master/resize/main.c){target="_blank" rel="noopener"}), so the script does exactly that. Second, on an NVMe SSD the disk is called `/dev/nvme0n1` and its second partition `/dev/nvme0n1p2`, not `/dev/nvme0n12`: when the disk name ends with a digit, Linux adds a "p" ([Arch Linux wiki](https://wiki.archlinux.org/title/Device_file#Partition){target="_blank" rel="noopener"}). The script handles both cases.
+Two details in the script need explaining. First, `resize2fs` refuses to grow an unmounted partition that hasn't been checked since it was last mounted, and asks you to run `e2fsck -f` first ([resize2fs source code](https://github.com/tytso/e2fsprogs/blob/master/resize/main.c){target="_blank" rel="noopener"}), so the script does exactly that. Second, on an NVMe SSD the disk is called `/dev/nvme0n1` and its second partition `/dev/nvme0n1p2`, not `/dev/nvme0n12`, because when the disk name ends with a digit, Linux adds a "p" ([Arch Linux wiki](https://wiki.archlinux.org/title/Device_file#Partition){target="_blank" rel="noopener"}). The script handles both cases.
 
 ### 3. Running It
 
-Ideally, run the script from a live session (that bootable USB stick) rather than from the Ubuntu you are currently using: the [Arch Linux documentation on dd](https://wiki.archlinux.org/title/Dd#Disk_cloning_and_restore) recommends cloning from a live environment, which avoids copying a system that keeps changing during the copy.
+Ideally, run the script from a live session (that bootable USB stick) rather than from the Ubuntu you are currently using. The [Arch Linux documentation on dd](https://wiki.archlinux.org/title/Dd#Disk_cloning_and_restore) recommends cloning from a live environment, which avoids copying a system that keeps changing during the copy.
 
 ```bash
 sudo bash clone-ubuntu.sh
@@ -121,4 +121,4 @@ It was on this same HP Pro x2, running Linux, that I discovered [Ghostwriter, th
 *Updated October 8, 2026: added sourced precautions (cloning from a live session, source disk with read errors, identical UUIDs after cloning); script fixed: `e2fsck -f` before `resize2fs`, and correct partition name on NVMe or eMMC disks (`/dev/nvme0n1p2` instead of `/dev/nvme0n12`).*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com) — cloner of penguins*
+*[Jean-Luc Houédanou](https://houedanou.com)*
