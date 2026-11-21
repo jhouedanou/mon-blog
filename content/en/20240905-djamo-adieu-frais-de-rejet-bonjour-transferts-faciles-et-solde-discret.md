@@ -40,4 +40,4 @@ Djamo seems to have taken that advice on board, since the app now lets you hide 
 More seriously, these changes show that Djamo understands its users' needs, down to the small everyday hassles. I hope the other players in the sector follow suit and make our lives easier (and spare us [the queues at the branch, and the shortcuts sold along them](/en/20250101-lacorruption)).
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), pocket economist*

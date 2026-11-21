@@ -60,4 +60,4 @@ Dans ces cas, insistez, non pas pour humilier, mais pour aider la personne à fo
 PS : Si malgré tout vous décidez de tenir cette réunion, prévoyez un ordre du jour, un temps limité (10 minutes max, sans retard toléré) et une question unique à trancher, avec des arguments.
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), ennemi juré des réunions*

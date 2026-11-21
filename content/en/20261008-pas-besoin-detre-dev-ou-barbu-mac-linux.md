@@ -132,4 +132,4 @@ _Cover photo: [Mikhail Nilov](https://www.pexels.com/@mikhail-nilov/){target="_b
 *October 2026: since then, my old 2017 MacBook Pro has been running Linux, and it's my main computer again. Three days in, here's the verdict: [Omarchy on my 2017 MacBook Pro](/en/20261013-retournement-de-veste-omarchy-macbook-pro-2017).*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), beard optional*

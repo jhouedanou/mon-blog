@@ -191,4 +191,4 @@ Nobody gave me permission, and nobody had to.
 *Photo: [Towfiqu barbhuiya](https://www.pexels.com/photo/9755391/), Pexels.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), retired distro hopper*

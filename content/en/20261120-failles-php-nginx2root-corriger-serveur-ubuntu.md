@@ -217,4 +217,4 @@ I'll leave you to it… see you at the next flaw, let's say in a month.
 *Photo: [Brett Sayles](https://www.pexels.com/photo/2881229/), Pexels.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), still a developer, until the next flaw*

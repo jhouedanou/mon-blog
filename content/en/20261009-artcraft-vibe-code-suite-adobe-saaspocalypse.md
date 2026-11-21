@@ -140,4 +140,4 @@ In early February, plug-ins for Claude sent software stocks tumbling, and in ear
 _Cover screenshot: PhotoCraft (MIT or Apache-2.0 license), showing [The Great Wave off Kanagawa](https://commons.wikimedia.org/wiki/File:Tsunami_by_hokusai_19th_century.jpg){target="_blank" rel="noopener"} by Hokusai, in the public domain._
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), on Affinity since version 1*

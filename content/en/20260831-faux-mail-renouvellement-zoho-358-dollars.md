@@ -86,4 +86,4 @@ For you and for your colleagues, an email never proves a charge, only your bank 
 *Updated October 8, 2026: clarified Zoho's legitimate sending domains, which aren't limited to `zohocorp.com` (`zoho.com`, `zoho.eu`, `zoho.in`…), based on [the phishing alert published by Zoho](https://help.zoho.com/portal/en/community/topic/phishing-alert-a-must-read-for-all-zoho-sign-users).*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+[Jean-Luc Houédanou](https://houedanou.com) · Zoho Backstage's "customer service" still hasn't called me back 🙂

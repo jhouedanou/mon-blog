@@ -140,4 +140,4 @@ Début février, des plug-ins pour Claude ont fait plonger les éditeurs de logi
 _Capture de couverture : PhotoCraft (licence MIT ou Apache-2.0), avec [La Grande Vague de Kanagawa](https://commons.wikimedia.org/wiki/File:Tsunami_by_hokusai_19th_century.jpg){target="_blank" rel="noopener"} d'Hokusai, dans le domaine public._
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), sur Affinity depuis la version 1*

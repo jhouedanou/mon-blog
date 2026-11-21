@@ -217,4 +217,4 @@ Je vous laisse… on se retrouve à la prochaine faille, disons dans un mois.
 *Photo : [Brett Sayles](https://www.pexels.com/photo/2881229/), Pexels.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), toujours développeur, jusqu'à la prochaine faille*

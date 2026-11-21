@@ -75,4 +75,4 @@ La prochaine sur la liste, c'est *Severance*.
 _Photos : [Jakub Zerdzicki](https://www.pexels.com/@jakubzerdzicki/) et [Gustavo Fring](https://www.pexels.com/@gustavo-fring/), sur Pexels._
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), venu pour le stockage, resté pour les séries*

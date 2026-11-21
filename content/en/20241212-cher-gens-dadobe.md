@@ -57,4 +57,4 @@ Stop using their services, if you can. Or go for software with no subscription, 
 *November 2026: another way out of the subscription, [ArtCraft, open-source clones of Photoshop, Lightroom and Premiere built with AI](/en/20261009-artcraft-vibe-code-suite-adobe-saaspocalypse), to try on copies of your files.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), Adobe survivor*

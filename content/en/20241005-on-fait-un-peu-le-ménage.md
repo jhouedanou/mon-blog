@@ -40,4 +40,4 @@ See you very soon.
 The rest of the story: [the new flat-file blog, in Markdown with no database](/en/20241021-pendaison-de-cremaillere), [the move from Vercel to Cloudflare Pages](/en/20260402-vercel-cloudflare-pages-migration), then [the SEO I lost after the migration, and how I got it back](/en/20261018-migration-wordpress-nuxt-referencement-perdu-recupere).
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), digital mover*

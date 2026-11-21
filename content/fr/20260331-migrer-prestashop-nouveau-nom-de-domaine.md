@@ -174,4 +174,4 @@ PrestaShop est discret, mais il est toujours utilisé.
 *Correction du 8 novembre 2026 : à l'étape 4, sur OpenLiteSpeed, `lswsctrl` n'a pas de commande `purgeall` ; la bonne méthode est indiquée sous la commande. À l'étape 5, la durée des redirections suit maintenant la recommandation de Google, au moins un an (au lieu de « au minimum 6 à 12 mois »), et l'outil de changement d'adresse de la Search Console est sourcé.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), fier d'appartenir à la vieille garde du E-commerce*

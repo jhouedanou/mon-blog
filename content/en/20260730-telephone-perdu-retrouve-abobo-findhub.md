@@ -83,4 +83,4 @@ Three lessons, free of charge, learned for 12,000 FCFA:
 *Updated November 8, 2026: added the location accuracy Google states ([Google Help](https://support.google.com/android/answer/6160491?hl=en){target="_blank" rel="noopener"}), and the service's official name, Find Hub.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+_[Jean-Luc Houédanou](https://houedanou.com), FindHub takes you to Abobo, but it's a stranger's honesty that brings the phone back._

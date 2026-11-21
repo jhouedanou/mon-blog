@@ -111,4 +111,4 @@ La solution se trouve dans vos réglages, mais la plupart des utilisateurs ne sa
 *Correction du 8 novembre 2026 : l'attaque n'utilise pas deux Proxmark, mais un Proxmark face à l'iPhone et un téléphone Android face au terminal, reliés par un ordinateur portable ; la manipulation de l'acte 3 porte sur l'indicateur d'authentification du porteur sur le téléphone, et non sur un marqueur « petite valeur » ou « grande valeur » ; et elle fonctionne pour n'importe quel montant ([page des chercheurs](https://practical_emv.gitlab.io/){target="_blank" rel="noopener"}). Ajouts : le mode Express est activé par défaut ([assistance Apple](https://support.apple.com/fr-fr/105123){target="_blank" rel="noopener"}), et le conseil des chercheurs en cas de perte ou de vol.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+_[Jean-Luc Houédanou](https://houedanou.com), content d'avoir un téléphone Android._

@@ -40,4 +40,4 @@ Anne est devenue la nouvelle « punchline » ou le « punching-ball » de X. Cet
 On fait tous des erreurs, mais on a tous droit à un minimum de respect. Et surtout, **il y a des moments où le silence est d'or : si vous n'êtes pas sûrs que ce que vous allez poster fera du bien, continuez à scroller.**
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), chasseur d'arnaques*

@@ -46,4 +46,4 @@ Les deux montres offrent les fonctions classiques : suivi du rythme cardiaque, S
 Depuis, j'ai troqué l'Oraimo contre une Pixel Watch, et j'ai trouvé [comment lui faire allumer l'écran à chaque notification](/fr/20260311-comment-allumer-lecran-pixel-watch-notifications). J'ai aussi fait le point sur [tous les produits Oraimo que j'utilise, et ceux que je rachèterais](/fr/20261103-oraimo-avis-produits-rapport-qualite-prix).
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), horloger connecté*

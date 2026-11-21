@@ -23,4 +23,4 @@ Mais plus sérieusement, j’ai choisi d’abandonner WordPress pour Nuxt 3. Voi
 Pour la suite de l’histoire : [le SEO perdu après la migration, et comment je l’ai récupéré](/fr/20261018-migration-wordpress-nuxt-referencement-perdu-recupere), et [les bots qui faisaient dépasser la limite CPU de Cloudflare Workers](/fr/20260922-jai-recupere-le-trafic-de-mon-blog-et-les-bots-qui-vont-avec).
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), locataire du web*

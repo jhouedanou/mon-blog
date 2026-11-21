@@ -75,4 +75,4 @@ Next on the list is *Severance*.
 _Photos: [Jakub Zerdzicki](https://www.pexels.com/@jakubzerdzicki/) and [Gustavo Fring](https://www.pexels.com/@gustavo-fring/), on Pexels._
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), came for the storage, stayed for the shows*

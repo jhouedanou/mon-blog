@@ -190,4 +190,4 @@ Link: [github.com/JuliusBrussee/caveman](https://github.com/JuliusBrussee/cavema
 *Updated November 8, 2026: commands pinned to version 4.1.0, new CLI (`npx @caveman-ai/cli@latest`) and its six "rocks", CLI telemetry, the cost of the skill's rules, cavemem and cavekit frozen, based on the project's [README](https://github.com/JuliusBrussee/caveman){target="_blank" rel="noopener"} and [install page](https://github.com/JuliusBrussee/caveman/blob/main/INSTALL.md){target="_blank" rel="noopener"}; added JetBrains' independent measurement. Correction: the May table compares Caveman with Claude given no instruction, not with the "Answer concisely" instruction. The title no longer quotes a percentage.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), less blah-blah, more code. Ooga booga, tiny bill.*

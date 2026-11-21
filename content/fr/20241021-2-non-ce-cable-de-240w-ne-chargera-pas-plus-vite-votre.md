@@ -65,4 +65,4 @@ Pour d'autres histoires de watts et de vieux Mac : [le double moniteur portable,
 *Correction du 8 octobre 2026 : Le vendeur avait tort sur le 240 W, mais j'avais tort sur le 60 W : avec le chargeur 87 W d'origine, il faut un câble USB-C 5 A (100 W) pour profiter de toute la puissance ; un câble 60 W limite la charge à 60 W.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), débunkeur de watts*

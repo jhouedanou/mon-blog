@@ -134,4 +134,4 @@ If it prints, I'll tell you, and if it refuses to cooperate, I'll tell you that 
 _Cover: my 2017 MacBook Pro running Omarchy, connected to two external screens. Boot screen: [omarchy-matrix-plymouth](https://github.com/jhouedanou/omarchy-matrix-plymouth){target="_blank" rel="noopener"}, rebuilt from the repo's images (MIT licence)._
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), reversible jacket*

@@ -60,4 +60,4 @@ In those cases, keep insisting, not to humiliate anyone, but to help the person 
 PS: If you decide to hold that meeting anyway, plan an agenda, a time limit (10 minutes max, no lateness tolerated) and a single question to settle, with arguments.
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), sworn enemy of meetings*

@@ -132,4 +132,4 @@ _Photo de couverture : [Mikhail Nilov](https://www.pexels.com/@mikhail-nilov/){t
 *Octobre 2026 : depuis, mon vieux MacBook Pro 2017 tourne sous Linux, et c'est redevenu mon ordinateur principal. Le bilan après trois jours : [Omarchy sur mon MacBook Pro 2017](/fr/20261013-retournement-de-veste-omarchy-macbook-pro-2017).*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), la barbe est facultative*

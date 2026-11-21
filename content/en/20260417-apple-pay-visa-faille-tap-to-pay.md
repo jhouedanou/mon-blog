@@ -111,4 +111,4 @@ The fix is in your settings, but most users have no idea this attack surface exi
 *Correction, November 8, 2026: the attack does not use two Proxmarks, but a Proxmark facing the iPhone and an Android phone facing the terminal, linked through a laptop; the manipulation in act 3 concerns the flag saying the cardholder authenticated on the phone, not a "low value" or "high value" marker; and it works for any amount ([researchers' page](https://practical_emv.gitlab.io/){target="_blank" rel="noopener"}). Added: Express Mode is on by default ([Apple Support](https://support.apple.com/en-us/105123){target="_blank" rel="noopener"}), and the researchers' advice if the phone is lost or stolen.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+_[Jean-Luc Houédanou](https://houedanou.com), happy to own an Android phone._

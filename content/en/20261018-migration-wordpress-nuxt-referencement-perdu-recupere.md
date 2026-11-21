@@ -136,4 +136,4 @@ I'll check in again in a few weeks, with the Search Console numbers. If the curv
 *Photo: [Ketut Subiyanto](https://www.pexels.com/photo/4246238/), Pexels.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), digital mover, redirects included*

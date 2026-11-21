@@ -70,4 +70,4 @@ To find out more or download the suite, head to the official website:
 *Updated November 8, 2026: since November 2, 2026, the free Affinity app is also available on iPad, on the same terms (free Canva account, AI tools reserved for Canva premium plans), plus a new Sketch studio built for the Apple Pencil ([MacRumors](https://www.macrumors.com/2026/11/02/canva-free-affinity-app-ipad/){target="_blank" rel="noopener"}).*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), designer freed from Adobe*

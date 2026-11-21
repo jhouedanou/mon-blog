@@ -134,4 +134,4 @@ Si elle imprime, je vous le dirai, et si elle ne veut rien savoir, je vous le di
 _Couverture : mon MacBook Pro 2017 sous Omarchy, relié à deux écrans externes. Écran de démarrage : [omarchy-matrix-plymouth](https://github.com/jhouedanou/omarchy-matrix-plymouth){target="_blank" rel="noopener"}, recomposé à partir des images du dépôt (licence MIT)._
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), veste réversible*

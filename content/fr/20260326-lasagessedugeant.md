@@ -59,4 +59,4 @@ Apple délivre. La marge brute a atteint **48,2 %** au dernier trimestre, au-des
 *Correction du 8 octobre 2026 : les chiffres de levée de fonds ont été corrigés et sourcés. Anthropic avait levé près de 64 milliards de dollars au total (et non « plus de 27 milliards en 14 tours »), et le record de levée privée appartenait déjà, à la date du billet, aux 110 milliards d'OpenAI. Le chiffre de « 11 milliards » pour Apple Intelligence, introuvable, a été remplacé par les dépenses d'investissement publiées. Les chiffres financiers et boursiers ont été recalés sur les publications d'Apple et l'historique des cours : marge brute de 48,2 % (et non 47,2 %), iPhone et Services du dernier trimestre, capitalisation derrière celle de Nvidia.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), croqueur de pommes*

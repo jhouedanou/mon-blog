@@ -111,4 +111,4 @@ To the weekend vibe coders, your *welcome to the NBA moment* is coming, so get r
 And to Anthropic, pull yourselves together. We chose you because you were supposed to be the responsible adults of this industry, and you quietly edit your pricing pages at 5pm on a Tuesday.
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com). By the way... who would win in a one-on-one between Smush Parker and J Cole?*

@@ -85,4 +85,4 @@ Et si tu baragouines un peu de français, je te recommande la lecture de [ce bil
 Bon vol, et en espérant que ta prochaine aventure africaine se passe plus en douceur. ✈️
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), steward des débats*

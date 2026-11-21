@@ -94,4 +94,4 @@ Your enthusiasm remains admirable, even if "Never Leave You" never really recove
 N.B.: In certain circumstances, the glass of water may be garnished with fresh mint. But that's another theory altogether.
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), zen master of the internets*

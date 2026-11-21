@@ -326,4 +326,4 @@ Et pour un développeur africain qui doit jongler avec les conversions de devise
 *Correction du 8 novembre 2026 : « merci Tonton Donald » était injuste. Le blocage des paiements par carte venait de la décision n° 31 du GIM-UEMOA, qui a fixé à Visa et Mastercard un ultimatum au 31 mars 2026 ([Financial Afrik](https://www.financialafrik.com/2026/01/29/uemoa-les-cartes-visa-et-mastercard-ont-90-jours-pour-se-conformer/){target="_blank" rel="noopener"}). Dans le tableau, Vercel publie bien un quota de requêtes pour son offre gratuite : 1 million par mois ([offre Hobby](https://vercel.com/docs/plans/hobby){target="_blank" rel="noopener"}), et non « non communiqué ». Ajouts du même jour : ce qui se passe quand on dépasse l'offre gratuite de Vercel, la différence entre le quota de build de Workers et celui de Pages, et les limites de l'option CNAME.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), toujours à la chasse aux outils qui ne cassent pas la tirelire*

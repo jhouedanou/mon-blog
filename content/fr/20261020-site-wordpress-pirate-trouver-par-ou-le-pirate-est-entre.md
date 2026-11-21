@@ -215,4 +215,4 @@ Ces robots ne visent personne en particulier. Ils essaient les mêmes adresses s
 *Photo : [Pixabay](https://www.pexels.com/photo/276452/), Pexels.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), lecteur de logs, de préférence avant le grand ménage*

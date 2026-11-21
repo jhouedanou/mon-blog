@@ -215,4 +215,4 @@ These bots aren't after anyone in particular. They try the same addresses on eve
 *Photo: [Pixabay](https://www.pexels.com/photo/276452/), Pexels.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), log reader, preferably before the big clean-up*

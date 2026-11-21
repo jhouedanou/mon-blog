@@ -59,4 +59,4 @@ Apple delivers. Gross margin reached **48.2%** last quarter, above the company's
 *Correction, October 8, 2026: the fundraising figures have been corrected and sourced. Anthropic had raised nearly 64 billion dollars in total (not "more than 27 billion over 14 rounds"), and by the date of this post the private funding record already belonged to OpenAI's 110 billion. The "11 billion" figure for Apple Intelligence, which could not be traced, has been replaced with Apple's published capital expenditure. The financial and stock market figures have been realigned with Apple's filings and the price history: 48.2% gross margin (not 47.2%), last-quarter iPhone and Services figures, market capitalisation behind Nvidia's.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), apple muncher*

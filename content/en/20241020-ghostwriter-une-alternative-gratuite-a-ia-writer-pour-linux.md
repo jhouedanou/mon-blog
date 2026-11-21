@@ -70,4 +70,4 @@ iA Writer is still a benchmark for Markdown editors, but on Linux, Ghostwriter i
 *Updated October 8, 2026: iA Writer is available on macOS, Windows, iPhone and iPad, but still not on Linux. Added the commands to install Ghostwriter (Ubuntu repositories and Flathub).*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), distraction-free writer*

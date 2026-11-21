@@ -92,4 +92,4 @@ Pour savoir quel écran est sur le port natif, quittez DisplayLink Manager. L'é
 *Photos : [Luca Sammarco](https://www.pexels.com/photo/6142159/), [minhphuc .workspace](https://www.pexels.com/photo/20648391/) et [Pixabay](https://www.pexels.com/photo/461461/), Pexels.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), deux écrans pour coder, un seul pour Netflix*

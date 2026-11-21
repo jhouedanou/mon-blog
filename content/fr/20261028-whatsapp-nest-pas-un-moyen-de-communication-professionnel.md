@@ -68,4 +68,4 @@ Je travaille volontiers avec les gens, mais pas sur un canal où l'on ne retrouv
 _Photo : [Rahul Shah](https://www.pexels.com/@-rahulshah-/){target="_blank" rel="noopener"}, sur Pexels._
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), joignable par email*

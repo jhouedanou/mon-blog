@@ -81,4 +81,4 @@ La technologie se contente de documenter, et c'est à vous de décider si cette 
 *Correction du 8 octobre 2026 : ajout d'une précision sourcée sur les alertes de suivi indésirable qu'Apple et Android envoient à la personne qui se déplace avec un AirTag.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), espion technologique malgré lui*

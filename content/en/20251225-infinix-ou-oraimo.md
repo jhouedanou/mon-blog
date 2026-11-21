@@ -46,4 +46,4 @@ Both watches offer the classic features: heart rate tracking, SpO2, sleep tracki
 I've since swapped the Oraimo for a Pixel Watch, and figured out [how to make it light up its screen for every notification](/en/20260311-comment-allumer-lecran-pixel-watch-notifications). I've also reviewed [all the Oraimo products I use, and the ones I'd buy again](/en/20261103-oraimo-avis-produits-rapport-qualite-prix).
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), connected watchmaker*

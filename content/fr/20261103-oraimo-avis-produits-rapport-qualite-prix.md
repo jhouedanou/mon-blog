@@ -113,4 +113,4 @@ Presque tous ces produits sont de bonne qualité pour leur petit prix, sauf le c
 _Images : Oraimo._
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), client Oraimo, sans commission*

@@ -111,4 +111,4 @@ Aux vibe coders du dimanche, votre *welcome to the NBA moment* arrive, alors pr�
 Et à Anthropic, ressaisissez-vous. On vous a choisis parce que vous étiez censés être les adultes responsables de cette industrie, et vous modifiez vos pages de tarification en douce à 17h un mardi.
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), Sinon… qui gagnerait dans un contre un entre Smush Parker et J Cole ?*

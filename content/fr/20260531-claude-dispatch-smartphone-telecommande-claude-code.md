@@ -76,4 +76,4 @@ Pour ma part, l'usage reste simple, je n'ai jamais délégué l'écriture de mon
 *Mise à jour du 8 novembre 2026 : d'après la [documentation officielle de Remote Control](https://code.claude.com/docs/en/remote-control){target="_blank" rel="noopener"}, ajout du plan Ultra, du lancement avec `claude --remote-control`, des notifications et d'un comparatif avec Dispatch. Deux précisions corrigent le billet : la transcription de la session est stockée chez Anthropic (il disait que rien ne transitait ailleurs), et Claude Code ne demande pas toujours votre accord : cela dépend du mode de permission de la session.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), C'est le genre de fonctionnalités qui donnent un sens à l'augmentation des prix des mémoires RAM.*

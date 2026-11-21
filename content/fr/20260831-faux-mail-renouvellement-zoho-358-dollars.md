@@ -86,4 +86,4 @@ Pour vous comme pour vos collègues, un mail ne prouve jamais un débit, seule v
 *Mise à jour du 8 octobre 2026 : précision sur les domaines d'envoi légitimes de Zoho, qui ne se limitent pas à `zohocorp.com` (`zoho.com`, `zoho.eu`, `zoho.in`…), d'après [l'alerte phishing publiée par Zoho](https://help.zoho.com/portal/en/community/topic/phishing-alert-a-must-read-for-all-zoho-sign-users).*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+[Jean-Luc Houédanou](https://houedanou.com) · le « service client » de Zoho Backstage ne m'a toujours pas rappelé 🙂

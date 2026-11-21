@@ -40,4 +40,4 @@ Les prochaines étapes sont les suivantes :
 Pour la suite de l'histoire : [le nouveau blog en Markdown, sans base de données](/fr/20241021-pendaison-de-cremaillere), [la migration de Vercel vers Cloudflare Pages](/fr/20260402-vercel-cloudflare-pages-migration), puis [le SEO perdu après la migration, et comment je l'ai récupéré](/fr/20261018-migration-wordpress-nuxt-referencement-perdu-recupere).
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), déménageur numérique*

@@ -50,4 +50,4 @@ Pour l'instant, c'est un design fonctionnel, minimaliste, parfois un peu brut. M
 Depuis, j'ai [amélioré Project Fat Loss avec Cursor et l'IA](/fr/20250604-liaetmoi). Pour le cardio, il y a aussi [mes jeux Quest 3S, du plus facile au plus difficile](/fr/20261008-jeux-quest-3s-recommandations), et j'ai comparé [deux montres connectées pour le sport, l'Infinix Watch 3 et l'Oraimo Nova AM](/fr/20251225-infinix-ou-oraimo).
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), développeur en sueur*

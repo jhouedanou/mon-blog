@@ -81,4 +81,4 @@ Mesdames, soyez vous-mêmes.
 C'est précisément ce qui dérange certains, et c'est une bonne chose.
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), grammairien engagé*

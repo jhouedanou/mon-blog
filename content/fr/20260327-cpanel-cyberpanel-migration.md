@@ -143,4 +143,4 @@ Mais aujourd'hui, avec un **TTFB divisé par cinq**, **zéro frais de licence**,
 *Mise à jour du 8 octobre 2026 : ionCube publie aujourd'hui des loaders pour PHP 8.4 et 8.5 ([page officielle des loaders](https://www.ioncube.com/loaders.php)). Avant de rétrograder vers `lsphp82`, vérifiez donc que la version du loader installé correspond à votre version de PHP. Autre raison de ne pas s'éterniser sur PHP 8.2 : il ne reçoit plus de correctifs de sécurité après le 31 décembre 2026 ([calendrier officiel de PHP](https://www.php.net/supported-versions.php)). Correction du même jour : la première version de ce billet attribuait le blocage des paiements à une mesure de l'administration Trump de janvier 2026. Il venait en réalité de la décision n° 31 du GIM-UEMOA (voir plus haut). Les prix de 2025 et 2026 sont précisés comme tarifs partenaires, avec les prix publics en regard ; le chiffre de 15,99 $ donné pour 2024 ne correspondait à aucune grille cPanel et a été retiré.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), de nouveau converti à l'open source*

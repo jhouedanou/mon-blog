@@ -191,4 +191,4 @@ Personne ne m'a donné l'autorisation, et personne n'avait à me la donner.
 *Photo : [Towfiqu barbhuiya](https://www.pexels.com/photo/9755391/), Pexels.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), distrohopper à la retraite*

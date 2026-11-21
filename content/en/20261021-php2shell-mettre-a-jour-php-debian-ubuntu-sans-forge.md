@@ -268,4 +268,4 @@ I'll leave you to it… it's going to be a long night.
 *Photo: [Panumas Nikhomkhai](https://www.pexels.com/photo/1148820/), Pexels.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), on SSH tonight, one server after another*

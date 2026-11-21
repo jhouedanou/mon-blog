@@ -124,4 +124,4 @@ _CFA franc amounts calculated at about 585 CFA francs per dollar, the mid-Octobe
 _Images: Tesla._
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), earthbound driver, but impressed*

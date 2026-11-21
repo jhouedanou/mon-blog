@@ -92,4 +92,4 @@ To find out which screen is on the native port, quit DisplayLink Manager. The sc
 *Photos: [Luca Sammarco](https://www.pexels.com/photo/6142159/), [minhphuc .workspace](https://www.pexels.com/photo/20648391/) and [Pixabay](https://www.pexels.com/photo/461461/), Pexels.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), two screens for coding, one for Netflix*

@@ -136,4 +136,4 @@ Je referai le point dans quelques semaines, avec les chiffres de la Search Conso
 *Photo : [Ketut Subiyanto](https://www.pexels.com/photo/4246238/), Pexels.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), déménageur numérique, redirections comprises*

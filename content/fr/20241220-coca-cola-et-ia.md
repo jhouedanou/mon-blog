@@ -29,4 +29,4 @@ _(1) D'un point de vue technique, cette publicité a été réalisée avec Leona
 *Correction du 8 octobre 2026 : la première version de ce billet affirmait que la publicité était générée par un modèle basé sur DALL-E. Elle a en réalité été produite avec Leonardo, Luma, Runway et Kling, selon PetaPixel.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), buveur de pixels*

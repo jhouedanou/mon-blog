@@ -78,4 +78,4 @@ Au contraire, **elle vous met tous en retard.**
 PS : dans un autre genre, [la dame d'Abobo qui m'a rendu mon téléphone perdu](/fr/20260730-telephone-perdu-retrouve-abobo-findhub) n'a rien demandé en échange. Et pour envoyer de l'argent, plus besoin de passer au guichet : [PI-SPI relie la banque au mobile money](/fr/20261105-pi-spi-bceao-banque-mobile-money-explique), et [Djamo le faisait déjà avec Orange Money](/fr/20240905-djamo-adieu-frais-de-rejet-bonjour-transferts-faciles-et-solde-discret).
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), lanceur d'alertes amateur*

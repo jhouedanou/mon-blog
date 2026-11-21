@@ -50,4 +50,4 @@ For now, it's a functional, minimalist, sometimes slightly rough design. But I'm
 Since then, I've [improved Project Fat Loss with Cursor and AI](/en/20250604-liaetmoi). For cardio, there are also [my Quest 3S games, ranked from easiest to hardest](/en/20261008-jeux-quest-3s-recommandations), and I've compared [two smartwatches for sport, the Infinix Watch 3 and the Oraimo Nova AM](/en/20251225-infinix-ou-oraimo).
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), sweaty developer*

@@ -57,4 +57,4 @@ Arrêtez d'utiliser leurs services, si possible. Ou optez pour un logiciel sans 
 *Novembre 2026 : autre piste pour échapper à l'abonnement, [ArtCraft, des clones open source de Photoshop, Lightroom et Premiere codés avec l'IA](/fr/20261009-artcraft-vibe-code-suite-adobe-saaspocalypse), à essayer sur des copies de fichiers.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), rescapé d'Adobe*

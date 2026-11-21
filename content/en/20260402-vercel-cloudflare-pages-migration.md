@@ -326,4 +326,4 @@ And for an African developer who has to juggle currency conversions, bank fees a
 *Correction, November 8, 2026: "thanks, Uncle Donald" was unfair. The card payment blockage came from GIM-UEMOA's Decision No. 31, which gave Visa and Mastercard an ultimatum to comply by March 31, 2026 ([Financial Afrik](https://www.financialafrik.com/2026/01/29/uemoa-les-cartes-visa-et-mastercard-ont-90-jours-pour-se-conformer/){target="_blank" rel="noopener"}). In the table, Vercel does publish a request quota for its free plan: 1 million per month ([Hobby plan](https://vercel.com/docs/plans/hobby){target="_blank" rel="noopener"}), not "not disclosed". Added the same day: what happens when you go over Vercel's free plan, the difference between the Workers and Pages build quotas, and the limits of the CNAME option.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), still hunting for tools that don't break the piggy bank*

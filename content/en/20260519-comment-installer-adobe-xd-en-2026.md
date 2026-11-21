@@ -79,4 +79,4 @@ The goal is to finish the project before Creative Cloud asks you to log in again
 *Updated November 8, 2026: added Adobe XD's official status (still in maintenance mode, according to Adobe's FAQ), the plan's new name (Creative Cloud Pro, formerly All Apps), the free trial terms and a troubleshooting section.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com). Adobe XD is a bit like a fax machine in 4K: technically impressive, strategically questionable.*

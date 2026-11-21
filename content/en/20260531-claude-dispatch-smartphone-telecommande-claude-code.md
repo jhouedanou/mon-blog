@@ -76,4 +76,4 @@ My own use is simple, I've never delegated writing my code to Claude Code ([I ex
 *Updated November 8, 2026: based on the [official Remote Control documentation](https://code.claude.com/docs/en/remote-control){target="_blank" rel="noopener"}, added the Ultra plan, starting with `claude --remote-control`, push notifications and a comparison with Dispatch. Two clarifications correct the post: the session transcript is stored by Anthropic (the post said nothing travelled anywhere else), and Claude Code does not always ask for your approval: it depends on the session's permission mode.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com). This is the kind of feature that justifies the rising price of RAM.*

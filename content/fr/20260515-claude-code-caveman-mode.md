@@ -190,4 +190,4 @@ Lien : [github.com/JuliusBrussee/caveman](https://github.com/JuliusBrussee/cavem
 *Mise à jour du 8 novembre 2026 : commandes épinglées sur la version 4.1.0, nouveau CLI (`npx @caveman-ai/cli@latest`) et ses six « rocks », télémétrie du CLI, coût des règles du skill, cavemem et cavekit gelés, d'après le [README](https://github.com/JuliusBrussee/caveman){target="_blank" rel="noopener"} et la [page d'installation](https://github.com/JuliusBrussee/caveman/blob/main/INSTALL.md){target="_blank" rel="noopener"} du projet ; ajout de la mesure indépendante de JetBrains. Correction : le tableau de mai compare Caveman à Claude sans consigne, et non à la consigne « Answer concisely ». Le titre ne cite plus de pourcentage.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), moins de bla-bla, plus de code. Ooga booga, facture mini.*

@@ -113,4 +113,4 @@ Almost all of these products are good quality for their low price, except the Bo
 _Images: Oraimo._
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), Oraimo customer, no commission*

@@ -65,4 +65,4 @@ For more stories of watts and old Macs: [the portable dual monitor that passes t
 *Correction, October 8, 2026: the salesman was wrong about the 240W cable, but I was wrong about the 60W one: with the original 87W charger, you need a 5 A (100W) USB-C cable to get the full power; a 60W cable caps charging at 60W.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), debunker of watts*

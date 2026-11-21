@@ -121,4 +121,4 @@ C'est sur ce même HP Pro x2, sous Linux, que j'ai découvert [Ghostwriter, l'al
 *Mise à jour du 8 octobre 2026 : ajout de précautions sourcées (clonage depuis une session live, disque source avec erreurs de lecture, UUID identiques après le clonage) ; script corrigé : `e2fsck -f` avant `resize2fs`, et nom de partition correct sur les disques NVMe ou eMMC (`/dev/nvme0n1p2` au lieu de `/dev/nvme0n12`).*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), clonneur de manchots*

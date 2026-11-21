@@ -68,4 +68,4 @@ I'm happy to work with people, but not on a channel where you can't find anythin
 _Photo: [Rahul Shah](https://www.pexels.com/@-rahulshah-/){target="_blank" rel="noopener"}, on Pexels._
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), reachable by email*

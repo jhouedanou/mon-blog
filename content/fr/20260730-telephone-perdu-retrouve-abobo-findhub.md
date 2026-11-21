@@ -83,4 +83,4 @@ Trois leçons, gratuites, apprises à 12 000 FCFA :
 *Mise à jour du 8 novembre 2026 : ajout de la précision de localisation annoncée par Google ([aide Google](https://support.google.com/android/answer/6160491?hl=fr){target="_blank" rel="noopener"}), et du nom officiel du service, Find Hub (« Localiser » en français).*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+_[Jean-Luc Houédanou](https://houedanou.com), FindHub t'emmène à Abobo, mais c'est l'honnêteté d'une inconnue qui te ramène le téléphone._

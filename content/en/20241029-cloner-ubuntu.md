@@ -121,4 +121,4 @@ It was on this same HP Pro x2, running Linux, that I discovered [Ghostwriter, th
 *Updated October 8, 2026: added sourced precautions (cloning from a live session, source disk with read errors, identical UUIDs after cloning); script fixed: `e2fsck -f` before `resize2fs`, and correct partition name on NVMe or eMMC disks (`/dev/nvme0n1p2` instead of `/dev/nvme0n12`).*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), cloner of penguins*

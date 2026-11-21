@@ -126,4 +126,4 @@ _Montants en FCFA calculés à environ 585 FCFA pour 1 dollar, le taux de la mi-
 _Images : Tesla._
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), conducteur terrestre, mais impressionné*

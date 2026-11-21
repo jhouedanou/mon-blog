@@ -79,4 +79,4 @@ Le but est de finir le projet avant que Creative Cloud ne vous demande de vous r
 *Mise à jour du 8 novembre 2026 : ajout du statut officiel d'Adobe XD (toujours en mode maintenance d'après la FAQ d'Adobe), du nouveau nom de la formule (Creative Cloud Pro, ex-« Tout Creative Cloud »), des conditions de l'essai gratuit et d'une section de dépannage.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), Adobe XD, c'est un peu comme un fax en 4K : techniquement impressionnant, stratégiquement discutable.*

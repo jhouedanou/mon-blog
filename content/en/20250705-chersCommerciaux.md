@@ -81,4 +81,4 @@ Technology only documents, and it's up to you to decide whether that documentati
 *Correction, October 8, 2026: added a sourced clarification about the unwanted-tracking alerts Apple and Android send to the person travelling with an AirTag.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), reluctant tech spy*

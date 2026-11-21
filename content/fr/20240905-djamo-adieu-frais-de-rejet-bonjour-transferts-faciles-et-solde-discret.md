@@ -40,4 +40,4 @@ Djamo semble avoir entendu ce conseil, puisque l'application permet désormais d
 Plus sérieusement, ces nouveautés montrent que Djamo comprend les besoins de ses utilisateurs, jusqu'aux petits tracas du quotidien. J'espère que les autres acteurs du secteur suivront l'exemple pour nous simplifier la vie (et nous épargner [les files d'attente en agence, et les passe-droits qui vont avec](/fr/20250101-lacorruption)).
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), économiste de poche*
