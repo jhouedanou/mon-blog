@@ -29,17 +29,17 @@ Vercel, c'est très confortable.
 - CDN monde
 - Edge Functions gratuites
 
-Mais voilà : le tier gratuit, c'est **100 Go de bande passante par mois**. Et une fois que vous dépassez (ou que vous approchez), les prix montent vite. Sur l'offre gratuite (Hobby), un dépassement oblige le plus souvent à attendre 30 jours avant de réutiliser la ressource ; pour continuer tout de suite, il faut passer à l'offre Pro, à 20 $ par mois et par membre ([offre Hobby de Vercel](https://vercel.com/docs/plans/hobby){target="_blank" rel="noopener"}).
+Mais le tier gratuit, c'est **100 Go de bande passante par mois**. Et une fois que vous dépassez (ou que vous approchez), les prix montent vite. Sur l'offre gratuite (Hobby), un dépassement oblige le plus souvent à attendre 30 jours avant de réutiliser la ressource ; pour continuer tout de suite, il faut passer à l'offre Pro, à 20 $ par mois et par membre ([offre Hobby de Vercel](https://vercel.com/docs/plans/hobby){target="_blank" rel="noopener"}).
 
 Sachant que je dois héberger plusieurs projets perso (incluant ce blog, [passé de WordPress à Nuxt en 2024](/fr/20241005-on-fait-un-peu-le-menage), et d'autres expériences numériques), l'addition s'accumule.
 
-Vercel n'est pas mauvais. Il faut juste être honnête : c'est fait pour les startups financées, pas pour les développeurs africains qui veulent garder leur indépendance.
+Vercel n'est pas mauvais, mais il est fait pour les startups financées plus que pour les développeurs africains qui veulent garder leur indépendance.
 
 ---
 
 ## Pourquoi Cloudflare Pages ?
 
-Bon, d'abord je dois clarifier un truc : **Cloudflare n'est pas parfait**. Mais pour ce que je fais, c'est le meilleur rapport qualité/prix gratuit que j'ai trouvé.
+Bon, d'abord, **Cloudflare n'est pas parfait**, mais pour ce que je fais, c'est le meilleur rapport qualité/prix gratuit que j'ai trouvé.
 
 Voici pourquoi :
 
@@ -66,9 +66,9 @@ Cloudflare gère l'un des plus grands réseaux de data centers du monde. Votre s
 
 ### 4. **100 000 requêtes par jour (gratuites)**
 
-Mon blog vient d'être migré. Premier jour sur Cloudflare Pages : **492 requêtes sur les 100 000 autorisées par jour**. On est large.
+Mon blog vient d'être migré, et le premier jour sur Cloudflare Pages il a consommé **492 requêtes sur les 100 000 autorisées par jour**, donc on est large.
 
-Vercel limite la bande passante, Cloudflare limite les requêtes, mais à 100 000/jour, il faut vraiment que votre site devienne viral pour atteindre cette limite.
+Vercel limite la bande passante, Cloudflare limite les requêtes, mais à 100 000/jour, il faut que votre site devienne viral pour atteindre cette limite.
 
 ### 5. **Configuration ridicule**
 
@@ -78,7 +78,7 @@ Vercel limite la bande passante, Cloudflare limite les requêtes, mais à 100 00
 - Certificats SSL auto-renouvelés
 - 200 000 événements d'observabilité/jour (logs, traces)
 
-C'est presque trop simple. Enfin, en théorie : lisez la section « Les pièges » plus bas avant de vous réjouir. 😬
+C'est presque trop simple, en théorie du moins, donc lisez la section « Les pièges » plus bas avant de vous réjouir. 😬
 
 ### 6. **Le prix du domaine personnalisé**
 
@@ -127,7 +127,7 @@ main = "dist/_worker.js/index.js"
 directory = "./dist"
 ```
 
-Comment savoir ? Essayez de modifier la commande de déploiement dans le dashboard. Si vous ne pouvez pas la changer, c'est un projet Workers — utilisez la deuxième config.
+Comment savoir ? Essayez de modifier la commande de déploiement dans le dashboard. Si vous ne pouvez pas la changer, c'est un projet Workers, donc utilisez la deuxième config.
 
 ### Step 3 : Connecter votre repo GitHub
 
@@ -138,21 +138,21 @@ Comment savoir ? Essayez de modifier la commande de déploiement dans le dashboa
 5. Deploy command : `npx wrangler deploy` (imposé par Cloudflare si projet Workers)
 6. Build output directory : vérifié automatiquement via `wrangler.toml`
 
-**Attention** : le formulaire « Build configuration » dans le dashboard Cloudflare peut être capricieux. J'ai personnellement eu des erreurs `An internal error prevented the form from submitting` en essayant de changer la commande de déploiement. Si ça vous arrive, ne forcez pas — adaptez votre `wrangler.toml` à la place.
+**Attention** : le formulaire « Build configuration » dans le dashboard Cloudflare peut être capricieux. J'ai eu des erreurs `An internal error prevented the form from submitting` en essayant de changer la commande de déploiement. Si ça vous arrive, ne forcez pas, adaptez votre `wrangler.toml` à la place.
 
 ### Step 4 : Pointer votre domaine
 
 Chez votre registrar DNS (GoDaddy dans mon cas) :
 
-**Option A** (recommandée) — Utiliser les nameservers Cloudflare :
+**Option A** (recommandée), utiliser les nameservers Cloudflare :
 - Remplacer les nameservers par ceux de Cloudflare
 - Cloudflare gère le reste
 
-**Option B** — CNAME seul :
+**Option B**, CNAME seul :
 - Ajouter un CNAME : `www` → `votre-projet.pages.dev`
 - Cloudflare vous donne l'URL exacte
 
-Vous pouvez garder vos DNS chez GoDaddy et juste ajouter un CNAME. Ou vous pouvez tout basculer chez Cloudflare (c'est gratuit aussi).
+Vous pouvez garder vos DNS chez GoDaddy et juste ajouter un CNAME, ou tout basculer chez Cloudflare (c'est gratuit aussi).
 
 Attention, l'option B ne marche que pour un sous-domaine comme `www`, sur un projet Pages. Un domaine nu (`exemple.com`) exige les nameservers de Cloudflare ([domaines personnalisés de Pages](https://developers.cloudflare.com/pages/configuration/custom-domains/){target="_blank" rel="noopener"}), et le domaine personnalisé d'un projet Workers, une zone active chez Cloudflare ([Custom Domains de Workers](https://developers.cloudflare.com/workers/configuration/routing/custom-domains/){target="_blank" rel="noopener"}). Dans ces deux cas, c'est l'option A.
 
@@ -177,17 +177,17 @@ Exemple `_redirects` :
 
 Et profitez-en pour rediriger en 301 vos anciennes adresses. Sur ce blog, je ne l'ai fait que des mois plus tard, et je raconte ce que ça m'a coûté dans [mon billet sur le SEO perdu après la migration](/fr/20261018-migration-wordpress-nuxt-referencement-perdu-recupere).
 
-### 3. **Le `wrangler.toml` : un vrai champ de mines**
+### 3. **Le `wrangler.toml`**
 
 Celui-là m'a coûté des **heures** à tourner en rond entre des messages d'erreur cryptiques et un dashboard Cloudflare buggé.
 
-**Première erreur** : j'avais dans mon `wrangler.toml` une config `[site]` avec `bucket = "./dist"`, un vestige de l'ancienne méthode Workers Sites. Résultat : Wrangler cherchait un fichier `workers-site/index.js` qui n'existait pas :
+**Première erreur** : j'avais dans mon `wrangler.toml` une config `[site]` avec `bucket = "./dist"`, un vestige de l'ancienne méthode Workers Sites. Wrangler cherchait donc un fichier `workers-site/index.js` qui n'existait pas :
 
 ```
 ✘ [ERROR] The entry-point file at "workers-site/index.js" was not found.
 ```
 
-**Deuxième erreur** : j'ai remplacé par `pages_build_output_dir = "./dist"`, la bonne config pour Cloudflare **Pages**. Sauf que ma commande de déploiement dans le dashboard était `npx wrangler deploy`, une commande pour **Workers**, pas pour Pages. Résultat :
+**Deuxième erreur** : j'ai remplacé par `pages_build_output_dir = "./dist"`, la bonne config pour Cloudflare **Pages**. Sauf que ma commande de déploiement dans le dashboard était `npx wrangler deploy`, une commande pour **Workers**, pas pour Pages, ce qui a donné :
 
 ```
 ▲ [WARNING] It seems that you have run `wrangler deploy` on a Pages project,
@@ -203,7 +203,7 @@ An internal error prevented the form from submitting. Please try again.
 Invalid request body
 ```
 
-Même `npx wrangler pages deploy` sans argument : pareil. Le formulaire refusait tout sauf `npx wrangler deploy`. Frustrant.
+Même `npx wrangler pages deploy` sans argument donnait la même erreur, et le formulaire refusait tout sauf `npx wrangler deploy`, ce qui était frustrant.
 
 **La solution finale** : puisque le dashboard m'imposait `npx wrangler deploy`, j'ai adapté le `wrangler.toml` pour que **cette commande** fonctionne. C'est-à-dire le configurer comme un projet Workers qui sert des assets :
 
@@ -219,32 +219,30 @@ directory = "./dist"
 - `main` pointe vers le worker SSR que Nuxt génère automatiquement dans `dist/_worker.js/index.js`
 - `[assets]` indique à Wrangler de servir les fichiers statiques depuis `./dist`
 
-Vous pensez que c'est fini ? Moi aussi je pensais.
+Je pensais que c'était fini, mais non.
 
-**Quatrième erreur** : le build passe, Wrangler lit la config, commence à scanner les 515 fichiers du dossier `dist/`… et panique parce qu'il trouve le dossier `_worker.js/` dedans. Il refuse de l'uploader comme un asset public (logique : c'est du code serveur privé) :
+**Quatrième erreur** : le build passe, Wrangler lit la config, commence à scanner les 515 fichiers du dossier `dist/`… et panique parce qu'il trouve le dossier `_worker.js/` dedans. Il refuse de l'uploader comme un asset public (logique, puisque c'est du code serveur privé) :
 
 ```
 ✘ [ERROR] Uploading a Pages _worker.js directory as an asset.
   This could expose your private server-side code to the public Internet.
 ```
 
-La solution : créer un fichier `.assetsignore` dans `dist/` qui contient `_worker.js`. Sauf que `dist/` est régénéré à chaque build, donc il faut le créer automatiquement. J'ai modifié mon script de build dans `package.json` :
+La solution consiste à créer un fichier `.assetsignore` dans `dist/` qui contient `_worker.js`. Sauf que `dist/` est régénéré à chaque build, donc il faut le créer automatiquement. J'ai modifié mon script de build dans `package.json` :
 
 ```json
 "build": "nuxt build && echo _worker.js > dist/.assetsignore"
 ```
 
-Un `echo`. Quatre erreurs de déploiement pour en arriver à un `echo`.
+Quatre erreurs de déploiement pour en arriver à un `echo`.
 
-Je vous laisse méditer.
-
-**Morale** : il y a un vrai flou entre les projets « Pages » et « Workers » chez Cloudflare. Si votre projet a été créé côté Workers, le dashboard vous force à utiliser `wrangler deploy`. Adaptez votre `wrangler.toml` en conséquence, n'oubliez pas le `.assetsignore`, et surtout : **ne vous battez pas avec le formulaire du dashboard**. Il va gagner.
+Il y a un flou entre les projets « Pages » et « Workers » chez Cloudflare. Si votre projet a été créé côté Workers, le dashboard vous force à utiliser `wrangler deploy`. Adaptez votre `wrangler.toml` en conséquence, n'oubliez pas le `.assetsignore`, et surtout **ne vous battez pas avec le formulaire du dashboard**, parce qu'il va gagner.
 
 ### 4. **Les erreurs 404 pendant le prerendering**
 
 Pendant le build, vous allez voir des `[404] Document not found!` dans les logs. Ne paniquez pas.
 
-C'est normal si vous utilisez `documentDriven: true` dans Nuxt Content. Le crawler essaie de trouver un document markdown pour chaque route — y compris `/manifest.json` ou `/robots.txt`, qui ne sont évidemment pas des articles.
+C'est normal si vous utilisez `documentDriven: true` dans Nuxt Content. Le crawler essaie de trouver un document markdown pour chaque route, y compris `/manifest.json` ou `/robots.txt`, qui ne sont évidemment pas des articles.
 
 Ajoutez `failOnError: false` dans votre config Nitro pour que ces erreurs ne bloquent pas le build :
 
@@ -261,7 +259,7 @@ nitro: {
 
 ### 5. **Les builds qui échouent silencieusement**
 
-Parfois, Cloudflare construit votre site sans erreur… mais le résultat est cassé. Lisez les logs de build. Toujours.
+Parfois, Cloudflare construit votre site sans erreur… mais le résultat est cassé. Lisez toujours les logs de build.
 
 ### 6. **L'authentification GitHub**
 
@@ -269,7 +267,7 @@ Assurez-vous que Cloudflare a les bonnes permissions sur votre repo. Si votre bu
 
 ---
 
-## Vercel ou Cloudflare Pages : ce que j'ai gagné (honnêtement)
+## Ce que j'ai gagné en passant de Vercel à Cloudflare Pages
 
 | Métrique | Vercel | Cloudflare |
 |----------|--------|-----------|
@@ -283,13 +281,13 @@ Assurez-vous que Cloudflare a les bonnes permissions sur votre repo. Si votre bu
 | Facilité de setup | ⭐⭐⭐ | ⭐ (4 erreurs et un `echo` plus tard) |
 | Support | Bon | Excellent |
 
-Ce que j'y gagne : **zéro stress financier**, pour des **performances identiques ou meilleures**.
+J'y gagne **zéro stress financier**, pour des **performances identiques ou meilleures**.
 
 ---
 
 ## Et les autres alternatives gratuites à Vercel ?
 
-Juste pour être exhaustif :
+Pour être exhaustif :
 
 - **GitHub Pages** : Gratuit, mais statique uniquement (pas de SSR). Bon pour un portfolio ou un blog simple.
 - **Netlify** : Solide, SSR complet, offre gratuite à 300 crédits (la bande passante est décomptée en crédits). Bonne alternative à Cloudflare.
@@ -301,7 +299,7 @@ Mais face à ces trois-là, **Cloudflare Pages gagne à chaque fois**.
 
 ## Le moment où j'ai réalisé que c'était bon
 
-Récapitulons mon après-midi du 2 avril 2026 :
+Mon après-midi du 2 avril 2026, dans l'ordre :
 
 1. ❌ `workers-site/index.js` introuvable (config Workers Sites obsolète)
 2. ❌ `Missing entry-point` (conflit Pages vs Workers)
@@ -309,25 +307,23 @@ Récapitulons mon après-midi du 2 avril 2026 :
 4. ❌ `_worker.js` uploadé comme asset public (code serveur exposé sur Internet)
 5. ✅ Un `echo _worker.js > dist/.assetsignore` et tout marche
 
-Quatre erreurs en un après-midi, et la solution finale tient en une ligne de shell.
+Si quelqu'un de Cloudflare lit ceci : **votre formulaire de configuration de build est cassé**. Et la distinction entre Pages et Workers n'est pas claire du tout.
 
-Si quelqu'un de Cloudflare lit ceci : **votre formulaire de configuration de build est cassé**. Et la distinction entre Pages et Workers est aussi claire qu'un rond-point à Abidjan à 18h.
-
-Mais une fois que c'est configuré ? Franchement ?
+Mais une fois que c'est configuré, franchement, voilà ce que ça donne :
 
 TTFB : ~120 ms\
 Pages rendues : instantanées\
 Facture : 0 FCFA
 
-Depuis ma migration de cPanel vers CyberPanel, j'ai compris une chose : **les outils gratuits et open source ne sont pas des compromis. Ils sont juste parfois pénibles à configurer.**
+Depuis ma migration de cPanel vers CyberPanel, j'ai compris une chose : **les outils gratuits et open source font le travail, même s'ils sont parfois pénibles à configurer.**
 
-Cloudflare Pages, c'est le restaurant où la cuisine est excellente mais où il faut traverser un labyrinthe pour trouver la porte d'entrée. Une fois dedans, vous ne regrettez rien.
+Cloudflare Pages, c'est un excellent service dont la mise en route est pénible, mais une fois que ça tourne, vous ne regrettez rien.
 
-Et pour un développeur africain qui doit jongler avec les conversions de devises, les frais bancaires, et les ruptures de paiement aléatoires : **un outil gratuit qui marche vraiment, ça n'a pas de prix** — même si la mise en route vous coûte quelques cheveux (pas grave en ce qui me concerne, vu le peu qu'il me reste).
+Et pour un développeur africain qui doit jongler avec les conversions de devises, les frais bancaires, et les ruptures de paiement aléatoires, **un outil gratuit qui marche, ça n'a pas de prix**, même si la mise en route vous coûte quelques cheveux (pas grave en ce qui me concerne, vu le peu qu'il me reste).
 
 *Mise à jour du 8 octobre 2026 : l'exemple de l'étape 1 a été corrigé, la clé de configuration Nitro est `preset` (au singulier, une simple chaîne), comme dans l'exemple du piège n° 4 ([documentation Nitro](https://nitro.build/deploy/providers/cloudflare)). La ligne « Edge functions » du tableau indique maintenant la limite du plan gratuit, 100 000 requêtes par jour ([tarifs Cloudflare Workers](https://developers.cloudflare.com/workers/platform/pricing/)). Netlify est passé à une tarification par crédits : l'offre gratuite donne 300 crédits, et la bande passante en consomme 20 par Go ([tarifs Netlify](https://www.netlify.com/pricing/)). Enfin, la documentation de Nitro recommande désormais Cloudflare Workers plutôt que Pages pour les nouveaux déploiements, et ce blog n'utilise plus de Worker du tout : il est servi en fichiers statiques ([je raconte pourquoi ici](/fr/20260922-jai-recupere-le-trafic-de-mon-blog-et-les-bots-qui-vont-avec)).*
 
 *Correction du 8 novembre 2026 : « merci Tonton Donald » était injuste. Le blocage des paiements par carte venait de la décision n° 31 du GIM-UEMOA, qui a fixé à Visa et Mastercard un ultimatum au 31 mars 2026 ([Financial Afrik](https://www.financialafrik.com/2026/01/29/uemoa-les-cartes-visa-et-mastercard-ont-90-jours-pour-se-conformer/){target="_blank" rel="noopener"}). Dans le tableau, Vercel publie bien un quota de requêtes pour son offre gratuite : 1 million par mois ([offre Hobby](https://vercel.com/docs/plans/hobby){target="_blank" rel="noopener"}), et non « non communiqué ». Ajouts du même jour : ce qui se passe quand on dépasse l'offre gratuite de Vercel, la différence entre le quota de build de Workers et celui de Pages, et les limites de l'option CNAME.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com) — toujours à la chasse aux outils qui ne cassent pas la tirelire*
+*[Jean-Luc Houédanou](https://houedanou.com)*

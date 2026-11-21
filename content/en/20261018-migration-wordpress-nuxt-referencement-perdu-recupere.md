@@ -9,7 +9,7 @@ tags: ["dev", "tutorial", "seo", "nuxt", "cloudflare"]
 
 This blog changed engines in October 2024. At the time I wrote about [why I was leaving WordPress for Nuxt](/en/20241005-on-fait-un-peu-le-menage), then about [the result, a flat-file blog with no database](/en/20241021-pendaison-de-cremaillere). What I didn't write about is the SEO I lost after the migration. In fact, I only fully understood it today, going back through the site's Git history, commit by commit, and rebuilding the site as it was at different dates.
 
-The main problem wasn't Nuxt. It was the addresses. A single post changed URL four times, and for nearly two years, the old addresses led nowhere.
+The main problem came from the addresses, more than from Nuxt. A single post changed URL four times, and for nearly two years, the old addresses led nowhere.
 
 ## What Google knew before the migration
 
@@ -54,7 +54,7 @@ That last point matters. When `robots.txt` answers with a server error, [Google 
 
 ## The other missing signals
 
-The addresses were the bulk of the problem. But going back through the history, I found a series of small flaws that didn't help:
+The addresses were the bulk of the problem, but going back through the history, I found a series of small flaws that didn't help:
 
 - **No `canonical` tag on articles before July 2026.** That's the tag that tells Google which address is the reference one for a page.
 - **Three main headings (H1) per article** at first: the logo, the page template's title and the title written in the Markdown file. The last duplicates went away in October 2026.
@@ -101,9 +101,9 @@ An old link to the WordPress site now lands on the main domain. If the post has 
 
 ### A real 404 for everything else
 
-An address with no equivalent shouldn't be redirected to the home page: Google treats that as a *soft 404*. It should just answer 404. Since September 23, 2026, the site has been fully generated ahead of time and served as plain files. An unknown address gets the site's 404 page, with a real 404 code.
+An address with no equivalent shouldn't be redirected to the home page: Google treats that as a *soft 404*. It should answer 404. Since September 23, 2026, the site has been fully generated ahead of time and served as plain files. An unknown address gets the site's 404 page, with a real 404 code.
 
-### A sitemap that tells the truth
+### An accurate sitemap
 
 The sitemap now lists each post only once, with its real publication or update date. Today I also removed 53 empty tag pages from it: the language switcher led from `/en/tags/africa` to `/tags/africa`, a page with no articles at all, which the site generated anyway and announced to Google.
 
@@ -118,7 +118,7 @@ A canonical tag on every page, the language declared correctly on the English pa
 
 ## Where the site stands today
 
-I audited the live site on October 18, 2026. The details are in the repository: [ranking audit](https://github.com/jhouedanou/mon-blog/blob/master/docs/audit-positionnement-2026-10-18.md){target="_blank" rel="noopener"}. In short:
+I audited the live site on October 18, 2026. The details are in the repository: [ranking audit](https://github.com/jhouedanou/mon-blog/blob/master/docs/audit-positionnement-2026-10-18.md){target="_blank" rel="noopener"}. Here is what comes out of it:
 
 - **What's going well.** The 344 addresses the sitemap listed before this update all answered 200. It now lists 293: minus the 53 empty tag pages, plus this post in French and in English. Every page has its canonical tag, a single H1 (with one exception, fixed today) and a description. `robots.txt` exists and points to the sitemap.
 - **What's holding it back.** Lighthouse, in simulated mobile, gives 92/100 for SEO and 100/100 for accessibility, but only 59/100 for performance on the home page and 58/100 on an article. The largest visible element takes 5 to 7 seconds to show up. Part of the delay comes from third-party scripts: Google Tag Manager and the Infolinks ads block the browser for 230 to 330 milliseconds.
@@ -127,7 +127,7 @@ I audited the live site on October 18, 2026. The details are in the repository: 
 
 ## What I take away from it
 
-With Nuxt Content, renaming a file means moving a page. Before you reorganize, rename or delete, write the redirect. And if you forgot, Git history keeps a record of every old address: you can still write the redirects months later.
+With Nuxt Content, renaming a file means moving a page. Before you reorganize, rename or delete, write the redirect. And if you forgot, Git history keeps a record of every old address, so you can still write the redirects months later.
 
 I'll check in again in a few weeks, with the Search Console numbers. If the curve doesn't climb back up, you'll hear about it.
 
@@ -136,4 +136,4 @@ I'll check in again in a few weeks, with the Search Console numbers. If the curv
 *Photo: [Ketut Subiyanto](https://www.pexels.com/photo/4246238/), Pexels.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com) — digital mover, redirects included*
+*[Jean-Luc Houédanou](https://houedanou.com)*

@@ -9,7 +9,7 @@ tags: ["dev", "tutoriel", "seo", "nuxt", "cloudflare"]
 
 Ce blog a changé de moteur en octobre 2024. J'ai raconté à l'époque [pourquoi j'ai quitté WordPress pour Nuxt](/fr/20241005-on-fait-un-peu-le-menage), puis [le résultat, un blog sans base de données](/fr/20241021-pendaison-de-cremaillere). Ce que je n'avais pas raconté, c'est tout le SEO perdu après la migration. Je ne l'ai d'ailleurs vraiment compris qu'aujourd'hui, en reprenant l'historique Git du site, commit par commit, et en reconstruisant le site tel qu'il était à différentes dates.
 
-Le problème principal n'était pas Nuxt. C'étaient les adresses. Un même billet a changé quatre fois d'URL, et pendant près de deux ans, les anciennes adresses ne menaient nulle part.
+Le problème principal venait des adresses, plus que de Nuxt. Un même billet a changé quatre fois d'URL, et pendant près de deux ans, les anciennes adresses ne menaient nulle part.
 
 ## Ce que Google connaissait avant la migration
 
@@ -54,7 +54,7 @@ Ce dernier point compte. Quand `robots.txt` répond par une erreur serveur, [Goo
 
 ## Les autres signaux qui manquaient
 
-Les adresses étaient le gros du problème. Mais en relisant l'historique, j'ai trouvé une série de petits défauts qui n'aidaient pas :
+Les adresses étaient le gros du problème, mais en relisant l'historique, j'ai trouvé une série de petits défauts qui n'aidaient pas :
 
 - **Pas de balise `canonical` sur les articles avant juillet 2026.** C'est la balise qui dit à Google quelle est l'adresse de référence d'une page.
 - **Trois titres principaux (H1) par article** à l'origine : le logo, le titre du modèle de page et le titre écrit dans le fichier Markdown. Les derniers doublons ont disparu en octobre 2026.
@@ -66,7 +66,7 @@ Les adresses étaient le gros du problème. Mais en relisant l'historique, j'ai 
 
 ### Rediriger chaque ancienne adresse, en 301
 
-C'est la correction qui compte le plus, comme lors d'[un changement de nom de domaine sur PrestaShop](/fr/20260331-migrer-prestashop-nouveau-nom-de-domaine). Les neuf premières redirections datent du 1er septembre 2026. Dans [mon billet du 22 septembre sur la limite CPU de Cloudflare Workers](/fr/20260922-jai-recupere-le-trafic-de-mon-blog-et-les-bots-qui-vont-avec), j'écrivais que chaque ancienne URL redirigeait vers le bon article. C'était faux : il en manquait 42.
+C'est la correction qui compte le plus, comme lors d'[un changement de nom de domaine sur PrestaShop](/fr/20260331-migrer-prestashop-nouveau-nom-de-domaine). Les neuf premières redirections datent du 1er septembre 2026. Dans [mon billet du 22 septembre sur la limite CPU de Cloudflare Workers](/fr/20260922-jai-recupere-le-trafic-de-mon-blog-et-les-bots-qui-vont-avec), j'écrivais que chaque ancienne URL redirigeait vers le bon article. C'était faux, il en manquait 42.
 
 L'historique Git permet de toutes les retrouver. Pour chaque époque, on sait où se trouvait chaque fichier dans `content/`, donc quelle était son adresse. Aujourd'hui, 51 anciennes adresses redirigent vers le bon billet :
 
@@ -101,9 +101,9 @@ Un vieux lien vers le WordPress arrive maintenant sur le domaine principal. Si l
 
 ### Un vrai 404 pour tout le reste
 
-Une adresse qui n'a pas d'équivalent ne doit pas être redirigée vers l'accueil : Google traite ça comme un *soft 404*. Elle doit répondre 404, tout simplement. Depuis le 23 septembre 2026, le site est entièrement généré à l'avance et servi comme de simples fichiers. Une adresse inconnue reçoit la page 404 du site, avec un vrai code 404.
+Une adresse qui n'a pas d'équivalent ne doit pas être redirigée vers l'accueil : Google traite ça comme un *soft 404*. Elle doit répondre 404. Depuis le 23 septembre 2026, le site est entièrement généré à l'avance et servi comme de simples fichiers. Une adresse inconnue reçoit la page 404 du site, avec un vrai code 404.
 
-### Un sitemap qui dit la vérité
+### Un sitemap exact
 
 Le plan du site annonce maintenant chaque billet une seule fois, avec sa vraie date de publication ou de mise à jour. Aujourd'hui, j'en ai aussi retiré 53 pages de tags vides : le sélecteur de langue menait de `/en/tags/africa` vers `/tags/africa`, une page sans aucun article, que le site générait quand même et annonçait à Google.
 
@@ -118,7 +118,7 @@ Balise canonique sur chaque page, langue déclarée correctement sur les pages a
 
 ## Où en est le site aujourd'hui
 
-J'ai fait un audit du site en ligne le 18 octobre 2026. Le détail est dans le dépôt : [audit du positionnement](https://github.com/jhouedanou/mon-blog/blob/master/docs/audit-positionnement-2026-10-18.md){target="_blank" rel="noopener"}. En résumé :
+J'ai fait un audit du site en ligne le 18 octobre 2026. Le détail est dans le dépôt : [audit du positionnement](https://github.com/jhouedanou/mon-blog/blob/master/docs/audit-positionnement-2026-10-18.md){target="_blank" rel="noopener"}. Voici ce qu'il en ressort :
 
 - **Ce qui va bien.** Les 344 adresses que le sitemap annonçait avant cette mise à jour répondaient toutes en 200. Il en annonce maintenant 293 : les 53 pages de tags vides en moins, ce billet et sa version anglaise en plus. Chaque page a sa balise canonique, un seul H1 (à une exception près, corrigée aujourd'hui) et une description. `robots.txt` existe et pointe vers le sitemap.
 - **Ce qui pèse.** Lighthouse, en mobile simulé, donne 92/100 en SEO et 100/100 en accessibilité, mais seulement 59/100 en performance sur l'accueil et 58/100 sur un article. Le plus gros élément visible met 5 à 7 secondes à s'afficher. Une part du retard vient de scripts tiers : Google Tag Manager et la publicité Infolinks bloquent le navigateur pendant 230 à 330 millisecondes.
@@ -127,7 +127,7 @@ J'ai fait un audit du site en ligne le 18 octobre 2026. Le détail est dans le d
 
 ## Ce que j'en retiens
 
-Avec Nuxt Content, renommer un fichier, c'est déplacer une page. Avant de ranger, de renommer ou de supprimer, il faut écrire la redirection. Et si on a oublié de le faire, l'historique Git garde la trace de chaque ancienne adresse : on peut encore écrire les redirections des mois plus tard.
+Avec Nuxt Content, renommer un fichier, c'est déplacer une page. Avant de ranger, de renommer ou de supprimer, il faut écrire la redirection. Et si on a oublié de le faire, l'historique Git garde la trace de chaque ancienne adresse, donc on peut encore écrire les redirections des mois plus tard.
 
 Je referai le point dans quelques semaines, avec les chiffres de la Search Console. Si la courbe ne remonte pas, vous en entendrez parler.
 
@@ -136,4 +136,4 @@ Je referai le point dans quelques semaines, avec les chiffres de la Search Conso
 *Photo : [Ketut Subiyanto](https://www.pexels.com/photo/4246238/), Pexels.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com) — déménageur numérique, redirections comprises*
+*[Jean-Luc Houédanou](https://houedanou.com)*
