@@ -10,11 +10,11 @@ tags: ["tutorial", "dev", "ai"]
 
 > *Why use many token when few do trick.*
 
-Claude Code caveman mode starts from a simple fact: you pay for Claude by the token, and Claude is a chatterbox. It explains, it rephrases, it compliments you, it prepares a polished introduction before laying down two useful lines of code.
+Claude Code caveman mode starts from the fact that you pay for Claude by the token and Claude talks a lot. It explains, it rephrases, it compliments you, and it prepares a polished introduction before laying down two useful lines of code.
 
-Julius Brussee had had enough. He released [Caveman](https://github.com/JuliusBrussee/caveman), a plugin for Claude Code (and 30+ other AI agents) that forces the agent to talk like a caveman. **Brain still big. Mouth small.**
+Julius Brussee had had enough and released [Caveman](https://github.com/JuliusBrussee/caveman), a plugin for Claude Code (and 30+ other AI agents) that forces the agent to talk like a caveman. **Brain still big. Mouth small.**
 
-Average result over 10 real prompts, according to the project's README in May 2026: **65% fewer output tokens**, up to 87% on long explanations. Technical accuracy: 100%. More recent measurements are far more modest (see below).
+Over 10 real prompts, the project's README claimed in May 2026 **65% fewer output tokens** on average, up to 87% on long explanations, with 100% technical accuracy. More recent measurements are far more modest (see below).
 
 ---
 
@@ -28,7 +28,7 @@ Average result over 10 real prompts, according to the project's README in May 20
 
 > "New object ref each render. Inline object prop = new ref = re-render. Wrap in useMemo."
 
-Same fix. 75% fewer words. The brain is still there; it's just the mouth that shuts up.
+It's the same fix, with 75% fewer words.
 
 ---
 
@@ -38,13 +38,13 @@ Caveman drops a *skill* file into the agent. That skill tells it: no filler, no 
 
 On Claude Code specifically, a hook writes a small flag file at every session, so Claude speaks Caveman from the very first message, without you typing `/caveman`.
 
-And a fun fact: a paper from March 2026 ([*Brevity Constraints Reverse Performance Hierarchies in Language Models*](https://arxiv.org/abs/2604.00025)) showed that forcing large models to be concise **improves accuracy by 26 points** on certain benchmarks. Fewer words = sometimes more correct.
+Fun fact, a paper from March 2026 ([*Brevity Constraints Reverse Performance Hierarchies in Language Models*](https://arxiv.org/abs/2604.00025)) showed that forcing large models to be concise **improves accuracy by 26 points** on certain benchmarks.
 
 ---
 
 ## Installing caveman mode in Claude Code
 
-A single line. The script detects every installed agent and drops the skill for each one. Node.js 22.13+ required. Safe to run again. The commands below are pinned to version 4.1.0, released on November 8, 2026, the one on the [official install page](https://github.com/JuliusBrussee/caveman/blob/main/INSTALL.md) at the time of this update: check there for the latest version number.
+A single line is enough. The script detects every installed agent and drops the skill for each one. It needs Node.js 22.13+ and is safe to run again. The commands below are pinned to version 4.1.0, released on November 8, 2026, the one on the [official install page](https://github.com/JuliusBrussee/caveman/blob/main/INSTALL.md) at the time of this update. Check there for the latest version number.
 
 ### macOS, Linux, WSL, Git Bash
 
@@ -58,7 +58,7 @@ curl -fsSL https://raw.githubusercontent.com/JuliusBrussee/caveman/v4.1.0/instal
 irm https://raw.githubusercontent.com/JuliusBrussee/caveman/v4.1.0/install.ps1 | iex
 ```
 
-~30 seconds. Agents that are not installed are skipped. To see first what the script would do, without writing anything, replace `| bash` with `| bash -s -- --dry-run`.
+Allow about 30 seconds, and agents that are not installed are skipped. To see first what the script would do, without writing anything, replace `| bash` with `| bash -s -- --dry-run`.
 
 ### Claude Code only, or just the skill
 
@@ -68,7 +68,7 @@ For Claude Code only, as a plugin:
 claude plugin marketplace add JuliusBrussee/caveman && claude plugin install caveman@caveman
 ```
 
-Already inside a Claude Code session? Same thing as slash commands: `/plugin marketplace add JuliusBrussee/caveman`, then `/plugin install caveman@caveman`.
+If you're already inside a Claude Code session, it's the same thing as slash commands: `/plugin marketplace add JuliusBrussee/caveman`, then `/plugin install caveman@caveman`.
 
 And if you only want the short answers, without the rest:
 
@@ -84,11 +84,11 @@ Since version 4.0, the [README](https://github.com/JuliusBrussee/caveman#install
 npx @caveman-ai/cli@latest
 ```
 
-It finds your agents and your logins, shows what it will change and waits for you to press Enter. If you had Caveman before 4.0, keep the `@latest`: without it, the old copy on your machine is the one that runs.
+It finds your agents and your logins, shows what it will change and waits for you to press Enter. If you had Caveman before 4.0, keep the `@latest`, because without it the old copy on your machine is the one that runs.
 
 **To trigger it**: type `/caveman` or say *"talk like caveman"*. To go back: *"stop caveman"*, *"normal mode"* or `/caveman off`.
 
-> If the installer struggles: open your agent in a copy of the repo and tell it *"Read CLAUDE.md and INSTALL.md, install caveman for me."* The agent fixes its own brain.
+> If the installer struggles, open your agent in a copy of the repo and tell it *"Read CLAUDE.md and INSTALL.md, install caveman for me."* The agent does the install itself.
 
 **Check**: the Claude Code statusline shows `[CAVEMAN]`. **Update** the plugin with `claude plugin update caveman@caveman` (the short name `caveman` fails), then restart Claude Code.
 
@@ -143,9 +143,9 @@ Measurements from the May 2026 README, in real tokens through the Claude API, ov
 | React Error Boundary | 3454 | 456 | **87%** |
 | **Average** | **1214** | **294** | **65%** |
 
-Careful: this table compares Caveman with Claude given no particular instruction. The project's eval harness, on the other hand, already compared it with the *"Answer concisely"* instruction, a tougher baseline: that's the one the README uses today.
+Careful: this table compares Caveman with Claude given no particular instruction. The project's eval harness, on the other hand, already compared it with the *"Answer concisely"* instruction, a tougher baseline, and that's the one the README uses today.
 
-> **Current as of October 2026**: the "75%" in the former title is the promise made by the [May 2026 README](https://github.com/JuliusBrussee/caveman/blob/e843518438b2cfb404edf00db2d8e64c1d975e34/README.md){target="_blank" rel="noopener"} ("~75% of output tokens"), even though its own measurements already showed 65% on average (the table above). The README has since re-run the measurement on a newer model, and the baseline is no longer an answer with no instruction but the *"Answer concisely"* instruction: against it, `/caveman` now only removes 3% more output tokens at the median, and `/ultracave` 35%. New models already know how to be concise. The figure the project highlights today is elsewhere: 33.2% fewer input tokens across whole sessions, thanks to the project's proxy ([source: Caveman README](https://github.com/JuliusBrussee/caveman#the-numbers){target="_blank" rel="noopener"}).
+> **Current as of October 2026**: the "75%" in the former title is the promise made by the [May 2026 README](https://github.com/JuliusBrussee/caveman/blob/e843518438b2cfb404edf00db2d8e64c1d975e34/README.md){target="_blank" rel="noopener"} ("~75% of output tokens"), even though its own measurements already showed 65% on average (the table above). The README has since re-run the measurement on a newer model, and the baseline is no longer an answer with no instruction but the *"Answer concisely"* instruction. Against it, `/caveman` now only removes 3% more output tokens at the median, and `/ultracave` 35%. New models already know how to be concise. The figure the project highlights today is 33.2% fewer input tokens across whole sessions, thanks to the project's proxy ([source: Caveman README](https://github.com/JuliusBrussee/caveman#the-numbers){target="_blank" rel="noopener"}).
 
 An independent measurement points the same way: over 86 real tasks in Claude Code, JetBrains measured about 8.5% fewer output tokens, with no detectable effect on task success or code quality ([InfoWorld, July 2026](https://www.infoworld.com/article/4193775/talk-like-a-caveman-prompts-save-tokens-but-far-less-than-promised.html){target="_blank" rel="noopener"}).
 
@@ -153,7 +153,7 @@ An independent measurement points the same way: over 86 real tasks in Claude Cod
 
 ## What you should know
 
-The caveman voice (the skill) only touches **output tokens**. Reasoning tokens (*thinking*) remain intact: Claude thinks as much as before, it just talks less. The real gain is **readability** and **speed** (~3× faster to read). Saving money is the bonus, and it comes at a price: the skill's rules weigh about 1,160 input tokens, and if you pay per request (GitHub Copilot), shorter answers save nothing.
+The caveman voice (the skill) only touches **output tokens**. Reasoning tokens (*thinking*) remain intact, so Claude thinks as much as before and talks less. The main gain is **readability** and **speed** (~3× faster to read). Saving money comes on top, and it has a cost, because the skill's rules weigh about 1,160 input tokens, and if you pay per request (GitHub Copilot), shorter answers save nothing.
 
 The version 4 CLI goes further and also compresses what the agent **reads** (see below). By default it sends usage stats: commands run, token counts, an install ID, the OS and your IP address, never your prompts or your code. To turn it off: `caveman telemetry off` or `DO_NOT_TRACK=1` ([Privacy section of the README](https://github.com/JuliusBrussee/caveman#privacy){target="_blank" rel="noopener"}). The skill alone sends nothing, except `/caveman-compress`, which sends the file being compressed to your model provider.
 
@@ -172,13 +172,13 @@ Julius is pushing a philosophy: *the agent does more with less.* Since version 4
 - **Waste fixes**: finds where your tokens go and keeps the prompt cache warm while you pause
 - **Browse**: web pages come back compressed
 
-`caveman status` shows what is on, `caveman off browse` turns one rock off. cavemem (shared memory between agents) and cavekit (the spec-driven build loop), presented separately in May, are now frozen: their development continues in the caveman repo. Six rock. One install. That it.
+`caveman status` shows what is on, `caveman off browse` turns one rock off. cavemem (shared memory between agents) and cavekit (the spec-driven build loop), presented separately in May, are now frozen, and their development continues in the caveman repo. Six rock. One install. That it.
 
 ---
 
 ## Verdict
 
-If you work with Claude Code daily and find the answers endless, install Caveman. One line, 30 seconds, and your monthly quota can breathe. The explanations stay correct, just without the frills. Read them anyway: pushing without reading is exactly [the limit of vibe coding](/en/20260423-chers-vibe-codeurs-bienvenue-dans-la-realite). Reading them is part of [what AI doesn't replace in a developer](/en/20261016-pourquoi-lia-ne-me-remplacera-pas). And to drive all of this from your phone, there's [Claude Code Remote Control](/en/20260531-claude-dispatch-smartphone-telecommande-claude-code).
+If you work with Claude Code daily and find the answers endless, install Caveman. The install takes one line and 30 seconds, and your monthly quota lasts longer. The explanations stay correct, without the frills. Read them anyway, because pushing without reading is [the limit of vibe coding](/en/20260423-chers-vibe-codeurs-bienvenue-dans-la-realite), and reading them is part of [what AI doesn't replace in a developer](/en/20261016-pourquoi-lia-ne-me-remplacera-pas). And to drive all of this from your phone, there's [Claude Code Remote Control](/en/20260531-claude-dispatch-smartphone-telecommande-claude-code).
 
 Apache-2.0 license since version 3.0.0 (before that: MIT for the skill, BSL for the engine). *Free like mass mammoth on open plain.*
 
@@ -190,4 +190,4 @@ Link: [github.com/JuliusBrussee/caveman](https://github.com/JuliusBrussee/cavema
 *Updated November 8, 2026: commands pinned to version 4.1.0, new CLI (`npx @caveman-ai/cli@latest`) and its six "rocks", CLI telemetry, the cost of the skill's rules, cavemem and cavekit frozen, based on the project's [README](https://github.com/JuliusBrussee/caveman){target="_blank" rel="noopener"} and [install page](https://github.com/JuliusBrussee/caveman/blob/main/INSTALL.md){target="_blank" rel="noopener"}; added JetBrains' independent measurement. Correction: the May table compares Caveman with Claude given no instruction, not with the "Answer concisely" instruction. The title no longer quotes a percentage.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com), less blah-blah, more code. Ooga booga, tiny bill.*
+*[Jean-Luc Houédanou](https://houedanou.com)*

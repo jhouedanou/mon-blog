@@ -8,39 +8,39 @@ searchIntent: "Comment migrer une infrastructure de cPanel vers CyberPanel et Op
 tags: ["tutoriel", "dev", "afrique"]
 ---
 
-Cet article, je ne pensais pas l'écrire un jour. Pas parce que le sujet est anodin (migrer toute une infrastructure serveur de cPanel vers CyberPanel, c'est tout sauf anodin), mais parce que la décision ne s'est pas prise dans un bureau, devant un benchmark bien propre. Elle s'est prise dans le stress, l'urgence, et un contexte géopolitique que personne dans le web hosting n'avait vu venir.
+Cet article, je ne pensais pas l'écrire un jour. Migrer toute une infrastructure serveur de cPanel vers CyberPanel, c'est tout sauf anodin, et la décision s'est prise dans le stress, l'urgence, et un contexte géopolitique que personne dans le web hosting n'avait vu venir.
 
-## Le contexte : cPanel, une relation longue et coûteuse
+## Plus de dix ans avec cPanel, et des prix qui montent
 
-Ça fait plus de dix ans que je vis avec cPanel/WHM. Comme beaucoup d'administrateurs systèmes en Afrique de l'Ouest, j'ai grandi professionnellement avec cette interface. Créer un compte, configurer un domaine, gérer des bases de données — tout passait par WHM. C'était confortable, familier, et pendant longtemps, le prix restait raisonnable.
+Ça fait plus de dix ans que je vis avec cPanel/WHM. Comme beaucoup d'administrateurs systèmes en Afrique de l'Ouest, j'ai grandi professionnellement avec cette interface. Créer un compte, configurer un domaine, gérer des bases de données, tout passait par WHM. C'était confortable, familier, et pendant longtemps, le prix restait raisonnable.
 
-Puis 2019 est arrivé. cPanel a abandonné son modèle de licence fixe pour un système par compte. Et depuis, chaque année, comme un rituel morbide, les prix augmentent. Au tarif partenaire (celui que cPanel facture aux hébergeurs et aux revendeurs de licences), la licence Solo valait **16 $/mois** en 2025. En 2026 ? **18 $**. La licence Pro (jusqu'à 30 comptes) a bondi de **27,25 $** à **32 $**, soit une hausse de **17 %** en un an ([grille partenaire 2025-2026 détaillée par VPSBG](https://www.vpsbg.eu/blog/cpanel-price-increase-2026){target="_blank" rel="noopener"}). Et au prix public, c'est pire : Solo à **29,99 $**, Pro à **53,99 $** ([tarifs officiels cPanel](https://cpanel.net/pricing/){target="_blank" rel="noopener"}), contre 26,99 $ et 46,99 $ en 2025. Quand tu gères plusieurs dizaines de sites, la facture devenait difficile à justifier.
+Puis, en 2019, cPanel a abandonné son modèle de licence fixe pour un système par compte, et depuis les prix augmentent chaque année. Au tarif partenaire (celui que cPanel facture aux hébergeurs et aux revendeurs de licences), la licence Solo valait **16 $/mois** en 2025 et **18 $** en 2026. La licence Pro (jusqu'à 30 comptes) a bondi de **27,25 $** à **32 $**, soit une hausse de **17 %** en un an ([grille partenaire 2025-2026 détaillée par VPSBG](https://www.vpsbg.eu/blog/cpanel-price-increase-2026){target="_blank" rel="noopener"}). Et au prix public, c'est pire, avec Solo à **29,99 $** et Pro à **53,99 $** ([tarifs officiels cPanel](https://cpanel.net/pricing/){target="_blank" rel="noopener"}), contre 26,99 $ et 46,99 $ en 2025. Quand tu gères plusieurs dizaines de sites, la facture devenait difficile à justifier.
 
 Mais honnêtement, les augmentations de cPanel seules ne m'auraient probablement pas fait bouger. On s'adapte, on ajuste les devis, on grogne un peu et on continue. Ce qui a tout changé, c'est ce qui s'est passé début 2026.
 
-## Quand les robinets se sont fermés : les cartes UEMOA bloquées
+## Les cartes UEMOA bloquées
 
-Début janvier 2026, les paiements en ligne par carte bancaire émise dans la zone UEMOA (Union économique et monétaire ouest-africaine) ont commencé à tomber. Dès le 2 janvier, Air Côte d'Ivoire et d'autres compagnies de la région affichaient que la vente en ligne par carte était « momentanément suspendue » ([Barid TV, 16 janvier 2026](https://barid.tv/2026/01/16/uemoa-le-bras-de-fer-des-paiements-en-ligne-gim-switch-defie-visa-et-mastercard/){target="_blank" rel="noopener"}). En cause : pas une mesure de l'administration Trump, comme je l'ai d'abord écrit, mais la décision n° 31 du GIM-UEMOA, le groupement interbancaire régional, validée par la BCEAO. Elle exige que toute transaction faite avec une carte émise dans la zone, même quand elle passe par Visa ou Mastercard, soit aussi routée et compensée par la plateforme régionale GIM-Switch. Visa et Mastercard n'ont pas suivi à temps. Le 29 janvier, un ultimatum leur a été fixé au 31 mars 2026 ([Financial Afrik, 29 janvier 2026](https://www.financialafrik.com/2026/01/29/uemoa-les-cartes-visa-et-mastercard-ont-90-jours-pour-se-conformer/){target="_blank" rel="noopener"}). Un bras de fer de souveraineté monétique, avec nos cartes bancaires au milieu.
+Début janvier 2026, les paiements en ligne par carte bancaire émise dans la zone UEMOA (Union économique et monétaire ouest-africaine) ont commencé à tomber. Dès le 2 janvier, Air Côte d'Ivoire et d'autres compagnies de la région affichaient que la vente en ligne par carte était « momentanément suspendue » ([Barid TV, 16 janvier 2026](https://barid.tv/2026/01/16/uemoa-le-bras-de-fer-des-paiements-en-ligne-gim-switch-defie-visa-et-mastercard/){target="_blank" rel="noopener"}). La cause n'était pas une mesure de l'administration Trump, comme je l'ai d'abord écrit, mais la décision n° 31 du GIM-UEMOA, le groupement interbancaire régional, validée par la BCEAO. Elle exige que toute transaction faite avec une carte émise dans la zone, même quand elle passe par Visa ou Mastercard, soit aussi routée et compensée par la plateforme régionale GIM-Switch. Visa et Mastercard n'ont pas suivi à temps. Le 29 janvier, un ultimatum leur a été fixé au 31 mars 2026 ([Financial Afrik, 29 janvier 2026](https://www.financialafrik.com/2026/01/29/uemoa-les-cartes-visa-et-mastercard-ont-90-jours-pour-se-conformer/){target="_blank" rel="noopener"}). C'était donc un conflit de souveraineté monétique, et ce sont nos cartes bancaires qui en ont subi les conséquences.
 
-**Résultat concret pour moi** : pendant presque un mois, impossible de payer la licence cPanel. Pas un problème de trésorerie, un problème d'infrastructure de paiement : les cartes ne passaient plus. Les alternatives (PayPal, Stripe) étaient instables ou indisponibles depuis la zone UEMOA. Et quand ta licence cPanel expire, WHM te le fait savoir — poliment d'abord, puis de moins en moins.
+**Pour moi, concrètement**, il a été impossible de payer la licence cPanel pendant presque un mois. La trésorerie était là, mais les cartes ne passaient plus. Les alternatives (PayPal, Stripe) étaient instables ou indisponibles depuis la zone UEMOA. Et quand ta licence cPanel expire, WHM te le fait savoir, poliment d'abord, puis de moins en moins.
 
 Le stress que ça génère quand tu gères les sites de plusieurs clients importants... je vous laisse imaginer. Chaque matin, tu vérifies que les sites sont encore en ligne. Chaque nuit, tu te demandes si demain la licence sera désactivée et si les sites vont basculer en erreur.
 
-C'est dans ce contexte-là que la décision a été prise : **dans l'urgence**.
+C'est dans ce contexte-là que la décision a été prise, **dans l'urgence**.
 
-## La migration : de WHM/cPanel vers CyberPanel + OpenLiteSpeed
+## La migration de WHM/cPanel vers CyberPanel + OpenLiteSpeed
 
-Le VPS était déjà sur Hostinger — un serveur costaud : **8 vCPU, 32 Go de RAM, 400 Go NVMe** sur AlmaLinux 9. La question n'était pas le matériel, mais le panneau de contrôle.
+Le VPS était déjà sur Hostinger, un serveur costaud avec **8 vCPU, 32 Go de RAM, 400 Go NVMe** sur AlmaLinux 9. Le matériel suffisait donc, et il restait à choisir le panneau de contrôle.
 
 **CyberPanel s'est imposé pour trois raisons :**
 
-**Premièrement, c'est gratuit.** Open source, communautaire, zéro licence. Quand payer un fournisseur américain devient un parcours du combattant, c'est un argument massif. Plus jamais de stress de renouvellement de licence.
+**Premièrement, c'est gratuit.** Il est open source, communautaire et sans licence. Quand payer un fournisseur américain devient aussi compliqué, c'est un argument massif, parce qu'il n'y a plus jamais de stress de renouvellement de licence.
 
 **Deuxièmement, il embarque OpenLiteSpeed nativement.** Pas besoin d'empiler Apache + Nginx + Engintron comme sur cPanel. OpenLiteSpeed est intégré dès l'installation, et c'est lui qui fait la différence côté performance.
 
-**Troisièmement, l'interface est moderne et légère.** Après 10 ans de cPanel, on s'attend à un choc. En réalité, CyberPanel est plus intuitif qu'on ne le pense. La gestion des sites, des bases de données, des certificats SSL — tout est là. (Un certificat s'y émet en quelques clics, j'en donne le chemin dans [mon guide pour changer le nom de domaine d'une boutique PrestaShop](/fr/20260331-migrer-prestashop-nouveau-nom-de-domaine).)
+**Troisièmement, l'interface est moderne et légère.** Après 10 ans de cPanel, on s'attend à un choc, mais CyberPanel est plus intuitif qu'on ne le pense. La gestion des sites, des bases de données, des certificats SSL, tout est là. (Un certificat s'y émet en quelques clics, j'en donne le chemin dans [mon guide pour changer le nom de domaine d'une boutique PrestaShop](/fr/20260331-migrer-prestashop-nouveau-nom-de-domaine).)
 
-## Le gain de vitesse : les chiffres parlent
+## Le gain de vitesse en chiffres
 
 Sur un site WordPress avec le thème Newspaper (tagDiv), voici ce qu'on a mesuré :
 
@@ -60,13 +60,13 @@ Sur un site WordPress avec le thème Newspaper (tagDiv), voici ce qu'on a mesur�
 | Temps total de chargement | < 1 seconde |
 | Admin WordPress | Fluide, ~600 ms |
 
-Soit une **réduction du TTFB de presque 80 %**. Et ce n'est pas seulement OpenLiteSpeed : c'est la combinaison de plusieurs facteurs :
+Soit une **réduction du TTFB de presque 80 %**. OpenLiteSpeed n'explique pas tout, le gain vient de la combinaison de plusieurs facteurs :
 
 - **OpenLiteSpeed** gère PHP via LSAPI, bien plus efficace que PHP-FPM derrière Apache
 - **LiteSpeed Cache** (le plugin WordPress) exploite nativement les capacités du serveur, contrairement aux plugins de cache génériques
 - **OPcache** correctement configuré (512 Mo de mémoire, 20 000 fichiers accélérés)
 - **Redis** pour l'object cache WordPress, éliminant des centaines de requêtes MySQL à chaque chargement (à condition de lui fixer une limite, sinon [Redis finit par remplir la RAM du VPS WordPress](/fr/20261031-redis-plein-vps-wordpress-vider-limiter))
-- **Le DNS** — on a découvert que le nameserver primaire de Hostinger était mort et causait des délais de 15 secondes sur chaque résolution. Remplacé par Cloudflare/Google, verrouillé avec `chattr +i`
+- **Le DNS** : on a découvert que le nameserver primaire de Hostinger était mort et causait des délais de 15 secondes sur chaque résolution. Remplacé par Cloudflare/Google, verrouillé avec `chattr +i`
 
 ### La stack finale
 
@@ -82,17 +82,17 @@ Client → Cloudflare CDN → Nginx (Engintron) → Apache → PHP-FPM + OPcache
 
 **Moins de couches, donc moins de latence.**
 
-## Les difficultés : ne vous mentez pas, ça pique
+## Les difficultés
 
-Je serais malhonnête de vous dire que tout s'est passé en douceur. Voici ce qui m'a fait transpirer :
+Je serais malhonnête de vous dire que tout s'est passé en douceur. Voici ce qui m'a posé problème :
 
 ### 1. Les erreurs 503 au démarrage
 
-Premier contact avec CyberPanel : le site affiche une erreur 503. Le diagnostic a révélé un chemin de socket LSAPI corrompu dans la configuration du vhost. Au lieu de pointer vers `/tmp/lshttpd/testa2500.sock`, la config contenait un caractère tronqué (`'d`). Il a fallu ouvrir les fichiers de configuration d'OpenLiteSpeed pour corriger à la main.
+Au premier contact avec CyberPanel, le site affiche une erreur 503. Le diagnostic a révélé un chemin de socket LSAPI corrompu dans la configuration du vhost. Au lieu de pointer vers `/tmp/lshttpd/testa2500.sock`, la config contenait un caractère tronqué (`'d`). Il a fallu ouvrir les fichiers de configuration d'OpenLiteSpeed pour corriger à la main.
 
 ### 2. Le piège ionCube + PHP 8.4
 
-CyberPanel installe volontiers `lsphp84` (PHP 8.4), mais ionCube Loader n'est pas compatible avec cette version. Résultat : un deadlock complet de PHP, aucune page ne se charge, et les logs affichent un cryptique *« No request delivery notification has been received from LSAPI application, possible dead lock »*. La solution : revenir à `lsphp82`. (Pour mettre à jour ces paquets `lsphp` sous CyberPanel, la marche à suivre est dans [mon billet sur la mise à jour de PHP contre PHP2Shell](/fr/20261021-php2shell-mettre-a-jour-php-debian-ubuntu-sans-forge).)
+CyberPanel installe volontiers `lsphp84` (PHP 8.4), mais ionCube Loader n'est pas compatible avec cette version. On obtient un deadlock complet de PHP, aucune page ne se charge, et les logs affichent un cryptique *« No request delivery notification has been received from LSAPI application, possible dead lock »*. La solution est de revenir à `lsphp82`. (Pour mettre à jour ces paquets `lsphp` sous CyberPanel, la marche à suivre est dans [mon billet sur la mise à jour de PHP contre PHP2Shell](/fr/20261021-php2shell-mettre-a-jour-php-debian-ubuntu-sans-forge).)
 
 ### 3. L'absence d'équivalent WHM pour la gestion multi-comptes
 
@@ -104,7 +104,7 @@ C'est le point le plus douloureux. cPanel embarque un écosystème mail complet 
 
 ### 5. Le manque de documentation francophone
 
-La communauté CyberPanel est anglophone. Quand tu es à Abidjan à 21h passées en train de debugger un socket qui refuse de démarrer, tu rêves d'une doc en français. Elle n'existe pas. C'est aussi pour ça que j'écris ce billet.
+La communauté CyberPanel est anglophone. Quand tu es à Abidjan à 21h passées en train de debugger un socket qui refuse de démarrer, tu rêves d'une doc en français, mais elle n'existe pas, et c'est aussi pour ça que j'écris ce billet.
 
 ### 6. Les sauvegardes One-Click
 
@@ -112,11 +112,11 @@ La fonctionnalité de sauvegarde automatique de CyberPanel m'a accueilli avec un
 
 ## Ce que j'ai appris
 
-Cette migration forcée m'a enseigné quelque chose d'important sur notre métier en Afrique de l'Ouest : **notre dépendance aux outils propriétaires américains est un risque systémique.**
+Cette migration forcée m'a appris que, dans notre métier en Afrique de l'Ouest, **notre dépendance aux outils propriétaires américains est un risque systémique.**
 
-Quand un bras de fer entre un régulateur régional et deux réseaux de cartes américains peut t'empêcher de payer ta licence serveur pendant un mois, quand la suspension des paiements Visa/Mastercard en zone UEMOA peut bloquer ton activité du jour au lendemain — il faut avoir un plan B. Et ce plan B, c'est **l'open source**.
+Quand un conflit entre un régulateur régional et deux réseaux de cartes américains peut t'empêcher de payer ta licence serveur pendant un mois, quand la suspension des paiements Visa/Mastercard en zone UEMOA peut bloquer ton activité du jour au lendemain, il faut avoir un plan B. Et ce plan B, c'est **l'open source**.
 
-CyberPanel n'est pas parfait. OpenLiteSpeed n'est pas parfait. Mais ils sont gratuits, performants, et **personne ne peut te couper l'accès parce que ta carte bancaire ne passe plus.**
+CyberPanel et OpenLiteSpeed ne sont pas parfaits, mais ils sont gratuits, performants, et **personne ne peut te couper l'accès parce que ta carte bancaire ne passe plus.**
 
 ## Recommandations pour ceux qui hésitent
 
@@ -124,23 +124,23 @@ Si vous gérez des serveurs en Afrique francophone et que vous envisagez la migr
 
 **Faites-le sur un serveur de test d'abord.** Montez un VPS à 10 $/mois, installez CyberPanel, migrez un site non critique. Apprenez les différences avant de toucher à la production.
 
-**Maîtrisez la ligne de commande.** CyberPanel a une interface web, mais quand les choses tournent mal (et elles tourneront mal), c'est en SSH que ça se résout. Si vous n'êtes pas à l'aise avec `systemctl`, `vim` et les logs, formez-vous d'abord. Et les logs ne sont plus au même endroit que sous cPanel : je donne les deux emplacements dans [mon billet sur un site WordPress piraté](/fr/20261020-site-wordpress-pirate-trouver-par-ou-le-pirate-est-entre).
+**Maîtrisez la ligne de commande.** CyberPanel a une interface web, mais quand les choses tournent mal (et elles tourneront mal), c'est en SSH que ça se résout. Si vous n'êtes pas à l'aise avec `systemctl`, `vim` et les logs, formez-vous d'abord. Les logs ne sont plus au même endroit que sous cPanel, et je donne les deux emplacements dans [mon billet sur un site WordPress piraté](/fr/20261020-site-wordpress-pirate-trouver-par-ou-le-pirate-est-entre).
 
-**Gardez Cloudflare devant.** Le CDN Cloudflare en version gratuite devant OpenLiteSpeed, c'est la bonne combinaison : cache, SSL et protection DDoS, gratuitement. (Et pour un site statique ou un projet Nuxt, Cloudflare peut même remplacer l'hébergeur : c'est ce que j'ai fait en [migrant ce blog de Vercel vers Cloudflare Pages](/fr/20260402-vercel-cloudflare-pages-migration).)
+**Gardez Cloudflare devant.** Le CDN Cloudflare en version gratuite devant OpenLiteSpeed, c'est la bonne combinaison, avec le cache, le SSL et la protection DDoS gratuitement. (Et pour un site statique ou un projet Nuxt, Cloudflare peut même remplacer l'hébergeur, c'est ce que j'ai fait en [migrant ce blog de Vercel vers Cloudflare Pages](/fr/20260402-vercel-cloudflare-pages-migration).)
 
-**Prévoyez deux semaines minimum.** Pas deux jours, deux semaines. Entre la migration des sites, la configuration DNS, les tests, la migration des emails et les inévitables bugs, c'est le minimum réaliste.
+**Prévoyez deux semaines minimum.** Entre la migration des sites, la configuration DNS, les tests, la migration des emails et les inévitables bugs, c'est le minimum réaliste.
 
 **Documentez tout.** Chaque commande, chaque modification de fichier de config, chaque fix. Vous me remercierez la prochaine fois qu'un socket refusera de démarrer à 21h un jeudi soir.
 
 ## Conclusion
 
-La migration de cPanel vers CyberPanel n'était pas dans mes plans. C'est l'augmentation continue des prix de cPanel, combinée à l'impossibilité de payer pendant un mois à cause du contexte géopolitique et des blocages de paiement en zone UEMOA, qui m'a poussé à sauter le pas. Le stress a été réel. Les nuits blanches aussi.
+La migration de cPanel vers CyberPanel n'était pas dans mes plans, et le stress a été réel, les nuits blanches aussi.
 
 Mais aujourd'hui, avec un **TTFB divisé par cinq**, **zéro frais de licence**, et une **indépendance retrouvée** vis-à-vis des systèmes de paiement internationaux, je ne regrette rien.
 
-« Tonton Donald » n'y était finalement pour rien. Mais si cette crise m'a appris quelque chose, c'est que **la souveraineté numérique, en Afrique, ça commence par le choix de ses outils.**
+« Tonton Donald » n'y était finalement pour rien, mais cette crise m'a appris que **la souveraineté numérique, en Afrique, ça commence par le choix de ses outils.**
 
 *Mise à jour du 8 octobre 2026 : ionCube publie aujourd'hui des loaders pour PHP 8.4 et 8.5 ([page officielle des loaders](https://www.ioncube.com/loaders.php)). Avant de rétrograder vers `lsphp82`, vérifiez donc que la version du loader installé correspond à votre version de PHP. Autre raison de ne pas s'éterniser sur PHP 8.2 : il ne reçoit plus de correctifs de sécurité après le 31 décembre 2026 ([calendrier officiel de PHP](https://www.php.net/supported-versions.php)). Correction du même jour : la première version de ce billet attribuait le blocage des paiements à une mesure de l'administration Trump de janvier 2026. Il venait en réalité de la décision n° 31 du GIM-UEMOA (voir plus haut). Les prix de 2025 et 2026 sont précisés comme tarifs partenaires, avec les prix publics en regard ; le chiffre de 15,99 $ donné pour 2024 ne correspondait à aucune grille cPanel et a été retiré.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com) — de nouveau converti à l'open source*
+*[Jean-Luc Houédanou](https://houedanou.com)*
