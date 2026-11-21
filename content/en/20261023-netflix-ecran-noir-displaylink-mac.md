@@ -14,7 +14,7 @@ On a Mac, Netflix shows a black screen, with sound, as soon as a screen is conne
 
 I keep my machines for a long time and get everything I can out of them: my [2017 iMac boots from an external SSD](/en/20261014-installer-macos-ssd-externe-imac-2017), and my [2017 MacBook Pro has switched to Omarchy](/en/20261013-retournement-de-veste-omarchy-macbook-pro-2017). At home, I work on an **M1 MacBook**, the base model. I use it almost like a desktop computer.
 
-The catch: a base M1 Mac only handles **one external display**. I have two:
+The catch is that a base M1 Mac only handles **one external display**, and I have two:
 
 - a **34-inch curved Xiaomi Mi Monitor**;
 - a **29-inch Lenovo ultrawide**.
@@ -25,15 +25,15 @@ To connect both, I use a **Ugreen CM555** dock (model 90325, also sold as the Re
 
 ![A laptop connected to a USB-C adapter](/images/articles/pexels-pixabay-461461.webp)
 
-For coding, everything is fine. For Netflix, it's another story.
+For coding, everything is fine, but not for Netflix.
 
-## Netflix black screen: sound, but no picture
+## Netflix black screen, with sound but no picture
 
-With a DisplayLink screen connected, the video starts, the sound plays, but the picture stays black. DisplayLink acknowledges this in [its documentation](https://support.displaylink.com/knowledgebase/articles/830301-content-protected-video-does-not-play-on-mac-while){target="_blank" rel="noopener"}. Netflix isn't alone: Disney+, Amazon Prime Video, HBO, YouTube TV, Udemy and iTunes are affected too.
+With a DisplayLink screen connected, the video starts, the sound plays, but the picture stays black. DisplayLink acknowledges this in [its documentation](https://support.displaylink.com/knowledgebase/articles/830301-content-protected-video-does-not-play-on-mac-while){target="_blank" rel="noopener"}. Netflix isn't alone, since Disney+, Amazon Prime Video, HBO, YouTube TV, Udemy and iTunes are affected too.
 
-The most annoying part: according to DisplayLink, **as soon as one DisplayLink screen is connected, protected video can be blocked on every screen**, including the Mac's own.
+The most annoying part is that, according to DisplayLink, **as soon as one DisplayLink screen is connected, protected video can be blocked on every screen**, including the Mac's own.
 
-Why? A DisplayLink screen isn't connected to the graphics card. The software copies the screen's picture, then sends it over USB. That's why macOS asks you to give it the "Screen Recording" permission ([Deux Ordis](https://deuxordis.xyz/blog/displaylink-mac-autorisations/){target="_blank" rel="noopener"}, in French). But Netflix videos are copy-protected. They don't go through that path: instead, you get a black rectangle.
+That's because a DisplayLink screen isn't connected to the graphics card. The software copies the screen's picture, then sends it over USB. That's why macOS asks you to give it the "Screen Recording" permission ([Deux Ordis](https://deuxordis.xyz/blog/displaylink-mac-autorisations/){target="_blank" rel="noopener"}, in French). But Netflix videos are copy-protected, so they don't go through that path and you get a black rectangle instead.
 
 Netflix's own help pages don't mention DisplayLink. For a black screen with sound on a Mac, they advise updating your browser or switching to another one, and point out that AirPlay, screen mirroring and Sidecar are no longer supported ([Netflix Help](https://help.netflix.com/en/node/11634){target="_blank" rel="noopener"}).
 
@@ -58,7 +58,7 @@ DisplayLink also offers two simple options ([DisplayLink support](https://suppor
 - **Try another browser.**
 - **Temporarily disconnect all DisplayLink screens** for the length of the movie, and watch the video on the Mac's built-in screen.
 
-Tip: no need to touch the cables. DisplayLink screens only work while DisplayLink Manager is running. Quit it from its icon in the menu bar: the DisplayLink screens go dark. Open it again after the movie.
+Tip: no need to touch the cables. DisplayLink screens only work while DisplayLink Manager is running. Quit it from its icon in the menu bar, and the DisplayLink screens go dark. Open it again after the movie.
 
 ## Fix 3: plug the screen into a native video output
 
@@ -66,18 +66,18 @@ To watch on a big screen without changing any settings, you need a **native vide
 
 ### On the Ugreen CM555 dock, the HDMI 2 port is native
 
-Good news: on the Ugreen CM555 dock, not every video port goes through DisplayLink. The **HDMI 2** port (the one marked 8K) is a native output: it works even without DisplayLink Manager. The HDMI 1 port and the DisplayPort go through DisplayLink ([DisplayLink forum](https://www.displaylink.org/forum/archive/index.php/t-69160.html){target="_blank" rel="noopener"}).
+Good news, on the Ugreen CM555 dock, not every video port goes through DisplayLink. The **HDMI 2** port (the one marked 8K) is a native output, which works even without DisplayLink Manager. The HDMI 1 port and the DisplayPort go through DisplayLink ([DisplayLink forum](https://www.displaylink.org/forum/archive/index.php/t-69160.html){target="_blank" rel="noopener"}).
 
 So plug the screen you watch movies on into the HDMI 2 port.
 
 Two limits:
 
-- **Only one native output.** A base M1 Mac has just one. So only one screen can sit on the HDMI 2 port. The other one stays on DisplayLink.
+- **Only one native output.** A base M1 Mac has just one, so only one screen can sit on the HDMI 2 port and the other one stays on DisplayLink.
 - **The other screen can still get in the way.** According to DisplayLink, a connected DisplayLink screen can block video on every screen. If the picture stays black on the HDMI 2 screen, quit DisplayLink Manager for the length of the movie, or use fix 1.
 
-To find out which screen is on the native port: quit DisplayLink Manager. The screen that stays on is the one plugged into the native port.
+To find out which screen is on the native port, quit DisplayLink Manager. The screen that stays on is the one plugged into the native port.
 
-## In short
+## The three fixes in a table
 
 | Fix | What to do | Limit |
 |---|---|---|
@@ -92,4 +92,4 @@ To find out which screen is on the native port: quit DisplayLink Manager. The sc
 *Photos: [Luca Sammarco](https://www.pexels.com/photo/6142159/), [minhphuc .workspace](https://www.pexels.com/photo/20648391/) and [Pixabay](https://www.pexels.com/photo/461461/), Pexels.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com) — two screens for coding, one for Netflix*
+*[Jean-Luc Houédanou](https://houedanou.com), two screens for coding, one for Netflix*

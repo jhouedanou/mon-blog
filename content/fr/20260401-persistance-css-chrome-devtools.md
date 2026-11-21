@@ -44,7 +44,7 @@ Rafraîchissez la page (F5) : le fond reste bleu clair, car Chrome a injecté vo
 
 Une limite à connaître : si la règle CSS vient d'une balise `<style>` dans le fichier HTML, DevTools n'enregistre pas la modification faite dans le panneau Styles ([documentation Chrome](https://developer.chrome.com/docs/devtools/overrides)). Dans ce cas, modifiez le HTML dans l'onglet **Sources**.
 
-## Phase 2 : Workspaces — intégrer DevTools et VS Code (avancé)
+## Phase 2 : Workspaces, intégrer DevTools et VS Code (avancé)
 
 Les Workspaces vous permettent de modifier directement votre projet local, en direct dans Chrome. Avec les frameworks modernes (Vue, Nuxt), il faut un workflow plus avancé (Vite, Webpack). C'est le cas de ce blog, [passé de WordPress à Nuxt](/fr/20241005-on-fait-un-peu-le-menage) pour devenir [un blog sans base de données](/fr/20241021-pendaison-de-cremaillere).
 
@@ -56,7 +56,7 @@ Action : Ouvrez Chrome sur votre projet local (ex : `http://localhost:3000`). Da
 
 ![Onglet Filesystem de DevTools associant le dossier my-project au site localhost:3000, avec un point vert sur style.css](/images/articles/dev/04.webp)
 
-### Étape 2 : le workflow non-destructif — Chrome ↔ VS Code
+### Étape 2 : le workflow non-destructif, Chrome ↔ VS Code
 
 Vous pouvez maintenant travailler en « live-editing », sans quitter le navigateur, tout en gardant la main sur ce qui est écrit dans votre projet.
 
@@ -80,4 +80,4 @@ Local Overrides pour du debug rapide, Workspaces pour le développement actif. D
 *Mise à jour du 8 octobre 2026 : dans les versions récentes de Chrome, l'onglet **Filesystem** s'appelle **Workspace**, et la connexion d'un dossier se fait via **Add folder manually**. Chrome peut aussi connecter le dossier automatiquement si votre serveur de développement sert un fichier `.well-known/appspecific/com.chrome.devtools.json` ([documentation Chrome sur les Workspaces](https://developer.chrome.com/docs/devtools/workspaces)). La phase 2 précise aussi que les modifications ne sont écrites sur le disque qu'au `Ctrl+S`, et la phase 1 signale que les styles déclarés dans le HTML ne sont pas enregistrés depuis le panneau Styles.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com) — distributeur officiel de Ctrl+S · #CtrlSLeRetour*
+*[Jean-Luc Houédanou](https://houedanou.com), distributeur officiel de Ctrl+S · #CtrlSLeRetour*

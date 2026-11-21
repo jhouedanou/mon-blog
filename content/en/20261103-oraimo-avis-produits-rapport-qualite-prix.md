@@ -8,11 +8,11 @@ searchIntent: "Are Oraimo products (earbuds, power bank, kitchen appliances, cle
 tags: ["tech", "hardware", "review", "africa"]
 ---
 
-Yes, I dared to paraphrase that old reactionary Pierre Perret (his song "Tout, tout, tout, vous saurez tout sur le zizi"). But what can I say: my taste in music is all over the place, mixing American rap, Japanese music, Afrobeats and French chanson. And I can separate the artist from the art (see how I changed my mind about [Omarchy and DHH](/en/20261013-retournement-de-veste-omarchy-macbook-pro-2017)).
+Yes, I dared to paraphrase that old reactionary Pierre Perret (his song "Tout, tout, tout, vous saurez tout sur le zizi"). But what can I say, my taste in music is all over the place, mixing American rap, Japanese music, Afrobeats and French chanson. And I can separate the artist from the art (see how I changed my mind about [Omarchy and DHH](/en/20261013-retournement-de-veste-omarchy-macbook-pro-2017)).
 
-So today is all about Oraimo. I don't get any commission on the products I'm about to talk about. I'm writing this because a lot of people see this brand and its products everywhere in Abidjan, and wonder what they're really worth.
+So today is all about Oraimo. I don't get any commission on the products I'm about to talk about. I'm writing this because a lot of people see this brand and its products everywhere in Abidjan, and wonder what they're worth.
 
-To keep my Oraimo review short: in most cases, Oraimo products are excellent value for money. It's a Chinese brand (part of the Transsion group, like Tecno, Infinix and itel) that has managed to establish itself here thanks to good-quality products at good prices.
+To keep my Oraimo review short, in most cases Oraimo products are excellent value for money. It's a Chinese brand (part of the Transsion group, like Tecno, Infinix and itel) that has managed to establish itself here thanks to good-quality products at good prices.
 
 So I've sorted the Oraimo products I use into three groups: the ones I'd buy again without a second thought, the ones I'd buy again with a catch, and the ones I wouldn't buy again.
 
@@ -70,23 +70,23 @@ I also have the [Oraimo MagniSonic](https://oraimo.com/en/product/sonic-power-ul
 
 ## I'd buy again, with a catch
 
-I have the [FlexiCooker](https://ug.oraimo.com/product/oraimo-flexicooker-2200w-electric-ceramic-hot-plate){target="_blank" rel="noopener"}, a 2,200 W ceramic hot plate with preset programmes. The catch: some of those programmes use more electricity than others.
+I have the [FlexiCooker](https://ug.oraimo.com/product/oraimo-flexicooker-2200w-electric-ceramic-hot-plate){target="_blank" rel="noopener"}, a 2,200 W ceramic hot plate with preset programmes. The catch is that some of those programmes use more electricity than others.
 
 ![Oraimo FlexiCooker ceramic hot plate, with its display and preset programme buttons](/images/articles/oraimo-flexicooker.webp)
 
-I also have the EcoLuxe polo shirts, at 9,000 CFA francs. They're comfortable. The catch: they use Chinese sizing, so they're smaller.
+I also have the EcoLuxe polo shirts, at 9,000 CFA francs. They're comfortable. The catch is that they use Chinese sizing, so they're smaller.
 
 ## I wouldn't buy again
 
-I have the Oraimo BoomPop Pro headphones. They're good headphones, with good battery life, but the sound is nothing special, and neither is the noise cancellation. Worse: the faux-leather ear pads are flaking.
+I have the Oraimo BoomPop Pro headphones. They're good headphones, with good battery life, but the sound is nothing special, and neither is the noise cancellation. Worse, the faux-leather ear pads are flaking.
 
 ![Oraimo BoomPop Pro wireless headphones, black with gold accents on the headband](/images/articles/oraimo-boompop-pro.webp)
 
-I love smartwatches. I've already written about the Oraimo Watch Nova AM in [my comparison with the Infinix Watch 3](/en/20251225-infinix-ou-oraimo). Today I wear neither of them: I have a [Google Pixel Watch](/en/20260311-comment-allumer-lecran-pixel-watch-notifications), which is better.
+I love smartwatches. I've already written about the Oraimo Watch Nova AM in [my comparison with the Infinix Watch 3](/en/20251225-infinix-ou-oraimo). Today I wear neither of them, because I have a [Google Pixel Watch](/en/20260311-comment-allumer-lecran-pixel-watch-notifications), which is better.
 
 ![Oraimo Watch Nova AM smartwatch, with a square case and a black strap](/images/articles/oraimo-watch-nova-am.webp)
 
-## My Oraimo review, in short
+## My Oraimo review, product by product
 
 | Product | Price paid (CFA francs) | Would I buy it again? | In one sentence |
 |---|---|---|---|
@@ -108,9 +108,9 @@ I love smartwatches. I've already written about the Oraimo Watch Nova AM in [my 
 
 These are the prices I paid in Abidjan, on Glovo, at a shop two streets from my place, or on Oraimo's website. Online prices change often with promotions.
 
-Almost all of these products are good quality for their low price. The exceptions: the BoomPop Pro headphones and the Watch Nova AM.
+Almost all of these products are good quality for their low price, except the BoomPop Pro headphones and the Watch Nova AM.
 
 _Images: Oraimo._
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com) — Oraimo customer, no commission*
+*[Jean-Luc Houédanou](https://houedanou.com), Oraimo customer, no commission*

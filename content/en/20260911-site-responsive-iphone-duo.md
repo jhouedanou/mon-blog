@@ -16,7 +16,7 @@ A developer has just published a small tool to test whether a site is responsive
 
 It's the first foldable iPhone, following in the footsteps of Samsung's Galaxy Folds (Samsung, incidentally, [mocked the iPhone Duo](/en/20260911-samsung-tacle-iphone-duo-visibilite) throughout the keynote). Folded, it's the size of a passport, with a 5.4-inch external screen (1398 × 2034 pixels). Unfolded, you get a small tablet in landscape, with a 7.6-inch internal screen (1878 × 2670 pixels) in a 6.48 × 4.64-inch body.
 
-For those who build websites, that means two screen sizes to handle on a single device, and a visitor who can switch from one to the other mid-read, simply by unfolding their phone. Here are the figures from [Apple's tech specs](https://www.apple.com/iphone-duo/specs/){target="_blank" rel="noopener"}, with my conversion to CSS pixels:
+For those who build websites, that means two screen sizes to handle on a single device, and a visitor who can switch from one to the other mid-read, by unfolding their phone. Here are the figures from [Apple's tech specs](https://www.apple.com/iphone-duo/specs/){target="_blank" rel="noopener"}, with my conversion to CSS pixels:
 
 | | External screen (folded) | Internal screen (unfolded) |
 |---|---|---|
@@ -29,7 +29,7 @@ For those who build websites, that means two screen sizes to handle on a single 
 
 ## Testing your site with the Iphone Duo Preview tool
 
-It's called Iphone Duo Preview and it was developed by Caleb Kalejaiye, aka [Rapto](https://x.com/heyrapto) on X. The idea is simple: you paste your site's address, and it appears inside an iPhone Duo frame. Two modes are offered, *Single* for the external screen and *Extended* for the internal screen. You can then browse the site as you would on a real phone.
+It's called Iphone Duo Preview and it was developed by Caleb Kalejaiye, aka [Rapto](https://x.com/heyrapto) on X. You paste your site's address, and it appears inside an iPhone Duo frame. Two modes are offered, *Single* for the external screen and *Extended* for the internal screen. You can then browse the site as you would on a real phone.
 
 It's free, no sign-up, and everything happens in your browser.
 
@@ -45,7 +45,7 @@ This website doesn't allow embedded previews.
 
 ![The Iphone Duo Preview tool showing "This website doesn't allow embedded previews" instead of houedanou.com](/images/articles/iphone-duo-preview-refus-embed.webp)
 
-In other words, the site refuses to be displayed inside a third-party page. In the moment, I wasn't unhappy about it. A site that won't let itself be embedded in an iframe is a site protecting itself against clickjacking, the technique of loading your site into an invisible page to make the visitor click buttons they can't see. It's the kind of protection you set up once and forget.
+The message says the site refuses to be displayed inside a third-party page. In the moment, I wasn't unhappy about it. A site that won't let itself be embedded in an iframe is a site protecting itself against clickjacking, the technique of loading your site into an invisible page to make the visitor click buttons they can't see. It's the kind of protection you set up once and forget.
 
 Except I didn't remember setting it up.
 
@@ -57,11 +57,11 @@ For good measure, I looked at the headers returned by the server:
 curl -sI https://houedanou.com/ | grep -iE 'x-frame-options|content-security-policy'
 ```
 
-Nothing. No `X-Frame-Options`, no `Content-Security-Policy`. I then loaded houedanou.com in an iframe from another domain, and the site displayed without a problem. Finally, I gave example.com to Rapto's tool, which displayed it normally, then houedanou.com again, which was refused a second time.
+Nothing, no `X-Frame-Options` and no `Content-Security-Policy`. I then loaded houedanou.com in an iframe from another domain, and the site displayed without a problem. Finally, I gave example.com to Rapto's tool, which displayed it normally, then houedanou.com again, which was refused a second time.
 
-Conclusion: the tool is wrong. My site is perfectly happy to be embedded, and it's the tool's preliminary check that fails somewhere, for a reason I didn't try to understand. The project is one day old, it will have time to mature.
+So the tool is wrong, since my site is perfectly happy to be embedded, and it's the tool's preliminary check that fails somewhere, for a reason I didn't try to understand. The project is one day old, it will have time to mature.
 
-But above all, this little investigation taught me something I didn't know: my site had no protection against clickjacking. And I was two seconds away from closing the tab believing the opposite, on the strength of an error message.
+But above all, this little investigation taught me that my site had no protection against clickjacking, and I nearly closed the tab believing the opposite, on the strength of an error message.
 
 So I added the missing header, before publishing this post:
 
@@ -71,9 +71,9 @@ Content-Security-Policy: frame-ancestors 'self';
 
 This directive tells the browser that only houedanou.com is allowed to display houedanou.com's pages in an iframe. It has no effect on the scripts, fonts or iframes the site loads itself, so the Disqus comments keep working.
 
-The funny part: on the next deployment, Rapto's tool will display exactly the same message for my site. Except this time, it'll be true 🙂
+What amuses me is that on the next deployment, Rapto's tool will display exactly the same message for my site, except this time, it'll be true 🙂
 
-## So, responsive or not? The Chrome DevTools test
+## The responsive test in Chrome DevTools
 
 Since the tool wouldn't answer me, I ran the test by hand [in Chrome](/en/20260401-persistance-css-chrome-devtools), simulating both screens. Apple only publishes physical pixels, so I assumed a ratio of 3 as on recent iPhones, which gives roughly 466 × 678 CSS pixels for the external screen and 890 × 626 for the internal screen.
 
@@ -88,9 +88,9 @@ To run the test on your own site:
 
 ![A wireframe sketch next to a smartphone](/images/articles/pexels-picjumbo-com-196644.webp)
 
-What I do note, though, is that the unfolded internal screen is wide but fairly short: 890 pixels wide for only 626 high. We're all used to testing our breakpoints by width. On this device, it's the height you'll need to keep an eye on. Between a fixed header, a cookie banner and a newsletter banner, there isn't much room left for content.
+What I do note, though, is that the unfolded internal screen is wide but fairly short, at 890 pixels wide for only 626 high. We're all used to testing our breakpoints by width, but on this device, it's the height you'll need to keep an eye on. Between a fixed header, a cookie banner and a newsletter banner, there isn't much room left for content.
 
-That's it for the iPhone Duo. If you test your site with Rapto's tool and it tells you your site refuses previews, don't take its word for it: go check your headers yourself. You might be in for a good surprise, or a bad one.
+That's it for the iPhone Duo. If you test your site with Rapto's tool and it tells you your site refuses previews, don't take its word for it and go check your headers yourself. You might be in for a good surprise, or a bad one.
 
 *Updated November 8, 2026: added the table of screen sizes, from Apple's tech specs (with pixel density), and the steps to simulate both screens in Chrome DevTools.*
 

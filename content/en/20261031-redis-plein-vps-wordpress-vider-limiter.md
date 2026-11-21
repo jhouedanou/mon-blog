@@ -6,7 +6,7 @@ searchIntent: "How do I empty and limit Redis when its memory is full on a WordP
 tags: ["tutorial", "linux", "sysadmin", "wordpress", "development"]
 ---
 
-If Redis memory is full on your WordPress VPS, blame the defaults: Redis has no memory limit and deletes nothing. So the WordPress object cache keeps filling it until it takes up all the RAM. The fix is two settings: `maxmemory`, to set a limit, and `maxmemory-policy allkeys-lru`, so that Redis deletes the least used keys when it reaches that limit. To get the memory back right away, empty it with `FLUSHALL ASYNC`.
+If Redis memory is full on your WordPress VPS, blame the defaults, because Redis has no memory limit and deletes nothing. So the WordPress object cache keeps filling it until it takes up all the RAM. The fix is two settings: `maxmemory`, to set a limit, and `maxmemory-policy allkeys-lru`, so that Redis deletes the least used keys when it reaches that limit. To get the memory back right away, empty it with `FLUSHALL ASYNC`.
 
 ## What happened to me
 
@@ -16,11 +16,11 @@ On one of my WordPress VPSes, Redis had grown to **10.7 GB**, with **39 million 
 
 Three things add up:
 
-- **No limit by default.** On a 64-bit system, `maxmemory` is 0: Redis can take all of the server's memory.
+- **No limit by default.** On a 64-bit system, `maxmemory` is 0, so Redis can take all of the server's memory.
 - **Nothing gets deleted.** The default policy is called `noeviction`. When there's no room left, Redis refuses new writes instead of deleting keys.
 - **WordPress keys don't expire.** WordPress stores the results of its queries in Redis. Many of these keys have no expiry date. With the Redis Object Cache plugin, no maximum lifetime is set by default (`WP_REDIS_MAXTTL` is 0).
 
-The result: every page, every search, every [bot visit](/en/20260922-jai-recupere-le-trafic-de-mon-blog-et-les-bots-qui-vont-avec) adds keys, and none go away.
+So every page, every search, every [bot visit](/en/20260922-jai-recupere-le-trafic-de-mon-blog-et-les-bots-qui-vont-avec) adds keys, and none go away.
 
 When the RAM is full, the server slows down. Then Linux stops programs to free memory: sometimes MySQL, sometimes Redis itself. And if a limit exists but with no policy to delete keys, WordPress gets the error `OOM command not allowed when used memory > 'maxmemory'`.
 
@@ -43,7 +43,7 @@ If Redis answers `NOAUTH`, it's password-protected: add `-a 'your_password'` aft
 
 ## 2. Empty Redis with FLUSHALL ASYNC
 
-Here, Redis is only a cache: WordPress can rebuild everything in it. Emptying it breaks nothing. The site is just a bit slower while the cache fills up again.
+Here, Redis is only a cache and WordPress can rebuild everything in it, so emptying it breaks nothing. The site is just a bit slower while the cache fills up again.
 
 **Careful:** first check that Redis is only used for that. If it also holds sessions or queues for another app on the server, those will be wiped too.
 
@@ -51,7 +51,7 @@ Here, Redis is only a cache: WordPress can rebuild everything in it. Emptying it
 redis-cli FLUSHALL ASYNC
 ```
 
-`FLUSHALL` empties every Redis database. `ASYNC` frees the memory in the background: even with millions of keys, Redis keeps responding during the cleanup. This option has been around since Redis 4.0.
+`FLUSHALL` empties every Redis database. `ASYNC` frees the memory in the background, and even with millions of keys, Redis keeps responding during the cleanup. This option has been around since Redis 4.0.
 
 To empty only one database, the site's (often database 0):
 
@@ -59,7 +59,7 @@ To empty only one database, the site's (often database 0):
 redis-cli -n 0 FLUSHDB ASYNC
 ```
 
-Emptying fixes nothing in the long run: without a limit, Redis will grow again. Hence the next step.
+Emptying fixes nothing in the long run, because without a limit, Redis will grow again, hence the next step.
 
 ## 3. Cap Redis with maxmemory and allkeys-lru
 
@@ -86,11 +86,11 @@ redis-cli CONFIG REWRITE
 
 `CONFIG REWRITE` writes the settings to `redis.conf`. Without it, they are lost at the next restart.
 
-**Which limit?** There's no magic number. 512 MB is only an example. Leave enough RAM for MySQL and PHP, start with a modest value, then adjust with step 4.
+**Which limit?** There's no ideal value, and 512 MB is only an example. Leave enough RAM for MySQL and PHP, start with a modest value, then adjust with step 4.
 
-**Why `allkeys-lru`?** LRU means *least recently used*. When Redis reaches the limit, it deletes the keys nobody has read for a long time. Popular pages stay cached. The [Redis documentation](https://redis.io/docs/latest/develop/reference/eviction/){target="_blank" rel="noopener"} calls `allkeys-lru` a good default choice.
+**Why `allkeys-lru`?** LRU means *least recently used*. When Redis reaches the limit, it deletes the keys nobody has read for a long time, and popular pages stay cached. The [Redis documentation](https://redis.io/docs/latest/develop/reference/eviction/){target="_blank" rel="noopener"} calls `allkeys-lru` a good default choice.
 
-Don't use `volatile-lru`: it only deletes keys that have an expiry date. With WordPress, most have none. Redis would then behave as if it were set to `noeviction`, and refuse writes.
+Don't use `volatile-lru`, which only deletes keys that have an expiry date, while with WordPress, most have none. Redis would then behave as if it were set to `noeviction`, and refuse writes.
 
 ## 4. Check
 
@@ -113,18 +113,18 @@ With the Redis Object Cache plugin, add this line to `wp-config.php`:
 define( 'WP_REDIS_MAXTTL', 86400 ); // 24 hours at most
 ```
 
-Keys with no expiry date then expire after 24 hours. Redis grows more slowly. Keep the limit from step 3 anyway: that's what protects the server.
+Keys with no expiry date then expire after 24 hours and Redis grows more slowly. Keep the limit from step 3 anyway, because that's what protects the server.
 
 If several WordPress sites share the same Redis, give each one its own prefix with `WP_REDIS_PREFIX`, so their keys don't get mixed up.
 
-## In short
+## Key points
 
 - By default, Redis has neither a memory limit nor a rule to delete keys.
 - `redis-cli FLUSHALL ASYNC` empties it without blocking it.
 - `maxmemory` and `allkeys-lru` fix the problem for good.
 - `CONFIG REWRITE`, or an edit to `redis.conf`, keeps the setting after a restart.
 
-While you're on the server over SSH, also check that PHP is up to date: here's [how to patch PHP against PHP2Shell](/en/20261021-php2shell-mettre-a-jour-php-debian-ubuntu-sans-forge). And if a WordPress site on the server was hacked, [its logs tell you how the attacker got in](/en/20261020-site-wordpress-pirate-trouver-par-ou-le-pirate-est-entre).
+While you're on the server over SSH, also check that PHP is up to date, here's [how to patch PHP against PHP2Shell](/en/20261021-php2shell-mettre-a-jour-php-debian-ubuntu-sans-forge). And if a WordPress site on the server was hacked, [its logs tell you how the attacker got in](/en/20261020-site-wordpress-pirate-trouver-par-ou-le-pirate-est-entre).
 
 **Sources:**
 

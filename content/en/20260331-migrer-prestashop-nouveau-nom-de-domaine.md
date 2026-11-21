@@ -8,7 +8,7 @@ searchIntent: "How to change the domain name of a PrestaShop store without losin
 tags: ["tutorial", "dev"]
 ---
 
-Changing the domain name of a PrestaShop store is an operation that makes even experienced developers sweat. Between the database, the cache, SSL and SEO redirects, there are quite a few traps. Here's a step-by-step guide to a PrestaShop domain change without losing SEO, tested in production.
+Changing the domain name of a PrestaShop store is a delicate operation, including for experienced developers. Between the database, the cache, SSL and SEO redirects, there are quite a few traps. Here's a step-by-step guide to a PrestaShop domain change without losing SEO, tested in production.
 
 ## Prerequisites before changing the domain name
 
@@ -23,7 +23,7 @@ Before touching anything:
 
 ## Step 1: Update the URLs in the database
 
-This is the heart of the migration. PrestaShop stores the domain name in several tables. Log into phpMyAdmin or the MySQL CLI and run:
+This is the main step of the migration. PrestaShop stores the domain name in several tables. Log into phpMyAdmin or the MySQL CLI and run:
 
 ```sql
 -- Main shop URL table
@@ -61,11 +61,11 @@ Update:
 
 ## Step 2: Configuration files and `.htaccess`
 
-Good news: the domain name isn't stored in PrestaShop's configuration files. In 1.7 and 8.x, `app/config/parameters.php` holds the database credentials, the security keys and a few technical settings, but not the domain (see the [official parameters template](https://github.com/PrestaShop/PrestaShop/blob/8.2.x/app/config/parameters.yml.dist)). In 1.6, `config/settings.inc.php` plays the same role. You only need to touch these files if the database is also moving to a new server or new credentials.
+Good news, the domain name isn't stored in PrestaShop's configuration files. In 1.7 and 8.x, `app/config/parameters.php` holds the database credentials, the security keys and a few technical settings, but not the domain (see the [official parameters template](https://github.com/PrestaShop/PrestaShop/blob/8.2.x/app/config/parameters.yml.dist)). In 1.6, `config/settings.inc.php` plays the same role. You only need to touch these files if the database is also moving to a new server or new credentials.
 
 So the domain is set in the database (step 1), or in the back office if it's still reachable: **Shop Parameters > Traffic & SEO**, in the shop URL section, fields "Shop domain" and "SSL domain" ([PrestaShop 8 documentation](https://docs.prestashop-project.org/v.8-documentation/user-guide/configuring-shop/shop-parameters/traffic/seo-and-urls)).
 
-The file to check is the `.htaccess` at the root of the store: look for the old domain in it and replace it if it shows up.
+The file to check is the `.htaccess` at the root of the store. Look for the old domain in it and replace it if it shows up.
 
 ```bash
 grep -n "ancien-domaine.com" .htaccess
@@ -97,13 +97,13 @@ PrestaShop is very aggressive with caching. If you don't clear it, you'll go rou
 rm -rf var/cache/prod/* var/cache/dev/*
 ```
 
-On LiteSpeed or OpenLiteSpeed, don't count on `lswsctrl` to clear that cache: it only starts, stops or reloads the server ([OpenLiteSpeed source code](https://github.com/litespeedtech/openlitespeed/blob/master/dist/bin/lswsctrl){target="_blank" rel="noopener"}). If the store uses the LiteSpeed Cache module, clear its cache from the PrestaShop back office ([LiteSpeed Cache for PrestaShop documentation](https://docs.litespeedtech.com/lscache/lscps/){target="_blank" rel="noopener"}).
+On LiteSpeed or OpenLiteSpeed, don't count on `lswsctrl` to clear that cache, because it only starts, stops or reloads the server ([OpenLiteSpeed source code](https://github.com/litespeedtech/openlitespeed/blob/master/dist/bin/lswsctrl){target="_blank" rel="noopener"}). If the store uses the LiteSpeed Cache module, clear its cache from the PrestaShop back office ([LiteSpeed Cache for PrestaShop documentation](https://docs.litespeedtech.com/lscache/lscps/){target="_blank" rel="noopener"}).
 
 You can also go through the back office: **Advanced Parameters > Performance > Clear cache**.
 
-## Step 5: 301 redirects, so you don't lose your SEO
+## Step 5: 301 redirects so you don't lose your SEO
 
-This is the most important step for SEO. Without 301 redirects, you lose all the rankings you have built up. This blog learned that the hard way: I explain what addresses without redirects cost it in [Lost SEO after migration: how I got it back](/en/20261018-migration-wordpress-nuxt-referencement-perdu-recupere).
+This is the most important step for SEO. Without 301 redirects, you lose all the rankings you have built up. This blog went through it, and I explain what addresses without redirects cost it in [Lost SEO after migration: how I got it back](/en/20261018-migration-wordpress-nuxt-referencement-perdu-recupere).
 
 On the old domain, place this `.htaccess` at the root:
 
@@ -124,7 +124,7 @@ server {
 
 If you're on OpenLiteSpeed, add a rewrite rule in the vhost or through CyberPanel.
 
-> **Keep these redirects active for at least a year.** Google takes time to digest a domain change, and advises keeping redirects "for as long as possible, generally at least 1 year" ([Google Search Central](https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes){target="_blank" rel="noopener"}).
+> **Keep these redirects active for at least a year.** Google takes time to process a domain change, and advises keeping redirects "for as long as possible, generally at least 1 year" ([Google Search Central](https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes){target="_blank" rel="noopener"}).
 
 ## Step 6: Update third-party services
 
@@ -155,19 +155,19 @@ If your PrestaShop is set up as a multistore, check **Advanced Parameters > Mult
 
 ## "But who still uses PrestaShop in 2026?"
 
-Good question: **far more people than you'd think**.
+**Far more people than you'd think.**
 
-In French-speaking Africa, PrestaShop remains a massively deployed solution. Not out of nostalgia, out of pragmatism. It's a free, open source e-commerce CMS that runs on any shared hosting plan at 35,000 CFA francs a month. No need for a Shopify subscription in dollars whose payment can be blocked overnight by a geopolitical decision. No need to depend on an American SaaS platform that can unilaterally decide to close the accounts of an entire region.
+In French-speaking Africa, PrestaShop remains a massively deployed solution, out of pragmatism, because it's a free, open source e-commerce CMS that runs on any shared hosting plan at 35,000 CFA francs a month. You need neither a Shopify subscription in dollars whose payment can be blocked overnight by a geopolitical decision, nor an American SaaS platform that can unilaterally decide to close the accounts of an entire region.
 
-Yes, I have a bone to pick with the SaaS model that has invaded the web these past few years. But I digress... PrestaShop is **your** server, **your** database, **your** files. Nobody can cut off access to your own store.
+Yes, I hold a grudge against the SaaS model that has taken over the web these past few years. But I digress... PrestaShop is **your** server, **your** database, **your** files. Nobody can cut off access to your own store.
 
-In France and Europe, PrestaShop still powers tens of thousands of stores. SMEs, artisans, niche brands that have neither the budget nor the desire to migrate to a solution that charges them a percentage on every sale.
+In France and Europe, PrestaShop still powers tens of thousands of stores, SMEs, artisans and niche brands that have neither the budget nor the desire to migrate to a solution that charges them a percentage on every sale.
 
-So yes, the back office interface smells of the 2010s. Yes, the documentation is sometimes a maze. Yes, we'd rather some modules were free instead of €80 on the marketplace. And that templating system is anything but easy to get to grips with.
+So yes, the back office interface dates from the 2010s, it's easy to get lost in the documentation, we'd rather some modules were free instead of €80 on the marketplace, and that templating system is anything but easy to get to grips with.
 
-But in 2026, when digital sovereignty has become a daily necessity, having an e-commerce tool you control from end to end is a luxury many modern solutions can't offer.
+But in 2026, when digital sovereignty has become a daily necessity, having an e-commerce tool you control from end to end is an advantage many modern solutions can't offer.
 
-PrestaShop isn't dead, it's just quiet.
+PrestaShop is quiet, but it's still in use.
 
 *Updated October 8, 2026: step 2 has been corrected. The domain name is not stored in `parameters.php` or `settings.inc.php`, contrary to what the first version said, and the `PS_COOKIE_DOMAIN` key mentioned in step 1 does not exist in PrestaShop ([source code](https://github.com/PrestaShop/PrestaShop)).*
 

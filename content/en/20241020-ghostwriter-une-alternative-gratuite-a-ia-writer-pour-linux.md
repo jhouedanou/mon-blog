@@ -17,7 +17,7 @@ Looking for a free alternative to iA Writer on Linux? Mine is called [Ghostwrite
 1. (Re)discover the Markdown language, in which [my flat-file blog](/en/20241021-pendaison-de-cremaillere) is now written
 2. Dust off my distraction-free writing environments, such as OmmWriter or iA Writer
 
-## iA Writer: the best Markdown editor?
+## Is iA Writer the best Markdown editor?
 
 iA Writer is the best Markdown editor in the world. Here's why:
 
@@ -25,13 +25,13 @@ iA Writer is the best Markdown editor in the world. Here's why:
 - It offers a "focus" mode that highlights the line, sentence or paragraph you are currently writing, dimming the rest of the text.
 - iA Writer is designed so that the user's attention stays on the text, not on the interface or the formatting.
 
-However, there's no iA Writer for Linux: it's available on macOS, Windows, iPhone and iPad ([official website](https://ia.net/writer)).
+However, there's no iA Writer for Linux, it's only available on macOS, Windows, iPhone and iPad ([official website](https://ia.net/writer)).
 
 ## Looking for an iA Writer alternative for Linux
 
 My main computer is an HP Pro x2 hybrid tablet running Linux (more precisely the latest version of Zorin OS Pro), the very one whose system I later [cloned to a bigger SSD](/en/20241029-cloner-ubuntu). While looking for an alternative to iA Writer, I came across [Ghostwriter](https://ghostwriter.kde.org/ "Ghostwriter").
 
-## Ghostwriter: a serious contender
+## Ghostwriter, a serious contender
 
 This free app brings over my favourite iA Writer features:
 
@@ -70,4 +70,4 @@ iA Writer is still a benchmark for Markdown editors, but on Linux, Ghostwriter i
 *Updated October 8, 2026: iA Writer is available on macOS, Windows, iPhone and iPad, but still not on Linux. Added the commands to install Ghostwriter (Ubuntu repositories and Flathub).*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com) — distraction-free writer*
+*[Jean-Luc Houédanou](https://houedanou.com), distraction-free writer*

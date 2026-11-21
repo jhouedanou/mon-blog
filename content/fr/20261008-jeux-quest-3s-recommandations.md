@@ -7,11 +7,11 @@ searchIntent: "Quels jeux acheter sur Meta Quest 3S, classés par difficulté : 
 tags: ["jeux vidéo", "réalité virtuelle", "meta quest", "avis"]
 ---
 
-On me demande souvent quels jeux installer sur un Meta Quest 3S. Voici ma liste. Ce ne sont pas les meilleurs jeux du monde selon la presse. Ce sont ceux auxquels je joue vraiment. Dans mon salon, à Abidjan, en transpirant.
+On me demande souvent quels jeux installer sur un Meta Quest 3S, alors voici ma liste. Je ne prétends pas que ce sont les meilleurs jeux du monde selon la presse, ce sont ceux auxquels je joue, dans mon salon, à Abidjan, en transpirant.
 
-Je les ai classés du plus facile au plus difficile. Pour chacun : de quoi ça parle, sa personnalité, et mon avis. Tout en bas, il y a Vendetta Forever, et il n'y est pas par hasard.
+Je les ai classés du plus facile au plus difficile, avec pour chacun de quoi ça parle, sa personnalité et mon avis. Tout en bas, il y a Vendetta Forever, et il n'y est pas par hasard.
 
-## Facile : pas besoin de réflexes
+## Facile, sans besoin de réflexes
 
 ### République VR
 
@@ -19,13 +19,13 @@ Je les ai classés du plus facile au plus difficile. Pour chacun : de quoi ça p
 
 → [Voir sur le Meta Quest Store](https://www.meta.com/experiences/republique-vr/1794123900713107/)
 
-**L'histoire** : Hope est une jeune femme enfermée à Metamorphosis. C'est le [centre fermé](https://en.wikipedia.org/wiki/République_%28video_game%29) d'un État totalitaire, dirigé par un homme qu'on appelle l'Overseer. Tout le monde y est surveillé. Vous ne jouez pas Hope. Vous piratez le système de surveillance. Et vous la guidez à travers les caméras pour l'aider à s'échapper.
+**L'histoire** : Hope est une jeune femme enfermée à Metamorphosis, le [centre fermé](https://en.wikipedia.org/wiki/République_%28video_game%29) d'un État totalitaire, dirigé par un homme qu'on appelle l'Overseer, où tout le monde est surveillé. Vous ne jouez pas Hope, vous piratez le système de surveillance et vous la guidez à travers les caméras pour l'aider à s'échapper.
 
-Le jeu vient de Camouflaj, un studio de Seattle. Son fondateur, Ryan Payton, a travaillé sur *Metal Gear Solid 4*. Le jeu est né d'une campagne Kickstarter en 2012. Il est sorti en épisodes sur iPhone à partir de 2013. La version en réalité virtuelle est arrivée sur Quest en [juillet 2019](https://uploadvr.com/republique-oculus-quest/).
+Le jeu vient de Camouflaj, un studio de Seattle dont le fondateur, Ryan Payton, a travaillé sur *Metal Gear Solid 4*. Il est né d'une campagne Kickstarter en 2012, il est sorti en épisodes sur iPhone à partir de 2013, et la version en réalité virtuelle est arrivée sur Quest en [juillet 2019](https://uploadvr.com/republique-oculus-quest/).
 
-**Sa personnalité** : le roman d'espionnage de la bande. Calme, patient, un peu paranoïaque. On le lance avec un thé, pas avec une serviette autour du cou.
+**Sa personnalité** : le roman d'espionnage de la bande, calme, patient, un peu paranoïaque, qu'on lance avec un thé plutôt qu'avec une serviette autour du cou.
 
-**Mon avis** : c'est peut-être mon préféré de la liste. C'est le seul qui a une vraie histoire. Il y a des personnages, de l'infiltration, du suspense. Et jouer celui qui regarde à travers les caméras, ça marche encore mieux en réalité virtuelle. On est dans la salle de surveillance. Pas besoin de transpirer. Pas besoin de réflexes. Il faut juste réfléchir, et avoir envie de connaître la suite.
+**Mon avis** : c'est peut-être mon préféré de la liste, parce que c'est le seul qui a une histoire, avec des personnages, de l'infiltration et du suspense. Et jouer celui qui regarde à travers les caméras, ça marche encore mieux en réalité virtuelle, puisqu'on est dans la salle de surveillance. Pas besoin de transpirer ni d'avoir des réflexes, il faut juste réfléchir et avoir envie de connaître la suite.
 
 ### Vader Immortal
 
@@ -33,17 +33,17 @@ Le jeu vient de Camouflaj, un studio de Seattle. Son fondateur, Ryan Payton, a t
 
 → [Voir sur le Meta Quest Store](https://www.meta.com/experiences/vader-immortal-series/682579266195262/)
 
-**L'histoire** : vous êtes un contrebandier. Dark Vador vous capture sur Mustafar, sa planète de lave. Vous découvrez que vous pouvez utiliser la Force et un sabre laser. La série vient d'ILMxLAB, le studio de Lucasfilm. Elle compte trois épisodes, sortis en 2019.
+**L'histoire** : vous êtes un contrebandier que Dark Vador capture sur Mustafar, sa planète de lave, et vous découvrez que vous pouvez utiliser la Force et un sabre laser. La série vient d'ILMxLAB, le studio de Lucasfilm, et compte trois épisodes, sortis en 2019.
 
-**Sa personnalité** : le blockbuster de luxe. Beau, impressionnant, généreux en frissons. Et parti avant le dessert.
+**Sa personnalité** : le blockbuster de luxe, beau, impressionnant, généreux en frissons, et trop vite terminé.
 
-**Mon avis** : très bon. On tient un sabre laser. On se retrouve face à Vador. On entend sa respiration juste à côté. C'est exactement ce que la réalité virtuelle sait faire.
+**Mon avis** : très bon. On tient un sabre laser, on se retrouve face à Vador et on entend sa respiration juste à côté, et c'est exactement ce que la réalité virtuelle sait faire.
 
-La Force est bien implémentée. On tend la main pour attirer un objet ou projeter un ennemi, et ça marche. On se sent Jedi, pas simple joueur. Le jeu vous guide du début à la fin. Il ne vous bloque jamais.
+La Force est bien implémentée, on tend la main pour attirer un objet ou projeter un ennemi, et ça marche, on se sent Jedi. Le jeu vous guide du début à la fin et ne vous bloque jamais.
 
-Le problème, c'est la durée. Les trois épisodes font [environ deux heures](https://www.engadget.com/2019/10/31/vader-immortal-episode-3-star-wars) en tout. La durée d'un film. On en veut plus, et il n'y a pas plus.
+Le problème, c'est la durée, parce que les trois épisodes font [environ deux heures](https://www.engadget.com/2019/10/31/vader-immortal-episode-3-star-wars) en tout, la durée d'un film. On en veut plus, et il n'y a pas plus.
 
-Heureusement, il reste le mode « dojo ». Il est plus intéressant qu'il n'y paraît. On affronte des vagues de droïdes d'entraînement au sabre. Elles sont de plus en plus difficiles. Ça peut devenir très intense. L'histoire est facile. Le dojo, beaucoup moins.
+Heureusement, il reste le mode « dojo », plus intéressant qu'il n'y paraît. On y affronte au sabre des vagues de droïdes d'entraînement de plus en plus difficiles, et ça peut devenir très intense. L'histoire est facile, le dojo beaucoup moins.
 
 ### Deadpool VR
 
@@ -51,17 +51,17 @@ Heureusement, il reste le mode « dojo ». Il est plus intéressant qu'il n'y pa
 
 → [Voir sur le Meta Quest Store](https://www.meta.com/experiences/marvels-deadpool-vr/3240283705987790/)
 
-**L'histoire** : Deadpool est engagé pour capturer des méchants de l'univers Marvel. Le tout est filmé comme une émission de télé. Le jeu vient de Twisted Pixel. Il est sorti le [18 novembre 2025](https://en.wikipedia.org/wiki/Marvel%27s_Deadpool_VR), uniquement sur Quest 3 et Quest 3S. C'est le dernier jeu du studio : Meta l'a fermé en janvier 2026.
+**L'histoire** : Deadpool est engagé pour capturer des méchants de l'univers Marvel, et le tout est filmé comme une émission de télé. Le jeu vient de Twisted Pixel et il est sorti le [18 novembre 2025](https://en.wikipedia.org/wiki/Marvel%27s_Deadpool_VR), uniquement sur Quest 3 et Quest 3S. C'est le dernier jeu du studio, que Meta a fermé en janvier 2026.
 
-**Sa personnalité** : le pote lourd qu'on adore. Il parle trop. Il fait des blagues nulles. Il se moque de vous. Et vous riez quand même.
+**Sa personnalité** : le pote lourd qu'on adore. Il parle trop, il fait des blagues nulles, il se moque de vous, et vous riez quand même.
 
-**Mon avis** : c'est mon péché mignon. Deadpool parle tout le temps. Il se moque de vous et du jeu lui-même. Les combats sont fluides. La difficulté se règle, donc on peut le finir sans être un as.
+**Mon avis** : c'est mon péché mignon. Deadpool parle tout le temps et se moque de vous et du jeu lui-même. Les combats sont fluides et la difficulté se règle, donc on peut le finir sans être un as.
 
-Et il y a un caméo de mon super-héros préféré de tous les temps. Monsieur Johnny Blaze. Le Ghost Rider en personne ([la critique de Pocket Tactics le confirme](https://www.pockettactics.com/deadpool-vr-review){target="_blank" rel="noopener"}). Je ne vous dis pas où. Mais lui mériterait son propre jeu en réalité virtuelle. Une moto en flammes, une chaîne, un crâne qui brûle. Qu'est-ce qu'on attend ?
+Et il y a un caméo de mon super-héros préféré de tous les temps, monsieur Johnny Blaze, le Ghost Rider en personne ([la critique de Pocket Tactics le confirme](https://www.pockettactics.com/deadpool-vr-review){target="_blank" rel="noopener"}). Je ne vous dis pas où, mais lui mériterait son propre jeu en réalité virtuelle, avec une moto en flammes, une chaîne et un crâne qui brûle. Qu'est-ce qu'on attend ?
 
-Je joue en mode « Kidpool ». Cette option coupe les gros mots ([GamingTrend](https://gamingtrend.com/deadpool-vr-review-merc-goes-meta){target="_blank" rel="noopener"}). Attention, elle ne touche pas à la violence. [Les critiques le précisent](https://www.empireonline.com/gaming/reviews/deadpool-vr) : on découpe toujours des ennemis en deux. Aux États-Unis, le jeu reste [classé pour les plus de 17 ans](https://www.esrb.org/ratings/40934/marvels-deadpool-vr/). Ce n'est pas un jeu pour les enfants. Kidpool rend juste les dialogues plus supportables.
+Je joue en mode « Kidpool », une option qui coupe les gros mots ([GamingTrend](https://gamingtrend.com/deadpool-vr-review-merc-goes-meta){target="_blank" rel="noopener"}). Attention, elle ne touche pas à la violence, et [les critiques le précisent](https://www.empireonline.com/gaming/reviews/deadpool-vr), on découpe toujours des ennemis en deux. Aux États-Unis, le jeu reste [classé pour les plus de 17 ans](https://www.esrb.org/ratings/40934/marvels-deadpool-vr/). Ce n'est pas un jeu pour les enfants, Kidpool rend juste les dialogues plus supportables.
 
-## Moyen : le temps est votre ami
+## Moyen, avec le temps au ralenti
 
 ### Superhot VR
 
@@ -71,13 +71,13 @@ Je joue en mode « Kidpool ». Cette option coupe les gros mots ([GamingTrend](h
 
 **L'histoire** : il n'y en a presque pas. Des silhouettes rouges veulent vous tuer, dans un décor tout blanc.
 
-Le jeu vous parlait entre les niveaux, avec un petit délire sur le contrôle et l'obéissance. Il allait jusqu'à vous demander de vous tirer une balle pour le prouver. Le studio a [retiré ces scènes en juillet 2021](https://www.gamedeveloper.com/game-platforms/-i-superhot-vr-i-devs-remove-self-harm-elements-from-the-game-you-deserve-better-). Et c'est très bien comme ça.
+Le jeu vous parlait entre les niveaux, avec un petit délire sur le contrôle et l'obéissance, et il allait jusqu'à vous demander de vous tirer une balle pour le prouver. Le studio a [retiré ces scènes en juillet 2021](https://www.gamedeveloper.com/game-platforms/-i-superhot-vr-i-devs-remove-self-harm-elements-from-the-game-you-deserve-better-), et c'est très bien comme ça.
 
-De toute façon, on vient pour le principe : le temps n'avance que quand vous bougez. Si vous restez immobile, les balles restent figées en l'air. Si vous tournez la tête, elles avancent un peu. Le jeu vient du studio polonais SUPERHOT Team. Il est sorti en 2016 sur PC, et en 2019 sur le premier Quest.
+De toute façon, on vient pour le principe du jeu, où le temps n'avance que quand vous bougez. Si vous restez immobile, les balles restent figées en l'air, et si vous tournez la tête, elles avancent un peu. Le jeu vient du studio polonais SUPERHOT Team, et il est sorti en 2016 sur PC, puis en 2019 sur le premier Quest.
 
-**Sa personnalité** : le maître zen. Il ne dit presque rien. Il vous apprend la patience. Et il vous punit dès que vous paniquez.
+**Sa personnalité** : le maître zen. Il ne dit presque rien, il vous apprend la patience et il vous punit dès que vous paniquez.
 
-**Mon avis** : c'est le jeu qui fait comprendre la réalité virtuelle. On esquive une balle au ralenti. On attrape un pistolet en l'air. On se croit dans *Matrix*. Comme le temps s'arrête, on a toujours le temps de réfléchir. C'est un puzzle autant qu'un jeu de tir. Un classique, à installer en premier.
+**Mon avis** : c'est le jeu qui fait comprendre la réalité virtuelle. On esquive une balle au ralenti, on attrape un pistolet en l'air et on se croit dans *Matrix*. Comme le temps s'arrête, on a toujours le temps de réfléchir, et c'est un puzzle autant qu'un jeu de tir. Un classique, à installer en premier.
 
 ### Action Hero
 
@@ -85,11 +85,11 @@ De toute façon, on vient pour le principe : le temps n'avance que quand vous bo
 
 → [Voir sur le Meta Quest Store](https://www.meta.com/experiences/7021123758002222/)
 
-**L'histoire** : vous êtes la star de films d'action. Le jeu vient du studio suédois [Fast Travel Games](https://www.uploadvr.com/action-hero-quest-review/). Il est sorti en décembre 2024. Il est découpé en films de genres différents. Chaque film a ses actes, chaque acte ses scènes.
+**L'histoire** : vous êtes la star de films d'action. Le jeu vient du studio suédois [Fast Travel Games](https://www.uploadvr.com/action-hero-quest-review/) et il est sorti en décembre 2024. Il est découpé en films de genres différents, où chaque film a ses actes et chaque acte ses scènes.
 
-**Sa personnalité** : le cascadeur de série B. Il en fait trop. Il le sait. Et c'est pour ça qu'on l'aime.
+**Sa personnalité** : le cascadeur de série B. Il en fait trop, il le sait, et c'est pour ça qu'on l'aime.
 
-**Mon avis** : c'est le même mécanisme que Superhot. Tout tourne au ralenti et accélère quand vous bougez. On prend le temps de viser, d'esquiver, de lancer une bouteille sur un méchant. Mais il est un cran plus dur que Superhot. Un seul coup reçu, et vous recommencez tout l'acte. Si vous avez aimé Superhot, foncez.
+**Mon avis** : c'est le même mécanisme que Superhot, tout tourne au ralenti et accélère quand vous bougez. On prend le temps de viser, d'esquiver, de lancer une bouteille sur un méchant. Mais il est un cran plus dur que Superhot, parce qu'il suffit d'un seul coup reçu pour recommencer tout l'acte. Si vous avez aimé Superhot, foncez.
 
 ### Sairento VR
 
@@ -97,15 +97,15 @@ De toute façon, on vient pour le principe : le temps n'avance que quand vous bo
 
 → [Voir sur le Meta Quest Store](https://www.meta.com/experiences/2299215130112875/)
 
-**L'histoire** : vous êtes un ninja cybernétique dans un Japon futuriste. Le jeu vient de Mixed Realms, un studio de Singapour. La version Quest s'appelait d'abord *Sairento Untethered*. Elle est sortie en [juin 2019](https://en.wikipedia.org/wiki/Sairento_VR).
+**L'histoire** : vous êtes un ninja cybernétique dans un Japon futuriste. Le jeu vient de Mixed Realms, un studio de Singapour. La version Quest s'appelait d'abord *Sairento Untethered* et elle est sortie en [juin 2019](https://en.wikipedia.org/wiki/Sairento_VR).
 
-**Sa personnalité** : le cousin qui a bu trop de café. Il court sur les murs. Il saute partout. Il crie. Et il ne sait jamais très bien où il va.
+**Sa personnalité** : le cousin qui a bu trop de café. Il court sur les murs, il saute partout, il crie, et il ne sait jamais très bien où il va.
 
-**Mon avis** : un joyeux b\*\*\*\*l. _(Désolé, le mode Kidpool est encore actif.)_ On court sur les murs. On fait des sauts immenses. On ralentit le temps en plein vol. On découpe au sabre et on tire au pistolet en même temps. C'est très drôle pendant une heure.
+**Mon avis** : un joyeux b\*\*\*\*l. _(Désolé, le mode Kidpool est encore actif.)_ On court sur les murs, on fait des sauts immenses, on ralentit le temps en plein vol, on découpe au sabre et on tire au pistolet en même temps. C'est très drôle pendant une heure.
 
-La difficulté vient surtout du mouvement : il faut un estomac solide. Et il n'y a pas de vraie histoire. Les missions s'enchaînent. Rien ne me donne envie de connaître la suite.
+La difficulté vient surtout du mouvement, il faut un estomac solide. Et il n'y a pas de vraie histoire, les missions s'enchaînent et rien ne me donne envie de connaître la suite.
 
-## Difficile : on transpire
+## Difficile, on transpire
 
 ### Ninja Legends
 
@@ -113,11 +113,11 @@ La difficulté vient surtout du mouvement : il faut un estomac solide. Et il n'y
 
 → [Voir sur le Meta Quest Store](https://www.meta.com/experiences/ninja-legends/2398880980156491/)
 
-**L'histoire** : aucune, ou presque. Des vagues d'assassins et de guerriers arrivent. Vous les affrontez au sabre, avec des armes de jet et des pouvoirs spéciaux. Le jeu vient de Coinflip Studios, un petit studio. C'est son [premier jeu sur Quest](https://www.meta.com/blog/ninja-knowledge-vr-dev-tips-from-coinflip-studios/){target="_blank" rel="noopener"}, sorti en 2019. Le style est cartoon, ce qui fait passer la violence.
+**L'histoire** : aucune, ou presque. Des vagues d'assassins et de guerriers arrivent, et vous les affrontez au sabre, avec des armes de jet et des pouvoirs spéciaux. Le jeu vient de Coinflip Studios, un petit studio dont c'est le [premier jeu sur Quest](https://www.meta.com/blog/ninja-knowledge-vr-dev-tips-from-coinflip-studios/){target="_blank" rel="noopener"}, sorti en 2019. Le style est cartoon, ce qui fait passer la violence.
 
-**Sa personnalité** : le dessin animé du samedi matin. Coloré, bagarreur, sans prise de tête. Et plus sportif qu'il n'en a l'air.
+**Sa personnalité** : le dessin animé du samedi matin, coloré, bagarreur, sans prise de tête, et plus sportif qu'il n'en a l'air.
 
-**Mon avis** : c'est le grand frère sage de Sairento. Pas d'histoire non plus, mais c'est plus lisible. Les ennemis viennent à vous, vague après vague. Le ralenti rend chaque coup de sabre très satisfaisant. Et c'est un vrai bon exercice. Les sites de fitness en réalité virtuelle [le classent parmi les meilleurs](https://www.vrfitnessinsider.com/this-weeks-vr-game-roundup-ninja-legends/).
+**Mon avis** : c'est une version plus sage de Sairento, sans histoire non plus, mais plus lisible, parce que les ennemis viennent à vous, vague après vague. Le ralenti rend chaque coup de sabre très satisfaisant, et c'est un bon exercice, que les sites de fitness en réalité virtuelle [classent parmi les meilleurs](https://www.vrfitnessinsider.com/this-weeks-vr-game-roundup-ninja-legends/).
 
 ### Until You Fall
 
@@ -125,13 +125,13 @@ La difficulté vient surtout du mouvement : il faut un estomac solide. Et il n'y
 
 → [Voir sur le Meta Quest Store](https://www.meta.com/experiences/until-you-fall/2567459230020142/)
 
-**L'histoire** : vous êtes un chevalier des runes. Vous vous battez dans un monde fantastique aux couleurs néon. C'est un « roguelite » de Schell Games, sorti sur Quest en [septembre 2020](https://www.roadtovr.com/until-you-fall-psvr-quest-release-date/). Le principe : quand vous mourez, vous recommencez depuis le début. Vous gardez juste quelques améliorations.
+**L'histoire** : vous êtes un chevalier des runes et vous vous battez dans un monde fantastique aux couleurs néon. C'est un « roguelite » de Schell Games, sorti sur Quest en [septembre 2020](https://www.roadtovr.com/until-you-fall-psvr-quest-release-date/), ce qui veut dire que quand vous mourez, vous recommencez depuis le début en gardant juste quelques améliorations.
 
-**Sa personnalité** : le prof d'escrime exigeant. Il vous fait refaire le même exercice. Encore et encore. Jusqu'à ce que ce soit parfait.
+**Sa personnalité** : le prof d'escrime exigeant. Il vous fait refaire le même exercice, encore et encore, jusqu'à ce que ce soit parfait.
 
-**Mon avis** : les combats à l'épée sont bons. On pare, on esquive, on frappe. On sent le poids des armes. *Shaolin shadowboxing, and the Wu-Tang sword style*, comme dirait l'intro de *Enter the Wu-Tang*. La difficulté est réelle : une mort, et on repart de zéro.
+**Mon avis** : les combats à l'épée sont bons. On pare, on esquive, on frappe, et on sent le poids des armes. *Shaolin shadowboxing, and the Wu-Tang sword style*, comme dirait l'intro de *Enter the Wu-Tang*. La difficulté est réelle, puisqu'il suffit d'une mort pour repartir de zéro.
 
-Mais c'est répétitif. Un roguelite, c'est refaire les mêmes salles encore et encore. Au bout d'un moment, je m'ennuie.
+Mais c'est répétitif, parce qu'un roguelite, c'est refaire les mêmes salles encore et encore, et au bout d'un moment, je m'ennuie.
 
 ### Pistol Whip
 
@@ -139,11 +139,11 @@ Mais c'est répétitif. Un roguelite, c'est refaire les mêmes salles encore et 
 
 → [Voir sur le Meta Quest Store](https://www.meta.com/experiences/pistol-whip/2104963472963790/)
 
-**L'histoire** : pas vraiment. [Cloudhead Games](https://www.roadtovr.com/pistol-whip-launch-date-quest-steamvr/) l'a sorti en novembre 2019. Il était présenté comme un mélange de Superhot et de Beat Saber. Vous avancez tout seul sur un rail, au rythme de la musique. Vous tirez sur tout ce qui bouge et vous esquivez les balles. Les niveaux s'inspirent des films d'action.
+**L'histoire** : pas vraiment. [Cloudhead Games](https://www.roadtovr.com/pistol-whip-launch-date-quest-steamvr/) l'a sorti en novembre 2019, et il était présenté comme un mélange de Superhot et de Beat Saber. Vous avancez tout seul sur un rail, au rythme de la musique, vous tirez sur tout ce qui bouge et vous esquivez les balles. Les niveaux s'inspirent des films d'action.
 
-**Sa personnalité** : le DJ armé. Il ne s'arrête jamais. Et c'est lui qui choisit le tempo.
+**Sa personnalité** : le DJ armé. Il ne s'arrête jamais, et c'est lui qui choisit le tempo.
 
-**Mon avis** : très nerveux. Ici, le temps ne s'arrête pas. C'est la musique qui commande. Impossible de souffler : le rail avance, prêt ou pas. Quand vous tirez dans le rythme, vous êtes John Wick dans un clip. Je le lance quand je veux me défouler vingt minutes.
+**Mon avis** : très nerveux. Ici, le temps ne s'arrête pas et c'est la musique qui commande. Impossible de souffler, parce que le rail avance, que vous soyez prêt ou pas. Quand vous tirez dans le rythme, vous êtes John Wick dans un clip. Je le lance quand je veux me défouler vingt minutes.
 
 ### Dragon Fist: VR Kung Fu
 
@@ -151,39 +151,39 @@ Mais c'est répétitif. Un roguelite, c'est refaire les mêmes salles encore et 
 
 → [Voir sur le Meta Quest Store](https://www.meta.com/experiences/dragon-fist-vr-kung-fu/5075285115918784/)
 
-**L'histoire** : un monde d'arts martiaux imaginaire. Des maîtres veulent prouver leur valeur. Des empereurs écrasent ceux qui les menacent. Des paysans humiliés aiguisent leurs lames. Bref, le scénario de la moitié des films de kung-fu de Hong Kong.
+**L'histoire** : un monde d'arts martiaux imaginaire, où des maîtres veulent prouver leur valeur, des empereurs écrasent ceux qui les menacent et des paysans humiliés aiguisent leurs lames. Bref, le scénario de la moitié des films de kung-fu de Hong Kong.
 
-Le jeu vient d'un petit studio, Ben Olding Games. Il est édité par Clique Games. Il est sorti sur Steam fin 2021. Il est arrivé sur le Store officiel de Meta en [février 2024](https://mixed-news.com/en/dargon-fist-vr-kung-fu-quest-store-release/), avec des graphismes refaits.
+Le jeu vient d'un petit studio, Ben Olding Games, et il est édité par Clique Games. Il est sorti sur Steam fin 2021 et il est arrivé sur le Store officiel de Meta en [février 2024](https://mixed-news.com/en/dargon-fist-vr-kung-fu-quest-store-release/), avec des graphismes refaits.
 
-**Sa personnalité** : le vidéoclub de films de kung-fu. Il a tout vu. Il connaît toutes les répliques. Et il vous ressort ses cassettes préférées une par une.
+**Sa personnalité** : le vidéoclub de films de kung-fu. Il a tout vu, il connaît toutes les répliques, et il vous ressort ses cassettes préférées une par une.
 
-**Mon avis** : c'est beau. Les décors sont bien texturés : les temples, les cours d'entraînement, les couchers de soleil. On est dans l'ambiance dès la première seconde. Et la musique ne trompe personne. Le thème principal s'inspire clairement de celui de Wong Fei-hung, le héros d'*Il était une fois en Chine*. C'est la saga de Tsui Hark, avec Jet Li.
+**Mon avis** : c'est beau. Les décors sont bien texturés, que ce soit les temples, les cours d'entraînement ou les couchers de soleil, et on est dans l'ambiance dès la première seconde. Et la musique ne trompe personne, le thème principal s'inspire clairement de celui de Wong Fei-hung, le héros d'*Il était une fois en Chine*, la saga de Tsui Hark, avec Jet Li.
 
-Les mouvements, eux, ne sont pas orthodoxes. On ne reproduit pas de vraies techniques. On frappe comme on peut. Mais on retrouve tous les archétypes des films de kung-fu. Il y a des copies à peine déguisées de Jet Li, de Jackie Chan, d'Ip Man… Et même de Beatrix Kiddo, la mariée de *Kill Bill*. Une blonde qui apprend le kung-fu auprès d'un vieux maître.
+Les mouvements, eux, ne sont pas orthodoxes. On ne reproduit pas de vraies techniques, on frappe comme on peut. Mais on retrouve tous les archétypes des films de kung-fu, avec des copies à peine déguisées de Jet Li, de Jackie Chan, d'Ip Man… et même de Beatrix Kiddo, la mariée de *Kill Bill*, une blonde qui apprend le kung-fu auprès d'un vieux maître.
 
-Personnellement, j'aurais préféré jouer Pai Mei, le maître en question. Mais on a un clone de Gordon Liu. C'est lui qui jouait Pai Mei dans *Kill Bill*. C'est surtout le héros de *La 36e Chambre de Shaolin*. Les 36 chambres, comme dans *Enter the Wu-Tang (36 Chambers)*. Oui, [encore le Wu-Tang](/fr/20260907-bill-gates-ia-hypocrisie-meta-cash-rules-everything). Et c'est fun.
+J'aurais préféré jouer Pai Mei, le maître en question, mais on a un clone de Gordon Liu, qui jouait Pai Mei dans *Kill Bill* et qui est surtout le héros de *La 36e Chambre de Shaolin*. Les 36 chambres, comme dans *Enter the Wu-Tang (36 Chambers)*. Oui, [encore le Wu-Tang](/fr/20260907-bill-gates-ia-hypocrisie-meta-cash-rules-everything). Et c'est fun.
 
-Seul problème : je n'arrive toujours pas à passer le niveau des trois ninjas, en mode difficile. Trois contre un. Aucun honneur, ces gens-là.
+Le seul problème, c'est que je n'arrive toujours pas à passer le niveau des trois ninjas, en mode difficile. Trois contre un, aucun honneur, ces gens-là.
 
-## Le plus difficile : Vendetta Forever
+## Vendetta Forever, le plus difficile
 
 ![Des ennemis blancs dans un décor rouge et noir, dans Vendetta Forever](/images/articles/quest3s-vendetta-forever.webp)
 
 → [Voir sur le Meta Quest Store](https://www.meta.com/experiences/vendetta-forever/9177531962317371/)
 
-**L'histoire** : presque rien. Une suite de scènes de films d'action. Le jeu vient de Meat Space Interactive. Il est édité par [nDreams](https://roadtovr.com/vendetta-forever-announcement-trailer-release-quest-psvr-2/) et il est sorti en octobre 2024.
+**L'histoire** : presque rien, une suite de scènes de films d'action. Le jeu vient de Meat Space Interactive, il est édité par [nDreams](https://roadtovr.com/vendetta-forever-announcement-trailer-release-quest-psvr-2/) et il est sorti en octobre 2024.
 
-Le principe : vous ne vous déplacez pas librement. Vous tuez un ennemi. Vous attrapez son arme. Et vous êtes projeté à sa place, prêt à viser le suivant. [« Tirer pour tuer, tuer pour avancer »](https://www.thesixthaxis.com/2024/10/23/vendetta-forever-review/), résume une critique. Plus d'arme à attraper ? Vous restez bloqué.
+Vous ne vous déplacez pas librement. Vous tuez un ennemi, vous attrapez son arme et vous êtes projeté à sa place, prêt à viser le suivant. [« Tirer pour tuer, tuer pour avancer »](https://www.thesixthaxis.com/2024/10/23/vendetta-forever-review/), résume une critique. S'il n'y a plus d'arme à attraper, vous restez bloqué.
 
-**Sa personnalité** : le chorégraphe sadique. Il a tout réglé au dixième de seconde près. Et il attend que vous suiviez.
+**Sa personnalité** : le chorégraphe sadique. Il a tout réglé au dixième de seconde près, et il attend que vous suiviez.
 
-**Mon avis** : c'est sans aucun doute le plus difficile de la liste. Les ennemis vous entourent. Ils tirent vite et juste. Chaque niveau est un petit puzzle : dans quel ordre les tuer, et avec quelle arme, pour ne jamais rester coincé.
+**Mon avis** : c'est sans aucun doute le plus difficile de la liste. Les ennemis vous entourent et ils tirent vite et juste. Chaque niveau est un petit puzzle, où il faut trouver dans quel ordre les tuer, et avec quelle arme, pour ne jamais rester coincé.
 
-On meurt beaucoup au début. Puis on finit par enchaîner les gestes sans réfléchir. Se baisser, tirer, attraper l'arme, être projeté, recommencer. C'est encore plus nerveux que Pistol Whip. C'est un [vrai cardio](/fr/20250508-project-fat-loss). Après une demi-heure, j'ai besoin d'une douche. Je ne plaisante pas.
+On meurt beaucoup au début, puis on finit par enchaîner les gestes sans réfléchir : se baisser, tirer, attraper l'arme, être projeté, recommencer. C'est encore plus nerveux que Pistol Whip, et c'est un [vrai cardio](/fr/20250508-project-fat-loss). Après une demi-heure, j'ai besoin d'une douche, et je ne plaisante pas.
 
 Mais visuellement, c'est une claque. Les décors changent à chaque niveau : un wagon de métro, une ville du Far West avec des cow-boys aux balcons, un bateau pirate, un hall d'immeuble façon *Matrix*, et même des niveaux plongés dans le noir, où l'on repère les ennemis au son.
 
-Les couleurs sont vives. Les animations sont propres. Tout reste lisible au milieu du chaos. Quand on réussit un niveau d'une traite, on a l'impression d'avoir tourné une scène de film en plan-séquence.
+Les couleurs sont vives, les animations sont propres et tout reste lisible au milieu du chaos. Quand on réussit un niveau d'une traite, on a l'impression d'avoir tourné une scène de film en plan-séquence.
 
 ## Et Batman ?
 
@@ -191,17 +191,17 @@ Les couleurs sont vives. Les animations sont propres. Tout reste lisible au mili
 
 → [Voir sur le Meta Quest Store](https://www.meta.com/experiences/batman-arkham-shadow/3551691271620960/)
 
-Beaucoup de gens ont *Batman: Arkham Shadow*. Meta l'offrait avec les Quest 3 et Quest 3S achetés [jusqu'à fin avril 2025](https://www.roadtovr.com/quest-3-and-3s-batman-vr-bundle/). On me le conseille souvent. Mais il ne me dit rien.
+Beaucoup de gens ont *Batman: Arkham Shadow*, parce que Meta l'offrait avec les Quest 3 et Quest 3S achetés [jusqu'à fin avril 2025](https://www.roadtovr.com/quest-3-and-3s-batman-vr-bundle/). On me le conseille souvent, mais il ne me dit rien.
 
-Je n'aime pas le personnage, ni son univers. Un milliardaire se déguise. La nuit, il va taper la racaille de Gotham. Ça ne m'a jamais fait rêver.
+Je n'aime pas le personnage, ni son univers. Un milliardaire se déguise et, la nuit, il va taper la racaille de Gotham, et ça ne m'a jamais fait rêver.
 
-Il a les moyens de régler le problème. Pourtant, le Joker s'échappe encore et encore. Il pourrait financer la police de toute la ville. Il préfère acheter des gadgets. Il n'a aucun pouvoir. Et il essaie quand même d'affronter Superman.
+Il a les moyens de régler le problème, et pourtant le Joker s'échappe encore et encore. Il pourrait financer la police de toute la ville, mais il préfère acheter des gadgets. Il n'a aucun pouvoir, et il essaie quand même d'affronter Superman.
 
 Bref, je ne comprends rien au personnage.
 
-C'est pareil pour *Iron Man VR*. Tony Stark, même profil : un milliardaire qui combat le crime à coups de gadgets, sans grande efficacité. Décidément, ce n'est pas pour moi.
+C'est pareil pour *Iron Man VR*. Tony Stark a le même profil, celui d'un milliardaire qui combat le crime à coups de gadgets, sans grande efficacité. Décidément, ce n'est pas pour moi.
 
-Petite ironie : *Arkham Shadow* et *Iron Man VR* viennent tous les deux de Camouflaj, le studio de *République*. Mon jeu préféré et les deux jeux que je refuse de lancer sortent de la même maison. Comme quoi, je juge les héros, pas les studios.
+Ce qui est ironique, c'est qu'*Arkham Shadow* et *Iron Man VR* viennent tous les deux de Camouflaj, le studio de *République*. Mon jeu préféré et les deux jeux que je refuse de lancer sortent donc du même studio. Mon problème vient des héros, le studio n'y est pour rien.
 
 ## Et Beat Saber ?
 
@@ -209,9 +209,9 @@ Petite ironie : *Arkham Shadow* et *Iron Man VR* viennent tous les deux de Camou
 
 → [Voir sur le Meta Quest Store](https://www.meta.com/experiences/beat-saber/2448060205267927/)
 
-Vous avez peut-être remarqué qu'il manque le jeu le plus célèbre du casque : *Beat Saber*, de Beat Games. C'est un bon premier contact avec la réalité virtuelle. Deux sabres, des cubes qui arrivent en musique. En trente secondes, on comprend ce que le casque sait faire. Mais je ne pense pas y avoir touché depuis plusieurs mois. On en fait vite le tour.
+Vous avez peut-être remarqué qu'il manque le jeu le plus célèbre du casque, *Beat Saber*, de Beat Games. C'est un bon premier contact avec la réalité virtuelle, avec deux sabres et des cubes qui arrivent en musique, et en trente secondes, on comprend ce que le casque sait faire. Mais je ne pense pas y avoir touché depuis plusieurs mois, on en fait vite le tour.
 
-## Mes jeux Quest 3S par difficulté, en résumé
+## Mes jeux Quest 3S par difficulté
 
 | Jeu              | Difficulté | Sa personnalité            | Mon avis                                   |
 | ---------------- | ---------- | -------------------------- | ------------------------------------------ |
@@ -229,7 +229,7 @@ Vous avez peut-être remarqué qu'il manque le jeu le plus célèbre du casque :
 
 Pour travailler, en revanche, j'ai essayé [le bureau virtuel dans un casque de réalité virtuelle, face au double moniteur portable](/fr/20260810-double-moniteur-portable-blackview-dcm6), sans être convaincu.
 
-Et vous, quels sont vos jeux préférés sur Quest ? Laissez-les dans les commentaires. Surtout si vous savez battre les trois ninjas de Dragon Fist en mode difficile.
+Et vous, quels sont vos jeux préférés sur Quest ? Laissez-les dans les commentaires, surtout si vous savez battre les trois ninjas de Dragon Fist en mode difficile.
 
 ---
 

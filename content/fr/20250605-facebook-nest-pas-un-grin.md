@@ -15,15 +15,15 @@ summary: "Un community manager du secteur du livre qui publie comme s'il était 
 
 Je suis Jean-Luc Houédanou, développeur web et défenseur assumé du bon sens.
 
-Penser avec rigueur, respecter autrui, peser ses mots : autant de qualités qu'on attend d'un professionnel — surtout d'un community manager, dans un secteur aussi symbolique que le livre et la communication. Je ne suis pas ici pour faire la morale, mais pour rappeler que les réseaux sociaux ne sont pas un *grin* — ce groupe informel de discussion entre amis où l'on débat de tout et de rien, souvent sans fond ni filtre.
+Penser avec rigueur, respecter autrui, peser ses mots : autant de qualités qu'on attend d'un professionnel, surtout d'un community manager, dans un secteur aussi symbolique que le livre et la communication. Je ne suis pas ici pour faire la morale, mais pour rappeler que les réseaux sociaux ne sont pas un *grin*, ce groupe informel de discussion entre amis où l'on débat de tout et de rien, souvent sans fond ni filtre.
 
 Mais parfois, on a l'impression que certains professionnels ont oublié ces notions de base.
 
-## Community manager : un retour en arrière consternant
+## Un retour en arrière consternant
 
 Récemment, un community manager d'une structure bien connue du secteur littéraire ivoirien a cru bon de commenter la maîtrise du français chez les femmes de manière pour le moins… maladroite.
 
-Sa « solution » : offrir un Bescherelle, non sans une pointe de sarcasme.
+Sa « solution » était d'offrir un Bescherelle, non sans une pointe de sarcasme.
 
 ![Commentaire sexiste du community manager sur les femmes et les iPhone](/images/articles/bescherelle/01.webp)
 
@@ -35,7 +35,7 @@ Exemple concret : « Ce qu'elles nous servent là est affreux ».
 
 Cette tournure, en plus d'être condescendante, repose sur une utilisation hasardeuse du verbe « servir ».
 
-On ne « sert » pas une erreur de grammaire comme on sert un café. Cette formulation maladroite, pourtant employée pour critiquer la langue des autres, révèle une maîtrise imparfaite du français — un comble, pour quelqu'un qui a [la prétention de distribuer des Bescherelle](/fr/20241022-restons-zen).
+On ne « sert » pas une erreur de grammaire comme on sert un café. Cette formulation maladroite, pourtant employée pour critiquer la langue des autres, révèle une maîtrise imparfaite du français, un comble pour quelqu'un qui a [la prétention de distribuer des Bescherelle](/fr/20241022-restons-zen).
 
 Ensuite, il y a ceci.
 
@@ -47,7 +47,7 @@ Quelques observations :
 - « Tête d'illettrés » : ici, le mot *illettrés* est au masculin pluriel, alors que le sujet de la phrase est féminin (« elles »). La bonne tournure serait donc *tête d'illettrées*.
 - Il y a aussi un souci de cohérence stylistique : on aligne « allure », « démarche » et « tête » dans une même structure, mais avec des images de registres différents, ce qui crée un effet bancal.
 
-Ce qui devait être une critique sur la maîtrise du français se retourne donc contre son auteur : on ne peut pas [corriger la grammaire des autres](/fr/20250326-lhistoire-de-gregoire) en oubliant les accords de base. Et surtout, il n'est jamais pertinent de porter un jugement aussi général, encore moins sur un ton méprisant, quand on s'adresse à un public large – et potentiellement jeune – depuis une page institutionnelle.
+Ce qui devait être une critique sur la maîtrise du français se retourne donc contre son auteur, parce qu'on ne peut pas [corriger la grammaire des autres](/fr/20250326-lhistoire-de-gregoire) en oubliant les accords de base. Et surtout, il n'est jamais pertinent de porter un jugement aussi général, encore moins sur un ton méprisant, quand on s'adresse à un public large, et potentiellement jeune, depuis une page institutionnelle.
 
 ## L'ironie de la posture critique
 
@@ -70,15 +70,15 @@ Prochaine étape logique : interdire aux femmes l'accès aux bibliothèques le v
 
 Ce n'est pas un procès, mais un appel au professionnalisme et au respect.
 
-Précisons : ce n'est pas la librairie dans son ensemble qui s'est exprimée. D'ailleurs, cette dernière a fait une mise au point ferme, que je salue.
+Je précise que ce n'est pas la librairie dans son ensemble qui s'est exprimée. D'ailleurs, cette dernière a fait une mise au point ferme, que je salue.
 
 ![Mise au point de la librairie](/images/articles/bescherelle/00.webp)
 
-C'est juste un(e) CM — mal formé(e) ou mal encadré(e) — qui, en quelques clics, a transformé une vitrine culturelle en [scène de stand-up misogyne](/fr/20260822-oui-a-lexcision-non-diversion-rhetorique).
+C'est juste un(e) CM, mal formé(e) ou mal encadré(e), qui, en quelques clics, a transformé une vitrine culturelle en [scène de stand-up misogyne](/fr/20260822-oui-a-lexcision-non-diversion-rhetorique).
 
-En conclusion, mesdames, soyez vous-mêmes.
+Mesdames, soyez vous-mêmes.
 
-C'est précisément ce qui dérange certains — et c'est une bonne chose.
+C'est précisément ce qui dérange certains, et c'est une bonne chose.
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com) — grammairien engagé*
+*[Jean-Luc Houédanou](https://houedanou.com), grammairien engagé*

@@ -7,9 +7,9 @@ searchIntent: "How to verify a handoff deliverable announced as complete, and ho
 tags: ["project management", "development", "handoff", "method", "opinion"]
 ---
 
-There are phrases that should make us prick up our ears. "Trust me", "it takes two minutes", or "can we do a call to talk about it?". Since last week, I've added "it's been integrated" to my list. A design handoff announced as done is something you check.
+There are phrases that should make us prick up our ears, like "Trust me", "it takes two minutes", or "can we do a call to talk about it?". Since last week, I've added "it's been integrated" to my list. A design handoff announced as done is something you check.
 
-I pick up a handoff package for a client project. Specifications, scoring matrix, HTML mockups, design system, graphic kit, tracking plan. The pack looks serious, it even has a table of contents, and I have nine days to deliver.
+I pick up a handoff package for a client project, with specifications, scoring matrix, HTML mockups, design system, graphic kit and tracking plan. The pack looks serious, it even has a table of contents, and I have nine days to deliver.
 
 After a first read, I list eight gaps. The answer comes two days later, in a mission-accomplished tone: four points fixed, the mockup now includes the privacy policy, the legal notice, the cookie banner and consent in the forms.
 
@@ -17,13 +17,13 @@ Perfect, I tell myself. Except no.
 
 ## Checking a design handoff in thirty seconds
 
-Before opening an editor, I open a terminal. It's not distrust, it's a habit I've picked up over time.
+Before opening an editor, I open a terminal. It's a habit I've picked up over time.
 
 ```bash
 grep -n -i -E "confidentialit|mentions l|cookie|consentement|RGPD" *.dc.html
 ```
 
-Ten lines come back. "Politique de confidentialité" and "Mentions légales", in the footer, on three boards. Nothing else.
+Ten lines come back, with "Politique de confidentialité" and "Mentions légales" in the footer, on three boards, and nothing else.
 
 I do a second, broader pass, in case the cookie banner was hiding under another name:
 
@@ -31,17 +31,17 @@ I do a second, broader pass, in case the cookie banner was hiding under another 
 grep -n -i -o -E ".{0,90}(cookie|consent|données personnelles|j'accepte).{0,90}" *.dc.html
 ```
 
-A single result, and it's an admin toggle: "Autoriser l'export de données personnelles". No cookie banner, no consent checkbox. The word "cookie" appears nowhere in the [mockup files](/en/20260519-comment-installer-adobe-xd-en-2026).
+A single result, and it's an admin toggle: "Autoriser l'export de données personnelles". There is no cookie banner and no consent checkbox, and the word "cookie" appears nowhere in the [mockup files](/en/20260519-comment-installer-adobe-xd-en-2026).
 
-Two points out of four, then. I sent back the findings with line numbers and board names. It's amazing how a line number cuts a debate short: you can't do a call to talk about it with `grep`.
+Two points out of four, then. I sent back the findings with line numbers and board names. It's amazing how a line number cuts a debate short, because you can't do a call to talk about it with `grep`.
 
-## The real cost of an unverified announcement
+## The cost of an unverified announcement
 
-Two missing screens can be fixed in a day, maybe two. The real cost is what changes afterwards.
+Two missing screens can be fixed in a day, maybe two. What costs is what changes afterwards.
 
-Before, when I was told "it's done", I integrated. Now I open the files, at every announcement, even when I'm told "it's really done this time". Nobody has costed that time. It doesn't appear in any schedule, any quote, any Excel line, and it is now permanent on this project.
+Before, when I was told "it's done", I integrated. Now I open the files, at every announcement, even when I'm told "it's really done this time". Nobody has costed that time, it doesn't appear in any schedule, any quote, any Excel line, and it is now permanent on this project.
 
-That's the price of a single unverified announcement. It doesn't cost the two screens, it costs trust, and trust saves you time that nothing else can replace.
+A single unverified announcement cost me trust, far more than the two screens, and trust saves you time that nothing else can replace.
 
 ## Five web project traps served in one week
 
@@ -49,13 +49,13 @@ They're not specific to my client, I've run into them everywhere. You'll surely 
 
 ### 1. "To avoid back-and-forth, I'll send you feedback in batches."
 
-The intention is good, but the result is the opposite. A batch works when the items are independent. Here, the consent screens touch the same forms and the same pages as everything else: delivering them in three rounds means redoing the integration three times.
+The intention is good, but the result is the opposite. A batch works when the items are independent. Here, the consent screens touch the same forms and the same pages as everything else, so delivering them in three rounds means redoing the integration three times.
 
-The right answer isn't to refuse, it's to rephrase in terms of dependencies: here is what blocks what, and here is what can move forward in parallel. A batch of independent items, yes. A batch of prerequisites, no.
+Rather than refusing, it's better to rephrase in terms of dependencies, saying what blocks what and what can move forward in parallel. A batch of independent items, yes, but a batch of prerequisites, no.
 
 ### 2. "The content isn't finalised."
 
-That's the classic answer when you ask for a site structure, and it's in good faith: the other person hears "content", you were asking for "structure". You didn't have the same conversation, but you had it together.
+That's the classic answer when you ask for a site structure, and it's in good faith, because the other person hears "content" when you were asking for "structure".
 
 The problem comes from the request. "The list of chapters and the topics covered" reads like an order for editorial content, therefore like three weeks of work, therefore like "we'll see". It's better to name the exact object you want to receive: a table, one row per chapter, with the columns listed and one example row filled in, provisional is fine. Then there's no room for interpretation.
 
@@ -69,21 +69,21 @@ Ask for a window. Forty-eight working hours from delivery is reasonable, and nob
 
 ### 4. "No access to our DNS zone can be provided."
 
-Classic, and often legitimate: the client doesn't want to open their zone to a contractor, and they're right. I wouldn't give the keys to my house to someone I met on Teams either.
+It's classic and often legitimate, because the client doesn't want to open their zone to a contractor, and they're right.
 
-Except that without access, every record becomes a ticket. Subdomain validation, TLS certificate, SPF, DKIM, DMARC: you easily get a dozen, each with a round trip and a wait. That can eat a week of a two-week project.
+Except that without access, every record becomes a ticket. Between subdomain validation, the TLS certificate, SPF, DKIM and DMARC, you easily get a dozen, each with a round trip and a wait. That can take a week of a two-week project.
 
-The solution fits in one line in their zone: an NS delegation for the subdomain only. They keep full control of the main domain, give no access, and can revoke the delegation whenever they want. You manage the subdomain's records without asking permission every time. It meets their need for control, just in a different way. Propose it before accepting ticket mode, half the time it goes through.
+The solution fits in one line in their zone: an NS delegation for the subdomain only. They keep full control of the main domain, give no access, and can revoke the delegation whenever they want. You manage the subdomain's records without asking permission every time. It meets their need for control in a different way. Propose it before accepting ticket mode, half the time it goes through.
 
-### 5. The secret that travels in the shared Drive
+### 5. The secret dropped in the shared Drive
 
-In the consolidated pack, I'm told the Conversions API token has been "filled in in the handoff folder". In other words, dropped into a Drive document shared with a dozen people, whose link has been circulating by email for two weeks.
+In the consolidated pack, I'm told the Conversions API token has been "filled in in the handoff folder". So it was dropped into a Drive document shared with a dozen people, whose link has been circulating by email for two weeks.
 
 An API token is not project data. It isn't passed along in a deliverable, it isn't stored next to the specifications, and once it has been through there, it must be considered compromised. Ask for it to be regenerated and for a separate channel, without drama, but in writing.
 
-## The only method that holds
+## Dependencies and dates
 
-On this kind of project, I spent a long time answering with analysis: well-argued, precise emails, with headings, bullet points and appendices, explaining why this blocked that. Nobody read them. In return, I got the all-time classic: "I don't really see it, can we do a call to talk about it?". I've already devoted [an entire article to that meeting "to talk about it"](/en/20260326-lareunionpourenparler), which is something of a cousin to "it's been integrated": in both cases, people prefer talking, because in writing, you can check.
+On this kind of project, I spent a long time answering with analysis: well-argued, precise emails, with headings, bullet points and appendices, explaining why this blocked that. Nobody read them. In return, I got the all-time classic: "I don't really see it, can we do a call to talk about it?". I've already devoted [an entire article to that meeting "to talk about it"](/en/20260326-lareunionpourenparler), which is a lot like "it's been integrated", since in both cases people prefer talking because in writing, you can check.
 
 What works is shorter and less tiring: dependencies and dates.
 
@@ -91,9 +91,9 @@ What works is shorter and less tiring: dependencies and dates.
 - What has been received, and when.
 - The countdown starts at receipt, not at the announcement.
 
-It doesn't read like a reproach, so it isn't argued about like a reproach. It reads like a fact.
+It reads like a fact rather than a reproach, so it isn't argued about.
 
-And above all, everything in writing, in a channel visible to everyone. No [private messages on WhatsApp](/en/20261028-whatsapp-nest-pas-un-moyen-de-communication-professionnel) or anywhere else on anything that commits to a date. Not out of distrust, but because the day the deadline slips, the only thing protecting you is a dated history nobody can rewrite. People's memory, on the other hand, gets very creative after a missed deadline.
+And above all, everything in writing, in a channel visible to everyone, with no [private messages on WhatsApp](/en/20261028-whatsapp-nest-pas-un-moyen-de-communication-professionnel) or anywhere else on anything that commits to a date, because the day the deadline slips, the only thing protecting you is a dated history nobody can rewrite.
 
 ## What I do now, systematically
 
@@ -103,7 +103,7 @@ And above all, everything in writing, in a channel visible to everyone. No [priv
 4. I propose subdomain delegation before accepting ticket mode.
 5. I answer in dependencies and dates, never in analysis, and never in a call.
 
-None of this is distrust. It's simply what's left once you've understood that an announced deliverable is not a received deliverable. Check, it takes thirty seconds.
+I do all this because I've understood that an announced deliverable is not a received deliverable. Check, it takes thirty seconds.
 
 ---
 *Photo: [Ketut Subiyanto](https://www.pexels.com/photo/4584385/), Pexels.*

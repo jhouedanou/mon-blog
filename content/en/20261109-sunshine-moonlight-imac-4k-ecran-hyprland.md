@@ -9,7 +9,7 @@ searchIntent: "How can I use a 2017 Retina 4K iMac, which has no Target Display 
 tags: ["tutorial", "apple", "macos", "mac", "linux", "omarchy", "open-source", "hardware"]
 ---
 
-Yes, I know, I keep coming back to this, but I just think this computer is too beautiful to let it gather dust.
+Yes, I know, I keep coming back to this, but I think this computer is too beautiful to let it gather dust.
 
 Here's how to turn my 2017 21.5-inch Retina 4K iMac into the monitor of my 2017 MacBook Pro running [Omarchy](/en/20261013-retournement-de-veste-omarchy-macbook-pro-2017). You need two free apps, **Sunshine** on the MacBook and **Moonlight** on the iMac, and a Thunderbolt cable between the two. No need to open the iMac.
 
@@ -19,14 +19,14 @@ It's my fourth post about this iMac, after [Sharp](/en/20260929-sharp-vieil-imac
 
 This iMac has no **Target Display Mode**. Apple keeps it for some iMacs from 2009 to mid-2014, running macOS High Sierra or earlier ([Apple page](https://support.apple.com/en-us/105126){target="_blank" rel="noopener"}). No Retina iMac is on the list.
 
-The iMac's Thunderbolt 3 ports send a picture to an external display ([Apple tech specs](https://support.apple.com/en-us/112026){target="_blank" rel="noopener"}). They don't receive one. No cable or setting changes that.
+The iMac's Thunderbolt 3 ports send a picture to an external display ([Apple tech specs](https://support.apple.com/en-us/112026){target="_blank" rel="noopener"}), but they don't receive one, and no cable or setting changes that.
 
 That leaves two options:
 
-- **software**: the method in this post. The cable is a fast network link, not a video cable;
+- **software**: the method in this post. The cable is a fast network link;
 - **hardware**: remove the iMac's logic board and fit a controller board made for its panel. On this model, the panel is an LG LM215UH1-SDB1, according to [iFixit's teardown](https://www.ifixit.com/Guide/iMac+Intel+21.5-Inch+Retina+4K+Display+%282017%29+Teardown/92170){target="_blank" rel="noopener"}. Still, check the label on the back of yours before you buy. The iMac becomes a real 4K monitor plugged in directly, but it's no longer a computer.
 
-I'm starting with software: it's free, and you can undo it.
+I'm starting with software, because it's free and you can undo it.
 
 ## Sunshine and Moonlight in short
 
@@ -176,7 +176,7 @@ hyprctl output remove imac
 
 ## Sunshine and Moonlight, or OpenDisplay?
 
-I've already tested [OpenDisplay on this same MacBook running Omarchy](/en/20261030-opendisplay-vieil-imac-ecran-mac-linux), and it works: the iMac does show the extended desktop. But on Linux, OpenDisplay compresses the picture with the processor alone. On my MacBook, its logs showed about 24 ms to compress a frame, and 60 to 100 ms from capture to send. At 60 frames per second, you need a new frame every 16.7 ms: the processor can't keep up at that pace.
+I've already tested [OpenDisplay on this same MacBook running Omarchy](/en/20261030-opendisplay-vieil-imac-ecran-mac-linux), and it works: the iMac does show the extended desktop. But on Linux, OpenDisplay compresses the picture with the processor alone. On my MacBook, its logs showed about 24 ms to compress a frame, and 60 to 100 ms from capture to send. At 60 frames per second, you need a new frame every 16.7 ms, and the processor can't keep up at that pace.
 
 Sunshine can compress with the graphics chip instead, through VA-API on Intel and AMD chips ([Sunshine README](https://github.com/LizardByte/Sunshine){target="_blank" rel="noopener"}). For 4K, Sunshine suggests at least an Intel HD Graphics 510. The 2017 MacBook Pro has a 7th-generation Intel chip (Kaby Lake), which is newer. To check that it can compress HEVC, run `vainfo` (package `libva-utils`) and look for a `VAProfileHEVCMain` line followed by `VAEntrypointEncSlice`.
 

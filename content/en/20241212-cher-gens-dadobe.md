@@ -18,7 +18,7 @@ So I have to use Adobe... but sometimes at the expense of my mental health, not 
 
 Well, this morning my frustration reached its peak. I HATE Adobe, and I've sworn to go all in on the Affinity suite, far from Adobe's hassles. Let me explain.
 
-## Changing your payment method at Adobe: mission impossible
+## You can't change your payment method at Adobe
 
 It all started on Friday the 13th of December, when I wanted to update the payment methods on an Adobe account. First surprise in a series that made the start of that day particularly hard:
 
@@ -39,7 +39,7 @@ I don't even use that service and I have no wish to pay more than necessary. Wha
 
 A new battle with customer service followed: "I don't want Adobe Express, I don't use it and I don't want to pay for it." After going through two customer advisors, I cancelled that unsolicited subscription. But the experience left a bitter taste: Adobe, through its abusive practices, draws criticism that is largely deserved, along with all the hatred in the world. Online, in real life and in the courts.
 
-## Hidden cancellation fees: the complaint against Adobe
+## The complaint against Adobe over hidden cancellation fees
 
 Because yes, Adobe is being sued over questionable business practices, in a complaint filed in June 2024 by the US Department of Justice on referral from the FTC:
 
@@ -57,4 +57,4 @@ Stop using their services, if you can. Or go for software with no subscription, 
 *November 2026: another way out of the subscription, [ArtCraft, open-source clones of Photoshop, Lightroom and Premiere built with AI](/en/20261009-artcraft-vibe-code-suite-adobe-saaspocalypse), to try on copies of your files.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com) — Adobe survivor*
+*[Jean-Luc Houédanou](https://houedanou.com), Adobe survivor*

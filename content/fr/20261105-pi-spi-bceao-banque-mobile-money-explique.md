@@ -7,7 +7,7 @@ searchIntent: "Qu'est-ce que PI-SPI de la BCEAO, comment s'en servir pour envoye
 tags: ["finance", "afrique", "tutoriel", "mobile money"]
 ---
 
-PI-SPI n'est pas une application : c'est le réseau de paiement instantané de la BCEAO. Il relie les banques, les mobile money et les microfinances des 8 pays de l'UEMOA. Vous vous en servez depuis l'appli que vous utilisez déjà. L'argent arrive en quelques secondes, et l'envoi est gratuit jusqu'à 8 000 FCFA par jour.
+PI-SPI est le réseau de paiement instantané de la BCEAO. Il relie les banques, les mobile money et les microfinances des 8 pays de l'UEMOA. Vous vous en servez depuis l'appli que vous utilisez déjà. L'argent arrive en quelques secondes, et l'envoi est gratuit jusqu'à 8 000 FCFA par jour.
 
 ## Qu'est-ce que PI-SPI ?
 
@@ -52,17 +52,17 @@ Seule condition : l'établissement de votre destinataire doit, lui aussi, être 
 
 Ces règles s'appliquent depuis le 2 novembre 2026. Depuis cette date, un transfert entre une banque (ou une microfinance) et un mobile money, ou entre deux mobile money, doit passer par PI-SPI.
 
-## Attention : pas de retour en arrière
+## Un envoi ne s'annule pas
 
 Un transfert PI-SPI est instantané et irrévocable. Une fois l'argent parti, impossible d'annuler.
 
 Avant de valider, votre appli affiche le nom et le pays du bénéficiaire. **Vérifiez-les à chaque fois.**
 
-Les arnaqueurs comptent justement là-dessus : [l'arnaque au faux mail de renouvellement Zoho](/fr/20260831-faux-mail-renouvellement-zoho-358-dollars) se termine par un virement que la victime envoie elle-même.
+Les arnaqueurs comptent justement là-dessus, et [l'arnaque au faux mail de renouvellement Zoho](/fr/20260831-faux-mail-renouvellement-zoho-358-dollars) se termine par un virement que la victime envoie elle-même.
 
-## En résumé
+## L'essentiel
 
-- PI-SPI n'est pas une appli : c'est un réseau, celui de la BCEAO.
+- PI-SPI est un réseau, celui de la BCEAO.
 - Vous l'utilisez depuis votre appli habituelle. Moi, c'est entre Ecobank et Orange Money.
 - Votre alias : votre numéro de téléphone, ou une adresse de paiement avec son QR code.
 - Gratuit jusqu'à 8 000 FCFA par jour, puis 0,8 % HT au plus.

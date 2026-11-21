@@ -12,11 +12,11 @@ tags: ["development", "tutorial", "security", "cloudflare", "nuxt"]
 
 > **Correction, 18 October.** The paragraph below says that every old URL redirects to the right article. That was wrong: only nine did. The other 42 have redirected since 18 October; I explain how in [WordPress → Nuxt migration: I lost my SEO, here's how I got it back](/en/20261018-migration-wordpress-nuxt-referencement-perdu-recupere).
 
-This blog ran on WordPress for a long time. It has since [moved to Nuxt](/en/20241005-on-fait-un-peu-le-menage), then [to Cloudflare](/en/20260402-vercel-cloudflare-pages-migration), and all that time hundreds of old addresses stayed in Google's index, in links from other sites and in the bookmarks of a few loyal readers. Over the past few weeks I finally cleaned up: every old URL redirects to the right article, and everything that belonged to WordPress's machinery answered 410, the response that tells Google "this page is gone, stop asking for it" (it has since become a plain 404, more on that at the end).
+This blog ran on WordPress for a long time. It has since [moved to Nuxt](/en/20241005-on-fait-un-peu-le-menage), then [to Cloudflare](/en/20260402-vercel-cloudflare-pages-migration), and all that time hundreds of old addresses stayed in Google's index, in links from other sites and in the bookmarks of a few loyal readers. Over the past few weeks I finally cleaned up: every old URL redirects to the right article, and everything that belonged to WordPress's machinery answered 410, the response that tells Google "this page is gone, stop asking for it" (it has since become a 404, more on that at the end).
 
-The traffic came back. And with it, something I hadn't ordered: bots pushing my site past the Cloudflare Workers CPU limit.
+The traffic came back, and with it bots pushing my site past the Cloudflare Workers CPU limit.
 
-## The email from Cloudflare: CPU limit exceeded
+## The email from Cloudflare about the CPU limit
 
 One morning, this in my inbox:
 
@@ -25,7 +25,7 @@ Your Workers hit the free tier CPU time limit at least 100+ times in the past 24
 Upgrade to increase limit
 ```
 
-Some context. This site was then served by a Cloudflare Worker, a small program that runs in their data centres. The free plan gives it 10 milliseconds of processor time per request. Beyond that, Cloudflare kills the running execution and sends the visitor an error. A hundred times a day, then, someone was landing on a broken page.
+This site was then served by a Cloudflare Worker, a small program that runs in their data centres. The free plan gives it 10 milliseconds of processor time per request. Beyond that, Cloudflare kills the running execution and sends the visitor an error. A hundred times a day, then, someone was landing on a broken page.
 
 Almost all of my pages are generated ahead of time at deployment and served as plain files, without ever waking the Worker. So it should only have run for a few rare cases: the RSS feed, the sitemap, and addresses that match no file at all.
 
@@ -66,7 +66,7 @@ Next, I looked at which addresses were being requested. I expected typos in arti
 /google-credentials.json
 ```
 
-None of these files has ever existed on this site. These aren't readers getting an address wrong, they're scanners testing, on every domain they come across, the list of files that hurried developers sometimes leave lying around: the configuration with the passwords, the Git repository, the cloud access keys. And, of course, [WordPress's front door](/en/20261020-site-wordpress-pirate-trouver-par-ou-le-pirate-est-entre), because WordPress powers nearly one site in two and it's always worth a try.
+None of these files has ever existed on this site. These requests come from scanners testing, on every domain they come across, the list of files that hurried developers sometimes leave lying around: the configuration with the passwords, the Git repository, the cloud access keys. And, of course, [WordPress's login page](/en/20261020-site-wordpress-pirate-trouver-par-ou-le-pirate-est-entre), because WordPress powers nearly one site in two and it's always worth a try.
 
 The browsers these visitors claimed to be are worth a look:
 
@@ -77,21 +77,21 @@ Mozilla/5.0 (compatible; MSIE 10.0; ...)      263
 More Firefox 1.0 user agents strings -->>     222
 ```
 
-Internet Explorer 10 has been dead for ten years. And "More Firefox 1.0 user agents strings -->>" isn't a browser: it's the text of a link on a page that lists browser identifiers. Someone copied the whole page into their tool, heading included, and the tool scans the web under that name.
+Internet Explorer 10 has been dead for ten years. And "More Firefox 1.0 user agents strings -->>" isn't a browser but the text of a link on a page that lists browser identifiers. Someone copied the whole page into their tool, heading included, and the tool scans the web under that name.
 
 Geographically, the United States, Germany, Singapore and China came far ahead of France and Côte d'Ivoire, even though that's where the vast majority of my readers live.
 
 ## Why it cost so much
 
-A file not found should cost almost nothing. Except my site is built with Nuxt, and when an address matches no article, Nuxt does what it was told to do: it renders the error page. A nice page, with the site's layout, the translations, and the three latest articles suggested to the lost reader. To produce those three suggestions, it loads the complete list of articles.
+A file not found should cost almost nothing. Except my site is built with Nuxt, and when an address matches no article, Nuxt does what it was told to do and renders the error page, a nice page with the site's layout, the translations and the three latest articles suggested to the lost reader. To produce those three suggestions, it loads the complete list of articles.
 
 All that for a robot looking for `/postgres/.env` that will never read the answer.
 
-Rendering that page weighed 741 KB, and on its own it blew past the 10-millisecond budget. So every scanner probe woke the Worker, which started rendering an error page, and got killed halfway through. Worse: when the Worker keeps overrunning, Cloudflare ends up killing legitimate requests too. In the analytics I found 522 errors on the home page. Real readers, penalised because robots were looking for a WordPress that isn't there any more.
+Rendering that page weighed 741 KB, and on its own it blew past the 10-millisecond budget. So every scanner probe woke the Worker, which started rendering an error page, and got killed halfway through. Worse, when the Worker keeps overrunning, Cloudflare ends up killing legitimate requests too. In the analytics I found 522 errors on the home page, so readers penalised because robots were looking for a WordPress that isn't there any more.
 
 ## What I changed
 
-### First reflex: answer fast inside the Worker
+### Answering fast inside the Worker
 
 The first thing was to stop rendering a page for someone who won't look at it. The old WordPress addresses first got a hand-written 410, 445 bytes, without going through Nuxt. Scanner probes got an even drier 404. Here's what it looked like on 22 September (today, the site's own 404 page shows up instead):
 
@@ -111,35 +111,35 @@ Nuxt's error page, with its suggestions, stayed in place for humans who mistype 
 
 Along the way, the same investigation turned up another waste: the article lists were loading the full text of all 48 posts just to display titles and dates. The reading time, meanwhile, was recomputed on every display by walking through all that text. It's now computed once at deployment and stored with the article.
 
-### At the edge: block the bots with Cloudflare WAF rules
+### Blocking the bots with Cloudflare WAF rules
 
-Answering fast is good. But the best option is still not to let these requests reach the site at all. Cloudflare lets you, even on the free plan, create five firewall rules that apply upstream. A request blocked there didn't wake the Worker, and so cost nothing. These rules are still in place, by the way.
+Answering fast is good, but the best option is still not to let these requests reach the site at all. Cloudflare lets you, even on the free plan, create five firewall rules that apply upstream. A request blocked there didn't wake the Worker, and so cost nothing. These rules are still in place, by the way.
 
 I created three:
 
 1. **Scanner paths**: any segment starting with a dot (except `/.well-known/`), the `.php`, `.env`, `.bak`, `.key`, `.sql` extensions and friends, anything containing `wp-`, `xmlrpc`, `phpinfo`, `phpmyadmin`. With an exception for bots verified by Cloudflare, Googlebot first among them, so they keep receiving an error response on the old addresses and eventually forget them.
 2. **Fake browsers**: empty identifier, "nginx-ssl early hints", "MSIE", and our friend "More Firefox 1.0 user agents strings".
-3. **The vacuum cleaners**: the bots of SEO tools (Ahrefs, DotBot, Semrush), which crawl the site to sell reports to others, and the collectors of AI companies (CCBot, GPTBot, ClaudeBot, Bytespider, Amazonbot). Cloudflare also offers a simple "Block AI bots" switch that covers the latter, and is kept up to date on my behalf.
+3. **Data collectors**: the bots of SEO tools (Ahrefs, DotBot, Semrush), which crawl the site to sell reports to others, and the collectors of AI companies (CCBot, GPTBot, ClaudeBot, Bytespider, Amazonbot). Cloudflare also offers a "Block AI bots" switch that covers the latter, and is kept up to date on my behalf.
 
 The rules language has no regular expressions on the free plan, so you have to stack `contains` and `ends_with` clauses. The three complete rules are in the site's repository, ready to paste: [docs/cloudflare-waf.md](https://github.com/jhouedanou/mon-blog/blob/master/docs/cloudflare-waf.md).
 
-### In robots.txt: for the polite ones
+### Warning the polite bots in robots.txt
 
 Finally, `robots.txt` now explicitly disallows `/wp-admin/`, `/wp-login.php` and the others. It changes nothing for scanners, which don't read it, but it saves well-behaved bots from coming back every month to check whether WordPress has reappeared.
 
 ## What now?
 
-On a free plan, the budget is counted in milliseconds rather than euros, and before blaming your own code, it's better to look at who is using up that budget. In my case, it wasn't the readers.
+On a free plan, the budget is counted in milliseconds rather than euros, and before blaming your own code, it's better to look at who is using up that budget, and in my case it was the scanners.
 
-The redirects did bring back the visitors arriving through the old addresses. They also showed the scanners that the domain was answering, which encouraged them to keep trying. Looking back, the real fix was simpler than everything above: a blog whose pages are all generated in advance doesn't need a program to serve them. That's what the update below is about.
+The redirects did bring back the visitors arriving through the old addresses. They also showed the scanners that the domain was answering, which encouraged them to keep trying. Looking back, the fix was simpler than everything above, since a blog whose pages are all generated in advance doesn't need a program to serve them. That's what the update below is about.
 
 I'll check the counters again in a few days. If the orange in the chart hasn't dropped to zero, you'll hear about it 🙂
 
 ## Update, 23 September: no more Worker at all
 
-The next day, Cloudflare sent me the same email again. Granted, it covers the last 24 hours, so some of the overruns predated the changes. But while running a few more tests, I found two holes I hadn't plugged. An address like `/api/_content/query/abc.json`, with anything in place of `abc`, still woke up the Worker, which answered by sending the entire content of the blog: 1.2 MB of JSON, far more than 10 milliseconds of work. And a simple typo in an article URL still triggered a full render of the error page.
+The next day, Cloudflare sent me the same email again. Granted, it covers the last 24 hours, so some of the overruns predated the changes. But while running a few more tests, I found two holes I hadn't plugged. An address like `/api/_content/query/abc.json`, with anything in place of `abc`, still woke up the Worker, which answered by sending the entire content of the blog, that is 1.2 MB of JSON, far more than 10 milliseconds of work. And a typo in an article URL still triggered a full render of the error page.
 
-Rather than adding yet another exception, I asked myself a simpler question: what is this Worker for, if every page is already generated in advance? Not much, as it turns out. The site is now published as a set of static files, with no program behind it. Cloudflare serves the pages, applies the redirects for the old addresses and returns the 404 page on its own, and that work has no CPU limit on the free plan.
+Rather than adding yet another exception, I asked myself what this Worker was for, since every page is already generated in advance, and it wasn't for much. The site is now published as a set of static files, with no program behind it. Cloudflare serves the pages, applies the redirects for the old addresses and returns the 404 page on its own, and that work has no CPU limit on the free plan.
 
 There's one trade-off: the old WordPress addresses now return 404 instead of 410. For Google the difference is slim, it will forget them anyway, just a little more slowly. The firewall rules stay in place: they still spare the site from serving pages to bots that will do nothing with them.
 

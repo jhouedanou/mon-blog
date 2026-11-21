@@ -8,23 +8,21 @@ searchIntent: "How to install Adobe XD in 2026 (Creative Cloud Pro plan or free 
 tags: ["tutorial", "design", "adobe", "figma"]
 ---
 
-You need to [build out a mockup](/en/20260908-cest-integre-dans-la-maquette) that a contact sent you on Adobe XD.  
-In 2026.  
-Yes, I know.
+You need to [build out a mockup](/en/20260908-cest-integre-dans-la-maquette) that a contact sent you on Adobe XD, in 2026. Yes, I know.
 
-Good news: you can still install Adobe XD in 2026. You have to go through the Creative Cloud app and have the Creative Cloud Pro plan (formerly "All Apps"), or its free trial.
+Good news, you can still install Adobe XD in 2026. You have to go through the Creative Cloud app and have the Creative Cloud Pro plan (formerly "All Apps"), or its free trial.
 
-Let's put it plainly: the web's official recommendation is often "use Figma" or "open it in [editor.figpea.com](https://editor.figpea.com/){target="_blank" rel="noopener"}", a free viewer for XD and PSD files. On paper, that's lovely. In real life, when you have a client waiting for a deliverable and complex layers to inspect, it's not always that smooth.
+The web's official recommendation is often "use Figma" or "open it in [editor.figpea.com](https://editor.figpea.com/){target="_blank" rel="noopener"}", a free viewer for XD and PSD files. On paper, that's lovely, but when you have a client waiting for a deliverable and complex layers to inspect, it's not always that smooth.
 
 ---
 
 ## Is Adobe XD still available in 2026?
 
-Yes, but on borrowed time. The [official Adobe XD FAQ](https://helpx.adobe.com/xd/desktop/introduction/faq.html){target="_blank" rel="noopener"}, updated in September 2026, spells it out: XD "continues to be in maintenance mode". No new features, only bug fixes and security updates for existing customers. Adobe promises to announce the end of support "with a significant notice period".
+Yes, but for how long, Adobe doesn't say. The [official Adobe XD FAQ](https://helpx.adobe.com/xd/desktop/introduction/faq.html){target="_blank" rel="noopener"}, updated in September 2026, spells it out: XD "continues to be in maintenance mode". No new features, only bug fixes and security updates for existing customers. Adobe promises to announce the end of support "with a significant notice period".
 
 XD is still on the app list of [the Creative Cloud Pro plan](https://www.adobe.com/creativecloud/whats-included/plans/cci-all-apps-whats-included.html){target="_blank" rel="noopener"}, the new name of Creative Cloud All Apps. It only runs on macOS and Windows.
 
-Since Adobe has placed XD in perpetual maintenance mode (rest in peace), here's the realistic method for people who just want to work, deliver, and move on.
+Since Adobe has placed XD in perpetual maintenance mode, here's the realistic method for people who just want to work, deliver, and move on.
 
 ---
 
@@ -49,7 +47,7 @@ Once XD is installed and running:
 * Immediately export every asset you need (SVG, PNG, colour codes).
 * Close the app and prepare your transition.
 
-If you still come across a designer who insists on XD today, no need to attack them: just send them a Figma link and a coffee. Gentle evangelism works better. It's the method I use to convince clients to migrate to Figma, and the combo of "the promise of a life without export bugs" + "coffee" often works wonders.
+If you still come across a designer who insists on XD today, no need to attack them, send them a Figma link and a coffee, the gentle way works better. It's the method I use to convince clients to migrate to Figma, and the promise of a life without export bugs, plus a coffee, is often enough.
 
 ---
 
@@ -62,21 +60,21 @@ According to the [Adobe XD FAQ](https://helpx.adobe.com/xd/desktop/introduction/
 
 ---
 
-## Figma, Figpea, XD: the undiplomatic verdict
+## My take on Figma, Figpea and XD
 
-Let's be frank: the Adobe ecosystem remains closed and sometimes painful when your only goal is to build out an interface quickly (I've already [said everything I think of Adobe](/en/20241212-cher-gens-dadobe)). 
+The Adobe ecosystem remains closed and sometimes painful when your only goal is to build out an interface quickly (I've already [said everything I think of Adobe](/en/20241212-cher-gens-dadobe)). 
 
 Figma remains the rational choice for collaborating and handing over a project. 
 
-Adobe XD is legacy software now. You open it because you have to, not because you want to.
+Adobe XD is legacy software now, and you open it because you have to.
 
 ---
 
 ## After the XD file, move to Figma
 
-If you have to open an XD file, do it. Deliver. Get paid. Then propose a full migration to Figma in the next sprint.
+If you have to open an XD file, do it, deliver, get paid, then propose a full migration to Figma in the next sprint.
 
-The goal isn't to win a tooling debate, it's to finish the project before Creative Cloud asks you for an existential re-login in the middle of your workflow.
+The goal is to finish the project before Creative Cloud asks you to log in again in the middle of your work, and the tooling debate can wait.
 
 *Updated November 8, 2026: added Adobe XD's official status (still in maintenance mode, according to Adobe's FAQ), the plan's new name (Creative Cloud Pro, formerly All Apps), the free trial terms and a troubleshooting section.*
 

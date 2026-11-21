@@ -7,7 +7,7 @@ searchIntent: "Comment corriger PHP2Shell (CVE-2026-109618, CVE-2026-109619) et 
 tags: ["tutoriel", "sécurité", "php", "linux", "dev"]
 ---
 
-Deux failles de PHP, baptisées PHP2Shell, permettent de prendre la main sur un serveur web sans mot de passe, avec une seule requête. Elles sont corrigées depuis ce mercredi 21 octobre dans PHP 8.5.12, 8.4.27, 8.3.36 et 8.2.35, et déjà exploitées. Sur un serveur Laravel Forge, les mises à jour automatiques ne touchent pas à PHP : il faut le mettre à jour à la main. Forge étant aux abonnés absents, voici la marche à suivre, en SSH, avec la commande que j'ai passée sur mes serveurs.
+Deux failles de PHP, baptisées PHP2Shell, permettent de prendre la main sur un serveur web sans mot de passe, avec une seule requête. Elles sont corrigées depuis ce mercredi 21 octobre dans PHP 8.5.12, 8.4.27, 8.3.36 et 8.2.35, et déjà exploitées. Sur un serveur Laravel Forge, les mises à jour automatiques ne touchent pas à PHP, il faut donc le mettre à jour à la main. Comme Forge ne répond pas ce soir, voici la marche à suivre, en SSH, avec la commande que j'ai passée sur mes serveurs.
 
 ## PHP2Shell, c'est quoi
 
@@ -16,7 +16,7 @@ Deux vulnérabilités, notées 9,2 sur 10 (CVSS 4.0) :
 - **CVE-2026-109618** : quand PHP manque de mémoire au mauvais moment, il peut laisser une requête à moitié initialisée, puis la nettoyer comme si elle était valide.
 - **CVE-2026-109619** : des données d'une requête survivent après avoir été libérées, et la requête suivante traitée par le même processus les réutilise.
 
-En clair : un attaquant envoie une requête piégée et exécute son code sur le serveur, avant même que votre application ne démarre. Pas besoin de compte, pas besoin d'un plugin vulnérable. Selon [Help Net Security](https://www.helpnetsecurity.com/2026/10/21/php2shell-php-vulnerabilities-patched-cve-2026-109618-cve-2026-109619/){target="_blank" rel="noopener"}, toutes les installations de PHP qui servent des pages web sont concernées : PHP-FPM, Apache avec mod_php, php-cgi, FrankenPHP, LiteSpeed. [watchTowr](https://watchtowr.com/intelligence/php-remote-code-execution-php2shell/){target="_blank" rel="noopener"} signale des exploitations réelles, Cloudflare a vu des tentatives avant même la publication du correctif, et l'agence américaine [CISA](https://www.cisa.gov/news-events/alerts/2026/10/21/critical-vulnerabilities-php-require-immediate-patching){target="_blank" rel="noopener"} demande de corriger immédiatement.
+Un attaquant envoie une requête piégée et exécute son code sur le serveur, avant même que votre application ne démarre, sans avoir besoin d'un compte ni d'un plugin vulnérable. Selon [Help Net Security](https://www.helpnetsecurity.com/2026/10/21/php2shell-php-vulnerabilities-patched-cve-2026-109618-cve-2026-109619/){target="_blank" rel="noopener"}, toutes les installations de PHP qui servent des pages web sont concernées : PHP-FPM, Apache avec mod_php, php-cgi, FrankenPHP, LiteSpeed. [watchTowr](https://watchtowr.com/intelligence/php-remote-code-execution-php2shell/){target="_blank" rel="noopener"} signale des exploitations réelles, Cloudflare a vu des tentatives avant même la publication du correctif, et l'agence américaine [CISA](https://www.cisa.gov/news-events/alerts/2026/10/21/critical-vulnerabilities-php-require-immediate-patching){target="_blank" rel="noopener"} demande de corriger immédiatement.
 
 Les versions corrigées, d'après [l'annonce du projet PHP](https://www.php.net/archive/2026.php){target="_blank" rel="noopener"} :
 
@@ -28,13 +28,13 @@ Les versions corrigées, d'après [l'annonce du projet PHP](https://www.php.net/
 | PHP 8.2 | 8.2.35 |
 | PHP 8.1 et plus ancien | Pas de version officielle : fin de vie |
 
-Pour PHP 8.1 et avant, le projet PHP a publié des correctifs à compiler soi-même, et certaines distributions en livrent. Le vrai remède reste de passer à une version suivie. Et PHP 8.2 perd son support de sécurité le 31 décembre 2026.
+Pour PHP 8.1 et avant, le projet PHP a publié des correctifs à compiler soi-même, et certaines distributions en livrent. Le remède reste de passer à une version suivie. Et PHP 8.2 perd son support de sécurité le 31 décembre 2026.
 
 ## Pourquoi votre serveur Forge n'est pas à jour
 
-On pourrait croire qu'un serveur avec les mises à jour automatiques d'Ubuntu est protégé. Non. Forge installe PHP depuis les paquets d'Ondřej Surý, pas depuis Ubuntu, et `unattended-upgrades` ne prend que les mises à jour de sécurité d'Ubuntu. [L'avis de Forge](https://laravel.com/forge/docs/knowledge-base/php-security-release-october-2026){target="_blank" rel="noopener"} le dit noir sur blanc : il faut mettre PHP à jour soi-même, serveur par serveur, version par version.
+Un serveur avec les mises à jour automatiques d'Ubuntu n'est pas protégé pour autant, parce que Forge installe PHP depuis les paquets d'Ondřej Surý et non depuis Ubuntu, et que `unattended-upgrades` ne prend que les mises à jour de sécurité d'Ubuntu. [L'avis de Forge](https://laravel.com/forge/docs/knowledge-base/php-security-release-october-2026){target="_blank" rel="noopener"} le dit clairement : il faut mettre PHP à jour soi-même, serveur par serveur, version par version.
 
-Forge recommande de passer par son tableau de bord, onglet PHP, bouton « Update PHP ». L'avantage : il répare au passage la source des paquets. Sauf que ce soir, Forge est aux abonnés absents. Reste le SSH.
+Forge recommande de passer par son tableau de bord, onglet PHP, bouton « Update PHP ». L'avantage, c'est qu'il répare au passage la source des paquets. Sauf que ce soir, Forge ne répond pas, et il reste le SSH.
 
 ## La commande pour mettre à jour PHP en SSH
 
@@ -87,21 +87,21 @@ Ce qu'on doit voir dans le résultat :
 
 ## Ce que fait la commande, étape par étape
 
-**1. Elle repère le serveur web.** Nginx, Apache ou LiteSpeed : elle affiche ceux qui tournent. Elle signale aussi mod_php, le cas le plus risqué selon PHP, parce que l'attaque passe avant même que le code de l'application ne s'exécute, dans le processus d'Apache lui-même. Et elle prévient si LiteSpeed tourne : son PHP vient d'autres paquets, que ce script ne touche pas.
+**1. Elle repère le serveur web.** Elle affiche ceux qui tournent parmi Nginx, Apache et LiteSpeed. Elle signale aussi mod_php, le cas le plus risqué selon PHP, parce que l'attaque passe avant même que le code de l'application ne s'exécute, dans le processus d'Apache lui-même. Et elle prévient si LiteSpeed tourne, parce que son PHP vient d'autres paquets, que ce script ne touche pas.
 
 **2. Elle répare la source des paquets.** Les vieux serveurs Forge pointent encore vers Launchpad, l'adresse d'origine du dépôt `ondrej/php`. Forge utilise désormais `ppa.setup-php.com`, un miroir de ce dépôt. La boucle `for f in …` remplace l'une par l'autre, après avoir copié le fichier d'origine dans `/root/` (`.bak`). C'est l'étape que fait le bouton de Forge, et celle qu'on oublie en SSH.
 
-**3. Elle vérifie que le correctif est vraiment là.** `apt-get update` n'affiche que les erreurs qui concernent PHP ou les clés GPG. Puis, pour chaque version installée (`ls /etc/php`), `apt-cache policy` donne la version que l'on va recevoir. Si elle ne figure pas dans la liste `FIXED`, la commande n'installe rien et le dit, en affichant la version installée et la version proposée. C'est volontaire : ce soir, certains paquets n'avaient pas encore atteint les miroirs, surtout sur les serveurs ARM (8.4 et 8.5 sur arm64, selon [le mainteneur du miroir](https://github.com/shivammathur/setup-php/issues/1139){target="_blank" rel="noopener"}).
+**3. Elle vérifie que le correctif est bien là.** `apt-get update` n'affiche que les erreurs qui concernent PHP ou les clés GPG. Puis, pour chaque version installée (`ls /etc/php`), `apt-cache policy` donne la version que l'on va recevoir. Si elle ne figure pas dans la liste `FIXED`, la commande n'installe rien et le dit, en affichant la version installée et la version proposée. C'est volontaire, parce que ce soir, certains paquets n'avaient pas encore atteint les miroirs, surtout sur les serveurs ARM (8.4 et 8.5 sur arm64, selon [le mainteneur du miroir](https://github.com/shivammathur/setup-php/issues/1139){target="_blank" rel="noopener"}).
 
 **4. Elle met à jour tous les paquets de cette version.** `--only-upgrade` n'installe rien de nouveau, `--force-confold` garde vos `php.ini` et vos pools PHP-FPM tels quels. Le module Apache (`libapache2-mod-php`) est mis à jour avec le reste. Les variables du début évitent qu'apt ou `needrestart` ne s'arrêtent pour poser une question. `LC_ALL=C` force apt à répondre en anglais : sur un serveur réglé en français, il écrit « Candidat » au lieu de « Candidate », et la commande ne trouverait aucune version.
 
-**5. Elle coupe une fonction de PHP par précaution.** `session.upload_progress.enabled = 0` fait partie des parades temporaires recommandées par PHP, relayées par le [NCSC néerlandais](https://github.com/NCSC-NL/php2shell){target="_blank" rel="noopener"}. Elle sert de filet sur les versions pas encore corrigées. Le revers : les barres de progression d'envoi de fichiers basées sur cette fonction ne marchent plus. Si votre site n'en a pas, laissez-la coupée. La commande la coupe dans les `php.ini` de PHP-FPM, d'Apache et de CGI.
+**5. Elle coupe une fonction de PHP par précaution.** `session.upload_progress.enabled = 0` fait partie des parades temporaires recommandées par PHP, relayées par le [NCSC néerlandais](https://github.com/NCSC-NL/php2shell){target="_blank" rel="noopener"}. Elle protège en partie les versions pas encore corrigées. En contrepartie, les barres de progression d'envoi de fichiers basées sur cette fonction ne marchent plus. Si votre site n'en a pas, laissez-la coupée. La commande la coupe dans les `php.ini` de PHP-FPM, d'Apache et de CGI.
 
-**6. Elle redémarre PHP-FPM, Apache et les files d'attente Laravel.** Tant qu'un processus n'a pas redémarré, il garde l'ancien PHP en mémoire. La commande redémarre tous les services `php*-fpm`, puis Apache s'il tourne (un vrai `restart` : avec mod_php, un `reload` ne suffit pas), puis lance `php artisan queue:restart` pour chaque application Laravel trouvée dans `/home`, sous l'utilisateur propriétaire. Si vous utilisez Horizon, Reverb ou Octane, redémarrez-les aussi : `php artisan horizon:terminate`, `php artisan reverb:restart`, et pour Octane, un redémarrage complet de son programme Supervisor (`octane:reload` ne suffit pas).
+**6. Elle redémarre PHP-FPM, Apache et les files d'attente Laravel.** Tant qu'un processus n'a pas redémarré, il garde l'ancien PHP en mémoire. La commande redémarre tous les services `php*-fpm`, puis Apache s'il tourne (un `restart` complet, car avec mod_php un `reload` ne suffit pas), puis lance `php artisan queue:restart` pour chaque application Laravel trouvée dans `/home`, sous l'utilisateur propriétaire. Si vous utilisez Horizon, Reverb ou Octane, redémarrez-les aussi : `php artisan horizon:terminate`, `php artisan reverb:restart`, et pour Octane, un redémarrage complet de son programme Supervisor (`octane:reload` ne suffit pas).
 
 **7. Elle fait le bilan.** D'abord la ligne de protection de l'étape 5, fichier par fichier. Ensuite, pour chaque version de PHP utilisée par Nginx ou Apache, la version de PHP-FPM ou de mod_php installée, avec ✅ ou ❌. Si aucun site n'utilise PHP, elle le dit : PHP n'est alors pas exposé sur le web sur ce serveur. Enfin, elle appelle chaque domaine déclaré dans la configuration de Nginx (`server_name`) et d'Apache (`ServerName`, `ServerAlias`) et affiche le code HTTP : `200`, `301` ou `302`, le site répond ; `502`, PHP-FPM ne tourne pas, allez voir ; `000`, pas de réponse du tout (domaine qui ne pointe plus vers ce serveur, certificat absent).
 
-## Plusieurs serveurs Forge : l'API et Termius
+## Plusieurs serveurs Forge avec l'API et Termius
 
 Avec un ou deux serveurs, on se connecte, on colle la commande, c'est fini. Avec un parc entier, il faut d'abord savoir quel site tourne sur quel PHP, puis vérifier partout. Je fais ça en deux temps : l'API de Forge pour l'inventaire et la mise à jour, [Termius](https://termius.com/){target="_blank" rel="noopener"} pour vérifier en SSH sur tous les serveurs en même temps.
 
@@ -155,7 +155,7 @@ for org in get("/orgs"):
             print(f"  - {site['attributes']['name']:<40} {site['attributes'].get('php_version')}")
 ```
 
-Une limite : l'API donne la branche (`php83`), pas le numéro de correctif. Elle dit qu'un site tourne en PHP 8.3, pas s'il est en 8.3.35 ou en 8.3.36. Pour ça, il faut aller voir sur le serveur.
+L'API a une limite, elle donne la branche (`php83`) sans le numéro de correctif. Elle dit qu'un site tourne en PHP 8.3, mais ne dit pas s'il est en 8.3.35 ou en 8.3.36. Pour ça, il faut aller voir sur le serveur.
 
 ### Vérifier partout avec Termius
 
@@ -192,7 +192,7 @@ curl -X PUT -H "Authorization: Bearer $FORGE_TOKEN" -H "Accept: application/json
 
 Forge répond tout de suite (`202`) et fait la mise à jour dans la foulée. Attendez une minute, puis relancez le snippet Termius. Pour passer plutôt la grande commande de ce billet via Termius, il faut être root : avec l'utilisateur `forge`, `sudo -i` demande le mot de passe sudo du serveur, celui que Forge affiche à sa création, différent pour chaque serveur. Sur tout un parc, l'API est plus simple.
 
-Dans les deux cas, les files d'attente ne redémarrent pas toutes seules : un dernier snippet avec `php artisan queue:restart` (et `horizon:terminate` avec Horizon) dans chaque application.
+Dans les deux cas, les files d'attente ne redémarrent pas toutes seules, il faut donc un dernier snippet avec `php artisan queue:restart` (et `horizon:terminate` avec Horizon) dans chaque application.
 
 ## Sans Forge : Debian et Ubuntu
 
@@ -205,7 +205,7 @@ sudo apt-get install --only-upgrade $(dpkg -l 'php8.4*' 'libapache2-mod-php8.4' 
 sudo systemctl restart php8.4-fpm
 ```
 
-Si `unattended-upgrades` est actif, il a peut-être déjà installé le correctif. Vérifiez quand même la version, et que PHP-FPM a bien redémarré. Avec Apache et mod_php, c'est `sudo systemctl restart apache2` : un simple `reload` ne suffit pas.
+Si `unattended-upgrades` est actif, il a peut-être déjà installé le correctif. Vérifiez quand même la version, et que PHP-FPM a bien redémarré. Avec Apache et mod_php, c'est `sudo systemctl restart apache2` : un `reload` ne suffit pas.
 
 Si vous utilisez le dépôt `packages.sury.org` (plusieurs versions de PHP sur Debian), la commande du début fonctionne telle quelle : elle ne touche qu'aux sources Launchpad et compare la version candidate à la liste. Mais là aussi, ce soir, les paquets arm64 avaient du retard.
 
@@ -235,29 +235,29 @@ Dernier cas : FrankenPHP embarque son propre PHP, qu'apt ne met pas à jour. Il 
 
 ## Si le correctif n'est pas encore disponible
 
-La commande affiche « PAS DE CORRECTIF » ? Comparez les deux versions entre parenthèses. Sauf sur Ubuntu avec le PHP d'Ubuntu (voir plus haut), le paquet corrigé n'a pas encore atteint votre miroir. Relancez-la dans une heure. En attendant :
+Si la commande affiche « PAS DE CORRECTIF », comparez les deux versions entre parenthèses. Sauf sur Ubuntu avec le PHP d'Ubuntu (voir plus haut), le paquet corrigé n'a pas encore atteint votre miroir. Relancez-la dans une heure. En attendant :
 
-- **La parade `session.upload_progress`** est déjà appliquée par la commande. Elle réduit le risque, elle ne le supprime pas.
-- **Cloudflare** a déployé des règles de pare-feu contre les attaques connues, pour tous ses clients, offre gratuite comprise, selon [Help Net Security](https://www.helpnetsecurity.com/2026/10/21/php2shell-php-vulnerabilities-patched-cve-2026-109618-cve-2026-109619/){target="_blank" rel="noopener"}. Si votre site passe par Cloudflare, c'est une couche de plus. Le pare-feu de Cloudflare m'a déjà débarrassé de robots indésirables, quand [mon blog dépassait la limite CPU de Cloudflare Workers](/fr/20260922-jai-recupere-le-trafic-de-mon-blog-et-les-bots-qui-vont-avec).
+- **La parade `session.upload_progress`** est déjà appliquée par la commande. Elle réduit le risque sans le supprimer.
+- **Cloudflare** a déployé des règles de pare-feu contre les attaques connues, pour tous ses clients, offre gratuite comprise, selon [Help Net Security](https://www.helpnetsecurity.com/2026/10/21/php2shell-php-vulnerabilities-patched-cve-2026-109618-cve-2026-109619/){target="_blank" rel="noopener"}. Si votre site passe par Cloudflare, c'est une protection de plus. Le pare-feu de Cloudflare m'a déjà débarrassé de robots indésirables, quand [mon blog dépassait la limite CPU de Cloudflare Workers](/fr/20260922-jai-recupere-le-trafic-de-mon-blog-et-les-bots-qui-vont-avec).
 - **Le NCSC britannique** conseille de mettre hors ligne ce qui ne peut pas être corrigé tout de suite. Pour un site vitrine qui peut attendre demain matin, c'est l'option la plus sûre.
 
 Et si le serveur tourne encore en PHP 8.1 ou plus ancien, aucune attente ne servira : il faut installer une version suivie et y basculer les sites.
 
 ## Vérifier qu'aucun processus ne garde l'ancien PHP
 
-Le bilan de la commande vérifie la version de PHP-FPM installée sur le disque, pas celle qui tourne en mémoire. Pour être sûr qu'aucun processus, PHP-FPM, un worker oublié ou un script lancé à la main, ne tourne encore avec les anciens fichiers :
+Le bilan de la commande vérifie la version de PHP-FPM installée sur le disque, mais pas celle qui tourne en mémoire. Pour être sûr qu'aucun processus, PHP-FPM, un worker oublié ou un script lancé à la main, ne tourne encore avec les anciens fichiers :
 
 ```bash
 sudo grep -lsE 'php.*\(deleted\)$' /proc/[0-9]*/maps
 ```
 
-Aucune ligne en sortie : plus rien n'utilise l'ancienne version de PHP. Sinon, le numéro dans le chemin (`/proc/<numéro>/maps`) est celui du processus à redémarrer.
+S'il n'y a aucune ligne en sortie, plus rien n'utilise l'ancienne version de PHP. Sinon, le numéro dans le chemin (`/proc/<numéro>/maps`) est celui du processus à redémarrer.
 
 Tant que vous êtes en SSH sur un serveur WordPress, vérifiez aussi que Redis ne prend pas toute la mémoire : j'explique [comment vider et limiter une mémoire Redis pleine](/fr/20261031-redis-plein-vps-wordpress-vider-limiter).
 
 ## Je vous laisse
 
-Une faille qui donne la main sans mot de passe, sur le langage qui fait tourner une bonne partie du Web, avec des attaques déjà en cours : il n'y a pas grand-chose à analyser, il faut corriger. J'en parlais hier à propos d'un [WordPress piraté](/fr/20261020-site-wordpress-pirate-trouver-par-ou-le-pirate-est-entre) : les robots ne visent personne en particulier, ils essaient tout, partout. Ce soir, ils essaient PHP2Shell.
+Avec une faille qui donne la main sans mot de passe, sur le langage qui fait tourner une bonne partie du Web, et des attaques déjà en cours, il n'y a pas grand-chose à analyser, il faut corriger. J'expliquais hier à propos d'un [WordPress piraté](/fr/20261020-site-wordpress-pirate-trouver-par-ou-le-pirate-est-entre) que les robots ne visent personne en particulier et qu'ils essaient tout, partout. Ce soir, ils essaient PHP2Shell.
 
 Je vous laisse… la nuit va être longue.
 
@@ -268,4 +268,4 @@ Je vous laisse… la nuit va être longue.
 *Photo : [Panumas Nikhomkhai](https://www.pexels.com/photo/1148820/), Pexels.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com) — en SSH ce soir, un serveur après l'autre*
+*[Jean-Luc Houédanou](https://houedanou.com), en SSH ce soir, un serveur après l'autre*

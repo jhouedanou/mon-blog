@@ -8,7 +8,7 @@ searchIntent: "Comment reconnaître une fausse page Bing Webmaster Tools avant d
 tags: [sécurité, seo, phishing, alerte]
 ---
 
-D'habitude, sur ce blog, je plaisante. Là, non : un faux Bing Webmaster Tools s'affiche en tête de Google.
+D'habitude, sur ce blog, je plaisante, mais pas cette fois, parce qu'un faux Bing Webmaster Tools s'affiche en tête de Google.
 
 Ce matin, j'ai cherché « bing webmaster tools » sur Google. C'est une requête que je fais souvent pour le travail de mes clients. Le premier résultat, un lien sponsorisé placé au-dessus de tous les résultats organiques, n'appartient pas à Microsoft.
 
@@ -16,14 +16,14 @@ C'est une page de phishing, et elle est bien faite.
 
 ## Ce que révèle la fausse page Bing Webmaster Tools
 
-L'adresse est `camp.recettee.com`. Aucun rapport avec Microsoft ni avec Bing. Pourtant, la page copie fidèlement la landing page officielle de Bing Webmaster Tools : logo Microsoft Bing, accroche « Want more users for your site? », promesse d'outils SEO/GEO gratuits, bandeau « 500 $ de crédit pub ». La copie est soignée.
+L'adresse est `camp.recettee.com`, sans aucun rapport avec Microsoft ni avec Bing. Pourtant, la page copie fidèlement la landing page officielle de Bing Webmaster Tools : logo Microsoft Bing, accroche « Want more users for your site? », promesse d'outils SEO/GEO gratuits, bandeau « 500 $ de crédit pub ».
 
-Vient ensuite le piège : une fenêtre « Please sign in — Choose an account convenient to you », avec deux options de connexion :
+Le piège vient ensuite, avec une fenêtre « Please sign in — Choose an account convenient to you » et deux options de connexion :
 
 - Microsoft
 - Google
 
-Le vrai Bing Webmaster Tools propose lui aussi une connexion avec un compte Google, et ce depuis 2018 ([Search Engine Journal](https://www.searchenginejournal.com/bing-webmaster-tools-now-social-login-option/236569/)). Ces deux boutons ne prouvent donc rien à eux seuls, et c'est justement ce qui rend la copie crédible. Ici, ils servent juste à ratisser plus large. Quel que soit le bouton choisi, l'internaute transmet ses identifiants à l'attaquant.
+Le vrai Bing Webmaster Tools propose lui aussi une connexion avec un compte Google, et ce depuis 2018 ([Search Engine Journal](https://www.searchenginejournal.com/bing-webmaster-tools-now-social-login-option/236569/)). Ces deux boutons ne prouvent donc rien à eux seuls, et c'est justement ce qui rend la copie crédible. Ici, ils servent à toucher plus de victimes. Quel que soit le bouton choisi, l'internaute transmet ses identifiants à l'attaquant.
 
 Je vous aurais volontiers mis une vidéo, mais j'ai perdu le référencement de mon ancien blog après en avoir publié une similaire. Vous devrez vous contenter d'une capture d'écran.
 
@@ -31,7 +31,7 @@ Je vous aurais volontiers mis une vidéo, mais j'ai perdu le référencement de 
 
 ## Pourquoi cette attaque est particulièrement dangereuse
 
-Il ne s'agit pas d'un phishing opportuniste visant le grand public. La cible, ce sont les professionnels du web : webmasters, consultants SEO, agences qui gèrent des sites pour des clients.
+Ce phishing ne vise pas le grand public mais les professionnels du web : webmasters, consultants SEO, agences qui gèrent des sites pour des clients.
 
 Dans ce métier, un compte Google ou Microsoft donne la main sur :
 
@@ -40,7 +40,7 @@ Dans ce métier, un compte Google ou Microsoft donne la main sur :
 - Analytics et Tag Manager ;
 - souvent, l'accès au registrar du domaine, à l'hébergement et à la messagerie associée.
 
-La compromission d'un seul de ces comptes suffit à désindexer un site, détourner son trafic, épuiser un budget publicitaire ou, au pire, prendre le contrôle complet de la présence en ligne d'une organisation. Pour un professionnel qui administre plusieurs sites clients, ce n'est pas un incident isolé : tous ses clients sont exposés d'un coup.
+La compromission d'un seul de ces comptes suffit à désindexer un site, détourner son trafic, épuiser un budget publicitaire ou, au pire, prendre le contrôle complet de la présence en ligne d'une organisation. Pour un professionnel qui administre plusieurs sites clients, tous ses clients sont exposés d'un coup.
 
 Le plus inquiétant, c'est le canal de diffusion. L'attaquant a payé Google Ads pour passer devant le site officiel de Microsoft. C'est le principe du *malvertising* : acheter un mot-clé pour occuper la première position, en pariant que la plupart des internautes cliquent sur le premier lien sans vérifier l'URL.
 
@@ -49,10 +49,10 @@ Le plus inquiétant, c'est le canal de diffusion. L'attaquant a payé Google Ads
 Trois règles simples suffisent :
 
 - **Vérifier systématiquement l'URL.** L'adresse officielle est `bing.com/webmasters`. Si le domaine n'est ni `microsoft.com` ni `bing.com`, fermez l'onglet. `camp.recettee.com` n'a jamais hébergé un service Microsoft.
-- **Ne pas se fier aux boutons de connexion.** Bing Webmaster Tools accepte réellement les comptes Microsoft, Google et Facebook : une page de phishing peut donc afficher exactement les mêmes options. Seul le domaine dans la barre d'adresse fait foi.
-- **Ne jamais s'authentifier via un résultat sponsorisé.** Pour tout service qui demande un mot de passe (Search Console, Bing, banque, hébergeur), saisissez l'adresse à la main ou passez par un favori que vous avez enregistré vous-même. Ignorez les annonces. Même réflexe pour les e-mails : j'ai décortiqué un [faux mail de renouvellement Zoho à 358,25 $](/fr/20260831-faux-mail-renouvellement-zoho-358-dollars) qui joue sur les mêmes ressorts.
+- **Ne pas se fier aux boutons de connexion.** Bing Webmaster Tools accepte réellement les comptes Microsoft, Google et Facebook, donc une page de phishing peut afficher exactement les mêmes options. Seul le domaine dans la barre d'adresse fait foi.
+- **Ne jamais s'authentifier via un résultat sponsorisé.** Pour tout service qui demande un mot de passe (Search Console, Bing, banque, hébergeur), saisissez l'adresse à la main ou passez par un favori que vous avez enregistré vous-même. Ignorez les annonces. Même réflexe pour les e-mails : j'ai décortiqué un [faux mail de renouvellement Zoho à 358,25 $](/fr/20260831-faux-mail-renouvellement-zoho-358-dollars) qui utilise les mêmes procédés.
 
-## Identifiants déjà saisis : que faire ?
+## Que faire après avoir saisi ses identifiants
 
 Si les identifiants ont déjà été saisis, agissez sans attendre :
 
@@ -63,9 +63,9 @@ Si les identifiants ont déjà été saisis, agissez sans attendre :
 - Si un site WordPress que vous gérez a changé dans votre dos, [cherchez dans les logs par où le pirate est entré](/fr/20261020-site-wordpress-pirate-trouver-par-ou-le-pirate-est-entre) ;
 - Signalez l'annonce à Google et reportez le site comme tentative d'hameçonnage.
 
-## En résumé
+## Avant de cliquer
 
-Nous passons nos journées à durcir des serveurs, [corriger des failles PHP](/fr/20261021-php2shell-mettre-a-jour-php-debian-ubuntu-sans-forge) et sécuriser des configurations. Et le maillon faible reste un clic sur un résultat sponsorisé, un matin, avant le café.
+Nous passons nos journées à durcir des serveurs, [corriger des failles PHP](/fr/20261021-php2shell-mettre-a-jour-php-debian-ubuntu-sans-forge) et sécuriser des configurations, et il suffit pourtant d'un clic sur un résultat sponsorisé, un matin, avant le café, pour tout compromettre.
 
 Vérifiez vos onglets, alertez vos collègues, et prenez l'habitude de contrôler l'URL avant de cliquer.
 

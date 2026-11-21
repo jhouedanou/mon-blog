@@ -10,11 +10,11 @@ tags: ["opinion", "linux", "open-source", "society"]
 
 I'm about to flip-flop.
 
-On October 8, I published a post here saying I was following Korben in his boycott of Omarchy, DHH's Linux distribution. I promised not to talk about it here and not to recommend it. Three days later, Omarchy runs on my 2017 MacBook Pro. And here I am, talking about it.
+On October 8, I published a post here saying I was following Korben in his boycott of Omarchy, DHH's Linux distribution. I promised not to talk about it here and not to recommend it. Three days later, Omarchy runs on my 2017 MacBook Pro, and here I am, talking about it.
 
-The reason fits in one sentence: an OS with Claude built in, that spares me too much tinkering and that looks good? I'm in.
+The reason is that an OS with Claude built in, that spares me too much tinkering and that looks good, I'm in.
 
-I explain everything below, along with the changes I had to make to bring the MacBook back to life. But first, here's what I wrote on October 8. I take nothing back about DHH.
+I explain everything below, along with the changes I had to make to get the MacBook running again. But first, here's what I wrote on October 8, and I take nothing back about DHH.
 
 ## What I wrote on October 8
 
@@ -99,15 +99,15 @@ That's where I am too.
 
 ## Why I'm flip-flopping on the Omarchy boycott
 
-Let's start with the obvious: I'm contradicting myself. I wrote that you can't separate the man from his dotfiles, and now I'm installing his dotfiles. I won't pretend it's consistent. Here's what tipped the scales.
+I'm contradicting myself, obviously. I wrote that you can't separate the man from his dotfiles, and now I'm installing his dotfiles. I won't pretend it's consistent, but here's what decided me.
 
 Originally, I wanted to try [Ryoku](https://ryoku.dev){target="_blank" rel="noopener"}, an Omarchy alternative also based on Arch Linux. In the end, I installed Omarchy, for these reasons.
 
 **Claude is built in.** Omarchy ships with Claude Code, Anthropic's coding assistant, and with OpenCode ([Omarchy manual](https://learn.omacom.io/2/the-omarchy-manual/107/ai){target="_blank" rel="noopener"}). The `cx` command starts Claude Code in « danger mode », meaning it doesn't ask for confirmation at every step. Omarchy also ships a « skill », instructions the assistant reads to change the system: the top bar, the themes. The manual calls it experimental. And Claude is how I fixed the MacBook's problems, as you'll see below.
 
-**Less tinkering.** I wrote that you could rebuild everything without DHH, with Arch, Hyprland and some dotfiles: « It might take you an hour instead of two minutes. » I was optimistic. Putting all that together yourself takes much more than an hour. Omarchy arrives ready: desktop, shortcuts, apps, themes. And updates go through a single command that takes a snapshot of the system before touching anything. If an update breaks something, you reboot into the snapshot from before ([Omarchy manual](https://learn.omacom.io/2/the-omarchy-manual/68/updates){target="_blank" rel="noopener"}).
+**Less tinkering.** I wrote that you could rebuild everything without DHH, with Arch, Hyprland and some dotfiles: « It might take you an hour instead of two minutes. » I was optimistic, because putting all that together yourself takes much more than an hour, while Omarchy arrives ready, with the desktop, shortcuts, apps and themes. And updates go through a single command that takes a snapshot of the system before touching anything. If an update breaks something, you reboot into the snapshot from before ([Omarchy manual](https://learn.omacom.io/2/the-omarchy-manual/68/updates){target="_blank" rel="noopener"}).
 
-**It looks good.** An Omarchy theme restyles the whole system at once: terminal, bar, windows, wallpaper. I wrote it myself: « It's pretty ». Still true.
+**It looks good.** An Omarchy theme restyles the whole system at once: terminal, bar, windows, wallpaper. I wrote it myself, « It's pretty », and it still is.
 
 **It doesn't pay him.** Omarchy is free software, under the MIT licence ([GitHub](https://github.com/basecamp/omarchy){target="_blank" rel="noopener"}). I pay nothing to use it. The money Korben mentioned comes from sponsors like 1Password, not from users.
 
@@ -115,17 +115,17 @@ Originally, I wanted to try [Ryoku](https://ryoku.dev){target="_blank" rel="noop
 
 **Nobody's perfect.** Elon Musk, I'd rather not get into it. And I'm no role model either: I lost my hair along the way and gained a few kilos.
 
-## Omarchy brought my old MacBook back to life
+## Omarchy got my old MacBook running again
 
-Apple stopped updating the 2017 MacBook Pro after macOS Ventura: Sonoma no longer supports it ([Apple](https://support.apple.com/en-us/105113){target="_blank" rel="noopener"}). I'd stopped using mine. Today, it runs Omarchy, with Linux kernel 7.2.
+Apple stopped updating the 2017 MacBook Pro after macOS Ventura, and Sonoma no longer supports it ([Apple](https://support.apple.com/en-us/105113){target="_blank" rel="noopener"}). I'd stopped using mine, and today it runs Omarchy, with Linux kernel 7.2.
 
 Omarchy didn't fix everything on its own. Here are the three changes I had to make.
 
-### Wi-Fi: settings on the CanalBox
+### Settings on the CanalBox for Wi-Fi
 
 Right after the install, Wi-Fi didn't work. I had to change some settings on [my CanalBox](/en/20260924-changer-mot-de-passe-wifi-canalbox-canal-plus-afrique), my internet box.
 
-### Updates: `omarchy update`, not `pacman -Syu`
+### Updating with `omarchy update` rather than `pacman -Syu`
 
 On Arch, the reflex is `sudo pacman -Syu`. Omarchy stopped me cold with a « Woah partner ». You have to go through its own command:
 
@@ -135,7 +135,7 @@ omarchy update
 
 It takes a snapshot, applies Omarchy's migrations (configuration changes), then updates the packages. With `pacman -Syu`, you risk missing those migrations.
 
-### Sound: a driver to compile
+### A driver to compile for sound
 
 These MacBooks use a Cirrus CS8409 audio chip. For the speakers to work on Linux, you need a community-maintained driver, [snd_hda_macbookpro](https://github.com/davidjo/snd_hda_macbookpro){target="_blank" rel="noopener"}. It compiles on the machine.
 
@@ -159,15 +159,15 @@ sudo ./install.cirrus.driver.sh -i
 speaker-test -c 2 -t wav -l 1
 ```
 
-You should hear « Front Left », then « Front Right ». The driver goes through DKMS: it rebuilds itself on every kernel update done with `omarchy update`.
+You should hear « Front Left », then « Front Right ». The driver goes through DKMS, so it rebuilds itself on every kernel update done with `omarchy update`.
 
 ## Conclusion
 
-Apple had dropped this MacBook. Omarchy got it running again.
+Apple had dropped this MacBook, and Omarchy got it running again.
 
-On DHH, I haven't changed my mind: his posts on immigration are what they are, and on that point I still agree with Korben. On Omarchy, I have changed my mind. It's not glorious, but I'd rather tell you than hide it.
+On DHH, I haven't changed my mind, his posts on immigration are what they are, and on that point I still agree with Korben. On Omarchy, I have changed my mind, and it's not glorious, but I'd rather tell you than hide it.
 
-Three days later, I took stock: what works, what still doesn't (Bluetooth, external displays), and [the thermal printer](/en/20261021-imprimante-thermique-netum-a401s-linux-omarchy-claude) waiting for me. It's all in [my review of Omarchy on a 2017 MacBook Pro](/en/20261013-retournement-de-veste-omarchy-macbook-pro-2017).
+Three days later, I took stock of what works, what still doesn't (Bluetooth, external displays), and [the thermal printer](/en/20261021-imprimante-thermique-netum-a401s-linux-omarchy-claude) waiting for me, in [my review of Omarchy on a 2017 MacBook Pro](/en/20261013-retournement-de-veste-omarchy-macbook-pro-2017).
 
 ## Sources
 

@@ -15,7 +15,7 @@ Cela faisait longtemps que je cherchais une bonne excuse pour me débarrasser de
 - l'avenir du CMS dépend de plus en plus du bon vouloir de ses créateurs, qui retirent des autorisations de mises à jour de plugins essentiels en fonction de leurs relations avec leur créateur ;
 - et j'y reviens encore : des failles de sécurité restent non patchées, près d'une année après leur découverte.
 
-## De WordPress à Nuxt Content : la nouvelle configuration
+## La nouvelle configuration avec Nuxt Content
 
 Qui plus est, après un an d'utilisation de VueJS et Nuxt, ces technologies m'ont convaincu de franchir le pas. J'ai donc décidé, en début de semaine passée, de tout recommencer avec une configuration un peu exotique :
 
@@ -40,4 +40,4 @@ Les prochaines étapes sont les suivantes :
 Pour la suite de l'histoire : [le nouveau blog en Markdown, sans base de données](/fr/20241021-pendaison-de-cremaillere), [la migration de Vercel vers Cloudflare Pages](/fr/20260402-vercel-cloudflare-pages-migration), puis [le SEO perdu après la migration, et comment je l'ai récupéré](/fr/20261018-migration-wordpress-nuxt-referencement-perdu-recupere).
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com) — déménageur numérique*
+*[Jean-Luc Houédanou](https://houedanou.com), déménageur numérique*
