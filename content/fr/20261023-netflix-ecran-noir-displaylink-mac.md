@@ -14,7 +14,7 @@ Sur Mac, Netflix passe en écran noir, avec le son, dès qu'un écran est branch
 
 Je garde mes machines longtemps et j'en tire le maximum : mon [iMac 2017 démarre sur un SSD externe](/fr/20261014-installer-macos-ssd-externe-imac-2017), et mon [MacBook Pro 2017 est passé sous Omarchy](/fr/20261013-retournement-de-veste-omarchy-macbook-pro-2017). À la maison, je travaille sur un **MacBook M1**, le modèle de base. Je l'utilise presque comme un ordinateur de bureau.
 
-Problème : un Mac M1 de base ne gère qu'**un seul écran externe**. Moi, j'en ai deux :
+Le problème, c'est qu'un Mac M1 de base ne gère qu'**un seul écran externe**, et moi j'en ai deux :
 
 - un **Xiaomi Mi Monitor incurvé de 34 pouces** ;
 - un **Lenovo ultrawide de 29 pouces**.
@@ -25,15 +25,15 @@ Pour brancher les deux, j'utilise un dock **Ugreen CM555** (référence 90325, v
 
 ![Un ordinateur portable relié à un adaptateur USB-C](/images/articles/pexels-pixabay-461461.webp)
 
-Pour coder, tout va bien. Pour Netflix, c'est une autre histoire.
+Pour coder, tout va bien, mais pas pour Netflix.
 
-## Netflix en écran noir : le son, mais pas l'image
+## Netflix en écran noir, avec le son mais sans l'image
 
-Avec un écran DisplayLink branché, la vidéo démarre, le son passe, mais l'image reste noire. DisplayLink le reconnaît dans [sa documentation](https://support.displaylink.com/knowledgebase/articles/830301-content-protected-video-does-not-play-on-mac-while){target="_blank" rel="noopener"}. Netflix n'est pas seul : Disney+, Amazon Prime Video, HBO, YouTube TV, Udemy et iTunes sont aussi touchés.
+Avec un écran DisplayLink branché, la vidéo démarre, le son passe, mais l'image reste noire. DisplayLink le reconnaît dans [sa documentation](https://support.displaylink.com/knowledgebase/articles/830301-content-protected-video-does-not-play-on-mac-while){target="_blank" rel="noopener"}. Netflix n'est pas seul, puisque Disney+, Amazon Prime Video, HBO, YouTube TV, Udemy et iTunes sont aussi touchés.
 
-Le plus gênant : selon DisplayLink, **dès qu'un écran DisplayLink est branché, la vidéo protégée peut être bloquée sur tous les écrans**, même sur celui du Mac.
+Le plus gênant, c'est que selon DisplayLink, **dès qu'un écran DisplayLink est branché, la vidéo protégée peut être bloquée sur tous les écrans**, même sur celui du Mac.
 
-Pourquoi ? Un écran DisplayLink n'est pas branché sur la carte graphique. Le logiciel copie l'image de l'écran, puis l'envoie par USB. C'est pour cela que macOS lui demande l'autorisation « Enregistrement de l'écran » ([Deux Ordis](https://deuxordis.xyz/blog/displaylink-mac-autorisations/){target="_blank" rel="noopener"}). Or les vidéos de Netflix sont protégées contre la copie. Elles ne passent pas par ce chemin : à la place, on voit un rectangle noir.
+Ça vient du fait qu'un écran DisplayLink n'est pas branché sur la carte graphique. Le logiciel copie l'image de l'écran, puis l'envoie par USB. C'est pour cela que macOS lui demande l'autorisation « Enregistrement de l'écran » ([Deux Ordis](https://deuxordis.xyz/blog/displaylink-mac-autorisations/){target="_blank" rel="noopener"}). Or les vidéos de Netflix sont protégées contre la copie, donc elles ne passent pas par ce chemin et on voit un rectangle noir à la place.
 
 L'aide de Netflix, elle, ne parle pas de DisplayLink. Pour un écran noir avec le son sur Mac, elle conseille de mettre à jour son navigateur ou d'en changer, et rappelle qu'AirPlay, la duplication d'écran et Sidecar ne sont plus pris en charge ([aide Netflix](https://help.netflix.com/fr/node/11634){target="_blank" rel="noopener"}).
 
@@ -58,7 +58,7 @@ DisplayLink propose aussi deux options simples ([support DisplayLink](https://su
 - **Essayez un autre navigateur.**
 - **Débranchez temporairement tous les écrans DisplayLink**, le temps du film, et regardez la vidéo sur l'écran intégré du Mac.
 
-Astuce : pas besoin de toucher aux câbles. Les écrans DisplayLink ne marchent que si DisplayLink Manager est ouvert. Quittez-le depuis son icône dans la barre des menus : les écrans DisplayLink s'éteignent. Relancez-le après le film.
+Astuce : pas besoin de toucher aux câbles. Les écrans DisplayLink ne marchent que si DisplayLink Manager est ouvert. Quittez-le depuis son icône dans la barre des menus, et les écrans DisplayLink s'éteignent. Relancez-le après le film.
 
 ## Solution 3 : brancher l'écran sur une sortie vidéo native
 
@@ -66,18 +66,18 @@ Pour regarder sur un grand écran sans toucher aux réglages, il faut une **sort
 
 ### Sur le dock Ugreen CM555, le port HDMI 2 est natif
 
-Bonne nouvelle : sur le dock Ugreen CM555, tous les ports vidéo ne passent pas par DisplayLink. Le port **HDMI 2** (celui marqué 8K) est une sortie native : il marche même sans DisplayLink Manager. Le port HDMI 1 et le DisplayPort, eux, passent par DisplayLink ([forum DisplayLink](https://www.displaylink.org/forum/archive/index.php/t-69160.html){target="_blank" rel="noopener"}).
+Bonne nouvelle, sur le dock Ugreen CM555, tous les ports vidéo ne passent pas par DisplayLink. Le port **HDMI 2** (celui marqué 8K) est une sortie native, qui marche même sans DisplayLink Manager. Le port HDMI 1 et le DisplayPort, eux, passent par DisplayLink ([forum DisplayLink](https://www.displaylink.org/forum/archive/index.php/t-69160.html){target="_blank" rel="noopener"}).
 
 Branchez donc sur le port HDMI 2 l'écran sur lequel vous regardez vos films.
 
 Deux limites :
 
-- **Une seule sortie native.** Un Mac M1 de base n'en a qu'une. Un seul écran peut donc être sur le port HDMI 2. L'autre reste en DisplayLink.
+- **Une seule sortie native.** Un Mac M1 de base n'en a qu'une, donc un seul écran peut être sur le port HDMI 2 et l'autre reste en DisplayLink.
 - **L'autre écran peut encore gêner.** Selon DisplayLink, un écran DisplayLink branché peut bloquer la vidéo sur tous les écrans. Si l'image reste noire sur l'écran du port HDMI 2, quittez DisplayLink Manager le temps du film, ou appliquez la solution 1.
 
-Pour savoir quel écran est sur le port natif : quittez DisplayLink Manager. L'écran qui reste allumé est branché sur le port natif.
+Pour savoir quel écran est sur le port natif, quittez DisplayLink Manager. L'écran qui reste allumé est branché sur le port natif.
 
-## En résumé
+## Les trois solutions en tableau
 
 | Solution | Ce qu'il faut faire | Limite |
 |---|---|---|
@@ -92,4 +92,4 @@ Pour savoir quel écran est sur le port natif : quittez DisplayLink Manager. L'�
 *Photos : [Luca Sammarco](https://www.pexels.com/photo/6142159/), [minhphuc .workspace](https://www.pexels.com/photo/20648391/) et [Pixabay](https://www.pexels.com/photo/461461/), Pexels.*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com) — deux écrans pour coder, un seul pour Netflix*
+*[Jean-Luc Houédanou](https://houedanou.com)*

@@ -8,11 +8,11 @@ searchIntent: "Les produits Oraimo (écouteurs, batterie externe, électroménag
 tags: ["tech", "matériel", "avis", "afrique"]
 ---
 
-Oui, j'ai osé paraphraser ce vieux réac de Pierre Perret. Mais qu'est-ce que vous voulez : j'ai une culture musicale hétéroclite, qui mélange rap américain, musique japonaise, afrobeats et chanson française. Et je sais séparer l'artiste de son œuvre (cf. mon changement d'avis sur [Omarchy et DHH](/fr/20261013-retournement-de-veste-omarchy-macbook-pro-2017)).
+Oui, j'ai osé paraphraser ce vieux réac de Pierre Perret. Mais qu'est-ce que vous voulez, j'ai une culture musicale hétéroclite, qui mélange rap américain, musique japonaise, afrobeats et chanson française. Et je sais séparer l'artiste de son œuvre (cf. mon changement d'avis sur [Omarchy et DHH](/fr/20261013-retournement-de-veste-omarchy-macbook-pro-2017)).
 
 Aujourd'hui, c'est donc spécial Oraimo. Je ne touche aucune commission sur les produits dont je vais parler. J'écris cet article parce que beaucoup de gens voient cette marque et ses produits partout à Abidjan, et se demandent ce qu'ils valent vraiment.
 
-Pour faire court, mon avis sur les produits Oraimo : dans la plupart des cas, ils offrent un excellent rapport qualité-prix. C'est une marque chinoise (du groupe Transsion, comme Tecno, Infinix et itel) qui a réussi à s'implanter chez nous grâce à des produits de qualité à bon prix.
+Pour faire court, mon avis sur les produits Oraimo, c'est que dans la plupart des cas, ils offrent un excellent rapport qualité-prix. C'est une marque chinoise (du groupe Transsion, comme Tecno, Infinix et itel) qui a réussi à s'implanter chez nous grâce à des produits de qualité à bon prix.
 
 J'ai donc classé les produits Oraimo que j'utilise en trois groupes : ceux que je rachèterais sans hésiter, ceux que je rachèterais avec un bémol, et ceux que je ne rachèterais pas.
 
@@ -70,23 +70,23 @@ J'ai aussi la brosse à dents électrique [Oraimo MagniSonic](https://oraimo.com
 
 ## Je rachète, avec un bémol
 
-J'ai la [FlexiCooker](https://ug.oraimo.com/product/oraimo-flexicooker-2200w-electric-ceramic-hot-plate){target="_blank" rel="noopener"}, une plaque chauffante en céramique (2 200 W) avec des programmes préréglés. Le bémol : certains programmes consomment plus d'électricité que d'autres.
+J'ai la [FlexiCooker](https://ug.oraimo.com/product/oraimo-flexicooker-2200w-electric-ceramic-hot-plate){target="_blank" rel="noopener"}, une plaque chauffante en céramique (2 200 W) avec des programmes préréglés. Le bémol, c'est que certains programmes consomment plus d'électricité que d'autres.
 
 ![Plaque chauffante en céramique Oraimo FlexiCooker, avec son écran et ses boutons de programmes préréglés](/images/articles/oraimo-flexicooker.webp)
 
-J'ai aussi les polos EcoLuxe, à 9 000 FCFA. Ils sont confortables. Le bémol : ils suivent les tailles chinoises, donc ils sont plus petits.
+J'ai aussi les polos EcoLuxe, à 9 000 FCFA. Ils sont confortables. Le bémol, c'est qu'ils suivent les tailles chinoises, donc ils sont plus petits.
 
 ## Je ne rachète pas
 
-J'ai le casque Oraimo BoomPop Pro. C'est un bon casque, avec une bonne autonomie, mais un son qui n'a rien d'exceptionnel, tout comme sa réduction de bruit. Pire : les coussinets en similicuir sont en train de s'effriter.
+J'ai le casque Oraimo BoomPop Pro. C'est un bon casque, avec une bonne autonomie, mais un son qui n'a rien d'exceptionnel, tout comme sa réduction de bruit. Pire, les coussinets en similicuir sont en train de s'effriter.
 
 ![Casque sans fil Oraimo BoomPop Pro, noir avec des touches dorées sur l'arceau](/images/articles/oraimo-boompop-pro.webp)
 
-J'adore les montres connectées. J'ai déjà parlé de l'Oraimo Watch Nova AM dans [mon comparatif avec l'Infinix Watch 3](/fr/20251225-infinix-ou-oraimo). Aujourd'hui, je ne porte plus ni l'une ni l'autre : j'ai une [Google Pixel Watch](/fr/20260311-comment-allumer-lecran-pixel-watch-notifications), qui est meilleure.
+J'adore les montres connectées. J'ai déjà parlé de l'Oraimo Watch Nova AM dans [mon comparatif avec l'Infinix Watch 3](/fr/20251225-infinix-ou-oraimo). Aujourd'hui, je ne porte plus ni l'une ni l'autre, parce que j'ai une [Google Pixel Watch](/fr/20260311-comment-allumer-lecran-pixel-watch-notifications), qui est meilleure.
 
 ![Montre connectée Oraimo Watch Nova AM, au boîtier carré et au bracelet noir](/images/articles/oraimo-watch-nova-am.webp)
 
-## Mon avis sur Oraimo, en résumé
+## Mon avis sur Oraimo, produit par produit
 
 | Produit | Prix payé (FCFA) | Je rachète ? | En une phrase |
 |---|---|---|---|
@@ -108,9 +108,9 @@ J'adore les montres connectées. J'ai déjà parlé de l'Oraimo Watch Nova AM da
 
 Ce sont les prix que j'ai payés à Abidjan, sur Glovo, chez un vendeur à deux rues de chez moi ou sur le site d'Oraimo. En ligne, ils changent souvent avec les promotions.
 
-Presque tous ces produits sont de bonne qualité pour leur petit prix. Les exceptions : le casque BoomPop Pro et la Watch Nova AM.
+Presque tous ces produits sont de bonne qualité pour leur petit prix, sauf le casque BoomPop Pro et la Watch Nova AM.
 
 _Images : Oraimo._
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com) — client Oraimo, sans commission*
+*[Jean-Luc Houédanou](https://houedanou.com)*

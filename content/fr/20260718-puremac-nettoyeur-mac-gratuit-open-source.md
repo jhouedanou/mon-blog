@@ -8,15 +8,15 @@ searchIntent: "PureMac est-il un bon nettoyeur Mac gratuit et open source, sans 
 tags: ["macOS", "open-source", "nettoyeur", "PureMac", "logiciel gratuit", "Homebrew"]
 ---
 
-Si tu cherches un nettoyeur Mac gratuit et open source, c'est sans doute que tu as un Mac récent (Air, Mac mini, MacBook Pro d'entrée de gamme) et que tu connais le problème : Apple vend des disques SSD soudés, non extensibles, souvent limités à 256 Go. Résultat : chaque gigaoctet compte, et les fichiers cache, logs et restes d'applications désinstallées finissent par grignoter sérieusement ta place.
+Si tu cherches un nettoyeur Mac gratuit et open source, c'est sans doute que tu as un Mac récent (Air, Mac mini, MacBook Pro d'entrée de gamme) et que tu connais le problème : Apple vend des disques SSD soudés, non extensibles, souvent limités à 256 Go. Chaque gigaoctet compte donc, et les fichiers cache, logs et restes d'applications désinstallées finissent par prendre beaucoup de place.
 
-Pour régler ça, la plupart des gens se tournent vers des applis comme CleanMyMac. Le souci ? Abonnement payant, télémétrie activée par défaut, et des alertes du style « 47 Go de fichiers dangereux détectés ! » qui te font paniquer pour rien. J'ai testé une alternative : PureMac.
+Pour régler ça, la plupart des gens se tournent vers des applis comme CleanMyMac. Le souci, c'est l'abonnement payant, la télémétrie activée par défaut et des alertes du style « 47 Go de fichiers dangereux détectés ! » qui te font paniquer pour rien. J'ai donc testé une alternative, PureMac.
 
 ---
 
 ## C'est quoi, PureMac ?
 
-PureMac est un désinstalleur et nettoyeur macOS gratuit et open-source, sous licence MIT. Pas d'abonnement, pas de compte à créer, pas de télémétrie. L'appli ne « phone home » jamais : elle ne sait même pas que tu existes.
+PureMac est un désinstalleur et nettoyeur macOS gratuit et open-source, sous licence MIT. Pas d'abonnement, pas de compte à créer, pas de télémétrie. L'appli ne « phone home » jamais.
 
 Le code est public, donc si tu es développeur (ou juste curieux : [pas besoin d'être dev pour aimer Mac et Linux](/fr/20261008-pas-besoin-detre-dev-ou-barbu-mac-linux)), tu peux vérifier toi-même ce que l'appli fait avant de supprimer quoi que ce soit.
 
@@ -52,16 +52,16 @@ open build/Build/Products/Release/PureMac.app
 - **Désinstalleur d'applis** : quand tu supprimes une appli, PureMac traque tous les fichiers qu'elle a laissés (préférences, cache, containers, logs) grâce à un moteur de correspondance en 10 niveaux.
 - **Détecteur de fichiers orphelins** : repère les restes d'applis que tu as déjà supprimées autrement.
 - **Nettoyeur système** : caches système, fichiers Mail, corbeille, restes de Xcode, cache Homebrew, Docker, etc.
-- **Nettoyage des caches Node** : PureMac vide aussi les caches des gestionnaires de paquets JavaScript (npm, yarn et pnpm). Si tu es dev, ces caches gonflent vite (plusieurs Go), et les récupérer d'un clic fait une vraie différence sur un SSD de 256 Go.
+- **Nettoyage des caches Node** : PureMac vide aussi les caches des gestionnaires de paquets JavaScript (npm, yarn et pnpm). Si tu es dev, ces caches gonflent vite (plusieurs Go), et les récupérer d'un clic fait une différence sur un SSD de 256 Go.
 - **Nettoyage programmé** : tu peux automatiser des scans à intervalle régulier.
 
-Un détail important : seules la désinstallation d'applis, la suppression des fichiers orphelins et celle des doublons passent par la Corbeille macOS. Le nettoyage par catégories, le nettoyage programmé, le vidage de la corbeille ou le ménage Docker et Xcode peuvent supprimer définitivement, d'après [la charte du projet](https://github.com/momenbasel/PureMac#our-promise). Donc relis bien ta sélection avant de valider. Le bon point : le projet l'écrit noir sur blanc au lieu de le cacher.
+Attention : seules la désinstallation d'applis, la suppression des fichiers orphelins et celle des doublons passent par la Corbeille macOS. Le nettoyage par catégories, le nettoyage programmé, le vidage de la corbeille ou le ménage Docker et Xcode peuvent supprimer définitivement, d'après [la charte du projet](https://github.com/momenbasel/PureMac#our-promise). Donc relis bien ta sélection avant de valider. Le bon point, c'est que le projet l'écrit noir sur blanc au lieu de le cacher.
 
-Autre point honnête : l'appli n'essaie pas de « libérer l'espace purgeable », contrairement à d'autres nettoyeurs. Cet espace est géré par macOS lui-même et aucune appli tierce ne peut le libérer de façon fiable. PureMac te le montre, sans le compter comme « à supprimer ».
+Autre point honnête, l'appli n'essaie pas de « libérer l'espace purgeable », contrairement à d'autres nettoyeurs. Cet espace est géré par macOS lui-même et aucune appli tierce ne peut le libérer de façon fiable. PureMac te le montre, sans le compter comme « à supprimer ».
 
 ---
 
-## PureMac vs CleanMyMac : le comparatif
+## Comparatif PureMac vs CleanMyMac
 
 | Critère | PureMac | CleanMyMac |
 | --- | --- | --- |
@@ -74,7 +74,7 @@ Autre point honnête : l'appli n'essaie pas de « libérer l'espace purgeable »
 | Désinstallation via la corbeille | Oui | Partielle |
 | Honnête sur l'espace purgeable | Oui | Non |
 
-Le vrai écart, ce n'est pas la fonctionnalité (les deux font à peu près le même travail de nettoyage), c'est la confiance. CleanMyMac te demande l'accès complet au disque (Full Disk Access) et fonctionne comme une boîte noire payante. PureMac te demande la même permission, mais tout le code qui décide quoi supprimer est public et vérifiable.
+Les deux font à peu près le même travail de nettoyage, et l'écart se joue sur la confiance. CleanMyMac te demande l'accès complet au disque (Full Disk Access) alors que son code est fermé et que l'appli est payante. PureMac te demande la même permission, mais tout le code qui décide quoi supprimer est public et vérifiable.
 
 ---
 
@@ -86,7 +86,7 @@ PureMac a besoin de l'accès complet au disque (Full Disk Access) pour lire les 
 
 ## Mon avis
 
-Pour quelqu'un qui gère des serveurs et plusieurs machines au quotidien (dont un [iMac 2017 relancé avec macOS sur un SSD externe](/fr/20261014-installer-macos-ssd-externe-imac-2017)), ce genre d'outil qui ne demande ni abonnement ni confiance aveugle, c'est exactement ce qu'il faut. Rien à cacher, rien à payer, et le code est là pour ceux qui veulent vérifier. Et si tu veux comparer, j'ai aussi parlé de [MacSai et Mole, deux autres alternatives gratuites à CleanMyMac](/fr/20260901-macsai-mole-alternatives-gratuites-cleanmymac).
+Pour quelqu'un qui gère des serveurs et plusieurs machines au quotidien (dont un [iMac 2017 relancé avec macOS sur un SSD externe](/fr/20261014-installer-macos-ssd-externe-imac-2017)), ce genre d'outil qui ne demande ni abonnement ni confiance aveugle, c'est exactement ce qu'il faut. Et si tu veux comparer, j'ai aussi parlé de [MacSai et Mole, deux autres alternatives gratuites à CleanMyMac](/fr/20260901-macsai-mole-alternatives-gratuites-cleanmymac).
 
 Si tu veux tester : `brew install --cask puremac`.
 

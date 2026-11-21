@@ -11,7 +11,7 @@ summary: "Anne, already weakened by brain cancer, HIV and a divorce, lost 830,00
 
 _Preamble: this dark story of the fake Brad Pitt scam has its roots in my country of origin, Benin. According to the latest news, the relevant authorities have been informed of the case, after Find My Scammer identified the scammers responsible. They will therefore probably be off for a long stay in prison, and justice will be served, because these individuals in no way represent Benin's traditional values of respect, human dignity and hospitality._
 
-_In other words, we can talk about it with peace of mind, without exploiting the distress and despair of the victims._
+_So we can talk about it with peace of mind, without exploiting the distress and despair of the victims._
 
 My use of social media is limited. I mostly stick to YouTube, which I listen to in the background while doing other things, and a few accounts meant to relay content from my blogs.
 
@@ -35,9 +35,9 @@ The trap closes when the fake Brad Pitt announces he is suffering from kidney ca
 
 The affair left Anne with nothing. Today, she lives in a 6 m² storage unit, surrounded by a few boxes. She has attempted suicide several times and is now under psychiatric treatment. What is even more striking is the impact of the online lynching she is going through. Social media, instead of condemning the scam, focuses on her, piling on the mockery and the parodies.
 
-To put it more plainly: Anne has become X's new "punchline" or "punching bag". The situation has been amplified by the fact that most people don't know Anne. They don't know what she went through, or what she did to survive, or that she is living with HIV and has already attempted suicide three times.
+Anne has become X's new "punchline" or "punching bag". The situation has been amplified by the fact that most people don't know Anne. They don't know what she went through, or what she did to survive, or that she is living with HIV and has already attempted suicide three times.
 
 We all make mistakes, but we all deserve a minimum of respect. Above all, **there are times when silence is golden: if you're not sure that what you're about to post will do any good, keep scrolling.**
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com) — scam hunter*
+*[Jean-Luc Houédanou](https://houedanou.com)*

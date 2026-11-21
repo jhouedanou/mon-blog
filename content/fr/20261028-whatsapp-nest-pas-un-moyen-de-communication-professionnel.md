@@ -9,7 +9,7 @@ tags: ["opinion", "société", "afrique", "productivité"]
 
 WhatsApp n'est pas un moyen de communication professionnel.
 
-À Abidjan, c'est pourtant le canal par défaut au travail. Un devis, une maquette à valider, une facture, un accès à un serveur, une réunion déplacée : tout passe par WhatsApp. Souvent sur un numéro personnel. Souvent le soir.
+À Abidjan, c'est pourtant le canal par défaut au travail. Un devis, une maquette à valider, une facture, un accès à un serveur ou une réunion déplacée, tout passe par WhatsApp, souvent sur un numéro personnel et souvent le soir.
 
 Moi, je refuse. Voici pourquoi, et comment je fais.
 
@@ -23,11 +23,11 @@ Un email a un objet, une date, des destinataires et des personnes en copie. On p
 
 ### Il n'y a plus d'horaires
 
-WhatsApp est dans votre poche, sur le même téléphone que votre famille et vos amis. Le message de travail arrive à 22 heures ou le dimanche. Avec les deux coches bleues, l'expéditeur voit que vous l'avez lu. Il attend une réponse, à une heure où il ne devrait rien attendre.
+WhatsApp est dans votre poche, sur le même téléphone que votre famille et vos amis. Le message de travail arrive à 22 heures ou le dimanche. Avec les deux coches bleues, l'expéditeur voit que vous l'avez lu, et il attend une réponse à une heure où il ne devrait rien attendre.
 
 ### Les notes vocales font perdre du temps à celui qui les reçoit
 
-Quatre minutes de note vocale pour une demande qui tenait en deux lignes. On ne peut pas la lire en diagonale, ni y chercher un mot, ni en copier un passage dans un devis. Celui qui l'envoie gagne du temps. Celui qui la reçoit en perd.
+Une note vocale dure quatre minutes pour une demande qui tenait en deux lignes. On ne peut pas la lire en diagonale, ni y chercher un mot, ni en copier un passage dans un devis. Celui qui l'envoie gagne du temps et celui qui la reçoit en perd.
 
 ### Les groupes noient les décisions
 
@@ -35,11 +35,11 @@ On vous ajoute sans vous demander votre avis dans un groupe de quarante personne
 
 ### Le personnel et le professionnel se mélangent
 
-Votre numéro, votre photo de profil, vos statuts : vos clients et vos collègues y ont accès. Et quand quelqu'un quitte l'entreprise, l'historique des échanges part avec son téléphone. Une boîte mail professionnelle, elle, reste à l'entreprise. C'est la même règle que pour [l'iPhone et la voiture de fonction qui racontent tout à votre patron](/fr/20250705-cherscommerciaux) : on ne mélange pas les usages.
+Vos clients et vos collègues ont accès à votre numéro, à votre photo de profil et à vos statuts. Et quand quelqu'un quitte l'entreprise, l'historique des échanges part avec son téléphone. Une boîte mail professionnelle, elle, reste à l'entreprise. C'est la même règle que pour [l'iPhone et la voiture de fonction qui racontent tout à votre patron](/fr/20250705-cherscommerciaux), on ne mélange pas les usages.
 
 ### Un message n'est pas une demande
 
-Un email oblige à écrire la demande en entier : le contexte, la question, l'échéance. Sur WhatsApp, on envoie « Tu as vu ? » et on attend. C'est la version écrite de [la réunion « pour en parler »](/fr/20260326-lareunionpourenparler) : on évite de formuler le problème.
+Un email oblige à écrire la demande en entier : le contexte, la question, l'échéance. Sur WhatsApp, on envoie « Tu as vu ? » et on attend. Comme avec [la réunion « pour en parler »](/fr/20260326-lareunionpourenparler), on évite de formuler le problème.
 
 ## Comment refuser une demande pro sur WhatsApp
 
@@ -49,7 +49,7 @@ Elle m'a valu, j'en suis sûr, quelques remarques dans mon dos. Elles vont du li
 
 ### 1. Dire non
 
-Quand une demande de travail arrive sur WhatsApp, je réponds que je ne traite pas les sujets professionnels sur ce canal. Une fois, poliment. Par exemple :
+Quand une demande de travail arrive sur WhatsApp, je réponds une fois, poliment, que je ne traite pas les sujets professionnels sur ce canal. Par exemple :
 
 > Bonjour, je ne traite pas les sujets professionnels sur WhatsApp. Je vous envoie un email pour la suite.
 
@@ -59,13 +59,13 @@ Je ne laisse pas la demande sans réponse. Je la reprends par email : le context
 
 ### 3. Bloquer
 
-Si les demandes continuent d'arriver sur WhatsApp malgré le non et l'email, je bloque le numéro. Le sujet a une adresse email. WhatsApp n'est plus une option.
+Si les demandes continuent d'arriver sur WhatsApp malgré le non et l'email, je bloque le numéro. Le sujet a une adresse email et WhatsApp n'est plus une option.
 
-## En résumé
+## Ce que je refuse
 
-Je ne refuse pas de travailler avec les gens. Je refuse un canal où l'on ne retrouve rien, qui n'a pas d'horaires et qui mélange ma vie privée et mon travail. L'email fait mieux sur ces trois points. Et une adresse email est gratuite.
+Je travaille volontiers avec les gens, mais pas sur un canal où l'on ne retrouve rien, qui n'a pas d'horaires et qui mélange ma vie privée et mon travail. L'email fait mieux sur ces trois points, et une adresse email est gratuite.
 
 _Photo : [Rahul Shah](https://www.pexels.com/@-rahulshah-/){target="_blank" rel="noopener"}, sur Pexels._
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com) — joignable par email*
+*[Jean-Luc Houédanou](https://houedanou.com)*
