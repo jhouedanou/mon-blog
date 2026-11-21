@@ -8,7 +8,7 @@ searchIntent: "How good is Lemon Studio, the free open-source FL Studio clone bu
 tags: ["opinion", "music", "AI", "open-source", "vibe coding"]
 ---
 
-In early October, I wrote about [ArtCraft, the Adobe suite rebuilt with Claude](/en/20261009-artcraft-vibe-code-suite-adobe-saaspocalypse). This time, FL Studio has its free, open-source clone. It's called Lemon Studio.
+In early October, I wrote about [ArtCraft, the Adobe suite rebuilt with Claude](/en/20261009-artcraft-vibe-code-suite-adobe-saaspocalypse). This time, FL Studio has its free, open-source clone, and it's called Lemon Studio.
 
 _Update, October 28, 2026: I tested it. My verdict is at the end of the post._
 
@@ -24,51 +24,51 @@ What it can do, according to its documentation:
 
 As with ArtCraft, many commits on GitHub are co-authored by Claude.
 
-The project has no ties to Image-Line, the company behind FL Studio. Its documentation says so.
+The project has no ties to Image-Line, the company behind FL Studio, and its documentation says so.
 
-## Does it work? So-so
+## It works so-so
 
-From what I've seen, it works so-so. The project says so itself: "Lemon Studio is pre-alpha software." Several features are incomplete. There's no version to download: you have to build it from source.
+From what I've seen, it works so-so, and the project says so itself: "Lemon Studio is pre-alpha software." Several features are incomplete, and there's no version to download, you have to build it from source.
 
 If I were a little less buried in work, I'd give it a try.
 
 ## But it doesn't excite me that much anymore
 
-Personally, it doesn't excite me that much anymore. And I'm not sure I like the direction the industry is taking.
+It doesn't excite me that much anymore, and I'm not sure I like the direction the industry is taking.
 
-Late September, the Adobe suite. Today, FL Studio. The pattern is the same: take a well-known app and rebuild it with AI. Same interface, same menus, same habits.
+In late September it was the Adobe suite, and today it's FL Studio. The pattern is the same, you take a well-known app and rebuild it with AI, with the same interface, the same menus and the same habits.
 
-One detail sums up the situation. In its documentation, Lemon Studio's author asks that their code not be used in ArtCraft. They make clear it's a request, not a license condition. The person cloning FL Studio doesn't want their clone reused.
+In its documentation, Lemon Studio's author asks that their code not be used in ArtCraft, and makes clear it's a request rather than a license condition. The person cloning FL Studio doesn't want their clone reused.
 
-I understand the request. But it shows the problem: when copying gets easy, everyone copies everyone, and nobody wants to be copied.
+I understand the request, but it shows that when copying gets easy, everyone copies everyone, and nobody wants to be copied.
 
-## The barriers are falling. Then what?
+## The barriers to development are falling
 
 In the future, the barriers to software development may fall. A single developer, with Claude, can rebuild an app that a company spent years building. FL Studio has existed since 1998, back when it was still called FruityLoops.
 
-That's good news for people who can't afford it. I wrote about this in my post on [Koala Sampler, the free sampler for Mac](/en/20260822-koala-sampler-gratuit-mac-boom-bap): many people buy cracked copies of FL Studio in Facebook groups, often stuffed with spyware. A free, legal clone beats that.
+That's good news for people who can't afford it. I wrote about this in my post on [Koala Sampler, the free sampler for Mac](/en/20260822-koala-sampler-gratuit-mac-boom-bap): many people buy cracked copies of FL Studio in Facebook groups, which often contain spyware. A free, legal clone beats that.
 
 But if anyone can rebuild anything, rebuilding is no longer enough. Two things will matter:
 
 - **quality**: software that doesn't crash mid-session, that opens your old projects, and that will still be maintained in five years;
-- **originality**: a new idea, not a copy of software that already exists.
+- **originality**: a new idea rather than a copy of software that already exists.
 
-AI makes copying easy. It doesn't make quality and originality easy. Those two things are where software will stand apart. That's my opinion.
+AI makes copying easy, but not quality or originality, and those two things are where software will stand apart. That's my opinion.
 
-## Update, October 28: I tested it
+## I tested it (update, October 28)
 
-I finally found the time to try Lemon Studio. It's very far from FL Studio.
+I finally found the time to try Lemon Studio, and it's very far from FL Studio.
 
-- **VST3 plugins aren't supported.** The documentation lists them as usable. On my setup, they don't work.
+- **VST3 plugins aren't supported.** The documentation lists them as usable, but on my setup, they don't work.
 - **My favorite plugin crashes.** Inphonik's RX1200, an emulation of the SP-1200 sampler, crashes as soon as I edit a sample.
 
-## If you're looking for a free music app: MorningDAW
+## MorningDAW, if you're looking for a free music app
 
-Take a look at [MorningDAW](https://www.morningdaw.com/){target="_blank" rel="noopener"} instead, developed by Mattias and Nicklas Holmgren of Morningdew Media. It's free, with no trial and no time limit, on macOS, Windows and Linux. You just need to create an account to download it.
+Take a look at [MorningDAW](https://www.morningdaw.com/){target="_blank" rel="noopener"} instead, developed by Mattias and Nicklas Holmgren of Morningdew Media. It's free, with no trial and no time limit, on macOS, Windows and Linux. You only need to create an account to download it.
 
 It looks [vibe coded](/en/20260423-chers-vibe-codeurs-bienvenue-dans-la-realite) too, granted. [Bedroom Producers Blog](https://bedroomproducersblog.com/2026/10/24/morningdew-media-releases-morningdaw-a-free-daw-for-macos-windows-and-linux/){target="_blank" rel="noopener"} finds that its interface shows "some common signs of the vibe-coded aesthetic". And it includes an assistant that runs on your own Claude Code account. Its developers don't say how they coded it.
 
-But MorningDAW is original. It doesn't copy an existing app:
+But MorningDAW is original and doesn't copy an existing app:
 
 - pie menus open under the mouse, so you don't go back and forth through menus;
 - the same song can be edited in several views: arrangement, piano roll, patterns, score, and even a tracker for chiptune music;
@@ -77,7 +77,7 @@ But MorningDAW is original. It doesn't copy an existing app:
 
 According to its website, it supports VST3 and CLAP plugins, plus Audio Units on Mac.
 
-It's what I said above: AI makes copying easy, but what will make the difference is quality and originality. Lemon Studio copies FL Studio. MorningDAW offers something else.
+Lemon Studio copies FL Studio, while MorningDAW offers something else.
 
 ## Sources
 

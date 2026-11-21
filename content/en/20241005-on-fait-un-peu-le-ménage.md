@@ -15,7 +15,7 @@ I had been looking for a good excuse to get rid of WordPress for a long time, at
 - the future of the CMS depends more and more on the goodwill of its creators, who revoke update permissions for essential plugins depending on how well they get along with their author;
 - and I'll say it again: security flaws remain unpatched, nearly a year after they were discovered.
 
-## From WordPress to Nuxt Content: the new setup
+## The new setup with Nuxt Content
 
 On top of that, after a year of using VueJS and Nuxt, these technologies convinced me to take the plunge. So at the start of last week I decided to start over with a slightly exotic setup:
 
@@ -40,4 +40,4 @@ See you very soon.
 The rest of the story: [the new flat-file blog, in Markdown with no database](/en/20241021-pendaison-de-cremaillere), [the move from Vercel to Cloudflare Pages](/en/20260402-vercel-cloudflare-pages-migration), then [the SEO I lost after the migration, and how I got it back](/en/20261018-migration-wordpress-nuxt-referencement-perdu-recupere).
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com) — digital mover*
+*[Jean-Luc Houédanou](https://houedanou.com)*

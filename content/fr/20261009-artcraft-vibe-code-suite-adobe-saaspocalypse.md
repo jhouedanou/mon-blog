@@ -9,7 +9,7 @@ tags: ["opinion", "tech", "IA", "open-source", "logiciel gratuit", "vibe coding"
 
 En avril, j'ai écrit que le vibe coding, c'était le Bronny James du code. Six mois plus tard, quelqu'un a vibe codé la suite Adobe, en open source, et ça s'appelle ArtCraft.
 
-Pas un clone de Paint ou une énième to-do list : Photoshop, Lightroom, Premiere, Illustrator, After Effects, InDesign et Acrobat. Les sept.
+Et ce n'est pas un clone de Paint ou une énième to-do list, mais Photoshop, Lightroom, Premiere, Illustrator, After Effects, InDesign et Acrobat, les sept.
 
 Je suis tombé dessus dans une vidéo de FUTC, un vidéaste photo qui est aussi développeur. Le titre ne fait pas dans la nuance : [« Somebody Vibe Coded EVERY SINGLE ADOBE App »](https://www.youtube.com/watch?v=eFB79TYI-Vw){target="_blank" rel="noopener"}. Et ce week-end, j'essaie ArtCraft.
 
@@ -31,49 +31,49 @@ ArtCraft a été créé par Brandon Thomas, un développeur d'Atlanta. Au dépar
 
 Le plus fou, c'est le calendrier. Les dépôts de PhotoCraft, LightCraft, FilmCraft, VectorCraft et PdfCraft ont été créés le 30 septembre. Le premier commit de PhotoCraft s'intitule « one-shot ». Au 9 octobre 2026, l'application en est à la version 0.5.0 et compte près de 34 000 étoiles sur GitHub.
 
-La feuille de route de LightCraft donne même le chiffre : quatre à six agents IA en parallèle ont bouclé les quatorze premiers jalons de l'application en environ 25 heures de travail actif. Vingt-cinq heures. Le même document précise qu'il reste du chemin : en effort, LightCraft n'en serait qu'à 20 à 35 % d'un Lightroom complet.
+La feuille de route de LightCraft donne le chiffre : quatre à six agents IA en parallèle ont bouclé les quatorze premiers jalons de l'application en environ 25 heures de travail actif. Le même document précise qu'en effort, LightCraft n'en serait qu'à 20 à 35 % d'un Lightroom complet.
 
 Et ça ne s'arrête pas à Adobe. Le 7 octobre, [la même équipe](https://github.com/storytold){target="_blank" rel="noopener"} a ouvert des dépôts pour Word (WordCraft), Excel (GridCraft), PowerPoint (DeckCraft), Pro Tools (SoundCraft) et un logiciel de dessin technique façon AutoCAD (CADCraft).
 
-## « Vibe codé », vraiment ?
+## Est-ce vraiment du vibe coding ?
 
 Je dois être honnête, puisque j'ai passé un billet entier à [taper sur les vibe codeurs](/fr/20260423-chers-vibe-codeurs-bienvenue-dans-la-realite).
 
-Brandon Thomas n'est pas Bronny James. Dans son annonce sur Reddit, rapportée par Gizmodo, il se présente comme un vétéran avec quinze ans de métier, pas comme un simple vibe codeur. Sur son profil GitHub, une ligne résume sa spécialité : Rust. Il sait ce qu'il demande à la machine, et il sait lire ce qu'elle lui rend.
+Brandon Thomas n'est pas dans ce cas. Dans son annonce sur Reddit, rapportée par Gizmodo, il se présente comme un vétéran avec quinze ans de métier, pas comme un simple vibe codeur. Son profil GitHub indique sa spécialité, Rust. Il sait ce qu'il demande à la machine, et il sait lire ce qu'elle lui rend.
 
-C'est exactement ce que je disais en avril : l'IA multiplie le métier de celui qui l'a déjà. Entre les mains de quelqu'un qui connaît le jeu, Claude n'est pas une béquille. C'est un banc de remplaçants qui ne se fatiguent jamais.
+C'est ce que je disais en avril, l'IA multiplie le métier de celui qui l'a déjà. Pour quelqu'un qui connaît son métier, Claude fournit une équipe d'assistants qui ne se fatiguent jamais.
 
-Le titre de la vidéo dit « vibe coded ». Moi, je dirais plutôt : un développeur expérimenté avec une petite armée d'agents. Et pour Adobe, c'est bien plus inquiétant.
+Le titre de la vidéo dit « vibe coded », mais je dirais plutôt que c'est un développeur expérimenté avec plusieurs agents IA, et pour Adobe, c'est bien plus inquiétant.
 
 ## Ce que montre la vidéo de FUTC
 
-FUTC explique s'intéresser à ces alternatives à cause des prix d'Adobe, de ses conditions d'utilisation et de sa politique sur l'IA. La vidéo passe trois applications au banc d'essai :
+FUTC explique s'intéresser à ces alternatives à cause des prix d'Adobe, de ses conditions d'utilisation et de sa politique sur l'IA. La vidéo teste trois applications :
 
 - **PhotoCraft**, l'équivalent de Photoshop : calques, masques, courbes, ouverture de fichiers PSD et accélération matérielle. Ça fonctionne.
 - **LightCraft**, l'équivalent de Lightroom : import de fichiers RAW et de presets Lightroom. Les aperçus restent en basse résolution pour garder de la fluidité, mais les presets standards passent.
 - **FilmCraft**, l'équivalent de Premiere : des rushes 5K en 10 bits et des fichiers H.265. Ça saccade parfois, et il manquait lors du tournage des fonctions comme le ripple delete, mais l'encodage accéléré par le matériel fonctionne.
 
-Bref, c'est une alpha, encore brute de décoffrage, mais étonnamment capable pour un projet monté en quelques jours. VectorCraft, DesignCraft et EffectCraft restent à tester.
+Bref, c'est une alpha, encore rudimentaire, mais étonnamment capable pour un projet monté en quelques jours. VectorCraft, DesignCraft et EffectCraft restent à tester.
 
-## Le vrai avantage : Windows, Mac et Linux
+## Disponible sur Windows, Mac et Linux
 
-Voilà ce qui me fait vraiment plaisir : ArtCraft ne choisit pas son camp.
+Ce qui me fait plaisir, c'est qu'ArtCraft fonctionne sur les trois systèmes.
 
-PhotoCraft s'installe sur macOS, en version universelle pour les puces Apple et Intel, signée et notarisée par Apple. Sur Windows, en x64, en ARM et jusqu'en 32 bits. Sur Linux, au choix en AppImage, en .deb, en .rpm ou en Flatpak. Il existe aussi une version FreeBSD. Et d'après le site d'ArtCraft, six des sept applications tournent dans le navigateur.
+PhotoCraft s'installe sur macOS, en version universelle pour les puces Apple et Intel, signée et notarisée par Apple, sur Windows, en x64, en ARM et jusqu'en 32 bits, et sur Linux, au choix en AppImage, en .deb, en .rpm ou en Flatpak. Il existe aussi une version FreeBSD, et d'après le site d'ArtCraft, six des sept applications tournent dans le navigateur.
 
-Adobe n'a jamais sorti Photoshop ni Lightroom sur Linux. Et Affinity, que j'adore, n'a toujours pas de version Linux officielle : il faut passer par [des bidouilles à base de Wine](https://www.omgubuntu.co.uk/2026/01/run-affinity-linux-ubuntu-appimage){target="_blank" rel="noopener"}.
+Adobe n'a jamais sorti Photoshop ni Lightroom sur Linux. Et Affinity, que j'adore, n'a toujours pas de version Linux officielle, et il faut passer par [des bidouilles à base de Wine](https://www.omgubuntu.co.uk/2026/01/run-affinity-linux-ubuntu-appimage){target="_blank" rel="noopener"}.
 
 Je [passe de Mac à Linux](/fr/20261008-pas-besoin-detre-dev-ou-barbu-mac-linux) sans me poser de questions, et je squatte ces temps-ci l'ordinateur de ma nièce sous ChromeOS. C'est la première fois qu'une suite qui imite Adobe, de Photoshop à Lightroom, peut me suivre partout. Sur ChromeOS, je passerai par l'environnement Linux et le paquet .deb, puisque la version web est une archive à héberger soi-même.
 
-Et pensez au graphiste d'Abidjan qui a récupéré un vieux PC et y a installé Ubuntu parce que Windows ramait. Il avait déjà GIMP, Krita ou Darktable. Il aura peut-être bientôt les outils et les raccourcis qu'il a appris sur Photoshop, en natif, sans abonnement facturé en devises et sans version crackée. Brandon Thomas le dit d'ailleurs sur Hacker News : il en a assez que GIMP, Krita et Inkscape soient le meilleur de ce que le libre propose sous Linux.
+Le graphiste d'Abidjan qui a récupéré un vieux PC et y a installé Ubuntu parce que Windows ramait avait déjà GIMP, Krita ou Darktable. Il aura peut-être bientôt les outils et les raccourcis qu'il a appris sur Photoshop, en natif, sans abonnement facturé en devises et sans version crackée. Brandon Thomas le dit d'ailleurs sur Hacker News : il en a assez que GIMP, Krita et Inkscape soient le meilleur de ce que le libre propose sous Linux.
 
-## Ce qui m'intéresse : LightCraft et mes vieux presets de Ricoh Theta
+## LightCraft et mes vieux presets de Ricoh Theta
 
-J'utilise Affinity depuis sa première version. J'ai payé la 1, puis la 2, et j'ai applaudi quand [Affinity est devenu gratuit](/fr/20251031-affinity-est-gratuit). Mais j'ai toujours eu un regret, et je l'écrivais déjà à l'époque : je n'ai jamais trouvé d'équivalent à Lightroom pour retoucher les photos de ma Ricoh Theta. Ni Darktable, ni Affinity Photo.
+J'utilise Affinity depuis sa première version. J'ai payé la 1, puis la 2, et j'ai applaudi quand [Affinity est devenu gratuit](/fr/20251031-affinity-est-gratuit). Mais j'ai toujours eu un regret, et je l'écrivais déjà à l'époque : je n'ai jamais trouvé d'équivalent à Lightroom pour retoucher les photos de ma Ricoh Theta, ni avec Darktable, ni avec Affinity Photo.
 
-Résultat, j'ai de vieux presets Lightroom qui dorment dans un dossier, réglés pour les photos à 360 degrés de la Theta.
+J'ai donc de vieux presets Lightroom qui restent inutilisés dans un dossier, réglés pour les photos à 360 degrés de la Theta.
 
-Bonne nouvelle : LightCraft sait les importer. C'est écrit noir sur blanc dans [la documentation du projet](https://github.com/storytold/lightcraft/blob/main/docs/xmp-interop.md){target="_blank" rel="noopener"}. Il lit les presets au format XMP, l'ancien format .lrtemplate de Lightroom, des dossiers entiers et même des archives .zip. Il lit aussi le DNG, le format RAW de la Theta Z1, avec les matrices de couleur embarquées dans le fichier.
+Bonne nouvelle, LightCraft sait les importer, et c'est écrit dans [la documentation du projet](https://github.com/storytold/lightcraft/blob/main/docs/xmp-interop.md){target="_blank" rel="noopener"}. Il lit les presets au format XMP, l'ancien format .lrtemplate de Lightroom, des dossiers entiers et même des archives .zip. Il lit aussi le DNG, le format RAW de la Theta Z1, avec les matrices de couleur embarquées dans le fichier.
 
 Deux bémols, que le projet signale lui-même :
 
@@ -89,11 +89,11 @@ Mon plan pour ce week-end :
 3. comparer avec ce que donnaient ces presets dans Lightroom ;
 4. exporter en TIFF, assembler la photo sans le plug-in, puis vérifier qu'elle est bien reconnue comme une 360.
 
-Et côté Affinity, une surprise : PhotoCraft ouvre les fichiers Affinity (.afphoto, .afdesign, .afpub), en lecture seule. Les effets et réglages qu'il ne sait pas encore rendre sont listés dans un avertissement. Je testerai aussi, sur des copies.
+Autre surprise, côté Affinity, PhotoCraft ouvre les fichiers Affinity (.afphoto, .afdesign, .afpub), en lecture seule. Les effets et réglages qu'il ne sait pas encore rendre sont listés dans un avertissement. Je testerai aussi, sur des copies.
 
 ## ArtCraft peut-il remplacer Photoshop ?
 
-Remplacer Photoshop ? Pas encore, de l'aveu même du projet. Et je ne vais pas vous [vendre du rêve](/fr/20260908-philippe-simo-vendeur-de-reves).
+ArtCraft ne remplace pas encore Photoshop, de l'aveu même du projet, et je ne vais pas vous [vendre du rêve](/fr/20260908-philippe-simo-vendeur-de-reves).
 
 - PhotoCraft le dit dans sa documentation : ce n'est pas encore un remplaçant de Photoshop pour le travail professionnel au quotidien. Il manque l'IA générative, une vingtaine d'outils, de la profondeur en typographie et la compatibilité avec les plug-ins.
 - Brandon Thomas le reconnaît sur Hacker News : ses applications sont encore loin d'être prêtes. Il vise la quasi-parité avec Adobe « en mois, pas en années ».
@@ -101,7 +101,7 @@ Remplacer Photoshop ? Pas encore, de l'aveu même du projet. Et je ne vais pas v
 - Gizmodo a testé PhotoCraft : la transformation manuelle se comportait de façon erratique.
 - ArtCraft parle de réimplémentation « clean-room » : aucune ligne de code d'Adobe, tout est écrit à partir des spécifications publiques et du comportement observé des logiciels. Reste à voir ce qu'en pensera le service juridique d'Adobe.
 
-Donc on teste sur des copies de fichiers. Pas sur le seul exemplaire du shooting d'un client.
+Donc on teste sur des copies de fichiers et on garde à l'abri le seul exemplaire du shooting d'un client.
 
 ## Le SaaSpocalypse est réel
 
@@ -109,17 +109,17 @@ Début février 2026, les plug-ins métiers qu'Anthropic venait de sortir pour C
 
 En juin, le fonds Thoma Bravo assurait sur [CNBC](https://www.cnbc.com/2026/06/09/orlando-bravo-saaspocalypse-over-ai-software.html){target="_blank" rel="noopener"} que le SaaSpocalypse était terminé. Je ne suis pas d'accord.
 
-En février, les marchés avaient peur que l'IA fasse le travail des salariés, et donc qu'Adobe et les autres vendent moins de licences. Ce qu'ArtCraft montre en octobre, c'est autre chose : l'IA peut refaire le logiciel lui-même. Le fossé qui protégeait Adobe tenait en une phrase : personne n'aura jamais les moyens de réécrire Photoshop. Ce fossé se comble à vue d'œil.
+En février, les marchés avaient peur que l'IA fasse le travail des salariés, et donc qu'Adobe et les autres vendent moins de licences. Ce qu'ArtCraft montre en octobre, c'est que l'IA peut refaire le logiciel lui-même. Adobe était protégé par l'idée que personne n'aurait jamais les moyens de réécrire Photoshop, et cette protection disparaît rapidement.
 
-Adobe garde des atouts, évidemment : les formats, les habitudes, les plug-ins, Firefly, les studios qui ont bâti toute leur chaîne de production dessus. Mais quand une alpha gratuite ouvre vos PSD sur Linux, l'abonnement mensuel devient plus dur à justifier. Surtout quand Adobe a accepté en mars [un accord de 150 millions de dollars](https://www.justice.gov/opa/pr/adobe-agrees-150-million-settlement-and-injunction-resolve-alleged-violations-restore-online){target="_blank" rel="noopener"} pour clore la plainte du ministère américain de la Justice. On lui reprochait de cacher ses frais de résiliation et de compliquer l'annulation des abonnements. [Je parlais déjà de cette plainte en 2024](/fr/20241212-cher-gens-dadobe).
+Adobe garde des atouts, évidemment : les formats, les habitudes, les plug-ins, Firefly, les studios qui ont bâti toute leur chaîne de production dessus. Mais quand une alpha gratuite ouvre vos PSD sur Linux, l'abonnement mensuel devient plus dur à justifier, surtout quand Adobe a accepté en mars [un accord de 150 millions de dollars](https://www.justice.gov/opa/pr/adobe-agrees-150-million-settlement-and-injunction-resolve-alleged-violations-restore-online){target="_blank" rel="noopener"} pour clore la plainte du ministère américain de la Justice. On lui reprochait de cacher ses frais de résiliation et de compliquer l'annulation des abonnements. [Je parlais déjà de cette plainte en 2024](/fr/20241212-cher-gens-dadobe).
 
-Le Wu-Tang disait [C.R.E.A.M.](/fr/20260907-bill-gates-ia-hypocrisie-meta-cash-rules-everything), *Cash Rules Everything Around Me*. Chez Adobe, ça s'est longtemps lu *Cloud Rules Everything Around Me*. Pour combien de temps encore ?
+Le Wu-Tang disait [C.R.E.A.M.](/fr/20260907-bill-gates-ia-hypocrisie-meta-cash-rules-everything), *Cash Rules Everything Around Me*. Chez Adobe, ça s'est longtemps lu *Cloud Rules Everything Around Me*, et je ne sais pas pour combien de temps encore.
 
 ## Rendez-vous après le week-end
 
-Ce week-end, j'installe PhotoCraft et LightCraft, d'abord sur Mac, puis sous Linux. Je vous ferai un retour. Si mes vieux presets de Theta reprennent vie, ça méritera un billet à part.
+Ce week-end, j'installe PhotoCraft et LightCraft, d'abord sur Mac, puis sous Linux. Je vous ferai un retour. Si mes vieux presets de Theta fonctionnent, ça méritera un billet à part.
 
-Ironie de l'histoire : début février, des plug-ins pour Claude ont fait plonger les éditeurs de logiciels. Début octobre, c'est Claude qui a écrit ArtCraft. Anthropic n'a pas besoin de concurrencer Adobe. Il lui suffit de vendre les pelles.
+Début février, des plug-ins pour Claude ont fait plonger les éditeurs de logiciels, et début octobre, c'est Claude qui a écrit ArtCraft. Anthropic n'a pas besoin de concurrencer Adobe, il lui suffit de vendre l'outil à ceux qui le font.
 
 ## Sources
 
@@ -140,4 +140,4 @@ Ironie de l'histoire : début février, des plug-ins pour Claude ont fait plonge
 _Capture de couverture : PhotoCraft (licence MIT ou Apache-2.0), avec [La Grande Vague de Kanagawa](https://commons.wikimedia.org/wiki/File:Tsunami_by_hokusai_19th_century.jpg){target="_blank" rel="noopener"} d'Hokusai, dans le domaine public._
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com) — sur Affinity depuis la version 1*
+*[Jean-Luc Houédanou](https://houedanou.com)*

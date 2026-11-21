@@ -7,7 +7,7 @@ searchIntent: "Comment récupérer sur Mac un dossier GitHub bloqué par la sync
 tags: ["tutoriel", "apple", "macos", "icloud", "git", "dev"]
 ---
 
-> **En préambule.** Pour répondre aux questions sur ma nouvelle productivité : oui, j'utilise bel et bien l'IA. Depuis plusieurs mois, elle **corrige** mes articles, et surtout, elle récupère les images d'illustration sur Pexels, comme celles de ce billet. Le problème n'est pas l'IA, c'est la mauvaise utilisation de l'IA. Dans mon cas, elle m'évite des coquilles et elle améliore le frontmatter, le bloc d'informations placé en tête de chaque article (titre, date, image, description, mots-clés), puisque [ce blog tourne entièrement sur des fichiers Markdown](/fr/20241021-pendaison-de-cremaillere). Sans compter qu'elle me permet de développer plus facilement de nouvelles fonctionnalités, comme les carrousels et les lecteurs audio de [l'article sur Koala Sampler](/fr/20260822-koala-sampler-gratuit-mac-boom-bap).
+> **En préambule.** Pour répondre aux questions sur ma nouvelle productivité : oui, j'utilise bel et bien l'IA. Depuis plusieurs mois, elle **corrige** mes articles, et surtout, elle récupère les images d'illustration sur Pexels, comme celles de ce billet. Le problème, c'est la mauvaise utilisation de l'IA. Dans mon cas, elle m'évite des coquilles et elle améliore le frontmatter, le bloc d'informations placé en tête de chaque article (titre, date, image, description, mots-clés), puisque [ce blog tourne entièrement sur des fichiers Markdown](/fr/20241021-pendaison-de-cremaillere). Sans compter qu'elle me permet de développer plus facilement de nouvelles fonctionnalités, comme les carrousels et les lecteurs audio de [l'article sur Koala Sampler](/fr/20260822-koala-sampler-gratuit-mac-boom-bap).
 
 Bon, je doute qu'un développeur compétent se retrouve avec un dossier GitHub bloqué par iCloud, mais c'est une erreur qui peut arriver même aux plus expérimenté(e)s.
 
@@ -29,7 +29,7 @@ Git n'est pas fait pour travailler dans un dossier qu'un autre programme modifie
 - **Des fichiers ne sont plus sur le disque.** Si l'option « Optimiser le stockage du Mac » est cochée et que le disque manque de place, macOS ne garde certains fichiers que dans iCloud. Quand Git doit les lire, il attend qu'ils soient téléchargés. Avec une connexion lente, l'attente peut durer très longtemps, et la roue tourne sans fin.
 - **Le dépôt peut se corrompre.** Quand deux versions d'un même fichier entrent en conflit, iCloud ne les fusionne pas : il garde les deux et en renomme une, par exemple `index 2` ou `HEAD 2`. Git ne connaît pas ces fichiers, et le dépôt peut devenir illisible.
 
-Votre code a déjà une copie en ligne : celle que vous poussez sur GitHub. Il n'a pas besoin d'une deuxième copie dans iCloud.
+Votre code a déjà une copie en ligne, celle que vous poussez sur GitHub, et il n'a pas besoin d'une deuxième copie dans iCloud.
 
 ![Un MacBook Air affiche du code dans un éditeur](/images/articles/pexels-duncanoluwaseun-226232.webp)
 
@@ -39,9 +39,9 @@ Votre code a déjà une copie en ligne : celle que vous poussez sur GitHub. Il n
 - **Le disque de sauvegarde, branché au Mac.**
 - **Une idée de ce qui n'a pas été poussé.** Ce que vous avez poussé sur GitHub après la date de la sauvegarde se récupère avec `git pull` (étape 5). Les commits et les modifications jamais poussés n'existent que dans la copie restée sur iCloud : on les récupère avec Git à l'étape 6.
 
-Pas de sauvegarde Time Machine ? Tout ce que vous avez poussé sur GitHub y est toujours. Désactivez « Dossiers Bureau et Documents » (étape 1), puis clonez à nouveau vos dépôts dans un dossier hors d'iCloud (voir « Pour ne pas recommencer », plus bas).
+Si vous n'avez pas de sauvegarde Time Machine, tout ce que vous avez poussé sur GitHub y est toujours. Désactivez « Dossiers Bureau et Documents » (étape 1), puis clonez à nouveau vos dépôts dans un dossier hors d'iCloud (voir « Pour ne pas recommencer », plus bas).
 
-## Récupérer le dossier GitHub avec Time Machine : les 6 étapes
+## Les 6 étapes pour récupérer le dossier GitHub avec Time Machine
 
 ### 1. Désactiver « Dossiers Bureau et Documents »
 
@@ -117,7 +117,7 @@ Une fois que tout fonctionne, supprimez la copie iCloud. Elle ne sert plus à ri
 
 - **Changez le dossier de clonage de GitHub Desktop.** Au moment de cloner, remplacez `Documents/GitHub` par `~/Developer` dans le champ **Local path**. GitHub Desktop retient le dernier dossier utilisé.
 - **Réactivez « Dossiers Bureau et Documents » si vous y tenez**, une fois le code sorti de Documents.
-- **Gardez Time Machine**, c'est grâce à lui que j'ai récupéré mes dépôts. Sur un [iMac relancé avec macOS sur un SSD externe](/fr/20261014-installer-macos-ssd-externe-imac-2017), l'ancien disque interne peut même servir de disque Time Machine : c'est mieux que rien, mais ça ne remplace pas une vraie sauvegarde externe. Et poussez souvent sur GitHub : un commit poussé ne dépend plus de votre Mac.
+- **Gardez Time Machine**, c'est grâce à lui que j'ai récupéré mes dépôts. Sur un [iMac relancé avec macOS sur un SSD externe](/fr/20261014-installer-macos-ssd-externe-imac-2017), l'ancien disque interne peut même servir de disque Time Machine : c'est mieux que rien, mais ça ne remplace pas une vraie sauvegarde externe. Et poussez souvent sur GitHub, parce qu'un commit poussé ne dépend plus de votre Mac.
 
 ---
 

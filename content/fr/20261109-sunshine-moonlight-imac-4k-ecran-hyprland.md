@@ -9,7 +9,7 @@ searchIntent: "Comment utiliser un iMac Retina 4K 2017, qui n'a pas de mode d'af
 tags: ["tutoriel", "apple", "macos", "mac", "linux", "omarchy", "open-source", "matériel"]
 ---
 
-Oui, je sais, j'insiste sur le sujet, mais je trouve juste que cet ordinateur est trop beau pour le laisser prendre la poussière.
+Oui, je sais, j'insiste sur le sujet, mais je trouve que cet ordinateur est trop beau pour le laisser prendre la poussière.
 
 Voici comment faire de mon iMac Retina 4K 21,5 pouces de 2017 l'écran de mon MacBook Pro 2017 sous [Omarchy](/fr/20261013-retournement-de-veste-omarchy-macbook-pro-2017). Il faut deux logiciels gratuits, **Sunshine** sur le MacBook et **Moonlight** sur l'iMac, et un câble Thunderbolt entre les deux. Pas besoin d'ouvrir l'iMac.
 
@@ -19,14 +19,14 @@ C'est mon quatrième billet sur cet iMac, après [Sharp](/fr/20260929-sharp-viei
 
 Sur cet iMac, il n'y a pas de **mode d'affichage cible** (*Target Display Mode*). Apple le réserve à certains iMac de 2009 à mi-2014, sous macOS High Sierra ou plus ancien ([page Apple](https://support.apple.com/fr-fr/105126){target="_blank" rel="noopener"}). Aucun iMac Retina n'est sur la liste.
 
-Les ports Thunderbolt 3 de l'iMac envoient l'image vers un écran externe ([fiche technique Apple](https://support.apple.com/fr-fr/112026){target="_blank" rel="noopener"}). Ils ne la reçoivent pas. Aucun câble ni réglage ne change ça.
+Les ports Thunderbolt 3 de l'iMac envoient l'image vers un écran externe ([fiche technique Apple](https://support.apple.com/fr-fr/112026){target="_blank" rel="noopener"}), mais ils ne la reçoivent pas, et aucun câble ni réglage ne change ça.
 
 Il reste deux voies :
 
-- **le logiciel** : la méthode de ce billet. Le câble sert de liaison réseau rapide, pas de câble vidéo ;
+- **le logiciel** : la méthode de ce billet. Le câble sert de liaison réseau rapide ;
 - **le matériel** : retirer la carte mère de l'iMac et la remplacer par une carte contrôleur faite pour sa dalle. Sur ce modèle, la dalle est une LG LM215UH1-SDB1, d'après le [démontage d'iFixit](https://www.ifixit.com/Guide/iMac+Intel+21.5-Inch+Retina+4K+Display+%282017%29+Teardown/92170){target="_blank" rel="noopener"}. Vérifiez quand même l'étiquette au dos de la vôtre avant d'acheter. L'iMac devient un vrai écran 4K branché en direct, mais ce n'est plus un ordinateur.
 
-Je commence par le logiciel : c'est gratuit, et c'est réversible.
+Je commence par le logiciel, parce que c'est gratuit et réversible.
 
 ## Sunshine et Moonlight en bref
 
@@ -176,7 +176,7 @@ hyprctl output remove imac
 
 ## Sunshine et Moonlight, ou OpenDisplay ?
 
-J'ai déjà testé [OpenDisplay sur ce même MacBook sous Omarchy](/fr/20261030-opendisplay-vieil-imac-ecran-mac-linux), et il marche : l'iMac affiche bien le bureau étendu. Mais sous Linux, OpenDisplay compresse l'image avec le processeur seul. Sur mon MacBook, ses journaux montraient environ 24 ms pour compresser une image, et 60 à 100 ms entre la capture et l'envoi. Or, à 60 images par seconde, il faut en produire une toutes les 16,7 ms : le processeur ne suit pas à ce rythme.
+J'ai déjà testé [OpenDisplay sur ce même MacBook sous Omarchy](/fr/20261030-opendisplay-vieil-imac-ecran-mac-linux), et il marche : l'iMac affiche bien le bureau étendu. Mais sous Linux, OpenDisplay compresse l'image avec le processeur seul. Sur mon MacBook, ses journaux montraient environ 24 ms pour compresser une image, et 60 à 100 ms entre la capture et l'envoi. Or, à 60 images par seconde, il faut en produire une toutes les 16,7 ms, et le processeur ne suit pas à ce rythme.
 
 Sunshine, lui, peut compresser avec la puce graphique, par VA-API sur les puces Intel et AMD ([README de Sunshine](https://github.com/LizardByte/Sunshine){target="_blank" rel="noopener"}). Pour la 4K, Sunshine conseille au moins une Intel HD Graphics 510. Le MacBook Pro 2017 a une puce Intel de 7e génération (Kaby Lake), plus récente. Pour vérifier qu'elle sait compresser en HEVC, lancez `vainfo` (paquet `libva-utils`) et cherchez une ligne `VAProfileHEVCMain` suivie de `VAEntrypointEncSlice`.
 

@@ -7,7 +7,7 @@ searchIntent: "How to recover a GitHub folder on a Mac that is blocked by iCloud
 tags: ["tutorial", "apple", "macos", "icloud", "git", "dev"]
 ---
 
-> **Before we start.** To answer the questions about my new productivity: yes, I do use AI. For several months now, it has been **correcting** my articles, and above all, it fetches the illustration images from Pexels, like the ones in this post. The problem isn't AI, it's the misuse of AI. In my case, it saves me from typos and improves the front matter, the block of information at the top of each article (title, date, image, description, tags), since [this blog runs entirely on Markdown files](/en/20241021-pendaison-de-cremaillere). Not to mention that it makes it easier for me to build new features, like the carousels and audio players in [the Koala Sampler article](/en/20260822-koala-sampler-gratuit-mac-boom-bap).
+> **Before we start.** To answer the questions about my new productivity: yes, I do use AI. For several months now, it has been **correcting** my articles, and above all, it fetches the illustration images from Pexels, like the ones in this post. The problem is the misuse of AI. In my case, it saves me from typos and improves the front matter, the block of information at the top of each article (title, date, image, description, tags), since [this blog runs entirely on Markdown files](/en/20241021-pendaison-de-cremaillere). Not to mention that it makes it easier for me to build new features, like the carousels and audio players in [the Koala Sampler article](/en/20260822-koala-sampler-gratuit-mac-boom-bap).
 
 Well, I doubt a competent developer would end up with a Git repo stuck in iCloud Drive, but it's a mistake that can happen even to the most experienced.
 
@@ -29,7 +29,7 @@ Git isn't designed to work in a folder that another program changes at the same 
 - **Some files are no longer on the disk.** If "Optimize Mac Storage" is turned on and the disk is running low on space, macOS keeps some files only in iCloud. When Git needs to read them, it waits for them to download. On a slow connection, that wait can last a very long time, and the wheel spins endlessly.
 - **The repository can get corrupted.** When two versions of the same file conflict, iCloud doesn't merge them: it keeps both and renames one, for example `index 2` or `HEAD 2`. Git doesn't know what these files are, and the repository can become unreadable.
 
-Your code already has an online copy: the one you push to GitHub. It doesn't need a second copy in iCloud.
+Your code already has an online copy, the one you push to GitHub, and it doesn't need a second copy in iCloud.
 
 ![A MacBook Air showing code in an editor](/images/articles/pexels-duncanoluwaseun-226232.webp)
 
@@ -39,9 +39,9 @@ Your code already has an online copy: the one you push to GitHub. It doesn't nee
 - **The backup disk, connected to the Mac.**
 - **An idea of what was never pushed.** Whatever you pushed to GitHub after the backup date comes back with `git pull` (step 5). Commits and changes that were never pushed only exist in the copy left in iCloud: you recover them with Git in step 6.
 
-No Time Machine backup? Everything you pushed to GitHub is still there. Turn off "Desktop & Documents Folders" (step 1), then clone your repositories again into a folder outside iCloud (see "So it does not happen again", below).
+If you have no Time Machine backup, everything you pushed to GitHub is still there. Turn off "Desktop & Documents Folders" (step 1), then clone your repositories again into a folder outside iCloud (see "So it does not happen again", below).
 
-## Recover the GitHub folder with Time Machine: the 6 steps
+## The 6 steps to recover the GitHub folder with Time Machine
 
 ### 1. Turn off "Desktop & Documents Folders"
 
@@ -117,7 +117,7 @@ Once everything works, delete the iCloud copy. You don't need it any more, and i
 
 - **Change GitHub Desktop's clone folder.** When cloning, replace `Documents/GitHub` with `~/Developer` in the **Local path** field. GitHub Desktop remembers the last folder you used.
 - **Turn "Desktop & Documents Folders" back on if you want to**, once the code is out of Documents.
-- **Keep Time Machine**, it's how I got my repositories back. On an [iMac revived with macOS on an external SSD](/en/20261014-installer-macos-ssd-externe-imac-2017), the old internal drive can even serve as the Time Machine disk: better than nothing, but no substitute for a real external backup. And push to GitHub often: a pushed commit no longer depends on your Mac.
+- **Keep Time Machine**, it's how I got my repositories back. On an [iMac revived with macOS on an external SSD](/en/20261014-installer-macos-ssd-externe-imac-2017), the old internal drive can even serve as the Time Machine disk: better than nothing, but no substitute for a real external backup. And push to GitHub often, because a pushed commit no longer depends on your Mac.
 
 ---
 
