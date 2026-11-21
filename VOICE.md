@@ -21,7 +21,7 @@ Style de référence pour tous les billets à venir de Jean-Luc Houédanou, en f
 
 - Phrases longues, enchaînées avec « et », « mais », « parce que », « puisque », « alors que », avec peu de ponctuation forte. Quelques phrases très courtes pour marquer un tournant (« Bah non, moi je trouve ça trop facile. »), qui peuvent former un paragraphe à elles seules.
 - Paragraphes courts : la plupart sous 40 à 80 mots.
-- Pour un billet d'humeur, pas d'intertitres : le texte se lit d'un bloc. Les intertitres restent possibles pour un tutoriel ou un guide.
+- Tous les billets ont des intertitres, billets d'humeur compris. Ils sont courts et disent simplement le contenu de la section. On ne retire pas les intertitres d'un billet existant.
 - Une seule fois chaque idée : pas de reformulation en fin de paragraphe, pas de récapitulatif en conclusion.
 - L'ouverture pose le contexte en une ou deux phrases (« Ces derniers temps, il y a beaucoup de hype sur… »).
 - La fin est une décision ou une position personnelle, pas un résumé (« Donc voilà, … ne comptez plus sur moi pour… »).

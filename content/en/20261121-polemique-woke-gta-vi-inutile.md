@@ -11,9 +11,13 @@ Okay, let me be honest from the start, GTA VI doesn't interest me. I was plannin
 
 And on YouTube, one topic keeps coming back: GTA VI is supposedly "woke".
 
+## What the videos say
+
 There are dozens of videos and they all sound alike. The one by Locke The Bounty Hunter sums up the mood with its title, "GTA 6 Is Simp Slop", where a *simp* is a man too submissive to a woman and *slop* is cheap industrial mush. It blames the game for having too many everyday chores and not enough heists, a Jason with no charisma at Lucia's service, a kind of "submissive boyfriend simulator", and satire that supposedly lost its bite because of progressive ideas. The verdict: fans of the older games are bound to be disappointed.
 
 So yes, I know, outrage sells. On YouTube, an angry title gets more clicks than a nuanced one, furious comments count as engagement for the algorithm, and nobody shares a video that says "it's a good game with some debatable choices". In 2026, the angle that pays is called woke. I've already written that [a social network is not a grin](/en/20250605-facebook-nest-pas-un-grin), the street-corner tea circle where people actually talk, because online nobody discusses, everybody plays to the gallery, and on YouTube the gallery brings in views.
+
+## The flowers, the bed and the painting
 
 But let's look at what people actually hold against the game.
 
@@ -23,17 +27,27 @@ Another scene going around has Cal and Jason waking up in the same bed, proof fo
 
 As for the painting, held up as proof that Jason spends his time doing chores, Lucia doesn't even ask him to do it. He lives in a run-down house and he fixes it up, which makes sense for a guy coming out of a life of petty schemes. And alongside that, there are still burglaries, carjackings and stupid activities, because it's GTA, and doing the shopping between two heists doesn't stop you doing the heists.
 
+## The gay club and the sex workers
+
 Then there are those crying censorship, because you supposedly can't shoot in a gay club and you can no longer pay strippers or a sex worker, a first for the series since 2001, [as IBTimes points out](https://www.ibtimes.co.uk/gta-6-removes-sex-worker-mechanic-strip-clubs-remain-1833292). And nobody asks why.
 
 For the gay club, Leonida is Florida, and in 2016, in Orlando, a man killed 49 people at Pulse, a gay nightclub. Rockstar hasn't explained anything officially, but I can't see a studio letting players replay the worst anti-gay mass shooting in American history in the state where it happened. For sex workers, since GTA III everyone knew the mechanic, you pay and then you kill the woman to get your money back. For twenty-five years it was the example dragged out in every debate about violence in video games, and Rockstar finally removed it. Nobody will miss it, except the people making videos to say they miss it.
 
+## A game as violent as ever
+
 And don't anyone tell me the game has gone soft. Vulgarity, nudity, violence, it's all there, and it sits on a fairly tragic story, with a mother who abandons her child for a heist that goes wrong and an ex-husband in the drug trade. And like every GTA since the third one, climbing the social ladder goes through crime. GTA IV told it as a dead end, and for GTA VI, [Rockstar's narrative lead explains](https://www.gamesradar.com/games/grand-theft-auto/ahead-of-gta-6-rockstar-narrative-lead-says-the-american-dream-previous-grand-theft-auto-games-were-critical-of-is-more-modest-now-but-still-out-of-reach-for-the-average-person/) that Jason and Lucia's dream is more modest, but still out of reach for the average person.
+
+## The complaints that hold up
 
 On the other hand, there's one point where I agree with the complainers, but for different reasons. Apart from Lucia, I find the way this game portrays women disastrous. Lucia has a story, choices and anger, while the others are bodies in bikinis, dancers and sidekicks, and the official poster is enough to see it. If anyone is looking for a real criticism of GTA VI, that's where to start.
 
 For the rest, the game is gorgeous and Vice City has never looked this believable, but it runs at 30 frames per second on PS5 and Xbox Series, and [Rockstar confirmed it](https://www.tomshardware.com/video-games/grand-theft-auto-6-will-run-at-only-30-fps-on-consoles-at-launch-no-performance-mode-promised-even-the-souped-up-ps5-pro-might-not-get-60-fps-support) without promising a 60 fps mode, which you feel in a driving and shooting game. A slow game, too scripted or locked at 30 fps, that's worth discussing. "Jason buys his girlfriend flowers", no.
 
+## What I saw in the walkthrough
+
 Before writing this post, I watched [the walkthrough](https://www.youtube.com/watch?v=Ve2M5i_DSKI&t=35727s), and I understand the hype, because Vice City feels alive, the characters have a story and the missions are not just household chores. I also understand why the critics picked the flowers and the bed, since across hours of gameplay, those are the only minutes that could make a scandal.
+
+## I won't play it
 
 So there you go, I won't play it, and it has nothing to do with wokeness. My gaming evenings happen with a headset on, and the Quest 3S has better games for me, I even wrote [the list, from easiest to hardest](/en/20261008-jeux-quest-3s-recommandations). But I have no illusions left, I can ignore GTA VI, it won't ignore me.
 
