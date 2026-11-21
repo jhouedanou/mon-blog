@@ -11,7 +11,7 @@ summary: "When self-appointed experts comment on everything online, my glass of 
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/ru6yG_WxWVU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-How do you deal with unsolicited advice online and stay zen? I have a theory. But first, allow me to introduce Sandrine.
+To deal with unsolicited advice online and stay zen, I have a theory. But first, allow me to introduce Sandrine.
 Sandrine is the one who loves singing karaoke.
 
 She performs "Never Leave You" by Lumidee at karaoke with a passion inversely proportional to her talent.
@@ -75,11 +75,11 @@ The louder they get, the more hydrated your serenity becomes. It's scientificall
 
 ## The wisdom of the glass of water
 
-The real strength of the glass of water is that it keeps your hands busy. When you feel the urge to reply to an unconstructive comment, take a sip of water. At the very least, you'll be perfectly hydrated.
+The strength of the glass of water is that it keeps your hands busy. When you feel the urge to reply to an unconstructive comment, take a sip of water. At the very least, you'll be perfectly hydrated.
 
 At best, you will have avoided many unproductive debates, the kind [social media algorithms feed on](/en/20260822-oui-a-lexcision-non-diversion-rhetorique).
 
-## In conclusion
+## Withdrawing, glass of water in hand
 
 The Internet has democratised speaking up, but nobody is obliged to attend every performance. Sometimes the most appropriate response is to withdraw gracefully, glass of water in hand, leaving the others to perform alone.
 
@@ -94,4 +94,4 @@ Your enthusiasm remains admirable, even if "Never Leave You" never really recove
 N.B.: In certain circumstances, the glass of water may be garnished with fresh mint. But that's another theory altogether.
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com) — zen master of the internets*
+*[Jean-Luc Houédanou](https://houedanou.com)*

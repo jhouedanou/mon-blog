@@ -23,4 +23,4 @@ But seriously, I chose to drop WordPress for Nuxt 3. Here are a few reasons that
 The rest of the story: [the SEO I lost after the migration, and how I got it back](/en/20261018-migration-wordpress-nuxt-referencement-perdu-recupere), and [the bots that pushed my site past the Cloudflare Workers CPU limit](/en/20260922-jai-recupere-le-trafic-de-mon-blog-et-les-bots-qui-vont-avec).
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com) — tenant of the web*
+*[Jean-Luc Houédanou](https://houedanou.com)*

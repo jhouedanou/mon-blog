@@ -27,7 +27,7 @@ When I arrived at 7am, the scene was set: **a long queue**.
 
 No choice: I settled in for the wait.  
 
-## Petty corruption: a well-oiled "service"  
+## A well-oiled petty corruption "service"  
 
 After 30 minutes of waiting, I was approached by **👮🏿‍♂️ "the head of security"**, who came up to me and said in a conspiratorial tone:  
 
@@ -78,4 +78,4 @@ On the contrary, **it makes all of you late.**
 PS: at the other end of the scale, [the lady in Abobo who gave me back my lost phone](/en/20260730-telephone-perdu-retrouve-abobo-findhub) asked for nothing in return. And to send money, you don't need the counter anymore: [PI-SPI links the bank to mobile money](/en/20261105-pi-spi-bceao-banque-mobile-money-explique), and [Djamo was already doing it with Orange Money](/en/20240905-djamo-adieu-frais-de-rejet-bonjour-transferts-faciles-et-solde-discret).
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com) — amateur whistleblower*
+*[Jean-Luc Houédanou](https://houedanou.com)*

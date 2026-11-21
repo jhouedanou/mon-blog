@@ -11,7 +11,7 @@ summary: "Face aux donneurs d'avis qui commentent tout sur Internet, ma théorie
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/ru6yG_WxWVU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Rester zen sur les réseaux sociaux face aux donneurs d'avis ? J'ai une théorie. Mais d'abord, permettez-moi de vous présenter Sandrine.
+Pour rester zen sur les réseaux sociaux face aux donneurs d'avis, j'ai une théorie. Mais d'abord, permettez-moi de vous présenter Sandrine.
 Sandrine, c'est celle qui aime chanter au karaoké.
 
 Elle interprète « Never Leave You » de Lumidee au karaoké avec une passion inversement proportionnelle à son talent.
@@ -79,7 +79,7 @@ La force du verre d'eau, c'est qu'il vous occupe les mains. Lorsque la tentation
 
 Au mieux, vous aurez évité nombre de débats improductifs, ceux dont [les algorithmes des réseaux sociaux se nourrissent](/fr/20260822-oui-a-lexcision-non-diversion-rhetorique).
 
-## En conclusion
+## Se retirer, verre d'eau à la main
 
 Internet a démocratisé la prise de parole, mais nul n'est tenu d'assister à chaque représentation. Parfois, la réponse la plus appropriée consiste à se retirer élégamment, verre d'eau à la main, laissant les autres se produire en solitaire.
 
@@ -94,4 +94,4 @@ Ton enthousiasme reste admirable, même si « Never Leave You » ne s'en est jam
 N.B. : Dans certaines circonstances, le verre d'eau peut être agrémenté de menthe fraîche. Mais ceci relève d'une autre théorie.
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com) — maître zen des internets*
+*[Jean-Luc Houédanou](https://houedanou.com)*
