@@ -14,7 +14,7 @@ I never thought I'd write this article. Migrating an entire server infrastructur
 
 I've been living with cPanel/WHM for more than ten years. Like many sysadmins in West Africa, I grew up professionally with this interface. Creating an account, configuring a domain, managing databases, everything went through WHM. It was comfortable, familiar, and for a long time the price stayed reasonable.
 
-Then, in 2019, cPanel dropped its fixed licence model for a per-account system, and prices have gone up every year since. At partner rates (what cPanel charges hosting companies and licence resellers), the Solo licence was **$16/month** in 2025 and **$18** in 2026. The Pro licence (up to 30 accounts) jumped from **$27.25** to **$32**, a **17%** increase in one year ([2025-2026 partner price list, detailed by VPSBG](https://www.vpsbg.eu/blog/cpanel-price-increase-2026){target="_blank" rel="noopener"}). And list prices are worse, with Solo at **$29.99** and Pro at **$53.99** ([official cPanel pricing](https://cpanel.net/pricing/){target="_blank" rel="noopener"}), up from $26.99 and $46.99 in 2025. When you manage several dozen sites, that bill gets hard to justify.
+Then, in 2019, cPanel dropped its fixed licence model for a per-account system, and prices have gone up every year since. At partner rates (what cPanel charges hosting companies and licence resellers), the Solo licence was $16/month in 2025 and $18 in 2026. The Pro licence (up to 30 accounts) jumped from $27.25 to $32, a 17% increase in one year ([2025-2026 partner price list, detailed by VPSBG](https://www.vpsbg.eu/blog/cpanel-price-increase-2026){target="_blank" rel="noopener"}). And list prices are worse, with Solo at $29.99 and Pro at $53.99 ([official cPanel pricing](https://cpanel.net/pricing/){target="_blank" rel="noopener"}), up from $26.99 and $46.99 in 2025. When you manage several dozen sites, that bill gets hard to justify.
 
 But honestly, cPanel's price hikes alone probably wouldn't have made me move. You adapt, you adjust your quotes, you grumble a bit and you carry on. What changed everything is what happened in early 2026.
 
@@ -22,15 +22,15 @@ But honestly, cPanel's price hikes alone probably wouldn't have made me move. Yo
 
 In early January 2026, online payments with bank cards issued in the UEMOA zone (the West African Economic and Monetary Union) started failing. From January 2, Air Côte d'Ivoire and other airlines in the region were telling customers that online card sales were "temporarily suspended" ([Barid TV, January 16, 2026](https://barid.tv/2026/01/16/uemoa-le-bras-de-fer-des-paiements-en-ligne-gim-switch-defie-visa-et-mastercard/){target="_blank" rel="noopener"}). The cause was not a Trump administration measure, as I first wrote, but Decision No. 31 of GIM-UEMOA, the regional interbank group, approved by the BCEAO (the regional central bank). It requires every transaction made with a card issued in the zone, even when it goes through Visa or Mastercard, to also be routed and cleared through the regional GIM-Switch platform. Visa and Mastercard didn't comply in time. On January 29, they were given an ultimatum to comply by March 31, 2026 ([Financial Afrik, January 29, 2026](https://www.financialafrik.com/2026/01/29/uemoa-les-cartes-visa-et-mastercard-ont-90-jours-pour-se-conformer/){target="_blank" rel="noopener"}). So it was a dispute over payment sovereignty, and our bank cards were the ones that took the hit.
 
-**For me, concretely**, it was impossible to pay for the cPanel licence for almost a month. The cash was there, but cards had stopped going through. The alternatives (PayPal, Stripe) were unstable or unavailable from the UEMOA zone. And when your cPanel licence expires, WHM lets you know, politely at first, then less and less so.
+For me, concretely, it was impossible to pay for the cPanel licence for almost a month. The cash was there, but cards had stopped going through. The alternatives (PayPal, Stripe) were unstable or unavailable from the UEMOA zone. And when your cPanel licence expires, WHM lets you know, politely at first, then less and less so.
 
 The stress this generates when you manage the sites of several important clients... I'll let you imagine. Every morning, you check that the sites are still online. Every night, you wonder whether the licence will be deactivated tomorrow and whether the sites will start throwing errors.
 
-That's the context in which the decision was made, **in a hurry**.
+That's the context in which the decision was made, in a hurry.
 
 ## The migration from WHM/cPanel to CyberPanel + OpenLiteSpeed
 
-The VPS was already on Hostinger, a beefy server with **8 vCPU, 32 GB of RAM, 400 GB NVMe** on AlmaLinux 9. So the hardware was enough, and what was left to choose was the control panel.
+The VPS was already on Hostinger, a beefy server with 8 vCPU, 32 GB of RAM, 400 GB NVMe on AlmaLinux 9. So the hardware was enough, and what was left to choose was the control panel.
 
 **CyberPanel won out for three reasons:**
 
@@ -60,7 +60,7 @@ On a WordPress site running the Newspaper theme (tagDiv), here's what we measure
 | Total load time | < 1 second |
 | WordPress admin | Smooth, ~600 ms |
 
-That's a **TTFB reduction of almost 80%**. OpenLiteSpeed doesn't explain all of it, the gain comes from a combination of several factors:
+That's a TTFB reduction of almost 80%. OpenLiteSpeed doesn't explain all of it, the gain comes from a combination of several factors:
 
 - **OpenLiteSpeed** handles PHP through LSAPI, far more efficient than PHP-FPM behind Apache
 - **LiteSpeed Cache** (the WordPress plugin) natively exploits the server's capabilities, unlike generic cache plugins
@@ -114,7 +114,7 @@ CyberPanel's automatic backup feature greeted me with a lovely error message: *"
 
 This forced migration taught me that, in our trade in West Africa, **our dependence on proprietary American tools is a systemic risk.**
 
-When a dispute between a regional regulator and two American card networks can prevent you from paying your server licence for a month, when the suspension of Visa/Mastercard payments in the UEMOA zone can block your business overnight, you need a plan B. And that plan B is **open source**.
+When a dispute between a regional regulator and two American card networks can prevent you from paying your server licence for a month, when the suspension of Visa/Mastercard payments in the UEMOA zone can block your business overnight, you need a plan B. And that plan B is open source.
 
 CyberPanel and OpenLiteSpeed aren't perfect, but they are free, fast, and **nobody can cut off your access because your bank card no longer goes through.**
 
@@ -136,7 +136,7 @@ If you manage servers in French-speaking Africa and you're considering the migra
 
 Migrating from cPanel to CyberPanel wasn't in my plans, and the stress was real, and so were the sleepless nights.
 
-But today, with a **TTFB divided by five**, **zero licence fees**, and **regained independence** from international payment systems, I regret nothing.
+But today, with a TTFB divided by five, zero licence fees, and regained independence from international payment systems, I regret nothing.
 
 "Uncle Donald" turned out to have nothing to do with it, but this crisis taught me that **digital sovereignty, in Africa, starts with the choice of your tools.**
 
