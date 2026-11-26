@@ -33,6 +33,22 @@ This blog runs on Nuxt, so on Vue, since I [left WordPress](/en/20261018-migrati
 
 I've already written what I think about the [limits of vibe coding](/en/20260423-chers-vibe-codeurs-bienvenue-dans-la-realite). Generating code you can't read works until the first serious bug, and that day you need someone who knows Vue.
 
+## What I'm living through right now with vibe coding
+
+I'm living this problem at work right now. People who don't code put all their specs into Claude, ship an application, and then can't explain either the code or the features.
+
+Latest example, a "UI and UX lead" raised on Claude Code sent me an acceptance testing ticket this week, six points long, about a platform I'm developing. He wanted to know why one list only offered two trainers, why another only offered three, and why some modules didn't show up in a menu.
+
+None of these points was a bug. Each time, the answer was a business rule of the platform, for example that a trainer shows up in the list when they have a published module, or when an option is switched on in their profile. He actually ended by asking me to confirm, topic by topic, what needed a fix and what was just a setting to change in the admin.
+
+The ticket also contained new requests, introduced with "it would also be good to". I answered that they had to go through an additional specification, for a version 2 after the delivery date.
+
+There's also the one who supplies the screens and the architecture, and who, once the site is deployed in beta based on his mockup, asks me to check whether it works.
+
+No sir, that's called acceptance testing.
+
+That's why I keep learning. Someone who wrote a rule can explain it, and someone who got it from a prompt has to ask somebody else what their own application does.
+
 So yes, I know, I use Claude too.
 
 ## How I use Claude
@@ -66,7 +82,7 @@ Commits already made keep their co-author, the setting only applies to the next 
 
 ## I'm keeping both
 
-So there you go, I'm keeping Vue Mastery to learn and Claude to debug and make my commits. If you work with Vue or Nuxt and you want to understand what you deploy, [the Vue Mastery Black Friday deal](https://www.vuemastery.com/black-friday) is the right time to get started, and the free courses are enough to check that the format suits you before paying.
+So there you go, I'm keeping Vue Mastery to learn and Claude to debug and make my commits, and those who say that developing is useless are heading for difficult tomorrows. If you work with Vue or Nuxt and you want to understand what you deploy, [the Vue Mastery Black Friday deal](https://www.vuemastery.com/black-friday) is the right time to get started, and the free courses are enough to check that the format suits you before paying.
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com)*

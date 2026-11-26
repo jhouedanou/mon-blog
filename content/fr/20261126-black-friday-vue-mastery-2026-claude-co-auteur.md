@@ -33,6 +33,22 @@ Ce blog tourne sous Nuxt, donc sous Vue, depuis que j'ai [quitté WordPress](/fr
 
 J'avais déjà écrit ce que je pense des [limites du vibe coding](/fr/20260423-chers-vibe-codeurs-bienvenue-dans-la-realite). Générer du code qu'on ne sait pas lire, ça marche jusqu'au premier bug sérieux, et ce jour-là il faut bien quelqu'un qui connaît Vue.
 
+## Ce que je vis en ce moment avec le vibe coding
+
+Ce problème, je le vis en ce moment au travail. Des gens qui ne codent pas mettent toutes leurs specs dans Claude, sortent une application, et ne peuvent ensuite expliquer ni le code ni les fonctionnalités.
+
+Dernier exemple, un « lead UI et UX » biberonné à Claude Code m'a envoyé cette semaine un ticket de recette en six points sur une plateforme que je développe. Il voulait savoir pourquoi une liste ne proposait que deux formateurs, pourquoi une autre n'en proposait que trois, et pourquoi certains modules n'apparaissaient pas dans un menu.
+
+Aucun de ces points n'était un bug. À chaque fois, la réponse était une règle de gestion de la plateforme, par exemple qu'un formateur apparaît dans la liste quand il a un module publié, ou quand une option est activée sur sa fiche. Il terminait d'ailleurs en me demandant de lui confirmer, sujet par sujet, ce qui demandait une correction et ce qui relevait d'un simple paramétrage dans l'administration.
+
+Le ticket contenait aussi de nouvelles demandes, introduites par des « il faudrait également ». J'ai répondu qu'elles devaient passer par un cahier des charges additionnel, pour une version 2 après la date de livraison.
+
+Il y a aussi celui qui fournit les écrans et l'architecture, et qui, une fois le site déployé en bêta sur la base de sa maquette, me demande de vérifier si ça fonctionne.
+
+Non monsieur, ça s'appelle faire une recette.
+
+C'est pour ça que je continue d'apprendre. Celui qui a écrit une règle peut l'expliquer, et celui qui l'a obtenue avec un prompt doit demander à quelqu'un d'autre ce que fait sa propre application.
+
 Alors oui, je sais, j'utilise Claude moi aussi.
 
 ## Comment j'utilise Claude
@@ -66,7 +82,7 @@ Les commits déjà faits gardent leur co-auteur, le réglage ne vaut que pour le
 
 ## Je garde les deux
 
-Donc voilà, je garde Vue Mastery pour apprendre et Claude pour déboguer et faire mes commits. Si vous faites du Vue ou du Nuxt et que vous voulez comprendre ce que vous déployez, [l'offre Black Friday de Vue Mastery](https://www.vuemastery.com/black-friday) est le bon moment pour vous y mettre, et les cours gratuits suffisent pour vérifier que le format vous convient avant de payer.
+Donc voilà, je garde Vue Mastery pour apprendre et Claude pour déboguer et faire mes commits, et ceux qui disent que développer ne sert à rien vont au-devant de lendemains difficiles. Si vous faites du Vue ou du Nuxt et que vous voulez comprendre ce que vous déployez, [l'offre Black Friday de Vue Mastery](https://www.vuemastery.com/black-friday) est le bon moment pour vous y mettre, et les cours gratuits suffisent pour vérifier que le format vous convient avant de payer.
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com)*
