@@ -37,9 +37,9 @@ J'avais déjà écrit ce que je pense des [limites du vibe coding](/fr/20260423-
 
 Ce problème, je le vis en ce moment au travail. Des gens qui ne codent pas mettent toutes leurs specs dans Claude, sortent une application, et ne peuvent ensuite expliquer ni le code ni les fonctionnalités.
 
-Dernier exemple, un « lead UI et UX » biberonné à Claude Code m'a envoyé cette semaine un ticket de recette en six points sur une plateforme que je développe. Il voulait savoir pourquoi une liste ne proposait que deux formateurs, pourquoi une autre n'en proposait que trois, et pourquoi certains modules n'apparaissaient pas dans un menu.
+Dernier exemple, quelqu'un qui ne code pas et qui a été biberonné à Claude Code m'a envoyé récemment un ticket de recette sur un projet que je développe. Il voulait savoir pourquoi une liste ne proposait que quelques profils, et pourquoi certains contenus n'apparaissaient pas dans un menu.
 
-Aucun de ces points n'était un bug. À chaque fois, la réponse était une règle de gestion de la plateforme, par exemple qu'un formateur apparaît dans la liste quand il a un module publié, ou quand une option est activée sur sa fiche. Il terminait d'ailleurs en me demandant de lui confirmer, sujet par sujet, ce qui demandait une correction et ce qui relevait d'un simple paramétrage dans l'administration.
+Aucun de ces points n'était un bug. À chaque fois, la réponse était une règle de gestion du projet, par exemple qu'un profil apparaît dans la liste quand il a un contenu publié, ou quand une option est activée sur sa fiche. Il terminait d'ailleurs en me demandant de lui confirmer, sujet par sujet, ce qui demandait une correction et ce qui relevait d'un simple paramétrage dans l'administration.
 
 Le ticket contenait aussi de nouvelles demandes, introduites par des « il faudrait également ». J'ai répondu qu'elles devaient passer par un cahier des charges additionnel, pour une version 2 après la date de livraison.
 

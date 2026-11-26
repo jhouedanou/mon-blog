@@ -37,9 +37,9 @@ I've already written what I think about the [limits of vibe coding](/en/20260423
 
 I'm living this problem at work right now. People who don't code put all their specs into Claude, ship an application, and then can't explain either the code or the features.
 
-Latest example, a "UI and UX lead" raised on Claude Code sent me an acceptance testing ticket this week, six points long, about a platform I'm developing. He wanted to know why one list only offered two trainers, why another only offered three, and why some modules didn't show up in a menu.
+Latest example, someone who doesn't code and who was raised on Claude Code recently sent me an acceptance testing ticket about a project I'm developing. He wanted to know why a list only offered a few profiles, and why some content didn't show up in a menu.
 
-None of these points was a bug. Each time, the answer was a business rule of the platform, for example that a trainer shows up in the list when they have a published module, or when an option is switched on in their profile. He actually ended by asking me to confirm, topic by topic, what needed a fix and what was just a setting to change in the admin.
+None of these points was a bug. Each time, the answer was a business rule of the project, for example that a profile shows up in the list when it has published content, or when an option is switched on in its record. He actually ended by asking me to confirm, topic by topic, what needed a fix and what was just a setting to change in the admin.
 
 The ticket also contained new requests, introduced with "it would also be good to". I answered that they had to go through an additional specification, for a version 2 after the delivery date.
 
