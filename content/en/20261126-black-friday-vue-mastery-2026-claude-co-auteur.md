@@ -1,7 +1,7 @@
 ---
 title: "Vue Mastery Black Friday 2026, 70% off a year of Vue.js"
 createdAt: "2026-11-26T09:00:00Z"
-image: "/images/articles/vue-mastery-black-friday-2026.webp"
+image: "/images/articles/pexels-nemuel-6424590.webp"
 description: "Black Friday 2026 at Vue Mastery: 70% off a year of Vue.js courses. Why I use it, and how Claude made itself co-author of my commits."
 searchIntent: "What is the Vue Mastery Black Friday 2026 deal, what does the subscription include, and how do you remove the Claude Code Co-Authored-By line from commits?"
 tags: ["dev", "vue", "black friday", "Claude Code", "ai"]
@@ -93,6 +93,8 @@ In my case, that line doesn't bother me that much anymore, because I understand 
 So there you go, I'm keeping Vue Mastery to learn and Claude to debug and make my commits. If you work with Vue or Nuxt and you want to understand what you deploy, [the Vue Mastery Black Friday deal](https://www.vuemastery.com/black-friday) is the right time to get started, and the free courses are enough to check that the format suits you before paying.
 
 As for those who say that developing is useless, they are heading for difficult tomorrows.
+
+_Photo: [Nemuel Sereti](https://www.pexels.com/@nemuel/){target="_blank" rel="noopener"}, on Pexels._
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com), lead author of his own commits*

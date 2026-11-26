@@ -1,7 +1,7 @@
 ---
 title: "Vue Mastery Black Friday 2026, 70 % de réduction sur Vue.js"
 createdAt: "2026-11-26T09:00:00Z"
-image: "/images/articles/vue-mastery-black-friday-2026.webp"
+image: "/images/articles/pexels-nemuel-6424590.webp"
 description: "Black Friday 2026 chez Vue Mastery : 70 % de réduction sur un an de cours Vue.js. Pourquoi je m'en sers, et comment Claude s'est mis co-auteur de mes commits."
 searchIntent: "Quelle est l'offre Black Friday 2026 de Vue Mastery, que contient l'abonnement, et comment retirer la ligne Co-Authored-By de Claude Code dans les commits ?"
 tags: ["dev", "vue", "black friday", "Claude Code", "ia"]
@@ -41,7 +41,7 @@ Aucun de ces points n'était un bug. À chaque fois, la réponse était une règ
 
 Il y a aussi celui qui fournit les écrans et l'architecture et qui, une fois le site déployé en bêta sur la base de sa maquette, me demande de vérifier si ça fonctionne.
 
-Non monsieur, ça s'appelle faire une recette, et c'est votre responsabilité, en tant que chef de projet.
+Non monsieur, ça s'appelle faire une recette, et c'est ta responsabilité, en tant que chef de projet.
 
 Je passerai sur ce cas où on me donne un brief généré par ChatGPT, sans le point final, c'est-à-dire l'écran que le client obtient une fois qu'il a payé. Bref, qu'est-ce que vous donnez au client quand il a payé ?
 
@@ -93,6 +93,8 @@ Dans mon cas, cette ligne ne me gêne plus tant que ça, parce que je comprends 
 Donc voilà, je garde Vue Mastery pour apprendre et Claude pour déboguer et faire mes commits. Si vous faites du Vue ou du Nuxt et que vous voulez comprendre ce que vous déployez, [l'offre Black Friday de Vue Mastery](https://www.vuemastery.com/black-friday) est le bon moment pour vous y mettre, et les cours gratuits suffisent pour vérifier que le format vous convient avant de payer.
 
 Quant à ceux qui disent que développer ne sert à rien, ils vont au-devant de lendemains difficiles.
+
+_Photo : [Nemuel Sereti](https://www.pexels.com/@nemuel/){target="_blank" rel="noopener"}, sur Pexels._
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com), auteur principal de ses commits*
