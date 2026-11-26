@@ -9,7 +9,7 @@ tags: ["tutorial", "africa", "tech", "security", "canalbox"]
 
 When a Canal+ Afrique CanalBox gets installed, the technician leaves you with a Wi-Fi password printed on a sticker under the router. That's handy on day one. Six months later, that password has been handed to visiting cousins, to the neighbour "just for one evening", and to that repairman who took a picture of it to "test the connection". Your speed suffers, and you have no idea who is connected.
 
-Changing it takes five minutes, and you don't need to call customer service. Here's how.
+Changing it takes five minutes, and you don't need to call customer service.
 
 From a device connected to the box's Wi-Fi, open my.canalbox.africa, log in with the router's serial number, then go to **My box** > **Wi-Fi**, change the **Wi-Fi Passphrase** field and click **Save**.
 

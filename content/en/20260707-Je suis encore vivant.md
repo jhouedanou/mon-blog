@@ -62,7 +62,7 @@ I fired up [Koala Sampler](/en/20260822-koala-sampler-gratuit-mac-boom-bap) agai
 
 Then came the moment when everything seemed about to fall apart.
 
-**10:41pm: Nothing deploys anymore.** The deployment quota is reached on the platform, naturally at the worst possible moment, with a pile of crucial fixes waiting to go to production.
+**10:41pm: Nothing deploys anymore.** The deployment quota is reached on the platform, naturally at the worst possible moment, with a pile of important fixes waiting to go to production.
 
 No time to wait until tomorrow, so I pull out the prepaid card to switch to the paid tier and unblock the situation. Except it's [impossible to get my local cards accepted](/en/20260327-cpanel-cyberpanel-migration) in the United States, and the system refuses the transaction.
 

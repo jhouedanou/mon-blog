@@ -79,7 +79,7 @@ Ces gens ne sont pas fous. Il y a une logique derrière leurs publications, et e
 
 Ils occupent une position plus qu'ils ne défendent une conviction. Sur un réseau social, un avis vaut par sa rareté, quelle que soit sa justesse, et comme tout le monde est contre l'excision, dire « je suis contre » ne rapporte rien. 
 
-**Dire l'inverse vous place seul contre tous, donc visible, et cette visibilité rapporte.**
+Dire l'inverse vous place seul contre tous, donc visible, et cette visibilité rapporte.
 
 Tout cela fonctionne à l'indignation, parce que l'algorithme ne distingue pas l'approbation de la colère, il voit de l'engagement et il pousse. Chaque « mais tu es malade ? » augmente gratuitement l'audience de celui qu'il insulte. Voilà pourquoi ces comptes ne cherchent jamais à convaincre, puisque convaincre mettrait fin à la conversation et que c'est la conversation qui leur rapporte.
 
@@ -91,7 +91,7 @@ Et surtout, il y a le sentiment que ça ne coûte rien. Derrière un pseudo ou u
 
 On a donc une mutilation encouragée en ligne pour un seul bénéfice, des abonnés.
 
-**Voilà l'économie du « oui à l'excision »**, des gens qui monnayent la douleur d'enfants qu'ils ne connaissent pas contre de la visibilité qu'ils ne garderont pas. C'est du commerce bien plus que de l'idéologie.
+Voilà l'économie du « oui à l'excision », des gens qui monnayent la douleur d'enfants qu'ils ne connaissent pas contre de la visibilité qu'ils ne garderont pas. C'est du commerce bien plus que de l'idéologie.
 
 Il n'y a ici ni camp à ménager ni nuance à trouver. Il y a des enfants, une lame, et des adultes qui décident à leur place devant un public.
 

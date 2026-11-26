@@ -29,7 +29,7 @@ What you should know before you jump in, from [Apple's announcement](https://www
 
 - If you were already paying for Apple TV or Apple Arcade separately, Apple cancels those subscriptions. There is no interruption, access now comes through iCloud+.
 - Full Apple Music still costs extra: $2.79 a month for iCloud+ subscribers ($4.49 for a family).
-- You don't need an Apple device for Apple TV: the app also runs on smart TVs and game consoles. Apple Arcade, on the other hand, stays limited to iPhone, [iPad](/en/20250615-ipados26), Mac and Apple TV 4K.
+- You don't need an Apple device for Apple TV, since the app also runs on smart TVs and game consoles. Apple Arcade, on the other hand, stays limited to iPhone, [iPad](/en/20250615-ipados26), Mac and Apple TV 4K.
 - The offer is reaching more than 100 countries, including Senegal, Mali, Morocco and Nigeria, [according to Appleosophy](https://appleosophy.com/2026/09/15/icloud-plans-will-soon-include-apple-tv-and-apple-arcade-in-several-countries/). With it, Apple TV becomes available in 170 countries.
 
 And the funny part is that the United States and the European Union countries [are not included](https://appleosophy.com/2026/09/15/icloud-plans-will-soon-include-apple-tv-and-apple-arcade-in-several-countries/). Over there, Apple TV on its own cost [$12.99 a month](https://www.macrumors.com/2025/10/13/apple-tv-plus-rebrand/) at the end of 2025. Here, we get Apple TV, Apple Arcade and 50GB of storage for $0.99. For once, West Africa isn't last in line.

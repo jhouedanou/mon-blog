@@ -32,7 +32,7 @@ brew install --cask puremac
 
 Otherwise you can download the `.dmg`, signed and notarised by Apple, straight from the [Releases page on GitHub](https://github.com/momenbasel/PureMac/releases/latest) (version 3.1.0 as of October 8, 2026), then drag the app into `/Applications`. Since it's notarised, there's no Gatekeeper warning to work around.
 
-The project is fully open-source: the [developer's repository is on GitHub](https://github.com/momenbasel/PureMac).
+The [developer's repository is on GitHub](https://github.com/momenbasel/PureMac).
 
 And if you'd rather build it yourself from source:
 

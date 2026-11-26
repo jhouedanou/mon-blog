@@ -42,11 +42,9 @@ Dans ce métier, un compte Google ou Microsoft donne la main sur :
 
 La compromission d'un seul de ces comptes suffit à désindexer un site, détourner son trafic, épuiser un budget publicitaire ou, au pire, prendre le contrôle complet de la présence en ligne d'une organisation. Pour un professionnel qui administre plusieurs sites clients, tous ses clients sont exposés d'un coup.
 
-Le plus inquiétant, c'est le canal de diffusion. L'attaquant a payé Google Ads pour passer devant le site officiel de Microsoft. C'est le principe du *malvertising* : acheter un mot-clé pour occuper la première position, en pariant que la plupart des internautes cliquent sur le premier lien sans vérifier l'URL.
+Le plus inquiétant, c'est que l'attaquant a payé Google Ads pour passer devant le site officiel de Microsoft. C'est le principe du *malvertising* : acheter un mot-clé pour occuper la première position, en pariant que la plupart des internautes cliquent sur le premier lien sans vérifier l'URL.
 
 ## Comment repérer un faux Bing Webmaster Tools
-
-Trois règles simples suffisent :
 
 - **Vérifier systématiquement l'URL.** L'adresse officielle est `bing.com/webmasters`. Si le domaine n'est ni `microsoft.com` ni `bing.com`, fermez l'onglet. `camp.recettee.com` n'a jamais hébergé un service Microsoft.
 - **Ne pas se fier aux boutons de connexion.** Bing Webmaster Tools accepte réellement les comptes Microsoft, Google et Facebook, donc une page de phishing peut afficher exactement les mêmes options. Seul le domaine dans la barre d'adresse fait foi.

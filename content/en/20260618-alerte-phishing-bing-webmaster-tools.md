@@ -42,11 +42,9 @@ In this line of work, a Google or Microsoft account controls:
 
 Compromising a single one of these accounts is enough to deindex a site, hijack its traffic, drain an ad budget or, at worst, take complete control of an organisation's online presence. For a professional managing several client sites, every client is exposed at once.
 
-The most worrying part is the distribution channel. The attacker paid Google Ads to get ahead of Microsoft's official site. That's how *malvertising* works: buy a keyword to occupy the top spot, betting that most people click the first link without checking the URL.
+What worries me most is that the attacker paid Google Ads to get ahead of Microsoft's official site. That's how *malvertising* works: buy a keyword to occupy the top spot, betting that most people click the first link without checking the URL.
 
 ## How to spot Bing Webmaster Tools phishing
-
-Three simple rules are enough:
 
 - **Always check the URL.** The official address is `bing.com/webmasters`. If the domain is neither `microsoft.com` nor `bing.com`, close the tab. `camp.recettee.com` has never hosted a Microsoft service.
 - **Don't trust the sign-in buttons.** Bing Webmaster Tools accepts Microsoft, Google and Facebook accounts, so a phishing page can display exactly the same options. Only the domain in the address bar can be trusted.

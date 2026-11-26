@@ -47,7 +47,7 @@ If you have no Time Machine backup, everything you pushed to GitHub is still the
 
 Open the Apple menu, then **System Settings**. Click your name, then **iCloud**. Click **Drive** (or **iCloud Drive**, depending on your version of macOS), turn off **Desktop & Documents Folders**, then click **Done** ([Apple](https://support.apple.com/en-us/126628){target="_blank" rel="noopener"}).
 
-Your files don't disappear: they stay in iCloud Drive, and macOS creates new Desktop and Documents folders on your Mac. Your Documents folder becomes a local folder again, one that iCloud no longer syncs. That's where Time Machine will put the GitHub folder back.
+Your files don't disappear, they stay in iCloud Drive, and macOS creates new Desktop and Documents folders on your Mac. Your Documents folder becomes a local folder again, one that iCloud no longer syncs. That's where Time Machine will put the GitHub folder back.
 
 ### 2. Open Time Machine on the Documents folder
 
@@ -76,7 +76,7 @@ git status
 
 `git status` checks that the repository can be read and shows the modified files. If there are none, a plain `git pull` fetches from GitHub everything that was pushed after the backup date. In GitHub Desktop, the **Fetch origin** then **Pull origin** buttons do the same thing.
 
-If there are modified files, set them aside first: otherwise, Git refuses the `git pull` as soon as one of those files has also changed on GitHub.
+If there are modified files, set them aside first, otherwise Git refuses the `git pull` as soon as one of those files has also changed on GitHub.
 
 ```bash
 git stash push --include-untracked
@@ -88,7 +88,7 @@ git stash pop
 
 ### 6. Recover unpushed work, then delete the iCloud copy
 
-The old copy of your repositories is still in iCloud Drive, under **Documents > GitHub**. If you had work that was never pushed to GitHub, that's where it is. Don't copy its files over the restored repository: you would overwrite the newer versions that `git pull` just brought back, and lose the history of your commits.
+The old copy of your repositories is still in iCloud Drive, under **Documents > GitHub**. If you had work that was never pushed to GitHub, that's where it is. Don't copy its files over the restored repository, because you would overwrite the newer versions that `git pull` just brought back, and lose the history of your commits.
 
 **For commits that were never pushed**, let Git recover them. From the restored repository, replace `main` with the name of your branch and run:
 

@@ -62,7 +62,7 @@ J'ai relancé [Koala Sampler](/fr/20260822-koala-sampler-gratuit-mac-boom-bap), 
 
 Puis est arrivé le moment où tout semblait vouloir se casser la figure.
 
-**22 h 41 : Plus rien ne se déploie.** Le quota de déploiements est atteint sur la plateforme, évidemment au pire moment possible, alors qu'une pile de correctifs cruciaux attend de passer en production.
+**22 h 41 : Plus rien ne se déploie.** Le quota de déploiements est atteint sur la plateforme, évidemment au pire moment possible, alors qu'une pile de correctifs importants attend de passer en production.
 
 Pas le temps d'attendre le lendemain, je sors la carte prépayée pour basculer sur l'offre payante et débloquer la situation. Sauf qu'il est [impossible de faire accepter mes cartes locales](/fr/20260327-cpanel-cyberpanel-migration) aux États-Unis, et le système refuse la transaction.
 

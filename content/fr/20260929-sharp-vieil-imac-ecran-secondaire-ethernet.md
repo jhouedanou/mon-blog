@@ -28,7 +28,7 @@ Il restait donc des solutions avec du matériel dédié (comme le boîtier Luna 
 
 ## Ce que fait Sharp
 
-Sharp a été créé par le développeur **Amine Rostane**. La première version, Sharp 1.0 Beta 1, est sortie le 24 septembre 2026, et l'application est toujours en bêta. Voici ce qu'elle propose :
+Sharp a été créé par le développeur Amine Rostane. La première version, Sharp 1.0 Beta 1, est sortie le 24 septembre 2026, et l'application est toujours en bêta. Voici ce qu'elle propose :
 
 - **deux Mac reliés par un câble Ethernet**, en direct (sans box ni routeur) ou branchés tous les deux sur le même switch ;
 - depuis la bêta 2, un **câble Thunderbolt** marche aussi (via le pont Thunderbolt de macOS), et Sharp le préfère à l'Ethernet ;
@@ -41,7 +41,7 @@ Sharp a été créé par le développeur **Amine Rostane**. La première version
 
 Le nom *Sharp* veut dire « net » en anglais, et c'est le point fort de l'application.
 
-Au départ, le problème est qu'un câble Ethernet classique (gigabit) est trop lent pour envoyer l'image brute. Une image 4K à 60 images par seconde demande environ **douze fois** plus de débit, il faut donc compresser.
+Au départ, le problème est qu'un câble Ethernet classique (gigabit) est trop lent pour envoyer l'image brute. Une image 4K à 60 images par seconde demande environ douze fois plus de débit, il faut donc compresser.
 
 La compression vidéo (H.264) suffit pour un film, mais sur du texte ou du code, elle rend les lettres floues et les bords baveux.
 

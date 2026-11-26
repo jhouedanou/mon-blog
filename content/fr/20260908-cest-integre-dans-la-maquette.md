@@ -83,7 +83,7 @@ Un jeton d'API n'est pas une donnée de projet. Il ne se transmet pas dans un li
 
 ## Des dépendances et des dates
 
-Sur ce genre de dossier, j'ai longtemps répondu par de l'analyse : des mails argumentés, précis, avec des titres, des puces et des annexes, qui expliquaient pourquoi telle chose bloquait telle autre. Personne ne les lisait. En retour, j'avais droit au grand classique : « Je ne vois pas trop, on peut faire un call pour en parler ? ». J'ai déjà consacré [un article entier à cette réunion « pour en parler »](/fr/20260326-lareunionpourenparler), qui ressemble à « c'est intégré », puisque dans les deux cas on préfère l'oral parce qu'à l'écrit, on peut vérifier.
+Sur ce genre de dossier, j'ai longtemps répondu par de l'analyse, avec des mails argumentés, précis, avec des titres, des puces et des annexes, qui expliquaient pourquoi telle chose bloquait telle autre. Personne ne les lisait. En retour, j'avais droit au grand classique : « Je ne vois pas trop, on peut faire un call pour en parler ? ». J'ai déjà consacré [un article entier à cette réunion « pour en parler »](/fr/20260326-lareunionpourenparler), qui ressemble à « c'est intégré », puisque dans les deux cas on préfère l'oral parce qu'à l'écrit, on peut vérifier.
 
 Ce qui marche est plus court et moins fatigant : des dépendances et des dates.
 

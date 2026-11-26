@@ -31,9 +31,9 @@ Okay, not like a plane, since it has no wings and it won't fly you from Abidjan 
 
 Here's what it did during the demo:
 
-- It drove up a ramp until it was **upside down**. Fans suck the air from under the car and hold it against the ramp.
+- It drove up a ramp until it was upside down. Fans suck the air from under the car and hold it against the ramp.
 - It launched into the air, spun around, and landed gently.
-- It jumped over **five Tesla vehicles**: a Cybercab, a Cybertruck, a Semi, a Model Y and a Model 3.
+- It jumped over five Tesla vehicles: a Cybercab, a Cybertruck, a Semi, a Model Y and a Model 3.
 
 It owes that to SpaceX thrusters, cold-gas thrusters that blow out compressed air. On the wildest version, there are ten of them all around the car, connected to 600 liters of compressed air, according to Lars Moravy, Tesla's vice president of engineering. The more air, the longer the car stays in the air, and the tanks can be refilled.
 

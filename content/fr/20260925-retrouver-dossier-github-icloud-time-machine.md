@@ -47,7 +47,7 @@ Si vous n'avez pas de sauvegarde Time Machine, tout ce que vous avez poussé sur
 
 Ouvrez le menu Apple, puis **Réglages Système**. Cliquez sur votre nom, puis sur **iCloud**. Cliquez sur **Drive** (ou **iCloud Drive**, selon votre version de macOS), décochez **Dossiers Bureau et Documents**, puis cliquez sur **Terminé** ([Apple](https://support.apple.com/fr-fr/126628){target="_blank" rel="noopener"}).
 
-Vos fichiers ne disparaissent pas : ils restent dans iCloud Drive, et macOS crée de nouveaux dossiers Bureau et Documents sur votre Mac. Votre dossier Documents redevient un dossier local, qu'iCloud ne synchronise plus. C'est là que Time Machine va remettre le dossier GitHub.
+Vos fichiers ne disparaissent pas, ils restent dans iCloud Drive, et macOS crée de nouveaux dossiers Bureau et Documents sur votre Mac. Votre dossier Documents redevient un dossier local, qu'iCloud ne synchronise plus. C'est là que Time Machine va remettre le dossier GitHub.
 
 ### 2. Ouvrir Time Machine sur le dossier Documents
 
@@ -67,7 +67,7 @@ Comme le chemin n'a pas changé, GitHub Desktop retrouve vos dépôts. S'il affi
 
 ### 5. Remettre les dépôts à jour
 
-La sauvegarde date d'avant l'incident : il manque donc les commits poussés sur GitHub depuis. Pour chaque dépôt, ouvrez le Terminal et lancez :
+La sauvegarde date d'avant l'incident, il manque donc les commits poussés sur GitHub depuis. Pour chaque dépôt, ouvrez le Terminal et lancez :
 
 ```bash
 cd ~/Documents/GitHub/nom-du-projet
@@ -76,7 +76,7 @@ git status
 
 `git status` vérifie que le dépôt est lisible et montre les fichiers modifiés. S'il n'y en a pas, un simple `git pull` récupère depuis GitHub tout ce qui a été poussé après la date de la sauvegarde. Dans GitHub Desktop, les boutons **Fetch origin** puis **Pull origin** font la même chose.
 
-S'il y a des fichiers modifiés, mettez-les d'abord de côté : sinon, Git refuse le `git pull` dès qu'un de ces fichiers a aussi changé sur GitHub.
+S'il y a des fichiers modifiés, mettez-les d'abord de côté, sinon Git refuse le `git pull` dès qu'un de ces fichiers a aussi changé sur GitHub.
 
 ```bash
 git stash push --include-untracked
@@ -88,7 +88,7 @@ git stash pop
 
 ### 6. Récupérer le travail non poussé, puis supprimer la copie iCloud
 
-L'ancienne copie de vos dépôts est toujours dans iCloud Drive, dans **Documents > GitHub**. Si vous aviez du travail jamais poussé sur GitHub, c'est là qu'il se trouve. Ne recopiez pas ses fichiers par-dessus le dépôt restauré : vous écraseriez les versions plus récentes ramenées par `git pull`, et vous perdriez l'historique de vos commits.
+L'ancienne copie de vos dépôts est toujours dans iCloud Drive, dans **Documents > GitHub**. Si vous aviez du travail jamais poussé sur GitHub, c'est là qu'il se trouve. Ne recopiez pas ses fichiers par-dessus le dépôt restauré, parce que vous écraseriez les versions plus récentes ramenées par `git pull`, et vous perdriez l'historique de vos commits.
 
 **Pour les commits jamais poussés**, laissez Git les récupérer. Depuis le dépôt restauré, remplacez `main` par le nom de votre branche et lancez :
 

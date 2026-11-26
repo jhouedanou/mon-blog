@@ -31,9 +31,9 @@ Bon, pas comme un avion, puisqu'elle n'a pas d'ailes et qu'elle ne va pas vous e
 
 Voilà ce qu'elle a fait pendant la démo :
 
-- Elle a monté une rampe jusqu'à rouler **la tête en bas**. Des ventilateurs aspirent l'air sous la voiture et la collent à la rampe.
+- Elle a monté une rampe jusqu'à rouler la tête en bas. Des ventilateurs aspirent l'air sous la voiture et la collent à la rampe.
 - Elle s'est lancée en l'air, a tourné sur elle-même, et s'est posée en douceur.
-- Elle a sauté par-dessus **cinq véhicules Tesla** : un Cybercab, un Cybertruck, un Semi, un Model Y et un Model 3.
+- Elle a sauté par-dessus cinq véhicules Tesla : un Cybercab, un Cybertruck, un Semi, un Model Y et un Model 3.
 
 Elle le doit à des propulseurs de SpaceX, des propulseurs à gaz froid qui soufflent de l'air comprimé. Sur la version la plus folle, il y en a dix tout autour de la voiture, reliés à 600 litres d'air comprimé, selon Lars Moravy, vice-président de l'ingénierie chez Tesla. Plus il y a d'air, plus la voiture reste en l'air longtemps, et les réservoirs se rechargent.
 

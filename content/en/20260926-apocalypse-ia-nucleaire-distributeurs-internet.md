@@ -15,8 +15,6 @@ Tech companies themselves are warning about the danger. In late August, the same
 
 When the companies that build AI, the ones that run the internet and the ones that process your card payments all sign the same text, I take it seriously.
 
-Here are three scenarios, and what they have already produced without AI.
-
 ## 1. Nuclear weapons and false alarms
 
 On 26 September 1983, shortly after midnight, the Soviet early-warning system reports an American nuclear missile heading for the USSR, then four more.

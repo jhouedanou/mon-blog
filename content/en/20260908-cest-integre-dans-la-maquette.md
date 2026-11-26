@@ -83,7 +83,7 @@ An API token is not project data. It isn't passed along in a deliverable, it isn
 
 ## Dependencies and dates
 
-On this kind of project, I spent a long time answering with analysis: well-argued, precise emails, with headings, bullet points and appendices, explaining why this blocked that. Nobody read them. In return, I got the all-time classic: "I don't really see it, can we do a call to talk about it?". I've already devoted [an entire article to that meeting "to talk about it"](/en/20260326-lareunionpourenparler), which is a lot like "it's been integrated", since in both cases people prefer talking because in writing, you can check.
+On this kind of project, I spent a long time answering with analysis, in well-argued, precise emails, with headings, bullet points and appendices, explaining why this blocked that. Nobody read them. In return, I got the all-time classic: "I don't really see it, can we do a call to talk about it?". I've already devoted [an entire article to that meeting "to talk about it"](/en/20260326-lareunionpourenparler), which is a lot like "it's been integrated", since in both cases people prefer talking because in writing, you can check.
 
 What works is shorter and less tiring: dependencies and dates.
 
