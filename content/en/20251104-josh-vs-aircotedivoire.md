@@ -16,7 +16,7 @@ This analysis comes from respect for both parties, which is exactly why I think 
 
 ## Josh Cahill Meets Air Côte d'Ivoire (And Drama Ensues)
 
-Josh Cahill, renowned aviation vlogger, recently published a video recounting his latest adventures with Air Côte d'Ivoire. This video triggered a major online controversy, sparking passionate reactions from fans and critics alike. It must be said that Josh didn't mince words about his experience with the Ivorian airline.
+Josh Cahill, a well-known aviation vlogger, recently published a video recounting his latest adventures with Air Côte d'Ivoire. This video triggered a major online controversy, with passionate reactions from fans and critics alike. It must be said that Josh didn't mince words about his experience with the Ivorian airline.
 
 ## It's A SCAM.
 

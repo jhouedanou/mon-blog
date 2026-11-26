@@ -9,14 +9,14 @@ tags: ["tech"]
 summary: "Infinix Watch 3 or Oraimo Nova AM: which one to pick depending on what matters to you, design, notifications or the health app."
 ---
 
-Although both brands belong to the giant **Transsion Holdings** and their prices are close, the Infinix Watch 3 and the Oraimo Nova AM are not quite aimed at the same audience: the Infinix bets on design, the Oraimo on notifications and a more solid app. Here's my comparison to help you choose.
+Although both brands belong to the giant Transsion Holdings and their prices are close, the Infinix Watch 3 and the Oraimo Nova AM are not quite aimed at the same audience: the Infinix bets on design, the Oraimo on notifications and a more solid app. Here's my comparison to help you choose.
 
 ---
 
 ## 1. Design and screen
 
-* **Infinix Watch 3:** Its design is its main asset. With a look inspired by high-end watches like the **Huawei Watch GT**, it stands out on the wrist. Its round shape makes it look like a "real" watch. Its high-resolution screen adds to the impression of quality.
-* **Oraimo Nova AM:** Fitted with a high-resolution **AMOLED** screen, it offers deep blacks, vivid colours and a very smooth display. Its curved glass is elegant, but the style is more "tech gadget" than the Infinix.
+* **Infinix Watch 3:** Its design is its main asset. With a look inspired by high-end watches like the Huawei Watch GT, it stands out on the wrist. Its round shape makes it look like a "real" watch. Its high-resolution screen adds to the impression of quality.
+* **Oraimo Nova AM:** Fitted with a high-resolution AMOLED screen, it offers deep blacks, vivid colours and a very smooth display. Its curved glass is elegant, but the style is more "tech gadget" than the Infinix.
 
 On design, the Infinix clearly wins: the Oraimo looks more like an Apple Watch knock-off.
 
@@ -29,7 +29,7 @@ They differ most on this point.
 
 ## 3. Sport and health
 
-Both watches offer the classic features: heart rate tracking, SpO2, sleep tracking and sports modes. But the **Oraimo Health** app is better optimised, more stable, and syncs data better with third-party services than Infinix's **My Health** app, which remains fairly basic. (For tracking weight and workouts, I built [my own fitness app](/en/20250508-project-fat-loss).)
+Both watches offer the classic features: heart rate tracking, SpO2, sleep tracking and sports modes. But the Oraimo Health app is better optimised, more stable, and syncs data better with third-party services than Infinix's My Health app, which remains fairly basic. (For tracking weight and workouts, I built [my own fitness app](/en/20250508-project-fat-loss).)
 
 ---
 

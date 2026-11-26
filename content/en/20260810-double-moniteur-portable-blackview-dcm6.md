@@ -12,9 +12,9 @@ I can't remember the last time I worked on a single screen, at home or on the ro
 
 ## Why a dual screen?
 
-The thing is, when I code (and I code often… everywhere… all the time), I need immediate visual feedback, so I can check how my lines of code render in the web browser. 
+When I code (and I code often… everywhere… all the time), I need immediate visual feedback, so I can check how my lines of code render in the web browser. 
 
-At the same time, I also need to look at documentation or the fixes Claude suggests, and juggling between macOS "spaces" or Windows "virtual desktops" is no substitute for being able to **see everything at once**, because with every desktop switch there are tiny breaks in attention.
+At the same time, I also need to look at documentation or the fixes Claude suggests, and juggling between macOS "spaces" or Windows "virtual desktops" is no substitute for being able to see everything at once, because with every desktop switch there are tiny breaks in attention.
 
 ## My existing solutions (and their limits)
 
@@ -31,7 +31,7 @@ I had 3 solutions until now, each with its share of compromises.
 
 ## The portable dual monitor
 
-My curiosity was piqued by a device that takes a different approach: instead of a screen placed *next to* the laptop, it's **two screens that unfold on either side of the main display**, on a mount fixed to the back of the laptop. 
+My curiosity was piqued by a device that takes a different approach: instead of a screen placed *next to* the laptop, it's two screens that unfold on either side of the main display, on a mount fixed to the back of the laptop. 
 
 It looks like a dual-screen desktop setup, but in a portable version.
 
@@ -45,7 +45,7 @@ First, setup is simple (no drivers required, except in one specific case I descr
 - one USB-C + one HDMI;
 - one HDMI + one USB-A (cable and driver supplied in that last case).
 
-My 13" MacBook Pro only has **two Thunderbolt 3 ports**. With both screens taking them up entirely, there's nothing left for power. Fortunately, the unit's 100 W reverse charging lets power pass through the same device, provided you have a charger of at least 65 W (for the cable, see [which USB-C cable to choose to charge a MacBook Pro](/en/20241021-2-non-ce-cable-de-240w-ne-chargera-pas-plus-vite-votre)).
+My 13" MacBook Pro only has two Thunderbolt 3 ports. With both screens taking them up entirely, there's nothing left for power. Fortunately, the unit's 100 W reverse charging lets power pass through the same device, provided you have a charger of at least 65 W (for the cable, see [which USB-C cable to choose to charge a MacBook Pro](/en/20241021-2-non-ce-cable-de-240w-ne-chargera-pas-plus-vite-votre)).
 
 
 Next, on the road, my layout is always the same:
@@ -54,7 +54,7 @@ Next, on the road, my layout is always the same:
 - **Centre screen** (the laptop): terminal and code editor. That's where my eyes are 90% of the time.
 - **Right screen**: browser, docs, app preview.
 
-That's exactly the setup I have at my desk, and I can now recreate it anywhere. **The gain is continuity of the working environment**, more than raw display area.
+That's exactly the setup I have at my desk, and I can now recreate it anywhere. The gain is continuity of the working environment, more than raw display area.
 
 Finally, the hinge is barely a worry: the supplied kickstand takes the weight of the whole thing and transfers it to the table.
 
@@ -68,7 +68,7 @@ First, **the footprint.** Once unfolded, this device turns a laptop into a lapto
 **Panel quality.** Next to a MacBook screen, it doesn't hold up: different colour rendering from the main display, lower brightness. 
 But for code, it's fine. 
 
-**Resolution.** This is the most solid criticism in my view: **1080p on 14 inches** stings when you're coming from a Retina display. Text looks less sharp and, for the same reading comfort, you fit less on screen.
+**Resolution.** This is the most solid criticism in my view: 1080p on 14 inches stings when you're coming from a Retina display. Text looks less sharp and, for the same reading comfort, you fit less on screen.
 
 **Battery.** With two screens to power, you feel it right away when you're not plugged in, whatever the health of your battery. So you need to plan for a backup charger, or a USB-C power bank of at least 100 W.
 
@@ -82,7 +82,7 @@ The answer depends on a single question: **do you often work away from your usua
 
 The 1080p remains a compromise, one I feel every day. Setting up and packing away takes a minute, which is nothing when you're settling in for half a day, but a lot for twenty minutes of work.
 
-So it's **neither a revolution nor a gadget, but a niche tool that answers a specific need well**. 
+So it's neither a revolution nor a gadget, but a niche tool that answers a specific need well. 
 
 Mine is being able to see everything at once, without juggling virtual desktops, and with decent reading comfort.
 

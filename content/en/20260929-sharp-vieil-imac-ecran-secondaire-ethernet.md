@@ -28,7 +28,7 @@ That left solutions with dedicated hardware (like the Luna Display dongle), paid
 
 ## What Sharp does
 
-Sharp was built by developer **Amine Rostane**. The first version, Sharp 1.0 Beta 1, came out on 24 September 2026, and the app is still in beta. Here's what it offers:
+Sharp was built by developer Amine Rostane. The first version, Sharp 1.0 Beta 1, came out on 24 September 2026, and the app is still in beta. Here's what it offers:
 
 - **two Macs linked by an Ethernet cable**, directly (no box or router needed) or both wired to the same switch;
 - since beta 2, a **Thunderbolt cable** works too (through macOS's Thunderbolt Bridge), and Sharp prefers it over Ethernet;
@@ -41,7 +41,7 @@ Sharp was built by developer **Amine Rostane**. The first version, Sharp 1.0 Bet
 
 As the name says, text stays sharp, and that's the app's main strength.
 
-The starting problem is that a standard (gigabit) Ethernet link is too slow to send the raw picture. 4K at 60 frames per second needs about **twelve times** more bandwidth, so the picture has to be compressed.
+The starting problem is that a standard (gigabit) Ethernet link is too slow to send the raw picture. 4K at 60 frames per second needs about twelve times more bandwidth, so the picture has to be compressed.
 
 Video compression (H.264) is fine for a film, but on text or code, it makes letters blurry and edges smudgy.
 

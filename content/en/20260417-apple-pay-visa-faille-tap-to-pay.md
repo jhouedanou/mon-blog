@@ -35,7 +35,7 @@ The problem is that this mode deliberately switches off the usual protections, a
 
 The researchers use two off-the-shelf NFC devices: a Proxmark, which pretends to be a payment terminal to the iPhone, and an NFC-enabled Android phone (not even rooted), which pretends to be an iPhone to a real terminal.
 
-The two devices are linked together: in their tests, the Proxmark was plugged into a laptop over USB, and the laptop relayed the messages over Wi-Fi to the Android phone ([researchers' page](https://practical_emv.gitlab.io/){target="_blank" rel="noopener"}). So the phone and the terminal think they are talking directly to each other, while everything passes through the researchers, who can read and **modify** the data in transit.
+The two devices are linked together: in their tests, the Proxmark was plugged into a laptop over USB, and the laptop relayed the messages over Wi-Fi to the Android phone ([researchers' page](https://practical_emv.gitlab.io/){target="_blank" rel="noopener"}). So the phone and the terminal think they are talking directly to each other, while everything passes through the researchers, who can read and modify the data in transit.
 
 ### Act 2: Fooling the iPhone
 
@@ -45,7 +45,7 @@ The iPhone thinks it's paying for a $2 ride.
 
 ### Act 3: Fooling the terminal
 
-This step is more technical. The researchers **flip a few bits** in the transaction data: among other things, they set the flag that tells the terminal the cardholder has already authenticated on the phone (Face ID or passcode). The terminal therefore reads a retail purchase, let's say $10,000, and approves it as if it had received all the required verifications.
+This step is more technical. The researchers flip a few bits in the transaction data: among other things, they set the flag that tells the terminal the cardholder has already authenticated on the phone (Face ID or passcode). The terminal therefore reads a retail purchase, let's say $10,000, and approves it as if it had received all the required verifications.
 
 The phone said yes because it thought it was paying for a bus, the terminal said yes because it thought the user had authenticated, and the money is gone without anybody noticing anything.
 
@@ -53,13 +53,11 @@ The phone said yes because it thought it was paying for a bus, the terminal said
 
 ## Why Visa and not Mastercard?
 
-The answer lies in architectural choices.
-
 **Mastercard** requires **asymmetric cryptography** (digital signatures) on its online transactions. In practice, cryptographically signed data cannot be modified in transit without the tampering being detected. Change one bit, the signature becomes invalid, the transaction is rejected.
 
 **Visa**, on the other hand, **does not mandate that layer for online retail transactions**. The data travels, but it is not "sealed" end to end in the same way. That absence is what makes the bit manipulation described above possible.
 
-Visa made an **architectural choice** here that trades a layer of security for simplicity and compatibility, and there is no bug in its code.
+Visa made an architectural choice here that trades a layer of security for simplicity and compatibility, and there is no bug in its code.
 
 ---
 
@@ -100,7 +98,7 @@ Either way, check a suspicious charge on your bank statement, never through a ph
 
 ## What this says about our relationship with security
 
-What strikes me in this story, more than the sophistication of the attack, is the **constant tension between convenience and security** that manufacturers and payment networks have to deal with.
+What strikes me in this story, more than the sophistication of the attack, is the constant tension between convenience and security that manufacturers and payment networks have to deal with.
 
 Express Transit is convenient, and the fact that Visa is accepted everywhere is a strength, but those advantages are what make the flaw possible. It's the same with [the iPhone and AirTag that tell your boss where you've been](/en/20250705-cherscommerciaux), where what makes your life easier also keeps a record of your movements.
 

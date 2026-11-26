@@ -9,7 +9,7 @@ tags: ["tutoriel", "afrique", "tech", "sécurité", "canalbox"]
 
 Quand on installe une CanalBox de Canal+ Afrique, le technicien vous laisse avec un mot de passe Wi-Fi imprimé sur une étiquette collée sous le routeur. C'est pratique le premier jour. Six mois plus tard, ce mot de passe a été donné aux cousins de passage, au voisin « juste pour une soirée », et à ce réparateur qui l'a photographié pour « tester la connexion ». Votre débit s'en ressent, et vous n'avez aucune idée de qui est connecté.
 
-Le changer prend cinq minutes, et vous n'avez pas besoin d'appeler le service client. Voici comment faire.
+Le changer prend cinq minutes, et vous n'avez pas besoin d'appeler le service client.
 
 Depuis un appareil connecté au Wi-Fi de la box, ouvrez my.canalbox.africa, identifiez-vous avec le numéro de série du routeur, puis allez dans **My box** > **Wi-Fi**, changez le champ **Wi-Fi Passphrase** et cliquez sur **Save**.
 

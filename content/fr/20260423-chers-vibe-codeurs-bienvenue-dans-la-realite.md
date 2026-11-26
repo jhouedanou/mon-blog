@@ -18,7 +18,7 @@ Les commentateurs appellent ça un *welcome to the league moment*, « Bienvenue 
 
 Bronny tourne aujourd'hui à 2,9 points, 0,5 rebond et 1,2 passe décisive par match en saison régulière, en 42 matchs joués. Ce sont des stats de bout de banc. Le kid a une marge de progression, c'est indéniable, il est jeune, athlétique, il a l’ADN. Mais s'il est dans le roster des Lakers, c'est d'abord parce que LeBron James a mis la pression sur la franchise pour jouer avec son fils. Si Bronny s'appelait Bronny Smith (au lieu de James), il serait en G-League à South Bay et personne n'en parlerait.
 
-Et si le talent ne suit pas, si la progression stagne, si le seul argument reste le nom de famille, Bronny aura une carrière à la Smush Parker. Smush, c'était le meneur titulaire des Lakers en 2005-2007, 9 points de moyenne en carrière, 5 saisons, 6 équipes, puis direction la Chine et l'oubli. Le genre de joueur dont Kobe disait qu'il n'avait « pas le droit de lui adresser la parole ».
+Et si le talent ne suit pas, si la progression stagne, si le seul argument reste le nom de famille, Bronny aura une carrière à la Smush Parker. Smush, c'était le meneur titulaire des Lakers en 2005-2007, 9 points de moyenne en carrière, 5 saisons, 6 équipes, puis direction la Chine et l'oubli. Le genre de joueur à qui Kobe aurait dit, d'après Smush lui-même, qu'il n'avait « pas le droit de lui adresser la parole ».
 
 Vous voyez où je veux en venir.
 

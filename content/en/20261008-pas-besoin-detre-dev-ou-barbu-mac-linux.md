@@ -37,7 +37,7 @@ macOS already ships with its own protection, and it asks you for nothing:
 
 There's no license to renew and no flashing orange window trying to sell you the Premium version.
 
-A word of caution though: "no antivirus to set up" doesn't mean "no viruses". In August 2026, Microsoft dissected a campaign targeting Macs with fake download pages: you're asked to paste a command into Terminal, and that command installs a password stealer ([Microsoft](https://www.microsoft.com/en-us/security/blog/2026/08/05/macos-clickfix-campaign-learned-hide/){target="_blank" rel="noopener"}). No protection survives someone running the command themselves. So never paste a command because a web page tells you to. It's the same reflex as with the [fake Bing Webmaster Tools page](/en/20260618-alerte-phishing-bing-webmaster-tools) or the [fake Zoho renewal email](/en/20260831-faux-mail-renouvellement-zoho-358-dollars).
+A word of caution though: "no antivirus to set up" doesn't mean "no viruses". In August 2026, Microsoft dissected a campaign targeting Macs with fake download pages, where you're asked to paste into Terminal a command that installs a password stealer ([Microsoft](https://www.microsoft.com/en-us/security/blog/2026/08/05/macos-clickfix-campaign-learned-hide/){target="_blank" rel="noopener"}). No protection survives someone running the command themselves. So never paste a command because a web page tells you to. It's the same reflex as with the [fake Bing Webmaster Tools page](/en/20260618-alerte-phishing-bing-webmaster-tools) or the [fake Zoho renewal email](/en/20260831-faux-mail-renouvellement-zoho-358-dollars).
 
 ### Installing an app is child's play
 

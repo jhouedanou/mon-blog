@@ -141,7 +141,7 @@ The next day, Cloudflare sent me the same email again. Granted, it covers the la
 
 Rather than adding yet another exception, I asked myself what this Worker was for, since every page is already generated in advance, and it wasn't for much. The site is now published as a set of static files, with no program behind it. Cloudflare serves the pages, applies the redirects for the old addresses and returns the 404 page on its own, and that work has no CPU limit on the free plan.
 
-There's one trade-off: the old WordPress addresses now return 404 instead of 410. For Google the difference is slim, it will forget them anyway, just a little more slowly. The firewall rules stay in place: they still spare the site from serving pages to bots that will do nothing with them.
+The trade-off is that the old WordPress addresses now return 404 instead of 410. For Google the difference is slim, it will forget them anyway, just a little more slowly. The firewall rules stay in place, and they still spare the site from serving pages to bots that will do nothing with them.
 
 ---
 

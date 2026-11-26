@@ -31,7 +31,7 @@ J'ai ouvert Claude Code dans le terminal, à qui je confie mes problèmes depuis
 
 ### Elle bippe, mais n'imprime rien
 
-Un scan Bluetooth la trouve tout de suite : `A401S-545974`, icône « imprimante ». Quand on lui demande ses services, elle annonce à la fois :
+Un scan Bluetooth la trouve tout de suite : `A401S-XXXXXX`, icône « imprimante ». Quand on lui demande ses services, elle annonce à la fois :
 
 - le **profil port série** classique (SPP, `0x1101`) ;
 - plusieurs services **Bluetooth basse consommation** (`18f0`, `fee7`, `ff00`…).
@@ -40,7 +40,7 @@ La plupart des petites imprimantes thermiques comprennent l'**ESC/POS**, le lang
 
 ```python
 s = socket.socket(socket.AF_BLUETOOTH, socket.SOCK_STREAM, socket.BTPROTO_RFCOMM)
-s.connect(("28:D4:1E:54:59:74", 1))
+s.connect(("28:D4:1E:XX:XX:XX", 1))
 ```
 
 La connexion passe sans appairage. Claude envoie une image en ESC/POS (`GS v 0`) et… deux bips, mais pas une ligne imprimée. Même chose en largeur A4 complète, même chose avec une commande de fin de page.
@@ -134,7 +134,7 @@ Une bande de test passe alors de plusieurs dizaines de Ko à **8 Ko, envoyés en
 
 ```bash
 a401s-print --status
-#  Imprimante : zjiang A401S (A401S-545974, 28:D4:1E:54:59:74)
+#  Imprimante : zjiang A401S (A401S-XXXXXX, 28:D4:1E:XX:XX:XX)
 #  État       : prête
 #  Batterie   : 31 %
 

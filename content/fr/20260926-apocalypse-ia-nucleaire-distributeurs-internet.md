@@ -15,8 +15,6 @@ Les entreprises de la tech elles-mêmes préviennent du danger. Fin août, la m�
 
 Quand les entreprises qui fabriquent l'IA, celles qui font tourner internet et celles qui font passer vos paiements par carte signent le même texte, je le prends au sérieux.
 
-Voici trois scénarios, et ce qu'ils ont déjà donné sans IA.
-
 ## 1. Le nucléaire et les fausses alertes
 
 Le 26 septembre 1983, un peu après minuit, le système d'alerte soviétique signale un missile nucléaire américain en route vers l'URSS, puis quatre autres.

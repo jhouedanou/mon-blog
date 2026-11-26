@@ -141,7 +141,7 @@ Le lendemain, Cloudflare m'a renvoyé le même courriel. Certes, il porte sur le
 
 Plutôt que d'ajouter une exception de plus, je me suis demandé à quoi servait ce Worker, puisque toutes les pages sont déjà générées à l'avance, et il ne servait pas à grand-chose. Le site est donc maintenant publié comme un ensemble de fichiers statiques, sans programme derrière. Cloudflare sert les pages, applique les redirections des anciennes adresses et renvoie la page 404 tout seul, et ce travail-là n'a pas de limite de CPU sur le plan gratuit.
 
-Il y a une contrepartie : les anciennes adresses WordPress répondent désormais 404 au lieu de 410. Pour Google, la différence est mince, il les oubliera quand même, juste un peu moins vite. Les règles de pare-feu restent en place, elles évitent toujours de servir des pages à des robots qui n'en feront rien.
+En contrepartie, les anciennes adresses WordPress répondent désormais 404 au lieu de 410. Pour Google, la différence est mince, il les oubliera quand même, juste un peu moins vite. Les règles de pare-feu restent en place, elles évitent toujours de servir des pages à des robots qui n'en feront rien.
 
 ---
 

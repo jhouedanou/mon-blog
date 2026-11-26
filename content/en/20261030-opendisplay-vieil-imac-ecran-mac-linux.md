@@ -115,7 +115,7 @@ The sender records a virtual screen, compresses it into video and sends it, then
 | Default | Fast | 2560 × 1440 | about 58 | about 12 ms |
 | 1600 × 900 | Best | 1600 × 900 | about 55 | about 15 ms |
 
-So at full sharpness, the 5K iMac shows 30 frames per second. Fine for reading and writing, less so for video. To get 60 frames per second, you accept a softer picture (**Fast**) or a smaller desktop. With an older chip, you get less: an M1 Pro drops to about 23 frames per second at 5K.
+So at full sharpness, the 5K iMac shows 30 frames per second. Fine for reading and writing, less so for video. To get close to 60 frames per second, you accept a softer picture (**Fast**) or a smaller desktop. With an older chip, you get less: an M1 Pro drops to about 23 frames per second at 5K.
 
 **4. An Intel Mac limits the resolution.** HEVC, the sharper format, is only used when the sending Mac has an Apple chip and the iMac decodes HEVC (most Macs from 2017 on). Otherwise it is H.264, capped at 4096 × 2304 pixels. On a 5K iMac, the desktop then drops from 2560 × 1440 to 2048 × 1152 points. On the other hand, a non-Retina 1920 × 1080 iMac gets its picture pixel for pixel, at 60 frames per second.
 

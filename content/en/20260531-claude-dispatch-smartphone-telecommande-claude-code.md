@@ -16,7 +16,7 @@ There's a bug in prod, a client calling back, a meeting in 20 minutes on the oth
 
 You could resign yourself to it, call it "office life" and grumble your way through it. That's not my approach. In the rare cases where I don't [block these late requests](/en/20261028-whatsapp-nest-pas-un-moyen-de-communication-professionnel) (*yes, blocked. I'm a professional, but I have a life. And experience shows that messages sent at 6pm sharp are never real emergencies, just a way of looking like a "hard worker who never lets go", otherwise known by a name my good upbringing prevents me from writing here*), I go home, switch on the MacBook, and let Claude Code run so I can deliver without sacrificing my wellbeing.
 
-I owe this workflow to **Remote Control**, the Claude Code feature I loosely called Dispatch in the first version of this post. **Dispatch** proper is its equivalent on the Cowork side, in the Claude Desktop app ([MacStories tried it](https://www.macstories.net/stories/hands-on-with-claude-dispatch-for-cowork/)). The principle of [Remote Control](https://code.claude.com/docs/en/remote-control) is to turn your smartphone into a remote control for your active Claude Code session.
+I owe this workflow to Remote Control, the Claude Code feature I loosely called Dispatch in the first version of this post. Dispatch proper is its equivalent on the Cowork side, in the Claude Desktop app ([MacStories tried it](https://www.macstories.net/stories/hands-on-with-claude-dispatch-for-cowork/)). The principle of [Remote Control](https://code.claude.com/docs/en/remote-control) is to turn your smartphone into a remote control for your active Claude Code session.
 
 ## What Claude Code Remote Control does
 

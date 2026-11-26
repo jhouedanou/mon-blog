@@ -39,7 +39,7 @@ Vercel isn't bad, but it's built for funded startups more than for African devel
 
 ## Why Cloudflare Pages?
 
-Okay, first, **Cloudflare isn't perfect**, but for what I do, it's the best free value for money I've found.
+Okay, first, Cloudflare isn't perfect, but for what I do, it's the best free value for money I've found.
 
 Here's why:
 
@@ -179,7 +179,7 @@ And while you're at it, 301-redirect your old addresses. On this blog, I only di
 
 ### 3. **The `wrangler.toml`**
 
-This one cost me **hours** going round in circles between cryptic error messages and a buggy Cloudflare dashboard.
+This one cost me hours going round in circles between cryptic error messages and a buggy Cloudflare dashboard.
 
 **First error**: my `wrangler.toml` had a `[site]` config with `bucket = "./dist"`, a leftover from the old Workers Sites method. So Wrangler was looking for a `workers-site/index.js` file that didn't exist:
 
@@ -281,7 +281,7 @@ Make sure Cloudflare has the right permissions on your repo. If your build gets 
 | Ease of setup | ⭐⭐⭐ | ⭐ (4 errors and one `echo` later) |
 | Support | Good | Excellent |
 
-I gained **zero financial stress**, with **the same or better performance**.
+I gained zero financial stress, with the same or better performance.
 
 ---
 
@@ -293,7 +293,7 @@ To be thorough:
 - **Netlify**: Solid, full SSR, free plan with 300 credits (bandwidth is counted in credits). A good alternative to Cloudflare.
 - **Render**: Free but the service "sleeps" after inactivity. Not ideal for a blog.
 
-But up against those three, **Cloudflare Pages wins every time**.
+But up against those three, Cloudflare Pages wins every time.
 
 ---
 

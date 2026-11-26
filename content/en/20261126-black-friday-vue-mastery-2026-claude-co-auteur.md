@@ -45,6 +45,14 @@ No sir, that's called acceptance testing.
 
 Someone who wrote a rule can explain it, while someone who got it from a prompt has to ask somebody else what their own application does, and that's why I keep learning.
 
+## Rap went through the same thing
+
+Hip-hop has known the lyrical dexterity of Treach, the sample manipulations of RZA and DJ Premier, the mixing excellence of Dr. Dre, the creative madness of Timbaland, the versatility and adaptability of Just Blaze. They all have passion and talent in common.
+
+Then [FL Studio](/en/20261026-lemon-studio-clone-fl-studio), Auto-Tune and MIDI loops became available to everyone, and we got copies of sub-copies of Shawty Redd, some Sexyy Reds, in short pieces of crap who are only there for the money and who carve out niches for themselves.
+
+Vibe coding has the same problem. It produces fast, and it chases money.
+
 ## How I use Claude
 
 So yes, I know, I use Claude too. But my use is Opus, in VS Code, and for two things. I give it the code that doesn't work so it finds the bug, and I let it make the commits automatically, with the message that goes with them.

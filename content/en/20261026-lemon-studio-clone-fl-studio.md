@@ -59,7 +59,7 @@ AI makes copying easy, but not quality or originality. That's my opinion.
 
 I finally found the time to try Lemon Studio, and it's very far from FL Studio.
 
-- **VST3 plugins aren't supported.** The documentation lists them as usable, but on my setup, they don't work.
+- **VST3 plugins don't work on my setup.** Yet the documentation lists them as usable.
 - **My favorite plugin crashes.** Inphonik's RX1200, an emulation of the SP-1200 sampler, crashes as soon as I edit a sample.
 
 ## MorningDAW, if you're looking for a free music app

@@ -79,7 +79,7 @@ These people are not mad. There's a logic behind their posts, and it comes from 
 
 They occupy a position more than they hold a conviction. On a social network, an opinion is worth its rarity, whether it's correct or not, and since everyone is against FGM, saying "I'm against it" earns nothing. 
 
-**Saying the opposite puts you alone against everyone, and therefore visible, and that visibility pays.**
+Saying the opposite puts you alone against everyone, and therefore visible, and that visibility pays.
 
 All of this runs on outrage, because the algorithm doesn't tell approval from anger, it sees engagement and it pushes. Every "are you sick or what?" grows, for free, the audience of the person it insults. That's why these accounts never try to convince anyone, since convincing would end the conversation and the conversation is what pays them.
 
@@ -91,7 +91,7 @@ And above all, there's the feeling that it costs nothing. Behind a handle or a p
 
 So what we have is a mutilation encouraged online for a single benefit, followers.
 
-**That is the economy of "yes to FGM"**, people trading the pain of children they don't know for visibility they won't keep. It's commerce far more than ideology.
+That is the economy of "yes to FGM", people trading the pain of children they don't know for visibility they won't keep. It's commerce far more than ideology.
 
 There's neither a side to spare nor a nuance to find here. There are children, a blade, and adults deciding on their behalf in front of an audience.
 

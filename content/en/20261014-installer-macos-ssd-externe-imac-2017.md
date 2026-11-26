@@ -9,7 +9,7 @@ tags: ["tutorial", "apple", "macos", "mac", "hardware", "ssd"]
 
 I had a 2017 iMac sitting abandoned in a corner, the kind of machine you stop turning on because it takes a very long time to boot and opening Safari becomes painful.
 
-The cause, almost every time, is the internal drive, and you don't need to open the iMac to replace it, you just install macOS on an **external SSD** and boot from it. I went with a 1 TB **Lexar SL500** and installed **macOS Ventura** on it. Since then, the iMac boots faster. Here's how to do it, step by step.
+The cause, almost every time, is the internal drive, and you don't need to open the iMac to replace it, you just install macOS on an external SSD and boot from it. I went with a 1 TB Lexar SL500 and installed macOS Ventura on it. Since then, the iMac boots faster. Here's how to do it, step by step.
 
 ![A 2017 iMac booting from a 1 TB external SSD plugged in over USB-C](/images/articles/imac-2017-macos-ssd-externe.webp)
 
@@ -24,7 +24,7 @@ A 5,400 rpm hard drive is slow. Seagate advertises "up to 140 MB/s" for its own,
 
 ## Why an external SSD rather than an internal one
 
-Replacing the internal drive of a 2017 iMac is possible, but the display is **glued** to the chassis, you have to pry it off, glue it back on, and you risk breaking it.
+Replacing the internal drive of a 2017 iMac is possible, but the display is glued to the chassis, you have to pry it off, glue it back on, and you risk breaking it.
 
 An external SSD has three advantages:
 
@@ -59,7 +59,7 @@ So on this iMac, a 20 Gbps SSD won't go any faster than a 10 Gbps SSD. Here are 
 | [Lexar SL500](https://americas.lexar.com/product/lexar-sl500-portable-ssd/){target="_blank" rel="noopener"} | USB 3.2 Gen 2x2 (20 Gbps) | 2,000 MB/s | about 1,000 MB/s |
 | [Lexar Armor 700](https://americas.lexar.com/product/lexar-armor-700-portable-ssd/){target="_blank" rel="noopener"} | USB 3.2 Gen 2x2 (20 Gbps) | 2,000 MB/s | about 1,000 MB/s |
 
-The 2,000 MB/s models use a standard (USB 3.2 Gen 2x2) that Macs don't support. Lexar even warns that performance may be lower on a Mac ([SL500 product page](https://americas.lexar.com/product/lexar-sl500-portable-ssd/){target="_blank" rel="noopener"}). On the 2017 iMac, they fall back to 10 Gbps: TechRadar's review measured the SL500 at about 1,000 MB/s on macOS ([TechRadar](https://www.techradar.com/pro/lexar-sl500-portable-ssd-review){target="_blank" rel="noopener"}). That's the case with my SL500: on this iMac, it can't go any faster than an ES3. If you're buying an SSD just for this iMac, a 10 Gbps model is enough.
+The 2,000 MB/s models use a standard (USB 3.2 Gen 2x2) that Macs don't support. Lexar even warns that performance may be lower on a Mac ([SL500 product page](https://americas.lexar.com/product/lexar-sl500-portable-ssd/){target="_blank" rel="noopener"}). On the 2017 iMac, they fall back to 10 Gbps: TechRadar's review measured the SL500 at about 1,000 MB/s on macOS ([TechRadar](https://www.techradar.com/pro/lexar-sl500-portable-ssd-review){target="_blank" rel="noopener"}). That's the case with my SL500, which on this iMac can't go any faster than an ES3. If you're buying an SSD just for this iMac, a 10 Gbps model is enough.
 
 ## Which macOS to install
 

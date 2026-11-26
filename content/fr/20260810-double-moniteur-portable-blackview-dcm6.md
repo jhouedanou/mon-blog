@@ -14,7 +14,7 @@ Je ne me souviens plus de la dernière fois où j'ai travaillé sur un seul écr
 
 En effet, quand je code (et je code souvent… partout… tout le temps), j'ai besoin d'un retour visuel immédiat, afin de vérifier le rendu de mes lignes de code dans le navigateur web.
 
-En parallèle, je dois également consulter de la doc ou les corrections suggérées par Claude, et jongler entre les « spaces » ou les « bureaux virtuels » de macOS et Windows ne remplace pas le fait de pouvoir **tout voir en même temps**, parce qu'entre chaque changement de bureau, il y a des mini coupures d’attention.
+En parallèle, je dois également consulter de la doc ou les corrections suggérées par Claude, et jongler entre les « spaces » ou les « bureaux virtuels » de macOS et Windows ne remplace pas le fait de pouvoir tout voir en même temps, parce qu'entre chaque changement de bureau, il y a des mini coupures d’attention.
 
 ## Mes solutions existantes (et leurs limites)
 
@@ -31,7 +31,7 @@ J’avais 3 solutions jusqu’à présent, chacune ayant son lot de compromis.
 
 ## Le double moniteur portable
 
-Ma curiosité a été piquée par un dispositif qui propose de solutionner le problème autrement : au lieu d'un écran posé *à côté*, ce sont **deux écrans qui se déploient de part et d'autre de l'écran principal**, sur un support fixé au dos du laptop. 
+Ma curiosité a été piquée par un dispositif qui propose de solutionner le problème autrement : au lieu d'un écran posé *à côté*, ce sont deux écrans qui se déploient de part et d'autre de l'écran principal, sur un support fixé au dos du laptop. 
 
 Cela ressemble à un double écran de bureau, mais en version portable.
 
@@ -45,7 +45,7 @@ Premièrement, l'installation est simple (pas de pilote requis, sauf dans un cas
 - un USB-C + un HDMI ;
 - un HDMI + un USB-A (câble et pilote fournis dans ce dernier cas).
 
-Mon MacBook Pro 13" n'a que **deux ports Thunderbolt 3**. Les deux écrans les occupant entièrement, il ne reste plus rien pour l'alimentation. Heureusement, la charge inversée 100 W de l'ensemble permet de faire passer le courant par le même dispositif, à condition d'avoir un chargeur de 65 W minimum (côté câble, voyez [quel câble USB-C choisir pour charger un MacBook Pro](/fr/20241021-2-non-ce-cable-de-240w-ne-chargera-pas-plus-vite-votre)).
+Mon MacBook Pro 13" n'a que deux ports Thunderbolt 3. Les deux écrans les occupant entièrement, il ne reste plus rien pour l'alimentation. Heureusement, la charge inversée 100 W de l'ensemble permet de faire passer le courant par le même dispositif, à condition d'avoir un chargeur de 65 W minimum (côté câble, voyez [quel câble USB-C choisir pour charger un MacBook Pro](/fr/20241021-2-non-ce-cable-de-240w-ne-chargera-pas-plus-vite-votre)).
 
 
 Ensuite, en déplacement, ma disposition est toujours la même :
@@ -54,7 +54,7 @@ Ensuite, en déplacement, ma disposition est toujours la même :
 - **Écran central** (le laptop) : terminal et éditeur de code. C'est là que sont mes yeux 90 % du temps.
 - **Écran droit** : navigateur, doc, preview de l'appli.
 
-C'est exactement la configuration que j'ai sur mon bureau fixe, et je peux maintenant la reproduire ailleurs. **Le gain, c'est la continuité de l'environnement de travail**, plus que la surface d'affichage brute.
+C'est exactement la configuration que j'ai sur mon bureau fixe, et je peux maintenant la reproduire ailleurs. Le gain, c'est la continuité de l'environnement de travail, plus que la surface d'affichage brute.
 
 Enfin, côté charnière, peu voire aucune inquiétude, la béquille fournie reprend le poids de l'ensemble et le reporte sur la table.
 
@@ -68,7 +68,7 @@ En premier, **l'encombrement.** Une fois déplié, ce dispositif transforme un l
 **La qualité des dalles.** Face à un écran de MacBook, ça ne tient pas la comparaison : colorimétrie différente de l'écran principal, luminosité plus faible. 
 Mais pour du code, ça va. 
 
-**La résolution.** C'est le reproche le plus solide à mes yeux : **du 1080p sur du 14 pouces**, ça pique quand on vient d'un écran Retina. Le texte paraît moins net et, à confort de lecture égal, on affiche moins de choses.
+**La résolution.** C'est le reproche le plus solide à mes yeux : du 1080p sur du 14 pouces, ça pique quand on vient d'un écran Retina. Le texte paraît moins net et, à confort de lecture égal, on affiche moins de choses.
 
 **La batterie.** Deux écrans à alimenter, ça se sent immédiatement si vous n'êtes pas branché, et ce peu importe l'état de santé de votre batterie. Il faut donc prévoir un chargeur de secours, ou un powerbank USB-C de 100 W minimum.
 
@@ -82,7 +82,7 @@ La réponse dépend d'une seule question : **est-ce que vous travaillez souvent 
 
 Le 1080p reste un compromis, que je ressens tous les jours. Le montage/démontage prend une minute, ce qui n'est rien quand on s'installe pour une demi-journée, mais beaucoup pour vingt minutes de travail.
 
-Donc ce n'est **ni une révolution ni un gadget, mais un outil de niche qui répond bien à un besoin précis**. 
+Donc ce n'est ni une révolution ni un gadget, mais un outil de niche qui répond bien à un besoin précis. 
 
 Le mien, c'est de pouvoir tout voir en même temps, sans jongler entre les bureaux virtuels, et avec un confort de lecture correct.
 

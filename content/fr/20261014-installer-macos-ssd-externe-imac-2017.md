@@ -9,7 +9,7 @@ tags: ["tutoriel", "apple", "macos", "mac", "matériel", "ssd"]
 
 J'avais un iMac 2017 abandonné dans un coin, le genre de machine qu'on n'allume plus parce qu'elle met très longtemps à démarrer et qu'ouvrir Safari devient pénible.
 
-La cause, presque toujours, c'est le disque interne, et pas besoin d'ouvrir l'iMac pour le changer, il suffit d'installer macOS sur un **SSD externe** et de démarrer dessus. Moi, j'ai pris un **Lexar SL500** de 1 To, et j'y ai installé **macOS Ventura**. Depuis, l'iMac démarre plus rapidement. Voici comment faire, étape par étape.
+La cause, presque toujours, c'est le disque interne, et pas besoin d'ouvrir l'iMac pour le changer, il suffit d'installer macOS sur un SSD externe et de démarrer dessus. Moi, j'ai pris un Lexar SL500 de 1 To, et j'y ai installé macOS Ventura. Depuis, l'iMac démarre plus rapidement. Voici comment faire, étape par étape.
 
 ![Un iMac 2017 démarre sur un SSD externe de 1 To branché en USB-C](/images/articles/imac-2017-macos-ssd-externe.webp)
 
@@ -20,11 +20,11 @@ Sauf si un SSD avait été choisi en option à l'achat, l'iMac 2017 sortait de l
 - un **disque dur de 1 To à 5 400 tr/min** sur le 21,5 pouces d'entrée de gamme et sur le 21,5 pouces 4K à 3,0 GHz ;
 - un **Fusion Drive** (un petit SSD associé à un disque dur) sur le 21,5 pouces 4K à 3,4 GHz et sur tous les 27 pouces 5K.
 
-Un disque dur à 5 400 tr/min est lent : Seagate annonce « jusqu'à 140 Mo/s » pour les siens, et c'est un maximum ([fiche Seagate](https://www.seagate.com/www-content/datasheets/pdfs/barracuda-2-5-DS1907-2-1907US-en_US.pdf){target="_blank" rel="noopener"}). En pratique, on tourne plutôt autour de 100 Mo/s. Mais le problème vient surtout du fait que macOS lit et écrit en permanence des milliers de petits fichiers éparpillés. Pour ça, un disque dur est très lent, parce que sa tête de lecture doit se déplacer à chaque fois. Un SSD n'a aucune pièce mobile, et c'est sur ces petits fichiers qu'il fait la différence.
+Un disque dur à 5 400 tr/min est lent. Seagate annonce « jusqu'à 140 Mo/s » pour les siens, et c'est un maximum ([fiche Seagate](https://www.seagate.com/www-content/datasheets/pdfs/barracuda-2-5-DS1907-2-1907US-en_US.pdf){target="_blank" rel="noopener"}). En pratique, on tourne plutôt autour de 100 Mo/s. Mais le problème vient surtout du fait que macOS lit et écrit en permanence des milliers de petits fichiers éparpillés. Pour ça, un disque dur est très lent, parce que sa tête de lecture doit se déplacer à chaque fois. Un SSD n'a aucune pièce mobile, et c'est sur ces petits fichiers qu'il fait la différence.
 
 ## Pourquoi un SSD externe plutôt qu'un SSD interne
 
-Changer le disque interne d'un iMac 2017, c'est possible, mais l'écran est **collé** sur le châssis, il faut le décoller, le recoller, et on risque de le casser.
+Changer le disque interne d'un iMac 2017, c'est possible, mais l'écran est collé sur le châssis, il faut le décoller, le recoller, et on risque de le casser.
 
 Le SSD externe a trois avantages :
 
@@ -59,7 +59,7 @@ Sur cet iMac, un SSD à 20 Gbit/s n'ira donc pas plus vite qu'un SSD à 10 Gbit/
 | [Lexar SL500](https://americas.lexar.com/product/lexar-sl500-portable-ssd/){target="_blank" rel="noopener"} | USB 3.2 Gen 2x2 (20 Gbit/s) | 2 000 Mo/s | environ 1 000 Mo/s |
 | [Lexar Armor 700](https://americas.lexar.com/product/lexar-armor-700-portable-ssd/){target="_blank" rel="noopener"} | USB 3.2 Gen 2x2 (20 Gbit/s) | 2 000 Mo/s | environ 1 000 Mo/s |
 
-Les modèles à 2 000 Mo/s utilisent une norme (USB 3.2 Gen 2x2) que les Mac ne gèrent pas. Lexar prévient d'ailleurs que les performances peuvent être plus faibles sur Mac ([fiche du SL500](https://americas.lexar.com/product/lexar-sl500-portable-ssd/){target="_blank" rel="noopener"}). Sur l'iMac 2017, ils retombent à 10 Gbit/s : le test de TechRadar mesure le SL500 à environ 1 000 Mo/s sur macOS ([TechRadar](https://www.techradar.com/pro/lexar-sl500-portable-ssd-review){target="_blank" rel="noopener"}). C'est le cas de mon SL500 : sur cet iMac, il ne peut pas aller plus vite qu'un ES3. Si vous achetez un SSD rien que pour cet iMac, un modèle à 10 Gbit/s suffit.
+Les modèles à 2 000 Mo/s utilisent une norme (USB 3.2 Gen 2x2) que les Mac ne gèrent pas. Lexar prévient d'ailleurs que les performances peuvent être plus faibles sur Mac ([fiche du SL500](https://americas.lexar.com/product/lexar-sl500-portable-ssd/){target="_blank" rel="noopener"}). Sur l'iMac 2017, ils retombent à 10 Gbit/s : le test de TechRadar mesure le SL500 à environ 1 000 Mo/s sur macOS ([TechRadar](https://www.techradar.com/pro/lexar-sl500-portable-ssd-review){target="_blank" rel="noopener"}). C'est le cas de mon SL500, qui sur cet iMac ne peut pas aller plus vite qu'un ES3. Si vous achetez un SSD rien que pour cet iMac, un modèle à 10 Gbit/s suffit.
 
 ## Quel macOS installer
 
