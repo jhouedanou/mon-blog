@@ -1,8 +1,7 @@
 ---
 title: "Accusé de harcèlement moral pour une question"
 createdAt: "2026-09-11T20:04:00Z"
-updatedAt: "2026-11-20T12:00:00Z"
-draft: true
+updatedAt: "2026-11-26T12:00:00Z"
 image: "/images/articles/harceleur-moral.webp"
 description: "Accusé de harcèlement moral pour avoir demandé une explication sur un travail raté. Une période pas facile pour moi, racontée avec un peu d'humour."
 searchIntent: "Que faire quand un collaborateur accuse son manager de harcèlement moral après une demande d'explications ?"

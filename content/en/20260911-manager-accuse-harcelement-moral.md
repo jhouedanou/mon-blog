@@ -1,8 +1,7 @@
 ---
 title: "Accused of workplace bullying for one question"
 createdAt: "2026-09-11T20:04:00Z"
-updatedAt: "2026-11-20T12:00:00Z"
-draft: true
+updatedAt: "2026-11-26T12:00:00Z"
 image: "/images/articles/harceleur-moral.webp"
 description: "Accused of workplace bullying for asking why a piece of work failed. A period that was not easy, told with some humour, and what it costs good employees."
 searchIntent: "What to do when an employee accuses their manager of workplace bullying after being asked for an explanation?"
