@@ -45,6 +45,14 @@ Non monsieur, ça s'appelle faire une recette.
 
 Celui qui a écrit une règle peut l'expliquer, alors que celui qui l'a obtenue avec un prompt doit demander à quelqu'un d'autre ce que fait sa propre application, et c'est pour ça que je continue d'apprendre.
 
+## Le rap a connu la même chose
+
+Le hip-hop a connu la dextérité lyricale de Treach, les manipulations de samples de RZA et de DJ Premier, l'excellence du mixage de Dr. Dre, les folies créatives de Timbaland, la polyvalence et la capacité d'adaptation de Just Blaze. Tous ont en commun la passion et le talent.
+
+Puis [FL Studio](/fr/20261026-lemon-studio-clone-fl-studio), Auto-Tune et les boucles MIDI se sont démocratisés, et on a eu des copies de sous-copies de Shawty Redd, des Sexyy Red, bref des sous-merdes qui ne sont là que pour l'argent et qui se créent des niches.
+
+Le vibe coding pose le même problème. Ça produit vite, et ça cherche l'argent.
+
 ## Comment j'utilise Claude
 
 Alors oui, je sais, j'utilise Claude moi aussi. Mais mon usage, c'est Opus, dans VS Code, et pour deux choses. Je lui donne le code qui ne marche pas pour qu'il trouve le bug, et je le laisse faire les commits automatiquement, avec le message qui va avec.
