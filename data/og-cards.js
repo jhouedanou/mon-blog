@@ -24,6 +24,7 @@ export const OG_CARDS = {
   "/images/articles/fitness-afro-abdos.webp": "/og/fitness-afro-abdos.jpg",
   "/images/articles/gregoire.webp": "/og/gregoire.jpg",
   "/images/articles/gta6-officiel.webp": "/og/gta6-officiel.jpg",
+  "/images/articles/harceleur-moral.webp": "/og/harceleur-moral.jpg",
   "/images/articles/imac-2017-macos-ssd-externe.webp": "/og/imac-2017-macos-ssd-externe.jpg",
   "/images/articles/image_b81a07e7.webp": "/og/image-b81a07e7.jpg",
   "/images/articles/infinixoraimo.webp": "/og/infinixoraimo.jpg",
