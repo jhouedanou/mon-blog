@@ -157,7 +157,7 @@ If your PrestaShop is set up as a multistore, check **Advanced Parameters > Mult
 
 **Far more people than you'd think.**
 
-In French-speaking Africa, PrestaShop remains a massively deployed solution, out of pragmatism, because it's a free, open source e-commerce CMS that runs on any shared hosting plan at 35,000 CFA francs a month. You need neither a Shopify subscription in dollars whose payment can be blocked overnight by a geopolitical decision, nor an American SaaS platform that can unilaterally decide to close the accounts of an entire region.
+In French-speaking Africa, PrestaShop remains a massively deployed solution, out of pragmatism, because it's a free, open source e-commerce CMS that runs on any shared hosting plan at 35,000 CFA francs a year. You need neither a Shopify subscription in dollars whose payment can be blocked overnight by a geopolitical decision, nor an American SaaS platform that can unilaterally decide to close the accounts of an entire region.
 
 Yes, I hold a grudge against the SaaS model that has taken over the web these past few years. But I digress... PrestaShop is **your** server, **your** database, **your** files. Nobody can cut off access to your own store.
 

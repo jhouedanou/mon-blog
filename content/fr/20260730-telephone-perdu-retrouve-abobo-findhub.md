@@ -3,7 +3,7 @@ title: "Téléphone perdu : Find Hub m'a mené à Abobo"
 createdAt: "2026-07-30"
 updatedAt: "2026-11-08"
 image: "/images/articles/PXL_20260724_120434299.webp"
-description: "Téléphone perdu dans un Yango : Find Hub le localise à Abobo, à deux rues près. Une nuit blanche, un appel paternel, une dame honnête et 12 000 FCFA de taxi."
+description: "Téléphone perdu dans un Yango : Find Hub le localise à Abobo, à deux rues près. Une nuit blanche, un appel paternel, une dame honnête et 11 200 FCFA de taxi."
 searchIntent: "Comment retrouver un téléphone perdu à Abidjan avec Find Hub, le service « Localiser » de Google, et quelles sont ses limites de précision."
 tags: ["afrique", "société", "opinion", "sécurité", "tech"]
 ---
@@ -60,7 +60,7 @@ Le système a fait ses preuves la fois où j'ai perdu un autre téléphone, donc
 Moi, je suis à la Riviera Triangle et le téléphone à Abobo, avec tout Abidjan entre les deux.
 
 - Coût du trajet : **5 600 FCFA**.
-- Aller **et** retour : **12 000 FCFA**.
+- Aller **et** retour : **11 200 FCFA**.
 
 Find Hub m'indiquait le point « à deux rues près ». Sauf que les deux rues, à Abobo, ça compte. Renseignements pris et coup de fil passé, ce n'était pas exactement là, et je devais plutôt filer vers le carrefour Container.
 
@@ -74,7 +74,7 @@ Elle a quand même insisté pour que je déverrouille le téléphone pour vérif
 
 ## Ce que je retiens du téléphone perdu et de Find Hub
 
-Trois leçons, gratuites, apprises à 12 000 FCFA :
+Trois leçons, gratuites, apprises à 11 200 FCFA :
 
 1. **[Find Hub](https://www.google.com/android/find), c'est bien, mais ce n'est pas précis.** Ça te pose dans le bon quartier, mais il reste à trouver la bonne porte. Google le dit lui-même : le GPS situe l'appareil à une vingtaine de mètres près, le réseau mobile à quelques milliers de mètres, et le cercle autour du point indique la fiabilité de la position ([aide Google](https://support.google.com/android/answer/6160491?hl=fr){target="_blank" rel="noopener"}). Prépare-toi à finir l'enquête à l'ancienne, au téléphone et à la marche.
 2. **Ne fais pas le boss, ne monte pas à l'arrière du Yango.** Même si c'est une Alto qui vient te chercher. Devant, tu vois tes affaires, tu vois ta poche et tu descends en une seule fois, alors que derrière, tu oublies des choses.

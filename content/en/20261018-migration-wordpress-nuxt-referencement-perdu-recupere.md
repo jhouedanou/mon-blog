@@ -21,7 +21,7 @@ https://www.houedanou.com/2022/09/cette-application-nest-pas-disponible-dans-vot
 
 Those are the addresses Google had indexed, and the ones that links from other sites pointed to.
 
-The new site, on the other hand, has always lived on `houedanou.com`, without the `www`. That alone was an address change for the whole site. And the posts from the WordPress days weren't carried over to the new site: the oldest post online today is from September 5, 2024.
+The new site, on the other hand, has always lived on `houedanou.com`, without the `www`. That alone was an address change for the whole site. And only the last posts from the WordPress days were carried over to the new site: the oldest post online today is from September 5, 2024.
 
 ## One post, four addresses
 

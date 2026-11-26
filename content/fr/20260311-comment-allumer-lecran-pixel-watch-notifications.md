@@ -20,7 +20,7 @@ C'est la raison pour laquelle j'ai choisi la Pixel Watch. Cette montre conçue p
 
 Venant d'un monde où chaque notification allume automatiquement l'écran de la montre, j'ai été surpris de constater que ce n'était pas le cas sur la Pixel Watch.
 
-C'est pourtant une montre premium, vendue à plusieurs dizaines de milliers de FCFA (sauf dans mon cas, où j'ai volontairement choisi un modèle pour développeurs, qui dispose de moins de RAM et de moins d'espace de stockage et qui, par conséquent, a un prix voisin de celui d'une montre Oraimo).
+C'est pourtant une montre premium, vendue à plusieurs dizaines de milliers de FCFA (sauf dans mon cas, où j'ai volontairement choisi un modèle de démonstration, de seconde main, qui a par conséquent un prix voisin de celui d'une montre Oraimo).
 
 Par défaut, une notification sur Wear OS active simplement le geste **Tilt to Wake**, ce qui vous oblige à tourner le poignet pour lire le contenu de la notification.
 

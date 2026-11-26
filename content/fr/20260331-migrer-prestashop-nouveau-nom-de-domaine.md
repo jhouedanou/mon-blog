@@ -157,7 +157,7 @@ Si votre PrestaShop est configuré en multistore, vérifiez **Paramètres avanc�
 
 **Beaucoup plus de monde qu'on ne le croit.**
 
-En Afrique francophone, PrestaShop reste une solution massivement déployée, par pragmatisme, parce que c'est un CMS e-commerce open source, gratuit, qui tourne sur n'importe quel hébergement mutualisé à 35 000 FCFA par mois. Il n'y a besoin ni d'un abonnement Shopify en dollars dont le paiement peut être bloqué du jour au lendemain par une décision géopolitique, ni de dépendre d'une plateforme SaaS américaine qui peut décider unilatéralement de fermer les comptes d'une région entière.
+En Afrique francophone, PrestaShop reste une solution massivement déployée, par pragmatisme, parce que c'est un CMS e-commerce open source, gratuit, qui tourne sur n'importe quel hébergement mutualisé à 35 000 FCFA par an. Il n'y a besoin ni d'un abonnement Shopify en dollars dont le paiement peut être bloqué du jour au lendemain par une décision géopolitique, ni de dépendre d'une plateforme SaaS américaine qui peut décider unilatéralement de fermer les comptes d'une région entière.
 
 Oui, j'en veux au modèle SaaS qui s'est imposé sur le web ces dernières années. Mais je digresse... PrestaShop, c'est **ton** serveur, **ta** base de données, **tes** fichiers. Personne ne peut te couper l'accès à ta propre boutique.
 

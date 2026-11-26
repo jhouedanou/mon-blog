@@ -31,7 +31,7 @@ A voice note runs four minutes for a request that fit in two lines. You can't sk
 
 ### Groups drown decisions
 
-Someone adds you, without asking, to a group of forty people. Decisions get lost between the "noted", the thumbs-up and the birthday messages, just like in [a grin](/en/20250605-facebook-nest-pas-un-grin).
+Someone adds you, without asking, to a group of forty people. Decisions get lost between the "noted", the thumbs-up and the birthday messages.
 
 ### Personal and professional get mixed up
 

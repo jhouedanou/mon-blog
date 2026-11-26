@@ -20,7 +20,7 @@ That's why I chose the Pixel Watch. Google's watch comes with the Fitbit fitness
 
 Coming from a world where every notification automatically lights up the watch screen, I was surprised to find that this wasn't the case on the Pixel Watch.
 
-It is, after all, a premium watch, sold for several tens of thousands of CFA francs (except in my case, where I deliberately chose a developer model, which has less RAM and less storage and therefore costs about the same as an Oraimo watch).
+It is, after all, a premium watch, sold for several tens of thousands of CFA francs (except in my case, where I deliberately chose a second-hand demo model, which therefore costs about the same as an Oraimo watch).
 
 By default, a notification on Wear OS simply activates the **Tilt to Wake** gesture, which forces you to turn your wrist to read the content of the notification.
 
