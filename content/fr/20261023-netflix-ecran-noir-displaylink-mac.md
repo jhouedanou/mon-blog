@@ -12,12 +12,12 @@ Sur Mac, Netflix passe en écran noir, avec le son, dès qu'un écran est branch
 
 ## Mon matériel
 
-Je garde mes machines longtemps et j'en tire le maximum : mon [iMac 2017 démarre sur un SSD externe](/fr/20261014-installer-macos-ssd-externe-imac-2017), et mon [MacBook Pro 2017 est passé sous Omarchy](/fr/20261013-retournement-de-veste-omarchy-macbook-pro-2017). À la maison, je travaille sur un **MacBook M1**, le modèle de base. Je l'utilise presque comme un ordinateur de bureau.
+Je garde mes machines longtemps et j'en tire le maximum : mon [iMac 2017 démarre sur un SSD externe](/fr/20261014-installer-macos-ssd-externe-imac-2017), et mon [MacBook Pro 2017 est passé sous Omarchy](/fr/20261013-retournement-de-veste-omarchy-macbook-pro-2017). À la maison, je travaille sur un MacBook M1, le modèle de base. Je l'utilise presque comme un ordinateur de bureau.
 
 Le problème, c'est qu'un Mac M1 de base ne gère qu'**un seul écran externe**, et moi j'en ai deux :
 
-- un **Xiaomi Mi Monitor incurvé de 34 pouces** ;
-- un **Lenovo ultrawide de 29 pouces**.
+- un Xiaomi Mi Monitor incurvé de 34 pouces ;
+- un Lenovo ultrawide de 29 pouces.
 
 ![Un écran incurvé ultrawide sur un bureau, avec un clavier, une souris et un casque](/images/articles/pexels-minhphuc-workspace-20648391.webp)
 

@@ -7,7 +7,7 @@ searchIntent: "How do I fix PHP2Shell (CVE-2026-109618, CVE-2026-109619) and upd
 tags: ["tutorial", "security", "php", "linux", "development"]
 ---
 
-Two PHP flaws, nicknamed PHP2Shell, let an attacker take over a web server with a single request and no password. The patch came out on Wednesday, October 21, in PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35, and the flaws are already being exploited. On a Laravel Forge server, automatic updates don't touch PHP, so you have to update it yourself. Since Forge isn't responding tonight, here's how to do it over SSH, with the command I'm running on my servers.
+Two PHP flaws, nicknamed PHP2Shell, let an attacker take over a web server with a single request and no password. The patch came out on Wednesday, October 21, in PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35, and the flaws are already being exploited. On a Laravel Forge server, automatic updates don't touch PHP, so you have to update it yourself. Since Forge isn't responding tonight, here's how to do it over SSH, with the command I ran on my servers.
 
 ## What PHP2Shell is
 

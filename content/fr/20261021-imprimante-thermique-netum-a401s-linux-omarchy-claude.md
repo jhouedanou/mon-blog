@@ -61,7 +61,7 @@ C'était instructif, mais toujours rien sur le papier, ni en ESC/POS ni dans le 
 
 ### La bonne piste était dans l'appli
 
-C'est le nom de l'appli qui a tout débloqué. On a récupéré l'APK de ScanPrint (`com.netum.scanprint`) et on l'a décompilé avec [jadx](https://github.com/skylot/jadx){target="_blank" rel="noopener"}. L'interface est en Flutter, mais la partie Bluetooth est restée en Java. Trois découvertes ont suffi.
+C'est le nom de l'appli qui a tout débloqué. On a récupéré l'APK de ScanPrint (`com.netum.scanprint`) et on l'a décompilé avec [jadx](https://github.com/skylot/jadx){target="_blank" rel="noopener"}. L'interface est en Flutter, mais la partie Bluetooth est restée en Java.
 
 **1. Le modèle est traité à part.**
 
@@ -105,7 +105,7 @@ Et la réponse :
  "battery":14,"charger":0,"paperType":0,"printerStatus":6}
 ```
 
-Ça confirme le fabricant d'origine, Zjiang, et ça explique enfin les bips, puisque d'après le code de l'appli, `printerStatus: 6` veut dire **batterie faible**, et elle était à 14 %. Les bips signalaient donc une batterie faible et pas une incompréhension, et ce qui bloquait l'impression, c'était le langage.
+Ça confirme le fabricant d'origine, Zjiang, et ça explique enfin les bips, puisque d'après le code de l'appli, `printerStatus: 6` veut dire **batterie faible**, et elle était à 14 %. Ce qui bloquait l'impression, c'était donc le langage.
 
 ## La première page imprimée sous Linux
 

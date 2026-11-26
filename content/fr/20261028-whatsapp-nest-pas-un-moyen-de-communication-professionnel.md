@@ -11,7 +11,7 @@ WhatsApp n'est pas un moyen de communication professionnel.
 
 À Abidjan, c'est pourtant le canal par défaut au travail. Un devis, une maquette à valider, une facture, un accès à un serveur ou une réunion déplacée, tout passe par WhatsApp, souvent sur un numéro personnel et souvent le soir.
 
-Moi, je refuse. Voici pourquoi, et comment je fais.
+Moi, je refuse.
 
 ## Pourquoi WhatsApp n'est pas un outil de travail
 
@@ -35,7 +35,7 @@ On vous ajoute sans vous demander votre avis dans un groupe de quarante personne
 
 ### Le personnel et le professionnel se mélangent
 
-Vos clients et vos collègues ont accès à votre numéro, à votre photo de profil et à vos statuts. Et quand quelqu'un quitte l'entreprise, l'historique des échanges part avec son téléphone. Une boîte mail professionnelle, elle, reste à l'entreprise. C'est la même règle que pour [l'iPhone et la voiture de fonction qui racontent tout à votre patron](/fr/20250705-cherscommerciaux), on ne mélange pas les usages.
+Vos clients et vos collègues ont accès à votre numéro, à votre photo de profil et à vos statuts. Et quand quelqu'un quitte l'entreprise, l'historique des échanges part avec son téléphone. Une boîte mail professionnelle, elle, reste à l'entreprise. C'est la même règle que pour [l'iPhone et la voiture de fonction qui racontent tout à votre patron](/fr/20250705-cherscommerciaux).
 
 ### Un message n'est pas une demande
 

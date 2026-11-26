@@ -7,7 +7,7 @@ searchIntent: "Comment utiliser gratuitement un vieil iMac comme deuxième écra
 tags: ["tutoriel", "apple", "macos", "mac", "linux", "omarchy", "open-source", "matériel"]
 ---
 
-OpenDisplay est une application gratuite et open source qui fait d'un vieil iMac l'écran d'un PC sous Linux ou le deuxième écran d'un Mac récent, même en Wi-Fi. Il suffit d'installer un récepteur sur l'iMac et un émetteur sur l'autre machine. Mais l'image voyage en vidéo compressée, donc elle est moins nette et moins fluide qu'un écran branché en câble, et les chiffres sont plus bas.
+OpenDisplay est une application gratuite et open source qui fait d'un vieil iMac l'écran d'un PC sous Linux ou le deuxième écran d'un Mac récent, même en Wi-Fi. Il suffit d'installer un récepteur sur l'iMac et un émetteur sur l'autre machine. Mais l'image voyage en vidéo compressée, donc elle est moins nette et moins fluide qu'un écran branché en câble, et je donne les chiffres plus bas.
 
 Je l'ai fait avec mon MacBook Pro 2017 sous Omarchy, et l'iMac affiche bien son bureau étendu.
 
@@ -101,7 +101,7 @@ Après `--to`, mettez une partie du nom que `list` affiche. Sur Omarchy, envoyez
 
 ## Ce qu'on perd en qualité
 
-OpenDisplay ne branche pas l'iMac comme un vrai écran. L'émetteur filme un écran virtuel, le compresse en vidéo et l'envoie, puis l'iMac décode cette vidéo et l'affiche, et chaque étape dégrade un peu l'image ou ajoute du délai.
+L'émetteur filme un écran virtuel, le compresse en vidéo et l'envoie, puis l'iMac décode cette vidéo et l'affiche, et chaque étape dégrade un peu l'image ou ajoute du délai.
 
 **1. L'image est très compressée.** Entre deux Mac, le flux monte au plus à 18 Mb/s. Une image 5K brute, à 30 images par seconde, demande environ 10 Gb/s. L'image est donc compressée plusieurs centaines de fois. Sur un texte qui ne bouge pas, ça passe bien. Quand l'image bouge, des détails disparaissent un instant.
 
@@ -135,12 +135,12 @@ Choisir une définition plus petite sur l'iMac allège aussi le travail.
 
 **Ce qui manque encore :**
 
-- **pas de son** sur les haut-parleurs de l'iMac ;
-- **le clavier et la souris de l'iMac** ne pilotent pas l'autre machine (c'est prévu) ;
-- **depuis Linux, le flux n'est pas chiffré** : utilisez-le seulement sur un réseau de confiance. Pas de mode recopie non plus ;
-- **côté Mac, OpenDisplay utilise une fonction d'Apple non documentée** : une mise à jour de macOS peut le casser ;
-- **un point violet** s'affiche dans la barre des menus du Mac qui envoie. C'est normal : macOS signale que l'écran est filmé ;
-- **l'iMac reste un ordinateur allumé** : il consomme plus qu'un simple écran.
+- pas de son sur les haut-parleurs de l'iMac ;
+- le clavier et la souris de l'iMac ne pilotent pas l'autre machine (c'est prévu) ;
+- depuis Linux, le flux n'est pas chiffré : utilisez-le seulement sur un réseau de confiance. Pas de mode recopie non plus ;
+- côté Mac, OpenDisplay utilise une fonction d'Apple non documentée : une mise à jour de macOS peut le casser ;
+- un point violet s'affiche dans la barre des menus du Mac qui envoie. C'est normal : macOS signale que l'écran est filmé ;
+- l'iMac reste un ordinateur allumé : il consomme plus qu'un simple écran.
 
 ## Quel réglage choisir
 

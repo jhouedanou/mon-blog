@@ -50,10 +50,10 @@ C'est une bonne nouvelle pour ceux qui n'ont pas les moyens. Je l'écrivais à p
 
 Mais si tout le monde peut tout refaire, refaire ne suffit plus. Il faudra miser sur deux choses :
 
-- **la qualité** : un logiciel qui ne plante pas en pleine session, qui ouvre vos anciens projets, et qui sera encore maintenu dans cinq ans ;
-- **l'originalité** : une idée nouvelle plutôt que la copie d'un logiciel qui existe déjà.
+- la qualité, c'est-à-dire un logiciel qui ne plante pas en pleine session, qui ouvre vos anciens projets, et qui sera encore maintenu dans cinq ans ;
+- l'originalité, c'est-à-dire une idée nouvelle plutôt que la copie d'un logiciel qui existe déjà.
 
-L'IA rend la copie facile, mais pas la qualité ni l'originalité, et c'est sur ces deux points que les logiciels feront la différence. C'est mon avis.
+L'IA rend la copie facile, mais pas la qualité ni l'originalité. C'est mon avis.
 
 ## Je l'ai testé (mise à jour du 28 octobre)
 
@@ -76,8 +76,6 @@ Mais MorningDAW est original et ne copie pas un logiciel existant :
 - il a ses propres synthés, Wyvern et Ember.
 
 D'après son site, il accepte les plug-ins VST3 et CLAP, et les Audio Units sur Mac.
-
-Lemon Studio copie FL Studio, alors que MorningDAW propose autre chose.
 
 ## Sources
 

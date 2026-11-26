@@ -20,7 +20,7 @@ So I've sorted the Oraimo products I use into three groups: the ones I'd buy aga
 
 ### Earphones
 
-My first Oraimo product, and so my first contact with the brand, was a pair of earphones: the Oraimo CONCH, wired in-ear earphones sold for 2,000 to 3,000 CFA francs (roughly $3.50 to $5) in Abidjan. The bass is a bit too strong, but they're sturdy. I often buy them for friends and family who want good earphones that don't cost too much.
+My first Oraimo product was a pair of earphones, the Oraimo CONCH, wired in-ear earphones sold for 2,000 to 3,000 CFA francs (roughly $3.50 to $5) in Abidjan. The bass is a bit too strong, but they're sturdy. I often buy them for friends and family who want good earphones that don't cost too much.
 
 ![Oraimo CONCH wired in-ear earphones, black, with an inline remote and a 3.5 mm jack](/images/articles/oraimo-conch-2.webp)
 
@@ -44,7 +44,7 @@ But Oraimo doesn't only make electronics. For my coffee, I have the [Oraimo Ther
 
 ### Kitchen
 
-I have a [SmartAirFryer](https://ci.oraimo.com/product/oraimo-1500w-cooking-visible-smart-air-fryer){target="_blank" rel="noopener"}: it's the first air fryer I've used that doesn't smell of burnt plastic, and its non-stick coating is very easy to clean.
+I have a [SmartAirFryer](https://ci.oraimo.com/product/oraimo-1500w-cooking-visible-smart-air-fryer){target="_blank" rel="noopener"}. It's the first air fryer I've used that doesn't smell of burnt plastic, and its non-stick coating is very easy to clean.
 
 ![Black Oraimo SmartAirFryer, with a window in the basket to watch the food cook](/images/articles/oraimo-smartairfryer.webp)
 
@@ -54,7 +54,7 @@ Once the meal is cooked, it's time to clean. For the dishes, I have the [Oraimo 
 
 ![White Oraimo cordless electric spin brush, surrounded by its five replacement heads](/images/articles/oraimo-ultracleaner-scrubber.webp)
 
-And I have the [MistGlide](https://ci.oraimo.com/product/oraimo-mistglide-multi-surface-use-deep-cleaning-spray-mop--ohcs-001){target="_blank" rel="noopener"}. I've had it for 6 months: it's the spray mop that has lasted me the longest.
+And I have the [MistGlide](https://ci.oraimo.com/product/oraimo-mistglide-multi-surface-use-deep-cleaning-spray-mop--ohcs-001){target="_blank" rel="noopener"}. I've had it for 6 months, and it's the spray mop that has lasted me the longest.
 
 ![Oraimo MistGlide spray mop, with its tank on the handle and a flat microfibre head](/images/articles/oraimo-mistglide.webp)
 

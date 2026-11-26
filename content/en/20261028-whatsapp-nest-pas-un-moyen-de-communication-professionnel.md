@@ -11,7 +11,7 @@ WhatsApp is not a professional communication tool.
 
 In Abidjan, though, it's the default channel for work. A quote, a mockup to approve, an invoice, access to a server or a rescheduled meeting, everything goes through WhatsApp, often on a personal number and often in the evening.
 
-I refuse. Here's why, and how I do it.
+I refuse.
 
 ## Why WhatsApp is not a work tool
 
@@ -35,7 +35,7 @@ Someone adds you, without asking, to a group of forty people. Decisions get lost
 
 ### Personal and professional get mixed up
 
-Your clients and colleagues can see your number, your profile picture and your status updates. And when someone leaves the company, the message history leaves with their phone. A work mailbox stays with the company. It's the same rule as for [the work iPhone and company car that tell your boss everything](/en/20250705-cherscommerciaux), don't mix the two.
+Your clients and colleagues can see your number, your profile picture and your status updates. And when someone leaves the company, the message history leaves with their phone. A work mailbox stays with the company. It's the same rule as for [the work iPhone and company car that tell your boss everything](/en/20250705-cherscommerciaux).
 
 ### A message is not a request
 

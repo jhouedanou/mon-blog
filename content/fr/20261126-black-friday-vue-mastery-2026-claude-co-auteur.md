@@ -70,6 +70,8 @@ Pour ceux qui veulent retirer la ligne, il faut ouvrir le fichier `~/.claude/set
 
 La valeur vide de `commit` retire la ligne des commits, et celle de `pr` retire la mention « Generated with Claude Code » des pull requests. L'ancien réglage `includeCoAuthoredBy` existe encore, mais la documentation le marque comme obsolète, et les commits déjà faits gardent leur co-auteur, puisque le réglage ne vaut que pour les suivants.
 
+Dans mon cas, cette ligne ne me gêne plus tant que ça, parce que je comprends mon code.
+
 ## Je garde les deux
 
 Donc voilà, je garde Vue Mastery pour apprendre et Claude pour déboguer et faire mes commits. Si vous faites du Vue ou du Nuxt et que vous voulez comprendre ce que vous déployez, [l'offre Black Friday de Vue Mastery](https://www.vuemastery.com/black-friday) est le bon moment pour vous y mettre, et les cours gratuits suffisent pour vérifier que le format vous convient avant de payer.
