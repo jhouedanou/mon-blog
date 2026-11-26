@@ -3,7 +3,7 @@ title: "Lost phone: Google Find Hub led me to Abobo"
 createdAt: "2026-07-30"
 updatedAt: "2026-11-08"
 image: "/images/articles/PXL_20260724_120434299.webp"
-description: "Phone lost in a Yango: Google Find Hub puts it in Abobo, within two streets. A sleepless night, a call from my father, an honest lady and 12,000 FCFA in fares."
+description: "Phone lost in a Yango: Google Find Hub puts it in Abobo, within two streets. A sleepless night, a call from my father, an honest lady and 11,200 FCFA in fares."
 searchIntent: "How to find a lost phone in Abidjan with Find Hub, the Google service formerly called Find My Device, and what its limits are when it comes to accuracy."
 tags: ["africa", "society", "opinion", "security", "tech"]
 ---
@@ -60,7 +60,7 @@ The system proved itself the time I lost another phone, so I'm keeping it, becau
 I'm in Riviera Triangle and the phone is in Abobo, with all of Abidjan between the two.
 
 - Cost of the trip: **5,600 FCFA**.
-- There **and** back: **12,000 FCFA**.
+- There **and** back: **11,200 FCFA**.
 
 Find Hub put the dot "within two streets". Except that two streets, in Abobo, matter. After asking around and making a phone call, it wasn't exactly there, and I had to head for the Container junction.
 
@@ -74,7 +74,7 @@ She did insist that I unlock the phone to check it really was mine. I did, and s
 
 ## What I take away from the lost phone and Find Hub
 
-Three lessons, free of charge, learned for 12,000 FCFA:
+Three lessons, free of charge, learned for 11,200 FCFA:
 
 1. **[Find Hub](https://www.google.com/android/find) is good, but it's not precise.** It puts you in the right neighbourhood, but you still have to find the right door. Google says so itself: GPS places the device to within about 20 metres, the mobile network to within a few thousand metres, and the circle around the pin shows how reliable the position is ([Google Help](https://support.google.com/android/answer/6160491?hl=en){target="_blank" rel="noopener"}). Be ready to finish the investigation the old-fashioned way, by phone and on foot.
 2. **Don't act like the boss, don't sit in the back of the Yango.** Even if it's an Alto that comes to pick you up. In the front, you see your things, you see your pocket and you get out in one go, while in the back, you leave things behind.

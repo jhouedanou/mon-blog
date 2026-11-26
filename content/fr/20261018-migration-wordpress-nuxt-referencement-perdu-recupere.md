@@ -21,7 +21,7 @@ https://www.houedanou.com/2022/09/cette-application-nest-pas-disponible-dans-vot
 
 Ce sont ces adresses que Google avait indexées, et vers elles que pointaient les liens d'autres sites.
 
-Le nouveau site, lui, a toujours vécu sur `houedanou.com`, sans `www`. C'était déjà un changement d'adresse pour tout le site. Et les billets de l'époque WordPress n'ont pas été repris sur le nouveau site : le plus ancien billet en ligne aujourd'hui date du 5 septembre 2024.
+Le nouveau site, lui, a toujours vécu sur `houedanou.com`, sans `www`. C'était déjà un changement d'adresse pour tout le site. Et seuls les derniers billets de l'époque WordPress ont été repris sur le nouveau site : le plus ancien billet en ligne aujourd'hui date du 5 septembre 2024.
 
 ## Un billet, quatre adresses
 

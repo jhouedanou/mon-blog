@@ -31,7 +31,7 @@ Une note vocale dure quatre minutes pour une demande qui tenait en deux lignes. 
 
 ### Les groupes noient les décisions
 
-On vous ajoute sans vous demander votre avis dans un groupe de quarante personnes. Les décisions s'y perdent entre les « bien reçu », les pouces levés et les messages d'anniversaire, comme dans [un grin](/fr/20250605-facebook-nest-pas-un-grin).
+On vous ajoute sans vous demander votre avis dans un groupe de quarante personnes. Les décisions s'y perdent entre les « bien reçu », les pouces levés et les messages d'anniversaire.
 
 ### Le personnel et le professionnel se mélangent
 

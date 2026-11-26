@@ -47,11 +47,13 @@ Someone who wrote a rule can explain it, while someone who got it from a prompt 
 
 ## Rap went through the same thing
 
-Hip-hop has known the lyrical dexterity of Treach, the sample manipulations of RZA and DJ Premier, the mixing excellence of Dr. Dre, the creative madness of Timbaland, the versatility and adaptability of Just Blaze. They all have passion and talent in common.
+Hip-hop has known the lyrical dexterity of Treach, the sample manipulations of RZA and DJ Premier, the mixing excellence of Dr. Dre, the creative madness of Timbaland, the versatility and adaptability of Just Blaze. They all have passion and talent in common, and they all learned their craft before the tools became easy. (And Treach is the real GOAT, and I'ma die on that hill. "Feel Me Flow" is a killer track.)
 
-Then [FL Studio](/en/20261026-lemon-studio-clone-fl-studio), Auto-Tune and MIDI loops became available to everyone, and we got copies of sub-copies of Shawty Redd, some Sexyy Reds, in short pieces of crap who are only there for the money and who carve out niches for themselves.
+Then [FL Studio](/en/20261026-lemon-studio-clone-fl-studio), Auto-Tune and MIDI loops became available to everyone. Anybody could put out a track without knowing how to write a verse, chop a sample or mix a vocal, and we got copies of sub-copies of Shawty Redd, some Sexyy Reds, in short imitators who are only there for the money, in niches that sell nothing and pollute the airwaves.
 
-Vibe coding has the same problem. It produces fast, and it chases money.
+With vibe coding, the same thing is happening in my trade, and Claude Code is our FL Studio. Anybody can ship an application without knowing how to read a function, and we get copies of sub-copies of applications that already exist, produced fast, for the money, in niches that sell nothing either.
+
+FL Studio never stopped anyone from having talent, and neither does Claude. But in rap as in code, you can hear right away who learned their craft before picking up the tool, and who only has the tool.
 
 ## How I use Claude
 

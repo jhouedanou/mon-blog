@@ -1,6 +1,6 @@
 ---
 title: "Avis produits Oraimo : tout, tout, tout"
-createdAt: "2026-11-09T19:05:00Z"
+createdAt: "2026-11-03T19:05:00Z"
 updatedAt: "2026-11-09T19:19:00Z"
 image: "/images/articles/oraimo-produits.webp"
 description: "Mon avis sur les produits Oraimo : batterie, écouteurs, air fryer, balai, mug. Ceux que je rachèterais, et ceux que je ne rachèterais pas. Sans commission."
