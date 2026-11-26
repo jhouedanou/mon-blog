@@ -38,7 +38,7 @@ Caveman dépose un fichier *skill* dans l'agent. Ce skill lui dit : pas de rempl
 
 Sur Claude Code en particulier, un hook écrit un petit fichier-drapeau à chaque session, si bien que Claude parle Caveman dès le premier message, sans qu'on tape `/caveman`.
 
-Fait amusant, un papier de mars 2026 ([*Brevity Constraints Reverse Performance Hierarchies in Language Models*](https://arxiv.org/abs/2604.00025)) a montré que contraindre les gros modèles à la concision **améliore la précision de 26 points** sur certains benchmarks.
+Fait amusant, un papier de mars 2026 ([*Brevity Constraints Reverse Performance Hierarchies in Language Models*](https://arxiv.org/abs/2604.00025)) a montré que contraindre les gros modèles à la concision améliore la précision de 26 points sur certains benchmarks.
 
 ---
 
@@ -153,7 +153,7 @@ Une mesure indépendante va dans le même sens : sur 86 tâches réelles dans Cl
 
 ## Ce qu'il faut savoir
 
-La voix caveman (le skill) ne touche **que les output tokens**. Les tokens de raisonnement (*thinking*) restent intacts, donc Claude réfléchit autant qu'avant et parle moins. Le gain principal, c'est la **lisibilité** et la **vitesse** (~3× plus rapide à lire). L'économie d'argent vient en plus, et elle a un coût, parce que les règles du skill pèsent environ 1 160 tokens d'entrée, et si vous payez à la requête (GitHub Copilot), des réponses plus courtes n'économisent rien.
+La voix caveman (le skill) ne touche **que les output tokens**. Les tokens de raisonnement (*thinking*) restent intacts, donc Claude réfléchit autant qu'avant et parle moins. Le gain principal, c'est la lisibilité et la vitesse (~3× plus rapide à lire). L'économie d'argent vient en plus, et elle a un coût, parce que les règles du skill pèsent environ 1 160 tokens d'entrée, et si vous payez à la requête (GitHub Copilot), des réponses plus courtes n'économisent rien.
 
 Le CLI de la version 4 va plus loin et compresse aussi ce que l'agent **lit** (voir plus bas). Il envoie par défaut des statistiques d'usage : commandes lancées, nombres de tokens, un identifiant d'installation, le système et l'adresse IP, jamais vos prompts ni votre code. Pour couper : `caveman telemetry off` ou `DO_NOT_TRACK=1` ([section Privacy du README](https://github.com/JuliusBrussee/caveman#privacy){target="_blank" rel="noopener"}). Le skill seul n'envoie rien, sauf `/caveman-compress`, qui transmet le fichier à compresser à votre fournisseur de modèle.
 

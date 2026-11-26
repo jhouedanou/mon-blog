@@ -39,7 +39,7 @@ Vercel n'est pas mauvais, mais il est fait pour les startups financées plus que
 
 ## Pourquoi Cloudflare Pages ?
 
-Bon, d'abord, **Cloudflare n'est pas parfait**, mais pour ce que je fais, c'est le meilleur rapport qualité/prix gratuit que j'ai trouvé.
+Bon, d'abord, Cloudflare n'est pas parfait, mais pour ce que je fais, c'est le meilleur rapport qualité/prix gratuit que j'ai trouvé.
 
 Voici pourquoi :
 
@@ -179,7 +179,7 @@ Et profitez-en pour rediriger en 301 vos anciennes adresses. Sur ce blog, je ne 
 
 ### 3. **Le `wrangler.toml`**
 
-Celui-là m'a coûté des **heures** à tourner en rond entre des messages d'erreur cryptiques et un dashboard Cloudflare buggé.
+Celui-là m'a coûté des heures à tourner en rond entre des messages d'erreur cryptiques et un dashboard Cloudflare buggé.
 
 **Première erreur** : j'avais dans mon `wrangler.toml` une config `[site]` avec `bucket = "./dist"`, un vestige de l'ancienne méthode Workers Sites. Wrangler cherchait donc un fichier `workers-site/index.js` qui n'existait pas :
 
@@ -281,7 +281,7 @@ Assurez-vous que Cloudflare a les bonnes permissions sur votre repo. Si votre bu
 | Facilité de setup | ⭐⭐⭐ | ⭐ (4 erreurs et un `echo` plus tard) |
 | Support | Bon | Excellent |
 
-J'y gagne **zéro stress financier**, pour des **performances identiques ou meilleures**.
+J'y gagne zéro stress financier, pour des performances identiques ou meilleures.
 
 ---
 
@@ -293,7 +293,7 @@ Pour être exhaustif :
 - **Netlify** : Solide, SSR complet, offre gratuite à 300 crédits (la bande passante est décomptée en crédits). Bonne alternative à Cloudflare.
 - **Render** : Gratuit mais le service « dort » après inactivité. Pas idéal pour un blog.
 
-Mais face à ces trois-là, **Cloudflare Pages gagne à chaque fois**.
+Mais face à ces trois-là, Cloudflare Pages gagne à chaque fois.
 
 ---
 

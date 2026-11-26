@@ -38,7 +38,7 @@ Caveman drops a *skill* file into the agent. That skill tells it: no filler, no 
 
 On Claude Code specifically, a hook writes a small flag file at every session, so Claude speaks Caveman from the very first message, without you typing `/caveman`.
 
-Fun fact, a paper from March 2026 ([*Brevity Constraints Reverse Performance Hierarchies in Language Models*](https://arxiv.org/abs/2604.00025)) showed that forcing large models to be concise **improves accuracy by 26 points** on certain benchmarks.
+Fun fact, a paper from March 2026 ([*Brevity Constraints Reverse Performance Hierarchies in Language Models*](https://arxiv.org/abs/2604.00025)) showed that forcing large models to be concise improves accuracy by 26 points on certain benchmarks.
 
 ---
 
@@ -153,7 +153,7 @@ An independent measurement points the same way: over 86 real tasks in Claude Cod
 
 ## What you should know
 
-The caveman voice (the skill) only touches **output tokens**. Reasoning tokens (*thinking*) remain intact, so Claude thinks as much as before and talks less. The main gain is **readability** and **speed** (~3× faster to read). Saving money comes on top, and it has a cost, because the skill's rules weigh about 1,160 input tokens, and if you pay per request (GitHub Copilot), shorter answers save nothing.
+The caveman voice (the skill) only touches **output tokens**. Reasoning tokens (*thinking*) remain intact, so Claude thinks as much as before and talks less. The main gain is readability and speed (~3× faster to read). Saving money comes on top, and it has a cost, because the skill's rules weigh about 1,160 input tokens, and if you pay per request (GitHub Copilot), shorter answers save nothing.
 
 The version 4 CLI goes further and also compresses what the agent **reads** (see below). By default it sends usage stats: commands run, token counts, an install ID, the OS and your IP address, never your prompts or your code. To turn it off: `caveman telemetry off` or `DO_NOT_TRACK=1` ([Privacy section of the README](https://github.com/JuliusBrussee/caveman#privacy){target="_blank" rel="noopener"}). The skill alone sends nothing, except `/caveman-compress`, which sends the file being compressed to your model provider.
 

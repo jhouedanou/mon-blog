@@ -35,7 +35,7 @@ Le problème, c'est que ce mode désactive volontairement les protections habitu
 
 Les chercheurs utilisent deux appareils NFC du commerce : un Proxmark, qui se fait passer pour un terminal de paiement auprès de l'iPhone, et un téléphone Android équipé du NFC (même pas rooté), qui se fait passer pour un iPhone auprès d'un vrai terminal.
 
-Les deux appareils sont reliés entre eux : dans leurs essais, le Proxmark est branché en USB sur un ordinateur portable, qui relaie les messages en Wi-Fi jusqu'au téléphone Android ([page des chercheurs](https://practical_emv.gitlab.io/){target="_blank" rel="noopener"}). Le téléphone et le terminal pensent donc communiquer directement entre eux, alors que tout passe par les chercheurs, qui peuvent lire et **modifier** les données en transit.
+Les deux appareils sont reliés entre eux : dans leurs essais, le Proxmark est branché en USB sur un ordinateur portable, qui relaie les messages en Wi-Fi jusqu'au téléphone Android ([page des chercheurs](https://practical_emv.gitlab.io/){target="_blank" rel="noopener"}). Le téléphone et le terminal pensent donc communiquer directement entre eux, alors que tout passe par les chercheurs, qui peuvent lire et modifier les données en transit.
 
 ### Acte 2 : tromper l'iPhone
 
@@ -45,7 +45,7 @@ L'iPhone croit qu'il valide un trajet à 2 $.
 
 ### Acte 3 : tromper le terminal
 
-Cette étape est plus technique. Les chercheurs **manipulent quelques bits** dans les données de la transaction : ils activent notamment l'indicateur qui signale au terminal que le porteur s'est déjà authentifié sur son téléphone (Face ID ou code). Le terminal lit donc un achat de détail (disons 10 000 $) et l'approuve comme s'il avait reçu toutes les vérifications nécessaires.
+Cette étape est plus technique. Les chercheurs manipulent quelques bits dans les données de la transaction : ils activent notamment l'indicateur qui signale au terminal que le porteur s'est déjà authentifié sur son téléphone (Face ID ou code). Le terminal lit donc un achat de détail (disons 10 000 $) et l'approuve comme s'il avait reçu toutes les vérifications nécessaires.
 
 Le téléphone a dit oui parce qu'il croyait payer un bus, le terminal a dit oui parce qu'il croyait que l'utilisateur avait validé, et l'argent part sans que personne n'ait rien remarqué.
 
@@ -53,13 +53,11 @@ Le téléphone a dit oui parce qu'il croyait payer un bus, le terminal a dit oui
 
 ## Pourquoi Visa et pas Mastercard ?
 
-La réponse est dans les choix d'architecture.
-
 **Mastercard** impose une **cryptographie asymétrique** (signatures numériques) sur ses transactions en ligne. Concrètement, les données signées cryptographiquement ne peuvent pas être modifiées en transit sans que la falsification soit détectée. Si vous changez un bit, la signature devient invalide, la transaction est rejetée.
 
 **Visa**, en revanche, **ne mandate pas cette couche pour les transactions retail en ligne**. Les données circulent, mais elles ne sont pas « scellées » de bout en bout de la même façon. C'est cette absence qui permet la manipulation de bits décrite plus haut.
 
-Visa a fait là un **choix architectural** qui sacrifie une couche de sécurité au profit de la simplicité et de la compatibilité, et son code n'a pas de bug.
+Visa a fait là un choix architectural qui sacrifie une couche de sécurité au profit de la simplicité et de la compatibilité, et son code n'a pas de bug.
 
 ---
 
@@ -100,7 +98,7 @@ Dans tous les cas, un débit suspect se vérifie sur le relevé de votre banque,
 
 ## Ce que ça dit de notre rapport à la sécurité
 
-Ce qui me frappe dans cette histoire, plus que la sophistication de l'attaque, c'est la **tension permanente entre commodité et sécurité**, avec laquelle constructeurs et réseaux de paiement doivent composer.
+Ce qui me frappe dans cette histoire, plus que la sophistication de l'attaque, c'est la tension permanente entre commodité et sécurité, avec laquelle constructeurs et réseaux de paiement doivent composer.
 
 Express Transit est pratique, et le fait que Visa soit accepté partout est une qualité, mais ce sont ces avantages qui ouvrent la faille. C'est pareil pour [l'iPhone et l'AirTag qui racontent vos trajets à votre patron](/fr/20250705-cherscommerciaux), où ce qui vous simplifie la vie garde aussi la trace de vos déplacements.
 
