@@ -70,6 +70,8 @@ For those who want to remove the line, open the `~/.claude/settings.json` file a
 
 The empty `commit` value removes the line from commits, and the empty `pr` value removes the "Generated with Claude Code" mention from pull requests. The old `includeCoAuthoredBy` setting still exists, but the documentation marks it as deprecated, and commits already made keep their co-author, since the setting only applies to the next ones.
 
+In my case, that line doesn't bother me that much anymore, because I understand my code.
+
 ## I'm keeping both
 
 So there you go, I'm keeping Vue Mastery to learn and Claude to debug and make my commits. If you work with Vue or Nuxt and you want to understand what you deploy, [the Vue Mastery Black Friday deal](https://www.vuemastery.com/black-friday) is the right time to get started, and the free courses are enough to check that the format suits you before paying.
