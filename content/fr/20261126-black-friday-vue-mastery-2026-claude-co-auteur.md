@@ -53,13 +53,13 @@ Celui qui a écrit une règle peut l'expliquer, alors que celui qui l'a obtenue 
 
 ## Le rap a connu la même chose
 
-Le hip-hop a connu la dextérité lyricale de Treach, les manipulations de samples de RZA et de DJ Premier, l'excellence du mixage de Dr. Dre, les folies créatives de Timbaland, la polyvalence et la capacité d'adaptation de Just Blaze. Tous ont en commun la passion et le talent, et tous ont appris leur métier avant que les outils ne deviennent faciles. (Et Treach est le véritable GOAT, and I'ma die on that hill. « Feel Me Flow », c'est une tuerie.)
+Bon, je vais faire un détour par le hip-hop, parce que j'ai déjà vu ce film. Le rap a connu la dextérité lyricale de Treach, les samples découpés par RZA et DJ Premier, le mixage de Dr. Dre, les folies de Timbaland et la polyvalence de Just Blaze, et tous ces gars-là avaient la passion et le talent, et ils avaient appris leur métier bien avant que les outils deviennent faciles. (Et pour moi, Treach reste le véritable GOAT, and I'ma die on that hill. « Feel Me Flow », c'est une tuerie.)
 
-Puis [FL Studio](/fr/20261026-lemon-studio-clone-fl-studio), Auto-Tune et les boucles MIDI se sont démocratisés. N'importe qui a pu sortir un morceau sans savoir écrire un couplet, découper un sample ou mixer une voix, et on a eu des copies de sous-copies de Shawty Redd, des Sexyy Red, bref des imitateurs qui ne sont là que pour l'argent, dans des niches qui ne vendent rien et qui polluent les airwaves.
+Puis [FL Studio](/fr/20261026-lemon-studio-clone-fl-studio), Auto-Tune et les boucles MIDI se sont démocratisés, et n'importe qui a pu sortir un morceau sans savoir écrire un couplet, découper un sample ou mixer une voix. On a eu des copies de sous-copies de Shawty Redd, des Sexyy Red, bref des imitateurs qui ne sont là que pour l'argent, dans des niches qui ne vendent rien et qui polluent les airwaves.
 
-Avec le vibe coding, il se passe la même chose dans mon métier, et Claude Code est notre FL Studio. N'importe qui peut sortir une application sans savoir lire une fonction, et on a des copies de sous-copies d'applications qui existent déjà, produites vite, pour l'argent, dans des niches qui ne vendent rien non plus.
+Le vibe coding, c'est le même problème dans mon métier. Avec Claude Code, n'importe qui peut sortir une application sans savoir lire une fonction, et on voit arriver des copies de sous-copies d'applications qui existent déjà, produites vite, pour l'argent, et qui ne vendent rien non plus.
 
-FL Studio n'a jamais empêché personne d'avoir du talent, et Claude non plus. Mais dans le rap comme dans le code, on entend tout de suite qui a appris son métier avant de prendre l'outil, et qui n'a que l'outil.
+Alors oui, je sais, FL Studio n'a jamais empêché personne d'avoir du talent, et Claude non plus. Mais un outil ne remplace pas le métier, ni dans le rap ni dans le code.
 
 ## Comment j'utilise Claude
 
