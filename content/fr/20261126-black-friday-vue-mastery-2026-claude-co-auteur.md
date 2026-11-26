@@ -41,7 +41,13 @@ Aucun de ces points n'était un bug. À chaque fois, la réponse était une règ
 
 Il y a aussi celui qui fournit les écrans et l'architecture et qui, une fois le site déployé en bêta sur la base de sa maquette, me demande de vérifier si ça fonctionne.
 
-Non monsieur, ça s'appelle faire une recette.
+Non monsieur, ça s'appelle faire une recette, et c'est votre responsabilité, en tant que chef de projet.
+
+Je passerai sur ce cas où on me donne un brief généré par ChatGPT, sans le point final, c'est-à-dire l'écran que le client obtient une fois qu'il a payé. Bref, qu'est-ce que vous donnez au client quand il a payé ?
+
+« Euh… on ne sait pas. »
+
+Là, on quitte le groupe, on se lève et on va poser la question en face à l'individu. J'ai vite vu les limites du vibe thinking ici, puisque les intéressés ont produit un diagramme après une heure de réunion.
 
 Celui qui a écrit une règle peut l'expliquer, alors que celui qui l'a obtenue avec un prompt doit demander à quelqu'un d'autre ce que fait sa propre application, et c'est pour ça que je continue d'apprendre.
 
