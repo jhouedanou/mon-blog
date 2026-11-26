@@ -65,7 +65,7 @@ I use the same method to [check a deliverable announced as done](/en/20260908-ce
 
 In the middle of the thread, they read the documentation and then asked two good, precise questions about the state of the database. I answered point by point, and the site was live shortly after.
 
-The goal is to bring them onto the facts, because on the facts they work well. I am not trying to crush anyone.
+The goal is to bring them onto the facts, because on the facts they work well.
 
 ## Canibus, LL Cool J and the mic
 
@@ -79,11 +79,9 @@ In 1998, Canibus releases "Second Round K.O.", with Mike Tyson, and many people 
 
 The junior IT person does the same thing as Canibus, since they are invited onto someone else's project and they want to put their own database, their own domain on it.
 
-I keep one thing from LL, and I leave one.
+From LL, I keep the place of the answer. He answered on the record, where everyone listens, rather than in the studio corridor, and my email with everyone in copy does the same thing.
 
-I keep the place of the answer. LL answered on the record, where everyone listens, rather than in the studio corridor, and my email with everyone in copy does the same thing.
-
-I leave the ego. LL answered a line that he himself had had erased, and that is what started the war. I answer with a line number and a screenshot.
+The ego, though, I leave to him. LL answered a line that he himself had had erased, and that is what started the war. I answer with a line number and a screenshot.
 
 Canibus had talent, and the junior may have some too. They still have to learn that on someone else's track, you lay down your verse and you hand the mic back.
 

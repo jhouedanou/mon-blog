@@ -50,10 +50,10 @@ That's good news for people who can't afford it. I wrote about this in my post o
 
 But if anyone can rebuild anything, rebuilding is no longer enough. Two things will matter:
 
-- **quality**: software that doesn't crash mid-session, that opens your old projects, and that will still be maintained in five years;
-- **originality**: a new idea rather than a copy of software that already exists.
+- quality, meaning software that doesn't crash mid-session, that opens your old projects, and that will still be maintained in five years;
+- originality, meaning a new idea rather than a copy of software that already exists.
 
-AI makes copying easy, but not quality or originality, and those two things are where software will stand apart. That's my opinion.
+AI makes copying easy, but not quality or originality. That's my opinion.
 
 ## I tested it (update, October 28)
 
@@ -76,8 +76,6 @@ But MorningDAW is original and doesn't copy an existing app:
 - it has its own synths, Wyvern and Ember.
 
 According to its website, it supports VST3 and CLAP plugins, plus Audio Units on Mac.
-
-Lemon Studio copies FL Studio, while MorningDAW offers something else.
 
 ## Sources
 

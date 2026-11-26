@@ -34,7 +34,7 @@ Je commence par le logiciel, parce que c'est gratuit et réversible.
 - **Moonlight** est le client. Sur l'iMac, il reçoit la vidéo et l'affiche en plein écran.
 - **Hyprland**, le gestionnaire de fenêtres d'Omarchy, crée un **écran virtuel**. Le MacBook le voit comme un vrai écran en plus. Sunshine filme cet écran virtuel, et l'iMac l'affiche.
 - **Le câble Thunderbolt** relie les deux machines en réseau direct, sans box ni Wi-Fi.
-- **Le son** suit la vidéo vers l'iMac. **Dans l'autre sens**, le clavier et la souris de l'iMac pilotent le MacBook. Son, clavier et souris sont activés par défaut ([configuration de Sunshine](https://docs.lizardbyte.dev/projects/sunshine/latest/md_docs_2configuration.html){target="_blank" rel="noopener"}).
+- **Le son** suit la vidéo vers l'iMac. Dans l'autre sens, le clavier et la souris de l'iMac pilotent le MacBook. Son, clavier et souris sont activés par défaut ([configuration de Sunshine](https://docs.lizardbyte.dev/projects/sunshine/latest/md_docs_2configuration.html){target="_blank" rel="noopener"}).
 
 ![Schéma : Hyprland crée un écran virtuel sur le MacBook, Sunshine le compresse et l'envoie par le câble Thunderbolt (10.0.0.1 vers 10.0.0.2), Moonlight l'affiche sur l'iMac avec le son. Le clavier et la souris de l'iMac pilotent le MacBook. L'écran virtuel doit exister avant que Sunshine démarre.](/images/articles/sunshine-moonlight-schema.svg)
 

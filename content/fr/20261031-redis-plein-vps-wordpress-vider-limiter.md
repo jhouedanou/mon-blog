@@ -10,7 +10,7 @@ Si la mémoire de Redis est pleine sur votre VPS WordPress, c'est la faute des r
 
 ## Ce qui m'est arrivé
 
-Sur un de mes VPS WordPress, Redis avait grossi jusqu'à **10,7 Go**, avec **39 millions de clés**. Pour un simple cache, c'est énorme. Je l'ai réglé avec deux lignes : `maxmemory` et `allkeys-lru`.
+Sur un de mes VPS WordPress, Redis avait grossi jusqu'à 10,7 Go, avec 39 millions de clés. Pour un simple cache, c'est énorme. Je l'ai réglé avec deux lignes : `maxmemory` et `allkeys-lru`.
 
 ## Pourquoi Redis grossit sans fin
 

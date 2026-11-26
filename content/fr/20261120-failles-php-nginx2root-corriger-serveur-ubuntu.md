@@ -48,7 +48,7 @@ Et comme pour PHP, « une faille » est un résumé : nginx 1.31.9 en corrige di
 | PHP | CVE-2026-115560 et CVE-2026-126714 (sessions) | 8.5.13, 8.4.28, 8.3.37, 8.2.36 | 19 novembre 2026 |
 | nginx | CVE-2026-123007 (HTTP/2, nginx2root) | 1.31.9 (mainline), 1.30.7 (stable) | 18 novembre 2026 |
 
-Selon l'[enquête Netcraft de septembre 2026](https://www.netcraft.com/blog/september-2026-web-server-survey){target="_blank" rel="noopener"}, nginx tourne sur 44 % des ordinateurs exposés au Web. Il y a donc du monde concerné.
+Selon l'[enquête Netcraft de septembre 2026](https://www.netcraft.com/blog/september-2026-web-server-survey){target="_blank" rel="noopener"}, nginx tourne sur 44 % des ordinateurs exposés au Web, donc il y a du monde concerné.
 
 ## Avant de commencer
 

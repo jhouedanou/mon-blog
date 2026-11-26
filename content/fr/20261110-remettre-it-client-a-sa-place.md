@@ -65,7 +65,7 @@ J'utilise la même méthode pour [vérifier un livrable annoncé comme terminé]
 
 Au milieu du fil, il a lu la documentation et il a alors posé deux bonnes questions, précises, sur l'état de la base. J'ai répondu point par point, et le site était en ligne peu après.
 
-Le but est de l'amener sur les faits, parce que sur les faits il travaille bien. Je ne cherche pas à l'écraser.
+Le but est de l'amener sur les faits, parce que sur les faits il travaille bien.
 
 ## Canibus, LL Cool J et le micro
 
@@ -79,11 +79,9 @@ En 1998, Canibus sort « Second Round K.O. », avec Mike Tyson, et beaucoup dise
 
 L'IT junior fait la même chose que Canibus, puisqu'on l'invite sur le projet d'un autre et qu'il veut y mettre sa base à lui, son domaine à lui.
 
-Je garde une chose de LL, et j'en laisse une.
+De LL, je garde l'endroit de la réponse. Il a répondu sur le disque, là où tout le monde écoute, plutôt que dans le couloir du studio, et mon mail avec tout le monde en copie fait la même chose.
 
-Je garde l'endroit de la réponse. LL a répondu sur le disque, là où tout le monde écoute, plutôt que dans le couloir du studio, et mon mail avec tout le monde en copie fait la même chose.
-
-Je laisse l'ego. LL a répondu à une phrase qu'il avait lui-même fait effacer, et c'est ce qui a lancé la guerre. Moi, je réponds avec un numéro de ligne et une capture d'écran.
+Par contre, je lui laisse l'ego. LL a répondu à une phrase qu'il avait lui-même fait effacer, et c'est ce qui a lancé la guerre. Moi, je réponds avec un numéro de ligne et une capture d'écran.
 
 Canibus avait du talent, et le junior en a peut-être aussi. Il lui reste à apprendre que sur le morceau d'un autre, on pose son couplet et on rend le micro.
 

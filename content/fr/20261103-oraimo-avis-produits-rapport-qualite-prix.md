@@ -12,7 +12,7 @@ Oui, j'ai osé paraphraser ce vieux réac de Pierre Perret. Mais qu'est-ce que v
 
 Aujourd'hui, c'est donc spécial Oraimo. Je ne touche aucune commission sur les produits dont je vais parler. J'écris cet article parce que beaucoup de gens voient cette marque et ses produits partout à Abidjan, et se demandent ce qu'ils valent vraiment.
 
-Pour faire court, mon avis sur les produits Oraimo, c'est que dans la plupart des cas, ils offrent un excellent rapport qualité-prix. C'est une marque chinoise (du groupe Transsion, comme Tecno, Infinix et itel) qui a réussi à s'implanter chez nous grâce à des produits de qualité à bon prix.
+Pour faire court, mon avis sur les produits Oraimo, c'est que dans la plupart des cas, ils ont un excellent rapport qualité-prix. C'est une marque chinoise (du groupe Transsion, comme Tecno, Infinix et itel) qui a réussi à s'implanter chez nous grâce à des produits de qualité à bon prix.
 
 J'ai donc classé les produits Oraimo que j'utilise en trois groupes : ceux que je rachèterais sans hésiter, ceux que je rachèterais avec un bémol, et ceux que je ne rachèterais pas.
 
@@ -20,7 +20,7 @@ J'ai donc classé les produits Oraimo que j'utilise en trois groupes : ceux que 
 
 ### Les écouteurs
 
-Mon premier produit Oraimo, et donc mon premier contact avec la marque, est une paire d'écouteurs : les Oraimo CONCH, des écouteurs filaires intra-auriculaires vendus entre 2 000 et 3 000 FCFA à Abidjan. Les basses sont un peu trop fortes, mais ils sont solides. J'en achète souvent pour mes proches qui cherchent de bons écouteurs pas trop chers.
+Mon premier produit Oraimo est une paire d'écouteurs, les Oraimo CONCH, des écouteurs filaires intra-auriculaires vendus entre 2 000 et 3 000 FCFA à Abidjan. Les basses sont un peu trop fortes, mais ils sont solides. J'en achète souvent pour mes proches qui cherchent de bons écouteurs pas trop chers.
 
 ![Écouteurs filaires intra-auriculaires Oraimo CONCH, noirs, avec une télécommande sur le fil et une prise jack 3,5 mm](/images/articles/oraimo-conch-2.webp)
 
@@ -44,7 +44,7 @@ Mais Oraimo ne fait pas que de l'électronique. Pour le café, j'ai le mug isoth
 
 ### La cuisine
 
-J'ai une friteuse sans huile [SmartAirFryer](https://ci.oraimo.com/product/oraimo-1500w-cooking-visible-smart-air-fryer){target="_blank" rel="noopener"} : c'est le premier air fryer que j'utilise sans odeur de plastique brûlé, et son revêtement antiadhésif se nettoie très facilement.
+J'ai une friteuse sans huile [SmartAirFryer](https://ci.oraimo.com/product/oraimo-1500w-cooking-visible-smart-air-fryer){target="_blank" rel="noopener"}. C'est le premier air fryer que j'utilise sans odeur de plastique brûlé, et son revêtement antiadhésif se nettoie très facilement.
 
 ![Friteuse sans huile Oraimo SmartAirFryer noire, avec une fenêtre sur le tiroir pour surveiller la cuisson](/images/articles/oraimo-smartairfryer.webp)
 
@@ -54,7 +54,7 @@ Une fois le repas cuisiné, il faut nettoyer. Pour la vaisselle, j'ai l'[Oraimo 
 
 ![Brosse électrique rotative sans fil Oraimo, blanche, entourée de ses cinq têtes de rechange](/images/articles/oraimo-ultracleaner-scrubber.webp)
 
-Et j'ai le [MistGlide](https://ci.oraimo.com/product/oraimo-mistglide-multi-surface-use-deep-cleaning-spray-mop--ohcs-001){target="_blank" rel="noopener"}. Je l'ai depuis 6 mois : c'est le balai à spray qui m'a duré le plus longtemps.
+Et j'ai le [MistGlide](https://ci.oraimo.com/product/oraimo-mistglide-multi-surface-use-deep-cleaning-spray-mop--ohcs-001){target="_blank" rel="noopener"}. Je l'ai depuis 6 mois, et c'est le balai à spray qui m'a duré le plus longtemps.
 
 ![Balai à spray Oraimo MistGlide, avec son réservoir fixé sur le manche et sa tête plate en microfibre](/images/articles/oraimo-mistglide.webp)
 

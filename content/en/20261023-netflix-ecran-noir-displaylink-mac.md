@@ -12,12 +12,12 @@ On a Mac, Netflix shows a black screen, with sound, as soon as a screen is conne
 
 ## My hardware
 
-I keep my machines for a long time and get everything I can out of them: my [2017 iMac boots from an external SSD](/en/20261014-installer-macos-ssd-externe-imac-2017), and my [2017 MacBook Pro has switched to Omarchy](/en/20261013-retournement-de-veste-omarchy-macbook-pro-2017). At home, I work on an **M1 MacBook**, the base model. I use it almost like a desktop computer.
+I keep my machines for a long time and get everything I can out of them: my [2017 iMac boots from an external SSD](/en/20261014-installer-macos-ssd-externe-imac-2017), and my [2017 MacBook Pro has switched to Omarchy](/en/20261013-retournement-de-veste-omarchy-macbook-pro-2017). At home, I work on an M1 MacBook, the base model. I use it almost like a desktop computer.
 
 The catch is that a base M1 Mac only handles **one external display**, and I have two:
 
-- a **34-inch curved Xiaomi Mi Monitor**;
-- a **29-inch Lenovo ultrawide**.
+- a 34-inch curved Xiaomi Mi Monitor;
+- a 29-inch Lenovo ultrawide.
 
 ![A curved ultrawide monitor on a desk, with a keyboard, a mouse and a headset](/images/articles/pexels-minhphuc-workspace-20648391.webp)
 

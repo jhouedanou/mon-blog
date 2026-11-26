@@ -48,7 +48,7 @@ And as with PHP, "one flaw" is a summary: nginx 1.31.9 fixes ten.
 | PHP | CVE-2026-115560 and CVE-2026-126714 (sessions) | 8.5.13, 8.4.28, 8.3.37, 8.2.36 | November 19, 2026 |
 | nginx | CVE-2026-123007 (HTTP/2, nginx2root) | 1.31.9 (mainline), 1.30.7 (stable) | November 18, 2026 |
 
-According to the [Netcraft survey for September 2026](https://www.netcraft.com/blog/september-2026-web-server-survey){target="_blank" rel="noopener"}, nginx runs on 44% of web-facing computers. So a lot of people are affected.
+According to the [Netcraft survey for September 2026](https://www.netcraft.com/blog/september-2026-web-server-survey){target="_blank" rel="noopener"}, nginx runs on 44% of web-facing computers, so a lot of people are affected.
 
 ## Before you start
 

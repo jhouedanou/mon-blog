@@ -61,7 +61,7 @@ It was instructive, but still nothing on paper, neither in ESC/POS nor in the "L
 
 ### The right lead was in the app
 
-The app's name is what unblocked everything. We got the ScanPrint APK (`com.netum.scanprint`) and decompiled it with [jadx](https://github.com/skylot/jadx){target="_blank" rel="noopener"}. The interface is in Flutter, but the Bluetooth part stayed in Java. Three findings were enough.
+The app's name is what unblocked everything. We got the ScanPrint APK (`com.netum.scanprint`) and decompiled it with [jadx](https://github.com/skylot/jadx){target="_blank" rel="noopener"}. The interface is in Flutter, but the Bluetooth part stayed in Java.
 
 **1. The model gets special treatment.**
 
@@ -105,7 +105,7 @@ And the answer:
  "battery":14,"charger":0,"paperType":0,"printerStatus":6}
 ```
 
-That confirms the original manufacturer, Zjiang, and finally explains the beeps, since according to the app's code, `printerStatus: 6` means **low battery**, and it was at 14%. So the beeps signaled a low battery and not a misunderstanding, and what blocked printing was the language.
+That confirms the original manufacturer, Zjiang, and finally explains the beeps, since according to the app's code, `printerStatus: 6` means **low battery**, and it was at 14%. So what blocked printing was the language.
 
 ## The first page printed from Linux
 

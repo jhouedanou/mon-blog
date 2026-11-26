@@ -7,7 +7,7 @@ searchIntent: "How can I use an old iMac as a free second screen for a Mac or a 
 tags: ["tutorial", "apple", "macos", "mac", "linux", "omarchy", "open-source", "hardware"]
 ---
 
-OpenDisplay is a free, open source app that turns an old iMac into a monitor for a Linux PC, or a second screen for a newer Mac, even over Wi-Fi. All you do is install a receiver on the iMac and a sender on the other machine. But the picture travels as compressed video, so it's less sharp and less smooth than a screen plugged in with a cable, and the numbers are below.
+OpenDisplay is a free, open source app that turns an old iMac into a monitor for a Linux PC, or a second screen for a newer Mac, even over Wi-Fi. All you do is install a receiver on the iMac and a sender on the other machine. But the picture travels as compressed video, so it's less sharp and less smooth than a screen plugged in with a cable, and I give the numbers below.
 
 I did it with my 2017 MacBook Pro running Omarchy, and the iMac does show its extended desktop.
 
@@ -101,7 +101,7 @@ After `--to`, type part of the name that `list` shows. On Omarchy, send a window
 
 ## What you lose in quality
 
-OpenDisplay does not plug the iMac in like a real screen. The sender records a virtual screen, compresses it into video and sends it, then the iMac decodes that video and shows it, and each step degrades the picture a little or adds delay.
+The sender records a virtual screen, compresses it into video and sends it, then the iMac decodes that video and shows it, and each step degrades the picture a little or adds delay.
 
 **1. The picture is heavily compressed.** Between two Macs, the stream uses at most 18 Mb/s. A raw 5K picture at 30 frames per second needs about 10 Gb/s. So the picture is compressed several hundred times. On text that does not move, it holds up well. When the picture moves, details drop out for a moment.
 
@@ -135,12 +135,12 @@ A smaller resolution on the iMac also lightens the load.
 
 **What's still missing:**
 
-- **no sound** through the iMac's speakers;
-- **the iMac's keyboard and mouse** don't control the other machine (that's planned);
-- **from Linux, the stream is not encrypted**: use it only on a network you trust. No mirror mode either;
-- **on the Mac side, OpenDisplay relies on an undocumented Apple feature**: a macOS update can break it;
-- **a purple dot** shows in the sending Mac's menu bar. That's normal: macOS tells you the screen is being recorded;
-- **the iMac is still a computer that stays on**: it uses more power than a plain screen.
+- no sound through the iMac's speakers;
+- the iMac's keyboard and mouse don't control the other machine (that's planned);
+- from Linux, the stream is not encrypted: use it only on a network you trust. No mirror mode either;
+- on the Mac side, OpenDisplay relies on an undocumented Apple feature: a macOS update can break it;
+- a purple dot shows in the sending Mac's menu bar. That's normal: macOS tells you the screen is being recorded;
+- the iMac is still a computer that stays on: it uses more power than a plain screen.
 
 ## Which setting to pick
 
