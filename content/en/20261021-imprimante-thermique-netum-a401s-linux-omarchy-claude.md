@@ -31,7 +31,7 @@ I opened Claude Code in the terminal, where I take my problems since I moved to 
 
 ### It beeps, but prints nothing
 
-A Bluetooth scan finds it right away: `A401S-545974`, with a "printer" icon. Asked for its services, it advertises both:
+A Bluetooth scan finds it right away: `A401S-XXXXXX`, with a "printer" icon. Asked for its services, it advertises both:
 
 - the classic **serial port profile** (SPP, `0x1101`);
 - several **Bluetooth Low Energy** services (`18f0`, `fee7`, `ff00`…).
@@ -40,7 +40,7 @@ Most small thermal printers understand **ESC/POS**, the language of receipt prin
 
 ```python
 s = socket.socket(socket.AF_BLUETOOTH, socket.SOCK_STREAM, socket.BTPROTO_RFCOMM)
-s.connect(("28:D4:1E:54:59:74", 1))
+s.connect(("28:D4:1E:XX:XX:XX", 1))
 ```
 
 The connection goes through without pairing. Claude sends an ESC/POS image (`GS v 0`) and… two beeps, but not a single printed line. Same thing at full A4 width, same thing with an end-of-page command.
@@ -134,7 +134,7 @@ A test band then shrinks from several dozen KB to **8 KB, sent in 3 seconds**.
 
 ```bash
 a401s-print --status
-#  Imprimante : zjiang A401S (A401S-545974, 28:D4:1E:54:59:74)
+#  Imprimante : zjiang A401S (A401S-XXXXXX, 28:D4:1E:XX:XX:XX)
 #  État       : prête
 #  Batterie   : 31 %
 

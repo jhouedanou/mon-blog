@@ -18,7 +18,7 @@ The commentators call it a *welcome to the league moment*, "Welcome to the NBA, 
 
 Bronny is currently averaging 2.9 points, 0.5 rebounds and 1.2 assists per game in the regular season, over 42 games played. Those are end-of-bench numbers. The kid has room to grow, no question, he's young, athletic, he's got the DNA. But if he's on the Lakers roster, it's first and foremost because LeBron James put pressure on the franchise to play alongside his son. If Bronny were called Bronny Smith (instead of James), he'd be in the G-League at South Bay and nobody would be talking about him.
 
-And if the talent doesn't follow, if his progress stalls, if his surname is still the only argument, Bronny will have a Smush Parker career. Smush was the starting point guard for the Lakers in 2005-2007, 9 points per game career average, 5 seasons, 6 teams, then off to China and into oblivion. The kind of player Kobe said "wasn't allowed to speak to him".
+And if the talent doesn't follow, if his progress stalls, if his surname is still the only argument, Bronny will have a Smush Parker career. Smush was the starting point guard for the Lakers in 2005-2007, 9 points per game career average, 5 seasons, 6 teams, then off to China and into oblivion. The kind of player who, by Smush's own account, was told by Kobe that he "wasn't allowed to speak to him".
 
 You can see where I'm going with this.
 

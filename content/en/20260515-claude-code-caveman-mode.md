@@ -28,7 +28,7 @@ Over 10 real prompts, the project's README claimed in May 2026 **65% fewer outpu
 
 > "New object ref each render. Inline object prop = new ref = re-render. Wrap in useMemo."
 
-It's the same fix, with 75% fewer words.
+It's the same fix, with about 72% fewer tokens.
 
 ---
 

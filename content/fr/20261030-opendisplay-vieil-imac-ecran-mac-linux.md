@@ -115,7 +115,7 @@ L'émetteur filme un écran virtuel, le compresse en vidéo et l'envoie, puis l'
 | Par défaut | Fast | 2560 × 1440 | environ 58 | environ 12 ms |
 | 1600 × 900 | Best | 1600 × 900 | environ 55 | environ 15 ms |
 
-À pleine finesse, l'iMac 5K affiche donc 30 images par seconde. C'est bien pour lire et écrire, moins pour une vidéo. Pour avoir 60 images par seconde, il faut accepter une image plus floue (**Fast**) ou un bureau plus petit. Avec une puce plus ancienne, c'est moins : un M1 Pro tombe à environ 23 images par seconde en 5K.
+À pleine finesse, l'iMac 5K affiche donc 30 images par seconde. C'est bien pour lire et écrire, moins pour une vidéo. Pour approcher les 60 images par seconde, il faut accepter une image plus floue (**Fast**) ou un bureau plus petit. Avec une puce plus ancienne, c'est moins : un M1 Pro tombe à environ 23 images par seconde en 5K.
 
 **4. Un Mac Intel limite la définition.** Le format HEVC, le plus net, ne sert que si le Mac qui envoie a une puce Apple et que l'iMac décode le HEVC (la plupart des Mac de 2017 et après). Sinon, c'est le H.264, limité à 4096 × 2304 pixels. Sur un iMac 5K, le bureau passe alors de 2560 × 1440 à 2048 × 1152 points. À l'inverse, un iMac non Retina en 1920 × 1080 reçoit son image pixel pour pixel, à 60 images par seconde.
 

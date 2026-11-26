@@ -59,7 +59,7 @@ L'IA rend la copie facile, mais pas la qualité ni l'originalité. C'est mon avi
 
 J'ai fini par trouver le temps d'essayer Lemon Studio, et il est très loin de FL Studio.
 
-- **Les VST3 ne sont pas pris en charge.** La documentation les annonce comme utilisables, mais chez moi, ils ne fonctionnent pas.
+- **Les VST3 ne fonctionnent pas chez moi.** La documentation les annonce pourtant comme utilisables.
 - **Mon plug-in favori plante.** Le RX1200 d'Inphonik, une émulation du sampleur SP-1200, plante dès que j'édite un sample.
 
 ## MorningDAW, si vous cherchez un logiciel de musique gratuit

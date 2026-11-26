@@ -37,7 +37,7 @@ Here's what it did during the demo:
 
 It owes that to SpaceX thrusters, cold-gas thrusters that blow out compressed air. On the wildest version, there are ten of them all around the car, connected to 600 liters of compressed air, according to Lars Moravy, Tesla's vice president of engineering. The more air, the longer the car stays in the air, and the tanks can be refilled.
 
-On the HKB bridge in Abidjan on a Monday morning, that would mean no more traffic jam, one pssshhh and you fly over the minibuses. (No, it's not allowed, but let me dream.)
+On the HKB bridge in Abidjan on a Monday morning, that would mean no more tolls, no more traffic jam, one pssshhh and you fly over the minibuses. (No, it's not allowed, but let me dream.)
 
 CNET summed it all up in ten minutes, with real footage (not [AI-generated video](/en/20250604-liaetmoi)). Watch it, it's worth it:
 

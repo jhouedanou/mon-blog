@@ -24,7 +24,7 @@ Pour les plus jeunes, Bill Gates est l'homme qui, dès 1976, écrivait sa fameus
 
 C'est le patron de la Microsoft des années 90 et 2000, celle de la doctrine « embrace, extend, extinguish », qui consiste à adopter un standard ouvert, à l'étendre avec des morceaux propriétaires, puis à étouffer la concurrence. C'est aussi la Microsoft des « Halloween documents », ces notes internes qui traitaient Linux comme une menace à neutraliser, et celle qui a été condamnée pour abus de position dominante des deux côtés de l'Atlantique.
 
-C'est aussi l'homme qui, en 2005, qualifiait les défenseurs de la culture libre de « communistes des temps modernes », pendant que son bras droit Steve Ballmer comparait Linux à un cancer.
+C'est aussi l'homme qui, en 2005, qualifiait les défenseurs de la culture libre de « communistes des temps modernes », quatre ans après que Steve Ballmer, alors PDG de Microsoft, avait comparé Linux à un cancer.
 
 Pendant trente ans, tout ce qui ressemblait à du partage, à de l'ouverture, à une technologie qu'on ne pouvait pas facturer à l'unité, a été combattu par cet homme et son entreprise avec une énergie remarquable. Et le voici aujourd'hui qui défend le bien commun, inquiet que la technologie aille trop vite, trop loin, sans garde-fous, entre les mains de quelques entreprises trop puissantes.
 

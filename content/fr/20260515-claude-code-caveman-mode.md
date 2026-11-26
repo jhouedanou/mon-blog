@@ -28,7 +28,7 @@ Sur 10 prompts réels, le README du projet annonçait en mai 2026 **65 % d'outpu
 
 > « New object ref each render. Inline object prop = new ref = re-render. Wrap in useMemo. »
 
-C'est la même correction, avec 75 % de mots en moins.
+C'est la même correction, avec environ 72 % de tokens en moins.
 
 ---
 
