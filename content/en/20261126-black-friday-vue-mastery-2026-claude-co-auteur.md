@@ -47,9 +47,9 @@ Someone who wrote a rule can explain it, while someone who got it from a prompt 
 
 ## Rap went through the same thing
 
-Hip-hop has known the lyrical dexterity of Treach, the sample manipulations of RZA and DJ Premier, the mixing excellence of Dr. Dre, the creative madness of Timbaland, the versatility and adaptability of Just Blaze. They all have passion and talent in common.
+Hip-hop has known the lyrical dexterity of Treach, the sample manipulations of RZA and DJ Premier, the mixing excellence of Dr. Dre, the creative madness of Timbaland, the versatility and adaptability of Just Blaze. They all have passion and talent in common. (And Treach is the real GOAT, and I'ma die on that hill. "Feel Me Flow" is a killer track.)
 
-Then [FL Studio](/en/20261026-lemon-studio-clone-fl-studio), Auto-Tune and MIDI loops became available to everyone, and we got copies of sub-copies of Shawty Redd, some Sexyy Reds, in short pieces of crap who are only there for the money and who carve out niches for themselves.
+Then [FL Studio](/en/20261026-lemon-studio-clone-fl-studio), Auto-Tune and MIDI loops became available to everyone, and we got copies of sub-copies of Shawty Redd, some Sexyy Reds, in short imitators who are only there for the money and who carve out niches for themselves.
 
 Vibe coding has the same problem. It produces fast, and it chases money.
 

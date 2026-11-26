@@ -47,9 +47,9 @@ Celui qui a écrit une règle peut l'expliquer, alors que celui qui l'a obtenue 
 
 ## Le rap a connu la même chose
 
-Le hip-hop a connu la dextérité lyricale de Treach, les manipulations de samples de RZA et de DJ Premier, l'excellence du mixage de Dr. Dre, les folies créatives de Timbaland, la polyvalence et la capacité d'adaptation de Just Blaze. Tous ont en commun la passion et le talent.
+Le hip-hop a connu la dextérité lyricale de Treach, les manipulations de samples de RZA et de DJ Premier, l'excellence du mixage de Dr. Dre, les folies créatives de Timbaland, la polyvalence et la capacité d'adaptation de Just Blaze. Tous ont en commun la passion et le talent. (Et Treach est le véritable GOAT, and I'ma die on that hill. « Feel Me Flow », c'est une tuerie.)
 
-Puis [FL Studio](/fr/20261026-lemon-studio-clone-fl-studio), Auto-Tune et les boucles MIDI se sont démocratisés, et on a eu des copies de sous-copies de Shawty Redd, des Sexyy Red, bref des sous-merdes qui ne sont là que pour l'argent et qui se créent des niches.
+Puis [FL Studio](/fr/20261026-lemon-studio-clone-fl-studio), Auto-Tune et les boucles MIDI se sont démocratisés, et on a eu des copies de sous-copies de Shawty Redd, des Sexyy Red, bref des imitateurs qui ne sont là que pour l'argent et qui se créent des niches.
 
 Le vibe coding pose le même problème. Ça produit vite, et ça cherche l'argent.
 
