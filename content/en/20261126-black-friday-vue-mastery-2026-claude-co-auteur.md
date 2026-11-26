@@ -13,7 +13,7 @@ I'm writing about it because this blog runs on Nuxt, so on Vue, and because I'm 
 
 ## The Vue Mastery Black Friday 2026 deal
 
-The deal is already live and it's simple, 70% off the annual subscription. The page also offers two more expensive bundles, at 399 and 999 dollars, with advanced courses and certifications on Nuxt and Pinia.
+The deal is already live, with 70% off the annual subscription. The page also offers two more expensive bundles, at 399 and 999 dollars, with advanced courses and certifications on Nuxt and Pinia.
 
 However, it gives no end date, so if the deal interests you, I wouldn't count on next week.
 
@@ -45,13 +45,13 @@ No sir, that's called acceptance testing.
 
 Someone who wrote a rule can explain it, while someone who got it from a prompt has to ask somebody else what their own application does, and that's why I keep learning.
 
-## So yes, I use Claude
+## How I use Claude
 
 So yes, I know, I use Claude too. But my use is Opus, in VS Code, and for two things. I give it the code that doesn't work so it finds the bug, and I let it make the commits automatically, with the message that goes with them.
 
 ## Claude made itself co-author
 
-And that's where I got a surprise. At the bottom of my commits, there was a `Co-Authored-By` line with the model's name and the address `noreply@anthropic.com`, which means that on GitHub, Claude shows up next to me in the list of authors.
+And that's where I got the surprise of finding, at the bottom of my commits, a `Co-Authored-By` line with the model's name and the address `noreply@anthropic.com`, which means that on GitHub, Claude shows up next to me in the list of authors.
 
 I hadn't asked for anything. It's the default behaviour of Claude Code, and [the settings documentation](https://code.claude.com/docs/en/settings) provides a setting named `attribution` to change or hide that line.
 

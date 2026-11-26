@@ -13,7 +13,7 @@ J'en parle parce que ce blog tourne sous Nuxt, donc sous Vue, et parce que je ne
 
 ## L'offre Black Friday 2026 de Vue Mastery
 
-L'offre est déjà en ligne et elle est simple, 70 % de réduction sur l'abonnement annuel. La page propose aussi deux lots plus chers, à 399 et 999 dollars, avec des cours avancés et des certifications sur Nuxt et Pinia.
+L'offre est déjà en ligne, avec 70 % de réduction sur l'abonnement annuel. La page propose aussi deux lots plus chers, à 399 et 999 dollars, avec des cours avancés et des certifications sur Nuxt et Pinia.
 
 Par contre, elle ne donne aucune date de fin, donc si l'offre vous intéresse, je ne compterais pas sur la semaine prochaine.
 
@@ -45,13 +45,13 @@ Non monsieur, ça s'appelle faire une recette.
 
 Celui qui a écrit une règle peut l'expliquer, alors que celui qui l'a obtenue avec un prompt doit demander à quelqu'un d'autre ce que fait sa propre application, et c'est pour ça que je continue d'apprendre.
 
-## Alors oui, j'utilise Claude
+## Comment j'utilise Claude
 
 Alors oui, je sais, j'utilise Claude moi aussi. Mais mon usage, c'est Opus, dans VS Code, et pour deux choses. Je lui donne le code qui ne marche pas pour qu'il trouve le bug, et je le laisse faire les commits automatiquement, avec le message qui va avec.
 
 ## Claude s'est mis co-auteur
 
-Et c'est là que j'ai eu une surprise. Au bas de mes commits, il y avait une ligne `Co-Authored-By` avec le nom du modèle et l'adresse `noreply@anthropic.com`, ce qui fait que sur GitHub, Claude apparaît à côté de moi dans la liste des auteurs.
+Et c'est là que j'ai eu la surprise de trouver, au bas de mes commits, une ligne `Co-Authored-By` avec le nom du modèle et l'adresse `noreply@anthropic.com`, ce qui fait que sur GitHub, Claude apparaît à côté de moi dans la liste des auteurs.
 
 Je ne lui avais rien demandé. C'est le comportement par défaut de Claude Code, et [la documentation des réglages](https://code.claude.com/docs/en/settings) prévoit un réglage nommé `attribution` pour changer ou cacher cette ligne.
 
