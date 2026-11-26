@@ -56,7 +56,7 @@ onUnmounted(() => {
     position: relative;
     cursor: pointer;
     width: 100%;
-    border-radius: 8px;
+    border-radius: var(--radius);
     overflow: hidden;
 }
 
@@ -74,7 +74,7 @@ onUnmounted(() => {
     width: 68px;
     height: 48px;
     background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 14px;
+    border-radius: var(--radius);
     transition: background-color 0.2s ease;
 }
 
@@ -123,7 +123,7 @@ onUnmounted(() => {
 iframe {
     width: 100%;
     height: 100%;
-    border-radius: 8px;
+    border-radius: var(--radius);
 }
 
 .close-button {

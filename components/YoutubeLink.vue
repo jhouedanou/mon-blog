@@ -44,7 +44,7 @@ const closeModal = () => {
     width: 68px;
     height: 48px;
     background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 14px;
+    border-radius: var(--radius);
 }
 
 .play-button::before {

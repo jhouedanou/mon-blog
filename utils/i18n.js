@@ -6,7 +6,10 @@
 
 export const LOCALE_CODES = ['fr', 'en']
 
-const ARTICLE_PATH = /^\/(fr|en)\/([^/]+)\/?$/
+// Un billet commence toujours par sa date (AAAAMMJJ-slug). Sans cette
+// contrainte, /en/themes ou /en/tags passaient pour des billets et le
+// sélecteur de langue menait vers /fr/themes, /fr/tags… qui n'existent pas.
+const ARTICLE_PATH = /^\/(fr|en)\/(\d{8}-[^/]+)\/?$/
 
 /** Locale portée par un chemin d'article, ou null si ce n'est pas un article. */
 export function articleLocaleFromPath(path) {

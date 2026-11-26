@@ -58,7 +58,7 @@ onUnmounted(() => {
     }
 
     &:hover {
-        background: var(--accent);
+        background: var(--accent-fill);
         color: var(--accent-contrast);
         transform: translateY(-3px);
         box-shadow: var(--card-shadow-hover);

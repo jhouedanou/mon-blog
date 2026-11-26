@@ -1,7 +1,7 @@
 <template>
-    <main>
+    <div class="home-page">
         <ArticleList />
-    </main>
+    </div>
 </template>
 
 <script setup>

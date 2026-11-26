@@ -1,6 +1,6 @@
 <template>
   <section v-if="articles && articles.length" class="suggested">
-    <span class="suggested__label">— {{ label || $t('readNext') }}</span>
+    <span class="suggested__label">{{ label || $t('readNext') }}</span>
     <h3 class="suggested__heading">{{ $t('suggestedArticles') }}</h3>
     <div class="suggested__grid">
       <NuxtLink
@@ -63,16 +63,16 @@ function formatDate(createdAt) {
   font-size: 0.7rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.18em;
-  color: var(--accent);
+  letter-spacing: 0.1em;
+  color: var(--accent-2-text);
   margin-bottom: 0.5rem;
 }
 
 .suggested__heading {
   font-family: var(--font-display);
-  font-weight: 650;
+  font-weight: 600;
   font-size: 1.85rem;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.04em;
   color: var(--text-primary);
   margin: 0 0 1.5rem 0;
 }
@@ -143,10 +143,10 @@ function formatDate(createdAt) {
 
 .suggested__title {
   font-family: var(--font-display);
-  font-weight: 650;
+  font-weight: 600;
   font-size: 1.05rem;
   line-height: 1.25;
-  letter-spacing: -0.015em;
+  letter-spacing: -0.025em;
   color: var(--text-primary);
   display: -webkit-box;
   -webkit-line-clamp: 2;

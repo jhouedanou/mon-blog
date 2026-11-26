@@ -162,7 +162,7 @@ async function toggleZoom(event) {
   height: 40px;
   padding: 0;
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  border-radius: var(--radius);
   background: var(--bg-glass);
   color: var(--text-primary);
   cursor: pointer;
@@ -216,7 +216,7 @@ async function toggleZoom(event) {
   margin: auto;
   max-width: calc(100vw - 2rem);
   max-height: calc(100dvh - 2rem);
-  border-radius: 6px;
+  border-radius: var(--radius);
   cursor: zoom-in;
 }
 

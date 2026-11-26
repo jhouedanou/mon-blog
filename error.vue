@@ -1,22 +1,22 @@
 <template>
   <NuxtLayout>
-    <div class="error-page">
+    <SiteHeader />
+    <main id="main-content" class="error-page">
       <div class="error-page__content">
         <div class="error-page__illustration">
           <span class="error-page__code">{{ error?.statusCode || 404 }}</span>
-          <span class="error-page__emoji">&#128566;</span>
         </div>
 
         <h1 class="error-page__title">{{ $t('errorTitle') }}</h1>
         <p class="error-page__message">{{ $t('errorMessage') }}</p>
 
-        <NuxtLink to="/" class="error-page__btn">
+        <NuxtLink to="/" class="btn btn--primary">
           <i class="material-icons">home</i>
           {{ $t('backToHome') }}
         </NuxtLink>
 
         <section v-if="recentArticles && recentArticles.length" class="error-page__recent">
-          <h3 class="error-page__recent-heading">{{ $t('recentArticles') }}</h3>
+          <h2 class="error-page__recent-heading">{{ $t('recentArticles') }}</h2>
           <div class="error-page__recent-grid">
             <NuxtLink
               v-for="article in recentArticles"
@@ -36,12 +36,13 @@
           </div>
         </section>
       </div>
-    </div>
+    </main>
   </NuxtLayout>
 </template>
 
 <script setup>
 import { useError } from '#app'
+import SiteHeader from '~/components/SiteHeader.vue'
 import { useI18n } from 'vue-i18n'
 import { useSeo } from '~/composables/useSeo.js'
 import { ARTICLE_LIST_FIELDS } from '~/utils/content-fields.js'
@@ -93,7 +94,7 @@ useSeo(() => ({
 
 .error-page__code {
   font-family: var(--font-display);
-  font-weight: 650;
+  font-weight: 600;
   font-size: clamp(5rem, 14vw, 9rem);
   color: var(--accent);
   line-height: 0.9;
@@ -108,8 +109,8 @@ useSeo(() => ({
 .error-page__title {
   font-family: var(--font-display);
   font-size: clamp(1.65rem, 4vw, 2.4rem);
-  font-weight: 400;
-  letter-spacing: -0.025em;
+  font-weight: 600;
+  letter-spacing: -0.035em;
   color: var(--text-primary);
   margin: 0 0 0.75rem 0;
 }
@@ -209,8 +210,8 @@ useSeo(() => ({
 .error-page__article-title {
   font-family: var(--font-display);
   font-size: 0.9rem;
-  font-weight: 650;
-  letter-spacing: -0.01em;
+  font-weight: 600;
+  letter-spacing: -0.02em;
   color: var(--text-primary);
   line-height: 1.25;
   display: -webkit-box;

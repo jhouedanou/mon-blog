@@ -7,32 +7,31 @@
     <!-- Hero façon remarkable : visuel à gauche, titre à droite -->
     <section class="article-hero" :class="{ 'article-hero--full': !article.image }">
       <div v-if="article.image" class="article-hero__media">
-        <img :src="article.image" :alt="article.title" />
+        <img :src="article.image" :alt="article.title" width="1200" height="900" fetchpriority="high" decoding="async" />
       </div>
       <header class="article-header">
-        <div class="article-header__meta">
+        <p class="article-header__meta">
           <!-- Signature visible : confirme en HTML l'auteur déclaré en JSON-LD. -->
           <NuxtLink to="/a-propos" rel="author" class="article-header__author">{{ $t('byAuthor') }} Jean-Luc Houédanou</NuxtLink>
-          <span class="article-header__divider" aria-hidden="true">·</span>
-          <span class="article-header__date">{{ formatDate(article.createdAt) }}</span>
-          <span class="article-header__divider" aria-hidden="true">·</span>
-          <span v-if="readingTime" class="article-header__reading-time">
-            <i class="material-icons">schedule</i>
-            {{ readingTime }} {{ $t('readingTime') }}
-          </span>
-        </div>
-        <h1 class="article-header__title">{{ article.title }}</h1>
+          <span aria-hidden="true">·</span>
+          <time :datetime="article.createdAt">{{ formatDate(article.createdAt) }}</time>
+          <template v-if="readingTime">
+            <span aria-hidden="true">·</span>
+            <span>{{ readingTime }} {{ $t('readingTime') }}</span>
+          </template>
+        </p>
+        <h1 class="article-header__title">{{ frenchSpacing(article.title, locale) }}</h1>
         <div v-if="articleTags.length" class="article-header__tags" :aria-label="$t('articleTagsLabel')">
           <NuxtLink
             v-for="tag in articleTags"
             :key="tag"
             :to="localePath(`/tags/${slugifyTag(tag)}`)"
-            class="article-header__tag"
+            class="chip"
           >#{{ tag }}</NuxtLink>
         </div>
         <div v-if="articleThemes.length" class="article-header__themes">
           <span>{{ $t('explore') }}</span>
-          <NuxtLink v-for="themeItem in articleThemes" :key="themeItem.slug" :to="localePath(`/themes/${themeItem.slug}`)">
+          <NuxtLink v-for="themeItem in articleThemes" :key="themeItem.slug" :to="localePath(`/themes/${themeItem.slug}`)" class="chip chip--copper">
             {{ localizeTheme(themeItem, locale).label }}
           </NuxtLink>
         </div>
@@ -49,9 +48,13 @@
         <div class="article-content">
           <!-- :head="false" : sinon useContentHead écrase og:image/description avec le front matter brut (WebP). -->
           <ContentDoc :head="false" />
+        </div>
 
+        <!-- Hors de .article-content : la typographie du billet (liens soulignés,
+             paragraphes, titres) ne doit pas déteindre sur ces blocs. -->
+        <div class="article-after">
           <div class="social-share">
-            <span class="social-share__label">— {{ $t('share') }}</span>
+            <p class="social-share__label">{{ $t('share') }}</p>
             <div class="sharethis-inline-share-buttons"></div>
           </div>
 
@@ -65,13 +68,13 @@
           <DisqusComments :pageUrl="currentUrl" :pageIdentifier="article._path" />
 
           <div class="article-links">
-            <a target="_blank" href="https://jeanluchouedanou.blogspot.com/">{{ $t('oldArticles') }}</a>
+            <a target="_blank" rel="noopener" href="https://jeanluchouedanou.blogspot.com/">{{ $t('oldArticles') }} <i class="material-icons" aria-hidden="true">north_east</i></a>
           </div>
         </div>
 
         <footer class="article-footer">
-          <NuxtLink :to="localePath('/')" class="back-to-articles">
-            <span class="back-arrow">←</span>
+          <NuxtLink :to="localePath('/')" class="btn btn--secondary back-to-articles">
+            <i class="material-icons" aria-hidden="true">arrow_back</i>
             <span>{{ $t("backToArticles") }}</span>
           </NuxtLink>
         </footer>
@@ -99,6 +102,7 @@ import { getReadingStats } from "~/utils/reading.js";
 import { canonicalUrl, absoluteUrl } from "~/utils/site.js";
 import { ogImageFor } from "~/utils/og.js";
 import { articleGraph } from "~/utils/schema.js";
+import { frenchSpacing } from "~/utils/typography.js";
 import { useSeo } from "~/composables/useSeo.js";
 import { ARTICLE_LIST_FIELDS } from "~/utils/content-fields.js";
 import {
@@ -316,17 +320,18 @@ function formatDate(createdAt) {
   overflow-y: visible;
 }
 
-/* Table des matières en colonne gauche (sticky), lecture à droite. */
+/* Table des matières en colonne gauche (sticky), lecture à droite.
+   La colonne de lecture tient 66 à 72 signes par ligne en Figtree 18 px. */
 .article-layout {
   display: grid;
-  grid-template-columns: minmax(200px, 250px) minmax(0, 780px);
+  grid-template-columns: minmax(200px, 240px) minmax(0, 640px);
   justify-content: center;
   align-items: start;
-  gap: clamp(2rem, 4vw, 4rem);
-  max-width: 1280px;
+  gap: clamp(2rem, 5vw, 5rem);
+  max-width: var(--wrap);
   width: 100%;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 var(--gutter);
 }
 
 /* La TOC est après l'article dans le DOM (elle peut être absente) :
@@ -344,7 +349,7 @@ function formatDate(createdAt) {
 
 /* Sans TOC (article court), la colonne de lecture reste centrée. */
 .article-layout:not(:has(> .toc)) {
-  grid-template-columns: minmax(0, 780px);
+  grid-template-columns: minmax(0, 640px);
 
   > .article-container {
     grid-column: 1;
@@ -352,34 +357,49 @@ function formatDate(createdAt) {
 }
 
 /* ==========================================
-   Hero — visuel à gauche, titre à droite
+   Ouverture — visuel encadré comme le portrait du CV
    ========================================== */
 .article-hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
-  gap: clamp(2rem, 5vw, 5rem);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(2.5rem, 6vw, 5.5rem);
   align-items: center;
-  max-width: 1280px;
+  max-width: var(--wrap);
   margin: 0 auto;
-  padding: clamp(2rem, 5vh, 4rem) 1.5rem clamp(2.5rem, 6vh, 4.5rem);
+  padding: clamp(2.5rem, 6vh, 4.5rem) var(--gutter) clamp(3rem, 7vh, 5rem);
 
-  /* Sans image : header centré pleine largeur, colonne de lecture */
+  /* Sans image : header pleine largeur, aligné sur la colonne de lecture */
   &--full {
-    grid-template-columns: minmax(0, 780px);
+    grid-template-columns: minmax(0, 860px);
     justify-content: center;
-    text-align: left;
   }
 }
 
 .article-hero__media {
+  position: relative;
   min-width: 0;
+  isolation: isolate;
+
+  /* Cadre cuivre décalé, comme derrière le portrait du portfolio. */
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 7% -4% -5% 6%;
+    border: 1px solid var(--accent-line);
+    border-radius: 12px 44px 12px 44px;
+    background: var(--accent-soft);
+    transform: rotate(-3deg);
+  }
 
   img {
     display: block;
     width: 100%;
     aspect-ratio: 4 / 3;
     object-fit: cover;
-    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    border-radius: 12px 44px 12px 44px;
+    box-shadow: var(--card-shadow);
   }
 }
 
@@ -392,32 +412,21 @@ function formatDate(createdAt) {
 }
 
 .article-header__meta {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 0.6rem;
-  margin-bottom: 1.5rem;
-  padding: 0.45rem 0.75rem;
-  border: 1px solid var(--border-color);
-  border-radius: 6px;
-  background: var(--bg-card);
-}
-
-.article-header__date {
+  gap: 0.35rem 0.55rem;
+  margin: 0 0 1.25rem;
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 0.74rem;
   font-weight: 600;
-  color: var(--accent);
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  color: var(--accent-2-text);
 }
 
 .article-header__author {
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  font-weight: 600;
   color: var(--text-primary);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
   text-decoration: none;
 
   &:hover {
@@ -425,34 +434,14 @@ function formatDate(createdAt) {
   }
 }
 
-.article-header__divider {
-  color: var(--text-muted);
-  font-size: 0.8rem;
-}
-
-.article-header__reading-time {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.3rem;
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  letter-spacing: 0.08em;
-  color: var(--text-secondary);
-  text-transform: uppercase;
-
-  .material-icons {
-    font-size: 0.9rem;
-  }
-}
-
 .article-header__title {
   font-family: var(--font-display);
-  font-size: clamp(2rem, 3.4vw, 3.4rem);
-  font-weight: 650;
-  line-height: 1.06;
+  font-size: clamp(2.2rem, 4.2vw, 3.75rem);
+  font-weight: 600;
+  line-height: 1.02;
   color: var(--text-primary);
-  margin: 0 0 1.5rem 0;
-  letter-spacing: -0.025em;
+  margin: 0 0 1.75rem 0;
+  letter-spacing: -0.04em;
   text-wrap: balance;
 }
 
@@ -461,44 +450,16 @@ function formatDate(createdAt) {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.45rem;
 }
 
 .article-header__tags {
-  margin-top: -0.5rem;
-  margin-bottom: 0.85rem;
-}
-
-.article-header__tag {
-  padding: 0.3rem 0.55rem;
-  border: 1px solid var(--border-color);
-  border-radius: 3px;
-  color: var(--text-secondary);
-  font-family: var(--font-mono);
-  font-size: 0.68rem;
-  letter-spacing: 0.04em;
-  text-decoration: none;
-  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
-
-  &:hover {
-    color: var(--accent);
-    border-color: var(--accent);
-    background: var(--accent-soft);
-  }
+  margin-bottom: 0.75rem;
 }
 
 .article-header__themes {
-  gap: 0.35rem;
   color: var(--text-muted);
-  font-size: 0.86rem;
-
-  a {
-    color: var(--accent);
-    text-decoration: none;
-    border-bottom: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
-
-    &:hover { color: var(--accent-hover); }
-  }
+  font-size: 0.9rem;
 }
 
 /* ==========================================
@@ -508,53 +469,50 @@ function formatDate(createdAt) {
   max-width: 100%;
   width: 100%;
   min-width: 0;
-  padding: 0 0 4rem;
+  padding: 0 0 2rem;
 }
 
-/* Encart « Résumé » façon remarkable : rectangle teinté plat, sans ombre ni
-   filet d'accent — c'est le fond qui le détache, pas une bordure. */
+/* Encart « Résumé » : le panneau cuivre « Carnet de bord » du portfolio. */
 .article-summary {
-  position: relative;
   margin-bottom: 3rem;
-  padding: 1.6rem 1.85rem;
-  background: var(--bg-secondary);
-  border-radius: 6px;
+  padding: 1.5rem 1.75rem;
+  border: 1px solid var(--accent-line);
+  border-radius: var(--radius);
+  background: var(--accent-soft);
 }
 
 .article-summary__label {
-  font-family: var(--font-sans);
-  font-size: 0.92rem;
-  font-weight: 600;
-  letter-spacing: 0;
-  color: var(--text-primary);
   display: block;
-  margin-bottom: 0.55rem;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
 }
 
 .article-summary p {
   font-family: var(--font-body);
-  font-size: 1.04rem;
-  font-weight: 400;
+  font-size: 1.06rem;
   line-height: 1.6;
-  color: var(--text-secondary);
+  color: var(--text-primary);
   margin: 0;
 }
 
 /* ==========================================
-   Article content — editorial typography
+   Article content — typographie de lecture
    ========================================== */
 .article-content {
   width: 100%;
   min-width: 0;
 
-  /* Échelle modulaire (tierce majeure, ratio 1.25) ancrée sur le corps de
-     texte : chaque niveau est un cran de l'échelle, pas une valeur au hasard. */
-  --t-body: 1.17rem;
-  --t-h3: 1.46rem;
-  --t-h2: 1.83rem;
-  --leading-body: 2.1;
+  /* Échelle modulaire (tierce majeure, ratio 1.25) ancrée sur le corps. */
+  --t-body: 1.1875rem;
+  --t-h3: 1.45rem;
+  --t-h2: 1.85rem;
+  --leading-body: 1.78;
 
-  /* Kerning et ligatures, appliqués à tout le corps de l'article. */
   font-kerning: normal;
   font-variant-ligatures: common-ligatures contextual;
   text-rendering: optimizeLegibility;
@@ -562,54 +520,35 @@ function formatDate(createdAt) {
   :deep(h2) {
     font-family: var(--font-display);
     font-size: var(--t-h2);
-    font-weight: 650;
+    font-weight: 600;
     color: var(--text-primary);
-    /* Rythme vertical : l'espace au-dessus d'un titre est nettement plus grand
-       que celui en dessous, pour rattacher le titre au texte qu'il annonce. */
+    /* Plus d'espace au-dessus qu'en dessous : le titre se rattache au
+       texte qu'il annonce. */
     margin-top: 3.25rem;
-    margin-bottom: 1.1rem;
-    line-height: 1.22;
-    letter-spacing: -0.018em;
-    position: relative;
-    padding-left: 1rem;
-    text-align: left;
+    margin-bottom: 1rem;
+    line-height: 1.15;
+    letter-spacing: -0.035em;
     text-wrap: balance;
-
-    &::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0.5em;
-      bottom: 0.3em;
-      width: 2px;
-      background: var(--accent);
-      border-radius: 2px;
-    }
+    scroll-margin-top: calc(var(--header-h) + 1.5rem);
   }
 
   :deep(h3) {
     font-family: var(--font-display);
     font-size: var(--t-h3);
-    font-weight: 650;
+    font-weight: 600;
     color: var(--text-primary);
     margin-top: 2.5rem;
     margin-bottom: 0.75rem;
-    line-height: 1.3;
-    letter-spacing: -0.015em;
-    text-align: left;
+    line-height: 1.25;
+    letter-spacing: -0.025em;
     text-wrap: balance;
+    scroll-margin-top: calc(var(--header-h) + 1.5rem);
   }
 
-  /* Justification : sur une colonne de cette largeur, elle n'est lisible
-     qu'avec la césure automatique, sinon les blancs inter-mots explosent.
-     `hyphenate-limit-chars` interdit les coupes sur des fragments trop courts. */
-  :deep(p:not(blockquote p)),
+  /* Fer à gauche : la justification creusait des blancs entre les mots. */
+  :deep(p),
   :deep(ul li),
   :deep(ol li) {
-    text-align: justify;
-    hyphens: auto;
-    -webkit-hyphens: auto;
-    hyphenate-limit-chars: 7 4 3;
     overflow-wrap: break-word;
     orphans: 2;
     widows: 2;
@@ -620,65 +559,49 @@ function formatDate(createdAt) {
     font-size: var(--t-body);
     line-height: var(--leading-body);
     color: var(--text-secondary);
-    margin-bottom: 1.35em;
+    margin-bottom: 1.3em;
     text-wrap: pretty;
-  }
-
-  :deep(p:first-of-type::first-letter) {
-    font: inherit;
-    float: none;
-    margin: 0;
-    color: inherit;
-    padding: 0;
   }
 
   :deep(a) {
     color: var(--text-primary);
-    text-decoration: none;
-    border-bottom: 1px solid var(--accent);
-    transition: background 0.25s ease, color 0.25s ease;
-    padding: 0 1px;
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.22em;
+    transition: color 0.2s ease, text-decoration-thickness 0.2s ease;
 
     &:hover {
-      background: var(--accent);
-      color: var(--accent-contrast);
+      color: var(--accent);
+      text-decoration-thickness: 2px;
     }
   }
 
   :deep(h2 a),
   :deep(h3 a) {
     color: inherit;
-    border-bottom: 0;
-    padding: 0;
+    text-decoration: none;
 
     &:hover {
-      background: transparent;
-      color: inherit;
+      color: var(--accent);
     }
   }
 
+  /* Citation : panneau lavande du bloc contact du portfolio, bordure
+     complète plutôt qu'un filet sur le côté. */
   :deep(blockquote) {
-    background: var(--bg-card);
-    border: 1px solid var(--border-color);
-    border-left: 3px solid var(--accent);
     margin: 2.5rem 0;
     padding: 1.5rem 1.75rem;
-    border-radius: 8px;
-    position: relative;
-    box-shadow: var(--card-shadow);
-
-    &::before {
-      content: none;
-    }
+    border: 1px solid var(--accent-2-line);
+    border-radius: var(--radius);
+    background: var(--accent-2-soft);
 
     p {
       margin-bottom: 0.75rem;
-      font-family: var(--font-display);
-      font-weight: 550;
-      font-size: 1.14rem;
+      font-size: 1.12rem;
+      font-weight: 500;
       line-height: 1.6;
       color: var(--text-primary);
-      letter-spacing: -0.005em;
 
       &:last-child {
         margin-bottom: 0;
@@ -696,18 +619,19 @@ function formatDate(createdAt) {
       font-size: var(--t-body);
       line-height: var(--leading-body);
       color: var(--text-secondary);
-      margin-bottom: 0.75rem;
-      padding-left: 1.75rem;
+      margin-bottom: 0.6rem;
+      padding-left: 1.6rem;
       position: relative;
 
+      /* Puce carrée en cuivre, les angles du système. */
       &::before {
         content: '';
         position: absolute;
-        left: 0;
-        top: 0.76em;
-        width: 7px;
-        height: 7px;
-        border-radius: 50%;
+        left: 0.2rem;
+        top: 0.78em;
+        width: 6px;
+        height: 6px;
+        border-radius: 1px;
         background: var(--accent);
       }
 
@@ -716,9 +640,8 @@ function formatDate(createdAt) {
         margin-bottom: 0.5rem;
 
         li::before {
-          width: 5px;
-          height: 5px;
-          background: var(--accent);
+          background: transparent;
+          border: 1px solid var(--accent);
         }
       }
     }
@@ -735,8 +658,8 @@ function formatDate(createdAt) {
       font-size: var(--t-body);
       line-height: var(--leading-body);
       color: var(--text-secondary);
-      margin-bottom: 0.85rem;
-      padding-left: 2.5rem;
+      margin-bottom: 0.7rem;
+      padding-left: 2.4rem;
       position: relative;
       counter-increment: ol-counter;
 
@@ -744,12 +667,12 @@ function formatDate(createdAt) {
         content: counter(ol-counter, decimal-leading-zero);
         position: absolute;
         left: 0;
-        top: 0.18em;
+        top: 0.3em;
         font-family: var(--font-mono);
-        font-size: 0.85rem;
+        font-size: 0.82rem;
         font-weight: 600;
-        color: var(--accent);
-        letter-spacing: 0.05em;
+        color: var(--accent-2-text);
+        font-variant-numeric: tabular-nums;
       }
     }
   }
@@ -759,25 +682,26 @@ function formatDate(createdAt) {
     border-collapse: separate;
     border-spacing: 0;
     margin: 2rem 0;
-    border-radius: 2px;
+    border-radius: var(--radius);
     overflow: hidden;
     background: var(--bg-card);
     border: 1px solid var(--border-color);
     font-family: var(--font-body);
-    font-size: 0.92rem;
+    font-size: 0.95rem;
+    font-variant-numeric: tabular-nums;
 
     thead {
       background: var(--bg-elevated);
 
       th {
-        padding: 0.95rem 1.2rem;
+        padding: 0.9rem 1.1rem;
         font-family: var(--font-mono);
         font-size: 0.72rem;
         font-weight: 600;
         text-align: left;
         text-transform: uppercase;
-        letter-spacing: 0.12em;
-        color: var(--accent);
+        letter-spacing: 0.08em;
+        color: var(--accent-2-text);
         border: none;
         border-bottom: 1px solid var(--border-color);
       }
@@ -788,15 +712,15 @@ function formatDate(createdAt) {
         transition: background-color 0.15s ease;
 
         &:hover {
-          background: var(--accent-soft);
+          background: var(--accent-2-soft);
         }
       }
 
       td {
-        padding: 0.85rem 1.2rem;
+        padding: 0.8rem 1.1rem;
         border-bottom: 1px solid var(--border-color);
         color: var(--text-secondary);
-        line-height: 1.6;
+        line-height: 1.55;
       }
 
       tr:last-child td {
@@ -808,9 +732,8 @@ function formatDate(createdAt) {
   :deep(img) {
     max-width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: var(--radius);
     margin: 2.5rem 0;
-    box-shadow: var(--card-shadow);
     border: 1px solid var(--border-color);
   }
 
@@ -826,24 +749,25 @@ function formatDate(createdAt) {
   }
 
   :deep(pre) {
-    border-radius: 8px;
+    border-radius: var(--radius);
     margin: 2rem 0;
     background: var(--code-bg);
     border: 1px solid var(--border-color);
-    padding: 1.25rem 1.5rem;
+    padding: 1.15rem 1.35rem;
     font-family: var(--font-mono);
     font-size: 0.88rem;
+    line-height: 1.65;
     overflow-x: auto;
   }
 
   :deep(code) {
-    background: var(--code-bg);
-    padding: 0.15rem 0.45rem;
+    background: var(--accent-2-soft);
+    padding: 0.12rem 0.4rem;
     border-radius: 3px;
     font-family: var(--font-mono);
-    font-size: 0.88em;
-    color: var(--text-primary);
-    border: 1px solid var(--border-color);
+    font-size: 0.86em;
+    color: var(--accent-2-text);
+    border: 1px solid var(--accent-2-line);
   }
 
   :deep(pre code) {
@@ -873,82 +797,52 @@ function formatDate(createdAt) {
 }
 
 /* ==========================================
-   Links footer
+   Fin d'article
    ========================================== */
 .article-links {
   margin-top: 3rem;
-  padding-top: 2rem;
+  padding-top: 1.5rem;
   border-top: 1px solid var(--border-color);
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
 
   a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    min-height: 44px;
     font-family: var(--font-mono);
     color: var(--accent);
     text-decoration: none;
-    font-weight: 500;
-    font-size: 0.78rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    transition: color 0.2s ease, transform 0.2s ease;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 0.04em;
+    transition: color 0.2s ease;
 
-    &::before {
-      content: '→';
-      transition: transform 0.25s ease;
+    .material-icons {
+      font-size: 1rem;
     }
 
     &:hover {
       color: var(--accent-hover);
-
-      &::before {
-        transform: translateX(3px);
-      }
     }
   }
 }
 
 .article-footer {
-  margin-top: 3rem;
+  margin-top: 2rem;
   padding-top: 2rem;
   border-top: 1px solid var(--border-color);
 }
 
-.back-to-articles {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  color: var(--text-primary);
-  text-decoration: none;
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  padding: 0.85rem 1.25rem;
-  border: 1px solid var(--border-color);
-  border-radius: 2px;
-  transition: all 0.25s ease;
+.back-to-articles .material-icons {
+  font-size: 1.1rem;
+  transition: transform 0.25s var(--ease-out);
+}
 
-  .back-arrow {
-    display: inline-block;
-    font-size: 1rem;
-    transition: transform 0.25s ease;
-  }
-
-  &:hover {
-    color: var(--accent);
-    border-color: var(--accent);
-    background: var(--accent-soft);
-    box-shadow: var(--card-shadow-hover);
-
-    .back-arrow {
-      transform: translateX(-4px);
-    }
-  }
+.back-to-articles:hover .material-icons {
+  transform: translateX(-3px);
 }
 
 /* ==========================================
@@ -973,6 +867,7 @@ function formatDate(createdAt) {
     justify-content: center !important;
     margin: 0 !important;
     top: auto !important;
+    border-radius: var(--radius) !important;
 
     img {
       position: static !important;
@@ -981,6 +876,7 @@ function formatDate(createdAt) {
       width: 18px !important;
       height: 18px !important;
       margin: 0 !important;
+      border: 0 !important;
     }
   }
 
@@ -998,14 +894,13 @@ function formatDate(createdAt) {
 }
 
 .social-share__label {
-  display: block;
+  margin: 0 0 1rem;
   font-family: var(--font-mono);
-  font-size: 0.7rem;
+  font-size: 0.72rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.18em;
-  color: var(--accent);
-  margin-bottom: 1rem;
+  letter-spacing: 0.1em;
+  color: var(--accent-2-text);
 }
 
 /* ==========================================
@@ -1014,61 +909,44 @@ function formatDate(createdAt) {
 @media screen and (max-width: 1150px) {
   .article-layout {
     display: block;
-    max-width: 820px;
+    max-width: calc(640px + 2 * var(--gutter));
   }
 }
 
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .article-hero {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
-    padding: 1.5rem 1rem 2rem;
+    gap: 2.25rem;
   }
 
   .article-hero__media img {
     aspect-ratio: 16 / 10;
   }
+}
 
-  .article-layout {
-    padding: 0 1rem;
-    max-width: 100%;
+@media screen and (max-width: 768px) {
+  .article-hero {
+    padding: 1.75rem var(--gutter) 2.25rem;
   }
 
-  .article-container {
-    max-width: 100%;
-    width: 100%;
-    padding: 0 0 3rem;
-  }
+  .article-hero__media {
+    margin-right: 0.5rem;
 
-  .article-header__meta {
-    max-width: 100%;
-    flex-wrap: wrap;
+    &::before {
+      inset: 8% -2.5% -4% 5%;
+    }
   }
 
   .article-header__title {
-    font-size: clamp(1.75rem, 8.5vw, 2.25rem);
+    font-size: clamp(2rem, 9vw, 2.6rem);
     overflow-wrap: anywhere;
   }
 
   .article-content {
-    max-width: 100%;
-
-    /* L'échelle entière descend d'un cran : les rapports entre niveaux
-       restent identiques. */
-    --t-body: 1.04rem;
+    --t-body: 1.0625rem;
     --t-h3: 1.3rem;
-    --t-h2: 1.62rem;
-    --leading-body: 1.85;
-
-    /* Colonne trop étroite pour justifier : les blancs inter-mots
-       deviennent des rivières. Retour au fer à gauche. */
-    :deep(p),
-    :deep(ul li),
-    :deep(ol li) {
-      text-align: left;
-      overflow-wrap: break-word;
-    }
+    --t-h2: 1.6rem;
+    --leading-body: 1.72;
 
     :deep(h2),
     :deep(h3) {
@@ -1077,16 +955,19 @@ function formatDate(createdAt) {
   }
 
   .article-summary {
-    padding: 1.5rem 1.25rem;
-  }
-
-  .article-summary p {
-    font-size: 1.05rem;
+    padding: 1.25rem 1.25rem;
   }
 
   .article-links {
     flex-direction: column;
-    gap: 0.85rem;
+    gap: 0.5rem;
   }
+}
+
+/* Cible tactile d'au moins 24 px de haut (WCAG 2.5.8). */
+.article-header__author {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
 }
 </style>

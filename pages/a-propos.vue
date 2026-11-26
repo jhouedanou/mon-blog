@@ -194,8 +194,8 @@ useSeo({
 .about-header__title {
   font-family: var(--font-display);
   font-size: clamp(2.25rem, 5vw, 3.4rem);
-  font-weight: 400;
-  letter-spacing: -0.03em;
+  font-weight: 600;
+  letter-spacing: -0.04em;
   color: var(--text-primary);
   margin: 0 0 0.75rem 0;
 }
@@ -233,23 +233,10 @@ useSeo({
   h2 {
     font-family: var(--font-display);
     font-size: clamp(1.7rem, 3vw, 2.2rem);
-    font-weight: 400;
-    letter-spacing: -0.025em;
+    font-weight: 600;
+    letter-spacing: -0.035em;
     color: var(--text-primary);
-    margin: 0 0 1.5rem 0;
-    padding-left: 1.25rem;
-    position: relative;
-
-    &::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0.5em;
-      bottom: 0.3em;
-      width: 3px;
-      background: var(--accent);
-      border-radius: 2px;
-    }
+    margin: 0 0 1.25rem 0;
   }
 
   p {
@@ -295,8 +282,8 @@ useSeo({
   h3 {
     font-family: var(--font-display);
     font-size: 1.15rem;
-    font-weight: 650;
-    letter-spacing: -0.015em;
+    font-weight: 600;
+    letter-spacing: -0.025em;
     color: var(--text-primary);
     margin: 0 0 0.5rem 0;
   }

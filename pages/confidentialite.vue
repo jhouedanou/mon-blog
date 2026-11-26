@@ -2,7 +2,7 @@
   <div class="privacy-page">
     <article class="privacy-page__container">
       <header class="privacy-page__header">
-        <span class="privacy-page__eyebrow">— Transparence</span>
+        <span class="privacy-page__eyebrow">Transparence</span>
         <h1>Politique de confidentialité</h1>
         <p>Cette page explique quelles données peuvent être collectées lorsque vous consultez le blog de Jean-Luc Houédanou.</p>
         <time datetime="2026-07-18">Dernière mise à jour : 18 juillet 2026</time>
@@ -135,14 +135,14 @@ useSeo({
   font-weight: 600;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--accent-2-text);
 }
 
 .privacy-page h1 {
   margin: 0 0 1rem;
   font-family: var(--font-display);
   font-size: clamp(2.6rem, 7vw, 4.8rem);
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1;
   letter-spacing: -0.04em;
   color: var(--text-primary);
@@ -172,7 +172,7 @@ useSeo({
   margin: 0 0 0.85rem;
   font-family: var(--font-display);
   font-size: 1.65rem;
-  font-weight: 550;
+  font-weight: 600;
   color: var(--text-primary);
 }
 

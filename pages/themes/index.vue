@@ -2,7 +2,7 @@
   <div class="themes-index">
     <div class="themes-index__container">
       <header class="themes-index__header">
-        <span class="themes-index__eyebrow">— {{ $t('exploreBlog') }}</span>
+        <span class="themes-index__eyebrow">{{ $t('exploreBlog') }}</span>
         <h1 class="themes-index__title">{{ $t('themesTitle') }}</h1>
         <p class="themes-index__lede">{{ $t('themesLede') }}</p>
       </header>
@@ -99,7 +99,7 @@ useSeo({
   margin: 0 0 1.15rem;
   font-family: var(--font-display);
   font-size: clamp(2.8rem, 7vw, 5.4rem);
-  font-weight: 400;
+  font-weight: 600;
   line-height: 0.98;
   letter-spacing: -0.04em;
   color: var(--text-primary);
@@ -129,7 +129,7 @@ useSeo({
   text-decoration: none;
   background: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 6px;
+  border-radius: var(--radius);
   transition: transform 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease;
 
   &:hover {
@@ -151,7 +151,7 @@ useSeo({
   right: 1.25rem;
   font-family: var(--font-mono);
   font-size: 0.75rem;
-  color: var(--text-faded);
+  color: var(--text-muted);
 }
 
 .theme-index-card__label {
@@ -163,9 +163,9 @@ useSeo({
   margin: 2rem 0 0.75rem;
   font-family: var(--font-display);
   font-size: clamp(1.6rem, 3vw, 2.45rem);
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.05;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.035em;
   color: var(--text-primary);
 }
 
@@ -212,5 +212,12 @@ useSeo({
   .themes-index__grid { grid-template-columns: 1fr; }
   .theme-index-card--featured { grid-row: auto; min-height: 320px; }
   .themes-index__footer { flex-direction: column; }
+}
+
+/* Cibles tactiles d'au moins 24 px de haut (WCAG 2.5.8). */
+.themes-index__back {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
 }
 </style>

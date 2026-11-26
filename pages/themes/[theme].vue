@@ -3,7 +3,7 @@
     <div class="theme-archive__container">
       <header class="theme-archive__header">
         <NuxtLink :to="localePath('/themes')" class="theme-archive__crumb">{{ $t('themes') }}</NuxtLink>
-        <span class="theme-archive__eyebrow">— {{ theme.label }}</span>
+        <span class="theme-archive__eyebrow">{{ theme.label }}</span>
         <h1 class="theme-archive__title">{{ theme.title }}</h1>
         <p class="theme-archive__intro">{{ theme.intro }}</p>
         <p class="theme-archive__meta">
@@ -161,7 +161,7 @@ useSeo(() => ({
   font-size: 0.72rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--accent-2-text);
 }
 
 .theme-archive__title {
@@ -169,7 +169,7 @@ useSeo(() => ({
   margin: 0 0 1.25rem;
   font-family: var(--font-display);
   font-size: clamp(2.7rem, 7vw, 5.4rem);
-  font-weight: 400;
+  font-weight: 600;
   line-height: 0.98;
   letter-spacing: -0.04em;
   color: var(--text-primary);
@@ -204,7 +204,7 @@ useSeo(() => ({
   margin: 0;
   font-family: var(--font-display);
   font-size: 1.8rem;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--text-primary);
 }
 
@@ -229,7 +229,7 @@ useSeo(() => ({
   text-decoration: none;
   background: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 5px;
+  border-radius: var(--radius);
   transition: transform 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease;
 
   &:hover {
@@ -276,9 +276,9 @@ useSeo(() => ({
   margin: 0;
   font-family: var(--font-display);
   font-size: 1.25rem;
-  font-weight: 550;
+  font-weight: 600;
   line-height: 1.2;
-  letter-spacing: -0.015em;
+  letter-spacing: -0.025em;
   color: var(--text-primary);
   transition: color 0.2s ease;
 }
@@ -326,5 +326,14 @@ useSeo(() => ({
   .theme-archive__section-head,
   .theme-archive__footer { align-items: flex-start; flex-direction: column; }
   .theme-archive__grid { grid-template-columns: 1fr; }
+}
+
+/* Cibles tactiles d'au moins 24 px de haut (WCAG 2.5.8). */
+.theme-archive__crumb,
+.theme-archive__tags-link,
+.theme-archive__back {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
 }
 </style>

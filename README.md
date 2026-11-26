@@ -29,6 +29,21 @@ Ce projet est un blog personnel construit avec Nuxt 3, utilisant le système de 
 - Intégration de Google Analytics
 - Boutons de partage social
 
+## Design
+
+Le blog reprend l'identité du CV en ligne,
+[jhouedanou.github.io/Curriculum-vitae](https://jhouedanou.github.io/Curriculum-vitae/) :
+bleu nuit, cuivre et lavande, Figtree, labels en monospace, angles de 4 px.
+Le site est sombre par défaut ; le bouton de l'en-tête passe en clair pour la visite.
+
+- Règles et jetons : [`DESIGN.md`](DESIGN.md) (format du skill impeccable, comme
+  sur le projet de refonte du Parc des Expositions).
+- Jetons CSS : `assets/custom.scss`. En-tête : `components/SiteHeader.vue`
+  (partagé avec la page 404). Pied de page : `layouts/default.vue`.
+- Icônes : sous-ensemble Material Symbols listé dans `nuxt.config.js`
+  (`icon_names`, ordre alphabétique). `yarn build` vérifie d'abord que chaque
+  icône utilisée y figure (`scripts/check-icons.mjs`).
+
 ## Comment démarrer
 
 1. Cloner le repository

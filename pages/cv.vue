@@ -42,7 +42,7 @@
           <img :src="identity.photo" :alt="identity.name" width="120" height="120" />
         </div>
         <div class="cv-header__intro">
-          <span class="cv-header__eyebrow">— {{ l.title }}</span>
+          <span class="cv-header__eyebrow">{{ l.title }}</span>
           <h1 class="cv-header__name">{{ identity.name }}</h1>
           <p class="cv-header__subtitle">{{ l.subtitle }}</p>
           <p class="cv-header__location">
@@ -54,7 +54,7 @@
 
       <div class="cv-grid">
         <!-- ===== Main column ===== -->
-        <main class="cv-main">
+        <div class="cv-main">
           <!-- Profile -->
           <section class="cv-section" :aria-labelledby="`cv-${lang}-profile`">
             <h2 :id="`cv-${lang}-profile`" class="cv-section__title">{{ l.profile }}</h2>
@@ -152,7 +152,7 @@
               </li>
             </ul>
           </section>
-        </main>
+        </div>
 
         <!-- ===== Sidebar ===== -->
         <aside class="cv-side" :aria-label="lang === 'fr' ? 'Coordonnées' : 'Contact details'">
@@ -353,9 +353,9 @@ useHead(() => ({
   }
 
   &.is-active {
-    background: var(--accent);
+    background: var(--accent-fill);
     color: var(--accent-contrast);
-    box-shadow: inset 0 0 0 1px var(--accent);
+    box-shadow: inset 0 0 0 1px var(--accent-fill);
   }
 }
 
@@ -434,16 +434,15 @@ useHead(() => ({
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.18em;
-  color: var(--accent);
+  color: var(--accent-2-text);
   margin-bottom: 0.4rem;
 }
 
 .cv-header__name {
   font-family: var(--font-display);
-  font-style: italic;
   font-size: clamp(2.25rem, 5vw, 3.6rem);
-  font-weight: 400;
-  letter-spacing: -0.03em;
+  font-weight: 600;
+  letter-spacing: -0.04em;
   line-height: 1.02;
   color: var(--text-primary);
   margin: 0 0 0.5rem;
@@ -500,25 +499,11 @@ useHead(() => ({
 
 .cv-section__title {
   font-family: var(--font-display);
-  font-style: italic;
   font-size: clamp(1.55rem, 2.4vw, 2rem);
-  font-weight: 400;
-  letter-spacing: -0.025em;
+  font-weight: 600;
+  letter-spacing: -0.035em;
   color: var(--text-primary);
   margin: 0 0 1.5rem;
-  padding-left: 1rem;
-  position: relative;
-
-  &::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0.45em;
-    bottom: 0.3em;
-    width: 3px;
-    background: var(--accent);
-    border-radius: 2px;
-  }
 }
 
 /* ==========================================
@@ -581,10 +566,9 @@ useHead(() => ({
 
 .cv-experience__role {
   font-family: var(--font-display);
-  font-style: italic;
   font-size: 1.25rem;
-  font-weight: 500;
-  letter-spacing: -0.015em;
+  font-weight: 600;
+  letter-spacing: -0.025em;
   color: var(--text-primary);
   margin: 0 0 0.2rem;
 }
@@ -715,10 +699,9 @@ useHead(() => ({
 
 .cv-education__degree {
   font-family: var(--font-display);
-  font-style: italic;
   font-size: 1.15rem;
-  font-weight: 500;
-  letter-spacing: -0.015em;
+  font-weight: 600;
+  letter-spacing: -0.025em;
   color: var(--text-primary);
   margin: 0 0 0.2rem;
 }
@@ -850,10 +833,9 @@ useHead(() => ({
 
 .cv-project__name {
   font-family: var(--font-display);
-  font-style: italic;
   font-size: 1.1rem;
-  font-weight: 500;
-  letter-spacing: -0.015em;
+  font-weight: 600;
+  letter-spacing: -0.025em;
   margin: 0;
 
   a {
@@ -980,7 +962,6 @@ useHead(() => ({
 
 .cv-languages__name {
   font-family: var(--font-display);
-  font-style: italic;
   font-size: 1.05rem;
   color: var(--text-primary);
 }
@@ -1112,5 +1093,12 @@ useHead(() => ({
   .cv-languages__level {
     color: #555 !important;
   }
+}
+
+/* Liens du bloc contact : cibles d'au moins 24 px de haut (WCAG 2.5.8). */
+.cv-contact a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
 }
 </style>
