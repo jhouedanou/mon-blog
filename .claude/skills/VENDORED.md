@@ -1,12 +1,13 @@
 # Skills vendored
 
-Deux suites open source (licence MIT) copiées dans le repo, à portée projet.
+Trois ensembles open source (licence MIT) copiées dans le repo, à portée projet.
 Elles se chargent automatiquement quand Claude Code est lancé dans `mon-blog`.
 
 | Suite | Source | Tag | Commit | Copié le |
 |---|---|---|---|---|
 | claude-blog | https://github.com/AgriciDaniel/claude-blog | v2.2.0 | 7b6ca107adb40b7c59030568420c117e2ea61301 | 2026-10-08 |
 | claude-seo | https://github.com/AgriciDaniel/claude-seo | v2.4.1 | ff87fcee0734845d3f59128c8c905799ee2298da | 2026-10-08 |
+| humanizer | https://github.com/blader/humanizer | 4.0.0 | a32f24407364c74c812b43c15926d638bee1e072 | 2026-11-26 |
 
 ## Ce qui a été copié
 
@@ -15,6 +16,8 @@ Elles se chargent automatiquement quand Claude Code est lancé dans `mon-blog`.
 - claude-seo : `skills/*` → `.claude/skills/`, `agents/*.md` → `.claude/agents/`,
   `scripts/`, `schema/`, `data/`, `hooks/` → `.claude/skills/seo/`.
 - Non copié : les extensions payantes de claude-seo (DataForSEO, Banana).
+- humanizer : `SKILL.md` et `LICENSE` → `.claude/skills/humanizer/`, sans modification.
+  Non copié : le script de validation du paquet et les fichiers pour d'autres outils.
 
 ## Différences avec les installeurs officiels
 

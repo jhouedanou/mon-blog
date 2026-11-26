@@ -54,3 +54,4 @@ Style de référence pour tous les billets à venir de Jean-Luc Houédanou, en f
 
 - `blog-analyze` pour repérer les tics d'écriture.
 - `blog-style` pour comparer un billet aux anciens billets de l'auteur.
+- `humanizer` pour la dernière passe sur chaque billet, avant publication. Lui donner comme échantillon de voix ce fichier et deux ou trois billets de l'auteur, pas un seul billet à recopier. L'échantillon passe avant les règles du skill, donc on garde les guillemets français « » et les petits mots de l'oral.
