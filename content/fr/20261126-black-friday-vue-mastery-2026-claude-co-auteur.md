@@ -7,61 +7,53 @@ searchIntent: "Quelle est l'offre Black Friday 2026 de Vue Mastery, que contient
 tags: ["dev", "vue", "black friday", "Claude Code", "ia"]
 ---
 
-C'est le Black Friday chez Vue Mastery, et l'offre est déjà en ligne avec [70 % de réduction sur un an d'abonnement](https://www.vuemastery.com/black-friday). Le bouton de la page annonce une économie de 210 dollars sur l'abonnement annuel.
+C'est le Black Friday, et dans le lot il y a une promotion qui me concerne. Vue Mastery, la plateforme que j'utilise pour perfectionner mon Vue.js, affiche [70 % de réduction sur un an d'abonnement](https://www.vuemastery.com/black-friday), soit 210 dollars de moins d'après le bouton de la page.
 
-J'en parle parce que c'est la plateforme que j'utilise pour perfectionner mon Vue.js, et parce que je ne suis pas un vibe codeur.
+J'en parle parce que ce blog tourne sous Nuxt, donc sous Vue, et parce que je ne suis pas un vibe codeur. Je parle aussi de Claude plus bas, puisqu'il s'est mis co-auteur de mes commits sans me demander mon avis.
 
 ## L'offre Black Friday 2026 de Vue Mastery
 
-La page de l'offre affiche 70 % de réduction sur un an, soit 210 dollars de moins sur la facture annuelle. Elle propose aussi deux lots plus chers, à 399 et 999 dollars, avec des cours avancés et des certifications sur Nuxt et Pinia.
+L'offre est déjà en ligne et elle est simple, 70 % de réduction sur l'abonnement annuel. La page propose aussi deux lots plus chers, à 399 et 999 dollars, avec des cours avancés et des certifications sur Nuxt et Pinia.
 
-Par contre, la page ne donne pas de date de fin. Si l'offre vous intéresse, je ne compterais pas sur la semaine prochaine.
+Par contre, elle ne donne aucune date de fin, donc si l'offre vous intéresse, je ne compterais pas sur la semaine prochaine.
 
-Vue Mastery précise aussi sur [sa page de tarifs](https://www.vuemastery.com/pricing) qu'on peut demander un remboursement dans les 14 premiers jours, et qu'il existe une réduction pour les étudiants, à demander par mail.
+Vue Mastery indique aussi sur [sa page de tarifs](https://www.vuemastery.com/pricing) qu'on peut demander un remboursement dans les 14 premiers jours, et qu'il existe une réduction pour les étudiants, à demander par mail.
 
-## Ce que contient l'abonnement
+## Ce qu'il y a dans l'abonnement
 
-D'après la page de l'offre, l'abonnement donne accès à 21 cours, 143 conférences et 73 heures de vidéo. Les cours couvrent Vue 3, la Composition API, les composables, Pinia, Vue Router, Nuxt, TypeScript, Vite et Vitest.
+La page annonce 21 cours, 143 conférences et 73 heures de vidéo, sur Vue 3, la Composition API, les composables, Pinia, Vue Router, Nuxt, TypeScript, Vite et Vitest. Deux cours sont donnés par Evan You, le créateur de Vue et de Vite, dont « Vue 3 Deep Dive with Evan You », et la plateforme précise qu'une partie de l'abonnement est reversée au projet Vue.js.
 
-Deux cours sont donnés par Evan You, le créateur de Vue et de Vite, dont « Vue 3 Deep Dive with Evan You ». La plateforme indique aussi qu'une partie de l'abonnement est reversée au projet Vue.js.
-
-Et pour ceux qui ne veulent pas payer, il y a des cours gratuits, comme « Intro to Vue 3 », « What is Pinia? » ou « What is a Composable? », et des antisèches à télécharger sur Vue 3, Nuxt, Pinia et Vue Router avec un compte gratuit.
+Et si vous ne voulez pas payer, il y a des cours gratuits comme « Intro to Vue 3 », « What is Pinia? » ou « What is a Composable? », et avec un compte gratuit on peut télécharger des antisèches sur Vue 3, Nuxt, Pinia et Vue Router.
 
 ## Pourquoi je préfère apprendre Vue
 
-Ce blog tourne sous Nuxt, donc sous Vue, depuis que j'ai [quitté WordPress](/fr/20261018-migration-wordpress-nuxt-referencement-perdu-recupere). Je veux comprendre le code que je mets en ligne, et c'est pour ça que je suis des cours au lieu de demander à une IA d'écrire le site à ma place.
+Pendant longtemps, [je ne voulais pas de l'IA](/fr/20261016-pourquoi-lia-ne-me-remplacera-pas), parce que j'avais peur qu'elle fasse le travail à ma place et que je perde un métier que j'ai mis des années à apprendre. Je m'en sers aujourd'hui, mais je veux toujours comprendre le code que je mets en ligne.
 
-J'avais déjà écrit ce que je pense des [limites du vibe coding](/fr/20260423-chers-vibe-codeurs-bienvenue-dans-la-realite). Générer du code qu'on ne sait pas lire, ça marche jusqu'au premier bug sérieux, et ce jour-là il faut bien quelqu'un qui connaît Vue.
+Ce blog tourne sous Nuxt depuis que j'ai [quitté WordPress](/fr/20261018-migration-wordpress-nuxt-referencement-perdu-recupere), et c'est pour ça que je suis des cours au lieu de demander à une IA d'écrire le site à ma place. J'ai déjà dit ce que je pense des [limites du vibe coding](/fr/20260423-chers-vibe-codeurs-bienvenue-dans-la-realite), générer du code qu'on ne sait pas lire, ça marche jusqu'au premier bug sérieux, et ce jour-là il faut bien quelqu'un qui connaît Vue.
 
 ## Ce que je vis en ce moment avec le vibe coding
 
-Ce problème, je le vis en ce moment au travail. Des gens qui ne codent pas mettent toutes leurs specs dans Claude, sortent une application, et ne peuvent ensuite expliquer ni le code ni les fonctionnalités.
+Et ce problème, je le vis en ce moment au travail. Des gens qui ne codent pas mettent toutes leurs specs dans Claude, sortent une application, et ne peuvent ensuite expliquer ni le code ni les fonctionnalités.
 
-Dernier exemple, quelqu'un qui ne code pas et qui a été biberonné à Claude Code m'a envoyé récemment un ticket de recette sur un projet que je développe. Il voulait savoir pourquoi une liste ne proposait que quelques profils, et pourquoi certains contenus n'apparaissaient pas dans un menu.
+Voici un exemple récent, dont j'ai retiré les noms et les détails qui permettraient de reconnaître le projet. Quelqu'un qui ne code pas, biberonné à Claude Code, m'envoie un ticket de recette sur un projet que je développe. Il veut savoir pourquoi une liste ne propose que quelques profils et pourquoi certains contenus n'apparaissent pas dans un menu, et il termine en me demandant de lui confirmer, sujet par sujet, ce qui demande une correction et ce qui relève d'un simple paramétrage.
 
-Aucun de ces points n'était un bug. À chaque fois, la réponse était une règle de gestion du projet, par exemple qu'un profil apparaît dans la liste quand il a un contenu publié, ou quand une option est activée sur sa fiche. Il terminait d'ailleurs en me demandant de lui confirmer, sujet par sujet, ce qui demandait une correction et ce qui relevait d'un simple paramétrage dans l'administration.
+Aucun de ces points n'était un bug. À chaque fois, la réponse était une règle de gestion du projet, du genre « un profil apparaît dans la liste quand il a un contenu publié ». Et au passage, le ticket contenait de nouvelles demandes, introduites par des « il faudrait également », que j'ai renvoyées à un cahier des charges additionnel, pour une version 2 après la livraison.
 
-Le ticket contenait aussi de nouvelles demandes, introduites par des « il faudrait également ». J'ai répondu qu'elles devaient passer par un cahier des charges additionnel, pour une version 2 après la date de livraison.
-
-Il y a aussi celui qui fournit les écrans et l'architecture, et qui, une fois le site déployé en bêta sur la base de sa maquette, me demande de vérifier si ça fonctionne.
+Il y a aussi celui qui fournit les écrans et l'architecture et qui, une fois le site déployé en bêta sur la base de sa maquette, me demande de vérifier si ça fonctionne.
 
 Non monsieur, ça s'appelle faire une recette.
 
-C'est pour ça que je continue d'apprendre. Celui qui a écrit une règle peut l'expliquer, et celui qui l'a obtenue avec un prompt doit demander à quelqu'un d'autre ce que fait sa propre application.
+Celui qui a écrit une règle peut l'expliquer, alors que celui qui l'a obtenue avec un prompt doit demander à quelqu'un d'autre ce que fait sa propre application, et c'est pour ça que je continue d'apprendre.
 
-Alors oui, je sais, j'utilise Claude moi aussi.
+## Alors oui, j'utilise Claude
 
-## Comment j'utilise Claude
+Alors oui, je sais, j'utilise Claude moi aussi. Mais mon usage, c'est Opus, dans VS Code, et pour deux choses. Je lui donne le code qui ne marche pas pour qu'il trouve le bug, et je le laisse faire les commits automatiquement, avec le message qui va avec.
 
-Mon usage de Claude, c'est Opus, dans VS Code, et pour deux choses. Je lui donne du code qui ne marche pas pour qu'il trouve le bug, et je le laisse faire les commits automatiquement, avec le message qui va avec.
+## Claude s'est mis co-auteur
 
-Le code, je l'écris et je le relis. Claude débogue et range l'historique Git.
+Et c'est là que j'ai eu une surprise. Au bas de mes commits, il y avait une ligne `Co-Authored-By` avec le nom du modèle et l'adresse `noreply@anthropic.com`, ce qui fait que sur GitHub, Claude apparaît à côté de moi dans la liste des auteurs.
 
-## La surprise du co-auteur
-
-C'est en relisant cet historique que j'ai eu une surprise. Au bas de mes commits, il y avait une ligne `Co-Authored-By`, avec le nom du modèle et l'adresse `noreply@anthropic.com`. Claude s'était mis en co-auteur de mon code, et sur GitHub il apparaît à côté de moi dans la liste des auteurs du commit.
-
-Je ne lui avais rien demandé. C'est le comportement par défaut de Claude Code, et [la documentation des réglages](https://code.claude.com/docs/en/settings) le décrit avec un réglage nommé `attribution`, qui permet de changer ou de cacher cette ligne.
+Je ne lui avais rien demandé. C'est le comportement par défaut de Claude Code, et [la documentation des réglages](https://code.claude.com/docs/en/settings) prévoit un réglage nommé `attribution` pour changer ou cacher cette ligne.
 
 ## Retirer Claude des co-auteurs
 
@@ -76,13 +68,13 @@ Pour ceux qui veulent retirer la ligne, il faut ouvrir le fichier `~/.claude/set
 }
 ```
 
-La valeur vide de `commit` retire la ligne des commits, et celle de `pr` retire la mention « Generated with Claude Code » des pull requests. L'ancien réglage `includeCoAuthoredBy` existe encore, mais la documentation le marque comme obsolète.
-
-Les commits déjà faits gardent leur co-auteur, le réglage ne vaut que pour les suivants.
+La valeur vide de `commit` retire la ligne des commits, et celle de `pr` retire la mention « Generated with Claude Code » des pull requests. L'ancien réglage `includeCoAuthoredBy` existe encore, mais la documentation le marque comme obsolète, et les commits déjà faits gardent leur co-auteur, puisque le réglage ne vaut que pour les suivants.
 
 ## Je garde les deux
 
-Donc voilà, je garde Vue Mastery pour apprendre et Claude pour déboguer et faire mes commits, et ceux qui disent que développer ne sert à rien vont au-devant de lendemains difficiles. Si vous faites du Vue ou du Nuxt et que vous voulez comprendre ce que vous déployez, [l'offre Black Friday de Vue Mastery](https://www.vuemastery.com/black-friday) est le bon moment pour vous y mettre, et les cours gratuits suffisent pour vérifier que le format vous convient avant de payer.
+Donc voilà, je garde Vue Mastery pour apprendre et Claude pour déboguer et faire mes commits. Si vous faites du Vue ou du Nuxt et que vous voulez comprendre ce que vous déployez, [l'offre Black Friday de Vue Mastery](https://www.vuemastery.com/black-friday) est le bon moment pour vous y mettre, et les cours gratuits suffisent pour vérifier que le format vous convient avant de payer.
+
+Quant à ceux qui disent que développer ne sert à rien, ils vont au-devant de lendemains difficiles.
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com)*
+*[Jean-Luc Houédanou](https://houedanou.com), auteur principal de ses commits*
