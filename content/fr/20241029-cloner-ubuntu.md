@@ -23,7 +23,7 @@ Quand le SSD de votre ordinateur sous Ubuntu commence à tousser et que les mess
 
 ### 1. Identification des disques
 
-Première étape cruciale : identifier qui est qui dans notre joyeux système :
+La première étape, cruciale, est d'identifier qui est qui dans notre joyeux système :
 
 ```bash
 sudo fdisk -l
@@ -86,11 +86,11 @@ resize2fs "$PARTITION"
 echo "Clonage terminé ! 🎉"
 ```
 
-Deux détails du script méritent une explication. D'abord, `resize2fs` refuse d'agrandir une partition démontée qui n'a pas été vérifiée depuis son dernier montage, et demande de lancer `e2fsck -f` au préalable ([code source de resize2fs](https://github.com/tytso/e2fsprogs/blob/master/resize/main.c){target="_blank" rel="noopener"}) : c'est ce que fait le script. Ensuite, sur un SSD NVMe, le disque s'appelle `/dev/nvme0n1` et sa deuxième partition `/dev/nvme0n1p2`, pas `/dev/nvme0n12` : quand le nom du disque finit par un chiffre, Linux ajoute un « p » ([wiki Arch Linux](https://wiki.archlinux.org/title/Device_file#Partition){target="_blank" rel="noopener"}). Le script gère les deux cas.
+Deux détails du script méritent une explication. D'abord, `resize2fs` refuse d'agrandir une partition démontée qui n'a pas été vérifiée depuis son dernier montage, et demande de lancer `e2fsck -f` au préalable ([code source de resize2fs](https://github.com/tytso/e2fsprogs/blob/master/resize/main.c){target="_blank" rel="noopener"}), et c'est ce que fait le script. Ensuite, sur un SSD NVMe, le disque s'appelle `/dev/nvme0n1` et sa deuxième partition `/dev/nvme0n1p2`, pas `/dev/nvme0n12`, parce que quand le nom du disque finit par un chiffre, Linux ajoute un « p » ([wiki Arch Linux](https://wiki.archlinux.org/title/Device_file#Partition){target="_blank" rel="noopener"}). Le script gère les deux cas.
 
 ### 3. Exécution
 
-Idéalement, lancez le script depuis une session live (la fameuse clé USB bootable) plutôt que depuis l'Ubuntu en cours d'utilisation : la [documentation d'Arch Linux sur dd](https://wiki.archlinux.org/title/Dd#Disk_cloning_and_restore) recommande de cloner depuis un environnement live, ce qui évite de copier un système qui se modifie pendant la copie.
+Idéalement, lancez le script depuis une session live (la fameuse clé USB bootable) plutôt que depuis l'Ubuntu en cours d'utilisation. La [documentation d'Arch Linux sur dd](https://wiki.archlinux.org/title/Dd#Disk_cloning_and_restore) recommande de cloner depuis un environnement live, ce qui évite de copier un système qui se modifie pendant la copie.
 
 ```bash
 sudo bash clone-ubuntu.sh
@@ -121,4 +121,4 @@ C'est sur ce même HP Pro x2, sous Linux, que j'ai découvert [Ghostwriter, l'al
 *Mise à jour du 8 octobre 2026 : ajout de précautions sourcées (clonage depuis une session live, disque source avec erreurs de lecture, UUID identiques après le clonage) ; script corrigé : `e2fsck -f` avant `resize2fs`, et nom de partition correct sur les disques NVMe ou eMMC (`/dev/nvme0n1p2` au lieu de `/dev/nvme0n12`).*
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com) — clonneur de manchots*
+*[Jean-Luc Houédanou](https://houedanou.com), clonneur de manchots*

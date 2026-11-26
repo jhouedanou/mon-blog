@@ -17,9 +17,9 @@ And besides, yet another 'to do' app to put the Udemy React courses into practic
 
 Between the all-nighters on Visual Studio Code, [the last-minute deliverables](/en/20260707-je-suis-encore-vivant), the never-ending client projects, I pushed my physical condition into the background for a long time. 
 
-Result: chronic fatigue, fitness at rock bottom, and an unpleasant feeling of forgetting about myself.
+It got me chronic fatigue, fitness at rock bottom, and an unpleasant feeling of forgetting about myself.
 
-So I did what I do best: **code a solution.**  
+So I did what I do best, **code a solution.**  
 Welcome to *Project Fat Loss*.
 
 ## A weight loss tracker app for getting back on track
@@ -40,14 +40,14 @@ The base programme is designed to make you lose about 0.5 kg per week while eati
 ## Still in beta (and it shows)
 
 The app works, but it still has its little flaws.  
-The most annoying one: **you can click the "Finish" button several times, which throws off the number of sets recorded**. It's a known bug, it's on my list, and a fix is coming.
+The most annoying one is that **you can click the "Finish" button several times, which throws off the number of sets recorded**. It's a known bug, it's on my list, and a fix is coming.
 
 ## And the design, shall we talk about it?
 
-I won't lie: **it's a long way from what I managed to do here (shameless self plug)**, [DinoR Calorie Counter](https://dinor-calorie-counter-alt.vercel.app/).  
+I won't lie, **it's a long way from what I managed to do here (shameless self plug)**, [DinoR Calorie Counter](https://dinor-calorie-counter-alt.vercel.app/).  
 For now, it's a functional, minimalist, sometimes slightly rough design. But I'm working on it. In the coming days, the interface will get more polished and smoother, with animations and better readability.
 
 Since then, I've [improved Project Fat Loss with Cursor and AI](/en/20250604-liaetmoi). For cardio, there are also [my Quest 3S games, ranked from easiest to hardest](/en/20261008-jeux-quest-3s-recommandations), and I've compared [two smartwatches for sport, the Infinix Watch 3 and the Oraimo Nova AM](/en/20251225-infinix-ou-oraimo).
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com) — sweaty developer*
+*[Jean-Luc Houédanou](https://houedanou.com), sweaty developer*

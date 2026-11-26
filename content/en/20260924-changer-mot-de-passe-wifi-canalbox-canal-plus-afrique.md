@@ -32,11 +32,11 @@ Connect to the CanalBox Wi-Fi network, then open this address in your browser:
 https://my.canalbox.africa/login
 ```
 
-Type it into the address bar yourself rather than going through a search result: [the top Google result for "Bing Webmaster Tools" was a phishing site](/en/20260618-alerte-phishing-bing-webmaster-tools).
+Type it into the address bar yourself rather than going through a search result, because [the top Google result for "Bing Webmaster Tools" was a phishing site](/en/20260618-alerte-phishing-bing-webmaster-tools).
 
 ### 2. Enter the serial number
 
-In the window that appears, enter the serial number you wrote down earlier. That's your login: no account to create, no admin password to dig up.
+In the window that appears, enter the serial number you wrote down earlier. That's your login, so there is no account to create and no admin password to dig up.
 
 ![A person typing on a laptop keyboard](/images/articles/pexels-christina-morillo-1181208.webp)
 
@@ -52,14 +52,14 @@ That's it. Every device that was connected is now disconnected, including yours.
 
 ## A few tips for the new password
 
-- **Twelve characters minimum.** A short password can be guessed in minutes with free software. A guessed password is what opened the door to [the hacked WordPress site I had to put back on its feet in August](/en/20261020-site-wordpress-pirate-trouver-par-ou-le-pirate-est-entre).
+- **Twelve characters minimum.** A short password can be guessed in minutes with free software. A guessed password is how someone got into [the hacked WordPress site I had to put back on its feet in August](/en/20261020-site-wordpress-pirate-trouver-par-ou-le-pirate-est-entre).
 - **Not your phone number, not your date of birth.** Those are the first things a neighbour tries.
 - **A phrase rather than a word.** "MySundayJollofRice2026" is longer, stronger and easier to remember than "Xk7#p2".
 - **Write it down somewhere.** In your phone's password manager, for instance, not on a sticky note on the router, or you're back to square one.
 
 If you want to go further, the same **Wi-Fi** menu also lets you change the network name. Replacing the default name with something that doesn't say "CanalBox" avoids telling the whole building which router model you use.
 
-It's not the only useful setting on the CanalBox: I had to change others to [get Wi-Fi working on Omarchy, DHH's Linux distribution](/en/20261008-omarchy-dhh-homme-dotfiles), on my old MacBook Pro.
+I also had to change other CanalBox settings to [get Wi-Fi working on Omarchy, DHH's Linux distribution](/en/20261008-omarchy-dhh-homme-dotfiles), on my old MacBook Pro.
 
 ---
 

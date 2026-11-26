@@ -10,11 +10,11 @@ tags: ["opinion", "linux", "open-source", "société"]
 
 Je vais faire un retournement de veste.
 
-Le 8 octobre, j'ai publié ici un billet pour dire que je suivais Korben dans son boycott d'Omarchy, la distribution Linux de DHH. J'y promettais de ne pas en parler ici et de ne pas la recommander. Trois jours plus tard, Omarchy tourne sur mon MacBook Pro 2017. Et j'en parle.
+Le 8 octobre, j'ai publié ici un billet pour dire que je suivais Korben dans son boycott d'Omarchy, la distribution Linux de DHH. J'y promettais de ne pas en parler ici et de ne pas la recommander. Trois jours plus tard, Omarchy tourne sur mon MacBook Pro 2017, et j'en parle.
 
-La raison tient en une phrase : un système avec Claude intégré, qui m'évite de trop bidouiller et qui est beau, je suis preneur.
+La raison, c'est qu'un système avec Claude intégré, qui m'évite de trop bidouiller et qui est beau, je suis preneur.
 
-Je vous explique tout plus bas, avec les réglages qu'il m'a fallu pour faire revivre le MacBook. Mais d'abord, je vous laisse ce que j'écrivais le 8 octobre. Je n'en retire rien sur DHH.
+Je vous explique tout plus bas, avec les réglages qu'il m'a fallu pour remettre en route le MacBook. Mais d'abord, je vous laisse ce que j'écrivais le 8 octobre, et je n'en retire rien sur DHH.
 
 ## Ce que j'écrivais le 8 octobre
 
@@ -97,17 +97,17 @@ La deuxième :
 
 C'est là où j'en suis aussi.
 
-## Boycott d'Omarchy : pourquoi je retourne ma veste
+## Pourquoi je retourne ma veste sur le boycott d'Omarchy
 
-Commençons par l'évidence : je me contredis. J'ai écrit qu'on ne sépare pas l'homme de ses dotfiles, et j'installe ses dotfiles. Je ne vais pas faire semblant que c'est cohérent. Voici ce qui a fait pencher la balance.
+Je me contredis, c'est évident. J'ai écrit qu'on ne sépare pas l'homme de ses dotfiles, et j'installe ses dotfiles. Je ne vais pas faire semblant que c'est cohérent, mais voici ce qui m'a décidé.
 
 À la base, je voulais essayer [Ryoku](https://ryoku.dev){target="_blank" rel="noopener"}, une alternative à Omarchy, basée elle aussi sur Arch Linux. Finalement, c'est Omarchy que j'ai installé, pour ces raisons.
 
 **Claude est intégré.** Omarchy est livré avec Claude Code, l'assistant de programmation d'Anthropic, et avec OpenCode ([manuel d'Omarchy](https://learn.omacom.io/2/the-omarchy-manual/107/ai){target="_blank" rel="noopener"}). La commande `cx` lance Claude Code en « danger mode », c'est-à-dire sans demander de confirmation à chaque action. Omarchy fournit aussi une « skill », un mode d'emploi que l'assistant lit pour modifier le système : la barre du haut, les thèmes. Le manuel la dit expérimentale. Et c'est avec Claude que j'ai réglé les problèmes du MacBook, vous le verrez plus bas.
 
-**Moins de bidouille.** J'écrivais qu'on peut tout refaire sans DHH, avec Arch, Hyprland et des dotfiles : « Ça vous prendra peut-être une heure au lieu de deux minutes. » J'étais optimiste. Assembler tout ça soi-même prend bien plus qu'une heure. Omarchy arrive prêt : bureau, raccourcis, applications, thèmes. Et les mises à jour passent par une seule commande, qui prend un snapshot du système avant de toucher à quoi que ce soit. Si une mise à jour casse quelque chose, on redémarre sur le snapshot d'avant ([manuel d'Omarchy](https://learn.omacom.io/2/the-omarchy-manual/68/updates){target="_blank" rel="noopener"}).
+**Moins de bidouille.** J'écrivais qu'on peut tout refaire sans DHH, avec Arch, Hyprland et des dotfiles : « Ça vous prendra peut-être une heure au lieu de deux minutes. » J'étais optimiste, parce qu'assembler tout ça soi-même prend bien plus qu'une heure, alors qu'Omarchy arrive prêt, avec le bureau, les raccourcis, les applications et les thèmes. Et les mises à jour passent par une seule commande, qui prend un snapshot du système avant de toucher à quoi que ce soit. Si une mise à jour casse quelque chose, on redémarre sur le snapshot d'avant ([manuel d'Omarchy](https://learn.omacom.io/2/the-omarchy-manual/68/updates){target="_blank" rel="noopener"}).
 
-**C'est beau.** Un thème Omarchy change tout le système d'un coup : terminal, barre, fenêtres, fond d'écran. Je l'avais écrit moi-même : « C'est joli ». C'est toujours vrai.
+**C'est beau.** Un thème Omarchy change tout le système d'un coup : terminal, barre, fenêtres, fond d'écran. Je l'avais écrit moi-même, « C'est joli », et ça l'est toujours.
 
 **Ça ne lui rapporte rien.** Omarchy est un logiciel libre, sous licence MIT ([GitHub](https://github.com/basecamp/omarchy){target="_blank" rel="noopener"}). Je ne paie rien pour l'utiliser. L'argent dont parlait Korben vient des sponsors, comme 1Password, pas des utilisateurs.
 
@@ -115,17 +115,17 @@ Commençons par l'évidence : je me contredis. J'ai écrit qu'on ne sépare pas 
 
 **Personne n'est parfait.** Elon Musk, je préfère ne pas en parler. Et je ne suis pas un modèle non plus : j'ai perdu mes cheveux en route et gagné quelques kilos.
 
-## Omarchy a ressuscité mon vieux MacBook
+## Omarchy a remis en route mon vieux MacBook
 
-Apple a arrêté les mises à jour du MacBook Pro 2017 après macOS Ventura : Sonoma ne le prend plus en charge ([Apple](https://support.apple.com/fr-fr/105113){target="_blank" rel="noopener"}). Le mien ne servait plus. Aujourd'hui, il tourne sous Omarchy, avec un noyau Linux 7.2.
+Apple a arrêté les mises à jour du MacBook Pro 2017 après macOS Ventura, et Sonoma ne le prend plus en charge ([Apple](https://support.apple.com/fr-fr/105113){target="_blank" rel="noopener"}). Le mien ne servait plus, et aujourd'hui il tourne sous Omarchy, avec un noyau Linux 7.2.
 
 Omarchy n'a pas tout réglé tout seul. Voici les trois changements que j'ai dû faire.
 
-### Le Wi-Fi : des réglages sur la CanalBox
+### Des réglages sur la CanalBox pour le Wi-Fi
 
 Juste après l'installation, le Wi-Fi ne fonctionnait pas. Il a fallu changer des réglages sur [ma CanalBox](/fr/20260924-changer-mot-de-passe-wifi-canalbox-canal-plus-afrique), ma box internet.
 
-### Les mises à jour : `omarchy update`, pas `pacman -Syu`
+### Mettre à jour avec `omarchy update` plutôt que `pacman -Syu`
 
 Sous Arch, le réflexe, c'est `sudo pacman -Syu`. Omarchy m'a arrêté net avec un « Woah partner ». Il faut passer par sa propre commande :
 
@@ -135,7 +135,7 @@ omarchy update
 
 Elle prend un snapshot, applique les migrations d'Omarchy (les changements de configuration), puis met à jour les paquets. Avec `pacman -Syu`, on risque de rater ces migrations.
 
-### Le son : un pilote à compiler
+### Un pilote à compiler pour le son
 
 Ces MacBook utilisent une puce audio Cirrus CS8409. Pour que les haut-parleurs marchent sous Linux, il faut un pilote maintenu par la communauté, [snd_hda_macbookpro](https://github.com/davidjo/snd_hda_macbookpro){target="_blank" rel="noopener"}. Il se compile sur la machine.
 
@@ -159,15 +159,15 @@ sudo ./install.cirrus.driver.sh -i
 speaker-test -c 2 -t wav -l 1
 ```
 
-On doit entendre « Front Left », puis « Front Right ». Le pilote passe par DKMS : il se recompile tout seul à chaque mise à jour du noyau faite avec `omarchy update`.
+On doit entendre « Front Left », puis « Front Right ». Le pilote passe par DKMS, donc il se recompile tout seul à chaque mise à jour du noyau faite avec `omarchy update`.
 
 ## Conclusion
 
-Apple avait lâché ce MacBook. Omarchy l'a remis en route.
+Apple avait lâché ce MacBook, et Omarchy l'a remis en route.
 
-Sur DHH, je n'ai pas changé d'avis : ses billets sur l'immigration restent ce qu'ils sont, et sur ce point, je suis toujours d'accord avec Korben. Sur Omarchy, j'ai changé d'avis. Ce n'est pas glorieux, mais je préfère vous le dire que de le cacher.
+Sur DHH, je n'ai pas changé d'avis, ses billets sur l'immigration restent ce qu'ils sont, et sur ce point, je suis toujours d'accord avec Korben. Sur Omarchy, j'ai changé d'avis, et ce n'est pas glorieux, mais je préfère vous le dire que de le cacher.
 
-Trois jours plus tard, j'ai fait le point sur ce qui marche, ce qui coince encore (Bluetooth, écrans externes) et [l'imprimante thermique](/fr/20261021-imprimante-thermique-netum-a401s-linux-omarchy-claude) qui m'attend : c'est dans [mon bilan d'Omarchy sur MacBook Pro 2017](/fr/20261013-retournement-de-veste-omarchy-macbook-pro-2017).
+Trois jours plus tard, j'ai fait le point sur ce qui marche, ce qui coince encore (Bluetooth, écrans externes) et [l'imprimante thermique](/fr/20261021-imprimante-thermique-netum-a401s-linux-omarchy-claude) qui m'attend, dans [mon bilan d'Omarchy sur MacBook Pro 2017](/fr/20261013-retournement-de-veste-omarchy-macbook-pro-2017).
 
 ## Sources
 

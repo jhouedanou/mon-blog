@@ -8,13 +8,13 @@ searchIntent: "Faut-il acheter un double moniteur portable pour travailler en d�
 tags: ["tech", "productivité", "matériel", "avis"]
 ---
 
-Je ne me souviens plus de la dernière fois où j'ai travaillé sur un seul écran. Ni chez moi, ni en déplacement. Pour les déplacements, justement, je me suis équipé d'un double moniteur portable, le Blackview DCM6. Mon verdict : ni une révolution ni un gadget, mais un outil de niche.
+Je ne me souviens plus de la dernière fois où j'ai travaillé sur un seul écran, ni chez moi, ni en déplacement. Pour les déplacements, justement, je me suis équipé d'un double moniteur portable, le Blackview DCM6. Mon verdict, c'est que ce n'est ni une révolution ni un gadget, mais un outil de niche.
 
 ## Pourquoi un double écran ?
 
 En effet, quand je code (et je code souvent… partout… tout le temps), j'ai besoin d'un retour visuel immédiat, afin de vérifier le rendu de mes lignes de code dans le navigateur web.
 
-En parallèle, je dois également consulter de la doc ou les corrections suggérées par Claude : jongler entre les « spaces » ou les « bureaux virtuels » de macOS et Windows ne remplace pas le fait de pouvoir **tout voir en même temps**, et entre chaque changement de bureau, il y a des mini coupures d’attention.
+En parallèle, je dois également consulter de la doc ou les corrections suggérées par Claude, et jongler entre les « spaces » ou les « bureaux virtuels » de macOS et Windows ne remplace pas le fait de pouvoir **tout voir en même temps**, parce qu'entre chaque changement de bureau, il y a des mini coupures d’attention.
 
 ## Mes solutions existantes (et leurs limites)
 
@@ -45,7 +45,7 @@ Premièrement, l'installation est simple (pas de pilote requis, sauf dans un cas
 - un USB-C + un HDMI ;
 - un HDMI + un USB-A (câble et pilote fournis dans ce dernier cas).
 
-Mon MacBook Pro 13" n'a que **deux ports Thunderbolt 3**. Les deux écrans les occupant entièrement, il ne reste plus rien pour l'alimentation. Heureusement, la charge inversée 100 W de l'ensemble permet de faire passer le courant par le même dispositif — à condition d'avoir un chargeur de 65 W minimum (côté câble, voyez [quel câble USB-C choisir pour charger un MacBook Pro](/fr/20241021-2-non-ce-cable-de-240w-ne-chargera-pas-plus-vite-votre)).
+Mon MacBook Pro 13" n'a que **deux ports Thunderbolt 3**. Les deux écrans les occupant entièrement, il ne reste plus rien pour l'alimentation. Heureusement, la charge inversée 100 W de l'ensemble permet de faire passer le courant par le même dispositif, à condition d'avoir un chargeur de 65 W minimum (côté câble, voyez [quel câble USB-C choisir pour charger un MacBook Pro](/fr/20241021-2-non-ce-cable-de-240w-ne-chargera-pas-plus-vite-votre)).
 
 
 Ensuite, en déplacement, ma disposition est toujours la même :
@@ -54,11 +54,11 @@ Ensuite, en déplacement, ma disposition est toujours la même :
 - **Écran central** (le laptop) : terminal et éditeur de code. C'est là que sont mes yeux 90 % du temps.
 - **Écran droit** : navigateur, doc, preview de l'appli.
 
-C'est exactement la configuration que j'ai sur mon bureau fixe. La différence, c'est que je peux maintenant la reproduire ailleurs. **C'est ça, le vrai gain : la continuité de l'environnement de travail**, pas la surface d'affichage brute.
+C'est exactement la configuration que j'ai sur mon bureau fixe, et je peux maintenant la reproduire ailleurs. **Le gain, c'est la continuité de l'environnement de travail**, plus que la surface d'affichage brute.
 
 Enfin, côté charnière, peu voire aucune inquiétude, la béquille fournie reprend le poids de l'ensemble et le reporte sur la table.
 
-Mais surtout, c'est étonnamment fin : une fois les deux écrans repliés, l'épaisseur de l'ensemble est plus ou moins celle d'un iPad : c'est un vrai plus pour le transport. Le poids est également contenu : environ 1 kg pour l'ensemble d'après la [fiche produit Blackview](https://www.blackview.hk/products/item/dcm6){target="_blank" rel="noopener"}, ce qui reste raisonnable pour accompagner un ultraportable.
+Mais surtout, c'est étonnamment fin. Une fois les deux écrans repliés, l'épaisseur de l'ensemble est plus ou moins celle d'un iPad, ce qui est un plus pour le transport. Le poids est également contenu, environ 1 kg pour l'ensemble d'après la [fiche produit Blackview](https://www.blackview.hk/products/item/dcm6){target="_blank" rel="noopener"}, ce qui reste raisonnable pour accompagner un ultraportable.
 
 
 ## Inconvénients 
@@ -78,13 +78,13 @@ La réponse dépend d'une seule question : **est-ce que vous travaillez souvent 
 
 **Si vous êtes toujours au même bureau** : n'achetez pas ça. Un grand écran fera mieux, avec une meilleure image et zéro manipulation. Et si un vieil iMac traîne chez vous, il peut même [devenir un écran secondaire avec Sharp](/fr/20260929-sharp-vieil-imac-ecran-secondaire-ethernet), ou [l'écran d'un PC Linux avec OpenDisplay](/fr/20261030-opendisplay-vieil-imac-ecran-mac-linux).
 
-**Si vous bougez régulièrement** (client, coworking, hôtel, aéroport), le calcul change. Ce dispositif n’est pas meilleur qu'un écran de bureau : il est meilleur que *rien*. Et « rien », c'est ce qu'on a habituellement en déplacement.
+**Si vous bougez régulièrement** (client, coworking, hôtel, aéroport), le calcul change. Ce dispositif n’est pas meilleur qu'un écran de bureau, mais il est meilleur que *rien*, et « rien », c'est ce qu'on a habituellement en déplacement.
 
-Le 1080p reste un vrai compromis, que je ressens tous les jours. Le montage/démontage prend une minute, ce qui n'est rien quand on s'installe pour une demi-journée, mais beaucoup pour vingt minutes de travail.
+Le 1080p reste un compromis, que je ressens tous les jours. Le montage/démontage prend une minute, ce qui n'est rien quand on s'installe pour une demi-journée, mais beaucoup pour vingt minutes de travail.
 
 Donc ce n'est **ni une révolution ni un gadget, mais un outil de niche qui répond bien à un besoin précis**. 
 
-Le mien : pouvoir tout voir en même temps, sans jongler entre les bureaux virtuels, et avec un confort de lecture correct.
+Le mien, c'est de pouvoir tout voir en même temps, sans jongler entre les bureaux virtuels, et avec un confort de lecture correct.
 
 ## Où l'acheter ?
 

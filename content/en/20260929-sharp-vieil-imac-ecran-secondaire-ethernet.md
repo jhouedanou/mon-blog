@@ -10,19 +10,19 @@ tags: ["tutorial", "apple", "macos", "mac", "open-source", "hardware", "producti
 
 Many of us have an old iMac sitting in a corner. The screen still looks great, but the computer behind it has become slow, and macOS no longer updates it.
 
-The idea is simple: use the old iMac as a second monitor for a newer Mac, even an Apple Silicon Mac. In practice, it was complicated. Until **Sharp**, a free, open source app spotted on [Reddit (r/iMac)](https://www.reddit.com/r/iMac/comments/1wsm7f8/use_your_imac_as_a_highresolution_display_over/). It does the job with a plain Ethernet cable.
+The idea is to use the old iMac as a second monitor for a newer Mac, including an Apple Silicon Mac. In practice, it was complicated until **Sharp**, a free, open source app spotted on [Reddit (r/iMac)](https://www.reddit.com/r/iMac/comments/1wsm7f8/use_your_imac_as_a_highresolution_display_over/), which does the job with an Ethernet cable.
 
 ![A MacBook and an iMac showing the same picture with Sharp, in mirror mode](/images/articles/sharp-imac-ecran-secondaire.webp)
 
 ## Why Target Display Mode is not enough
 
-Apple used to offer **Target Display Mode**. It let you use an iMac as a screen. But it has three big drawbacks:
+Apple used to offer **Target Display Mode**, which let you use an iMac as a screen, but it has three big drawbacks:
 
 - it only works with **some iMacs from 2009 to 2014**;
 - it does **not work with Apple Silicon Macs** (M1, M2, M3…);
 - 5K Retina iMacs were **never** compatible.
 
-Another option: **AirPlay to Mac**. But the iMac must be from 2019 or later. Older models can't act as receivers.
+The other option is **AirPlay to Mac**, but the iMac must be from 2019 or later, and older models can't act as receivers.
 
 That left solutions with dedicated hardware (like the Luna Display dongle), paid software, or workarounds that take a long time to set up.
 
@@ -39,20 +39,20 @@ Sharp was built by developer **Amine Rostane**. The first version, Sharp 1.0 Bet
 
 ## Why text stays sharp
 
-The name says it: text stays sharp. That's the app's main strength.
+As the name says, text stays sharp, and that's the app's main strength.
 
-The starting problem: a standard (gigabit) Ethernet link is too slow to send the raw picture. 4K at 60 frames per second needs about **twelve times** more bandwidth. So the picture has to be compressed.
+The starting problem is that a standard (gigabit) Ethernet link is too slow to send the raw picture. 4K at 60 frames per second needs about **twelve times** more bandwidth, so the picture has to be compressed.
 
-Video compression (H.264) is fine for a film. But on text or code, it makes letters blurry and edges smudgy.
+Video compression (H.264) is fine for a film, but on text or code, it makes letters blurry and edges smudgy.
 
 So Sharp combines two methods:
 
 1. **When the picture moves** (scrolling, video), it sends compressed video. The display stays smooth.
 2. **When the picture stops**, it sends small 64 × 64 pixel squares **with no loss**. They replace the video, piece by piece.
 
-Scroll a page and it's smooth. Stop to read and the text turns sharp again, pixel for pixel.
+So when you scroll a page it's smooth, and when you stop to read, the text turns sharp again, pixel for pixel.
 
-Each square carries a version number. Sharp checks it against the displayed picture before placing it. So an old square can't cover a newer picture.
+Each square carries a version number, which Sharp checks against the displayed picture before placing it, so an old square can't cover a newer picture.
 
 ## What you need
 
@@ -68,11 +68,11 @@ Each square carries a version number. Sharp checks it against the displayed pict
 Two notes:
 
 - **Get a gigabit adapter** (1 Gbit/s). 100 Mbit/s models, often the cheapest, are too slow.
-- **An Ethernet cable costs almost nothing.** You may already have one that came with your internet box. In total, count the price of a cable and, if needed, an adapter. That's a far cry from the Thunderbolt cables and Apple adapters Target Display Mode required.
+- **An Ethernet cable costs almost nothing.** You may already have one that came with your internet box. In total, count the price of a cable and, if needed, an adapter. That's much cheaper than the Thunderbolt cables and Apple adapters Target Display Mode required.
 
 ## Set up the iMac as a second monitor in five steps
 
-The app is in English. Button names are given as they appear.
+The app is in English, and button names are given as they appear.
 
 ### 1. Download Sharp on both Macs
 
@@ -84,7 +84,7 @@ If your iMac is stuck on macOS 10.13.6 (High Sierra), install **Sharp-Receiver-H
 
 Open the disk image. Drag **Sharp** into the **Applications** folder, then open it from there. Do this on both Macs.
 
-This matters: Sharp must be in Applications to stay available after a restart.
+This matters, because Sharp must be in Applications to stay available after a restart.
 
 ### 3. Allow it to open
 
@@ -109,11 +109,11 @@ On both Macs, allow **Local Network** access when Sharp asks for it. If the macO
 
 Connect the two Macs with the Ethernet (or Thunderbolt) cable. Sharp finds the other Mac on its own and picks the right connection.
 
-Open Sharp in the menu bar. If you see **Connected** above the other Mac's name, you're set: the picture is streaming.
+Open Sharp in the menu bar. If you see **Connected** above the other Mac's name, you're set, the picture is streaming.
 
 ## Mirror or extended display
 
-Sharp starts in **Mirror** mode: the same desktop on both screens.
+Sharp starts in **Mirror** mode, with the same desktop on both screens.
 
 For more room, choose **Extend**. Then, in **System Settings → Displays**, arrange the screens to match your desk. All that's left is to drag a window over to the iMac.
 
@@ -139,18 +139,18 @@ Sharp is promising, but keep this in mind:
 - **No Wi-Fi.** An Ethernet or Thunderbolt cable is required.
 - **Mac to Mac only.** No Windows PC, no iPad. For a Linux PC or a Wi-Fi link, see [OpenDisplay, which turns an old iMac into a monitor for a Linux PC or a Mac](/en/20261030-opendisplay-vieil-imac-ecran-mac-linux), at the cost of less sharp text.
 - **iMacs older than Late 2012 are limited.** They cannot install macOS Catalina. Only those running macOS 10.13.6 (High Sierra) can serve as a display, with the dedicated receiver.
-- **Extend mode is fragile.** It relies on an undocumented Apple feature. A macOS update could break it. If this mode fails, Sharp falls back to Mirror on its own.
+- **Extend mode is fragile.** It relies on an undocumented Apple feature, and a macOS update could break it. If this mode fails, Sharp falls back to Mirror on its own.
 - **5K is not guaranteed.** The author has not yet validated performance at that resolution.
-- **The iMac is still a computer that stays on.** It uses more power than a plain screen. If either Mac goes to sleep, the stream stops. It resumes on wake.
+- **The iMac is still a computer that stays on.** It uses more power than a plain screen. If either Mac goes to sleep, the stream stops, and it resumes on wake.
 - **It's still a beta** (1.0 Beta 2.2 as of 8 October 2026), from a single developer. Expect a few bugs.
 
-## In short
+## Who Sharp is for
 
-If a 2012 to 2020 iMac is gathering dust at home and you have a newer Mac, Sharp gives you a second screen for the price of an Ethernet cable. Setup takes a few minutes, and text stays sharp.
+If you have a 2012 to 2020 iMac at home that you no longer use, and a newer Mac, Sharp gives you a second screen for the price of an Ethernet cable.
 
-And if it's the computer itself you want to bring back, [install macOS on an external SSD](/en/20261014-installer-macos-ssd-externe-imac-2017): a 2017 iMac gets a second life without being opened.
+And if it's the computer itself you want to bring back, [install macOS on an external SSD](/en/20261014-installer-macos-ssd-externe-imac-2017), which makes a 2017 iMac usable again without opening it.
 
-To work on the go, an iMac won't follow you. In that case, read my review of [the portable dual monitor](/en/20260810-double-moniteur-portable-blackview-dcm6).
+On the go, you won't be carrying an iMac. In that case, read my review of [the portable dual monitor](/en/20260810-double-moniteur-portable-blackview-dcm6).
 
 **Sources:**
 

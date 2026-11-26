@@ -7,7 +7,7 @@ searchIntent: "What is the BCEAO's PI-SPI, how do I use it to send money from a 
 tags: ["finance", "africa", "tutorial", "mobile money"]
 ---
 
-PI-SPI isn't an app: it's the BCEAO's instant payment network. It links the banks, mobile money services and microfinance institutions of the 8 WAEMU countries. You use it from the app you already have. The money arrives in a few seconds, and sending is free up to 8,000 CFA francs a day.
+PI-SPI is the BCEAO's instant payment network. It links the banks, mobile money services and microfinance institutions of the 8 WAEMU countries. You use it from the app you already have. The money arrives in a few seconds, and sending is free up to 8,000 CFA francs a day.
 
 ## What is PI-SPI?
 
@@ -52,17 +52,17 @@ One condition: your recipient's institution must also be connected to PI-SPI.
 
 These rules have applied since 2 November 2026. Since that date, a transfer between a bank (or a microfinance institution) and a mobile money account, or between two mobile money accounts, must go through PI-SPI.
 
-## Watch out: there is no undo
+## A transfer cannot be undone
 
 A PI-SPI transfer is instant and irreversible. Once the money is gone, you can't cancel it.
 
 Before you confirm, your app shows the recipient's name and country. **Check them every time.**
 
-Scammers count on exactly that: [the fake Zoho renewal email scam](/en/20260831-faux-mail-renouvellement-zoho-358-dollars) ends with a transfer the victim sends themselves.
+Scammers count on exactly that, and [the fake Zoho renewal email scam](/en/20260831-faux-mail-renouvellement-zoho-358-dollars) ends with a transfer the victim sends themselves.
 
-## In short
+## The essentials
 
-- PI-SPI is not an app: it's a network, run by the BCEAO.
+- PI-SPI is a network, run by the BCEAO.
 - You use it from your usual app. For me, it's between Ecobank and Orange Money.
 - Your alias: your phone number, or a payment address with its QR code.
 - Free up to 8,000 CFA francs a day, then 0.8% at most before tax.

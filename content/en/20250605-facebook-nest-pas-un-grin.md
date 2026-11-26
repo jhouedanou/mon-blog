@@ -19,11 +19,11 @@ Thinking rigorously, respecting others, weighing your words: these are qualities
 
 Yet sometimes you get the feeling that certain professionals have forgotten these basics.
 
-## Community manager: a dismaying step backwards
+## A dismaying step backwards
 
 Recently, the community manager of a well-known player in the Ivorian book trade thought it wise to comment on how well women master the French language, in a manner that was, to put it mildly... clumsy.
 
-His "solution": hand out a Bescherelle grammar guide, with a dash of sarcasm thrown in.
+His "solution" was to hand out a Bescherelle grammar guide, with a dash of sarcasm thrown in.
 
 ![Sexist comment from the community manager about women and iPhones](/images/articles/bescherelle/01.webp)
 
@@ -47,7 +47,7 @@ A few observations:
 - "Tête d'illettrés": here the word *illettrés* is in the masculine plural, while the subject of the sentence is feminine ("elles"). The correct form would therefore be *tête d'illettrées*.
 - There is also a problem of stylistic coherence: "allure", "démarche" and "tête" are lined up in the same structure, but with images from different registers, which makes the whole thing wobble.
 
-So what was meant as a critique of other people's French backfires on its author: you cannot [correct others' grammar](/en/20250326-lhistoire-de-gregoire) while forgetting basic agreement rules. Above all, it is never appropriate to pass such a sweeping judgement, let alone in a contemptuous tone, when you're addressing a wide and potentially young audience from an institutional page.
+So what was meant as a critique of other people's French backfires on its author, because you cannot [correct others' grammar](/en/20250326-lhistoire-de-gregoire) while forgetting basic agreement rules. Above all, it is never appropriate to pass such a sweeping judgement, let alone in a contemptuous tone, when you're addressing a wide and potentially young audience from an institutional page.
 
 ## The irony of the critic's stance
 
@@ -76,9 +76,9 @@ Note that it wasn't the bookshop as a whole that spoke out. In fact, the booksho
 
 It was just one CM, poorly trained or poorly supervised, who in a few clicks turned a cultural showcase into [a stage for misogynistic stand-up](/en/20260822-oui-a-lexcision-non-diversion-rhetorique).
 
-In conclusion, ladies, be yourselves.
+Ladies, be yourselves.
 
 That's precisely what bothers some people, and that's a good thing.
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com) — committed grammarian*
+*[Jean-Luc Houédanou](https://houedanou.com), committed grammarian*

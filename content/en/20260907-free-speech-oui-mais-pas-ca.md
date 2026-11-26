@@ -7,11 +7,11 @@ searchIntent: "What the 7th Circuit's United States v. Anderegg decision actuall
 tags: ["ai", "society", "opinion", "legal"]
 ---
 
-I am, and I remain, on the side of free speech. But responsible free speech, the kind that owns its legal consequences. A quick nod, in passing, to certain Ivorian bloggers who have paid the price: saying what you think has a cost, and those who have paid it know that better than I do.
+I am, and I remain, on the side of free speech, but responsible free speech, the kind that owns its legal consequences. A quick nod, in passing, to certain Ivorian bloggers who have paid the price, because saying what you think has a cost, and those who have paid it know that better than I do.
 
-I'll be honest, I'm getting a bit tired of talking about this kind of subject. But this one I can't let slide: the *United States v. Anderegg* ruling on AI-generated child sexual abuse images.
+I'll be honest, I'm getting a bit tired of talking about this kind of subject. But I can't let the *United States v. Anderegg* ruling on AI-generated child sexual abuse images slide.
 
-## United States v. Anderegg: the facts
+## The facts of United States v. Anderegg
 
 On August 25, 2026, the US Court of Appeals for the 7th Circuit (Illinois, Indiana, Wisconsin) handed down a decision in *United States v. Anderegg*. A Wisconsin man, prosecuted for producing, distributing and possessing AI-generated child sexual abuse images, got the charge of mere private possession dismissed on First Amendment grounds.
 
@@ -31,29 +31,29 @@ The judge clearly took no pleasure in this ruling. In a concurring opinion, he e
 
 So no, America has not "legalised AI child pornography". But yes, a court was forced, by texts from 1969 and 2002, to say that you can't prosecute someone for what's on their hard drive. And that's what bothers me.
 
-## The question I'm really asking myself
+## The question I'm asking myself
 
-[I work with AI every day](/en/20250604-liaetmoi), I write prompts every day. So my question is simple: what kind of person sits down in front of a model and types that kind of detail?
+[I work with AI every day](/en/20250604-liaetmoi), I write prompts every day. So I wonder what kind of person sits down in front of a model and types that kind of detail.
 
-This is not an accident or a bug. A model doesn't produce that on its own, someone described, refined, started over, for hours. Thousands of images, according to the case file. At some point, the question is no longer legal, it's human.
+A model doesn't produce that on its own, by accident or because of a bug. Someone described, refined, started over, for hours, for thousands of images according to the case file. At some point, the question goes beyond the law and is about the person.
 
-And it confirms, once again, what I've been repeating for years: certain institutions should stay away from technology. Not because it's bad, but because they're twenty-five years behind in understanding it. We're judging diffusion models with case law written in the era of 56k modems.
+And it confirms, once again, what I've been repeating for years, namely that certain institutions should stay away from technology, because they're twenty-five years behind in understanding it. We're judging diffusion models with case law written in the era of 56k modems.
 
-The simple fact that RAM, GPUs, electricity and engineers' work are being used for this kind of thing disgusts me.
+The fact that RAM, GPUs, electricity and engineers' work are being used for this kind of thing disgusts me.
 
-## While we wait for this world to stop walking on its head
+## While we wait for the courts to catch up
 
 Parents, stop posting photos of your children.
 
-Yes, I know, this is [victim blaming](/en/20250115-l-histoire-danne). It's not up to you to adapt to sick people, it's up to the sick people to be arrested, and you're right on principle. But personally, I'm not counting on that kind of person to become responsible overnight, nor on the courts to catch up before technology has moved another ten years ahead.
+Yes, I know, this is [victim blaming](/en/20250115-l-histoire-danne). It's not up to you to adapt to sick people, it's up to the sick people to be arrested, and you're right on principle. But I'm not counting on that kind of person to become responsible overnight, nor on the courts to catch up before technology has moved another ten years ahead.
 
-The only lever you actually control is what you put online. Every public photo of your child is potential training data, a reusable face, a starting point for someone you will never meet. Sure, deepfakes of real children are not a legal grey area. But by then, the harm is already done.
+The only lever you control is what you put online. Every public photo of your child is potential training data, a reusable face, a starting point for someone you will never meet. Sure, deepfakes of real children remain illegal, but by the time the courts step in, the harm is already done.
 
-It's not fair, I'll grant you that. But it works.
+I'll grant you that it's not fair, but it works.
 
 ## What I'd like to hear
 
-I'd like to hear from [the people who built this industry](/en/20260907-bill-gates-ia-hypocrisie-meta-cash-rules-everything). Not a foundation press release, not a corporate blog post, a real opinion. Because making something possible means carrying a share of the responsibility for it.
+I'd like to hear from [the people who built this industry](/en/20260907-bill-gates-ia-hypocrisie-meta-cash-rules-everything), with a personal opinion rather than a foundation press release or a corporate blog post, because making something possible means carrying a share of the responsibility for it.
 
 ## Sources
 
@@ -62,7 +62,7 @@ I'd like to hear from [the people who built this industry](/en/20260907-bill-gat
 - Snopes, ["Judge ruled certain AI-generated child sex abuse material is protected by First Amendment. Here's context"](https://www.snopes.com/fact-check/judge-ai-child-sex-abuse-ruling/)
 - Minnesota Lawyer / The Daily Record, ["Federal judge warns law is being left behind by AI child sex abuse images"](https://thedailyrecord.com/2026-08-31/federal-judge-first-amendment-ai-child-sex-abuse-images/)
 
-*Image: KATRIN BOLOVTSOVA — Pexels.*
+*Image: KATRIN BOLOVTSOVA, Pexels.*
 
 ---
 *[Jean-Luc Houédanou](https://houedanou.com)*

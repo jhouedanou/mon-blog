@@ -11,7 +11,7 @@ summary: "Anne, fragilisée par un cancer du cerveau, le VIH et un divorce, a pe
 
 _Préambule : cette sombre histoire d'arnaque au faux Brad Pitt trouve ses racines dans mon pays d'origine, le Bénin. Aux dernières nouvelles, les autorités compétentes ont été informées de cette affaire, les escrocs responsables ayant été identifiés par Find My Scammer. Ils iront donc probablement faire un long séjour en prison, et la justice sera rendue, car ces individus ne représentent en rien les valeurs traditionnelles de respect, de dignité humaine et d'hospitalité propres au Bénin._
 
-_En d'autres termes, on peut en parler avec la paix du cœur, sans exploiter le désarroi et le désespoir des victimes._
+_On peut donc en parler avec la paix du cœur, sans exploiter le désarroi et le désespoir des victimes._
 
 Mon usage des réseaux sociaux est limité. Je me concentre principalement sur YouTube, que j'écoute en arrière-plan pendant mes activités, et sur quelques comptes destinés à relayer le contenu de mes blogs.
 
@@ -35,9 +35,9 @@ Le piège se referme lorsque le faux Brad Pitt annonce souffrir d'un cancer du r
 
 Cette affaire a laissé Anne sans ressources. Aujourd'hui, elle vit dans un box de 6 m², entourée de quelques cartons. Elle a tenté de se suicider à plusieurs reprises et suit désormais un traitement psychiatrique. Ce qui est encore plus marquant, c'est l'impact du lynchage numérique qu'elle subit. Les réseaux sociaux, au lieu de condamner l'arnaque, se concentrent sur elle, multipliant les moqueries et les détournements.
 
-En termes plus clairs : Anne est devenue la nouvelle « punchline » ou le « punching-ball » de X. Cette situation a été amplifiée par le fait que la plupart des gens ne connaissent pas Anne. Ils ne savent pas ce qu'elle a vécu, ni ce qu'elle a fait pour survivre, ou encore qu'elle est atteinte du VIH et en est à sa troisième tentative de suicide.
+Anne est devenue la nouvelle « punchline » ou le « punching-ball » de X. Cette situation a été amplifiée par le fait que la plupart des gens ne connaissent pas Anne. Ils ne savent pas ce qu'elle a vécu, ni ce qu'elle a fait pour survivre, ou encore qu'elle est atteinte du VIH et en est à sa troisième tentative de suicide.
 
 On fait tous des erreurs, mais on a tous droit à un minimum de respect. Et surtout, **il y a des moments où le silence est d'or : si vous n'êtes pas sûrs que ce que vous allez poster fera du bien, continuez à scroller.**
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com) — chasseur d'arnaques*
+*[Jean-Luc Houédanou](https://houedanou.com), chasseur d'arnaques*

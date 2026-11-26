@@ -32,11 +32,11 @@ Connectez-vous au réseau Wi-Fi de la CanalBox, puis ouvrez cette adresse dans v
 https://my.canalbox.africa/login
 ```
 
-Tapez-la vous-même dans la barre d'adresse, plutôt que de passer par un résultat de recherche : [le premier résultat Google pour « Bing Webmaster Tools » était un site de phishing](/fr/20260618-alerte-phishing-bing-webmaster-tools).
+Tapez-la vous-même dans la barre d'adresse, plutôt que de passer par un résultat de recherche, parce que [le premier résultat Google pour « Bing Webmaster Tools » était un site de phishing](/fr/20260618-alerte-phishing-bing-webmaster-tools).
 
 ### 2. Entrer le numéro de série
 
-Dans la fenêtre qui s'affiche, entrez le numéro de série que vous avez noté à l'étape précédente. C'est lui qui sert d'identifiant : pas de compte à créer, pas de mot de passe administrateur à retrouver.
+Dans la fenêtre qui s'affiche, entrez le numéro de série que vous avez noté à l'étape précédente. C'est lui qui sert d'identifiant, il n'y a donc ni compte à créer ni mot de passe administrateur à retrouver.
 
 ![Une personne tape sur le clavier d'un ordinateur portable](/images/articles/pexels-christina-morillo-1181208.webp)
 
@@ -52,14 +52,14 @@ C'est tout. Tous les appareils qui étaient connectés sont maintenant déconnec
 
 ## Quelques conseils pour le nouveau mot de passe
 
-- **Douze caractères minimum.** Un mot de passe court se devine en quelques minutes avec un logiciel gratuit. C'est un mot de passe deviné qui a ouvert la porte du [site WordPress piraté que j'ai dû remettre d'aplomb en août](/fr/20261020-site-wordpress-pirate-trouver-par-ou-le-pirate-est-entre).
+- **Douze caractères minimum.** Un mot de passe court se devine en quelques minutes avec un logiciel gratuit. C'est un mot de passe deviné qui a permis d'entrer dans le [site WordPress piraté que j'ai dû remettre d'aplomb en août](/fr/20261020-site-wordpress-pirate-trouver-par-ou-le-pirate-est-entre).
 - **Pas votre numéro de téléphone, ni votre date de naissance.** Ce sont les premières choses qu'un voisin essaie.
 - **Une phrase plutôt qu'un mot.** « MonRizGrasDuDimanche2026 » est plus long, plus solide et plus facile à retenir que « Xk7#p2 ».
 - **Notez-le quelque part.** Dans le gestionnaire de mots de passe de votre téléphone, par exemple, pas sur un post-it collé au routeur, sinon vous revenez au point de départ.
 
 Si vous voulez aller plus loin, le même menu **Wi-Fi** permet aussi de changer le nom du réseau. Remplacer le nom par défaut par quelque chose qui ne dit pas « CanalBox » évite de signaler à tout l'immeuble quel modèle de routeur vous utilisez.
 
-Ce n'est pas le seul réglage utile de la CanalBox : j'ai dû en changer d'autres pour que [le Wi-Fi marche sous Omarchy, la distribution Linux de DHH](/fr/20261008-omarchy-dhh-homme-dotfiles), sur mon vieux MacBook Pro.
+J'ai d'ailleurs dû changer d'autres réglages de la CanalBox pour que [le Wi-Fi marche sous Omarchy, la distribution Linux de DHH](/fr/20261008-omarchy-dhh-homme-dotfiles), sur mon vieux MacBook Pro.
 
 ---
 

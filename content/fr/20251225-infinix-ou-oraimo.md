@@ -13,7 +13,7 @@ Bien que les deux marques appartiennent au géant **Transsion Holdings** et qu'e
 
 ---
 
-## 1. Design et écran : l'esthétique contre la clarté
+## 1. Design et écran
 
 * **Infinix Watch 3 :** Son design est son principal atout. Avec un look inspiré des montres haut de gamme comme la **Huawei Watch GT**, elle se remarque au poignet. Sa forme ronde lui donne l'air d'une « vraie » montre. Son écran haute résolution ajoute à l'impression de qualité.
 * **Oraimo Nova AM :** Équipée d'un écran **AMOLED** haute résolution, elle offre des noirs profonds, des couleurs vives et une excellente fluidité. Son verre incurvé est élégant, mais le style est plus « gadget tech » que l'Infinix.
@@ -22,10 +22,10 @@ Niveau design, l'Infinix l'emporte clairement : l'Oraimo ressemble plus à une c
 
 ## 2. Fonctionnalités « smart » et notifications
 
-C'est ici que la différence est la plus marquée.
+La différence est la plus marquée sur ce point.
 
-* **Infinix Watch 3 :** Elle se comporte davantage comme un bracelet fitness déguisé. Le système logiciel est limité : il est difficile, voire impossible, de recevoir des notifications d'applications professionnelles (ex. WhatsApp Business, même si j'ai fini par [dire non à WhatsApp au travail](/fr/20261028-whatsapp-nest-pas-un-moyen-de-communication-professionnel)) ou de lire des e‑mails complets. On est limité à WhatsApp, Telegram, Pinterest et au bon vouloir d'Infinix : étonnamment, les notifications Teams fonctionnent. Cela peut frustrer un utilisateur intensif comme moi.
-* **Oraimo Nova AM :** L'écosystème Oraimo est plus mature : la gestion des notifications est plus fine et l'intégration des services est mieux pensée pour un usage quotidien. Seul bémol : les messages trop longs peuvent être tronqués.
+* **Infinix Watch 3 :** Elle se comporte davantage comme un bracelet fitness que comme une montre connectée. Le système logiciel est limité : il est difficile, voire impossible, de recevoir des notifications d'applications professionnelles (ex. WhatsApp Business, même si j'ai fini par [dire non à WhatsApp au travail](/fr/20261028-whatsapp-nest-pas-un-moyen-de-communication-professionnel)) ou de lire des e‑mails complets. On est limité à WhatsApp, Telegram, Pinterest et au bon vouloir d'Infinix, et étonnamment, les notifications Teams fonctionnent. Cela peut frustrer un utilisateur intensif comme moi.
+* **Oraimo Nova AM :** L'écosystème Oraimo est plus mature : la gestion des notifications est plus fine et l'intégration des services est mieux pensée pour un usage quotidien. Seul bémol, les messages trop longs peuvent être tronqués.
 
 ## 3. Sport et santé
 
@@ -33,7 +33,7 @@ Les deux montres offrent les fonctions classiques : suivi du rythme cardiaque, S
 
 ---
 
-## Infinix Watch 3 ou Oraimo Nova AM : laquelle choisir ?
+## Laquelle choisir entre l'Infinix Watch 3 et l'Oraimo Nova AM ?
 
 ### Choisissez l'Infinix Watch 3 si :
 * Le **design** est votre priorité absolue et vous souhaitez une montre qui ressemble à une montre de luxe (style Samsung/Huawei) sans le prix.
@@ -43,9 +43,7 @@ Les deux montres offrent les fonctions classiques : suivi du rythme cardiaque, S
 * Vous avez besoin d'une montre réellement « connectée » qui gère mieux vos **notifications**.
 * Vous cherchez une application compagnon fiable et complète.
 
-En résumé, on prend l'Infinix Watch 3 pour son design haut de gamme, et l'Oraimo Nova AM pour ses fonctionnalités connectées et son application plus solide. Tout dépend de vos priorités : esthétique ou productivité.
-
 Depuis, j'ai troqué l'Oraimo contre une Pixel Watch, et j'ai trouvé [comment lui faire allumer l'écran à chaque notification](/fr/20260311-comment-allumer-lecran-pixel-watch-notifications). J'ai aussi fait le point sur [tous les produits Oraimo que j'utilise, et ceux que je rachèterais](/fr/20261103-oraimo-avis-produits-rapport-qualite-prix).
 
 ---
-*[Jean-Luc Houédanou](https://houedanou.com) — horloger connecté*
+*[Jean-Luc Houédanou](https://houedanou.com), horloger connecté*
