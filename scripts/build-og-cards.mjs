@@ -8,11 +8,25 @@
 //
 //   yarn og:cards
 import { readdir, readFile, writeFile, mkdir, stat } from 'node:fs/promises'
-import { existsSync } from 'node:fs'
+import { existsSync, writeFileSync, mkdtempSync } from 'node:fs'
+import os from 'node:os'
 import path from 'node:path'
-import sharp from 'sharp'
 
 const ROOT = path.resolve(new URL('..', import.meta.url).pathname)
+
+// Polices du site (Caprasimo pour le nom, Figtree pour le reste), livrées dans
+// scripts/fonts sous licence OFL. sharp rend le SVG avec fontconfig : on lui
+// donne une configuration qui pointe vers ce dossier AVANT de le charger, pour
+// que les cartes aient la même typographie partout, quelle que soit la machine.
+const FONTS_DIR = path.join(ROOT, 'scripts', 'fonts')
+const fcDir = mkdtempSync(path.join(os.tmpdir(), 'og-fonts-'))
+const fcFile = path.join(fcDir, 'fonts.conf')
+writeFileSync(fcFile, `<?xml version="1.0"?>
+<!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+<fontconfig><dir>${FONTS_DIR}</dir><include ignore_missing="yes">/etc/fonts/fonts.conf</include><cachedir>${fcDir}</cachedir></fontconfig>`)
+process.env.FONTCONFIG_FILE = fcFile
+const { default: sharp } = await import('sharp')
+
 const CONTENT_DIR = path.join(ROOT, 'content', 'fr')
 const PUBLIC_DIR = path.join(ROOT, 'public')
 const OUT_DIR = path.join(PUBLIC_DIR, 'og')
@@ -22,32 +36,48 @@ const WIDTH = 1200
 const HEIGHT = 630
 const JPEG = { quality: 82, mozjpeg: true, chromaSubsampling: '4:2:0' }
 
-const BG = '#f1f4f1'
-const ACCENT = '#0a7040'
-const INK = '#121714'
+// Couleurs du site (DESIGN.md) : bleu nuit, cuivre, lavande.
+const BG = '#111522'
+const INK = '#f3eee5'
+const MUTED = '#a8adbb'
+const COPPER = '#c27a5b'
+const COPPER_TEXT = '#e0a083'
+const LAVENDER = '#b8beff'
+const GRID = 'rgba(137,148,228,0.07)'
 
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
 
-// Carte par défaut : « Le Blog de », nom en signature, accroche.
+// Grille de 72 px du site, en fond de la carte par défaut.
+function gridPattern() {
+  return `<defs><pattern id="g" width="72" height="72" patternUnits="userSpaceOnUse">
+    <path d="M72 0H0V72" fill="none" stroke="${GRID}" stroke-width="1"/></pattern></defs>
+  <rect width="100%" height="100%" fill="url(#g)"/>`
+}
+
+// Carte par défaut : « Le blog de » en label, le nom en Caprasimo, l'accroche.
 function defaultCardSvg() {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${WIDTH}" height="${HEIGHT}">
   <rect width="100%" height="100%" fill="${BG}"/>
-  <rect x="0" y="0" width="18" height="${HEIGHT}" fill="${ACCENT}"/>
-  <text x="100" y="170" font-family="Helvetica, Arial, sans-serif" font-size="44" font-weight="600" fill="#3f4a43">Le Blog de</text>
-  <text x="96" y="290" font-family="Georgia, 'Times New Roman', serif" font-size="104" font-weight="600" fill="${INK}">Jean-Luc Houédanou<tspan fill="${ACCENT}">.</tspan></text>
-  <text x="100" y="400" font-family="Helvetica, Arial, sans-serif" font-size="30" fill="#3f4a43">Tech, culture numérique et réflexions depuis Abidjan</text>
-  <text x="100" y="560" font-family="Helvetica, Arial, sans-serif" font-size="28" font-weight="600" fill="${ACCENT}">houedanou.com</text>
+  ${gridPattern()}
+  <circle cx="1080" cy="40" r="300" fill="none" stroke="rgba(137,148,228,0.22)" stroke-width="2"/>
+  <text x="96" y="190" font-family="Figtree" font-size="30" font-weight="700" letter-spacing="4" fill="${LAVENDER}">LE BLOG DE</text>
+  <text x="92" y="300" font-family="Caprasimo" font-size="96" fill="${INK}">Jean-Luc Houédanou</text>
+  <text x="96" y="380" font-family="Figtree" font-size="34" fill="${MUTED}">Tech, culture numérique et réflexions depuis Abidjan</text>
+  <rect x="96" y="470" width="300" height="72" rx="6" fill="${COPPER}"/>
+  <text x="246" y="517" text-anchor="middle" font-family="Figtree" font-size="30" font-weight="700" fill="#1b1420">houedanou.com</text>
 </svg>`
 }
 
-// Bandeau de marque en pied de carte d'article.
+// Bandeau de marque en pied de carte d'article : bleu nuit, nom en Caprasimo,
+// filet cuivre, adresse en lavande.
 function brandBandSvg() {
-  const h = 84
+  const h = 88
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${WIDTH}" height="${h}">
-  <rect width="100%" height="100%" fill="${BG}" fill-opacity="0.94"/>
-  <rect x="0" y="0" width="${WIDTH}" height="4" fill="${ACCENT}"/>
-  <text x="48" y="54" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="600" fill="${INK}">Le Blog de Jean-Luc Houédanou<tspan fill="${ACCENT}">.</tspan></text>
-  <text x="${WIDTH - 48}" y="54" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="600" fill="${ACCENT}">houedanou.com</text>
+  <rect width="100%" height="100%" fill="${BG}" fill-opacity="0.95"/>
+  <rect x="0" y="0" width="${WIDTH}" height="4" fill="${COPPER}"/>
+  <text x="48" y="36" font-family="Figtree" font-size="17" font-weight="700" letter-spacing="3" fill="${LAVENDER}">LE BLOG DE</text>
+  <text x="46" y="72" font-family="Caprasimo" font-size="32" fill="${INK}">Jean-Luc Houédanou</text>
+  <text x="${WIDTH - 48}" y="60" text-anchor="end" font-family="Figtree" font-size="28" font-weight="700" fill="${COPPER_TEXT}">houedanou.com</text>
 </svg>`
 }
 
