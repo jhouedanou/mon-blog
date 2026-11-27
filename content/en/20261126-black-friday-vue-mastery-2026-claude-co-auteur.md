@@ -53,13 +53,13 @@ Someone who wrote a rule can explain it, while someone who got it from a prompt 
 
 ## Rap went through the same thing
 
-Hip-hop has known the lyrical dexterity of Treach, the sample manipulations of RZA and DJ Premier, the mixing excellence of Dr. Dre, the creative madness of Timbaland, the versatility and adaptability of Just Blaze. They all have passion and talent in common, and they all learned their craft before the tools became easy. (And Treach is the real GOAT, and I'ma die on that hill. "Feel Me Flow" is a killer track.)
+Okay, I'm going to take a detour through hip-hop, because I've already seen this movie. Rap has known the lyrical dexterity of Treach, the samples chopped by RZA and DJ Premier, Dr. Dre's mixing, Timbaland's creative madness and Just Blaze's versatility, and all those guys had passion and talent, and they had learned their craft long before the tools became easy. (And for me, Treach remains the real GOAT, and I'ma die on that hill. "Feel Me Flow" is a killer track.)
 
-Then [FL Studio](/en/20261026-lemon-studio-clone-fl-studio), Auto-Tune and MIDI loops became available to everyone. Anybody could put out a track without knowing how to write a verse, chop a sample or mix a vocal, and we got copies of sub-copies of Shawty Redd, some Sexyy Reds, in short imitators who are only there for the money, in niches that sell nothing and pollute the airwaves.
+Then [FL Studio](/en/20261026-lemon-studio-clone-fl-studio), Auto-Tune and MIDI loops became available to everyone, and anybody could put out a track without knowing how to write a verse, chop a sample or mix a vocal. We got copies of sub-copies of Shawty Redd, some Sexyy Reds, in short imitators who are only there for the money, in niches that sell nothing and pollute the airwaves.
 
-With vibe coding, the same thing is happening in my trade, and Claude Code is our FL Studio. Anybody can ship an application without knowing how to read a function, and we get copies of sub-copies of applications that already exist, produced fast, for the money, in niches that sell nothing either.
+Vibe coding is the same problem in my trade. With Claude Code, anybody can ship an application without knowing how to read a function, and we see copies of sub-copies of applications that already exist, produced fast, for the money, and they don't sell anything either.
 
-FL Studio never stopped anyone from having talent, and neither does Claude. But in rap as in code, you can hear right away who learned their craft before picking up the tool, and who only has the tool.
+So yes, I know, FL Studio never stopped anyone from having talent, and neither does Claude. But a tool doesn't replace the craft, in rap or in code.
 
 ## How I use Claude
 
