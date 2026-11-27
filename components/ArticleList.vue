@@ -1,37 +1,23 @@
 <template>
     <div class="home">
-        <!-- Ouverture : même composition que le héros du portfolio -->
-        <section class="home-hero" aria-labelledby="home-title">
-            <div class="home-hero__copy">
-                <p class="home-hero__data">
-                    <span>Abidjan</span>
-                    <span aria-hidden="true">·</span>
-                    <span v-if="articles && articles.length">{{ articles.length }} {{ $t('articles') }}</span>
-                </p>
-                <!-- L'espace explicite est indispensable : le compilateur Vue supprime
-                     les nœuds de texte blancs contenant un saut de ligne, ce qui donnait
-                     « Jean-LucHouédanou » dans le HTML servi à Google. -->
-                <h1 id="home-title" class="home-hero__title">
-                    <span class="home-hero__kicker">{{ $t('blogOf') }} </span><span>Jean-Luc </span><em>Houédanou.</em>
-                </h1>
-                <p class="home-hero__lede">{{ $t('heroLede') }}</p>
+        <!-- Ouverture courte : le contenu passe avant l'auteur. Le h1 garde le
+             nom du blog, car c'est son texte qui compte pour Google, pas sa taille. -->
+        <section class="home-intro" aria-labelledby="home-title">
+            <div class="home-intro__text">
+                <h1 id="home-title" class="home-intro__title">{{ $t('blogOf') }} Jean-Luc Houédanou</h1>
+                <p class="home-intro__lede">{{ $t('heroLede') }}</p>
             </div>
-
-            <div class="home-hero__tools">
-                <SearchBar v-model="searchQuery" />
-                <nav class="home-hero__themes" :aria-label="$t('themesNavLabel')">
-                    <p class="home-hero__themes-title">{{ $t('browseThemes') }}</p>
-                    <div class="home-hero__chips">
-                        <NuxtLink
-                            v-for="theme in themes"
-                            :key="theme.slug"
-                            :to="localePath(`/themes/${theme.slug}`)"
-                            class="chip"
-                        >{{ theme.label }}</NuxtLink>
-                        <NuxtLink :to="localePath('/tags')" class="chip chip--copper">{{ $t('allTags') }}</NuxtLink>
-                    </div>
-                </nav>
-            </div>
+            <SearchBar v-model="searchQuery" class="home-intro__search" />
+            <nav class="home-intro__themes" :aria-label="$t('themesNavLabel')">
+                <span class="home-intro__themes-title">{{ $t('browseThemes') }}</span>
+                <NuxtLink
+                    v-for="theme in themes"
+                    :key="theme.slug"
+                    :to="localePath(`/themes/${theme.slug}`)"
+                    class="chip"
+                >{{ theme.label }}</NuxtLink>
+                <NuxtLink :to="localePath('/tags')" class="chip chip--copper">{{ $t('allTags') }}</NuxtLink>
+            </nav>
         </section>
 
         <!-- Billet à la une : le plus récent, hors recherche -->
@@ -269,100 +255,51 @@ function formatDate(createdAt) {
     max-width: var(--wrap);
     margin: 0 auto;
     padding: 0 var(--gutter);
-    /* Le cercle du héros dépasse à droite : `clip` le coupe sans créer de
-       zone de défilement (contrairement à `hidden`). */
+    /* Sur mobile, la ligne d'étiquettes déborde jusqu'aux bords de l'écran :
+       `clip` coupe sans créer de zone de défilement (contrairement à `hidden`). */
     overflow-x: clip;
 }
 
 /* ==========================================
-   Ouverture
+   Ouverture — courte : priorité aux billets
    ========================================== */
-.home-hero {
-    position: relative;
+.home-intro {
     display: grid;
-    grid-template-columns: minmax(0, 1.25fr) minmax(300px, 0.75fr);
-    gap: clamp(2rem, 6vw, 5rem);
-    align-items: end;
-    padding: clamp(3rem, 8vw, 6rem) 0 clamp(2.5rem, 5vw, 3.5rem);
-    border-bottom: 1px solid var(--border-color);
-
-    /* Le cercle du héros du portfolio, en filigrane. */
-    &::before {
-        content: '';
-        position: absolute;
-        z-index: -1;
-        top: -18%;
-        right: -12%;
-        width: min(46vw, 620px);
-        aspect-ratio: 1;
-        border: 1px solid var(--accent-2-line);
-        border-radius: 50%;
-        background: radial-gradient(circle, var(--accent-2-soft), transparent 64%);
-        opacity: 0.55;
-        pointer-events: none;
-    }
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 380px);
+    align-items: center;
+    gap: 1.25rem 2.5rem;
+    padding: clamp(1.75rem, 3vw, 2.5rem) 0 0;
 }
 
-.home-hero__data {
+.home-intro__title {
+    margin: 0 0 0.35rem;
+    font-size: clamp(1.45rem, 2.2vw, 1.85rem);
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+}
+
+.home-intro__lede {
+    max-width: 60ch;
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.55;
+    color: var(--text-muted);
+}
+
+.home-intro__themes {
+    grid-column: 1 / -1;
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
-    margin: 0 0 1.25rem;
-    font-family: var(--font-mono);
-    font-size: 0.75rem;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--accent-2-text);
+    align-items: center;
+    gap: 0.45rem;
 }
 
-.home-hero__title {
-    margin: 0 0 1.5rem;
-    font-size: clamp(2.9rem, 7vw, 5.75rem);
-    font-weight: 600;
-    line-height: 0.95;
-    letter-spacing: -0.04em;
-
-    em {
-        font-style: normal;
-        color: var(--accent);
-    }
-}
-
-/* « Le blog de » : partie du titre pour les robots, posée en petit au-dessus. */
-.home-hero__kicker {
-    display: block;
-    margin-bottom: 0.6rem;
-    font-size: clamp(1rem, 1.6vw, 1.25rem);
-    font-weight: 500;
-    letter-spacing: -0.01em;
-    color: var(--text-muted);
-}
-
-.home-hero__lede {
-    max-width: 46ch;
-    margin: 0;
-    font-size: clamp(1.05rem, 1.4vw, 1.2rem);
-    line-height: 1.6;
-    color: var(--text-muted);
-}
-
-.home-hero__tools {
-    display: grid;
-    gap: 1.5rem;
-}
-
-.home-hero__themes-title {
-    margin: 0 0 0.65rem;
+.home-intro__themes-title {
+    margin-right: 0.35rem;
     font-size: 0.9rem;
     font-weight: 600;
     color: var(--text-primary);
-}
-
-.home-hero__chips {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.45rem;
 }
 
 /* ==========================================
@@ -421,7 +358,7 @@ function formatDate(createdAt) {
 .featured {
     display: grid;
     grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
-    margin-top: clamp(2rem, 4vw, 3rem);
+    margin-top: 1.5rem;
     border: 1px solid var(--border-color);
     border-radius: var(--radius);
     background: linear-gradient(135deg, var(--bg-card), var(--bg-secondary));
@@ -483,7 +420,7 @@ function formatDate(createdAt) {
    Liste
    ========================================== */
 .home-list {
-    margin-top: clamp(3rem, 6vw, 4.5rem);
+    margin-top: clamp(2rem, 4vw, 3rem);
 }
 
 .home-list__head {
@@ -491,14 +428,14 @@ function formatDate(createdAt) {
     align-items: baseline;
     justify-content: space-between;
     gap: 1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.1rem;
 }
 
 .home-list__title {
     margin: 0;
-    font-size: clamp(1.75rem, 3.2vw, 2.6rem);
-    line-height: 1.05;
-    letter-spacing: -0.04em;
+    font-size: clamp(1.3rem, 1.8vw, 1.55rem);
+    line-height: 1.15;
+    letter-spacing: -0.03em;
 }
 
 .home-list__count {
@@ -625,9 +562,8 @@ function formatDate(createdAt) {
    Responsive
    ========================================== */
 @media screen and (max-width: 1023px) {
-    .home-hero {
+    .home-intro {
         grid-template-columns: 1fr;
-        align-items: start;
     }
 
     .card-grid {
@@ -645,19 +581,27 @@ function formatDate(createdAt) {
 }
 
 @media screen and (max-width: 640px) {
-    .home-hero {
-        padding-top: 2.25rem;
-        gap: 1.75rem;
-
-        &::before {
-            width: 90vw;
-            top: -10%;
-            right: -40%;
-        }
+    .home-intro {
+        padding-top: 1.25rem;
+        gap: 1rem;
     }
 
-    .home-hero__title {
-        font-size: clamp(2.6rem, 13vw, 3.4rem);
+    /* Une seule ligne d'étiquettes qui défile, au lieu de trois lignes
+       empilées avant le premier billet. */
+    .home-intro__themes {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        margin: 0 calc(-1 * var(--gutter));
+        padding: 0 var(--gutter) 0.25rem;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        > * {
+            flex-shrink: 0;
+        }
     }
 
     .card-grid {
