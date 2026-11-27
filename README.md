@@ -44,6 +44,14 @@ Le site est sombre par défaut ; le bouton de l'en-tête passe en clair pour la 
   (`icon_names`, ordre alphabétique). `yarn build` vérifie d'abord que chaque
   icône utilisée y figure (`scripts/check-icons.mjs`).
 
+## Modes VR et Blogvision
+
+- `/vr` : les 24 articles les plus récents (par thème) dans une galerie 3D, sur écran ou
+  dans un casque. A-Frame 1.6.0 n'est chargé que sur cette page.
+- `/blogvision` : un tunnel d'articles, miniatures à gauche et à droite. On avance à la
+  molette, au doigt ou aux flèches. Avec le réglage « réduire les mouvements », la page
+  affiche une grille simple.
+
 ## Comment démarrer
 
 1. Cloner le repository

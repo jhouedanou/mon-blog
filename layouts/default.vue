@@ -6,7 +6,7 @@
 
         <!-- Pendant de l'encadré « Carnet de bord » du portfolio, qui renvoie
              vers ce blog : ici, le blog renvoie vers le portfolio. -->
-        <aside class="portfolio-band" :aria-label="$t('cv')">
+        <aside v-if="!immersive" class="portfolio-band" :aria-label="$t('cv')">
             <div class="portfolio-band__inner">
                 <div class="portfolio-band__copy">
                     <p class="portfolio-band__title">{{ $t('footerPanelTitle') }}</p>
@@ -18,7 +18,7 @@
             </div>
         </aside>
 
-        <footer class="footer">
+        <footer v-if="!immersive" class="footer">
             <div class="footer-content">
                 <div class="footer-brand">
                     <NuxtLink :to="localePath('/')" class="footer-brand__link">
@@ -65,6 +65,9 @@ import { useLocalePath } from '#i18n'
 import { CV_URL } from '~/utils/site.js'
 
 const localePath = useLocalePath()
+// Les modes immersifs (/vr, /blogvision) occupent tout l'écran, sans pied de page.
+const route = useRoute()
+const immersive = computed(() => Boolean(route.meta.immersive))
 
 // Une partie des profils de SAME_AS (utils/site.js), ceux où le blog est
 // relayé. La liste complète reste visible sur /a-propos.

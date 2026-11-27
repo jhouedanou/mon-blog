@@ -219,6 +219,11 @@ cartes et sous le bouton cuivre. Pas de verre décoratif, sauf l'en-tête
   `useImageText()` (`composables/useImageText.js`, `utils/image-text.js`). Les vignettes
   sont de vraies `<img class="thumb-img">` (plus de `background-image`), pour porter
   ce texte. Choix de l'auteur, fait en connaissance du risque de répétition.
+- **Modes immersifs** : `/vr` (galerie A-Frame adaptée de celle du CV, `utils/vr-gallery.js`)
+  et `/blogvision` (tunnel en CSS 3D). Pages plein écran (`definePageMeta({ immersive: true })`),
+  sans en-tête ni pied de page, avec leur barre `.mode-bar`. Un clic sur une miniature ouvre
+  `ArticleSheet`. Elles sont en `noindex, follow` et hors sitemap : ce sont d'autres vues des
+  mêmes articles. Boutons d'accès en contour lavande dans l'en-tête, avant « CV ».
 - **Icônes** : Material Symbols, sous-ensemble chargé par `icon_names` dans
   `nuxt.config.js`. Ajouter toute nouvelle icône à cette liste triée ;
   `scripts/check-icons.mjs` bloque le build sinon.

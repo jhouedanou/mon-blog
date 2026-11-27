@@ -31,7 +31,8 @@ i18n: {
     // Les articles viennent déjà de /api/_sitemap-urls avec leur lastmod ;
     // la source document-driven les ajouterait une seconde fois sans date.
     excludeAppSources: ['@nuxt/content:document-driven'],
-    exclude: ['/api/**', '/_content/**', '/manifest.json'],
+    // /vr et /blogvision : vues alternatives des mêmes articles, en noindex.
+    exclude: ['/api/**', '/_content/**', '/manifest.json', '/vr', '/blogvision', '/en/vr', '/en/blogvision'],
     xsl: false,
     credits: false,
   },
@@ -60,6 +61,10 @@ i18n: {
         '/themes/opinions',
         '/a-propos',
         '/cv',
+        '/vr',
+        '/blogvision',
+        '/en/vr',
+        '/en/blogvision',
         '/confidentialite',
         '/en',
         '/en/tags',

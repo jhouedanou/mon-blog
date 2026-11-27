@@ -4,13 +4,14 @@
 
     <a href="#main-content" class="skip-link">{{ $t('skipToContent') }}</a>
 
-    <SiteHeader />
+    <!-- Les modes immersifs (/vr, /blogvision) ont leur propre barre. -->
+    <SiteHeader v-if="!immersive" />
 
     <main id="main-content">
       <NuxtPage />
     </main>
 
-    <ClientOnly>
+    <ClientOnly v-if="!immersive">
       <ScrollToTop />
     </ClientOnly>
   </NuxtLayout>
@@ -24,6 +25,8 @@ import { SITE_URL, SITE_NAME, AUTHOR_NAME, AUTHOR_JOB_TITLE, PERSON_ID, PERSON_U
 import { THEME_OVERRIDE_KEY } from '~/utils/theme.js'
 
 const { locale } = useI18n()
+const route = useRoute()
+const immersive = computed(() => Boolean(route.meta.immersive))
 
 import { safeJsonLd } from '~/composables/useSeo.js'
 import { LANGUAGE_REDIRECT_SCRIPT } from '~/utils/i18n.js'

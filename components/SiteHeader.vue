@@ -14,6 +14,8 @@
         <!-- Liens présents seulement dans le menu mobile : sur ordinateur,
              ils vivent dans les actions de l'en-tête et le pied de page. -->
         <a href="/feed.xml" class="site-header__nav-link site-header__nav-link--mobile" @click="closeMenu">{{ $t('rssFeed') }}</a>
+        <NuxtLink :to="localePath('/vr')" class="site-header__nav-link site-header__nav-link--mobile" @click="closeMenu">{{ $t('vrMode') }}</NuxtLink>
+        <NuxtLink :to="localePath('/blogvision')" class="site-header__nav-link site-header__nav-link--mobile" @click="closeMenu">Blogvision</NuxtLink>
         <a :href="CV_URL" class="site-header__nav-link site-header__nav-link--mobile site-header__nav-link--external" target="_blank" rel="noopener" :aria-label="$t('cvLabel')" @click="closeMenu">{{ $t('cv') }}</a>
       </nav>
 
@@ -28,6 +30,8 @@
         >
           <i class="material-icons" aria-hidden="true">{{ isDark ? 'light_mode' : 'dark_mode' }}</i>
         </button>
+        <NuxtLink :to="localePath('/vr')" class="btn site-header__mode" :aria-label="$t('vrModeLabel')">{{ $t('vrMode') }}</NuxtLink>
+        <NuxtLink :to="localePath('/blogvision')" class="btn site-header__mode" :aria-label="$t('blogvisionLabel')">Blogvision</NuxtLink>
         <a
           :href="CV_URL"
           class="btn btn--primary site-header__cta"
@@ -244,6 +248,22 @@ onMounted(() => {
   }
 }
 
+/* Modes VR et Blogvision : contour lavande, comme le bouton « VR / 3D » du CV. */
+.site-header__mode {
+  padding: 0 0.8rem;
+  border-color: var(--accent-2-line);
+  color: var(--accent-2-text);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+
+  &:hover {
+    background: var(--accent-2);
+    border-color: var(--accent-2);
+    color: var(--bg-primary);
+  }
+}
+
 .site-header__cta .material-icons {
   font-size: 1.05rem;
 }
@@ -293,8 +313,9 @@ onMounted(() => {
   &.is-active span::after { transform: translateY(-6px) rotate(-45deg); }
 }
 
-@media screen and (max-width: 960px) {
-  .site-header__cta {
+@media screen and (max-width: 1160px) {
+  .site-header__cta,
+  .site-header__mode {
     display: none;
   }
 

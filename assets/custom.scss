@@ -470,6 +470,72 @@ html {
   object-fit: cover;
 }
 
+/* Barre propre aux modes immersifs (aussi utilisée par /vr). */
+.mode-bar {
+  position: absolute;
+  inset: 0 0 auto;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem var(--gutter);
+  background: linear-gradient(var(--bg-primary), transparent);
+
+  &--static {
+    position: sticky;
+    top: 0;
+    background: var(--bg-glass);
+    border-bottom: 1px solid var(--border-color);
+  }
+}
+
+.mode-bar__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 44px;
+  color: var(--text-primary);
+  font-family: var(--font-brand);
+  font-size: 1.05rem;
+  text-decoration: none;
+
+  img {
+    border-radius: var(--radius);
+    transform: rotate(-3deg);
+  }
+}
+
+.mode-bar__name {
+  margin: 0;
+  padding: 0.2rem 0.55rem;
+  border: 1px solid var(--accent-2-line);
+  border-radius: var(--radius);
+  background: var(--accent-2-soft);
+  color: var(--accent-2-text);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.mode-bar__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: auto;
+
+  .material-icons {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .mode-bar__brand span {
+    display: none;
+  }
+}
+
 .visually-hidden {
   position: absolute !important;
   width: 1px;
