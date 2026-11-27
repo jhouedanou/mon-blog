@@ -26,9 +26,10 @@
             >
               <div
                 class="error-page__article-thumb"
-                :style="article.image ? { backgroundImage: `url(${article.image})` } : {}"
                 :class="{ 'error-page__article-thumb--no-image': !article.image }"
-              ></div>
+              >
+                <img v-if="article.image" class="thumb-img" :src="article.image" :alt="imgText(article.title)" :title="imgText(article.title)" loading="lazy" decoding="async" />
+              </div>
               <div class="error-page__article-info">
                 <span class="error-page__article-title">{{ article.title }}</span>
               </div>
@@ -41,6 +42,9 @@
 </template>
 
 <script setup>
+import { useImageText } from '~/composables/useImageText.js'
+
+const imgText = useImageText()
 import { useError } from '#app'
 import SiteHeader from '~/components/SiteHeader.vue'
 import { useI18n } from 'vue-i18n'
@@ -192,6 +196,9 @@ useSeo(() => ({
 }
 
 .error-page__article-thumb {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
   width: 100%;
   height: 100px;
   background-size: cover;

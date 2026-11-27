@@ -1,7 +1,7 @@
 <template>
     <div class="video-container">
         <div class="video-wrapper" @click="showVideo = true">
-            <img :src="`https://img.youtube.com/vi/${video}/sddefault.jpg`" :alt="title">
+            <img :src="`https://img.youtube.com/vi/${video}/sddefault.jpg`" :alt="imgText(title || $t('youtubeThumbAlt'))" :title="imgText(title || $t('youtubeThumbAlt'))">
             <div class="play-overlay">
                 <span class="material-icons">play_circle</span>
             </div>
@@ -20,6 +20,9 @@
 </template>
 
 <script setup>
+import { useImageText } from '~/composables/useImageText.js'
+
+const imgText = useImageText()
 const props = defineProps({
     video: String,
     title: String

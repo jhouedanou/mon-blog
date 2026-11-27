@@ -4,6 +4,7 @@ import {
   SITE_NAME, OG_LOCALE, OG_LOCALES, TWITTER, AUTHOR_NAME, DEFAULT_OG_IMAGE,
   absoluteUrl, canonicalUrl,
 } from '~/utils/site.js'
+import { brandImageText } from '~/utils/image-text.js'
 
 /**
  * JSON.stringify n'échappe pas `<` : un `</script>` dans une description
@@ -34,9 +35,10 @@ export function useSeo(input) {
     const desc = s.description || ''
     const img = absoluteUrl(s.image || DEFAULT_OG_IMAGE)
     const type = s.type || 'website'
-    const alt = s.imageAlt || s.title || SITE_NAME
     const isArticle = type === 'article'
     const lang = s.lang || (/^\/en(\/|$)/.test(route.path) ? 'en' : 'fr')
+    // Texte de l'image de partage, avec la mention du blog (utils/image-text.js).
+    const alt = brandImageText(s.imageAlt || s.title, lang)
     const ogLocale = OG_LOCALES[lang] || OG_LOCALE
 
     const head = {

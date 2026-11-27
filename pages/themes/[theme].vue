@@ -26,17 +26,16 @@
           >
             <div
               class="theme-card__thumb"
-              :style="article.image ? { backgroundImage: `url(${article.image})` } : {}"
               :class="{ 'theme-card__thumb--no-image': !article.image }"
-              role="img"
-              :aria-label="article.title"
-            ></div>
+            >
+              <img v-if="article.image" class="thumb-img" :src="article.image" :alt="imgText(article.title)" :title="imgText(article.title)" loading="lazy" decoding="async" />
+            </div>
             <div class="theme-card__body">
               <div class="theme-card__meta">
                 <time :datetime="article.createdAt">{{ formatDate(article.createdAt) }}</time>
                 <span v-for="tag in getArticleTags(article).slice(0, 2)" :key="tag">#{{ tag }}</span>
               </div>
-              <h3>{{ article.title }}</h3>
+              <h3>{{ frenchSpacing(article.title, locale) }}</h3>
               <p v-if="getArticleSearchIntent(article)">{{ getArticleSearchIntent(article) }}</p>
               <span class="theme-card__more">{{ $t('readArticle') }} <span aria-hidden="true">→</span></span>
             </div>
@@ -55,6 +54,10 @@
 </template>
 
 <script setup>
+import { useImageText } from '~/composables/useImageText.js'
+import { frenchSpacing } from '~/utils/typography.js'
+
+const imgText = useImageText()
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
@@ -243,6 +246,9 @@ useSeo(() => ({
 }
 
 .theme-card__thumb {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
   height: 170px;
   background-position: center;
   background-size: cover;

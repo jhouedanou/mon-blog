@@ -6,10 +6,10 @@
                 type="button"
                 class="embed__poster"
                 :class="{ 'embed__poster--image': poster }"
-                :style="posterStyle"
                 :aria-label="`Lire ${title || 'le média'}`"
                 @click="activate"
             >
+                <img v-if="poster" class="thumb-img" :src="poster" :alt="imgText(title)" :title="imgText(title)" loading="lazy" decoding="async" />
                 <span v-if="poster" class="embed__veil" aria-hidden="true"></span>
                 <span class="embed__play" aria-hidden="true">
                     <i class="material-icons">play_arrow</i>
@@ -32,6 +32,9 @@
 
 <script setup>
 import { computed } from 'vue'
+import { useImageText } from '~/composables/useImageText.js'
+
+const imgText = useImageText()
 
 const props = defineProps({
     src: { type: String, required: true },
@@ -71,9 +74,6 @@ const figureStyle = computed(() =>
         : {}
 )
 
-const posterStyle = computed(() =>
-    props.poster ? { backgroundImage: `url("${props.poster}")` } : {}
-)
 </script>
 
 <style lang="scss" scoped>
@@ -100,6 +100,8 @@ const posterStyle = computed(() =>
 .embed__poster {
     position: absolute;
     inset: 0;
+    overflow: hidden;
+    isolation: isolate;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -142,7 +144,8 @@ const posterStyle = computed(() =>
         }
     }
 
-    > * {
+    /* L'affiche (.thumb-img) reste en absolu, sous le voile et le bouton. */
+    > *:not(.thumb-img) {
         position: relative;
     }
 }

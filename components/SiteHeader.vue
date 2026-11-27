@@ -2,7 +2,7 @@
   <header class="site-header" @keydown.esc="closeMenu">
     <div class="site-header__inner">
       <NuxtLink :to="localePath('/')" class="site-header__brand" :aria-label="`${$t('home')} - Le Blog de Jean-Luc Houédanou`">
-        <img class="site-header__mark" src="/favicon-96x96.png" alt="" aria-hidden="true" width="34" height="34" />
+        <img class="site-header__mark" src="/favicon-96x96.png" :alt="imgText($t('logoAlt'))" :title="imgText($t('logoAlt'))" width="34" height="34" />
         <span class="site-header__wordmark"><span class="site-header__kicker">Le Blog de </span><span class="site-header__name">Jean-Luc Houédanou</span></span>
       </NuxtLink>
 
@@ -52,6 +52,9 @@
 </template>
 
 <script setup>
+import { useImageText } from '~/composables/useImageText.js'
+
+const imgText = useImageText()
 // En-tête partagé par app.vue et error.vue : la page d'erreur remplace
 // app.vue entièrement et perdait sinon toute navigation.
 import { ref, computed, watch, onMounted } from 'vue'

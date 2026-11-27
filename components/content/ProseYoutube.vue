@@ -1,7 +1,7 @@
 <template>
     <div class="youtube-container">
         <div class="youtube-thumbnail" @click="openModal" role="button" tabindex="0" @keydown.enter="openModal" aria-label="Lire la vidéo YouTube">
-            <img :src="`https://img.youtube.com/vi/${id}/maxresdefault.jpg`" :alt="`Miniature vidéo YouTube: ${id}`">
+            <img :src="`https://img.youtube.com/vi/${id}/maxresdefault.jpg`" :alt="imgText($t('youtubeThumbAlt'))" :title="imgText($t('youtubeThumbAlt'))">
             <div class="play-button"></div>
         </div>
         <div v-if="isModalOpen" class="youtube-modal" role="dialog" aria-modal="true" aria-label="Lecteur vidéo YouTube" @keydown.escape="closeModal">
@@ -17,6 +17,9 @@
 </template>
 
 <script setup>
+import { useImageText } from '~/composables/useImageText.js'
+
+const imgText = useImageText()
 import { ref, watch, nextTick, onUnmounted } from 'vue'
 
 const props = defineProps({

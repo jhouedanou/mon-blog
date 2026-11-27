@@ -214,6 +214,11 @@ cartes et sous le bouton cuivre. Pas de verre décoratif, sauf l'en-tête
   (citations). Bordure complète, jamais de filet sur un seul côté.
 - **Sommaire** : pastilles, comme le menu latéral du CV ; la pastille de la
   section lue est pleine.
+- **Images** : toutes portent un `alt` et un `title` terminés par « - Le Blog de
+  Jean-Luc Houédanou » (« - Jean-Luc Houédanou's Blog » sur les pages `/en`), via
+  `useImageText()` (`composables/useImageText.js`, `utils/image-text.js`). Les vignettes
+  sont de vraies `<img class="thumb-img">` (plus de `background-image`), pour porter
+  ce texte. Choix de l'auteur, fait en connaissance du risque de répétition.
 - **Icônes** : Material Symbols, sous-ensemble chargé par `icon_names` dans
   `nuxt.config.js`. Ajouter toute nouvelle icône à cette liste triée ;
   `scripts/check-icons.mjs` bloque le build sinon.

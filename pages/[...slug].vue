@@ -7,7 +7,7 @@
     <!-- Hero façon remarkable : visuel à gauche, titre à droite -->
     <section class="article-hero" :class="{ 'article-hero--full': !article.image }">
       <div v-if="article.image" class="article-hero__media">
-        <img :src="article.image" :alt="article.title" width="1200" height="900" fetchpriority="high" decoding="async" />
+        <img :src="article.image" :alt="imgText(article.title)" :title="imgText(article.title)" width="1200" height="900" fetchpriority="high" decoding="async" />
       </div>
       <header class="article-header">
         <p class="article-header__meta">
@@ -103,6 +103,7 @@ import { canonicalUrl, absoluteUrl } from "~/utils/site.js";
 import { ogImageFor } from "~/utils/og.js";
 import { articleGraph } from "~/utils/schema.js";
 import { frenchSpacing } from "~/utils/typography.js";
+import { useImageText } from "~/composables/useImageText.js";
 import { useSeo } from "~/composables/useSeo.js";
 import { ARTICLE_LIST_FIELDS } from "~/utils/content-fields.js";
 import {
@@ -117,6 +118,7 @@ definePageMeta({ key: (route) => route.path });
 const route = useRoute();
 const { locale, t } = useI18n();
 const localePath = useLocalePath();
+const imgText = useImageText();
 
 // La transition de page est en `out-in` : en quittant un article, `route.path`
 // vaut déjà la nouvelle route alors que ce composant est encore monté le temps

@@ -2,7 +2,7 @@
   <div class="reading-bar" :class="{ 'reading-bar--visible': isVisible }">
     <div class="reading-bar__content">
       <NuxtLink :to="localePath('/')" class="reading-bar__logo">
-        <img src="/images/1837389.webp" :alt="$t('home')" />
+        <img src="/images/1837389.webp" :alt="imgText($t('portraitAlt'))" :title="imgText($t('portraitAlt'))" />
       </NuxtLink>
       <span class="reading-bar__title">{{ title }}</span>
       <div class="reading-bar__share">
@@ -14,6 +14,9 @@
 </template>
 
 <script setup>
+import { useImageText } from '~/composables/useImageText.js'
+
+const imgText = useImageText()
 import { useLocalePath } from '#i18n'
 
 const localePath = useLocalePath()

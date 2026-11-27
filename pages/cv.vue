@@ -39,7 +39,7 @@
       <!-- Header -->
       <header class="cv-header">
         <div class="cv-header__photo">
-          <img :src="identity.photo" :alt="identity.name" width="120" height="120" />
+          <img :src="identity.photo" :alt="imgText($t('portraitAlt'))" :title="imgText($t('portraitAlt'))" width="120" height="120" />
         </div>
         <div class="cv-header__intro">
           <span class="cv-header__eyebrow">{{ l.title }}</span>
@@ -205,6 +205,9 @@
 </template>
 
 <script setup>
+import { useImageText } from '~/composables/useImageText.js'
+
+const imgText = useImageText()
 import { ref, computed, onMounted } from 'vue'
 import { useSeo } from '~/composables/useSeo.js'
 import { webPageLd, breadcrumbLd } from '~/utils/schema.js'
