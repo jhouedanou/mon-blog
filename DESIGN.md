@@ -24,12 +24,12 @@ typography:
     fontFamily: "Caprasimo, Georgia, serif"
     fontSize: "1.12rem"
     fontWeight: 400
-  display:
+  title-home:
     fontFamily: "Figtree, system-ui, sans-serif"
-    fontSize: "clamp(2.9rem, 7vw, 5.75rem)"
+    fontSize: "clamp(1.45rem, 2.2vw, 1.85rem)"
     fontWeight: 600
-    lineHeight: 0.95
-    letterSpacing: "-0.04em"
+    lineHeight: 1.15
+    letterSpacing: "-0.03em"
   title-article:
     fontFamily: "Figtree, system-ui, sans-serif"
     fontSize: "clamp(2.2rem, 4.2vw, 3.75rem)"
@@ -144,6 +144,10 @@ emphase), lavande (données et repères). Les photos gardent leurs couleurs.
 
 ### Named Rules
 
+- **Priorité au contenu, pas à l'auteur.** Le nom de l'auteur n'est jamais
+  mis en vedette (pas de nom géant en ouverture). Le titre de l'accueil garde
+  le texte « Le blog de Jean-Luc Houédanou » pour le SEO, en petit : c'est le
+  texte du h1 qui compte, pas sa taille.
 - **Une seule action en cuivre plein par zone.** En-tête : « CV ↗ ». Pied de
   page : « Voir mon CV ». Le reste est en contour.
 - **La lavande dit « donnée ».** Une date, une durée, un compteur, un label de
@@ -161,7 +165,7 @@ emphase), lavande (données et repères). Les photos gardent leurs couleurs.
 
 | Rôle | Taille | Graisse | Interlettrage |
 |---|---|---|---|
-| Titre d'accueil | clamp(2.9rem, 7vw, 5.75rem) | 600 | -0.04em |
+| Titre d'accueil | clamp(1.45rem, 2.2vw, 1.85rem) | 600 | -0.03em |
 | Titre de billet | clamp(2.2rem, 4.2vw, 3.75rem) | 600 | -0.04em |
 | H2 de billet | 1.85rem | 600 | -0.035em |
 | Texte de billet | 1.1875rem / 1.78 | 400 | normal |
@@ -179,8 +183,9 @@ emphase), lavande (données et repères). Les photos gardent leurs couleurs.
 ## Layout
 
 - Largeur max : 1240 px (`--wrap`), gouttière `--gutter`.
-- Accueil : titre et recherche, accès par thème, billet à la une, puis grille
-  de cartes (3, 2 puis 1 colonne). Un bouton « Afficher plus » remplace le
+- Accueil : ouverture courte (titre du blog en petit, phrase de présentation,
+  recherche, ligne de thèmes), puis billet à la une et grille de cartes (3, 2
+  puis 1 colonne). Le premier billet est visible dès le premier écran. Un bouton « Afficher plus » remplace le
   défilement infini, pour que le pied de page reste atteignable.
 - Billet : visuel à gauche et titre à droite, puis sommaire à gauche et texte
   à droite. Sous 1150 px, le sommaire devient un bouton flottant.
