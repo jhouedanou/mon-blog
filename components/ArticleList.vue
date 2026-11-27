@@ -30,7 +30,8 @@
                 <img
                     v-if="featured.image"
                     :src="featured.image"
-                    alt=""
+                    :alt="imgText(featured.title)"
+                    :title="imgText(featured.title)"
                     width="1200"
                     height="750"
                     fetchpriority="high"
@@ -69,7 +70,8 @@
                             <img
                                 v-if="article.image"
                                 :src="article.image"
-                                alt=""
+                                :alt="imgText(article.title)"
+                                :title="imgText(article.title)"
                                 width="640"
                                 height="400"
                                 loading="lazy"
@@ -117,8 +119,10 @@ import { getArticleSearchIntent, getArticleSearchText, THEME_DEFINITIONS, locali
 import { ARTICLE_LIST_FIELDS } from '~/utils/content-fields.js'
 import { dateLocale } from '~/utils/i18n.js'
 import { frenchSpacing } from '~/utils/typography.js'
+import { useImageText } from '~/composables/useImageText.js'
 
 const localePath = useLocalePath()
+const imgText = useImageText()
 const { locale } = useI18n()
 const route = useRoute()
 const router = useRouter()

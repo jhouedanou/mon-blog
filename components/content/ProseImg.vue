@@ -7,7 +7,8 @@
       :is="ImageComponent"
       class="zoomable__img"
       :src="refinedSrc"
-      :alt="alt"
+      :alt="imageText"
+      :title="imageText"
       :width="width"
       :height="height"
       @click="openFromImage"
@@ -34,7 +35,8 @@
             :class="{ 'is-zoomed': zoomed }"
             :style="zoomed ? { width: `${zoomWidth}px` } : null"
             :src="refinedSrc"
-            :alt="alt"
+            :alt="imageText"
+            :title="imageText"
             @click.stop="toggleZoom"
           />
         </div>
@@ -51,6 +53,7 @@ import { computed, nextTick, onMounted, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { withTrailingSlash, withLeadingSlash, joinURL } from 'ufo'
 import ImageComponent from '#build/mdc-image-component.mjs'
+import { useImageText } from '~/composables/useImageText.js'
 
 const props = defineProps({
   src: { type: String, default: '' },
@@ -60,6 +63,9 @@ const props = defineProps({
 })
 
 const { t } = useI18n()
+const imgText = useImageText()
+// alt et title de chaque image des billets : description + mention du blog.
+const imageText = computed(() => imgText(props.alt))
 
 // Même calcul que le ProseImg d'origine (@nuxtjs/mdc).
 const refinedSrc = computed(() => {

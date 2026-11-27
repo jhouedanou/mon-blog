@@ -21,12 +21,13 @@
         >
           <div
             class="tag-card__thumb"
-            :style="article.image ? { backgroundImage: `url(${article.image})` } : {}"
             :class="{ 'tag-card__thumb--no-image': !article.image }"
-          ></div>
+          >
+            <img v-if="article.image" class="thumb-img" :src="article.image" :alt="imgText(article.title)" :title="imgText(article.title)" loading="lazy" decoding="async" />
+          </div>
           <div class="tag-card__body">
             <span class="tag-card__date">{{ formatDate(article.createdAt) }}</span>
-            <h2 class="tag-card__title">{{ article.title }}</h2>
+            <h2 class="tag-card__title">{{ frenchSpacing(article.title, locale) }}</h2>
             <p class="tag-card__excerpt" v-if="article.description">{{ truncate(article.description, 140) }}</p>
             <span class="tag-card__more">{{ $t('readMore') }} →</span>
           </div>
@@ -46,6 +47,10 @@
 </template>
 
 <script setup>
+import { useImageText } from '~/composables/useImageText.js'
+import { frenchSpacing } from '~/utils/typography.js'
+
+const imgText = useImageText()
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
@@ -238,6 +243,9 @@ useSeo(() => ({
 }
 
 .tag-card__thumb {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
   width: 100%;
   height: 160px;
   background-size: cover;

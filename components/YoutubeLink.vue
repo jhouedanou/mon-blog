@@ -1,12 +1,15 @@
 <template>
     <div class="youtube-thumbnail" @click="openModal">
-        <img :src="`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`" alt="YouTube Thumbnail">
+        <img :src="`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`" :alt="imgText($t('youtubeThumbAlt'))" :title="imgText($t('youtubeThumbAlt'))">
         <div class="play-button"></div>
     </div>
     <YoutubePopup :video-id="videoId" :is-open="isModalOpen" @close="closeModal" />
 </template>
 
 <script setup>
+import { useImageText } from '~/composables/useImageText.js'
+
+const imgText = useImageText()
 import { ref } from 'vue'
 import YoutubePopup from './YoutubePopup.vue'
 

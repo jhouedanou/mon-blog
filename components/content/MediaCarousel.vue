@@ -5,10 +5,10 @@
                 v-if="!isLoaded"
                 type="button"
                 class="carousel__poster"
-                :style="posterStyle"
                 :aria-label="`Lire ${current.title}`"
                 @click="load"
             >
+                <img v-if="current.poster" class="thumb-img" :src="current.poster" :alt="imgText(current.title)" :title="imgText(current.title)" decoding="async" />
                 <span class="carousel__veil" aria-hidden="true"></span>
                 <span class="carousel__play" aria-hidden="true">
                     <i class="material-icons">play_arrow</i>
@@ -49,11 +49,11 @@
                     type="button"
                     class="carousel__thumb"
                     :class="{ 'is-active': i === activeIndex }"
-                    :style="thumbStyle(item)"
                     :aria-label="item.title"
                     :aria-current="i === activeIndex ? 'true' : undefined"
                     @click="select(i)"
                 >
+                    <img v-if="item.poster" class="thumb-img" :src="item.poster" :alt="imgText(item.title)" :title="imgText(item.title)" loading="lazy" decoding="async" />
                     <span class="carousel__thumb-num">{{ pad(i + 1) }}</span>
                 </button>
             </div>
@@ -71,6 +71,9 @@
 
 <script setup>
 import { computed, ref } from 'vue'
+import { useImageText } from '~/composables/useImageText.js'
+
+const imgText = useImageText()
 
 const props = defineProps({
     /** [{ src, title, poster? }] */
@@ -117,13 +120,6 @@ const stageStyle = computed(() =>
         : { aspectRatio: '16 / 9' }
 )
 
-const posterStyle = computed(() =>
-    current.value.poster ? { backgroundImage: `url("${current.value.poster}")` } : {}
-)
-
-function thumbStyle(item) {
-    return item.poster ? { backgroundImage: `url("${item.poster}")` } : {}
-}
 </script>
 
 <style lang="scss" scoped>
@@ -152,6 +148,8 @@ function thumbStyle(item) {
 .carousel__poster {
     position: absolute;
     inset: 0;
+    overflow: hidden;
+    isolation: isolate;
     width: 100%;
     padding: 0;
     display: block;
@@ -294,6 +292,8 @@ function thumbStyle(item) {
    que l'article applique aux images de contenu. */
 .carousel__thumb {
     position: relative;
+    overflow: hidden;
+    isolation: isolate;
     flex: 1 1 0;
     min-width: 64px;
     aspect-ratio: 16 / 9;

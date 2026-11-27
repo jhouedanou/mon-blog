@@ -3,9 +3,9 @@
     <NuxtLink v-if="prev" :to="prev._path" class="article-nav__link article-nav__link--prev">
       <div
         class="article-nav__thumb"
-        :style="prev.image ? { backgroundImage: `url(${prev.image})` } : {}"
         :class="{ 'article-nav__thumb--no-image': !prev.image }"
       >
+        <img v-if="prev.image" class="thumb-img" :src="prev.image" :alt="imgText(prev.title)" :title="imgText(prev.title)" loading="lazy" decoding="async" />
         <ArticleThumbFallback v-if="!prev.image" class="article-nav__fallback" :seed="prev._path" />
         <span class="article-nav__direction"><span class="article-nav__arrow">←</span> {{ $t('previous') }}</span>
       </div>
@@ -16,9 +16,9 @@
     <NuxtLink v-if="next" :to="next._path" class="article-nav__link article-nav__link--next">
       <div
         class="article-nav__thumb"
-        :style="next.image ? { backgroundImage: `url(${next.image})` } : {}"
         :class="{ 'article-nav__thumb--no-image': !next.image }"
       >
+        <img v-if="next.image" class="thumb-img" :src="next.image" :alt="imgText(next.title)" :title="imgText(next.title)" loading="lazy" decoding="async" />
         <ArticleThumbFallback v-if="!next.image" class="article-nav__fallback" :seed="next._path" />
         <span class="article-nav__direction">{{ $t('next') }} <span class="article-nav__arrow">→</span></span>
       </div>
@@ -29,6 +29,9 @@
 </template>
 
 <script setup>
+import { useImageText } from '~/composables/useImageText.js'
+
+const imgText = useImageText()
 defineProps({
   prev: { type: Object, default: null },
   next: { type: Object, default: null },
@@ -85,6 +88,9 @@ defineProps({
 }
 
 .article-nav__thumb {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
   width: 100%;
   height: 130px;
   background-size: cover;

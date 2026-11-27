@@ -3,7 +3,7 @@
     <article class="about-container">
       <header class="about-header">
         <div class="about-header__avatar">
-          <img src="/images/1837389.webp" alt="Jean-Luc Houédanou" width="120" height="120" />
+          <img src="/images/1837389.webp" :alt="imgText($t('portraitAlt'))" :title="imgText($t('portraitAlt'))" width="120" height="120" />
         </div>
         <h1 class="about-header__title">Jean-Luc Houédanou</h1>
         <p class="about-header__subtitle">Développeur web full-stack & Administrateur systèmes</p>
@@ -111,6 +111,9 @@
 </template>
 
 <script setup>
+import { useImageText } from '~/composables/useImageText.js'
+
+const imgText = useImageText()
 import { useSeo } from '~/composables/useSeo.js'
 import { webPageLd, breadcrumbLd } from '~/utils/schema.js'
 import { canonicalUrl, PERSON_ID } from '~/utils/site.js'

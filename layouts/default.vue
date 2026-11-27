@@ -22,7 +22,7 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <NuxtLink :to="localePath('/')" class="footer-brand__link">
-                        <img class="footer-brand__mark" src="/favicon-96x96.png" alt="" aria-hidden="true" width="34" height="34" loading="lazy" />
+                        <img class="footer-brand__mark" src="/favicon-96x96.png" :alt="imgText($t('logoAlt'))" :title="imgText($t('logoAlt'))" width="34" height="34" loading="lazy" />
                         <span class="footer-brand__wordmark"><span class="footer-brand__kicker">Le Blog de </span>Jean-Luc Houédanou</span>
                     </NuxtLink>
                     <p class="footer-brand__lede">{{ $t('heroLede') }}</p>
@@ -58,6 +58,9 @@
 </template>
 
 <script setup>
+import { useImageText } from '~/composables/useImageText.js'
+
+const imgText = useImageText()
 import { useLocalePath } from '#i18n'
 import { CV_URL } from '~/utils/site.js'
 

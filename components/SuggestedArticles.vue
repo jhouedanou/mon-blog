@@ -11,9 +11,9 @@
       >
         <div
           class="suggested__thumb"
-          :style="article.image ? { backgroundImage: `url(${article.image})` } : {}"
           :class="{ 'suggested__thumb--no-image': !article.image }"
         >
+          <img v-if="article.image" class="thumb-img" :src="article.image" :alt="imgText(article.title)" :title="imgText(article.title)" loading="lazy" decoding="async" />
           <ArticleThumbFallback v-if="!article.image" :seed="article._path" />
         </div>
         <div class="suggested__info">
@@ -27,6 +27,9 @@
 </template>
 
 <script setup>
+import { useImageText } from '~/composables/useImageText.js'
+
+const imgText = useImageText()
 import { useI18n } from 'vue-i18n'
 import { dateLocale } from '~/utils/i18n.js'
 
@@ -112,6 +115,9 @@ function formatDate(createdAt) {
 }
 
 .suggested__thumb {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
   width: 100%;
   height: 140px;
   overflow: hidden;
