@@ -26,7 +26,7 @@
       @touchstart.passive="onTouchStart"
       @touchmove.prevent="onTouchMove"
     >
-      <div class="bv-world" :style="{ transform: `translateZ(${pos - REST}px)` }">
+      <div class="bv-world" :style="{ '--cam': `${pos - REST}px` }">
         <div class="bv-floor" :style="{ backgroundPositionY: `${pos}px` }" aria-hidden="true"></div>
         <div class="bv-ceiling" :style="{ backgroundPositionY: `${-pos}px` }" aria-hidden="true"></div>
         <button
@@ -38,7 +38,7 @@
           :style="{ '--z': `${-item.index * SPACING}px`, opacity: item.opacity }"
           :tabindex="item.near ? 0 : -1"
           @click="selected = item.article"
-          @focus="goTo(item.index)"
+          @focus="onCardFocus($event, item.index)"
         >
           <span class="bv-card__media">
             <img
@@ -46,7 +46,7 @@
               :src="item.article.image"
               :alt="imgText(item.article.title)"
               :title="imgText(item.article.title)"
-              loading="lazy"
+              :loading="item.near ? 'eager' : 'lazy'"
               decoding="async"
             />
             <ArticleThumbFallback v-else :seed="item.article._path" />
@@ -80,12 +80,18 @@
     </ul>
 
     <div v-if="!flat" class="bv-controls">
-      <p class="bv-controls__hint">{{ $t('blogvisionHint') }}</p>
+      <!-- Légende à plat : le titre de l'article en face de soi reste lisible,
+           quel que soit l'angle de la miniature. -->
+      <div v-if="currentArticle" class="bv-caption" aria-live="polite">
+        <p class="bv-caption__meta">{{ formatDate(currentArticle.createdAt) }}</p>
+        <p class="bv-caption__title">{{ frenchSpacing(currentArticle.title, locale) }}</p>
+        <button type="button" class="btn btn--primary" @click="selected = currentArticle">{{ $t('blogvisionOpen') }}</button>
+      </div>
       <div class="bv-controls__nav">
         <button type="button" class="btn btn--secondary" :disabled="current <= 0" :aria-label="$t('blogvisionBack')" @click="goTo(current - 1)">
           <i class="material-icons" aria-hidden="true">arrow_back</i>
         </button>
-        <span class="bv-controls__count" aria-live="polite">{{ current + 1 }} / {{ list.length }}</span>
+        <span class="bv-controls__count">{{ current + 1 }} / {{ list.length }}</span>
         <button type="button" class="btn btn--secondary" :disabled="current >= list.length - 1" :aria-label="$t('blogvisionForward')" @click="goTo(current + 1)">
           <i class="material-icons" aria-hidden="true">arrow_forward</i>
         </button>
@@ -128,10 +134,12 @@ useSeo({
 })
 
 // Distance entre deux miniatures dans le tunnel, et nombre affiché devant soi.
-const SPACING = 520
-const AHEAD = 9
+const SPACING = 640
+// Miniatures affichées devant soi : 6 sur ordinateur, 3 sur téléphone (au-delà,
+// elles se cachent les unes derrière les autres et ne sont plus cliquables).
+const ahead = ref(5)
 // Recul de la caméra : la miniature courante reste un peu devant soi.
-const REST = 260
+const REST = 100
 
 const pos = ref(0) // position de la caméra dans le tunnel, en px
 const selected = ref(null)
@@ -144,11 +152,13 @@ let touchY = 0
 const maxPos = computed(() => Math.max(0, (list.value.length - 1) * SPACING))
 const current = computed(() => Math.min(list.value.length - 1, Math.max(0, Math.round(pos.value / SPACING))))
 
+const currentArticle = computed(() => list.value[current.value] || null)
+
 // Fenêtre glissante : seules les miniatures proches sont dans la page.
 const visible = computed(() => {
   // Rien derrière soi : une miniature dépassée s'afficherait énorme, en gros plan.
   const first = current.value
-  const last = Math.min(list.value.length - 1, current.value + AHEAD)
+  const last = Math.min(list.value.length - 1, current.value + ahead.value)
   const items = []
   for (let index = first; index <= last; index++) {
     const ahead = index - current.value
@@ -157,7 +167,7 @@ const visible = computed(() => {
       article: list.value[index],
       side: index % 2 === 0 ? 'is-left' : 'is-right',
       near: ahead >= 0 && ahead <= 3,
-      opacity: Math.max(0.12, 1 - ahead / AHEAD),
+      opacity: Math.max(0.45, 1 - ahead * 0.14),
     })
   }
   return items
@@ -185,6 +195,12 @@ function moveTo(value) {
 
 function goTo(index) {
   moveTo(index * SPACING)
+}
+
+// Au clavier (Tab), le tunnel avance jusqu'à la miniature qui reçoit le focus.
+// Pas à la souris : le clic doit ouvrir la fiche sans déplacer le tunnel.
+function onCardFocus(event, index) {
+  if (event.target.matches(':focus-visible')) goTo(index)
 }
 
 function onWheel(event) {
@@ -221,6 +237,7 @@ function formatDate(createdAt) {
 
 onMounted(() => {
   flat.value = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  ahead.value = window.matchMedia('(max-width: 640px)').matches ? 2 : 5
   window.addEventListener('keydown', onKey)
 })
 
@@ -260,7 +277,11 @@ onUnmounted(() => {
   position: absolute;
   inset: 0;
   transform-style: preserve-3d;
-  will-change: transform;
+  /* Le calque lui-même ne bouge pas et ne capte aucun clic. Chaque miniature
+     avance seule (`--cam`). Déplacer le calque le faisait passer devant les
+     miniatures, puis derrière la caméra : le navigateur ne trouvait alors plus
+     aucune miniature sous le pointeur. */
+  pointer-events: none;
 }
 
 /* Sol et plafond : la grille du site, qui défile avec l'avancée. */
@@ -282,13 +303,13 @@ onUnmounted(() => {
 .bv-floor {
   top: 50%;
   transform-origin: 50% 0;
-  transform: translateY(330px) rotateX(90deg) translateZ(0) translateY(-7000px);
+  transform: translateZ(-260px) translateY(330px) rotateX(90deg) translateY(-7000px);
 }
 
 .bv-ceiling {
   top: 50%;
   transform-origin: 50% 0;
-  transform: translateY(-330px) rotateX(90deg) translateY(-7000px);
+  transform: translateZ(-260px) translateY(-330px) rotateX(90deg) translateY(-7000px);
   opacity: 0.25;
 }
 
@@ -296,14 +317,16 @@ onUnmounted(() => {
 .bv-fog {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 34% 30% at 50% 46%, var(--bg-primary) 20%, transparent 100%);
+  background: radial-gradient(ellipse 16% 18% at 50% 46%, var(--bg-primary) 10%, transparent 100%);
   pointer-events: none;
 }
 
 .bv-card {
-  --w: min(400px, 60vw);
-  --x: min(470px, 36vw);
+  --w: min(460px, 60vw);
+  --x: min(480px, 34vw);
+  --turn: 30deg;
   display: flex;
+  pointer-events: auto;
   flex-direction: column;
   padding: 0;
   border: 1px solid var(--border-strong);
@@ -333,11 +356,11 @@ onUnmounted(() => {
 
   /* Miniatures posées de part et d'autre, tournées vers le visiteur. */
   &.is-left {
-    transform: translate3d(calc(var(--x) * -1), 0, var(--z)) rotateY(56deg);
+    transform: translate3d(calc(var(--x) * -1), 0, calc(var(--z) + var(--cam))) rotateY(var(--turn));
   }
 
   &.is-right {
-    transform: translate3d(var(--x), 0, var(--z)) rotateY(-56deg);
+    transform: translate3d(var(--x), 0, calc(var(--z) + var(--cam))) rotateY(calc(var(--turn) * -1));
   }
 }
 
@@ -360,7 +383,7 @@ onUnmounted(() => {
 .bv-card__meta {
   padding: 0.75rem 0.9rem 0;
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -368,8 +391,11 @@ onUnmounted(() => {
 }
 
 .bv-card__title {
-  padding: 0.3rem 0.9rem 0.9rem;
-  font-size: 1.08rem;
+  /* Marge et non padding en bas : avec un padding, une 4e ligne dépassait
+     sous la coupe à 3 lignes. */
+  margin-bottom: 0.9rem;
+  padding: 0.3rem 0.9rem 0;
+  font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: -0.03em;
@@ -399,14 +425,39 @@ onUnmounted(() => {
   }
 }
 
-.bv-controls__hint {
+.bv-caption {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 1rem;
+  min-width: 0;
+  max-width: 760px;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  background: var(--bg-card);
+}
+
+.bv-caption__meta {
+  flex-basis: 100%;
   margin: 0;
   font-family: var(--font-mono);
   font-size: 0.72rem;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--text-muted);
+  color: var(--accent-2-text);
+}
+
+.bv-caption__title {
+  flex: 1 1 16rem;
+  min-width: 0;
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+  color: var(--text-primary);
 }
 
 .bv-controls__nav {
@@ -460,21 +511,34 @@ onUnmounted(() => {
 }
 
 @media screen and (max-width: 640px) {
-  .bv-controls__hint {
+  /* Point de fuite relevé : les miniatures suivantes dépassent au-dessus de
+     celle qui est en face, au lieu de se cacher derrière elle. */
+  .bv-stage {
+    perspective-origin: 50% 16%;
+  }
+
+  .bv-stage .bv-card {
+    top: 44%;
+  }
+
+  .bv-fog {
     display: none;
   }
 
   .bv-card {
-    --w: min(300px, 64vw);
-    --x: 30vw;
+    --w: 64vw;
+    --x: 21vw;
+    --turn: 18deg;
   }
 
-  .bv-card.is-left {
-    transform: translate3d(calc(var(--x) * -1), 0, var(--z)) rotateY(48deg);
+  .bv-controls {
+    flex-direction: column;
+    align-items: stretch;
   }
 
-  .bv-card.is-right {
-    transform: translate3d(var(--x), 0, var(--z)) rotateY(-48deg);
+  .bv-controls__nav {
+    margin-left: 0;
+    justify-content: space-between;
   }
 }
 </style>

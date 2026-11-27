@@ -39,6 +39,7 @@ export default {
   blogvisionTitle: "Blogvision, the article tunnel",
   blogvisionDescription: "Browse the articles of Jean-Luc Houédanou's blog in a tunnel, one thumbnail after another.",
   blogvisionHint: "Wheel, finger or arrows to move · click an article",
+  blogvisionOpen: "Open the card",
   blogvisionForward: "Next article",
   blogvisionBack: "Previous article",
   vrTitle: "VR gallery of the articles",

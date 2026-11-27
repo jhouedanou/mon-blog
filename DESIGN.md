@@ -224,6 +224,10 @@ cartes et sous le bouton cuivre. Pas de verre décoratif, sauf l'en-tête
   sans en-tête ni pied de page, avec leur barre `.mode-bar`. Un clic sur une miniature ouvre
   `ArticleSheet`. Elles sont en `noindex, follow` et hors sitemap : ce sont d'autres vues des
   mêmes articles. Boutons d'accès en contour lavande dans l'en-tête, avant « CV ».
+  Dans le tunnel, chaque miniature avance seule (variable `--cam`) : le calque `.bv-world`
+  ne bouge pas et ne reçoit pas les clics, sinon il couvre les miniatures lointaines.
+  Miniatures tournées de 30° au plus, opacité plancher 0,45, et une légende à plat
+  (date, titre, « Ouvrir la fiche ») pour l'article en face de soi.
 - **Icônes** : Material Symbols, sous-ensemble chargé par `icon_names` dans
   `nuxt.config.js`. Ajouter toute nouvelle icône à cette liste triée ;
   `scripts/check-icons.mjs` bloque le build sinon.

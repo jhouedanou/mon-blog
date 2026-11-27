@@ -39,6 +39,7 @@ export default {
   blogvisionTitle: "Blogvision, le tunnel des articles",
   blogvisionDescription: "Parcourez les articles du blog de Jean-Luc Houédanou dans un tunnel, miniature après miniature.",
   blogvisionHint: "Molette, doigt ou flèches pour avancer · cliquer sur un article",
+  blogvisionOpen: "Ouvrir la fiche",
   blogvisionForward: "Article suivant",
   blogvisionBack: "Article précédent",
   vrTitle: "Galerie VR des articles",
