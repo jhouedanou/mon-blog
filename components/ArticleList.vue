@@ -110,13 +110,12 @@
 
 <script setup>
 import { ref, computed, watch, onMounted, onUnmounted } from 'vue'
-import { useAsyncData } from '#app'
+import { useArticleList } from '~/composables/useArticleList.js'
 import { useRoute, useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { useLocalePath } from '#i18n'
 import SearchBar from '~/components/SearchBar.vue'
 import { getArticleSearchIntent, getArticleSearchText, THEME_DEFINITIONS, localizeTheme } from '~/data/editorial.js'
-import { ARTICLE_LIST_FIELDS } from '~/utils/content-fields.js'
 import { dateLocale } from '~/utils/i18n.js'
 import { frenchSpacing } from '~/utils/typography.js'
 import { useImageText } from '~/composables/useImageText.js'
@@ -136,25 +135,7 @@ const themes = computed(() =>
     THEME_DEFINITIONS.map((theme) => ({ slug: theme.slug, label: localizeTheme(theme, locale.value).label }))
 )
 
-const { data: articles } = await useAsyncData(`articles-${locale.value}`, () =>
-    queryContent(locale.value)
-        .only(ARTICLE_LIST_FIELDS)
-        .sort({ createdAt: -1 })
-        .find()
-        .then(articles => {
-            return articles
-                .map(article => {
-                    if (article.createdAt) {
-                        const ts = new Date(article.createdAt).getTime()
-                        article.timestamp = isNaN(ts) ? 0 : ts
-                    } else {
-                        article.timestamp = 0
-                    }
-                    return article
-                })
-                .sort((a, b) => b.timestamp - a.timestamp)
-        })
-)
+const { data: articles } = await useArticleList()
 
 const isSearching = computed(() => searchQuery.value.trim().length > 0)
 
