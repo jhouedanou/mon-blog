@@ -35,7 +35,7 @@ const query = computed({
 
 <style lang="scss" scoped>
 .search-bar {
-    margin-bottom: 0.75rem;
+    margin: 0;
 }
 
 .search-bar__input-wrapper {
@@ -45,7 +45,7 @@ const query = computed({
 
 .search-bar__icon {
     position: absolute;
-    left: 12px;
+    left: 14px;
     top: 50%;
     transform: translateY(-50%);
     color: var(--text-muted);
@@ -55,15 +55,16 @@ const query = computed({
 
 .search-bar__input {
     width: 100%;
-    padding: 0.85rem 1rem 0.85rem 2.75rem;
-    border: 1px solid var(--border-color);
-    border-radius: 4px;
+    min-height: 50px;
+    padding: 0.8rem 1rem 0.8rem 2.85rem;
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius);
     background: var(--bg-card);
     color: var(--text-primary);
     font-family: var(--font-sans);
     font-size: 0.98rem;
     letter-spacing: 0;
-    transition: all 0.2s ease;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
     outline: none;
 
     &::placeholder {
@@ -74,9 +75,10 @@ const query = computed({
         font-size: 0.95rem;
     }
 
+    &:focus-visible,
     &:focus {
-        border-color: var(--accent);
-        box-shadow: 0 0 0 3px var(--accent-soft);
+        border-color: var(--accent-2);
+        box-shadow: 0 0 0 3px var(--accent-2-soft);
     }
 }
 </style>

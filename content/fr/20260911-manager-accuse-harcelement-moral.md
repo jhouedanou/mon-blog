@@ -29,7 +29,7 @@ La réponse tombe, et je ne l'avais pas vue venir : « C'est du dénigrement, c'
 
 J'ai compris ce jour-là que le logiciel du management avait reçu une mise à jour que j'avais ratée. Perdre de l'argent est une péripétie, livrer n'importe quoi fait partie du processus créatif, et demander des comptes est une agression.
 
-Par acquit de conscience, je suis quand même allé lire le Code du travail ivoirien. Son [article 5](https://loidici.biz/?p=1690) parle de « comportements abusifs », de « menaces », d'« intimidations », d'« agissements répétés à l'encontre d'un salarié ». Je n'y ai pas trouvé « a demandé pourquoi le client l'appelait un dimanche ». Le harcèlement moral existe, des gens en souffrent pour de vrai, et c'est bien pour ça que le mot ne devrait pas servir de joker à chaque fois qu'un travail est mal fait. J'avais fait le même exercice de lecture pour [la géolocalisation des salariés](/fr/20250705-chersCommerciaux), avec le même constat : le texte dit rarement ce qu'on lui fait dire au bureau.
+Par acquit de conscience, je suis quand même allé lire le Code du travail ivoirien. Son [article 5](https://loidici.biz/?p=1690) parle de « comportements abusifs », de « menaces », d'« intimidations », d'« agissements répétés à l'encontre d'un salarié ». Je n'y ai pas trouvé « a demandé pourquoi le client l'appelait un dimanche ». Le harcèlement moral existe, des gens en souffrent pour de vrai, et c'est bien pour ça que le mot ne devrait pas servir de joker à chaque fois qu'un travail est mal fait. J'avais fait le même exercice de lecture pour [la géolocalisation des salariés](/fr/20250705-cherscommerciaux), avec le même constat : le texte dit rarement ce qu'on lui fait dire au bureau.
 
 ## Ce que ça m'a fait
 

@@ -20,6 +20,10 @@ export const AUTHOR_JOB_TITLE = {
   en: 'Full-stack web developer & Systems administrator',
 }
 
+// Le CV en ligne (portfolio), dont le blog reprend l'identité visuelle. Il renvoie
+// lui-même vers le blog (« Lire le blog ») : le lien est réciproque.
+export const CV_URL = 'https://jhouedanou.github.io/Curriculum-vitae/'
+
 // Les cartes sociales doivent être en JPEG : X et LinkedIn ne rendent pas le WebP.
 export const DEFAULT_OG_IMAGE = '/og/default.jpg'
 

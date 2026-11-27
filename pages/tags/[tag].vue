@@ -168,8 +168,8 @@ useSeo(() => ({
 .tag-archive__title {
   font-family: var(--font-display);
   font-size: clamp(2.5rem, 7vw, 5rem);
-  font-weight: 400;
-  letter-spacing: -0.03em;
+  font-weight: 600;
+  letter-spacing: -0.04em;
   line-height: 1;
   color: var(--text-primary);
   margin: 0 0 0.85rem;
@@ -268,8 +268,8 @@ useSeo(() => ({
 .tag-card__title {
   font-family: var(--font-display);
   font-size: 1.2rem;
-  font-weight: 500;
-  letter-spacing: -0.015em;
+  font-weight: 600;
+  letter-spacing: -0.025em;
   line-height: 1.2;
   color: var(--text-primary);
   margin: 0;

@@ -103,9 +103,9 @@ onUnmounted(() => {
 
 .reading-bar__title {
   font-family: var(--font-display);
-  font-weight: 650;
+  font-weight: 600;
   font-size: 0.95rem;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
   color: var(--text-primary);
   white-space: nowrap;
   overflow: hidden;

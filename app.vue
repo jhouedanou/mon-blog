@@ -4,65 +4,7 @@
 
     <a href="#main-content" class="skip-link">{{ $t('skipToContent') }}</a>
 
-    <header class="site-header" :class="{ 'site-header--scrolled': scrolled }">
-      <div class="site-header__inner">
-        <NuxtLink :to="localePath('/')" class="site-header__brand" :aria-label="`${$t('home')} - Le Blog de Jean-Luc Houédanou`">
-          <img class="site-header__mark" src="/favicon-96x96.png" alt="" aria-hidden="true" width="32" height="32" />
-          <span class="site-header__wordmark"><span class="site-header__kicker">Le Blog de </span><span class="site-header__first-name">Jean-Luc</span> Houédanou<em>.</em></span>
-        </NuxtLink>
-
-        <button
-          v-if="!isHome"
-          class="site-header__burger"
-          :class="{ 'is-active': mobileMenuOpen }"
-          @click="mobileMenuOpen = !mobileMenuOpen"
-          :aria-expanded="mobileMenuOpen"
-          :aria-label="$t('menuLabel')"
-          aria-controls="nav-menu"
-        >
-          <span></span>
-          <span></span>
-        </button>
-
-        <nav v-if="!isHome" id="nav-menu" class="site-header__nav" :class="{ 'is-open': mobileMenuOpen }">
-          <NuxtLink :to="localePath('/')" class="site-header__nav-link" @click="mobileMenuOpen = false">
-            <span>{{ $t('home') }}</span>
-          </NuxtLink>
-          <NuxtLink :to="localePath('/tags')" class="site-header__nav-link" @click="mobileMenuOpen = false">
-            <span>{{ $t('tags') }}</span>
-          </NuxtLink>
-          <NuxtLink :to="localePath('/themes')" class="site-header__nav-link" @click="mobileMenuOpen = false">
-            <span>{{ $t('themes') }}</span>
-          </NuxtLink>
-          <NuxtLink to="/cv" class="site-header__nav-link" @click="mobileMenuOpen = false">
-            <span>{{ $t('cv') }}</span>
-          </NuxtLink>
-          <NuxtLink to="/a-propos" class="site-header__nav-link" @click="mobileMenuOpen = false">
-            <span>{{ $t('about') }}</span>
-          </NuxtLink>
-        </nav>
-
-        <div class="site-header__actions">
-          <LanguageSwitcher />
-          <button
-            class="site-header__action-btn"
-            @click="toggleDarkMode"
-            :aria-label="isDark ? $t('lightMode') : $t('darkMode')"
-            :title="isDark ? $t('lightMode') : $t('darkMode')"
-          >
-            <i class="material-icons">{{ isDark ? 'light_mode' : 'dark_mode' }}</i>
-          </button>
-          <a
-            href="/feed.xml"
-            class="site-header__action-btn"
-            :aria-label="$t('rssFeed')"
-            target="_blank"
-          >
-            <i class="material-icons">rss_feed</i>
-          </a>
-        </div>
-      </div>
-    </header>
+    <SiteHeader />
 
     <main id="main-content">
       <NuxtPage />
@@ -75,70 +17,14 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted, onUnmounted } from 'vue'
-import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
-import { useLocalePath } from '#i18n'
 import ScrollToTop from '~/components/ScrollToTop.vue'
-import LanguageSwitcher from '~/components/LanguageSwitcher.vue'
+import SiteHeader from '~/components/SiteHeader.vue'
+import { SITE_URL, SITE_NAME, AUTHOR_NAME, AUTHOR_JOB_TITLE, PERSON_ID, PERSON_URL, WEBSITE_ID, BLOG_ID, SAME_AS } from '~/utils/site.js'
+import { THEME_OVERRIDE_KEY } from '~/utils/theme.js'
 
-const localePath = useLocalePath()
 const { locale } = useI18n()
 
-const route = useRoute()
-// Sur la home, le menu vit dans la sidebar (ArticleList) — le header n'affiche
-// que la marque et les actions.
-const isHome = computed(() => /^\/(en\/?)?$/.test(route.path))
-
-const isDark = ref(false)
-const mobileMenuOpen = ref(false)
-const scrolled = ref(false)
-
-// Le site est clair par défaut, quel que soit le réglage du système. Le bouton
-// du header passe en sombre pour la visite en cours (sessionStorage) : au
-// prochain onglet ou à la prochaine visite, on repart du clair. Un ancien choix
-// stocké dans localStorage par une version précédente est ignoré et nettoyé.
-const THEME_OVERRIDE_KEY = 'theme-override'
-
-function applyTheme(dark) {
-  isDark.value = dark
-  document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light')
-}
-
-function currentThemeIsDark() {
-  try {
-    return sessionStorage.getItem(THEME_OVERRIDE_KEY) === 'dark'
-  } catch {
-    return false
-  }
-}
-
-function toggleDarkMode() {
-  const next = !isDark.value
-  applyTheme(next)
-  try {
-    // Revenir au clair, c'est revenir au défaut : on efface le choix.
-    if (next) sessionStorage.setItem(THEME_OVERRIDE_KEY, 'dark')
-    else sessionStorage.removeItem(THEME_OVERRIDE_KEY)
-  } catch {}
-}
-
-function onScroll() {
-  scrolled.value = window.scrollY > 8
-}
-
-onMounted(() => {
-  try { localStorage.removeItem('theme') } catch {}
-  applyTheme(currentThemeIsDark())
-  window.addEventListener('scroll', onScroll, { passive: true })
-  onScroll()
-})
-
-onUnmounted(() => {
-  window.removeEventListener('scroll', onScroll)
-})
-
-import { SITE_URL, SITE_NAME, AUTHOR_NAME, AUTHOR_JOB_TITLE, PERSON_ID, PERSON_URL, WEBSITE_ID, BLOG_ID, SAME_AS } from '~/utils/site.js'
 import { safeJsonLd } from '~/composables/useSeo.js'
 import { LANGUAGE_REDIRECT_SCRIPT } from '~/utils/i18n.js'
 
@@ -255,24 +141,24 @@ useHead(() => ({
       innerHTML: LANGUAGE_REDIRECT_SCRIPT,
     },
     {
-      // Exécuté avant le premier rendu : pose le thème (clair, ou sombre si le
+      // Exécuté avant le premier rendu : pose le thème (sombre, ou clair si le
       // lecteur l'a choisi pendant la visite) sur <html> pour éviter un flash
       // de la mauvaise couleur.
       id: 'theme-init',
       tagPosition: 'head',
-      innerHTML: `(function(){try{var d=false;try{d=sessionStorage.getItem('${THEME_OVERRIDE_KEY}')==='dark'}catch(e){}document.documentElement.setAttribute('data-theme',d?'dark':'light')}catch(e){}})();`,
+      innerHTML: `(function(){try{var l=false;try{l=sessionStorage.getItem('${THEME_OVERRIDE_KEY}')==='light'}catch(e){}document.documentElement.setAttribute('data-theme',l?'light':'dark')}catch(e){}})();`,
     },
   ],
-  // Pas de `data-theme` ici : unhead ré-appliquerait « light » à chaque mise à
+  // Pas de `data-theme` ici : unhead ré-appliquerait la valeur à chaque mise à
   // jour réactive et écraserait le thème posé par le script ci-dessus. Sans
-  // JavaScript, `html:not([data-theme])` reçoit les couleurs du thème clair.
+  // JavaScript, `html:not([data-theme])` reçoit les couleurs du thème sombre.
   htmlAttrs: {
     // Requis pour que `hyphens: auto` charge le bon dictionnaire de césure.
     lang: locale.value,
   },
   meta: [
-    // Couleur de la barre du navigateur, alignée sur --bg-primary du thème clair (le défaut).
-    { key: 'theme-color', name: 'theme-color', content: '#f1f4f1' },
+    // Couleur de la barre du navigateur, alignée sur --bg-primary du thème sombre (le défaut).
+    { key: 'theme-color', name: 'theme-color', content: '#111522' },
   ],
   link: [
     {
@@ -293,7 +179,7 @@ html {
 
 main {
   background: transparent;
-  min-height: calc(100vh - 60px);
+  min-height: calc(100vh - var(--header-h));
 }
 
 /* ==========================================
@@ -304,10 +190,10 @@ main {
   top: -100%;
   left: 1rem;
   z-index: 9999;
-  background: var(--accent);
+  background: var(--accent-fill);
   color: var(--accent-contrast);
   padding: 0.75rem 1.5rem;
-  border-radius: 0 0 8px 8px;
+  border-radius: 0 0 var(--radius) var(--radius);
   font-family: var(--font-sans);
   font-weight: 600;
   text-decoration: none;
@@ -318,282 +204,4 @@ main {
   }
 }
 
-/* ==========================================
-   Header
-   ========================================== */
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background: transparent;
-  transition: background 0.35s ease, backdrop-filter 0.35s ease, border-color 0.35s ease;
-  border-bottom: 1px solid transparent;
-
-  &--scrolled {
-    background: var(--bg-glass);
-    backdrop-filter: blur(18px) saturate(140%);
-    -webkit-backdrop-filter: blur(18px) saturate(140%);
-    border-bottom-color: var(--border-color);
-  }
-}
-
-.site-header__inner {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-  height: 72px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-}
-
-.site-header__brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.65rem;
-  text-decoration: none;
-  color: var(--text-primary);
-  flex-shrink: 0;
-
-  &:hover .site-header__mark {
-    box-shadow: 0 0 0 2px var(--accent);
-    transform: translateY(-1px);
-  }
-
-  &:hover .site-header__wordmark em {
-    color: var(--accent-hover);
-  }
-}
-
-.site-header__mark {
-  width: 32px;
-  height: 32px;
-  border-radius: 6px;
-  display: block;
-  align-self: center;
-  transition: box-shadow 0.25s ease, transform 0.25s ease;
-}
-
-.site-header__wordmark {
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 1.55rem;
-  letter-spacing: -0.015em;
-  line-height: 1;
-  color: var(--text-primary);
-
-  em {
-    font-style: normal;
-    color: var(--accent);
-    transition: color 0.25s ease;
-  }
-}
-
-// « Le Blog de » au-dessus du nom : le texte reste une seule phrase pour les
-// robots, sans élargir l'en-tête.
-.site-header__kicker {
-  display: block;
-  margin-bottom: 0.2rem;
-  font-family: var(--font-mono);
-  font-size: 0.62rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--text-secondary);
-}
-
-.site-header__nav {
-  display: flex;
-  align-items: center;
-  gap: 1.75rem;
-  margin-left: auto;
-
-  @media (max-width: 980px) {
-    gap: 1.25rem;
-  }
-}
-
-.site-header__nav-link {
-  position: relative;
-  font-family: var(--font-sans);
-  font-size: 0.95rem;
-  font-weight: 500;
-  color: var(--text-secondary);
-  text-decoration: none;
-  padding: 0.4rem 0;
-  letter-spacing: 0.01em;
-  transition: color 0.2s ease;
-
-  span {
-    position: relative;
-    z-index: 1;
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    width: 100%;
-    height: 1px;
-    background: var(--accent);
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.35s cubic-bezier(0.65, 0, 0.35, 1);
-  }
-
-  &:hover,
-  &.router-link-active {
-    color: var(--text-primary);
-
-    &::after {
-      transform: scaleX(1);
-      transform-origin: left;
-    }
-  }
-}
-
-.site-header__actions {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-}
-
-.site-header__action-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border: 1px solid var(--border-color);
-  background: transparent;
-  color: var(--text-secondary);
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.25s ease;
-  text-decoration: none;
-
-  .material-icons {
-    font-size: 1.2rem;
-  }
-
-  &:hover {
-    background: var(--accent-soft);
-    color: var(--accent);
-    border-color: var(--accent);
-    box-shadow: var(--card-shadow-hover);
-    transform: translateY(-1px);
-  }
-}
-
-/* ==========================================
-   Mobile burger
-   ========================================== */
-.site-header__burger {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  gap: 6px;
-  width: 40px;
-  height: 40px;
-  background: transparent;
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-  cursor: pointer;
-  padding: 0;
-  margin-left: auto;
-
-  span {
-    display: block;
-    width: 18px;
-    height: 1.5px;
-    background: var(--text-primary);
-    border-radius: 1px;
-    margin: 0 auto;
-    transition: all 0.3s ease;
-  }
-
-  &.is-active {
-    span:nth-child(1) {
-      transform: translateY(4px) rotate(45deg);
-    }
-    span:nth-child(2) {
-      transform: translateY(-4px) rotate(-45deg);
-    }
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .site-header__inner {
-    padding: 0 1rem;
-    gap: 1rem;
-  }
-
-  .site-header__burger {
-    display: flex;
-    order: 3;
-  }
-
-  .site-header__nav {
-    display: none;
-    position: absolute;
-    top: 72px;
-    left: 0;
-    right: 0;
-    background: var(--bg-glass);
-    backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
-    border-top: 1px solid var(--border-color);
-    border-bottom: 1px solid var(--border-color);
-    flex-direction: column;
-    align-items: stretch;
-    padding: 1rem;
-    gap: 0;
-    margin: 0;
-
-    &.is-open {
-      display: flex;
-    }
-  }
-
-  .site-header__nav-link {
-    padding: 0.85rem 1rem;
-    width: 100%;
-    border-radius: 8px;
-    border-bottom: 1px solid var(--border-color);
-
-    &::after {
-      display: none;
-    }
-
-    &:last-child {
-      border-bottom: none;
-    }
-
-    &:hover,
-    &.router-link-active {
-      background: var(--accent-soft);
-    }
-  }
-
-  .site-header__actions {
-    order: 2;
-  }
-
-  // Le nom passe sur deux lignes, sans le carré du logo : l'ensemble reste
-  // aussi étroit que l'ancien « Journal. » et ne pousse pas les boutons hors écran.
-  .site-header__mark {
-    display: none;
-  }
-
-  .site-header__wordmark {
-    font-size: 1.05rem;
-    line-height: 1.1;
-  }
-
-  .site-header__first-name {
-    display: block;
-  }
-}
 </style>

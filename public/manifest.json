@@ -1,5 +1,13 @@
 {
- "name": "App",
+ "name": "Le Blog de Jean-Luc Houédanou",
+ "short_name": "Houédanou",
+ "description": "Retours d'expérience, outils web, administration système et culture numérique depuis Abidjan.",
+ "lang": "fr",
+ "start_url": "/",
+ "scope": "/",
+ "display": "browser",
+ "background_color": "#111522",
+ "theme_color": "#111522",
  "icons": [
   {
    "src": "\/android-icon-36x36.png",

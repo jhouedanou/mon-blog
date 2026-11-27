@@ -55,39 +55,39 @@ const items = computed(() =>
 </script>
 
 <style scoped>
+/* Bouton segmenté, angles de 4 px comme sur le portfolio. */
 .language-switcher {
     display: inline-flex;
-    align-items: center;
-    gap: 0.15rem;
-    padding: 0.2rem;
+    align-items: stretch;
+    height: 44px;
+    padding: 3px;
+    gap: 2px;
     border: 1px solid var(--border-color);
-    border-radius: 999px;
-    background: var(--bg-card);
+    border-radius: var(--radius);
 }
 
 .language-switcher__link {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-width: 2rem;
-    height: 1.7rem;
-    padding: 0 0.55rem;
-    border-radius: 999px;
+    min-width: 38px;
+    padding: 0 0.5rem;
+    border-radius: 2px;
     font-family: var(--font-mono);
-    font-size: 0.68rem;
+    font-size: 0.74rem;
     font-weight: 600;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.08em;
     color: var(--text-muted);
     text-decoration: none;
     transition: color 0.2s ease, background-color 0.2s ease;
 }
 
 .language-switcher__link:hover {
-    color: var(--accent);
+    color: var(--accent-2-text);
 }
 
 .language-switcher__link.is-active {
-    color: var(--accent-contrast);
-    background: var(--accent);
+    color: var(--text-primary);
+    background: var(--bg-elevated);
 }
 </style>

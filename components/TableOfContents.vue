@@ -4,7 +4,7 @@
             <i class="material-icons">toc</i>
         </button>
         <nav class="toc__nav" :class="{ 'toc__nav--open': isOpen }" :aria-label="$t('tableOfContents')">
-            <h4 class="toc__heading">{{ $t('tableOfContents') }}</h4>
+            <p class="toc__heading">{{ $t('tableOfContents') }}</p>
             <ul class="toc__list">
                 <li
                     v-for="link in links"
@@ -82,7 +82,7 @@ onUnmounted(() => {
    Sous 1150px, plus la place : bascule en bouton + panneau flottant. */
 .toc {
     position: sticky;
-    top: calc(72px + 2rem);
+    top: calc(var(--header-h) + 2rem);
     align-self: start;
     max-height: calc(100dvh - 130px);
 }
@@ -94,8 +94,8 @@ onUnmounted(() => {
     right: 2rem;
     width: 48px;
     height: 48px;
-    border-radius: 8px;
-    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    border: 1px solid var(--border-strong);
     background: var(--bg-card);
     color: var(--text-primary);
     cursor: pointer;
@@ -106,8 +106,8 @@ onUnmounted(() => {
     transition: background 0.25s ease, border-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
 
     &:hover {
-        border-color: var(--accent);
-        color: var(--accent);
+        border-color: var(--accent-2-line);
+        color: var(--accent-2-text);
         transform: translateY(-2px);
     }
 
@@ -120,11 +120,10 @@ onUnmounted(() => {
     position: static;
     max-height: calc(100dvh - 104px);
     overflow-y: auto;
-    padding: 1rem 0;
-    background: color-mix(in srgb, var(--bg-card) 78%, transparent);
+    padding: 1.1rem 0 0.9rem;
+    background: color-mix(in srgb, var(--bg-card) 82%, transparent);
     border: 1px solid var(--border-color);
-    border-radius: 8px;
-    box-shadow: var(--card-shadow);
+    border-radius: var(--radius);
     scrollbar-width: thin;
     scrollbar-color: var(--border-strong) transparent;
 }
@@ -134,9 +133,9 @@ onUnmounted(() => {
     font-size: 0.72rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.14em;
-    color: var(--accent);
-    margin: 0 0 1rem 0;
+    letter-spacing: 0.1em;
+    color: var(--accent-2-text);
+    margin: 0 0 0.6rem 0;
     padding-left: 1rem;
 }
 
@@ -151,35 +150,50 @@ onUnmounted(() => {
 
     &--depth-3 {
         .toc__link {
-            padding-left: 2rem;
-            font-size: 0.82rem;
+            padding-left: 2.6rem;
+            font-size: 0.84rem;
         }
     }
 
+    /* Pastille pleine, comme l'entrée active du menu latéral du CV. */
     &--active > .toc__link {
         color: var(--accent);
-        border-left-color: var(--accent);
-        background: var(--accent-soft);
-        font-weight: 600;
+
+        &::before {
+            background: currentColor;
+            transform: scale(1.35);
+        }
     }
 }
 
+/* Chaque entrée porte une pastille : le repère du menu latéral du CV. */
 .toc__link {
+    position: relative;
     display: block;
-    padding: 0.5rem 1rem;
+    padding: 0.45rem 1rem 0.45rem 2rem;
     font-family: var(--font-sans);
     font-size: 0.9rem;
     font-weight: 500;
-    color: var(--text-secondary);
+    color: var(--text-muted);
     text-decoration: none;
-    border-left: 2px solid transparent;
-    transition: background 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+    transition: color 0.2s ease;
     line-height: 1.45;
     text-wrap: pretty;
 
+    &::before {
+        content: '';
+        position: absolute;
+        left: 1rem;
+        top: calc(0.45rem + 0.5em);
+        width: 6px;
+        height: 6px;
+        border: 1px solid currentColor;
+        border-radius: 50%;
+        transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+
     &:hover {
-        color: var(--accent);
-        border-left-color: var(--border-strong);
+        color: var(--text-primary);
     }
 }
 
@@ -202,8 +216,8 @@ onUnmounted(() => {
         width: 280px;
         max-height: 50vh;
         background: var(--bg-card);
-        border: 1px solid var(--border-color);
-        border-radius: 8px;
+        border: 1px solid var(--border-strong);
+        border-radius: var(--radius);
         box-shadow: var(--card-shadow-hover);
         padding: 1rem 0;
         z-index: 88;

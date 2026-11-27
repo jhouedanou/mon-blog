@@ -1,97 +1,122 @@
 <template>
-    <div class="article-list">
-        <div class="article-list-container">
-            <!-- Sidebar : identité + recherche -->
-            <aside class="home-sidebar">
-                <section class="hero-intro">
-                    <div class="hero-intro__line">
-                        <span class="hero-intro__eyebrow">— {{ $t('blogName') }} ·
-                            <span v-if="articles && articles.length">{{ articles.length }} {{ $t('articles') }}</span>
-                        </span>
+    <div class="home">
+        <!-- Ouverture : même composition que le héros du portfolio -->
+        <section class="home-hero" aria-labelledby="home-title">
+            <div class="home-hero__copy">
+                <p class="home-hero__data">
+                    <span>Abidjan</span>
+                    <span aria-hidden="true">·</span>
+                    <span v-if="articles && articles.length">{{ articles.length }} {{ $t('articles') }}</span>
+                </p>
+                <!-- L'espace explicite est indispensable : le compilateur Vue supprime
+                     les nœuds de texte blancs contenant un saut de ligne, ce qui donnait
+                     « Jean-LucHouédanou » dans le HTML servi à Google. -->
+                <h1 id="home-title" class="home-hero__title">
+                    <span class="home-hero__kicker">{{ $t('blogOf') }} </span><span>Jean-Luc </span><em>Houédanou.</em>
+                </h1>
+                <p class="home-hero__lede">{{ $t('heroLede') }}</p>
+            </div>
+
+            <div class="home-hero__tools">
+                <SearchBar v-model="searchQuery" />
+                <nav class="home-hero__themes" :aria-label="$t('themesNavLabel')">
+                    <p class="home-hero__themes-title">{{ $t('browseThemes') }}</p>
+                    <div class="home-hero__chips">
+                        <NuxtLink
+                            v-for="theme in themes"
+                            :key="theme.slug"
+                            :to="localePath(`/themes/${theme.slug}`)"
+                            class="chip"
+                        >{{ theme.label }}</NuxtLink>
+                        <NuxtLink :to="localePath('/tags')" class="chip chip--copper">{{ $t('allTags') }}</NuxtLink>
                     </div>
-                    <!-- L'espace explicite est indispensable : le compilateur Vue supprime
-                         les nœuds de texte blancs contenant un saut de ligne, ce qui donnait
-                         « Jean-LucHouédanou » dans le HTML servi à Google. -->
-                    <h1 class="hero-intro__title">
-                        <span class="hero-intro__word">Jean<span class="hero-intro__dot">-</span>Luc </span><span class="hero-intro__word hero-intro__word--accent">Houédanou</span>
-                    </h1>
-                    <p class="hero-intro__lede">
-                        {{ $t('heroLede') }}
-                    </p>
-                </section>
-
-                <div class="home-sidebar__search">
-                    <SearchBar v-model="searchQuery" />
-                </div>
-
-                <nav class="home-sidebar__nav" :aria-label="$t('mainNav')">
-                    <NuxtLink :to="localePath('/')" class="home-sidebar__nav-link">{{ $t('home') }}</NuxtLink>
-                    <NuxtLink :to="localePath('/tags')" class="home-sidebar__nav-link">{{ $t('tags') }}</NuxtLink>
-                    <NuxtLink :to="localePath('/themes')" class="home-sidebar__nav-link">{{ $t('themes') }}</NuxtLink>
-                    <NuxtLink to="/cv" class="home-sidebar__nav-link">{{ $t('cv') }}</NuxtLink>
-                    <NuxtLink to="/a-propos" class="home-sidebar__nav-link">{{ $t('about') }}</NuxtLink>
                 </nav>
-            </aside>
+            </div>
+        </section>
 
-            <!-- Galerie -->
-            <div class="home-main">
-                <div v-if="filteredArticles && filteredArticles.length" class="mosaic-grid">
-                    <NuxtLink
-                        v-for="(article, index) in displayedArticles"
-                        :key="article._path"
-                        :to="article._path"
-                        class="mosaic-tile"
-                        :class="[
-                            `mosaic-tile--${getTileSize(index)}`,
-                            `mosaic-tile--accent-${getAccentVariant(index)}`,
-                            { 'mosaic-tile--no-image': !article.image }
-                        ]"
-                        :style="[getTileBackground(article), getAnimationDelay(index)]"
-                    >
-                        <ArticleThumbFallback
-                            v-if="!article.image"
-                            class="mosaic-fallback"
-                            :seed="article._path"
-                        />
-    
-                        <span v-if="isNew(article)" class="mosaic-badge">
-                            <span class="mosaic-badge__dot"></span>
-                            {{ $t('newBadge') }}
-                        </span>
-    
-                        <div class="mosaic-overlay">
-                            <div class="mosaic-text-block">
-                                <h2 class="mosaic-title">
-                                    {{ article.title }}
-                                </h2>
-                                <p v-if="getExcerptText(article)" class="mosaic-excerpt">{{ getExcerptText(article) }}</p>
-                            </div>
-                            <div class="mosaic-meta">
-                                <span class="mosaic-date">{{ formatDate(article.createdAt) }}</span>
-                                <span v-if="getReadingTime(article)" class="mosaic-reading-time">
-                                    <i class="material-icons">schedule</i>
-                                    {{ getReadingTime(article) }} {{ $t('readingTime') }}
-                                </span>
-                            </div>
-                            <span class="mosaic-arrow" aria-hidden="true">→</span>
+        <!-- Billet à la une : le plus récent, hors recherche -->
+        <NuxtLink
+            v-if="featured"
+            :to="featured._path"
+            class="featured"
+        >
+            <div class="featured__media">
+                <img
+                    v-if="featured.image"
+                    :src="featured.image"
+                    alt=""
+                    width="1200"
+                    height="750"
+                    fetchpriority="high"
+                    decoding="async"
+                />
+                <ArticleThumbFallback v-else class="thumb-fallback-fill" :seed="featured._path" />
+            </div>
+            <div class="featured__body">
+                <p class="card-meta">
+                    <span v-if="isNew(featured)" class="card-meta__new">{{ $t('newBadge') }}</span>
+                    <time :datetime="featured.createdAt">{{ formatDate(featured.createdAt) }}</time>
+                    <span v-if="featured.readingTime" aria-hidden="true">·</span>
+                    <span v-if="featured.readingTime">{{ featured.readingTime }} {{ $t('readingTime') }}</span>
+                </p>
+                <h2 class="featured__title">{{ frenchSpacing(featured.title, locale) }}</h2>
+                <p v-if="getExcerptText(featured, 200)" class="featured__excerpt">{{ getExcerptText(featured, 200) }}</p>
+                <span class="card-link" aria-hidden="true">{{ $t('readArticle') }} <i class="material-icons">arrow_forward</i></span>
+            </div>
+        </NuxtLink>
+
+        <section class="home-list" aria-labelledby="home-list-title">
+            <div class="home-list__head">
+                <h2 id="home-list-title" class="home-list__title">
+                    {{ isSearching ? $t('searchResults') : $t('latestArticles') }}
+                </h2>
+                <p class="home-list__count" aria-live="polite">
+                    <template v-if="isSearching">{{ filteredArticles.length }} / {{ articles ? articles.length : 0 }}</template>
+                    <template v-else>{{ shownCount }} / {{ articles ? articles.length : 0 }}</template>
+                </p>
+            </div>
+
+            <ul v-if="listed.length" class="card-grid">
+                <li v-for="article in listed" :key="article._path">
+                    <NuxtLink :to="article._path" class="card">
+                        <div class="card__media">
+                            <img
+                                v-if="article.image"
+                                :src="article.image"
+                                alt=""
+                                width="640"
+                                height="400"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                            <ArticleThumbFallback v-else class="thumb-fallback-fill" :seed="article._path" />
+                        </div>
+                        <div class="card__body">
+                            <p class="card-meta">
+                                <span v-if="isNew(article)" class="card-meta__new">{{ $t('newBadge') }}</span>
+                                <time :datetime="article.createdAt">{{ formatDate(article.createdAt) }}</time>
+                                <span v-if="article.readingTime" aria-hidden="true">·</span>
+                                <span v-if="article.readingTime">{{ article.readingTime }} {{ $t('readingTime') }}</span>
+                            </p>
+                            <h3 class="card__title">{{ frenchSpacing(article.title, locale) }}</h3>
+                            <p v-if="getExcerptText(article)" class="card__excerpt">{{ getExcerptText(article) }}</p>
                         </div>
                     </NuxtLink>
-                </div>
-                <p v-else class="no-articles">{{ $t('noArticles') }}</p>
-    
-                <!-- Infinite scroll sentinel -->
-                <div ref="scrollSentinel" class="scroll-sentinel">
-                    <div v-if="isLoadingMore" class="loading-more">
-                        <span class="loading-dot"></span>
-                        <span class="loading-dot"></span>
-                        <span class="loading-dot"></span>
-                    </div>
-                    <p v-if="allLoaded && displayedArticles.length > 0" class="all-loaded-msg">
-                        — {{ $t('endOfBlog') }} —
-                    </p>
-                </div>
+                </li>
+            </ul>
+
+            <div v-else-if="isSearching" class="home-empty">
+                <p>{{ $t('noArticles') }}</p>
+                <button type="button" class="btn btn--secondary" @click="searchQuery = ''">{{ $t('clearSearch') }}</button>
             </div>
-        </div>
+
+            <div v-if="!allLoaded" class="home-more">
+                <button type="button" class="btn btn--secondary" @click="loadMore">
+                    {{ $t('loadMore') }}
+                </button>
+            </div>
+            <p v-else-if="!isSearching && listed.length" class="home-end">{{ $t('endOfBlog') }}</p>
+        </section>
     </div>
 </template>
 
@@ -102,21 +127,24 @@ import { useRoute, useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { useLocalePath } from '#i18n'
 import SearchBar from '~/components/SearchBar.vue'
-import { getArticleSearchIntent, getArticleSearchText } from '~/data/editorial.js'
+import { getArticleSearchIntent, getArticleSearchText, THEME_DEFINITIONS, localizeTheme } from '~/data/editorial.js'
 import { ARTICLE_LIST_FIELDS } from '~/utils/content-fields.js'
 import { dateLocale } from '~/utils/i18n.js'
+import { frenchSpacing } from '~/utils/typography.js'
 
 const localePath = useLocalePath()
 const { locale } = useI18n()
 const route = useRoute()
 const router = useRouter()
 
-const ITEMS_PER_PAGE = 6
+// 1 billet à la une + 9 cartes : trois rangées pleines sur ordinateur.
+const ITEMS_PER_PAGE = 10
 const displayCount = ref(ITEMS_PER_PAGE)
-const isLoadingMore = ref(false)
-const scrollSentinel = ref(null)
-let infiniteObserver = null
 const searchQuery = ref('')
+
+const themes = computed(() =>
+    THEME_DEFINITIONS.map((theme) => ({ slug: theme.slug, label: localizeTheme(theme, locale.value).label }))
+)
 
 const { data: articles } = await useAsyncData(`articles-${locale.value}`, () =>
     queryContent(locale.value)
@@ -138,17 +166,31 @@ const { data: articles } = await useAsyncData(`articles-${locale.value}`, () =>
         })
 )
 
+const isSearching = computed(() => searchQuery.value.trim().length > 0)
+
 const filteredArticles = computed(() => {
     if (!articles.value) return []
-    let result = articles.value
-
-    if (searchQuery.value.trim()) {
-        const q = searchQuery.value.toLowerCase().trim()
-        result = result.filter(a => getArticleSearchText(a).includes(q))
-    }
-
-    return result
+    if (!isSearching.value) return articles.value
+    const q = searchQuery.value.toLowerCase().trim()
+    return articles.value.filter(a => getArticleSearchText(a).includes(q))
 })
+
+// Hors recherche, le plus récent est à la une ; les cartes prennent la suite.
+const featured = computed(() => (isSearching.value ? null : filteredArticles.value[0] || null))
+
+const listed = computed(() => {
+    const pool = isSearching.value ? filteredArticles.value : filteredArticles.value.slice(1)
+    const limit = isSearching.value ? displayCount.value : displayCount.value - 1
+    return pool.slice(0, Math.max(limit, 0))
+})
+
+const shownCount = computed(() => listed.value.length + (featured.value ? 1 : 0))
+
+const allLoaded = computed(() => displayCount.value >= filteredArticles.value.length)
+
+function loadMore() {
+    displayCount.value += ITEMS_PER_PAGE - 1
+}
 
 watch(searchQuery, () => {
     displayCount.value = ITEMS_PER_PAGE
@@ -186,52 +228,14 @@ watch(() => route.query.q, () => {
     if (fromRoute !== searchQuery.value.trim()) searchQuery.value = fromRoute
 })
 
-const displayedArticles = computed(() => {
-    if (!filteredArticles.value) return []
-    return filteredArticles.value.slice(0, displayCount.value)
-})
-
-const allLoaded = computed(() => {
-    if (!filteredArticles.value) return true
-    return displayCount.value >= filteredArticles.value.length
-})
-
-function loadMore() {
-    if (allLoaded.value || isLoadingMore.value) return
-    isLoadingMore.value = true
-    setTimeout(() => {
-        displayCount.value += ITEMS_PER_PAGE
-        isLoadingMore.value = false
-    }, 300)
-}
-
 onMounted(() => {
     const initialQuery = queryFromRoute()
     if (initialQuery) searchQuery.value = initialQuery
-
-    infiniteObserver = new IntersectionObserver(
-        (entries) => {
-            if (entries[0].isIntersecting) {
-                loadMore()
-            }
-        },
-        { rootMargin: '300px' }
-    )
-    if (scrollSentinel.value) {
-        infiniteObserver.observe(scrollSentinel.value)
-    }
 })
 
 onUnmounted(() => {
-    infiniteObserver?.disconnect()
     clearTimeout(searchUrlTimer)
 })
-
-// Figé au build (hook `content:file:afterParse`) : le calculer ici obligeait à
-// charger le `body` des 48 articles sur chaque rendu de l'accueil.
-function getReadingTime(article) {
-    return article.readingTime || null
-}
 
 function isNew(article) {
     if (!article.createdAt) return false
@@ -240,38 +244,10 @@ function isNew(article) {
     return (Date.now() - created) < sevenDays
 }
 
-const accentVariants = ['teal', 'magenta', 'violet', 'teal', 'amber', 'magenta']
-
-function getAccentVariant(index) {
-    return accentVariants[index % accentVariants.length]
-}
-
-function getTileSize(index) {
-    // Pattern: large, normal, normal, normal, large, normal → magazine grid
-    const posInGroup = index % 6
-    if (posInGroup === 0) return 'hero'
-    if (posInGroup === 3) return 'wide'
-    return 'normal'
-}
-
-function getTileBackground(article) {
-    // Sans image, la tuile est peinte par <ArticleThumbFallback> (SVG).
-    if (!article.image) return {}
-    return {
-        backgroundImage: `url(${article.image})`,
-    }
-}
-
-function getAnimationDelay(index) {
-    return {
-        animationDelay: `${Math.min(index * 0.06, 0.6)}s`,
-    }
-}
-
-function getExcerptText(article) {
+function getExcerptText(article, max = 140) {
     const content = getArticleSearchIntent(article)
     const text = content.replace(/<[^>]*>/g, '')
-    return text.length > 120 ? text.slice(0, 120) + '…' : text
+    return text.length > max ? text.slice(0, max).trimEnd() + '…' : text
 }
 
 function formatDate(createdAt) {
@@ -289,584 +265,407 @@ function formatDate(createdAt) {
 </script>
 
 <style lang="scss" scoped>
-.article-list {
-    padding: 0 0 4rem;
-}
-
-.article-list-container {
-    max-width: 1360px;
+.home {
+    max-width: var(--wrap);
     margin: 0 auto;
-    padding: 0 1.5rem;
-    display: grid;
-    grid-template-columns: 320px minmax(0, 1fr);
-    gap: 3.5rem;
-    align-items: start;
+    padding: 0 var(--gutter);
+    /* Le cercle du héros dépasse à droite : `clip` le coupe sans créer de
+       zone de défilement (contrairement à `hidden`). */
+    overflow-x: clip;
 }
 
 /* ==========================================
-   Sidebar
+   Ouverture
    ========================================== */
-.home-sidebar {
-    position: sticky;
-    top: 96px;
-    padding: 3rem 0 2rem;
-}
-
-.home-sidebar__search {
-    margin-top: 2rem;
-}
-
-.home-sidebar__nav {
-    margin-top: 2.25rem;
-    display: flex;
-    flex-direction: column;
-    border-top: 1px solid var(--border-color);
-}
-
-.home-sidebar__nav-link {
-    font-family: var(--font-display);
-    font-size: 1.15rem;
-    font-weight: 600;
-    letter-spacing: -0.01em;
-    color: var(--text-secondary);
-    text-decoration: none;
-    padding: 0.7rem 0;
-    border-bottom: 1px solid var(--border-color);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: color 0.2s ease, padding-left 0.25s cubic-bezier(0.22, 1, 0.36, 1);
-
-    &::after {
-        content: '→';
-        font-family: var(--font-mono);
-        font-size: 0.9rem;
-        opacity: 0;
-        transform: translateX(-4px);
-        transition: opacity 0.2s ease, transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
-    }
-
-    &:hover,
-    &.router-link-exact-active {
-        color: var(--accent);
-        padding-left: 0.35rem;
-
-        &::after {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
-}
-
-.home-main {
-    padding-top: 3rem;
-    min-width: 0;
-}
-
-/* ==========================================
-   Hero intro
-   ========================================== */
-.hero-intro {
-    padding: 0 0 2rem;
-    border-bottom: 1px solid var(--border-color);
-}
-
-.hero-intro__line {
-    margin-bottom: 1.5rem;
-}
-
-.hero-intro__eyebrow {
-    font-family: var(--font-mono);
-    font-size: 0.78rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    color: var(--accent);
-}
-
-.hero-intro__title {
-    font-family: var(--font-display);
-    font-weight: 650;
-    font-size: clamp(2.1rem, 2.6vw, 2.9rem);
-    line-height: 1.04;
-    letter-spacing: -0.03em;
-    color: var(--text-primary);
-    margin: 0 0 1.25rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.08em;
-    align-items: flex-start;
-}
-
-.hero-intro__word {
-    display: inline-block;
-
-    &--accent {
-        font-weight: 650;
-        color: var(--accent);
-        position: relative;
-
-        &::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 0.08em;
-            height: 0.04em;
-            background: var(--accent);
-            opacity: 0.22;
-            transform-origin: left;
-            animation: underlineSlide 1.4s cubic-bezier(0.65, 0, 0.35, 1) 0.4s both;
-        }
-    }
-}
-
-.hero-intro__dot {
-    color: var(--accent);
-    font-weight: 650;
-}
-
-@keyframes underlineSlide {
-    from { transform: scaleX(0); }
-    to   { transform: scaleX(1); }
-}
-
-.hero-intro__lede {
-    font-family: var(--font-sans);
-    font-size: 1.08rem;
-    color: var(--text-secondary);
-    max-width: 580px;
-    line-height: 1.55;
-    margin: 0;
-}
-
-/* ==========================================
-   Magazine grid
-   ========================================== */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(24px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.mosaic-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 200px;
-    gap: 1rem;
-}
-
-.mosaic-fallback {
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-}
-
-.mosaic-tile {
+.home-hero {
     position: relative;
-    border-radius: 6px;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: var(--bg-card);
-    cursor: pointer;
-    text-decoration: none;
-    transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
-                box-shadow 0.45s cubic-bezier(0.22, 1, 0.36, 1),
-                border-color 0.3s ease;
-    animation: fadeInUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
-    border: 1px solid var(--border-color);
-    grid-column: span 2;
-    grid-row: span 2;
+    display: grid;
+    grid-template-columns: minmax(0, 1.25fr) minmax(300px, 0.75fr);
+    gap: clamp(2rem, 6vw, 5rem);
+    align-items: end;
+    padding: clamp(3rem, 8vw, 6rem) 0 clamp(2.5rem, 5vw, 3.5rem);
+    border-bottom: 1px solid var(--border-color);
 
+    /* Le cercle du héros du portfolio, en filigrane. */
     &::before {
         content: '';
         position: absolute;
-        inset: 0;
-        background: inherit;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1),
-                    filter 0.7s ease;
-        z-index: 0;
-        filter: saturate(0.9);
-    }
-
-    // Sans image, c'est le SVG qui peint la tuile : le ::before hériterait
-    // d'un background vide et se contenterait de le recouvrir.
-    &--no-image::before {
-        display: none;
-    }
-
-    // L'overlay est calibré pour du texte blanc sur photo. Sur le SVG
-    // (clair en thème clair), il faut un voile beaucoup plus léger.
-    &--no-image .mosaic-overlay {
-        background: linear-gradient(
-            to top,
-            color-mix(in srgb, var(--bg-primary) 92%, transparent) 0%,
-            color-mix(in srgb, var(--bg-primary) 62%, transparent) 48%,
-            transparent 100%
-        );
-    }
-
-    &--no-image .mosaic-title,
-    &--no-image .mosaic-excerpt,
-    &--no-image .mosaic-meta,
-    &--no-image .mosaic-arrow {
-        color: var(--text-primary);
-        text-shadow: none;
-    }
-
-    &--no-image .mosaic-excerpt,
-    &--no-image .mosaic-meta {
-        color: var(--text-secondary);
-    }
-
-    &--no-image:hover {
-        .mosaic-title,
-        .mosaic-arrow {
-            color: var(--accent);
-        }
-    }
-
-    &:hover {
-        transform: translateY(-3px);
-        box-shadow: var(--card-shadow-hover);
-
-        &::before {
-            transform: scale(1.05);
-            filter: saturate(1.1);
-        }
-
-        .mosaic-title {
-            color: #ffffff;
-        }
-
-        .mosaic-arrow {
-            transform: translate(4px, -4px);
-            color: #ffffff;
-        }
-    }
-
-    /* Magazine sizes — hero = wide+tall, wide = wide, normal = standard */
-    &--hero {
-        grid-column: span 4;
-        grid-row: span 3;
-
-        .mosaic-title {
-            font-size: clamp(1.3rem, 2.4vw, 1.9rem);
-            line-height: 1.1;
-        }
-
-        .mosaic-excerpt {
-            font-size: 0.95rem;
-            -webkit-line-clamp: 3;
-        }
-    }
-
-    &--wide {
-        grid-column: span 4;
-        grid-row: span 2;
-
-        .mosaic-title {
-            font-size: clamp(1.1rem, 1.8vw, 1.5rem);
-        }
-    }
-
-    &--normal {
-        grid-column: span 2;
-        grid-row: span 2;
-    }
-
-    /* Accent variants — calm border treatment */
-    &--accent-teal {
-        --tile-accent: var(--accent);
-    }
-    &--accent-magenta {
-        --tile-accent: var(--accent-magenta);
-    }
-    &--accent-violet {
-        --tile-accent: var(--accent-violet);
-    }
-    &--accent-amber {
-        --tile-accent: var(--accent-amber);
-    }
-
-    &:hover {
-        border-color: var(--tile-accent, var(--accent));
+        z-index: -1;
+        top: -18%;
+        right: -12%;
+        width: min(46vw, 620px);
+        aspect-ratio: 1;
+        border: 1px solid var(--accent-2-line);
+        border-radius: 50%;
+        background: radial-gradient(circle, var(--accent-2-soft), transparent 64%);
+        opacity: 0.55;
+        pointer-events: none;
     }
 }
 
-.mosaic-badge {
-    position: absolute;
-    top: 14px;
-    left: 14px;
+.home-hero__data {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0 0 1.25rem;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent-2-text);
+}
+
+.home-hero__title {
+    margin: 0 0 1.5rem;
+    font-size: clamp(2.9rem, 7vw, 5.75rem);
+    font-weight: 600;
+    line-height: 0.95;
+    letter-spacing: -0.04em;
+
+    em {
+        font-style: normal;
+        color: var(--accent);
+    }
+}
+
+/* « Le blog de » : partie du titre pour les robots, posée en petit au-dessus. */
+.home-hero__kicker {
+    display: block;
+    margin-bottom: 0.6rem;
+    font-size: clamp(1rem, 1.6vw, 1.25rem);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    color: var(--text-muted);
+}
+
+.home-hero__lede {
+    max-width: 46ch;
+    margin: 0;
+    font-size: clamp(1.05rem, 1.4vw, 1.2rem);
+    line-height: 1.6;
+    color: var(--text-muted);
+}
+
+.home-hero__tools {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.home-hero__themes-title {
+    margin: 0 0 0.65rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.home-hero__chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+}
+
+/* ==========================================
+   Métadonnées partagées par les cartes
+   ========================================== */
+.card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.45rem;
+    margin: 0 0 0.75rem;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent-2-text);
+}
+
+.card-meta__new {
+    padding: 0.15rem 0.45rem;
+    border: 1px solid var(--accent-line);
+    border-radius: var(--radius);
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.card-link {
     display: inline-flex;
     align-items: center;
-    gap: 0.4rem;
-    background: rgba(10, 10, 15, 0.85);
-    backdrop-filter: blur(8px);
-    color: #fff;
+    gap: 0.35rem;
+    margin-top: auto;
     font-family: var(--font-mono);
-    font-size: 0.65rem;
+    font-size: 0.78rem;
     font-weight: 600;
-    text-transform: uppercase;
-    padding: 0.3rem 0.65rem;
-    border-radius: 2px;
-    z-index: 3;
-    letter-spacing: 0.12em;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    letter-spacing: 0.04em;
+    color: var(--accent);
+
+    .material-icons {
+        font-size: 1rem;
+        transition: transform 0.25s var(--ease-out);
+    }
 }
 
-.mosaic-badge__dot {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: var(--accent);
-}
-
-@keyframes pulseDot {
-    0%, 100% { opacity: 1; transform: scale(1); }
-    50%      { opacity: 0.5; transform: scale(1.25); }
-}
-
-.mosaic-overlay {
+.thumb-fallback-fill {
     position: absolute;
     inset: 0;
-    z-index: 1;
-    background: linear-gradient(
-        to top,
-        rgba(0, 0, 0, 0.9) 0%,
-        rgba(0, 0, 0, 0.55) 45%,
-        rgba(0, 0, 0, 0.05) 100%
-    );
+    width: 100%;
+    height: 100%;
+}
+
+/* ==========================================
+   À la une
+   ========================================== */
+.featured {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+    margin-top: clamp(2rem, 4vw, 3rem);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    background: linear-gradient(135deg, var(--bg-card), var(--bg-secondary));
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+
+    &:hover {
+        border-color: var(--accent-2-line);
+        box-shadow: var(--card-shadow-hover);
+
+        .featured__media img { transform: scale(1.03); }
+        .featured__title { color: var(--accent); }
+        .card-link .material-icons { transform: translateX(3px); }
+    }
+}
+
+.featured__media {
+    position: relative;
+    min-height: 100%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    border-right: 1px solid var(--border-color);
+    background: var(--bg-secondary);
+
+    img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s var(--ease-out);
+    }
+}
+
+.featured__body {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    padding: 1.5rem;
-    transition: background 0.3s ease;
+    padding: clamp(1.5rem, 3vw, 2.5rem);
 }
 
-.mosaic-tile:hover .mosaic-overlay {
-    background: linear-gradient(
-        to top,
-        rgba(0, 0, 0, 0.95) 0%,
-        rgba(0, 0, 0, 0.65) 50%,
-        rgba(0, 0, 0, 0.1) 100%
-    );
+.featured__title {
+    margin: 0 0 1rem;
+    font-size: clamp(1.6rem, 2.6vw, 2.35rem);
+    line-height: 1.08;
+    letter-spacing: -0.04em;
+    transition: color 0.2s ease;
 }
 
-.mosaic-text-block {
-    margin-bottom: 0.65rem;
+.featured__excerpt {
+    margin: 0 0 1.75rem;
+    color: var(--text-muted);
+    font-size: 1.02rem;
+    line-height: 1.6;
 }
 
-.mosaic-title {
-    font-family: var(--font-display);
-    font-weight: 650;
-    font-size: clamp(1rem, 1.2vw, 1.2rem);
-    line-height: 1.18;
-    color: #ffffff;
-    letter-spacing: -0.015em;
-    margin: 0 0 0.4rem 0;
-    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
-    transition: color 0.25s ease;
+/* ==========================================
+   Liste
+   ========================================== */
+.home-list {
+    margin-top: clamp(3rem, 6vw, 4.5rem);
 }
 
-.mosaic-excerpt {
-    font-family: var(--font-sans);
-    font-size: 0.86rem;
-    color: rgba(255, 255, 255, 0.82);
-    line-height: 1.52;
+.home-list__head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.home-list__title {
     margin: 0;
+    font-size: clamp(1.75rem, 3.2vw, 2.6rem);
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+}
+
+.home-list__count {
+    margin: 0;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    font-variant-numeric: tabular-nums;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.125rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    > li {
+        display: flex;
+    }
+}
+
+/* Carte projet du portfolio : vignette, filet, métadonnées en mono. */
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    background: linear-gradient(135deg, var(--bg-card), var(--bg-secondary));
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s var(--ease-out);
+
+    &:hover {
+        border-color: var(--accent-2-line);
+        box-shadow: var(--card-shadow-hover);
+        transform: translateY(-2px);
+
+        .card__media img { transform: scale(1.04); }
+        .card__title { color: var(--accent); }
+    }
+}
+
+.card__media {
+    position: relative;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    border-bottom: 1px solid var(--border-color);
+    background: var(--bg-secondary);
+
+    img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s var(--ease-out);
+    }
+}
+
+.card__body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1.25rem 1.35rem 1.5rem;
+}
+
+.card__title {
+    margin: 0 0 0.6rem;
+    font-size: 1.22rem;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    transition: color 0.2s ease;
+}
+
+.card__excerpt {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.55;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
 
-.mosaic-meta {
+.home-more,
+.home-empty {
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 1rem;
-    padding-top: 0.5rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 2.5rem 0 0;
 }
 
-.mosaic-date {
-    font-family: var(--font-mono);
-    font-size: 0.7rem;
-    font-weight: 500;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.55);
-}
+.home-empty {
+    padding: 3rem 1rem;
+    border: 1px dashed var(--border-strong);
+    border-radius: var(--radius);
+    text-align: center;
 
-.mosaic-reading-time {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.3rem;
-    font-family: var(--font-mono);
-    font-size: 0.7rem;
-    letter-spacing: 0.06em;
-    color: rgba(255, 255, 255, 0.55);
-
-    .material-icons {
-        font-size: 0.85rem;
+    p {
+        margin: 0;
+        color: var(--text-muted);
     }
 }
 
-.mosaic-arrow {
-    position: absolute;
-    top: 1.2rem;
-    right: 1.2rem;
-    font-family: var(--font-mono);
-    font-size: 1.4rem;
-    color: rgba(255, 255, 255, 0.7);
-    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), color 0.25s ease;
-    z-index: 2;
-}
-
-/* ==========================================
-   Infinite scroll sentinel
-   ========================================== */
-.scroll-sentinel {
-    padding: 3rem 0 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 60px;
-}
-
-.loading-more {
-    display: flex;
-    gap: 0.4rem;
-    align-items: center;
-}
-
-.loading-dot {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: var(--accent);
-    animation: loadingBounce 1.2s infinite ease-in-out;
-
-    &:nth-child(2) { animation-delay: 0.15s; }
-    &:nth-child(3) { animation-delay: 0.3s; }
-}
-
-@keyframes loadingBounce {
-    0%, 80%, 100% { transform: scale(0.6); opacity: 0.4; }
-    40%           { transform: scale(1);   opacity: 1; }
-}
-
-.all-loaded-msg {
-    color: var(--text-muted);
+.home-end {
+    margin: 2.5rem 0 0;
+    text-align: center;
     font-family: var(--font-mono);
     font-size: 0.75rem;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
-    letter-spacing: 0.2em;
-}
-
-.no-articles {
-    text-align: center;
     color: var(--text-muted);
-    font-style: italic;
-    padding: 3rem 0;
 }
 
 /* ==========================================
    Responsive
    ========================================== */
 @media screen and (max-width: 1023px) {
-    .article-list-container {
+    .home-hero {
         grid-template-columns: 1fr;
-        gap: 0;
+        align-items: start;
     }
 
-    .home-sidebar {
-        position: static;
-        padding: 2.5rem 0 0;
+    .card-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .home-sidebar__search {
-        margin-top: 1.5rem;
-        margin-bottom: 2rem;
+    .featured {
+        grid-template-columns: 1fr;
     }
 
-    .home-main {
-        padding-top: 0;
-    }
-
-    .hero-intro__title {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 0.2em 0.35em;
-        align-items: baseline;
-    }
-
-    .mosaic-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .mosaic-tile {
-        grid-column: span 2;
-        grid-row: span 2;
-
-        &--hero {
-            grid-column: span 4;
-            grid-row: span 3;
-        }
-
-        &--wide {
-            grid-column: span 4;
-            grid-row: span 2;
-        }
+    .featured__media {
+        border-right: 0;
+        border-bottom: 1px solid var(--border-color);
     }
 }
 
 @media screen and (max-width: 640px) {
-    .article-list-container {
-        padding: 0 1rem;
-    }
+    .home-hero {
+        padding-top: 2.25rem;
+        gap: 1.75rem;
 
-    .hero-intro {
-        padding: 0 0 1.5rem;
-    }
-
-    .hero-intro__title {
-        font-size: clamp(2rem, 9vw, 2.75rem);
-    }
-
-    .mosaic-grid {
-        grid-template-columns: 1fr;
-        grid-auto-rows: 240px;
-    }
-
-    .mosaic-tile,
-    .mosaic-tile--hero,
-    .mosaic-tile--wide,
-    .mosaic-tile--normal {
-        grid-column: span 1;
-        grid-row: span 1;
-    }
-
-    .mosaic-tile--hero {
-        grid-row: span 1;
-
-        .mosaic-title {
-            font-size: 1.5rem;
+        &::before {
+            width: 90vw;
+            top: -10%;
+            right: -40%;
         }
     }
 
-    .mosaic-overlay {
-        padding: 1.2rem;
+    .home-hero__title {
+        font-size: clamp(2.6rem, 13vw, 3.4rem);
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home-list__head {
+        flex-wrap: wrap;
     }
 }
 </style>

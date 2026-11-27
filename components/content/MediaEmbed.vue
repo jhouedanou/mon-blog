@@ -84,7 +84,7 @@ const posterStyle = computed(() =>
 .embed__frame {
     position: relative;
     width: 100%;
-    border-radius: 6px;
+    border-radius: var(--radius);
     overflow: hidden;
     background: var(--bg-secondary);
 }
@@ -110,7 +110,7 @@ const posterStyle = computed(() =>
     background-size: cover;
     background-position: center;
     border: 1px solid var(--border-color);
-    border-radius: 6px;
+    border-radius: var(--radius);
     cursor: pointer;
     font-family: var(--font-sans);
     transition: border-color 0.25s ease, background-color 0.25s ease;
@@ -119,9 +119,9 @@ const posterStyle = computed(() =>
         border-color: var(--accent);
 
         .embed__play {
-            background: var(--accent);
+            background: var(--accent-fill);
             color: var(--accent-contrast);
-            border-color: var(--accent);
+            border-color: var(--accent-fill);
             transform: scale(1.06);
         }
     }

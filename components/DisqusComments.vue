@@ -75,7 +75,7 @@ function loadDisqus() {
     }
 
     &:hover {
-        background: var(--accent);
+        background: var(--accent-fill);
         color: var(--accent-contrast);
         box-shadow: var(--card-shadow-hover);
     }

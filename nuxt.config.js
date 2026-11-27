@@ -124,13 +124,18 @@ i18n: {
           href: 'https://fonts.gstatic.com',
           crossorigin: ''
         },
+        // Polices du portfolio : Figtree (texte et titres), Caprasimo (le nom
+        // dans l'en-tête), JetBrains Mono (dates, temps de lecture, étiquettes).
         {
           rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=JetBrains+Mono:wght@400;600&display=swap'
+          href: 'https://fonts.googleapis.com/css2?family=Caprasimo&family=Figtree:ital,wght@0,400..700;1,400..700&family=JetBrains+Mono:wght@400;600&display=swap'
         },
+        // Icônes : sous-ensemble de Material Symbols, limité aux glyphes
+        // affichés (liste triée par ordre alphabétique, exigé par Google).
+        // Ajouter ici le nom de toute nouvelle icône utilisée dans un template.
         {
           rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/icon?family=Material+Icons'
+          href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0&icon_names=360,alternate_email,arrow_back,arrow_forward,arrow_upward,article,call,close,code,comment,dark_mode,dns,download,edit,forum,groups,home,language,light_mode,location_on,mail,north_east,photo_camera,place,play_arrow,play_circle,print,rss_feed,search,slideshow,smart_display,toc,work,zoom_in&display=block'
         },
         { rel: 'apple-touch-icon', sizes: '57x57', href: '/apple-icon-57x57.png' },
         { rel: 'apple-touch-icon', sizes: '60x60', href: '/apple-icon-60x60.png' },
@@ -149,7 +154,7 @@ i18n: {
         // Le <link rel="alternate" rss> est émis une seule fois, dans app.vue.
       ],
       meta: [
-        { name: 'msapplication-TileColor', content: '#ffffff' },
+        { name: 'msapplication-TileColor', content: '#111522' },
         { name: 'msapplication-TileImage', content: '/ms-icon-144x144.png' },
         // theme-color (clair et sombre) est posé dans app.vue.
       ]

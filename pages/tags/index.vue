@@ -2,7 +2,7 @@
   <div class="tags-index">
     <div class="tags-index__container">
       <header class="tags-index__header">
-        <span class="tags-index__eyebrow">— {{ $t('exploreByTag') }}</span>
+        <span class="tags-index__eyebrow">{{ $t('exploreByTag') }}</span>
         <h1 class="tags-index__title">{{ $t('tagsTitle') }}</h1>
         <p class="tags-index__intro">{{ $t('tagsIntro') }}</p>
         <p class="tags-index__lede" v-if="tagEntries.length">
@@ -116,15 +116,15 @@ useSeo(() => ({
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.18em;
-  color: var(--accent);
+  color: var(--accent-2-text);
   margin-bottom: 1rem;
 }
 
 .tags-index__title {
   font-family: var(--font-display);
   font-size: clamp(2.5rem, 7vw, 5rem);
-  font-weight: 400;
-  letter-spacing: -0.03em;
+  font-weight: 600;
+  letter-spacing: -0.04em;
   line-height: 1;
   color: var(--text-primary);
   margin: 0 0 1rem;
@@ -160,11 +160,11 @@ useSeo(() => ({
   display: inline-flex;
   align-items: center;
   gap: 0.65rem;
+  min-height: 44px;
   background: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-left: 3px solid var(--tag-color, var(--accent));
-  border-radius: 2px;
-  padding: 0.6rem 0.95rem;
+  border-radius: var(--radius);
+  padding: 0.55rem 0.9rem;
   text-decoration: none;
   color: var(--text-primary);
   font-family: var(--font-sans);
@@ -174,9 +174,9 @@ useSeo(() => ({
 
   &:hover {
     transform: translateY(-2px);
-    border-color: var(--tag-color, var(--accent));
-    color: var(--tag-color, var(--accent));
-    background: var(--accent-soft);
+    border-color: var(--accent-2-line);
+    color: var(--accent-2-text);
+    background: var(--accent-2-soft);
   }
 }
 

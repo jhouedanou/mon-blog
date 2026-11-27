@@ -29,7 +29,7 @@ The answer lands, and I hadn't seen it coming: « This is disparagement, this is
 
 I understood that day that the management software had received an update I had missed. Losing money is a minor episode, delivering rubbish is part of the creative process, and asking for accountability is an assault.
 
-For good measure, I still went and read the Ivorian Labour Code. Its [article 5](https://loidici.biz/?p=1690) talks about « abusive behaviour », « threats », « intimidation », « repeated acts against an employee ». I didn't find « asked why the client was calling him on a Sunday » in there. Workplace bullying exists, people really suffer from it, and that is exactly why the word shouldn't be a joker played every time a job is badly done. I had done the same reading exercise for [tracking employees' location](/en/20250705-chersCommerciaux), with the same finding: the text rarely says what the office makes it say.
+For good measure, I still went and read the Ivorian Labour Code. Its [article 5](https://loidici.biz/?p=1690) talks about « abusive behaviour », « threats », « intimidation », « repeated acts against an employee ». I didn't find « asked why the client was calling him on a Sunday » in there. Workplace bullying exists, people really suffer from it, and that is exactly why the word shouldn't be a joker played every time a job is badly done. I had done the same reading exercise for [tracking employees' location](/en/20250705-cherscommerciaux), with the same finding: the text rarely says what the office makes it say.
 
 ## What it did to me
 

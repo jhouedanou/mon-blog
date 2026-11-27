@@ -133,10 +133,10 @@ defineProps({
 
 .article-nav__title {
   font-family: var(--font-display);
-  font-weight: 650;
+  font-weight: 600;
   font-size: 1.1rem;
   line-height: 1.25;
-  letter-spacing: -0.015em;
+  letter-spacing: -0.025em;
   color: var(--text-primary);
   padding: 1rem 1.1rem;
   display: -webkit-box;

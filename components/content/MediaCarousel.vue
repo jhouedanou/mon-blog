@@ -135,7 +135,7 @@ function thumbStyle(item) {
 .carousel__stage {
     position: relative;
     width: 100%;
-    border-radius: 8px;
+    border-radius: var(--radius);
     overflow: hidden;
     background: var(--bg-secondary);
     border: 1px solid var(--border-color);
@@ -208,8 +208,8 @@ function thumbStyle(item) {
 }
 
 .carousel__poster:hover .carousel__play {
-    background: var(--accent);
-    border-color: var(--accent);
+    background: var(--accent-fill);
+    border-color: var(--accent-fill);
     transform: translate(-50%, -50%) scale(1.08);
 }
 
@@ -256,7 +256,7 @@ function thumbStyle(item) {
     align-items: center;
     justify-content: center;
     border: 1px solid var(--border-color);
-    border-radius: 6px;
+    border-radius: var(--radius);
     background: transparent;
     color: var(--text-secondary);
     font-family: var(--font-mono);
@@ -299,7 +299,7 @@ function thumbStyle(item) {
     aspect-ratio: 16 / 9;
     padding: 0;
     border: 1px solid var(--border-color);
-    border-radius: 5px;
+    border-radius: var(--radius);
     background-color: var(--bg-secondary);
     background-size: cover;
     background-position: center;
